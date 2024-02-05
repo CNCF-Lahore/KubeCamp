@@ -66,7 +66,7 @@
         "./color-mode-options.mjs"
       ],
       "#mdc-imports": [
-        "file:///workspace/Kubernetes-Bootcamp/.nuxt/mdc-imports.mjs"
+        "./mdc-imports"
       ],
       "#vue-router": [
         "./vue-router-stub"
