@@ -1,0 +1,236 @@
+{
+  "resolvedId": "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/Icon.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<!-- eslint-disable vue/multi-word-component-names -->\n<script setup lang=\"ts\">\nimport type { PropType } from 'vue'\nimport type { IconifyIcon } from '@iconify/vue'\nimport { Icon as Iconify } from '@iconify/vue/dist/offline'\nimport { loadIcon } from '@iconify/vue'\nimport { useNuxtApp, useState, ref, useAppConfig, computed, watch } from '#imports'\n\nconst nuxtApp = useNuxtApp()\nconst appConfig = useAppConfig()\nconst aliases = appConfig?.nuxtIcon?.aliases || {}\n\ntype AliasesKeys = keyof typeof aliases\n\nconst props = defineProps({\n  name: {\n    type: String as PropType<AliasesKeys | (string & {})>,\n    required: true\n  },\n  size: {\n    type: String,\n    default: ''\n  }\n})\n\nconst state = useState<Record<string, IconifyIcon | undefined>>('icons', () => ({}))\nconst isFetching = ref(false)\nconst iconName = computed(() => (appConfig.nuxtIcon?.aliases || {})[props.name] || props.name)\nconst icon = computed<IconifyIcon | undefined>(() => state.value?.[iconName.value])\nconst component = computed(() => nuxtApp.vueApp.component(iconName.value as string))\nconst sSize = computed(() => {\n  // Disable size if appConfig.nuxtIcon.size === false\n  // @ts-ignore\n  if (!props.size && typeof appConfig.nuxtIcon?.size === 'boolean' && !appConfig.nuxtIcon?.size) {\n    return undefined\n  }\n  // @ts-ignore\n  const size = props.size || appConfig.nuxtIcon?.size || '1em'\n  if (String(Number(size)) === size) {\n    return `${size}px`\n  }\n  return size\n})\nconst className = computed(() => (appConfig as any)?.nuxtIcon?.class ?? 'icon')\n\nasync function loadIconComponent () {\n  if (component.value) {\n    return\n  }\n  if (!state.value?.[iconName.value]) {\n    isFetching.value = true\n    state.value[iconName.value] = await loadIcon(iconName.value as string).catch(() => undefined)\n    isFetching.value = false\n  }\n}\n\nwatch(() => iconName.value, loadIconComponent)\n\n!component.value && await loadIconComponent()\n</script>\n\n<template>\n  <span v-if=\"isFetching\" :class=\"className\" :width=\"sSize\" :height=\"sSize\" />\n  <Iconify v-else-if=\"icon\" :icon=\"icon\" :class=\"className\" :width=\"sSize\" :height=\"sSize\" />\n  <Component :is=\"component\" v-else-if=\"component\" :class=\"className\" :width=\"sSize\" :height=\"sSize\" />\n  <span v-else :class=\"className\" :style=\"{ fontSize: sSize, lineHeight: sSize, width: sSize, height: sSize }\">{{ name }}</span>\n</template>\n\n<style scoped>\n.icon {\n  display: inline-block;\n  vertical-align: middle;\n}\n</style>\n",
+      "start": 1707165955623,
+      "end": 1707165955757,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1707165955757,
+      "end": 1707165955757,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1707165955764,
+      "end": 1707165955764,
+      "order": "pre"
+    },
+    {
+      "name": "pinceau-transforms",
+      "result": "<!-- eslint-disable vue/multi-word-component-names -->\n<script setup lang=\"ts\">\nimport type { PropType } from 'vue'\nimport type { IconifyIcon } from '@iconify/vue'\nimport { Icon as Iconify } from '@iconify/vue/dist/offline'\nimport { loadIcon } from '@iconify/vue'\nimport { useNuxtApp, useState, ref, useAppConfig, computed, watch } from '#imports'\n\nconst nuxtApp = useNuxtApp()\nconst appConfig = useAppConfig()\nconst aliases = appConfig?.nuxtIcon?.aliases || {}\n\ntype AliasesKeys = keyof typeof aliases\n\nconst props = defineProps({\n  name: {\n    type: String as PropType<AliasesKeys | (string & {})>,\n    required: true\n  },\n  size: {\n    type: String,\n    default: ''\n  }\n})\n\nconst state = useState<Record<string, IconifyIcon | undefined>>('icons', () => ({}))\nconst isFetching = ref(false)\nconst iconName = computed(() => (appConfig.nuxtIcon?.aliases || {})[props.name] || props.name)\nconst icon = computed<IconifyIcon | undefined>(() => state.value?.[iconName.value])\nconst component = computed(() => nuxtApp.vueApp.component(iconName.value as string))\nconst sSize = computed(() => {\n  // Disable size if appConfig.nuxtIcon.size === false\n  // @ts-ignore\n  if (!props.size && typeof appConfig.nuxtIcon?.size === 'boolean' && !appConfig.nuxtIcon?.size) {\n    return undefined\n  }\n  // @ts-ignore\n  const size = props.size || appConfig.nuxtIcon?.size || '1em'\n  if (String(Number(size)) === size) {\n    return `${size}px`\n  }\n  return size\n})\nconst className = computed(() => (appConfig as any)?.nuxtIcon?.class ?? 'icon')\n\nasync function loadIconComponent () {\n  if (component.value) {\n    return\n  }\n  if (!state.value?.[iconName.value]) {\n    isFetching.value = true\n    state.value[iconName.value] = await loadIcon(iconName.value as string).catch(() => undefined)\n    isFetching.value = false\n  }\n}\n\nwatch(() => iconName.value, loadIconComponent)\n\n!component.value && await loadIconComponent()\n</script>\n\n<template>\n  <span v-if=\"isFetching\" :class=\"className\" :width=\"sSize\" :height=\"sSize\" />\n  <Iconify v-else-if=\"icon\" :icon=\"icon\" :class=\"className\" :width=\"sSize\" :height=\"sSize\" />\n  <Component :is=\"component\" v-else-if=\"component\" :class=\"className\" :width=\"sSize\" :height=\"sSize\" />\n  <span v-else :class=\"className\" :style=\"{ fontSize: sSize, lineHeight: sSize, width: sSize, height: sSize }\">{{ name }}</span>\n</template>\n\n<style scoped>\n\n.icon {\n  display: inline-block;\n  vertical-align: middle;\n}\n\n</style>\n",
+      "start": 1707165955764,
+      "end": 1707165955765,
+      "order": "pre",
+      "sourcemaps": {
+        "version": 3,
+        "file": "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/Icon.vue",
+        "sources": [
+          "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/Icon.vue"
+        ],
+        "names": [],
+        "mappings": "AAAA;AACA,wBAAwB;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,AA0DxB;AACA;AACA,UAAU;AAAA;AAAA;AAAA;AAAA;AAAA,AAKV;AACA;AACA;;;;;;;AAKA;"
+      }
+    },
+    {
+      "name": "content-slot",
+      "start": 1707165955765,
+      "end": 1707165955765,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1707165955765,
+      "end": 1707165955765,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1707165955765,
+      "end": 1707165955765,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1707165955765,
+      "end": 1707165955765,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1707165955765,
+      "end": 1707165955765,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1707165955771,
+      "end": 1707165955771,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import _sfc_main from \"/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/Icon.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/Icon.vue?vue&type=script&setup=true&lang.ts\";\nimport \"/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/Icon.vue?vue&type=style&index=0&scoped=e610b8e3&lang.css\";\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"__scopeId\", \"data-v-e610b8e3\"]]);\n",
+      "start": 1707165955773,
+      "end": 1707165955811,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1707165955811,
+      "end": 1707165955811,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1707165955811,
+      "end": 1707165955811,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1707165955811,
+      "end": 1707165955811,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1707165955811,
+      "end": 1707165955811,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1707165955811,
+      "end": 1707165955811,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1707165955811,
+      "end": 1707165955812,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1707165955812,
+      "end": 1707165955812,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1707165955812,
+      "end": 1707165955812,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1707165955812,
+      "end": 1707165955812,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1707165955812,
+      "end": 1707165955812,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1707165955812,
+      "end": 1707165955812,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1707165955812,
+      "end": 1707165955812,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1707165955812,
+      "end": 1707165955812,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1707165955812,
+      "end": 1707165955812,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1707165955812,
+      "end": 1707165955812,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1707165955813,
+      "end": 1707165955813,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1707165955813,
+      "end": 1707165955813,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1707165955813,
+      "end": 1707165955813,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1707165955813,
+      "end": 1707165955813,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1707165955813,
+      "end": 1707165955813,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1707165955813,
+      "end": 1707165955813,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1707165955813,
+      "end": 1707165955813,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1707165955814,
+      "end": 1707165955814,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1707165955814,
+      "end": 1707165955814,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1707165955814,
+      "end": 1707165955814,
+      "order": "normal"
+    }
+  ]
+}

@@ -1,0 +1,276 @@
+{
+  "resolvedId": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppLayout.vue?nuxt_component=async&nuxt_component_name=AppLayout",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<script setup lang=\"ts\">\nconst { config } = useDocus()\n\nuseHead({\n  titleTemplate: config.value.titleTemplate,\n  meta: [\n    { name: 'twitter:card', content: 'summary_large_image' }\n  ]\n})\n\nwatch(\n  () => config.value.titleTemplate,\n  () => useHead({ titleTemplate: config.value.titleTemplate })\n)\n\nuseContentHead(config.value as any)\n</script>\n\n<template>\n  <div class=\"app-layout\">\n    <AppLoadingBar />\n    <AppHeader />\n    <main>\n      <slot />\n    </main>\n    <AppFooter />\n  </div>\n</template>\n\n<style lang=\"ts\" scoped>\ncss({\n  '.app-layout': {\n    main: {\n      minHeight: 'calc(100vh - {docus.header.height} - {docus.footer.height})',\n    }\n  }\n})\n</style>\n",
+      "start": 1707165961209,
+      "end": 1707165961402,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1707165961402,
+      "end": 1707165961402,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1707165961402,
+      "end": 1707165961402,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1707165961402,
+      "end": 1707165961402,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1707165961402,
+      "end": 1707165961402,
+      "order": "pre"
+    },
+    {
+      "name": "pinceau-transforms",
+      "start": 1707165961402,
+      "end": 1707165961402,
+      "order": "pre"
+    },
+    {
+      "name": "pinceau-transforms",
+      "start": 1707165961402,
+      "end": 1707165961402,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1707165961402,
+      "end": 1707165961402,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1707165961402,
+      "end": 1707165961402,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1707165961402,
+      "end": 1707165961402,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1707165961402,
+      "end": 1707165961402,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1707165961403,
+      "end": 1707165961403,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1707165961403,
+      "end": 1707165961403,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1707165961403,
+      "end": 1707165961403,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import _sfc_main from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppLayout.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppLayout.vue?vue&type=script&setup=true&lang.ts\";\nimport \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppLayout.vue?vue&type=style&index=0&scoped=247aba3b&lang.ts\";\nimport { useSSRContext as __vite_useSSRContext } from \"vue\";\nconst _sfc_setup = _sfc_main.setup;\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext();\n  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add(\"node_modules/@nuxt-themes/docus/components/app/AppLayout.vue\");\n  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;\n};\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"__scopeId\", \"data-v-247aba3b\"]]);\n",
+      "start": 1707165961403,
+      "end": 1707165961445,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1707165961445,
+      "end": 1707165961445,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1707165961445,
+      "end": 1707165961445,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1707165961445,
+      "end": 1707165961445,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1707165961446,
+      "end": 1707165961446,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1707165961446,
+      "end": 1707165961446,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppLayout.vue\").then(r => r.default))",
+      "start": 1707165961446,
+      "end": 1707165961446,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "replace",
+      "start": 1707165961446,
+      "end": 1707165961446,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1707165961446,
+      "end": 1707165961446,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1707165961446,
+      "end": 1707165961446,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1707165961446,
+      "end": 1707165961446,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1707165961457,
+      "end": 1707165961457,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1707165961467,
+      "end": 1707165961467,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1707165961467,
+      "end": 1707165961467,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1707165961468,
+      "end": 1707165961468,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1707165961468,
+      "end": 1707165961468,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1707165961468,
+      "end": 1707165961468,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1707165961468,
+      "end": 1707165961468,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1707165961468,
+      "end": 1707165961468,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1707165961469,
+      "end": 1707165961470,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1707165961469,
+      "end": 1707165961470,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1707165961470,
+      "end": 1707165961474,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1707165961470,
+      "end": 1707165961474,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1707165961474,
+      "end": 1707165961474,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1707165961474,
+      "end": 1707165961474,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1707165961474,
+      "end": 1707165961474,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1707165961474,
+      "end": 1707165961474,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1707165961474,
+      "end": 1707165961474,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1707165961474,
+      "end": 1707165961474,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1707165961474,
+      "end": 1707165961474,
+      "order": "normal"
+    }
+  ]
+}

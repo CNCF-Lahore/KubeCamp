@@ -1,0 +1,243 @@
+{
+  "resolvedId": "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/Icon.vue?vue&type=script&setup=true&lang.ts",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "import { withAsyncContext as _withAsyncContext, defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, normalizeClass as _normalizeClass, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, createBlock as _createBlock, resolveDynamicComponent as _resolveDynamicComponent, toDisplayString as _toDisplayString, normalizeStyle as _normalizeStyle, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-e610b8e3\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = [\"width\", \"height\"]\n\nimport type { PropType } from 'vue'\nimport type { IconifyIcon } from '@iconify/vue'\nimport { Icon as Iconify } from '@iconify/vue/dist/offline'\nimport { loadIcon } from '@iconify/vue'\nimport { useNuxtApp, useState, ref, useAppConfig, computed, watch } from '#imports'\n\ntype AliasesKeys = keyof typeof aliases\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'Icon',\n  props: {\n  name: {\n    type: String as PropType<AliasesKeys | (string & {})>,\n    required: true\n  },\n  size: {\n    type: String,\n    default: ''\n  }\n},\n  async setup(__props) {\n\nlet __temp: any, __restore: any\n\nconst nuxtApp = useNuxtApp()\nconst appConfig = useAppConfig()\nconst aliases = appConfig?.nuxtIcon?.aliases || {}\n\nconst props = __props\n\nconst state = useState<Record<string, IconifyIcon | undefined>>('icons', () => ({}))\nconst isFetching = ref(false)\nconst iconName = computed(() => (appConfig.nuxtIcon?.aliases || {})[props.name] || props.name)\nconst icon = computed<IconifyIcon | undefined>(() => state.value?.[iconName.value])\nconst component = computed(() => nuxtApp.vueApp.component(iconName.value as string))\nconst sSize = computed(() => {\n  // Disable size if appConfig.nuxtIcon.size === false\n  // @ts-ignore\n  if (!props.size && typeof appConfig.nuxtIcon?.size === 'boolean' && !appConfig.nuxtIcon?.size) {\n    return undefined\n  }\n  // @ts-ignore\n  const size = props.size || appConfig.nuxtIcon?.size || '1em'\n  if (String(Number(size)) === size) {\n    return `${size}px`\n  }\n  return size\n})\nconst className = computed(() => (appConfig as any)?.nuxtIcon?.class ?? 'icon')\n\nasync function loadIconComponent () {\n  if (component.value) {\n    return\n  }\n  if (!state.value?.[iconName.value]) {\n    isFetching.value = true\n    state.value[iconName.value] = await loadIcon(iconName.value as string).catch(() => undefined)\n    isFetching.value = false\n  }\n}\n\nwatch(() => iconName.value, loadIconComponent)\n\n!component.value && (\n  ([__temp,__restore] = _withAsyncContext(() => loadIconComponent())),\n  __temp = await __temp,\n  __restore(),\n  __temp\n)\n\nreturn (_ctx: any,_cache: any) => {\n  return (_unref(isFetching))\n    ? (_openBlock(), _createElementBlock(\"span\", {\n        key: 0,\n        class: _normalizeClass(_unref(className)),\n        width: _unref(sSize),\n        height: _unref(sSize)\n      }, null, 10, _hoisted_1))\n    : (_unref(icon))\n      ? (_openBlock(), _createBlock(_unref(Iconify), {\n          key: 1,\n          icon: _unref(icon),\n          class: _normalizeClass(_unref(className)),\n          width: _unref(sSize),\n          height: _unref(sSize)\n        }, null, 8, [\"icon\", \"class\", \"width\", \"height\"]))\n      : (_unref(component))\n        ? (_openBlock(), _createBlock(_resolveDynamicComponent(_unref(component)), {\n            key: 2,\n            class: _normalizeClass(_unref(className)),\n            width: _unref(sSize),\n            height: _unref(sSize)\n          }, null, 8, [\"class\", \"width\", \"height\"]))\n        : (_openBlock(), _createElementBlock(\"span\", {\n            key: 3,\n            class: _normalizeClass(_unref(className)),\n            style: _normalizeStyle({ fontSize: _unref(sSize), lineHeight: _unref(sSize), width: _unref(sSize), height: _unref(sSize) })\n          }, _toDisplayString(__props.name), 7))\n}\n}\n\n})",
+      "start": 1707165957396,
+      "end": 1707165957396
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1707165957396,
+      "end": 1707165957396,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1707165957397,
+      "end": 1707165957397,
+      "order": "pre"
+    },
+    {
+      "name": "pinceau-transforms",
+      "result": "import { withAsyncContext as _withAsyncContext, defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, normalizeClass as _normalizeClass, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, createBlock as _createBlock, resolveDynamicComponent as _resolveDynamicComponent, toDisplayString as _toDisplayString, normalizeStyle as _normalizeStyle, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-e610b8e3\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = [\"width\", \"height\"]\n\nimport type { PropType } from 'vue'\nimport type { IconifyIcon } from '@iconify/vue'\nimport { Icon as Iconify } from '@iconify/vue/dist/offline'\nimport { loadIcon } from '@iconify/vue'\nimport { useNuxtApp, useState, ref, useAppConfig, computed, watch } from '#imports'\n\ntype AliasesKeys = keyof typeof aliases\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'Icon',\n  props: {\n  name: {\n    type: String as PropType<AliasesKeys | (string & {})>,\n    required: true\n  },\n  size: {\n    type: String,\n    default: ''\n  }\n},\n  async setup(__props) {\n\nlet __temp: any, __restore: any\n\nconst nuxtApp = useNuxtApp()\nconst appConfig = useAppConfig()\nconst aliases = appConfig?.nuxtIcon?.aliases || {}\n\nconst props = __props\n\nconst state = useState<Record<string, IconifyIcon | undefined>>('icons', () => ({}))\nconst isFetching = ref(false)\nconst iconName = computed(() => (appConfig.nuxtIcon?.aliases || {})[props.name] || props.name)\nconst icon = computed<IconifyIcon | undefined>(() => state.value?.[iconName.value])\nconst component = computed(() => nuxtApp.vueApp.component(iconName.value as string))\nconst sSize = computed(() => {\n  // Disable size if appConfig.nuxtIcon.size === false\n  // @ts-ignore\n  if (!props.size && typeof appConfig.nuxtIcon?.size === 'boolean' && !appConfig.nuxtIcon?.size) {\n    return undefined\n  }\n  // @ts-ignore\n  const size = props.size || appConfig.nuxtIcon?.size || '1em'\n  if (String(Number(size)) === size) {\n    return `${size}px`\n  }\n  return size\n})\nconst className = computed(() => (appConfig as any)?.nuxtIcon?.class ?? 'icon')\n\nasync function loadIconComponent () {\n  if (component.value) {\n    return\n  }\n  if (!state.value?.[iconName.value]) {\n    isFetching.value = true\n    state.value[iconName.value] = await loadIcon(iconName.value as string).catch(() => undefined)\n    isFetching.value = false\n  }\n}\n\nwatch(() => iconName.value, loadIconComponent)\n\n!component.value && (\n  ([__temp,__restore] = _withAsyncContext(() => loadIconComponent())),\n  __temp = await __temp,\n  __restore(),\n  __temp\n)\n\nreturn (_ctx: any,_cache: any) => {\n  return (_unref(isFetching))\n    ? (_openBlock(), _createElementBlock(\"span\", {\n        key: 0,\n        class: _normalizeClass(_unref(className)),\n        width: _unref(sSize),\n        height: _unref(sSize)\n      }, null, 10, _hoisted_1))\n    : (_unref(icon))\n      ? (_openBlock(), _createBlock(_unref(Iconify), {\n          key: 1,\n          icon: _unref(icon),\n          class: _normalizeClass(_unref(className)),\n          width: _unref(sSize),\n          height: _unref(sSize)\n        }, null, 8, [\"icon\", \"class\", \"width\", \"height\"]))\n      : (_unref(component))\n        ? (_openBlock(), _createBlock(_resolveDynamicComponent(_unref(component)), {\n            key: 2,\n            class: _normalizeClass(_unref(className)),\n            width: _unref(sSize),\n            height: _unref(sSize)\n          }, null, 8, [\"class\", \"width\", \"height\"]))\n        : (_openBlock(), _createElementBlock(\"span\", {\n            key: 3,\n            class: _normalizeClass(_unref(className)),\n            style: _normalizeStyle({ fontSize: _unref(sSize), lineHeight: _unref(sSize), width: _unref(sSize), height: _unref(sSize) })\n          }, _toDisplayString(__props.name), 7))\n}\n}\n\n})",
+      "start": 1707165957397,
+      "end": 1707165957397,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1707165957397,
+      "end": 1707165957397,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1707165957397,
+      "end": 1707165957397,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1707165957397,
+      "end": 1707165957397,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { withAsyncContext as _withAsyncContext, defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, normalizeClass as _normalizeClass, openBlock as _openBlock, createElementBlock as _createElementBlock, createBlock as _createBlock, resolveDynamicComponent as _resolveDynamicComponent, toDisplayString as _toDisplayString, normalizeStyle as _normalizeStyle, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-e610b8e3\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = [\"width\", \"height\"];\nimport { Icon as Iconify } from \"@iconify/vue/dist/offline\";\nimport { loadIcon } from \"@iconify/vue\";\nimport { useNuxtApp, useState, ref, useAppConfig, computed, watch } from \"#imports\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"Icon\",\n  props: {\n    name: {\n      type: String,\n      required: true\n    },\n    size: {\n      type: String,\n      default: \"\"\n    }\n  },\n  async setup(__props) {\n    let __temp, __restore;\n    const nuxtApp = useNuxtApp();\n    const appConfig = useAppConfig();\n    const aliases = appConfig?.nuxtIcon?.aliases || {};\n    const props = __props;\n    const state = useState(\"icons\", () => ({}));\n    const isFetching = ref(false);\n    const iconName = computed(() => (appConfig.nuxtIcon?.aliases || {})[props.name] || props.name);\n    const icon = computed(() => state.value?.[iconName.value]);\n    const component = computed(() => nuxtApp.vueApp.component(iconName.value));\n    const sSize = computed(() => {\n      if (!props.size && typeof appConfig.nuxtIcon?.size === \"boolean\" && !appConfig.nuxtIcon?.size) {\n        return void 0;\n      }\n      const size = props.size || appConfig.nuxtIcon?.size || \"1em\";\n      if (String(Number(size)) === size) {\n        return `${size}px`;\n      }\n      return size;\n    });\n    const className = computed(() => appConfig?.nuxtIcon?.class ?? \"icon\");\n    async function loadIconComponent() {\n      if (component.value) {\n        return;\n      }\n      if (!state.value?.[iconName.value]) {\n        isFetching.value = true;\n        state.value[iconName.value] = await loadIcon(iconName.value).catch(() => void 0);\n        isFetching.value = false;\n      }\n    }\n    watch(() => iconName.value, loadIconComponent);\n    !component.value && ([__temp, __restore] = _withAsyncContext(() => loadIconComponent()), __temp = await __temp, __restore(), __temp);\n    return (_ctx, _cache) => {\n      return _unref(isFetching) ? (_openBlock(), _createElementBlock(\"span\", {\n        key: 0,\n        class: _normalizeClass(_unref(className)),\n        width: _unref(sSize),\n        height: _unref(sSize)\n      }, null, 10, _hoisted_1)) : _unref(icon) ? (_openBlock(), _createBlock(_unref(Iconify), {\n        key: 1,\n        icon: _unref(icon),\n        class: _normalizeClass(_unref(className)),\n        width: _unref(sSize),\n        height: _unref(sSize)\n      }, null, 8, [\"icon\", \"class\", \"width\", \"height\"])) : _unref(component) ? (_openBlock(), _createBlock(_resolveDynamicComponent(_unref(component)), {\n        key: 2,\n        class: _normalizeClass(_unref(className)),\n        width: _unref(sSize),\n        height: _unref(sSize)\n      }, null, 8, [\"class\", \"width\", \"height\"])) : (_openBlock(), _createElementBlock(\"span\", {\n        key: 3,\n        class: _normalizeClass(_unref(className)),\n        style: _normalizeStyle({ fontSize: _unref(sSize), lineHeight: _unref(sSize), width: _unref(sSize), height: _unref(sSize) })\n      }, _toDisplayString(__props.name), 7));\n    };\n  }\n});\n",
+      "start": 1707165957397,
+      "end": 1707165957484,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/Icon.vue?vue&type=script&setup=true&lang.ts"
+        ],
+        "sourcesContent": [
+          "import { withAsyncContext as _withAsyncContext, defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, normalizeClass as _normalizeClass, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, createBlock as _createBlock, resolveDynamicComponent as _resolveDynamicComponent, toDisplayString as _toDisplayString, normalizeStyle as _normalizeStyle, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-e610b8e3\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = [\"width\", \"height\"]\n\nimport type { PropType } from 'vue'\nimport type { IconifyIcon } from '@iconify/vue'\nimport { Icon as Iconify } from '@iconify/vue/dist/offline'\nimport { loadIcon } from '@iconify/vue'\nimport { useNuxtApp, useState, ref, useAppConfig, computed, watch } from '#imports'\n\ntype AliasesKeys = keyof typeof aliases\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'Icon',\n  props: {\n  name: {\n    type: String as PropType<AliasesKeys | (string & {})>,\n    required: true\n  },\n  size: {\n    type: String,\n    default: ''\n  }\n},\n  async setup(__props) {\n\nlet __temp: any, __restore: any\n\nconst nuxtApp = useNuxtApp()\nconst appConfig = useAppConfig()\nconst aliases = appConfig?.nuxtIcon?.aliases || {}\n\nconst props = __props\n\nconst state = useState<Record<string, IconifyIcon | undefined>>('icons', () => ({}))\nconst isFetching = ref(false)\nconst iconName = computed(() => (appConfig.nuxtIcon?.aliases || {})[props.name] || props.name)\nconst icon = computed<IconifyIcon | undefined>(() => state.value?.[iconName.value])\nconst component = computed(() => nuxtApp.vueApp.component(iconName.value as string))\nconst sSize = computed(() => {\n  // Disable size if appConfig.nuxtIcon.size === false\n  // @ts-ignore\n  if (!props.size && typeof appConfig.nuxtIcon?.size === 'boolean' && !appConfig.nuxtIcon?.size) {\n    return undefined\n  }\n  // @ts-ignore\n  const size = props.size || appConfig.nuxtIcon?.size || '1em'\n  if (String(Number(size)) === size) {\n    return `${size}px`\n  }\n  return size\n})\nconst className = computed(() => (appConfig as any)?.nuxtIcon?.class ?? 'icon')\n\nasync function loadIconComponent () {\n  if (component.value) {\n    return\n  }\n  if (!state.value?.[iconName.value]) {\n    isFetching.value = true\n    state.value[iconName.value] = await loadIcon(iconName.value as string).catch(() => undefined)\n    isFetching.value = false\n  }\n}\n\nwatch(() => iconName.value, loadIconComponent)\n\n!component.value && (\n  ([__temp,__restore] = _withAsyncContext(() => loadIconComponent())),\n  __temp = await __temp,\n  __restore(),\n  __temp\n)\n\nreturn (_ctx: any,_cache: any) => {\n  return (_unref(isFetching))\n    ? (_openBlock(), _createElementBlock(\"span\", {\n        key: 0,\n        class: _normalizeClass(_unref(className)),\n        width: _unref(sSize),\n        height: _unref(sSize)\n      }, null, 10, _hoisted_1))\n    : (_unref(icon))\n      ? (_openBlock(), _createBlock(_unref(Iconify), {\n          key: 1,\n          icon: _unref(icon),\n          class: _normalizeClass(_unref(className)),\n          width: _unref(sSize),\n          height: _unref(sSize)\n        }, null, 8, [\"icon\", \"class\", \"width\", \"height\"]))\n      : (_unref(component))\n        ? (_openBlock(), _createBlock(_resolveDynamicComponent(_unref(component)), {\n            key: 2,\n            class: _normalizeClass(_unref(className)),\n            width: _unref(sSize),\n            height: _unref(sSize)\n          }, null, 8, [\"class\", \"width\", \"height\"]))\n        : (_openBlock(), _createElementBlock(\"span\", {\n            key: 3,\n            class: _normalizeClass(_unref(className)),\n            style: _normalizeStyle({ fontSize: _unref(sSize), lineHeight: _unref(sSize), width: _unref(sSize), height: _unref(sSize) })\n          }, _toDisplayString(__props.name), 7))\n}\n}\n\n})"
+        ],
+        "mappings": "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",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:json",
+      "start": 1707165957484,
+      "end": 1707165957484,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1707165957484,
+      "end": 1707165957484,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1707165957484,
+      "end": 1707165957484,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1707165957484,
+      "end": 1707165957484,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1707165957484,
+      "end": 1707165957485,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1707165957485,
+      "end": 1707165957486,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1707165957486,
+      "end": 1707165957486,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1707165957486,
+      "end": 1707165957486,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1707165957486,
+      "end": 1707165957486,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1707165957487,
+      "end": 1707165957487,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1707165957489,
+      "end": 1707165957489,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1707165957489,
+      "end": 1707165957489,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1707165957489,
+      "end": 1707165957489,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1707165957489,
+      "end": 1707165957489,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1707165957490,
+      "end": 1707165957490,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1707165957490,
+      "end": 1707165957490,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1707165957490,
+      "end": 1707165957490,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1707165957490,
+      "end": 1707165957490,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1707165957490,
+      "end": 1707165957491,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "result": "import { useNuxtApp } from '#app/nuxt';\nimport { useState } from '#app/composables/state';\nimport { ref, computed, watch } from 'vue';\nimport { useAppConfig } from '#app/config';\nimport { withAsyncContext as _withAsyncContext, defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, normalizeClass as _normalizeClass, openBlock as _openBlock, createElementBlock as _createElementBlock, createBlock as _createBlock, resolveDynamicComponent as _resolveDynamicComponent, toDisplayString as _toDisplayString, normalizeStyle as _normalizeStyle, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-e610b8e3\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = [\"width\", \"height\"];\nimport { Icon as Iconify } from \"@iconify/vue/dist/offline\";\nimport { loadIcon } from \"@iconify/vue\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"Icon\",\n  props: {\n    name: {\n      type: String,\n      required: true\n    },\n    size: {\n      type: String,\n      default: \"\"\n    }\n  },\n  async setup(__props) {\n    let __temp, __restore;\n    const nuxtApp = useNuxtApp();\n    const appConfig = useAppConfig();\n    const aliases = appConfig?.nuxtIcon?.aliases || {};\n    const props = __props;\n    const state = useState(\"icons\", () => ({}));\n    const isFetching = ref(false);\n    const iconName = computed(() => (appConfig.nuxtIcon?.aliases || {})[props.name] || props.name);\n    const icon = computed(() => state.value?.[iconName.value]);\n    const component = computed(() => nuxtApp.vueApp.component(iconName.value));\n    const sSize = computed(() => {\n      if (!props.size && typeof appConfig.nuxtIcon?.size === \"boolean\" && !appConfig.nuxtIcon?.size) {\n        return void 0;\n      }\n      const size = props.size || appConfig.nuxtIcon?.size || \"1em\";\n      if (String(Number(size)) === size) {\n        return `${size}px`;\n      }\n      return size;\n    });\n    const className = computed(() => appConfig?.nuxtIcon?.class ?? \"icon\");\n    async function loadIconComponent() {\n      if (component.value) {\n        return;\n      }\n      if (!state.value?.[iconName.value]) {\n        isFetching.value = true;\n        state.value[iconName.value] = await loadIcon(iconName.value).catch(() => void 0);\n        isFetching.value = false;\n      }\n    }\n    watch(() => iconName.value, loadIconComponent);\n    !component.value && ([__temp, __restore] = _withAsyncContext(() => loadIconComponent()), __temp = await __temp, __restore(), __temp);\n    return (_ctx, _cache) => {\n      return _unref(isFetching) ? (_openBlock(), _createElementBlock(\"span\", {\n        key: 0,\n        class: _normalizeClass(_unref(className)),\n        width: _unref(sSize),\n        height: _unref(sSize)\n      }, null, 10, _hoisted_1)) : _unref(icon) ? (_openBlock(), _createBlock(_unref(Iconify), {\n        key: 1,\n        icon: _unref(icon),\n        class: _normalizeClass(_unref(className)),\n        width: _unref(sSize),\n        height: _unref(sSize)\n      }, null, 8, [\"icon\", \"class\", \"width\", \"height\"])) : _unref(component) ? (_openBlock(), _createBlock(_resolveDynamicComponent(_unref(component)), {\n        key: 2,\n        class: _normalizeClass(_unref(className)),\n        width: _unref(sSize),\n        height: _unref(sSize)\n      }, null, 8, [\"class\", \"width\", \"height\"])) : (_openBlock(), _createElementBlock(\"span\", {\n        key: 3,\n        class: _normalizeClass(_unref(className)),\n        style: _normalizeStyle({ fontSize: _unref(sSize), lineHeight: _unref(sSize), width: _unref(sSize), height: _unref(sSize) })\n      }, _toDisplayString(__props.name), 7));\n    };\n  }\n});\n",
+      "start": 1707165957492,
+      "end": 1707165957495,
+      "order": "post",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": ";;;;AAAA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACjG,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC/V,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACzF,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACvC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC5D,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAExC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACjD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACjB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACV,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACX,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACnB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACpB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACN,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACX,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACnB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACjB,CAAC,CAAC,CAAC,CAAC,CAAC;AACL,CAAC,CAAC,CAAC,CAAC;AACJ,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACxB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC1B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACjC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACrC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACvD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC1B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAChD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAClC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACnG,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC/D,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC/E,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAClC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACtG,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACtB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACP,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACnE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC1C,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC3B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACP,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAClB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACP,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC3E,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACxC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC5B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACf,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACP,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC3C,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAChC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACzF,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACjC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACP,CAAC,CAAC,CAAC,CAAC,CAAC;AACL,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACnD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACzI,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC9B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC9E,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACf,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAClD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC7B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC7B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC/F,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACf,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC3B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAClD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC7B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC7B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACzJ,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACf,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAClD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC7B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC7B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC/F,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACf,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAClD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACnI,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC7C,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACN,CAAC,CAAC,CAAC;AACH,CAAC,CAAC,CAAC;"
+      }
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1707165957495,
+      "end": 1707165957495,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1707165957495,
+      "end": 1707165957495,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1707165957495,
+      "end": 1707165957495,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1707165957495,
+      "end": 1707165957495,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1707165957495,
+      "end": 1707165957495,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1707165957496,
+      "end": 1707165957496,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1707165957496,
+      "end": 1707165957496,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1707165957496,
+      "end": 1707165957496,
+      "order": "normal"
+    }
+  ]
+}

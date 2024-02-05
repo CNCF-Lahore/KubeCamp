@@ -1,0 +1,244 @@
+{
+  "resolvedId": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/app.config.ts",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "export default defineAppConfig({\n  docus: {\n    title: 'Docus',\n\n    description: 'The best place to start your documentation.',\n\n    url: 'https://docus.dev',\n\n    image: 'https://user-images.githubusercontent.com/904724/185365452-87b7ca7b-6030-4813-a2db-5e65c785bf88.png',\n\n    socials: {},\n\n    layout: 'default',\n\n    header: {\n      title: '',\n      logo: false,\n      showLinkIcon: false,\n      fluid: false,\n      exclude: []\n    },\n\n    aside: {\n      level: 0,\n      collapsed: false,\n      exclude: []\n    },\n\n    footer: {\n      credits: {\n        icon: 'IconDocus',\n        text: 'Powered by Docus',\n        href: 'https://docus.dev'\n      },\n      textLinks: [],\n      iconLinks: [],\n      fluid: false\n    },\n\n    github: {\n      dir: undefined,\n      branch: undefined,\n      repo: undefined,\n      owner: undefined,\n      edit: false\n    },\n  }\n})\n",
+      "start": 1707165957993,
+      "end": 1707165958140,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1707165958140,
+      "end": 1707165958140,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1707165958140,
+      "end": 1707165958140,
+      "order": "pre"
+    },
+    {
+      "name": "pinceau-transforms",
+      "result": "export default defineAppConfig({\n  docus: {\n    title: 'Docus',\n\n    description: 'The best place to start your documentation.',\n\n    url: 'https://docus.dev',\n\n    image: 'https://user-images.githubusercontent.com/904724/185365452-87b7ca7b-6030-4813-a2db-5e65c785bf88.png',\n\n    socials: {},\n\n    layout: 'default',\n\n    header: {\n      title: '',\n      logo: false,\n      showLinkIcon: false,\n      fluid: false,\n      exclude: []\n    },\n\n    aside: {\n      level: 0,\n      collapsed: false,\n      exclude: []\n    },\n\n    footer: {\n      credits: {\n        icon: 'IconDocus',\n        text: 'Powered by Docus',\n        href: 'https://docus.dev'\n      },\n      textLinks: [],\n      iconLinks: [],\n      fluid: false\n    },\n\n    github: {\n      dir: undefined,\n      branch: undefined,\n      repo: undefined,\n      owner: undefined,\n      edit: false\n    },\n  }\n})\n",
+      "start": 1707165958140,
+      "end": 1707165958140,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1707165958140,
+      "end": 1707165958140,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1707165958140,
+      "end": 1707165958140,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1707165958140,
+      "end": 1707165958140,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "export default defineAppConfig({\n  docus: {\n    title: \"Docus\",\n    description: \"The best place to start your documentation.\",\n    url: \"https://docus.dev\",\n    image: \"https://user-images.githubusercontent.com/904724/185365452-87b7ca7b-6030-4813-a2db-5e65c785bf88.png\",\n    socials: {},\n    layout: \"default\",\n    header: {\n      title: \"\",\n      logo: false,\n      showLinkIcon: false,\n      fluid: false,\n      exclude: []\n    },\n    aside: {\n      level: 0,\n      collapsed: false,\n      exclude: []\n    },\n    footer: {\n      credits: {\n        icon: \"IconDocus\",\n        text: \"Powered by Docus\",\n        href: \"https://docus.dev\"\n      },\n      textLinks: [],\n      iconLinks: [],\n      fluid: false\n    },\n    github: {\n      dir: void 0,\n      branch: void 0,\n      repo: void 0,\n      owner: void 0,\n      edit: false\n    }\n  }\n});\n",
+      "start": 1707165958140,
+      "end": 1707165958160,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/app.config.ts"
+        ],
+        "sourcesContent": [
+          "export default defineAppConfig({\n  docus: {\n    title: 'Docus',\n\n    description: 'The best place to start your documentation.',\n\n    url: 'https://docus.dev',\n\n    image: 'https://user-images.githubusercontent.com/904724/185365452-87b7ca7b-6030-4813-a2db-5e65c785bf88.png',\n\n    socials: {},\n\n    layout: 'default',\n\n    header: {\n      title: '',\n      logo: false,\n      showLinkIcon: false,\n      fluid: false,\n      exclude: []\n    },\n\n    aside: {\n      level: 0,\n      collapsed: false,\n      exclude: []\n    },\n\n    footer: {\n      credits: {\n        icon: 'IconDocus',\n        text: 'Powered by Docus',\n        href: 'https://docus.dev'\n      },\n      textLinks: [],\n      iconLinks: [],\n      fluid: false\n    },\n\n    github: {\n      dir: undefined,\n      branch: undefined,\n      repo: undefined,\n      owner: undefined,\n      edit: false\n    },\n  }\n})\n"
+        ],
+        "mappings": "AAAA,eAAe,gBAAgB;AAAA,EAC7B,OAAO;AAAA,IACL,OAAO;AAAA,IAEP,aAAa;AAAA,IAEb,KAAK;AAAA,IAEL,OAAO;AAAA,IAEP,SAAS,CAAC;AAAA,IAEV,QAAQ;AAAA,IAER,QAAQ;AAAA,MACN,OAAO;AAAA,MACP,MAAM;AAAA,MACN,cAAc;AAAA,MACd,OAAO;AAAA,MACP,SAAS,CAAC;AAAA,IACZ;AAAA,IAEA,OAAO;AAAA,MACL,OAAO;AAAA,MACP,WAAW;AAAA,MACX,SAAS,CAAC;AAAA,IACZ;AAAA,IAEA,QAAQ;AAAA,MACN,SAAS;AAAA,QACP,MAAM;AAAA,QACN,MAAM;AAAA,QACN,MAAM;AAAA,MACR;AAAA,MACA,WAAW,CAAC;AAAA,MACZ,WAAW,CAAC;AAAA,MACZ,OAAO;AAAA,IACT;AAAA,IAEA,QAAQ;AAAA,MACN,KAAK;AAAA,MACL,QAAQ;AAAA,MACR,MAAM;AAAA,MACN,OAAO;AAAA,MACP,MAAM;AAAA,IACR;AAAA,EACF;AACF,CAAC;",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:json",
+      "start": 1707165958160,
+      "end": 1707165958160,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1707165958160,
+      "end": 1707165958160,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1707165958160,
+      "end": 1707165958160,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1707165958160,
+      "end": 1707165958160,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1707165958160,
+      "end": 1707165958160,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1707165958160,
+      "end": 1707165958160,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1707165958160,
+      "end": 1707165958160,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1707165958160,
+      "end": 1707165958160,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1707165958160,
+      "end": 1707165958160,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1707165958160,
+      "end": 1707165958160,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1707165958160,
+      "end": 1707165958160,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1707165958160,
+      "end": 1707165958160,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1707165958160,
+      "end": 1707165958160,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1707165958161,
+      "end": 1707165958161,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1707165958161,
+      "end": 1707165958161,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1707165958161,
+      "end": 1707165958161,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1707165958161,
+      "end": 1707165958161,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1707165958161,
+      "end": 1707165958161,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1707165958161,
+      "end": 1707165958161,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "result": "import { defineAppConfig } from '#app/nuxt';\nexport default defineAppConfig({\n  docus: {\n    title: \"Docus\",\n    description: \"The best place to start your documentation.\",\n    url: \"https://docus.dev\",\n    image: \"https://user-images.githubusercontent.com/904724/185365452-87b7ca7b-6030-4813-a2db-5e65c785bf88.png\",\n    socials: {},\n    layout: \"default\",\n    header: {\n      title: \"\",\n      logo: false,\n      showLinkIcon: false,\n      fluid: false,\n      exclude: []\n    },\n    aside: {\n      level: 0,\n      collapsed: false,\n      exclude: []\n    },\n    footer: {\n      credits: {\n        icon: \"IconDocus\",\n        text: \"Powered by Docus\",\n        href: \"https://docus.dev\"\n      },\n      textLinks: [],\n      iconLinks: [],\n      fluid: false\n    },\n    github: {\n      dir: void 0,\n      branch: void 0,\n      repo: void 0,\n      owner: void 0,\n      edit: false\n    }\n  }\n});\n",
+      "start": 1707165958161,
+      "end": 1707165958162,
+      "order": "post",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": ";AAAA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAChC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACV,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACnB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC/D,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC7B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,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N,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACb,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAClB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACrB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACnB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACpB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACjB,CAAC,CAAC,CAAC,CAAC,CAAC;AACL,CAAC,CAAC,CAAC;AACH,CAAC,CAAC,CAAC;"
+      }
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1707165958162,
+      "end": 1707165958162,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1707165958162,
+      "end": 1707165958162,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1707165958162,
+      "end": 1707165958162,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1707165958162,
+      "end": 1707165958162,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1707165958162,
+      "end": 1707165958162,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1707165958162,
+      "end": 1707165958162,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1707165958162,
+      "end": 1707165958162,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1707165958162,
+      "end": 1707165958162,
+      "order": "normal"
+    }
+  ]
+}

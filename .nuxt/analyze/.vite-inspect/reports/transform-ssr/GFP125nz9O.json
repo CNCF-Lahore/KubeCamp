@@ -1,0 +1,313 @@
+{
+  "resolvedId": "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/IconCSS.vue?vue&type=style&index=0&scoped=5217de21&lang.css",
+  "transforms": [
+    {
+      "name": "pinceau-transforms",
+      "result": "\nspan {\n  display: inline-block;\n  vertical-align: middle;\n  background-color: currentColor;\n  -webkit-mask-image: v-bind(iconUrl);\n  mask-image: v-bind(iconUrl);\n  -webkit-mask-repeat: no-repeat;\n  mask-repeat: no-repeat;\n  -webkit-mask-size: 100% 100%;\n  mask-size: 100% 100%;\n}\n",
+      "start": 1707165964335,
+      "end": 1707165964336,
+      "sourcemaps": {
+        "version": 3,
+        "file": "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
+        "sources": [
+          "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/IconCSS.vue"
+        ],
+        "sourcesContent": [
+          "\nspan {\n  display: inline-block;\n  vertical-align: middle;\n  background-color: currentColor;\n  -webkit-mask-image: v-bind(iconUrl);\n  mask-image: v-bind(iconUrl);\n  -webkit-mask-repeat: no-repeat;\n  mask-repeat: no-repeat;\n  -webkit-mask-size: 100% 100%;\n  mask-size: 100% 100%;\n}\n"
+        ],
+        "names": [],
+        "mappings": "AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;"
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1707165964336,
+      "end": 1707165964336,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1707165964336,
+      "end": 1707165964336,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1707165964337,
+      "end": 1707165964337,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1707165964337,
+      "end": 1707165964338,
+      "order": "pre"
+    },
+    {
+      "name": "pinceau-transforms",
+      "result": "\nspan {\n  display: inline-block;\n  vertical-align: middle;\n  background-color: currentColor;\n  -webkit-mask-image: v-bind(iconUrl);\n  mask-image: v-bind(iconUrl);\n  -webkit-mask-repeat: no-repeat;\n  mask-repeat: no-repeat;\n  -webkit-mask-size: 100% 100%;\n  mask-size: 100% 100%;\n}\n",
+      "start": 1707165964338,
+      "end": 1707165964338,
+      "order": "pre"
+    },
+    {
+      "name": "pinceau-transforms",
+      "result": "\nspan {\n  display: inline-block;\n  vertical-align: middle;\n  background-color: currentColor;\n  -webkit-mask-image: v-bind(iconUrl);\n  mask-image: v-bind(iconUrl);\n  -webkit-mask-repeat: no-repeat;\n  mask-repeat: no-repeat;\n  -webkit-mask-size: 100% 100%;\n  mask-size: 100% 100%;\n}\n",
+      "start": 1707165964338,
+      "end": 1707165964338,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1707165964338,
+      "end": 1707165964338,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1707165964338,
+      "end": 1707165964338,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1707165964338,
+      "end": 1707165964338,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": "span{background-color:currentColor;display:inline-block;-webkit-mask-image:v-bind(iconUrl);mask-image:v-bind(iconUrl);-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:100% 100%;mask-size:100% 100%;vertical-align:middle}",
+      "start": 1707165964339,
+      "end": 1707165964343,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
+        "mappings": "AACA,KAGE,6BAA8B,CAF9B,oBAAqB,CAGrB,kCAAmC,CACnC,0BAA2B,CAC3B,6BAA8B,CAC9B,qBAAsB,CACtB,2BAA4B,CAC5B,mBAAoB,CAPpB,qBAQF",
+        "names": [],
+        "sources": [
+          "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/IconCSS.vue"
+        ],
+        "sourcesContent": [
+          "\nspan {\n  display: inline-block;\n  vertical-align: middle;\n  background-color: currentColor;\n  -webkit-mask-image: v-bind(iconUrl);\n  mask-image: v-bind(iconUrl);\n  -webkit-mask-repeat: no-repeat;\n  mask-repeat: no-repeat;\n  -webkit-mask-size: 100% 100%;\n  mask-size: 100% 100%;\n}\n"
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1707165964343,
+      "end": 1707165964343,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1707165964343,
+      "end": 1707165964343,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1707165964343,
+      "end": 1707165964343,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "span[data-v-5217de21]{background-color:currentColor;display:inline-block;-webkit-mask-image:var(--faa288c6);mask-image:var(--faa288c6);-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:100% 100%;mask-size:100% 100%;vertical-align:middle}",
+      "start": 1707165964343,
+      "end": 1707165964344,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
+        "mappings": "AAAA,sBAAK,6BAA6B,CAAC,oBAAoB,CAAC,kCAAkC,CAAC,0BAA0B,CAAC,6BAA6B,CAAC,qBAAqB,CAAC,2BAA2B,CAAC,mBAAmB,CAAC,qBAAqB",
+        "names": [],
+        "sources": [
+          "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/IconCSS.vue"
+        ],
+        "sourcesContent": [
+          null
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1707165964345,
+      "end": 1707165964345,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1707165964345,
+      "end": 1707165964345,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1707165964345,
+      "end": 1707165964345,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1707165964345,
+      "end": 1707165964345,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1707165964345,
+      "end": 1707165964345,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1707165964346,
+      "end": 1707165964346,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1707165964346,
+      "end": 1707165964346,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1707165964346,
+      "end": 1707165964346,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1707165964346,
+      "end": 1707165964346,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "",
+      "start": 1707165964346,
+      "end": 1707165964346,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1707165964346,
+      "end": 1707165964346,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1707165964346,
+      "end": 1707165964346,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1707165964347,
+      "end": 1707165964347,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1707165964347,
+      "end": 1707165964347,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1707165964347,
+      "end": 1707165964347,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1707165964347,
+      "end": 1707165964347,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1707165964347,
+      "end": 1707165964347,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1707165964347,
+      "end": 1707165964347,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1707165964347,
+      "end": 1707165964347,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1707165964347,
+      "end": 1707165964347,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1707165964347,
+      "end": 1707165964347,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1707165964347,
+      "end": 1707165964347,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1707165964347,
+      "end": 1707165964347,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1707165964347,
+      "end": 1707165964347,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1707165964347,
+      "end": 1707165964347,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1707165964347,
+      "end": 1707165964347,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1707165964347,
+      "end": 1707165964347,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1707165964347,
+      "end": 1707165964347,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1707165964347,
+      "end": 1707165964347,
+      "order": "normal"
+    }
+  ]
+}

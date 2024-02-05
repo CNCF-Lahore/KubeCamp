@@ -1,0 +1,225 @@
+{
+  "resolvedId": "/workspace/Kubernetes-Bootcamp/node_modules/plausible-tracker/build/module/lib/tracker.js",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import { sendEvent } from './request';\n/**\n * Initializes the tracker with your default values.\n *\n * ### Example (es module)\n * ```js\n * import Plausible from 'plausible-tracker'\n *\n * const { enableAutoPageviews, trackEvent } = Plausible({\n *   domain: 'my-app-domain.com',\n *   hashMode: true\n * })\n *\n * enableAutoPageviews()\n *\n * function onUserRegister() {\n *   trackEvent('register')\n * }\n * ```\n *\n * ### Example (commonjs)\n * ```js\n * var Plausible = require('plausible-tracker');\n *\n * var { enableAutoPageviews, trackEvent } = Plausible({\n *   domain: 'my-app-domain.com',\n *   hashMode: true\n * })\n *\n * enableAutoPageviews()\n *\n * function onUserRegister() {\n *   trackEvent('register')\n * }\n * ```\n *\n * @param defaults - Default event parameters that will be applied to all requests.\n */\nexport default function Plausible(defaults) {\n    const getConfig = () => ({\n        hashMode: false,\n        trackLocalhost: false,\n        url: location.href,\n        domain: location.hostname,\n        referrer: document.referrer || null,\n        deviceWidth: window.innerWidth,\n        apiHost: 'https://plausible.io',\n        ...defaults,\n    });\n    const trackEvent = (eventName, options, eventData) => {\n        sendEvent(eventName, { ...getConfig(), ...eventData }, options);\n    };\n    const trackPageview = (eventData, options) => {\n        trackEvent('pageview', options, eventData);\n    };\n    const enableAutoPageviews = () => {\n        const page = () => trackPageview();\n        // Attach pushState and popState listeners\n        const originalPushState = history.pushState;\n        if (originalPushState) {\n            // eslint-disable-next-line functional/immutable-data\n            history.pushState = function (data, title, url) {\n                originalPushState.apply(this, [data, title, url]);\n                page();\n            };\n            addEventListener('popstate', page);\n        }\n        // Attach hashchange listener\n        if (defaults && defaults.hashMode) {\n            addEventListener('hashchange', page);\n        }\n        // Trigger first page view\n        trackPageview();\n        return function cleanup() {\n            if (originalPushState) {\n                // eslint-disable-next-line functional/immutable-data\n                history.pushState = originalPushState;\n                removeEventListener('popstate', page);\n            }\n            if (defaults && defaults.hashMode) {\n                removeEventListener('hashchange', page);\n            }\n        };\n    };\n    const enableAutoOutboundTracking = (targetNode = document, observerInit = {\n        subtree: true,\n        childList: true,\n        attributes: true,\n        attributeFilter: ['href'],\n    }) => {\n        function trackClick(event) {\n            trackEvent('Outbound Link: Click', { props: { url: this.href } });\n            /* istanbul ignore next */\n            // eslint-disable-next-line @typescript-eslint/ban-ts-comment\n            // @ts-ignore\n            if (!(typeof process !== 'undefined' &&\n                process &&\n                process.env.NODE_ENV === 'test')) {\n                setTimeout(() => {\n                    // eslint-disable-next-line functional/immutable-data\n                    location.href = this.href;\n                }, 150);\n            }\n            event.preventDefault();\n        }\n        // eslint-disable-next-line functional/prefer-readonly-type\n        const tracked = new Set();\n        function addNode(node) {\n            if (node instanceof HTMLAnchorElement) {\n                if (node.host !== location.host) {\n                    node.addEventListener('click', trackClick);\n                    tracked.add(node);\n                }\n            } /* istanbul ignore next */\n            else if ('querySelectorAll' in node) {\n                node.querySelectorAll('a').forEach(addNode);\n            }\n        }\n        function removeNode(node) {\n            if (node instanceof HTMLAnchorElement) {\n                node.removeEventListener('click', trackClick);\n                tracked.delete(node);\n            } /* istanbul ignore next */\n            else if ('querySelectorAll' in node) {\n                node.querySelectorAll('a').forEach(removeNode);\n            }\n        }\n        const observer = new MutationObserver((mutations) => {\n            mutations.forEach((mutation) => {\n                if (mutation.type === 'attributes') {\n                    // Handle changed href\n                    removeNode(mutation.target);\n                    addNode(mutation.target);\n                } /* istanbul ignore next */\n                else if (mutation.type === 'childList') {\n                    // Handle added nodes\n                    mutation.addedNodes.forEach(addNode);\n                    // Handle removed nodes\n                    mutation.removedNodes.forEach(removeNode);\n                }\n            });\n        });\n        // Track existing nodes\n        targetNode.querySelectorAll('a').forEach(addNode);\n        // Observe mutations\n        observer.observe(targetNode, observerInit);\n        return function cleanup() {\n            tracked.forEach((a) => {\n                a.removeEventListener('click', trackClick);\n            });\n            tracked.clear();\n            observer.disconnect();\n        };\n    };\n    return {\n        trackEvent,\n        trackPageview,\n        enableAutoPageviews,\n        enableAutoOutboundTracking,\n    };\n}\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidHJhY2tlci5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3NyYy9saWIvdHJhY2tlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxPQUFPLEVBQWdCLFNBQVMsRUFBRSxNQUFNLFdBQVcsQ0FBQztBQTRLcEQ7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztHQW9DRztBQUNILE1BQU0sQ0FBQyxPQUFPLFVBQVUsU0FBUyxDQUMvQixRQUErQjtJQU8vQixNQUFNLFNBQVMsR0FBRyxHQUErQixFQUFFLENBQUMsQ0FBQztRQUNuRCxRQUFRLEVBQUUsS0FBSztRQUNmLGNBQWMsRUFBRSxLQUFLO1FBQ3JCLEdBQUcsRUFBRSxRQUFRLENBQUMsSUFBSTtRQUNsQixNQUFNLEVBQUUsUUFBUSxDQUFDLFFBQVE7UUFDekIsUUFBUSxFQUFFLFFBQVEsQ0FBQyxRQUFRLElBQUksSUFBSTtRQUNuQyxXQUFXLEVBQUUsTUFBTSxDQUFDLFVBQVU7UUFDOUIsT0FBTyxFQUFFLHNCQUFzQjtRQUMvQixHQUFHLFFBQVE7S0FDWixDQUFDLENBQUM7SUFFSCxNQUFNLFVBQVUsR0FBZSxDQUFDLFNBQVMsRUFBRSxPQUFPLEVBQUUsU0FBUyxFQUFFLEVBQUU7UUFDL0QsU0FBUyxDQUFDLFNBQVMsRUFBRSxFQUFFLEdBQUcsU0FBUyxFQUFFLEVBQUUsR0FBRyxTQUFTLEVBQUUsRUFBRSxPQUFPLENBQUMsQ0FBQztJQUNsRSxDQUFDLENBQUM7SUFFRixNQUFNLGFBQWEsR0FBa0IsQ0FBQyxTQUFTLEVBQUUsT0FBTyxFQUFFLEVBQUU7UUFDMUQsVUFBVSxDQUFDLFVBQVUsRUFBRSxPQUFPLEVBQUUsU0FBUyxDQUFDLENBQUM7SUFDN0MsQ0FBQyxDQUFDO0lBRUYsTUFBTSxtQkFBbUIsR0FBd0IsR0FBRyxFQUFFO1FBQ3BELE1BQU0sSUFBSSxHQUFHLEdBQUcsRUFBRSxDQUFDLGFBQWEsRUFBRSxDQUFDO1FBQ25DLDBDQUEwQztRQUMxQyxNQUFNLGlCQUFpQixHQUFHLE9BQU8sQ0FBQyxTQUFTLENBQUM7UUFDNUMsSUFBSSxpQkFBaUIsRUFBRTtZQUNyQixxREFBcUQ7WUFDckQsT0FBTyxDQUFDLFNBQVMsR0FBRyxVQUFVLElBQUksRUFBRSxLQUFLLEVBQUUsR0FBRztnQkFDNUMsaUJBQWlCLENBQUMsS0FBSyxDQUFDLElBQUksRUFBRSxDQUFDLElBQUksRUFBRSxLQUFLLEVBQUUsR0FBRyxDQUFDLENBQUMsQ0FBQztnQkFDbEQsSUFBSSxFQUFFLENBQUM7WUFDVCxDQUFDLENBQUM7WUFDRixnQkFBZ0IsQ0FBQyxVQUFVLEVBQUUsSUFBSSxDQUFDLENBQUM7U0FDcEM7UUFFRCw2QkFBNkI7UUFDN0IsSUFBSSxRQUFRLElBQUksUUFBUSxDQUFDLFFBQVEsRUFBRTtZQUNqQyxnQkFBZ0IsQ0FBQyxZQUFZLEVBQUUsSUFBSSxDQUFDLENBQUM7U0FDdEM7UUFFRCwwQkFBMEI7UUFDMUIsYUFBYSxFQUFFLENBQUM7UUFFaEIsT0FBTyxTQUFTLE9BQU87WUFDckIsSUFBSSxpQkFBaUIsRUFBRTtnQkFDckIscURBQXFEO2dCQUNyRCxPQUFPLENBQUMsU0FBUyxHQUFHLGlCQUFpQixDQUFDO2dCQUN0QyxtQkFBbUIsQ0FBQyxVQUFVLEVBQUUsSUFBSSxDQUFDLENBQUM7YUFDdkM7WUFDRCxJQUFJLFFBQVEsSUFBSSxRQUFRLENBQUMsUUFBUSxFQUFFO2dCQUNqQyxtQkFBbUIsQ0FBQyxZQUFZLEVBQUUsSUFBSSxDQUFDLENBQUM7YUFDekM7UUFDSCxDQUFDLENBQUM7SUFDSixDQUFDLENBQUM7SUFFRixNQUFNLDBCQUEwQixHQUErQixDQUM3RCxhQUFnQyxRQUFRLEVBQ3hDLGVBQXFDO1FBQ25DLE9BQU8sRUFBRSxJQUFJO1FBQ2IsU0FBUyxFQUFFLElBQUk7UUFDZixVQUFVLEVBQUUsSUFBSTtRQUNoQixlQUFlLEVBQUUsQ0FBQyxNQUFNLENBQUM7S0FDMUIsRUFDRCxFQUFFO1FBQ0YsU0FBUyxVQUFVLENBQTBCLEtBQWlCO1lBQzVELFVBQVUsQ0FBQyxzQkFBc0IsRUFBRSxFQUFFLEtBQUssRUFBRSxFQUFFLEdBQUcsRUFBRSxJQUFJLENBQUMsSUFBSSxFQUFFLEVBQUUsQ0FBQyxDQUFDO1lBRWxFLDBCQUEwQjtZQUMxQiw2REFBNkQ7WUFDN0QsYUFBYTtZQUNiLElBQ0UsQ0FBQyxDQUNDLE9BQU8sT0FBTyxLQUFLLFdBQVc7Z0JBQzlCLE9BQU87Z0JBQ1AsT0FBTyxDQUFDLEdBQUcsQ0FBQyxRQUFRLEtBQUssTUFBTSxDQUNoQyxFQUNEO2dCQUNBLFVBQVUsQ0FBQyxHQUFHLEVBQUU7b0JBQ2QscURBQXFEO29CQUNyRCxRQUFRLENBQUMsSUFBSSxHQUFHLElBQUksQ0FBQyxJQUFJLENBQUM7Z0JBQzVCLENBQUMsRUFBRSxHQUFHLENBQUMsQ0FBQzthQUNUO1lBRUQsS0FBSyxDQUFDLGNBQWMsRUFBRSxDQUFDO1FBQ3pCLENBQUM7UUFFRCwyREFBMkQ7UUFDM0QsTUFBTSxPQUFPLEdBQTJCLElBQUksR0FBRyxFQUFFLENBQUM7UUFFbEQsU0FBUyxPQUFPLENBQUMsSUFBdUI7WUFDdEMsSUFBSSxJQUFJLFlBQVksaUJBQWlCLEVBQUU7Z0JBQ3JDLElBQUksSUFBSSxDQUFDLElBQUksS0FBSyxRQUFRLENBQUMsSUFBSSxFQUFFO29CQUMvQixJQUFJLENBQUMsZ0JBQWdCLENBQUMsT0FBTyxFQUFFLFVBQVUsQ0FBQyxDQUFDO29CQUMzQyxPQUFPLENBQUMsR0FBRyxDQUFDLElBQUksQ0FBQyxDQUFDO2lCQUNuQjthQUNGLENBQUMsMEJBQTBCO2lCQUFNLElBQUksa0JBQWtCLElBQUksSUFBSSxFQUFFO2dCQUNoRSxJQUFJLENBQUMsZ0JBQWdCLENBQUMsR0FBRyxDQUFDLENBQUMsT0FBTyxDQUFDLE9BQU8sQ0FBQyxDQUFDO2FBQzdDO1FBQ0gsQ0FBQztRQUVELFNBQVMsVUFBVSxDQUFDLElBQXVCO1lBQ3pDLElBQUksSUFBSSxZQUFZLGlCQUFpQixFQUFFO2dCQUNyQyxJQUFJLENBQUMsbUJBQW1CLENBQUMsT0FBTyxFQUFFLFVBQVUsQ0FBQyxDQUFDO2dCQUM5QyxPQUFPLENBQUMsTUFBTSxDQUFDLElBQUksQ0FBQyxDQUFDO2FBQ3RCLENBQUMsMEJBQTBCO2lCQUFNLElBQUksa0JBQWtCLElBQUksSUFBSSxFQUFFO2dCQUNoRSxJQUFJLENBQUMsZ0JBQWdCLENBQUMsR0FBRyxDQUFDLENBQUMsT0FBTyxDQUFDLFVBQVUsQ0FBQyxDQUFDO2FBQ2hEO1FBQ0gsQ0FBQztRQUVELE1BQU0sUUFBUSxHQUFHLElBQUksZ0JBQWdCLENBQUMsQ0FBQyxTQUFTLEVBQUUsRUFBRTtZQUNsRCxTQUFTLENBQUMsT0FBTyxDQUFDLENBQUMsUUFBUSxFQUFFLEVBQUU7Z0JBQzdCLElBQUksUUFBUSxDQUFDLElBQUksS0FBSyxZQUFZLEVBQUU7b0JBQ2xDLHNCQUFzQjtvQkFDdEIsVUFBVSxDQUFDLFFBQVEsQ0FBQyxNQUFNLENBQUMsQ0FBQztvQkFDNUIsT0FBTyxDQUFDLFFBQVEsQ0FBQyxNQUFNLENBQUMsQ0FBQztpQkFDMUIsQ0FBQywwQkFBMEI7cUJBQU0sSUFBSSxRQUFRLENBQUMsSUFBSSxLQUFLLFdBQVcsRUFBRTtvQkFDbkUscUJBQXFCO29CQUNyQixRQUFRLENBQUMsVUFBVSxDQUFDLE9BQU8sQ0FBQyxPQUFPLENBQUMsQ0FBQztvQkFDckMsdUJBQXVCO29CQUN2QixRQUFRLENBQUMsWUFBWSxDQUFDLE9BQU8sQ0FBQyxVQUFVLENBQUMsQ0FBQztpQkFDM0M7WUFDSCxDQUFDLENBQUMsQ0FBQztRQUNMLENBQUMsQ0FBQyxDQUFDO1FBRUgsdUJBQXVCO1FBQ3ZCLFVBQVUsQ0FBQyxnQkFBZ0IsQ0FBQyxHQUFHLENBQUMsQ0FBQyxPQUFPLENBQUMsT0FBTyxDQUFDLENBQUM7UUFFbEQsb0JBQW9CO1FBQ3BCLFFBQVEsQ0FBQyxPQUFPLENBQUMsVUFBVSxFQUFFLFlBQVksQ0FBQyxDQUFDO1FBRTNDLE9BQU8sU0FBUyxPQUFPO1lBQ3JCLE9BQU8sQ0FBQyxPQUFPLENBQUMsQ0FBQyxDQUFDLEVBQUUsRUFBRTtnQkFDcEIsQ0FBQyxDQUFDLG1CQUFtQixDQUFDLE9BQU8sRUFBRSxVQUFVLENBQUMsQ0FBQztZQUM3QyxDQUFDLENBQUMsQ0FBQztZQUNILE9BQU8sQ0FBQyxLQUFLLEVBQUUsQ0FBQztZQUNoQixRQUFRLENBQUMsVUFBVSxFQUFFLENBQUM7UUFDeEIsQ0FBQyxDQUFDO0lBQ0osQ0FBQyxDQUFDO0lBRUYsT0FBTztRQUNMLFVBQVU7UUFDVixhQUFhO1FBQ2IsbUJBQW1CO1FBQ25CLDBCQUEwQjtLQUMzQixDQUFDO0FBQ0osQ0FBQyJ9",
+      "start": 1707165955705,
+      "end": 1707165956804,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1707165956804,
+      "end": 1707165956804,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1707165956804,
+      "end": 1707165956804,
+      "order": "pre"
+    },
+    {
+      "name": "pinceau-transforms",
+      "result": "import { sendEvent } from './request';\n/**\n * Initializes the tracker with your default values.\n *\n * ### Example (es module)\n * ```js\n * import Plausible from 'plausible-tracker'\n *\n * const { enableAutoPageviews, trackEvent } = Plausible({\n *   domain: 'my-app-domain.com',\n *   hashMode: true\n * })\n *\n * enableAutoPageviews()\n *\n * function onUserRegister() {\n *   trackEvent('register')\n * }\n * ```\n *\n * ### Example (commonjs)\n * ```js\n * var Plausible = require('plausible-tracker');\n *\n * var { enableAutoPageviews, trackEvent } = Plausible({\n *   domain: 'my-app-domain.com',\n *   hashMode: true\n * })\n *\n * enableAutoPageviews()\n *\n * function onUserRegister() {\n *   trackEvent('register')\n * }\n * ```\n *\n * @param defaults - Default event parameters that will be applied to all requests.\n */\nexport default function Plausible(defaults) {\n    const getConfig = () => ({\n        hashMode: false,\n        trackLocalhost: false,\n        url: location.href,\n        domain: location.hostname,\n        referrer: document.referrer || null,\n        deviceWidth: window.innerWidth,\n        apiHost: 'https://plausible.io',\n        ...defaults,\n    });\n    const trackEvent = (eventName, options, eventData) => {\n        sendEvent(eventName, { ...getConfig(), ...eventData }, options);\n    };\n    const trackPageview = (eventData, options) => {\n        trackEvent('pageview', options, eventData);\n    };\n    const enableAutoPageviews = () => {\n        const page = () => trackPageview();\n        // Attach pushState and popState listeners\n        const originalPushState = history.pushState;\n        if (originalPushState) {\n            // eslint-disable-next-line functional/immutable-data\n            history.pushState = function (data, title, url) {\n                originalPushState.apply(this, [data, title, url]);\n                page();\n            };\n            addEventListener('popstate', page);\n        }\n        // Attach hashchange listener\n        if (defaults && defaults.hashMode) {\n            addEventListener('hashchange', page);\n        }\n        // Trigger first page view\n        trackPageview();\n        return function cleanup() {\n            if (originalPushState) {\n                // eslint-disable-next-line functional/immutable-data\n                history.pushState = originalPushState;\n                removeEventListener('popstate', page);\n            }\n            if (defaults && defaults.hashMode) {\n                removeEventListener('hashchange', page);\n            }\n        };\n    };\n    const enableAutoOutboundTracking = (targetNode = document, observerInit = {\n        subtree: true,\n        childList: true,\n        attributes: true,\n        attributeFilter: ['href'],\n    }) => {\n        function trackClick(event) {\n            trackEvent('Outbound Link: Click', { props: { url: this.href } });\n            /* istanbul ignore next */\n            // eslint-disable-next-line @typescript-eslint/ban-ts-comment\n            // @ts-ignore\n            if (!(typeof process !== 'undefined' &&\n                process &&\n                process.env.NODE_ENV === 'test')) {\n                setTimeout(() => {\n                    // eslint-disable-next-line functional/immutable-data\n                    location.href = this.href;\n                }, 150);\n            }\n            event.preventDefault();\n        }\n        // eslint-disable-next-line functional/prefer-readonly-type\n        const tracked = new Set();\n        function addNode(node) {\n            if (node instanceof HTMLAnchorElement) {\n                if (node.host !== location.host) {\n                    node.addEventListener('click', trackClick);\n                    tracked.add(node);\n                }\n            } /* istanbul ignore next */\n            else if ('querySelectorAll' in node) {\n                node.querySelectorAll('a').forEach(addNode);\n            }\n        }\n        function removeNode(node) {\n            if (node instanceof HTMLAnchorElement) {\n                node.removeEventListener('click', trackClick);\n                tracked.delete(node);\n            } /* istanbul ignore next */\n            else if ('querySelectorAll' in node) {\n                node.querySelectorAll('a').forEach(removeNode);\n            }\n        }\n        const observer = new MutationObserver((mutations) => {\n            mutations.forEach((mutation) => {\n                if (mutation.type === 'attributes') {\n                    // Handle changed href\n                    removeNode(mutation.target);\n                    addNode(mutation.target);\n                } /* istanbul ignore next */\n                else if (mutation.type === 'childList') {\n                    // Handle added nodes\n                    mutation.addedNodes.forEach(addNode);\n                    // Handle removed nodes\n                    mutation.removedNodes.forEach(removeNode);\n                }\n            });\n        });\n        // Track existing nodes\n        targetNode.querySelectorAll('a').forEach(addNode);\n        // Observe mutations\n        observer.observe(targetNode, observerInit);\n        return function cleanup() {\n            tracked.forEach((a) => {\n                a.removeEventListener('click', trackClick);\n            });\n            tracked.clear();\n            observer.disconnect();\n        };\n    };\n    return {\n        trackEvent,\n        trackPageview,\n        enableAutoPageviews,\n        enableAutoOutboundTracking,\n    };\n}\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidHJhY2tlci5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3NyYy9saWIvdHJhY2tlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxPQUFPLEVBQWdCLFNBQVMsRUFBRSxNQUFNLFdBQVcsQ0FBQztBQTRLcEQ7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztHQW9DRztBQUNILE1BQU0sQ0FBQyxPQUFPLFVBQVUsU0FBUyxDQUMvQixRQUErQjtJQU8vQixNQUFNLFNBQVMsR0FBRyxHQUErQixFQUFFLENBQUMsQ0FBQztRQUNuRCxRQUFRLEVBQUUsS0FBSztRQUNmLGNBQWMsRUFBRSxLQUFLO1FBQ3JCLEdBQUcsRUFBRSxRQUFRLENBQUMsSUFBSTtRQUNsQixNQUFNLEVBQUUsUUFBUSxDQUFDLFFBQVE7UUFDekIsUUFBUSxFQUFFLFFBQVEsQ0FBQyxRQUFRLElBQUksSUFBSTtRQUNuQyxXQUFXLEVBQUUsTUFBTSxDQUFDLFVBQVU7UUFDOUIsT0FBTyxFQUFFLHNCQUFzQjtRQUMvQixHQUFHLFFBQVE7S0FDWixDQUFDLENBQUM7SUFFSCxNQUFNLFVBQVUsR0FBZSxDQUFDLFNBQVMsRUFBRSxPQUFPLEVBQUUsU0FBUyxFQUFFLEVBQUU7UUFDL0QsU0FBUyxDQUFDLFNBQVMsRUFBRSxFQUFFLEdBQUcsU0FBUyxFQUFFLEVBQUUsR0FBRyxTQUFTLEVBQUUsRUFBRSxPQUFPLENBQUMsQ0FBQztJQUNsRSxDQUFDLENBQUM7SUFFRixNQUFNLGFBQWEsR0FBa0IsQ0FBQyxTQUFTLEVBQUUsT0FBTyxFQUFFLEVBQUU7UUFDMUQsVUFBVSxDQUFDLFVBQVUsRUFBRSxPQUFPLEVBQUUsU0FBUyxDQUFDLENBQUM7SUFDN0MsQ0FBQyxDQUFDO0lBRUYsTUFBTSxtQkFBbUIsR0FBd0IsR0FBRyxFQUFFO1FBQ3BELE1BQU0sSUFBSSxHQUFHLEdBQUcsRUFBRSxDQUFDLGFBQWEsRUFBRSxDQUFDO1FBQ25DLDBDQUEwQztRQUMxQyxN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",
+      "start": 1707165956804,
+      "end": 1707165956804,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1707165956804,
+      "end": 1707165956804,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1707165956804,
+      "end": 1707165956804,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1707165956804,
+      "end": 1707165956804,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1707165956804,
+      "end": 1707165956804,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1707165956804,
+      "end": 1707165956804,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1707165956804,
+      "end": 1707165956804,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1707165956804,
+      "end": 1707165956804,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1707165956804,
+      "end": 1707165956804,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1707165956804,
+      "end": 1707165956804,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1707165956804,
+      "end": 1707165956804,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1707165956804,
+      "end": 1707165956804,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1707165956804,
+      "end": 1707165956804,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1707165956804,
+      "end": 1707165956804,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1707165956804,
+      "end": 1707165956804,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "result": "import { sendEvent } from \"./request\";\nexport default function Plausible(defaults) {\n  const getConfig = () => ({\n    hashMode: false,\n    trackLocalhost: false,\n    url: location.href,\n    domain: location.hostname,\n    referrer: document.referrer || null,\n    deviceWidth: window.innerWidth,\n    apiHost: \"https://plausible.io\",\n    ...defaults\n  });\n  const trackEvent = (eventName, options, eventData) => {\n    sendEvent(eventName, { ...getConfig(), ...eventData }, options);\n  };\n  const trackPageview = (eventData, options) => {\n    trackEvent(\"pageview\", options, eventData);\n  };\n  const enableAutoPageviews = () => {\n    const page = () => trackPageview();\n    const originalPushState = history.pushState;\n    if (originalPushState) {\n      history.pushState = function(data, title, url) {\n        originalPushState.apply(this, [data, title, url]);\n        page();\n      };\n      addEventListener(\"popstate\", page);\n    }\n    if (defaults && defaults.hashMode) {\n      addEventListener(\"hashchange\", page);\n    }\n    trackPageview();\n    return function cleanup() {\n      if (originalPushState) {\n        history.pushState = originalPushState;\n        removeEventListener(\"popstate\", page);\n      }\n      if (defaults && defaults.hashMode) {\n        removeEventListener(\"hashchange\", page);\n      }\n    };\n  };\n  const enableAutoOutboundTracking = (targetNode = document, observerInit = {\n    subtree: true,\n    childList: true,\n    attributes: true,\n    attributeFilter: [\"href\"]\n  }) => {\n    function trackClick(event) {\n      trackEvent(\"Outbound Link: Click\", { props: { url: this.href } });\n      if (!(typeof process !== \"undefined\" && process && false)) {\n        setTimeout(() => {\n          location.href = this.href;\n        }, 150);\n      }\n      event.preventDefault();\n    }\n    const tracked = /* @__PURE__ */ new Set();\n    function addNode(node) {\n      if (node instanceof HTMLAnchorElement) {\n        if (node.host !== location.host) {\n          node.addEventListener(\"click\", trackClick);\n          tracked.add(node);\n        }\n      } else if (\"querySelectorAll\" in node) {\n        node.querySelectorAll(\"a\").forEach(addNode);\n      }\n    }\n    function removeNode(node) {\n      if (node instanceof HTMLAnchorElement) {\n        node.removeEventListener(\"click\", trackClick);\n        tracked.delete(node);\n      } else if (\"querySelectorAll\" in node) {\n        node.querySelectorAll(\"a\").forEach(removeNode);\n      }\n    }\n    const observer = new MutationObserver((mutations) => {\n      mutations.forEach((mutation) => {\n        if (mutation.type === \"attributes\") {\n          removeNode(mutation.target);\n          addNode(mutation.target);\n        } else if (mutation.type === \"childList\") {\n          mutation.addedNodes.forEach(addNode);\n          mutation.removedNodes.forEach(removeNode);\n        }\n      });\n    });\n    targetNode.querySelectorAll(\"a\").forEach(addNode);\n    observer.observe(targetNode, observerInit);\n    return function cleanup() {\n      tracked.forEach((a) => {\n        a.removeEventListener(\"click\", trackClick);\n      });\n      tracked.clear();\n      observer.disconnect();\n    };\n  };\n  return {\n    trackEvent,\n    trackPageview,\n    enableAutoPageviews,\n    enableAutoOutboundTracking\n  };\n}\n",
+      "start": 1707165956804,
+      "end": 1707165956943,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1707165956943,
+      "end": 1707165956943,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1707165956943,
+      "end": 1707165956943,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1707165956943,
+      "end": 1707165956943,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1707165956943,
+      "end": 1707165956943,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1707165956944,
+      "end": 1707165956944,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1707165956945,
+      "end": 1707165956945,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1707165956945,
+      "end": 1707165956945,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1707165956945,
+      "end": 1707165956945,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1707165956945,
+      "end": 1707165956945,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1707165956946,
+      "end": 1707165956946,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1707165956947,
+      "end": 1707165956947,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1707165956947,
+      "end": 1707165956947,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1707165956947,
+      "end": 1707165956947,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1707165956948,
+      "end": 1707165956948,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1707165956948,
+      "end": 1707165956948,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1707165956948,
+      "end": 1707165956948,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1707165956948,
+      "end": 1707165956948,
+      "order": "normal"
+    }
+  ]
+}

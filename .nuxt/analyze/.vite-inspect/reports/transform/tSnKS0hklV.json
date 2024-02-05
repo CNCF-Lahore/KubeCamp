@@ -1,0 +1,235 @@
+{
+  "resolvedId": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/app/router.options.ts",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import type { RouterConfig } from '@nuxt/schema'\n// https://router.vuejs.org/api/interfaces/routeroptions.html\nexport default <RouterConfig> {\n  scrollBehavior (to, _form, savedPosition) {\n    if (history.state.stop) { return }\n\n    if (history.state.smooth) {\n      return {\n        el: history.state.smooth,\n        behavior: 'smooth'\n      }\n    }\n\n    if (to.hash) {\n      const el = document.querySelector(to.hash) as any\n\n      if (!el) { return }\n\n      const { marginTop } = getComputedStyle(el)\n\n      const marginTopValue = parseInt(marginTop)\n\n      const offset = (document.querySelector(to.hash) as any).offsetTop - marginTopValue\n\n      return {\n        top: offset,\n        behavior: 'smooth'\n      }\n    }\n\n    // Scroll to top of window\n    if (savedPosition) {\n      return savedPosition\n    } else {\n      return { top: 0 }\n    }\n  }\n}\n",
+      "start": 1707165955470,
+      "end": 1707165955593,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1707165955593,
+      "end": 1707165955593,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1707165955593,
+      "end": 1707165955593,
+      "order": "pre"
+    },
+    {
+      "name": "pinceau-transforms",
+      "result": "import type { RouterConfig } from '@nuxt/schema'\n// https://router.vuejs.org/api/interfaces/routeroptions.html\nexport default <RouterConfig> {\n  scrollBehavior (to, _form, savedPosition) {\n    if (history.state.stop) { return }\n\n    if (history.state.smooth) {\n      return {\n        el: history.state.smooth,\n        behavior: 'smooth'\n      }\n    }\n\n    if (to.hash) {\n      const el = document.querySelector(to.hash) as any\n\n      if (!el) { return }\n\n      const { marginTop } = getComputedStyle(el)\n\n      const marginTopValue = parseInt(marginTop)\n\n      const offset = (document.querySelector(to.hash) as any).offsetTop - marginTopValue\n\n      return {\n        top: offset,\n        behavior: 'smooth'\n      }\n    }\n\n    // Scroll to top of window\n    if (savedPosition) {\n      return savedPosition\n    } else {\n      return { top: 0 }\n    }\n  }\n}\n",
+      "start": 1707165955593,
+      "end": 1707165955593,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1707165955593,
+      "end": 1707165955593,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1707165955593,
+      "end": 1707165955593,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1707165955593,
+      "end": 1707165955593,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "export default {\n  scrollBehavior(to, _form, savedPosition) {\n    if (history.state.stop) {\n      return;\n    }\n    if (history.state.smooth) {\n      return {\n        el: history.state.smooth,\n        behavior: \"smooth\"\n      };\n    }\n    if (to.hash) {\n      const el = document.querySelector(to.hash);\n      if (!el) {\n        return;\n      }\n      const { marginTop } = getComputedStyle(el);\n      const marginTopValue = parseInt(marginTop);\n      const offset = document.querySelector(to.hash).offsetTop - marginTopValue;\n      return {\n        top: offset,\n        behavior: \"smooth\"\n      };\n    }\n    if (savedPosition) {\n      return savedPosition;\n    } else {\n      return { top: 0 };\n    }\n  }\n};\n",
+      "start": 1707165955593,
+      "end": 1707165955634,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/app/router.options.ts"
+        ],
+        "sourcesContent": [
+          "import type { RouterConfig } from '@nuxt/schema'\n// https://router.vuejs.org/api/interfaces/routeroptions.html\nexport default <RouterConfig> {\n  scrollBehavior (to, _form, savedPosition) {\n    if (history.state.stop) { return }\n\n    if (history.state.smooth) {\n      return {\n        el: history.state.smooth,\n        behavior: 'smooth'\n      }\n    }\n\n    if (to.hash) {\n      const el = document.querySelector(to.hash) as any\n\n      if (!el) { return }\n\n      const { marginTop } = getComputedStyle(el)\n\n      const marginTopValue = parseInt(marginTop)\n\n      const offset = (document.querySelector(to.hash) as any).offsetTop - marginTopValue\n\n      return {\n        top: offset,\n        behavior: 'smooth'\n      }\n    }\n\n    // Scroll to top of window\n    if (savedPosition) {\n      return savedPosition\n    } else {\n      return { top: 0 }\n    }\n  }\n}\n"
+        ],
+        "mappings": "AAEA,eAA8B;AAAA,EAC5B,eAAgB,IAAI,OAAO,eAAe;AACxC,QAAI,QAAQ,MAAM,MAAM;AAAE;AAAA,IAAO;AAEjC,QAAI,QAAQ,MAAM,QAAQ;AACxB,aAAO;AAAA,QACL,IAAI,QAAQ,MAAM;AAAA,QAClB,UAAU;AAAA,MACZ;AAAA,IACF;AAEA,QAAI,GAAG,MAAM;AACX,YAAM,KAAK,SAAS,cAAc,GAAG,IAAI;AAEzC,UAAI,CAAC,IAAI;AAAE;AAAA,MAAO;AAElB,YAAM,EAAE,UAAU,IAAI,iBAAiB,EAAE;AAEzC,YAAM,iBAAiB,SAAS,SAAS;AAEzC,YAAM,SAAU,SAAS,cAAc,GAAG,IAAI,EAAU,YAAY;AAEpE,aAAO;AAAA,QACL,KAAK;AAAA,QACL,UAAU;AAAA,MACZ;AAAA,IACF;AAGA,QAAI,eAAe;AACjB,aAAO;AAAA,IACT,OAAO;AACL,aAAO,EAAE,KAAK,EAAE;AAAA,IAClB;AAAA,EACF;AACF;",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:json",
+      "start": 1707165955634,
+      "end": 1707165955634,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1707165955634,
+      "end": 1707165955634,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1707165955634,
+      "end": 1707165955634,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1707165955634,
+      "end": 1707165955634,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1707165955634,
+      "end": 1707165955634,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1707165955634,
+      "end": 1707165955634,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1707165955634,
+      "end": 1707165955634,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1707165955634,
+      "end": 1707165955634,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1707165955634,
+      "end": 1707165955634,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1707165955634,
+      "end": 1707165955634,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1707165955635,
+      "end": 1707165955635,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1707165955635,
+      "end": 1707165955635,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1707165955635,
+      "end": 1707165955635,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1707165955635,
+      "end": 1707165955635,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1707165955635,
+      "end": 1707165955635,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1707165955635,
+      "end": 1707165955635,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1707165955635,
+      "end": 1707165955635,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1707165955636,
+      "end": 1707165955636,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1707165955637,
+      "end": 1707165955637,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1707165955637,
+      "end": 1707165955637,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1707165955638,
+      "end": 1707165955638,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1707165955638,
+      "end": 1707165955638,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1707165955638,
+      "end": 1707165955638,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1707165955638,
+      "end": 1707165955638,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1707165955638,
+      "end": 1707165955638,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1707165955638,
+      "end": 1707165955638,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1707165955638,
+      "end": 1707165955638,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1707165955638,
+      "end": 1707165955638,
+      "order": "normal"
+    }
+  ]
+}

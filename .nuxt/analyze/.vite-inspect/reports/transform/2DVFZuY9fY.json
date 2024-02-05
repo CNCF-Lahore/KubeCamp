@@ -1,0 +1,244 @@
+{
+  "resolvedId": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/plugins/scrollbars.client.ts",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "export default defineNuxtPlugin(() => {\n  if (navigator && navigator.userAgent && navigator.userAgent.match(/Win[a-z0-9]*;/)) {\n    document.documentElement.classList.add('docus-scrollbars')\n  }\n})\n",
+      "start": 1707165953877,
+      "end": 1707165954021,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1707165954021,
+      "end": 1707165954021,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1707165954021,
+      "end": 1707165954021,
+      "order": "pre"
+    },
+    {
+      "name": "pinceau-transforms",
+      "result": "export default defineNuxtPlugin(() => {\n  if (navigator && navigator.userAgent && navigator.userAgent.match(/Win[a-z0-9]*;/)) {\n    document.documentElement.classList.add('docus-scrollbars')\n  }\n})\n",
+      "start": 1707165954021,
+      "end": 1707165954021,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1707165954021,
+      "end": 1707165954021,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1707165954021,
+      "end": 1707165954021,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1707165954021,
+      "end": 1707165954021,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "export default defineNuxtPlugin(() => {\n  if (navigator && navigator.userAgent && navigator.userAgent.match(/Win[a-z0-9]*;/)) {\n    document.documentElement.classList.add(\"docus-scrollbars\");\n  }\n});\n",
+      "start": 1707165954022,
+      "end": 1707165954107,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/plugins/scrollbars.client.ts"
+        ],
+        "sourcesContent": [
+          "export default defineNuxtPlugin(() => {\n  if (navigator && navigator.userAgent && navigator.userAgent.match(/Win[a-z0-9]*;/)) {\n    document.documentElement.classList.add('docus-scrollbars')\n  }\n})\n"
+        ],
+        "mappings": "AAAA,eAAe,iBAAiB,MAAM;AACpC,MAAI,aAAa,UAAU,aAAa,UAAU,UAAU,MAAM,eAAe,GAAG;AAClF,aAAS,gBAAgB,UAAU,IAAI,kBAAkB;AAAA,EAC3D;AACF,CAAC;",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:json",
+      "start": 1707165954107,
+      "end": 1707165954107,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1707165954107,
+      "end": 1707165954107,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1707165954107,
+      "end": 1707165954107,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1707165954107,
+      "end": 1707165954107,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1707165954108,
+      "end": 1707165954108,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1707165954109,
+      "end": 1707165954109,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1707165954109,
+      "end": 1707165954109,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1707165954110,
+      "end": 1707165954110,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1707165954110,
+      "end": 1707165954111,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1707165954112,
+      "end": 1707165954112,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1707165954115,
+      "end": 1707165954115,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1707165954119,
+      "end": 1707165954119,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1707165954119,
+      "end": 1707165954119,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1707165954119,
+      "end": 1707165954119,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1707165954119,
+      "end": 1707165954119,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1707165954119,
+      "end": 1707165954119,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1707165954119,
+      "end": 1707165954119,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1707165954119,
+      "end": 1707165954119,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1707165954119,
+      "end": 1707165954119,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "result": "import { defineNuxtPlugin } from '#app/nuxt';\nexport default defineNuxtPlugin(() => {\n  if (navigator && navigator.userAgent && navigator.userAgent.match(/Win[a-z0-9]*;/)) {\n    document.documentElement.classList.add(\"docus-scrollbars\");\n  }\n});\n",
+      "start": 1707165954121,
+      "end": 1707165954122,
+      "order": "post",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": ";AAAA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACvC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACvF,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC/D,CAAC,CAAC,CAAC;AACH,CAAC,CAAC,CAAC;"
+      }
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1707165954122,
+      "end": 1707165954123,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1707165954123,
+      "end": 1707165954123,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1707165954123,
+      "end": 1707165954123,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1707165954123,
+      "end": 1707165954123,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1707165954123,
+      "end": 1707165954123,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1707165954123,
+      "end": 1707165954123,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1707165954123,
+      "end": 1707165954123,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1707165954123,
+      "end": 1707165954123,
+      "order": "normal"
+    }
+  ]
+}

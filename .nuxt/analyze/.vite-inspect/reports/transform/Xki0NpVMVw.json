@@ -1,0 +1,236 @@
+{
+  "resolvedId": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/CodeBlock.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<script setup lang=\"ts\">\ndefineProps({\n  /**\n   * Label to display for the tab\n   */\n  label: {\n    type: String,\n    required: true\n  },\n  /**\n   * Select which tab should be active\n   * TODO: seems like it's not used \n   */\n  active: {\n    type: Boolean,\n    default: false\n  },\n  /**\n   * Preview block are bordered and have small padding.\n   * TODO: seems like it's not used\n   */\n  preview: {\n    type: Boolean,\n    default: false\n  }\n})\n</script>\n\n<template>\n  <div\n    class=\"code-block\"\n    :class=\"{\n      active,\n      'rounded-lg p-4': preview,\n    }\"\n  >\n    <slot />\n  </div>\n</template>\n\n<style scoped>\n.code-block {\n  display: none;\n}\n\n.code-block.active {\n  display: block;\n}\n</style>\n",
+      "start": 1707165955269,
+      "end": 1707165955402,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1707165955402,
+      "end": 1707165955402,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1707165955402,
+      "end": 1707165955402,
+      "order": "pre"
+    },
+    {
+      "name": "pinceau-transforms",
+      "result": "<script setup lang=\"ts\">\ndefineProps({\n  /**\n   * Label to display for the tab\n   */\n  label: {\n    type: String,\n    required: true\n  },\n  /**\n   * Select which tab should be active\n   * TODO: seems like it's not used \n   */\n  active: {\n    type: Boolean,\n    default: false\n  },\n  /**\n   * Preview block are bordered and have small padding.\n   * TODO: seems like it's not used\n   */\n  preview: {\n    type: Boolean,\n    default: false\n  }\n})\n</script>\n\n<template>\n  <div\n    class=\"code-block\"\n    :class=\"{\n      active,\n      'rounded-lg p-4': preview,\n    }\"\n  >\n    <slot />\n  </div>\n</template>\n\n<style scoped>\n\n.code-block {\n  display: none;\n}\n\n.code-block.active {\n  display: block;\n}\n\n</style>\n",
+      "start": 1707165955402,
+      "end": 1707165955403,
+      "order": "pre",
+      "sourcemaps": {
+        "version": 3,
+        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/CodeBlock.vue",
+        "sources": [
+          "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/CodeBlock.vue"
+        ],
+        "names": [],
+        "mappings": "AAAA,wBAAwB;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,AA0BxB;AACA;AACA,UAAU;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,AAUV;AACA;AACA;;;;;;;;;;AAQA;"
+      }
+    },
+    {
+      "name": "content-slot",
+      "start": 1707165955403,
+      "end": 1707165955403,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1707165955403,
+      "end": 1707165955403,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1707165955403,
+      "end": 1707165955403,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1707165955403,
+      "end": 1707165955403,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1707165955403,
+      "end": 1707165955403,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1707165955403,
+      "end": 1707165955403,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import _sfc_main from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/CodeBlock.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/CodeBlock.vue?vue&type=script&setup=true&lang.ts\";\nimport \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/CodeBlock.vue?vue&type=style&index=0&scoped=22d00392&lang.css\";\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"__scopeId\", \"data-v-22d00392\"]]);\n",
+      "start": 1707165955403,
+      "end": 1707165955411,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1707165955411,
+      "end": 1707165955411,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1707165955411,
+      "end": 1707165955411,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1707165955411,
+      "end": 1707165955411,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1707165955411,
+      "end": 1707165955411,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1707165955411,
+      "end": 1707165955411,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1707165955411,
+      "end": 1707165955411,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1707165955411,
+      "end": 1707165955411,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1707165955411,
+      "end": 1707165955411,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1707165955411,
+      "end": 1707165955411,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1707165955411,
+      "end": 1707165955411,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1707165955411,
+      "end": 1707165955411,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1707165955411,
+      "end": 1707165955411,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1707165955411,
+      "end": 1707165955411,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1707165955411,
+      "end": 1707165955411,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1707165955411,
+      "end": 1707165955411,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1707165955411,
+      "end": 1707165955411,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1707165955411,
+      "end": 1707165955412,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1707165955412,
+      "end": 1707165955412,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1707165955412,
+      "end": 1707165955412,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1707165955412,
+      "end": 1707165955412,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1707165955412,
+      "end": 1707165955412,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1707165955412,
+      "end": 1707165955412,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1707165955412,
+      "end": 1707165955412,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1707165955412,
+      "end": 1707165955412,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1707165955412,
+      "end": 1707165955412,
+      "order": "normal"
+    }
+  ]
+}

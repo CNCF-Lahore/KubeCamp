@@ -54,7 +54,7 @@ const defineAppConfig = (config) => config;
 
 const appConfig0 = defineAppConfig({
   docus: {
-    title: "Docus",
+    title: "Kubernetes Bootcamp",
     description: "The best place to start your documentation.",
     image: "https://user-images.githubusercontent.com/904724/185365452-87b7ca7b-6030-4813-a2db-5e65c785bf88.png",
     socials: {
@@ -465,7 +465,7 @@ const _inlineRuntimeConfig = {
       "properties": {
         "nuxtIcon": {
           "title": "Nuxt Icon",
-          "description": "Configure the defaults of Nuxt Icon",
+          "description": "Configure Nuxt Icon module preferences.",
           "id": "#appConfig/nuxtIcon",
           "properties": {
             "size": {
@@ -481,7 +481,7 @@ const _inlineRuntimeConfig = {
             },
             "class": {
               "title": "CSS Class",
-              "description": "Set the default CSS class",
+              "description": "Set the default CSS class.",
               "tags": [
                 "@studioIcon material-symbols:css"
               ],
@@ -493,20 +493,58 @@ const _inlineRuntimeConfig = {
               "title": "Icon aliases",
               "description": "Define Icon aliases to update them easily without code changes.",
               "tags": [
-                "@studioIcon material-symbols:star-rounded",
-                "@studioInputObjectValueType icon"
+                "@studioIcon material-symbols:star-rounded"
               ],
               "tsType": "{ [alias: string]: string }",
               "id": "#appConfig/nuxtIcon/aliases",
               "default": {},
               "type": "object"
+            },
+            "iconifyApiOptions": {
+              "title": "Iconify API Options",
+              "description": "Define preferences for Iconify API fetch.",
+              "tags": [
+                "@studioIcon material-symbols:tv-options-input-settings"
+              ],
+              "id": "#appConfig/nuxtIcon/iconifyApiOptions",
+              "properties": {
+                "url": {
+                  "title": "Iconify API URL",
+                  "description": "Define a custom Iconify API URL. Useful if you want to use a self-hosted Iconify API. Learn more: https://iconify.design/docs/api.",
+                  "tags": [
+                    "@studioIcon material-symbols:api"
+                  ],
+                  "id": "#appConfig/nuxtIcon/iconifyApiOptions/url",
+                  "default": "https://api.iconify.design",
+                  "type": "string"
+                },
+                "publicApiFallback": {
+                  "title": "Public Iconify API fallback",
+                  "description": "Define if the public Iconify API should be used as fallback.",
+                  "tags": [
+                    "@studioIcon material-symbols:public"
+                  ],
+                  "id": "#appConfig/nuxtIcon/iconifyApiOptions/publicApiFallback",
+                  "default": false,
+                  "type": "boolean"
+                }
+              },
+              "type": "object",
+              "default": {
+                "url": "https://api.iconify.design",
+                "publicApiFallback": false
+              }
             }
           },
           "type": "object",
           "default": {
             "size": "1em",
             "class": "",
-            "aliases": {}
+            "aliases": {},
+            "iconifyApiOptions": {
+              "url": "https://api.iconify.design",
+              "publicApiFallback": false
+            }
           }
         },
         "prose": {
@@ -1295,7 +1333,11 @@ const _inlineRuntimeConfig = {
         "nuxtIcon": {
           "size": "1em",
           "class": "",
-          "aliases": {}
+          "aliases": {},
+          "iconifyApiOptions": {
+            "url": "https://api.iconify.design",
+            "publicApiFallback": false
+          }
         },
         "prose": {
           "copyButton": {
@@ -1378,7 +1420,11 @@ const _inlineRuntimeConfig = {
       "nuxtIcon": {
         "size": "1em",
         "class": "",
-        "aliases": {}
+        "aliases": {},
+        "iconifyApiOptions": {
+          "url": "https://api.iconify.design",
+          "publicApiFallback": false
+        }
       },
       "prose": {
         "copyButton": {

@@ -1,0 +1,234 @@
+{
+  "resolvedId": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/TabsHeader.vue?vue&type=script&setup=true&lang.ts",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, toDisplayString as _toDisplayString, normalizeClass as _normalizeClass, createElementVNode as _createElementVNode, createCommentVNode as _createCommentVNode, renderSlot as _renderSlot, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-9b59cc28\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"tabs-header\" }\nconst _hoisted_2 = [\"onClick\"]\nconst _hoisted_3 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"span\", { class: \"tab\" }, null, -1))\nconst _hoisted_4 = [\n  _hoisted_3\n]\n\nimport { nextTick, ref, watch } from 'vue'\nimport type { PropType } from 'vue'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'TabsHeader',\n  props: {\n  tabs: {\n    type: Array as PropType<{ label: string }[]>,\n    required: true\n  },\n  activeTabIndex: {\n    type: Number,\n    required: true\n  }\n},\n  emits: ['update:activeTabIndex'],\n  setup(__props, { emit: __emit }) {\n\nconst props = __props\n\nconst emit = __emit\n\nconst tabsRef = ref()\n\nconst highlightUnderline = ref()\n\nconst updateHighlightUnderlinePosition = (activeTab: any) => {\n  if (!activeTab) {\n    return\n  }\n\n  highlightUnderline.value.style.insetInlineStart = `${activeTab.offsetLeft}px`\n  highlightUnderline.value.style.width = `${activeTab.clientWidth}px`\n}\n\nconst updateTabs = ($event: any, i: any) => {\n  emit('update:activeTabIndex', i)\n  nextTick(() => updateHighlightUnderlinePosition($event.target))\n}\n\nwatch(\n  tabsRef,\n  (newVal) => {\n    if (!newVal) {\n      return\n    }\n\n    setTimeout(() => {\n      updateHighlightUnderlinePosition(tabsRef.value.children[props.activeTabIndex])\n    }, 50)\n  },\n  {\n    immediate: true\n  }\n)\n\nreturn (_ctx: any,_cache: any) => {\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    (__props.tabs)\n      ? (_openBlock(), _createElementBlock(\"div\", {\n          key: 0,\n          ref_key: \"tabsRef\",\n          ref: tabsRef,\n          class: \"tabs\"\n        }, [\n          (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(__props.tabs, ({ label }, i) => {\n            return (_openBlock(), _createElementBlock(\"button\", {\n              key: `${i}${label}`,\n              class: _normalizeClass([__props.activeTabIndex === i ? 'active' : 'not-active']),\n              onClick: ($event: any) => (updateTabs($event, i))\n            }, _toDisplayString(label), 11, _hoisted_2))\n          }), 128)),\n          _createElementVNode(\"span\", {\n            ref_key: \"highlightUnderline\",\n            ref: highlightUnderline,\n            class: \"highlight-underline\"\n          }, _hoisted_4, 512)\n        ], 512))\n      : _createCommentVNode(\"\", true),\n    _renderSlot(_ctx.$slots, \"footer\", {}, undefined, true)\n  ]))\n}\n}\n\n})",
+      "start": 1707165956596,
+      "end": 1707165956596
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1707165956596,
+      "end": 1707165956597,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1707165956602,
+      "end": 1707165956602,
+      "order": "pre"
+    },
+    {
+      "name": "pinceau-transforms",
+      "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, toDisplayString as _toDisplayString, normalizeClass as _normalizeClass, createElementVNode as _createElementVNode, createCommentVNode as _createCommentVNode, renderSlot as _renderSlot, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-9b59cc28\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"tabs-header\" }\nconst _hoisted_2 = [\"onClick\"]\nconst _hoisted_3 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"span\", { class: \"tab\" }, null, -1))\nconst _hoisted_4 = [\n  _hoisted_3\n]\n\nimport { nextTick, ref, watch } from 'vue'\nimport type { PropType } from 'vue'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'TabsHeader',\n  props: {\n  tabs: {\n    type: Array as PropType<{ label: string }[]>,\n    required: true\n  },\n  activeTabIndex: {\n    type: Number,\n    required: true\n  }\n},\n  emits: ['update:activeTabIndex'],\n  setup(__props, { emit: __emit }) {\n\nconst props = __props\n\nconst emit = __emit\n\nconst tabsRef = ref()\n\nconst highlightUnderline = ref()\n\nconst updateHighlightUnderlinePosition = (activeTab: any) => {\n  if (!activeTab) {\n    return\n  }\n\n  highlightUnderline.value.style.insetInlineStart = `${activeTab.offsetLeft}px`\n  highlightUnderline.value.style.width = `${activeTab.clientWidth}px`\n}\n\nconst updateTabs = ($event: any, i: any) => {\n  emit('update:activeTabIndex', i)\n  nextTick(() => updateHighlightUnderlinePosition($event.target))\n}\n\nwatch(\n  tabsRef,\n  (newVal) => {\n    if (!newVal) {\n      return\n    }\n\n    setTimeout(() => {\n      updateHighlightUnderlinePosition(tabsRef.value.children[props.activeTabIndex])\n    }, 50)\n  },\n  {\n    immediate: true\n  }\n)\n\nreturn (_ctx: any,_cache: any) => {\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    (__props.tabs)\n      ? (_openBlock(), _createElementBlock(\"div\", {\n          key: 0,\n          ref_key: \"tabsRef\",\n          ref: tabsRef,\n          class: \"tabs\"\n        }, [\n          (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(__props.tabs, ({ label }, i) => {\n            return (_openBlock(), _createElementBlock(\"button\", {\n              key: `${i}${label}`,\n              class: _normalizeClass([__props.activeTabIndex === i ? 'active' : 'not-active']),\n              onClick: ($event: any) => (updateTabs($event, i))\n            }, _toDisplayString(label), 11, _hoisted_2))\n          }), 128)),\n          _createElementVNode(\"span\", {\n            ref_key: \"highlightUnderline\",\n            ref: highlightUnderline,\n            class: \"highlight-underline\"\n          }, _hoisted_4, 512)\n        ], 512))\n      : _createCommentVNode(\"\", true),\n    _renderSlot(_ctx.$slots, \"footer\", {}, undefined, true)\n  ]))\n}\n}\n\n})",
+      "start": 1707165956604,
+      "end": 1707165956604,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1707165956604,
+      "end": 1707165956604,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1707165956604,
+      "end": 1707165956604,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1707165956604,
+      "end": 1707165956604,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, toDisplayString as _toDisplayString, normalizeClass as _normalizeClass, createElementVNode as _createElementVNode, createCommentVNode as _createCommentVNode, renderSlot as _renderSlot, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-9b59cc28\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = { class: \"tabs-header\" };\nconst _hoisted_2 = [\"onClick\"];\nconst _hoisted_3 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"span\", { class: \"tab\" }, null, -1));\nconst _hoisted_4 = [\n  _hoisted_3\n];\nimport { nextTick, ref, watch } from \"vue\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"TabsHeader\",\n  props: {\n    tabs: {\n      type: Array,\n      required: true\n    },\n    activeTabIndex: {\n      type: Number,\n      required: true\n    }\n  },\n  emits: [\"update:activeTabIndex\"],\n  setup(__props, { emit: __emit }) {\n    const props = __props;\n    const emit = __emit;\n    const tabsRef = ref();\n    const highlightUnderline = ref();\n    const updateHighlightUnderlinePosition = (activeTab) => {\n      if (!activeTab) {\n        return;\n      }\n      highlightUnderline.value.style.insetInlineStart = `${activeTab.offsetLeft}px`;\n      highlightUnderline.value.style.width = `${activeTab.clientWidth}px`;\n    };\n    const updateTabs = ($event, i) => {\n      emit(\"update:activeTabIndex\", i);\n      nextTick(() => updateHighlightUnderlinePosition($event.target));\n    };\n    watch(\n      tabsRef,\n      (newVal) => {\n        if (!newVal) {\n          return;\n        }\n        setTimeout(() => {\n          updateHighlightUnderlinePosition(tabsRef.value.children[props.activeTabIndex]);\n        }, 50);\n      },\n      {\n        immediate: true\n      }\n    );\n    return (_ctx, _cache) => {\n      return _openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        __props.tabs ? (_openBlock(), _createElementBlock(\"div\", {\n          key: 0,\n          ref_key: \"tabsRef\",\n          ref: tabsRef,\n          class: \"tabs\"\n        }, [\n          (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(__props.tabs, ({ label }, i) => {\n            return _openBlock(), _createElementBlock(\"button\", {\n              key: `${i}${label}`,\n              class: _normalizeClass([__props.activeTabIndex === i ? \"active\" : \"not-active\"]),\n              onClick: ($event) => updateTabs($event, i)\n            }, _toDisplayString(label), 11, _hoisted_2);\n          }), 128)),\n          _createElementVNode(\"span\", {\n            ref_key: \"highlightUnderline\",\n            ref: highlightUnderline,\n            class: \"highlight-underline\"\n          }, _hoisted_4, 512)\n        ], 512)) : _createCommentVNode(\"\", true),\n        _renderSlot(_ctx.$slots, \"footer\", {}, void 0, true)\n      ]);\n    };\n  }\n});\n",
+      "start": 1707165956604,
+      "end": 1707165956923,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/TabsHeader.vue?vue&type=script&setup=true&lang.ts"
+        ],
+        "sourcesContent": [
+          "import { defineComponent as _defineComponent } from 'vue'\nimport { renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, toDisplayString as _toDisplayString, normalizeClass as _normalizeClass, createElementVNode as _createElementVNode, createCommentVNode as _createCommentVNode, renderSlot as _renderSlot, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-9b59cc28\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"tabs-header\" }\nconst _hoisted_2 = [\"onClick\"]\nconst _hoisted_3 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"span\", { class: \"tab\" }, null, -1))\nconst _hoisted_4 = [\n  _hoisted_3\n]\n\nimport { nextTick, ref, watch } from 'vue'\nimport type { PropType } from 'vue'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'TabsHeader',\n  props: {\n  tabs: {\n    type: Array as PropType<{ label: string }[]>,\n    required: true\n  },\n  activeTabIndex: {\n    type: Number,\n    required: true\n  }\n},\n  emits: ['update:activeTabIndex'],\n  setup(__props, { emit: __emit }) {\n\nconst props = __props\n\nconst emit = __emit\n\nconst tabsRef = ref()\n\nconst highlightUnderline = ref()\n\nconst updateHighlightUnderlinePosition = (activeTab: any) => {\n  if (!activeTab) {\n    return\n  }\n\n  highlightUnderline.value.style.insetInlineStart = `${activeTab.offsetLeft}px`\n  highlightUnderline.value.style.width = `${activeTab.clientWidth}px`\n}\n\nconst updateTabs = ($event: any, i: any) => {\n  emit('update:activeTabIndex', i)\n  nextTick(() => updateHighlightUnderlinePosition($event.target))\n}\n\nwatch(\n  tabsRef,\n  (newVal) => {\n    if (!newVal) {\n      return\n    }\n\n    setTimeout(() => {\n      updateHighlightUnderlinePosition(tabsRef.value.children[props.activeTabIndex])\n    }, 50)\n  },\n  {\n    immediate: true\n  }\n)\n\nreturn (_ctx: any,_cache: any) => {\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    (__props.tabs)\n      ? (_openBlock(), _createElementBlock(\"div\", {\n          key: 0,\n          ref_key: \"tabsRef\",\n          ref: tabsRef,\n          class: \"tabs\"\n        }, [\n          (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(__props.tabs, ({ label }, i) => {\n            return (_openBlock(), _createElementBlock(\"button\", {\n              key: `${i}${label}`,\n              class: _normalizeClass([__props.activeTabIndex === i ? 'active' : 'not-active']),\n              onClick: ($event: any) => (updateTabs($event, i))\n            }, _toDisplayString(label), 11, _hoisted_2))\n          }), 128)),\n          _createElementVNode(\"span\", {\n            ref_key: \"highlightUnderline\",\n            ref: highlightUnderline,\n            class: \"highlight-underline\"\n          }, _hoisted_4, 512)\n        ], 512))\n      : _createCommentVNode(\"\", true),\n    _renderSlot(_ctx.$slots, \"footer\", {}, undefined, true)\n  ]))\n}\n}\n\n})"
+        ],
+        "mappings": "AAAA,SAAS,mBAAmB,wBAAwB;AACpD,SAAS,cAAc,aAAa,YAAY,WAAW,aAAa,YAAY,sBAAsB,qBAAqB,mBAAmB,kBAAkB,kBAAkB,iBAAiB,sBAAsB,qBAAqB,sBAAsB,qBAAqB,cAAc,aAAa,eAAe,cAAc,cAAc,mBAAmB;AAEtX,MAAM,eAAe,QAAM,aAAa,iBAAiB,GAAE,IAAE,EAAE,GAAE,YAAY,GAAE;AAC/E,MAAM,aAAa,EAAE,OAAO,cAAc;AAC1C,MAAM,aAAa,CAAC,SAAS;AAC7B,MAAM,aAA2B,6BAAa,MAAmB,oCAAoB,QAAQ,EAAE,OAAO,MAAM,GAAG,MAAM,EAAE,CAAC;AACxH,MAAM,aAAa;AAAA,EACjB;AACF;AAEA,SAAS,UAAU,KAAK,aAAa;AAIrC,eAA4B,iCAAiB;AAAA,EAC3C,QAAQ;AAAA,EACR,OAAO;AAAA,IACP,MAAM;AAAA,MACJ,MAAM;AAAA,MACN,UAAU;AAAA,IACZ;AAAA,IACA,gBAAgB;AAAA,MACd,MAAM;AAAA,MACN,UAAU;AAAA,IACZ;AAAA,EACF;AAAA,EACE,OAAO,CAAC,uBAAuB;AAAA,EAC/B,MAAM,SAAS,EAAE,MAAM,OAAO,GAAG;AAEnC,UAAM,QAAQ;AAEd,UAAM,OAAO;AAEb,UAAM,UAAU,IAAI;AAEpB,UAAM,qBAAqB,IAAI;AAE/B,UAAM,mCAAmC,CAAC,cAAmB;AAC3D,UAAI,CAAC,WAAW;AACd;AAAA,MACF;AAEA,yBAAmB,MAAM,MAAM,mBAAmB,GAAG,UAAU,UAAU;AACzE,yBAAmB,MAAM,MAAM,QAAQ,GAAG,UAAU,WAAW;AAAA,IACjE;AAEA,UAAM,aAAa,CAAC,QAAa,MAAW;AAC1C,WAAK,yBAAyB,CAAC;AAC/B,eAAS,MAAM,iCAAiC,OAAO,MAAM,CAAC;AAAA,IAChE;AAEA;AAAA,MACE;AAAA,MACA,CAAC,WAAW;AACV,YAAI,CAAC,QAAQ;AACX;AAAA,QACF;AAEA,mBAAW,MAAM;AACf,2CAAiC,QAAQ,MAAM,SAAS,MAAM,cAAc,CAAC;AAAA,QAC/E,GAAG,EAAE;AAAA,MACP;AAAA,MACA;AAAA,QACE,WAAW;AAAA,MACb;AAAA,IACF;AAEA,WAAO,CAAC,MAAU,WAAgB;AAChC,aAAQ,WAAW,GAAG,oBAAoB,OAAO,YAAY;AAAA,QAC1D,QAAQ,QACJ,WAAW,GAAG,oBAAoB,OAAO;AAAA,UACxC,KAAK;AAAA,UACL,SAAS;AAAA,UACT,KAAK;AAAA,UACL,OAAO;AAAA,QACT,GAAG;AAAA,WACA,WAAW,IAAI,GAAG,oBAAoB,WAAW,MAAM,YAAY,QAAQ,MAAM,CAAC,EAAE,MAAM,GAAG,MAAM;AAClG,mBAAQ,WAAW,GAAG,oBAAoB,UAAU;AAAA,cAClD,KAAK,GAAG,CAAC,GAAG,KAAK;AAAA,cACjB,OAAO,gBAAgB,CAAC,QAAQ,mBAAmB,IAAI,WAAW,YAAY,CAAC;AAAA,cAC/E,SAAS,CAAC,WAAiB,WAAW,QAAQ,CAAC;AAAA,YACjD,GAAG,iBAAiB,KAAK,GAAG,IAAI,UAAU;AAAA,UAC5C,CAAC,GAAG,GAAG;AAAA,UACP,oBAAoB,QAAQ;AAAA,YAC1B,SAAS;AAAA,YACT,KAAK;AAAA,YACL,OAAO;AAAA,UACT,GAAG,YAAY,GAAG;AAAA,QACpB,GAAG,GAAG,KACN,oBAAoB,IAAI,IAAI;AAAA,QAChC,YAAY,KAAK,QAAQ,UAAU,CAAC,GAAG,QAAW,IAAI;AAAA,MACxD,CAAC;AAAA,IACH;AAAA,EACA;AAEA,CAAC;",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:json",
+      "start": 1707165956924,
+      "end": 1707165956924,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1707165956924,
+      "end": 1707165956927,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1707165956927,
+      "end": 1707165956927,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1707165956927,
+      "end": 1707165956927,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1707165956928,
+      "end": 1707165956928,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1707165956928,
+      "end": 1707165956928,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1707165956928,
+      "end": 1707165956928,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1707165956928,
+      "end": 1707165956929,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1707165956929,
+      "end": 1707165956929,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1707165956929,
+      "end": 1707165956929,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1707165956929,
+      "end": 1707165956929,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1707165956929,
+      "end": 1707165956929,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1707165956929,
+      "end": 1707165956929,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1707165956929,
+      "end": 1707165956929,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1707165956929,
+      "end": 1707165956929,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1707165956929,
+      "end": 1707165956929,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1707165956929,
+      "end": 1707165956929,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1707165956930,
+      "end": 1707165956930,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1707165956930,
+      "end": 1707165956930,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1707165956930,
+      "end": 1707165956939,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1707165956939,
+      "end": 1707165956939,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1707165956939,
+      "end": 1707165956939,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1707165956939,
+      "end": 1707165956939,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1707165956939,
+      "end": 1707165956939,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1707165956940,
+      "end": 1707165956940,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1707165956940,
+      "end": 1707165956941,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1707165956941,
+      "end": 1707165956941,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1707165956941,
+      "end": 1707165956941,
+      "order": "normal"
+    }
+  ]
+}

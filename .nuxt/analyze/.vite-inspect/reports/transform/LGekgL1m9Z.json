@@ -1,0 +1,240 @@
+{
+  "resolvedId": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Badge.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<script setup lang=\"ts\">\ndefineProps({\n  /**\n   * @values info, success, warning, danger\n   */\n  type: {\n    type: String,\n    default: 'info',\n    validator (value: string) {\n      return ['info', 'success', 'warning', 'danger', 'primary'].includes(value)\n    }\n  }\n})\n</script>\n\n<template>\n  <span :class=\"[type]\" class=\"badge\">\n    <ContentSlot :use=\"$slots.default\" unwrap=\"p\" />\n  </span>\n</template>\n\n<style scoped lang=\"ts\">\ncss({\n  '.badge': {\n    display: 'inline-flex',\n    alignItems: 'center',\n    px: '{space.3}',\n    py: '{space.1}',\n    fontSize: '{text.base.fontSize}',\n    lineHeight: '{text.base.lineHeight}',\n    letterSpacing: '{letterSpacing.tight}',\n    borderRadius: '{radii.full}',\n    border: '1px solid',\n\n    '&.primary': {\n      stateColors: 'primary'\n    },\n    '&.info': {\n      stateColors: 'info'\n    },\n    '&.success': {\n      stateColors: 'success'\n    },\n    '&.warning': {\n      stateColors: 'warning'\n    },\n    '&.danger': {\n      stateColors: 'danger'\n    }\n  }\n})\n</style>\n",
+      "start": 1707165955255,
+      "end": 1707165955381,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1707165955381,
+      "end": 1707165955381,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1707165955381,
+      "end": 1707165955381,
+      "order": "pre"
+    },
+    {
+      "name": "pinceau-transforms",
+      "result": "<script setup lang=\"ts\">\ndefineProps({\n  /**\n   * @values info, success, warning, danger\n   */\n  type: {\n    type: String,\n    default: 'info',\n    validator (value: string) {\n      return ['info', 'success', 'warning', 'danger', 'primary'].includes(value)\n    }\n  }\n})\n</script>\n\n<template>\n  <span :class=\"[type]\" class=\"badge\">\n    <ContentSlot :use=\"$slots.default\" unwrap=\"p\" />\n  </span>\n</template>\n\n<style scoped lang=\"postcss\" transformed>\n.badge{display:inline-flex;align-items:center;padding-left:var(--space-3);padding-right:var(--space-3);padding-top:var(--space-1);padding-bottom:var(--space-1);font-size:var(--text-base-fontSize);line-height:var(--text-base-lineHeight);letter-spacing:var(--letterSpacing-tight);border-radius:var(--radii-full);border:1px solid;}.badge.primary{color:var(--elements-state-primary-color-primary) !important;background-color:var(--elements-state-primary-backgroundColor-primary) !important;border-color:var(--elements-state-primary-borderColor-primary) !important;}.badge.primary :deep(p code){color:var(--elements-state-primary-color-secondary) !important;background-color:var(--elements-state-primary-backgroundColor-secondary) !important;}.badge.primary :deep(code){color:var(--elements-state-primary-color-primary) !important;background-color:var(--elements-state-primary-backgroundColor-secondary) !important;}.badge.primary :deep(a code){border-color:var(--elements-state-primary-borderColor-primary) !important;}.badge.primary :deep(a){border-color:currentColor;}.badge.primary :deep(a) code{background-color:var(--elements-state-primary-backgroundColor-primary) !important;}.badge.primary :deep(a):hover{color:var(--elements-state-primary-color-secondary) !important;border-color:currentColor !important;}.badge.primary :deep(a):hover code{background-color:var(--elements-state-primary-backgroundColor-secondary) !important;color:var(--elements-state-primary-color-secondary) !important;border-color:var(--elements-state-primary-borderColor-secondary) !important;}.badge.info{color:var(--elements-state-info-color-primary) !important;background-color:var(--elements-state-info-backgroundColor-primary) !important;border-color:var(--elements-state-info-borderColor-primary) !important;}.badge.info :deep(p code){color:var(--elements-state-info-color-secondary) !important;background-color:var(--elements-state-info-backgroundColor-secondary) !important;}.badge.info :deep(code){color:var(--elements-state-info-color-primary) !important;background-color:var(--elements-state-info-backgroundColor-secondary) !important;}.badge.info :deep(a code){border-color:var(--elements-state-info-borderColor-primary) !important;}.badge.info :deep(a){border-color:currentColor;}.badge.info :deep(a) code{background-color:var(--elements-state-info-backgroundColor-primary) !important;}.badge.info :deep(a):hover{color:var(--elements-state-info-color-secondary) !important;border-color:currentColor !important;}.badge.info :deep(a):hover code{background-color:var(--elements-state-info-backgroundColor-secondary) !important;color:var(--elements-state-info-color-secondary) !important;border-color:var(--elements-state-info-borderColor-secondary) !important;}.badge.success{color:var(--elements-state-success-color-primary) !important;background-color:var(--elements-state-success-backgroundColor-primary) !important;border-color:var(--elements-state-success-borderColor-primary) !important;}.badge.success :deep(p code){color:var(--elements-state-success-color-secondary) !important;background-color:var(--elements-state-success-backgroundColor-secondary) !important;}.badge.success :deep(code){color:var(--elements-state-success-color-primary) !important;background-color:var(--elements-state-success-backgroundColor-secondary) !important;}.badge.success :deep(a code){border-color:var(--elements-state-success-borderColor-primary) !important;}.badge.success :deep(a){border-color:currentColor;}.badge.success :deep(a) code{background-color:var(--elements-state-success-backgroundColor-primary) !important;}.badge.success :deep(a):hover{color:var(--elements-state-success-color-secondary) !important;border-color:currentColor !important;}.badge.success :deep(a):hover code{background-color:var(--elements-state-success-backgroundColor-secondary) !important;color:var(--elements-state-success-color-secondary) !important;border-color:var(--elements-state-success-borderColor-secondary) !important;}.badge.warning{color:var(--elements-state-warning-color-primary) !important;background-color:var(--elements-state-warning-backgroundColor-primary) !important;border-color:var(--elements-state-warning-borderColor-primary) !important;}.badge.warning :deep(p code){color:var(--elements-state-warning-color-secondary) !important;background-color:var(--elements-state-warning-backgroundColor-secondary) !important;}.badge.warning :deep(code){color:var(--elements-state-warning-color-primary) !important;background-color:var(--elements-state-warning-backgroundColor-secondary) !important;}.badge.warning :deep(a code){border-color:var(--elements-state-warning-borderColor-primary) !important;}.badge.warning :deep(a){border-color:currentColor;}.badge.warning :deep(a) code{background-color:var(--elements-state-warning-backgroundColor-primary) !important;}.badge.warning :deep(a):hover{color:var(--elements-state-warning-color-secondary) !important;border-color:currentColor !important;}.badge.warning :deep(a):hover code{background-color:var(--elements-state-warning-backgroundColor-secondary) !important;color:var(--elements-state-warning-color-secondary) !important;border-color:var(--elements-state-warning-borderColor-secondary) !important;}.badge.danger{color:var(--elements-state-danger-color-primary) !important;background-color:var(--elements-state-danger-backgroundColor-primary) !important;border-color:var(--elements-state-danger-borderColor-primary) !important;}.badge.danger :deep(p code){color:var(--elements-state-danger-color-secondary) !important;background-color:var(--elements-state-danger-backgroundColor-secondary) !important;}.badge.danger :deep(code){color:var(--elements-state-danger-color-primary) !important;background-color:var(--elements-state-danger-backgroundColor-secondary) !important;}.badge.danger :deep(a code){border-color:var(--elements-state-danger-borderColor-primary) !important;}.badge.danger :deep(a){border-color:currentColor;}.badge.danger :deep(a) code{background-color:var(--elements-state-danger-backgroundColor-primary) !important;}.badge.danger :deep(a):hover{color:var(--elements-state-danger-color-secondary) !important;border-color:currentColor !important;}.badge.danger :deep(a):hover code{background-color:var(--elements-state-danger-backgroundColor-secondary) !important;color:var(--elements-state-danger-color-secondary) !important;border-color:var(--elements-state-danger-borderColor-secondary) !important;}\n</style>\n",
+      "start": 1707165955381,
+      "end": 1707165955386,
+      "order": "pre",
+      "sourcemaps": {
+        "version": 3,
+        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Badge.vue",
+        "sources": [
+          "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Badge.vue"
+        ],
+        "names": [],
+        "mappings": "AAAA,wBAAwB;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,AAaxB;AACA;AACA,UAAU;AAAA;AAAA;AAAA;AAAA,AAIV;AACA;AACA;;AA8BA;"
+      }
+    },
+    {
+      "name": "content-slot",
+      "result": "<script setup lang=\"ts\">\ndefineProps({\n  /**\n   * @values info, success, warning, danger\n   */\n  type: {\n    type: String,\n    default: 'info',\n    validator (value: string) {\n      return ['info', 'success', 'warning', 'danger', 'primary'].includes(value)\n    }\n  }\n})\n</script>\n\n<template>\n  <span :class=\"[type]\" class=\"badge\">\n    <MDCSlot  name=\"default\" unwrap=\"p\" />\n  </span>\n</template>\n\n<style scoped lang=\"postcss\" transformed>\n.badge{display:inline-flex;align-items:center;padding-left:var(--space-3);padding-right:var(--space-3);padding-top:var(--space-1);padding-bottom:var(--space-1);font-size:var(--text-base-fontSize);line-height:var(--text-base-lineHeight);letter-spacing:var(--letterSpacing-tight);border-radius:var(--radii-full);border:1px solid;}.badge.primary{color:var(--elements-state-primary-color-primary) !important;background-color:var(--elements-state-primary-backgroundColor-primary) !important;border-color:var(--elements-state-primary-borderColor-primary) !important;}.badge.primary :deep(p code){color:var(--elements-state-primary-color-secondary) !important;background-color:var(--elements-state-primary-backgroundColor-secondary) !important;}.badge.primary :deep(code){color:var(--elements-state-primary-color-primary) !important;background-color:var(--elements-state-primary-backgroundColor-secondary) !important;}.badge.primary :deep(a code){border-color:var(--elements-state-primary-borderColor-primary) !important;}.badge.primary :deep(a){border-color:currentColor;}.badge.primary :deep(a) code{background-color:var(--elements-state-primary-backgroundColor-primary) !important;}.badge.primary :deep(a):hover{color:var(--elements-state-primary-color-secondary) !important;border-color:currentColor !important;}.badge.primary :deep(a):hover code{background-color:var(--elements-state-primary-backgroundColor-secondary) !important;color:var(--elements-state-primary-color-secondary) !important;border-color:var(--elements-state-primary-borderColor-secondary) !important;}.badge.info{color:var(--elements-state-info-color-primary) !important;background-color:var(--elements-state-info-backgroundColor-primary) !important;border-color:var(--elements-state-info-borderColor-primary) !important;}.badge.info :deep(p code){color:var(--elements-state-info-color-secondary) !important;background-color:var(--elements-state-info-backgroundColor-secondary) !important;}.badge.info :deep(code){color:var(--elements-state-info-color-primary) !important;background-color:var(--elements-state-info-backgroundColor-secondary) !important;}.badge.info :deep(a code){border-color:var(--elements-state-info-borderColor-primary) !important;}.badge.info :deep(a){border-color:currentColor;}.badge.info :deep(a) code{background-color:var(--elements-state-info-backgroundColor-primary) !important;}.badge.info :deep(a):hover{color:var(--elements-state-info-color-secondary) !important;border-color:currentColor !important;}.badge.info :deep(a):hover code{background-color:var(--elements-state-info-backgroundColor-secondary) !important;color:var(--elements-state-info-color-secondary) !important;border-color:var(--elements-state-info-borderColor-secondary) !important;}.badge.success{color:var(--elements-state-success-color-primary) !important;background-color:var(--elements-state-success-backgroundColor-primary) !important;border-color:var(--elements-state-success-borderColor-primary) !important;}.badge.success :deep(p code){color:var(--elements-state-success-color-secondary) !important;background-color:var(--elements-state-success-backgroundColor-secondary) !important;}.badge.success :deep(code){color:var(--elements-state-success-color-primary) !important;background-color:var(--elements-state-success-backgroundColor-secondary) !important;}.badge.success :deep(a code){border-color:var(--elements-state-success-borderColor-primary) !important;}.badge.success :deep(a){border-color:currentColor;}.badge.success :deep(a) code{background-color:var(--elements-state-success-backgroundColor-primary) !important;}.badge.success :deep(a):hover{color:var(--elements-state-success-color-secondary) !important;border-color:currentColor !important;}.badge.success :deep(a):hover code{background-color:var(--elements-state-success-backgroundColor-secondary) !important;color:var(--elements-state-success-color-secondary) !important;border-color:var(--elements-state-success-borderColor-secondary) !important;}.badge.warning{color:var(--elements-state-warning-color-primary) !important;background-color:var(--elements-state-warning-backgroundColor-primary) !important;border-color:var(--elements-state-warning-borderColor-primary) !important;}.badge.warning :deep(p code){color:var(--elements-state-warning-color-secondary) !important;background-color:var(--elements-state-warning-backgroundColor-secondary) !important;}.badge.warning :deep(code){color:var(--elements-state-warning-color-primary) !important;background-color:var(--elements-state-warning-backgroundColor-secondary) !important;}.badge.warning :deep(a code){border-color:var(--elements-state-warning-borderColor-primary) !important;}.badge.warning :deep(a){border-color:currentColor;}.badge.warning :deep(a) code{background-color:var(--elements-state-warning-backgroundColor-primary) !important;}.badge.warning :deep(a):hover{color:var(--elements-state-warning-color-secondary) !important;border-color:currentColor !important;}.badge.warning :deep(a):hover code{background-color:var(--elements-state-warning-backgroundColor-secondary) !important;color:var(--elements-state-warning-color-secondary) !important;border-color:var(--elements-state-warning-borderColor-secondary) !important;}.badge.danger{color:var(--elements-state-danger-color-primary) !important;background-color:var(--elements-state-danger-backgroundColor-primary) !important;border-color:var(--elements-state-danger-borderColor-primary) !important;}.badge.danger :deep(p code){color:var(--elements-state-danger-color-secondary) !important;background-color:var(--elements-state-danger-backgroundColor-secondary) !important;}.badge.danger :deep(code){color:var(--elements-state-danger-color-primary) !important;background-color:var(--elements-state-danger-backgroundColor-secondary) !important;}.badge.danger :deep(a code){border-color:var(--elements-state-danger-borderColor-primary) !important;}.badge.danger :deep(a){border-color:currentColor;}.badge.danger :deep(a) code{background-color:var(--elements-state-danger-backgroundColor-primary) !important;}.badge.danger :deep(a):hover{color:var(--elements-state-danger-color-secondary) !important;border-color:currentColor !important;}.badge.danger :deep(a):hover code{background-color:var(--elements-state-danger-backgroundColor-secondary) !important;color:var(--elements-state-danger-color-secondary) !important;border-color:var(--elements-state-danger-borderColor-secondary) !important;}\n</style>\n",
+      "start": 1707165955386,
+      "end": 1707165955386,
+      "order": "pre",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1707165955386,
+      "end": 1707165955386,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1707165955386,
+      "end": 1707165955386,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1707165955386,
+      "end": 1707165955386,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1707165955386,
+      "end": 1707165955386,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1707165955386,
+      "end": 1707165955386,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import _sfc_main from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Badge.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Badge.vue?vue&type=script&setup=true&lang.ts\";\nimport \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Badge.vue?vue&type=style&index=0&scoped=0f05aaa2&transformed=true&lang.postcss\";\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"__scopeId\", \"data-v-0f05aaa2\"]]);\n",
+      "start": 1707165955386,
+      "end": 1707165955405,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1707165955405,
+      "end": 1707165955405,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1707165955405,
+      "end": 1707165955405,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1707165955405,
+      "end": 1707165955405,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1707165955405,
+      "end": 1707165955405,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1707165955405,
+      "end": 1707165955405,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1707165955405,
+      "end": 1707165955406,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1707165955406,
+      "end": 1707165955406,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1707165955406,
+      "end": 1707165955406,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1707165955406,
+      "end": 1707165955406,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1707165955406,
+      "end": 1707165955406,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1707165955406,
+      "end": 1707165955406,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1707165955406,
+      "end": 1707165955406,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1707165955406,
+      "end": 1707165955406,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1707165955406,
+      "end": 1707165955406,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1707165955406,
+      "end": 1707165955406,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1707165955406,
+      "end": 1707165955406,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1707165955406,
+      "end": 1707165955406,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1707165955406,
+      "end": 1707165955406,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1707165955406,
+      "end": 1707165955406,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1707165955406,
+      "end": 1707165955406,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1707165955406,
+      "end": 1707165955406,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1707165955406,
+      "end": 1707165955407,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1707165955407,
+      "end": 1707165955407,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1707165955407,
+      "end": 1707165955407,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1707165955407,
+      "end": 1707165955407,
+      "order": "normal"
+    }
+  ]
+}

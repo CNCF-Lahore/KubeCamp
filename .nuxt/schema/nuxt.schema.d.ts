@@ -3,7 +3,7 @@ export interface NuxtCustomSchema {
   /**
    * Nuxt Icon
    * 
-   * Configure the defaults of Nuxt Icon
+   * Configure Nuxt Icon module preferences.
    * 
   */
   nuxtIcon?: {
@@ -21,7 +21,7 @@ export interface NuxtCustomSchema {
    /**
     * CSS Class
     * 
-    * Set the default CSS class
+    * Set the default CSS class.
     * 
     * @default ""
     * 
@@ -36,10 +36,40 @@ export interface NuxtCustomSchema {
     * 
     * 
     * @studioIcon material-symbols:star-rounded
-    * 
-    * @studioInputObjectValueType icon
    */
    aliases?: { [alias: string]: string },
+
+   /**
+    * Iconify API Options
+    * 
+    * Define preferences for Iconify API fetch.
+    * 
+    * 
+    * @studioIcon material-symbols:tv-options-input-settings
+   */
+   iconifyApiOptions?: {
+    /**
+     * Iconify API URL
+     * 
+     * Define a custom Iconify API URL. Useful if you want to use a self-hosted Iconify API. Learn more: https://iconify.design/docs/api.
+     * 
+     * @default "https://api.iconify.design"
+     * 
+     * @studioIcon material-symbols:api
+    */
+    url?: string,
+
+    /**
+     * Public Iconify API fallback
+     * 
+     * Define if the public Iconify API should be used as fallback.
+     * 
+     * @default false
+     * 
+     * @studioIcon material-symbols:public
+    */
+    publicApiFallback?: boolean,
+   },
   },
 
   /**

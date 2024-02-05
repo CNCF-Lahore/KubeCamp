@@ -1,0 +1,244 @@
+{
+  "resolvedId": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppLayout.vue?vue&type=script&setup=true&lang.ts",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, renderSlot as _renderSlot, createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-5c2f7786\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"app-layout\" }\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'AppLayout',\n  setup(__props) {\n\nconst { config } = useDocus()\n\nuseHead({\n  titleTemplate: config.value.titleTemplate,\n  meta: [\n    { name: 'twitter:card', content: 'summary_large_image' }\n  ]\n})\n\nwatch(\n  () => config.value.titleTemplate,\n  () => useHead({ titleTemplate: config.value.titleTemplate })\n)\n\nuseContentHead(config.value as any)\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_AppLoadingBar = _resolveComponent(\"AppLoadingBar\")!\n  const _component_AppHeader = _resolveComponent(\"AppHeader\")!\n  const _component_AppFooter = _resolveComponent(\"AppFooter\")!\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createVNode(_component_AppLoadingBar),\n    _createVNode(_component_AppHeader),\n    _createElementVNode(\"main\", null, [\n      _renderSlot(_ctx.$slots, \"default\", {}, undefined, true)\n    ]),\n    _createVNode(_component_AppFooter)\n  ]))\n}\n}\n\n})",
+      "start": 1707165955859,
+      "end": 1707165955859
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1707165955863,
+      "end": 1707165955863,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1707165955866,
+      "end": 1707165955867,
+      "order": "pre"
+    },
+    {
+      "name": "pinceau-transforms",
+      "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, renderSlot as _renderSlot, createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-5c2f7786\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"app-layout\" }\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'AppLayout',\n  setup(__props) {\n\nconst { config } = useDocus()\n\nuseHead({\n  titleTemplate: config.value.titleTemplate,\n  meta: [\n    { name: 'twitter:card', content: 'summary_large_image' }\n  ]\n})\n\nwatch(\n  () => config.value.titleTemplate,\n  () => useHead({ titleTemplate: config.value.titleTemplate })\n)\n\nuseContentHead(config.value as any)\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_AppLoadingBar = _resolveComponent(\"AppLoadingBar\")!\n  const _component_AppHeader = _resolveComponent(\"AppHeader\")!\n  const _component_AppFooter = _resolveComponent(\"AppFooter\")!\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createVNode(_component_AppLoadingBar),\n    _createVNode(_component_AppHeader),\n    _createElementVNode(\"main\", null, [\n      _renderSlot(_ctx.$slots, \"default\", {}, undefined, true)\n    ]),\n    _createVNode(_component_AppFooter)\n  ]))\n}\n}\n\n})",
+      "start": 1707165955872,
+      "end": 1707165955873,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1707165955873,
+      "end": 1707165955873,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1707165955874,
+      "end": 1707165955874,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1707165955874,
+      "end": 1707165955874,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, renderSlot as _renderSlot, createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-5c2f7786\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = { class: \"app-layout\" };\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"AppLayout\",\n  setup(__props) {\n    const { config } = useDocus();\n    useHead({\n      titleTemplate: config.value.titleTemplate,\n      meta: [\n        { name: \"twitter:card\", content: \"summary_large_image\" }\n      ]\n    });\n    watch(\n      () => config.value.titleTemplate,\n      () => useHead({ titleTemplate: config.value.titleTemplate })\n    );\n    useContentHead(config.value);\n    return (_ctx, _cache) => {\n      const _component_AppLoadingBar = _resolveComponent(\"AppLoadingBar\");\n      const _component_AppHeader = _resolveComponent(\"AppHeader\");\n      const _component_AppFooter = _resolveComponent(\"AppFooter\");\n      return _openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _createVNode(_component_AppLoadingBar),\n        _createVNode(_component_AppHeader),\n        _createElementVNode(\"main\", null, [\n          _renderSlot(_ctx.$slots, \"default\", {}, void 0, true)\n        ]),\n        _createVNode(_component_AppFooter)\n      ]);\n    };\n  }\n});\n",
+      "start": 1707165955874,
+      "end": 1707165956814,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppLayout.vue?vue&type=script&setup=true&lang.ts"
+        ],
+        "sourcesContent": [
+          "import { defineComponent as _defineComponent } from 'vue'\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, renderSlot as _renderSlot, createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-5c2f7786\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"app-layout\" }\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'AppLayout',\n  setup(__props) {\n\nconst { config } = useDocus()\n\nuseHead({\n  titleTemplate: config.value.titleTemplate,\n  meta: [\n    { name: 'twitter:card', content: 'summary_large_image' }\n  ]\n})\n\nwatch(\n  () => config.value.titleTemplate,\n  () => useHead({ titleTemplate: config.value.titleTemplate })\n)\n\nuseContentHead(config.value as any)\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_AppLoadingBar = _resolveComponent(\"AppLoadingBar\")!\n  const _component_AppHeader = _resolveComponent(\"AppHeader\")!\n  const _component_AppFooter = _resolveComponent(\"AppFooter\")!\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createVNode(_component_AppLoadingBar),\n    _createVNode(_component_AppHeader),\n    _createElementVNode(\"main\", null, [\n      _renderSlot(_ctx.$slots, \"default\", {}, undefined, true)\n    ]),\n    _createVNode(_component_AppFooter)\n  ]))\n}\n}\n\n})"
+        ],
+        "mappings": "AAAA,SAAS,mBAAmB,wBAAwB;AACpD,SAAS,oBAAoB,mBAAmB,eAAe,cAAc,cAAc,aAAa,sBAAsB,qBAAqB,aAAa,YAAY,sBAAsB,qBAAqB,eAAe,cAAc,cAAc,mBAAmB;AAErR,MAAM,eAAe,QAAM,aAAa,iBAAiB,GAAE,IAAE,EAAE,GAAE,YAAY,GAAE;AAC/E,MAAM,aAAa,EAAE,OAAO,aAAa;AAGzC,eAA4B,iCAAiB;AAAA,EAC3C,QAAQ;AAAA,EACR,MAAM,SAAS;AAEjB,UAAM,EAAE,OAAO,IAAI,SAAS;AAE5B,YAAQ;AAAA,MACN,eAAe,OAAO,MAAM;AAAA,MAC5B,MAAM;AAAA,QACJ,EAAE,MAAM,gBAAgB,SAAS,sBAAsB;AAAA,MACzD;AAAA,IACF,CAAC;AAED;AAAA,MACE,MAAM,OAAO,MAAM;AAAA,MACnB,MAAM,QAAQ,EAAE,eAAe,OAAO,MAAM,cAAc,CAAC;AAAA,IAC7D;AAEA,mBAAe,OAAO,KAAY;AAElC,WAAO,CAAC,MAAU,WAAgB;AAChC,YAAM,2BAA2B,kBAAkB,eAAe;AAClE,YAAM,uBAAuB,kBAAkB,WAAW;AAC1D,YAAM,uBAAuB,kBAAkB,WAAW;AAE1D,aAAQ,WAAW,GAAG,oBAAoB,OAAO,YAAY;AAAA,QAC3D,aAAa,wBAAwB;AAAA,QACrC,aAAa,oBAAoB;AAAA,QACjC,oBAAoB,QAAQ,MAAM;AAAA,UAChC,YAAY,KAAK,QAAQ,WAAW,CAAC,GAAG,QAAW,IAAI;AAAA,QACzD,CAAC;AAAA,QACD,aAAa,oBAAoB;AAAA,MACnC,CAAC;AAAA,IACH;AAAA,EACA;AAEA,CAAC;",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:json",
+      "start": 1707165956814,
+      "end": 1707165956814,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1707165956814,
+      "end": 1707165956814,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1707165956814,
+      "end": 1707165956814,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1707165956814,
+      "end": 1707165956814,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1707165956832,
+      "end": 1707165956832,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1707165956833,
+      "end": 1707165956833,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1707165956833,
+      "end": 1707165956833,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1707165956833,
+      "end": 1707165956834,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1707165956834,
+      "end": 1707165956834,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1707165956834,
+      "end": 1707165956834,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1707165956834,
+      "end": 1707165956834,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1707165956834,
+      "end": 1707165956834,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1707165956834,
+      "end": 1707165956834,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1707165956834,
+      "end": 1707165956834,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1707165956837,
+      "end": 1707165956837,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1707165956837,
+      "end": 1707165956837,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1707165956837,
+      "end": 1707165956837,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1707165956837,
+      "end": 1707165956837,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1707165956838,
+      "end": 1707165956838,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "result": "import { useDocus } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/composables/useDocus.ts';\nimport { useHead } from '@unhead/vue';\nimport { watch } from 'vue';\nimport { useContentHead } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/composables/head';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, renderSlot as _renderSlot, createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-5c2f7786\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = { class: \"app-layout\" };\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"AppLayout\",\n  setup(__props) {\n    const { config } = useDocus();\n    useHead({\n      titleTemplate: config.value.titleTemplate,\n      meta: [\n        { name: \"twitter:card\", content: \"summary_large_image\" }\n      ]\n    });\n    watch(\n      () => config.value.titleTemplate,\n      () => useHead({ titleTemplate: config.value.titleTemplate })\n    );\n    useContentHead(config.value);\n    return (_ctx, _cache) => {\n      const _component_AppLoadingBar = _resolveComponent(\"AppLoadingBar\");\n      const _component_AppHeader = _resolveComponent(\"AppHeader\");\n      const _component_AppFooter = _resolveComponent(\"AppFooter\");\n      return _openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _createVNode(_component_AppLoadingBar),\n        _createVNode(_component_AppHeader),\n        _createElementVNode(\"main\", null, [\n          _renderSlot(_ctx.$slots, \"default\", {}, void 0, true)\n        ]),\n        _createVNode(_component_AppFooter)\n      ]);\n    };\n  }\n});\n",
+      "start": 1707165956838,
+      "end": 1707165956849,
+      "order": "post",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": ";;;;AAAA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC1D,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC3R,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACzF,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC3C,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACjD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACtB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAClB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAClC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACb,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAChD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACb,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAChE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACP,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACP,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACV,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACvC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAClE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACN,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACjC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC9B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC1E,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAClE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAClE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACnE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC/C,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC3C,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC3C,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC/D,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACX,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC1C,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACT,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACN,CAAC,CAAC,CAAC;AACH,CAAC,CAAC,CAAC;"
+      }
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1707165956849,
+      "end": 1707165956849,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1707165956849,
+      "end": 1707165956849,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1707165956849,
+      "end": 1707165956849,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1707165956849,
+      "end": 1707165956849,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "result": "import { default as __nuxt_component_0 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppLoadingBar.vue\";\nimport { default as __nuxt_component_1 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppHeader.vue\";\nimport { default as __nuxt_component_2 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppFooter.vue\";\nimport { useDocus } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/composables/useDocus.ts';\nimport { useHead } from '@unhead/vue';\nimport { watch } from 'vue';\nimport { useContentHead } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/composables/head';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, renderSlot as _renderSlot, createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-5c2f7786\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = { class: \"app-layout\" };\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"AppLayout\",\n  setup(__props) {\n    const { config } = useDocus();\n    useHead({\n      titleTemplate: config.value.titleTemplate,\n      meta: [\n        { name: \"twitter:card\", content: \"summary_large_image\" }\n      ]\n    });\n    watch(\n      () => config.value.titleTemplate,\n      () => useHead({ titleTemplate: config.value.titleTemplate })\n    );\n    useContentHead(config.value);\n    return (_ctx, _cache) => {\n      const _component_AppLoadingBar = __nuxt_component_0;\n      const _component_AppHeader = __nuxt_component_1;\n      const _component_AppFooter = __nuxt_component_2;\n      return _openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _createVNode(_component_AppLoadingBar),\n        _createVNode(_component_AppHeader),\n        _createElementVNode(\"main\", null, [\n          _renderSlot(_ctx.$slots, \"default\", {}, void 0, true)\n        ]),\n        _createVNode(_component_AppFooter)\n      ]);\n    };\n  }\n});\n",
+      "start": 1707165956850,
+      "end": 1707165956851,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1707165956851,
+      "end": 1707165956851,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1707165956851,
+      "end": 1707165956851,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1707165956851,
+      "end": 1707165956851,
+      "order": "normal"
+    }
+  ]
+}

@@ -51,6 +51,9 @@
       "public/*": [
         "../public/*"
       ],
+      "#icon-collections": [
+        "./icon-collections"
+      ],
       "#color-mode-options": [
         "./color-mode-options"
       ],
@@ -65,6 +68,7 @@
   "include": [
     "./types/nitro-nuxt.d.ts",
     "../node_modules/@nuxtjs/plausible/runtime/server",
+    "../node_modules/nuxt-icon/runtime/server",
     "../node_modules/@nuxtjs/color-mode/runtime/server",
     "../../runtime/server",
     "../node_modules/@nuxt-themes/tokens/runtime/server",
@@ -74,7 +78,6 @@
     "../node_modules/@vueuse/nuxt/runtime/server",
     "../node_modules/nuxt-config-schema/runtime/server",
     "../node_modules/@nuxt-themes/docus/app/module/runtime/server",
-    "../node_modules/nuxt-icon/runtime/server",
     "../node_modules/@nuxt/devtools/runtime/server",
     "../node_modules/@nuxt/telemetry/runtime/server",
     "./types/nitro.d.ts",

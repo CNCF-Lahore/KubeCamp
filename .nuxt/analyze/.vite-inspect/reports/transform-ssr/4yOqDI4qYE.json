@@ -1,0 +1,294 @@
+{
+  "resolvedId": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/CodeBlock.vue?vue&type=script&setup=true&lang.ts",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderSlot as _ssrRenderSlot, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'CodeBlock',\n  __ssrInlineRender: true,\n  props: {\n  /**\n   * Label to display for the tab\n   */\n  label: {\n    type: String,\n    required: true\n  },\n  /**\n   * Select which tab should be active\n   * TODO: seems like it's not used \n   */\n  active: {\n    type: Boolean,\n    default: false\n  },\n  /**\n   * Preview block are bordered and have small padding.\n   * TODO: seems like it's not used\n   */\n  preview: {\n    type: Boolean,\n    default: false\n  }\n},\n  setup(__props) {\n\n\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  _push(`<div${_ssrRenderAttrs(_mergeProps({\n    class: [\"code-block\", {\n      active: __props.active,\n      'rounded-lg p-4': __props.preview,\n    }]\n  }, _attrs))} data-v-22d00392>`)\n  _ssrRenderSlot(_ctx.$slots, \"default\", {}, null, _push, _parent)\n  _push(`</div>`)\n}\n}\n\n})",
+      "start": 1707165963961,
+      "end": 1707165963961,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/CodeBlock.vue"
+        ],
+        "sourcesContent": [
+          "<script setup lang=\"ts\">\ndefineProps({\n  /**\n   * Label to display for the tab\n   */\n  label: {\n    type: String,\n    required: true\n  },\n  /**\n   * Select which tab should be active\n   * TODO: seems like it's not used \n   */\n  active: {\n    type: Boolean,\n    default: false\n  },\n  /**\n   * Preview block are bordered and have small padding.\n   * TODO: seems like it's not used\n   */\n  preview: {\n    type: Boolean,\n    default: false\n  }\n})\n</script>\n\n<template>\n  <div\n    class=\"code-block\"\n    :class=\"{\n      active,\n      'rounded-lg p-4': preview,\n    }\"\n  >\n    <slot />\n  </div>\n</template>\n\n<style scoped>\n\n.code-block {\n  display: none;\n}\n\n.code-block.active {\n  display: block;\n}\n\n</style>\n"
+        ],
+        "names": [],
+        "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAwB;AAyBtB;;;;;;;;;;;;;;"
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1707165963961,
+      "end": 1707165963961,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1707165963961,
+      "end": 1707165963961,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1707165963961,
+      "end": 1707165963961,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1707165963961,
+      "end": 1707165963961,
+      "order": "pre"
+    },
+    {
+      "name": "pinceau-transforms",
+      "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderSlot as _ssrRenderSlot, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'CodeBlock',\n  __ssrInlineRender: true,\n  props: {\n  /**\n   * Label to display for the tab\n   */\n  label: {\n    type: String,\n    required: true\n  },\n  /**\n   * Select which tab should be active\n   * TODO: seems like it's not used \n   */\n  active: {\n    type: Boolean,\n    default: false\n  },\n  /**\n   * Preview block are bordered and have small padding.\n   * TODO: seems like it's not used\n   */\n  preview: {\n    type: Boolean,\n    default: false\n  }\n},\n  setup(__props) {\n\n\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  _push(`<div${_ssrRenderAttrs(_mergeProps({\n    class: [\"code-block\", {\n      active: __props.active,\n      'rounded-lg p-4': __props.preview,\n    }]\n  }, _attrs))} data-v-22d00392>`)\n  _ssrRenderSlot(_ctx.$slots, \"default\", {}, null, _push, _parent)\n  _push(`</div>`)\n}\n}\n\n})",
+      "start": 1707165963962,
+      "end": 1707165963962,
+      "order": "pre"
+    },
+    {
+      "name": "pinceau-transforms",
+      "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderSlot as _ssrRenderSlot, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'CodeBlock',\n  __ssrInlineRender: true,\n  props: {\n  /**\n   * Label to display for the tab\n   */\n  label: {\n    type: String,\n    required: true\n  },\n  /**\n   * Select which tab should be active\n   * TODO: seems like it's not used \n   */\n  active: {\n    type: Boolean,\n    default: false\n  },\n  /**\n   * Preview block are bordered and have small padding.\n   * TODO: seems like it's not used\n   */\n  preview: {\n    type: Boolean,\n    default: false\n  }\n},\n  setup(__props) {\n\n\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  _push(`<div${_ssrRenderAttrs(_mergeProps({\n    class: [\"code-block\", {\n      active: __props.active,\n      'rounded-lg p-4': __props.preview,\n    }]\n  }, _attrs))} data-v-22d00392>`)\n  _ssrRenderSlot(_ctx.$slots, \"default\", {}, null, _push, _parent)\n  _push(`</div>`)\n}\n}\n\n})",
+      "start": 1707165963962,
+      "end": 1707165963962,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1707165963962,
+      "end": 1707165963962,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1707165963962,
+      "end": 1707165963962,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1707165963963,
+      "end": 1707165963963,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1707165963963,
+      "end": 1707165963963,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderSlot as _ssrRenderSlot, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"CodeBlock\",\n  __ssrInlineRender: true,\n  props: {\n    /**\n     * Label to display for the tab\n     */\n    label: {\n      type: String,\n      required: true\n    },\n    /**\n     * Select which tab should be active\n     * TODO: seems like it's not used \n     */\n    active: {\n      type: Boolean,\n      default: false\n    },\n    /**\n     * Preview block are bordered and have small padding.\n     * TODO: seems like it's not used\n     */\n    preview: {\n      type: Boolean,\n      default: false\n    }\n  },\n  setup(__props) {\n    return (_ctx, _push, _parent, _attrs) => {\n      _push(`<div${_ssrRenderAttrs(_mergeProps({\n        class: [\"code-block\", {\n          active: __props.active,\n          \"rounded-lg p-4\": __props.preview\n        }]\n      }, _attrs))} data-v-22d00392>`);\n      _ssrRenderSlot(_ctx.$slots, \"default\", {}, null, _push, _parent);\n      _push(`</div>`);\n    };\n  }\n});\n",
+      "start": 1707165963963,
+      "end": 1707165964175,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/CodeBlock.vue?vue&type=script&setup=true&lang.ts"
+        ],
+        "sourcesContent": [
+          "import { defineComponent as _defineComponent } from 'vue'\nimport { mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderSlot as _ssrRenderSlot, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'CodeBlock',\n  __ssrInlineRender: true,\n  props: {\n  /**\n   * Label to display for the tab\n   */\n  label: {\n    type: String,\n    required: true\n  },\n  /**\n   * Select which tab should be active\n   * TODO: seems like it's not used \n   */\n  active: {\n    type: Boolean,\n    default: false\n  },\n  /**\n   * Preview block are bordered and have small padding.\n   * TODO: seems like it's not used\n   */\n  preview: {\n    type: Boolean,\n    default: false\n  }\n},\n  setup(__props) {\n\n\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  _push(`<div${_ssrRenderAttrs(_mergeProps({\n    class: [\"code-block\", {\n      active: __props.active,\n      'rounded-lg p-4': __props.preview,\n    }]\n  }, _attrs))} data-v-22d00392>`)\n  _ssrRenderSlot(_ctx.$slots, \"default\", {}, null, _push, _parent)\n  _push(`</div>`)\n}\n}\n\n})"
+        ],
+        "mappings": "AAAA,SAAS,mBAAmB,wBAAwB;AACpD,SAAS,cAAc,mBAAmB;AAC1C,SAAS,iBAAiB,gBAAgB,kBAAkB,uBAAuB;AAGnF,eAA4B,iCAAiB;AAAA,EAC3C,QAAQ;AAAA,EACR,mBAAmB;AAAA,EACnB,OAAO;AAAA;AAAA;AAAA;AAAA,IAIP,OAAO;AAAA,MACL,MAAM;AAAA,MACN,UAAU;AAAA,IACZ;AAAA;AAAA;AAAA;AAAA;AAAA,IAKA,QAAQ;AAAA,MACN,MAAM;AAAA,MACN,SAAS;AAAA,IACX;AAAA;AAAA;AAAA;AAAA;AAAA,IAKA,SAAS;AAAA,MACP,MAAM;AAAA,MACN,SAAS;AAAA,IACX;AAAA,EACF;AAAA,EACE,MAAM,SAAS;AAIjB,WAAO,CAAC,MAAU,OAAW,SAAa,WAAgB;AACxD,YAAM,OAAO,gBAAgB,YAAY;AAAA,QACvC,OAAO,CAAC,cAAc;AAAA,UACpB,QAAQ,QAAQ;AAAA,UAChB,kBAAkB,QAAQ;AAAA,QAC5B,CAAC;AAAA,MACH,GAAG,MAAM,CAAC,CAAC,mBAAmB;AAC9B,qBAAe,KAAK,QAAQ,WAAW,CAAC,GAAG,MAAM,OAAO,OAAO;AAC/D,YAAM,QAAQ;AAAA,IAChB;AAAA,EACA;AAEA,CAAC;",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:json",
+      "start": 1707165964175,
+      "end": 1707165964175,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1707165964176,
+      "end": 1707165964176,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1707165964176,
+      "end": 1707165964176,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1707165964176,
+      "end": 1707165964176,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1707165964176,
+      "end": 1707165964176,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1707165964176,
+      "end": 1707165964176,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1707165964176,
+      "end": 1707165964176,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1707165964176,
+      "end": 1707165964176,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1707165964176,
+      "end": 1707165964177,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1707165964177,
+      "end": 1707165964177,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1707165964177,
+      "end": 1707165964177,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1707165964177,
+      "end": 1707165964178,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1707165964178,
+      "end": 1707165964178,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1707165964178,
+      "end": 1707165964178,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1707165964178,
+      "end": 1707165964178,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1707165964178,
+      "end": 1707165964178,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1707165964178,
+      "end": 1707165964178,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1707165964178,
+      "end": 1707165964178,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1707165964179,
+      "end": 1707165964179,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1707165964180,
+      "end": 1707165964180,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1707165964180,
+      "end": 1707165964180,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1707165964180,
+      "end": 1707165964185,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1707165964180,
+      "end": 1707165964185,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1707165964185,
+      "end": 1707165964185,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1707165964185,
+      "end": 1707165964185,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1707165964185,
+      "end": 1707165964185,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1707165964185,
+      "end": 1707165964185,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1707165964185,
+      "end": 1707165964185,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1707165964186,
+      "end": 1707165964186,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1707165964187,
+      "end": 1707165964187,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1707165964187,
+      "end": 1707165964187,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1707165964187,
+      "end": 1707165964187,
+      "order": "normal"
+    }
+  ]
+}

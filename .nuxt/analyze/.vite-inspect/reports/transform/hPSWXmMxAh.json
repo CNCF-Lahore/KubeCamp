@@ -1,0 +1,243 @@
+{
+  "resolvedId": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/NuxtImg.vue?vue&type=script&lang.ts",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\nimport { withBase } from 'ufo'\nimport type { PropType } from 'vue'\n\ntype NuxtThemedImg = {\n  light: string\n  dark: string\n}\ntype NuxtImg = string & NuxtThemedImg\n\nexport default defineComponent({\n  props: {\n    src: {\n      type: [String, Object] as PropType<NuxtImg>,\n      default: null\n    }\n  },\n  setup (props) {\n    const srcWithBase = (src?: string) => {\n      if (src && src.startsWith('/') && !src.startsWith('//')) {\n        return withBase(src, useRuntimeConfig().app.baseURL)\n      }\n\n      return src\n    }\n\n    const imgSrc = computed(() => {\n      let src: NuxtImg = props.src\n\n      try {\n        src = JSON.parse(src as any)\n      } catch (e) {\n        src = props.src\n      }\n\n      if (typeof src === 'string') { return srcWithBase(props.src) }\n\n      return {\n        light: srcWithBase((src as NuxtThemedImg).light),\n        dark: srcWithBase((src as NuxtThemedImg).dark)\n      }\n    })\n\n    return {\n      imgSrc\n    }\n  },\n  render ({ imgSrc }) {\n    // String as `src`; return a single image\n    if (typeof imgSrc === 'string') { return h('img', { src: imgSrc, ...this.$attrs }) }\n\n    // Object as `src`; return a light and dark image if present\n    const nodes = []\n    if (imgSrc.light) { nodes.push(h('img', { src: imgSrc.light, class: ['dark-img'], ...this.$attrs })) }\n    if (imgSrc.dark) { nodes.push(h('img', { src: imgSrc.dark, class: ['light-img'], ...this.$attrs })) }\n\n    return nodes\n  }\n})\n",
+      "start": 1707165956587,
+      "end": 1707165956587
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1707165956587,
+      "end": 1707165956587,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1707165956588,
+      "end": 1707165956588,
+      "order": "pre"
+    },
+    {
+      "name": "pinceau-transforms",
+      "result": "\nimport { withBase } from 'ufo'\nimport type { PropType } from 'vue'\n\ntype NuxtThemedImg = {\n  light: string\n  dark: string\n}\ntype NuxtImg = string & NuxtThemedImg\n\nexport default defineComponent({\n  props: {\n    src: {\n      type: [String, Object] as PropType<NuxtImg>,\n      default: null\n    }\n  },\n  setup (props) {\n    const srcWithBase = (src?: string) => {\n      if (src && src.startsWith('/') && !src.startsWith('//')) {\n        return withBase(src, useRuntimeConfig().app.baseURL)\n      }\n\n      return src\n    }\n\n    const imgSrc = computed(() => {\n      let src: NuxtImg = props.src\n\n      try {\n        src = JSON.parse(src as any)\n      } catch (e) {\n        src = props.src\n      }\n\n      if (typeof src === 'string') { return srcWithBase(props.src) }\n\n      return {\n        light: srcWithBase((src as NuxtThemedImg).light),\n        dark: srcWithBase((src as NuxtThemedImg).dark)\n      }\n    })\n\n    return {\n      imgSrc\n    }\n  },\n  render ({ imgSrc }) {\n    // String as `src`; return a single image\n    if (typeof imgSrc === 'string') { return h('img', { src: imgSrc, ...this.$attrs }) }\n\n    // Object as `src`; return a light and dark image if present\n    const nodes = []\n    if (imgSrc.light) { nodes.push(h('img', { src: imgSrc.light, class: ['dark-img'], ...this.$attrs })) }\n    if (imgSrc.dark) { nodes.push(h('img', { src: imgSrc.dark, class: ['light-img'], ...this.$attrs })) }\n\n    return nodes\n  }\n})\n",
+      "start": 1707165956588,
+      "end": 1707165956588,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1707165956588,
+      "end": 1707165956588,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1707165956588,
+      "end": 1707165956588,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1707165956588,
+      "end": 1707165956588,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { withBase } from \"ufo\";\nexport default defineComponent({\n  props: {\n    src: {\n      type: [String, Object],\n      default: null\n    }\n  },\n  setup(props) {\n    const srcWithBase = (src) => {\n      if (src && src.startsWith(\"/\") && !src.startsWith(\"//\")) {\n        return withBase(src, useRuntimeConfig().app.baseURL);\n      }\n      return src;\n    };\n    const imgSrc = computed(() => {\n      let src = props.src;\n      try {\n        src = JSON.parse(src);\n      } catch (e) {\n        src = props.src;\n      }\n      if (typeof src === \"string\") {\n        return srcWithBase(props.src);\n      }\n      return {\n        light: srcWithBase(src.light),\n        dark: srcWithBase(src.dark)\n      };\n    });\n    return {\n      imgSrc\n    };\n  },\n  render({ imgSrc }) {\n    if (typeof imgSrc === \"string\") {\n      return h(\"img\", { src: imgSrc, ...this.$attrs });\n    }\n    const nodes = [];\n    if (imgSrc.light) {\n      nodes.push(h(\"img\", { src: imgSrc.light, class: [\"dark-img\"], ...this.$attrs }));\n    }\n    if (imgSrc.dark) {\n      nodes.push(h(\"img\", { src: imgSrc.dark, class: [\"light-img\"], ...this.$attrs }));\n    }\n    return nodes;\n  }\n});\n",
+      "start": 1707165956588,
+      "end": 1707165956923,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/NuxtImg.vue?vue&type=script&lang.ts"
+        ],
+        "sourcesContent": [
+          "\nimport { withBase } from 'ufo'\nimport type { PropType } from 'vue'\n\ntype NuxtThemedImg = {\n  light: string\n  dark: string\n}\ntype NuxtImg = string & NuxtThemedImg\n\nexport default defineComponent({\n  props: {\n    src: {\n      type: [String, Object] as PropType<NuxtImg>,\n      default: null\n    }\n  },\n  setup (props) {\n    const srcWithBase = (src?: string) => {\n      if (src && src.startsWith('/') && !src.startsWith('//')) {\n        return withBase(src, useRuntimeConfig().app.baseURL)\n      }\n\n      return src\n    }\n\n    const imgSrc = computed(() => {\n      let src: NuxtImg = props.src\n\n      try {\n        src = JSON.parse(src as any)\n      } catch (e) {\n        src = props.src\n      }\n\n      if (typeof src === 'string') { return srcWithBase(props.src) }\n\n      return {\n        light: srcWithBase((src as NuxtThemedImg).light),\n        dark: srcWithBase((src as NuxtThemedImg).dark)\n      }\n    })\n\n    return {\n      imgSrc\n    }\n  },\n  render ({ imgSrc }) {\n    // String as `src`; return a single image\n    if (typeof imgSrc === 'string') { return h('img', { src: imgSrc, ...this.$attrs }) }\n\n    // Object as `src`; return a light and dark image if present\n    const nodes = []\n    if (imgSrc.light) { nodes.push(h('img', { src: imgSrc.light, class: ['dark-img'], ...this.$attrs })) }\n    if (imgSrc.dark) { nodes.push(h('img', { src: imgSrc.dark, class: ['light-img'], ...this.$attrs })) }\n\n    return nodes\n  }\n})\n"
+        ],
+        "mappings": "AACA,SAAS,gBAAgB;AASzB,eAAe,gBAAgB;AAAA,EAC7B,OAAO;AAAA,IACL,KAAK;AAAA,MACH,MAAM,CAAC,QAAQ,MAAM;AAAA,MACrB,SAAS;AAAA,IACX;AAAA,EACF;AAAA,EACA,MAAO,OAAO;AACZ,UAAM,cAAc,CAAC,QAAiB;AACpC,UAAI,OAAO,IAAI,WAAW,GAAG,KAAK,CAAC,IAAI,WAAW,IAAI,GAAG;AACvD,eAAO,SAAS,KAAK,iBAAiB,EAAE,IAAI,OAAO;AAAA,MACrD;AAEA,aAAO;AAAA,IACT;AAEA,UAAM,SAAS,SAAS,MAAM;AAC5B,UAAI,MAAe,MAAM;AAEzB,UAAI;AACF,cAAM,KAAK,MAAM,GAAU;AAAA,MAC7B,SAAS,GAAG;AACV,cAAM,MAAM;AAAA,MACd;AAEA,UAAI,OAAO,QAAQ,UAAU;AAAE,eAAO,YAAY,MAAM,GAAG;AAAA,MAAE;AAE7D,aAAO;AAAA,QACL,OAAO,YAAa,IAAsB,KAAK;AAAA,QAC/C,MAAM,YAAa,IAAsB,IAAI;AAAA,MAC/C;AAAA,IACF,CAAC;AAED,WAAO;AAAA,MACL;AAAA,IACF;AAAA,EACF;AAAA,EACA,OAAQ,EAAE,OAAO,GAAG;AAElB,QAAI,OAAO,WAAW,UAAU;AAAE,aAAO,EAAE,OAAO,EAAE,KAAK,QAAQ,GAAG,KAAK,OAAO,CAAC;AAAA,IAAE;AAGnF,UAAM,QAAQ,CAAC;AACf,QAAI,OAAO,OAAO;AAAE,YAAM,KAAK,EAAE,OAAO,EAAE,KAAK,OAAO,OAAO,OAAO,CAAC,UAAU,GAAG,GAAG,KAAK,OAAO,CAAC,CAAC;AAAA,IAAE;AACrG,QAAI,OAAO,MAAM;AAAE,YAAM,KAAK,EAAE,OAAO,EAAE,KAAK,OAAO,MAAM,OAAO,CAAC,WAAW,GAAG,GAAG,KAAK,OAAO,CAAC,CAAC;AAAA,IAAE;AAEpG,WAAO;AAAA,EACT;AACF,CAAC;",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:json",
+      "start": 1707165956924,
+      "end": 1707165956924,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1707165956924,
+      "end": 1707165956927,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1707165956927,
+      "end": 1707165956927,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1707165956927,
+      "end": 1707165956927,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1707165956928,
+      "end": 1707165956928,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1707165956928,
+      "end": 1707165956928,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1707165956928,
+      "end": 1707165956928,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1707165956928,
+      "end": 1707165956929,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1707165956929,
+      "end": 1707165956929,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1707165956929,
+      "end": 1707165956929,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1707165956929,
+      "end": 1707165956929,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1707165956929,
+      "end": 1707165956929,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1707165956929,
+      "end": 1707165956929,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1707165956929,
+      "end": 1707165956929,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1707165956929,
+      "end": 1707165956929,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1707165956929,
+      "end": 1707165956929,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1707165956929,
+      "end": 1707165956929,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1707165956930,
+      "end": 1707165956930,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1707165956930,
+      "end": 1707165956930,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "result": "import { defineComponent, computed, h } from 'vue';\nimport { useRuntimeConfig } from '#app/nuxt';\nimport { withBase } from \"ufo\";\nexport default defineComponent({\n  props: {\n    src: {\n      type: [String, Object],\n      default: null\n    }\n  },\n  setup(props) {\n    const srcWithBase = (src) => {\n      if (src && src.startsWith(\"/\") && !src.startsWith(\"//\")) {\n        return withBase(src, useRuntimeConfig().app.baseURL);\n      }\n      return src;\n    };\n    const imgSrc = computed(() => {\n      let src = props.src;\n      try {\n        src = JSON.parse(src);\n      } catch (e) {\n        src = props.src;\n      }\n      if (typeof src === \"string\") {\n        return srcWithBase(props.src);\n      }\n      return {\n        light: srcWithBase(src.light),\n        dark: srcWithBase(src.dark)\n      };\n    });\n    return {\n      imgSrc\n    };\n  },\n  render({ imgSrc }) {\n    if (typeof imgSrc === \"string\") {\n      return h(\"img\", { src: imgSrc, ...this.$attrs });\n    }\n    const nodes = [];\n    if (imgSrc.light) {\n      nodes.push(h(\"img\", { src: imgSrc.light, class: [\"dark-img\"], ...this.$attrs }));\n    }\n    if (imgSrc.dark) {\n      nodes.push(h(\"img\", { src: imgSrc.dark, class: [\"light-img\"], ...this.$attrs }));\n    }\n    return nodes;\n  }\n});\n",
+      "start": 1707165956930,
+      "end": 1707165956939,
+      "order": "post",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": "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AAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACnB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACxB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACP,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACpC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACtC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACP,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACd,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACtC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACnC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACR,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACP,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACZ,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACZ,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACN,CAAC,CAAC,CAAC,CAAC;AACJ,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACtB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACrC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACvD,CAAC,CAAC,CAAC,CAAC,CAAC;AACL,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACrB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACvB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACvF,CAAC,CAAC,CAAC,CAAC,CAAC;AACL,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACtB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACvF,CAAC,CAAC,CAAC,CAAC,CAAC;AACL,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACjB,CAAC,CAAC,CAAC;AACH,CAAC,CAAC,CAAC;"
+      }
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1707165956939,
+      "end": 1707165956939,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1707165956939,
+      "end": 1707165956939,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1707165956939,
+      "end": 1707165956939,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1707165956939,
+      "end": 1707165956939,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1707165956940,
+      "end": 1707165956940,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1707165956940,
+      "end": 1707165956941,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1707165956941,
+      "end": 1707165956941,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1707165956941,
+      "end": 1707165956941,
+      "order": "normal"
+    }
+  ]
+}

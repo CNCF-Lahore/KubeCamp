@@ -1,0 +1,272 @@
+{
+  "resolvedId": "/workspace/Kubernetes-Bootcamp/node_modules/pinceau/dist/chunks/debug.mjs",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import { nextTick } from 'vue';\n\nfunction usePinceauRuntimeDebug(tokensHelperConfig) {\n  let nextTickGroup = [];\n  let nextTickCalled = false;\n  const TOKEN_NOT_FOUND_MESSAGE = (path, options) => {\n    const { loc } = options;\n    const message = [\n      `\\u{1F511} ${path}`\n    ];\n    if (loc?.file) {\n      message.push(\"\");\n      message.push(`\\u{1F517} ${loc.file}`);\n    }\n    if (loc?.type) {\n      message.push(\"\");\n      message.push(`\\u2753 Missing token inside a ${loc.type === \"v\" ? \"variant\" : \"computed style or CSS prop\"}.`);\n    }\n    nextTickGroup.push(message.join(\"\\n\"));\n    if (!nextTickCalled) {\n      nextTick(() => {\n        const title = \"\\u{1F58C}\\uFE0F Pinceau `runtime` encountered some errors!\";\n        if (import.meta.hot) {\n          console.groupCollapsed(title);\n        } else {\n          console.log(title);\n        }\n        nextTickGroup.forEach((m) => {\n          if (!import.meta.hot && process.server) {\n            console.log(\"\\n\");\n          }\n          console.log(m);\n          if (!import.meta.hot && process.server) {\n            console.log(\"\\n\");\n          }\n        });\n        console.log(\"\\u203C\\uFE0F This warning will be hidden from production and can be disabled using `dev: false` option.\");\n        if (import.meta.hot) {\n          console.groupEnd();\n        }\n      });\n      nextTickCalled = true;\n    }\n  };\n  if (import.meta.hot) {\n    import.meta.hot.on(\"vite:afterUpdate\", () => {\n      nextTickGroup = [];\n      nextTickCalled = false;\n    });\n  }\n  tokensHelperConfig.onNotFound = TOKEN_NOT_FOUND_MESSAGE;\n}\n\nexport { usePinceauRuntimeDebug };\n",
+      "start": 1707165961864,
+      "end": 1707165961952,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1707165961952,
+      "end": 1707165961952,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1707165961952,
+      "end": 1707165961952,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1707165961953,
+      "end": 1707165961953,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1707165961953,
+      "end": 1707165961953,
+      "order": "pre"
+    },
+    {
+      "name": "pinceau-transforms",
+      "start": 1707165961953,
+      "end": 1707165961953,
+      "order": "pre"
+    },
+    {
+      "name": "pinceau-transforms",
+      "start": 1707165961953,
+      "end": 1707165961953,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1707165961953,
+      "end": 1707165961953,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1707165961953,
+      "end": 1707165961953,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1707165961953,
+      "end": 1707165961953,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1707165961953,
+      "end": 1707165961953,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1707165961953,
+      "end": 1707165961953,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1707165961953,
+      "end": 1707165961953,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1707165961953,
+      "end": 1707165961953,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1707165961953,
+      "end": 1707165961953,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1707165961953,
+      "end": 1707165961953,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1707165961953,
+      "end": 1707165961953,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1707165961953,
+      "end": 1707165961953,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1707165961953,
+      "end": 1707165961953,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1707165961953,
+      "end": 1707165961953,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1707165961953,
+      "end": 1707165961953,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1707165961953,
+      "end": 1707165961953,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1707165961953,
+      "end": 1707165961953,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "result": "import { nextTick } from \"vue\";\nfunction usePinceauRuntimeDebug(tokensHelperConfig) {\n  let nextTickGroup = [];\n  let nextTickCalled = false;\n  const TOKEN_NOT_FOUND_MESSAGE = (path, options) => {\n    const { loc } = options;\n    const message = [\n      `🔑 ${path}`\n    ];\n    if (loc?.file) {\n      message.push(\"\");\n      message.push(`🔗 ${loc.file}`);\n    }\n    if (loc?.type) {\n      message.push(\"\");\n      message.push(`❓ Missing token inside a ${loc.type === \"v\" ? \"variant\" : \"computed style or CSS prop\"}.`);\n    }\n    nextTickGroup.push(message.join(\"\\n\"));\n    if (!nextTickCalled) {\n      nextTick(() => {\n        const title = \"🖌️ Pinceau `runtime` encountered some errors!\";\n        if (void 0) {\n          console.groupCollapsed(title);\n        } else {\n          console.log(title);\n        }\n        nextTickGroup.forEach((m) => {\n          if (true) {\n            console.log(\"\\n\");\n          }\n          console.log(m);\n          if (true) {\n            console.log(\"\\n\");\n          }\n        });\n        console.log(\"‼️ This warning will be hidden from production and can be disabled using `dev: false` option.\");\n        if (void 0) {\n          console.groupEnd();\n        }\n      });\n      nextTickCalled = true;\n    }\n  };\n  if (void 0) {\n    (void 0).on(\"vite:afterUpdate\", () => {\n      nextTickGroup = [];\n      nextTickCalled = false;\n    });\n  }\n  tokensHelperConfig.onNotFound = TOKEN_NOT_FOUND_MESSAGE;\n}\nexport { usePinceauRuntimeDebug };\n",
+      "start": 1707165961953,
+      "end": 1707165962048,
+      "order": "normal",
+      "sourcemaps": "{\n  \"version\": 3,\n  \"sources\": [\"/workspace/Kubernetes-Bootcamp/node_modules/pinceau/dist/chunks/debug.mjs\"],\n  \"sourcesContent\": [\"import { nextTick } from 'vue';\\n\\nfunction usePinceauRuntimeDebug(tokensHelperConfig) {\\n  let nextTickGroup = [];\\n  let nextTickCalled = false;\\n  const TOKEN_NOT_FOUND_MESSAGE = (path, options) => {\\n    const { loc } = options;\\n    const message = [\\n      `\\\\u{1F511} ${path}`\\n    ];\\n    if (loc?.file) {\\n      message.push(\\\"\\\");\\n      message.push(`\\\\u{1F517} ${loc.file}`);\\n    }\\n    if (loc?.type) {\\n      message.push(\\\"\\\");\\n      message.push(`\\\\u2753 Missing token inside a ${loc.type === \\\"v\\\" ? \\\"variant\\\" : \\\"computed style or CSS prop\\\"}.`);\\n    }\\n    nextTickGroup.push(message.join(\\\"\\\\n\\\"));\\n    if (!nextTickCalled) {\\n      nextTick(() => {\\n        const title = \\\"\\\\u{1F58C}\\\\uFE0F Pinceau `runtime` encountered some errors!\\\";\\n        if (import.meta.hot) {\\n          console.groupCollapsed(title);\\n        } else {\\n          console.log(title);\\n        }\\n        nextTickGroup.forEach((m) => {\\n          if (!import.meta.hot && process.server) {\\n            console.log(\\\"\\\\n\\\");\\n          }\\n          console.log(m);\\n          if (!import.meta.hot && process.server) {\\n            console.log(\\\"\\\\n\\\");\\n          }\\n        });\\n        console.log(\\\"\\\\u203C\\\\uFE0F This warning will be hidden from production and can be disabled using `dev: false` option.\\\");\\n        if (import.meta.hot) {\\n          console.groupEnd();\\n        }\\n      });\\n      nextTickCalled = true;\\n    }\\n  };\\n  if (import.meta.hot) {\\n    import.meta.hot.on(\\\"vite:afterUpdate\\\", () => {\\n      nextTickGroup = [];\\n      nextTickCalled = false;\\n    });\\n  }\\n  tokensHelperConfig.onNotFound = TOKEN_NOT_FOUND_MESSAGE;\\n}\\n\\nexport { usePinceauRuntimeDebug };\\n\"],\n  \"mappings\": \"AAAA,SAAS,gBAAgB;AAEzB,SAAS,uBAAuB,oBAAoB;AAClD,MAAI,gBAAgB,CAAC;AACrB,MAAI,iBAAiB;AACrB,QAAM,0BAA0B,CAAC,MAAM,YAAY;AACjD,UAAM,EAAE,IAAI,IAAI;AAChB,UAAM,UAAU;AAAA,MACd,MAAa,IAAI;AAAA,IACnB;AACA,QAAI,KAAK,MAAM;AACb,cAAQ,KAAK,EAAE;AACf,cAAQ,KAAK,MAAa,IAAI,IAAI,EAAE;AAAA,IACtC;AACA,QAAI,KAAK,MAAM;AACb,cAAQ,KAAK,EAAE;AACf,cAAQ,KAAK,4BAAiC,IAAI,SAAS,MAAM,YAAY,4BAA4B,GAAG;AAAA,IAC9G;AACA,kBAAc,KAAK,QAAQ,KAAK,IAAI,CAAC;AACrC,QAAI,CAAC,gBAAgB;AACnB,eAAS,MAAM;AACb,cAAM,QAAQ;AACd,YAAI,QAAiB;AACnB,kBAAQ,eAAe,KAAK;AAAA,QAC9B,OAAO;AACL,kBAAQ,IAAI,KAAK;AAAA,QACnB;AACA,sBAAc,QAAQ,CAAC,MAAM;AAC3B,cAAwB,MAAgB;AACtC,oBAAQ,IAAI,IAAI;AAAA,UAClB;AACA,kBAAQ,IAAI,CAAC;AACb,cAAwB,MAAgB;AACtC,oBAAQ,IAAI,IAAI;AAAA,UAClB;AAAA,QACF,CAAC;AACD,gBAAQ,IAAI,+FAAyG;AACrH,YAAI,QAAiB;AACnB,kBAAQ,SAAS;AAAA,QACnB;AAAA,MACF,CAAC;AACD,uBAAiB;AAAA,IACnB;AAAA,EACF;AACA,MAAI,QAAiB;AACnB,aAAgB,GAAG,oBAAoB,MAAM;AAC3C,sBAAgB,CAAC;AACjB,uBAAiB;AAAA,IACnB,CAAC;AAAA,EACH;AACA,qBAAmB,aAAa;AAClC;AAEA,SAAS;\",\n  \"names\": []\n}\n"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1707165962048,
+      "end": 1707165962048,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1707165962048,
+      "end": 1707165962048,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1707165962048,
+      "end": 1707165962048,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1707165962048,
+      "end": 1707165962048,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1707165962048,
+      "end": 1707165962048,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1707165962048,
+      "end": 1707165962048,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1707165962048,
+      "end": 1707165962048,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1707165962049,
+      "end": 1707165962049,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1707165962049,
+      "end": 1707165962049,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1707165962049,
+      "end": 1707165962049,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1707165962049,
+      "end": 1707165962049,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1707165962049,
+      "end": 1707165962049,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1707165962049,
+      "end": 1707165962049,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1707165962049,
+      "end": 1707165962049,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1707165962049,
+      "end": 1707165962049,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1707165962049,
+      "end": 1707165962049,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1707165962049,
+      "end": 1707165962049,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1707165962049,
+      "end": 1707165962049,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1707165962049,
+      "end": 1707165962049,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1707165962049,
+      "end": 1707165962049,
+      "order": "normal"
+    }
+  ]
+}

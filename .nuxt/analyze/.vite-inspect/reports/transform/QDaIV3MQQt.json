@@ -1,0 +1,231 @@
+{
+  "resolvedId": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/assets/css/main.css",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "/* Base */\n\n:root {\n  /* DocSearch */\n  --docsearch-primary-color: $dt('color.primary.500') !important;\n}\n\n.dark:root {\n  color-scheme: dark;\n  /* DocSearch */\n  --docsearch-primary-color: $dt('color.primary.500') !important;\n  --docsearch-text-color: rgb(245, 246, 247);\n  --docsearch-container-background: rgba(9, 10, 17, 0.8);\n  --docsearch-modal-background: rgb(21, 23, 42);\n  --docsearch-modal-shadow: inset 1px 1px 0 0 rgb(44, 46, 64),\n    0 3px 8px 0 rgb(0, 3, 9);\n  --docsearch-searchbox-background: rgb(9, 10, 17);\n  --docsearch-searchbox-focus-background: #000;\n  --docsearch-hit-color: rgb(190, 195, 201);\n  --docsearch-hit-shadow: none;\n  --docsearch-hit-background: rgb(9, 10, 17);\n  --docsearch-key-gradient: linear-gradient(\n    -26.5deg,\n    rgb(86, 88, 114) 0%,\n    rgb(49, 53, 91) 100%\n  );\n  --docsearch-key-shadow: inset 0 -2px 0 0 rgb(40, 45, 85),\n    inset 0 0 1px 1px rgb(81, 87, 125), 0 2px 2px 0 rgba(3, 4, 9, 0.3);\n  --docsearch-footer-background: rgb(30, 33, 54);\n  --docsearch-footer-shadow: inset 0 1px 0 0 rgba(73, 76, 106, 0.5),\n    0 -4px 8px 0 rgba(0, 0, 0, 0.2);\n  --docsearch-logo-color: rgb(255, 255, 255);\n  --docsearch-muted-color: rgb(127, 132, 151);\n}\n.DocSearch-Input:focus {\n  box-shadow: none !important;\n}\n\nbody {\n  overflow-y: scroll;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  background-color: $dt('docus.body.backgroundColor');\n  color: $dt('docus.body.color');\n  font-family: $dt('docus.body.fontFamily');\n  min-width: $dt('size.xs');\n}\n\n.docus-scrollbars {\n  & ::-webkit-scrollbar {\n    width: 0.6em;\n    height: 0.6em;\n    background: transparent;\n  }\n\n  & ::-webkit-scrollbar-track {\n    background: $dt('color.gray.100');\n  }\n\n  & ::-webkit-scrollbar-thumb {\n    border-radius: 0.6em;\n    background: $dt('color.gray.300');\n    &:hover {\n      background: $dt('color.gray.400');\n    }\n    &:active {\n      background: $dt('color.gray.500');\n    }\n  }\n\n  &.dark {\n    & ::-webkit-scrollbar-track {\n      background: $dt('color.gray.800');\n    }\n\n    & ::-webkit-scrollbar-thumb {\n      background: $dt('color.gray.700');\n      &:hover {\n        background: $dt('color.gray.600');\n      }\n      &:active {\n        background: $dt('color.gray.500');\n      }\n    }\n  }\n}\n",
+      "start": 1707165953904,
+      "end": 1707165954022,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1707165954022,
+      "end": 1707165954022,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1707165954022,
+      "end": 1707165954022,
+      "order": "pre"
+    },
+    {
+      "name": "pinceau-transforms",
+      "result": "/* Base */\n\n:root {\n  /* DocSearch */\n  --docsearch-primary-color: var(--color-primary-500) !important;\n}\n\n.dark:root {\n  color-scheme: dark;\n  /* DocSearch */\n  --docsearch-primary-color: var(--color-primary-500) !important;\n  --docsearch-text-color: rgb(245, 246, 247);\n  --docsearch-container-background: rgba(9, 10, 17, 0.8);\n  --docsearch-modal-background: rgb(21, 23, 42);\n  --docsearch-modal-shadow: inset 1px 1px 0 0 rgb(44, 46, 64),\n    0 3px 8px 0 rgb(0, 3, 9);\n  --docsearch-searchbox-background: rgb(9, 10, 17);\n  --docsearch-searchbox-focus-background: #000;\n  --docsearch-hit-color: rgb(190, 195, 201);\n  --docsearch-hit-shadow: none;\n  --docsearch-hit-background: rgb(9, 10, 17);\n  --docsearch-key-gradient: linear-gradient(\n    -26.5deg,\n    rgb(86, 88, 114) 0%,\n    rgb(49, 53, 91) 100%\n  );\n  --docsearch-key-shadow: inset 0 -2px 0 0 rgb(40, 45, 85),\n    inset 0 0 1px 1px rgb(81, 87, 125), 0 2px 2px 0 rgba(3, 4, 9, 0.3);\n  --docsearch-footer-background: rgb(30, 33, 54);\n  --docsearch-footer-shadow: inset 0 1px 0 0 rgba(73, 76, 106, 0.5),\n    0 -4px 8px 0 rgba(0, 0, 0, 0.2);\n  --docsearch-logo-color: rgb(255, 255, 255);\n  --docsearch-muted-color: rgb(127, 132, 151);\n}\n.DocSearch-Input:focus {\n  box-shadow: none !important;\n}\n\nbody {\n  overflow-y: scroll;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  background-color: var(--docus-body-backgroundColor);\n  color: var(--docus-body-color);\n  font-family: var(--docus-body-fontFamily);\n  min-width: var(--size-xs);\n}\n\n.docus-scrollbars {\n  & ::-webkit-scrollbar {\n    width: 0.6em;\n    height: 0.6em;\n    background: transparent;\n  }\n\n  & ::-webkit-scrollbar-track {\n    background: var(--color-gray-100);\n  }\n\n  & ::-webkit-scrollbar-thumb {\n    border-radius: 0.6em;\n    background: var(--color-gray-300);\n    &:hover {\n      background: var(--color-gray-400);\n    }\n    &:active {\n      background: var(--color-gray-500);\n    }\n  }\n\n  &.dark {\n    & ::-webkit-scrollbar-track {\n      background: var(--color-gray-800);\n    }\n\n    & ::-webkit-scrollbar-thumb {\n      background: var(--color-gray-700);\n      &:hover {\n        background: var(--color-gray-600);\n      }\n      &:active {\n        background: var(--color-gray-500);\n      }\n    }\n  }\n}\n",
+      "start": 1707165954022,
+      "end": 1707165954022,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1707165954022,
+      "end": 1707165954022,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1707165954022,
+      "end": 1707165954022,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": ".dark:root,:root{--docsearch-primary-color:var(--color-primary-500)!important}.dark:root{color-scheme:dark;--docsearch-text-color:#f5f6f7;--docsearch-container-background:rgba(9,10,17,.8);--docsearch-modal-background:#15172a;--docsearch-modal-shadow:inset 1px 1px 0 0 #2c2e40,0 3px 8px 0 #000309;--docsearch-searchbox-background:#090a11;--docsearch-searchbox-focus-background:#000;--docsearch-hit-color:#bec3c9;--docsearch-hit-shadow:none;--docsearch-hit-background:#090a11;--docsearch-key-gradient:linear-gradient(-26.5deg,#565872,#31355b);--docsearch-key-shadow:inset 0 -2px 0 0 #282d55,inset 0 0 1px 1px #51577d,0 2px 2px 0 rgba(3,4,9,.3);--docsearch-footer-background:#1e2136;--docsearch-footer-shadow:inset 0 1px 0 0 rgba(73,76,106,.5),0 -4px 8px 0 rgba(0,0,0,.2);--docsearch-logo-color:#fff;--docsearch-muted-color:#7f8497}.DocSearch-Input:focus{box-shadow:none!important}body{overflow-y:scroll;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;background-color:var(--docus-body-backgroundColor);color:var(--docus-body-color);font-family:var(--docus-body-fontFamily);min-width:var(--size-xs)}.docus-scrollbars ::-webkit-scrollbar{background:transparent;height:.6em;width:.6em}.docus-scrollbars ::-webkit-scrollbar-track{background:var(--color-gray-100)}.docus-scrollbars ::-webkit-scrollbar-thumb{background:var(--color-gray-300);border-radius:.6em}.docus-scrollbars ::-webkit-scrollbar-thumb:hover{background:var(--color-gray-400)}.docus-scrollbars ::-webkit-scrollbar-thumb:active{background:var(--color-gray-500)}.docus-scrollbars.dark ::-webkit-scrollbar-track{background:var(--color-gray-800)}.docus-scrollbars.dark ::-webkit-scrollbar-thumb{background:var(--color-gray-700)}.docus-scrollbars.dark ::-webkit-scrollbar-thumb:hover{background:var(--color-gray-600)}.docus-scrollbars.dark ::-webkit-scrollbar-thumb:active{background:var(--color-gray-500)}",
+      "start": 1707165954023,
+      "end": 1707165954338,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1707165954338,
+      "end": 1707165954338,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1707165954338,
+      "end": 1707165954338,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1707165954338,
+      "end": 1707165954338,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1707165954338,
+      "end": 1707165954338,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1707165954338,
+      "end": 1707165954338,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1707165954338,
+      "end": 1707165954338,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1707165954338,
+      "end": 1707165954338,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1707165954338,
+      "end": 1707165954338,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1707165954338,
+      "end": 1707165954339,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1707165954339,
+      "end": 1707165954339,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1707165954339,
+      "end": 1707165954339,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1707165954339,
+      "end": 1707165954339,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "",
+      "start": 1707165954339,
+      "end": 1707165954339,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1707165954339,
+      "end": 1707165954339,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1707165954339,
+      "end": 1707165954339,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1707165954339,
+      "end": 1707165954339,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1707165954339,
+      "end": 1707165954339,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1707165954339,
+      "end": 1707165954339,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1707165954339,
+      "end": 1707165954339,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1707165954339,
+      "end": 1707165954339,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1707165954339,
+      "end": 1707165954340,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1707165954340,
+      "end": 1707165954340,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1707165954340,
+      "end": 1707165954340,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1707165954340,
+      "end": 1707165954340,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1707165954340,
+      "end": 1707165954340,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1707165954340,
+      "end": 1707165954340,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1707165954340,
+      "end": 1707165954340,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1707165954340,
+      "end": 1707165954340,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1707165954340,
+      "end": 1707165954340,
+      "order": "normal"
+    }
+  ]
+}

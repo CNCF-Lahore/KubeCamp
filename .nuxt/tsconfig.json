@@ -62,6 +62,9 @@
       "vue-demi": [
         "../node_modules/nuxt/dist/app/compat/vue-demi"
       ],
+      "#icon-collections": [
+        "./icon-collections.mjs"
+      ],
       "#color-mode-options": [
         "./color-mode-options.mjs"
       ],
@@ -107,6 +110,7 @@
     "../node_modules/@nuxt-themes/typography/**/*",
     "../node_modules/@nuxt-themes/elements/**/*",
     "../node_modules/@nuxtjs/plausible/runtime",
+    "../node_modules/nuxt-icon/runtime",
     "../node_modules/@nuxtjs/color-mode/runtime",
     "../../runtime",
     "../node_modules/@nuxt-themes/tokens/runtime",
@@ -116,7 +120,6 @@
     "../node_modules/@vueuse/nuxt/runtime",
     "../node_modules/nuxt-config-schema/runtime",
     "../node_modules/@nuxt-themes/docus/app/module/runtime",
-    "../node_modules/nuxt-icon/runtime",
     "../node_modules/@nuxt/devtools/runtime",
     "../node_modules/@nuxt/telemetry/runtime",
     ".."
@@ -125,6 +128,7 @@
     "../node_modules",
     "../node_modules/nuxt/node_modules",
     "../node_modules/@nuxtjs/plausible/runtime/server",
+    "../node_modules/nuxt-icon/runtime/server",
     "../node_modules/@nuxtjs/color-mode/runtime/server",
     "../../runtime/server",
     "../node_modules/@nuxt-themes/tokens/runtime/server",
@@ -134,7 +138,6 @@
     "../node_modules/@vueuse/nuxt/runtime/server",
     "../node_modules/nuxt-config-schema/runtime/server",
     "../node_modules/@nuxt-themes/docus/app/module/runtime/server",
-    "../node_modules/nuxt-icon/runtime/server",
     "../node_modules/@nuxt/devtools/runtime/server",
     "../node_modules/@nuxt/telemetry/runtime/server",
     "../dist",

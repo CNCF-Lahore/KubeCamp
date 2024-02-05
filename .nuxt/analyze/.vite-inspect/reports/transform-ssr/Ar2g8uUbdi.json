@@ -1,0 +1,313 @@
+{
+  "resolvedId": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppSocialIcons.vue?vue&type=style&index=0&scoped=22569e45&transformed=true&lang.postcss",
+  "transforms": [
+    {
+      "name": "pinceau-transforms",
+      "result": "a{display:flex;color:var(--color-gray-500);padding:var(--space-4);}:root.dark a{color:var(--color-gray-400);}a:hover{color:var(--color-gray-700);}:root.dark a:hover{color:var(--color-gray-200);}",
+      "start": 1707165963283,
+      "end": 1707165963285,
+      "sourcemaps": {
+        "version": 3,
+        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppSocialIcons.vue",
+        "sources": [
+          "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppSocialIcons.vue"
+        ],
+        "sourcesContent": [
+          "a{display:flex;color:var(--color-gray-500);padding:var(--space-4);}:root.dark a{color:var(--color-gray-400);}a:hover{color:var(--color-gray-700);}:root.dark a:hover{color:var(--color-gray-200);}"
+        ],
+        "names": [],
+        "mappings": "AAAA"
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1707165963286,
+      "end": 1707165963286,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1707165963286,
+      "end": 1707165963286,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1707165963286,
+      "end": 1707165963286,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1707165963286,
+      "end": 1707165963286,
+      "order": "pre"
+    },
+    {
+      "name": "pinceau-transforms",
+      "result": "a{display:flex;color:var(--color-gray-500);padding:var(--space-4);}:root.dark a{color:var(--color-gray-400);}a:hover{color:var(--color-gray-700);}:root.dark a:hover{color:var(--color-gray-200);}",
+      "start": 1707165963286,
+      "end": 1707165963286,
+      "order": "pre"
+    },
+    {
+      "name": "pinceau-transforms",
+      "result": "a{display:flex;color:var(--color-gray-500);padding:var(--space-4);}:root.dark a{color:var(--color-gray-400);}a:hover{color:var(--color-gray-700);}:root.dark a:hover{color:var(--color-gray-200);}",
+      "start": 1707165963286,
+      "end": 1707165963286,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1707165963287,
+      "end": 1707165963287,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1707165963287,
+      "end": 1707165963287,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1707165963287,
+      "end": 1707165963287,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": "a{color:var(--color-gray-500);display:flex;padding:var(--space-4)}:root.dark a{color:var(--color-gray-400)}a:hover{color:var(--color-gray-700)}:root.dark a:hover{color:var(--color-gray-200)}",
+      "start": 1707165963288,
+      "end": 1707165963296,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppSocialIcons.vue",
+        "mappings": "AAAA,EAAe,2BAA2B,CAAxC,YAAY,CAA6B,sBAAuB,CAAC,aAAa,2BAA4B,CAAC,QAAQ,2BAA4B,CAAC,mBAAmB,2BAA4B",
+        "names": [],
+        "sources": [
+          "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppSocialIcons.vue"
+        ],
+        "sourcesContent": [
+          "a{display:flex;color:var(--color-gray-500);padding:var(--space-4);}:root.dark a{color:var(--color-gray-400);}a:hover{color:var(--color-gray-700);}:root.dark a:hover{color:var(--color-gray-200);}"
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1707165963296,
+      "end": 1707165963296,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1707165963296,
+      "end": 1707165963296,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1707165963296,
+      "end": 1707165963296,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "a[data-v-22569e45]{color:var(--color-gray-500);display:flex;padding:var(--space-4)}:root.dark a[data-v-22569e45]{color:var(--color-gray-400)}a[data-v-22569e45]:hover{color:var(--color-gray-700)}:root.dark a[data-v-22569e45]:hover{color:var(--color-gray-200)}",
+      "start": 1707165963297,
+      "end": 1707165963298,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppSocialIcons.vue",
+        "mappings": "AAAA,mBAAE,2BAA2B,CAAC,YAAY,CAAC,sBAAsB,CAAC,8BAAa,2BAA2B,CAAC,yBAAQ,2BAA2B,CAAC,oCAAmB,2BAA2B",
+        "names": [],
+        "sources": [
+          "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppSocialIcons.vue"
+        ],
+        "sourcesContent": [
+          null
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1707165963301,
+      "end": 1707165963301,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1707165963303,
+      "end": 1707165963303,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1707165963303,
+      "end": 1707165963303,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1707165963306,
+      "end": 1707165963306,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1707165963306,
+      "end": 1707165963308,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1707165963311,
+      "end": 1707165963311,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1707165963312,
+      "end": 1707165963312,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1707165963312,
+      "end": 1707165963312,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1707165963312,
+      "end": 1707165963312,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "",
+      "start": 1707165963313,
+      "end": 1707165963313,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1707165963315,
+      "end": 1707165963316,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1707165963317,
+      "end": 1707165963317,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1707165963318,
+      "end": 1707165963318,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1707165963323,
+      "end": 1707165963323,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1707165963323,
+      "end": 1707165963324,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1707165963324,
+      "end": 1707165963324,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1707165963324,
+      "end": 1707165963324,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1707165963324,
+      "end": 1707165963324,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1707165963328,
+      "end": 1707165963329,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1707165963328,
+      "end": 1707165963329,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1707165963330,
+      "end": 1707165963330,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1707165963330,
+      "end": 1707165963330,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1707165963332,
+      "end": 1707165963333,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1707165963332,
+      "end": 1707165963333,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1707165963333,
+      "end": 1707165963333,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1707165963335,
+      "end": 1707165963335,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1707165963336,
+      "end": 1707165963336,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1707165963336,
+      "end": 1707165963336,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1707165963337,
+      "end": 1707165963337,
+      "order": "normal"
+    }
+  ]
+}

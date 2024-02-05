@@ -2,6 +2,7 @@ import { NuxtModule, RuntimeConfig } from 'nuxt/schema'
 declare module 'nuxt/schema' {
   interface NuxtConfig {
     ["plausible"]?: typeof import("@nuxtjs/plausible").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    ["icon"]?: typeof import("nuxt-icon").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["colorMode"]?: typeof import("@nuxtjs/color-mode").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["pinceau"]?: typeof import("pinceau/nuxt").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["tokens"]?: typeof import("@nuxt-themes/tokens").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
@@ -12,10 +13,9 @@ declare module 'nuxt/schema' {
     ["nuxt-config-schema-compat"]?: typeof import("nuxt-config-schema").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["docus"]?: typeof import("/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/app/module").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["@nuxt-themes/docus"]?: typeof import("@nuxt-themes/docus").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
-    ["icon"]?: typeof import("nuxt-icon").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["devtools"]?: typeof import("@nuxt/devtools").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["telemetry"]?: typeof import("@nuxt/telemetry").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
-    modules?: (undefined | null | false | NuxtModule | string | [NuxtModule | string, Record<string, any>] | ["@nuxtjs/plausible", Exclude<NuxtConfig["plausible"], boolean>] | ["@nuxtjs/color-mode", Exclude<NuxtConfig["colorMode"], boolean>] | ["pinceau/nuxt", Exclude<NuxtConfig["pinceau"], boolean>] | ["@nuxt-themes/tokens", Exclude<NuxtConfig["tokens"], boolean>] | ["@nuxthq/studio", Exclude<NuxtConfig["studio"], boolean>] | ["@nuxtjs/mdc", Exclude<NuxtConfig["mdc"], boolean>] | ["@nuxt/content", Exclude<NuxtConfig["content"], boolean>] | ["@vueuse/nuxt", Exclude<NuxtConfig["vueuse"], boolean>] | ["nuxt-config-schema", Exclude<NuxtConfig["nuxt-config-schema-compat"], boolean>] | ["/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/app/module", Exclude<NuxtConfig["docus"], boolean>] | ["@nuxt-themes/docus", Exclude<NuxtConfig["@nuxt-themes/docus"], boolean>] | ["nuxt-icon", Exclude<NuxtConfig["icon"], boolean>] | ["@nuxt/devtools", Exclude<NuxtConfig["devtools"], boolean>] | ["@nuxt/telemetry", Exclude<NuxtConfig["telemetry"], boolean>])[],
+    modules?: (undefined | null | false | NuxtModule | string | [NuxtModule | string, Record<string, any>] | ["@nuxtjs/plausible", Exclude<NuxtConfig["plausible"], boolean>] | ["nuxt-icon", Exclude<NuxtConfig["icon"], boolean>] | ["@nuxtjs/color-mode", Exclude<NuxtConfig["colorMode"], boolean>] | ["pinceau/nuxt", Exclude<NuxtConfig["pinceau"], boolean>] | ["@nuxt-themes/tokens", Exclude<NuxtConfig["tokens"], boolean>] | ["@nuxthq/studio", Exclude<NuxtConfig["studio"], boolean>] | ["@nuxtjs/mdc", Exclude<NuxtConfig["mdc"], boolean>] | ["@nuxt/content", Exclude<NuxtConfig["content"], boolean>] | ["@vueuse/nuxt", Exclude<NuxtConfig["vueuse"], boolean>] | ["nuxt-config-schema", Exclude<NuxtConfig["nuxt-config-schema-compat"], boolean>] | ["/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/app/module", Exclude<NuxtConfig["docus"], boolean>] | ["@nuxt-themes/docus", Exclude<NuxtConfig["@nuxt-themes/docus"], boolean>] | ["@nuxt/devtools", Exclude<NuxtConfig["devtools"], boolean>] | ["@nuxt/telemetry", Exclude<NuxtConfig["telemetry"], boolean>])[],
   }
   interface RuntimeConfig {
    app: {
@@ -242,6 +242,54 @@ declare module 'nuxt/schema' {
 
                      type: string,
                   },
+
+                  iconifyApiOptions: {
+                     title: string,
+
+                     description: string,
+
+                     tags: Array<string>,
+
+                     id: string,
+
+                     properties: {
+                        url: {
+                           title: string,
+
+                           description: string,
+
+                           tags: Array<string>,
+
+                           id: string,
+
+                           default: string,
+
+                           type: string,
+                        },
+
+                        publicApiFallback: {
+                           title: string,
+
+                           description: string,
+
+                           tags: Array<string>,
+
+                           id: string,
+
+                           default: boolean,
+
+                           type: string,
+                        },
+                     },
+
+                     type: string,
+
+                     default: {
+                        url: string,
+
+                        publicApiFallback: boolean,
+                     },
+                  },
                },
 
                type: string,
@@ -252,6 +300,12 @@ declare module 'nuxt/schema' {
                   class: string,
 
                   aliases: any,
+
+                  iconifyApiOptions: {
+                     url: string,
+
+                     publicApiFallback: boolean,
+                  },
                },
             },
 
@@ -1411,6 +1465,12 @@ declare module 'nuxt/schema' {
                class: string,
 
                aliases: any,
+
+               iconifyApiOptions: {
+                  url: string,
+
+                  publicApiFallback: boolean,
+               },
             },
 
             prose: {
@@ -1538,6 +1598,12 @@ declare module 'nuxt/schema' {
             class: string,
 
             aliases: any,
+
+            iconifyApiOptions: {
+               url: string,
+
+               publicApiFallback: boolean,
+            },
          },
 
          prose: {
