@@ -1,0 +1,1 @@
+export { default } from "file:///workspace/Kubernetes-Bootcamp/node_modules/@nuxt/vite-builder/dist/runtime/vite-node.mjs"
