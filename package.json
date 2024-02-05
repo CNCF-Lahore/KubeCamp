@@ -17,5 +17,8 @@
     "@types/node": "^20.8.2",
     "eslint": "^8.50.0",
     "nuxt": "^3.7.4"
+  },
+  "resolutions": {
+    "string-width": "4.2.3"
   }
 }
