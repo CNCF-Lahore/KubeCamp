@@ -45,7 +45,7 @@ const defineAppConfig = (config) => config;
 
 const appConfig0 = defineAppConfig({
   docus: {
-    title: "Docus",
+    title: "Kubernetes Bootcamp",
     description: "The best place to start your documentation.",
     image: "https://user-images.githubusercontent.com/904724/185365452-87b7ca7b-6030-4813-a2db-5e65c785bf88.png",
     socials: {
@@ -138,7 +138,7 @@ const appConfig3 = defineAppConfig({});
 
 const inlineAppConfig = {
   "nuxt": {
-    "buildId": "93290c4f-1e77-430a-b52f-8346bdf904a3"
+    "buildId": "9c3130b1-dd60-42a2-aa27-809cb258bfbb"
   }
 };
 
@@ -146,8 +146,8 @@ const appConfig = defuFn(appConfig0, appConfig1, appConfig2, appConfig3, inlineA
 
 const _inlineRuntimeConfig = {
   "app": {
-    "baseURL": "/",
-    "buildAssetsDir": "/_nuxt/",
+    "baseURL": "/Kubernetes-Bootcamp/",
+    "buildAssetsDir": "assets",
     "cdnURL": ""
   },
   "nitro": {
@@ -160,17 +160,17 @@ const _inlineRuntimeConfig = {
         "prerender": true,
         "cache": true
       },
-      "/_nuxt/builds/meta/**": {
+      "/assets/builds/meta/**": {
         "headers": {
           "cache-control": "public, max-age=31536000, immutable"
         }
       },
-      "/_nuxt/builds/**": {
+      "/assets/builds/**": {
         "headers": {
           "cache-control": "public, max-age=1, immutable"
         }
       },
-      "/_nuxt/**": {
+      "/assets/**": {
         "headers": {
           "cache-control": "public, max-age=31536000, immutable"
         }
@@ -233,7 +233,7 @@ const _inlineRuntimeConfig = {
     "content": {
       "locales": [],
       "defaultLocale": "",
-      "integrity": 1707165940934,
+      "integrity": 1707500021409,
       "experimental": {
         "stripQueryParameters": false,
         "advanceQuery": false,
@@ -468,7 +468,7 @@ const _inlineRuntimeConfig = {
       "properties": {
         "nuxtIcon": {
           "title": "Nuxt Icon",
-          "description": "Configure the defaults of Nuxt Icon",
+          "description": "Configure Nuxt Icon module preferences.",
           "id": "#appConfig/nuxtIcon",
           "properties": {
             "size": {
@@ -484,7 +484,7 @@ const _inlineRuntimeConfig = {
             },
             "class": {
               "title": "CSS Class",
-              "description": "Set the default CSS class",
+              "description": "Set the default CSS class.",
               "tags": [
                 "@studioIcon material-symbols:css"
               ],
@@ -496,20 +496,58 @@ const _inlineRuntimeConfig = {
               "title": "Icon aliases",
               "description": "Define Icon aliases to update them easily without code changes.",
               "tags": [
-                "@studioIcon material-symbols:star-rounded",
-                "@studioInputObjectValueType icon"
+                "@studioIcon material-symbols:star-rounded"
               ],
               "tsType": "{ [alias: string]: string }",
               "id": "#appConfig/nuxtIcon/aliases",
               "default": {},
               "type": "object"
+            },
+            "iconifyApiOptions": {
+              "title": "Iconify API Options",
+              "description": "Define preferences for Iconify API fetch.",
+              "tags": [
+                "@studioIcon material-symbols:tv-options-input-settings"
+              ],
+              "id": "#appConfig/nuxtIcon/iconifyApiOptions",
+              "properties": {
+                "url": {
+                  "title": "Iconify API URL",
+                  "description": "Define a custom Iconify API URL. Useful if you want to use a self-hosted Iconify API. Learn more: https://iconify.design/docs/api.",
+                  "tags": [
+                    "@studioIcon material-symbols:api"
+                  ],
+                  "id": "#appConfig/nuxtIcon/iconifyApiOptions/url",
+                  "default": "https://api.iconify.design",
+                  "type": "string"
+                },
+                "publicApiFallback": {
+                  "title": "Public Iconify API fallback",
+                  "description": "Define if the public Iconify API should be used as fallback.",
+                  "tags": [
+                    "@studioIcon material-symbols:public"
+                  ],
+                  "id": "#appConfig/nuxtIcon/iconifyApiOptions/publicApiFallback",
+                  "default": false,
+                  "type": "boolean"
+                }
+              },
+              "type": "object",
+              "default": {
+                "url": "https://api.iconify.design",
+                "publicApiFallback": false
+              }
             }
           },
           "type": "object",
           "default": {
             "size": "1em",
             "class": "",
-            "aliases": {}
+            "aliases": {},
+            "iconifyApiOptions": {
+              "url": "https://api.iconify.design",
+              "publicApiFallback": false
+            }
           }
         },
         "prose": {
@@ -1298,7 +1336,11 @@ const _inlineRuntimeConfig = {
         "nuxtIcon": {
           "size": "1em",
           "class": "",
-          "aliases": {}
+          "aliases": {},
+          "iconifyApiOptions": {
+            "url": "https://api.iconify.design",
+            "publicApiFallback": false
+          }
         },
         "prose": {
           "copyButton": {
@@ -1381,7 +1423,11 @@ const _inlineRuntimeConfig = {
       "nuxtIcon": {
         "size": "1em",
         "class": "",
-        "aliases": {}
+        "aliases": {},
+        "iconifyApiOptions": {
+          "url": "https://api.iconify.design",
+          "publicApiFallback": false
+        }
       },
       "prose": {
         "copyButton": {
@@ -2066,7 +2112,7 @@ function readAsset (id) {
   return promises.readFile(resolve(serverDir, assets[id].path))
 }
 
-const publicAssetBases = {"/_nuxt/builds/meta":{"maxAge":31536000},"/_nuxt/builds":{"maxAge":1},"/_nuxt":{"maxAge":31536000}};
+const publicAssetBases = {"/assets/builds/meta":{"maxAge":31536000},"/assets/builds":{"maxAge":1},"/assets":{"maxAge":31536000}};
 
 function isPublicAssetURL(id = '') {
   if (assets[id]) {
@@ -20743,21 +20789,6 @@ const components = {
           }
         },
         {
-          "name": "value",
-          "type": "Record<string, any>",
-          "description": "Content to render",
-          "declarations": [
-            {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
-              "range": [
-                359,
-                408
-              ]
-            }
-          ],
-          "schema": "Record<string, any>"
-        },
-        {
           "name": "data",
           "type": "Record<string, any>",
           "description": "",
@@ -20767,6 +20798,21 @@ const components = {
               "range": [
                 739,
                 792
+              ]
+            }
+          ],
+          "schema": "Record<string, any>"
+        },
+        {
+          "name": "value",
+          "type": "Record<string, any>",
+          "description": "Content to render",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
+              "range": [
+                359,
+                408
               ]
             }
           ],
@@ -22833,6 +22879,269 @@ const components = {
         }
       ]
     }
+  },
+  "Icon": {
+    "export": "default",
+    "chunkName": "components/icon",
+    "global": true,
+    "kebabName": "icon",
+    "pascalName": "Icon",
+    "prefetch": false,
+    "preload": false,
+    "mode": "all",
+    "shortPath": "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/Icon.vue",
+    "priority": 0,
+    "name": "Icon",
+    "filePath": "node_modules/nuxt-icon/dist/runtime/Icon.vue",
+    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/Icon.vue",
+    "meta": {
+      "type": 1,
+      "props": [
+        {
+          "name": "name",
+          "global": false,
+          "description": "",
+          "tags": [],
+          "required": true,
+          "type": "string",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/Icon.vue",
+              "range": [
+                669,
+                717
+              ]
+            },
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/Icon.vue",
+              "range": [
+                669,
+                717
+              ]
+            }
+          ],
+          "schema": "string"
+        },
+        {
+          "name": "size",
+          "global": false,
+          "description": "",
+          "tags": [],
+          "required": false,
+          "type": "string | undefined",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/Icon.vue",
+              "range": [
+                721,
+                766
+              ]
+            }
+          ],
+          "schema": {
+            "kind": "enum",
+            "type": "string | undefined",
+            "schema": [
+              "undefined",
+              "string"
+            ]
+          },
+          "default": "\"\""
+        }
+      ],
+      "slots": [
+        {
+          "name": "default",
+          "type": "{}",
+          "description": "",
+          "declarations": [],
+          "schema": {
+            "kind": "object",
+            "type": "{}",
+            "schema": {}
+          }
+        }
+      ],
+      "events": [],
+      "exposed": [
+        {
+          "name": "$slots",
+          "type": "Readonly<InternalSlots> & { default?(_: {}): any; }",
+          "description": "",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "range": [
+                8475,
+                8502
+              ]
+            }
+          ],
+          "schema": {
+            "kind": "object",
+            "type": "Readonly<InternalSlots> & { default?(_: {}): any; }",
+            "schema": {
+              "default": {
+                "name": "default",
+                "global": false,
+                "description": "",
+                "tags": [],
+                "required": false,
+                "type": "((_: {}) => any) | undefined",
+                "declarations": [],
+                "schema": {
+                  "kind": "enum",
+                  "type": "((_: {}) => any) | undefined",
+                  "schema": [
+                    "undefined",
+                    {
+                      "kind": "event",
+                      "type": "(_: {}): any",
+                      "schema": []
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "description": "",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/Icon.vue",
+              "range": [
+                669,
+                717
+              ]
+            }
+          ],
+          "schema": "string"
+        },
+        {
+          "name": "size",
+          "type": "string",
+          "description": "",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/Icon.vue",
+              "range": [
+                721,
+                766
+              ]
+            }
+          ],
+          "schema": "string"
+        }
+      ]
+    }
+  },
+  "IconCSS": {
+    "export": "default",
+    "chunkName": "components/icon-css",
+    "global": true,
+    "kebabName": "icon-css",
+    "pascalName": "IconCSS",
+    "prefetch": false,
+    "preload": false,
+    "mode": "all",
+    "shortPath": "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
+    "priority": 0,
+    "name": "IconCSS",
+    "filePath": "node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
+    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
+    "meta": {
+      "type": 1,
+      "props": [
+        {
+          "name": "name",
+          "global": false,
+          "description": "",
+          "tags": [],
+          "required": true,
+          "type": "string",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
+              "range": [
+                387,
+                435
+              ]
+            },
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
+              "range": [
+                387,
+                435
+              ]
+            }
+          ],
+          "schema": "string"
+        },
+        {
+          "name": "size",
+          "global": false,
+          "description": "",
+          "tags": [],
+          "required": false,
+          "type": "string | undefined",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
+              "range": [
+                439,
+                484
+              ]
+            }
+          ],
+          "schema": {
+            "kind": "enum",
+            "type": "string | undefined",
+            "schema": [
+              "undefined",
+              "string"
+            ]
+          },
+          "default": "\"\""
+        }
+      ],
+      "slots": [],
+      "events": [],
+      "exposed": [
+        {
+          "name": "name",
+          "type": "string",
+          "description": "",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
+              "range": [
+                387,
+                435
+              ]
+            }
+          ],
+          "schema": "string"
+        },
+        {
+          "name": "size",
+          "type": "string",
+          "description": "",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
+              "range": [
+                439,
+                484
+              ]
+            }
+          ],
+          "schema": "string"
+        }
+      ]
+    }
   }
 };
 
@@ -24842,7 +25151,7 @@ const handlers = [
   { route: '/api/_content/query/:qid/**:params', handler: _rSvadi, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/query/:qid', handler: _rSvadi, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/query', handler: _rSvadi, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/cache.1707165940934.json', handler: _AD4g7o, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/cache.1707500021409.json', handler: _AD4g7o, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/navigation/:qid/**:params', handler: _QdE0th, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/navigation/:qid', handler: _QdE0th, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/navigation', handler: _QdE0th, lazy: false, middleware: false, method: "get" },

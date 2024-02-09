@@ -1,12 +1,19 @@
 export default defineNuxtConfig({
-  // https://github.com/nuxt-themes/docus
+  // Extends the default Nuxt Docus theme
   extends: '@nuxt-themes/docus',
   devtools: { enabled: true },
 
+  // Configuration for app, including the base URL
+  app: {
+    baseURL: '/Kubernetes-Bootcamp/',
+    buildAssetsDir: 'assets'
+  },
+
+  // Modules configuration
   modules: [
-    // Remove it if you don't use Plausible analytics
-    // https://github.com/nuxt-modules/plausible
+    // Plausible Analytics module
     '@nuxtjs/plausible',
+    // Nuxt Icon module
     'nuxt-icon'
   ]
 })

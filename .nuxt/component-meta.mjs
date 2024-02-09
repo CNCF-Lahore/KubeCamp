@@ -17887,21 +17887,6 @@ export default {
           }
         },
         {
-          "name": "value",
-          "type": "Record<string, any>",
-          "description": "Content to render",
-          "declarations": [
-            {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
-              "range": [
-                359,
-                408
-              ]
-            }
-          ],
-          "schema": "Record<string, any>"
-        },
-        {
           "name": "data",
           "type": "Record<string, any>",
           "description": "",
@@ -17911,6 +17896,21 @@ export default {
               "range": [
                 739,
                 792
+              ]
+            }
+          ],
+          "schema": "Record<string, any>"
+        },
+        {
+          "name": "value",
+          "type": "Record<string, any>",
+          "description": "Content to render",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
+              "range": [
+                359,
+                408
               ]
             }
           ],
@@ -19970,6 +19970,269 @@ export default {
               "range": [
                 317,
                 361
+              ]
+            }
+          ],
+          "schema": "string"
+        }
+      ]
+    }
+  },
+  "Icon": {
+    "export": "default",
+    "chunkName": "components/icon",
+    "global": true,
+    "kebabName": "icon",
+    "pascalName": "Icon",
+    "prefetch": false,
+    "preload": false,
+    "mode": "all",
+    "shortPath": "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/Icon.vue",
+    "priority": 0,
+    "name": "Icon",
+    "filePath": "node_modules/nuxt-icon/dist/runtime/Icon.vue",
+    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/Icon.vue",
+    "meta": {
+      "type": 1,
+      "props": [
+        {
+          "name": "name",
+          "global": false,
+          "description": "",
+          "tags": [],
+          "required": true,
+          "type": "string",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/Icon.vue",
+              "range": [
+                669,
+                717
+              ]
+            },
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/Icon.vue",
+              "range": [
+                669,
+                717
+              ]
+            }
+          ],
+          "schema": "string"
+        },
+        {
+          "name": "size",
+          "global": false,
+          "description": "",
+          "tags": [],
+          "required": false,
+          "type": "string | undefined",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/Icon.vue",
+              "range": [
+                721,
+                766
+              ]
+            }
+          ],
+          "schema": {
+            "kind": "enum",
+            "type": "string | undefined",
+            "schema": [
+              "undefined",
+              "string"
+            ]
+          },
+          "default": "\"\""
+        }
+      ],
+      "slots": [
+        {
+          "name": "default",
+          "type": "{}",
+          "description": "",
+          "declarations": [],
+          "schema": {
+            "kind": "object",
+            "type": "{}",
+            "schema": {}
+          }
+        }
+      ],
+      "events": [],
+      "exposed": [
+        {
+          "name": "$slots",
+          "type": "Readonly<InternalSlots> & { default?(_: {}): any; }",
+          "description": "",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "range": [
+                8475,
+                8502
+              ]
+            }
+          ],
+          "schema": {
+            "kind": "object",
+            "type": "Readonly<InternalSlots> & { default?(_: {}): any; }",
+            "schema": {
+              "default": {
+                "name": "default",
+                "global": false,
+                "description": "",
+                "tags": [],
+                "required": false,
+                "type": "((_: {}) => any) | undefined",
+                "declarations": [],
+                "schema": {
+                  "kind": "enum",
+                  "type": "((_: {}) => any) | undefined",
+                  "schema": [
+                    "undefined",
+                    {
+                      "kind": "event",
+                      "type": "(_: {}): any",
+                      "schema": []
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "description": "",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/Icon.vue",
+              "range": [
+                669,
+                717
+              ]
+            }
+          ],
+          "schema": "string"
+        },
+        {
+          "name": "size",
+          "type": "string",
+          "description": "",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/Icon.vue",
+              "range": [
+                721,
+                766
+              ]
+            }
+          ],
+          "schema": "string"
+        }
+      ]
+    }
+  },
+  "IconCSS": {
+    "export": "default",
+    "chunkName": "components/icon-css",
+    "global": true,
+    "kebabName": "icon-css",
+    "pascalName": "IconCSS",
+    "prefetch": false,
+    "preload": false,
+    "mode": "all",
+    "shortPath": "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
+    "priority": 0,
+    "name": "IconCSS",
+    "filePath": "node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
+    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
+    "meta": {
+      "type": 1,
+      "props": [
+        {
+          "name": "name",
+          "global": false,
+          "description": "",
+          "tags": [],
+          "required": true,
+          "type": "string",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
+              "range": [
+                387,
+                435
+              ]
+            },
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
+              "range": [
+                387,
+                435
+              ]
+            }
+          ],
+          "schema": "string"
+        },
+        {
+          "name": "size",
+          "global": false,
+          "description": "",
+          "tags": [],
+          "required": false,
+          "type": "string | undefined",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
+              "range": [
+                439,
+                484
+              ]
+            }
+          ],
+          "schema": {
+            "kind": "enum",
+            "type": "string | undefined",
+            "schema": [
+              "undefined",
+              "string"
+            ]
+          },
+          "default": "\"\""
+        }
+      ],
+      "slots": [],
+      "events": [],
+      "exposed": [
+        {
+          "name": "name",
+          "type": "string",
+          "description": "",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
+              "range": [
+                387,
+                435
+              ]
+            }
+          ],
+          "schema": "string"
+        },
+        {
+          "name": "size",
+          "type": "string",
+          "description": "",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
+              "range": [
+                439,
+                484
               ]
             }
           ],

@@ -155,8 +155,8 @@ const appConfig = defuFn(appConfig0, appConfig1, appConfig2, appConfig3, inlineA
 
 const _inlineRuntimeConfig = {
   "app": {
-    "baseURL": "/",
-    "buildAssetsDir": "/_nuxt/",
+    "baseURL": "/Kubernetes-Bootcamp/",
+    "buildAssetsDir": "assets",
     "cdnURL": ""
   },
   "nitro": {
@@ -169,12 +169,12 @@ const _inlineRuntimeConfig = {
         "prerender": true,
         "cache": true
       },
-      "/_nuxt/builds/meta/**": {
+      "/assets/builds/meta/**": {
         "headers": {
           "cache-control": "public, max-age=31536000, immutable"
         }
       },
-      "/_nuxt/builds/**": {
+      "/assets/builds/**": {
         "headers": {
           "cache-control": "public, max-age=1, immutable"
         }

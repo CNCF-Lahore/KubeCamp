@@ -4,172 +4,172 @@
     {
       "name": "vite:load-fallback",
       "result": "import { computed, reactive, watch } from \"vue\";\nimport { defineNuxtPlugin, isVue2, isVue3, useRouter, useHead, useState } from \"#imports\";\nimport { globalName, storageKey, dataValue } from \"#color-mode-options\";\nconst helper = window[globalName] || {};\nexport default defineNuxtPlugin((nuxtApp) => {\n  const colorMode = useState(\"color-mode\", () => reactive({\n    // For SPA mode or fallback\n    preference: helper.preference,\n    value: helper.value,\n    unknown: false,\n    forced: false\n  })).value;\n  if (dataValue) {\n    if (isVue3) {\n      useHead({\n        htmlAttrs: { [`data-${dataValue}`]: computed(() => colorMode.value) }\n      });\n    } else {\n      const app = nuxtApp.nuxt2Context.app;\n      const originalHead = app.head;\n      app.head = function() {\n        const head = (typeof originalHead === \"function\" ? originalHead.call(this) : originalHead) || {};\n        head.htmlAttrs = head.htmlAttrs || {};\n        head.htmlAttrs[`data-${dataValue}`] = colorMode.value;\n        return head;\n      };\n    }\n  }\n  useRouter().afterEach((to) => {\n    const forcedColorMode = isVue2 ? to.matched[0]?.components.default?.options.colorMode : to.meta.colorMode;\n    if (forcedColorMode && forcedColorMode !== \"system\") {\n      colorMode.value = forcedColorMode;\n      colorMode.forced = true;\n    } else {\n      if (forcedColorMode === \"system\") {\n        console.warn(\"You cannot force the colorMode to system at the page level.\");\n      }\n      colorMode.forced = false;\n      colorMode.value = colorMode.preference === \"system\" ? helper.getColorScheme() : colorMode.preference;\n    }\n  });\n  let darkWatcher;\n  function watchMedia() {\n    if (darkWatcher || !window.matchMedia) {\n      return;\n    }\n    darkWatcher = window.matchMedia(\"(prefers-color-scheme: dark)\");\n    darkWatcher.addEventListener(\"change\", () => {\n      if (!colorMode.forced && colorMode.preference === \"system\") {\n        colorMode.value = helper.getColorScheme();\n      }\n    });\n  }\n  watch(() => colorMode.preference, (preference) => {\n    if (colorMode.forced) {\n      return;\n    }\n    if (preference === \"system\") {\n      colorMode.value = helper.getColorScheme();\n      watchMedia();\n    } else {\n      colorMode.value = preference;\n    }\n    window.localStorage?.setItem(storageKey, preference);\n  }, { immediate: true });\n  watch(() => colorMode.value, (newValue, oldValue) => {\n    helper.removeColorScheme(oldValue);\n    helper.addColorScheme(newValue);\n  });\n  if (colorMode.preference === \"system\") {\n    watchMedia();\n  }\n  nuxtApp.hook(\"app:mounted\", () => {\n    if (colorMode.unknown) {\n      colorMode.preference = helper.preference;\n      colorMode.value = helper.value;\n      colorMode.unknown = false;\n    }\n  });\n  nuxtApp.provide(\"colorMode\", colorMode);\n});\n",
-      "start": 1707165953877,
-      "end": 1707165954012,
+      "start": 1707500035405,
+      "end": 1707500035550,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1707165954012,
-      "end": 1707165954012,
+      "start": 1707500035550,
+      "end": 1707500035550,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1707165954012,
-      "end": 1707165954012,
+      "start": 1707500035550,
+      "end": 1707500035550,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { computed, reactive, watch } from \"vue\";\nimport { defineNuxtPlugin, isVue2, isVue3, useRouter, useHead, useState } from \"#imports\";\nimport { globalName, storageKey, dataValue } from \"#color-mode-options\";\nconst helper = window[globalName] || {};\nexport default defineNuxtPlugin((nuxtApp) => {\n  const colorMode = useState(\"color-mode\", () => reactive({\n    // For SPA mode or fallback\n    preference: helper.preference,\n    value: helper.value,\n    unknown: false,\n    forced: false\n  })).value;\n  if (dataValue) {\n    if (isVue3) {\n      useHead({\n        htmlAttrs: { [`data-${dataValue}`]: computed(() => colorMode.value) }\n      });\n    } else {\n      const app = nuxtApp.nuxt2Context.app;\n      const originalHead = app.head;\n      app.head = function() {\n        const head = (typeof originalHead === \"function\" ? originalHead.call(this) : originalHead) || {};\n        head.htmlAttrs = head.htmlAttrs || {};\n        head.htmlAttrs[`data-${dataValue}`] = colorMode.value;\n        return head;\n      };\n    }\n  }\n  useRouter().afterEach((to) => {\n    const forcedColorMode = isVue2 ? to.matched[0]?.components.default?.options.colorMode : to.meta.colorMode;\n    if (forcedColorMode && forcedColorMode !== \"system\") {\n      colorMode.value = forcedColorMode;\n      colorMode.forced = true;\n    } else {\n      if (forcedColorMode === \"system\") {\n        console.warn(\"You cannot force the colorMode to system at the page level.\");\n      }\n      colorMode.forced = false;\n      colorMode.value = colorMode.preference === \"system\" ? helper.getColorScheme() : colorMode.preference;\n    }\n  });\n  let darkWatcher;\n  function watchMedia() {\n    if (darkWatcher || !window.matchMedia) {\n      return;\n    }\n    darkWatcher = window.matchMedia(\"(prefers-color-scheme: dark)\");\n    darkWatcher.addEventListener(\"change\", () => {\n      if (!colorMode.forced && colorMode.preference === \"system\") {\n        colorMode.value = helper.getColorScheme();\n      }\n    });\n  }\n  watch(() => colorMode.preference, (preference) => {\n    if (colorMode.forced) {\n      return;\n    }\n    if (preference === \"system\") {\n      colorMode.value = helper.getColorScheme();\n      watchMedia();\n    } else {\n      colorMode.value = preference;\n    }\n    window.localStorage?.setItem(storageKey, preference);\n  }, { immediate: true });\n  watch(() => colorMode.value, (newValue, oldValue) => {\n    helper.removeColorScheme(oldValue);\n    helper.addColorScheme(newValue);\n  });\n  if (colorMode.preference === \"system\") {\n    watchMedia();\n  }\n  nuxtApp.hook(\"app:mounted\", () => {\n    if (colorMode.unknown) {\n      colorMode.preference = helper.preference;\n      colorMode.value = helper.value;\n      colorMode.unknown = false;\n    }\n  });\n  nuxtApp.provide(\"colorMode\", colorMode);\n});\n",
-      "start": 1707165954012,
-      "end": 1707165954012,
+      "start": 1707500035550,
+      "end": 1707500035550,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1707165954012,
-      "end": 1707165954012,
+      "start": 1707500035550,
+      "end": 1707500035550,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1707165954012,
-      "end": 1707165954012,
+      "start": 1707500035550,
+      "end": 1707500035550,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1707165954012,
-      "end": 1707165954012,
+      "start": 1707500035550,
+      "end": 1707500035550,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1707165954012,
-      "end": 1707165954012,
+      "start": 1707500035550,
+      "end": 1707500035550,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1707165954012,
-      "end": 1707165954012,
+      "start": 1707500035550,
+      "end": 1707500035550,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1707165954012,
-      "end": 1707165954012,
+      "start": 1707500035550,
+      "end": 1707500035550,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1707165954012,
-      "end": 1707165954012,
+      "start": 1707500035550,
+      "end": 1707500035550,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1707165954013,
-      "end": 1707165954013,
+      "start": 1707500035550,
+      "end": 1707500035550,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1707165954013,
-      "end": 1707165954013,
+      "start": 1707500035550,
+      "end": 1707500035550,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1707165954013,
-      "end": 1707165954013,
+      "start": 1707500035550,
+      "end": 1707500035551,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1707165954013,
-      "end": 1707165954013,
+      "start": 1707500035551,
+      "end": 1707500035551,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1707165954013,
-      "end": 1707165954013,
+      "start": 1707500035551,
+      "end": 1707500035551,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1707165954013,
-      "end": 1707165954013,
+      "start": 1707500035551,
+      "end": 1707500035551,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1707165954013,
-      "end": 1707165954013,
+      "start": 1707500035551,
+      "end": 1707500035551,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1707165954013,
-      "end": 1707165954014,
+      "start": 1707500035551,
+      "end": 1707500035551,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1707165954014,
-      "end": 1707165954014,
+      "start": 1707500035551,
+      "end": 1707500035551,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1707165954014,
-      "end": 1707165954014,
+      "start": 1707500035551,
+      "end": 1707500035551,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1707165954014,
-      "end": 1707165954014,
+      "start": 1707500035551,
+      "end": 1707500035551,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1707165954014,
-      "end": 1707165954014,
+      "start": 1707500035551,
+      "end": 1707500035551,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1707165954014,
-      "end": 1707165954014,
+      "start": 1707500035551,
+      "end": 1707500035551,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1707165954014,
-      "end": 1707165954014,
+      "start": 1707500035551,
+      "end": 1707500035551,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1707165954014,
-      "end": 1707165954014,
+      "start": 1707500035552,
+      "end": 1707500035552,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1707165954014,
-      "end": 1707165954015,
+      "start": 1707500035552,
+      "end": 1707500035553,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { defineNuxtPlugin } from '#app/nuxt';\nimport { isVue2, isVue3 } from 'vue-demi';\nimport { useRouter } from '#app/composables/router';\nimport { useHead } from '@unhead/vue';\nimport { useState } from '#app/composables/state';\nimport { computed, reactive, watch } from \"vue\";\nimport { globalName, storageKey, dataValue } from \"#color-mode-options\";\nconst helper = window[globalName] || {};\nexport default defineNuxtPlugin((nuxtApp) => {\n  const colorMode = useState(\"color-mode\", () => reactive({\n    // For SPA mode or fallback\n    preference: helper.preference,\n    value: helper.value,\n    unknown: false,\n    forced: false\n  })).value;\n  if (dataValue) {\n    if (isVue3) {\n      useHead({\n        htmlAttrs: { [`data-${dataValue}`]: computed(() => colorMode.value) }\n      });\n    } else {\n      const app = nuxtApp.nuxt2Context.app;\n      const originalHead = app.head;\n      app.head = function() {\n        const head = (typeof originalHead === \"function\" ? originalHead.call(this) : originalHead) || {};\n        head.htmlAttrs = head.htmlAttrs || {};\n        head.htmlAttrs[`data-${dataValue}`] = colorMode.value;\n        return head;\n      };\n    }\n  }\n  useRouter().afterEach((to) => {\n    const forcedColorMode = isVue2 ? to.matched[0]?.components.default?.options.colorMode : to.meta.colorMode;\n    if (forcedColorMode && forcedColorMode !== \"system\") {\n      colorMode.value = forcedColorMode;\n      colorMode.forced = true;\n    } else {\n      if (forcedColorMode === \"system\") {\n        console.warn(\"You cannot force the colorMode to system at the page level.\");\n      }\n      colorMode.forced = false;\n      colorMode.value = colorMode.preference === \"system\" ? helper.getColorScheme() : colorMode.preference;\n    }\n  });\n  let darkWatcher;\n  function watchMedia() {\n    if (darkWatcher || !window.matchMedia) {\n      return;\n    }\n    darkWatcher = window.matchMedia(\"(prefers-color-scheme: dark)\");\n    darkWatcher.addEventListener(\"change\", () => {\n      if (!colorMode.forced && colorMode.preference === \"system\") {\n        colorMode.value = helper.getColorScheme();\n      }\n    });\n  }\n  watch(() => colorMode.preference, (preference) => {\n    if (colorMode.forced) {\n      return;\n    }\n    if (preference === \"system\") {\n      colorMode.value = helper.getColorScheme();\n      watchMedia();\n    } else {\n      colorMode.value = preference;\n    }\n    window.localStorage?.setItem(storageKey, preference);\n  }, { immediate: true });\n  watch(() => colorMode.value, (newValue, oldValue) => {\n    helper.removeColorScheme(oldValue);\n    helper.addColorScheme(newValue);\n  });\n  if (colorMode.preference === \"system\") {\n    watchMedia();\n  }\n  nuxtApp.hook(\"app:mounted\", () => {\n    if (colorMode.unknown) {\n      colorMode.preference = helper.preference;\n      colorMode.value = helper.value;\n      colorMode.unknown = false;\n    }\n  });\n  nuxtApp.provide(\"colorMode\", colorMode);\n});\n",
-      "start": 1707165954015,
-      "end": 1707165954016,
+      "start": 1707500035553,
+      "end": 1707500035554,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -182,50 +182,50 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1707165954016,
-      "end": 1707165954017,
+      "start": 1707500035554,
+      "end": 1707500035555,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1707165954017,
-      "end": 1707165954017,
+      "start": 1707500035555,
+      "end": 1707500035555,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1707165954017,
-      "end": 1707165954017,
+      "start": 1707500035555,
+      "end": 1707500035555,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1707165954017,
-      "end": 1707165954017,
+      "start": 1707500035555,
+      "end": 1707500035555,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1707165954017,
-      "end": 1707165954017,
+      "start": 1707500035555,
+      "end": 1707500035555,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1707165954017,
-      "end": 1707165954017,
+      "start": 1707500035556,
+      "end": 1707500035556,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1707165954017,
-      "end": 1707165954017,
+      "start": 1707500035556,
+      "end": 1707500035556,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1707165954018,
-      "end": 1707165954018,
+      "start": 1707500035556,
+      "end": 1707500035556,
       "order": "normal"
     }
   ]

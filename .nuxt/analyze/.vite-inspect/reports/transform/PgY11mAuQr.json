@@ -4,34 +4,34 @@
     {
       "name": "virtual",
       "result": "import { defineNuxtPlugin } from '#app/nuxt'\nimport { LazyAppDocSearch, LazyAppFooter, LazyAppHeader, LazyAppHeaderDialog, LazyAppHeaderLogo, LazyAppHeaderNavigation, LazyAppLayout, LazyAppLoadingBar, LazyAppSearch, LazyAppSocialIcons, LazyDocumentDrivenNotFound, LazyEllipsis, LazyLogo, LazyThemeSelect, LazyDocsAside, LazyDocsAsideTree, LazyDocsPageBottom, LazyDocsPageLayout, LazyDocsPrevNext, LazyDocsToc, LazyDocsTocLinks, LazyEditOnLink, LazySourceLink, LazyProseA, LazyProseBlockquote, LazyProseCode, LazyProseCodeInline, LazyProseEm, LazyProseH1, LazyProseH2, LazyProseH3, LazyProseH4, LazyProseH5, LazyProseH6, LazyProseHr, LazyProseImg, LazyProseLi, LazyProseOl, LazyProseP, LazyProseStrong, LazyProseTable, LazyProseTbody, LazyProseTd, LazyProseTh, LazyProseThead, LazyProseTr, LazyProseUl, LazyAlert, LazyBadge, LazyButtonLink, LazyCallout, LazyCodeBlock, LazyCodeGroup, LazyContainer, LazyCopyButton, LazyList, LazyNuxtImg, LazyProps, LazySandbox, LazyTabsHeader, LazyTerminal, LazyVideoPlayer, LazyIconCodeSandBox, LazyIconDocus, LazyIconNuxt, LazyIconNuxtContent, LazyIconNuxtLabs, LazyIconNuxtStudio, LazyIconStackBlitz, LazyIconVueTelescope, LazyBlockHero, LazyCard, LazyCardGrid, LazyVoltaBoard, LazyComponentPlayground, LazyComponentPlaygroundData, LazyComponentPlaygroundProps, LazyComponentPlaygroundSlots, LazyComponentPlaygroundTokens, LazyPreviewLayout, LazyTokensPlayground, LazyContentDoc, LazyContentList, LazyContentNavigation, LazyContentQuery, LazyContentRenderer, LazyContentRendererMarkdown, LazyContentSlot, LazyDocumentDrivenEmpty, LazyMarkdown, LazyProsePre, LazyProseScript, LazyIcon, LazyIconCSS } from '#components'\nconst lazyGlobalComponents = [\n  [\"AppDocSearch\", LazyAppDocSearch],\n[\"AppFooter\", LazyAppFooter],\n[\"AppHeader\", LazyAppHeader],\n[\"AppHeaderDialog\", LazyAppHeaderDialog],\n[\"AppHeaderLogo\", LazyAppHeaderLogo],\n[\"AppHeaderNavigation\", LazyAppHeaderNavigation],\n[\"AppLayout\", LazyAppLayout],\n[\"AppLoadingBar\", LazyAppLoadingBar],\n[\"AppSearch\", LazyAppSearch],\n[\"AppSocialIcons\", LazyAppSocialIcons],\n[\"DocumentDrivenNotFound\", LazyDocumentDrivenNotFound],\n[\"Ellipsis\", LazyEllipsis],\n[\"Logo\", LazyLogo],\n[\"ThemeSelect\", LazyThemeSelect],\n[\"DocsAside\", LazyDocsAside],\n[\"DocsAsideTree\", LazyDocsAsideTree],\n[\"DocsPageBottom\", LazyDocsPageBottom],\n[\"DocsPageLayout\", LazyDocsPageLayout],\n[\"DocsPrevNext\", LazyDocsPrevNext],\n[\"DocsToc\", LazyDocsToc],\n[\"DocsTocLinks\", LazyDocsTocLinks],\n[\"EditOnLink\", LazyEditOnLink],\n[\"SourceLink\", LazySourceLink],\n[\"ProseA\", LazyProseA],\n[\"ProseBlockquote\", LazyProseBlockquote],\n[\"ProseCode\", LazyProseCode],\n[\"ProseCodeInline\", LazyProseCodeInline],\n[\"ProseEm\", LazyProseEm],\n[\"ProseH1\", LazyProseH1],\n[\"ProseH2\", LazyProseH2],\n[\"ProseH3\", LazyProseH3],\n[\"ProseH4\", LazyProseH4],\n[\"ProseH5\", LazyProseH5],\n[\"ProseH6\", LazyProseH6],\n[\"ProseHr\", LazyProseHr],\n[\"ProseImg\", LazyProseImg],\n[\"ProseLi\", LazyProseLi],\n[\"ProseOl\", LazyProseOl],\n[\"ProseP\", LazyProseP],\n[\"ProseStrong\", LazyProseStrong],\n[\"ProseTable\", LazyProseTable],\n[\"ProseTbody\", LazyProseTbody],\n[\"ProseTd\", LazyProseTd],\n[\"ProseTh\", LazyProseTh],\n[\"ProseThead\", LazyProseThead],\n[\"ProseTr\", LazyProseTr],\n[\"ProseUl\", LazyProseUl],\n[\"Alert\", LazyAlert],\n[\"Badge\", LazyBadge],\n[\"ButtonLink\", LazyButtonLink],\n[\"Callout\", LazyCallout],\n[\"CodeBlock\", LazyCodeBlock],\n[\"CodeGroup\", LazyCodeGroup],\n[\"Container\", LazyContainer],\n[\"CopyButton\", LazyCopyButton],\n[\"List\", LazyList],\n[\"NuxtImg\", LazyNuxtImg],\n[\"Props\", LazyProps],\n[\"Sandbox\", LazySandbox],\n[\"TabsHeader\", LazyTabsHeader],\n[\"Terminal\", LazyTerminal],\n[\"VideoPlayer\", LazyVideoPlayer],\n[\"IconCodeSandBox\", LazyIconCodeSandBox],\n[\"IconDocus\", LazyIconDocus],\n[\"IconNuxt\", LazyIconNuxt],\n[\"IconNuxtContent\", LazyIconNuxtContent],\n[\"IconNuxtLabs\", LazyIconNuxtLabs],\n[\"IconNuxtStudio\", LazyIconNuxtStudio],\n[\"IconStackBlitz\", LazyIconStackBlitz],\n[\"IconVueTelescope\", LazyIconVueTelescope],\n[\"BlockHero\", LazyBlockHero],\n[\"Card\", LazyCard],\n[\"CardGrid\", LazyCardGrid],\n[\"VoltaBoard\", LazyVoltaBoard],\n[\"ComponentPlayground\", LazyComponentPlayground],\n[\"ComponentPlaygroundData\", LazyComponentPlaygroundData],\n[\"ComponentPlaygroundProps\", LazyComponentPlaygroundProps],\n[\"ComponentPlaygroundSlots\", LazyComponentPlaygroundSlots],\n[\"ComponentPlaygroundTokens\", LazyComponentPlaygroundTokens],\n[\"PreviewLayout\", LazyPreviewLayout],\n[\"TokensPlayground\", LazyTokensPlayground],\n[\"ContentDoc\", LazyContentDoc],\n[\"ContentList\", LazyContentList],\n[\"ContentNavigation\", LazyContentNavigation],\n[\"ContentQuery\", LazyContentQuery],\n[\"ContentRenderer\", LazyContentRenderer],\n[\"ContentRendererMarkdown\", LazyContentRendererMarkdown],\n[\"ContentSlot\", LazyContentSlot],\n[\"DocumentDrivenEmpty\", LazyDocumentDrivenEmpty],\n[\"Markdown\", LazyMarkdown],\n[\"ProsePre\", LazyProsePre],\n[\"ProseScript\", LazyProseScript],\n[\"Icon\", LazyIcon],\n[\"IconCSS\", LazyIconCSS],\n  \n]\n\nexport default defineNuxtPlugin({\n  name: 'nuxt:global-components',\n  setup (nuxtApp) {\n    for (const [name, component] of lazyGlobalComponents) {\n      nuxtApp.vueApp.component(name, component)\n      nuxtApp.vueApp.component('Lazy' + name, component)\n    }\n  }\n})\n",
-      "start": 1707165953877,
-      "end": 1707165953877,
+      "start": 1707500035405,
+      "end": 1707500035405,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1707165953877,
-      "end": 1707165953877,
+      "start": 1707500035405,
+      "end": 1707500035405,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1707165953877,
-      "end": 1707165953877,
+      "start": 1707500035405,
+      "end": 1707500035405,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineNuxtPlugin } from '#app/nuxt'\nimport { LazyAppDocSearch, LazyAppFooter, LazyAppHeader, LazyAppHeaderDialog, LazyAppHeaderLogo, LazyAppHeaderNavigation, LazyAppLayout, LazyAppLoadingBar, LazyAppSearch, LazyAppSocialIcons, LazyDocumentDrivenNotFound, LazyEllipsis, LazyLogo, LazyThemeSelect, LazyDocsAside, LazyDocsAsideTree, LazyDocsPageBottom, LazyDocsPageLayout, LazyDocsPrevNext, LazyDocsToc, LazyDocsTocLinks, LazyEditOnLink, LazySourceLink, LazyProseA, LazyProseBlockquote, LazyProseCode, LazyProseCodeInline, LazyProseEm, LazyProseH1, LazyProseH2, LazyProseH3, LazyProseH4, LazyProseH5, LazyProseH6, LazyProseHr, LazyProseImg, LazyProseLi, LazyProseOl, LazyProseP, LazyProseStrong, LazyProseTable, LazyProseTbody, LazyProseTd, LazyProseTh, LazyProseThead, LazyProseTr, LazyProseUl, LazyAlert, LazyBadge, LazyButtonLink, LazyCallout, LazyCodeBlock, LazyCodeGroup, LazyContainer, LazyCopyButton, LazyList, LazyNuxtImg, LazyProps, LazySandbox, LazyTabsHeader, LazyTerminal, LazyVideoPlayer, LazyIconCodeSandBox, LazyIconDocus, LazyIconNuxt, LazyIconNuxtContent, LazyIconNuxtLabs, LazyIconNuxtStudio, LazyIconStackBlitz, LazyIconVueTelescope, LazyBlockHero, LazyCard, LazyCardGrid, LazyVoltaBoard, LazyComponentPlayground, LazyComponentPlaygroundData, LazyComponentPlaygroundProps, LazyComponentPlaygroundSlots, LazyComponentPlaygroundTokens, LazyPreviewLayout, LazyTokensPlayground, LazyContentDoc, LazyContentList, LazyContentNavigation, LazyContentQuery, LazyContentRenderer, LazyContentRendererMarkdown, LazyContentSlot, LazyDocumentDrivenEmpty, LazyMarkdown, LazyProsePre, LazyProseScript, LazyIcon, LazyIconCSS } from '#components'\nconst lazyGlobalComponents = [\n  [\"AppDocSearch\", LazyAppDocSearch],\n[\"AppFooter\", LazyAppFooter],\n[\"AppHeader\", LazyAppHeader],\n[\"AppHeaderDialog\", LazyAppHeaderDialog],\n[\"AppHeaderLogo\", LazyAppHeaderLogo],\n[\"AppHeaderNavigation\", LazyAppHeaderNavigation],\n[\"AppLayout\", LazyAppLayout],\n[\"AppLoadingBar\", LazyAppLoadingBar],\n[\"AppSearch\", LazyAppSearch],\n[\"AppSocialIcons\", LazyAppSocialIcons],\n[\"DocumentDrivenNotFound\", LazyDocumentDrivenNotFound],\n[\"Ellipsis\", LazyEllipsis],\n[\"Logo\", LazyLogo],\n[\"ThemeSelect\", LazyThemeSelect],\n[\"DocsAside\", LazyDocsAside],\n[\"DocsAsideTree\", LazyDocsAsideTree],\n[\"DocsPageBottom\", LazyDocsPageBottom],\n[\"DocsPageLayout\", LazyDocsPageLayout],\n[\"DocsPrevNext\", LazyDocsPrevNext],\n[\"DocsToc\", LazyDocsToc],\n[\"DocsTocLinks\", LazyDocsTocLinks],\n[\"EditOnLink\", LazyEditOnLink],\n[\"SourceLink\", LazySourceLink],\n[\"ProseA\", LazyProseA],\n[\"ProseBlockquote\", LazyProseBlockquote],\n[\"ProseCode\", LazyProseCode],\n[\"ProseCodeInline\", LazyProseCodeInline],\n[\"ProseEm\", LazyProseEm],\n[\"ProseH1\", LazyProseH1],\n[\"ProseH2\", LazyProseH2],\n[\"ProseH3\", LazyProseH3],\n[\"ProseH4\", LazyProseH4],\n[\"ProseH5\", LazyProseH5],\n[\"ProseH6\", LazyProseH6],\n[\"ProseHr\", LazyProseHr],\n[\"ProseImg\", LazyProseImg],\n[\"ProseLi\", LazyProseLi],\n[\"ProseOl\", LazyProseOl],\n[\"ProseP\", LazyProseP],\n[\"ProseStrong\", LazyProseStrong],\n[\"ProseTable\", LazyProseTable],\n[\"ProseTbody\", LazyProseTbody],\n[\"ProseTd\", LazyProseTd],\n[\"ProseTh\", LazyProseTh],\n[\"ProseThead\", LazyProseThead],\n[\"ProseTr\", LazyProseTr],\n[\"ProseUl\", LazyProseUl],\n[\"Alert\", LazyAlert],\n[\"Badge\", LazyBadge],\n[\"ButtonLink\", LazyButtonLink],\n[\"Callout\", LazyCallout],\n[\"CodeBlock\", LazyCodeBlock],\n[\"CodeGroup\", LazyCodeGroup],\n[\"Container\", LazyContainer],\n[\"CopyButton\", LazyCopyButton],\n[\"List\", LazyList],\n[\"NuxtImg\", LazyNuxtImg],\n[\"Props\", LazyProps],\n[\"Sandbox\", LazySandbox],\n[\"TabsHeader\", LazyTabsHeader],\n[\"Terminal\", LazyTerminal],\n[\"VideoPlayer\", LazyVideoPlayer],\n[\"IconCodeSandBox\", LazyIconCodeSandBox],\n[\"IconDocus\", LazyIconDocus],\n[\"IconNuxt\", LazyIconNuxt],\n[\"IconNuxtContent\", LazyIconNuxtContent],\n[\"IconNuxtLabs\", LazyIconNuxtLabs],\n[\"IconNuxtStudio\", LazyIconNuxtStudio],\n[\"IconStackBlitz\", LazyIconStackBlitz],\n[\"IconVueTelescope\", LazyIconVueTelescope],\n[\"BlockHero\", LazyBlockHero],\n[\"Card\", LazyCard],\n[\"CardGrid\", LazyCardGrid],\n[\"VoltaBoard\", LazyVoltaBoard],\n[\"ComponentPlayground\", LazyComponentPlayground],\n[\"ComponentPlaygroundData\", LazyComponentPlaygroundData],\n[\"ComponentPlaygroundProps\", LazyComponentPlaygroundProps],\n[\"ComponentPlaygroundSlots\", LazyComponentPlaygroundSlots],\n[\"ComponentPlaygroundTokens\", LazyComponentPlaygroundTokens],\n[\"PreviewLayout\", LazyPreviewLayout],\n[\"TokensPlayground\", LazyTokensPlayground],\n[\"ContentDoc\", LazyContentDoc],\n[\"ContentList\", LazyContentList],\n[\"ContentNavigation\", LazyContentNavigation],\n[\"ContentQuery\", LazyContentQuery],\n[\"ContentRenderer\", LazyContentRenderer],\n[\"ContentRendererMarkdown\", LazyContentRendererMarkdown],\n[\"ContentSlot\", LazyContentSlot],\n[\"DocumentDrivenEmpty\", LazyDocumentDrivenEmpty],\n[\"Markdown\", LazyMarkdown],\n[\"ProsePre\", LazyProsePre],\n[\"ProseScript\", LazyProseScript],\n[\"Icon\", LazyIcon],\n[\"IconCSS\", LazyIconCSS],\n  \n]\n\nexport default defineNuxtPlugin({\n  name: 'nuxt:global-components',\n  setup (nuxtApp) {\n    for (const [name, component] of lazyGlobalComponents) {\n      nuxtApp.vueApp.component(name, component)\n      nuxtApp.vueApp.component('Lazy' + name, component)\n    }\n  }\n})\n",
-      "start": 1707165953877,
-      "end": 1707165953877,
+      "start": 1707500035405,
+      "end": 1707500035405,
       "order": "pre"
     },
     {
       "name": "content-slot",
       "result": "import { defineNuxtPlugin } from '#app/nuxt'\nimport { LazyAppDocSearch, LazyAppFooter, LazyAppHeader, LazyAppHeaderDialog, LazyAppHeaderLogo, LazyAppHeaderNavigation, LazyAppLayout, LazyAppLoadingBar, LazyAppSearch, LazyAppSocialIcons, LazyDocumentDrivenNotFound, LazyEllipsis, LazyLogo, LazyThemeSelect, LazyDocsAside, LazyDocsAsideTree, LazyDocsPageBottom, LazyDocsPageLayout, LazyDocsPrevNext, LazyDocsToc, LazyDocsTocLinks, LazyEditOnLink, LazySourceLink, LazyProseA, LazyProseBlockquote, LazyProseCode, LazyProseCodeInline, LazyProseEm, LazyProseH1, LazyProseH2, LazyProseH3, LazyProseH4, LazyProseH5, LazyProseH6, LazyProseHr, LazyProseImg, LazyProseLi, LazyProseOl, LazyProseP, LazyProseStrong, LazyProseTable, LazyProseTbody, LazyProseTd, LazyProseTh, LazyProseThead, LazyProseTr, LazyProseUl, LazyAlert, LazyBadge, LazyButtonLink, LazyCallout, LazyCodeBlock, LazyCodeGroup, LazyContainer, LazyCopyButton, LazyList, LazyNuxtImg, LazyProps, LazySandbox, LazyTabsHeader, LazyTerminal, LazyVideoPlayer, LazyIconCodeSandBox, LazyIconDocus, LazyIconNuxt, LazyIconNuxtContent, LazyIconNuxtLabs, LazyIconNuxtStudio, LazyIconStackBlitz, LazyIconVueTelescope, LazyBlockHero, LazyCard, LazyCardGrid, LazyVoltaBoard, LazyComponentPlayground, LazyComponentPlaygroundData, LazyComponentPlaygroundProps, LazyComponentPlaygroundSlots, LazyComponentPlaygroundTokens, LazyPreviewLayout, LazyTokensPlayground, LazyContentDoc, LazyContentList, LazyContentNavigation, LazyContentQuery, LazyContentRenderer, LazyContentRendererMarkdown, LazyContentSlot, LazyDocumentDrivenEmpty, LazyMarkdown, LazyProsePre, LazyProseScript, LazyIcon, LazyIconCSS } from '#components'\nconst lazyGlobalComponents = [\n  [\"AppDocSearch\", LazyAppDocSearch],\n[\"AppFooter\", LazyAppFooter],\n[\"AppHeader\", LazyAppHeader],\n[\"AppHeaderDialog\", LazyAppHeaderDialog],\n[\"AppHeaderLogo\", LazyAppHeaderLogo],\n[\"AppHeaderNavigation\", LazyAppHeaderNavigation],\n[\"AppLayout\", LazyAppLayout],\n[\"AppLoadingBar\", LazyAppLoadingBar],\n[\"AppSearch\", LazyAppSearch],\n[\"AppSocialIcons\", LazyAppSocialIcons],\n[\"DocumentDrivenNotFound\", LazyDocumentDrivenNotFound],\n[\"Ellipsis\", LazyEllipsis],\n[\"Logo\", LazyLogo],\n[\"ThemeSelect\", LazyThemeSelect],\n[\"DocsAside\", LazyDocsAside],\n[\"DocsAsideTree\", LazyDocsAsideTree],\n[\"DocsPageBottom\", LazyDocsPageBottom],\n[\"DocsPageLayout\", LazyDocsPageLayout],\n[\"DocsPrevNext\", LazyDocsPrevNext],\n[\"DocsToc\", LazyDocsToc],\n[\"DocsTocLinks\", LazyDocsTocLinks],\n[\"EditOnLink\", LazyEditOnLink],\n[\"SourceLink\", LazySourceLink],\n[\"ProseA\", LazyProseA],\n[\"ProseBlockquote\", LazyProseBlockquote],\n[\"ProseCode\", LazyProseCode],\n[\"ProseCodeInline\", LazyProseCodeInline],\n[\"ProseEm\", LazyProseEm],\n[\"ProseH1\", LazyProseH1],\n[\"ProseH2\", LazyProseH2],\n[\"ProseH3\", LazyProseH3],\n[\"ProseH4\", LazyProseH4],\n[\"ProseH5\", LazyProseH5],\n[\"ProseH6\", LazyProseH6],\n[\"ProseHr\", LazyProseHr],\n[\"ProseImg\", LazyProseImg],\n[\"ProseLi\", LazyProseLi],\n[\"ProseOl\", LazyProseOl],\n[\"ProseP\", LazyProseP],\n[\"ProseStrong\", LazyProseStrong],\n[\"ProseTable\", LazyProseTable],\n[\"ProseTbody\", LazyProseTbody],\n[\"ProseTd\", LazyProseTd],\n[\"ProseTh\", LazyProseTh],\n[\"ProseThead\", LazyProseThead],\n[\"ProseTr\", LazyProseTr],\n[\"ProseUl\", LazyProseUl],\n[\"Alert\", LazyAlert],\n[\"Badge\", LazyBadge],\n[\"ButtonLink\", LazyButtonLink],\n[\"Callout\", LazyCallout],\n[\"CodeBlock\", LazyCodeBlock],\n[\"CodeGroup\", LazyCodeGroup],\n[\"Container\", LazyContainer],\n[\"CopyButton\", LazyCopyButton],\n[\"List\", LazyList],\n[\"NuxtImg\", LazyNuxtImg],\n[\"Props\", LazyProps],\n[\"Sandbox\", LazySandbox],\n[\"TabsHeader\", LazyTabsHeader],\n[\"Terminal\", LazyTerminal],\n[\"VideoPlayer\", LazyVideoPlayer],\n[\"IconCodeSandBox\", LazyIconCodeSandBox],\n[\"IconDocus\", LazyIconDocus],\n[\"IconNuxt\", LazyIconNuxt],\n[\"IconNuxtContent\", LazyIconNuxtContent],\n[\"IconNuxtLabs\", LazyIconNuxtLabs],\n[\"IconNuxtStudio\", LazyIconNuxtStudio],\n[\"IconStackBlitz\", LazyIconStackBlitz],\n[\"IconVueTelescope\", LazyIconVueTelescope],\n[\"BlockHero\", LazyBlockHero],\n[\"Card\", LazyCard],\n[\"CardGrid\", LazyCardGrid],\n[\"VoltaBoard\", LazyVoltaBoard],\n[\"ComponentPlayground\", LazyComponentPlayground],\n[\"ComponentPlaygroundData\", LazyComponentPlaygroundData],\n[\"ComponentPlaygroundProps\", LazyComponentPlaygroundProps],\n[\"ComponentPlaygroundSlots\", LazyComponentPlaygroundSlots],\n[\"ComponentPlaygroundTokens\", LazyComponentPlaygroundTokens],\n[\"PreviewLayout\", LazyPreviewLayout],\n[\"TokensPlayground\", LazyTokensPlayground],\n[\"ContentDoc\", LazyContentDoc],\n[\"ContentList\", LazyContentList],\n[\"ContentNavigation\", LazyContentNavigation],\n[\"ContentQuery\", LazyContentQuery],\n[\"ContentRenderer\", LazyContentRenderer],\n[\"ContentRendererMarkdown\", LazyContentRendererMarkdown],\n[\"MDCSlot\", LazyContentSlot],\n[\"DocumentDrivenEmpty\", LazyDocumentDrivenEmpty],\n[\"Markdown\", LazyMarkdown],\n[\"ProsePre\", LazyProsePre],\n[\"ProseScript\", LazyProseScript],\n[\"Icon\", LazyIcon],\n[\"IconCSS\", LazyIconCSS],\n  \n]\n\nexport default defineNuxtPlugin({\n  name: 'nuxt:global-components',\n  setup (nuxtApp) {\n    for (const [name, component] of lazyGlobalComponents) {\n      nuxtApp.vueApp.component(name, component)\n      nuxtApp.vueApp.component('Lazy' + name, component)\n    }\n  }\n})\n",
-      "start": 1707165953877,
-      "end": 1707165953878,
+      "start": 1707500035405,
+      "end": 1707500035405,
       "order": "pre",
       "sourcemaps": {
         "mappings": ""
@@ -39,69 +39,69 @@
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1707165953878,
-      "end": 1707165953878,
+      "start": 1707500035406,
+      "end": 1707500035406,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1707165953878,
-      "end": 1707165953878,
+      "start": 1707500035406,
+      "end": 1707500035406,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1707165953878,
-      "end": 1707165953878,
+      "start": 1707500035406,
+      "end": 1707500035406,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1707165953878,
-      "end": 1707165953878,
+      "start": 1707500035406,
+      "end": 1707500035406,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1707165953878,
-      "end": 1707165953878,
+      "start": 1707500035406,
+      "end": 1707500035406,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1707165953878,
-      "end": 1707165953878,
+      "start": 1707500035406,
+      "end": 1707500035406,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1707165953878,
-      "end": 1707165953878,
+      "start": 1707500035406,
+      "end": 1707500035406,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1707165953878,
-      "end": 1707165953878,
+      "start": 1707500035406,
+      "end": 1707500035406,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1707165953878,
-      "end": 1707165953878,
+      "start": 1707500035406,
+      "end": 1707500035406,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1707165953878,
-      "end": 1707165953878,
+      "start": 1707500035406,
+      "end": 1707500035406,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
       "result": "import LazyAppDocSearch from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppDocSearch.vue?nuxt_component=async&nuxt_component_name=AppDocSearch';\nimport LazyAppFooter from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppFooter.vue?nuxt_component=async&nuxt_component_name=AppFooter';\nimport LazyAppHeader from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppHeader.vue?nuxt_component=async&nuxt_component_name=AppHeader';\nimport LazyAppHeaderDialog from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppHeaderDialog.vue?nuxt_component=async&nuxt_component_name=AppHeaderDialog';\nimport LazyAppHeaderLogo from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppHeaderLogo.vue?nuxt_component=async&nuxt_component_name=AppHeaderLogo';\nimport LazyAppHeaderNavigation from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppHeaderNavigation.vue?nuxt_component=async&nuxt_component_name=AppHeaderNavigation';\nimport LazyAppLayout from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppLayout.vue?nuxt_component=async&nuxt_component_name=AppLayout';\nimport LazyAppLoadingBar from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppLoadingBar.vue?nuxt_component=async&nuxt_component_name=AppLoadingBar';\nimport LazyAppSearch from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppSearch.vue?nuxt_component=async&nuxt_component_name=AppSearch';\nimport LazyAppSocialIcons from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppSocialIcons.vue?nuxt_component=async&nuxt_component_name=AppSocialIcons';\nimport LazyDocumentDrivenNotFound from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/DocumentDrivenNotFound.vue?nuxt_component=async&nuxt_component_name=DocumentDrivenNotFound';\nimport LazyEllipsis from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/Ellipsis.vue?nuxt_component=async&nuxt_component_name=Ellipsis';\nimport LazyLogo from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/Logo.vue?nuxt_component=async&nuxt_component_name=Logo';\nimport LazyThemeSelect from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/ThemeSelect.vue?nuxt_component=async&nuxt_component_name=ThemeSelect';\nimport LazyDocsAside from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsAside.vue?nuxt_component=async&nuxt_component_name=DocsAside';\nimport LazyDocsAsideTree from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsAsideTree.vue?nuxt_component=async&nuxt_component_name=DocsAsideTree';\nimport LazyDocsPageBottom from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsPageBottom.vue?nuxt_component=async&nuxt_component_name=DocsPageBottom';\nimport LazyDocsPageLayout from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsPageLayout.vue?nuxt_component=async&nuxt_component_name=DocsPageLayout';\nimport LazyDocsPrevNext from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsPrevNext.vue?nuxt_component=async&nuxt_component_name=DocsPrevNext';\nimport LazyDocsToc from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsToc.vue?nuxt_component=async&nuxt_component_name=DocsToc';\nimport LazyDocsTocLinks from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsTocLinks.vue?nuxt_component=async&nuxt_component_name=DocsTocLinks';\nimport LazyEditOnLink from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue?nuxt_component=async&nuxt_component_name=EditOnLink';\nimport LazySourceLink from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/SourceLink.vue?nuxt_component=async&nuxt_component_name=SourceLink';\nimport LazyProseA from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseA.vue?nuxt_component=async&nuxt_component_name=ProseA';\nimport LazyProseBlockquote from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseBlockquote.vue?nuxt_component=async&nuxt_component_name=ProseBlockquote';\nimport LazyProseCode from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseCode.vue?nuxt_component=async&nuxt_component_name=ProseCode';\nimport LazyProseCodeInline from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseCodeInline.vue?nuxt_component=async&nuxt_component_name=ProseCodeInline';\nimport LazyProseEm from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseEm.vue?nuxt_component=async&nuxt_component_name=ProseEm';\nimport LazyProseH1 from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseH1.vue?nuxt_component=async&nuxt_component_name=ProseH1';\nimport LazyProseH2 from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseH2.vue?nuxt_component=async&nuxt_component_name=ProseH2';\nimport LazyProseH3 from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseH3.vue?nuxt_component=async&nuxt_component_name=ProseH3';\nimport LazyProseH4 from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseH4.vue?nuxt_component=async&nuxt_component_name=ProseH4';\nimport LazyProseH5 from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseH5.vue?nuxt_component=async&nuxt_component_name=ProseH5';\nimport LazyProseH6 from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseH6.vue?nuxt_component=async&nuxt_component_name=ProseH6';\nimport LazyProseHr from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseHr.vue?nuxt_component=async&nuxt_component_name=ProseHr';\nimport LazyProseImg from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseImg.vue?nuxt_component=async&nuxt_component_name=ProseImg';\nimport LazyProseLi from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseLi.vue?nuxt_component=async&nuxt_component_name=ProseLi';\nimport LazyProseOl from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseOl.vue?nuxt_component=async&nuxt_component_name=ProseOl';\nimport LazyProseP from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseP.vue?nuxt_component=async&nuxt_component_name=ProseP';\nimport LazyProseStrong from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseStrong.vue?nuxt_component=async&nuxt_component_name=ProseStrong';\nimport LazyProseTable from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseTable.vue?nuxt_component=async&nuxt_component_name=ProseTable';\nimport LazyProseTbody from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseTbody.vue?nuxt_component=async&nuxt_component_name=ProseTbody';\nimport LazyProseTd from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseTd.vue?nuxt_component=async&nuxt_component_name=ProseTd';\nimport LazyProseTh from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseTh.vue?nuxt_component=async&nuxt_component_name=ProseTh';\nimport LazyProseThead from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseThead.vue?nuxt_component=async&nuxt_component_name=ProseThead';\nimport LazyProseTr from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseTr.vue?nuxt_component=async&nuxt_component_name=ProseTr';\nimport LazyProseUl from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseUl.vue?nuxt_component=async&nuxt_component_name=ProseUl';\nimport LazyAlert from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Alert.vue?nuxt_component=async&nuxt_component_name=Alert';\nimport LazyBadge from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Badge.vue?nuxt_component=async&nuxt_component_name=Badge';\nimport LazyButtonLink from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/ButtonLink.vue?nuxt_component=async&nuxt_component_name=ButtonLink';\nimport LazyCallout from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Callout.vue?nuxt_component=async&nuxt_component_name=Callout';\nimport LazyCodeBlock from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/CodeBlock.vue?nuxt_component=async&nuxt_component_name=CodeBlock';\nimport LazyCodeGroup from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/CodeGroup.vue?nuxt_component=async&nuxt_component_name=CodeGroup';\nimport LazyContainer from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Container.vue?nuxt_component=async&nuxt_component_name=Container';\nimport LazyCopyButton from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/CopyButton.vue?nuxt_component=async&nuxt_component_name=CopyButton';\nimport LazyList from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/List.vue?nuxt_component=async&nuxt_component_name=List';\nimport LazyNuxtImg from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/NuxtImg.vue?nuxt_component=async&nuxt_component_name=NuxtImg';\nimport LazyProps from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Props.vue?nuxt_component=async&nuxt_component_name=Props';\nimport LazySandbox from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Sandbox.vue?nuxt_component=async&nuxt_component_name=Sandbox';\nimport LazyTabsHeader from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/TabsHeader.vue?nuxt_component=async&nuxt_component_name=TabsHeader';\nimport LazyTerminal from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Terminal.vue?nuxt_component=async&nuxt_component_name=Terminal';\nimport LazyVideoPlayer from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/VideoPlayer.vue?nuxt_component=async&nuxt_component_name=VideoPlayer';\nimport LazyIconCodeSandBox from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/icons/IconCodeSandBox.vue?nuxt_component=async&nuxt_component_name=IconCodeSandBox';\nimport LazyIconDocus from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/icons/IconDocus.vue?nuxt_component=async&nuxt_component_name=IconDocus';\nimport LazyIconNuxt from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/icons/IconNuxt.vue?nuxt_component=async&nuxt_component_name=IconNuxt';\nimport LazyIconNuxtContent from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/icons/IconNuxtContent.vue?nuxt_component=async&nuxt_component_name=IconNuxtContent';\nimport LazyIconNuxtLabs from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/icons/IconNuxtLabs.vue?nuxt_component=async&nuxt_component_name=IconNuxtLabs';\nimport LazyIconNuxtStudio from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/icons/IconNuxtStudio.vue?nuxt_component=async&nuxt_component_name=IconNuxtStudio';\nimport LazyIconStackBlitz from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/icons/IconStackBlitz.vue?nuxt_component=async&nuxt_component_name=IconStackBlitz';\nimport LazyIconVueTelescope from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/icons/IconVueTelescope.vue?nuxt_component=async&nuxt_component_name=IconVueTelescope';\nimport LazyBlockHero from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/landing/BlockHero.vue?nuxt_component=async&nuxt_component_name=BlockHero';\nimport LazyCard from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/landing/Card.vue?nuxt_component=async&nuxt_component_name=Card';\nimport LazyCardGrid from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/landing/CardGrid.vue?nuxt_component=async&nuxt_component_name=CardGrid';\nimport LazyVoltaBoard from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/volta/VoltaBoard.vue?nuxt_component=async&nuxt_component_name=VoltaBoard';\nimport LazyComponentPlayground from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlayground.vue?nuxt_component=async&nuxt_component_name=ComponentPlayground';\nimport LazyComponentPlaygroundData from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundData.vue?nuxt_component=async&nuxt_component_name=ComponentPlaygroundData';\nimport LazyComponentPlaygroundProps from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundProps.vue?nuxt_component=async&nuxt_component_name=ComponentPlaygroundProps';\nimport LazyComponentPlaygroundSlots from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundSlots.vue?nuxt_component=async&nuxt_component_name=ComponentPlaygroundSlots';\nimport LazyComponentPlaygroundTokens from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundTokens.vue?nuxt_component=async&nuxt_component_name=ComponentPlaygroundTokens';\nimport LazyPreviewLayout from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/meta/PreviewLayout.vue?nuxt_component=async&nuxt_component_name=PreviewLayout';\nimport LazyTokensPlayground from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/meta/TokensPlayground.vue?nuxt_component=async&nuxt_component_name=TokensPlayground';\nimport LazyContentDoc from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue?nuxt_component=async&nuxt_component_name=ContentDoc';\nimport LazyContentList from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentList.vue?nuxt_component=async&nuxt_component_name=ContentList';\nimport LazyContentNavigation from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.vue?nuxt_component=async&nuxt_component_name=ContentNavigation';\nimport LazyContentQuery from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue?nuxt_component=async&nuxt_component_name=ContentQuery';\nimport LazyContentRenderer from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.vue?nuxt_component=async&nuxt_component_name=ContentRenderer';\nimport LazyContentRendererMarkdown from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue?nuxt_component=async&nuxt_component_name=ContentRendererMarkdown';\nimport LazyContentSlot from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentSlot.vue?nuxt_component=async&nuxt_component_name=ContentSlot';\nimport LazyDocumentDrivenEmpty from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/DocumentDrivenEmpty.vue?nuxt_component=async&nuxt_component_name=DocumentDrivenEmpty';\nimport LazyMarkdown from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/Markdown.vue?nuxt_component=async&nuxt_component_name=Markdown';\nimport LazyProsePre from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue?nuxt_component=async&nuxt_component_name=ProsePre';\nimport LazyProseScript from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseScript.vue?nuxt_component=async&nuxt_component_name=ProseScript';\nimport LazyIcon from '/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/Icon.vue?nuxt_component=async&nuxt_component_name=Icon';\nimport LazyIconCSS from '/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/IconCSS.vue?nuxt_component=async&nuxt_component_name=IconCSS';\nimport { defineNuxtPlugin } from '#app/nuxt'\nconst lazyGlobalComponents = [\n  [\"AppDocSearch\", LazyAppDocSearch],\n[\"AppFooter\", LazyAppFooter],\n[\"AppHeader\", LazyAppHeader],\n[\"AppHeaderDialog\", LazyAppHeaderDialog],\n[\"AppHeaderLogo\", LazyAppHeaderLogo],\n[\"AppHeaderNavigation\", LazyAppHeaderNavigation],\n[\"AppLayout\", LazyAppLayout],\n[\"AppLoadingBar\", LazyAppLoadingBar],\n[\"AppSearch\", LazyAppSearch],\n[\"AppSocialIcons\", LazyAppSocialIcons],\n[\"DocumentDrivenNotFound\", LazyDocumentDrivenNotFound],\n[\"Ellipsis\", LazyEllipsis],\n[\"Logo\", LazyLogo],\n[\"ThemeSelect\", LazyThemeSelect],\n[\"DocsAside\", LazyDocsAside],\n[\"DocsAsideTree\", LazyDocsAsideTree],\n[\"DocsPageBottom\", LazyDocsPageBottom],\n[\"DocsPageLayout\", LazyDocsPageLayout],\n[\"DocsPrevNext\", LazyDocsPrevNext],\n[\"DocsToc\", LazyDocsToc],\n[\"DocsTocLinks\", LazyDocsTocLinks],\n[\"EditOnLink\", LazyEditOnLink],\n[\"SourceLink\", LazySourceLink],\n[\"ProseA\", LazyProseA],\n[\"ProseBlockquote\", LazyProseBlockquote],\n[\"ProseCode\", LazyProseCode],\n[\"ProseCodeInline\", LazyProseCodeInline],\n[\"ProseEm\", LazyProseEm],\n[\"ProseH1\", LazyProseH1],\n[\"ProseH2\", LazyProseH2],\n[\"ProseH3\", LazyProseH3],\n[\"ProseH4\", LazyProseH4],\n[\"ProseH5\", LazyProseH5],\n[\"ProseH6\", LazyProseH6],\n[\"ProseHr\", LazyProseHr],\n[\"ProseImg\", LazyProseImg],\n[\"ProseLi\", LazyProseLi],\n[\"ProseOl\", LazyProseOl],\n[\"ProseP\", LazyProseP],\n[\"ProseStrong\", LazyProseStrong],\n[\"ProseTable\", LazyProseTable],\n[\"ProseTbody\", LazyProseTbody],\n[\"ProseTd\", LazyProseTd],\n[\"ProseTh\", LazyProseTh],\n[\"ProseThead\", LazyProseThead],\n[\"ProseTr\", LazyProseTr],\n[\"ProseUl\", LazyProseUl],\n[\"Alert\", LazyAlert],\n[\"Badge\", LazyBadge],\n[\"ButtonLink\", LazyButtonLink],\n[\"Callout\", LazyCallout],\n[\"CodeBlock\", LazyCodeBlock],\n[\"CodeGroup\", LazyCodeGroup],\n[\"Container\", LazyContainer],\n[\"CopyButton\", LazyCopyButton],\n[\"List\", LazyList],\n[\"NuxtImg\", LazyNuxtImg],\n[\"Props\", LazyProps],\n[\"Sandbox\", LazySandbox],\n[\"TabsHeader\", LazyTabsHeader],\n[\"Terminal\", LazyTerminal],\n[\"VideoPlayer\", LazyVideoPlayer],\n[\"IconCodeSandBox\", LazyIconCodeSandBox],\n[\"IconDocus\", LazyIconDocus],\n[\"IconNuxt\", LazyIconNuxt],\n[\"IconNuxtContent\", LazyIconNuxtContent],\n[\"IconNuxtLabs\", LazyIconNuxtLabs],\n[\"IconNuxtStudio\", LazyIconNuxtStudio],\n[\"IconStackBlitz\", LazyIconStackBlitz],\n[\"IconVueTelescope\", LazyIconVueTelescope],\n[\"BlockHero\", LazyBlockHero],\n[\"Card\", LazyCard],\n[\"CardGrid\", LazyCardGrid],\n[\"VoltaBoard\", LazyVoltaBoard],\n[\"ComponentPlayground\", LazyComponentPlayground],\n[\"ComponentPlaygroundData\", LazyComponentPlaygroundData],\n[\"ComponentPlaygroundProps\", LazyComponentPlaygroundProps],\n[\"ComponentPlaygroundSlots\", LazyComponentPlaygroundSlots],\n[\"ComponentPlaygroundTokens\", LazyComponentPlaygroundTokens],\n[\"PreviewLayout\", LazyPreviewLayout],\n[\"TokensPlayground\", LazyTokensPlayground],\n[\"ContentDoc\", LazyContentDoc],\n[\"ContentList\", LazyContentList],\n[\"ContentNavigation\", LazyContentNavigation],\n[\"ContentQuery\", LazyContentQuery],\n[\"ContentRenderer\", LazyContentRenderer],\n[\"ContentRendererMarkdown\", LazyContentRendererMarkdown],\n[\"MDCSlot\", LazyContentSlot],\n[\"DocumentDrivenEmpty\", LazyDocumentDrivenEmpty],\n[\"Markdown\", LazyMarkdown],\n[\"ProsePre\", LazyProsePre],\n[\"ProseScript\", LazyProseScript],\n[\"Icon\", LazyIcon],\n[\"IconCSS\", LazyIconCSS],\n  \n]\n\nexport default defineNuxtPlugin({\n  name: 'nuxt:global-components',\n  setup (nuxtApp) {\n    for (const [name, component] of lazyGlobalComponents) {\n      nuxtApp.vueApp.component(name, component)\n      nuxtApp.vueApp.component('Lazy' + name, component)\n    }\n  }\n})\n",
-      "start": 1707165953878,
-      "end": 1707165953885,
+      "start": 1707500035406,
+      "end": 1707500035411,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -114,122 +114,122 @@
     },
     {
       "name": "replace",
-      "start": 1707165953885,
-      "end": 1707165953885,
+      "start": 1707500035411,
+      "end": 1707500035411,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1707165953885,
-      "end": 1707165953885,
+      "start": 1707500035411,
+      "end": 1707500035411,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1707165953885,
-      "end": 1707165953885,
+      "start": 1707500035411,
+      "end": 1707500035411,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1707165953885,
-      "end": 1707165953885,
+      "start": 1707500035411,
+      "end": 1707500035411,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1707165953885,
-      "end": 1707165953885,
+      "start": 1707500035411,
+      "end": 1707500035411,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1707165953885,
-      "end": 1707165953885,
+      "start": 1707500035411,
+      "end": 1707500035411,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1707165953885,
-      "end": 1707165953885,
+      "start": 1707500035411,
+      "end": 1707500035411,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1707165953885,
-      "end": 1707165953885,
+      "start": 1707500035411,
+      "end": 1707500035411,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1707165953885,
-      "end": 1707165953885,
+      "start": 1707500035411,
+      "end": 1707500035411,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1707165953886,
-      "end": 1707165953886,
+      "start": 1707500035411,
+      "end": 1707500035411,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1707165953886,
-      "end": 1707165953886,
+      "start": 1707500035412,
+      "end": 1707500035412,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1707165953886,
-      "end": 1707165953894,
+      "start": 1707500035412,
+      "end": 1707500035418,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1707165953894,
-      "end": 1707165953900,
+      "start": 1707500035418,
+      "end": 1707500035422,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1707165953900,
-      "end": 1707165953900,
+      "start": 1707500035422,
+      "end": 1707500035422,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1707165953900,
-      "end": 1707165953900,
+      "start": 1707500035423,
+      "end": 1707500035423,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1707165953900,
-      "end": 1707165953900,
+      "start": 1707500035423,
+      "end": 1707500035423,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1707165953900,
-      "end": 1707165953900,
+      "start": 1707500035423,
+      "end": 1707500035423,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1707165953900,
-      "end": 1707165953901,
+      "start": 1707500035423,
+      "end": 1707500035423,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1707165953901,
-      "end": 1707165953902,
+      "start": 1707500035423,
+      "end": 1707500035425,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1707165953902,
-      "end": 1707165953902,
+      "start": 1707500035425,
+      "end": 1707500035425,
       "order": "normal"
     }
   ]

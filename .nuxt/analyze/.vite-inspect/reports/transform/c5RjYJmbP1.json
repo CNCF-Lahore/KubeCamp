@@ -4,51 +4,51 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, unref as _unref, resolveComponent as _resolveComponent, createBlock as _createBlock, createCommentVNode as _createCommentVNode, toDisplayString as _toDisplayString, createElementVNode as _createElementVNode, createVNode as _createVNode, normalizeClass as _normalizeClass, withCtx as _withCtx, vShow as _vShow, withDirectives as _withDirectives, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-d42239fd\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"docs-aside-tree\" }\nconst _hoisted_2 = [\"onClick\"]\nconst _hoisted_3 = { class: \"content\" }\nconst _hoisted_4 = { class: \"content\" }\n\nimport type { PropType } from 'vue'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'DocsAsideTree',\n  props: {\n  links: {\n    type: Array as PropType<any>,\n    default: () => []\n  },\n  level: {\n    type: Number,\n    default: 0\n  },\n  max: {\n    type: Number,\n    default: null\n  },\n  parent: {\n    type: Object as PropType<any>,\n    default: null\n  }\n},\n  setup(__props) {\n\nconst props = __props\n\nconst route = useRoute()\nconst { config } = useDocus()\n\nconst collapsedMap = useState(`docus-docs-aside-collapse-map-${props.parent?._path || '/'}`, () => {\n  if (props.level === 0) {\n    return {}\n  }\n  return (props.links as any [])\n    .filter(link => !!link.children)\n    .reduce((map, link) => {\n      map[link._path] = true\n      return map\n    }, {})\n})\n\nconst isActive = (link: any) => {\n  return route.path === link._path\n}\n\nconst isCollapsed = (link: any) => {\n  if (link.children) {\n    // Directory has been toggled manually, use its state\n    if (typeof collapsedMap.value[link._path] !== 'undefined') {\n      return collapsedMap.value[link._path]\n    }\n\n    // Check if aside.collapsed has been set in YML\n    if ([true, false].includes(link?.aside?.collapsed)) { return link.aside.collapsed }\n\n    // Return value grabbed from the link\n    if (link?.collapsed) { return link?.collapsed }\n\n    if (config?.value?.aside?.collapsed) { return config.value.aside?.collapsed }\n  }\n\n  return false\n}\n\nconst toggleCollapse = (link: any) => (collapsedMap.value[link._path] = !isCollapsed(link))\n\nconst hasNesting = computed(() => props.links.some((link: any) => link.children))\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_Icon = _resolveComponent(\"Icon\")!\n  const _component_NuxtLink = _resolveComponent(\"NuxtLink\")!\n  const _component_DocsAsideTree = _resolveComponent(\"DocsAsideTree\", true)!\n\n  return (_openBlock(), _createElementBlock(\"ul\", _hoisted_1, [\n    (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(__props.links, (link) => {\n      return (_openBlock(), _createElementBlock(\"li\", {\n        key: link._path,\n        class: _normalizeClass({\n        'has-parent-icon': __props.parent?.icon,\n        'has-children': __props.level > 0 && link.children,\n        'bordered': __props.level > 0 || !_unref(hasNesting),\n        'active': isActive(link),\n      })\n      }, [\n        (link.children)\n          ? (_openBlock(), _createElementBlock(\"button\", {\n              key: 0,\n              class: \"title-collapsible-button\",\n              onClick: ($event: any) => (toggleCollapse(link))\n            }, [\n              _createElementVNode(\"span\", _hoisted_3, [\n                (link?.navigation?.icon || link.icon)\n                  ? (_openBlock(), _createBlock(_component_Icon, {\n                      key: 0,\n                      name: link?.navigation?.icon || link.icon,\n                      class: \"icon\"\n                    }, null, 8, [\"name\"]))\n                  : _createCommentVNode(\"\", true),\n                _createElementVNode(\"span\", null, _toDisplayString(link?.navigation?.title || link.title || link._path), 1)\n              ]),\n              _createElementVNode(\"span\", null, [\n                _createVNode(_component_Icon, {\n                  name: isCollapsed(link) ? 'lucide:chevrons-up-down' : 'lucide:chevrons-down-up',\n                  class: \"collapsible-icon\"\n                }, null, 8, [\"name\"])\n              ])\n            ], 8, _hoisted_2))\n          : (_openBlock(), _createBlock(_component_NuxtLink, {\n              key: 1,\n              to: link.redirect ? link.redirect : link._path,\n              class: _normalizeClass([\"link\", {\n          'padded': __props.level > 0 || !_unref(hasNesting),\n          'active': isActive(link),\n        }]),\n              exact: link.exact\n            }, {\n              default: _withCtx(() => [\n                _createElementVNode(\"span\", _hoisted_4, [\n                  (link?.navigation?.icon || link.icon)\n                    ? (_openBlock(), _createBlock(_component_Icon, {\n                        key: 0,\n                        name: link?.navigation?.icon || link.icon,\n                        class: \"icon\"\n                      }, null, 8, [\"name\"]))\n                    : _createCommentVNode(\"\", true),\n                  _createElementVNode(\"span\", null, _toDisplayString(link?.navigation?.title || link.title || link._path), 1)\n                ])\n              ]),\n              _: 2\n            }, 1032, [\"to\", \"exact\", \"class\"])),\n        (link.children?.length && (__props.max === null || __props.level + 1 < __props.max))\n          ? _withDirectives((_openBlock(), _createBlock(_component_DocsAsideTree, {\n              key: 2,\n              links: link.children,\n              level: __props.level + 1,\n              parent: link,\n              max: __props.max,\n              class: \"recursive\"\n            }, null, 8, [\"links\", \"level\", \"parent\", \"max\"])), [\n              [_vShow, !isCollapsed(link)]\n            ])\n          : _createCommentVNode(\"\", true)\n      ], 2))\n    }), 128))\n  ]))\n}\n}\n\n})",
-      "start": 1707165956106,
-      "end": 1707165956106
+      "start": 1707500038454,
+      "end": 1707500038454
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1707165956107,
-      "end": 1707165956107,
+      "start": 1707500038456,
+      "end": 1707500038461,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1707165956120,
-      "end": 1707165956121,
+      "start": 1707500038471,
+      "end": 1707500038472,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, unref as _unref, resolveComponent as _resolveComponent, createBlock as _createBlock, createCommentVNode as _createCommentVNode, toDisplayString as _toDisplayString, createElementVNode as _createElementVNode, createVNode as _createVNode, normalizeClass as _normalizeClass, withCtx as _withCtx, vShow as _vShow, withDirectives as _withDirectives, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-d42239fd\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"docs-aside-tree\" }\nconst _hoisted_2 = [\"onClick\"]\nconst _hoisted_3 = { class: \"content\" }\nconst _hoisted_4 = { class: \"content\" }\n\nimport type { PropType } from 'vue'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'DocsAsideTree',\n  props: {\n  links: {\n    type: Array as PropType<any>,\n    default: () => []\n  },\n  level: {\n    type: Number,\n    default: 0\n  },\n  max: {\n    type: Number,\n    default: null\n  },\n  parent: {\n    type: Object as PropType<any>,\n    default: null\n  }\n},\n  setup(__props) {\n\nconst props = __props\n\nconst route = useRoute()\nconst { config } = useDocus()\n\nconst collapsedMap = useState(`docus-docs-aside-collapse-map-${props.parent?._path || '/'}`, () => {\n  if (props.level === 0) {\n    return {}\n  }\n  return (props.links as any [])\n    .filter(link => !!link.children)\n    .reduce((map, link) => {\n      map[link._path] = true\n      return map\n    }, {})\n})\n\nconst isActive = (link: any) => {\n  return route.path === link._path\n}\n\nconst isCollapsed = (link: any) => {\n  if (link.children) {\n    // Directory has been toggled manually, use its state\n    if (typeof collapsedMap.value[link._path] !== 'undefined') {\n      return collapsedMap.value[link._path]\n    }\n\n    // Check if aside.collapsed has been set in YML\n    if ([true, false].includes(link?.aside?.collapsed)) { return link.aside.collapsed }\n\n    // Return value grabbed from the link\n    if (link?.collapsed) { return link?.collapsed }\n\n    if (config?.value?.aside?.collapsed) { return config.value.aside?.collapsed }\n  }\n\n  return false\n}\n\nconst toggleCollapse = (link: any) => (collapsedMap.value[link._path] = !isCollapsed(link))\n\nconst hasNesting = computed(() => props.links.some((link: any) => link.children))\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_Icon = _resolveComponent(\"Icon\")!\n  const _component_NuxtLink = _resolveComponent(\"NuxtLink\")!\n  const _component_DocsAsideTree = _resolveComponent(\"DocsAsideTree\", true)!\n\n  return (_openBlock(), _createElementBlock(\"ul\", _hoisted_1, [\n    (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(__props.links, (link) => {\n      return (_openBlock(), _createElementBlock(\"li\", {\n        key: link._path,\n        class: _normalizeClass({\n        'has-parent-icon': __props.parent?.icon,\n        'has-children': __props.level > 0 && link.children,\n        'bordered': __props.level > 0 || !_unref(hasNesting),\n        'active': isActive(link),\n      })\n      }, [\n        (link.children)\n          ? (_openBlock(), _createElementBlock(\"button\", {\n              key: 0,\n              class: \"title-collapsible-button\",\n              onClick: ($event: any) => (toggleCollapse(link))\n            }, [\n              _createElementVNode(\"span\", _hoisted_3, [\n                (link?.navigation?.icon || link.icon)\n                  ? (_openBlock(), _createBlock(_component_Icon, {\n                      key: 0,\n                      name: link?.navigation?.icon || link.icon,\n                      class: \"icon\"\n                    }, null, 8, [\"name\"]))\n                  : _createCommentVNode(\"\", true),\n                _createElementVNode(\"span\", null, _toDisplayString(link?.navigation?.title || link.title || link._path), 1)\n              ]),\n              _createElementVNode(\"span\", null, [\n                _createVNode(_component_Icon, {\n                  name: isCollapsed(link) ? 'lucide:chevrons-up-down' : 'lucide:chevrons-down-up',\n                  class: \"collapsible-icon\"\n                }, null, 8, [\"name\"])\n              ])\n            ], 8, _hoisted_2))\n          : (_openBlock(), _createBlock(_component_NuxtLink, {\n              key: 1,\n              to: link.redirect ? link.redirect : link._path,\n              class: _normalizeClass([\"link\", {\n          'padded': __props.level > 0 || !_unref(hasNesting),\n          'active': isActive(link),\n        }]),\n              exact: link.exact\n            }, {\n              default: _withCtx(() => [\n                _createElementVNode(\"span\", _hoisted_4, [\n                  (link?.navigation?.icon || link.icon)\n                    ? (_openBlock(), _createBlock(_component_Icon, {\n                        key: 0,\n                        name: link?.navigation?.icon || link.icon,\n                        class: \"icon\"\n                      }, null, 8, [\"name\"]))\n                    : _createCommentVNode(\"\", true),\n                  _createElementVNode(\"span\", null, _toDisplayString(link?.navigation?.title || link.title || link._path), 1)\n                ])\n              ]),\n              _: 2\n            }, 1032, [\"to\", \"exact\", \"class\"])),\n        (link.children?.length && (__props.max === null || __props.level + 1 < __props.max))\n          ? _withDirectives((_openBlock(), _createBlock(_component_DocsAsideTree, {\n              key: 2,\n              links: link.children,\n              level: __props.level + 1,\n              parent: link,\n              max: __props.max,\n              class: \"recursive\"\n            }, null, 8, [\"links\", \"level\", \"parent\", \"max\"])), [\n              [_vShow, !isCollapsed(link)]\n            ])\n          : _createCommentVNode(\"\", true)\n      ], 2))\n    }), 128))\n  ]))\n}\n}\n\n})",
-      "start": 1707165956121,
-      "end": 1707165956122,
+      "start": 1707500038474,
+      "end": 1707500038474,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1707165956122,
-      "end": 1707165956122,
+      "start": 1707500038474,
+      "end": 1707500038474,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1707165956122,
-      "end": 1707165956122,
+      "start": 1707500038475,
+      "end": 1707500038475,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1707165956123,
-      "end": 1707165956123,
+      "start": 1707500038475,
+      "end": 1707500038475,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, unref as _unref, resolveComponent as _resolveComponent, createBlock as _createBlock, createCommentVNode as _createCommentVNode, toDisplayString as _toDisplayString, createElementVNode as _createElementVNode, createVNode as _createVNode, normalizeClass as _normalizeClass, withCtx as _withCtx, vShow as _vShow, withDirectives as _withDirectives, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-d42239fd\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = { class: \"docs-aside-tree\" };\nconst _hoisted_2 = [\"onClick\"];\nconst _hoisted_3 = { class: \"content\" };\nconst _hoisted_4 = { class: \"content\" };\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"DocsAsideTree\",\n  props: {\n    links: {\n      type: Array,\n      default: () => []\n    },\n    level: {\n      type: Number,\n      default: 0\n    },\n    max: {\n      type: Number,\n      default: null\n    },\n    parent: {\n      type: Object,\n      default: null\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const route = useRoute();\n    const { config } = useDocus();\n    const collapsedMap = useState(`docus-docs-aside-collapse-map-${props.parent?._path || \"/\"}`, () => {\n      if (props.level === 0) {\n        return {};\n      }\n      return props.links.filter((link) => !!link.children).reduce((map, link) => {\n        map[link._path] = true;\n        return map;\n      }, {});\n    });\n    const isActive = (link) => {\n      return route.path === link._path;\n    };\n    const isCollapsed = (link) => {\n      if (link.children) {\n        if (typeof collapsedMap.value[link._path] !== \"undefined\") {\n          return collapsedMap.value[link._path];\n        }\n        if ([true, false].includes(link?.aside?.collapsed)) {\n          return link.aside.collapsed;\n        }\n        if (link?.collapsed) {\n          return link?.collapsed;\n        }\n        if (config?.value?.aside?.collapsed) {\n          return config.value.aside?.collapsed;\n        }\n      }\n      return false;\n    };\n    const toggleCollapse = (link) => collapsedMap.value[link._path] = !isCollapsed(link);\n    const hasNesting = computed(() => props.links.some((link) => link.children));\n    return (_ctx, _cache) => {\n      const _component_Icon = _resolveComponent(\"Icon\");\n      const _component_NuxtLink = _resolveComponent(\"NuxtLink\");\n      const _component_DocsAsideTree = _resolveComponent(\"DocsAsideTree\", true);\n      return _openBlock(), _createElementBlock(\"ul\", _hoisted_1, [\n        (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(__props.links, (link) => {\n          return _openBlock(), _createElementBlock(\"li\", {\n            key: link._path,\n            class: _normalizeClass({\n              \"has-parent-icon\": __props.parent?.icon,\n              \"has-children\": __props.level > 0 && link.children,\n              \"bordered\": __props.level > 0 || !_unref(hasNesting),\n              \"active\": isActive(link)\n            })\n          }, [\n            link.children ? (_openBlock(), _createElementBlock(\"button\", {\n              key: 0,\n              class: \"title-collapsible-button\",\n              onClick: ($event) => toggleCollapse(link)\n            }, [\n              _createElementVNode(\"span\", _hoisted_3, [\n                link?.navigation?.icon || link.icon ? (_openBlock(), _createBlock(_component_Icon, {\n                  key: 0,\n                  name: link?.navigation?.icon || link.icon,\n                  class: \"icon\"\n                }, null, 8, [\"name\"])) : _createCommentVNode(\"\", true),\n                _createElementVNode(\"span\", null, _toDisplayString(link?.navigation?.title || link.title || link._path), 1)\n              ]),\n              _createElementVNode(\"span\", null, [\n                _createVNode(_component_Icon, {\n                  name: isCollapsed(link) ? \"lucide:chevrons-up-down\" : \"lucide:chevrons-down-up\",\n                  class: \"collapsible-icon\"\n                }, null, 8, [\"name\"])\n              ])\n            ], 8, _hoisted_2)) : (_openBlock(), _createBlock(_component_NuxtLink, {\n              key: 1,\n              to: link.redirect ? link.redirect : link._path,\n              class: _normalizeClass([\"link\", {\n                \"padded\": __props.level > 0 || !_unref(hasNesting),\n                \"active\": isActive(link)\n              }]),\n              exact: link.exact\n            }, {\n              default: _withCtx(() => [\n                _createElementVNode(\"span\", _hoisted_4, [\n                  link?.navigation?.icon || link.icon ? (_openBlock(), _createBlock(_component_Icon, {\n                    key: 0,\n                    name: link?.navigation?.icon || link.icon,\n                    class: \"icon\"\n                  }, null, 8, [\"name\"])) : _createCommentVNode(\"\", true),\n                  _createElementVNode(\"span\", null, _toDisplayString(link?.navigation?.title || link.title || link._path), 1)\n                ])\n              ]),\n              _: 2\n            }, 1032, [\"to\", \"exact\", \"class\"])),\n            link.children?.length && (__props.max === null || __props.level + 1 < __props.max) ? _withDirectives((_openBlock(), _createBlock(_component_DocsAsideTree, {\n              key: 2,\n              links: link.children,\n              level: __props.level + 1,\n              parent: link,\n              max: __props.max,\n              class: \"recursive\"\n            }, null, 8, [\"links\", \"level\", \"parent\", \"max\"])), [\n              [_vShow, !isCollapsed(link)]\n            ]) : _createCommentVNode(\"\", true)\n          ], 2);\n        }), 128))\n      ]);\n    };\n  }\n});\n",
-      "start": 1707165956123,
-      "end": 1707165956853,
+      "start": 1707500038476,
+      "end": 1707500039346,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -64,123 +64,123 @@
     },
     {
       "name": "vite:json",
-      "start": 1707165956853,
-      "end": 1707165956853,
+      "start": 1707500039347,
+      "end": 1707500039347,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1707165956854,
-      "end": 1707165956854,
+      "start": 1707500039347,
+      "end": 1707500039347,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1707165956854,
-      "end": 1707165956854,
+      "start": 1707500039347,
+      "end": 1707500039347,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1707165956854,
-      "end": 1707165956854,
+      "start": 1707500039347,
+      "end": 1707500039347,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1707165956854,
-      "end": 1707165956854,
+      "start": 1707500039347,
+      "end": 1707500039347,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1707165956854,
-      "end": 1707165956854,
+      "start": 1707500039347,
+      "end": 1707500039347,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1707165956854,
-      "end": 1707165956854,
+      "start": 1707500039347,
+      "end": 1707500039348,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1707165956854,
-      "end": 1707165956854,
+      "start": 1707500039348,
+      "end": 1707500039348,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1707165956854,
-      "end": 1707165956854,
+      "start": 1707500039348,
+      "end": 1707500039348,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1707165956854,
-      "end": 1707165956854,
+      "start": 1707500039348,
+      "end": 1707500039348,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1707165956854,
-      "end": 1707165956854,
+      "start": 1707500039349,
+      "end": 1707500039349,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1707165956855,
-      "end": 1707165956855,
+      "start": 1707500039349,
+      "end": 1707500039349,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1707165956855,
-      "end": 1707165956855,
+      "start": 1707500039349,
+      "end": 1707500039349,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1707165956855,
-      "end": 1707165956855,
+      "start": 1707500039349,
+      "end": 1707500039349,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1707165956855,
-      "end": 1707165956855,
+      "start": 1707500039349,
+      "end": 1707500039349,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1707165956855,
-      "end": 1707165956855,
+      "start": 1707500039349,
+      "end": 1707500039349,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1707165956855,
-      "end": 1707165956855,
+      "start": 1707500039349,
+      "end": 1707500039349,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1707165956855,
-      "end": 1707165956855,
+      "start": 1707500039349,
+      "end": 1707500039349,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1707165956858,
-      "end": 1707165956860,
+      "start": 1707500039355,
+      "end": 1707500039357,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { useRoute } from '#app/composables/router';\nimport { useDocus } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/composables/useDocus.ts';\nimport { useState } from '#app/composables/state';\nimport { computed } from 'vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, unref as _unref, resolveComponent as _resolveComponent, createBlock as _createBlock, createCommentVNode as _createCommentVNode, toDisplayString as _toDisplayString, createElementVNode as _createElementVNode, createVNode as _createVNode, normalizeClass as _normalizeClass, withCtx as _withCtx, vShow as _vShow, withDirectives as _withDirectives, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-d42239fd\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = { class: \"docs-aside-tree\" };\nconst _hoisted_2 = [\"onClick\"];\nconst _hoisted_3 = { class: \"content\" };\nconst _hoisted_4 = { class: \"content\" };\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"DocsAsideTree\",\n  props: {\n    links: {\n      type: Array,\n      default: () => []\n    },\n    level: {\n      type: Number,\n      default: 0\n    },\n    max: {\n      type: Number,\n      default: null\n    },\n    parent: {\n      type: Object,\n      default: null\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const route = useRoute();\n    const { config } = useDocus();\n    const collapsedMap = useState(`docus-docs-aside-collapse-map-${props.parent?._path || \"/\"}`, () => {\n      if (props.level === 0) {\n        return {};\n      }\n      return props.links.filter((link) => !!link.children).reduce((map, link) => {\n        map[link._path] = true;\n        return map;\n      }, {});\n    });\n    const isActive = (link) => {\n      return route.path === link._path;\n    };\n    const isCollapsed = (link) => {\n      if (link.children) {\n        if (typeof collapsedMap.value[link._path] !== \"undefined\") {\n          return collapsedMap.value[link._path];\n        }\n        if ([true, false].includes(link?.aside?.collapsed)) {\n          return link.aside.collapsed;\n        }\n        if (link?.collapsed) {\n          return link?.collapsed;\n        }\n        if (config?.value?.aside?.collapsed) {\n          return config.value.aside?.collapsed;\n        }\n      }\n      return false;\n    };\n    const toggleCollapse = (link) => collapsedMap.value[link._path] = !isCollapsed(link);\n    const hasNesting = computed(() => props.links.some((link) => link.children));\n    return (_ctx, _cache) => {\n      const _component_Icon = _resolveComponent(\"Icon\");\n      const _component_NuxtLink = _resolveComponent(\"NuxtLink\");\n      const _component_DocsAsideTree = _resolveComponent(\"DocsAsideTree\", true);\n      return _openBlock(), _createElementBlock(\"ul\", _hoisted_1, [\n        (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(__props.links, (link) => {\n          return _openBlock(), _createElementBlock(\"li\", {\n            key: link._path,\n            class: _normalizeClass({\n              \"has-parent-icon\": __props.parent?.icon,\n              \"has-children\": __props.level > 0 && link.children,\n              \"bordered\": __props.level > 0 || !_unref(hasNesting),\n              \"active\": isActive(link)\n            })\n          }, [\n            link.children ? (_openBlock(), _createElementBlock(\"button\", {\n              key: 0,\n              class: \"title-collapsible-button\",\n              onClick: ($event) => toggleCollapse(link)\n            }, [\n              _createElementVNode(\"span\", _hoisted_3, [\n                link?.navigation?.icon || link.icon ? (_openBlock(), _createBlock(_component_Icon, {\n                  key: 0,\n                  name: link?.navigation?.icon || link.icon,\n                  class: \"icon\"\n                }, null, 8, [\"name\"])) : _createCommentVNode(\"\", true),\n                _createElementVNode(\"span\", null, _toDisplayString(link?.navigation?.title || link.title || link._path), 1)\n              ]),\n              _createElementVNode(\"span\", null, [\n                _createVNode(_component_Icon, {\n                  name: isCollapsed(link) ? \"lucide:chevrons-up-down\" : \"lucide:chevrons-down-up\",\n                  class: \"collapsible-icon\"\n                }, null, 8, [\"name\"])\n              ])\n            ], 8, _hoisted_2)) : (_openBlock(), _createBlock(_component_NuxtLink, {\n              key: 1,\n              to: link.redirect ? link.redirect : link._path,\n              class: _normalizeClass([\"link\", {\n                \"padded\": __props.level > 0 || !_unref(hasNesting),\n                \"active\": isActive(link)\n              }]),\n              exact: link.exact\n            }, {\n              default: _withCtx(() => [\n                _createElementVNode(\"span\", _hoisted_4, [\n                  link?.navigation?.icon || link.icon ? (_openBlock(), _createBlock(_component_Icon, {\n                    key: 0,\n                    name: link?.navigation?.icon || link.icon,\n                    class: \"icon\"\n                  }, null, 8, [\"name\"])) : _createCommentVNode(\"\", true),\n                  _createElementVNode(\"span\", null, _toDisplayString(link?.navigation?.title || link.title || link._path), 1)\n                ])\n              ]),\n              _: 2\n            }, 1032, [\"to\", \"exact\", \"class\"])),\n            link.children?.length && (__props.max === null || __props.level + 1 < __props.max) ? _withDirectives((_openBlock(), _createBlock(_component_DocsAsideTree, {\n              key: 2,\n              links: link.children,\n              level: __props.level + 1,\n              parent: link,\n              max: __props.max,\n              class: \"recursive\"\n            }, null, 8, [\"links\", \"level\", \"parent\", \"max\"])), [\n              [_vShow, !isCollapsed(link)]\n            ]) : _createCommentVNode(\"\", true)\n          ], 2);\n        }), 128))\n      ]);\n    };\n  }\n});\n",
-      "start": 1707165956860,
-      "end": 1707165956869,
+      "start": 1707500039358,
+      "end": 1707500039383,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -193,51 +193,51 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1707165956869,
-      "end": 1707165956869,
+      "start": 1707500039383,
+      "end": 1707500039383,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1707165956869,
-      "end": 1707165956869,
+      "start": 1707500039383,
+      "end": 1707500039383,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1707165956869,
-      "end": 1707165956869,
+      "start": 1707500039384,
+      "end": 1707500039384,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1707165956869,
-      "end": 1707165956869,
+      "start": 1707500039384,
+      "end": 1707500039384,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
       "result": "import { default as __nuxt_component_0 } from \"/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/Icon.vue\";\nimport { default as __nuxt_component_1 } from \"/workspace/Kubernetes-Bootcamp/node_modules/nuxt/dist/app/components/nuxt-link\";\nimport { default as __nuxt_component_2 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsAsideTree.vue\";\nimport { useRoute } from '#app/composables/router';\nimport { useDocus } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/composables/useDocus.ts';\nimport { useState } from '#app/composables/state';\nimport { computed } from 'vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, unref as _unref, resolveComponent as _resolveComponent, createBlock as _createBlock, createCommentVNode as _createCommentVNode, toDisplayString as _toDisplayString, createElementVNode as _createElementVNode, createVNode as _createVNode, normalizeClass as _normalizeClass, withCtx as _withCtx, vShow as _vShow, withDirectives as _withDirectives, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-d42239fd\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = { class: \"docs-aside-tree\" };\nconst _hoisted_2 = [\"onClick\"];\nconst _hoisted_3 = { class: \"content\" };\nconst _hoisted_4 = { class: \"content\" };\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"DocsAsideTree\",\n  props: {\n    links: {\n      type: Array,\n      default: () => []\n    },\n    level: {\n      type: Number,\n      default: 0\n    },\n    max: {\n      type: Number,\n      default: null\n    },\n    parent: {\n      type: Object,\n      default: null\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const route = useRoute();\n    const { config } = useDocus();\n    const collapsedMap = useState(`docus-docs-aside-collapse-map-${props.parent?._path || \"/\"}`, () => {\n      if (props.level === 0) {\n        return {};\n      }\n      return props.links.filter((link) => !!link.children).reduce((map, link) => {\n        map[link._path] = true;\n        return map;\n      }, {});\n    });\n    const isActive = (link) => {\n      return route.path === link._path;\n    };\n    const isCollapsed = (link) => {\n      if (link.children) {\n        if (typeof collapsedMap.value[link._path] !== \"undefined\") {\n          return collapsedMap.value[link._path];\n        }\n        if ([true, false].includes(link?.aside?.collapsed)) {\n          return link.aside.collapsed;\n        }\n        if (link?.collapsed) {\n          return link?.collapsed;\n        }\n        if (config?.value?.aside?.collapsed) {\n          return config.value.aside?.collapsed;\n        }\n      }\n      return false;\n    };\n    const toggleCollapse = (link) => collapsedMap.value[link._path] = !isCollapsed(link);\n    const hasNesting = computed(() => props.links.some((link) => link.children));\n    return (_ctx, _cache) => {\n      const _component_Icon = __nuxt_component_0;\n      const _component_NuxtLink = __nuxt_component_1;\n      const _component_DocsAsideTree = __nuxt_component_2;\n      return _openBlock(), _createElementBlock(\"ul\", _hoisted_1, [\n        (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(__props.links, (link) => {\n          return _openBlock(), _createElementBlock(\"li\", {\n            key: link._path,\n            class: _normalizeClass({\n              \"has-parent-icon\": __props.parent?.icon,\n              \"has-children\": __props.level > 0 && link.children,\n              \"bordered\": __props.level > 0 || !_unref(hasNesting),\n              \"active\": isActive(link)\n            })\n          }, [\n            link.children ? (_openBlock(), _createElementBlock(\"button\", {\n              key: 0,\n              class: \"title-collapsible-button\",\n              onClick: ($event) => toggleCollapse(link)\n            }, [\n              _createElementVNode(\"span\", _hoisted_3, [\n                link?.navigation?.icon || link.icon ? (_openBlock(), _createBlock(_component_Icon, {\n                  key: 0,\n                  name: link?.navigation?.icon || link.icon,\n                  class: \"icon\"\n                }, null, 8, [\"name\"])) : _createCommentVNode(\"\", true),\n                _createElementVNode(\"span\", null, _toDisplayString(link?.navigation?.title || link.title || link._path), 1)\n              ]),\n              _createElementVNode(\"span\", null, [\n                _createVNode(_component_Icon, {\n                  name: isCollapsed(link) ? \"lucide:chevrons-up-down\" : \"lucide:chevrons-down-up\",\n                  class: \"collapsible-icon\"\n                }, null, 8, [\"name\"])\n              ])\n            ], 8, _hoisted_2)) : (_openBlock(), _createBlock(_component_NuxtLink, {\n              key: 1,\n              to: link.redirect ? link.redirect : link._path,\n              class: _normalizeClass([\"link\", {\n                \"padded\": __props.level > 0 || !_unref(hasNesting),\n                \"active\": isActive(link)\n              }]),\n              exact: link.exact\n            }, {\n              default: _withCtx(() => [\n                _createElementVNode(\"span\", _hoisted_4, [\n                  link?.navigation?.icon || link.icon ? (_openBlock(), _createBlock(_component_Icon, {\n                    key: 0,\n                    name: link?.navigation?.icon || link.icon,\n                    class: \"icon\"\n                  }, null, 8, [\"name\"])) : _createCommentVNode(\"\", true),\n                  _createElementVNode(\"span\", null, _toDisplayString(link?.navigation?.title || link.title || link._path), 1)\n                ])\n              ]),\n              _: 2\n            }, 1032, [\"to\", \"exact\", \"class\"])),\n            link.children?.length && (__props.max === null || __props.level + 1 < __props.max) ? _withDirectives((_openBlock(), _createBlock(_component_DocsAsideTree, {\n              key: 2,\n              links: link.children,\n              level: __props.level + 1,\n              parent: link,\n              max: __props.max,\n              class: \"recursive\"\n            }, null, 8, [\"links\", \"level\", \"parent\", \"max\"])), [\n              [_vShow, !isCollapsed(link)]\n            ]) : _createCommentVNode(\"\", true)\n          ], 2);\n        }), 128))\n      ]);\n    };\n  }\n});\n",
-      "start": 1707165956870,
-      "end": 1707165956870,
+      "start": 1707500039385,
+      "end": 1707500039385,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1707165956871,
-      "end": 1707165956871,
+      "start": 1707500039386,
+      "end": 1707500039386,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1707165956871,
-      "end": 1707165956871,
+      "start": 1707500039386,
+      "end": 1707500039386,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1707165956871,
-      "end": 1707165956871,
+      "start": 1707500039387,
+      "end": 1707500039387,
       "order": "normal"
     }
   ]

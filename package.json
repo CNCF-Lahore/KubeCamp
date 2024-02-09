@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "nuxi dev",
     "build": "nuxi build",
+    "deploy": "gh-pages -d dist",
     "generate": "nuxi generate",
     "preview": "nuxi preview",
     "lint": "eslint ."
@@ -22,6 +23,7 @@
     "string-width": "4.2.3"
   },
   "dependencies": {
+    "gh-pages": "^6.1.1",
     "nuxt-icon": "^0.6.8"
   }
 }
