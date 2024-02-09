@@ -4,8 +4,8 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttr as _ssrRenderAttr, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'Sandbox',\n  __ssrInlineRender: true,\n  props: {\n  src: {\n    type: String,\n    default: ''\n  },\n  repo: {\n    type: String,\n    default: ''\n  },\n  branch: {\n    type: String,\n    default: ''\n  },\n  dir: {\n    type: String,\n    default: ''\n  },\n  file: {\n    type: String,\n    default: 'app.vue'\n  }\n},\n  setup(__props) {\n\nconst props = __props\n\nconst colorMode = useColorMode()\n\nconst providers = {\n  CodeSandBox: () => `https://codesandbox.io/embed/github/${props.repo}/tree/${props.branch}/${props.dir}?hidenavigation=1&theme=${colorMode.value}`,\n  StackBlitz: () => `https://stackblitz.com/github/${props.repo}/tree/${props.branch}/${props.dir}?embed=1&file=${props.file}&theme=${colorMode.value}`\n}\n\nconst providersTabs = Object.keys(providers).map(p => ({ label: p }))\nconst activeTabIndex = ref(-1)\nconst tabs = ref()\nconst url = ref('')\nconst provider = ref('')\n\nconst changeProvider = (value) => {\n  provider.value = value\n  url.value = props.src || providers[provider.value]()\n  localStorage.setItem('docus_sandbox', value)\n}\n\n// const sandBoxUrl = computed(() => url.value?.replace('?embed=1&', '?').replace('/embed/', '/s/'))\n\nconst updateTab = (i: number) => {\n  activeTabIndex.value = i\n  changeProvider(providersTabs[i].label)\n}\n\nonMounted(() => {\n  // TODO: if Safari, use CodeSandBox by default: const defaultSandbox = ...\n  provider.value = window.localStorage.getItem('docus_sandbox') || 'CodeSandBox'\n\n  url.value = props.src || providers[provider.value]()\n\n  // Set active tab\n  activeTabIndex.value = Object.keys(providers).indexOf(provider.value)\n})\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_TabsHeader = _resolveComponent(\"TabsHeader\")!\n\n  _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"sandbox\" }, _attrs))} data-v-fecef2a9>`)\n  if (!__props.src) {\n    _push(_ssrRenderComponent(_component_TabsHeader, {\n      ref_key: \"tabs\",\n      ref: tabs,\n      \"active-tab-index\": _unref(activeTabIndex),\n      tabs: _unref(providersTabs),\n      \"onUpdate:activeTabIndex\": updateTab\n    }, null, _parent))\n  } else {\n    _push(`<!---->`)\n  }\n  if (_unref(url)) {\n    _push(`<iframe${_ssrRenderAttr(\"src\", _unref(url))} title=\"Sandbox editor\" sandbox=\"allow-modals allow-forms allow-popups allow-scripts allow-same-origin\" data-v-fecef2a9></iframe>`)\n  } else {\n    _push(`<span data-v-fecef2a9>Loading Sandbox...</span>`)\n  }\n  _push(`</div>`)\n}\n}\n\n})",
-      "start": 1707165963971,
-      "end": 1707165963971,
+      "start": 1707500053757,
+      "end": 1707500053757,
       "sourcemaps": {
         "version": 3,
         "sources": [
@@ -20,71 +20,71 @@
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1707165963971,
-      "end": 1707165963972,
+      "start": 1707500053759,
+      "end": 1707500053759,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1707165963971,
-      "end": 1707165963972,
+      "start": 1707500053759,
+      "end": 1707500053759,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1707165963974,
-      "end": 1707165963974,
+      "start": 1707500053761,
+      "end": 1707500053761,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1707165963974,
-      "end": 1707165963974,
+      "start": 1707500053761,
+      "end": 1707500053761,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttr as _ssrRenderAttr, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'Sandbox',\n  __ssrInlineRender: true,\n  props: {\n  src: {\n    type: String,\n    default: ''\n  },\n  repo: {\n    type: String,\n    default: ''\n  },\n  branch: {\n    type: String,\n    default: ''\n  },\n  dir: {\n    type: String,\n    default: ''\n  },\n  file: {\n    type: String,\n    default: 'app.vue'\n  }\n},\n  setup(__props) {\n\nconst props = __props\n\nconst colorMode = useColorMode()\n\nconst providers = {\n  CodeSandBox: () => `https://codesandbox.io/embed/github/${props.repo}/tree/${props.branch}/${props.dir}?hidenavigation=1&theme=${colorMode.value}`,\n  StackBlitz: () => `https://stackblitz.com/github/${props.repo}/tree/${props.branch}/${props.dir}?embed=1&file=${props.file}&theme=${colorMode.value}`\n}\n\nconst providersTabs = Object.keys(providers).map(p => ({ label: p }))\nconst activeTabIndex = ref(-1)\nconst tabs = ref()\nconst url = ref('')\nconst provider = ref('')\n\nconst changeProvider = (value) => {\n  provider.value = value\n  url.value = props.src || providers[provider.value]()\n  localStorage.setItem('docus_sandbox', value)\n}\n\n// const sandBoxUrl = computed(() => url.value?.replace('?embed=1&', '?').replace('/embed/', '/s/'))\n\nconst updateTab = (i: number) => {\n  activeTabIndex.value = i\n  changeProvider(providersTabs[i].label)\n}\n\nonMounted(() => {\n  // TODO: if Safari, use CodeSandBox by default: const defaultSandbox = ...\n  provider.value = window.localStorage.getItem('docus_sandbox') || 'CodeSandBox'\n\n  url.value = props.src || providers[provider.value]()\n\n  // Set active tab\n  activeTabIndex.value = Object.keys(providers).indexOf(provider.value)\n})\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_TabsHeader = _resolveComponent(\"TabsHeader\")!\n\n  _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"sandbox\" }, _attrs))} data-v-fecef2a9>`)\n  if (!__props.src) {\n    _push(_ssrRenderComponent(_component_TabsHeader, {\n      ref_key: \"tabs\",\n      ref: tabs,\n      \"active-tab-index\": _unref(activeTabIndex),\n      tabs: _unref(providersTabs),\n      \"onUpdate:activeTabIndex\": updateTab\n    }, null, _parent))\n  } else {\n    _push(`<!---->`)\n  }\n  if (_unref(url)) {\n    _push(`<iframe${_ssrRenderAttr(\"src\", _unref(url))} title=\"Sandbox editor\" sandbox=\"allow-modals allow-forms allow-popups allow-scripts allow-same-origin\" data-v-fecef2a9></iframe>`)\n  } else {\n    _push(`<span data-v-fecef2a9>Loading Sandbox...</span>`)\n  }\n  _push(`</div>`)\n}\n}\n\n})",
-      "start": 1707165963975,
-      "end": 1707165963975,
+      "start": 1707500053762,
+      "end": 1707500053762,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttr as _ssrRenderAttr, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'Sandbox',\n  __ssrInlineRender: true,\n  props: {\n  src: {\n    type: String,\n    default: ''\n  },\n  repo: {\n    type: String,\n    default: ''\n  },\n  branch: {\n    type: String,\n    default: ''\n  },\n  dir: {\n    type: String,\n    default: ''\n  },\n  file: {\n    type: String,\n    default: 'app.vue'\n  }\n},\n  setup(__props) {\n\nconst props = __props\n\nconst colorMode = useColorMode()\n\nconst providers = {\n  CodeSandBox: () => `https://codesandbox.io/embed/github/${props.repo}/tree/${props.branch}/${props.dir}?hidenavigation=1&theme=${colorMode.value}`,\n  StackBlitz: () => `https://stackblitz.com/github/${props.repo}/tree/${props.branch}/${props.dir}?embed=1&file=${props.file}&theme=${colorMode.value}`\n}\n\nconst providersTabs = Object.keys(providers).map(p => ({ label: p }))\nconst activeTabIndex = ref(-1)\nconst tabs = ref()\nconst url = ref('')\nconst provider = ref('')\n\nconst changeProvider = (value) => {\n  provider.value = value\n  url.value = props.src || providers[provider.value]()\n  localStorage.setItem('docus_sandbox', value)\n}\n\n// const sandBoxUrl = computed(() => url.value?.replace('?embed=1&', '?').replace('/embed/', '/s/'))\n\nconst updateTab = (i: number) => {\n  activeTabIndex.value = i\n  changeProvider(providersTabs[i].label)\n}\n\nonMounted(() => {\n  // TODO: if Safari, use CodeSandBox by default: const defaultSandbox = ...\n  provider.value = window.localStorage.getItem('docus_sandbox') || 'CodeSandBox'\n\n  url.value = props.src || providers[provider.value]()\n\n  // Set active tab\n  activeTabIndex.value = Object.keys(providers).indexOf(provider.value)\n})\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_TabsHeader = _resolveComponent(\"TabsHeader\")!\n\n  _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"sandbox\" }, _attrs))} data-v-fecef2a9>`)\n  if (!__props.src) {\n    _push(_ssrRenderComponent(_component_TabsHeader, {\n      ref_key: \"tabs\",\n      ref: tabs,\n      \"active-tab-index\": _unref(activeTabIndex),\n      tabs: _unref(providersTabs),\n      \"onUpdate:activeTabIndex\": updateTab\n    }, null, _parent))\n  } else {\n    _push(`<!---->`)\n  }\n  if (_unref(url)) {\n    _push(`<iframe${_ssrRenderAttr(\"src\", _unref(url))} title=\"Sandbox editor\" sandbox=\"allow-modals allow-forms allow-popups allow-scripts allow-same-origin\" data-v-fecef2a9></iframe>`)\n  } else {\n    _push(`<span data-v-fecef2a9>Loading Sandbox...</span>`)\n  }\n  _push(`</div>`)\n}\n}\n\n})",
-      "start": 1707165963975,
-      "end": 1707165963975,
+      "start": 1707500053762,
+      "end": 1707500053762,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1707165963976,
-      "end": 1707165963976,
+      "start": 1707500053762,
+      "end": 1707500053762,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1707165963976,
-      "end": 1707165963976,
+      "start": 1707500053762,
+      "end": 1707500053762,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1707165963976,
-      "end": 1707165963976,
+      "start": 1707500053762,
+      "end": 1707500053762,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1707165963976,
-      "end": 1707165963976,
+      "start": 1707500053762,
+      "end": 1707500053762,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttr as _ssrRenderAttr, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"Sandbox\",\n  __ssrInlineRender: true,\n  props: {\n    src: {\n      type: String,\n      default: \"\"\n    },\n    repo: {\n      type: String,\n      default: \"\"\n    },\n    branch: {\n      type: String,\n      default: \"\"\n    },\n    dir: {\n      type: String,\n      default: \"\"\n    },\n    file: {\n      type: String,\n      default: \"app.vue\"\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const colorMode = useColorMode();\n    const providers = {\n      CodeSandBox: () => `https://codesandbox.io/embed/github/${props.repo}/tree/${props.branch}/${props.dir}?hidenavigation=1&theme=${colorMode.value}`,\n      StackBlitz: () => `https://stackblitz.com/github/${props.repo}/tree/${props.branch}/${props.dir}?embed=1&file=${props.file}&theme=${colorMode.value}`\n    };\n    const providersTabs = Object.keys(providers).map((p) => ({ label: p }));\n    const activeTabIndex = ref(-1);\n    const tabs = ref();\n    const url = ref(\"\");\n    const provider = ref(\"\");\n    const changeProvider = (value) => {\n      provider.value = value;\n      url.value = props.src || providers[provider.value]();\n      localStorage.setItem(\"docus_sandbox\", value);\n    };\n    const updateTab = (i) => {\n      activeTabIndex.value = i;\n      changeProvider(providersTabs[i].label);\n    };\n    onMounted(() => {\n      provider.value = window.localStorage.getItem(\"docus_sandbox\") || \"CodeSandBox\";\n      url.value = props.src || providers[provider.value]();\n      activeTabIndex.value = Object.keys(providers).indexOf(provider.value);\n    });\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_TabsHeader = _resolveComponent(\"TabsHeader\");\n      _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"sandbox\" }, _attrs))} data-v-fecef2a9>`);\n      if (!__props.src) {\n        _push(_ssrRenderComponent(_component_TabsHeader, {\n          ref_key: \"tabs\",\n          ref: tabs,\n          \"active-tab-index\": _unref(activeTabIndex),\n          tabs: _unref(providersTabs),\n          \"onUpdate:activeTabIndex\": updateTab\n        }, null, _parent));\n      } else {\n        _push(`<!---->`);\n      }\n      if (_unref(url)) {\n        _push(`<iframe${_ssrRenderAttr(\"src\", _unref(url))} title=\"Sandbox editor\" sandbox=\"allow-modals allow-forms allow-popups allow-scripts allow-same-origin\" data-v-fecef2a9></iframe>`);\n      } else {\n        _push(`<span data-v-fecef2a9>Loading Sandbox...</span>`);\n      }\n      _push(`</div>`);\n    };\n  }\n});\n",
-      "start": 1707165963976,
-      "end": 1707165964175,
+      "start": 1707500053762,
+      "end": 1707500054189,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -100,137 +100,137 @@
     },
     {
       "name": "vite:json",
-      "start": 1707165964175,
-      "end": 1707165964175,
+      "start": 1707500054189,
+      "end": 1707500054189,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1707165964176,
-      "end": 1707165964176,
+      "start": 1707500054189,
+      "end": 1707500054189,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1707165964176,
-      "end": 1707165964176,
+      "start": 1707500054190,
+      "end": 1707500054190,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1707165964176,
-      "end": 1707165964176,
+      "start": 1707500054190,
+      "end": 1707500054190,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1707165964176,
-      "end": 1707165964176,
+      "start": 1707500054190,
+      "end": 1707500054190,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1707165964176,
-      "end": 1707165964176,
+      "start": 1707500054190,
+      "end": 1707500054190,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1707165964176,
-      "end": 1707165964176,
+      "start": 1707500054190,
+      "end": 1707500054190,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1707165964176,
-      "end": 1707165964176,
+      "start": 1707500054190,
+      "end": 1707500054190,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1707165964176,
-      "end": 1707165964177,
+      "start": 1707500054190,
+      "end": 1707500054190,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1707165964177,
-      "end": 1707165964177,
+      "start": 1707500054190,
+      "end": 1707500054190,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1707165964177,
-      "end": 1707165964177,
+      "start": 1707500054190,
+      "end": 1707500054191,
       "order": "normal"
     },
     {
       "name": "vite:define",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttr as _ssrRenderAttr, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"Sandbox\",\n  __ssrInlineRender: true,\n  props: {\n    src: {\n      type: String,\n      default: \"\"\n    },\n    repo: {\n      type: String,\n      default: \"\"\n    },\n    branch: {\n      type: String,\n      default: \"\"\n    },\n    dir: {\n      type: String,\n      default: \"\"\n    },\n    file: {\n      type: String,\n      default: \"app.vue\"\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const colorMode = useColorMode();\n    const providers = {\n      CodeSandBox: () => `https://codesandbox.io/embed/github/${props.repo}/tree/${props.branch}/${props.dir}?hidenavigation=1&theme=${colorMode.value}`,\n      StackBlitz: () => `https://stackblitz.com/github/${props.repo}/tree/${props.branch}/${props.dir}?embed=1&file=${props.file}&theme=${colorMode.value}`\n    };\n    const providersTabs = Object.keys(providers).map((p) => ({ label: p }));\n    const activeTabIndex = ref(-1);\n    const tabs = ref();\n    const url = ref(\"\");\n    const provider = ref(\"\");\n    const changeProvider = (value) => {\n      provider.value = value;\n      url.value = props.src || providers[provider.value]();\n      localStorage.setItem(\"docus_sandbox\", value);\n    };\n    const updateTab = (i) => {\n      activeTabIndex.value = i;\n      changeProvider(providersTabs[i].label);\n    };\n    onMounted(() => {\n      provider.value = (void 0).localStorage.getItem(\"docus_sandbox\") || \"CodeSandBox\";\n      url.value = props.src || providers[provider.value]();\n      activeTabIndex.value = Object.keys(providers).indexOf(provider.value);\n    });\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_TabsHeader = _resolveComponent(\"TabsHeader\");\n      _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"sandbox\" }, _attrs))} data-v-fecef2a9>`);\n      if (!__props.src) {\n        _push(_ssrRenderComponent(_component_TabsHeader, {\n          ref_key: \"tabs\",\n          ref: tabs,\n          \"active-tab-index\": _unref(activeTabIndex),\n          tabs: _unref(providersTabs),\n          \"onUpdate:activeTabIndex\": updateTab\n        }, null, _parent));\n      } else {\n        _push(`<!---->`);\n      }\n      if (_unref(url)) {\n        _push(`<iframe${_ssrRenderAttr(\"src\", _unref(url))} title=\"Sandbox editor\" sandbox=\"allow-modals allow-forms allow-popups allow-scripts allow-same-origin\" data-v-fecef2a9></iframe>`);\n      } else {\n        _push(`<span data-v-fecef2a9>Loading Sandbox...</span>`);\n      }\n      _push(`</div>`);\n    };\n  }\n});\n",
-      "start": 1707165964177,
-      "end": 1707165964211,
+      "start": 1707500054191,
+      "end": 1707500054259,
       "order": "normal",
       "sourcemaps": "{\n  \"version\": 3,\n  \"sources\": [\"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Sandbox.vue?vue&type=script&setup=true&lang.ts\"],\n  \"sourcesContent\": [\"import { defineComponent as _defineComponent } from \\\"vue\\\";\\nimport { unref as _unref, resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \\\"vue\\\";\\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttr as _ssrRenderAttr, ssrRenderAttrs as _ssrRenderAttrs } from \\\"vue/server-renderer\\\";\\nexport default /* @__PURE__ */ _defineComponent({\\n  __name: \\\"Sandbox\\\",\\n  __ssrInlineRender: true,\\n  props: {\\n    src: {\\n      type: String,\\n      default: \\\"\\\"\\n    },\\n    repo: {\\n      type: String,\\n      default: \\\"\\\"\\n    },\\n    branch: {\\n      type: String,\\n      default: \\\"\\\"\\n    },\\n    dir: {\\n      type: String,\\n      default: \\\"\\\"\\n    },\\n    file: {\\n      type: String,\\n      default: \\\"app.vue\\\"\\n    }\\n  },\\n  setup(__props) {\\n    const props = __props;\\n    const colorMode = useColorMode();\\n    const providers = {\\n      CodeSandBox: () => `https://codesandbox.io/embed/github/${props.repo}/tree/${props.branch}/${props.dir}?hidenavigation=1&theme=${colorMode.value}`,\\n      StackBlitz: () => `https://stackblitz.com/github/${props.repo}/tree/${props.branch}/${props.dir}?embed=1&file=${props.file}&theme=${colorMode.value}`\\n    };\\n    const providersTabs = Object.keys(providers).map((p) => ({ label: p }));\\n    const activeTabIndex = ref(-1);\\n    const tabs = ref();\\n    const url = ref(\\\"\\\");\\n    const provider = ref(\\\"\\\");\\n    const changeProvider = (value) => {\\n      provider.value = value;\\n      url.value = props.src || providers[provider.value]();\\n      localStorage.setItem(\\\"docus_sandbox\\\", value);\\n    };\\n    const updateTab = (i) => {\\n      activeTabIndex.value = i;\\n      changeProvider(providersTabs[i].label);\\n    };\\n    onMounted(() => {\\n      provider.value = window.localStorage.getItem(\\\"docus_sandbox\\\") || \\\"CodeSandBox\\\";\\n      url.value = props.src || providers[provider.value]();\\n      activeTabIndex.value = Object.keys(providers).indexOf(provider.value);\\n    });\\n    return (_ctx, _push, _parent, _attrs) => {\\n      const _component_TabsHeader = _resolveComponent(\\\"TabsHeader\\\");\\n      _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \\\"sandbox\\\" }, _attrs))} data-v-fecef2a9>`);\\n      if (!__props.src) {\\n        _push(_ssrRenderComponent(_component_TabsHeader, {\\n          ref_key: \\\"tabs\\\",\\n          ref: tabs,\\n          \\\"active-tab-index\\\": _unref(activeTabIndex),\\n          tabs: _unref(providersTabs),\\n          \\\"onUpdate:activeTabIndex\\\": updateTab\\n        }, null, _parent));\\n      } else {\\n        _push(`<!---->`);\\n      }\\n      if (_unref(url)) {\\n        _push(`<iframe${_ssrRenderAttr(\\\"src\\\", _unref(url))} title=\\\"Sandbox editor\\\" sandbox=\\\"allow-modals allow-forms allow-popups allow-scripts allow-same-origin\\\" data-v-fecef2a9></iframe>`);\\n      } else {\\n        _push(`<span data-v-fecef2a9>Loading Sandbox...</span>`);\\n      }\\n      _push(`</div>`);\\n    };\\n  }\\n});\\n\"],\n  \"mappings\": \"AAAA,SAAS,mBAAmB,wBAAwB;AACpD,SAAS,SAAS,QAAQ,oBAAoB,mBAAmB,cAAc,mBAAmB;AAClG,SAAS,sBAAsB,qBAAqB,iBAAiB,gBAAgB,kBAAkB,uBAAuB;AAC9H,eAA+B,iCAAiB;AAAA,EAC9C,QAAQ;AAAA,EACR,mBAAmB;AAAA,EACnB,OAAO;AAAA,IACL,KAAK;AAAA,MACH,MAAM;AAAA,MACN,SAAS;AAAA,IACX;AAAA,IACA,MAAM;AAAA,MACJ,MAAM;AAAA,MACN,SAAS;AAAA,IACX;AAAA,IACA,QAAQ;AAAA,MACN,MAAM;AAAA,MACN,SAAS;AAAA,IACX;AAAA,IACA,KAAK;AAAA,MACH,MAAM;AAAA,MACN,SAAS;AAAA,IACX;AAAA,IACA,MAAM;AAAA,MACJ,MAAM;AAAA,MACN,SAAS;AAAA,IACX;AAAA,EACF;AAAA,EACA,MAAM,SAAS;AACb,UAAM,QAAQ;AACd,UAAM,YAAY,aAAa;AAC/B,UAAM,YAAY;AAAA,MAChB,aAAa,MAAM,uCAAuC,MAAM,IAAI,SAAS,MAAM,MAAM,IAAI,MAAM,GAAG,2BAA2B,UAAU,KAAK;AAAA,MAChJ,YAAY,MAAM,iCAAiC,MAAM,IAAI,SAAS,MAAM,MAAM,IAAI,MAAM,GAAG,iBAAiB,MAAM,IAAI,UAAU,UAAU,KAAK;AAAA,IACrJ;AACA,UAAM,gBAAgB,OAAO,KAAK,SAAS,EAAE,IAAI,CAAC,OAAO,EAAE,OAAO,EAAE,EAAE;AACtE,UAAM,iBAAiB,IAAI,EAAE;AAC7B,UAAM,OAAO,IAAI;AACjB,UAAM,MAAM,IAAI,EAAE;AAClB,UAAM,WAAW,IAAI,EAAE;AACvB,UAAM,iBAAiB,CAAC,UAAU;AAChC,eAAS,QAAQ;AACjB,UAAI,QAAQ,MAAM,OAAO,UAAU,SAAS,KAAK,EAAE;AACnD,mBAAa,QAAQ,iBAAiB,KAAK;AAAA,IAC7C;AACA,UAAM,YAAY,CAAC,MAAM;AACvB,qBAAe,QAAQ;AACvB,qBAAe,cAAc,CAAC,EAAE,KAAK;AAAA,IACvC;AACA,cAAU,MAAM;AACd,eAAS,QAAQ,SAAO,aAAa,QAAQ,eAAe,KAAK;AACjE,UAAI,QAAQ,MAAM,OAAO,UAAU,SAAS,KAAK,EAAE;AACnD,qBAAe,QAAQ,OAAO,KAAK,SAAS,EAAE,QAAQ,SAAS,KAAK;AAAA,IACtE,CAAC;AACD,WAAO,CAAC,MAAM,OAAO,SAAS,WAAW;AACvC,YAAM,wBAAwB,kBAAkB,YAAY;AAC5D,YAAM,OAAO,gBAAgB,YAAY,EAAE,OAAO,UAAU,GAAG,MAAM,CAAC,CAAC,mBAAmB;AAC1F,UAAI,CAAC,QAAQ,KAAK;AAChB,cAAM,oBAAoB,uBAAuB;AAAA,UAC/C,SAAS;AAAA,UACT,KAAK;AAAA,UACL,oBAAoB,OAAO,cAAc;AAAA,UACzC,MAAM,OAAO,aAAa;AAAA,UAC1B,2BAA2B;AAAA,QAC7B,GAAG,MAAM,OAAO,CAAC;AAAA,MACnB,OAAO;AACL,cAAM,SAAS;AAAA,MACjB;AACA,UAAI,OAAO,GAAG,GAAG;AACf,cAAM,UAAU,eAAe,OAAO,OAAO,GAAG,CAAC,CAAC,mIAAmI;AAAA,MACvL,OAAO;AACL,cAAM,iDAAiD;AAAA,MACzD;AACA,YAAM,QAAQ;AAAA,IAChB;AAAA,EACF;AACF,CAAC;\",\n  \"names\": []\n}\n"
     },
     {
       "name": "vite:css-post",
-      "start": 1707165964211,
-      "end": 1707165964211,
+      "start": 1707500054259,
+      "end": 1707500054259,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1707165964211,
-      "end": 1707165964211,
+      "start": 1707500054259,
+      "end": 1707500054259,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1707165964211,
-      "end": 1707165964211,
+      "start": 1707500054259,
+      "end": 1707500054259,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1707165964211,
-      "end": 1707165964211,
+      "start": 1707500054260,
+      "end": 1707500054260,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1707165964211,
-      "end": 1707165964211,
+      "start": 1707500054260,
+      "end": 1707500054260,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1707165964211,
-      "end": 1707165964211,
+      "start": 1707500054260,
+      "end": 1707500054260,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1707165964211,
-      "end": 1707165964211,
+      "start": 1707500054260,
+      "end": 1707500054260,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1707165964211,
-      "end": 1707165964211,
+      "start": 1707500054262,
+      "end": 1707500054262,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1707165964211,
-      "end": 1707165964212,
+      "start": 1707500054262,
+      "end": 1707500054262,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { useColorMode } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/color-mode/dist/runtime/composables';\nimport { ref, onMounted } from 'vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttr as _ssrRenderAttr, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"Sandbox\",\n  __ssrInlineRender: true,\n  props: {\n    src: {\n      type: String,\n      default: \"\"\n    },\n    repo: {\n      type: String,\n      default: \"\"\n    },\n    branch: {\n      type: String,\n      default: \"\"\n    },\n    dir: {\n      type: String,\n      default: \"\"\n    },\n    file: {\n      type: String,\n      default: \"app.vue\"\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const colorMode = useColorMode();\n    const providers = {\n      CodeSandBox: () => `https://codesandbox.io/embed/github/${props.repo}/tree/${props.branch}/${props.dir}?hidenavigation=1&theme=${colorMode.value}`,\n      StackBlitz: () => `https://stackblitz.com/github/${props.repo}/tree/${props.branch}/${props.dir}?embed=1&file=${props.file}&theme=${colorMode.value}`\n    };\n    const providersTabs = Object.keys(providers).map((p) => ({ label: p }));\n    const activeTabIndex = ref(-1);\n    const tabs = ref();\n    const url = ref(\"\");\n    const provider = ref(\"\");\n    const changeProvider = (value) => {\n      provider.value = value;\n      url.value = props.src || providers[provider.value]();\n      localStorage.setItem(\"docus_sandbox\", value);\n    };\n    const updateTab = (i) => {\n      activeTabIndex.value = i;\n      changeProvider(providersTabs[i].label);\n    };\n    onMounted(() => {\n      provider.value = (void 0).localStorage.getItem(\"docus_sandbox\") || \"CodeSandBox\";\n      url.value = props.src || providers[provider.value]();\n      activeTabIndex.value = Object.keys(providers).indexOf(provider.value);\n    });\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_TabsHeader = _resolveComponent(\"TabsHeader\");\n      _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"sandbox\" }, _attrs))} data-v-fecef2a9>`);\n      if (!__props.src) {\n        _push(_ssrRenderComponent(_component_TabsHeader, {\n          ref_key: \"tabs\",\n          ref: tabs,\n          \"active-tab-index\": _unref(activeTabIndex),\n          tabs: _unref(providersTabs),\n          \"onUpdate:activeTabIndex\": updateTab\n        }, null, _parent));\n      } else {\n        _push(`<!---->`);\n      }\n      if (_unref(url)) {\n        _push(`<iframe${_ssrRenderAttr(\"src\", _unref(url))} title=\"Sandbox editor\" sandbox=\"allow-modals allow-forms allow-popups allow-scripts allow-same-origin\" data-v-fecef2a9></iframe>`);\n      } else {\n        _push(`<span data-v-fecef2a9>Loading Sandbox...</span>`);\n      }\n      _push(`</div>`);\n    };\n  }\n});\n",
-      "start": 1707165964212,
-      "end": 1707165964214,
+      "start": 1707500054262,
+      "end": 1707500054272,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -244,8 +244,8 @@
     {
       "name": "nuxt:imports-transform",
       "result": "import { useColorMode } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/color-mode/dist/runtime/composables';\nimport { ref, onMounted } from 'vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttr as _ssrRenderAttr, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"Sandbox\",\n  __ssrInlineRender: true,\n  props: {\n    src: {\n      type: String,\n      default: \"\"\n    },\n    repo: {\n      type: String,\n      default: \"\"\n    },\n    branch: {\n      type: String,\n      default: \"\"\n    },\n    dir: {\n      type: String,\n      default: \"\"\n    },\n    file: {\n      type: String,\n      default: \"app.vue\"\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const colorMode = useColorMode();\n    const providers = {\n      CodeSandBox: () => `https://codesandbox.io/embed/github/${props.repo}/tree/${props.branch}/${props.dir}?hidenavigation=1&theme=${colorMode.value}`,\n      StackBlitz: () => `https://stackblitz.com/github/${props.repo}/tree/${props.branch}/${props.dir}?embed=1&file=${props.file}&theme=${colorMode.value}`\n    };\n    const providersTabs = Object.keys(providers).map((p) => ({ label: p }));\n    const activeTabIndex = ref(-1);\n    const tabs = ref();\n    const url = ref(\"\");\n    const provider = ref(\"\");\n    const changeProvider = (value) => {\n      provider.value = value;\n      url.value = props.src || providers[provider.value]();\n      localStorage.setItem(\"docus_sandbox\", value);\n    };\n    const updateTab = (i) => {\n      activeTabIndex.value = i;\n      changeProvider(providersTabs[i].label);\n    };\n    onMounted(() => {\n      provider.value = (void 0).localStorage.getItem(\"docus_sandbox\") || \"CodeSandBox\";\n      url.value = props.src || providers[provider.value]();\n      activeTabIndex.value = Object.keys(providers).indexOf(provider.value);\n    });\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_TabsHeader = _resolveComponent(\"TabsHeader\");\n      _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"sandbox\" }, _attrs))} data-v-fecef2a9>`);\n      if (!__props.src) {\n        _push(_ssrRenderComponent(_component_TabsHeader, {\n          ref_key: \"tabs\",\n          ref: tabs,\n          \"active-tab-index\": _unref(activeTabIndex),\n          tabs: _unref(providersTabs),\n          \"onUpdate:activeTabIndex\": updateTab\n        }, null, _parent));\n      } else {\n        _push(`<!---->`);\n      }\n      if (_unref(url)) {\n        _push(`<iframe${_ssrRenderAttr(\"src\", _unref(url))} title=\"Sandbox editor\" sandbox=\"allow-modals allow-forms allow-popups allow-scripts allow-same-origin\" data-v-fecef2a9></iframe>`);\n      } else {\n        _push(`<span data-v-fecef2a9>Loading Sandbox...</span>`);\n      }\n      _push(`</div>`);\n    };\n  }\n});\n",
-      "start": 1707165964212,
-      "end": 1707165964214,
+      "start": 1707500054262,
+      "end": 1707500054272,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -258,39 +258,39 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1707165964214,
-      "end": 1707165964214,
+      "start": 1707500054272,
+      "end": 1707500054272,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1707165964214,
-      "end": 1707165964214,
+      "start": 1707500054272,
+      "end": 1707500054272,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1707165964214,
-      "end": 1707165964214,
+      "start": 1707500054272,
+      "end": 1707500054272,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1707165964214,
-      "end": 1707165964214,
+      "start": 1707500054272,
+      "end": 1707500054272,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1707165964215,
-      "end": 1707165964215,
+      "start": 1707500054272,
+      "end": 1707500054272,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
       "result": "import { default as __nuxt_component_0 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/TabsHeader.vue\";\nimport { useColorMode } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/color-mode/dist/runtime/composables';\nimport { ref, onMounted } from 'vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttr as _ssrRenderAttr, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"Sandbox\",\n  __ssrInlineRender: true,\n  props: {\n    src: {\n      type: String,\n      default: \"\"\n    },\n    repo: {\n      type: String,\n      default: \"\"\n    },\n    branch: {\n      type: String,\n      default: \"\"\n    },\n    dir: {\n      type: String,\n      default: \"\"\n    },\n    file: {\n      type: String,\n      default: \"app.vue\"\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const colorMode = useColorMode();\n    const providers = {\n      CodeSandBox: () => `https://codesandbox.io/embed/github/${props.repo}/tree/${props.branch}/${props.dir}?hidenavigation=1&theme=${colorMode.value}`,\n      StackBlitz: () => `https://stackblitz.com/github/${props.repo}/tree/${props.branch}/${props.dir}?embed=1&file=${props.file}&theme=${colorMode.value}`\n    };\n    const providersTabs = Object.keys(providers).map((p) => ({ label: p }));\n    const activeTabIndex = ref(-1);\n    const tabs = ref();\n    const url = ref(\"\");\n    const provider = ref(\"\");\n    const changeProvider = (value) => {\n      provider.value = value;\n      url.value = props.src || providers[provider.value]();\n      localStorage.setItem(\"docus_sandbox\", value);\n    };\n    const updateTab = (i) => {\n      activeTabIndex.value = i;\n      changeProvider(providersTabs[i].label);\n    };\n    onMounted(() => {\n      provider.value = (void 0).localStorage.getItem(\"docus_sandbox\") || \"CodeSandBox\";\n      url.value = props.src || providers[provider.value]();\n      activeTabIndex.value = Object.keys(providers).indexOf(provider.value);\n    });\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_TabsHeader = __nuxt_component_0;\n      _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"sandbox\" }, _attrs))} data-v-fecef2a9>`);\n      if (!__props.src) {\n        _push(_ssrRenderComponent(_component_TabsHeader, {\n          ref_key: \"tabs\",\n          ref: tabs,\n          \"active-tab-index\": _unref(activeTabIndex),\n          tabs: _unref(providersTabs),\n          \"onUpdate:activeTabIndex\": updateTab\n        }, null, _parent));\n      } else {\n        _push(`<!---->`);\n      }\n      if (_unref(url)) {\n        _push(`<iframe${_ssrRenderAttr(\"src\", _unref(url))} title=\"Sandbox editor\" sandbox=\"allow-modals allow-forms allow-popups allow-scripts allow-same-origin\" data-v-fecef2a9></iframe>`);\n      } else {\n        _push(`<span data-v-fecef2a9>Loading Sandbox...</span>`);\n      }\n      _push(`</div>`);\n    };\n  }\n});\n",
-      "start": 1707165964215,
-      "end": 1707165964215,
+      "start": 1707500054273,
+      "end": 1707500054274,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -304,8 +304,8 @@
     {
       "name": "nuxt:tree-shake-composables:transform",
       "result": "import { default as __nuxt_component_0 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/TabsHeader.vue\";\nimport { useColorMode } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/color-mode/dist/runtime/composables';\nimport { ref, onMounted } from 'vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttr as _ssrRenderAttr, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"Sandbox\",\n  __ssrInlineRender: true,\n  props: {\n    src: {\n      type: String,\n      default: \"\"\n    },\n    repo: {\n      type: String,\n      default: \"\"\n    },\n    branch: {\n      type: String,\n      default: \"\"\n    },\n    dir: {\n      type: String,\n      default: \"\"\n    },\n    file: {\n      type: String,\n      default: \"app.vue\"\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const colorMode = useColorMode();\n    const providers = {\n      CodeSandBox: () => `https://codesandbox.io/embed/github/${props.repo}/tree/${props.branch}/${props.dir}?hidenavigation=1&theme=${colorMode.value}`,\n      StackBlitz: () => `https://stackblitz.com/github/${props.repo}/tree/${props.branch}/${props.dir}?embed=1&file=${props.file}&theme=${colorMode.value}`\n    };\n    const providersTabs = Object.keys(providers).map((p) => ({ label: p }));\n    const activeTabIndex = ref(-1);\n    const tabs = ref();\n    const url = ref(\"\");\n    const provider = ref(\"\");\n    const changeProvider = (value) => {\n      provider.value = value;\n      url.value = props.src || providers[provider.value]();\n      localStorage.setItem(\"docus_sandbox\", value);\n    };\n    const updateTab = (i) => {\n      activeTabIndex.value = i;\n      changeProvider(providersTabs[i].label);\n    };\n     false && /*@__PURE__*/ onMounted(() => {\n      provider.value = (void 0).localStorage.getItem(\"docus_sandbox\") || \"CodeSandBox\";\n      url.value = props.src || providers[provider.value]();\n      activeTabIndex.value = Object.keys(providers).indexOf(provider.value);\n    });\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_TabsHeader = __nuxt_component_0;\n      _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"sandbox\" }, _attrs))} data-v-fecef2a9>`);\n      if (!__props.src) {\n        _push(_ssrRenderComponent(_component_TabsHeader, {\n          ref_key: \"tabs\",\n          ref: tabs,\n          \"active-tab-index\": _unref(activeTabIndex),\n          tabs: _unref(providersTabs),\n          \"onUpdate:activeTabIndex\": updateTab\n        }, null, _parent));\n      } else {\n        _push(`<!---->`);\n      }\n      if (_unref(url)) {\n        _push(`<iframe${_ssrRenderAttr(\"src\", _unref(url))} title=\"Sandbox editor\" sandbox=\"allow-modals allow-forms allow-popups allow-scripts allow-same-origin\" data-v-fecef2a9></iframe>`);\n      } else {\n        _push(`<span data-v-fecef2a9>Loading Sandbox...</span>`);\n      }\n      _push(`</div>`);\n    };\n  }\n});\n",
-      "start": 1707165964215,
-      "end": 1707165964216,
+      "start": 1707500054278,
+      "end": 1707500054280,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -318,14 +318,14 @@
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1707165964216,
-      "end": 1707165964216,
+      "start": 1707500054280,
+      "end": 1707500054280,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1707165964217,
-      "end": 1707165964217,
+      "start": 1707500054280,
+      "end": 1707500054280,
       "order": "normal"
     }
   ]

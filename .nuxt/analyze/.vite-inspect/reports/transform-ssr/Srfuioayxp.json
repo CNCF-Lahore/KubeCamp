@@ -4,270 +4,270 @@
     {
       "name": "virtual",
       "result": "export const preference = \"system\"\n      \nexport const fallback = \"light\"\n      \nexport const hid = \"nuxt-color-mode-script\"\n      \nexport const globalName = \"__NUXT_COLOR_MODE__\"\n      \nexport const componentName = \"ColorScheme\"\n      \nexport const classPrefix = \"\"\n      \nexport const classSuffix = \"\"\n      \nexport const dataValue = \"theme\"\n      \nexport const storageKey = \"nuxt-color-mode\"\n      \nexport const script = \"\\\"use strict\\\";(()=>{const a=window,e=document.documentElement,m=[\\\"dark\\\",\\\"light\\\"],c=window&&window.localStorage&&window.localStorage.getItem&&window.localStorage.getItem(\\\"nuxt-color-mode\\\")||\\\"system\\\";let n=c===\\\"system\\\"?d():c;const l=e.getAttribute(\\\"data-color-mode-forced\\\");l&&(n=l),i(n),a[\\\"__NUXT_COLOR_MODE__\\\"]={preference:c,value:n,getColorScheme:d,addColorScheme:i,removeColorScheme:f};function i(o){const t=\\\"\\\"+o+\\\"\\\",s=\\\"theme\\\";e.classList?e.classList.add(t):e.className+=\\\" \\\"+t,s&&e.setAttribute(\\\"data-\\\"+s,o)}function f(o){const t=\\\"\\\"+o+\\\"\\\",s=\\\"theme\\\";e.classList?e.classList.remove(t):e.className=e.className.replace(new RegExp(t,\\\"g\\\"),\\\"\\\"),s&&e.removeAttribute(\\\"data-\\\"+s)}function r(o){return a.matchMedia(\\\"(prefers-color-scheme\\\"+o+\\\")\\\")}function d(){if(a.matchMedia&&r(\\\"\\\").media!==\\\"not all\\\"){for(const o of m)if(r(\\\":\\\"+o).matches)return o}return\\\"light\\\"}})();\\n\"\n      ",
-      "start": 1707165961800,
-      "end": 1707165961800,
+      "start": 1707500049849,
+      "end": 1707500049849,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1707165961800,
-      "end": 1707165961800,
+      "start": 1707500049849,
+      "end": 1707500049849,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1707165961800,
-      "end": 1707165961800,
+      "start": 1707500049849,
+      "end": 1707500049849,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1707165961801,
-      "end": 1707165961801,
+      "start": 1707500049851,
+      "end": 1707500049851,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1707165961801,
-      "end": 1707165961801,
+      "start": 1707500049851,
+      "end": 1707500049851,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "export const preference = \"system\"\n      \nexport const fallback = \"light\"\n      \nexport const hid = \"nuxt-color-mode-script\"\n      \nexport const globalName = \"__NUXT_COLOR_MODE__\"\n      \nexport const componentName = \"ColorScheme\"\n      \nexport const classPrefix = \"\"\n      \nexport const classSuffix = \"\"\n      \nexport const dataValue = \"theme\"\n      \nexport const storageKey = \"nuxt-color-mode\"\n      \nexport const script = \"\\\"use strict\\\";(()=>{const a=window,e=document.documentElement,m=[\\\"dark\\\",\\\"light\\\"],c=window&&window.localStorage&&window.localStorage.getItem&&window.localStorage.getItem(\\\"nuxt-color-mode\\\")||\\\"system\\\";let n=c===\\\"system\\\"?d():c;const l=e.getAttribute(\\\"data-color-mode-forced\\\");l&&(n=l),i(n),a[\\\"__NUXT_COLOR_MODE__\\\"]={preference:c,value:n,getColorScheme:d,addColorScheme:i,removeColorScheme:f};function i(o){const t=\\\"\\\"+o+\\\"\\\",s=\\\"theme\\\";e.classList?e.classList.add(t):e.className+=\\\" \\\"+t,s&&e.setAttribute(\\\"data-\\\"+s,o)}function f(o){const t=\\\"\\\"+o+\\\"\\\",s=\\\"theme\\\";e.classList?e.classList.remove(t):e.className=e.className.replace(new RegExp(t,\\\"g\\\"),\\\"\\\"),s&&e.removeAttribute(\\\"data-\\\"+s)}function r(o){return a.matchMedia(\\\"(prefers-color-scheme\\\"+o+\\\")\\\")}function d(){if(a.matchMedia&&r(\\\"\\\").media!==\\\"not all\\\"){for(const o of m)if(r(\\\":\\\"+o).matches)return o}return\\\"light\\\"}})();\\n\"\n      ",
-      "start": 1707165961801,
-      "end": 1707165961801,
+      "start": 1707500049851,
+      "end": 1707500049851,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "export const preference = \"system\"\n      \nexport const fallback = \"light\"\n      \nexport const hid = \"nuxt-color-mode-script\"\n      \nexport const globalName = \"__NUXT_COLOR_MODE__\"\n      \nexport const componentName = \"ColorScheme\"\n      \nexport const classPrefix = \"\"\n      \nexport const classSuffix = \"\"\n      \nexport const dataValue = \"theme\"\n      \nexport const storageKey = \"nuxt-color-mode\"\n      \nexport const script = \"\\\"use strict\\\";(()=>{const a=window,e=document.documentElement,m=[\\\"dark\\\",\\\"light\\\"],c=window&&window.localStorage&&window.localStorage.getItem&&window.localStorage.getItem(\\\"nuxt-color-mode\\\")||\\\"system\\\";let n=c===\\\"system\\\"?d():c;const l=e.getAttribute(\\\"data-color-mode-forced\\\");l&&(n=l),i(n),a[\\\"__NUXT_COLOR_MODE__\\\"]={preference:c,value:n,getColorScheme:d,addColorScheme:i,removeColorScheme:f};function i(o){const t=\\\"\\\"+o+\\\"\\\",s=\\\"theme\\\";e.classList?e.classList.add(t):e.className+=\\\" \\\"+t,s&&e.setAttribute(\\\"data-\\\"+s,o)}function f(o){const t=\\\"\\\"+o+\\\"\\\",s=\\\"theme\\\";e.classList?e.classList.remove(t):e.className=e.className.replace(new RegExp(t,\\\"g\\\"),\\\"\\\"),s&&e.removeAttribute(\\\"data-\\\"+s)}function r(o){return a.matchMedia(\\\"(prefers-color-scheme\\\"+o+\\\")\\\")}function d(){if(a.matchMedia&&r(\\\"\\\").media!==\\\"not all\\\"){for(const o of m)if(r(\\\":\\\"+o).matches)return o}return\\\"light\\\"}})();\\n\"\n      ",
-      "start": 1707165961801,
-      "end": 1707165961801,
+      "start": 1707500049851,
+      "end": 1707500049851,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1707165961801,
-      "end": 1707165961801,
+      "start": 1707500049851,
+      "end": 1707500049851,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1707165961801,
-      "end": 1707165961801,
+      "start": 1707500049851,
+      "end": 1707500049851,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1707165961801,
-      "end": 1707165961801,
+      "start": 1707500049851,
+      "end": 1707500049851,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1707165961801,
-      "end": 1707165961801,
+      "start": 1707500049851,
+      "end": 1707500049851,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1707165961801,
-      "end": 1707165961801,
+      "start": 1707500049851,
+      "end": 1707500049851,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1707165961801,
-      "end": 1707165961801,
+      "start": 1707500049851,
+      "end": 1707500049851,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1707165961801,
-      "end": 1707165961801,
+      "start": 1707500049851,
+      "end": 1707500049851,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1707165961802,
-      "end": 1707165961802,
+      "start": 1707500049852,
+      "end": 1707500049852,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1707165961802,
-      "end": 1707165961802,
+      "start": 1707500049852,
+      "end": 1707500049852,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1707165961802,
-      "end": 1707165961802,
+      "start": 1707500049852,
+      "end": 1707500049852,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1707165961802,
-      "end": 1707165961802,
+      "start": 1707500049852,
+      "end": 1707500049852,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1707165961802,
-      "end": 1707165961802,
+      "start": 1707500049852,
+      "end": 1707500049852,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1707165961802,
-      "end": 1707165961802,
+      "start": 1707500049852,
+      "end": 1707500049852,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1707165961802,
-      "end": 1707165961802,
+      "start": 1707500049852,
+      "end": 1707500049852,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1707165961802,
-      "end": 1707165961802,
+      "start": 1707500049852,
+      "end": 1707500049852,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1707165961802,
-      "end": 1707165961802,
+      "start": 1707500049852,
+      "end": 1707500049852,
       "order": "normal"
     },
     {
       "name": "vite:define",
       "result": "export const preference = \"system\";\nexport const fallback = \"light\";\nexport const hid = \"nuxt-color-mode-script\";\nexport const globalName = \"__NUXT_COLOR_MODE__\";\nexport const componentName = \"ColorScheme\";\nexport const classPrefix = \"\";\nexport const classSuffix = \"\";\nexport const dataValue = \"theme\";\nexport const storageKey = \"nuxt-color-mode\";\nexport const script = '\"use strict\";(()=>{const a=window,e=document.documentElement,m=[\"dark\",\"light\"],c=window&&window.localStorage&&window.localStorage.getItem&&window.localStorage.getItem(\"nuxt-color-mode\")||\"system\";let n=c===\"system\"?d():c;const l=e.getAttribute(\"data-color-mode-forced\");l&&(n=l),i(n),a[\"__NUXT_COLOR_MODE__\"]={preference:c,value:n,getColorScheme:d,addColorScheme:i,removeColorScheme:f};function i(o){const t=\"\"+o+\"\",s=\"theme\";e.classList?e.classList.add(t):e.className+=\" \"+t,s&&e.setAttribute(\"data-\"+s,o)}function f(o){const t=\"\"+o+\"\",s=\"theme\";e.classList?e.classList.remove(t):e.className=e.className.replace(new RegExp(t,\"g\"),\"\"),s&&e.removeAttribute(\"data-\"+s)}function r(o){return a.matchMedia(\"(prefers-color-scheme\"+o+\")\")}function d(){if(a.matchMedia&&r(\"\").media!==\"not all\"){for(const o of m)if(r(\":\"+o).matches)return o}return\"light\"}})();\\n';\n",
-      "start": 1707165961802,
-      "end": 1707165961806,
+      "start": 1707500049852,
+      "end": 1707500049951,
       "order": "normal",
       "sourcemaps": "{\n  \"version\": 3,\n  \"sources\": [\"virtual:nuxt:/workspace/Kubernetes-Bootcamp/.nuxt/color-mode-options.mjs\"],\n  \"sourcesContent\": [\"export const preference = \\\"system\\\"\\n      \\nexport const fallback = \\\"light\\\"\\n      \\nexport const hid = \\\"nuxt-color-mode-script\\\"\\n      \\nexport const globalName = \\\"__NUXT_COLOR_MODE__\\\"\\n      \\nexport const componentName = \\\"ColorScheme\\\"\\n      \\nexport const classPrefix = \\\"\\\"\\n      \\nexport const classSuffix = \\\"\\\"\\n      \\nexport const dataValue = \\\"theme\\\"\\n      \\nexport const storageKey = \\\"nuxt-color-mode\\\"\\n      \\nexport const script = \\\"\\\\\\\"use strict\\\\\\\";(()=>{const a=window,e=document.documentElement,m=[\\\\\\\"dark\\\\\\\",\\\\\\\"light\\\\\\\"],c=window&&window.localStorage&&window.localStorage.getItem&&window.localStorage.getItem(\\\\\\\"nuxt-color-mode\\\\\\\")||\\\\\\\"system\\\\\\\";let n=c===\\\\\\\"system\\\\\\\"?d():c;const l=e.getAttribute(\\\\\\\"data-color-mode-forced\\\\\\\");l&&(n=l),i(n),a[\\\\\\\"__NUXT_COLOR_MODE__\\\\\\\"]={preference:c,value:n,getColorScheme:d,addColorScheme:i,removeColorScheme:f};function i(o){const t=\\\\\\\"\\\\\\\"+o+\\\\\\\"\\\\\\\",s=\\\\\\\"theme\\\\\\\";e.classList?e.classList.add(t):e.className+=\\\\\\\" \\\\\\\"+t,s&&e.setAttribute(\\\\\\\"data-\\\\\\\"+s,o)}function f(o){const t=\\\\\\\"\\\\\\\"+o+\\\\\\\"\\\\\\\",s=\\\\\\\"theme\\\\\\\";e.classList?e.classList.remove(t):e.className=e.className.replace(new RegExp(t,\\\\\\\"g\\\\\\\"),\\\\\\\"\\\\\\\"),s&&e.removeAttribute(\\\\\\\"data-\\\\\\\"+s)}function r(o){return a.matchMedia(\\\\\\\"(prefers-color-scheme\\\\\\\"+o+\\\\\\\")\\\\\\\")}function d(){if(a.matchMedia&&r(\\\\\\\"\\\\\\\").media!==\\\\\\\"not all\\\\\\\"){for(const o of m)if(r(\\\\\\\":\\\\\\\"+o).matches)return o}return\\\\\\\"light\\\\\\\"}})();\\\\n\\\"\\n      \"],\n  \"mappings\": \"AAAO,aAAM,aAAa;AAEnB,aAAM,WAAW;AAEjB,aAAM,MAAM;AAEZ,aAAM,aAAa;AAEnB,aAAM,gBAAgB;AAEtB,aAAM,cAAc;AAEpB,aAAM,cAAc;AAEpB,aAAM,YAAY;AAElB,aAAM,aAAa;AAEnB,aAAM,SAAS;\",\n  \"names\": []\n}\n"
     },
     {
       "name": "vite:css-post",
-      "start": 1707165961806,
-      "end": 1707165961806,
+      "start": 1707500049951,
+      "end": 1707500049951,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1707165961806,
-      "end": 1707165961806,
+      "start": 1707500049952,
+      "end": 1707500049952,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1707165961806,
-      "end": 1707165961806,
+      "start": 1707500049952,
+      "end": 1707500049952,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1707165961806,
-      "end": 1707165961806,
+      "start": 1707500049952,
+      "end": 1707500049952,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1707165961807,
-      "end": 1707165961807,
+      "start": 1707500049952,
+      "end": 1707500049952,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1707165961807,
-      "end": 1707165961807,
+      "start": 1707500049952,
+      "end": 1707500049952,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1707165961807,
-      "end": 1707165961807,
+      "start": 1707500049953,
+      "end": 1707500049953,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1707165961807,
-      "end": 1707165961807,
+      "start": 1707500049953,
+      "end": 1707500049953,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1707165961807,
-      "end": 1707165961807,
+      "start": 1707500049953,
+      "end": 1707500049953,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1707165961807,
-      "end": 1707165961808,
+      "start": 1707500049953,
+      "end": 1707500049954,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1707165961807,
-      "end": 1707165961808,
+      "start": 1707500049953,
+      "end": 1707500049954,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1707165961808,
-      "end": 1707165961808,
+      "start": 1707500049954,
+      "end": 1707500049954,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1707165961808,
-      "end": 1707165961808,
+      "start": 1707500049954,
+      "end": 1707500049954,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1707165961808,
-      "end": 1707165961808,
+      "start": 1707500049954,
+      "end": 1707500049954,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1707165961808,
-      "end": 1707165961808,
+      "start": 1707500049954,
+      "end": 1707500049954,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1707165961808,
-      "end": 1707165961808,
+      "start": 1707500049954,
+      "end": 1707500049954,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1707165961808,
-      "end": 1707165961808,
+      "start": 1707500049954,
+      "end": 1707500049954,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1707165961808,
-      "end": 1707165961808,
+      "start": 1707500049955,
+      "end": 1707500049955,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1707165961809,
-      "end": 1707165961809,
+      "start": 1707500049955,
+      "end": 1707500049956,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1707165961810,
-      "end": 1707165961810,
+      "start": 1707500049956,
+      "end": 1707500049956,
       "order": "normal"
     }
   ]
