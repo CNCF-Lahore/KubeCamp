@@ -57,14 +57,8 @@
       "#color-mode-options": [
         "./color-mode-options"
       ],
-      "#nuxt-component-meta": [
-        "./component-meta"
-      ],
-      "#nuxt-component-meta/types": [
-        "./component-meta.d"
-      ],
       "#mdc-imports": [
-        "./mdc-imports"
+        "./file:/workspace/Kubernetes-Bootcamp/.nuxt/mdc-imports"
       ],
       "#content/server": [
         "../node_modules/@nuxt/content/dist/runtime/legacy/server"
@@ -78,7 +72,6 @@
     "../node_modules/@nuxtjs/color-mode/runtime/server",
     "../../runtime/server",
     "../node_modules/@nuxt-themes/tokens/runtime/server",
-    "../node_modules/nuxt-component-meta/runtime/server",
     "../node_modules/@nuxthq/studio/runtime/server",
     "../node_modules/@nuxtjs/mdc/runtime/server",
     "../node_modules/@nuxt/content/runtime/server",

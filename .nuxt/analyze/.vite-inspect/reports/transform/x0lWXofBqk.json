@@ -4,51 +4,51 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, createVNode as _createVNode, renderSlot as _renderSlot, normalizeClass as _normalizeClass, withCtx as _withCtx } from \"vue\"\nimport { renderSlot as _renderMDCSlot } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/utils/slot'\n\n\nimport { reactive, computed, getCurrentInstance, ref } from 'vue'\nimport { usePinceauRuntime } from 'pinceau/runtime'\n\nimport { PinceauTheme } from 'pinceau'\nimport { computedStyle } from 'pinceau/runtime'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'ButtonLink',\n  props: {\n  blank: {\n    type: Boolean,\n    required: false,\n    default: false\n  },\n\n  color: computedStyle<keyof PinceauTheme['color']>('primary'),\n\n  href: {\n    type: String,\n    required: true,\n    default: ''\n  },\n\n  icon: {\n    type: String,\n    default: ''\n  },\n\n  ...{\"size\":{\"required\":false as const,\"type\":[String, Object] as import('vue').PropType<'small' | 'medium' | 'large' | 'giant' | { [key in import('pinceau').PinceauMediaQueries]?: 'small' | 'medium' | 'large' | 'giant' }>,\"default\":\"medium\" as const},\"transparent\":{\"required\":false as const,\"type\":[Boolean, Object] as import('vue').PropType<boolean | { [key in import('pinceau').PinceauMediaQueries]?: boolean }>,\"default\":false as const}}\n},\n  setup(__props) {\n\nconst _YM9_buttonPrimary = computed(() => ((props = __$pProps) => `{color.${props.color}.600}`)())\n\nconst _A23_buttonSecondary = computed(() => ((props = __$pProps) => `{color.${props.color}.500}`)())\nconst __$pProps = __props\nconst __$pVariants = {\"size\":{\"small\":{\"padding\":\"{space.2} {space.4}\",\"fontSize\":\"{text.sm.fontSize}\",\"lineHeight\":\"{text.sm.lineHeight}\"},\"medium\":{\"padding\":\"{space.rem.625} {space.5}\",\"fontSize\":\"{text.base.fontSize}\",\"lineHeight\":\"{text.base.lineHeight}\"},\"large\":{\"padding\":\"{space.3} {space.6}\",\"fontSize\":\"{text.lg.fontSize}\",\"lineHeight\":\"{text.lg.lineHeight}\"},\"giant\":{\"padding\":\"{space.4} {space.8}\",\"fontSize\":\"{text.lg.fontSize}\",\"lineHeight\":\"{text.lg.lineHeight}\"}},\"transparent\":{\"true\":{\"backgroundColor\":\"transparent\"}}}\n\nconst { $pinceau } = usePinceauRuntime(__$pProps, __$pVariants, { _YM9_buttonPrimary,_A23_buttonSecondary })\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_Icon = _resolveComponent(\"Icon\")!\n  const _component_MDCSlot = _resolveComponent(\"MDCSlot\")!\n  const _component_NuxtLink = _resolveComponent(\"NuxtLink\")!\n\n  return (_openBlock(), _createBlock(_component_NuxtLink, {\n    class: _normalizeClass([\"button-link\", [_unref($pinceau)]]),\n    to: __props.href,\n    target: __props.blank ? '_blank' : undefined\n  }, {\n    default: _withCtx(() => [\n      (__props.icon)\n        ? (_openBlock(), _createBlock(_component_Icon, {\n            key: 0,\n            name: __props.icon\n          }, null, 8, [\"name\"]))\n        : _createCommentVNode(\"\", true),\n      _renderMDCSlot(_ctx.$slots, \"default\", { unwrap: \"p ul li\" }, undefined, true)\n    ]),\n    _: 3\n  }, 8, [\"to\", \"target\", \"class\"]))\n}\n}\n\n})",
-      "start": 1707500038868,
-      "end": 1707500038868
+      "start": 1707665596458,
+      "end": 1707665596459
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1707500038872,
-      "end": 1707500038873,
+      "start": 1707665596466,
+      "end": 1707665596466,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1707500038879,
-      "end": 1707500038879,
+      "start": 1707665596472,
+      "end": 1707665596472,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, createVNode as _createVNode, renderSlot as _renderSlot, normalizeClass as _normalizeClass, withCtx as _withCtx } from \"vue\"\nimport { renderSlot as _renderMDCSlot } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/utils/slot'\n\n\nimport { reactive, computed, getCurrentInstance, ref } from 'vue'\nimport { usePinceauRuntime } from 'pinceau/runtime'\n\nimport { PinceauTheme } from 'pinceau'\nimport { computedStyle } from 'pinceau/runtime'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'ButtonLink',\n  props: {\n  blank: {\n    type: Boolean,\n    required: false,\n    default: false\n  },\n\n  color: computedStyle<keyof PinceauTheme['color']>('primary'),\n\n  href: {\n    type: String,\n    required: true,\n    default: ''\n  },\n\n  icon: {\n    type: String,\n    default: ''\n  },\n\n  ...{\"size\":{\"required\":false as const,\"type\":[String, Object] as import('vue').PropType<'small' | 'medium' | 'large' | 'giant' | { [key in import('pinceau').PinceauMediaQueries]?: 'small' | 'medium' | 'large' | 'giant' }>,\"default\":\"medium\" as const},\"transparent\":{\"required\":false as const,\"type\":[Boolean, Object] as import('vue').PropType<boolean | { [key in import('pinceau').PinceauMediaQueries]?: boolean }>,\"default\":false as const}}\n},\n  setup(__props) {\n\nconst _YM9_buttonPrimary = computed(() => ((props = __$pProps) => `{color.${props.color}.600}`)())\n\nconst _A23_buttonSecondary = computed(() => ((props = __$pProps) => `{color.${props.color}.500}`)())\nconst __$pProps = __props\nconst __$pVariants = {\"size\":{\"small\":{\"padding\":\"{space.2} {space.4}\",\"fontSize\":\"{text.sm.fontSize}\",\"lineHeight\":\"{text.sm.lineHeight}\"},\"medium\":{\"padding\":\"{space.rem.625} {space.5}\",\"fontSize\":\"{text.base.fontSize}\",\"lineHeight\":\"{text.base.lineHeight}\"},\"large\":{\"padding\":\"{space.3} {space.6}\",\"fontSize\":\"{text.lg.fontSize}\",\"lineHeight\":\"{text.lg.lineHeight}\"},\"giant\":{\"padding\":\"{space.4} {space.8}\",\"fontSize\":\"{text.lg.fontSize}\",\"lineHeight\":\"{text.lg.lineHeight}\"}},\"transparent\":{\"true\":{\"backgroundColor\":\"transparent\"}}}\n\nconst { $pinceau } = usePinceauRuntime(__$pProps, __$pVariants, { _YM9_buttonPrimary,_A23_buttonSecondary })\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_Icon = _resolveComponent(\"Icon\")!\n  const _component_MDCSlot = _resolveComponent(\"MDCSlot\")!\n  const _component_NuxtLink = _resolveComponent(\"NuxtLink\")!\n\n  return (_openBlock(), _createBlock(_component_NuxtLink, {\n    class: _normalizeClass([\"button-link\", [_unref($pinceau)]]),\n    to: __props.href,\n    target: __props.blank ? '_blank' : undefined\n  }, {\n    default: _withCtx(() => [\n      (__props.icon)\n        ? (_openBlock(), _createBlock(_component_Icon, {\n            key: 0,\n            name: __props.icon\n          }, null, 8, [\"name\"]))\n        : _createCommentVNode(\"\", true),\n      _renderMDCSlot(_ctx.$slots, \"default\", { unwrap: \"p ul li\" }, undefined, true)\n    ]),\n    _: 3\n  }, 8, [\"to\", \"target\", \"class\"]))\n}\n}\n\n})",
-      "start": 1707500038888,
-      "end": 1707500038888,
+      "start": 1707665596487,
+      "end": 1707665596487,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1707500038889,
-      "end": 1707500038889,
+      "start": 1707665596488,
+      "end": 1707665596488,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1707500038889,
-      "end": 1707500038889,
+      "start": 1707665596488,
+      "end": 1707665596489,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1707500038889,
-      "end": 1707500038889,
+      "start": 1707665596489,
+      "end": 1707665596489,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, normalizeClass as _normalizeClass, withCtx as _withCtx } from \"vue\";\nimport { renderSlot as _renderMDCSlot } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/utils/slot\";\nimport { computed } from \"vue\";\nimport { usePinceauRuntime } from \"pinceau/runtime\";\nimport { computedStyle } from \"pinceau/runtime\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ButtonLink\",\n  props: {\n    blank: {\n      type: Boolean,\n      required: false,\n      default: false\n    },\n    color: computedStyle(\"primary\"),\n    href: {\n      type: String,\n      required: true,\n      default: \"\"\n    },\n    icon: {\n      type: String,\n      default: \"\"\n    },\n    ...{ \"size\": { \"required\": false, \"type\": [String, Object], \"default\": \"medium\" }, \"transparent\": { \"required\": false, \"type\": [Boolean, Object], \"default\": false } }\n  },\n  setup(__props) {\n    const _YM9_buttonPrimary = computed(() => ((props = __$pProps) => `{color.${props.color}.600}`)());\n    const _A23_buttonSecondary = computed(() => ((props = __$pProps) => `{color.${props.color}.500}`)());\n    const __$pProps = __props;\n    const __$pVariants = { \"size\": { \"small\": { \"padding\": \"{space.2} {space.4}\", \"fontSize\": \"{text.sm.fontSize}\", \"lineHeight\": \"{text.sm.lineHeight}\" }, \"medium\": { \"padding\": \"{space.rem.625} {space.5}\", \"fontSize\": \"{text.base.fontSize}\", \"lineHeight\": \"{text.base.lineHeight}\" }, \"large\": { \"padding\": \"{space.3} {space.6}\", \"fontSize\": \"{text.lg.fontSize}\", \"lineHeight\": \"{text.lg.lineHeight}\" }, \"giant\": { \"padding\": \"{space.4} {space.8}\", \"fontSize\": \"{text.lg.fontSize}\", \"lineHeight\": \"{text.lg.lineHeight}\" } }, \"transparent\": { \"true\": { \"backgroundColor\": \"transparent\" } } };\n    const { $pinceau } = usePinceauRuntime(__$pProps, __$pVariants, { _YM9_buttonPrimary, _A23_buttonSecondary });\n    return (_ctx, _cache) => {\n      const _component_Icon = _resolveComponent(\"Icon\");\n      const _component_MDCSlot = _resolveComponent(\"MDCSlot\");\n      const _component_NuxtLink = _resolveComponent(\"NuxtLink\");\n      return _openBlock(), _createBlock(_component_NuxtLink, {\n        class: _normalizeClass([\"button-link\", [_unref($pinceau)]]),\n        to: __props.href,\n        target: __props.blank ? \"_blank\" : void 0\n      }, {\n        default: _withCtx(() => [\n          __props.icon ? (_openBlock(), _createBlock(_component_Icon, {\n            key: 0,\n            name: __props.icon\n          }, null, 8, [\"name\"])) : _createCommentVNode(\"\", true),\n          _renderMDCSlot(_ctx.$slots, \"default\", { unwrap: \"p ul li\" }, void 0, true)\n        ]),\n        _: 3\n      }, 8, [\"to\", \"target\", \"class\"]);\n    };\n  }\n});\n",
-      "start": 1707500038889,
-      "end": 1707500039429,
+      "start": 1707665596489,
+      "end": 1707665597081,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -64,171 +64,171 @@
     },
     {
       "name": "vite:json",
-      "start": 1707500039429,
-      "end": 1707500039429,
+      "start": 1707665597082,
+      "end": 1707665597082,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1707500039429,
-      "end": 1707500039429,
+      "start": 1707665597082,
+      "end": 1707665597082,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1707500039429,
-      "end": 1707500039429,
+      "start": 1707665597082,
+      "end": 1707665597082,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1707500039430,
-      "end": 1707500039430,
+      "start": 1707665597082,
+      "end": 1707665597082,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1707500039430,
-      "end": 1707500039431,
+      "start": 1707665597082,
+      "end": 1707665597082,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1707500039431,
-      "end": 1707500039431,
+      "start": 1707665597082,
+      "end": 1707665597082,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1707500039431,
-      "end": 1707500039431,
+      "start": 1707665597082,
+      "end": 1707665597082,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1707500039432,
-      "end": 1707500039432,
+      "start": 1707665597083,
+      "end": 1707665597083,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1707500039432,
-      "end": 1707500039433,
+      "start": 1707665597083,
+      "end": 1707665597083,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1707500039433,
-      "end": 1707500039433,
+      "start": 1707665597083,
+      "end": 1707665597083,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1707500039433,
-      "end": 1707500039433,
+      "start": 1707665597083,
+      "end": 1707665597083,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1707500039433,
-      "end": 1707500039433,
+      "start": 1707665597083,
+      "end": 1707665597083,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1707500039433,
-      "end": 1707500039433,
+      "start": 1707665597083,
+      "end": 1707665597083,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1707500039434,
-      "end": 1707500039434,
+      "start": 1707665597083,
+      "end": 1707665597083,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1707500039434,
-      "end": 1707500039434,
+      "start": 1707665597083,
+      "end": 1707665597083,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1707500039434,
-      "end": 1707500039434,
+      "start": 1707665597083,
+      "end": 1707665597083,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1707500039434,
-      "end": 1707500039434,
+      "start": 1707665597084,
+      "end": 1707665597084,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1707500039434,
-      "end": 1707500039435,
+      "start": 1707665597084,
+      "end": 1707665597084,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1707500039435,
-      "end": 1707500039435,
+      "start": 1707665597084,
+      "end": 1707665597084,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1707500039436,
-      "end": 1707500039451,
+      "start": 1707665597084,
+      "end": 1707665597098,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1707500039453,
-      "end": 1707500039453,
+      "start": 1707665597099,
+      "end": 1707665597099,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1707500039453,
-      "end": 1707500039453,
+      "start": 1707665597100,
+      "end": 1707665597100,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1707500039454,
-      "end": 1707500039454,
+      "start": 1707665597100,
+      "end": 1707665597100,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1707500039454,
-      "end": 1707500039454,
+      "start": 1707665597101,
+      "end": 1707665597101,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
       "result": "import { default as __nuxt_component_0 } from \"/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/Icon.vue\";\nimport { default as __nuxt_component_1 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/components/MDCSlot\";\nimport { default as __nuxt_component_2 } from \"/workspace/Kubernetes-Bootcamp/node_modules/nuxt/dist/app/components/nuxt-link\";\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, normalizeClass as _normalizeClass, withCtx as _withCtx } from \"vue\";\nimport { renderSlot as _renderMDCSlot } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/utils/slot\";\nimport { computed } from \"vue\";\nimport { usePinceauRuntime } from \"pinceau/runtime\";\nimport { computedStyle } from \"pinceau/runtime\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ButtonLink\",\n  props: {\n    blank: {\n      type: Boolean,\n      required: false,\n      default: false\n    },\n    color: computedStyle(\"primary\"),\n    href: {\n      type: String,\n      required: true,\n      default: \"\"\n    },\n    icon: {\n      type: String,\n      default: \"\"\n    },\n    ...{ \"size\": { \"required\": false, \"type\": [String, Object], \"default\": \"medium\" }, \"transparent\": { \"required\": false, \"type\": [Boolean, Object], \"default\": false } }\n  },\n  setup(__props) {\n    const _YM9_buttonPrimary = computed(() => ((props = __$pProps) => `{color.${props.color}.600}`)());\n    const _A23_buttonSecondary = computed(() => ((props = __$pProps) => `{color.${props.color}.500}`)());\n    const __$pProps = __props;\n    const __$pVariants = { \"size\": { \"small\": { \"padding\": \"{space.2} {space.4}\", \"fontSize\": \"{text.sm.fontSize}\", \"lineHeight\": \"{text.sm.lineHeight}\" }, \"medium\": { \"padding\": \"{space.rem.625} {space.5}\", \"fontSize\": \"{text.base.fontSize}\", \"lineHeight\": \"{text.base.lineHeight}\" }, \"large\": { \"padding\": \"{space.3} {space.6}\", \"fontSize\": \"{text.lg.fontSize}\", \"lineHeight\": \"{text.lg.lineHeight}\" }, \"giant\": { \"padding\": \"{space.4} {space.8}\", \"fontSize\": \"{text.lg.fontSize}\", \"lineHeight\": \"{text.lg.lineHeight}\" } }, \"transparent\": { \"true\": { \"backgroundColor\": \"transparent\" } } };\n    const { $pinceau } = usePinceauRuntime(__$pProps, __$pVariants, { _YM9_buttonPrimary, _A23_buttonSecondary });\n    return (_ctx, _cache) => {\n      const _component_Icon = __nuxt_component_0;\n      const _component_MDCSlot = __nuxt_component_1;\n      const _component_NuxtLink = __nuxt_component_2;\n      return _openBlock(), _createBlock(_component_NuxtLink, {\n        class: _normalizeClass([\"button-link\", [_unref($pinceau)]]),\n        to: __props.href,\n        target: __props.blank ? \"_blank\" : void 0\n      }, {\n        default: _withCtx(() => [\n          __props.icon ? (_openBlock(), _createBlock(_component_Icon, {\n            key: 0,\n            name: __props.icon\n          }, null, 8, [\"name\"])) : _createCommentVNode(\"\", true),\n          _renderMDCSlot(_ctx.$slots, \"default\", { unwrap: \"p ul li\" }, void 0, true)\n        ]),\n        _: 3\n      }, 8, [\"to\", \"target\", \"class\"]);\n    };\n  }\n});\n",
-      "start": 1707500039455,
-      "end": 1707500039455,
+      "start": 1707665597108,
+      "end": 1707665597109,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1707500039457,
-      "end": 1707500039457,
+      "start": 1707665597111,
+      "end": 1707665597111,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1707500039457,
-      "end": 1707500039458,
+      "start": 1707665597112,
+      "end": 1707665597112,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1707500039458,
-      "end": 1707500039458,
+      "start": 1707665597112,
+      "end": 1707665597112,
       "order": "normal"
     }
   ]
