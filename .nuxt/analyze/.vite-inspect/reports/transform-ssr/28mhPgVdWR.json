@@ -4,8 +4,8 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { resolveComponent as _resolveComponent, unref as _unref, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'ThemeSelect',\n  __ssrInlineRender: true,\n  setup(__props) {\n\nconst colorMode = useColorMode()\nconst onClick = () => {\n  const values = ['system', 'light', 'dark']\n  const index = values.indexOf(colorMode.preference)\n  const next = (index + 1) % values.length\n\n  colorMode.preference = values[next]\n}\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_ColorScheme = _resolveComponent(\"ColorScheme\")!\n  const _component_Icon = _resolveComponent(\"Icon\")!\n\n  _push(`<button${_ssrRenderAttrs(_mergeProps({ \"aria-label\": \"Color Mode\" }, _attrs))} data-v-87324333>`)\n  _push(_ssrRenderComponent(_component_ColorScheme, { placeholder: \"...\" }, {\n    default: _withCtx((_, _push, _parent, _scopeId) => {\n      if (_push) {\n        if (_unref(colorMode).preference === 'dark') {\n          _push(_ssrRenderComponent(_component_Icon, { name: \"uil:moon\" }, null, _parent, _scopeId))\n        } else if (_unref(colorMode).preference === 'light') {\n          _push(_ssrRenderComponent(_component_Icon, { name: \"uil:sun\" }, null, _parent, _scopeId))\n        } else {\n          _push(_ssrRenderComponent(_component_Icon, { name: \"uil:desktop\" }, null, _parent, _scopeId))\n        }\n      } else {\n        return [\n          (_unref(colorMode).preference === 'dark')\n            ? (_openBlock(), _createBlock(_component_Icon, {\n                key: 0,\n                name: \"uil:moon\"\n              }))\n            : (_unref(colorMode).preference === 'light')\n              ? (_openBlock(), _createBlock(_component_Icon, {\n                  key: 1,\n                  name: \"uil:sun\"\n                }))\n              : (_openBlock(), _createBlock(_component_Icon, {\n                  key: 2,\n                  name: \"uil:desktop\"\n                }))\n        ]\n      }\n    }),\n    _: 1\n  }, _parent))\n  _push(`</button>`)\n}\n}\n\n})",
-      "start": 1707500052768,
-      "end": 1707500052768,
+      "start": 1707665603332,
+      "end": 1707665603333,
       "sourcemaps": {
         "version": 3,
         "sources": [
@@ -20,71 +20,71 @@
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1707500052769,
-      "end": 1707500052769,
+      "start": 1707665603333,
+      "end": 1707665603333,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1707500052769,
-      "end": 1707500052769,
+      "start": 1707665603333,
+      "end": 1707665603333,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1707500052771,
-      "end": 1707500052771,
+      "start": 1707665603335,
+      "end": 1707665603335,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1707500052771,
-      "end": 1707500052771,
+      "start": 1707665603335,
+      "end": 1707665603335,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { resolveComponent as _resolveComponent, unref as _unref, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'ThemeSelect',\n  __ssrInlineRender: true,\n  setup(__props) {\n\nconst colorMode = useColorMode()\nconst onClick = () => {\n  const values = ['system', 'light', 'dark']\n  const index = values.indexOf(colorMode.preference)\n  const next = (index + 1) % values.length\n\n  colorMode.preference = values[next]\n}\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_ColorScheme = _resolveComponent(\"ColorScheme\")!\n  const _component_Icon = _resolveComponent(\"Icon\")!\n\n  _push(`<button${_ssrRenderAttrs(_mergeProps({ \"aria-label\": \"Color Mode\" }, _attrs))} data-v-87324333>`)\n  _push(_ssrRenderComponent(_component_ColorScheme, { placeholder: \"...\" }, {\n    default: _withCtx((_, _push, _parent, _scopeId) => {\n      if (_push) {\n        if (_unref(colorMode).preference === 'dark') {\n          _push(_ssrRenderComponent(_component_Icon, { name: \"uil:moon\" }, null, _parent, _scopeId))\n        } else if (_unref(colorMode).preference === 'light') {\n          _push(_ssrRenderComponent(_component_Icon, { name: \"uil:sun\" }, null, _parent, _scopeId))\n        } else {\n          _push(_ssrRenderComponent(_component_Icon, { name: \"uil:desktop\" }, null, _parent, _scopeId))\n        }\n      } else {\n        return [\n          (_unref(colorMode).preference === 'dark')\n            ? (_openBlock(), _createBlock(_component_Icon, {\n                key: 0,\n                name: \"uil:moon\"\n              }))\n            : (_unref(colorMode).preference === 'light')\n              ? (_openBlock(), _createBlock(_component_Icon, {\n                  key: 1,\n                  name: \"uil:sun\"\n                }))\n              : (_openBlock(), _createBlock(_component_Icon, {\n                  key: 2,\n                  name: \"uil:desktop\"\n                }))\n        ]\n      }\n    }),\n    _: 1\n  }, _parent))\n  _push(`</button>`)\n}\n}\n\n})",
-      "start": 1707500052772,
-      "end": 1707500052772,
+      "start": 1707665603335,
+      "end": 1707665603336,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { resolveComponent as _resolveComponent, unref as _unref, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'ThemeSelect',\n  __ssrInlineRender: true,\n  setup(__props) {\n\nconst colorMode = useColorMode()\nconst onClick = () => {\n  const values = ['system', 'light', 'dark']\n  const index = values.indexOf(colorMode.preference)\n  const next = (index + 1) % values.length\n\n  colorMode.preference = values[next]\n}\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_ColorScheme = _resolveComponent(\"ColorScheme\")!\n  const _component_Icon = _resolveComponent(\"Icon\")!\n\n  _push(`<button${_ssrRenderAttrs(_mergeProps({ \"aria-label\": \"Color Mode\" }, _attrs))} data-v-87324333>`)\n  _push(_ssrRenderComponent(_component_ColorScheme, { placeholder: \"...\" }, {\n    default: _withCtx((_, _push, _parent, _scopeId) => {\n      if (_push) {\n        if (_unref(colorMode).preference === 'dark') {\n          _push(_ssrRenderComponent(_component_Icon, { name: \"uil:moon\" }, null, _parent, _scopeId))\n        } else if (_unref(colorMode).preference === 'light') {\n          _push(_ssrRenderComponent(_component_Icon, { name: \"uil:sun\" }, null, _parent, _scopeId))\n        } else {\n          _push(_ssrRenderComponent(_component_Icon, { name: \"uil:desktop\" }, null, _parent, _scopeId))\n        }\n      } else {\n        return [\n          (_unref(colorMode).preference === 'dark')\n            ? (_openBlock(), _createBlock(_component_Icon, {\n                key: 0,\n                name: \"uil:moon\"\n              }))\n            : (_unref(colorMode).preference === 'light')\n              ? (_openBlock(), _createBlock(_component_Icon, {\n                  key: 1,\n                  name: \"uil:sun\"\n                }))\n              : (_openBlock(), _createBlock(_component_Icon, {\n                  key: 2,\n                  name: \"uil:desktop\"\n                }))\n        ]\n      }\n    }),\n    _: 1\n  }, _parent))\n  _push(`</button>`)\n}\n}\n\n})",
-      "start": 1707500052772,
-      "end": 1707500052772,
+      "start": 1707665603335,
+      "end": 1707665603336,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1707500052772,
-      "end": 1707500052772,
+      "start": 1707665603336,
+      "end": 1707665603336,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1707500052772,
-      "end": 1707500052772,
+      "start": 1707665603336,
+      "end": 1707665603336,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1707500052773,
-      "end": 1707500052773,
+      "start": 1707665603337,
+      "end": 1707665603337,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1707500052773,
-      "end": 1707500052773,
+      "start": 1707665603337,
+      "end": 1707665603337,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { resolveComponent as _resolveComponent, unref as _unref, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ThemeSelect\",\n  __ssrInlineRender: true,\n  setup(__props) {\n    const colorMode = useColorMode();\n    const onClick = () => {\n      const values = [\"system\", \"light\", \"dark\"];\n      const index = values.indexOf(colorMode.preference);\n      const next = (index + 1) % values.length;\n      colorMode.preference = values[next];\n    };\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_ColorScheme = _resolveComponent(\"ColorScheme\");\n      const _component_Icon = _resolveComponent(\"Icon\");\n      _push(`<button${_ssrRenderAttrs(_mergeProps({ \"aria-label\": \"Color Mode\" }, _attrs))} data-v-87324333>`);\n      _push(_ssrRenderComponent(_component_ColorScheme, { placeholder: \"...\" }, {\n        default: _withCtx((_, _push2, _parent2, _scopeId) => {\n          if (_push2) {\n            if (_unref(colorMode).preference === \"dark\") {\n              _push2(_ssrRenderComponent(_component_Icon, { name: \"uil:moon\" }, null, _parent2, _scopeId));\n            } else if (_unref(colorMode).preference === \"light\") {\n              _push2(_ssrRenderComponent(_component_Icon, { name: \"uil:sun\" }, null, _parent2, _scopeId));\n            } else {\n              _push2(_ssrRenderComponent(_component_Icon, { name: \"uil:desktop\" }, null, _parent2, _scopeId));\n            }\n          } else {\n            return [\n              _unref(colorMode).preference === \"dark\" ? (_openBlock(), _createBlock(_component_Icon, {\n                key: 0,\n                name: \"uil:moon\"\n              })) : _unref(colorMode).preference === \"light\" ? (_openBlock(), _createBlock(_component_Icon, {\n                key: 1,\n                name: \"uil:sun\"\n              })) : (_openBlock(), _createBlock(_component_Icon, {\n                key: 2,\n                name: \"uil:desktop\"\n              }))\n            ];\n          }\n        }),\n        _: 1\n      }, _parent));\n      _push(`</button>`);\n    };\n  }\n});\n",
-      "start": 1707500052773,
-      "end": 1707500054061,
+      "start": 1707665603337,
+      "end": 1707665603679,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -103,135 +103,135 @@
     },
     {
       "name": "vite:json",
-      "start": 1707500054061,
-      "end": 1707500054061,
+      "start": 1707665603679,
+      "end": 1707665603679,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1707500054061,
-      "end": 1707500054061,
+      "start": 1707665603679,
+      "end": 1707665603679,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1707500054061,
-      "end": 1707500054061,
+      "start": 1707665603680,
+      "end": 1707665603680,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1707500054061,
-      "end": 1707500054061,
+      "start": 1707665603680,
+      "end": 1707665603680,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1707500054061,
-      "end": 1707500054061,
+      "start": 1707665603680,
+      "end": 1707665603680,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1707500054061,
-      "end": 1707500054061,
+      "start": 1707665603680,
+      "end": 1707665603680,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1707500054061,
-      "end": 1707500054061,
+      "start": 1707665603680,
+      "end": 1707665603680,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1707500054061,
-      "end": 1707500054061,
+      "start": 1707665603680,
+      "end": 1707665603680,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1707500054061,
-      "end": 1707500054061,
+      "start": 1707665603680,
+      "end": 1707665603680,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1707500054062,
-      "end": 1707500054062,
+      "start": 1707665603680,
+      "end": 1707665603680,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1707500054062,
-      "end": 1707500054062,
+      "start": 1707665603681,
+      "end": 1707665603681,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1707500054062,
-      "end": 1707500054063,
+      "start": 1707665603681,
+      "end": 1707665603682,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1707500054063,
-      "end": 1707500054063,
+      "start": 1707665603682,
+      "end": 1707665603682,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1707500054063,
-      "end": 1707500054063,
+      "start": 1707665603682,
+      "end": 1707665603682,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1707500054063,
-      "end": 1707500054063,
+      "start": 1707665603683,
+      "end": 1707665603683,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1707500054063,
-      "end": 1707500054063,
+      "start": 1707665603683,
+      "end": 1707665603683,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1707500054063,
-      "end": 1707500054063,
+      "start": 1707665603683,
+      "end": 1707665603683,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1707500054063,
-      "end": 1707500054063,
+      "start": 1707665603683,
+      "end": 1707665603683,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1707500054063,
-      "end": 1707500054063,
+      "start": 1707665603683,
+      "end": 1707665603683,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1707500054063,
-      "end": 1707500054063,
+      "start": 1707665603683,
+      "end": 1707665603684,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1707500054063,
-      "end": 1707500054063,
+      "start": 1707665603683,
+      "end": 1707665603684,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { useColorMode } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/color-mode/dist/runtime/composables';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { resolveComponent as _resolveComponent, unref as _unref, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ThemeSelect\",\n  __ssrInlineRender: true,\n  setup(__props) {\n    const colorMode = useColorMode();\n    const onClick = () => {\n      const values = [\"system\", \"light\", \"dark\"];\n      const index = values.indexOf(colorMode.preference);\n      const next = (index + 1) % values.length;\n      colorMode.preference = values[next];\n    };\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_ColorScheme = _resolveComponent(\"ColorScheme\");\n      const _component_Icon = _resolveComponent(\"Icon\");\n      _push(`<button${_ssrRenderAttrs(_mergeProps({ \"aria-label\": \"Color Mode\" }, _attrs))} data-v-87324333>`);\n      _push(_ssrRenderComponent(_component_ColorScheme, { placeholder: \"...\" }, {\n        default: _withCtx((_, _push2, _parent2, _scopeId) => {\n          if (_push2) {\n            if (_unref(colorMode).preference === \"dark\") {\n              _push2(_ssrRenderComponent(_component_Icon, { name: \"uil:moon\" }, null, _parent2, _scopeId));\n            } else if (_unref(colorMode).preference === \"light\") {\n              _push2(_ssrRenderComponent(_component_Icon, { name: \"uil:sun\" }, null, _parent2, _scopeId));\n            } else {\n              _push2(_ssrRenderComponent(_component_Icon, { name: \"uil:desktop\" }, null, _parent2, _scopeId));\n            }\n          } else {\n            return [\n              _unref(colorMode).preference === \"dark\" ? (_openBlock(), _createBlock(_component_Icon, {\n                key: 0,\n                name: \"uil:moon\"\n              })) : _unref(colorMode).preference === \"light\" ? (_openBlock(), _createBlock(_component_Icon, {\n                key: 1,\n                name: \"uil:sun\"\n              })) : (_openBlock(), _createBlock(_component_Icon, {\n                key: 2,\n                name: \"uil:desktop\"\n              }))\n            ];\n          }\n        }),\n        _: 1\n      }, _parent));\n      _push(`</button>`);\n    };\n  }\n});\n",
-      "start": 1707500054063,
-      "end": 1707500054068,
+      "start": 1707665603685,
+      "end": 1707665603706,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -245,8 +245,8 @@
     {
       "name": "nuxt:imports-transform",
       "result": "import { useColorMode } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/color-mode/dist/runtime/composables';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { resolveComponent as _resolveComponent, unref as _unref, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ThemeSelect\",\n  __ssrInlineRender: true,\n  setup(__props) {\n    const colorMode = useColorMode();\n    const onClick = () => {\n      const values = [\"system\", \"light\", \"dark\"];\n      const index = values.indexOf(colorMode.preference);\n      const next = (index + 1) % values.length;\n      colorMode.preference = values[next];\n    };\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_ColorScheme = _resolveComponent(\"ColorScheme\");\n      const _component_Icon = _resolveComponent(\"Icon\");\n      _push(`<button${_ssrRenderAttrs(_mergeProps({ \"aria-label\": \"Color Mode\" }, _attrs))} data-v-87324333>`);\n      _push(_ssrRenderComponent(_component_ColorScheme, { placeholder: \"...\" }, {\n        default: _withCtx((_, _push2, _parent2, _scopeId) => {\n          if (_push2) {\n            if (_unref(colorMode).preference === \"dark\") {\n              _push2(_ssrRenderComponent(_component_Icon, { name: \"uil:moon\" }, null, _parent2, _scopeId));\n            } else if (_unref(colorMode).preference === \"light\") {\n              _push2(_ssrRenderComponent(_component_Icon, { name: \"uil:sun\" }, null, _parent2, _scopeId));\n            } else {\n              _push2(_ssrRenderComponent(_component_Icon, { name: \"uil:desktop\" }, null, _parent2, _scopeId));\n            }\n          } else {\n            return [\n              _unref(colorMode).preference === \"dark\" ? (_openBlock(), _createBlock(_component_Icon, {\n                key: 0,\n                name: \"uil:moon\"\n              })) : _unref(colorMode).preference === \"light\" ? (_openBlock(), _createBlock(_component_Icon, {\n                key: 1,\n                name: \"uil:sun\"\n              })) : (_openBlock(), _createBlock(_component_Icon, {\n                key: 2,\n                name: \"uil:desktop\"\n              }))\n            ];\n          }\n        }),\n        _: 1\n      }, _parent));\n      _push(`</button>`);\n    };\n  }\n});\n",
-      "start": 1707500054063,
-      "end": 1707500054068,
+      "start": 1707665603685,
+      "end": 1707665603706,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -259,39 +259,39 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1707500054068,
-      "end": 1707500054068,
+      "start": 1707665603706,
+      "end": 1707665603706,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1707500054068,
-      "end": 1707500054068,
+      "start": 1707665603706,
+      "end": 1707665603706,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1707500054068,
-      "end": 1707500054068,
+      "start": 1707665603706,
+      "end": 1707665603707,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1707500054068,
-      "end": 1707500054068,
+      "start": 1707665603706,
+      "end": 1707665603707,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1707500054068,
-      "end": 1707500054068,
+      "start": 1707665603707,
+      "end": 1707665603707,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
       "result": "import { default as __nuxt_component_0 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/color-mode/dist/runtime/component.vue3.vue\";\nimport { default as __nuxt_component_1 } from \"/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/Icon.vue\";\nimport { useColorMode } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/color-mode/dist/runtime/composables';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { resolveComponent as _resolveComponent, unref as _unref, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ThemeSelect\",\n  __ssrInlineRender: true,\n  setup(__props) {\n    const colorMode = useColorMode();\n    const onClick = () => {\n      const values = [\"system\", \"light\", \"dark\"];\n      const index = values.indexOf(colorMode.preference);\n      const next = (index + 1) % values.length;\n      colorMode.preference = values[next];\n    };\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_ColorScheme = __nuxt_component_0;\n      const _component_Icon = __nuxt_component_1;\n      _push(`<button${_ssrRenderAttrs(_mergeProps({ \"aria-label\": \"Color Mode\" }, _attrs))} data-v-87324333>`);\n      _push(_ssrRenderComponent(_component_ColorScheme, { placeholder: \"...\" }, {\n        default: _withCtx((_, _push2, _parent2, _scopeId) => {\n          if (_push2) {\n            if (_unref(colorMode).preference === \"dark\") {\n              _push2(_ssrRenderComponent(_component_Icon, { name: \"uil:moon\" }, null, _parent2, _scopeId));\n            } else if (_unref(colorMode).preference === \"light\") {\n              _push2(_ssrRenderComponent(_component_Icon, { name: \"uil:sun\" }, null, _parent2, _scopeId));\n            } else {\n              _push2(_ssrRenderComponent(_component_Icon, { name: \"uil:desktop\" }, null, _parent2, _scopeId));\n            }\n          } else {\n            return [\n              _unref(colorMode).preference === \"dark\" ? (_openBlock(), _createBlock(_component_Icon, {\n                key: 0,\n                name: \"uil:moon\"\n              })) : _unref(colorMode).preference === \"light\" ? (_openBlock(), _createBlock(_component_Icon, {\n                key: 1,\n                name: \"uil:sun\"\n              })) : (_openBlock(), _createBlock(_component_Icon, {\n                key: 2,\n                name: \"uil:desktop\"\n              }))\n            ];\n          }\n        }),\n        _: 1\n      }, _parent));\n      _push(`</button>`);\n    };\n  }\n});\n",
-      "start": 1707500054069,
-      "end": 1707500054070,
+      "start": 1707665603707,
+      "end": 1707665603709,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -304,20 +304,20 @@
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1707500054070,
-      "end": 1707500054070,
+      "start": 1707665603709,
+      "end": 1707665603710,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1707500054070,
-      "end": 1707500054070,
+      "start": 1707665603710,
+      "end": 1707665603710,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1707500054070,
-      "end": 1707500054070,
+      "start": 1707665603710,
+      "end": 1707665603710,
       "order": "normal"
     }
   ]

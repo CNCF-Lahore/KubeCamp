@@ -4,211 +4,211 @@
     {
       "name": "vite:load-fallback",
       "result": "import { withBase } from \"ufo\";\nimport { useContentPreview } from \"./preview.js\";\nimport { useRuntimeConfig, useRequestEvent } from \"#imports\";\nexport const withContentBase = (url) => withBase(url, useRuntimeConfig().public.content.api.baseURL);\nexport const useContentDisabled = () => {\n  console.warn(\"useContent is only accessible when you are using `documentDriven` mode.\");\n  console.warn(\"Learn more by visiting: https://content.nuxt.com/document-driven\");\n  throw new Error(\"useContent is only accessible when you are using `documentDriven` mode.\");\n};\nexport const navigationDisabled = () => {\n  console.warn(\"Navigation is only accessible when you enable it in module options.\");\n  console.warn(\"Learn more by visiting: https://content.nuxt.com/get-started/configuration#navigation\");\n  throw new Error(\"Navigation is only accessible when you enable it in module options.\");\n};\nexport const addPrerenderPath = (path) => {\n  const event = useRequestEvent();\n  event.node.res.setHeader(\n    \"x-nitro-prerender\",\n    [\n      event.node.res.getHeader(\"x-nitro-prerender\"),\n      path\n    ].filter(Boolean).join(\",\")\n  );\n};\nexport const shouldUseClientDB = () => {\n  const { experimental } = useRuntimeConfig().public.content;\n  if (process.server) {\n    return false;\n  }\n  if (experimental.clientDB) {\n    return true;\n  }\n  return useContentPreview().isEnabled();\n};\n",
-      "start": 1707500052373,
-      "end": 1707500054766,
+      "start": 1707665603092,
+      "end": 1707665604362,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1707500054766,
-      "end": 1707500054766,
+      "start": 1707665604363,
+      "end": 1707665604363,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1707500054766,
-      "end": 1707500054766,
+      "start": 1707665604363,
+      "end": 1707665604363,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1707500054766,
-      "end": 1707500054766,
+      "start": 1707665604363,
+      "end": 1707665604363,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1707500054766,
-      "end": 1707500054766,
+      "start": 1707665604363,
+      "end": 1707665604363,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { withBase } from \"ufo\";\nimport { useContentPreview } from \"./preview.js\";\nimport { useRuntimeConfig, useRequestEvent } from \"#imports\";\nexport const withContentBase = (url) => withBase(url, useRuntimeConfig().public.content.api.baseURL);\nexport const useContentDisabled = () => {\n  console.warn(\"useContent is only accessible when you are using `documentDriven` mode.\");\n  console.warn(\"Learn more by visiting: https://content.nuxt.com/document-driven\");\n  throw new Error(\"useContent is only accessible when you are using `documentDriven` mode.\");\n};\nexport const navigationDisabled = () => {\n  console.warn(\"Navigation is only accessible when you enable it in module options.\");\n  console.warn(\"Learn more by visiting: https://content.nuxt.com/get-started/configuration#navigation\");\n  throw new Error(\"Navigation is only accessible when you enable it in module options.\");\n};\nexport const addPrerenderPath = (path) => {\n  const event = useRequestEvent();\n  event.node.res.setHeader(\n    \"x-nitro-prerender\",\n    [\n      event.node.res.getHeader(\"x-nitro-prerender\"),\n      path\n    ].filter(Boolean).join(\",\")\n  );\n};\nexport const shouldUseClientDB = () => {\n  const { experimental } = useRuntimeConfig().public.content;\n  if (process.server) {\n    return false;\n  }\n  if (experimental.clientDB) {\n    return true;\n  }\n  return useContentPreview().isEnabled();\n};\n",
-      "start": 1707500054766,
-      "end": 1707500054766,
+      "start": 1707665604363,
+      "end": 1707665604363,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { withBase } from \"ufo\";\nimport { useContentPreview } from \"./preview.js\";\nimport { useRuntimeConfig, useRequestEvent } from \"#imports\";\nexport const withContentBase = (url) => withBase(url, useRuntimeConfig().public.content.api.baseURL);\nexport const useContentDisabled = () => {\n  console.warn(\"useContent is only accessible when you are using `documentDriven` mode.\");\n  console.warn(\"Learn more by visiting: https://content.nuxt.com/document-driven\");\n  throw new Error(\"useContent is only accessible when you are using `documentDriven` mode.\");\n};\nexport const navigationDisabled = () => {\n  console.warn(\"Navigation is only accessible when you enable it in module options.\");\n  console.warn(\"Learn more by visiting: https://content.nuxt.com/get-started/configuration#navigation\");\n  throw new Error(\"Navigation is only accessible when you enable it in module options.\");\n};\nexport const addPrerenderPath = (path) => {\n  const event = useRequestEvent();\n  event.node.res.setHeader(\n    \"x-nitro-prerender\",\n    [\n      event.node.res.getHeader(\"x-nitro-prerender\"),\n      path\n    ].filter(Boolean).join(\",\")\n  );\n};\nexport const shouldUseClientDB = () => {\n  const { experimental } = useRuntimeConfig().public.content;\n  if (process.server) {\n    return false;\n  }\n  if (experimental.clientDB) {\n    return true;\n  }\n  return useContentPreview().isEnabled();\n};\n",
-      "start": 1707500054766,
-      "end": 1707500054766,
+      "start": 1707665604363,
+      "end": 1707665604363,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1707500054766,
-      "end": 1707500054766,
+      "start": 1707665604363,
+      "end": 1707665604363,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1707500054766,
-      "end": 1707500054766,
+      "start": 1707665604363,
+      "end": 1707665604363,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1707500054766,
-      "end": 1707500054766,
+      "start": 1707665604363,
+      "end": 1707665604363,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1707500054766,
-      "end": 1707500054766,
+      "start": 1707665604363,
+      "end": 1707665604363,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1707500054766,
-      "end": 1707500054766,
+      "start": 1707665604363,
+      "end": 1707665604363,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1707500054766,
-      "end": 1707500054766,
+      "start": 1707665604363,
+      "end": 1707665604363,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1707500054766,
-      "end": 1707500054766,
+      "start": 1707665604363,
+      "end": 1707665604363,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1707500054766,
-      "end": 1707500054766,
+      "start": 1707665604363,
+      "end": 1707665604363,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1707500054766,
-      "end": 1707500054766,
+      "start": 1707665604363,
+      "end": 1707665604363,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1707500054766,
-      "end": 1707500054766,
+      "start": 1707665604363,
+      "end": 1707665604363,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1707500054766,
-      "end": 1707500054766,
+      "start": 1707665604363,
+      "end": 1707665604363,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1707500054766,
-      "end": 1707500054766,
+      "start": 1707665604363,
+      "end": 1707665604363,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1707500054766,
-      "end": 1707500054766,
+      "start": 1707665604363,
+      "end": 1707665604363,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1707500054766,
-      "end": 1707500054766,
+      "start": 1707665604363,
+      "end": 1707665604363,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1707500054766,
-      "end": 1707500054767,
+      "start": 1707665604363,
+      "end": 1707665604363,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1707500054767,
-      "end": 1707500054767,
+      "start": 1707665604363,
+      "end": 1707665604363,
       "order": "normal"
     },
     {
       "name": "vite:define",
       "result": "import { withBase } from \"ufo\";\nimport { useContentPreview } from \"./preview.js\";\nimport { useRuntimeConfig, useRequestEvent } from \"#imports\";\nexport const withContentBase = (url) => withBase(url, useRuntimeConfig().public.content.api.baseURL);\nexport const useContentDisabled = () => {\n  console.warn(\"useContent is only accessible when you are using `documentDriven` mode.\");\n  console.warn(\"Learn more by visiting: https://content.nuxt.com/document-driven\");\n  throw new Error(\"useContent is only accessible when you are using `documentDriven` mode.\");\n};\nexport const navigationDisabled = () => {\n  console.warn(\"Navigation is only accessible when you enable it in module options.\");\n  console.warn(\"Learn more by visiting: https://content.nuxt.com/get-started/configuration#navigation\");\n  throw new Error(\"Navigation is only accessible when you enable it in module options.\");\n};\nexport const addPrerenderPath = (path) => {\n  const event = useRequestEvent();\n  event.node.res.setHeader(\n    \"x-nitro-prerender\",\n    [\n      event.node.res.getHeader(\"x-nitro-prerender\"),\n      path\n    ].filter(Boolean).join(\",\")\n  );\n};\nexport const shouldUseClientDB = () => {\n  const { experimental } = useRuntimeConfig().public.content;\n  if (true) {\n    return false;\n  }\n  if (experimental.clientDB) {\n    return true;\n  }\n  return useContentPreview().isEnabled();\n};\n",
-      "start": 1707500054767,
-      "end": 1707500054859,
+      "start": 1707665604363,
+      "end": 1707665604436,
       "order": "normal",
       "sourcemaps": "{\n  \"version\": 3,\n  \"sources\": [\"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/composables/utils.js\"],\n  \"sourcesContent\": [\"import { withBase } from \\\"ufo\\\";\\nimport { useContentPreview } from \\\"./preview.js\\\";\\nimport { useRuntimeConfig, useRequestEvent } from \\\"#imports\\\";\\nexport const withContentBase = (url) => withBase(url, useRuntimeConfig().public.content.api.baseURL);\\nexport const useContentDisabled = () => {\\n  console.warn(\\\"useContent is only accessible when you are using `documentDriven` mode.\\\");\\n  console.warn(\\\"Learn more by visiting: https://content.nuxt.com/document-driven\\\");\\n  throw new Error(\\\"useContent is only accessible when you are using `documentDriven` mode.\\\");\\n};\\nexport const navigationDisabled = () => {\\n  console.warn(\\\"Navigation is only accessible when you enable it in module options.\\\");\\n  console.warn(\\\"Learn more by visiting: https://content.nuxt.com/get-started/configuration#navigation\\\");\\n  throw new Error(\\\"Navigation is only accessible when you enable it in module options.\\\");\\n};\\nexport const addPrerenderPath = (path) => {\\n  const event = useRequestEvent();\\n  event.node.res.setHeader(\\n    \\\"x-nitro-prerender\\\",\\n    [\\n      event.node.res.getHeader(\\\"x-nitro-prerender\\\"),\\n      path\\n    ].filter(Boolean).join(\\\",\\\")\\n  );\\n};\\nexport const shouldUseClientDB = () => {\\n  const { experimental } = useRuntimeConfig().public.content;\\n  if (process.server) {\\n    return false;\\n  }\\n  if (experimental.clientDB) {\\n    return true;\\n  }\\n  return useContentPreview().isEnabled();\\n};\\n\"],\n  \"mappings\": \"AAAA,SAAS,gBAAgB;AACzB,SAAS,yBAAyB;AAClC,SAAS,kBAAkB,uBAAuB;AAC3C,aAAM,kBAAkB,CAAC,QAAQ,SAAS,KAAK,iBAAiB,EAAE,OAAO,QAAQ,IAAI,OAAO;AAC5F,aAAM,qBAAqB,MAAM;AACtC,UAAQ,KAAK,yEAAyE;AACtF,UAAQ,KAAK,kEAAkE;AAC/E,QAAM,IAAI,MAAM,yEAAyE;AAC3F;AACO,aAAM,qBAAqB,MAAM;AACtC,UAAQ,KAAK,qEAAqE;AAClF,UAAQ,KAAK,uFAAuF;AACpG,QAAM,IAAI,MAAM,qEAAqE;AACvF;AACO,aAAM,mBAAmB,CAAC,SAAS;AACxC,QAAM,QAAQ,gBAAgB;AAC9B,QAAM,KAAK,IAAI;AAAA,IACb;AAAA,IACA;AAAA,MACE,MAAM,KAAK,IAAI,UAAU,mBAAmB;AAAA,MAC5C;AAAA,IACF,EAAE,OAAO,OAAO,EAAE,KAAK,GAAG;AAAA,EAC5B;AACF;AACO,aAAM,oBAAoB,MAAM;AACrC,QAAM,EAAE,aAAa,IAAI,iBAAiB,EAAE,OAAO;AACnD,MAAI,MAAgB;AAClB,WAAO;AAAA,EACT;AACA,MAAI,aAAa,UAAU;AACzB,WAAO;AAAA,EACT;AACA,SAAO,kBAAkB,EAAE,UAAU;AACvC;\",\n  \"names\": []\n}\n"
     },
     {
       "name": "vite:css-post",
-      "start": 1707500054859,
-      "end": 1707500054859,
+      "start": 1707665604437,
+      "end": 1707665604437,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1707500054860,
-      "end": 1707500054860,
+      "start": 1707665604437,
+      "end": 1707665604437,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1707500054860,
-      "end": 1707500054860,
+      "start": 1707665604437,
+      "end": 1707665604437,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1707500054860,
-      "end": 1707500054860,
+      "start": 1707665604437,
+      "end": 1707665604437,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1707500054861,
-      "end": 1707500054861,
+      "start": 1707665604437,
+      "end": 1707665604437,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1707500054861,
-      "end": 1707500054861,
+      "start": 1707665604438,
+      "end": 1707665604438,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1707500054861,
-      "end": 1707500054861,
+      "start": 1707665604438,
+      "end": 1707665604438,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1707500054862,
-      "end": 1707500054862,
+      "start": 1707665604438,
+      "end": 1707665604438,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1707500054862,
-      "end": 1707500054862,
+      "start": 1707665604438,
+      "end": 1707665604438,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { useRuntimeConfig } from '#app/nuxt';\nimport { useRequestEvent } from '#app/composables/ssr';\nimport { withBase } from \"ufo\";\nimport { useContentPreview } from \"./preview.js\";\nexport const withContentBase = (url) => withBase(url, useRuntimeConfig().public.content.api.baseURL);\nexport const useContentDisabled = () => {\n  console.warn(\"useContent is only accessible when you are using `documentDriven` mode.\");\n  console.warn(\"Learn more by visiting: https://content.nuxt.com/document-driven\");\n  throw new Error(\"useContent is only accessible when you are using `documentDriven` mode.\");\n};\nexport const navigationDisabled = () => {\n  console.warn(\"Navigation is only accessible when you enable it in module options.\");\n  console.warn(\"Learn more by visiting: https://content.nuxt.com/get-started/configuration#navigation\");\n  throw new Error(\"Navigation is only accessible when you enable it in module options.\");\n};\nexport const addPrerenderPath = (path) => {\n  const event = useRequestEvent();\n  event.node.res.setHeader(\n    \"x-nitro-prerender\",\n    [\n      event.node.res.getHeader(\"x-nitro-prerender\"),\n      path\n    ].filter(Boolean).join(\",\")\n  );\n};\nexport const shouldUseClientDB = () => {\n  const { experimental } = useRuntimeConfig().public.content;\n  if (true) {\n    return false;\n  }\n  if (experimental.clientDB) {\n    return true;\n  }\n  return useContentPreview().isEnabled();\n};\n",
-      "start": 1707500054862,
-      "end": 1707500054866,
+      "start": 1707665604438,
+      "end": 1707665604439,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -222,8 +222,8 @@
     {
       "name": "nuxt:imports-transform",
       "result": "import { useRuntimeConfig } from '#app/nuxt';\nimport { useRequestEvent } from '#app/composables/ssr';\nimport { withBase } from \"ufo\";\nimport { useContentPreview } from \"./preview.js\";\nexport const withContentBase = (url) => withBase(url, useRuntimeConfig().public.content.api.baseURL);\nexport const useContentDisabled = () => {\n  console.warn(\"useContent is only accessible when you are using `documentDriven` mode.\");\n  console.warn(\"Learn more by visiting: https://content.nuxt.com/document-driven\");\n  throw new Error(\"useContent is only accessible when you are using `documentDriven` mode.\");\n};\nexport const navigationDisabled = () => {\n  console.warn(\"Navigation is only accessible when you enable it in module options.\");\n  console.warn(\"Learn more by visiting: https://content.nuxt.com/get-started/configuration#navigation\");\n  throw new Error(\"Navigation is only accessible when you enable it in module options.\");\n};\nexport const addPrerenderPath = (path) => {\n  const event = useRequestEvent();\n  event.node.res.setHeader(\n    \"x-nitro-prerender\",\n    [\n      event.node.res.getHeader(\"x-nitro-prerender\"),\n      path\n    ].filter(Boolean).join(\",\")\n  );\n};\nexport const shouldUseClientDB = () => {\n  const { experimental } = useRuntimeConfig().public.content;\n  if (true) {\n    return false;\n  }\n  if (experimental.clientDB) {\n    return true;\n  }\n  return useContentPreview().isEnabled();\n};\n",
-      "start": 1707500054862,
-      "end": 1707500054866,
+      "start": 1707665604438,
+      "end": 1707665604439,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -236,56 +236,56 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1707500054866,
-      "end": 1707500054867,
+      "start": 1707665604439,
+      "end": 1707665604439,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1707500054866,
-      "end": 1707500054867,
+      "start": 1707665604439,
+      "end": 1707665604439,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1707500054867,
-      "end": 1707500054867,
+      "start": 1707665604439,
+      "end": 1707665604439,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1707500054867,
-      "end": 1707500054867,
+      "start": 1707665604439,
+      "end": 1707665604439,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1707500054868,
-      "end": 1707500054868,
+      "start": 1707665604439,
+      "end": 1707665604439,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1707500054868,
-      "end": 1707500054869,
+      "start": 1707665604439,
+      "end": 1707665604439,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1707500054869,
-      "end": 1707500054869,
+      "start": 1707665604439,
+      "end": 1707665604439,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1707500054869,
-      "end": 1707500054869,
+      "start": 1707665604439,
+      "end": 1707665604439,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1707500054870,
-      "end": 1707500054870,
+      "start": 1707665604440,
+      "end": 1707665604440,
       "order": "normal"
     }
   ]
