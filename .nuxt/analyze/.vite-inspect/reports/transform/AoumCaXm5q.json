@@ -4,172 +4,172 @@
     {
       "name": "vite:load-fallback",
       "result": "import { defineNuxtPlugin, useCookie, useRoute, useRuntimeConfig, useState } from \"#imports\";\nexport default defineNuxtPlugin((nuxtApp) => {\n  const runtimeConfig = useRuntimeConfig().public.studio || {};\n  const route = useRoute();\n  const previewToken = useCookie(\"previewToken\", { sameSite: \"none\", secure: true });\n  const storage = useState(\"studio-client-db\", () => null);\n  async function initializePreview() {\n    const useStudio = await import(\"../composables/useStudio.mjs\").then((m) => m.useStudio);\n    const { mountPreviewUI, initiateIframeCommunication } = useStudio();\n    mountPreviewUI();\n    initiateIframeCommunication();\n  }\n  if (runtimeConfig.apiURL) {\n    if (Object.prototype.hasOwnProperty.call(route.query, \"preview\") && !route.query.preview) {\n      return;\n    }\n    if (!route.query.preview && !previewToken.value) {\n      return;\n    }\n    if (route.query.preview) {\n      previewToken.value = String(route.query.preview);\n    }\n    window.sessionStorage.setItem(\"previewToken\", String(previewToken.value));\n    nuxtApp.hook(\"content:storage\", (_storage) => {\n      storage.value = _storage;\n    });\n    nuxtApp.hook(\"app:mounted\", async () => {\n      await initializePreview();\n    });\n  }\n});\n",
-      "start": 1707500035405,
-      "end": 1707500035544,
+      "start": 1707665592197,
+      "end": 1707665592420,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1707500035544,
-      "end": 1707500035544,
+      "start": 1707665592420,
+      "end": 1707665592420,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1707500035544,
-      "end": 1707500035544,
+      "start": 1707665592420,
+      "end": 1707665592421,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineNuxtPlugin, useCookie, useRoute, useRuntimeConfig, useState } from \"#imports\";\nexport default defineNuxtPlugin((nuxtApp) => {\n  const runtimeConfig = useRuntimeConfig().public.studio || {};\n  const route = useRoute();\n  const previewToken = useCookie(\"previewToken\", { sameSite: \"none\", secure: true });\n  const storage = useState(\"studio-client-db\", () => null);\n  async function initializePreview() {\n    const useStudio = await import(\"../composables/useStudio.mjs\").then((m) => m.useStudio);\n    const { mountPreviewUI, initiateIframeCommunication } = useStudio();\n    mountPreviewUI();\n    initiateIframeCommunication();\n  }\n  if (runtimeConfig.apiURL) {\n    if (Object.prototype.hasOwnProperty.call(route.query, \"preview\") && !route.query.preview) {\n      return;\n    }\n    if (!route.query.preview && !previewToken.value) {\n      return;\n    }\n    if (route.query.preview) {\n      previewToken.value = String(route.query.preview);\n    }\n    window.sessionStorage.setItem(\"previewToken\", String(previewToken.value));\n    nuxtApp.hook(\"content:storage\", (_storage) => {\n      storage.value = _storage;\n    });\n    nuxtApp.hook(\"app:mounted\", async () => {\n      await initializePreview();\n    });\n  }\n});\n",
-      "start": 1707500035544,
-      "end": 1707500035544,
+      "start": 1707665592421,
+      "end": 1707665592421,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1707500035544,
-      "end": 1707500035544,
+      "start": 1707665592421,
+      "end": 1707665592421,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1707500035544,
-      "end": 1707500035544,
+      "start": 1707665592421,
+      "end": 1707665592421,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1707500035544,
-      "end": 1707500035544,
+      "start": 1707665592421,
+      "end": 1707665592421,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1707500035544,
-      "end": 1707500035544,
+      "start": 1707665592421,
+      "end": 1707665592421,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1707500035544,
-      "end": 1707500035544,
+      "start": 1707665592421,
+      "end": 1707665592421,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1707500035544,
-      "end": 1707500035544,
+      "start": 1707665592421,
+      "end": 1707665592421,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1707500035544,
-      "end": 1707500035544,
+      "start": 1707665592421,
+      "end": 1707665592421,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1707500035544,
-      "end": 1707500035544,
+      "start": 1707665592421,
+      "end": 1707665592421,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1707500035544,
-      "end": 1707500035544,
+      "start": 1707665592421,
+      "end": 1707665592421,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1707500035544,
-      "end": 1707500035545,
+      "start": 1707665592421,
+      "end": 1707665592421,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1707500035545,
-      "end": 1707500035545,
+      "start": 1707665592421,
+      "end": 1707665592421,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1707500035545,
-      "end": 1707500035545,
+      "start": 1707665592421,
+      "end": 1707665592422,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1707500035545,
-      "end": 1707500035545,
+      "start": 1707665592422,
+      "end": 1707665592422,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1707500035545,
-      "end": 1707500035545,
+      "start": 1707665592422,
+      "end": 1707665592422,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1707500035545,
-      "end": 1707500035545,
+      "start": 1707665592422,
+      "end": 1707665592422,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1707500035545,
-      "end": 1707500035545,
+      "start": 1707665592422,
+      "end": 1707665592422,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1707500035545,
-      "end": 1707500035545,
+      "start": 1707665592422,
+      "end": 1707665592422,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1707500035545,
-      "end": 1707500035545,
+      "start": 1707665592422,
+      "end": 1707665592422,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1707500035545,
-      "end": 1707500035545,
+      "start": 1707665592422,
+      "end": 1707665592422,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1707500035545,
-      "end": 1707500035545,
+      "start": 1707665592422,
+      "end": 1707665592422,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1707500035545,
-      "end": 1707500035545,
+      "start": 1707665592422,
+      "end": 1707665592422,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1707500035545,
-      "end": 1707500035545,
+      "start": 1707665592422,
+      "end": 1707665592422,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1707500035545,
-      "end": 1707500035547,
+      "start": 1707665592422,
+      "end": 1707665592424,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { defineNuxtPlugin, useRuntimeConfig } from '#app/nuxt';\nimport { useCookie } from '#app/composables/cookie';\nimport { useRoute } from '#app/composables/router';\nimport { useState } from '#app/composables/state';\nexport default defineNuxtPlugin((nuxtApp) => {\n  const runtimeConfig = useRuntimeConfig().public.studio || {};\n  const route = useRoute();\n  const previewToken = useCookie(\"previewToken\", { sameSite: \"none\", secure: true });\n  const storage = useState(\"studio-client-db\", () => null);\n  async function initializePreview() {\n    const useStudio = await import(\"../composables/useStudio.mjs\").then((m) => m.useStudio);\n    const { mountPreviewUI, initiateIframeCommunication } = useStudio();\n    mountPreviewUI();\n    initiateIframeCommunication();\n  }\n  if (runtimeConfig.apiURL) {\n    if (Object.prototype.hasOwnProperty.call(route.query, \"preview\") && !route.query.preview) {\n      return;\n    }\n    if (!route.query.preview && !previewToken.value) {\n      return;\n    }\n    if (route.query.preview) {\n      previewToken.value = String(route.query.preview);\n    }\n    window.sessionStorage.setItem(\"previewToken\", String(previewToken.value));\n    nuxtApp.hook(\"content:storage\", (_storage) => {\n      storage.value = _storage;\n    });\n    nuxtApp.hook(\"app:mounted\", async () => {\n      await initializePreview();\n    });\n  }\n});\n",
-      "start": 1707500035547,
-      "end": 1707500035548,
+      "start": 1707665592424,
+      "end": 1707665592424,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -182,52 +182,52 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1707500035548,
-      "end": 1707500035549,
+      "start": 1707665592424,
+      "end": 1707665592425,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1707500035549,
-      "end": 1707500035549,
+      "start": 1707665592425,
+      "end": 1707665592425,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1707500035549,
-      "end": 1707500035549,
+      "start": 1707665592425,
+      "end": 1707665592425,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1707500035549,
-      "end": 1707500035549,
+      "start": 1707665592425,
+      "end": 1707665592425,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1707500035549,
-      "end": 1707500035549,
+      "start": 1707665592425,
+      "end": 1707665592425,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1707500035549,
-      "end": 1707500035549,
+      "start": 1707665592425,
+      "end": 1707665592425,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
       "result": "import { __vitePreload } from \"\u0000vite/preload-helper.js\";import { defineNuxtPlugin, useRuntimeConfig } from '#app/nuxt';\nimport { useCookie } from '#app/composables/cookie';\nimport { useRoute } from '#app/composables/router';\nimport { useState } from '#app/composables/state';\nexport default defineNuxtPlugin((nuxtApp) => {\n  const runtimeConfig = useRuntimeConfig().public.studio || {};\n  const route = useRoute();\n  const previewToken = useCookie(\"previewToken\", { sameSite: \"none\", secure: true });\n  const storage = useState(\"studio-client-db\", () => null);\n  async function initializePreview() {\n    const useStudio = await __vitePreload(() => import(\"../composables/useStudio.mjs\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then((m) => m.useStudio);\n    const { mountPreviewUI, initiateIframeCommunication } = useStudio();\n    mountPreviewUI();\n    initiateIframeCommunication();\n  }\n  if (runtimeConfig.apiURL) {\n    if (Object.prototype.hasOwnProperty.call(route.query, \"preview\") && !route.query.preview) {\n      return;\n    }\n    if (!route.query.preview && !previewToken.value) {\n      return;\n    }\n    if (route.query.preview) {\n      previewToken.value = String(route.query.preview);\n    }\n    window.sessionStorage.setItem(\"previewToken\", String(previewToken.value));\n    nuxtApp.hook(\"content:storage\", (_storage) => {\n      storage.value = _storage;\n    });\n    nuxtApp.hook(\"app:mounted\", async () => {\n      await initializePreview();\n    });\n  }\n});\n",
-      "start": 1707500035549,
-      "end": 1707500035549,
+      "start": 1707665592425,
+      "end": 1707665592426,
       "order": "normal",
       "sourcemaps": null
     },
     {
       "name": "vite:reporter",
-      "start": 1707500035549,
-      "end": 1707500035549,
+      "start": 1707665592426,
+      "end": 1707665592426,
       "order": "normal"
     }
   ]
