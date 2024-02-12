@@ -5,7 +5,7 @@ export default defineNuxtConfig({
 
   // Configuration for app, including the base URL
   app: {
-    baseURL: '/kubernetesbootcamp/',
+    baseURL: 'kubernetesbootcamp.netlify.app',
     buildAssetsDir: 'assets'
   },
 
