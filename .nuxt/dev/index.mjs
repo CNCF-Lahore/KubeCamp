@@ -75,8 +75,8 @@ const appConfig0 = defineAppConfig({
     footer: {
       credits: {
         icon: "",
-        text: "Made with \u2764\uFE0F by Adil Shahzad",
-        href: "linkedin.com/in/adilshehzad7/"
+        text: "Made with \u2764\uFE0Fby Adil Shahzad",
+        href: ""
       },
       textLinks: [],
       iconLinks: [],

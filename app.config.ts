@@ -29,8 +29,8 @@ export default defineAppConfig({
     footer: {
       credits: {
         icon: '',
-        text: 'Made with ❤️ by Adil Shahzad',
-        href: 'linkedin.com/in/adilshehzad7/'
+        text: 'Made with ❤️by Adil Shahzad',
+        href: ''
       },
       textLinks: [],
       iconLinks: [],
