@@ -4,51 +4,51 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, createTextVNode as _createTextVNode, Fragment as _Fragment, createCommentVNode as _createCommentVNode, normalizeClass as _normalizeClass, Transition as _Transition, withCtx as _withCtx, createVNode as _createVNode, toDisplayString as _toDisplayString, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-9c967cf1\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"svg\", {\n  viewBox: \"0 0 90 90\",\n  fill: \"none\",\n  xmlns: \"http://www.w3.org/2000/svg\"\n}, [\n  /*#__PURE__*/_createElementVNode(\"path\", {\n    d: \"M50.0016 71.0999h29.2561c.9293.0001 1.8422-.241 2.6469-.6992.8047-.4582 1.4729-1.1173 1.9373-1.9109.4645-.7936.7088-1.6939.7083-2.6102-.0004-.9162-.2455-1.8163-.7106-2.6095L64.192 29.713c-.4644-.7934-1.1325-1.4523-1.937-1.9105-.8046-.4581-1.7173-.6993-2.6463-.6993-.9291 0-1.8418.2412-2.6463.6993-.8046.4582-1.4726 1.1171-1.937 1.9105l-5.0238 8.5861-9.8224-16.7898c-.4648-.7934-1.1332-1.4522-1.938-1.9102-.8047-.4581-1.7176-.6992-2.6468-.6992-.9292 0-1.842.2411-2.6468.6992-.8048.458-1.4731 1.1168-1.9379 1.9102L6.56062 63.2701c-.46512.7932-.71021 1.6933-.71061 2.6095-.00041.9163.24389 1.8166.70831 2.6102.46443.7936 1.1326 1.4527 1.93732 1.9109.80473.4582 1.71766.6993 2.64686.6992h18.3646c7.2763 0 12.6422-3.1516 16.3345-9.3002l8.9642-15.3081 4.8015-8.1925 14.4099 24.6083H54.8058l-4.8042 8.1925ZM29.2077 62.899l-12.8161-.0028L35.603 30.0869l9.5857 16.4047-6.418 10.9645c-2.4521 3.9894-5.2377 5.4429-9.563 5.4429Z\",\n    fill: \"currentColor\"\n  })\n], -1))\nconst _hoisted_2 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"span\", null, [\n  /*#__PURE__*/_createElementVNode(\"a\", {\n    href: \"https://nuxt.studio\",\n    target: \"_blank\",\n    rel: \"noopener\"\n  }, \"Nuxt Studio\"),\n  /*#__PURE__*/_createTextVNode(\": Preview enabled\")\n], -1))\nconst _hoisted_3 = { key: 0 }\nconst _hoisted_4 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"div\", { id: \"__preview_background\" }, null, -1))\nconst _hoisted_5 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"svg\", {\n  id: \"__preview_loading_icon\",\n  width: \"32\",\n  height: \"32\",\n  viewBox: \"0 0 24 24\"\n}, [\n  /*#__PURE__*/_createElementVNode(\"path\", {\n    fill: \"none\",\n    stroke: \"currentColor\",\n    \"stroke-linecap\": \"round\",\n    \"stroke-linejoin\": \"round\",\n    \"stroke-width\": \"2\",\n    d: \"M4 4v5h.582m15.356 2A8.001 8.001 0 0 0 4.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 0 1-15.357-2m15.357 2H15\"\n  })\n], -1))\nconst _hoisted_6 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"p\", null, \"Initializing the preview...\", -1))\nconst _hoisted_7 = { key: 0 }\nconst _hoisted_8 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"div\", { id: \"__preview_background\" }, null, -1))\nconst _hoisted_9 = { id: \"__preview_loader\" }\n\nimport { onMounted, ref, onUnmounted, Transition } from 'vue'\nimport type { Socket } from 'socket.io-client'\nimport { useCookie, useRoute, useNuxtApp, useRouter } from '#app'\nimport type { PreviewResponse } from '../types'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'ContentPreviewMode',\n  props: {\n  previewToken: {\n    type: String,\n    required: true\n  },\n  apiURL: {\n    type: String,\n    required: true\n  },\n  syncPreview: {\n    type: Function,\n    required: true\n  },\n  requestPreviewSyncAPI: {\n    type: Function,\n    required: true\n  }\n},\n  setup(__props) {\n\nconst props = __props\n\nconst previewClasses = ['__nuxt_preview', '__preview_enabled']\n\nconst nuxtApp = useNuxtApp()\nconst router = useRouter()\nconst open = ref(true)\nconst refreshing = ref(false)\nconst previewReady = ref(false)\nconst error = ref('')\nlet socket: Socket\n\nconst closePreviewMode = async () => {\n  // Remove preview token from cookie and session storage\n  useCookie('previewToken').value = ''\n  window.sessionStorage.removeItem('previewToken')\n\n  // Remove query params in url to refresh page\n  await router.replace({ query: { preview: undefined } })\n\n  // Reload page to fully exit preview mode\n  window.location.reload()\n}\n\nconst sync = async (data: PreviewResponse) => {\n  const isUpdated = await props.syncPreview(data)\n\n  if (previewReady.value === true) {\n    // Preview already ready, no need to sync again\n    return\n  }\n\n  // If data is not updated, it means the storage is not ready yet and we should try again\n  if (!isUpdated) {\n    setTimeout(() => sync(data), 1000)\n    return\n  }\n\n  // Ensure that preview token is set in cookie\n  // This is needed for cases that user wants to exit preview mode before preview is ready\n  if (!useCookie('previewToken').value) {\n    return\n  }\n\n  previewReady.value = true\n  // Remove query params in url to refresh page (in case of 404 with no SPA fallback)\n  await router.replace({ query: {} })\n\n  // @ts-ignore\n  nuxtApp.callHook('nuxt-studio:preview:ready')\n\n  if (window.parent && window.self !== window.parent) {\n    socket.disconnect()\n  }\n}\n\nonMounted(async () => {\n  const io = await import('socket.io-client')\n  socket = io.connect(`${props.apiURL}/preview`, {\n    transports: ['websocket', 'polling'],\n    auth: {\n      token: props.previewToken\n    }\n  })\n\n  let syncTimeout: ReturnType<typeof setTimeout> | null\n  socket.on('connect', () => {\n    syncTimeout = setTimeout(() => {\n      if (!previewReady.value) {\n        syncTimeout = setTimeout(() => {\n          error.value = 'Preview sync timed out'\n          previewReady.value = false\n        }, 30000)\n\n        socket.emit('draft:requestSync')\n      }\n    }, 30000)\n  })\n\n  const clearSyncTimeout = () => {\n    if (syncTimeout) {\n      clearTimeout(syncTimeout)\n      syncTimeout = null\n    }\n  }\n\n  // Client should receive draft:sync event on connect\n  socket.on('draft:sync', async (data) => {\n    clearSyncTimeout()\n\n    // If no data is received, it means the draft is not ready yet\n    if (!data) {\n      // Call init to request draft sync via api\n      try {\n        // Wait for draft:ready and then request sync\n        socket.once('draft:ready', () => {\n          socket.emit('draft:requestSync')\n        })\n\n        await props.requestPreviewSyncAPI()\n      } catch (e: any) {\n        clearSyncTimeout()\n\n        switch (e.response.status) {\n          case 404:\n            error.value = 'Preview draft not found'\n            previewReady.value = false\n            break\n          default:\n            error.value = 'An error occurred while syncing preview'\n            previewReady.value = false\n        }\n      }\n      return\n    }\n\n    sync(data)\n  })\n\n  socket.on('draft:unauthorized', () => {\n    clearSyncTimeout()\n    error.value = 'Unauthorized preview token'\n    previewReady.value = false\n  })\n  socket.on('disconnect', () => {\n    clearSyncTimeout()\n  })\n\n  // Adds body classes for live preview\n  document.body.classList.add(...previewClasses)\n\n  socket.on('draft:update', (data) => {\n    refreshing.value = true\n    props.syncPreview(data)\n    refreshing.value = false\n  })\n})\n\n// Also cleans up body classes on unMounted\nonUnmounted(() => {\n  document.body.classList.remove(...previewClasses)\n})\n\nreturn (_ctx: any,_cache: any) => {\n  return (_openBlock(), _createElementBlock(\"div\", null, [\n    (open.value)\n      ? (_openBlock(), _createElementBlock(\"div\", {\n          key: 0,\n          id: \"__nuxt_preview\",\n          class: _normalizeClass({ __preview_ready: previewReady.value, __preview_refreshing: refreshing.value })\n        }, [\n          (previewReady.value)\n            ? (_openBlock(), _createElementBlock(_Fragment, { key: 0 }, [\n                _hoisted_1,\n                _hoisted_2,\n                _createElementVNode(\"button\", { onClick: closePreviewMode }, \" Close \")\n              ], 64))\n            : _createCommentVNode(\"\", true)\n        ], 2))\n      : _createCommentVNode(\"\", true),\n    _createVNode(_Transition, { name: \"preview-loading\" }, {\n      default: _withCtx(() => [\n        (open.value && !previewReady.value && !error.value)\n          ? (_openBlock(), _createElementBlock(\"div\", _hoisted_3, [\n              _hoisted_4,\n              _createElementVNode(\"div\", { id: \"__preview_loader\" }, [\n                _hoisted_5,\n                _hoisted_6,\n                _createElementVNode(\"button\", { onClick: closePreviewMode }, \" Cancel \")\n              ])\n            ]))\n          : _createCommentVNode(\"\", true)\n      ]),\n      _: 1\n    }),\n    _createVNode(_Transition, { name: \"preview-loading\" }, {\n      default: _withCtx(() => [\n        (error.value)\n          ? (_openBlock(), _createElementBlock(\"div\", _hoisted_7, [\n              _hoisted_8,\n              _createElementVNode(\"div\", _hoisted_9, [\n                _createElementVNode(\"p\", null, _toDisplayString(error.value), 1),\n                _createElementVNode(\"button\", { onClick: closePreviewMode }, \" Exit preview \")\n              ])\n            ]))\n          : _createCommentVNode(\"\", true)\n      ]),\n      _: 1\n    })\n  ]))\n}\n}\n\n})",
-      "start": 1707665597549,
-      "end": 1707665597549
+      "start": 1707990826661,
+      "end": 1707990826661
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1707665597549,
-      "end": 1707665597549,
+      "start": 1707990826661,
+      "end": 1707990826661,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1707665597549,
-      "end": 1707665597549,
+      "start": 1707990826661,
+      "end": 1707990826661,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, createTextVNode as _createTextVNode, Fragment as _Fragment, createCommentVNode as _createCommentVNode, normalizeClass as _normalizeClass, Transition as _Transition, withCtx as _withCtx, createVNode as _createVNode, toDisplayString as _toDisplayString, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-9c967cf1\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"svg\", {\n  viewBox: \"0 0 90 90\",\n  fill: \"none\",\n  xmlns: \"http://www.w3.org/2000/svg\"\n}, [\n  /*#__PURE__*/_createElementVNode(\"path\", {\n    d: \"M50.0016 71.0999h29.2561c.9293.0001 1.8422-.241 2.6469-.6992.8047-.4582 1.4729-1.1173 1.9373-1.9109.4645-.7936.7088-1.6939.7083-2.6102-.0004-.9162-.2455-1.8163-.7106-2.6095L64.192 29.713c-.4644-.7934-1.1325-1.4523-1.937-1.9105-.8046-.4581-1.7173-.6993-2.6463-.6993-.9291 0-1.8418.2412-2.6463.6993-.8046.4582-1.4726 1.1171-1.937 1.9105l-5.0238 8.5861-9.8224-16.7898c-.4648-.7934-1.1332-1.4522-1.938-1.9102-.8047-.4581-1.7176-.6992-2.6468-.6992-.9292 0-1.842.2411-2.6468.6992-.8048.458-1.4731 1.1168-1.9379 1.9102L6.56062 63.2701c-.46512.7932-.71021 1.6933-.71061 2.6095-.00041.9163.24389 1.8166.70831 2.6102.46443.7936 1.1326 1.4527 1.93732 1.9109.80473.4582 1.71766.6993 2.64686.6992h18.3646c7.2763 0 12.6422-3.1516 16.3345-9.3002l8.9642-15.3081 4.8015-8.1925 14.4099 24.6083H54.8058l-4.8042 8.1925ZM29.2077 62.899l-12.8161-.0028L35.603 30.0869l9.5857 16.4047-6.418 10.9645c-2.4521 3.9894-5.2377 5.4429-9.563 5.4429Z\",\n    fill: \"currentColor\"\n  })\n], -1))\nconst _hoisted_2 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"span\", null, [\n  /*#__PURE__*/_createElementVNode(\"a\", {\n    href: \"https://nuxt.studio\",\n    target: \"_blank\",\n    rel: \"noopener\"\n  }, \"Nuxt Studio\"),\n  /*#__PURE__*/_createTextVNode(\": Preview enabled\")\n], -1))\nconst _hoisted_3 = { key: 0 }\nconst _hoisted_4 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"div\", { id: \"__preview_background\" }, null, -1))\nconst _hoisted_5 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"svg\", {\n  id: \"__preview_loading_icon\",\n  width: \"32\",\n  height: \"32\",\n  viewBox: \"0 0 24 24\"\n}, [\n  /*#__PURE__*/_createElementVNode(\"path\", {\n    fill: \"none\",\n    stroke: \"currentColor\",\n    \"stroke-linecap\": \"round\",\n    \"stroke-linejoin\": \"round\",\n    \"stroke-width\": \"2\",\n    d: \"M4 4v5h.582m15.356 2A8.001 8.001 0 0 0 4.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 0 1-15.357-2m15.357 2H15\"\n  })\n], -1))\nconst _hoisted_6 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"p\", null, \"Initializing the preview...\", -1))\nconst _hoisted_7 = { key: 0 }\nconst _hoisted_8 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"div\", { id: \"__preview_background\" }, null, -1))\nconst _hoisted_9 = { id: \"__preview_loader\" }\n\nimport { onMounted, ref, onUnmounted, Transition } from 'vue'\nimport type { Socket } from 'socket.io-client'\nimport { useCookie, useRoute, useNuxtApp, useRouter } from '#app'\nimport type { PreviewResponse } from '../types'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'ContentPreviewMode',\n  props: {\n  previewToken: {\n    type: String,\n    required: true\n  },\n  apiURL: {\n    type: String,\n    required: true\n  },\n  syncPreview: {\n    type: Function,\n    required: true\n  },\n  requestPreviewSyncAPI: {\n    type: Function,\n    required: true\n  }\n},\n  setup(__props) {\n\nconst props = __props\n\nconst previewClasses = ['__nuxt_preview', '__preview_enabled']\n\nconst nuxtApp = useNuxtApp()\nconst router = useRouter()\nconst open = ref(true)\nconst refreshing = ref(false)\nconst previewReady = ref(false)\nconst error = ref('')\nlet socket: Socket\n\nconst closePreviewMode = async () => {\n  // Remove preview token from cookie and session storage\n  useCookie('previewToken').value = ''\n  window.sessionStorage.removeItem('previewToken')\n\n  // Remove query params in url to refresh page\n  await router.replace({ query: { preview: undefined } })\n\n  // Reload page to fully exit preview mode\n  window.location.reload()\n}\n\nconst sync = async (data: PreviewResponse) => {\n  const isUpdated = await props.syncPreview(data)\n\n  if (previewReady.value === true) {\n    // Preview already ready, no need to sync again\n    return\n  }\n\n  // If data is not updated, it means the storage is not ready yet and we should try again\n  if (!isUpdated) {\n    setTimeout(() => sync(data), 1000)\n    return\n  }\n\n  // Ensure that preview token is set in cookie\n  // This is needed for cases that user wants to exit preview mode before preview is ready\n  if (!useCookie('previewToken').value) {\n    return\n  }\n\n  previewReady.value = true\n  // Remove query params in url to refresh page (in case of 404 with no SPA fallback)\n  await router.replace({ query: {} })\n\n  // @ts-ignore\n  nuxtApp.callHook('nuxt-studio:preview:ready')\n\n  if (window.parent && window.self !== window.parent) {\n    socket.disconnect()\n  }\n}\n\nonMounted(async () => {\n  const io = await import('socket.io-client')\n  socket = io.connect(`${props.apiURL}/preview`, {\n    transports: ['websocket', 'polling'],\n    auth: {\n      token: props.previewToken\n    }\n  })\n\n  let syncTimeout: ReturnType<typeof setTimeout> | null\n  socket.on('connect', () => {\n    syncTimeout = setTimeout(() => {\n      if (!previewReady.value) {\n        syncTimeout = setTimeout(() => {\n          error.value = 'Preview sync timed out'\n          previewReady.value = false\n        }, 30000)\n\n        socket.emit('draft:requestSync')\n      }\n    }, 30000)\n  })\n\n  const clearSyncTimeout = () => {\n    if (syncTimeout) {\n      clearTimeout(syncTimeout)\n      syncTimeout = null\n    }\n  }\n\n  // Client should receive draft:sync event on connect\n  socket.on('draft:sync', async (data) => {\n    clearSyncTimeout()\n\n    // If no data is received, it means the draft is not ready yet\n    if (!data) {\n      // Call init to request draft sync via api\n      try {\n        // Wait for draft:ready and then request sync\n        socket.once('draft:ready', () => {\n          socket.emit('draft:requestSync')\n        })\n\n        await props.requestPreviewSyncAPI()\n      } catch (e: any) {\n        clearSyncTimeout()\n\n        switch (e.response.status) {\n          case 404:\n            error.value = 'Preview draft not found'\n            previewReady.value = false\n            break\n          default:\n            error.value = 'An error occurred while syncing preview'\n            previewReady.value = false\n        }\n      }\n      return\n    }\n\n    sync(data)\n  })\n\n  socket.on('draft:unauthorized', () => {\n    clearSyncTimeout()\n    error.value = 'Unauthorized preview token'\n    previewReady.value = false\n  })\n  socket.on('disconnect', () => {\n    clearSyncTimeout()\n  })\n\n  // Adds body classes for live preview\n  document.body.classList.add(...previewClasses)\n\n  socket.on('draft:update', (data) => {\n    refreshing.value = true\n    props.syncPreview(data)\n    refreshing.value = false\n  })\n})\n\n// Also cleans up body classes on unMounted\nonUnmounted(() => {\n  document.body.classList.remove(...previewClasses)\n})\n\nreturn (_ctx: any,_cache: any) => {\n  return (_openBlock(), _createElementBlock(\"div\", null, [\n    (open.value)\n      ? (_openBlock(), _createElementBlock(\"div\", {\n          key: 0,\n          id: \"__nuxt_preview\",\n          class: _normalizeClass({ __preview_ready: previewReady.value, __preview_refreshing: refreshing.value })\n        }, [\n          (previewReady.value)\n            ? (_openBlock(), _createElementBlock(_Fragment, { key: 0 }, [\n                _hoisted_1,\n                _hoisted_2,\n                _createElementVNode(\"button\", { onClick: closePreviewMode }, \" Close \")\n              ], 64))\n            : _createCommentVNode(\"\", true)\n        ], 2))\n      : _createCommentVNode(\"\", true),\n    _createVNode(_Transition, { name: \"preview-loading\" }, {\n      default: _withCtx(() => [\n        (open.value && !previewReady.value && !error.value)\n          ? (_openBlock(), _createElementBlock(\"div\", _hoisted_3, [\n              _hoisted_4,\n              _createElementVNode(\"div\", { id: \"__preview_loader\" }, [\n                _hoisted_5,\n                _hoisted_6,\n                _createElementVNode(\"button\", { onClick: closePreviewMode }, \" Cancel \")\n              ])\n            ]))\n          : _createCommentVNode(\"\", true)\n      ]),\n      _: 1\n    }),\n    _createVNode(_Transition, { name: \"preview-loading\" }, {\n      default: _withCtx(() => [\n        (error.value)\n          ? (_openBlock(), _createElementBlock(\"div\", _hoisted_7, [\n              _hoisted_8,\n              _createElementVNode(\"div\", _hoisted_9, [\n                _createElementVNode(\"p\", null, _toDisplayString(error.value), 1),\n                _createElementVNode(\"button\", { onClick: closePreviewMode }, \" Exit preview \")\n              ])\n            ]))\n          : _createCommentVNode(\"\", true)\n      ]),\n      _: 1\n    })\n  ]))\n}\n}\n\n})",
-      "start": 1707665597549,
-      "end": 1707665597549,
+      "start": 1707990826661,
+      "end": 1707990826661,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1707665597550,
-      "end": 1707665597550,
+      "start": 1707990826661,
+      "end": 1707990826661,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1707665597550,
-      "end": 1707665597550,
+      "start": 1707990826662,
+      "end": 1707990826662,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1707665597550,
-      "end": 1707665597550,
+      "start": 1707990826662,
+      "end": 1707990826662,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, createTextVNode as _createTextVNode, Fragment as _Fragment, createCommentVNode as _createCommentVNode, normalizeClass as _normalizeClass, Transition as _Transition, withCtx as _withCtx, createVNode as _createVNode, toDisplayString as _toDisplayString, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-9c967cf1\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"svg\", {\n  viewBox: \"0 0 90 90\",\n  fill: \"none\",\n  xmlns: \"http://www.w3.org/2000/svg\"\n}, [\n  /* @__PURE__ */ _createElementVNode(\"path\", {\n    d: \"M50.0016 71.0999h29.2561c.9293.0001 1.8422-.241 2.6469-.6992.8047-.4582 1.4729-1.1173 1.9373-1.9109.4645-.7936.7088-1.6939.7083-2.6102-.0004-.9162-.2455-1.8163-.7106-2.6095L64.192 29.713c-.4644-.7934-1.1325-1.4523-1.937-1.9105-.8046-.4581-1.7173-.6993-2.6463-.6993-.9291 0-1.8418.2412-2.6463.6993-.8046.4582-1.4726 1.1171-1.937 1.9105l-5.0238 8.5861-9.8224-16.7898c-.4648-.7934-1.1332-1.4522-1.938-1.9102-.8047-.4581-1.7176-.6992-2.6468-.6992-.9292 0-1.842.2411-2.6468.6992-.8048.458-1.4731 1.1168-1.9379 1.9102L6.56062 63.2701c-.46512.7932-.71021 1.6933-.71061 2.6095-.00041.9163.24389 1.8166.70831 2.6102.46443.7936 1.1326 1.4527 1.93732 1.9109.80473.4582 1.71766.6993 2.64686.6992h18.3646c7.2763 0 12.6422-3.1516 16.3345-9.3002l8.9642-15.3081 4.8015-8.1925 14.4099 24.6083H54.8058l-4.8042 8.1925ZM29.2077 62.899l-12.8161-.0028L35.603 30.0869l9.5857 16.4047-6.418 10.9645c-2.4521 3.9894-5.2377 5.4429-9.563 5.4429Z\",\n    fill: \"currentColor\"\n  })\n], -1));\nconst _hoisted_2 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"span\", null, [\n  /* @__PURE__ */ _createElementVNode(\"a\", {\n    href: \"https://nuxt.studio\",\n    target: \"_blank\",\n    rel: \"noopener\"\n  }, \"Nuxt Studio\"),\n  /* @__PURE__ */ _createTextVNode(\": Preview enabled\")\n], -1));\nconst _hoisted_3 = { key: 0 };\nconst _hoisted_4 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"div\", { id: \"__preview_background\" }, null, -1));\nconst _hoisted_5 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"svg\", {\n  id: \"__preview_loading_icon\",\n  width: \"32\",\n  height: \"32\",\n  viewBox: \"0 0 24 24\"\n}, [\n  /* @__PURE__ */ _createElementVNode(\"path\", {\n    fill: \"none\",\n    stroke: \"currentColor\",\n    \"stroke-linecap\": \"round\",\n    \"stroke-linejoin\": \"round\",\n    \"stroke-width\": \"2\",\n    d: \"M4 4v5h.582m15.356 2A8.001 8.001 0 0 0 4.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 0 1-15.357-2m15.357 2H15\"\n  })\n], -1));\nconst _hoisted_6 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"p\", null, \"Initializing the preview...\", -1));\nconst _hoisted_7 = { key: 0 };\nconst _hoisted_8 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"div\", { id: \"__preview_background\" }, null, -1));\nconst _hoisted_9 = { id: \"__preview_loader\" };\nimport { onMounted, ref, onUnmounted } from \"vue\";\nimport { useCookie, useNuxtApp, useRouter } from \"#app\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ContentPreviewMode\",\n  props: {\n    previewToken: {\n      type: String,\n      required: true\n    },\n    apiURL: {\n      type: String,\n      required: true\n    },\n    syncPreview: {\n      type: Function,\n      required: true\n    },\n    requestPreviewSyncAPI: {\n      type: Function,\n      required: true\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const previewClasses = [\"__nuxt_preview\", \"__preview_enabled\"];\n    const nuxtApp = useNuxtApp();\n    const router = useRouter();\n    const open = ref(true);\n    const refreshing = ref(false);\n    const previewReady = ref(false);\n    const error = ref(\"\");\n    let socket;\n    const closePreviewMode = async () => {\n      useCookie(\"previewToken\").value = \"\";\n      window.sessionStorage.removeItem(\"previewToken\");\n      await router.replace({ query: { preview: void 0 } });\n      window.location.reload();\n    };\n    const sync = async (data) => {\n      const isUpdated = await props.syncPreview(data);\n      if (previewReady.value === true) {\n        return;\n      }\n      if (!isUpdated) {\n        setTimeout(() => sync(data), 1e3);\n        return;\n      }\n      if (!useCookie(\"previewToken\").value) {\n        return;\n      }\n      previewReady.value = true;\n      await router.replace({ query: {} });\n      nuxtApp.callHook(\"nuxt-studio:preview:ready\");\n      if (window.parent && window.self !== window.parent) {\n        socket.disconnect();\n      }\n    };\n    onMounted(async () => {\n      const io = await import(\"socket.io-client\");\n      socket = io.connect(`${props.apiURL}/preview`, {\n        transports: [\"websocket\", \"polling\"],\n        auth: {\n          token: props.previewToken\n        }\n      });\n      let syncTimeout;\n      socket.on(\"connect\", () => {\n        syncTimeout = setTimeout(() => {\n          if (!previewReady.value) {\n            syncTimeout = setTimeout(() => {\n              error.value = \"Preview sync timed out\";\n              previewReady.value = false;\n            }, 3e4);\n            socket.emit(\"draft:requestSync\");\n          }\n        }, 3e4);\n      });\n      const clearSyncTimeout = () => {\n        if (syncTimeout) {\n          clearTimeout(syncTimeout);\n          syncTimeout = null;\n        }\n      };\n      socket.on(\"draft:sync\", async (data) => {\n        clearSyncTimeout();\n        if (!data) {\n          try {\n            socket.once(\"draft:ready\", () => {\n              socket.emit(\"draft:requestSync\");\n            });\n            await props.requestPreviewSyncAPI();\n          } catch (e) {\n            clearSyncTimeout();\n            switch (e.response.status) {\n              case 404:\n                error.value = \"Preview draft not found\";\n                previewReady.value = false;\n                break;\n              default:\n                error.value = \"An error occurred while syncing preview\";\n                previewReady.value = false;\n            }\n          }\n          return;\n        }\n        sync(data);\n      });\n      socket.on(\"draft:unauthorized\", () => {\n        clearSyncTimeout();\n        error.value = \"Unauthorized preview token\";\n        previewReady.value = false;\n      });\n      socket.on(\"disconnect\", () => {\n        clearSyncTimeout();\n      });\n      document.body.classList.add(...previewClasses);\n      socket.on(\"draft:update\", (data) => {\n        refreshing.value = true;\n        props.syncPreview(data);\n        refreshing.value = false;\n      });\n    });\n    onUnmounted(() => {\n      document.body.classList.remove(...previewClasses);\n    });\n    return (_ctx, _cache) => {\n      return _openBlock(), _createElementBlock(\"div\", null, [\n        open.value ? (_openBlock(), _createElementBlock(\"div\", {\n          key: 0,\n          id: \"__nuxt_preview\",\n          class: _normalizeClass({ __preview_ready: previewReady.value, __preview_refreshing: refreshing.value })\n        }, [\n          previewReady.value ? (_openBlock(), _createElementBlock(_Fragment, { key: 0 }, [\n            _hoisted_1,\n            _hoisted_2,\n            _createElementVNode(\"button\", { onClick: closePreviewMode }, \" Close \")\n          ], 64)) : _createCommentVNode(\"\", true)\n        ], 2)) : _createCommentVNode(\"\", true),\n        _createVNode(_Transition, { name: \"preview-loading\" }, {\n          default: _withCtx(() => [\n            open.value && !previewReady.value && !error.value ? (_openBlock(), _createElementBlock(\"div\", _hoisted_3, [\n              _hoisted_4,\n              _createElementVNode(\"div\", { id: \"__preview_loader\" }, [\n                _hoisted_5,\n                _hoisted_6,\n                _createElementVNode(\"button\", { onClick: closePreviewMode }, \" Cancel \")\n              ])\n            ])) : _createCommentVNode(\"\", true)\n          ]),\n          _: 1\n        }),\n        _createVNode(_Transition, { name: \"preview-loading\" }, {\n          default: _withCtx(() => [\n            error.value ? (_openBlock(), _createElementBlock(\"div\", _hoisted_7, [\n              _hoisted_8,\n              _createElementVNode(\"div\", _hoisted_9, [\n                _createElementVNode(\"p\", null, _toDisplayString(error.value), 1),\n                _createElementVNode(\"button\", { onClick: closePreviewMode }, \" Exit preview \")\n              ])\n            ])) : _createCommentVNode(\"\", true)\n          ]),\n          _: 1\n        })\n      ]);\n    };\n  }\n});\n",
-      "start": 1707665597550,
-      "end": 1707665597631,
+      "start": 1707990826662,
+      "end": 1707990826873,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -64,172 +64,172 @@
     },
     {
       "name": "vite:json",
-      "start": 1707665597631,
-      "end": 1707665597631,
+      "start": 1707990826873,
+      "end": 1707990826873,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1707665597631,
-      "end": 1707665597631,
+      "start": 1707990826874,
+      "end": 1707990826874,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1707665597631,
-      "end": 1707665597631,
+      "start": 1707990826874,
+      "end": 1707990826874,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1707665597631,
-      "end": 1707665597631,
+      "start": 1707990826874,
+      "end": 1707990826874,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1707665597631,
-      "end": 1707665597631,
+      "start": 1707990826874,
+      "end": 1707990826878,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1707665597631,
-      "end": 1707665597632,
+      "start": 1707990826878,
+      "end": 1707990826878,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1707665597632,
-      "end": 1707665597632,
+      "start": 1707990826878,
+      "end": 1707990826878,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1707665597632,
-      "end": 1707665597632,
+      "start": 1707990826878,
+      "end": 1707990826878,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1707665597632,
-      "end": 1707665597632,
+      "start": 1707990826878,
+      "end": 1707990826878,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1707665597632,
-      "end": 1707665597632,
+      "start": 1707990826878,
+      "end": 1707990826879,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1707665597632,
-      "end": 1707665597632,
+      "start": 1707990826879,
+      "end": 1707990826879,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1707665597633,
-      "end": 1707665597633,
+      "start": 1707990826879,
+      "end": 1707990826879,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1707665597633,
-      "end": 1707665597633,
+      "start": 1707990826879,
+      "end": 1707990826879,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1707665597633,
-      "end": 1707665597633,
+      "start": 1707990826879,
+      "end": 1707990826879,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1707665597633,
-      "end": 1707665597633,
+      "start": 1707990826879,
+      "end": 1707990826879,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1707665597633,
-      "end": 1707665597633,
+      "start": 1707990826879,
+      "end": 1707990826879,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1707665597633,
-      "end": 1707665597633,
+      "start": 1707990826879,
+      "end": 1707990826879,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1707665597633,
-      "end": 1707665597633,
+      "start": 1707990826879,
+      "end": 1707990826879,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1707665597633,
-      "end": 1707665597633,
+      "start": 1707990826879,
+      "end": 1707990826879,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1707665597633,
-      "end": 1707665597634,
+      "start": 1707990826879,
+      "end": 1707990826880,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1707665597635,
-      "end": 1707665597635,
+      "start": 1707990826880,
+      "end": 1707990826881,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1707665597635,
-      "end": 1707665597636,
+      "start": 1707990826881,
+      "end": 1707990826881,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1707665597636,
-      "end": 1707665597636,
+      "start": 1707990826881,
+      "end": 1707990826881,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1707665597636,
-      "end": 1707665597636,
+      "start": 1707990826881,
+      "end": 1707990826881,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1707665597636,
-      "end": 1707665597636,
+      "start": 1707990826881,
+      "end": 1707990826881,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1707665597636,
-      "end": 1707665597636,
+      "start": 1707990826882,
+      "end": 1707990826882,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
       "result": "import { __vitePreload } from \"\u0000vite/preload-helper.js\";import { defineComponent as _defineComponent } from \"vue\";\nimport { createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, createTextVNode as _createTextVNode, Fragment as _Fragment, createCommentVNode as _createCommentVNode, normalizeClass as _normalizeClass, Transition as _Transition, withCtx as _withCtx, createVNode as _createVNode, toDisplayString as _toDisplayString, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-9c967cf1\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"svg\", {\n  viewBox: \"0 0 90 90\",\n  fill: \"none\",\n  xmlns: \"http://www.w3.org/2000/svg\"\n}, [\n  /* @__PURE__ */ _createElementVNode(\"path\", {\n    d: \"M50.0016 71.0999h29.2561c.9293.0001 1.8422-.241 2.6469-.6992.8047-.4582 1.4729-1.1173 1.9373-1.9109.4645-.7936.7088-1.6939.7083-2.6102-.0004-.9162-.2455-1.8163-.7106-2.6095L64.192 29.713c-.4644-.7934-1.1325-1.4523-1.937-1.9105-.8046-.4581-1.7173-.6993-2.6463-.6993-.9291 0-1.8418.2412-2.6463.6993-.8046.4582-1.4726 1.1171-1.937 1.9105l-5.0238 8.5861-9.8224-16.7898c-.4648-.7934-1.1332-1.4522-1.938-1.9102-.8047-.4581-1.7176-.6992-2.6468-.6992-.9292 0-1.842.2411-2.6468.6992-.8048.458-1.4731 1.1168-1.9379 1.9102L6.56062 63.2701c-.46512.7932-.71021 1.6933-.71061 2.6095-.00041.9163.24389 1.8166.70831 2.6102.46443.7936 1.1326 1.4527 1.93732 1.9109.80473.4582 1.71766.6993 2.64686.6992h18.3646c7.2763 0 12.6422-3.1516 16.3345-9.3002l8.9642-15.3081 4.8015-8.1925 14.4099 24.6083H54.8058l-4.8042 8.1925ZM29.2077 62.899l-12.8161-.0028L35.603 30.0869l9.5857 16.4047-6.418 10.9645c-2.4521 3.9894-5.2377 5.4429-9.563 5.4429Z\",\n    fill: \"currentColor\"\n  })\n], -1));\nconst _hoisted_2 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"span\", null, [\n  /* @__PURE__ */ _createElementVNode(\"a\", {\n    href: \"https://nuxt.studio\",\n    target: \"_blank\",\n    rel: \"noopener\"\n  }, \"Nuxt Studio\"),\n  /* @__PURE__ */ _createTextVNode(\": Preview enabled\")\n], -1));\nconst _hoisted_3 = { key: 0 };\nconst _hoisted_4 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"div\", { id: \"__preview_background\" }, null, -1));\nconst _hoisted_5 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"svg\", {\n  id: \"__preview_loading_icon\",\n  width: \"32\",\n  height: \"32\",\n  viewBox: \"0 0 24 24\"\n}, [\n  /* @__PURE__ */ _createElementVNode(\"path\", {\n    fill: \"none\",\n    stroke: \"currentColor\",\n    \"stroke-linecap\": \"round\",\n    \"stroke-linejoin\": \"round\",\n    \"stroke-width\": \"2\",\n    d: \"M4 4v5h.582m15.356 2A8.001 8.001 0 0 0 4.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 0 1-15.357-2m15.357 2H15\"\n  })\n], -1));\nconst _hoisted_6 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"p\", null, \"Initializing the preview...\", -1));\nconst _hoisted_7 = { key: 0 };\nconst _hoisted_8 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"div\", { id: \"__preview_background\" }, null, -1));\nconst _hoisted_9 = { id: \"__preview_loader\" };\nimport { onMounted, ref, onUnmounted } from \"vue\";\nimport { useCookie, useNuxtApp, useRouter } from \"#app\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ContentPreviewMode\",\n  props: {\n    previewToken: {\n      type: String,\n      required: true\n    },\n    apiURL: {\n      type: String,\n      required: true\n    },\n    syncPreview: {\n      type: Function,\n      required: true\n    },\n    requestPreviewSyncAPI: {\n      type: Function,\n      required: true\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const previewClasses = [\"__nuxt_preview\", \"__preview_enabled\"];\n    const nuxtApp = useNuxtApp();\n    const router = useRouter();\n    const open = ref(true);\n    const refreshing = ref(false);\n    const previewReady = ref(false);\n    const error = ref(\"\");\n    let socket;\n    const closePreviewMode = async () => {\n      useCookie(\"previewToken\").value = \"\";\n      window.sessionStorage.removeItem(\"previewToken\");\n      await router.replace({ query: { preview: void 0 } });\n      window.location.reload();\n    };\n    const sync = async (data) => {\n      const isUpdated = await props.syncPreview(data);\n      if (previewReady.value === true) {\n        return;\n      }\n      if (!isUpdated) {\n        setTimeout(() => sync(data), 1e3);\n        return;\n      }\n      if (!useCookie(\"previewToken\").value) {\n        return;\n      }\n      previewReady.value = true;\n      await router.replace({ query: {} });\n      nuxtApp.callHook(\"nuxt-studio:preview:ready\");\n      if (window.parent && window.self !== window.parent) {\n        socket.disconnect();\n      }\n    };\n    onMounted(async () => {\n      const io = await __vitePreload(() => import(\"socket.io-client\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url);\n      socket = io.connect(`${props.apiURL}/preview`, {\n        transports: [\"websocket\", \"polling\"],\n        auth: {\n          token: props.previewToken\n        }\n      });\n      let syncTimeout;\n      socket.on(\"connect\", () => {\n        syncTimeout = setTimeout(() => {\n          if (!previewReady.value) {\n            syncTimeout = setTimeout(() => {\n              error.value = \"Preview sync timed out\";\n              previewReady.value = false;\n            }, 3e4);\n            socket.emit(\"draft:requestSync\");\n          }\n        }, 3e4);\n      });\n      const clearSyncTimeout = () => {\n        if (syncTimeout) {\n          clearTimeout(syncTimeout);\n          syncTimeout = null;\n        }\n      };\n      socket.on(\"draft:sync\", async (data) => {\n        clearSyncTimeout();\n        if (!data) {\n          try {\n            socket.once(\"draft:ready\", () => {\n              socket.emit(\"draft:requestSync\");\n            });\n            await props.requestPreviewSyncAPI();\n          } catch (e) {\n            clearSyncTimeout();\n            switch (e.response.status) {\n              case 404:\n                error.value = \"Preview draft not found\";\n                previewReady.value = false;\n                break;\n              default:\n                error.value = \"An error occurred while syncing preview\";\n                previewReady.value = false;\n            }\n          }\n          return;\n        }\n        sync(data);\n      });\n      socket.on(\"draft:unauthorized\", () => {\n        clearSyncTimeout();\n        error.value = \"Unauthorized preview token\";\n        previewReady.value = false;\n      });\n      socket.on(\"disconnect\", () => {\n        clearSyncTimeout();\n      });\n      document.body.classList.add(...previewClasses);\n      socket.on(\"draft:update\", (data) => {\n        refreshing.value = true;\n        props.syncPreview(data);\n        refreshing.value = false;\n      });\n    });\n    onUnmounted(() => {\n      document.body.classList.remove(...previewClasses);\n    });\n    return (_ctx, _cache) => {\n      return _openBlock(), _createElementBlock(\"div\", null, [\n        open.value ? (_openBlock(), _createElementBlock(\"div\", {\n          key: 0,\n          id: \"__nuxt_preview\",\n          class: _normalizeClass({ __preview_ready: previewReady.value, __preview_refreshing: refreshing.value })\n        }, [\n          previewReady.value ? (_openBlock(), _createElementBlock(_Fragment, { key: 0 }, [\n            _hoisted_1,\n            _hoisted_2,\n            _createElementVNode(\"button\", { onClick: closePreviewMode }, \" Close \")\n          ], 64)) : _createCommentVNode(\"\", true)\n        ], 2)) : _createCommentVNode(\"\", true),\n        _createVNode(_Transition, { name: \"preview-loading\" }, {\n          default: _withCtx(() => [\n            open.value && !previewReady.value && !error.value ? (_openBlock(), _createElementBlock(\"div\", _hoisted_3, [\n              _hoisted_4,\n              _createElementVNode(\"div\", { id: \"__preview_loader\" }, [\n                _hoisted_5,\n                _hoisted_6,\n                _createElementVNode(\"button\", { onClick: closePreviewMode }, \" Cancel \")\n              ])\n            ])) : _createCommentVNode(\"\", true)\n          ]),\n          _: 1\n        }),\n        _createVNode(_Transition, { name: \"preview-loading\" }, {\n          default: _withCtx(() => [\n            error.value ? (_openBlock(), _createElementBlock(\"div\", _hoisted_7, [\n              _hoisted_8,\n              _createElementVNode(\"div\", _hoisted_9, [\n                _createElementVNode(\"p\", null, _toDisplayString(error.value), 1),\n                _createElementVNode(\"button\", { onClick: closePreviewMode }, \" Exit preview \")\n              ])\n            ])) : _createCommentVNode(\"\", true)\n          ]),\n          _: 1\n        })\n      ]);\n    };\n  }\n});\n",
-      "start": 1707665597637,
-      "end": 1707665597637,
+      "start": 1707990826882,
+      "end": 1707990826882,
       "order": "normal",
       "sourcemaps": null
     },
     {
       "name": "vite:reporter",
-      "start": 1707665597637,
-      "end": 1707665597637,
+      "start": 1707990826882,
+      "end": 1707990826882,
       "order": "normal"
     }
   ]
