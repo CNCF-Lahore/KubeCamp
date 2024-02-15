@@ -5,7 +5,7 @@ const client_manifest = {
     "prefetch": true,
     "preload": true,
     "css": [],
-    "file": "error-404.-TC32hL_.js",
+    "file": "error-404.DmYg1P2h.js",
     "imports": [
       "../node_modules/nuxt/dist/app/entry.js"
     ],
@@ -24,7 +24,7 @@ const client_manifest = {
     "prefetch": true,
     "preload": true,
     "css": [],
-    "file": "error-500.pS0QiSvq.js",
+    "file": "error-500.XYyw6rvF.js",
     "imports": [
       "../node_modules/nuxt/dist/app/entry.js"
     ],
@@ -49,7 +49,7 @@ const client_manifest = {
       "../node_modules/@nuxt/ui-templates/dist/templates/error-404.vue",
       "../node_modules/@nuxt/ui-templates/dist/templates/error-500.vue"
     ],
-    "file": "entry.d-oRHOuI.js",
+    "file": "entry.UeabATjd.js",
     "isEntry": true,
     "src": "../node_modules/nuxt/dist/app/entry.js",
     "_globalCSS": true

@@ -4,51 +4,51 @@
     {
       "name": "vite:vue",
       "result": "\nimport TabsHeader from './TabsHeader.vue'\n\nconst isTag = (slot: any, tag: string) => {\n  return slot.type && slot.type.tag && slot.type.tag === tag\n}\n\nexport default defineComponent({\n  data () {\n    return {\n      activeTabIndex: 0,\n      /**\n       * A simple number that increases on every changes\n       */\n      counter: 0\n    }\n  },\n  render () {\n    const slots = this.$slots?.default?.() || []\n    const tabs = slots\n      .map((slot, index) => {\n        return {\n          label: slot?.props?.filename || slot?.props?.label || `${index}`,\n          active: slot?.props?.active || false,\n          component: slot\n        }\n      })\n\n    return h(\n      'div',\n      {\n        class: {\n          'code-group': true,\n          'first-tab': this.activeTabIndex === 0\n        }\n      },\n      [\n        h(TabsHeader, {\n          ref: 'tabs-header',\n          activeTabIndex: this.activeTabIndex,\n          tabs,\n          'onUpdate:activeTabIndex': $event => (this.activeTabIndex = $event)\n        }),\n        h(\n          'div',\n          {\n            class: 'code-group-content',\n            text: this.activeTabIndex\n          },\n          // Map slots to content children\n          slots.map((slot, index) =>\n            h(\n              'div',\n              {\n                // Current slot is displayed, others are hidden\n                style: {\n                  display: index === this.activeTabIndex ? 'block' : 'none'\n                },\n                class: {\n                  '': !isTag(slot, 'code') && !isTag(slot, 'pre')\n                }\n              },\n              // Display direct children if not a ```code``` block\n              [\n                isTag(slot, 'code') || isTag(slot, 'pre')\n                  ? slot\n                  : h(\n                    'div',\n                    {\n                      class: {\n                        'preview-canvas': true\n                      }\n                    },\n                    [(slot.children as any)?.default?.() || slot.children]\n                  )\n              ]\n            )\n          )\n        )\n      ]\n    )\n  }\n})\n",
-      "start": 1707665596525,
-      "end": 1707665596526
+      "start": 1707990825902,
+      "end": 1707990825902
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1707665596530,
-      "end": 1707665596531,
+      "start": 1707990825903,
+      "end": 1707990825903,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1707665596534,
-      "end": 1707665596534,
+      "start": 1707990825906,
+      "end": 1707990825906,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "\nimport TabsHeader from './TabsHeader.vue'\n\nconst isTag = (slot: any, tag: string) => {\n  return slot.type && slot.type.tag && slot.type.tag === tag\n}\n\nexport default defineComponent({\n  data () {\n    return {\n      activeTabIndex: 0,\n      /**\n       * A simple number that increases on every changes\n       */\n      counter: 0\n    }\n  },\n  render () {\n    const slots = this.$slots?.default?.() || []\n    const tabs = slots\n      .map((slot, index) => {\n        return {\n          label: slot?.props?.filename || slot?.props?.label || `${index}`,\n          active: slot?.props?.active || false,\n          component: slot\n        }\n      })\n\n    return h(\n      'div',\n      {\n        class: {\n          'code-group': true,\n          'first-tab': this.activeTabIndex === 0\n        }\n      },\n      [\n        h(TabsHeader, {\n          ref: 'tabs-header',\n          activeTabIndex: this.activeTabIndex,\n          tabs,\n          'onUpdate:activeTabIndex': $event => (this.activeTabIndex = $event)\n        }),\n        h(\n          'div',\n          {\n            class: 'code-group-content',\n            text: this.activeTabIndex\n          },\n          // Map slots to content children\n          slots.map((slot, index) =>\n            h(\n              'div',\n              {\n                // Current slot is displayed, others are hidden\n                style: {\n                  display: index === this.activeTabIndex ? 'block' : 'none'\n                },\n                class: {\n                  '': !isTag(slot, 'code') && !isTag(slot, 'pre')\n                }\n              },\n              // Display direct children if not a ```code``` block\n              [\n                isTag(slot, 'code') || isTag(slot, 'pre')\n                  ? slot\n                  : h(\n                    'div',\n                    {\n                      class: {\n                        'preview-canvas': true\n                      }\n                    },\n                    [(slot.children as any)?.default?.() || slot.children]\n                  )\n              ]\n            )\n          )\n        )\n      ]\n    )\n  }\n})\n",
-      "start": 1707665596543,
-      "end": 1707665596543,
+      "start": 1707990825906,
+      "end": 1707990825906,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1707665596543,
-      "end": 1707665596543,
+      "start": 1707990825906,
+      "end": 1707990825906,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1707665596543,
-      "end": 1707665596543,
+      "start": 1707990825907,
+      "end": 1707990825907,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1707665596543,
-      "end": 1707665596543,
+      "start": 1707990825907,
+      "end": 1707990825907,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import TabsHeader from \"./TabsHeader.vue\";\nconst isTag = (slot, tag) => {\n  return slot.type && slot.type.tag && slot.type.tag === tag;\n};\nexport default defineComponent({\n  data() {\n    return {\n      activeTabIndex: 0,\n      /**\n       * A simple number that increases on every changes\n       */\n      counter: 0\n    };\n  },\n  render() {\n    const slots = this.$slots?.default?.() || [];\n    const tabs = slots.map((slot, index) => {\n      return {\n        label: slot?.props?.filename || slot?.props?.label || `${index}`,\n        active: slot?.props?.active || false,\n        component: slot\n      };\n    });\n    return h(\n      \"div\",\n      {\n        class: {\n          \"code-group\": true,\n          \"first-tab\": this.activeTabIndex === 0\n        }\n      },\n      [\n        h(TabsHeader, {\n          ref: \"tabs-header\",\n          activeTabIndex: this.activeTabIndex,\n          tabs,\n          \"onUpdate:activeTabIndex\": ($event) => this.activeTabIndex = $event\n        }),\n        h(\n          \"div\",\n          {\n            class: \"code-group-content\",\n            text: this.activeTabIndex\n          },\n          // Map slots to content children\n          slots.map(\n            (slot, index) => h(\n              \"div\",\n              {\n                // Current slot is displayed, others are hidden\n                style: {\n                  display: index === this.activeTabIndex ? \"block\" : \"none\"\n                },\n                class: {\n                  \"\": !isTag(slot, \"code\") && !isTag(slot, \"pre\")\n                }\n              },\n              // Display direct children if not a ```code``` block\n              [\n                isTag(slot, \"code\") || isTag(slot, \"pre\") ? slot : h(\n                  \"div\",\n                  {\n                    class: {\n                      \"preview-canvas\": true\n                    }\n                  },\n                  [slot.children?.default?.() || slot.children]\n                )\n              ]\n            )\n          )\n        )\n      ]\n    );\n  }\n});\n",
-      "start": 1707665596544,
-      "end": 1707665597081,
+      "start": 1707990825907,
+      "end": 1707990826247,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -64,123 +64,123 @@
     },
     {
       "name": "vite:json",
-      "start": 1707665597082,
-      "end": 1707665597082,
+      "start": 1707990826247,
+      "end": 1707990826247,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1707665597082,
-      "end": 1707665597082,
+      "start": 1707990826248,
+      "end": 1707990826248,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1707665597082,
-      "end": 1707665597082,
+      "start": 1707990826248,
+      "end": 1707990826248,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1707665597082,
-      "end": 1707665597082,
+      "start": 1707990826248,
+      "end": 1707990826248,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1707665597082,
-      "end": 1707665597082,
+      "start": 1707990826248,
+      "end": 1707990826248,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1707665597082,
-      "end": 1707665597082,
+      "start": 1707990826249,
+      "end": 1707990826249,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1707665597082,
-      "end": 1707665597082,
+      "start": 1707990826249,
+      "end": 1707990826249,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1707665597083,
-      "end": 1707665597083,
+      "start": 1707990826249,
+      "end": 1707990826250,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1707665597083,
-      "end": 1707665597083,
+      "start": 1707990826250,
+      "end": 1707990826250,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1707665597083,
-      "end": 1707665597083,
+      "start": 1707990826250,
+      "end": 1707990826250,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1707665597083,
-      "end": 1707665597083,
+      "start": 1707990826250,
+      "end": 1707990826250,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1707665597083,
-      "end": 1707665597083,
+      "start": 1707990826250,
+      "end": 1707990826250,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1707665597083,
-      "end": 1707665597083,
+      "start": 1707990826250,
+      "end": 1707990826250,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1707665597083,
-      "end": 1707665597083,
+      "start": 1707990826251,
+      "end": 1707990826251,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1707665597083,
-      "end": 1707665597083,
+      "start": 1707990826251,
+      "end": 1707990826251,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1707665597083,
-      "end": 1707665597083,
+      "start": 1707990826251,
+      "end": 1707990826251,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1707665597084,
-      "end": 1707665597084,
+      "start": 1707990826251,
+      "end": 1707990826251,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1707665597084,
-      "end": 1707665597084,
+      "start": 1707990826251,
+      "end": 1707990826251,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1707665597084,
-      "end": 1707665597084,
+      "start": 1707990826251,
+      "end": 1707990826251,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { defineComponent, h } from 'vue';\nimport TabsHeader from \"./TabsHeader.vue\";\nconst isTag = (slot, tag) => {\n  return slot.type && slot.type.tag && slot.type.tag === tag;\n};\nexport default defineComponent({\n  data() {\n    return {\n      activeTabIndex: 0,\n      /**\n       * A simple number that increases on every changes\n       */\n      counter: 0\n    };\n  },\n  render() {\n    const slots = this.$slots?.default?.() || [];\n    const tabs = slots.map((slot, index) => {\n      return {\n        label: slot?.props?.filename || slot?.props?.label || `${index}`,\n        active: slot?.props?.active || false,\n        component: slot\n      };\n    });\n    return h(\n      \"div\",\n      {\n        class: {\n          \"code-group\": true,\n          \"first-tab\": this.activeTabIndex === 0\n        }\n      },\n      [\n        h(TabsHeader, {\n          ref: \"tabs-header\",\n          activeTabIndex: this.activeTabIndex,\n          tabs,\n          \"onUpdate:activeTabIndex\": ($event) => this.activeTabIndex = $event\n        }),\n        h(\n          \"div\",\n          {\n            class: \"code-group-content\",\n            text: this.activeTabIndex\n          },\n          // Map slots to content children\n          slots.map(\n            (slot, index) => h(\n              \"div\",\n              {\n                // Current slot is displayed, others are hidden\n                style: {\n                  display: index === this.activeTabIndex ? \"block\" : \"none\"\n                },\n                class: {\n                  \"\": !isTag(slot, \"code\") && !isTag(slot, \"pre\")\n                }\n              },\n              // Display direct children if not a ```code``` block\n              [\n                isTag(slot, \"code\") || isTag(slot, \"pre\") ? slot : h(\n                  \"div\",\n                  {\n                    class: {\n                      \"preview-canvas\": true\n                    }\n                  },\n                  [slot.children?.default?.() || slot.children]\n                )\n              ]\n            )\n          )\n        )\n      ]\n    );\n  }\n});\n",
-      "start": 1707665597084,
-      "end": 1707665597098,
+      "start": 1707990826251,
+      "end": 1707990826258,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -193,50 +193,50 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1707665597099,
-      "end": 1707665597099,
+      "start": 1707990826259,
+      "end": 1707990826259,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1707665597100,
-      "end": 1707665597100,
+      "start": 1707990826259,
+      "end": 1707990826259,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1707665597100,
-      "end": 1707665597100,
+      "start": 1707990826259,
+      "end": 1707990826259,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1707665597101,
-      "end": 1707665597101,
+      "start": 1707990826260,
+      "end": 1707990826260,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1707665597109,
-      "end": 1707665597109,
+      "start": 1707990826260,
+      "end": 1707990826260,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1707665597111,
-      "end": 1707665597111,
+      "start": 1707990826261,
+      "end": 1707990826261,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1707665597112,
-      "end": 1707665597112,
+      "start": 1707990826261,
+      "end": 1707990826261,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1707665597112,
-      "end": 1707665597112,
+      "start": 1707990826264,
+      "end": 1707990826264,
       "order": "normal"
     }
   ]

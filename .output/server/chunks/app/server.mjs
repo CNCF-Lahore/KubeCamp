@@ -840,22 +840,17 @@ const validate = /* @__PURE__ */ defineNuxtRouteMiddleware(async (to) => {
 const cfg0 = defineAppConfig({
   docus: {
     title: "Kubernetes Bootcamp",
-    description: "The best place to start your documentation.",
-    image: "https://user-images.githubusercontent.com/904724/185365452-87b7ca7b-6030-4813-a2db-5e65c785bf88.png",
+    description: "The Kubernetes Mastery Bootcamp is a comprehensive, free training program that offers in-depth knowledge and hands-on experience in deploying, managing, and scaling containerized applications using Kubernetes. Participants will benefit from workshops, access to a sandbox environment for practical exercises, and training from industry experts.",
+    image: "https://cncf-lahore.github.io/static/media/logo.07df0d71aa68491bbca25e45a62ac299.svg",
     socials: {
-      twitter: "nuxt_js",
-      github: "nuxt-themes/docus",
-      nuxt: {
-        label: "Nuxt",
-        icon: "simple-icons:nuxtdotjs",
-        href: "https://nuxt.com"
-      }
+      twitter: "cncflahore",
+      github: "CNCF-Lahore"
     },
     github: {
       dir: ".starters/default/content",
       branch: "main",
-      repo: "docus",
-      owner: "nuxt-themes",
+      repo: "Kubernetes-Bootcamp",
+      owner: "CNCF-Lahore",
       edit: true
     },
     aside: {
@@ -928,7 +923,7 @@ const cfg2 = defineAppConfig({
 const cfg3 = defineAppConfig({});
 const inlineConfig = {
   "nuxt": {
-    "buildId": "fee8104f-204c-41ab-ad8a-acee0684d9d4"
+    "buildId": "79f64cce-e655-425e-b89f-246e39c604c3"
   }
 };
 const __appConfig = /* @__PURE__ */ defuFn(cfg0, cfg1, cfg2, cfg3, inlineConfig);

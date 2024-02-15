@@ -46,22 +46,17 @@ const defineAppConfig = (config) => config;
 const appConfig0 = defineAppConfig({
   docus: {
     title: "Kubernetes Bootcamp",
-    description: "The best place to start your documentation.",
-    image: "https://user-images.githubusercontent.com/904724/185365452-87b7ca7b-6030-4813-a2db-5e65c785bf88.png",
+    description: "The Kubernetes Mastery Bootcamp is a comprehensive, free training program that offers in-depth knowledge and hands-on experience in deploying, managing, and scaling containerized applications using Kubernetes. Participants will benefit from workshops, access to a sandbox environment for practical exercises, and training from industry experts.",
+    image: "https://cncf-lahore.github.io/static/media/logo.07df0d71aa68491bbca25e45a62ac299.svg",
     socials: {
-      twitter: "nuxt_js",
-      github: "nuxt-themes/docus",
-      nuxt: {
-        label: "Nuxt",
-        icon: "simple-icons:nuxtdotjs",
-        href: "https://nuxt.com"
-      }
+      twitter: "cncflahore",
+      github: "CNCF-Lahore"
     },
     github: {
       dir: ".starters/default/content",
       branch: "main",
-      repo: "docus",
-      owner: "nuxt-themes",
+      repo: "Kubernetes-Bootcamp",
+      owner: "CNCF-Lahore",
       edit: true
     },
     aside: {
@@ -138,7 +133,7 @@ const appConfig3 = defineAppConfig({});
 
 const inlineAppConfig = {
   "nuxt": {
-    "buildId": "fee8104f-204c-41ab-ad8a-acee0684d9d4"
+    "buildId": "79f64cce-e655-425e-b89f-246e39c604c3"
   }
 };
 
@@ -233,7 +228,7 @@ const _inlineRuntimeConfig = {
     "content": {
       "locales": [],
       "defaultLocale": "",
-      "integrity": 1707665551979,
+      "integrity": 1707990813037,
       "experimental": {
         "stripQueryParameters": false,
         "advanceQuery": false,
@@ -11585,6 +11580,16 @@ const components = {
                                     ]
                                   }
                                 },
+                                "title": {
+                                  "name": "title",
+                                  "global": false,
+                                  "description": "",
+                                  "tags": [],
+                                  "required": false,
+                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
+                                  "declarations": [],
+                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
+                                },
                                 "_id": {
                                   "name": "_id",
                                   "global": false,
@@ -11607,16 +11612,6 @@ const components = {
                                 },
                                 "_path": {
                                   "name": "_path",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "title": {
-                                  "name": "title",
                                   "global": false,
                                   "description": "",
                                   "tags": [],
@@ -13482,6 +13477,16 @@ const components = {
                                     ]
                                   }
                                 },
+                                "title": {
+                                  "name": "title",
+                                  "global": false,
+                                  "description": "",
+                                  "tags": [],
+                                  "required": false,
+                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
+                                  "declarations": [],
+                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
+                                },
                                 "_id": {
                                   "name": "_id",
                                   "global": false,
@@ -13504,16 +13509,6 @@ const components = {
                                 },
                                 "_path": {
                                   "name": "_path",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "title": {
-                                  "name": "title",
                                   "global": false,
                                   "description": "",
                                   "tags": [],
@@ -14533,6 +14528,16 @@ const components = {
                                     ]
                                   }
                                 },
+                                "title": {
+                                  "name": "title",
+                                  "global": false,
+                                  "description": "",
+                                  "tags": [],
+                                  "required": false,
+                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
+                                  "declarations": [],
+                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
+                                },
                                 "_id": {
                                   "name": "_id",
                                   "global": false,
@@ -14555,16 +14560,6 @@ const components = {
                                 },
                                 "_path": {
                                   "name": "_path",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "title": {
-                                  "name": "title",
                                   "global": false,
                                   "description": "",
                                   "tags": [],
@@ -16373,6 +16368,16 @@ const components = {
                                     ]
                                   }
                                 },
+                                "title": {
+                                  "name": "title",
+                                  "global": false,
+                                  "description": "",
+                                  "tags": [],
+                                  "required": false,
+                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
+                                  "declarations": [],
+                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
+                                },
                                 "_id": {
                                   "name": "_id",
                                   "global": false,
@@ -16395,16 +16400,6 @@ const components = {
                                 },
                                 "_path": {
                                   "name": "_path",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "title": {
-                                  "name": "title",
                                   "global": false,
                                   "description": "",
                                   "tags": [],
@@ -17376,6 +17371,16 @@ const components = {
                                     ]
                                   }
                                 },
+                                "title": {
+                                  "name": "title",
+                                  "global": false,
+                                  "description": "",
+                                  "tags": [],
+                                  "required": false,
+                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
+                                  "declarations": [],
+                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
+                                },
                                 "_id": {
                                   "name": "_id",
                                   "global": false,
@@ -17398,16 +17403,6 @@ const components = {
                                 },
                                 "_path": {
                                   "name": "_path",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "title": {
-                                  "name": "title",
                                   "global": false,
                                   "description": "",
                                   "tags": [],
@@ -18573,6 +18568,16 @@ const components = {
                                     ]
                                   }
                                 },
+                                "title": {
+                                  "name": "title",
+                                  "global": false,
+                                  "description": "",
+                                  "tags": [],
+                                  "required": false,
+                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
+                                  "declarations": [],
+                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
+                                },
                                 "_id": {
                                   "name": "_id",
                                   "global": false,
@@ -18595,16 +18600,6 @@ const components = {
                                 },
                                 "_path": {
                                   "name": "_path",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "title": {
-                                  "name": "title",
                                   "global": false,
                                   "description": "",
                                   "tags": [],
@@ -25151,7 +25146,7 @@ const handlers = [
   { route: '/api/_content/query/:qid/**:params', handler: _rSvadi, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/query/:qid', handler: _rSvadi, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/query', handler: _rSvadi, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/cache.1707665551979.json', handler: _AD4g7o, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/cache.1707990813037.json', handler: _AD4g7o, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/navigation/:qid/**:params', handler: _QdE0th, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/navigation/:qid', handler: _QdE0th, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/navigation', handler: _QdE0th, lazy: false, middleware: false, method: "get" },

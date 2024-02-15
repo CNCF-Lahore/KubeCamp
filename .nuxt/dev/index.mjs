@@ -54,34 +54,39 @@ const defineAppConfig = (config) => config;
 
 const appConfig0 = defineAppConfig({
   docus: {
-    title: "Kubernetes Bootcamp",
-    description: "The best place to start your documentation.",
-    image: "https://user-images.githubusercontent.com/904724/185365452-87b7ca7b-6030-4813-a2db-5e65c785bf88.png",
-    socials: {
-      twitter: "cncf-lahore",
-      github: "cncf-lahore"
-    },
-    github: {
-      dir: ".starters/default/content",
-      branch: "main",
-      repo: "Kubernetes-Bootcamp",
-      owner: "adilshehzad786",
-      edit: true
+    title: "Kubernetes BootCamp",
+    description: "The best place to start your Kubernetes Journey",
+    url: "cncf-lahore.github.io/Kubernetes-Bootcamp",
+    image: "https://i.ibb.co/PGkhK2D/logo-07df0d71aa68491bbca25e45a62ac299.png",
+    socials: {},
+    layout: "default",
+    header: {
+      title: "",
+      logo: false,
+      showLinkIcon: false,
+      fluid: false,
+      exclude: []
     },
     aside: {
       level: 0,
       collapsed: false,
       exclude: []
     },
-    main: {
-      padded: true,
-      fluid: true
+    footer: {
+      credits: {
+        icon: "",
+        text: "Made with \u2764\uFE0F by Adil Shahzad",
+        href: "linkedin.com/in/adilshehzad7/"
+      },
+      textLinks: [],
+      iconLinks: [],
+      fluid: false
     },
-    header: {
-      logo: true,
-      showLinkIcon: true,
-      exclude: [],
-      fluid: true
+    github: {
+      branch: "main",
+      repo: "/Kubernetes-Bootcamp/",
+      owner: "CNCF-Lahore",
+      edit: true
     }
   }
 });
