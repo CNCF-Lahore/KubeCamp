@@ -76,7 +76,7 @@ const appConfig0 = defineAppConfig({
       credits: {
         icon: "",
         text: "Made with \u2764\uFE0Fby Adil Shahzad",
-        href: ""
+        href: "https://www.linkedin.com/in/adilshehzad7/"
       },
       textLinks: [],
       iconLinks: [],
@@ -86,7 +86,7 @@ const appConfig0 = defineAppConfig({
       branch: "main",
       repo: "/Kubernetes-Bootcamp/",
       owner: "CNCF-Lahore",
-      edit: true
+      edit: false
     }
   }
 });

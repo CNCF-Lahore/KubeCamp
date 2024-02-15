@@ -30,7 +30,7 @@ export default defineAppConfig({
       credits: {
         icon: '',
         text: 'Made with ❤️by Adil Shahzad',
-        href: ''
+        href: 'https://www.linkedin.com/in/adilshehzad7/'
       },
       textLinks: [],
       iconLinks: [],
@@ -41,7 +41,7 @@ export default defineAppConfig({
       branch: 'main',
       repo: '/Kubernetes-Bootcamp/',
       owner: 'CNCF-Lahore',
-      edit: true
+      edit: false
     },
   }
 })
