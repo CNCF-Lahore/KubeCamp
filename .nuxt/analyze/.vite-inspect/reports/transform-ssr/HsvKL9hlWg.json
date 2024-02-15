@@ -4,77 +4,77 @@
     {
       "name": "vite:load-fallback",
       "result": "import type { Ref } from 'vue'\n\n/**\n * Scrollspy allows you to watch visible headings in a specific page.\n * Useful for table of contents live style updates.\n */\nexport const useScrollspy = () => {\n  const observer = ref() as Ref<IntersectionObserver>\n  const visibleHeadings = ref([]) as Ref<string[]>\n  const activeHeadings = ref([]) as Ref<string[]>\n\n  const observerCallback = (entries: IntersectionObserverEntry[]) =>\n    entries.forEach((entry) => {\n      const id = entry.target.id\n\n      if (entry.isIntersecting) { visibleHeadings.value.push(id) } else { visibleHeadings.value = visibleHeadings.value.filter(t => t !== id) }\n    })\n\n  const updateHeadings = (headings: Element[]) =>\n    headings.forEach((heading) => {\n      observer.value.observe(heading)\n    })\n\n  watch(visibleHeadings, (val, oldVal) => {\n    if (val.length === 0) { activeHeadings.value = oldVal } else { activeHeadings.value = val }\n  }, { deep: true })\n\n  // Create intersection observer\n  onBeforeMount(() => (observer.value = new IntersectionObserver(observerCallback)))\n\n  // Destroy it\n  onBeforeUnmount(() => observer.value?.disconnect())\n\n  return {\n    visibleHeadings,\n    activeHeadings,\n    updateHeadings\n  }\n}\n",
-      "start": 1707665604414,
-      "end": 1707665604657,
+      "start": 1707990832748,
+      "end": 1707990832957,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1707665604657,
-      "end": 1707665604657,
+      "start": 1707990832957,
+      "end": 1707990832957,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1707665604657,
-      "end": 1707665604657,
+      "start": 1707990832957,
+      "end": 1707990832957,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1707665604657,
-      "end": 1707665604657,
+      "start": 1707990832957,
+      "end": 1707990832957,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1707665604657,
-      "end": 1707665604657,
+      "start": 1707990832957,
+      "end": 1707990832957,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import type { Ref } from 'vue'\n\n/**\n * Scrollspy allows you to watch visible headings in a specific page.\n * Useful for table of contents live style updates.\n */\nexport const useScrollspy = () => {\n  const observer = ref() as Ref<IntersectionObserver>\n  const visibleHeadings = ref([]) as Ref<string[]>\n  const activeHeadings = ref([]) as Ref<string[]>\n\n  const observerCallback = (entries: IntersectionObserverEntry[]) =>\n    entries.forEach((entry) => {\n      const id = entry.target.id\n\n      if (entry.isIntersecting) { visibleHeadings.value.push(id) } else { visibleHeadings.value = visibleHeadings.value.filter(t => t !== id) }\n    })\n\n  const updateHeadings = (headings: Element[]) =>\n    headings.forEach((heading) => {\n      observer.value.observe(heading)\n    })\n\n  watch(visibleHeadings, (val, oldVal) => {\n    if (val.length === 0) { activeHeadings.value = oldVal } else { activeHeadings.value = val }\n  }, { deep: true })\n\n  // Create intersection observer\n  onBeforeMount(() => (observer.value = new IntersectionObserver(observerCallback)))\n\n  // Destroy it\n  onBeforeUnmount(() => observer.value?.disconnect())\n\n  return {\n    visibleHeadings,\n    activeHeadings,\n    updateHeadings\n  }\n}\n",
-      "start": 1707665604657,
-      "end": 1707665604657,
+      "start": 1707990832957,
+      "end": 1707990832957,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import type { Ref } from 'vue'\n\n/**\n * Scrollspy allows you to watch visible headings in a specific page.\n * Useful for table of contents live style updates.\n */\nexport const useScrollspy = () => {\n  const observer = ref() as Ref<IntersectionObserver>\n  const visibleHeadings = ref([]) as Ref<string[]>\n  const activeHeadings = ref([]) as Ref<string[]>\n\n  const observerCallback = (entries: IntersectionObserverEntry[]) =>\n    entries.forEach((entry) => {\n      const id = entry.target.id\n\n      if (entry.isIntersecting) { visibleHeadings.value.push(id) } else { visibleHeadings.value = visibleHeadings.value.filter(t => t !== id) }\n    })\n\n  const updateHeadings = (headings: Element[]) =>\n    headings.forEach((heading) => {\n      observer.value.observe(heading)\n    })\n\n  watch(visibleHeadings, (val, oldVal) => {\n    if (val.length === 0) { activeHeadings.value = oldVal } else { activeHeadings.value = val }\n  }, { deep: true })\n\n  // Create intersection observer\n  onBeforeMount(() => (observer.value = new IntersectionObserver(observerCallback)))\n\n  // Destroy it\n  onBeforeUnmount(() => observer.value?.disconnect())\n\n  return {\n    visibleHeadings,\n    activeHeadings,\n    updateHeadings\n  }\n}\n",
-      "start": 1707665604657,
-      "end": 1707665604657,
+      "start": 1707990832957,
+      "end": 1707990832957,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1707665604657,
-      "end": 1707665604657,
+      "start": 1707990832957,
+      "end": 1707990832957,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1707665604657,
-      "end": 1707665604657,
+      "start": 1707990832957,
+      "end": 1707990832957,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1707665604657,
-      "end": 1707665604657,
+      "start": 1707990832957,
+      "end": 1707990832957,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1707665604657,
-      "end": 1707665604657,
+      "start": 1707990832957,
+      "end": 1707990832957,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "export const useScrollspy = () => {\n  const observer = ref();\n  const visibleHeadings = ref([]);\n  const activeHeadings = ref([]);\n  const observerCallback = (entries) => entries.forEach((entry) => {\n    const id = entry.target.id;\n    if (entry.isIntersecting) {\n      visibleHeadings.value.push(id);\n    } else {\n      visibleHeadings.value = visibleHeadings.value.filter((t) => t !== id);\n    }\n  });\n  const updateHeadings = (headings) => headings.forEach((heading) => {\n    observer.value.observe(heading);\n  });\n  watch(visibleHeadings, (val, oldVal) => {\n    if (val.length === 0) {\n      activeHeadings.value = oldVal;\n    } else {\n      activeHeadings.value = val;\n    }\n  }, { deep: true });\n  onBeforeMount(() => observer.value = new IntersectionObserver(observerCallback));\n  onBeforeUnmount(() => observer.value?.disconnect());\n  return {\n    visibleHeadings,\n    activeHeadings,\n    updateHeadings\n  };\n};\n",
-      "start": 1707665604657,
-      "end": 1707665604730,
+      "start": 1707990832957,
+      "end": 1707990832976,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -90,135 +90,135 @@
     },
     {
       "name": "vite:json",
-      "start": 1707665604730,
-      "end": 1707665604730,
+      "start": 1707990832976,
+      "end": 1707990832976,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1707665604730,
-      "end": 1707665604730,
+      "start": 1707990832976,
+      "end": 1707990832976,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1707665604731,
-      "end": 1707665604731,
+      "start": 1707990832976,
+      "end": 1707990832976,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1707665604731,
-      "end": 1707665604731,
+      "start": 1707990832976,
+      "end": 1707990832976,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1707665604731,
-      "end": 1707665604731,
+      "start": 1707990832976,
+      "end": 1707990832976,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1707665604731,
-      "end": 1707665604731,
+      "start": 1707990832976,
+      "end": 1707990832976,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1707665604731,
-      "end": 1707665604731,
+      "start": 1707990832977,
+      "end": 1707990832977,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1707665604731,
-      "end": 1707665604731,
+      "start": 1707990832977,
+      "end": 1707990832977,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1707665604731,
-      "end": 1707665604731,
+      "start": 1707990832977,
+      "end": 1707990832977,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1707665604731,
-      "end": 1707665604731,
+      "start": 1707990832977,
+      "end": 1707990832977,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1707665604731,
-      "end": 1707665604731,
+      "start": 1707990832977,
+      "end": 1707990832977,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1707665604731,
-      "end": 1707665604731,
+      "start": 1707990832977,
+      "end": 1707990832977,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1707665604731,
-      "end": 1707665604731,
+      "start": 1707990832977,
+      "end": 1707990832977,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1707665604731,
-      "end": 1707665604731,
+      "start": 1707990832978,
+      "end": 1707990832978,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1707665604731,
-      "end": 1707665604731,
+      "start": 1707990832978,
+      "end": 1707990832978,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1707665604731,
-      "end": 1707665604731,
+      "start": 1707990832978,
+      "end": 1707990832978,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1707665604731,
-      "end": 1707665604731,
+      "start": 1707990832978,
+      "end": 1707990832978,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1707665604731,
-      "end": 1707665604731,
+      "start": 1707990832978,
+      "end": 1707990832978,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1707665604731,
-      "end": 1707665604731,
+      "start": 1707990832979,
+      "end": 1707990832979,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1707665604731,
-      "end": 1707665604731,
+      "start": 1707990832980,
+      "end": 1707990832980,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1707665604731,
-      "end": 1707665604731,
+      "start": 1707990832980,
+      "end": 1707990832980,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { ref, watch, onBeforeMount, onBeforeUnmount } from 'vue';\nexport const useScrollspy = () => {\n  const observer = ref();\n  const visibleHeadings = ref([]);\n  const activeHeadings = ref([]);\n  const observerCallback = (entries) => entries.forEach((entry) => {\n    const id = entry.target.id;\n    if (entry.isIntersecting) {\n      visibleHeadings.value.push(id);\n    } else {\n      visibleHeadings.value = visibleHeadings.value.filter((t) => t !== id);\n    }\n  });\n  const updateHeadings = (headings) => headings.forEach((heading) => {\n    observer.value.observe(heading);\n  });\n  watch(visibleHeadings, (val, oldVal) => {\n    if (val.length === 0) {\n      activeHeadings.value = oldVal;\n    } else {\n      activeHeadings.value = val;\n    }\n  }, { deep: true });\n  onBeforeMount(() => observer.value = new IntersectionObserver(observerCallback));\n  onBeforeUnmount(() => observer.value?.disconnect());\n  return {\n    visibleHeadings,\n    activeHeadings,\n    updateHeadings\n  };\n};\n",
-      "start": 1707665604731,
-      "end": 1707665604732,
+      "start": 1707990832981,
+      "end": 1707990832983,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -232,8 +232,8 @@
     {
       "name": "nuxt:imports-transform",
       "result": "import { ref, watch, onBeforeMount, onBeforeUnmount } from 'vue';\nexport const useScrollspy = () => {\n  const observer = ref();\n  const visibleHeadings = ref([]);\n  const activeHeadings = ref([]);\n  const observerCallback = (entries) => entries.forEach((entry) => {\n    const id = entry.target.id;\n    if (entry.isIntersecting) {\n      visibleHeadings.value.push(id);\n    } else {\n      visibleHeadings.value = visibleHeadings.value.filter((t) => t !== id);\n    }\n  });\n  const updateHeadings = (headings) => headings.forEach((heading) => {\n    observer.value.observe(heading);\n  });\n  watch(visibleHeadings, (val, oldVal) => {\n    if (val.length === 0) {\n      activeHeadings.value = oldVal;\n    } else {\n      activeHeadings.value = val;\n    }\n  }, { deep: true });\n  onBeforeMount(() => observer.value = new IntersectionObserver(observerCallback));\n  onBeforeUnmount(() => observer.value?.disconnect());\n  return {\n    visibleHeadings,\n    activeHeadings,\n    updateHeadings\n  };\n};\n",
-      "start": 1707665604731,
-      "end": 1707665604732,
+      "start": 1707990832981,
+      "end": 1707990832983,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -246,45 +246,45 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1707665604732,
-      "end": 1707665604732,
+      "start": 1707990832983,
+      "end": 1707990832983,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1707665604732,
-      "end": 1707665604732,
+      "start": 1707990832983,
+      "end": 1707990832983,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1707665604732,
-      "end": 1707665604732,
+      "start": 1707990832983,
+      "end": 1707990832983,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1707665604732,
-      "end": 1707665604732,
+      "start": 1707990832983,
+      "end": 1707990832983,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1707665604732,
-      "end": 1707665604732,
+      "start": 1707990832984,
+      "end": 1707990832984,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1707665604732,
-      "end": 1707665604732,
+      "start": 1707990832984,
+      "end": 1707990832984,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
       "result": "import { ref, watch, onBeforeMount, onBeforeUnmount } from 'vue';\nexport const useScrollspy = () => {\n  const observer = ref();\n  const visibleHeadings = ref([]);\n  const activeHeadings = ref([]);\n  const observerCallback = (entries) => entries.forEach((entry) => {\n    const id = entry.target.id;\n    if (entry.isIntersecting) {\n      visibleHeadings.value.push(id);\n    } else {\n      visibleHeadings.value = visibleHeadings.value.filter((t) => t !== id);\n    }\n  });\n  const updateHeadings = (headings) => headings.forEach((heading) => {\n    observer.value.observe(heading);\n  });\n  watch(visibleHeadings, (val, oldVal) => {\n    if (val.length === 0) {\n      activeHeadings.value = oldVal;\n    } else {\n      activeHeadings.value = val;\n    }\n  }, { deep: true });\n   false && /*@__PURE__*/ onBeforeMount(() => observer.value = new IntersectionObserver(observerCallback));\n   false && /*@__PURE__*/ onBeforeUnmount(() => observer.value?.disconnect());\n  return {\n    visibleHeadings,\n    activeHeadings,\n    updateHeadings\n  };\n};\n",
-      "start": 1707665604732,
-      "end": 1707665604732,
+      "start": 1707990832984,
+      "end": 1707990832985,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -297,14 +297,14 @@
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1707665604732,
-      "end": 1707665604732,
+      "start": 1707990832985,
+      "end": 1707990832985,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1707665604732,
-      "end": 1707665604733,
+      "start": 1707990832985,
+      "end": 1707990832985,
       "order": "normal"
     }
   ]

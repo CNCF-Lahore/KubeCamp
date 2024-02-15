@@ -4,270 +4,270 @@
     {
       "name": "virtual",
       "result": "import unhead_KgADcZ0jPj from \"/workspace/Kubernetes-Bootcamp/node_modules/nuxt/dist/head/runtime/plugins/unhead.js\";\nimport router_jmwsqit4Rs from \"/workspace/Kubernetes-Bootcamp/node_modules/nuxt/dist/pages/runtime/plugins/router.js\";\nimport revive_payload_server_eJ33V7gbc6 from \"/workspace/Kubernetes-Bootcamp/node_modules/nuxt/dist/app/plugins/revive-payload.server.js\";\nimport components_plugin_KR1HBZs4kY from \"/workspace/Kubernetes-Bootcamp/.nuxt/components.plugin.mjs\";\nimport documentDriven_cMiI6j6ghD from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/legacy/plugins/documentDriven.js\";\nimport pinceau_nuxt_plugin_server_KEuz79zT4K from \"/workspace/Kubernetes-Bootcamp/.nuxt/pinceau-nuxt-plugin.server.mjs\";\nimport schema_server_zIxGbBm233 from \"/workspace/Kubernetes-Bootcamp/node_modules/pinceau/dist/runtime/schema.server.mjs\";\nimport plugin_server_XNCxeHyTuP from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/color-mode/dist/runtime/plugin.server.mjs\";\nimport menu_13PGuw7IWk from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/plugins/menu.ts\";\nexport default [\n  unhead_KgADcZ0jPj,\n  router_jmwsqit4Rs,\n  revive_payload_server_eJ33V7gbc6,\n  components_plugin_KR1HBZs4kY,\n  documentDriven_cMiI6j6ghD,\n  pinceau_nuxt_plugin_server_KEuz79zT4K,\n  schema_server_zIxGbBm233,\n  plugin_server_XNCxeHyTuP,\n  menu_13PGuw7IWk\n]",
-      "start": 1707665601169,
-      "end": 1707665601169,
+      "start": 1707990830142,
+      "end": 1707990830142,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1707665601169,
-      "end": 1707665601169,
+      "start": 1707990830143,
+      "end": 1707990830143,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1707665601169,
-      "end": 1707665601169,
+      "start": 1707990830143,
+      "end": 1707990830143,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1707665601169,
-      "end": 1707665601169,
+      "start": 1707990830143,
+      "end": 1707990830143,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1707665601169,
-      "end": 1707665601169,
+      "start": 1707990830143,
+      "end": 1707990830143,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import unhead_KgADcZ0jPj from \"/workspace/Kubernetes-Bootcamp/node_modules/nuxt/dist/head/runtime/plugins/unhead.js\";\nimport router_jmwsqit4Rs from \"/workspace/Kubernetes-Bootcamp/node_modules/nuxt/dist/pages/runtime/plugins/router.js\";\nimport revive_payload_server_eJ33V7gbc6 from \"/workspace/Kubernetes-Bootcamp/node_modules/nuxt/dist/app/plugins/revive-payload.server.js\";\nimport components_plugin_KR1HBZs4kY from \"/workspace/Kubernetes-Bootcamp/.nuxt/components.plugin.mjs\";\nimport documentDriven_cMiI6j6ghD from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/legacy/plugins/documentDriven.js\";\nimport pinceau_nuxt_plugin_server_KEuz79zT4K from \"/workspace/Kubernetes-Bootcamp/.nuxt/pinceau-nuxt-plugin.server.mjs\";\nimport schema_server_zIxGbBm233 from \"/workspace/Kubernetes-Bootcamp/node_modules/pinceau/dist/runtime/schema.server.mjs\";\nimport plugin_server_XNCxeHyTuP from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/color-mode/dist/runtime/plugin.server.mjs\";\nimport menu_13PGuw7IWk from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/plugins/menu.ts\";\nexport default [\n  unhead_KgADcZ0jPj,\n  router_jmwsqit4Rs,\n  revive_payload_server_eJ33V7gbc6,\n  components_plugin_KR1HBZs4kY,\n  documentDriven_cMiI6j6ghD,\n  pinceau_nuxt_plugin_server_KEuz79zT4K,\n  schema_server_zIxGbBm233,\n  plugin_server_XNCxeHyTuP,\n  menu_13PGuw7IWk\n]",
-      "start": 1707665601170,
-      "end": 1707665601170,
+      "start": 1707990830143,
+      "end": 1707990830143,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import unhead_KgADcZ0jPj from \"/workspace/Kubernetes-Bootcamp/node_modules/nuxt/dist/head/runtime/plugins/unhead.js\";\nimport router_jmwsqit4Rs from \"/workspace/Kubernetes-Bootcamp/node_modules/nuxt/dist/pages/runtime/plugins/router.js\";\nimport revive_payload_server_eJ33V7gbc6 from \"/workspace/Kubernetes-Bootcamp/node_modules/nuxt/dist/app/plugins/revive-payload.server.js\";\nimport components_plugin_KR1HBZs4kY from \"/workspace/Kubernetes-Bootcamp/.nuxt/components.plugin.mjs\";\nimport documentDriven_cMiI6j6ghD from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/legacy/plugins/documentDriven.js\";\nimport pinceau_nuxt_plugin_server_KEuz79zT4K from \"/workspace/Kubernetes-Bootcamp/.nuxt/pinceau-nuxt-plugin.server.mjs\";\nimport schema_server_zIxGbBm233 from \"/workspace/Kubernetes-Bootcamp/node_modules/pinceau/dist/runtime/schema.server.mjs\";\nimport plugin_server_XNCxeHyTuP from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/color-mode/dist/runtime/plugin.server.mjs\";\nimport menu_13PGuw7IWk from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/plugins/menu.ts\";\nexport default [\n  unhead_KgADcZ0jPj,\n  router_jmwsqit4Rs,\n  revive_payload_server_eJ33V7gbc6,\n  components_plugin_KR1HBZs4kY,\n  documentDriven_cMiI6j6ghD,\n  pinceau_nuxt_plugin_server_KEuz79zT4K,\n  schema_server_zIxGbBm233,\n  plugin_server_XNCxeHyTuP,\n  menu_13PGuw7IWk\n]",
-      "start": 1707665601170,
-      "end": 1707665601170,
+      "start": 1707990830143,
+      "end": 1707990830143,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1707665601170,
-      "end": 1707665601170,
+      "start": 1707990830143,
+      "end": 1707990830143,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1707665601170,
-      "end": 1707665601170,
+      "start": 1707990830143,
+      "end": 1707990830143,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1707665601170,
-      "end": 1707665601170,
+      "start": 1707990830143,
+      "end": 1707990830143,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1707665601170,
-      "end": 1707665601170,
+      "start": 1707990830143,
+      "end": 1707990830143,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1707665601170,
-      "end": 1707665601170,
+      "start": 1707990830143,
+      "end": 1707990830143,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1707665601170,
-      "end": 1707665601170,
+      "start": 1707990830143,
+      "end": 1707990830143,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1707665601170,
-      "end": 1707665601170,
+      "start": 1707990830143,
+      "end": 1707990830143,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1707665601170,
-      "end": 1707665601170,
+      "start": 1707990830143,
+      "end": 1707990830143,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1707665601170,
-      "end": 1707665601170,
+      "start": 1707990830143,
+      "end": 1707990830143,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1707665601170,
-      "end": 1707665601170,
+      "start": 1707990830143,
+      "end": 1707990830143,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1707665601170,
-      "end": 1707665601170,
+      "start": 1707990830143,
+      "end": 1707990830143,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1707665601170,
-      "end": 1707665601170,
+      "start": 1707990830143,
+      "end": 1707990830143,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1707665601170,
-      "end": 1707665601170,
+      "start": 1707990830143,
+      "end": 1707990830143,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1707665601170,
-      "end": 1707665601170,
+      "start": 1707990830146,
+      "end": 1707990830146,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1707665601171,
-      "end": 1707665601171,
+      "start": 1707990830147,
+      "end": 1707990830147,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1707665601171,
-      "end": 1707665601171,
+      "start": 1707990830147,
+      "end": 1707990830147,
       "order": "normal"
     },
     {
       "name": "vite:define",
       "result": "import unhead_KgADcZ0jPj from \"/workspace/Kubernetes-Bootcamp/node_modules/nuxt/dist/head/runtime/plugins/unhead.js\";\nimport router_jmwsqit4Rs from \"/workspace/Kubernetes-Bootcamp/node_modules/nuxt/dist/pages/runtime/plugins/router.js\";\nimport revive_payload_server_eJ33V7gbc6 from \"/workspace/Kubernetes-Bootcamp/node_modules/nuxt/dist/app/plugins/revive-payload.server.js\";\nimport components_plugin_KR1HBZs4kY from \"/workspace/Kubernetes-Bootcamp/.nuxt/components.plugin.mjs\";\nimport documentDriven_cMiI6j6ghD from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/legacy/plugins/documentDriven.js\";\nimport pinceau_nuxt_plugin_server_KEuz79zT4K from \"/workspace/Kubernetes-Bootcamp/.nuxt/pinceau-nuxt-plugin.server.mjs\";\nimport schema_server_zIxGbBm233 from \"/workspace/Kubernetes-Bootcamp/node_modules/pinceau/dist/runtime/schema.server.mjs\";\nimport plugin_server_XNCxeHyTuP from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/color-mode/dist/runtime/plugin.server.mjs\";\nimport menu_13PGuw7IWk from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/plugins/menu.ts\";\nexport default [\n  unhead_KgADcZ0jPj,\n  router_jmwsqit4Rs,\n  revive_payload_server_eJ33V7gbc6,\n  components_plugin_KR1HBZs4kY,\n  documentDriven_cMiI6j6ghD,\n  pinceau_nuxt_plugin_server_KEuz79zT4K,\n  schema_server_zIxGbBm233,\n  plugin_server_XNCxeHyTuP,\n  menu_13PGuw7IWk\n];\n",
-      "start": 1707665601171,
-      "end": 1707665601174,
+      "start": 1707990830147,
+      "end": 1707990830155,
       "order": "normal",
       "sourcemaps": "{\n  \"version\": 3,\n  \"sources\": [\"virtual:nuxt:/workspace/Kubernetes-Bootcamp/.nuxt/plugins/server.mjs\"],\n  \"sourcesContent\": [\"import unhead_KgADcZ0jPj from \\\"/workspace/Kubernetes-Bootcamp/node_modules/nuxt/dist/head/runtime/plugins/unhead.js\\\";\\nimport router_jmwsqit4Rs from \\\"/workspace/Kubernetes-Bootcamp/node_modules/nuxt/dist/pages/runtime/plugins/router.js\\\";\\nimport revive_payload_server_eJ33V7gbc6 from \\\"/workspace/Kubernetes-Bootcamp/node_modules/nuxt/dist/app/plugins/revive-payload.server.js\\\";\\nimport components_plugin_KR1HBZs4kY from \\\"/workspace/Kubernetes-Bootcamp/.nuxt/components.plugin.mjs\\\";\\nimport documentDriven_cMiI6j6ghD from \\\"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/legacy/plugins/documentDriven.js\\\";\\nimport pinceau_nuxt_plugin_server_KEuz79zT4K from \\\"/workspace/Kubernetes-Bootcamp/.nuxt/pinceau-nuxt-plugin.server.mjs\\\";\\nimport schema_server_zIxGbBm233 from \\\"/workspace/Kubernetes-Bootcamp/node_modules/pinceau/dist/runtime/schema.server.mjs\\\";\\nimport plugin_server_XNCxeHyTuP from \\\"/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/color-mode/dist/runtime/plugin.server.mjs\\\";\\nimport menu_13PGuw7IWk from \\\"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/plugins/menu.ts\\\";\\nexport default [\\n  unhead_KgADcZ0jPj,\\n  router_jmwsqit4Rs,\\n  revive_payload_server_eJ33V7gbc6,\\n  components_plugin_KR1HBZs4kY,\\n  documentDriven_cMiI6j6ghD,\\n  pinceau_nuxt_plugin_server_KEuz79zT4K,\\n  schema_server_zIxGbBm233,\\n  plugin_server_XNCxeHyTuP,\\n  menu_13PGuw7IWk\\n]\"],\n  \"mappings\": \"AAAA,OAAO,uBAAuB;AAC9B,OAAO,uBAAuB;AAC9B,OAAO,sCAAsC;AAC7C,OAAO,kCAAkC;AACzC,OAAO,+BAA+B;AACtC,OAAO,2CAA2C;AAClD,OAAO,8BAA8B;AACrC,OAAO,8BAA8B;AACrC,OAAO,qBAAqB;AAC5B,eAAe;AAAA,EACb;AAAA,EACA;AAAA,EACA;AAAA,EACA;AAAA,EACA;AAAA,EACA;AAAA,EACA;AAAA,EACA;AAAA,EACA;AACF;\",\n  \"names\": []\n}\n"
     },
     {
       "name": "vite:css-post",
-      "start": 1707665601174,
-      "end": 1707665601174,
+      "start": 1707990830155,
+      "end": 1707990830155,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1707665601174,
-      "end": 1707665601174,
+      "start": 1707990830155,
+      "end": 1707990830155,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1707665601174,
-      "end": 1707665601174,
+      "start": 1707990830155,
+      "end": 1707990830155,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1707665601174,
-      "end": 1707665601174,
+      "start": 1707990830155,
+      "end": 1707990830155,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1707665601174,
-      "end": 1707665601174,
+      "start": 1707990830155,
+      "end": 1707990830155,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1707665601174,
-      "end": 1707665601174,
+      "start": 1707990830155,
+      "end": 1707990830155,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1707665601174,
-      "end": 1707665601174,
+      "start": 1707990830155,
+      "end": 1707990830155,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1707665601174,
-      "end": 1707665601174,
+      "start": 1707990830155,
+      "end": 1707990830155,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1707665601174,
-      "end": 1707665601174,
+      "start": 1707990830155,
+      "end": 1707990830155,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1707665601174,
-      "end": 1707665601175,
+      "start": 1707990830155,
+      "end": 1707990830156,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1707665601174,
-      "end": 1707665601175,
+      "start": 1707990830155,
+      "end": 1707990830156,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1707665601175,
-      "end": 1707665601175,
+      "start": 1707990830156,
+      "end": 1707990830156,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1707665601175,
-      "end": 1707665601175,
+      "start": 1707990830156,
+      "end": 1707990830156,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1707665601175,
-      "end": 1707665601175,
+      "start": 1707990830156,
+      "end": 1707990830156,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1707665601175,
-      "end": 1707665601175,
+      "start": 1707990830156,
+      "end": 1707990830156,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1707665601175,
-      "end": 1707665601175,
+      "start": 1707990830156,
+      "end": 1707990830156,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1707665601175,
-      "end": 1707665601175,
+      "start": 1707990830156,
+      "end": 1707990830156,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1707665601175,
-      "end": 1707665601175,
+      "start": 1707990830156,
+      "end": 1707990830156,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1707665601175,
-      "end": 1707665601175,
+      "start": 1707990830156,
+      "end": 1707990830156,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1707665601175,
-      "end": 1707665601175,
+      "start": 1707990830156,
+      "end": 1707990830156,
       "order": "normal"
     }
   ]
