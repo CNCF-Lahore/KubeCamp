@@ -4,39 +4,39 @@
     {
       "name": "vite:load-fallback",
       "result": "<script>\nimport { hash } from \"ohash\";\nimport { toRefs, defineComponent, h, useSlots, watch } from \"vue\";\nimport { computed, useAsyncData, queryContent, useRuntimeConfig } from \"#imports\";\nconst ContentQuery = defineComponent({\n  name: \"ContentQuery\",\n  props: {\n    /**\n     * The path of the content to load from content source.\n     */\n    path: {\n      type: String,\n      required: false,\n      default: void 0\n    },\n    /**\n     * Select a subset of fields\n     */\n    only: {\n      type: Array,\n      required: false,\n      default: void 0\n    },\n    /**\n     * Remove a subset of fields\n     */\n    without: {\n      type: Array,\n      required: false,\n      default: void 0\n    },\n    /**\n     * Filter results\n     */\n    where: {\n      type: Object,\n      required: false,\n      default: void 0\n    },\n    /**\n     * Sort results\n     */\n    sort: {\n      type: Object,\n      required: false,\n      default: void 0\n    },\n    /**\n     * Limit number of results\n     */\n    limit: {\n      type: Number,\n      required: false,\n      default: void 0\n    },\n    /**\n     * Skip number of results\n     */\n    skip: {\n      type: Number,\n      required: false,\n      default: void 0\n    },\n    /**\n     * Filter contents based on locale\n     */\n    locale: {\n      type: String,\n      required: false,\n      default: void 0\n    },\n    /**\n     * A type of query to be made.\n     */\n    find: {\n      type: String,\n      required: false,\n      default: void 0\n    }\n  },\n  async setup(props) {\n    const {\n      path,\n      only,\n      without,\n      where,\n      sort,\n      limit,\n      skip,\n      locale,\n      find\n    } = toRefs(props);\n    const isPartial = computed(() => path.value?.includes(\"/_\"));\n    const legacy = !useRuntimeConfig().public.content.experimental.advanceQuery;\n    watch(() => props, () => refresh(), { deep: true });\n    const resolveResult = (result) => {\n      if (legacy) {\n        if (result?.surround) {\n          return result.surround;\n        }\n        return result?._id || Array.isArray(result) ? result : result?.result;\n      }\n      return result.result;\n    };\n    const { data, refresh } = await useAsyncData(\n      `content-query-${hash(props)}`,\n      () => {\n        let queryBuilder;\n        if (path.value) {\n          queryBuilder = queryContent(path.value);\n        } else {\n          queryBuilder = queryContent();\n        }\n        if (only.value) {\n          queryBuilder = queryBuilder.only(only.value);\n        }\n        if (without.value) {\n          queryBuilder = queryBuilder.without(without.value);\n        }\n        if (where.value) {\n          queryBuilder = queryBuilder.where(where.value);\n        }\n        if (sort.value) {\n          queryBuilder = queryBuilder.sort(sort.value);\n        }\n        if (limit.value) {\n          queryBuilder = queryBuilder.limit(limit.value);\n        }\n        if (skip.value) {\n          queryBuilder = queryBuilder.skip(skip.value);\n        }\n        if (locale.value) {\n          queryBuilder = queryBuilder.where({ _locale: locale.value });\n        }\n        if (find.value === \"one\") {\n          return queryBuilder.findOne().then(resolveResult);\n        }\n        if (find.value === \"surround\") {\n          if (!path.value) {\n            console.warn(\"[Content] Surround queries requires `path` prop to be set.\");\n            console.warn(\"[Content] Query without `path` will return regular `find()` results.\");\n            return queryBuilder.find().then(resolveResult);\n          }\n          if (legacy) {\n            return queryBuilder.findSurround(path.value);\n          } else {\n            return queryBuilder.withSurround(path.value).findOne().then(resolveResult);\n          }\n        }\n        return queryBuilder.find().then(resolveResult);\n      }\n    );\n    return {\n      isPartial,\n      data,\n      refresh\n    };\n  },\n  /**\n   * Content not found fallback\n   * @slot not-found\n   */\n  render(ctx) {\n    const slots = useSlots();\n    const {\n      // Setup\n      data,\n      refresh,\n      isPartial,\n      // Props\n      path,\n      only,\n      without,\n      where,\n      sort,\n      limit,\n      skip,\n      locale,\n      find\n    } = ctx;\n    const props = {\n      path,\n      only,\n      without,\n      where,\n      sort,\n      limit,\n      skip,\n      locale,\n      find\n    };\n    if (props.find === \"one\") {\n      if (!data && slots?.[\"not-found\"]) {\n        return slots[\"not-found\"]({ props, ...this.$attrs });\n      }\n      if (slots?.empty && data?._type === \"markdown\" && !data?.body?.children.length) {\n        return slots.empty({ props, ...this.$attrs });\n      }\n    } else if (!data || !data.length) {\n      if (slots?.[\"not-found\"]) {\n        return slots[\"not-found\"]({ props, ...this.$attrs });\n      }\n    }\n    if (slots?.default) {\n      return slots.default({ data, refresh, isPartial, props, ...this.$attrs });\n    }\n    const emptyNode = (slot, data2) => h(\"pre\", null, JSON.stringify({ message: \"You should use slots with <ContentQuery>!\", slot, data: data2 }, null, 2));\n    return emptyNode(\"default\", { data, props, isPartial });\n  }\n});\nexport default ContentQuery;\n</script>\n",
-      "start": 1707665602865,
-      "end": 1707665603006,
+      "start": 1707990831555,
+      "end": 1707990831654,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1707665603006,
-      "end": 1707665603006,
+      "start": 1707990831654,
+      "end": 1707990831654,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1707665603006,
-      "end": 1707665603006,
+      "start": 1707990831654,
+      "end": 1707990831654,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1707665603006,
-      "end": 1707665603006,
+      "start": 1707990831654,
+      "end": 1707990831654,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1707665603006,
-      "end": 1707665603006,
+      "start": 1707990831654,
+      "end": 1707990831654,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "<script>\nimport { hash } from \"ohash\";\nimport { toRefs, defineComponent, h, useSlots, watch } from \"vue\";\nimport { computed, useAsyncData, queryContent, useRuntimeConfig } from \"#imports\";\nconst ContentQuery = defineComponent({\n  name: \"ContentQuery\",\n  props: {\n    /**\n     * The path of the content to load from content source.\n     */\n    path: {\n      type: String,\n      required: false,\n      default: void 0\n    },\n    /**\n     * Select a subset of fields\n     */\n    only: {\n      type: Array,\n      required: false,\n      default: void 0\n    },\n    /**\n     * Remove a subset of fields\n     */\n    without: {\n      type: Array,\n      required: false,\n      default: void 0\n    },\n    /**\n     * Filter results\n     */\n    where: {\n      type: Object,\n      required: false,\n      default: void 0\n    },\n    /**\n     * Sort results\n     */\n    sort: {\n      type: Object,\n      required: false,\n      default: void 0\n    },\n    /**\n     * Limit number of results\n     */\n    limit: {\n      type: Number,\n      required: false,\n      default: void 0\n    },\n    /**\n     * Skip number of results\n     */\n    skip: {\n      type: Number,\n      required: false,\n      default: void 0\n    },\n    /**\n     * Filter contents based on locale\n     */\n    locale: {\n      type: String,\n      required: false,\n      default: void 0\n    },\n    /**\n     * A type of query to be made.\n     */\n    find: {\n      type: String,\n      required: false,\n      default: void 0\n    }\n  },\n  async setup(props) {\n    const {\n      path,\n      only,\n      without,\n      where,\n      sort,\n      limit,\n      skip,\n      locale,\n      find\n    } = toRefs(props);\n    const isPartial = computed(() => path.value?.includes(\"/_\"));\n    const legacy = !useRuntimeConfig().public.content.experimental.advanceQuery;\n    watch(() => props, () => refresh(), { deep: true });\n    const resolveResult = (result) => {\n      if (legacy) {\n        if (result?.surround) {\n          return result.surround;\n        }\n        return result?._id || Array.isArray(result) ? result : result?.result;\n      }\n      return result.result;\n    };\n    const { data, refresh } = await useAsyncData(\n      `content-query-${hash(props)}`,\n      () => {\n        let queryBuilder;\n        if (path.value) {\n          queryBuilder = queryContent(path.value);\n        } else {\n          queryBuilder = queryContent();\n        }\n        if (only.value) {\n          queryBuilder = queryBuilder.only(only.value);\n        }\n        if (without.value) {\n          queryBuilder = queryBuilder.without(without.value);\n        }\n        if (where.value) {\n          queryBuilder = queryBuilder.where(where.value);\n        }\n        if (sort.value) {\n          queryBuilder = queryBuilder.sort(sort.value);\n        }\n        if (limit.value) {\n          queryBuilder = queryBuilder.limit(limit.value);\n        }\n        if (skip.value) {\n          queryBuilder = queryBuilder.skip(skip.value);\n        }\n        if (locale.value) {\n          queryBuilder = queryBuilder.where({ _locale: locale.value });\n        }\n        if (find.value === \"one\") {\n          return queryBuilder.findOne().then(resolveResult);\n        }\n        if (find.value === \"surround\") {\n          if (!path.value) {\n            console.warn(\"[Content] Surround queries requires `path` prop to be set.\");\n            console.warn(\"[Content] Query without `path` will return regular `find()` results.\");\n            return queryBuilder.find().then(resolveResult);\n          }\n          if (legacy) {\n            return queryBuilder.findSurround(path.value);\n          } else {\n            return queryBuilder.withSurround(path.value).findOne().then(resolveResult);\n          }\n        }\n        return queryBuilder.find().then(resolveResult);\n      }\n    );\n    return {\n      isPartial,\n      data,\n      refresh\n    };\n  },\n  /**\n   * Content not found fallback\n   * @slot not-found\n   */\n  render(ctx) {\n    const slots = useSlots();\n    const {\n      // Setup\n      data,\n      refresh,\n      isPartial,\n      // Props\n      path,\n      only,\n      without,\n      where,\n      sort,\n      limit,\n      skip,\n      locale,\n      find\n    } = ctx;\n    const props = {\n      path,\n      only,\n      without,\n      where,\n      sort,\n      limit,\n      skip,\n      locale,\n      find\n    };\n    if (props.find === \"one\") {\n      if (!data && slots?.[\"not-found\"]) {\n        return slots[\"not-found\"]({ props, ...this.$attrs });\n      }\n      if (slots?.empty && data?._type === \"markdown\" && !data?.body?.children.length) {\n        return slots.empty({ props, ...this.$attrs });\n      }\n    } else if (!data || !data.length) {\n      if (slots?.[\"not-found\"]) {\n        return slots[\"not-found\"]({ props, ...this.$attrs });\n      }\n    }\n    if (slots?.default) {\n      return slots.default({ data, refresh, isPartial, props, ...this.$attrs });\n    }\n    const emptyNode = (slot, data2) => h(\"pre\", null, JSON.stringify({ message: \"You should use slots with <ContentQuery>!\", slot, data: data2 }, null, 2));\n    return emptyNode(\"default\", { data, props, isPartial });\n  }\n});\nexport default ContentQuery;\n</script>\n",
-      "start": 1707665603007,
-      "end": 1707665603010,
+      "start": 1707990831654,
+      "end": 1707990831654,
       "order": "pre",
       "sourcemaps": {
         "version": 3,
@@ -51,8 +51,8 @@
     {
       "name": "pinceau-transforms",
       "result": "<script>\nimport { hash } from \"ohash\";\nimport { toRefs, defineComponent, h, useSlots, watch } from \"vue\";\nimport { computed, useAsyncData, queryContent, useRuntimeConfig } from \"#imports\";\nconst ContentQuery = defineComponent({\n  name: \"ContentQuery\",\n  props: {\n    /**\n     * The path of the content to load from content source.\n     */\n    path: {\n      type: String,\n      required: false,\n      default: void 0\n    },\n    /**\n     * Select a subset of fields\n     */\n    only: {\n      type: Array,\n      required: false,\n      default: void 0\n    },\n    /**\n     * Remove a subset of fields\n     */\n    without: {\n      type: Array,\n      required: false,\n      default: void 0\n    },\n    /**\n     * Filter results\n     */\n    where: {\n      type: Object,\n      required: false,\n      default: void 0\n    },\n    /**\n     * Sort results\n     */\n    sort: {\n      type: Object,\n      required: false,\n      default: void 0\n    },\n    /**\n     * Limit number of results\n     */\n    limit: {\n      type: Number,\n      required: false,\n      default: void 0\n    },\n    /**\n     * Skip number of results\n     */\n    skip: {\n      type: Number,\n      required: false,\n      default: void 0\n    },\n    /**\n     * Filter contents based on locale\n     */\n    locale: {\n      type: String,\n      required: false,\n      default: void 0\n    },\n    /**\n     * A type of query to be made.\n     */\n    find: {\n      type: String,\n      required: false,\n      default: void 0\n    }\n  },\n  async setup(props) {\n    const {\n      path,\n      only,\n      without,\n      where,\n      sort,\n      limit,\n      skip,\n      locale,\n      find\n    } = toRefs(props);\n    const isPartial = computed(() => path.value?.includes(\"/_\"));\n    const legacy = !useRuntimeConfig().public.content.experimental.advanceQuery;\n    watch(() => props, () => refresh(), { deep: true });\n    const resolveResult = (result) => {\n      if (legacy) {\n        if (result?.surround) {\n          return result.surround;\n        }\n        return result?._id || Array.isArray(result) ? result : result?.result;\n      }\n      return result.result;\n    };\n    const { data, refresh } = await useAsyncData(\n      `content-query-${hash(props)}`,\n      () => {\n        let queryBuilder;\n        if (path.value) {\n          queryBuilder = queryContent(path.value);\n        } else {\n          queryBuilder = queryContent();\n        }\n        if (only.value) {\n          queryBuilder = queryBuilder.only(only.value);\n        }\n        if (without.value) {\n          queryBuilder = queryBuilder.without(without.value);\n        }\n        if (where.value) {\n          queryBuilder = queryBuilder.where(where.value);\n        }\n        if (sort.value) {\n          queryBuilder = queryBuilder.sort(sort.value);\n        }\n        if (limit.value) {\n          queryBuilder = queryBuilder.limit(limit.value);\n        }\n        if (skip.value) {\n          queryBuilder = queryBuilder.skip(skip.value);\n        }\n        if (locale.value) {\n          queryBuilder = queryBuilder.where({ _locale: locale.value });\n        }\n        if (find.value === \"one\") {\n          return queryBuilder.findOne().then(resolveResult);\n        }\n        if (find.value === \"surround\") {\n          if (!path.value) {\n            console.warn(\"[Content] Surround queries requires `path` prop to be set.\");\n            console.warn(\"[Content] Query without `path` will return regular `find()` results.\");\n            return queryBuilder.find().then(resolveResult);\n          }\n          if (legacy) {\n            return queryBuilder.findSurround(path.value);\n          } else {\n            return queryBuilder.withSurround(path.value).findOne().then(resolveResult);\n          }\n        }\n        return queryBuilder.find().then(resolveResult);\n      }\n    );\n    return {\n      isPartial,\n      data,\n      refresh\n    };\n  },\n  /**\n   * Content not found fallback\n   * @slot not-found\n   */\n  render(ctx) {\n    const slots = useSlots();\n    const {\n      // Setup\n      data,\n      refresh,\n      isPartial,\n      // Props\n      path,\n      only,\n      without,\n      where,\n      sort,\n      limit,\n      skip,\n      locale,\n      find\n    } = ctx;\n    const props = {\n      path,\n      only,\n      without,\n      where,\n      sort,\n      limit,\n      skip,\n      locale,\n      find\n    };\n    if (props.find === \"one\") {\n      if (!data && slots?.[\"not-found\"]) {\n        return slots[\"not-found\"]({ props, ...this.$attrs });\n      }\n      if (slots?.empty && data?._type === \"markdown\" && !data?.body?.children.length) {\n        return slots.empty({ props, ...this.$attrs });\n      }\n    } else if (!data || !data.length) {\n      if (slots?.[\"not-found\"]) {\n        return slots[\"not-found\"]({ props, ...this.$attrs });\n      }\n    }\n    if (slots?.default) {\n      return slots.default({ data, refresh, isPartial, props, ...this.$attrs });\n    }\n    const emptyNode = (slot, data2) => h(\"pre\", null, JSON.stringify({ message: \"You should use slots with <ContentQuery>!\", slot, data: data2 }, null, 2));\n    return emptyNode(\"default\", { data, props, isPartial });\n  }\n});\nexport default ContentQuery;\n</script>\n",
-      "start": 1707665603007,
-      "end": 1707665603010,
+      "start": 1707990831654,
+      "end": 1707990831654,
       "order": "pre",
       "sourcemaps": {
         "version": 3,
@@ -66,51 +66,51 @@
     },
     {
       "name": "content-slot",
-      "start": 1707665603010,
-      "end": 1707665603010,
+      "start": 1707990831654,
+      "end": 1707990831654,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1707665603010,
-      "end": 1707665603010,
+      "start": 1707990831654,
+      "end": 1707990831654,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1707665603010,
-      "end": 1707665603010,
+      "start": 1707990831654,
+      "end": 1707990831654,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1707665603010,
-      "end": 1707665603010,
+      "start": 1707990831654,
+      "end": 1707990831654,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1707665603010,
-      "end": 1707665603010,
+      "start": 1707990831654,
+      "end": 1707990831654,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1707665603010,
-      "end": 1707665603010,
+      "start": 1707990831654,
+      "end": 1707990831654,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1707665603010,
-      "end": 1707665603010,
+      "start": 1707990831654,
+      "end": 1707990831654,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "\nimport { hash } from \"ohash\";\nimport { toRefs, defineComponent, h, useSlots, watch } from \"vue\";\nimport { computed, useAsyncData, queryContent, useRuntimeConfig } from \"#imports\";\nconst ContentQuery = defineComponent({\n  name: \"ContentQuery\",\n  props: {\n    /**\n     * The path of the content to load from content source.\n     */\n    path: {\n      type: String,\n      required: false,\n      default: void 0\n    },\n    /**\n     * Select a subset of fields\n     */\n    only: {\n      type: Array,\n      required: false,\n      default: void 0\n    },\n    /**\n     * Remove a subset of fields\n     */\n    without: {\n      type: Array,\n      required: false,\n      default: void 0\n    },\n    /**\n     * Filter results\n     */\n    where: {\n      type: Object,\n      required: false,\n      default: void 0\n    },\n    /**\n     * Sort results\n     */\n    sort: {\n      type: Object,\n      required: false,\n      default: void 0\n    },\n    /**\n     * Limit number of results\n     */\n    limit: {\n      type: Number,\n      required: false,\n      default: void 0\n    },\n    /**\n     * Skip number of results\n     */\n    skip: {\n      type: Number,\n      required: false,\n      default: void 0\n    },\n    /**\n     * Filter contents based on locale\n     */\n    locale: {\n      type: String,\n      required: false,\n      default: void 0\n    },\n    /**\n     * A type of query to be made.\n     */\n    find: {\n      type: String,\n      required: false,\n      default: void 0\n    }\n  },\n  async setup(props) {\n    const {\n      path,\n      only,\n      without,\n      where,\n      sort,\n      limit,\n      skip,\n      locale,\n      find\n    } = toRefs(props);\n    const isPartial = computed(() => path.value?.includes(\"/_\"));\n    const legacy = !useRuntimeConfig().public.content.experimental.advanceQuery;\n    watch(() => props, () => refresh(), { deep: true });\n    const resolveResult = (result) => {\n      if (legacy) {\n        if (result?.surround) {\n          return result.surround;\n        }\n        return result?._id || Array.isArray(result) ? result : result?.result;\n      }\n      return result.result;\n    };\n    const { data, refresh } = await useAsyncData(\n      `content-query-${hash(props)}`,\n      () => {\n        let queryBuilder;\n        if (path.value) {\n          queryBuilder = queryContent(path.value);\n        } else {\n          queryBuilder = queryContent();\n        }\n        if (only.value) {\n          queryBuilder = queryBuilder.only(only.value);\n        }\n        if (without.value) {\n          queryBuilder = queryBuilder.without(without.value);\n        }\n        if (where.value) {\n          queryBuilder = queryBuilder.where(where.value);\n        }\n        if (sort.value) {\n          queryBuilder = queryBuilder.sort(sort.value);\n        }\n        if (limit.value) {\n          queryBuilder = queryBuilder.limit(limit.value);\n        }\n        if (skip.value) {\n          queryBuilder = queryBuilder.skip(skip.value);\n        }\n        if (locale.value) {\n          queryBuilder = queryBuilder.where({ _locale: locale.value });\n        }\n        if (find.value === \"one\") {\n          return queryBuilder.findOne().then(resolveResult);\n        }\n        if (find.value === \"surround\") {\n          if (!path.value) {\n            console.warn(\"[Content] Surround queries requires `path` prop to be set.\");\n            console.warn(\"[Content] Query without `path` will return regular `find()` results.\");\n            return queryBuilder.find().then(resolveResult);\n          }\n          if (legacy) {\n            return queryBuilder.findSurround(path.value);\n          } else {\n            return queryBuilder.withSurround(path.value).findOne().then(resolveResult);\n          }\n        }\n        return queryBuilder.find().then(resolveResult);\n      }\n    );\n    return {\n      isPartial,\n      data,\n      refresh\n    };\n  },\n  /**\n   * Content not found fallback\n   * @slot not-found\n   */\n  render(ctx) {\n    const slots = useSlots();\n    const {\n      // Setup\n      data,\n      refresh,\n      isPartial,\n      // Props\n      path,\n      only,\n      without,\n      where,\n      sort,\n      limit,\n      skip,\n      locale,\n      find\n    } = ctx;\n    const props = {\n      path,\n      only,\n      without,\n      where,\n      sort,\n      limit,\n      skip,\n      locale,\n      find\n    };\n    if (props.find === \"one\") {\n      if (!data && slots?.[\"not-found\"]) {\n        return slots[\"not-found\"]({ props, ...this.$attrs });\n      }\n      if (slots?.empty && data?._type === \"markdown\" && !data?.body?.children.length) {\n        return slots.empty({ props, ...this.$attrs });\n      }\n    } else if (!data || !data.length) {\n      if (slots?.[\"not-found\"]) {\n        return slots[\"not-found\"]({ props, ...this.$attrs });\n      }\n    }\n    if (slots?.default) {\n      return slots.default({ data, refresh, isPartial, props, ...this.$attrs });\n    }\n    const emptyNode = (slot, data2) => h(\"pre\", null, JSON.stringify({ message: \"You should use slots with <ContentQuery>!\", slot, data: data2 }, null, 2));\n    return emptyNode(\"default\", { data, props, isPartial });\n  }\n});\nconst _sfc_main = ContentQuery;\n\n\n\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nexport default _sfc_main",
-      "start": 1707665603010,
-      "end": 1707665603010,
+      "start": 1707990831654,
+      "end": 1707990831655,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -128,117 +128,117 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1707665603010,
-      "end": 1707665603010,
+      "start": 1707990831655,
+      "end": 1707990831655,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1707665603010,
-      "end": 1707665603010,
+      "start": 1707990831655,
+      "end": 1707990831655,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1707665603010,
-      "end": 1707665603010,
+      "start": 1707990831655,
+      "end": 1707990831655,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1707665603010,
-      "end": 1707665603010,
+      "start": 1707990831655,
+      "end": 1707990831655,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1707665603010,
-      "end": 1707665603010,
+      "start": 1707990831655,
+      "end": 1707990831655,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1707665603010,
-      "end": 1707665603010,
+      "start": 1707990831655,
+      "end": 1707990831655,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1707665603010,
-      "end": 1707665603010,
+      "start": 1707990831655,
+      "end": 1707990831655,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1707665603010,
-      "end": 1707665603011,
+      "start": 1707990831655,
+      "end": 1707990831655,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1707665603011,
-      "end": 1707665603011,
+      "start": 1707990831655,
+      "end": 1707990831655,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1707665603011,
-      "end": 1707665603011,
+      "start": 1707990831655,
+      "end": 1707990831655,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1707665603011,
-      "end": 1707665603011,
+      "start": 1707990831655,
+      "end": 1707990831655,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1707665603011,
-      "end": 1707665603011,
+      "start": 1707990831655,
+      "end": 1707990831655,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1707665603011,
-      "end": 1707665603011,
+      "start": 1707990831655,
+      "end": 1707990831655,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1707665603011,
-      "end": 1707665603011,
+      "start": 1707990831655,
+      "end": 1707990831655,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1707665603011,
-      "end": 1707665603011,
+      "start": 1707990831655,
+      "end": 1707990831655,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1707665603011,
-      "end": 1707665603011,
+      "start": 1707990831655,
+      "end": 1707990831655,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1707665603011,
-      "end": 1707665603013,
+      "start": 1707990831655,
+      "end": 1707990831657,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1707665603011,
-      "end": 1707665603013,
+      "start": 1707990831655,
+      "end": 1707990831657,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { computed } from 'vue';\nimport { useAsyncData } from '#app/composables/asyncData';\nimport { queryContent } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/legacy/composables/query';\nimport { useRuntimeConfig } from '#app/nuxt';\n\nimport { hash } from \"ohash\";\nimport { toRefs, defineComponent, h, useSlots, watch } from \"vue\";\nconst ContentQuery = defineComponent({\n  name: \"ContentQuery\",\n  props: {\n    /**\n     * The path of the content to load from content source.\n     */\n    path: {\n      type: String,\n      required: false,\n      default: void 0\n    },\n    /**\n     * Select a subset of fields\n     */\n    only: {\n      type: Array,\n      required: false,\n      default: void 0\n    },\n    /**\n     * Remove a subset of fields\n     */\n    without: {\n      type: Array,\n      required: false,\n      default: void 0\n    },\n    /**\n     * Filter results\n     */\n    where: {\n      type: Object,\n      required: false,\n      default: void 0\n    },\n    /**\n     * Sort results\n     */\n    sort: {\n      type: Object,\n      required: false,\n      default: void 0\n    },\n    /**\n     * Limit number of results\n     */\n    limit: {\n      type: Number,\n      required: false,\n      default: void 0\n    },\n    /**\n     * Skip number of results\n     */\n    skip: {\n      type: Number,\n      required: false,\n      default: void 0\n    },\n    /**\n     * Filter contents based on locale\n     */\n    locale: {\n      type: String,\n      required: false,\n      default: void 0\n    },\n    /**\n     * A type of query to be made.\n     */\n    find: {\n      type: String,\n      required: false,\n      default: void 0\n    }\n  },\n  async setup(props) {\n    const {\n      path,\n      only,\n      without,\n      where,\n      sort,\n      limit,\n      skip,\n      locale,\n      find\n    } = toRefs(props);\n    const isPartial = computed(() => path.value?.includes(\"/_\"));\n    const legacy = !useRuntimeConfig().public.content.experimental.advanceQuery;\n    watch(() => props, () => refresh(), { deep: true });\n    const resolveResult = (result) => {\n      if (legacy) {\n        if (result?.surround) {\n          return result.surround;\n        }\n        return result?._id || Array.isArray(result) ? result : result?.result;\n      }\n      return result.result;\n    };\n    const { data, refresh } = await useAsyncData(\n      `content-query-${hash(props)}`,\n      () => {\n        let queryBuilder;\n        if (path.value) {\n          queryBuilder = queryContent(path.value);\n        } else {\n          queryBuilder = queryContent();\n        }\n        if (only.value) {\n          queryBuilder = queryBuilder.only(only.value);\n        }\n        if (without.value) {\n          queryBuilder = queryBuilder.without(without.value);\n        }\n        if (where.value) {\n          queryBuilder = queryBuilder.where(where.value);\n        }\n        if (sort.value) {\n          queryBuilder = queryBuilder.sort(sort.value);\n        }\n        if (limit.value) {\n          queryBuilder = queryBuilder.limit(limit.value);\n        }\n        if (skip.value) {\n          queryBuilder = queryBuilder.skip(skip.value);\n        }\n        if (locale.value) {\n          queryBuilder = queryBuilder.where({ _locale: locale.value });\n        }\n        if (find.value === \"one\") {\n          return queryBuilder.findOne().then(resolveResult);\n        }\n        if (find.value === \"surround\") {\n          if (!path.value) {\n            console.warn(\"[Content] Surround queries requires `path` prop to be set.\");\n            console.warn(\"[Content] Query without `path` will return regular `find()` results.\");\n            return queryBuilder.find().then(resolveResult);\n          }\n          if (legacy) {\n            return queryBuilder.findSurround(path.value);\n          } else {\n            return queryBuilder.withSurround(path.value).findOne().then(resolveResult);\n          }\n        }\n        return queryBuilder.find().then(resolveResult);\n      }\n    );\n    return {\n      isPartial,\n      data,\n      refresh\n    };\n  },\n  /**\n   * Content not found fallback\n   * @slot not-found\n   */\n  render(ctx) {\n    const slots = useSlots();\n    const {\n      // Setup\n      data,\n      refresh,\n      isPartial,\n      // Props\n      path,\n      only,\n      without,\n      where,\n      sort,\n      limit,\n      skip,\n      locale,\n      find\n    } = ctx;\n    const props = {\n      path,\n      only,\n      without,\n      where,\n      sort,\n      limit,\n      skip,\n      locale,\n      find\n    };\n    if (props.find === \"one\") {\n      if (!data && slots?.[\"not-found\"]) {\n        return slots[\"not-found\"]({ props, ...this.$attrs });\n      }\n      if (slots?.empty && data?._type === \"markdown\" && !data?.body?.children.length) {\n        return slots.empty({ props, ...this.$attrs });\n      }\n    } else if (!data || !data.length) {\n      if (slots?.[\"not-found\"]) {\n        return slots[\"not-found\"]({ props, ...this.$attrs });\n      }\n    }\n    if (slots?.default) {\n      return slots.default({ data, refresh, isPartial, props, ...this.$attrs });\n    }\n    const emptyNode = (slot, data2) => h(\"pre\", null, JSON.stringify({ message: \"You should use slots with <ContentQuery>!\", slot, data: data2 }, null, 2));\n    return emptyNode(\"default\", { data, props, isPartial });\n  }\n});\nconst _sfc_main = ContentQuery;\n\n\n\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nexport default _sfc_main",
-      "start": 1707665603013,
-      "end": 1707665603015,
+      "start": 1707990831657,
+      "end": 1707990831658,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -252,8 +252,8 @@
     {
       "name": "nuxt:imports-transform",
       "result": "import { computed } from 'vue';\nimport { useAsyncData } from '#app/composables/asyncData';\nimport { queryContent } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/legacy/composables/query';\nimport { useRuntimeConfig } from '#app/nuxt';\n\nimport { hash } from \"ohash\";\nimport { toRefs, defineComponent, h, useSlots, watch } from \"vue\";\nconst ContentQuery = defineComponent({\n  name: \"ContentQuery\",\n  props: {\n    /**\n     * The path of the content to load from content source.\n     */\n    path: {\n      type: String,\n      required: false,\n      default: void 0\n    },\n    /**\n     * Select a subset of fields\n     */\n    only: {\n      type: Array,\n      required: false,\n      default: void 0\n    },\n    /**\n     * Remove a subset of fields\n     */\n    without: {\n      type: Array,\n      required: false,\n      default: void 0\n    },\n    /**\n     * Filter results\n     */\n    where: {\n      type: Object,\n      required: false,\n      default: void 0\n    },\n    /**\n     * Sort results\n     */\n    sort: {\n      type: Object,\n      required: false,\n      default: void 0\n    },\n    /**\n     * Limit number of results\n     */\n    limit: {\n      type: Number,\n      required: false,\n      default: void 0\n    },\n    /**\n     * Skip number of results\n     */\n    skip: {\n      type: Number,\n      required: false,\n      default: void 0\n    },\n    /**\n     * Filter contents based on locale\n     */\n    locale: {\n      type: String,\n      required: false,\n      default: void 0\n    },\n    /**\n     * A type of query to be made.\n     */\n    find: {\n      type: String,\n      required: false,\n      default: void 0\n    }\n  },\n  async setup(props) {\n    const {\n      path,\n      only,\n      without,\n      where,\n      sort,\n      limit,\n      skip,\n      locale,\n      find\n    } = toRefs(props);\n    const isPartial = computed(() => path.value?.includes(\"/_\"));\n    const legacy = !useRuntimeConfig().public.content.experimental.advanceQuery;\n    watch(() => props, () => refresh(), { deep: true });\n    const resolveResult = (result) => {\n      if (legacy) {\n        if (result?.surround) {\n          return result.surround;\n        }\n        return result?._id || Array.isArray(result) ? result : result?.result;\n      }\n      return result.result;\n    };\n    const { data, refresh } = await useAsyncData(\n      `content-query-${hash(props)}`,\n      () => {\n        let queryBuilder;\n        if (path.value) {\n          queryBuilder = queryContent(path.value);\n        } else {\n          queryBuilder = queryContent();\n        }\n        if (only.value) {\n          queryBuilder = queryBuilder.only(only.value);\n        }\n        if (without.value) {\n          queryBuilder = queryBuilder.without(without.value);\n        }\n        if (where.value) {\n          queryBuilder = queryBuilder.where(where.value);\n        }\n        if (sort.value) {\n          queryBuilder = queryBuilder.sort(sort.value);\n        }\n        if (limit.value) {\n          queryBuilder = queryBuilder.limit(limit.value);\n        }\n        if (skip.value) {\n          queryBuilder = queryBuilder.skip(skip.value);\n        }\n        if (locale.value) {\n          queryBuilder = queryBuilder.where({ _locale: locale.value });\n        }\n        if (find.value === \"one\") {\n          return queryBuilder.findOne().then(resolveResult);\n        }\n        if (find.value === \"surround\") {\n          if (!path.value) {\n            console.warn(\"[Content] Surround queries requires `path` prop to be set.\");\n            console.warn(\"[Content] Query without `path` will return regular `find()` results.\");\n            return queryBuilder.find().then(resolveResult);\n          }\n          if (legacy) {\n            return queryBuilder.findSurround(path.value);\n          } else {\n            return queryBuilder.withSurround(path.value).findOne().then(resolveResult);\n          }\n        }\n        return queryBuilder.find().then(resolveResult);\n      }\n    );\n    return {\n      isPartial,\n      data,\n      refresh\n    };\n  },\n  /**\n   * Content not found fallback\n   * @slot not-found\n   */\n  render(ctx) {\n    const slots = useSlots();\n    const {\n      // Setup\n      data,\n      refresh,\n      isPartial,\n      // Props\n      path,\n      only,\n      without,\n      where,\n      sort,\n      limit,\n      skip,\n      locale,\n      find\n    } = ctx;\n    const props = {\n      path,\n      only,\n      without,\n      where,\n      sort,\n      limit,\n      skip,\n      locale,\n      find\n    };\n    if (props.find === \"one\") {\n      if (!data && slots?.[\"not-found\"]) {\n        return slots[\"not-found\"]({ props, ...this.$attrs });\n      }\n      if (slots?.empty && data?._type === \"markdown\" && !data?.body?.children.length) {\n        return slots.empty({ props, ...this.$attrs });\n      }\n    } else if (!data || !data.length) {\n      if (slots?.[\"not-found\"]) {\n        return slots[\"not-found\"]({ props, ...this.$attrs });\n      }\n    }\n    if (slots?.default) {\n      return slots.default({ data, refresh, isPartial, props, ...this.$attrs });\n    }\n    const emptyNode = (slot, data2) => h(\"pre\", null, JSON.stringify({ message: \"You should use slots with <ContentQuery>!\", slot, data: data2 }, null, 2));\n    return emptyNode(\"default\", { data, props, isPartial });\n  }\n});\nconst _sfc_main = ContentQuery;\n\n\n\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nexport default _sfc_main",
-      "start": 1707665603013,
-      "end": 1707665603015,
+      "start": 1707990831657,
+      "end": 1707990831658,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -266,56 +266,56 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1707665603015,
-      "end": 1707665603015,
+      "start": 1707990831658,
+      "end": 1707990831658,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1707665603015,
-      "end": 1707665603015,
+      "start": 1707990831658,
+      "end": 1707990831658,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1707665603015,
-      "end": 1707665603015,
+      "start": 1707990831658,
+      "end": 1707990831658,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1707665603015,
-      "end": 1707665603015,
+      "start": 1707990831658,
+      "end": 1707990831658,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1707665603015,
-      "end": 1707665603015,
+      "start": 1707990831658,
+      "end": 1707990831658,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1707665603015,
-      "end": 1707665603015,
+      "start": 1707990831658,
+      "end": 1707990831658,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1707665603015,
-      "end": 1707665603016,
+      "start": 1707990831658,
+      "end": 1707990831658,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1707665603016,
-      "end": 1707665603016,
+      "start": 1707990831658,
+      "end": 1707990831658,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1707665603016,
-      "end": 1707665603016,
+      "start": 1707990831658,
+      "end": 1707990831658,
       "order": "normal"
     }
   ]

@@ -4,51 +4,51 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { createElementVNode as _createElementVNode, unref as _unref, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, Transition as _Transition, withCtx as _withCtx, createVNode as _createVNode, normalizeClass as _normalizeClass, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-4a003820\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"span\", { class: \"sr-only\" }, \"Copy to clipboard\", -1))\nconst _hoisted_2 = { class: \"icon-wrapper\" }\n\nimport { ref } from 'vue'\nimport { useClipboard, onClickOutside } from '@vueuse/core'\nimport { useAppConfig } from '#imports'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'ProseCodeCopyButton',\n  props: {\n  content: {\n    type: String,\n    default: ''\n  },\n  show: {\n    type: Boolean,\n    default: false\n  }\n},\n  setup(__props) {\n\nconst props = __props\n\nconst copyButtonRef = ref<HTMLElement>()\n\nconst { copy: copyToClipboard } = useClipboard()\nonClickOutside(copyButtonRef, () => {\n  if (state.value === 'copied') {\n    state.value = 'init'\n  }\n})\nconst { prose } = useAppConfig()\n\nconst state = ref('init')\n\nconst copy = (_e: MouseEvent) => {\n  copyToClipboard(props.content)\n    .then(() => {\n      state.value = 'copied'\n    })\n    .catch((err) => {\n      // eslint-disable-next-line no-console\n      console.warn(\"Couldn't copy to clipboard!\", err)\n    })\n}\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_Icon = _resolveComponent(\"Icon\")!\n\n  return (_openBlock(), _createElementBlock(\"button\", {\n    ref_key: \"copyButtonRef\",\n    ref: copyButtonRef,\n    class: _normalizeClass([(__props.show || state.value === 'copied') && 'show' ]),\n    onClick: copy\n  }, [\n    _hoisted_1,\n    _createElementVNode(\"span\", _hoisted_2, [\n      _createVNode(_Transition, { name: \"fade\" }, {\n        default: _withCtx(() => [\n          (state.value === 'copied')\n            ? (_openBlock(), _createBlock(_component_Icon, {\n                key: 0,\n                name: _unref(prose).copyButton?.iconCopied,\n                size: \"18\",\n                class: \"copied\"\n              }, null, 8, [\"name\"]))\n            : (_openBlock(), _createBlock(_component_Icon, {\n                key: 1,\n                name: _unref(prose).copyButton?.iconCopy,\n                size: \"18\"\n              }, null, 8, [\"name\"]))\n        ]),\n        _: 1\n      })\n    ])\n  ], 2))\n}\n}\n\n})",
-      "start": 1707665598068,
-      "end": 1707665598068
+      "start": 1707990827302,
+      "end": 1707990827302
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1707665598068,
-      "end": 1707665598068,
+      "start": 1707990827302,
+      "end": 1707990827302,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1707665598072,
-      "end": 1707665598072,
+      "start": 1707990827306,
+      "end": 1707990827306,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { createElementVNode as _createElementVNode, unref as _unref, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, Transition as _Transition, withCtx as _withCtx, createVNode as _createVNode, normalizeClass as _normalizeClass, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-4a003820\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"span\", { class: \"sr-only\" }, \"Copy to clipboard\", -1))\nconst _hoisted_2 = { class: \"icon-wrapper\" }\n\nimport { ref } from 'vue'\nimport { useClipboard, onClickOutside } from '@vueuse/core'\nimport { useAppConfig } from '#imports'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'ProseCodeCopyButton',\n  props: {\n  content: {\n    type: String,\n    default: ''\n  },\n  show: {\n    type: Boolean,\n    default: false\n  }\n},\n  setup(__props) {\n\nconst props = __props\n\nconst copyButtonRef = ref<HTMLElement>()\n\nconst { copy: copyToClipboard } = useClipboard()\nonClickOutside(copyButtonRef, () => {\n  if (state.value === 'copied') {\n    state.value = 'init'\n  }\n})\nconst { prose } = useAppConfig()\n\nconst state = ref('init')\n\nconst copy = (_e: MouseEvent) => {\n  copyToClipboard(props.content)\n    .then(() => {\n      state.value = 'copied'\n    })\n    .catch((err) => {\n      // eslint-disable-next-line no-console\n      console.warn(\"Couldn't copy to clipboard!\", err)\n    })\n}\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_Icon = _resolveComponent(\"Icon\")!\n\n  return (_openBlock(), _createElementBlock(\"button\", {\n    ref_key: \"copyButtonRef\",\n    ref: copyButtonRef,\n    class: _normalizeClass([(__props.show || state.value === 'copied') && 'show' ]),\n    onClick: copy\n  }, [\n    _hoisted_1,\n    _createElementVNode(\"span\", _hoisted_2, [\n      _createVNode(_Transition, { name: \"fade\" }, {\n        default: _withCtx(() => [\n          (state.value === 'copied')\n            ? (_openBlock(), _createBlock(_component_Icon, {\n                key: 0,\n                name: _unref(prose).copyButton?.iconCopied,\n                size: \"18\",\n                class: \"copied\"\n              }, null, 8, [\"name\"]))\n            : (_openBlock(), _createBlock(_component_Icon, {\n                key: 1,\n                name: _unref(prose).copyButton?.iconCopy,\n                size: \"18\"\n              }, null, 8, [\"name\"]))\n        ]),\n        _: 1\n      })\n    ])\n  ], 2))\n}\n}\n\n})",
-      "start": 1707665598072,
-      "end": 1707665598072,
+      "start": 1707990827306,
+      "end": 1707990827306,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1707665598072,
-      "end": 1707665598072,
+      "start": 1707990827306,
+      "end": 1707990827306,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1707665598072,
-      "end": 1707665598072,
+      "start": 1707990827306,
+      "end": 1707990827306,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1707665598072,
-      "end": 1707665598072,
+      "start": 1707990827306,
+      "end": 1707990827306,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { createElementVNode as _createElementVNode, unref as _unref, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, Transition as _Transition, withCtx as _withCtx, createVNode as _createVNode, normalizeClass as _normalizeClass, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-4a003820\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"span\", { class: \"sr-only\" }, \"Copy to clipboard\", -1));\nconst _hoisted_2 = { class: \"icon-wrapper\" };\nimport { ref } from \"vue\";\nimport { useClipboard, onClickOutside } from \"@vueuse/core\";\nimport { useAppConfig } from \"#imports\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ProseCodeCopyButton\",\n  props: {\n    content: {\n      type: String,\n      default: \"\"\n    },\n    show: {\n      type: Boolean,\n      default: false\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const copyButtonRef = ref();\n    const { copy: copyToClipboard } = useClipboard();\n    onClickOutside(copyButtonRef, () => {\n      if (state.value === \"copied\") {\n        state.value = \"init\";\n      }\n    });\n    const { prose } = useAppConfig();\n    const state = ref(\"init\");\n    const copy = (_e) => {\n      copyToClipboard(props.content).then(() => {\n        state.value = \"copied\";\n      }).catch((err) => {\n        console.warn(\"Couldn't copy to clipboard!\", err);\n      });\n    };\n    return (_ctx, _cache) => {\n      const _component_Icon = _resolveComponent(\"Icon\");\n      return _openBlock(), _createElementBlock(\"button\", {\n        ref_key: \"copyButtonRef\",\n        ref: copyButtonRef,\n        class: _normalizeClass([(__props.show || state.value === \"copied\") && \"show\"]),\n        onClick: copy\n      }, [\n        _hoisted_1,\n        _createElementVNode(\"span\", _hoisted_2, [\n          _createVNode(_Transition, { name: \"fade\" }, {\n            default: _withCtx(() => [\n              state.value === \"copied\" ? (_openBlock(), _createBlock(_component_Icon, {\n                key: 0,\n                name: _unref(prose).copyButton?.iconCopied,\n                size: \"18\",\n                class: \"copied\"\n              }, null, 8, [\"name\"])) : (_openBlock(), _createBlock(_component_Icon, {\n                key: 1,\n                name: _unref(prose).copyButton?.iconCopy,\n                size: \"18\"\n              }, null, 8, [\"name\"]))\n            ]),\n            _: 1\n          })\n        ])\n      ], 2);\n    };\n  }\n});\n",
-      "start": 1707665598072,
-      "end": 1707665598233,
+      "start": 1707990827306,
+      "end": 1707990827326,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -64,123 +64,123 @@
     },
     {
       "name": "vite:json",
-      "start": 1707665598233,
-      "end": 1707665598233,
+      "start": 1707990827326,
+      "end": 1707990827326,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1707665598233,
-      "end": 1707665598233,
+      "start": 1707990827326,
+      "end": 1707990827326,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1707665598233,
-      "end": 1707665598233,
+      "start": 1707990827326,
+      "end": 1707990827326,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1707665598233,
-      "end": 1707665598233,
+      "start": 1707990827326,
+      "end": 1707990827326,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1707665598233,
-      "end": 1707665598233,
+      "start": 1707990827326,
+      "end": 1707990827326,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1707665598234,
-      "end": 1707665598234,
+      "start": 1707990827326,
+      "end": 1707990827326,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1707665598234,
-      "end": 1707665598234,
+      "start": 1707990827326,
+      "end": 1707990827326,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1707665598234,
-      "end": 1707665598234,
+      "start": 1707990827326,
+      "end": 1707990827326,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1707665598234,
-      "end": 1707665598234,
+      "start": 1707990827326,
+      "end": 1707990827326,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1707665598234,
-      "end": 1707665598234,
+      "start": 1707990827326,
+      "end": 1707990827326,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1707665598234,
-      "end": 1707665598234,
+      "start": 1707990827326,
+      "end": 1707990827326,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1707665598234,
-      "end": 1707665598234,
+      "start": 1707990827326,
+      "end": 1707990827326,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1707665598234,
-      "end": 1707665598234,
+      "start": 1707990827326,
+      "end": 1707990827326,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1707665598234,
-      "end": 1707665598234,
+      "start": 1707990827326,
+      "end": 1707990827326,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1707665598234,
-      "end": 1707665598235,
+      "start": 1707990827326,
+      "end": 1707990827326,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1707665598235,
-      "end": 1707665598235,
+      "start": 1707990827326,
+      "end": 1707990827326,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1707665598235,
-      "end": 1707665598235,
+      "start": 1707990827326,
+      "end": 1707990827326,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1707665598235,
-      "end": 1707665598235,
+      "start": 1707990827326,
+      "end": 1707990827326,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1707665598235,
-      "end": 1707665598235,
+      "start": 1707990827326,
+      "end": 1707990827326,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { useAppConfig } from '#app/config';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { createElementVNode as _createElementVNode, unref as _unref, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, Transition as _Transition, withCtx as _withCtx, createVNode as _createVNode, normalizeClass as _normalizeClass, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-4a003820\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"span\", { class: \"sr-only\" }, \"Copy to clipboard\", -1));\nconst _hoisted_2 = { class: \"icon-wrapper\" };\nimport { ref } from \"vue\";\nimport { useClipboard, onClickOutside } from \"@vueuse/core\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ProseCodeCopyButton\",\n  props: {\n    content: {\n      type: String,\n      default: \"\"\n    },\n    show: {\n      type: Boolean,\n      default: false\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const copyButtonRef = ref();\n    const { copy: copyToClipboard } = useClipboard();\n    onClickOutside(copyButtonRef, () => {\n      if (state.value === \"copied\") {\n        state.value = \"init\";\n      }\n    });\n    const { prose } = useAppConfig();\n    const state = ref(\"init\");\n    const copy = (_e) => {\n      copyToClipboard(props.content).then(() => {\n        state.value = \"copied\";\n      }).catch((err) => {\n        console.warn(\"Couldn't copy to clipboard!\", err);\n      });\n    };\n    return (_ctx, _cache) => {\n      const _component_Icon = _resolveComponent(\"Icon\");\n      return _openBlock(), _createElementBlock(\"button\", {\n        ref_key: \"copyButtonRef\",\n        ref: copyButtonRef,\n        class: _normalizeClass([(__props.show || state.value === \"copied\") && \"show\"]),\n        onClick: copy\n      }, [\n        _hoisted_1,\n        _createElementVNode(\"span\", _hoisted_2, [\n          _createVNode(_Transition, { name: \"fade\" }, {\n            default: _withCtx(() => [\n              state.value === \"copied\" ? (_openBlock(), _createBlock(_component_Icon, {\n                key: 0,\n                name: _unref(prose).copyButton?.iconCopied,\n                size: \"18\",\n                class: \"copied\"\n              }, null, 8, [\"name\"])) : (_openBlock(), _createBlock(_component_Icon, {\n                key: 1,\n                name: _unref(prose).copyButton?.iconCopy,\n                size: \"18\"\n              }, null, 8, [\"name\"]))\n            ]),\n            _: 1\n          })\n        ])\n      ], 2);\n    };\n  }\n});\n",
-      "start": 1707665598235,
-      "end": 1707665598238,
+      "start": 1707990827326,
+      "end": 1707990827328,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -193,51 +193,51 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1707665598238,
-      "end": 1707665598238,
+      "start": 1707990827328,
+      "end": 1707990827328,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1707665598238,
-      "end": 1707665598238,
+      "start": 1707990827328,
+      "end": 1707990827328,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1707665598238,
-      "end": 1707665598238,
+      "start": 1707990827328,
+      "end": 1707990827328,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1707665598238,
-      "end": 1707665598238,
+      "start": 1707990827328,
+      "end": 1707990827328,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
       "result": "import { default as __nuxt_component_0 } from \"/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/Icon.vue\";\nimport { useAppConfig } from '#app/config';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { createElementVNode as _createElementVNode, unref as _unref, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, Transition as _Transition, withCtx as _withCtx, createVNode as _createVNode, normalizeClass as _normalizeClass, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-4a003820\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"span\", { class: \"sr-only\" }, \"Copy to clipboard\", -1));\nconst _hoisted_2 = { class: \"icon-wrapper\" };\nimport { ref } from \"vue\";\nimport { useClipboard, onClickOutside } from \"@vueuse/core\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ProseCodeCopyButton\",\n  props: {\n    content: {\n      type: String,\n      default: \"\"\n    },\n    show: {\n      type: Boolean,\n      default: false\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const copyButtonRef = ref();\n    const { copy: copyToClipboard } = useClipboard();\n    onClickOutside(copyButtonRef, () => {\n      if (state.value === \"copied\") {\n        state.value = \"init\";\n      }\n    });\n    const { prose } = useAppConfig();\n    const state = ref(\"init\");\n    const copy = (_e) => {\n      copyToClipboard(props.content).then(() => {\n        state.value = \"copied\";\n      }).catch((err) => {\n        console.warn(\"Couldn't copy to clipboard!\", err);\n      });\n    };\n    return (_ctx, _cache) => {\n      const _component_Icon = __nuxt_component_0;\n      return _openBlock(), _createElementBlock(\"button\", {\n        ref_key: \"copyButtonRef\",\n        ref: copyButtonRef,\n        class: _normalizeClass([(__props.show || state.value === \"copied\") && \"show\"]),\n        onClick: copy\n      }, [\n        _hoisted_1,\n        _createElementVNode(\"span\", _hoisted_2, [\n          _createVNode(_Transition, { name: \"fade\" }, {\n            default: _withCtx(() => [\n              state.value === \"copied\" ? (_openBlock(), _createBlock(_component_Icon, {\n                key: 0,\n                name: _unref(prose).copyButton?.iconCopied,\n                size: \"18\",\n                class: \"copied\"\n              }, null, 8, [\"name\"])) : (_openBlock(), _createBlock(_component_Icon, {\n                key: 1,\n                name: _unref(prose).copyButton?.iconCopy,\n                size: \"18\"\n              }, null, 8, [\"name\"]))\n            ]),\n            _: 1\n          })\n        ])\n      ], 2);\n    };\n  }\n});\n",
-      "start": 1707665598238,
-      "end": 1707665598238,
+      "start": 1707990827328,
+      "end": 1707990827328,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1707665598238,
-      "end": 1707665598238,
+      "start": 1707990827328,
+      "end": 1707990827328,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1707665598238,
-      "end": 1707665598238,
+      "start": 1707990827328,
+      "end": 1707990827328,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1707665598238,
-      "end": 1707665598238,
+      "start": 1707990827328,
+      "end": 1707990827328,
       "order": "normal"
     }
   ]
