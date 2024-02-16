@@ -46,7 +46,7 @@ Throughout this bootcamp, you will complete the following modules:
 
 ## Terms and Conditions
 
-Before proceeding, please ensure you have read and agreed to the [workshop terms and conditions](/you-must-know), including the proper use of resources and respectful behavior guidelines.
+Before proceeding, please ensure you have read and agreed to the [workshop terms and conditions](https://cncf-lahore.github.io/Kubernetes-Bootcamp/introduction/you-must-know), including the proper use of resources and respectful behavior guidelines.
 
 ## Ready to Start?
 
