@@ -179,19 +179,12 @@ export default {
                 "description": "",
                 "tags": [],
                 "required": false,
-                "type": "((_: {}) => any) | undefined",
+                "type": "(_: {}) => any",
                 "declarations": [],
                 "schema": {
-                  "kind": "enum",
-                  "type": "((_: {}) => any) | undefined",
-                  "schema": [
-                    "undefined",
-                    {
-                      "kind": "event",
-                      "type": "(_: {}): any",
-                      "schema": []
-                    }
-                  ]
+                  "kind": "event",
+                  "type": "(_: {}): any",
+                  "schema": []
                 }
               }
             }
@@ -222,7 +215,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "number | undefined",
+          "type": "number",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppLoadingBar.vue",
@@ -232,14 +225,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "number | undefined",
-            "schema": [
-              "undefined",
-              "number"
-            ]
-          },
+          "schema": "number",
           "default": "200"
         },
         {
@@ -248,7 +234,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "number | undefined",
+          "type": "number",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppLoadingBar.vue",
@@ -258,14 +244,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "number | undefined",
-            "schema": [
-              "undefined",
-              "number"
-            ]
-          },
+          "schema": "number",
           "default": "2000"
         }
       ],
@@ -426,7 +405,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "string | undefined",
+          "type": "string",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/Ellipsis.vue",
@@ -436,14 +415,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          },
+          "schema": "string",
           "default": "\"10rem\""
         },
         {
@@ -452,7 +424,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "string | undefined",
+          "type": "string",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/Ellipsis.vue",
@@ -462,14 +434,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          },
+          "schema": "string",
           "default": "\"10rem\""
         },
         {
@@ -478,7 +443,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "string | undefined",
+          "type": "string",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/Ellipsis.vue",
@@ -488,14 +453,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          },
+          "schema": "string",
           "default": "\"10\""
         },
         {
@@ -504,7 +462,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "string | undefined",
+          "type": "string",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/Ellipsis.vue",
@@ -514,14 +472,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          },
+          "schema": "string",
           "default": "\"0\""
         },
         {
@@ -530,7 +481,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "string | undefined",
+          "type": "string",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/Ellipsis.vue",
@@ -540,14 +491,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          },
+          "schema": "string",
           "default": "\"auto\""
         },
         {
@@ -556,7 +500,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "string | undefined",
+          "type": "string",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/Ellipsis.vue",
@@ -566,14 +510,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          },
+          "schema": "string",
           "default": "\"auto\""
         },
         {
@@ -582,7 +519,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "string | undefined",
+          "type": "string",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/Ellipsis.vue",
@@ -592,14 +529,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          },
+          "schema": "string",
           "default": "\"50px\""
         },
         {
@@ -608,7 +538,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "string[] | undefined",
+          "type": "string[]",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/Ellipsis.vue",
@@ -619,17 +549,10 @@ export default {
             }
           ],
           "schema": {
-            "kind": "enum",
-            "type": "string[] | undefined",
+            "kind": "array",
+            "type": "string[]",
             "schema": [
-              "undefined",
-              {
-                "kind": "array",
-                "type": "string[]",
-                "schema": [
-                  "string"
-                ]
-              }
+              "string"
             ]
           },
           "default": "[\"rgba(0, 71, 225, 0.22)\", \"rgba(26, 214, 255, 0.22)\", \"rgba(0, 220, 130, 0.22)\"]"
@@ -871,7 +794,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "number | undefined",
+          "type": "number",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsAsideTree.vue",
@@ -881,14 +804,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "number | undefined",
-            "schema": [
-              "undefined",
-              "number"
-            ]
-          },
+          "schema": "number",
           "default": "0"
         },
         {
@@ -897,7 +813,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "number | undefined",
+          "type": "number",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsAsideTree.vue",
@@ -907,14 +823,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "number | undefined",
-            "schema": [
-              "undefined",
-              "number"
-            ]
-          },
+          "schema": "number",
           "default": "null"
         },
         {
@@ -1078,19 +987,12 @@ export default {
                 "description": "",
                 "tags": [],
                 "required": false,
-                "type": "((_: {}) => any) | undefined",
+                "type": "(_: {}) => any",
                 "declarations": [],
                 "schema": {
-                  "kind": "enum",
-                  "type": "((_: {}) => any) | undefined",
-                  "schema": [
-                    "undefined",
-                    {
-                      "kind": "event",
-                      "type": "(_: {}): any",
-                      "schema": []
-                    }
-                  ]
+                  "kind": "event",
+                  "type": "(_: {}): any",
+                  "schema": []
                 }
               }
             }
@@ -1159,21 +1061,14 @@ export default {
       "exposed": [
         {
           "name": "onMove",
-          "type": "((...args: any[]) => any) | undefined",
+          "type": "(...args: any[]) => any",
           "description": "",
           "declarations": [],
           "schema": {
-            "kind": "enum",
-            "type": "((...args: any[]) => any) | undefined",
+            "kind": "event",
+            "type": "(...args: any[]): any",
             "schema": [
-              "undefined",
-              {
-                "kind": "event",
-                "type": "(...args: any[]): any",
-                "schema": [
-                  "any"
-                ]
-              }
+              "any"
             ]
           }
         }
@@ -1202,7 +1097,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "TocLink[] | undefined",
+          "type": "TocLink[]",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsTocLinks.vue",
@@ -1213,93 +1108,86 @@ export default {
             }
           ],
           "schema": {
-            "kind": "enum",
-            "type": "TocLink[] | undefined",
+            "kind": "array",
+            "type": "TocLink[]",
             "schema": [
-              "undefined",
               {
-                "kind": "array",
-                "type": "TocLink[]",
-                "schema": [
-                  {
-                    "kind": "object",
-                    "type": "TocLink",
-                    "schema": {
-                      "id": {
-                        "name": "id",
-                        "global": false,
-                        "description": "",
-                        "tags": [],
-                        "required": true,
-                        "type": "string",
-                        "declarations": [
-                          {
-                            "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                            "range": [
-                              991,
-                              1002
-                            ]
-                          }
-                        ],
-                        "schema": "string"
-                      },
-                      "text": {
-                        "name": "text",
-                        "global": false,
-                        "description": "",
-                        "tags": [],
-                        "required": true,
-                        "type": "string",
-                        "declarations": [
-                          {
-                            "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                            "range": [
-                              1007,
-                              1020
-                            ]
-                          }
-                        ],
-                        "schema": "string"
-                      },
-                      "depth": {
-                        "name": "depth",
-                        "global": false,
-                        "description": "",
-                        "tags": [],
-                        "required": true,
-                        "type": "number",
-                        "declarations": [
-                          {
-                            "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                            "range": [
-                              1025,
-                              1039
-                            ]
-                          }
-                        ],
-                        "schema": "number"
-                      },
-                      "children": {
-                        "name": "children",
-                        "global": false,
-                        "description": "",
-                        "tags": [],
-                        "required": false,
-                        "type": "TocLink[] | undefined",
-                        "declarations": [
-                          {
-                            "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                            "range": [
-                              1044,
-                              1065
-                            ]
-                          }
-                        ],
-                        "schema": "TocLink[] | undefined"
+                "kind": "object",
+                "type": "TocLink",
+                "schema": {
+                  "id": {
+                    "name": "id",
+                    "global": false,
+                    "description": "",
+                    "tags": [],
+                    "required": true,
+                    "type": "string",
+                    "declarations": [
+                      {
+                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                        "range": [
+                          991,
+                          1002
+                        ]
                       }
-                    }
+                    ],
+                    "schema": "string"
+                  },
+                  "text": {
+                    "name": "text",
+                    "global": false,
+                    "description": "",
+                    "tags": [],
+                    "required": true,
+                    "type": "string",
+                    "declarations": [
+                      {
+                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                        "range": [
+                          1007,
+                          1020
+                        ]
+                      }
+                    ],
+                    "schema": "string"
+                  },
+                  "depth": {
+                    "name": "depth",
+                    "global": false,
+                    "description": "",
+                    "tags": [],
+                    "required": true,
+                    "type": "number",
+                    "declarations": [
+                      {
+                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                        "range": [
+                          1025,
+                          1039
+                        ]
+                      }
+                    ],
+                    "schema": "number"
+                  },
+                  "children": {
+                    "name": "children",
+                    "global": false,
+                    "description": "",
+                    "tags": [],
+                    "required": false,
+                    "type": "TocLink[]",
+                    "declarations": [
+                      {
+                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                        "range": [
+                          1044,
+                          1065
+                        ]
+                      }
+                    ],
+                    "schema": "TocLink[]"
                   }
-                ]
+                }
               }
             ]
           },
@@ -1408,7 +1296,7 @@ export default {
                     "description": "",
                     "tags": [],
                     "required": false,
-                    "type": "TocLink[] | undefined",
+                    "type": "TocLink[]",
                     "declarations": [
                       {
                         "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -1418,14 +1306,7 @@ export default {
                         ]
                       }
                     ],
-                    "schema": {
-                      "kind": "enum",
-                      "type": "TocLink[] | undefined",
-                      "schema": [
-                        "undefined",
-                        "TocLink[]"
-                      ]
-                    }
+                    "schema": "TocLink[]"
                   }
                 }
               }
@@ -1434,21 +1315,14 @@ export default {
         },
         {
           "name": "onMove",
-          "type": "((...args: any[]) => any) | undefined",
+          "type": "(...args: any[]) => any",
           "description": "",
           "declarations": [],
           "schema": {
-            "kind": "enum",
-            "type": "((...args: any[]) => any) | undefined",
+            "kind": "event",
+            "type": "(...args: any[]): any",
             "schema": [
-              "undefined",
-              {
-                "kind": "event",
-                "type": "(...args: any[]): any",
-                "schema": [
-                  "any"
-                ]
-              }
+              "any"
             ]
           }
         }
@@ -1477,7 +1351,7 @@ export default {
           "description": "GitHub base URL.",
           "tags": [],
           "required": false,
-          "type": "string | undefined",
+          "type": "string",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
@@ -1487,14 +1361,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          },
+          "schema": "string",
           "default": "useAppConfig()?.docus?.github?.baseUrl || \"https://github.com\""
         },
         {
@@ -1503,7 +1370,7 @@ export default {
           "description": "Repository owner.",
           "tags": [],
           "required": false,
-          "type": "string | undefined",
+          "type": "string",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
@@ -1513,14 +1380,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          },
+          "schema": "string",
           "default": "useAppConfig()?.docus?.github?.owner"
         },
         {
@@ -1529,7 +1389,7 @@ export default {
           "description": "Repository name.",
           "tags": [],
           "required": false,
-          "type": "string | undefined",
+          "type": "string",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
@@ -1539,14 +1399,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          },
+          "schema": "string",
           "default": "useAppConfig()?.docus?.github?.repo"
         },
         {
@@ -1555,7 +1408,7 @@ export default {
           "description": "The branch to use for the edit link.",
           "tags": [],
           "required": false,
-          "type": "string | undefined",
+          "type": "string",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
@@ -1565,14 +1418,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          },
+          "schema": "string",
           "default": "useAppConfig()?.docus?.github?.branch"
         },
         {
@@ -1581,7 +1427,7 @@ export default {
           "description": "A base directory to append to the source path.\n\nWon't be used if `page` is set.",
           "tags": [],
           "required": false,
-          "type": "string | undefined",
+          "type": "string",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
@@ -1591,14 +1437,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          },
+          "schema": "string",
           "default": "useAppConfig()?.docus?.github?.dir"
         },
         {
@@ -1607,7 +1446,7 @@ export default {
           "description": "Source file path.\n\nWon't be used if `page` is set.",
           "tags": [],
           "required": false,
-          "type": "string | undefined",
+          "type": "string",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
@@ -1617,14 +1456,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          },
+          "schema": "string",
           "default": "undefined"
         },
         {
@@ -1657,7 +1489,7 @@ export default {
           "description": "Content directory (to be used with `page`)",
           "tags": [],
           "required": false,
-          "type": "string | undefined",
+          "type": "string",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
@@ -1667,14 +1499,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          },
+          "schema": "string",
           "default": "useAppConfig()?.docus?.github?.dir || \"content\""
         },
         {
@@ -1683,7 +1508,7 @@ export default {
           "description": "Send to an edit page or not.",
           "tags": [],
           "required": false,
-          "type": "boolean | undefined",
+          "type": "boolean",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
@@ -1695,9 +1520,8 @@ export default {
           ],
           "schema": {
             "kind": "enum",
-            "type": "boolean | undefined",
+            "type": "boolean",
             "schema": [
-              "undefined",
               "false",
               "true"
             ]
@@ -1710,7 +1534,7 @@ export default {
       "exposed": [
         {
           "name": "baseUrl",
-          "type": "string | undefined",
+          "type": "string",
           "description": "GitHub base URL.",
           "declarations": [
             {
@@ -1721,18 +1545,11 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          }
+          "schema": "string"
         },
         {
           "name": "owner",
-          "type": "string | undefined",
+          "type": "string",
           "description": "Repository owner.",
           "declarations": [
             {
@@ -1743,18 +1560,11 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          }
+          "schema": "string"
         },
         {
           "name": "repo",
-          "type": "string | undefined",
+          "type": "string",
           "description": "Repository name.",
           "declarations": [
             {
@@ -1765,18 +1575,11 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          }
+          "schema": "string"
         },
         {
           "name": "branch",
-          "type": "string | undefined",
+          "type": "string",
           "description": "The branch to use for the edit link.",
           "declarations": [
             {
@@ -1787,18 +1590,11 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          }
+          "schema": "string"
         },
         {
           "name": "dir",
-          "type": "string | undefined",
+          "type": "string",
           "description": "A base directory to append to the source path.\n\nWon't be used if `page` is set.",
           "declarations": [
             {
@@ -1809,18 +1605,11 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          }
+          "schema": "string"
         },
         {
           "name": "source",
-          "type": "string | undefined",
+          "type": "string",
           "description": "Source file path.\n\nWon't be used if `page` is set.",
           "declarations": [
             {
@@ -1831,14 +1620,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          }
+          "schema": "string"
         },
         {
           "name": "page",
@@ -1857,7 +1639,7 @@ export default {
         },
         {
           "name": "contentDir",
-          "type": "string | undefined",
+          "type": "string",
           "description": "Content directory (to be used with `page`)",
           "declarations": [
             {
@@ -1868,18 +1650,11 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          }
+          "schema": "string"
         },
         {
           "name": "edit",
-          "type": "boolean | undefined",
+          "type": "boolean",
           "description": "Send to an edit page or not.",
           "declarations": [
             {
@@ -1892,9 +1667,8 @@ export default {
           ],
           "schema": {
             "kind": "enum",
-            "type": "boolean | undefined",
+            "type": "boolean",
             "schema": [
-              "undefined",
               "false",
               "true"
             ]
@@ -2003,7 +1777,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "string | undefined",
+          "type": "string",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseA.vue",
@@ -2013,14 +1787,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          },
+          "schema": "string",
           "default": "\"\""
         },
         {
@@ -2029,7 +1796,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "string | undefined",
+          "type": "string",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseA.vue",
@@ -2039,14 +1806,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          },
+          "schema": "string",
           "default": "undefined"
         }
       ],
@@ -2088,19 +1848,12 @@ export default {
                 "description": "",
                 "tags": [],
                 "required": false,
-                "type": "((_: {}) => any) | undefined",
+                "type": "(_: {}) => any",
                 "declarations": [],
                 "schema": {
-                  "kind": "enum",
-                  "type": "((_: {}) => any) | undefined",
-                  "schema": [
-                    "undefined",
-                    {
-                      "kind": "event",
-                      "type": "(_: {}): any",
-                      "schema": []
-                    }
-                  ]
+                  "kind": "event",
+                  "type": "(_: {}): any",
+                  "schema": []
                 }
               }
             }
@@ -2123,7 +1876,7 @@ export default {
         },
         {
           "name": "target",
-          "type": "string | undefined",
+          "type": "string",
           "description": "",
           "declarations": [
             {
@@ -2134,14 +1887,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          }
+          "schema": "string"
         }
       ]
     }
@@ -2200,19 +1946,12 @@ export default {
                 "description": "",
                 "tags": [],
                 "required": false,
-                "type": "((_: {}) => any) | undefined",
+                "type": "(_: {}) => any",
                 "declarations": [],
                 "schema": {
-                  "kind": "enum",
-                  "type": "((_: {}) => any) | undefined",
-                  "schema": [
-                    "undefined",
-                    {
-                      "kind": "event",
-                      "type": "(_: {}): any",
-                      "schema": []
-                    }
-                  ]
+                  "kind": "event",
+                  "type": "(_: {}): any",
+                  "schema": []
                 }
               }
             }
@@ -2243,7 +1982,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "string | undefined",
+          "type": "string",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseCode.vue",
@@ -2253,14 +1992,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          },
+          "schema": "string",
           "default": "\"\""
         },
         {
@@ -2269,7 +2001,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "any",
+          "type": "Lang",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseCode.vue",
@@ -2279,7 +2011,11 @@ export default {
               ]
             }
           ],
-          "schema": "any",
+          "schema": {
+            "kind": "array",
+            "type": "Lang",
+            "schema": []
+          },
           "default": "null"
         },
         {
@@ -2288,7 +2024,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "string | undefined",
+          "type": "string",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseCode.vue",
@@ -2298,14 +2034,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          },
+          "schema": "string",
           "default": "null"
         },
         {
@@ -2314,7 +2043,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "number[] | undefined",
+          "type": "number[]",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseCode.vue",
@@ -2325,17 +2054,10 @@ export default {
             }
           ],
           "schema": {
-            "kind": "enum",
-            "type": "number[] | undefined",
+            "kind": "array",
+            "type": "number[]",
             "schema": [
-              "undefined",
-              {
-                "kind": "array",
-                "type": "number[]",
-                "schema": [
-                  "number"
-                ]
-              }
+              "number"
             ]
           },
           "default": "[]"
@@ -2379,19 +2101,12 @@ export default {
                 "description": "",
                 "tags": [],
                 "required": false,
-                "type": "((_: {}) => any) | undefined",
+                "type": "(_: {}) => any",
                 "declarations": [],
                 "schema": {
-                  "kind": "enum",
-                  "type": "((_: {}) => any) | undefined",
-                  "schema": [
-                    "undefined",
-                    {
-                      "kind": "event",
-                      "type": "(_: {}): any",
-                      "schema": []
-                    }
-                  ]
+                  "kind": "event",
+                  "type": "(_: {}): any",
+                  "schema": []
                 }
               }
             }
@@ -2524,19 +2239,12 @@ export default {
                 "description": "",
                 "tags": [],
                 "required": false,
-                "type": "((_: {}) => any) | undefined",
+                "type": "(_: {}) => any",
                 "declarations": [],
                 "schema": {
-                  "kind": "enum",
-                  "type": "((_: {}) => any) | undefined",
-                  "schema": [
-                    "undefined",
-                    {
-                      "kind": "event",
-                      "type": "(_: {}): any",
-                      "schema": []
-                    }
-                  ]
+                  "kind": "event",
+                  "type": "(_: {}): any",
+                  "schema": []
                 }
               }
             }
@@ -2599,19 +2307,12 @@ export default {
                 "description": "",
                 "tags": [],
                 "required": false,
-                "type": "((_: {}) => any) | undefined",
+                "type": "(_: {}) => any",
                 "declarations": [],
                 "schema": {
-                  "kind": "enum",
-                  "type": "((_: {}) => any) | undefined",
-                  "schema": [
-                    "undefined",
-                    {
-                      "kind": "event",
-                      "type": "(_: {}): any",
-                      "schema": []
-                    }
-                  ]
+                  "kind": "event",
+                  "type": "(_: {}): any",
+                  "schema": []
                 }
               }
             }
@@ -2700,19 +2401,12 @@ export default {
                 "description": "",
                 "tags": [],
                 "required": false,
-                "type": "((_: {}) => any) | undefined",
+                "type": "(_: {}) => any",
                 "declarations": [],
                 "schema": {
-                  "kind": "enum",
-                  "type": "((_: {}) => any) | undefined",
-                  "schema": [
-                    "undefined",
-                    {
-                      "kind": "event",
-                      "type": "(_: {}): any",
-                      "schema": []
-                    }
-                  ]
+                  "kind": "event",
+                  "type": "(_: {}): any",
+                  "schema": []
                 }
               }
             }
@@ -2816,19 +2510,12 @@ export default {
                 "description": "",
                 "tags": [],
                 "required": false,
-                "type": "((_: {}) => any) | undefined",
+                "type": "(_: {}) => any",
                 "declarations": [],
                 "schema": {
-                  "kind": "enum",
-                  "type": "((_: {}) => any) | undefined",
-                  "schema": [
-                    "undefined",
-                    {
-                      "kind": "event",
-                      "type": "(_: {}): any",
-                      "schema": []
-                    }
-                  ]
+                  "kind": "event",
+                  "type": "(_: {}): any",
+                  "schema": []
                 }
               }
             }
@@ -2932,19 +2619,12 @@ export default {
                 "description": "",
                 "tags": [],
                 "required": false,
-                "type": "((_: {}) => any) | undefined",
+                "type": "(_: {}) => any",
                 "declarations": [],
                 "schema": {
-                  "kind": "enum",
-                  "type": "((_: {}) => any) | undefined",
-                  "schema": [
-                    "undefined",
-                    {
-                      "kind": "event",
-                      "type": "(_: {}): any",
-                      "schema": []
-                    }
-                  ]
+                  "kind": "event",
+                  "type": "(_: {}): any",
+                  "schema": []
                 }
               }
             }
@@ -3048,19 +2728,12 @@ export default {
                 "description": "",
                 "tags": [],
                 "required": false,
-                "type": "((_: {}) => any) | undefined",
+                "type": "(_: {}) => any",
                 "declarations": [],
                 "schema": {
-                  "kind": "enum",
-                  "type": "((_: {}) => any) | undefined",
-                  "schema": [
-                    "undefined",
-                    {
-                      "kind": "event",
-                      "type": "(_: {}): any",
-                      "schema": []
-                    }
-                  ]
+                  "kind": "event",
+                  "type": "(_: {}): any",
+                  "schema": []
                 }
               }
             }
@@ -3164,19 +2837,12 @@ export default {
                 "description": "",
                 "tags": [],
                 "required": false,
-                "type": "((_: {}) => any) | undefined",
+                "type": "(_: {}) => any",
                 "declarations": [],
                 "schema": {
-                  "kind": "enum",
-                  "type": "((_: {}) => any) | undefined",
-                  "schema": [
-                    "undefined",
-                    {
-                      "kind": "event",
-                      "type": "(_: {}): any",
-                      "schema": []
-                    }
-                  ]
+                  "kind": "event",
+                  "type": "(_: {}): any",
+                  "schema": []
                 }
               }
             }
@@ -3280,19 +2946,12 @@ export default {
                 "description": "",
                 "tags": [],
                 "required": false,
-                "type": "((_: {}) => any) | undefined",
+                "type": "(_: {}) => any",
                 "declarations": [],
                 "schema": {
-                  "kind": "enum",
-                  "type": "((_: {}) => any) | undefined",
-                  "schema": [
-                    "undefined",
-                    {
-                      "kind": "event",
-                      "type": "(_: {}): any",
-                      "schema": []
-                    }
-                  ]
+                  "kind": "event",
+                  "type": "(_: {}): any",
+                  "schema": []
                 }
               }
             }
@@ -3359,7 +3018,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "string | number | undefined",
+          "type": "string | number",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseImg.vue",
@@ -3371,9 +3030,8 @@ export default {
           ],
           "schema": {
             "kind": "enum",
-            "type": "string | number | undefined",
+            "type": "string | number",
             "schema": [
-              "undefined",
               "string",
               "number"
             ]
@@ -3386,7 +3044,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "string | number | undefined",
+          "type": "string | number",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseImg.vue",
@@ -3398,9 +3056,8 @@ export default {
           ],
           "schema": {
             "kind": "enum",
-            "type": "string | number | undefined",
+            "type": "string | number",
             "schema": [
-              "undefined",
               "string",
               "number"
             ]
@@ -3413,7 +3070,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "string | undefined",
+          "type": "string",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseImg.vue",
@@ -3423,14 +3080,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          },
+          "schema": "string",
           "default": "\"\""
         },
         {
@@ -3439,7 +3089,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "string | undefined",
+          "type": "string",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseImg.vue",
@@ -3449,14 +3099,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          },
+          "schema": "string",
           "default": "\"\""
         }
       ],
@@ -3465,7 +3108,7 @@ export default {
       "exposed": [
         {
           "name": "width",
-          "type": "string | number | undefined",
+          "type": "string | number",
           "description": "",
           "declarations": [
             {
@@ -3478,9 +3121,8 @@ export default {
           ],
           "schema": {
             "kind": "enum",
-            "type": "string | number | undefined",
+            "type": "string | number",
             "schema": [
-              "undefined",
               "string",
               "number"
             ]
@@ -3488,7 +3130,7 @@ export default {
         },
         {
           "name": "height",
-          "type": "string | number | undefined",
+          "type": "string | number",
           "description": "",
           "declarations": [
             {
@@ -3501,9 +3143,8 @@ export default {
           ],
           "schema": {
             "kind": "enum",
-            "type": "string | number | undefined",
+            "type": "string | number",
             "schema": [
-              "undefined",
               "string",
               "number"
             ]
@@ -3596,19 +3237,12 @@ export default {
                 "description": "",
                 "tags": [],
                 "required": false,
-                "type": "((_: {}) => any) | undefined",
+                "type": "(_: {}) => any",
                 "declarations": [],
                 "schema": {
-                  "kind": "enum",
-                  "type": "((_: {}) => any) | undefined",
-                  "schema": [
-                    "undefined",
-                    {
-                      "kind": "event",
-                      "type": "(_: {}): any",
-                      "schema": []
-                    }
-                  ]
+                  "kind": "event",
+                  "type": "(_: {}): any",
+                  "schema": []
                 }
               }
             }
@@ -3671,19 +3305,12 @@ export default {
                 "description": "",
                 "tags": [],
                 "required": false,
-                "type": "((_: {}) => any) | undefined",
+                "type": "(_: {}) => any",
                 "declarations": [],
                 "schema": {
-                  "kind": "enum",
-                  "type": "((_: {}) => any) | undefined",
-                  "schema": [
-                    "undefined",
-                    {
-                      "kind": "event",
-                      "type": "(_: {}): any",
-                      "schema": []
-                    }
-                  ]
+                  "kind": "event",
+                  "type": "(_: {}): any",
+                  "schema": []
                 }
               }
             }
@@ -3746,19 +3373,12 @@ export default {
                 "description": "",
                 "tags": [],
                 "required": false,
-                "type": "((_: {}) => any) | undefined",
+                "type": "(_: {}) => any",
                 "declarations": [],
                 "schema": {
-                  "kind": "enum",
-                  "type": "((_: {}) => any) | undefined",
-                  "schema": [
-                    "undefined",
-                    {
-                      "kind": "event",
-                      "type": "(_: {}): any",
-                      "schema": []
-                    }
-                  ]
+                  "kind": "event",
+                  "type": "(_: {}): any",
+                  "schema": []
                 }
               }
             }
@@ -3821,19 +3441,12 @@ export default {
                 "description": "",
                 "tags": [],
                 "required": false,
-                "type": "((_: {}) => any) | undefined",
+                "type": "(_: {}) => any",
                 "declarations": [],
                 "schema": {
-                  "kind": "enum",
-                  "type": "((_: {}) => any) | undefined",
-                  "schema": [
-                    "undefined",
-                    {
-                      "kind": "event",
-                      "type": "(_: {}): any",
-                      "schema": []
-                    }
-                  ]
+                  "kind": "event",
+                  "type": "(_: {}): any",
+                  "schema": []
                 }
               }
             }
@@ -3896,19 +3509,12 @@ export default {
                 "description": "",
                 "tags": [],
                 "required": false,
-                "type": "((_: {}) => any) | undefined",
+                "type": "(_: {}) => any",
                 "declarations": [],
                 "schema": {
-                  "kind": "enum",
-                  "type": "((_: {}) => any) | undefined",
-                  "schema": [
-                    "undefined",
-                    {
-                      "kind": "event",
-                      "type": "(_: {}): any",
-                      "schema": []
-                    }
-                  ]
+                  "kind": "event",
+                  "type": "(_: {}): any",
+                  "schema": []
                 }
               }
             }
@@ -3971,19 +3577,12 @@ export default {
                 "description": "",
                 "tags": [],
                 "required": false,
-                "type": "((_: {}) => any) | undefined",
+                "type": "(_: {}) => any",
                 "declarations": [],
                 "schema": {
-                  "kind": "enum",
-                  "type": "((_: {}) => any) | undefined",
-                  "schema": [
-                    "undefined",
-                    {
-                      "kind": "event",
-                      "type": "(_: {}): any",
-                      "schema": []
-                    }
-                  ]
+                  "kind": "event",
+                  "type": "(_: {}): any",
+                  "schema": []
                 }
               }
             }
@@ -4046,19 +3645,12 @@ export default {
                 "description": "",
                 "tags": [],
                 "required": false,
-                "type": "((_: {}) => any) | undefined",
+                "type": "(_: {}) => any",
                 "declarations": [],
                 "schema": {
-                  "kind": "enum",
-                  "type": "((_: {}) => any) | undefined",
-                  "schema": [
-                    "undefined",
-                    {
-                      "kind": "event",
-                      "type": "(_: {}): any",
-                      "schema": []
-                    }
-                  ]
+                  "kind": "event",
+                  "type": "(_: {}): any",
+                  "schema": []
                 }
               }
             }
@@ -4121,19 +3713,12 @@ export default {
                 "description": "",
                 "tags": [],
                 "required": false,
-                "type": "((_: {}) => any) | undefined",
+                "type": "(_: {}) => any",
                 "declarations": [],
                 "schema": {
-                  "kind": "enum",
-                  "type": "((_: {}) => any) | undefined",
-                  "schema": [
-                    "undefined",
-                    {
-                      "kind": "event",
-                      "type": "(_: {}): any",
-                      "schema": []
-                    }
-                  ]
+                  "kind": "event",
+                  "type": "(_: {}): any",
+                  "schema": []
                 }
               }
             }
@@ -4196,19 +3781,12 @@ export default {
                 "description": "",
                 "tags": [],
                 "required": false,
-                "type": "((_: {}) => any) | undefined",
+                "type": "(_: {}) => any",
                 "declarations": [],
                 "schema": {
-                  "kind": "enum",
-                  "type": "((_: {}) => any) | undefined",
-                  "schema": [
-                    "undefined",
-                    {
-                      "kind": "event",
-                      "type": "(_: {}): any",
-                      "schema": []
-                    }
-                  ]
+                  "kind": "event",
+                  "type": "(_: {}): any",
+                  "schema": []
                 }
               }
             }
@@ -4271,19 +3849,12 @@ export default {
                 "description": "",
                 "tags": [],
                 "required": false,
-                "type": "((_: {}) => any) | undefined",
+                "type": "(_: {}) => any",
                 "declarations": [],
                 "schema": {
-                  "kind": "enum",
-                  "type": "((_: {}) => any) | undefined",
-                  "schema": [
-                    "undefined",
-                    {
-                      "kind": "event",
-                      "type": "(_: {}): any",
-                      "schema": []
-                    }
-                  ]
+                  "kind": "event",
+                  "type": "(_: {}): any",
+                  "schema": []
                 }
               }
             }
@@ -4346,19 +3917,12 @@ export default {
                 "description": "",
                 "tags": [],
                 "required": false,
-                "type": "((_: {}) => any) | undefined",
+                "type": "(_: {}) => any",
                 "declarations": [],
                 "schema": {
-                  "kind": "enum",
-                  "type": "((_: {}) => any) | undefined",
-                  "schema": [
-                    "undefined",
-                    {
-                      "kind": "event",
-                      "type": "(_: {}): any",
-                      "schema": []
-                    }
-                  ]
+                  "kind": "event",
+                  "type": "(_: {}): any",
+                  "schema": []
                 }
               }
             }
@@ -4394,7 +3958,7 @@ export default {
             }
           ],
           "required": false,
-          "type": "string | undefined",
+          "type": "string",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Alert.vue",
@@ -4404,14 +3968,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          },
+          "schema": "string",
           "default": "\"info\""
         }
       ],
@@ -4464,19 +4021,12 @@ export default {
                 "description": "",
                 "tags": [],
                 "required": false,
-                "type": "((_: { unwrap: string; }) => any) | undefined",
+                "type": "(_: { unwrap: string; }) => any",
                 "declarations": [],
                 "schema": {
-                  "kind": "enum",
-                  "type": "((_: { unwrap: string; }) => any) | undefined",
-                  "schema": [
-                    "undefined",
-                    {
-                      "kind": "event",
-                      "type": "(_: { unwrap: string; }): any",
-                      "schema": []
-                    }
-                  ]
+                  "kind": "event",
+                  "type": "(_: { unwrap: string; }): any",
+                  "schema": []
                 }
               }
             }
@@ -4527,7 +4077,7 @@ export default {
             }
           ],
           "required": false,
-          "type": "string | undefined",
+          "type": "string",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Badge.vue",
@@ -4537,14 +4087,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          },
+          "schema": "string",
           "default": "\"info\""
         }
       ],
@@ -4597,19 +4140,12 @@ export default {
                 "description": "",
                 "tags": [],
                 "required": false,
-                "type": "((_: { unwrap: string; }) => any) | undefined",
+                "type": "(_: { unwrap: string; }) => any",
                 "declarations": [],
                 "schema": {
-                  "kind": "enum",
-                  "type": "((_: { unwrap: string; }) => any) | undefined",
-                  "schema": [
-                    "undefined",
-                    {
-                      "kind": "event",
-                      "type": "(_: { unwrap: string; }): any",
-                      "schema": []
-                    }
-                  ]
+                  "kind": "event",
+                  "type": "(_: { unwrap: string; }): any",
+                  "schema": []
                 }
               }
             }
@@ -4698,19 +4234,12 @@ export default {
                 "description": "",
                 "tags": [],
                 "required": false,
-                "type": "((_: { unwrap: string; }) => any) | undefined",
+                "type": "(_: { unwrap: string; }) => any",
                 "declarations": [],
                 "schema": {
-                  "kind": "enum",
-                  "type": "((_: { unwrap: string; }) => any) | undefined",
-                  "schema": [
-                    "undefined",
-                    {
-                      "kind": "event",
-                      "type": "(_: { unwrap: string; }): any",
-                      "schema": []
-                    }
-                  ]
+                  "kind": "event",
+                  "type": "(_: { unwrap: string; }): any",
+                  "schema": []
                 }
               }
             }
@@ -4746,7 +4275,7 @@ export default {
             }
           ],
           "required": false,
-          "type": "string | undefined",
+          "type": "string",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Callout.vue",
@@ -4756,14 +4285,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          },
+          "schema": "string",
           "default": "\"info\""
         },
         {
@@ -4853,19 +4375,12 @@ export default {
                 "description": "",
                 "tags": [],
                 "required": false,
-                "type": "((_: {}) => any) | undefined",
+                "type": "(_: {}) => any",
                 "declarations": [],
                 "schema": {
-                  "kind": "enum",
-                  "type": "((_: {}) => any) | undefined",
-                  "schema": [
-                    "undefined",
-                    {
-                      "kind": "event",
-                      "type": "(_: {}): any",
-                      "schema": []
-                    }
-                  ]
+                  "kind": "event",
+                  "type": "(_: {}): any",
+                  "schema": []
                 }
               },
               "content": {
@@ -4874,19 +4389,12 @@ export default {
                 "description": "",
                 "tags": [],
                 "required": false,
-                "type": "((_: {}) => any) | undefined",
+                "type": "(_: {}) => any",
                 "declarations": [],
                 "schema": {
-                  "kind": "enum",
-                  "type": "((_: {}) => any) | undefined",
-                  "schema": [
-                    "undefined",
-                    {
-                      "kind": "event",
-                      "type": "(_: {}): any",
-                      "schema": []
-                    }
-                  ]
+                  "kind": "event",
+                  "type": "(_: {}): any",
+                  "schema": []
                 }
               }
             }
@@ -4894,21 +4402,14 @@ export default {
         },
         {
           "name": "onUpdate:modelValue",
-          "type": "((...args: any[]) => any) | undefined",
+          "type": "(...args: any[]) => any",
           "description": "",
           "declarations": [],
           "schema": {
-            "kind": "enum",
-            "type": "((...args: any[]) => any) | undefined",
+            "kind": "event",
+            "type": "(...args: any[]): any",
             "schema": [
-              "undefined",
-              {
-                "kind": "event",
-                "type": "(...args: any[]): any",
-                "schema": [
-                  "any"
-                ]
-              }
+              "any"
             ]
           }
         },
@@ -4992,7 +4493,7 @@ export default {
           "description": "Select which tab should be active\nTODO: seems like it's not used",
           "tags": [],
           "required": false,
-          "type": "boolean | undefined",
+          "type": "boolean",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/CodeBlock.vue",
@@ -5004,9 +4505,8 @@ export default {
           ],
           "schema": {
             "kind": "enum",
-            "type": "boolean | undefined",
+            "type": "boolean",
             "schema": [
-              "undefined",
               "false",
               "true"
             ]
@@ -5019,7 +4519,7 @@ export default {
           "description": "Preview block are bordered and have small padding.\nTODO: seems like it's not used",
           "tags": [],
           "required": false,
-          "type": "boolean | undefined",
+          "type": "boolean",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/CodeBlock.vue",
@@ -5031,9 +4531,8 @@ export default {
           ],
           "schema": {
             "kind": "enum",
-            "type": "boolean | undefined",
+            "type": "boolean",
             "schema": [
-              "undefined",
               "false",
               "true"
             ]
@@ -5079,19 +4578,12 @@ export default {
                 "description": "",
                 "tags": [],
                 "required": false,
-                "type": "((_: {}) => any) | undefined",
+                "type": "(_: {}) => any",
                 "declarations": [],
                 "schema": {
-                  "kind": "enum",
-                  "type": "((_: {}) => any) | undefined",
-                  "schema": [
-                    "undefined",
-                    {
-                      "kind": "event",
-                      "type": "(_: {}): any",
-                      "schema": []
-                    }
-                  ]
+                  "kind": "event",
+                  "type": "(_: {}): any",
+                  "schema": []
                 }
               }
             }
@@ -5234,19 +4726,12 @@ export default {
                 "description": "",
                 "tags": [],
                 "required": false,
-                "type": "((_: {}) => any) | undefined",
+                "type": "(_: {}) => any",
                 "declarations": [],
                 "schema": {
-                  "kind": "enum",
-                  "type": "((_: {}) => any) | undefined",
-                  "schema": [
-                    "undefined",
-                    {
-                      "kind": "event",
-                      "type": "(_: {}): any",
-                      "schema": []
-                    }
-                  ]
+                  "kind": "event",
+                  "type": "(_: {}): any",
+                  "schema": []
                 }
               }
             }
@@ -5277,7 +4762,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "string | undefined",
+          "type": "string",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/CopyButton.vue",
@@ -5287,14 +4772,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          },
+          "schema": "string",
           "default": "\"\""
         }
       ],
@@ -5404,7 +4882,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "string | undefined",
+          "type": "string",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Sandbox.vue",
@@ -5414,14 +4892,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          },
+          "schema": "string",
           "default": "\"\""
         },
         {
@@ -5430,7 +4901,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "string | undefined",
+          "type": "string",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Sandbox.vue",
@@ -5440,14 +4911,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          },
+          "schema": "string",
           "default": "\"\""
         },
         {
@@ -5456,7 +4920,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "string | undefined",
+          "type": "string",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Sandbox.vue",
@@ -5466,14 +4930,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          },
+          "schema": "string",
           "default": "\"\""
         },
         {
@@ -5482,7 +4939,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "string | undefined",
+          "type": "string",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Sandbox.vue",
@@ -5492,14 +4949,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          },
+          "schema": "string",
           "default": "\"\""
         },
         {
@@ -5508,7 +4958,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "string | undefined",
+          "type": "string",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Sandbox.vue",
@@ -5518,14 +4968,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          },
+          "schema": "string",
           "default": "\"app.vue\""
         }
       ],
@@ -5762,19 +5205,12 @@ export default {
                 "description": "",
                 "tags": [],
                 "required": false,
-                "type": "((_: {}) => any) | undefined",
+                "type": "(_: {}) => any",
                 "declarations": [],
                 "schema": {
-                  "kind": "enum",
-                  "type": "((_: {}) => any) | undefined",
-                  "schema": [
-                    "undefined",
-                    {
-                      "kind": "event",
-                      "type": "(_: {}): any",
-                      "schema": []
-                    }
-                  ]
+                  "kind": "event",
+                  "type": "(_: {}): any",
+                  "schema": []
                 }
               }
             }
@@ -5782,21 +5218,14 @@ export default {
         },
         {
           "name": "onUpdate:activeTabIndex",
-          "type": "((...args: any[]) => any) | undefined",
+          "type": "(...args: any[]) => any",
           "description": "",
           "declarations": [],
           "schema": {
-            "kind": "enum",
-            "type": "((...args: any[]) => any) | undefined",
+            "kind": "event",
+            "type": "(...args: any[]): any",
             "schema": [
-              "undefined",
-              {
-                "kind": "event",
-                "type": "(...args: any[]): any",
-                "schema": [
-                  "any"
-                ]
-              }
+              "any"
             ]
           }
         },
@@ -5973,7 +5402,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "string | undefined",
+          "type": "string",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/VideoPlayer.vue",
@@ -5983,14 +5412,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          },
+          "schema": "string",
           "default": "\"\""
         },
         {
@@ -5999,7 +5421,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "string | undefined",
+          "type": "string",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/VideoPlayer.vue",
@@ -6009,14 +5431,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          },
+          "schema": "string",
           "default": "\"\""
         },
         {
@@ -6025,7 +5440,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "any[] | undefined",
+          "type": "any[]",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/VideoPlayer.vue",
@@ -6036,17 +5451,10 @@ export default {
             }
           ],
           "schema": {
-            "kind": "enum",
-            "type": "any[] | undefined",
+            "kind": "array",
+            "type": "any[]",
             "schema": [
-              "undefined",
-              {
-                "kind": "array",
-                "type": "any[]",
-                "schema": [
-                  "any"
-                ]
-              }
+              "any"
             ]
           },
           "default": "[]"
@@ -6057,7 +5465,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "boolean | undefined",
+          "type": "boolean",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/VideoPlayer.vue",
@@ -6069,9 +5477,8 @@ export default {
           ],
           "schema": {
             "kind": "enum",
-            "type": "boolean | undefined",
+            "type": "boolean",
             "schema": [
-              "undefined",
               "false",
               "true"
             ]
@@ -6348,7 +5755,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "string[] | undefined",
+          "type": "string[]",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/landing/BlockHero.vue",
@@ -6359,17 +5766,10 @@ export default {
             }
           ],
           "schema": {
-            "kind": "enum",
-            "type": "string[] | undefined",
+            "kind": "array",
+            "type": "string[]",
             "schema": [
-              "undefined",
-              {
-                "kind": "array",
-                "type": "string[]",
-                "schema": [
-                  "string"
-                ]
-              }
+              "string"
             ]
           },
           "default": "[]"
@@ -6380,7 +5780,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "string[] | undefined",
+          "type": "string[]",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/landing/BlockHero.vue",
@@ -6391,17 +5791,10 @@ export default {
             }
           ],
           "schema": {
-            "kind": "enum",
-            "type": "string[] | undefined",
+            "kind": "array",
+            "type": "string[]",
             "schema": [
-              "undefined",
-              {
-                "kind": "array",
-                "type": "string[]",
-                "schema": [
-                  "string"
-                ]
-              }
+              "string"
             ]
           },
           "default": "[]"
@@ -6412,7 +5805,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "string | undefined",
+          "type": "string",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/landing/BlockHero.vue",
@@ -6422,14 +5815,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          },
+          "schema": "string",
           "default": "\"\""
         },
         {
@@ -6438,7 +5824,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "string | string[] | undefined",
+          "type": "string | string[]",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/landing/BlockHero.vue",
@@ -6450,9 +5836,8 @@ export default {
           ],
           "schema": {
             "kind": "enum",
-            "type": "string | string[] | undefined",
+            "type": "string | string[]",
             "schema": [
-              "undefined",
               "string",
               {
                 "kind": "array",
@@ -6614,19 +5999,12 @@ export default {
                 "description": "",
                 "tags": [],
                 "required": false,
-                "type": "((_: { unwrap: string; }) => any) | undefined",
+                "type": "(_: { unwrap: string; }) => any",
                 "declarations": [],
                 "schema": {
-                  "kind": "enum",
-                  "type": "((_: { unwrap: string; }) => any) | undefined",
-                  "schema": [
-                    "undefined",
-                    {
-                      "kind": "event",
-                      "type": "(_: { unwrap: string; }): any",
-                      "schema": []
-                    }
-                  ]
+                  "kind": "event",
+                  "type": "(_: { unwrap: string; }): any",
+                  "schema": []
                 }
               },
               "title": {
@@ -6635,19 +6013,12 @@ export default {
                 "description": "",
                 "tags": [],
                 "required": false,
-                "type": "((_: { unwrap: string; }) => any) | undefined",
+                "type": "(_: { unwrap: string; }) => any",
                 "declarations": [],
                 "schema": {
-                  "kind": "enum",
-                  "type": "((_: { unwrap: string; }) => any) | undefined",
-                  "schema": [
-                    "undefined",
-                    {
-                      "kind": "event",
-                      "type": "(_: { unwrap: string; }): any",
-                      "schema": []
-                    }
-                  ]
+                  "kind": "event",
+                  "type": "(_: { unwrap: string; }): any",
+                  "schema": []
                 }
               },
               "description": {
@@ -6656,19 +6027,12 @@ export default {
                 "description": "",
                 "tags": [],
                 "required": false,
-                "type": "((_: { unwrap: string; }) => any) | undefined",
+                "type": "(_: { unwrap: string; }) => any",
                 "declarations": [],
                 "schema": {
-                  "kind": "enum",
-                  "type": "((_: { unwrap: string; }) => any) | undefined",
-                  "schema": [
-                    "undefined",
-                    {
-                      "kind": "event",
-                      "type": "(_: { unwrap: string; }): any",
-                      "schema": []
-                    }
-                  ]
+                  "kind": "event",
+                  "type": "(_: { unwrap: string; }): any",
+                  "schema": []
                 }
               },
               "extra": {
@@ -6677,19 +6041,12 @@ export default {
                 "description": "",
                 "tags": [],
                 "required": false,
-                "type": "((_: { unwrap: string; }) => any) | undefined",
+                "type": "(_: { unwrap: string; }) => any",
                 "declarations": [],
                 "schema": {
-                  "kind": "enum",
-                  "type": "((_: { unwrap: string; }) => any) | undefined",
-                  "schema": [
-                    "undefined",
-                    {
-                      "kind": "event",
-                      "type": "(_: { unwrap: string; }): any",
-                      "schema": []
-                    }
-                  ]
+                  "kind": "event",
+                  "type": "(_: { unwrap: string; }): any",
+                  "schema": []
                 }
               },
               "actions": {
@@ -6698,19 +6055,12 @@ export default {
                 "description": "",
                 "tags": [],
                 "required": false,
-                "type": "((_: { unwrap: string; }) => any) | undefined",
+                "type": "(_: { unwrap: string; }) => any",
                 "declarations": [],
                 "schema": {
-                  "kind": "enum",
-                  "type": "((_: { unwrap: string; }) => any) | undefined",
-                  "schema": [
-                    "undefined",
-                    {
-                      "kind": "event",
-                      "type": "(_: { unwrap: string; }): any",
-                      "schema": []
-                    }
-                  ]
+                  "kind": "event",
+                  "type": "(_: { unwrap: string; }): any",
+                  "schema": []
                 }
               },
               "support": {
@@ -6719,19 +6069,12 @@ export default {
                 "description": "",
                 "tags": [],
                 "required": false,
-                "type": "((_: {}) => any) | undefined",
+                "type": "(_: {}) => any",
                 "declarations": [],
                 "schema": {
-                  "kind": "enum",
-                  "type": "((_: {}) => any) | undefined",
-                  "schema": [
-                    "undefined",
-                    {
-                      "kind": "event",
-                      "type": "(_: {}): any",
-                      "schema": []
-                    }
-                  ]
+                  "kind": "event",
+                  "type": "(_: {}): any",
+                  "schema": []
                 }
               }
             }
@@ -6847,7 +6190,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "string | undefined",
+          "type": "string",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/landing/Card.vue",
@@ -6857,14 +6200,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          },
+          "schema": "string",
           "default": "\"\""
         }
       ],
@@ -6950,19 +6286,12 @@ export default {
                 "description": "",
                 "tags": [],
                 "required": false,
-                "type": "((_: {}) => any) | undefined",
+                "type": "(_: {}) => any",
                 "declarations": [],
                 "schema": {
-                  "kind": "enum",
-                  "type": "((_: {}) => any) | undefined",
-                  "schema": [
-                    "undefined",
-                    {
-                      "kind": "event",
-                      "type": "(_: {}): any",
-                      "schema": []
-                    }
-                  ]
+                  "kind": "event",
+                  "type": "(_: {}): any",
+                  "schema": []
                 }
               },
               "title": {
@@ -6971,19 +6300,12 @@ export default {
                 "description": "",
                 "tags": [],
                 "required": false,
-                "type": "((_: { unwrap: string; }) => any) | undefined",
+                "type": "(_: { unwrap: string; }) => any",
                 "declarations": [],
                 "schema": {
-                  "kind": "enum",
-                  "type": "((_: { unwrap: string; }) => any) | undefined",
-                  "schema": [
-                    "undefined",
-                    {
-                      "kind": "event",
-                      "type": "(_: { unwrap: string; }): any",
-                      "schema": []
-                    }
-                  ]
+                  "kind": "event",
+                  "type": "(_: { unwrap: string; }): any",
+                  "schema": []
                 }
               },
               "description": {
@@ -6992,19 +6314,12 @@ export default {
                 "description": "",
                 "tags": [],
                 "required": false,
-                "type": "((_: { unwrap: string; }) => any) | undefined",
+                "type": "(_: { unwrap: string; }) => any",
                 "declarations": [],
                 "schema": {
-                  "kind": "enum",
-                  "type": "((_: { unwrap: string; }) => any) | undefined",
-                  "schema": [
-                    "undefined",
-                    {
-                      "kind": "event",
-                      "type": "(_: { unwrap: string; }): any",
-                      "schema": []
-                    }
-                  ]
+                  "kind": "event",
+                  "type": "(_: { unwrap: string; }): any",
+                  "schema": []
                 }
               }
             }
@@ -7050,7 +6365,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "string | undefined",
+          "type": "string",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/landing/CardGrid.vue",
@@ -7060,14 +6375,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          },
+          "schema": "string",
           "default": "\"Features\""
         }
       ],
@@ -7142,19 +6450,12 @@ export default {
                 "description": "",
                 "tags": [],
                 "required": false,
-                "type": "((_: {}) => any) | undefined",
+                "type": "(_: {}) => any",
                 "declarations": [],
                 "schema": {
-                  "kind": "enum",
-                  "type": "((_: {}) => any) | undefined",
-                  "schema": [
-                    "undefined",
-                    {
-                      "kind": "event",
-                      "type": "(_: {}): any",
-                      "schema": []
-                    }
-                  ]
+                  "kind": "event",
+                  "type": "(_: {}): any",
+                  "schema": []
                 }
               },
               "title": {
@@ -7163,19 +6464,12 @@ export default {
                 "description": "",
                 "tags": [],
                 "required": false,
-                "type": "((_: { unwrap: string; }) => any) | undefined",
+                "type": "(_: { unwrap: string; }) => any",
                 "declarations": [],
                 "schema": {
-                  "kind": "enum",
-                  "type": "((_: { unwrap: string; }) => any) | undefined",
-                  "schema": [
-                    "undefined",
-                    {
-                      "kind": "event",
-                      "type": "(_: { unwrap: string; }): any",
-                      "schema": []
-                    }
-                  ]
+                  "kind": "event",
+                  "type": "(_: { unwrap: string; }): any",
+                  "schema": []
                 }
               },
               "default": {
@@ -7184,19 +6478,12 @@ export default {
                 "description": "",
                 "tags": [],
                 "required": false,
-                "type": "((_: {}) => any) | undefined",
+                "type": "(_: {}) => any",
                 "declarations": [],
                 "schema": {
-                  "kind": "enum",
-                  "type": "((_: {}) => any) | undefined",
-                  "schema": [
-                    "undefined",
-                    {
-                      "kind": "event",
-                      "type": "(_: {}): any",
-                      "schema": []
-                    }
-                  ]
+                  "kind": "event",
+                  "type": "(_: {}): any",
+                  "schema": []
                 }
               }
             }
@@ -7326,7 +6613,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "Record<string, any> | undefined",
+          "type": "Record<string, any>",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundData.vue",
@@ -7336,14 +6623,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "Record<string, any> | undefined",
-            "schema": [
-              "undefined",
-              "Record<string, any>"
-            ]
-          },
+          "schema": "Record<string, any>",
           "default": "{}"
         },
         {
@@ -7352,7 +6632,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "Record<string, any> | undefined",
+          "type": "Record<string, any>",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundData.vue",
@@ -7362,14 +6642,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "Record<string, any> | undefined",
-            "schema": [
-              "undefined",
-              "Record<string, any>"
-            ]
-          },
+          "schema": "Record<string, any>",
           "default": "{}"
         }
       ],
@@ -7396,21 +6669,14 @@ export default {
       "exposed": [
         {
           "name": "onUpdate:modelValue",
-          "type": "((...args: any[]) => any) | undefined",
+          "type": "(...args: any[]) => any",
           "description": "",
           "declarations": [],
           "schema": {
-            "kind": "enum",
-            "type": "((...args: any[]) => any) | undefined",
+            "kind": "event",
+            "type": "(...args: any[]): any",
             "schema": [
-              "undefined",
-              {
-                "kind": "event",
-                "type": "(...args: any[]): any",
-                "schema": [
-                  "any"
-                ]
-              }
+              "any"
             ]
           }
         },
@@ -7537,21 +6803,14 @@ export default {
       "exposed": [
         {
           "name": "onUpdate:modelValue",
-          "type": "((...args: any[]) => any) | undefined",
+          "type": "(...args: any[]) => any",
           "description": "",
           "declarations": [],
           "schema": {
-            "kind": "enum",
-            "type": "((...args: any[]) => any) | undefined",
+            "kind": "event",
+            "type": "(...args: any[]): any",
             "schema": [
-              "undefined",
-              {
-                "kind": "event",
-                "type": "(...args: any[]): any",
-                "schema": [
-                  "any"
-                ]
-              }
+              "any"
             ]
           }
         },
@@ -7768,19 +7027,12 @@ export default {
                 "description": "",
                 "tags": [],
                 "required": false,
-                "type": "((_: {}) => any) | undefined",
+                "type": "(_: {}) => any",
                 "declarations": [],
                 "schema": {
-                  "kind": "enum",
-                  "type": "((_: {}) => any) | undefined",
-                  "schema": [
-                    "undefined",
-                    {
-                      "kind": "event",
-                      "type": "(_: {}): any",
-                      "schema": []
-                    }
-                  ]
+                  "kind": "event",
+                  "type": "(_: {}): any",
+                  "schema": []
                 }
               }
             }
@@ -7827,12 +7079,1366 @@ export default {
       "type": 1,
       "props": [
         {
+          "name": "tag",
+          "global": false,
+          "description": "",
+          "tags": [],
+          "required": false,
+          "type": "string",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
+              "range": [
+                4632,
+                4644
+              ]
+            }
+          ],
+          "schema": "string"
+        },
+        {
+          "name": "path",
+          "global": false,
+          "description": "",
+          "tags": [],
+          "required": false,
+          "type": "string",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
+              "range": [
+                4653,
+                4666
+              ]
+            }
+          ],
+          "schema": "string"
+        },
+        {
+          "name": "query",
+          "global": false,
+          "description": "",
+          "tags": [],
+          "required": false,
+          "type": "QueryBuilderParams",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
+              "range": [
+                4675,
+                4701
+              ]
+            }
+          ],
+          "schema": {
+            "kind": "object",
+            "type": "QueryBuilderParams",
+            "schema": {
+              "first": {
+                "name": "first",
+                "global": false,
+                "description": "",
+                "tags": [],
+                "required": false,
+                "type": "boolean",
+                "declarations": [
+                  {
+                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "range": [
+                      9172,
+                      9188
+                    ]
+                  }
+                ],
+                "schema": {
+                  "kind": "enum",
+                  "type": "boolean",
+                  "schema": [
+                    "false",
+                    "true"
+                  ]
+                }
+              },
+              "skip": {
+                "name": "skip",
+                "global": false,
+                "description": "",
+                "tags": [],
+                "required": false,
+                "type": "number",
+                "declarations": [
+                  {
+                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "range": [
+                      9193,
+                      9207
+                    ]
+                  }
+                ],
+                "schema": "number"
+              },
+              "limit": {
+                "name": "limit",
+                "global": false,
+                "description": "",
+                "tags": [],
+                "required": false,
+                "type": "number",
+                "declarations": [
+                  {
+                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "range": [
+                      9212,
+                      9227
+                    ]
+                  }
+                ],
+                "schema": "number"
+              },
+              "only": {
+                "name": "only",
+                "global": false,
+                "description": "",
+                "tags": [],
+                "required": false,
+                "type": "string[]",
+                "declarations": [
+                  {
+                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "range": [
+                      9232,
+                      9248
+                    ]
+                  }
+                ],
+                "schema": {
+                  "kind": "array",
+                  "type": "string[]",
+                  "schema": [
+                    "string"
+                  ]
+                }
+              },
+              "without": {
+                "name": "without",
+                "global": false,
+                "description": "",
+                "tags": [],
+                "required": false,
+                "type": "string[]",
+                "declarations": [
+                  {
+                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "range": [
+                      9253,
+                      9272
+                    ]
+                  }
+                ],
+                "schema": "string[]"
+              },
+              "sort": {
+                "name": "sort",
+                "global": false,
+                "description": "",
+                "tags": [],
+                "required": false,
+                "type": "SortOptions[]",
+                "declarations": [
+                  {
+                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "range": [
+                      9277,
+                      9298
+                    ]
+                  }
+                ],
+                "schema": {
+                  "kind": "array",
+                  "type": "SortOptions[]",
+                  "schema": [
+                    {
+                      "kind": "enum",
+                      "type": "SortOptions",
+                      "schema": [
+                        {
+                          "kind": "object",
+                          "type": "SortParams",
+                          "schema": {
+                            "$locale": {
+                              "name": "$locale",
+                              "global": false,
+                              "description": "Locale specifier for sorting\nA string with a BCP 47 language tag",
+                              "tags": [
+                                {
+                                  "name": "default",
+                                  "text": "undefined"
+                                }
+                              ],
+                              "required": false,
+                              "type": "string",
+                              "declarations": [
+                                {
+                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "range": [
+                                    3558,
+                                    3575
+                                  ]
+                                }
+                              ],
+                              "schema": "string"
+                            },
+                            "$numeric": {
+                              "name": "$numeric",
+                              "global": false,
+                              "description": "Whether numeric collation should be used, such that \"1\" < \"2\" < \"10\".\nPossible values are `true` and `false`;",
+                              "tags": [
+                                {
+                                  "name": "default",
+                                  "text": "false"
+                                }
+                              ],
+                              "required": false,
+                              "type": "boolean",
+                              "declarations": [
+                                {
+                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "range": [
+                                    3749,
+                                    3768
+                                  ]
+                                }
+                              ],
+                              "schema": "boolean"
+                            },
+                            "$caseFirst": {
+                              "name": "$caseFirst",
+                              "global": false,
+                              "description": "Whether upper case or lower case should sort first.\nPossible values are `\"upper\"`, `\"lower\"`, or `\"false\"`",
+                              "tags": [
+                                {
+                                  "name": "default",
+                                  "text": "\"depends on locale\""
+                                }
+                              ],
+                              "required": false,
+                              "type": "\"upper\" | \"lower\" | \"false\"",
+                              "declarations": [
+                                {
+                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "range": [
+                                    3953,
+                                    3994
+                                  ]
+                                }
+                              ],
+                              "schema": {
+                                "kind": "enum",
+                                "type": "\"upper\" | \"lower\" | \"false\"",
+                                "schema": [
+                                  "\"upper\"",
+                                  "\"lower\"",
+                                  "\"false\""
+                                ]
+                              }
+                            },
+                            "$sensitivity": {
+                              "name": "$sensitivity",
+                              "global": false,
+                              "description": "Which differences in the strings should lead to non-zero result values. Possible values are:\n - \"base\": Only strings that differ in base letters compare as unequal. Examples: a ≠ b, a = á, a = A.\n - \"accent\": Only strings that differ in base letters or accents and other diacritic marks compare as unequal. Examples: a ≠ b, a ≠ á, a = A.\n - \"case\": Only strings that differ in base letters or case compare as unequal. Examples: a ≠ b, a = á, a ≠ A.\n - \"variant\": Strings that differ in base letters, accents and other diacritic marks, or case compare as unequal. Other differences may also be taken into consideration. Examples: a ≠ b, a ≠ á, a ≠ A.",
+                              "tags": [
+                                {
+                                  "name": "default",
+                                  "text": "\"variant\""
+                                }
+                              ],
+                              "required": false,
+                              "type": "\"base\" | \"accent\" | \"case\" | \"variant\"",
+                              "declarations": [
+                                {
+                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "range": [
+                                    4733,
+                                    4787
+                                  ]
+                                }
+                              ],
+                              "schema": {
+                                "kind": "enum",
+                                "type": "\"base\" | \"accent\" | \"case\" | \"variant\"",
+                                "schema": [
+                                  "\"base\"",
+                                  "\"accent\"",
+                                  "\"case\"",
+                                  "\"variant\""
+                                ]
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "kind": "object",
+                          "type": "SortFields",
+                          "schema": {}
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              "where": {
+                "name": "where",
+                "global": false,
+                "description": "",
+                "tags": [],
+                "required": false,
+                "type": "QueryBuilderWhere[]",
+                "declarations": [
+                  {
+                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "range": [
+                      9303,
+                      9331
+                    ]
+                  }
+                ],
+                "schema": {
+                  "kind": "array",
+                  "type": "QueryBuilderWhere[]",
+                  "schema": [
+                    {
+                      "kind": "object",
+                      "type": "QueryBuilderWhere",
+                      "schema": {
+                        "$and": {
+                          "name": "$and",
+                          "global": false,
+                          "description": "Match only if all of nested conditions are true",
+                          "tags": [
+                            {
+                              "name": "example",
+                              "text": "```ts\nqueryContent().where({\n $and: [\n   { score: { $gte: 5 } },\n   { score: { $lte: 10 } }\n ]\n})\n```"
+                            }
+                          ],
+                          "required": false,
+                          "type": "QueryBuilderWhere[]",
+                          "declarations": [
+                            {
+                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "range": [
+                                5305,
+                                5332
+                              ]
+                            }
+                          ],
+                          "schema": "QueryBuilderWhere[]"
+                        },
+                        "$or": {
+                          "name": "$or",
+                          "global": false,
+                          "description": "Match if any of nested conditions is true",
+                          "tags": [
+                            {
+                              "name": "example",
+                              "text": "```ts\nqueryContent().where({\n $or: [\n   { score: { $gt: 5 } },\n   { score: { $lt: 3 } }\n ]\n})\n```"
+                            }
+                          ],
+                          "required": false,
+                          "type": "QueryBuilderWhere[]",
+                          "declarations": [
+                            {
+                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "range": [
+                                5576,
+                                5602
+                              ]
+                            }
+                          ],
+                          "schema": "QueryBuilderWhere[]"
+                        },
+                        "$not": {
+                          "name": "$not",
+                          "global": false,
+                          "description": "Match is condition is false",
+                          "tags": [
+                            {
+                              "name": "example",
+                              "text": "```ts\nqueryContent().where({\n title: {\n   $not: 'Hello World'\n }\n})\n```"
+                            }
+                          ],
+                          "required": false,
+                          "type": "string | number | boolean | RegExp | QueryBuilderWhere",
+                          "declarations": [
+                            {
+                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "range": [
+                                5799,
+                                5861
+                              ]
+                            }
+                          ],
+                          "schema": {
+                            "kind": "enum",
+                            "type": "string | number | boolean | RegExp | QueryBuilderWhere",
+                            "schema": [
+                              "string",
+                              "number",
+                              "false",
+                              "true",
+                              {
+                                "kind": "object",
+                                "type": "RegExp",
+                                "schema": {
+                                  "exec": {
+                                    "name": "exec",
+                                    "global": false,
+                                    "description": "Executes a search on a string using a regular expression pattern, and returns an array containing the results of that search.",
+                                    "tags": [
+                                      {
+                                        "name": "param",
+                                        "text": "string The String object or string literal on which to perform the search."
+                                      }
+                                    ],
+                                    "required": true,
+                                    "type": "(string: string) => RegExpExecArray",
+                                    "declarations": [
+                                      {
+                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                                        "range": [
+                                          40945,
+                                          40990
+                                        ]
+                                      }
+                                    ],
+                                    "schema": {
+                                      "kind": "event",
+                                      "type": "(string: string): RegExpExecArray",
+                                      "schema": []
+                                    }
+                                  },
+                                  "test": {
+                                    "name": "test",
+                                    "global": false,
+                                    "description": "Returns a Boolean value that indicates whether or not a pattern exists in a searched string.",
+                                    "tags": [
+                                      {
+                                        "name": "param",
+                                        "text": "string String on which to perform the search."
+                                      }
+                                    ],
+                                    "required": true,
+                                    "type": "(string: string) => boolean",
+                                    "declarations": [
+                                      {
+                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                                        "range": [
+                                          41172,
+                                          41202
+                                        ]
+                                      }
+                                    ],
+                                    "schema": {
+                                      "kind": "event",
+                                      "type": "(string: string): boolean",
+                                      "schema": []
+                                    }
+                                  },
+                                  "source": {
+                                    "name": "source",
+                                    "global": false,
+                                    "description": "Returns a copy of the text of the regular expression pattern. Read-only. The regExp argument is a Regular expression object. It can be a variable name or a literal.",
+                                    "tags": [],
+                                    "required": true,
+                                    "type": "string",
+                                    "declarations": [
+                                      {
+                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                                        "range": [
+                                          41384,
+                                          41408
+                                        ]
+                                      }
+                                    ],
+                                    "schema": "string"
+                                  },
+                                  "global": {
+                                    "name": "global",
+                                    "global": false,
+                                    "description": "Returns a Boolean value indicating the state of the global flag (g) used with a regular expression. Default is false. Read-only.",
+                                    "tags": [],
+                                    "required": true,
+                                    "type": "boolean",
+                                    "declarations": [
+                                      {
+                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                                        "range": [
+                                          41554,
+                                          41579
+                                        ]
+                                      }
+                                    ],
+                                    "schema": "boolean"
+                                  },
+                                  "ignoreCase": {
+                                    "name": "ignoreCase",
+                                    "global": false,
+                                    "description": "Returns a Boolean value indicating the state of the ignoreCase flag (i) used with a regular expression. Default is false. Read-only.",
+                                    "tags": [],
+                                    "required": true,
+                                    "type": "boolean",
+                                    "declarations": [
+                                      {
+                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                                        "range": [
+                                          41729,
+                                          41758
+                                        ]
+                                      }
+                                    ],
+                                    "schema": "boolean"
+                                  },
+                                  "multiline": {
+                                    "name": "multiline",
+                                    "global": false,
+                                    "description": "Returns a Boolean value indicating the state of the multiline flag (m) used with a regular expression. Default is false. Read-only.",
+                                    "tags": [],
+                                    "required": true,
+                                    "type": "boolean",
+                                    "declarations": [
+                                      {
+                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                                        "range": [
+                                          41907,
+                                          41935
+                                        ]
+                                      }
+                                    ],
+                                    "schema": "boolean"
+                                  },
+                                  "lastIndex": {
+                                    "name": "lastIndex",
+                                    "global": false,
+                                    "description": "",
+                                    "tags": [],
+                                    "required": true,
+                                    "type": "number",
+                                    "declarations": [
+                                      {
+                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                                        "range": [
+                                          41941,
+                                          41959
+                                        ]
+                                      }
+                                    ],
+                                    "schema": "number"
+                                  },
+                                  "compile": {
+                                    "name": "compile",
+                                    "global": false,
+                                    "description": "",
+                                    "tags": [
+                                      {
+                                        "name": "deprecated",
+                                        "text": "A legacy feature for browser compatibility"
+                                      }
+                                    ],
+                                    "required": true,
+                                    "type": "(pattern: string, flags?: string) => RegExp",
+                                    "declarations": [
+                                      {
+                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                                        "range": [
+                                          42062,
+                                          42109
+                                        ]
+                                      }
+                                    ],
+                                    "schema": {
+                                      "kind": "event",
+                                      "type": "(pattern: string, flags?: string): RegExp",
+                                      "schema": []
+                                    }
+                                  },
+                                  "flags": {
+                                    "name": "flags",
+                                    "global": false,
+                                    "description": "Returns a string indicating the flags of the regular expression in question. This field is read-only.\nThe characters in this string are sequenced and concatenated in the following order:\n\n   - \"g\" for global\n   - \"i\" for ignoreCase\n   - \"m\" for multiline\n   - \"u\" for unicode\n   - \"y\" for sticky\n\nIf no flags are set, the value is the empty string.",
+                                    "tags": [],
+                                    "required": true,
+                                    "type": "string",
+                                    "declarations": [
+                                      {
+                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es2015.core.d.ts",
+                                        "range": [
+                                          14897,
+                                          14920
+                                        ]
+                                      }
+                                    ],
+                                    "schema": "string"
+                                  },
+                                  "sticky": {
+                                    "name": "sticky",
+                                    "global": false,
+                                    "description": "Returns a Boolean value indicating the state of the sticky flag (y) used with a regular\nexpression. Default is false. Read-only.",
+                                    "tags": [],
+                                    "required": true,
+                                    "type": "boolean",
+                                    "declarations": [
+                                      {
+                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es2015.core.d.ts",
+                                        "range": [
+                                          15085,
+                                          15110
+                                        ]
+                                      }
+                                    ],
+                                    "schema": "boolean"
+                                  },
+                                  "unicode": {
+                                    "name": "unicode",
+                                    "global": false,
+                                    "description": "Returns a Boolean value indicating the state of the Unicode flag (u) used with a regular\nexpression. Default is false. Read-only.",
+                                    "tags": [],
+                                    "required": true,
+                                    "type": "boolean",
+                                    "declarations": [
+                                      {
+                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es2015.core.d.ts",
+                                        "range": [
+                                          15276,
+                                          15302
+                                        ]
+                                      }
+                                    ],
+                                    "schema": "boolean"
+                                  },
+                                  "dotAll": {
+                                    "name": "dotAll",
+                                    "global": false,
+                                    "description": "Returns a Boolean value indicating the state of the dotAll flag (s) used with a regular expression.\nDefault is false. Read-only.",
+                                    "tags": [],
+                                    "required": true,
+                                    "type": "boolean",
+                                    "declarations": [
+                                      {
+                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es2018.regexp.d.ts",
+                                        "range": [
+                                          1204,
+                                          1229
+                                        ]
+                                      }
+                                    ],
+                                    "schema": "boolean"
+                                  },
+                                  "__@match@7844": {
+                                    "name": "__@match@7844",
+                                    "global": false,
+                                    "description": "Matches a string with this regular expression, and returns an array containing the results of\nthat search.",
+                                    "tags": [
+                                      {
+                                        "name": "param",
+                                        "text": "string A string to search within."
+                                      }
+                                    ],
+                                    "required": true,
+                                    "type": "(string: string) => RegExpMatchArray",
+                                    "declarations": [
+                                      {
+                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+                                        "range": [
+                                          5644,
+                                          5700
+                                        ]
+                                      }
+                                    ],
+                                    "schema": {
+                                      "kind": "event",
+                                      "type": "(string: string): RegExpMatchArray",
+                                      "schema": []
+                                    }
+                                  },
+                                  "__@replace@7846": {
+                                    "name": "__@replace@7846",
+                                    "global": false,
+                                    "description": "Replaces text in a string, using this regular expression.",
+                                    "tags": [
+                                      {
+                                        "name": "param",
+                                        "text": "string A String object or string literal whose contents matching against\nthis regular expression will be replaced"
+                                      },
+                                      {
+                                        "name": "param",
+                                        "text": "replaceValue A String object or string literal containing the text to replace for every\nsuccessful match of this regular expression."
+                                      },
+                                      {
+                                        "name": "param",
+                                        "text": "string A String object or string literal whose contents matching against\nthis regular expression will be replaced"
+                                      },
+                                      {
+                                        "name": "param",
+                                        "text": "replacer A function that returns the replacement text."
+                                      }
+                                    ],
+                                    "required": true,
+                                    "type": "{ (string: string, replaceValue: string): string; (string: string, replacer: (substring: string, ...args: any[]) => string): string; }",
+                                    "declarations": [
+                                      {
+                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+                                        "range": [
+                                          6110,
+                                          6173
+                                        ]
+                                      },
+                                      {
+                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+                                        "range": [
+                                          6478,
+                                          6576
+                                        ]
+                                      }
+                                    ],
+                                    "schema": "{ (string: string, replaceValue: string): string; (string: string, replacer: (substring: string, ...args: any[]) => string): string; }"
+                                  },
+                                  "__@search@7849": {
+                                    "name": "__@search@7849",
+                                    "global": false,
+                                    "description": "Finds the position beginning first substring match in a regular expression search\nusing this regular expression.",
+                                    "tags": [
+                                      {
+                                        "name": "param",
+                                        "text": "string The string to search within."
+                                      }
+                                    ],
+                                    "required": true,
+                                    "type": "(string: string) => number",
+                                    "declarations": [
+                                      {
+                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+                                        "range": [
+                                          6782,
+                                          6822
+                                        ]
+                                      }
+                                    ],
+                                    "schema": {
+                                      "kind": "event",
+                                      "type": "(string: string): number",
+                                      "schema": []
+                                    }
+                                  },
+                                  "__@split@7851": {
+                                    "name": "__@split@7851",
+                                    "global": false,
+                                    "description": "Returns an array of substrings that were delimited by strings in the original input that\nmatch against this regular expression.\n\nIf the regular expression contains capturing parentheses, then each time this\nregular expression matches, the results (including any undefined results) of the\ncapturing parentheses are spliced.",
+                                    "tags": [
+                                      {
+                                        "name": "param",
+                                        "text": "string string value to split"
+                                      },
+                                      {
+                                        "name": "param",
+                                        "text": "limit if not undefined, the output array is truncated so that it contains no more\nthan 'limit' elements."
+                                      }
+                                    ],
+                                    "required": true,
+                                    "type": "(string: string, limit?: number) => string[]",
+                                    "declarations": [
+                                      {
+                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+                                        "range": [
+                                          7384,
+                                          7441
+                                        ]
+                                      }
+                                    ],
+                                    "schema": {
+                                      "kind": "event",
+                                      "type": "(string: string, limit?: number): string[]",
+                                      "schema": []
+                                    }
+                                  },
+                                  "__@matchAll@7853": {
+                                    "name": "__@matchAll@7853",
+                                    "global": false,
+                                    "description": "Matches a string with this regular expression, and returns an iterable of matches\ncontaining the results of that search.",
+                                    "tags": [
+                                      {
+                                        "name": "param",
+                                        "text": "string A string to search within."
+                                      }
+                                    ],
+                                    "required": true,
+                                    "type": "(str: string) => IterableIterator<RegExpMatchArray>",
+                                    "declarations": [
+                                      {
+                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es2020.symbol.wellknown.d.ts",
+                                        "range": [
+                                          1385,
+                                          1452
+                                        ]
+                                      }
+                                    ],
+                                    "schema": {
+                                      "kind": "event",
+                                      "type": "(str: string): IterableIterator<RegExpMatchArray>",
+                                      "schema": []
+                                    }
+                                  }
+                                }
+                              },
+                              "QueryBuilderWhere"
+                            ]
+                          }
+                        },
+                        "$eq": {
+                          "name": "$eq",
+                          "global": false,
+                          "description": "Match if item equals condition",
+                          "tags": [
+                            {
+                              "name": "example",
+                              "text": "```ts\nqueryContent().where({\n title: {\n   $eq: 'Hello World'\n }\n})\n```"
+                            }
+                          ],
+                          "required": false,
+                          "type": "string | number | boolean | RegExp",
+                          "declarations": [
+                            {
+                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "range": [
+                                6060,
+                                6101
+                              ]
+                            }
+                          ],
+                          "schema": {
+                            "kind": "enum",
+                            "type": "string | number | boolean | RegExp",
+                            "schema": [
+                              "string",
+                              "number",
+                              "false",
+                              "true",
+                              "RegExp"
+                            ]
+                          }
+                        },
+                        "$ne": {
+                          "name": "$ne",
+                          "global": false,
+                          "description": "Match if item not equals condition",
+                          "tags": [
+                            {
+                              "name": "example",
+                              "text": "```ts\nqueryContent().where({\n score: {\n   $ne: 100\n }\n})\n```"
+                            }
+                          ],
+                          "required": false,
+                          "type": "string | number | boolean | RegExp",
+                          "declarations": [
+                            {
+                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "range": [
+                                6294,
+                                6335
+                              ]
+                            }
+                          ],
+                          "schema": "string | number | boolean | RegExp"
+                        },
+                        "$gt": {
+                          "name": "$gt",
+                          "global": false,
+                          "description": "Check if item is greater than condition",
+                          "tags": [
+                            {
+                              "name": "example",
+                              "text": "```ts\nqueryContent().where({\n score: {\n   $gt: 99.5\n }\n})\n```"
+                            }
+                          ],
+                          "required": false,
+                          "type": "number",
+                          "declarations": [
+                            {
+                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "range": [
+                                6533,
+                                6546
+                              ]
+                            }
+                          ],
+                          "schema": "number"
+                        },
+                        "$gte": {
+                          "name": "$gte",
+                          "global": false,
+                          "description": "Check if item is greater than or equal to condition",
+                          "tags": [
+                            {
+                              "name": "example",
+                              "text": "```ts\nqueryContent().where({\n score: {\n   $gte: 99.5\n }\n})\n```"
+                            }
+                          ],
+                          "required": false,
+                          "type": "number",
+                          "declarations": [
+                            {
+                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "range": [
+                                6757,
+                                6771
+                              ]
+                            }
+                          ],
+                          "schema": "number"
+                        },
+                        "$lt": {
+                          "name": "$lt",
+                          "global": false,
+                          "description": "Check if item is less than condition",
+                          "tags": [
+                            {
+                              "name": "example",
+                              "text": "```ts\nqueryContent().where({\n score: {\n   $lt: 99.5\n }\n})\n```"
+                            }
+                          ],
+                          "required": false,
+                          "type": "number",
+                          "declarations": [
+                            {
+                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "range": [
+                                6966,
+                                6979
+                              ]
+                            }
+                          ],
+                          "schema": "number"
+                        },
+                        "$lte": {
+                          "name": "$lte",
+                          "global": false,
+                          "description": "Check if item is less than or equal to condition",
+                          "tags": [
+                            {
+                              "name": "example",
+                              "text": "```ts\nqueryContent().where({\n score: {\n   $lte: 99.5\n }\n})\n```"
+                            }
+                          ],
+                          "required": false,
+                          "type": "number",
+                          "declarations": [
+                            {
+                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "range": [
+                                7187,
+                                7201
+                              ]
+                            }
+                          ],
+                          "schema": "number"
+                        },
+                        "$regex": {
+                          "name": "$regex",
+                          "global": false,
+                          "description": "Provides regular expression capabilities for pattern matching strings.",
+                          "tags": [
+                            {
+                              "name": "example",
+                              "text": "```ts\nqueryContent().where({\n title: {\n   $regex: /^foo/\n }\n})\n```"
+                            }
+                          ],
+                          "required": false,
+                          "type": "string | RegExp",
+                          "declarations": [
+                            {
+                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "range": [
+                                7435,
+                                7460
+                              ]
+                            }
+                          ],
+                          "schema": {
+                            "kind": "enum",
+                            "type": "string | RegExp",
+                            "schema": [
+                              "string",
+                              "RegExp"
+                            ]
+                          }
+                        },
+                        "$type": {
+                          "name": "$type",
+                          "global": false,
+                          "description": "Match if type of item equals condition",
+                          "tags": [
+                            {
+                              "name": "example",
+                              "text": "```ts\nqueryContent().where({\n field: {\n   $type: 'boolean'\n }\n})\n```"
+                            }
+                          ],
+                          "required": false,
+                          "type": "string",
+                          "declarations": [
+                            {
+                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "range": [
+                                7664,
+                                7679
+                              ]
+                            }
+                          ],
+                          "schema": "string"
+                        },
+                        "$exists": {
+                          "name": "$exists",
+                          "global": false,
+                          "description": "Check key existence",
+                          "tags": [
+                            {
+                              "name": "example",
+                              "text": "```ts\nqueryContent().where({\n tag: {\n   $exists: false\n }\n})\n```"
+                            }
+                          ],
+                          "required": false,
+                          "type": "boolean",
+                          "declarations": [
+                            {
+                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "range": [
+                                7860,
+                                7878
+                              ]
+                            }
+                          ],
+                          "schema": "boolean"
+                        },
+                        "$contains": {
+                          "name": "$contains",
+                          "global": false,
+                          "description": "Match if item contains every condition or math every rule in condition array",
+                          "tags": [
+                            {
+                              "name": "example",
+                              "text": "```ts\nqueryContent().where({\n title: {\n   $contains: ['Hello', 'World']\n }\n})\n```"
+                            }
+                          ],
+                          "required": false,
+                          "type": "string | number | boolean | (string | number | boolean)[]",
+                          "declarations": [
+                            {
+                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "range": [
+                                8134,
+                                8207
+                              ]
+                            }
+                          ],
+                          "schema": {
+                            "kind": "enum",
+                            "type": "string | number | boolean | (string | number | boolean)[]",
+                            "schema": [
+                              "string",
+                              "number",
+                              "false",
+                              "true",
+                              {
+                                "kind": "array",
+                                "type": "(string | number | boolean)[]",
+                                "schema": [
+                                  {
+                                    "kind": "enum",
+                                    "type": "string | number | boolean",
+                                    "schema": [
+                                      "string",
+                                      "number",
+                                      "false",
+                                      "true"
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        "$containsAny": {
+                          "name": "$containsAny",
+                          "global": false,
+                          "description": "Match if item contains at least one rule from condition array",
+                          "tags": [
+                            {
+                              "name": "example",
+                              "text": "```ts\nqueryContent().where({\n title: {\n   $containsAny: ['Hello', 'World']\n }\n})\n```"
+                            }
+                          ],
+                          "required": false,
+                          "type": "(string | number | boolean)[]",
+                          "declarations": [
+                            {
+                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "range": [
+                                8450,
+                                8498
+                              ]
+                            }
+                          ],
+                          "schema": "(string | number | boolean)[]"
+                        },
+                        "$icontains": {
+                          "name": "$icontains",
+                          "global": false,
+                          "description": "Ignore case contains",
+                          "tags": [
+                            {
+                              "name": "example",
+                              "text": "```ts\nqueryContent().where({\n title: {\n   $icontains: 'hello world'\n }\n})\n```"
+                            }
+                          ],
+                          "required": false,
+                          "type": "string",
+                          "declarations": [
+                            {
+                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "range": [
+                                8694,
+                                8714
+                              ]
+                            }
+                          ],
+                          "schema": "string"
+                        },
+                        "$in": {
+                          "name": "$in",
+                          "global": false,
+                          "description": "Match if item is in condition array",
+                          "tags": [
+                            {
+                              "name": "example",
+                              "text": "```ts\nqueryContent().where({\n category: {\n   $in: ['sport', 'nature', 'travel']\n }\n})\n```"
+                            }
+                          ],
+                          "required": false,
+                          "type": "string | (string | number | boolean)[]",
+                          "declarations": [
+                            {
+                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "range": [
+                                8937,
+                                8985
+                              ]
+                            }
+                          ],
+                          "schema": {
+                            "kind": "enum",
+                            "type": "string | (string | number | boolean)[]",
+                            "schema": [
+                              "string",
+                              "(string | number | boolean)[]"
+                            ]
+                          }
+                        },
+                        "title": {
+                          "name": "title",
+                          "global": false,
+                          "description": "",
+                          "tags": [],
+                          "required": false,
+                          "type": "string | number | boolean | RegExp | QueryBuilderWhere",
+                          "declarations": [],
+                          "schema": "string | number | boolean | RegExp | QueryBuilderWhere"
+                        },
+                        "_id": {
+                          "name": "_id",
+                          "global": false,
+                          "description": "",
+                          "tags": [],
+                          "required": false,
+                          "type": "string | number | boolean | RegExp | QueryBuilderWhere",
+                          "declarations": [],
+                          "schema": "string | number | boolean | RegExp | QueryBuilderWhere"
+                        },
+                        "_source": {
+                          "name": "_source",
+                          "global": false,
+                          "description": "",
+                          "tags": [],
+                          "required": false,
+                          "type": "string | number | boolean | RegExp | QueryBuilderWhere",
+                          "declarations": [],
+                          "schema": "string | number | boolean | RegExp | QueryBuilderWhere"
+                        },
+                        "_path": {
+                          "name": "_path",
+                          "global": false,
+                          "description": "",
+                          "tags": [],
+                          "required": false,
+                          "type": "string | number | boolean | RegExp | QueryBuilderWhere",
+                          "declarations": [],
+                          "schema": "string | number | boolean | RegExp | QueryBuilderWhere"
+                        },
+                        "_draft": {
+                          "name": "_draft",
+                          "global": false,
+                          "description": "",
+                          "tags": [],
+                          "required": false,
+                          "type": "string | number | boolean | RegExp | QueryBuilderWhere",
+                          "declarations": [],
+                          "schema": "string | number | boolean | RegExp | QueryBuilderWhere"
+                        },
+                        "_partial": {
+                          "name": "_partial",
+                          "global": false,
+                          "description": "",
+                          "tags": [],
+                          "required": false,
+                          "type": "string | number | boolean | RegExp | QueryBuilderWhere",
+                          "declarations": [],
+                          "schema": "string | number | boolean | RegExp | QueryBuilderWhere"
+                        },
+                        "_locale": {
+                          "name": "_locale",
+                          "global": false,
+                          "description": "",
+                          "tags": [],
+                          "required": false,
+                          "type": "string | number | boolean | RegExp | QueryBuilderWhere",
+                          "declarations": [],
+                          "schema": "string | number | boolean | RegExp | QueryBuilderWhere"
+                        },
+                        "_type": {
+                          "name": "_type",
+                          "global": false,
+                          "description": "",
+                          "tags": [],
+                          "required": false,
+                          "type": "string | number | boolean | RegExp | QueryBuilderWhere",
+                          "declarations": [],
+                          "schema": "string | number | boolean | RegExp | QueryBuilderWhere"
+                        },
+                        "_file": {
+                          "name": "_file",
+                          "global": false,
+                          "description": "",
+                          "tags": [],
+                          "required": false,
+                          "type": "string | number | boolean | RegExp | QueryBuilderWhere",
+                          "declarations": [],
+                          "schema": "string | number | boolean | RegExp | QueryBuilderWhere"
+                        },
+                        "_extension": {
+                          "name": "_extension",
+                          "global": false,
+                          "description": "",
+                          "tags": [],
+                          "required": false,
+                          "type": "string | number | boolean | RegExp | QueryBuilderWhere",
+                          "declarations": [],
+                          "schema": "string | number | boolean | RegExp | QueryBuilderWhere"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "surround": {
+                "name": "surround",
+                "global": false,
+                "description": "",
+                "tags": [],
+                "required": false,
+                "type": "{ query: string | QueryBuilderWhere; before?: number; after?: number; }",
+                "declarations": [
+                  {
+                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "range": [
+                      9336,
+                      9447
+                    ]
+                  }
+                ],
+                "schema": {
+                  "kind": "object",
+                  "type": "{ query: string | QueryBuilderWhere; before?: number; after?: number; }",
+                  "schema": {
+                    "query": {
+                      "name": "query",
+                      "global": false,
+                      "description": "",
+                      "tags": [],
+                      "required": true,
+                      "type": "string | QueryBuilderWhere",
+                      "declarations": [
+                        {
+                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "range": [
+                            9357,
+                            9391
+                          ]
+                        }
+                      ],
+                      "schema": {
+                        "kind": "enum",
+                        "type": "string | QueryBuilderWhere",
+                        "schema": [
+                          "string",
+                          "QueryBuilderWhere"
+                        ]
+                      }
+                    },
+                    "before": {
+                      "name": "before",
+                      "global": false,
+                      "description": "",
+                      "tags": [],
+                      "required": false,
+                      "type": "number",
+                      "declarations": [
+                        {
+                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "range": [
+                            9400,
+                            9416
+                          ]
+                        }
+                      ],
+                      "schema": "number"
+                    },
+                    "after": {
+                      "name": "after",
+                      "global": false,
+                      "description": "",
+                      "tags": [],
+                      "required": false,
+                      "type": "number",
+                      "declarations": [
+                        {
+                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "range": [
+                            9425,
+                            9440
+                          ]
+                        }
+                      ],
+                      "schema": "number"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
           "name": "excerpt",
           "global": false,
           "description": "",
           "tags": [],
           "required": false,
-          "type": "boolean | undefined",
+          "type": "boolean",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
@@ -7844,1045 +8450,10 @@ export default {
           ],
           "schema": {
             "kind": "enum",
-            "type": "boolean | undefined",
+            "type": "boolean",
             "schema": [
-              "undefined",
               "false",
               "true"
-            ]
-          }
-        },
-        {
-          "name": "tag",
-          "global": false,
-          "description": "",
-          "tags": [],
-          "required": false,
-          "type": "string | undefined",
-          "declarations": [
-            {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
-              "range": [
-                4632,
-                4644
-              ]
-            }
-          ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          }
-        },
-        {
-          "name": "path",
-          "global": false,
-          "description": "",
-          "tags": [],
-          "required": false,
-          "type": "string | undefined",
-          "declarations": [
-            {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
-              "range": [
-                4653,
-                4666
-              ]
-            }
-          ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          }
-        },
-        {
-          "name": "query",
-          "global": false,
-          "description": "",
-          "tags": [],
-          "required": false,
-          "type": "QueryBuilderParams | undefined",
-          "declarations": [
-            {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
-              "range": [
-                4675,
-                4701
-              ]
-            }
-          ],
-          "schema": {
-            "kind": "enum",
-            "type": "QueryBuilderParams | undefined",
-            "schema": [
-              "undefined",
-              {
-                "kind": "object",
-                "type": "QueryBuilderParams",
-                "schema": {
-                  "first": {
-                    "name": "first",
-                    "global": false,
-                    "description": "",
-                    "tags": [],
-                    "required": false,
-                    "type": "boolean | undefined",
-                    "declarations": [
-                      {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                        "range": [
-                          9172,
-                          9188
-                        ]
-                      }
-                    ],
-                    "schema": {
-                      "kind": "enum",
-                      "type": "boolean | undefined",
-                      "schema": [
-                        "undefined",
-                        "false",
-                        "true"
-                      ]
-                    }
-                  },
-                  "skip": {
-                    "name": "skip",
-                    "global": false,
-                    "description": "",
-                    "tags": [],
-                    "required": false,
-                    "type": "number | undefined",
-                    "declarations": [
-                      {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                        "range": [
-                          9193,
-                          9207
-                        ]
-                      }
-                    ],
-                    "schema": {
-                      "kind": "enum",
-                      "type": "number | undefined",
-                      "schema": [
-                        "undefined",
-                        "number"
-                      ]
-                    }
-                  },
-                  "limit": {
-                    "name": "limit",
-                    "global": false,
-                    "description": "",
-                    "tags": [],
-                    "required": false,
-                    "type": "number | undefined",
-                    "declarations": [
-                      {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                        "range": [
-                          9212,
-                          9227
-                        ]
-                      }
-                    ],
-                    "schema": "number | undefined"
-                  },
-                  "only": {
-                    "name": "only",
-                    "global": false,
-                    "description": "",
-                    "tags": [],
-                    "required": false,
-                    "type": "string[] | undefined",
-                    "declarations": [
-                      {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                        "range": [
-                          9232,
-                          9248
-                        ]
-                      }
-                    ],
-                    "schema": {
-                      "kind": "enum",
-                      "type": "string[] | undefined",
-                      "schema": [
-                        "undefined",
-                        {
-                          "kind": "array",
-                          "type": "string[]",
-                          "schema": [
-                            "string"
-                          ]
-                        }
-                      ]
-                    }
-                  },
-                  "without": {
-                    "name": "without",
-                    "global": false,
-                    "description": "",
-                    "tags": [],
-                    "required": false,
-                    "type": "string[] | undefined",
-                    "declarations": [
-                      {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                        "range": [
-                          9253,
-                          9272
-                        ]
-                      }
-                    ],
-                    "schema": "string[] | undefined"
-                  },
-                  "sort": {
-                    "name": "sort",
-                    "global": false,
-                    "description": "",
-                    "tags": [],
-                    "required": false,
-                    "type": "SortOptions[] | undefined",
-                    "declarations": [
-                      {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                        "range": [
-                          9277,
-                          9298
-                        ]
-                      }
-                    ],
-                    "schema": {
-                      "kind": "enum",
-                      "type": "SortOptions[] | undefined",
-                      "schema": [
-                        "undefined",
-                        {
-                          "kind": "array",
-                          "type": "SortOptions[]",
-                          "schema": [
-                            {
-                              "kind": "enum",
-                              "type": "SortOptions",
-                              "schema": [
-                                {
-                                  "kind": "object",
-                                  "type": "SortParams",
-                                  "schema": {
-                                    "$locale": {
-                                      "name": "$locale",
-                                      "global": false,
-                                      "description": "Locale specifier for sorting\nA string with a BCP 47 language tag",
-                                      "tags": [
-                                        {
-                                          "name": "default",
-                                          "text": "undefined"
-                                        }
-                                      ],
-                                      "required": false,
-                                      "type": "string | undefined",
-                                      "declarations": [
-                                        {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                          "range": [
-                                            3558,
-                                            3575
-                                          ]
-                                        }
-                                      ],
-                                      "schema": {
-                                        "kind": "enum",
-                                        "type": "string | undefined",
-                                        "schema": [
-                                          "undefined",
-                                          "string"
-                                        ]
-                                      }
-                                    },
-                                    "$numeric": {
-                                      "name": "$numeric",
-                                      "global": false,
-                                      "description": "Whether numeric collation should be used, such that \"1\" < \"2\" < \"10\".\nPossible values are `true` and `false`;",
-                                      "tags": [
-                                        {
-                                          "name": "default",
-                                          "text": "false"
-                                        }
-                                      ],
-                                      "required": false,
-                                      "type": "boolean | undefined",
-                                      "declarations": [
-                                        {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                          "range": [
-                                            3749,
-                                            3768
-                                          ]
-                                        }
-                                      ],
-                                      "schema": "boolean | undefined"
-                                    },
-                                    "$caseFirst": {
-                                      "name": "$caseFirst",
-                                      "global": false,
-                                      "description": "Whether upper case or lower case should sort first.\nPossible values are `\"upper\"`, `\"lower\"`, or `\"false\"`",
-                                      "tags": [
-                                        {
-                                          "name": "default",
-                                          "text": "\"depends on locale\""
-                                        }
-                                      ],
-                                      "required": false,
-                                      "type": "\"upper\" | \"lower\" | \"false\" | undefined",
-                                      "declarations": [
-                                        {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                          "range": [
-                                            3953,
-                                            3994
-                                          ]
-                                        }
-                                      ],
-                                      "schema": {
-                                        "kind": "enum",
-                                        "type": "\"upper\" | \"lower\" | \"false\" | undefined",
-                                        "schema": [
-                                          "undefined",
-                                          "\"upper\"",
-                                          "\"lower\"",
-                                          "\"false\""
-                                        ]
-                                      }
-                                    },
-                                    "$sensitivity": {
-                                      "name": "$sensitivity",
-                                      "global": false,
-                                      "description": "Which differences in the strings should lead to non-zero result values. Possible values are:\n - \"base\": Only strings that differ in base letters compare as unequal. Examples: a ≠ b, a = á, a = A.\n - \"accent\": Only strings that differ in base letters or accents and other diacritic marks compare as unequal. Examples: a ≠ b, a ≠ á, a = A.\n - \"case\": Only strings that differ in base letters or case compare as unequal. Examples: a ≠ b, a = á, a ≠ A.\n - \"variant\": Strings that differ in base letters, accents and other diacritic marks, or case compare as unequal. Other differences may also be taken into consideration. Examples: a ≠ b, a ≠ á, a ≠ A.",
-                                      "tags": [
-                                        {
-                                          "name": "default",
-                                          "text": "\"variant\""
-                                        }
-                                      ],
-                                      "required": false,
-                                      "type": "\"base\" | \"accent\" | \"case\" | \"variant\" | undefined",
-                                      "declarations": [
-                                        {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                          "range": [
-                                            4733,
-                                            4787
-                                          ]
-                                        }
-                                      ],
-                                      "schema": {
-                                        "kind": "enum",
-                                        "type": "\"base\" | \"accent\" | \"case\" | \"variant\" | undefined",
-                                        "schema": [
-                                          "undefined",
-                                          "\"base\"",
-                                          "\"accent\"",
-                                          "\"case\"",
-                                          "\"variant\""
-                                        ]
-                                      }
-                                    }
-                                  }
-                                },
-                                {
-                                  "kind": "object",
-                                  "type": "SortFields",
-                                  "schema": {}
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  },
-                  "where": {
-                    "name": "where",
-                    "global": false,
-                    "description": "",
-                    "tags": [],
-                    "required": false,
-                    "type": "QueryBuilderWhere[] | undefined",
-                    "declarations": [
-                      {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                        "range": [
-                          9303,
-                          9331
-                        ]
-                      }
-                    ],
-                    "schema": {
-                      "kind": "enum",
-                      "type": "QueryBuilderWhere[] | undefined",
-                      "schema": [
-                        "undefined",
-                        {
-                          "kind": "array",
-                          "type": "QueryBuilderWhere[]",
-                          "schema": [
-                            {
-                              "kind": "object",
-                              "type": "QueryBuilderWhere",
-                              "schema": {
-                                "$and": {
-                                  "name": "$and",
-                                  "global": false,
-                                  "description": "Match only if all of nested conditions are true",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n $and: [\n   { score: { $gte: 5 } },\n   { score: { $lte: 10 } }\n ]\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "QueryBuilderWhere[] | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        5305,
-                                        5332
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "QueryBuilderWhere[] | undefined"
-                                },
-                                "$or": {
-                                  "name": "$or",
-                                  "global": false,
-                                  "description": "Match if any of nested conditions is true",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n $or: [\n   { score: { $gt: 5 } },\n   { score: { $lt: 3 } }\n ]\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "QueryBuilderWhere[] | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        5576,
-                                        5602
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "QueryBuilderWhere[] | undefined"
-                                },
-                                "$not": {
-                                  "name": "$not",
-                                  "global": false,
-                                  "description": "Match is condition is false",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n title: {\n   $not: 'Hello World'\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        5799,
-                                        5861
-                                      ]
-                                    }
-                                  ],
-                                  "schema": {
-                                    "kind": "enum",
-                                    "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                    "schema": [
-                                      "undefined",
-                                      "string",
-                                      "number",
-                                      "false",
-                                      "true",
-                                      {
-                                        "kind": "object",
-                                        "type": "RegExp",
-                                        "schema": {}
-                                      },
-                                      "QueryBuilderWhere"
-                                    ]
-                                  }
-                                },
-                                "$eq": {
-                                  "name": "$eq",
-                                  "global": false,
-                                  "description": "Match if item equals condition",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n title: {\n   $eq: 'Hello World'\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        6060,
-                                        6101
-                                      ]
-                                    }
-                                  ],
-                                  "schema": {
-                                    "kind": "enum",
-                                    "type": "string | number | boolean | RegExp | undefined",
-                                    "schema": [
-                                      "undefined",
-                                      "string",
-                                      "number",
-                                      "false",
-                                      "true",
-                                      "RegExp"
-                                    ]
-                                  }
-                                },
-                                "$ne": {
-                                  "name": "$ne",
-                                  "global": false,
-                                  "description": "Match if item not equals condition",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n score: {\n   $ne: 100\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        6294,
-                                        6335
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "string | number | boolean | RegExp | undefined"
-                                },
-                                "$gt": {
-                                  "name": "$gt",
-                                  "global": false,
-                                  "description": "Check if item is greater than condition",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n score: {\n   $gt: 99.5\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "number | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        6533,
-                                        6546
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "number | undefined"
-                                },
-                                "$gte": {
-                                  "name": "$gte",
-                                  "global": false,
-                                  "description": "Check if item is greater than or equal to condition",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n score: {\n   $gte: 99.5\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "number | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        6757,
-                                        6771
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "number | undefined"
-                                },
-                                "$lt": {
-                                  "name": "$lt",
-                                  "global": false,
-                                  "description": "Check if item is less than condition",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n score: {\n   $lt: 99.5\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "number | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        6966,
-                                        6979
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "number | undefined"
-                                },
-                                "$lte": {
-                                  "name": "$lte",
-                                  "global": false,
-                                  "description": "Check if item is less than or equal to condition",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n score: {\n   $lte: 99.5\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "number | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        7187,
-                                        7201
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "number | undefined"
-                                },
-                                "$regex": {
-                                  "name": "$regex",
-                                  "global": false,
-                                  "description": "Provides regular expression capabilities for pattern matching strings.",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n title: {\n   $regex: /^foo/\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "string | RegExp | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        7435,
-                                        7460
-                                      ]
-                                    }
-                                  ],
-                                  "schema": {
-                                    "kind": "enum",
-                                    "type": "string | RegExp | undefined",
-                                    "schema": [
-                                      "undefined",
-                                      "string",
-                                      "RegExp"
-                                    ]
-                                  }
-                                },
-                                "$type": {
-                                  "name": "$type",
-                                  "global": false,
-                                  "description": "Match if type of item equals condition",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n field: {\n   $type: 'boolean'\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "string | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        7664,
-                                        7679
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "string | undefined"
-                                },
-                                "$exists": {
-                                  "name": "$exists",
-                                  "global": false,
-                                  "description": "Check key existence",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n tag: {\n   $exists: false\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "boolean | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        7860,
-                                        7878
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "boolean | undefined"
-                                },
-                                "$contains": {
-                                  "name": "$contains",
-                                  "global": false,
-                                  "description": "Match if item contains every condition or math every rule in condition array",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n title: {\n   $contains: ['Hello', 'World']\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "string | number | boolean | (string | number | boolean)[] | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        8134,
-                                        8207
-                                      ]
-                                    }
-                                  ],
-                                  "schema": {
-                                    "kind": "enum",
-                                    "type": "string | number | boolean | (string | number | boolean)[] | undefined",
-                                    "schema": [
-                                      "undefined",
-                                      "string",
-                                      "number",
-                                      "false",
-                                      "true",
-                                      {
-                                        "kind": "array",
-                                        "type": "(string | number | boolean)[]",
-                                        "schema": [
-                                          {
-                                            "kind": "enum",
-                                            "type": "string | number | boolean",
-                                            "schema": [
-                                              "string",
-                                              "number",
-                                              "false",
-                                              "true"
-                                            ]
-                                          }
-                                        ]
-                                      }
-                                    ]
-                                  }
-                                },
-                                "$containsAny": {
-                                  "name": "$containsAny",
-                                  "global": false,
-                                  "description": "Match if item contains at least one rule from condition array",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n title: {\n   $containsAny: ['Hello', 'World']\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "(string | number | boolean)[] | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        8450,
-                                        8498
-                                      ]
-                                    }
-                                  ],
-                                  "schema": {
-                                    "kind": "enum",
-                                    "type": "(string | number | boolean)[] | undefined",
-                                    "schema": [
-                                      "undefined",
-                                      "(string | number | boolean)[]"
-                                    ]
-                                  }
-                                },
-                                "$icontains": {
-                                  "name": "$icontains",
-                                  "global": false,
-                                  "description": "Ignore case contains",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n title: {\n   $icontains: 'hello world'\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "string | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        8694,
-                                        8714
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "string | undefined"
-                                },
-                                "$in": {
-                                  "name": "$in",
-                                  "global": false,
-                                  "description": "Match if item is in condition array",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n category: {\n   $in: ['sport', 'nature', 'travel']\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "string | (string | number | boolean)[] | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        8937,
-                                        8985
-                                      ]
-                                    }
-                                  ],
-                                  "schema": {
-                                    "kind": "enum",
-                                    "type": "string | (string | number | boolean)[] | undefined",
-                                    "schema": [
-                                      "undefined",
-                                      "string",
-                                      "(string | number | boolean)[]"
-                                    ]
-                                  }
-                                },
-                                "title": {
-                                  "name": "title",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "_id": {
-                                  "name": "_id",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "_source": {
-                                  "name": "_source",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "_path": {
-                                  "name": "_path",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "_draft": {
-                                  "name": "_draft",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "_partial": {
-                                  "name": "_partial",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "_locale": {
-                                  "name": "_locale",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "_type": {
-                                  "name": "_type",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "_file": {
-                                  "name": "_file",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "_extension": {
-                                  "name": "_extension",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                }
-                              }
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  },
-                  "surround": {
-                    "name": "surround",
-                    "global": false,
-                    "description": "",
-                    "tags": [],
-                    "required": false,
-                    "type": "{ query: string | QueryBuilderWhere; before?: number | undefined; after?: number | undefined; } | undefined",
-                    "declarations": [
-                      {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                        "range": [
-                          9336,
-                          9447
-                        ]
-                      }
-                    ],
-                    "schema": {
-                      "kind": "enum",
-                      "type": "{ query: string | QueryBuilderWhere; before?: number | undefined; after?: number | undefined; } | undefined",
-                      "schema": [
-                        "undefined",
-                        {
-                          "kind": "object",
-                          "type": "{ query: string | QueryBuilderWhere; before?: number | undefined; after?: number | undefined; }",
-                          "schema": {
-                            "query": {
-                              "name": "query",
-                              "global": false,
-                              "description": "",
-                              "tags": [],
-                              "required": true,
-                              "type": "string | QueryBuilderWhere",
-                              "declarations": [
-                                {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                  "range": [
-                                    9357,
-                                    9391
-                                  ]
-                                }
-                              ],
-                              "schema": {
-                                "kind": "enum",
-                                "type": "string | QueryBuilderWhere",
-                                "schema": [
-                                  "string",
-                                  "QueryBuilderWhere"
-                                ]
-                              }
-                            },
-                            "before": {
-                              "name": "before",
-                              "global": false,
-                              "description": "",
-                              "tags": [],
-                              "required": false,
-                              "type": "number | undefined",
-                              "declarations": [
-                                {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                  "range": [
-                                    9400,
-                                    9416
-                                  ]
-                                }
-                              ],
-                              "schema": "number | undefined"
-                            },
-                            "after": {
-                              "name": "after",
-                              "global": false,
-                              "description": "",
-                              "tags": [],
-                              "required": false,
-                              "type": "number | undefined",
-                              "declarations": [
-                                {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                  "range": [
-                                    9425,
-                                    9440
-                                  ]
-                                }
-                              ],
-                              "schema": "number | undefined"
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  }
-                }
-              }
             ]
           }
         },
@@ -8892,7 +8463,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "boolean | undefined",
+          "type": "boolean",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
@@ -8904,9 +8475,8 @@ export default {
           ],
           "schema": {
             "kind": "enum",
-            "type": "boolean | undefined",
+            "type": "boolean",
             "schema": [
-              "undefined",
               "false",
               "true"
             ]
@@ -8957,7 +8527,7 @@ export default {
                       "description": "Excerpt",
                       "tags": [],
                       "required": false,
-                      "type": "MarkdownRoot | undefined",
+                      "type": "MarkdownRoot",
                       "declarations": [
                         {
                           "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -8968,11 +8538,2229 @@ export default {
                         }
                       ],
                       "schema": {
+                        "kind": "object",
+                        "type": "MarkdownRoot",
+                        "schema": {
+                          "type": {
+                            "name": "type",
+                            "global": false,
+                            "description": "",
+                            "tags": [],
+                            "required": true,
+                            "type": "\"root\"",
+                            "declarations": [
+                              {
+                                "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                "range": [
+                                  1465,
+                                  1478
+                                ]
+                              }
+                            ],
+                            "schema": "\"root\""
+                          },
+                          "children": {
+                            "name": "children",
+                            "global": false,
+                            "description": "",
+                            "tags": [],
+                            "required": true,
+                            "type": "MarkdownNode[]",
+                            "declarations": [
+                              {
+                                "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                "range": [
+                                  1483,
+                                  1508
+                                ]
+                              }
+                            ],
+                            "schema": {
+                              "kind": "array",
+                              "type": "MarkdownNode[]",
+                              "schema": [
+                                {
+                                  "kind": "object",
+                                  "type": "MarkdownNode",
+                                  "schema": {
+                                    "type": {
+                                      "name": "type",
+                                      "global": false,
+                                      "description": "",
+                                      "tags": [],
+                                      "required": true,
+                                      "type": "string",
+                                      "declarations": [
+                                        {
+                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "range": [
+                                            1214,
+                                            1227
+                                          ]
+                                        }
+                                      ],
+                                      "schema": "string"
+                                    },
+                                    "tag": {
+                                      "name": "tag",
+                                      "global": false,
+                                      "description": "",
+                                      "tags": [],
+                                      "required": false,
+                                      "type": "string",
+                                      "declarations": [
+                                        {
+                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "range": [
+                                            1232,
+                                            1245
+                                          ]
+                                        }
+                                      ],
+                                      "schema": "string"
+                                    },
+                                    "value": {
+                                      "name": "value",
+                                      "global": false,
+                                      "description": "",
+                                      "tags": [],
+                                      "required": false,
+                                      "type": "string",
+                                      "declarations": [
+                                        {
+                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "range": [
+                                            1250,
+                                            1265
+                                          ]
+                                        }
+                                      ],
+                                      "schema": "string"
+                                    },
+                                    "props": {
+                                      "name": "props",
+                                      "global": false,
+                                      "description": "",
+                                      "tags": [],
+                                      "required": false,
+                                      "type": "Record<string, any>",
+                                      "declarations": [
+                                        {
+                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "range": [
+                                            1270,
+                                            1298
+                                          ]
+                                        }
+                                      ],
+                                      "schema": "Record<string, any>"
+                                    },
+                                    "content": {
+                                      "name": "content",
+                                      "global": false,
+                                      "description": "",
+                                      "tags": [],
+                                      "required": false,
+                                      "type": "any",
+                                      "declarations": [
+                                        {
+                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "range": [
+                                            1303,
+                                            1317
+                                          ]
+                                        }
+                                      ],
+                                      "schema": "any"
+                                    },
+                                    "children": {
+                                      "name": "children",
+                                      "global": false,
+                                      "description": "",
+                                      "tags": [],
+                                      "required": false,
+                                      "type": "MarkdownNode[]",
+                                      "declarations": [
+                                        {
+                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "range": [
+                                            1322,
+                                            1348
+                                          ]
+                                        }
+                                      ],
+                                      "schema": "MarkdownNode[]"
+                                    },
+                                    "attributes": {
+                                      "name": "attributes",
+                                      "global": false,
+                                      "description": "",
+                                      "tags": [],
+                                      "required": false,
+                                      "type": "Record<string, any>",
+                                      "declarations": [
+                                        {
+                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "range": [
+                                            1353,
+                                            1386
+                                          ]
+                                        }
+                                      ],
+                                      "schema": "Record<string, any>"
+                                    },
+                                    "fmAttributes": {
+                                      "name": "fmAttributes",
+                                      "global": false,
+                                      "description": "",
+                                      "tags": [],
+                                      "required": false,
+                                      "type": "Record<string, any>",
+                                      "declarations": [
+                                        {
+                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "range": [
+                                            1391,
+                                            1426
+                                          ]
+                                        }
+                                      ],
+                                      "schema": "Record<string, any>"
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          "props": {
+                            "name": "props",
+                            "global": false,
+                            "description": "",
+                            "tags": [],
+                            "required": false,
+                            "type": "Record<string, any>",
+                            "declarations": [
+                              {
+                                "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                "range": [
+                                  1513,
+                                  1541
+                                ]
+                              }
+                            ],
+                            "schema": "Record<string, any>"
+                          },
+                          "toc": {
+                            "name": "toc",
+                            "global": false,
+                            "description": "",
+                            "tags": [],
+                            "required": false,
+                            "type": "Toc",
+                            "declarations": [
+                              {
+                                "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                "range": [
+                                  1546,
+                                  1556
+                                ]
+                              }
+                            ],
+                            "schema": {
+                              "kind": "object",
+                              "type": "Toc",
+                              "schema": {
+                                "title": {
+                                  "name": "title",
+                                  "global": false,
+                                  "description": "",
+                                  "tags": [],
+                                  "required": true,
+                                  "type": "string",
+                                  "declarations": [
+                                    {
+                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                      "range": [
+                                        1095,
+                                        1109
+                                      ]
+                                    }
+                                  ],
+                                  "schema": "string"
+                                },
+                                "depth": {
+                                  "name": "depth",
+                                  "global": false,
+                                  "description": "",
+                                  "tags": [],
+                                  "required": true,
+                                  "type": "number",
+                                  "declarations": [
+                                    {
+                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                      "range": [
+                                        1114,
+                                        1128
+                                      ]
+                                    }
+                                  ],
+                                  "schema": "number"
+                                },
+                                "searchDepth": {
+                                  "name": "searchDepth",
+                                  "global": false,
+                                  "description": "",
+                                  "tags": [],
+                                  "required": true,
+                                  "type": "number",
+                                  "declarations": [
+                                    {
+                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                      "range": [
+                                        1133,
+                                        1153
+                                      ]
+                                    }
+                                  ],
+                                  "schema": "number"
+                                },
+                                "links": {
+                                  "name": "links",
+                                  "global": false,
+                                  "description": "",
+                                  "tags": [],
+                                  "required": true,
+                                  "type": "TocLink[]",
+                                  "declarations": [
+                                    {
+                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                      "range": [
+                                        1158,
+                                        1175
+                                      ]
+                                    }
+                                  ],
+                                  "schema": {
+                                    "kind": "array",
+                                    "type": "TocLink[]",
+                                    "schema": [
+                                      {
+                                        "kind": "object",
+                                        "type": "TocLink",
+                                        "schema": {
+                                          "id": {
+                                            "name": "id",
+                                            "global": false,
+                                            "description": "",
+                                            "tags": [],
+                                            "required": true,
+                                            "type": "string",
+                                            "declarations": [
+                                              {
+                                                "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                                "range": [
+                                                  991,
+                                                  1002
+                                                ]
+                                              }
+                                            ],
+                                            "schema": "string"
+                                          },
+                                          "text": {
+                                            "name": "text",
+                                            "global": false,
+                                            "description": "",
+                                            "tags": [],
+                                            "required": true,
+                                            "type": "string",
+                                            "declarations": [
+                                              {
+                                                "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                                "range": [
+                                                  1007,
+                                                  1020
+                                                ]
+                                              }
+                                            ],
+                                            "schema": "string"
+                                          },
+                                          "depth": {
+                                            "name": "depth",
+                                            "global": false,
+                                            "description": "",
+                                            "tags": [],
+                                            "required": true,
+                                            "type": "number",
+                                            "declarations": [
+                                              {
+                                                "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                                "range": [
+                                                  1025,
+                                                  1039
+                                                ]
+                                              }
+                                            ],
+                                            "schema": "number"
+                                          },
+                                          "children": {
+                                            "name": "children",
+                                            "global": false,
+                                            "description": "",
+                                            "tags": [],
+                                            "required": false,
+                                            "type": "TocLink[]",
+                                            "declarations": [
+                                              {
+                                                "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                                "range": [
+                                                  1044,
+                                                  1065
+                                                ]
+                                              }
+                                            ],
+                                            "schema": "TocLink[]"
+                                          }
+                                        }
+                                      }
+                                    ]
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "body": {
+                      "name": "body",
+                      "global": false,
+                      "description": "Content body",
+                      "tags": [],
+                      "required": true,
+                      "type": "MarkdownRoot",
+                      "declarations": [
+                        {
+                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "range": [
+                            2523,
+                            2549
+                          ]
+                        }
+                      ],
+                      "schema": "MarkdownRoot"
+                    },
+                    "layout": {
+                      "name": "layout",
+                      "global": false,
+                      "description": "Layout",
+                      "tags": [],
+                      "required": false,
+                      "type": "LayoutKey",
+                      "declarations": [
+                        {
+                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "range": [
+                            2319,
+                            2338
+                          ]
+                        }
+                      ],
+                      "schema": {
+                        "kind": "array",
+                        "type": "LayoutKey",
+                        "schema": []
+                      }
+                    },
+                    "_id": {
+                      "name": "_id",
+                      "global": false,
+                      "description": "Content id",
+                      "tags": [],
+                      "required": true,
+                      "type": "string",
+                      "declarations": [
+                        {
+                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "range": [
+                            185,
+                            197
+                          ]
+                        }
+                      ],
+                      "schema": "string"
+                    },
+                    "_source": {
+                      "name": "_source",
+                      "global": false,
+                      "description": "Content source",
+                      "tags": [],
+                      "required": false,
+                      "type": "string",
+                      "declarations": [
+                        {
+                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "range": [
+                            240,
+                            257
+                          ]
+                        }
+                      ],
+                      "schema": "string"
+                    },
+                    "_path": {
+                      "name": "_path",
+                      "global": false,
+                      "description": "Content path, this path is source agnostic and it the content my live in any source",
+                      "tags": [],
+                      "required": false,
+                      "type": "string",
+                      "declarations": [
+                        {
+                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "range": [
+                            369,
+                            384
+                          ]
+                        }
+                      ],
+                      "schema": "string"
+                    },
+                    "title": {
+                      "name": "title",
+                      "global": false,
+                      "description": "Content title",
+                      "tags": [],
+                      "required": false,
+                      "type": "string",
+                      "declarations": [
+                        {
+                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "range": [
+                            426,
+                            441
+                          ]
+                        }
+                      ],
+                      "schema": "string"
+                    },
+                    "_draft": {
+                      "name": "_draft",
+                      "global": false,
+                      "description": "Content draft status",
+                      "tags": [],
+                      "required": false,
+                      "type": "boolean",
+                      "declarations": [
+                        {
+                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "range": [
+                            490,
+                            507
+                          ]
+                        }
+                      ],
+                      "schema": {
                         "kind": "enum",
-                        "type": "MarkdownRoot | undefined",
+                        "type": "boolean",
                         "schema": [
-                          "undefined",
-                          {
+                          "false",
+                          "true"
+                        ]
+                      }
+                    },
+                    "_partial": {
+                      "name": "_partial",
+                      "global": false,
+                      "description": "Content partial status",
+                      "tags": [],
+                      "required": false,
+                      "type": "boolean",
+                      "declarations": [
+                        {
+                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "range": [
+                            558,
+                            577
+                          ]
+                        }
+                      ],
+                      "schema": "boolean"
+                    },
+                    "_locale": {
+                      "name": "_locale",
+                      "global": false,
+                      "description": "Content locale",
+                      "tags": [],
+                      "required": false,
+                      "type": "string",
+                      "declarations": [
+                        {
+                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "range": [
+                            620,
+                            637
+                          ]
+                        }
+                      ],
+                      "schema": "string"
+                    },
+                    "_type": {
+                      "name": "_type",
+                      "global": false,
+                      "description": "File type of the content, i.e `markdown`",
+                      "tags": [],
+                      "required": false,
+                      "type": "\"markdown\" | \"yaml\" | \"json\" | \"csv\"",
+                      "declarations": [
+                        {
+                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "range": [
+                            706,
+                            751
+                          ]
+                        }
+                      ],
+                      "schema": {
+                        "kind": "enum",
+                        "type": "\"markdown\" | \"yaml\" | \"json\" | \"csv\"",
+                        "schema": [
+                          "\"markdown\"",
+                          "\"yaml\"",
+                          "\"json\"",
+                          "\"csv\""
+                        ]
+                      }
+                    },
+                    "_file": {
+                      "name": "_file",
+                      "global": false,
+                      "description": "Path to the file relative to the content directory",
+                      "tags": [],
+                      "required": false,
+                      "type": "string",
+                      "declarations": [
+                        {
+                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "range": [
+                            830,
+                            845
+                          ]
+                        }
+                      ],
+                      "schema": "string"
+                    },
+                    "_extension": {
+                      "name": "_extension",
+                      "global": false,
+                      "description": "Extension of the file",
+                      "tags": [],
+                      "required": false,
+                      "type": "\"yaml\" | \"json\" | \"csv\" | \"md\" | \"yml\" | \"json5\"",
+                      "declarations": [
+                        {
+                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "range": [
+                            895,
+                            957
+                          ]
+                        }
+                      ],
+                      "schema": {
+                        "kind": "enum",
+                        "type": "\"yaml\" | \"json\" | \"csv\" | \"md\" | \"yml\" | \"json5\"",
+                        "schema": [
+                          "\"yaml\"",
+                          "\"json\"",
+                          "\"csv\"",
+                          "\"md\"",
+                          "\"yml\"",
+                          "\"json5\""
+                        ]
+                      }
+                    }
+                  }
+                }
+              },
+              "refresh": {
+                "name": "refresh",
+                "global": false,
+                "description": "",
+                "tags": [],
+                "required": true,
+                "type": "() => Promise<void>",
+                "declarations": [
+                  {
+                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
+                    "range": [
+                      6412,
+                      6441
+                    ]
+                  }
+                ],
+                "schema": {
+                  "kind": "event",
+                  "type": "(): Promise<void>"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "events": [],
+      "exposed": [
+        {
+          "name": "$slots",
+          "type": "Readonly<InternalSlots> & { default: (context: { doc: ParsedContent; refresh: () => Promise<void>; }) => VNode<RendererNode, RendererElement, { ...; }>[]; }",
+          "description": "",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "range": [
+                8475,
+                8502
+              ]
+            },
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
+              "range": [
+                6329,
+                6483
+              ]
+            }
+          ],
+          "schema": {
+            "kind": "object",
+            "type": "Readonly<InternalSlots> & { default: (context: { doc: ParsedContent; refresh: () => Promise<void>; }) => VNode<RendererNode, RendererElement, { ...; }>[]; }",
+            "schema": {
+              "default": {
+                "name": "default",
+                "global": false,
+                "description": "",
+                "tags": [],
+                "required": true,
+                "type": "(context: { doc: ParsedContent; refresh: () => Promise<void>; }) => VNode<RendererNode, RendererElement, { [key: string]: any; }>[]",
+                "declarations": [
+                  {
+                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
+                    "range": [
+                      6347,
+                      6476
+                    ]
+                  }
+                ],
+                "schema": {
+                  "kind": "event",
+                  "type": "(context: { doc: ParsedContent; refresh: () => Promise<void>; }): VNode<RendererNode, RendererElement, { [key: string]: any; }>[]",
+                  "schema": []
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "tag",
+          "type": "string",
+          "description": "The tag to use for the renderer element if it is used.",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
+              "range": [
+                3494,
+                3606
+              ]
+            }
+          ],
+          "schema": "string"
+        },
+        {
+          "name": "excerpt",
+          "type": "boolean",
+          "description": "Whether or not to render the excerpt.",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
+              "range": [
+                3714,
+                3803
+              ]
+            }
+          ],
+          "schema": {
+            "kind": "enum",
+            "type": "boolean",
+            "schema": [
+              "false",
+              "true"
+            ]
+          }
+        },
+        {
+          "name": "path",
+          "type": "string",
+          "description": "The path of the content to load from content source.",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
+              "range": [
+                3983,
+                4099
+              ]
+            }
+          ],
+          "schema": "string"
+        },
+        {
+          "name": "query",
+          "type": "undefined",
+          "description": "A query builder params object to be passed to <ContentQuery /> component.",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
+              "range": [
+                4217,
+                4345
+              ]
+            }
+          ],
+          "schema": "undefined"
+        },
+        {
+          "name": "head",
+          "type": "boolean",
+          "description": "Whether or not to map the document data to the `head` property.",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
+              "range": [
+                4453,
+                4570
+              ]
+            }
+          ],
+          "schema": {
+            "kind": "enum",
+            "type": "boolean",
+            "schema": [
+              "false",
+              "true"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "ContentList": {
+    "mode": "all",
+    "global": true,
+    "prefetch": false,
+    "preload": false,
+    "filePath": "node_modules/@nuxt/content/dist/runtime/components/ContentList.vue",
+    "pascalName": "ContentList",
+    "kebabName": "content-list",
+    "chunkName": "components/content-list",
+    "shortPath": "node_modules/@nuxt/content/dist/runtime/components/ContentList.vue",
+    "export": "default",
+    "priority": 0,
+    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentList.vue",
+    "meta": {
+      "type": 1,
+      "props": [
+        {
+          "name": "path",
+          "global": false,
+          "description": "",
+          "tags": [],
+          "required": false,
+          "type": "string",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentList.vue.d.ts",
+              "range": [
+                2373,
+                2386
+              ]
+            }
+          ],
+          "schema": "string"
+        },
+        {
+          "name": "query",
+          "global": false,
+          "description": "",
+          "tags": [],
+          "required": false,
+          "type": "QueryBuilderParams",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentList.vue.d.ts",
+              "range": [
+                2395,
+                2421
+              ]
+            }
+          ],
+          "schema": {
+            "kind": "object",
+            "type": "QueryBuilderParams",
+            "schema": {
+              "first": {
+                "name": "first",
+                "global": false,
+                "description": "",
+                "tags": [],
+                "required": false,
+                "type": "boolean",
+                "declarations": [
+                  {
+                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "range": [
+                      9172,
+                      9188
+                    ]
+                  }
+                ],
+                "schema": {
+                  "kind": "enum",
+                  "type": "boolean",
+                  "schema": [
+                    "false",
+                    "true"
+                  ]
+                }
+              },
+              "skip": {
+                "name": "skip",
+                "global": false,
+                "description": "",
+                "tags": [],
+                "required": false,
+                "type": "number",
+                "declarations": [
+                  {
+                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "range": [
+                      9193,
+                      9207
+                    ]
+                  }
+                ],
+                "schema": "number"
+              },
+              "limit": {
+                "name": "limit",
+                "global": false,
+                "description": "",
+                "tags": [],
+                "required": false,
+                "type": "number",
+                "declarations": [
+                  {
+                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "range": [
+                      9212,
+                      9227
+                    ]
+                  }
+                ],
+                "schema": "number"
+              },
+              "only": {
+                "name": "only",
+                "global": false,
+                "description": "",
+                "tags": [],
+                "required": false,
+                "type": "string[]",
+                "declarations": [
+                  {
+                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "range": [
+                      9232,
+                      9248
+                    ]
+                  }
+                ],
+                "schema": {
+                  "kind": "array",
+                  "type": "string[]",
+                  "schema": [
+                    "string"
+                  ]
+                }
+              },
+              "without": {
+                "name": "without",
+                "global": false,
+                "description": "",
+                "tags": [],
+                "required": false,
+                "type": "string[]",
+                "declarations": [
+                  {
+                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "range": [
+                      9253,
+                      9272
+                    ]
+                  }
+                ],
+                "schema": "string[]"
+              },
+              "sort": {
+                "name": "sort",
+                "global": false,
+                "description": "",
+                "tags": [],
+                "required": false,
+                "type": "SortOptions[]",
+                "declarations": [
+                  {
+                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "range": [
+                      9277,
+                      9298
+                    ]
+                  }
+                ],
+                "schema": {
+                  "kind": "array",
+                  "type": "SortOptions[]",
+                  "schema": [
+                    {
+                      "kind": "enum",
+                      "type": "SortOptions",
+                      "schema": [
+                        {
+                          "kind": "object",
+                          "type": "SortParams",
+                          "schema": {
+                            "$locale": {
+                              "name": "$locale",
+                              "global": false,
+                              "description": "Locale specifier for sorting\nA string with a BCP 47 language tag",
+                              "tags": [
+                                {
+                                  "name": "default",
+                                  "text": "undefined"
+                                }
+                              ],
+                              "required": false,
+                              "type": "string",
+                              "declarations": [
+                                {
+                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "range": [
+                                    3558,
+                                    3575
+                                  ]
+                                }
+                              ],
+                              "schema": "string"
+                            },
+                            "$numeric": {
+                              "name": "$numeric",
+                              "global": false,
+                              "description": "Whether numeric collation should be used, such that \"1\" < \"2\" < \"10\".\nPossible values are `true` and `false`;",
+                              "tags": [
+                                {
+                                  "name": "default",
+                                  "text": "false"
+                                }
+                              ],
+                              "required": false,
+                              "type": "boolean",
+                              "declarations": [
+                                {
+                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "range": [
+                                    3749,
+                                    3768
+                                  ]
+                                }
+                              ],
+                              "schema": "boolean"
+                            },
+                            "$caseFirst": {
+                              "name": "$caseFirst",
+                              "global": false,
+                              "description": "Whether upper case or lower case should sort first.\nPossible values are `\"upper\"`, `\"lower\"`, or `\"false\"`",
+                              "tags": [
+                                {
+                                  "name": "default",
+                                  "text": "\"depends on locale\""
+                                }
+                              ],
+                              "required": false,
+                              "type": "\"upper\" | \"lower\" | \"false\"",
+                              "declarations": [
+                                {
+                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "range": [
+                                    3953,
+                                    3994
+                                  ]
+                                }
+                              ],
+                              "schema": {
+                                "kind": "enum",
+                                "type": "\"upper\" | \"lower\" | \"false\"",
+                                "schema": [
+                                  "\"upper\"",
+                                  "\"lower\"",
+                                  "\"false\""
+                                ]
+                              }
+                            },
+                            "$sensitivity": {
+                              "name": "$sensitivity",
+                              "global": false,
+                              "description": "Which differences in the strings should lead to non-zero result values. Possible values are:\n - \"base\": Only strings that differ in base letters compare as unequal. Examples: a ≠ b, a = á, a = A.\n - \"accent\": Only strings that differ in base letters or accents and other diacritic marks compare as unequal. Examples: a ≠ b, a ≠ á, a = A.\n - \"case\": Only strings that differ in base letters or case compare as unequal. Examples: a ≠ b, a = á, a ≠ A.\n - \"variant\": Strings that differ in base letters, accents and other diacritic marks, or case compare as unequal. Other differences may also be taken into consideration. Examples: a ≠ b, a ≠ á, a ≠ A.",
+                              "tags": [
+                                {
+                                  "name": "default",
+                                  "text": "\"variant\""
+                                }
+                              ],
+                              "required": false,
+                              "type": "\"base\" | \"accent\" | \"case\" | \"variant\"",
+                              "declarations": [
+                                {
+                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "range": [
+                                    4733,
+                                    4787
+                                  ]
+                                }
+                              ],
+                              "schema": {
+                                "kind": "enum",
+                                "type": "\"base\" | \"accent\" | \"case\" | \"variant\"",
+                                "schema": [
+                                  "\"base\"",
+                                  "\"accent\"",
+                                  "\"case\"",
+                                  "\"variant\""
+                                ]
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "kind": "object",
+                          "type": "SortFields",
+                          "schema": {}
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              "where": {
+                "name": "where",
+                "global": false,
+                "description": "",
+                "tags": [],
+                "required": false,
+                "type": "QueryBuilderWhere[]",
+                "declarations": [
+                  {
+                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "range": [
+                      9303,
+                      9331
+                    ]
+                  }
+                ],
+                "schema": {
+                  "kind": "array",
+                  "type": "QueryBuilderWhere[]",
+                  "schema": [
+                    {
+                      "kind": "object",
+                      "type": "QueryBuilderWhere",
+                      "schema": {
+                        "$and": {
+                          "name": "$and",
+                          "global": false,
+                          "description": "Match only if all of nested conditions are true",
+                          "tags": [
+                            {
+                              "name": "example",
+                              "text": "```ts\nqueryContent().where({\n $and: [\n   { score: { $gte: 5 } },\n   { score: { $lte: 10 } }\n ]\n})\n```"
+                            }
+                          ],
+                          "required": false,
+                          "type": "QueryBuilderWhere[]",
+                          "declarations": [
+                            {
+                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "range": [
+                                5305,
+                                5332
+                              ]
+                            }
+                          ],
+                          "schema": "QueryBuilderWhere[]"
+                        },
+                        "$or": {
+                          "name": "$or",
+                          "global": false,
+                          "description": "Match if any of nested conditions is true",
+                          "tags": [
+                            {
+                              "name": "example",
+                              "text": "```ts\nqueryContent().where({\n $or: [\n   { score: { $gt: 5 } },\n   { score: { $lt: 3 } }\n ]\n})\n```"
+                            }
+                          ],
+                          "required": false,
+                          "type": "QueryBuilderWhere[]",
+                          "declarations": [
+                            {
+                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "range": [
+                                5576,
+                                5602
+                              ]
+                            }
+                          ],
+                          "schema": "QueryBuilderWhere[]"
+                        },
+                        "$not": {
+                          "name": "$not",
+                          "global": false,
+                          "description": "Match is condition is false",
+                          "tags": [
+                            {
+                              "name": "example",
+                              "text": "```ts\nqueryContent().where({\n title: {\n   $not: 'Hello World'\n }\n})\n```"
+                            }
+                          ],
+                          "required": false,
+                          "type": "string | number | boolean | RegExp | QueryBuilderWhere",
+                          "declarations": [
+                            {
+                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "range": [
+                                5799,
+                                5861
+                              ]
+                            }
+                          ],
+                          "schema": {
+                            "kind": "enum",
+                            "type": "string | number | boolean | RegExp | QueryBuilderWhere",
+                            "schema": [
+                              "string",
+                              "number",
+                              "false",
+                              "true",
+                              {
+                                "kind": "object",
+                                "type": "RegExp",
+                                "schema": {
+                                  "exec": {
+                                    "name": "exec",
+                                    "global": false,
+                                    "description": "Executes a search on a string using a regular expression pattern, and returns an array containing the results of that search.",
+                                    "tags": [
+                                      {
+                                        "name": "param",
+                                        "text": "string The String object or string literal on which to perform the search."
+                                      }
+                                    ],
+                                    "required": true,
+                                    "type": "(string: string) => RegExpExecArray",
+                                    "declarations": [
+                                      {
+                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                                        "range": [
+                                          40945,
+                                          40990
+                                        ]
+                                      }
+                                    ],
+                                    "schema": {
+                                      "kind": "event",
+                                      "type": "(string: string): RegExpExecArray",
+                                      "schema": []
+                                    }
+                                  },
+                                  "test": {
+                                    "name": "test",
+                                    "global": false,
+                                    "description": "Returns a Boolean value that indicates whether or not a pattern exists in a searched string.",
+                                    "tags": [
+                                      {
+                                        "name": "param",
+                                        "text": "string String on which to perform the search."
+                                      }
+                                    ],
+                                    "required": true,
+                                    "type": "(string: string) => boolean",
+                                    "declarations": [
+                                      {
+                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                                        "range": [
+                                          41172,
+                                          41202
+                                        ]
+                                      }
+                                    ],
+                                    "schema": {
+                                      "kind": "event",
+                                      "type": "(string: string): boolean",
+                                      "schema": []
+                                    }
+                                  },
+                                  "source": {
+                                    "name": "source",
+                                    "global": false,
+                                    "description": "Returns a copy of the text of the regular expression pattern. Read-only. The regExp argument is a Regular expression object. It can be a variable name or a literal.",
+                                    "tags": [],
+                                    "required": true,
+                                    "type": "string",
+                                    "declarations": [
+                                      {
+                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                                        "range": [
+                                          41384,
+                                          41408
+                                        ]
+                                      }
+                                    ],
+                                    "schema": "string"
+                                  },
+                                  "global": {
+                                    "name": "global",
+                                    "global": false,
+                                    "description": "Returns a Boolean value indicating the state of the global flag (g) used with a regular expression. Default is false. Read-only.",
+                                    "tags": [],
+                                    "required": true,
+                                    "type": "boolean",
+                                    "declarations": [
+                                      {
+                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                                        "range": [
+                                          41554,
+                                          41579
+                                        ]
+                                      }
+                                    ],
+                                    "schema": "boolean"
+                                  },
+                                  "ignoreCase": {
+                                    "name": "ignoreCase",
+                                    "global": false,
+                                    "description": "Returns a Boolean value indicating the state of the ignoreCase flag (i) used with a regular expression. Default is false. Read-only.",
+                                    "tags": [],
+                                    "required": true,
+                                    "type": "boolean",
+                                    "declarations": [
+                                      {
+                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                                        "range": [
+                                          41729,
+                                          41758
+                                        ]
+                                      }
+                                    ],
+                                    "schema": "boolean"
+                                  },
+                                  "multiline": {
+                                    "name": "multiline",
+                                    "global": false,
+                                    "description": "Returns a Boolean value indicating the state of the multiline flag (m) used with a regular expression. Default is false. Read-only.",
+                                    "tags": [],
+                                    "required": true,
+                                    "type": "boolean",
+                                    "declarations": [
+                                      {
+                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                                        "range": [
+                                          41907,
+                                          41935
+                                        ]
+                                      }
+                                    ],
+                                    "schema": "boolean"
+                                  },
+                                  "lastIndex": {
+                                    "name": "lastIndex",
+                                    "global": false,
+                                    "description": "",
+                                    "tags": [],
+                                    "required": true,
+                                    "type": "number",
+                                    "declarations": [
+                                      {
+                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                                        "range": [
+                                          41941,
+                                          41959
+                                        ]
+                                      }
+                                    ],
+                                    "schema": "number"
+                                  },
+                                  "compile": {
+                                    "name": "compile",
+                                    "global": false,
+                                    "description": "",
+                                    "tags": [
+                                      {
+                                        "name": "deprecated",
+                                        "text": "A legacy feature for browser compatibility"
+                                      }
+                                    ],
+                                    "required": true,
+                                    "type": "(pattern: string, flags?: string) => RegExp",
+                                    "declarations": [
+                                      {
+                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                                        "range": [
+                                          42062,
+                                          42109
+                                        ]
+                                      }
+                                    ],
+                                    "schema": {
+                                      "kind": "event",
+                                      "type": "(pattern: string, flags?: string): RegExp",
+                                      "schema": []
+                                    }
+                                  },
+                                  "flags": {
+                                    "name": "flags",
+                                    "global": false,
+                                    "description": "Returns a string indicating the flags of the regular expression in question. This field is read-only.\nThe characters in this string are sequenced and concatenated in the following order:\n\n   - \"g\" for global\n   - \"i\" for ignoreCase\n   - \"m\" for multiline\n   - \"u\" for unicode\n   - \"y\" for sticky\n\nIf no flags are set, the value is the empty string.",
+                                    "tags": [],
+                                    "required": true,
+                                    "type": "string",
+                                    "declarations": [
+                                      {
+                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es2015.core.d.ts",
+                                        "range": [
+                                          14897,
+                                          14920
+                                        ]
+                                      }
+                                    ],
+                                    "schema": "string"
+                                  },
+                                  "sticky": {
+                                    "name": "sticky",
+                                    "global": false,
+                                    "description": "Returns a Boolean value indicating the state of the sticky flag (y) used with a regular\nexpression. Default is false. Read-only.",
+                                    "tags": [],
+                                    "required": true,
+                                    "type": "boolean",
+                                    "declarations": [
+                                      {
+                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es2015.core.d.ts",
+                                        "range": [
+                                          15085,
+                                          15110
+                                        ]
+                                      }
+                                    ],
+                                    "schema": "boolean"
+                                  },
+                                  "unicode": {
+                                    "name": "unicode",
+                                    "global": false,
+                                    "description": "Returns a Boolean value indicating the state of the Unicode flag (u) used with a regular\nexpression. Default is false. Read-only.",
+                                    "tags": [],
+                                    "required": true,
+                                    "type": "boolean",
+                                    "declarations": [
+                                      {
+                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es2015.core.d.ts",
+                                        "range": [
+                                          15276,
+                                          15302
+                                        ]
+                                      }
+                                    ],
+                                    "schema": "boolean"
+                                  },
+                                  "dotAll": {
+                                    "name": "dotAll",
+                                    "global": false,
+                                    "description": "Returns a Boolean value indicating the state of the dotAll flag (s) used with a regular expression.\nDefault is false. Read-only.",
+                                    "tags": [],
+                                    "required": true,
+                                    "type": "boolean",
+                                    "declarations": [
+                                      {
+                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es2018.regexp.d.ts",
+                                        "range": [
+                                          1204,
+                                          1229
+                                        ]
+                                      }
+                                    ],
+                                    "schema": "boolean"
+                                  },
+                                  "__@match@7844": {
+                                    "name": "__@match@7844",
+                                    "global": false,
+                                    "description": "Matches a string with this regular expression, and returns an array containing the results of\nthat search.",
+                                    "tags": [
+                                      {
+                                        "name": "param",
+                                        "text": "string A string to search within."
+                                      }
+                                    ],
+                                    "required": true,
+                                    "type": "(string: string) => RegExpMatchArray",
+                                    "declarations": [
+                                      {
+                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+                                        "range": [
+                                          5644,
+                                          5700
+                                        ]
+                                      }
+                                    ],
+                                    "schema": {
+                                      "kind": "event",
+                                      "type": "(string: string): RegExpMatchArray",
+                                      "schema": []
+                                    }
+                                  },
+                                  "__@replace@7846": {
+                                    "name": "__@replace@7846",
+                                    "global": false,
+                                    "description": "Replaces text in a string, using this regular expression.",
+                                    "tags": [
+                                      {
+                                        "name": "param",
+                                        "text": "string A String object or string literal whose contents matching against\nthis regular expression will be replaced"
+                                      },
+                                      {
+                                        "name": "param",
+                                        "text": "replaceValue A String object or string literal containing the text to replace for every\nsuccessful match of this regular expression."
+                                      },
+                                      {
+                                        "name": "param",
+                                        "text": "string A String object or string literal whose contents matching against\nthis regular expression will be replaced"
+                                      },
+                                      {
+                                        "name": "param",
+                                        "text": "replacer A function that returns the replacement text."
+                                      }
+                                    ],
+                                    "required": true,
+                                    "type": "{ (string: string, replaceValue: string): string; (string: string, replacer: (substring: string, ...args: any[]) => string): string; }",
+                                    "declarations": [
+                                      {
+                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+                                        "range": [
+                                          6110,
+                                          6173
+                                        ]
+                                      },
+                                      {
+                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+                                        "range": [
+                                          6478,
+                                          6576
+                                        ]
+                                      }
+                                    ],
+                                    "schema": "{ (string: string, replaceValue: string): string; (string: string, replacer: (substring: string, ...args: any[]) => string): string; }"
+                                  },
+                                  "__@search@7849": {
+                                    "name": "__@search@7849",
+                                    "global": false,
+                                    "description": "Finds the position beginning first substring match in a regular expression search\nusing this regular expression.",
+                                    "tags": [
+                                      {
+                                        "name": "param",
+                                        "text": "string The string to search within."
+                                      }
+                                    ],
+                                    "required": true,
+                                    "type": "(string: string) => number",
+                                    "declarations": [
+                                      {
+                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+                                        "range": [
+                                          6782,
+                                          6822
+                                        ]
+                                      }
+                                    ],
+                                    "schema": {
+                                      "kind": "event",
+                                      "type": "(string: string): number",
+                                      "schema": []
+                                    }
+                                  },
+                                  "__@split@7851": {
+                                    "name": "__@split@7851",
+                                    "global": false,
+                                    "description": "Returns an array of substrings that were delimited by strings in the original input that\nmatch against this regular expression.\n\nIf the regular expression contains capturing parentheses, then each time this\nregular expression matches, the results (including any undefined results) of the\ncapturing parentheses are spliced.",
+                                    "tags": [
+                                      {
+                                        "name": "param",
+                                        "text": "string string value to split"
+                                      },
+                                      {
+                                        "name": "param",
+                                        "text": "limit if not undefined, the output array is truncated so that it contains no more\nthan 'limit' elements."
+                                      }
+                                    ],
+                                    "required": true,
+                                    "type": "(string: string, limit?: number) => string[]",
+                                    "declarations": [
+                                      {
+                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+                                        "range": [
+                                          7384,
+                                          7441
+                                        ]
+                                      }
+                                    ],
+                                    "schema": {
+                                      "kind": "event",
+                                      "type": "(string: string, limit?: number): string[]",
+                                      "schema": []
+                                    }
+                                  },
+                                  "__@matchAll@7853": {
+                                    "name": "__@matchAll@7853",
+                                    "global": false,
+                                    "description": "Matches a string with this regular expression, and returns an iterable of matches\ncontaining the results of that search.",
+                                    "tags": [
+                                      {
+                                        "name": "param",
+                                        "text": "string A string to search within."
+                                      }
+                                    ],
+                                    "required": true,
+                                    "type": "(str: string) => IterableIterator<RegExpMatchArray>",
+                                    "declarations": [
+                                      {
+                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es2020.symbol.wellknown.d.ts",
+                                        "range": [
+                                          1385,
+                                          1452
+                                        ]
+                                      }
+                                    ],
+                                    "schema": {
+                                      "kind": "event",
+                                      "type": "(str: string): IterableIterator<RegExpMatchArray>",
+                                      "schema": []
+                                    }
+                                  }
+                                }
+                              },
+                              "QueryBuilderWhere"
+                            ]
+                          }
+                        },
+                        "$eq": {
+                          "name": "$eq",
+                          "global": false,
+                          "description": "Match if item equals condition",
+                          "tags": [
+                            {
+                              "name": "example",
+                              "text": "```ts\nqueryContent().where({\n title: {\n   $eq: 'Hello World'\n }\n})\n```"
+                            }
+                          ],
+                          "required": false,
+                          "type": "string | number | boolean | RegExp",
+                          "declarations": [
+                            {
+                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "range": [
+                                6060,
+                                6101
+                              ]
+                            }
+                          ],
+                          "schema": {
+                            "kind": "enum",
+                            "type": "string | number | boolean | RegExp",
+                            "schema": [
+                              "string",
+                              "number",
+                              "false",
+                              "true",
+                              "RegExp"
+                            ]
+                          }
+                        },
+                        "$ne": {
+                          "name": "$ne",
+                          "global": false,
+                          "description": "Match if item not equals condition",
+                          "tags": [
+                            {
+                              "name": "example",
+                              "text": "```ts\nqueryContent().where({\n score: {\n   $ne: 100\n }\n})\n```"
+                            }
+                          ],
+                          "required": false,
+                          "type": "string | number | boolean | RegExp",
+                          "declarations": [
+                            {
+                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "range": [
+                                6294,
+                                6335
+                              ]
+                            }
+                          ],
+                          "schema": "string | number | boolean | RegExp"
+                        },
+                        "$gt": {
+                          "name": "$gt",
+                          "global": false,
+                          "description": "Check if item is greater than condition",
+                          "tags": [
+                            {
+                              "name": "example",
+                              "text": "```ts\nqueryContent().where({\n score: {\n   $gt: 99.5\n }\n})\n```"
+                            }
+                          ],
+                          "required": false,
+                          "type": "number",
+                          "declarations": [
+                            {
+                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "range": [
+                                6533,
+                                6546
+                              ]
+                            }
+                          ],
+                          "schema": "number"
+                        },
+                        "$gte": {
+                          "name": "$gte",
+                          "global": false,
+                          "description": "Check if item is greater than or equal to condition",
+                          "tags": [
+                            {
+                              "name": "example",
+                              "text": "```ts\nqueryContent().where({\n score: {\n   $gte: 99.5\n }\n})\n```"
+                            }
+                          ],
+                          "required": false,
+                          "type": "number",
+                          "declarations": [
+                            {
+                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "range": [
+                                6757,
+                                6771
+                              ]
+                            }
+                          ],
+                          "schema": "number"
+                        },
+                        "$lt": {
+                          "name": "$lt",
+                          "global": false,
+                          "description": "Check if item is less than condition",
+                          "tags": [
+                            {
+                              "name": "example",
+                              "text": "```ts\nqueryContent().where({\n score: {\n   $lt: 99.5\n }\n})\n```"
+                            }
+                          ],
+                          "required": false,
+                          "type": "number",
+                          "declarations": [
+                            {
+                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "range": [
+                                6966,
+                                6979
+                              ]
+                            }
+                          ],
+                          "schema": "number"
+                        },
+                        "$lte": {
+                          "name": "$lte",
+                          "global": false,
+                          "description": "Check if item is less than or equal to condition",
+                          "tags": [
+                            {
+                              "name": "example",
+                              "text": "```ts\nqueryContent().where({\n score: {\n   $lte: 99.5\n }\n})\n```"
+                            }
+                          ],
+                          "required": false,
+                          "type": "number",
+                          "declarations": [
+                            {
+                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "range": [
+                                7187,
+                                7201
+                              ]
+                            }
+                          ],
+                          "schema": "number"
+                        },
+                        "$regex": {
+                          "name": "$regex",
+                          "global": false,
+                          "description": "Provides regular expression capabilities for pattern matching strings.",
+                          "tags": [
+                            {
+                              "name": "example",
+                              "text": "```ts\nqueryContent().where({\n title: {\n   $regex: /^foo/\n }\n})\n```"
+                            }
+                          ],
+                          "required": false,
+                          "type": "string | RegExp",
+                          "declarations": [
+                            {
+                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "range": [
+                                7435,
+                                7460
+                              ]
+                            }
+                          ],
+                          "schema": {
+                            "kind": "enum",
+                            "type": "string | RegExp",
+                            "schema": [
+                              "string",
+                              "RegExp"
+                            ]
+                          }
+                        },
+                        "$type": {
+                          "name": "$type",
+                          "global": false,
+                          "description": "Match if type of item equals condition",
+                          "tags": [
+                            {
+                              "name": "example",
+                              "text": "```ts\nqueryContent().where({\n field: {\n   $type: 'boolean'\n }\n})\n```"
+                            }
+                          ],
+                          "required": false,
+                          "type": "string",
+                          "declarations": [
+                            {
+                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "range": [
+                                7664,
+                                7679
+                              ]
+                            }
+                          ],
+                          "schema": "string"
+                        },
+                        "$exists": {
+                          "name": "$exists",
+                          "global": false,
+                          "description": "Check key existence",
+                          "tags": [
+                            {
+                              "name": "example",
+                              "text": "```ts\nqueryContent().where({\n tag: {\n   $exists: false\n }\n})\n```"
+                            }
+                          ],
+                          "required": false,
+                          "type": "boolean",
+                          "declarations": [
+                            {
+                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "range": [
+                                7860,
+                                7878
+                              ]
+                            }
+                          ],
+                          "schema": "boolean"
+                        },
+                        "$contains": {
+                          "name": "$contains",
+                          "global": false,
+                          "description": "Match if item contains every condition or math every rule in condition array",
+                          "tags": [
+                            {
+                              "name": "example",
+                              "text": "```ts\nqueryContent().where({\n title: {\n   $contains: ['Hello', 'World']\n }\n})\n```"
+                            }
+                          ],
+                          "required": false,
+                          "type": "string | number | boolean | (string | number | boolean)[]",
+                          "declarations": [
+                            {
+                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "range": [
+                                8134,
+                                8207
+                              ]
+                            }
+                          ],
+                          "schema": {
+                            "kind": "enum",
+                            "type": "string | number | boolean | (string | number | boolean)[]",
+                            "schema": [
+                              "string",
+                              "number",
+                              "false",
+                              "true",
+                              {
+                                "kind": "array",
+                                "type": "(string | number | boolean)[]",
+                                "schema": [
+                                  {
+                                    "kind": "enum",
+                                    "type": "string | number | boolean",
+                                    "schema": [
+                                      "string",
+                                      "number",
+                                      "false",
+                                      "true"
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        "$containsAny": {
+                          "name": "$containsAny",
+                          "global": false,
+                          "description": "Match if item contains at least one rule from condition array",
+                          "tags": [
+                            {
+                              "name": "example",
+                              "text": "```ts\nqueryContent().where({\n title: {\n   $containsAny: ['Hello', 'World']\n }\n})\n```"
+                            }
+                          ],
+                          "required": false,
+                          "type": "(string | number | boolean)[]",
+                          "declarations": [
+                            {
+                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "range": [
+                                8450,
+                                8498
+                              ]
+                            }
+                          ],
+                          "schema": "(string | number | boolean)[]"
+                        },
+                        "$icontains": {
+                          "name": "$icontains",
+                          "global": false,
+                          "description": "Ignore case contains",
+                          "tags": [
+                            {
+                              "name": "example",
+                              "text": "```ts\nqueryContent().where({\n title: {\n   $icontains: 'hello world'\n }\n})\n```"
+                            }
+                          ],
+                          "required": false,
+                          "type": "string",
+                          "declarations": [
+                            {
+                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "range": [
+                                8694,
+                                8714
+                              ]
+                            }
+                          ],
+                          "schema": "string"
+                        },
+                        "$in": {
+                          "name": "$in",
+                          "global": false,
+                          "description": "Match if item is in condition array",
+                          "tags": [
+                            {
+                              "name": "example",
+                              "text": "```ts\nqueryContent().where({\n category: {\n   $in: ['sport', 'nature', 'travel']\n }\n})\n```"
+                            }
+                          ],
+                          "required": false,
+                          "type": "string | (string | number | boolean)[]",
+                          "declarations": [
+                            {
+                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "range": [
+                                8937,
+                                8985
+                              ]
+                            }
+                          ],
+                          "schema": {
+                            "kind": "enum",
+                            "type": "string | (string | number | boolean)[]",
+                            "schema": [
+                              "string",
+                              "(string | number | boolean)[]"
+                            ]
+                          }
+                        },
+                        "title": {
+                          "name": "title",
+                          "global": false,
+                          "description": "",
+                          "tags": [],
+                          "required": false,
+                          "type": "string | number | boolean | RegExp | QueryBuilderWhere",
+                          "declarations": [],
+                          "schema": "string | number | boolean | RegExp | QueryBuilderWhere"
+                        },
+                        "_id": {
+                          "name": "_id",
+                          "global": false,
+                          "description": "",
+                          "tags": [],
+                          "required": false,
+                          "type": "string | number | boolean | RegExp | QueryBuilderWhere",
+                          "declarations": [],
+                          "schema": "string | number | boolean | RegExp | QueryBuilderWhere"
+                        },
+                        "_source": {
+                          "name": "_source",
+                          "global": false,
+                          "description": "",
+                          "tags": [],
+                          "required": false,
+                          "type": "string | number | boolean | RegExp | QueryBuilderWhere",
+                          "declarations": [],
+                          "schema": "string | number | boolean | RegExp | QueryBuilderWhere"
+                        },
+                        "_path": {
+                          "name": "_path",
+                          "global": false,
+                          "description": "",
+                          "tags": [],
+                          "required": false,
+                          "type": "string | number | boolean | RegExp | QueryBuilderWhere",
+                          "declarations": [],
+                          "schema": "string | number | boolean | RegExp | QueryBuilderWhere"
+                        },
+                        "_draft": {
+                          "name": "_draft",
+                          "global": false,
+                          "description": "",
+                          "tags": [],
+                          "required": false,
+                          "type": "string | number | boolean | RegExp | QueryBuilderWhere",
+                          "declarations": [],
+                          "schema": "string | number | boolean | RegExp | QueryBuilderWhere"
+                        },
+                        "_partial": {
+                          "name": "_partial",
+                          "global": false,
+                          "description": "",
+                          "tags": [],
+                          "required": false,
+                          "type": "string | number | boolean | RegExp | QueryBuilderWhere",
+                          "declarations": [],
+                          "schema": "string | number | boolean | RegExp | QueryBuilderWhere"
+                        },
+                        "_locale": {
+                          "name": "_locale",
+                          "global": false,
+                          "description": "",
+                          "tags": [],
+                          "required": false,
+                          "type": "string | number | boolean | RegExp | QueryBuilderWhere",
+                          "declarations": [],
+                          "schema": "string | number | boolean | RegExp | QueryBuilderWhere"
+                        },
+                        "_type": {
+                          "name": "_type",
+                          "global": false,
+                          "description": "",
+                          "tags": [],
+                          "required": false,
+                          "type": "string | number | boolean | RegExp | QueryBuilderWhere",
+                          "declarations": [],
+                          "schema": "string | number | boolean | RegExp | QueryBuilderWhere"
+                        },
+                        "_file": {
+                          "name": "_file",
+                          "global": false,
+                          "description": "",
+                          "tags": [],
+                          "required": false,
+                          "type": "string | number | boolean | RegExp | QueryBuilderWhere",
+                          "declarations": [],
+                          "schema": "string | number | boolean | RegExp | QueryBuilderWhere"
+                        },
+                        "_extension": {
+                          "name": "_extension",
+                          "global": false,
+                          "description": "",
+                          "tags": [],
+                          "required": false,
+                          "type": "string | number | boolean | RegExp | QueryBuilderWhere",
+                          "declarations": [],
+                          "schema": "string | number | boolean | RegExp | QueryBuilderWhere"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "surround": {
+                "name": "surround",
+                "global": false,
+                "description": "",
+                "tags": [],
+                "required": false,
+                "type": "{ query: string | QueryBuilderWhere; before?: number; after?: number; }",
+                "declarations": [
+                  {
+                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "range": [
+                      9336,
+                      9447
+                    ]
+                  }
+                ],
+                "schema": {
+                  "kind": "object",
+                  "type": "{ query: string | QueryBuilderWhere; before?: number; after?: number; }",
+                  "schema": {
+                    "query": {
+                      "name": "query",
+                      "global": false,
+                      "description": "",
+                      "tags": [],
+                      "required": true,
+                      "type": "string | QueryBuilderWhere",
+                      "declarations": [
+                        {
+                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "range": [
+                            9357,
+                            9391
+                          ]
+                        }
+                      ],
+                      "schema": {
+                        "kind": "enum",
+                        "type": "string | QueryBuilderWhere",
+                        "schema": [
+                          "string",
+                          "QueryBuilderWhere"
+                        ]
+                      }
+                    },
+                    "before": {
+                      "name": "before",
+                      "global": false,
+                      "description": "",
+                      "tags": [],
+                      "required": false,
+                      "type": "number",
+                      "declarations": [
+                        {
+                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "range": [
+                            9400,
+                            9416
+                          ]
+                        }
+                      ],
+                      "schema": "number"
+                    },
+                    "after": {
+                      "name": "after",
+                      "global": false,
+                      "description": "",
+                      "tags": [],
+                      "required": false,
+                      "type": "number",
+                      "declarations": [
+                        {
+                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "range": [
+                            9425,
+                            9440
+                          ]
+                        }
+                      ],
+                      "schema": "number"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "slots": [
+        {
+          "name": "default",
+          "type": "{ list: ParsedContent[]; refresh: () => Promise<void>; }",
+          "description": "",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentList.vue.d.ts",
+              "range": [
+                3377,
+                3509
+              ]
+            }
+          ],
+          "schema": {
+            "kind": "object",
+            "type": "{ list: ParsedContent[]; refresh: () => Promise<void>; }",
+            "schema": {
+              "list": {
+                "name": "list",
+                "global": false,
+                "description": "",
+                "tags": [],
+                "required": true,
+                "type": "ParsedContent[]",
+                "declarations": [
+                  {
+                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentList.vue.d.ts",
+                    "range": [
+                      3410,
+                      3432
+                    ]
+                  }
+                ],
+                "schema": {
+                  "kind": "array",
+                  "type": "ParsedContent[]",
+                  "schema": [
+                    {
+                      "kind": "object",
+                      "type": "ParsedContent",
+                      "schema": {
+                        "excerpt": {
+                          "name": "excerpt",
+                          "global": false,
+                          "description": "Excerpt",
+                          "tags": [],
+                          "required": false,
+                          "type": "MarkdownRoot",
+                          "declarations": [
+                            {
+                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "range": [
+                                2459,
+                                2482
+                              ]
+                            }
+                          ],
+                          "schema": {
                             "kind": "object",
                             "type": "MarkdownRoot",
                             "schema": {
@@ -9042,7 +10830,7 @@ export default {
                                           "description": "",
                                           "tags": [],
                                           "required": false,
-                                          "type": "string | undefined",
+                                          "type": "string",
                                           "declarations": [
                                             {
                                               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -9052,14 +10840,7 @@ export default {
                                               ]
                                             }
                                           ],
-                                          "schema": {
-                                            "kind": "enum",
-                                            "type": "string | undefined",
-                                            "schema": [
-                                              "undefined",
-                                              "string"
-                                            ]
-                                          }
+                                          "schema": "string"
                                         },
                                         "value": {
                                           "name": "value",
@@ -9067,7 +10848,7 @@ export default {
                                           "description": "",
                                           "tags": [],
                                           "required": false,
-                                          "type": "string | undefined",
+                                          "type": "string",
                                           "declarations": [
                                             {
                                               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -9077,7 +10858,7 @@ export default {
                                               ]
                                             }
                                           ],
-                                          "schema": "string | undefined"
+                                          "schema": "string"
                                         },
                                         "props": {
                                           "name": "props",
@@ -9085,7 +10866,7 @@ export default {
                                           "description": "",
                                           "tags": [],
                                           "required": false,
-                                          "type": "Record<string, any> | undefined",
+                                          "type": "Record<string, any>",
                                           "declarations": [
                                             {
                                               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -9095,14 +10876,7 @@ export default {
                                               ]
                                             }
                                           ],
-                                          "schema": {
-                                            "kind": "enum",
-                                            "type": "Record<string, any> | undefined",
-                                            "schema": [
-                                              "undefined",
-                                              "Record<string, any>"
-                                            ]
-                                          }
+                                          "schema": "Record<string, any>"
                                         },
                                         "content": {
                                           "name": "content",
@@ -9128,7 +10902,7 @@ export default {
                                           "description": "",
                                           "tags": [],
                                           "required": false,
-                                          "type": "MarkdownNode[] | undefined",
+                                          "type": "MarkdownNode[]",
                                           "declarations": [
                                             {
                                               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -9138,14 +10912,7 @@ export default {
                                               ]
                                             }
                                           ],
-                                          "schema": {
-                                            "kind": "enum",
-                                            "type": "MarkdownNode[] | undefined",
-                                            "schema": [
-                                              "undefined",
-                                              "MarkdownNode[]"
-                                            ]
-                                          }
+                                          "schema": "MarkdownNode[]"
                                         },
                                         "attributes": {
                                           "name": "attributes",
@@ -9153,7 +10920,7 @@ export default {
                                           "description": "",
                                           "tags": [],
                                           "required": false,
-                                          "type": "Record<string, any> | undefined",
+                                          "type": "Record<string, any>",
                                           "declarations": [
                                             {
                                               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -9163,7 +10930,7 @@ export default {
                                               ]
                                             }
                                           ],
-                                          "schema": "Record<string, any> | undefined"
+                                          "schema": "Record<string, any>"
                                         },
                                         "fmAttributes": {
                                           "name": "fmAttributes",
@@ -9171,7 +10938,7 @@ export default {
                                           "description": "",
                                           "tags": [],
                                           "required": false,
-                                          "type": "Record<string, any> | undefined",
+                                          "type": "Record<string, any>",
                                           "declarations": [
                                             {
                                               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -9181,7 +10948,7 @@ export default {
                                               ]
                                             }
                                           ],
-                                          "schema": "Record<string, any> | undefined"
+                                          "schema": "Record<string, any>"
                                         }
                                       }
                                     }
@@ -9194,7 +10961,7 @@ export default {
                                 "description": "",
                                 "tags": [],
                                 "required": false,
-                                "type": "Record<string, any> | undefined",
+                                "type": "Record<string, any>",
                                 "declarations": [
                                   {
                                     "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -9204,7 +10971,7 @@ export default {
                                     ]
                                   }
                                 ],
-                                "schema": "Record<string, any> | undefined"
+                                "schema": "Record<string, any>"
                               },
                               "toc": {
                                 "name": "toc",
@@ -9212,7 +10979,7 @@ export default {
                                 "description": "",
                                 "tags": [],
                                 "required": false,
-                                "type": "Toc | undefined",
+                                "type": "Toc",
                                 "declarations": [
                                   {
                                     "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -9223,3110 +10990,168 @@ export default {
                                   }
                                 ],
                                 "schema": {
-                                  "kind": "enum",
-                                  "type": "Toc | undefined",
-                                  "schema": [
-                                    "undefined",
-                                    {
-                                      "kind": "object",
-                                      "type": "Toc",
-                                      "schema": {
-                                        "title": {
-                                          "name": "title",
-                                          "global": false,
-                                          "description": "",
-                                          "tags": [],
-                                          "required": true,
-                                          "type": "string",
-                                          "declarations": [
-                                            {
-                                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                              "range": [
-                                                1095,
-                                                1109
-                                              ]
-                                            }
-                                          ],
-                                          "schema": "string"
-                                        },
-                                        "depth": {
-                                          "name": "depth",
-                                          "global": false,
-                                          "description": "",
-                                          "tags": [],
-                                          "required": true,
-                                          "type": "number",
-                                          "declarations": [
-                                            {
-                                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                              "range": [
-                                                1114,
-                                                1128
-                                              ]
-                                            }
-                                          ],
-                                          "schema": "number"
-                                        },
-                                        "searchDepth": {
-                                          "name": "searchDepth",
-                                          "global": false,
-                                          "description": "",
-                                          "tags": [],
-                                          "required": true,
-                                          "type": "number",
-                                          "declarations": [
-                                            {
-                                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                              "range": [
-                                                1133,
-                                                1153
-                                              ]
-                                            }
-                                          ],
-                                          "schema": "number"
-                                        },
-                                        "links": {
-                                          "name": "links",
-                                          "global": false,
-                                          "description": "",
-                                          "tags": [],
-                                          "required": true,
-                                          "type": "TocLink[]",
-                                          "declarations": [
-                                            {
-                                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                              "range": [
-                                                1158,
-                                                1175
-                                              ]
-                                            }
-                                          ],
-                                          "schema": {
-                                            "kind": "array",
-                                            "type": "TocLink[]",
-                                            "schema": [
-                                              {
-                                                "kind": "object",
-                                                "type": "TocLink",
-                                                "schema": {
-                                                  "id": {
-                                                    "name": "id",
-                                                    "global": false,
-                                                    "description": "",
-                                                    "tags": [],
-                                                    "required": true,
-                                                    "type": "string",
-                                                    "declarations": [
-                                                      {
-                                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                                        "range": [
-                                                          991,
-                                                          1002
-                                                        ]
-                                                      }
-                                                    ],
-                                                    "schema": "string"
-                                                  },
-                                                  "text": {
-                                                    "name": "text",
-                                                    "global": false,
-                                                    "description": "",
-                                                    "tags": [],
-                                                    "required": true,
-                                                    "type": "string",
-                                                    "declarations": [
-                                                      {
-                                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                                        "range": [
-                                                          1007,
-                                                          1020
-                                                        ]
-                                                      }
-                                                    ],
-                                                    "schema": "string"
-                                                  },
-                                                  "depth": {
-                                                    "name": "depth",
-                                                    "global": false,
-                                                    "description": "",
-                                                    "tags": [],
-                                                    "required": true,
-                                                    "type": "number",
-                                                    "declarations": [
-                                                      {
-                                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                                        "range": [
-                                                          1025,
-                                                          1039
-                                                        ]
-                                                      }
-                                                    ],
-                                                    "schema": "number"
-                                                  },
-                                                  "children": {
-                                                    "name": "children",
-                                                    "global": false,
-                                                    "description": "",
-                                                    "tags": [],
-                                                    "required": false,
-                                                    "type": "TocLink[] | undefined",
-                                                    "declarations": [
-                                                      {
-                                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                                        "range": [
-                                                          1044,
-                                                          1065
-                                                        ]
-                                                      }
-                                                    ],
-                                                    "schema": {
-                                                      "kind": "enum",
-                                                      "type": "TocLink[] | undefined",
-                                                      "schema": [
-                                                        "undefined",
-                                                        "TocLink[]"
-                                                      ]
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            ]
-                                          }
-                                        }
-                                      }
-                                    }
-                                  ]
-                                }
-                              }
-                            }
-                          }
-                        ]
-                      }
-                    },
-                    "body": {
-                      "name": "body",
-                      "global": false,
-                      "description": "Content body",
-                      "tags": [],
-                      "required": true,
-                      "type": "MarkdownRoot | null",
-                      "declarations": [
-                        {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                          "range": [
-                            2523,
-                            2549
-                          ]
-                        }
-                      ],
-                      "schema": {
-                        "kind": "enum",
-                        "type": "MarkdownRoot | null",
-                        "schema": [
-                          "null",
-                          "MarkdownRoot"
-                        ]
-                      }
-                    },
-                    "layout": {
-                      "name": "layout",
-                      "global": false,
-                      "description": "Layout",
-                      "tags": [],
-                      "required": false,
-                      "type": "LayoutKey | undefined",
-                      "declarations": [
-                        {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                          "range": [
-                            2319,
-                            2338
-                          ]
-                        }
-                      ],
-                      "schema": {
-                        "kind": "enum",
-                        "type": "LayoutKey | undefined",
-                        "schema": [
-                          "undefined",
-                          "\"default\"",
-                          "\"page\""
-                        ]
-                      }
-                    },
-                    "_id": {
-                      "name": "_id",
-                      "global": false,
-                      "description": "Content id",
-                      "tags": [],
-                      "required": true,
-                      "type": "string",
-                      "declarations": [
-                        {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                          "range": [
-                            185,
-                            197
-                          ]
-                        }
-                      ],
-                      "schema": "string"
-                    },
-                    "_source": {
-                      "name": "_source",
-                      "global": false,
-                      "description": "Content source",
-                      "tags": [],
-                      "required": false,
-                      "type": "string | undefined",
-                      "declarations": [
-                        {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                          "range": [
-                            240,
-                            257
-                          ]
-                        }
-                      ],
-                      "schema": "string | undefined"
-                    },
-                    "_path": {
-                      "name": "_path",
-                      "global": false,
-                      "description": "Content path, this path is source agnostic and it the content my live in any source",
-                      "tags": [],
-                      "required": false,
-                      "type": "string | undefined",
-                      "declarations": [
-                        {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                          "range": [
-                            369,
-                            384
-                          ]
-                        }
-                      ],
-                      "schema": "string | undefined"
-                    },
-                    "title": {
-                      "name": "title",
-                      "global": false,
-                      "description": "Content title",
-                      "tags": [],
-                      "required": false,
-                      "type": "string | undefined",
-                      "declarations": [
-                        {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                          "range": [
-                            426,
-                            441
-                          ]
-                        }
-                      ],
-                      "schema": "string | undefined"
-                    },
-                    "_draft": {
-                      "name": "_draft",
-                      "global": false,
-                      "description": "Content draft status",
-                      "tags": [],
-                      "required": false,
-                      "type": "boolean | undefined",
-                      "declarations": [
-                        {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                          "range": [
-                            490,
-                            507
-                          ]
-                        }
-                      ],
-                      "schema": {
-                        "kind": "enum",
-                        "type": "boolean | undefined",
-                        "schema": [
-                          "undefined",
-                          "false",
-                          "true"
-                        ]
-                      }
-                    },
-                    "_partial": {
-                      "name": "_partial",
-                      "global": false,
-                      "description": "Content partial status",
-                      "tags": [],
-                      "required": false,
-                      "type": "boolean | undefined",
-                      "declarations": [
-                        {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                          "range": [
-                            558,
-                            577
-                          ]
-                        }
-                      ],
-                      "schema": "boolean | undefined"
-                    },
-                    "_locale": {
-                      "name": "_locale",
-                      "global": false,
-                      "description": "Content locale",
-                      "tags": [],
-                      "required": false,
-                      "type": "string | undefined",
-                      "declarations": [
-                        {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                          "range": [
-                            620,
-                            637
-                          ]
-                        }
-                      ],
-                      "schema": "string | undefined"
-                    },
-                    "_type": {
-                      "name": "_type",
-                      "global": false,
-                      "description": "File type of the content, i.e `markdown`",
-                      "tags": [],
-                      "required": false,
-                      "type": "\"markdown\" | \"yaml\" | \"json\" | \"csv\" | undefined",
-                      "declarations": [
-                        {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                          "range": [
-                            706,
-                            751
-                          ]
-                        }
-                      ],
-                      "schema": {
-                        "kind": "enum",
-                        "type": "\"markdown\" | \"yaml\" | \"json\" | \"csv\" | undefined",
-                        "schema": [
-                          "undefined",
-                          "\"markdown\"",
-                          "\"yaml\"",
-                          "\"json\"",
-                          "\"csv\""
-                        ]
-                      }
-                    },
-                    "_file": {
-                      "name": "_file",
-                      "global": false,
-                      "description": "Path to the file relative to the content directory",
-                      "tags": [],
-                      "required": false,
-                      "type": "string | undefined",
-                      "declarations": [
-                        {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                          "range": [
-                            830,
-                            845
-                          ]
-                        }
-                      ],
-                      "schema": "string | undefined"
-                    },
-                    "_extension": {
-                      "name": "_extension",
-                      "global": false,
-                      "description": "Extension of the file",
-                      "tags": [],
-                      "required": false,
-                      "type": "\"yaml\" | \"json\" | \"csv\" | \"md\" | \"yml\" | \"json5\" | undefined",
-                      "declarations": [
-                        {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                          "range": [
-                            895,
-                            957
-                          ]
-                        }
-                      ],
-                      "schema": {
-                        "kind": "enum",
-                        "type": "\"yaml\" | \"json\" | \"csv\" | \"md\" | \"yml\" | \"json5\" | undefined",
-                        "schema": [
-                          "undefined",
-                          "\"yaml\"",
-                          "\"json\"",
-                          "\"csv\"",
-                          "\"md\"",
-                          "\"yml\"",
-                          "\"json5\""
-                        ]
-                      }
-                    }
-                  }
-                }
-              },
-              "refresh": {
-                "name": "refresh",
-                "global": false,
-                "description": "",
-                "tags": [],
-                "required": true,
-                "type": "() => Promise<void>",
-                "declarations": [
-                  {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
-                    "range": [
-                      6412,
-                      6441
-                    ]
-                  }
-                ],
-                "schema": {
-                  "kind": "event",
-                  "type": "(): Promise<void>"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "events": [],
-      "exposed": [
-        {
-          "name": "$slots",
-          "type": "Readonly<InternalSlots> & { default: (context: { doc: ParsedContent; refresh: () => Promise<void>; }) => VNode<RendererNode, RendererElement, { ...; }>[] | undefined; }",
-          "description": "",
-          "declarations": [
-            {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
-              "range": [
-                8475,
-                8502
-              ]
-            },
-            {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
-              "range": [
-                6329,
-                6483
-              ]
-            }
-          ],
-          "schema": {
-            "kind": "object",
-            "type": "Readonly<InternalSlots> & { default: (context: { doc: ParsedContent; refresh: () => Promise<void>; }) => VNode<RendererNode, RendererElement, { ...; }>[] | undefined; }",
-            "schema": {
-              "default": {
-                "name": "default",
-                "global": false,
-                "description": "",
-                "tags": [],
-                "required": true,
-                "type": "(context: { doc: ParsedContent; refresh: () => Promise<void>; }) => VNode<RendererNode, RendererElement, { [key: string]: any; }>[] | undefined",
-                "declarations": [
-                  {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
-                    "range": [
-                      6347,
-                      6476
-                    ]
-                  }
-                ],
-                "schema": {
-                  "kind": "event",
-                  "type": "(context: { doc: ParsedContent; refresh: () => Promise<void>; }): VNode<RendererNode, RendererElement, { [key: string]: any; }>[] | undefined",
-                  "schema": []
-                }
-              }
-            }
-          }
-        },
-        {
-          "name": "tag",
-          "type": "string",
-          "description": "The tag to use for the renderer element if it is used.",
-          "declarations": [
-            {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
-              "range": [
-                3494,
-                3606
-              ]
-            }
-          ],
-          "schema": "string"
-        },
-        {
-          "name": "excerpt",
-          "type": "boolean",
-          "description": "Whether or not to render the excerpt.",
-          "declarations": [
-            {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
-              "range": [
-                3714,
-                3803
-              ]
-            }
-          ],
-          "schema": {
-            "kind": "enum",
-            "type": "boolean",
-            "schema": [
-              "false",
-              "true"
-            ]
-          }
-        },
-        {
-          "name": "path",
-          "type": "string | undefined",
-          "description": "The path of the content to load from content source.",
-          "declarations": [
-            {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
-              "range": [
-                3983,
-                4099
-              ]
-            }
-          ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          }
-        },
-        {
-          "name": "query",
-          "type": "QueryBuilderParams | undefined",
-          "description": "A query builder params object to be passed to <ContentQuery /> component.",
-          "declarations": [
-            {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
-              "range": [
-                4217,
-                4345
-              ]
-            }
-          ],
-          "schema": {
-            "kind": "enum",
-            "type": "QueryBuilderParams | undefined",
-            "schema": [
-              "undefined",
-              {
-                "kind": "object",
-                "type": "QueryBuilderParams",
-                "schema": {
-                  "first": {
-                    "name": "first",
-                    "global": false,
-                    "description": "",
-                    "tags": [],
-                    "required": false,
-                    "type": "boolean | undefined",
-                    "declarations": [
-                      {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                        "range": [
-                          9172,
-                          9188
-                        ]
-                      }
-                    ],
-                    "schema": {
-                      "kind": "enum",
-                      "type": "boolean | undefined",
-                      "schema": [
-                        "undefined",
-                        "false",
-                        "true"
-                      ]
-                    }
-                  },
-                  "skip": {
-                    "name": "skip",
-                    "global": false,
-                    "description": "",
-                    "tags": [],
-                    "required": false,
-                    "type": "number | undefined",
-                    "declarations": [
-                      {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                        "range": [
-                          9193,
-                          9207
-                        ]
-                      }
-                    ],
-                    "schema": {
-                      "kind": "enum",
-                      "type": "number | undefined",
-                      "schema": [
-                        "undefined",
-                        "number"
-                      ]
-                    }
-                  },
-                  "limit": {
-                    "name": "limit",
-                    "global": false,
-                    "description": "",
-                    "tags": [],
-                    "required": false,
-                    "type": "number | undefined",
-                    "declarations": [
-                      {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                        "range": [
-                          9212,
-                          9227
-                        ]
-                      }
-                    ],
-                    "schema": "number | undefined"
-                  },
-                  "only": {
-                    "name": "only",
-                    "global": false,
-                    "description": "",
-                    "tags": [],
-                    "required": false,
-                    "type": "string[] | undefined",
-                    "declarations": [
-                      {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                        "range": [
-                          9232,
-                          9248
-                        ]
-                      }
-                    ],
-                    "schema": {
-                      "kind": "enum",
-                      "type": "string[] | undefined",
-                      "schema": [
-                        "undefined",
-                        {
-                          "kind": "array",
-                          "type": "string[]",
-                          "schema": [
-                            "string"
-                          ]
-                        }
-                      ]
-                    }
-                  },
-                  "without": {
-                    "name": "without",
-                    "global": false,
-                    "description": "",
-                    "tags": [],
-                    "required": false,
-                    "type": "string[] | undefined",
-                    "declarations": [
-                      {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                        "range": [
-                          9253,
-                          9272
-                        ]
-                      }
-                    ],
-                    "schema": "string[] | undefined"
-                  },
-                  "sort": {
-                    "name": "sort",
-                    "global": false,
-                    "description": "",
-                    "tags": [],
-                    "required": false,
-                    "type": "SortOptions[] | undefined",
-                    "declarations": [
-                      {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                        "range": [
-                          9277,
-                          9298
-                        ]
-                      }
-                    ],
-                    "schema": {
-                      "kind": "enum",
-                      "type": "SortOptions[] | undefined",
-                      "schema": [
-                        "undefined",
-                        {
-                          "kind": "array",
-                          "type": "SortOptions[]",
-                          "schema": [
-                            {
-                              "kind": "enum",
-                              "type": "SortOptions",
-                              "schema": [
-                                {
                                   "kind": "object",
-                                  "type": "SortParams",
+                                  "type": "Toc",
                                   "schema": {
-                                    "$locale": {
-                                      "name": "$locale",
+                                    "title": {
+                                      "name": "title",
                                       "global": false,
-                                      "description": "Locale specifier for sorting\nA string with a BCP 47 language tag",
-                                      "tags": [
-                                        {
-                                          "name": "default",
-                                          "text": "undefined"
-                                        }
-                                      ],
-                                      "required": false,
-                                      "type": "string | undefined",
+                                      "description": "",
+                                      "tags": [],
+                                      "required": true,
+                                      "type": "string",
                                       "declarations": [
                                         {
                                           "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                           "range": [
-                                            3558,
-                                            3575
+                                            1095,
+                                            1109
+                                          ]
+                                        }
+                                      ],
+                                      "schema": "string"
+                                    },
+                                    "depth": {
+                                      "name": "depth",
+                                      "global": false,
+                                      "description": "",
+                                      "tags": [],
+                                      "required": true,
+                                      "type": "number",
+                                      "declarations": [
+                                        {
+                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "range": [
+                                            1114,
+                                            1128
+                                          ]
+                                        }
+                                      ],
+                                      "schema": "number"
+                                    },
+                                    "searchDepth": {
+                                      "name": "searchDepth",
+                                      "global": false,
+                                      "description": "",
+                                      "tags": [],
+                                      "required": true,
+                                      "type": "number",
+                                      "declarations": [
+                                        {
+                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "range": [
+                                            1133,
+                                            1153
+                                          ]
+                                        }
+                                      ],
+                                      "schema": "number"
+                                    },
+                                    "links": {
+                                      "name": "links",
+                                      "global": false,
+                                      "description": "",
+                                      "tags": [],
+                                      "required": true,
+                                      "type": "TocLink[]",
+                                      "declarations": [
+                                        {
+                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "range": [
+                                            1158,
+                                            1175
                                           ]
                                         }
                                       ],
                                       "schema": {
-                                        "kind": "enum",
-                                        "type": "string | undefined",
-                                        "schema": [
-                                          "undefined",
-                                          "string"
-                                        ]
-                                      }
-                                    },
-                                    "$numeric": {
-                                      "name": "$numeric",
-                                      "global": false,
-                                      "description": "Whether numeric collation should be used, such that \"1\" < \"2\" < \"10\".\nPossible values are `true` and `false`;",
-                                      "tags": [
-                                        {
-                                          "name": "default",
-                                          "text": "false"
-                                        }
-                                      ],
-                                      "required": false,
-                                      "type": "boolean | undefined",
-                                      "declarations": [
-                                        {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                          "range": [
-                                            3749,
-                                            3768
-                                          ]
-                                        }
-                                      ],
-                                      "schema": "boolean | undefined"
-                                    },
-                                    "$caseFirst": {
-                                      "name": "$caseFirst",
-                                      "global": false,
-                                      "description": "Whether upper case or lower case should sort first.\nPossible values are `\"upper\"`, `\"lower\"`, or `\"false\"`",
-                                      "tags": [
-                                        {
-                                          "name": "default",
-                                          "text": "\"depends on locale\""
-                                        }
-                                      ],
-                                      "required": false,
-                                      "type": "\"upper\" | \"lower\" | \"false\" | undefined",
-                                      "declarations": [
-                                        {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                          "range": [
-                                            3953,
-                                            3994
-                                          ]
-                                        }
-                                      ],
-                                      "schema": {
-                                        "kind": "enum",
-                                        "type": "\"upper\" | \"lower\" | \"false\" | undefined",
-                                        "schema": [
-                                          "undefined",
-                                          "\"upper\"",
-                                          "\"lower\"",
-                                          "\"false\""
-                                        ]
-                                      }
-                                    },
-                                    "$sensitivity": {
-                                      "name": "$sensitivity",
-                                      "global": false,
-                                      "description": "Which differences in the strings should lead to non-zero result values. Possible values are:\n - \"base\": Only strings that differ in base letters compare as unequal. Examples: a ≠ b, a = á, a = A.\n - \"accent\": Only strings that differ in base letters or accents and other diacritic marks compare as unequal. Examples: a ≠ b, a ≠ á, a = A.\n - \"case\": Only strings that differ in base letters or case compare as unequal. Examples: a ≠ b, a = á, a ≠ A.\n - \"variant\": Strings that differ in base letters, accents and other diacritic marks, or case compare as unequal. Other differences may also be taken into consideration. Examples: a ≠ b, a ≠ á, a ≠ A.",
-                                      "tags": [
-                                        {
-                                          "name": "default",
-                                          "text": "\"variant\""
-                                        }
-                                      ],
-                                      "required": false,
-                                      "type": "\"base\" | \"accent\" | \"case\" | \"variant\" | undefined",
-                                      "declarations": [
-                                        {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                          "range": [
-                                            4733,
-                                            4787
-                                          ]
-                                        }
-                                      ],
-                                      "schema": {
-                                        "kind": "enum",
-                                        "type": "\"base\" | \"accent\" | \"case\" | \"variant\" | undefined",
-                                        "schema": [
-                                          "undefined",
-                                          "\"base\"",
-                                          "\"accent\"",
-                                          "\"case\"",
-                                          "\"variant\""
-                                        ]
-                                      }
-                                    }
-                                  }
-                                },
-                                {
-                                  "kind": "object",
-                                  "type": "SortFields",
-                                  "schema": {}
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  },
-                  "where": {
-                    "name": "where",
-                    "global": false,
-                    "description": "",
-                    "tags": [],
-                    "required": false,
-                    "type": "QueryBuilderWhere[] | undefined",
-                    "declarations": [
-                      {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                        "range": [
-                          9303,
-                          9331
-                        ]
-                      }
-                    ],
-                    "schema": {
-                      "kind": "enum",
-                      "type": "QueryBuilderWhere[] | undefined",
-                      "schema": [
-                        "undefined",
-                        {
-                          "kind": "array",
-                          "type": "QueryBuilderWhere[]",
-                          "schema": [
-                            {
-                              "kind": "object",
-                              "type": "QueryBuilderWhere",
-                              "schema": {
-                                "$and": {
-                                  "name": "$and",
-                                  "global": false,
-                                  "description": "Match only if all of nested conditions are true",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n $and: [\n   { score: { $gte: 5 } },\n   { score: { $lte: 10 } }\n ]\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "QueryBuilderWhere[] | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        5305,
-                                        5332
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "QueryBuilderWhere[] | undefined"
-                                },
-                                "$or": {
-                                  "name": "$or",
-                                  "global": false,
-                                  "description": "Match if any of nested conditions is true",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n $or: [\n   { score: { $gt: 5 } },\n   { score: { $lt: 3 } }\n ]\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "QueryBuilderWhere[] | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        5576,
-                                        5602
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "QueryBuilderWhere[] | undefined"
-                                },
-                                "$not": {
-                                  "name": "$not",
-                                  "global": false,
-                                  "description": "Match is condition is false",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n title: {\n   $not: 'Hello World'\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        5799,
-                                        5861
-                                      ]
-                                    }
-                                  ],
-                                  "schema": {
-                                    "kind": "enum",
-                                    "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                    "schema": [
-                                      "undefined",
-                                      "string",
-                                      "number",
-                                      "false",
-                                      "true",
-                                      {
-                                        "kind": "object",
-                                        "type": "RegExp",
-                                        "schema": {}
-                                      },
-                                      "QueryBuilderWhere"
-                                    ]
-                                  }
-                                },
-                                "$eq": {
-                                  "name": "$eq",
-                                  "global": false,
-                                  "description": "Match if item equals condition",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n title: {\n   $eq: 'Hello World'\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        6060,
-                                        6101
-                                      ]
-                                    }
-                                  ],
-                                  "schema": {
-                                    "kind": "enum",
-                                    "type": "string | number | boolean | RegExp | undefined",
-                                    "schema": [
-                                      "undefined",
-                                      "string",
-                                      "number",
-                                      "false",
-                                      "true",
-                                      "RegExp"
-                                    ]
-                                  }
-                                },
-                                "$ne": {
-                                  "name": "$ne",
-                                  "global": false,
-                                  "description": "Match if item not equals condition",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n score: {\n   $ne: 100\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        6294,
-                                        6335
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "string | number | boolean | RegExp | undefined"
-                                },
-                                "$gt": {
-                                  "name": "$gt",
-                                  "global": false,
-                                  "description": "Check if item is greater than condition",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n score: {\n   $gt: 99.5\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "number | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        6533,
-                                        6546
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "number | undefined"
-                                },
-                                "$gte": {
-                                  "name": "$gte",
-                                  "global": false,
-                                  "description": "Check if item is greater than or equal to condition",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n score: {\n   $gte: 99.5\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "number | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        6757,
-                                        6771
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "number | undefined"
-                                },
-                                "$lt": {
-                                  "name": "$lt",
-                                  "global": false,
-                                  "description": "Check if item is less than condition",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n score: {\n   $lt: 99.5\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "number | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        6966,
-                                        6979
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "number | undefined"
-                                },
-                                "$lte": {
-                                  "name": "$lte",
-                                  "global": false,
-                                  "description": "Check if item is less than or equal to condition",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n score: {\n   $lte: 99.5\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "number | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        7187,
-                                        7201
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "number | undefined"
-                                },
-                                "$regex": {
-                                  "name": "$regex",
-                                  "global": false,
-                                  "description": "Provides regular expression capabilities for pattern matching strings.",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n title: {\n   $regex: /^foo/\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "string | RegExp | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        7435,
-                                        7460
-                                      ]
-                                    }
-                                  ],
-                                  "schema": {
-                                    "kind": "enum",
-                                    "type": "string | RegExp | undefined",
-                                    "schema": [
-                                      "undefined",
-                                      "string",
-                                      "RegExp"
-                                    ]
-                                  }
-                                },
-                                "$type": {
-                                  "name": "$type",
-                                  "global": false,
-                                  "description": "Match if type of item equals condition",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n field: {\n   $type: 'boolean'\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "string | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        7664,
-                                        7679
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "string | undefined"
-                                },
-                                "$exists": {
-                                  "name": "$exists",
-                                  "global": false,
-                                  "description": "Check key existence",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n tag: {\n   $exists: false\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "boolean | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        7860,
-                                        7878
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "boolean | undefined"
-                                },
-                                "$contains": {
-                                  "name": "$contains",
-                                  "global": false,
-                                  "description": "Match if item contains every condition or math every rule in condition array",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n title: {\n   $contains: ['Hello', 'World']\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "string | number | boolean | (string | number | boolean)[] | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        8134,
-                                        8207
-                                      ]
-                                    }
-                                  ],
-                                  "schema": {
-                                    "kind": "enum",
-                                    "type": "string | number | boolean | (string | number | boolean)[] | undefined",
-                                    "schema": [
-                                      "undefined",
-                                      "string",
-                                      "number",
-                                      "false",
-                                      "true",
-                                      {
                                         "kind": "array",
-                                        "type": "(string | number | boolean)[]",
+                                        "type": "TocLink[]",
                                         "schema": [
                                           {
-                                            "kind": "enum",
-                                            "type": "string | number | boolean",
-                                            "schema": [
-                                              "string",
-                                              "number",
-                                              "false",
-                                              "true"
-                                            ]
-                                          }
-                                        ]
-                                      }
-                                    ]
-                                  }
-                                },
-                                "$containsAny": {
-                                  "name": "$containsAny",
-                                  "global": false,
-                                  "description": "Match if item contains at least one rule from condition array",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n title: {\n   $containsAny: ['Hello', 'World']\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "(string | number | boolean)[] | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        8450,
-                                        8498
-                                      ]
-                                    }
-                                  ],
-                                  "schema": {
-                                    "kind": "enum",
-                                    "type": "(string | number | boolean)[] | undefined",
-                                    "schema": [
-                                      "undefined",
-                                      "(string | number | boolean)[]"
-                                    ]
-                                  }
-                                },
-                                "$icontains": {
-                                  "name": "$icontains",
-                                  "global": false,
-                                  "description": "Ignore case contains",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n title: {\n   $icontains: 'hello world'\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "string | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        8694,
-                                        8714
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "string | undefined"
-                                },
-                                "$in": {
-                                  "name": "$in",
-                                  "global": false,
-                                  "description": "Match if item is in condition array",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n category: {\n   $in: ['sport', 'nature', 'travel']\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "string | (string | number | boolean)[] | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        8937,
-                                        8985
-                                      ]
-                                    }
-                                  ],
-                                  "schema": {
-                                    "kind": "enum",
-                                    "type": "string | (string | number | boolean)[] | undefined",
-                                    "schema": [
-                                      "undefined",
-                                      "string",
-                                      "(string | number | boolean)[]"
-                                    ]
-                                  }
-                                },
-                                "title": {
-                                  "name": "title",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "_id": {
-                                  "name": "_id",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "_source": {
-                                  "name": "_source",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "_path": {
-                                  "name": "_path",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "_draft": {
-                                  "name": "_draft",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "_partial": {
-                                  "name": "_partial",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "_locale": {
-                                  "name": "_locale",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "_type": {
-                                  "name": "_type",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "_file": {
-                                  "name": "_file",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "_extension": {
-                                  "name": "_extension",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                }
-                              }
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  },
-                  "surround": {
-                    "name": "surround",
-                    "global": false,
-                    "description": "",
-                    "tags": [],
-                    "required": false,
-                    "type": "{ query: string | QueryBuilderWhere; before?: number | undefined; after?: number | undefined; } | undefined",
-                    "declarations": [
-                      {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                        "range": [
-                          9336,
-                          9447
-                        ]
-                      }
-                    ],
-                    "schema": {
-                      "kind": "enum",
-                      "type": "{ query: string | QueryBuilderWhere; before?: number | undefined; after?: number | undefined; } | undefined",
-                      "schema": [
-                        "undefined",
-                        {
-                          "kind": "object",
-                          "type": "{ query: string | QueryBuilderWhere; before?: number | undefined; after?: number | undefined; }",
-                          "schema": {
-                            "query": {
-                              "name": "query",
-                              "global": false,
-                              "description": "",
-                              "tags": [],
-                              "required": true,
-                              "type": "string | QueryBuilderWhere",
-                              "declarations": [
-                                {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                  "range": [
-                                    9357,
-                                    9391
-                                  ]
-                                }
-                              ],
-                              "schema": {
-                                "kind": "enum",
-                                "type": "string | QueryBuilderWhere",
-                                "schema": [
-                                  "string",
-                                  "QueryBuilderWhere"
-                                ]
-                              }
-                            },
-                            "before": {
-                              "name": "before",
-                              "global": false,
-                              "description": "",
-                              "tags": [],
-                              "required": false,
-                              "type": "number | undefined",
-                              "declarations": [
-                                {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                  "range": [
-                                    9400,
-                                    9416
-                                  ]
-                                }
-                              ],
-                              "schema": "number | undefined"
-                            },
-                            "after": {
-                              "name": "after",
-                              "global": false,
-                              "description": "",
-                              "tags": [],
-                              "required": false,
-                              "type": "number | undefined",
-                              "declarations": [
-                                {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                  "range": [
-                                    9425,
-                                    9440
-                                  ]
-                                }
-                              ],
-                              "schema": "number | undefined"
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  }
-                }
-              }
-            ]
-          }
-        },
-        {
-          "name": "head",
-          "type": "boolean | undefined",
-          "description": "Whether or not to map the document data to the `head` property.",
-          "declarations": [
-            {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
-              "range": [
-                4453,
-                4570
-              ]
-            }
-          ],
-          "schema": {
-            "kind": "enum",
-            "type": "boolean | undefined",
-            "schema": [
-              "undefined",
-              "false",
-              "true"
-            ]
-          }
-        }
-      ]
-    }
-  },
-  "ContentList": {
-    "mode": "all",
-    "global": true,
-    "prefetch": false,
-    "preload": false,
-    "filePath": "node_modules/@nuxt/content/dist/runtime/components/ContentList.vue",
-    "pascalName": "ContentList",
-    "kebabName": "content-list",
-    "chunkName": "components/content-list",
-    "shortPath": "node_modules/@nuxt/content/dist/runtime/components/ContentList.vue",
-    "export": "default",
-    "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentList.vue",
-    "meta": {
-      "type": 1,
-      "props": [
-        {
-          "name": "path",
-          "global": false,
-          "description": "",
-          "tags": [],
-          "required": false,
-          "type": "string | undefined",
-          "declarations": [
-            {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentList.vue.d.ts",
-              "range": [
-                2373,
-                2386
-              ]
-            }
-          ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          }
-        },
-        {
-          "name": "query",
-          "global": false,
-          "description": "",
-          "tags": [],
-          "required": false,
-          "type": "QueryBuilderParams | undefined",
-          "declarations": [
-            {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentList.vue.d.ts",
-              "range": [
-                2395,
-                2421
-              ]
-            }
-          ],
-          "schema": {
-            "kind": "enum",
-            "type": "QueryBuilderParams | undefined",
-            "schema": [
-              "undefined",
-              {
-                "kind": "object",
-                "type": "QueryBuilderParams",
-                "schema": {
-                  "first": {
-                    "name": "first",
-                    "global": false,
-                    "description": "",
-                    "tags": [],
-                    "required": false,
-                    "type": "boolean | undefined",
-                    "declarations": [
-                      {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                        "range": [
-                          9172,
-                          9188
-                        ]
-                      }
-                    ],
-                    "schema": {
-                      "kind": "enum",
-                      "type": "boolean | undefined",
-                      "schema": [
-                        "undefined",
-                        "false",
-                        "true"
-                      ]
-                    }
-                  },
-                  "skip": {
-                    "name": "skip",
-                    "global": false,
-                    "description": "",
-                    "tags": [],
-                    "required": false,
-                    "type": "number | undefined",
-                    "declarations": [
-                      {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                        "range": [
-                          9193,
-                          9207
-                        ]
-                      }
-                    ],
-                    "schema": {
-                      "kind": "enum",
-                      "type": "number | undefined",
-                      "schema": [
-                        "undefined",
-                        "number"
-                      ]
-                    }
-                  },
-                  "limit": {
-                    "name": "limit",
-                    "global": false,
-                    "description": "",
-                    "tags": [],
-                    "required": false,
-                    "type": "number | undefined",
-                    "declarations": [
-                      {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                        "range": [
-                          9212,
-                          9227
-                        ]
-                      }
-                    ],
-                    "schema": "number | undefined"
-                  },
-                  "only": {
-                    "name": "only",
-                    "global": false,
-                    "description": "",
-                    "tags": [],
-                    "required": false,
-                    "type": "string[] | undefined",
-                    "declarations": [
-                      {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                        "range": [
-                          9232,
-                          9248
-                        ]
-                      }
-                    ],
-                    "schema": {
-                      "kind": "enum",
-                      "type": "string[] | undefined",
-                      "schema": [
-                        "undefined",
-                        {
-                          "kind": "array",
-                          "type": "string[]",
-                          "schema": [
-                            "string"
-                          ]
-                        }
-                      ]
-                    }
-                  },
-                  "without": {
-                    "name": "without",
-                    "global": false,
-                    "description": "",
-                    "tags": [],
-                    "required": false,
-                    "type": "string[] | undefined",
-                    "declarations": [
-                      {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                        "range": [
-                          9253,
-                          9272
-                        ]
-                      }
-                    ],
-                    "schema": "string[] | undefined"
-                  },
-                  "sort": {
-                    "name": "sort",
-                    "global": false,
-                    "description": "",
-                    "tags": [],
-                    "required": false,
-                    "type": "SortOptions[] | undefined",
-                    "declarations": [
-                      {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                        "range": [
-                          9277,
-                          9298
-                        ]
-                      }
-                    ],
-                    "schema": {
-                      "kind": "enum",
-                      "type": "SortOptions[] | undefined",
-                      "schema": [
-                        "undefined",
-                        {
-                          "kind": "array",
-                          "type": "SortOptions[]",
-                          "schema": [
-                            {
-                              "kind": "enum",
-                              "type": "SortOptions",
-                              "schema": [
-                                {
-                                  "kind": "object",
-                                  "type": "SortParams",
-                                  "schema": {
-                                    "$locale": {
-                                      "name": "$locale",
-                                      "global": false,
-                                      "description": "Locale specifier for sorting\nA string with a BCP 47 language tag",
-                                      "tags": [
-                                        {
-                                          "name": "default",
-                                          "text": "undefined"
-                                        }
-                                      ],
-                                      "required": false,
-                                      "type": "string | undefined",
-                                      "declarations": [
-                                        {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                          "range": [
-                                            3558,
-                                            3575
-                                          ]
-                                        }
-                                      ],
-                                      "schema": {
-                                        "kind": "enum",
-                                        "type": "string | undefined",
-                                        "schema": [
-                                          "undefined",
-                                          "string"
-                                        ]
-                                      }
-                                    },
-                                    "$numeric": {
-                                      "name": "$numeric",
-                                      "global": false,
-                                      "description": "Whether numeric collation should be used, such that \"1\" < \"2\" < \"10\".\nPossible values are `true` and `false`;",
-                                      "tags": [
-                                        {
-                                          "name": "default",
-                                          "text": "false"
-                                        }
-                                      ],
-                                      "required": false,
-                                      "type": "boolean | undefined",
-                                      "declarations": [
-                                        {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                          "range": [
-                                            3749,
-                                            3768
-                                          ]
-                                        }
-                                      ],
-                                      "schema": "boolean | undefined"
-                                    },
-                                    "$caseFirst": {
-                                      "name": "$caseFirst",
-                                      "global": false,
-                                      "description": "Whether upper case or lower case should sort first.\nPossible values are `\"upper\"`, `\"lower\"`, or `\"false\"`",
-                                      "tags": [
-                                        {
-                                          "name": "default",
-                                          "text": "\"depends on locale\""
-                                        }
-                                      ],
-                                      "required": false,
-                                      "type": "\"upper\" | \"lower\" | \"false\" | undefined",
-                                      "declarations": [
-                                        {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                          "range": [
-                                            3953,
-                                            3994
-                                          ]
-                                        }
-                                      ],
-                                      "schema": {
-                                        "kind": "enum",
-                                        "type": "\"upper\" | \"lower\" | \"false\" | undefined",
-                                        "schema": [
-                                          "undefined",
-                                          "\"upper\"",
-                                          "\"lower\"",
-                                          "\"false\""
-                                        ]
-                                      }
-                                    },
-                                    "$sensitivity": {
-                                      "name": "$sensitivity",
-                                      "global": false,
-                                      "description": "Which differences in the strings should lead to non-zero result values. Possible values are:\n - \"base\": Only strings that differ in base letters compare as unequal. Examples: a ≠ b, a = á, a = A.\n - \"accent\": Only strings that differ in base letters or accents and other diacritic marks compare as unequal. Examples: a ≠ b, a ≠ á, a = A.\n - \"case\": Only strings that differ in base letters or case compare as unequal. Examples: a ≠ b, a = á, a ≠ A.\n - \"variant\": Strings that differ in base letters, accents and other diacritic marks, or case compare as unequal. Other differences may also be taken into consideration. Examples: a ≠ b, a ≠ á, a ≠ A.",
-                                      "tags": [
-                                        {
-                                          "name": "default",
-                                          "text": "\"variant\""
-                                        }
-                                      ],
-                                      "required": false,
-                                      "type": "\"base\" | \"accent\" | \"case\" | \"variant\" | undefined",
-                                      "declarations": [
-                                        {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                          "range": [
-                                            4733,
-                                            4787
-                                          ]
-                                        }
-                                      ],
-                                      "schema": {
-                                        "kind": "enum",
-                                        "type": "\"base\" | \"accent\" | \"case\" | \"variant\" | undefined",
-                                        "schema": [
-                                          "undefined",
-                                          "\"base\"",
-                                          "\"accent\"",
-                                          "\"case\"",
-                                          "\"variant\""
-                                        ]
-                                      }
-                                    }
-                                  }
-                                },
-                                {
-                                  "kind": "object",
-                                  "type": "SortFields",
-                                  "schema": {}
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  },
-                  "where": {
-                    "name": "where",
-                    "global": false,
-                    "description": "",
-                    "tags": [],
-                    "required": false,
-                    "type": "QueryBuilderWhere[] | undefined",
-                    "declarations": [
-                      {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                        "range": [
-                          9303,
-                          9331
-                        ]
-                      }
-                    ],
-                    "schema": {
-                      "kind": "enum",
-                      "type": "QueryBuilderWhere[] | undefined",
-                      "schema": [
-                        "undefined",
-                        {
-                          "kind": "array",
-                          "type": "QueryBuilderWhere[]",
-                          "schema": [
-                            {
-                              "kind": "object",
-                              "type": "QueryBuilderWhere",
-                              "schema": {
-                                "$and": {
-                                  "name": "$and",
-                                  "global": false,
-                                  "description": "Match only if all of nested conditions are true",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n $and: [\n   { score: { $gte: 5 } },\n   { score: { $lte: 10 } }\n ]\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "QueryBuilderWhere[] | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        5305,
-                                        5332
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "QueryBuilderWhere[] | undefined"
-                                },
-                                "$or": {
-                                  "name": "$or",
-                                  "global": false,
-                                  "description": "Match if any of nested conditions is true",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n $or: [\n   { score: { $gt: 5 } },\n   { score: { $lt: 3 } }\n ]\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "QueryBuilderWhere[] | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        5576,
-                                        5602
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "QueryBuilderWhere[] | undefined"
-                                },
-                                "$not": {
-                                  "name": "$not",
-                                  "global": false,
-                                  "description": "Match is condition is false",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n title: {\n   $not: 'Hello World'\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        5799,
-                                        5861
-                                      ]
-                                    }
-                                  ],
-                                  "schema": {
-                                    "kind": "enum",
-                                    "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                    "schema": [
-                                      "undefined",
-                                      "string",
-                                      "number",
-                                      "false",
-                                      "true",
-                                      {
-                                        "kind": "object",
-                                        "type": "RegExp",
-                                        "schema": {}
-                                      },
-                                      "QueryBuilderWhere"
-                                    ]
-                                  }
-                                },
-                                "$eq": {
-                                  "name": "$eq",
-                                  "global": false,
-                                  "description": "Match if item equals condition",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n title: {\n   $eq: 'Hello World'\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        6060,
-                                        6101
-                                      ]
-                                    }
-                                  ],
-                                  "schema": {
-                                    "kind": "enum",
-                                    "type": "string | number | boolean | RegExp | undefined",
-                                    "schema": [
-                                      "undefined",
-                                      "string",
-                                      "number",
-                                      "false",
-                                      "true",
-                                      "RegExp"
-                                    ]
-                                  }
-                                },
-                                "$ne": {
-                                  "name": "$ne",
-                                  "global": false,
-                                  "description": "Match if item not equals condition",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n score: {\n   $ne: 100\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        6294,
-                                        6335
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "string | number | boolean | RegExp | undefined"
-                                },
-                                "$gt": {
-                                  "name": "$gt",
-                                  "global": false,
-                                  "description": "Check if item is greater than condition",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n score: {\n   $gt: 99.5\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "number | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        6533,
-                                        6546
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "number | undefined"
-                                },
-                                "$gte": {
-                                  "name": "$gte",
-                                  "global": false,
-                                  "description": "Check if item is greater than or equal to condition",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n score: {\n   $gte: 99.5\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "number | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        6757,
-                                        6771
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "number | undefined"
-                                },
-                                "$lt": {
-                                  "name": "$lt",
-                                  "global": false,
-                                  "description": "Check if item is less than condition",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n score: {\n   $lt: 99.5\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "number | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        6966,
-                                        6979
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "number | undefined"
-                                },
-                                "$lte": {
-                                  "name": "$lte",
-                                  "global": false,
-                                  "description": "Check if item is less than or equal to condition",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n score: {\n   $lte: 99.5\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "number | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        7187,
-                                        7201
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "number | undefined"
-                                },
-                                "$regex": {
-                                  "name": "$regex",
-                                  "global": false,
-                                  "description": "Provides regular expression capabilities for pattern matching strings.",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n title: {\n   $regex: /^foo/\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "string | RegExp | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        7435,
-                                        7460
-                                      ]
-                                    }
-                                  ],
-                                  "schema": {
-                                    "kind": "enum",
-                                    "type": "string | RegExp | undefined",
-                                    "schema": [
-                                      "undefined",
-                                      "string",
-                                      "RegExp"
-                                    ]
-                                  }
-                                },
-                                "$type": {
-                                  "name": "$type",
-                                  "global": false,
-                                  "description": "Match if type of item equals condition",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n field: {\n   $type: 'boolean'\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "string | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        7664,
-                                        7679
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "string | undefined"
-                                },
-                                "$exists": {
-                                  "name": "$exists",
-                                  "global": false,
-                                  "description": "Check key existence",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n tag: {\n   $exists: false\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "boolean | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        7860,
-                                        7878
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "boolean | undefined"
-                                },
-                                "$contains": {
-                                  "name": "$contains",
-                                  "global": false,
-                                  "description": "Match if item contains every condition or math every rule in condition array",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n title: {\n   $contains: ['Hello', 'World']\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "string | number | boolean | (string | number | boolean)[] | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        8134,
-                                        8207
-                                      ]
-                                    }
-                                  ],
-                                  "schema": {
-                                    "kind": "enum",
-                                    "type": "string | number | boolean | (string | number | boolean)[] | undefined",
-                                    "schema": [
-                                      "undefined",
-                                      "string",
-                                      "number",
-                                      "false",
-                                      "true",
-                                      {
-                                        "kind": "array",
-                                        "type": "(string | number | boolean)[]",
-                                        "schema": [
-                                          {
-                                            "kind": "enum",
-                                            "type": "string | number | boolean",
-                                            "schema": [
-                                              "string",
-                                              "number",
-                                              "false",
-                                              "true"
-                                            ]
-                                          }
-                                        ]
-                                      }
-                                    ]
-                                  }
-                                },
-                                "$containsAny": {
-                                  "name": "$containsAny",
-                                  "global": false,
-                                  "description": "Match if item contains at least one rule from condition array",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n title: {\n   $containsAny: ['Hello', 'World']\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "(string | number | boolean)[] | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        8450,
-                                        8498
-                                      ]
-                                    }
-                                  ],
-                                  "schema": {
-                                    "kind": "enum",
-                                    "type": "(string | number | boolean)[] | undefined",
-                                    "schema": [
-                                      "undefined",
-                                      "(string | number | boolean)[]"
-                                    ]
-                                  }
-                                },
-                                "$icontains": {
-                                  "name": "$icontains",
-                                  "global": false,
-                                  "description": "Ignore case contains",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n title: {\n   $icontains: 'hello world'\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "string | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        8694,
-                                        8714
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "string | undefined"
-                                },
-                                "$in": {
-                                  "name": "$in",
-                                  "global": false,
-                                  "description": "Match if item is in condition array",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n category: {\n   $in: ['sport', 'nature', 'travel']\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "string | (string | number | boolean)[] | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        8937,
-                                        8985
-                                      ]
-                                    }
-                                  ],
-                                  "schema": {
-                                    "kind": "enum",
-                                    "type": "string | (string | number | boolean)[] | undefined",
-                                    "schema": [
-                                      "undefined",
-                                      "string",
-                                      "(string | number | boolean)[]"
-                                    ]
-                                  }
-                                },
-                                "title": {
-                                  "name": "title",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "_id": {
-                                  "name": "_id",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "_source": {
-                                  "name": "_source",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "_path": {
-                                  "name": "_path",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "_draft": {
-                                  "name": "_draft",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "_partial": {
-                                  "name": "_partial",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "_locale": {
-                                  "name": "_locale",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "_type": {
-                                  "name": "_type",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "_file": {
-                                  "name": "_file",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "_extension": {
-                                  "name": "_extension",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                }
-                              }
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  },
-                  "surround": {
-                    "name": "surround",
-                    "global": false,
-                    "description": "",
-                    "tags": [],
-                    "required": false,
-                    "type": "{ query: string | QueryBuilderWhere; before?: number | undefined; after?: number | undefined; } | undefined",
-                    "declarations": [
-                      {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                        "range": [
-                          9336,
-                          9447
-                        ]
-                      }
-                    ],
-                    "schema": {
-                      "kind": "enum",
-                      "type": "{ query: string | QueryBuilderWhere; before?: number | undefined; after?: number | undefined; } | undefined",
-                      "schema": [
-                        "undefined",
-                        {
-                          "kind": "object",
-                          "type": "{ query: string | QueryBuilderWhere; before?: number | undefined; after?: number | undefined; }",
-                          "schema": {
-                            "query": {
-                              "name": "query",
-                              "global": false,
-                              "description": "",
-                              "tags": [],
-                              "required": true,
-                              "type": "string | QueryBuilderWhere",
-                              "declarations": [
-                                {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                  "range": [
-                                    9357,
-                                    9391
-                                  ]
-                                }
-                              ],
-                              "schema": {
-                                "kind": "enum",
-                                "type": "string | QueryBuilderWhere",
-                                "schema": [
-                                  "string",
-                                  "QueryBuilderWhere"
-                                ]
-                              }
-                            },
-                            "before": {
-                              "name": "before",
-                              "global": false,
-                              "description": "",
-                              "tags": [],
-                              "required": false,
-                              "type": "number | undefined",
-                              "declarations": [
-                                {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                  "range": [
-                                    9400,
-                                    9416
-                                  ]
-                                }
-                              ],
-                              "schema": "number | undefined"
-                            },
-                            "after": {
-                              "name": "after",
-                              "global": false,
-                              "description": "",
-                              "tags": [],
-                              "required": false,
-                              "type": "number | undefined",
-                              "declarations": [
-                                {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                  "range": [
-                                    9425,
-                                    9440
-                                  ]
-                                }
-                              ],
-                              "schema": "number | undefined"
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  }
-                }
-              }
-            ]
-          }
-        }
-      ],
-      "slots": [
-        {
-          "name": "default",
-          "type": "{ list: ParsedContent[]; refresh: () => Promise<void>; }",
-          "description": "",
-          "declarations": [
-            {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentList.vue.d.ts",
-              "range": [
-                3377,
-                3509
-              ]
-            }
-          ],
-          "schema": {
-            "kind": "object",
-            "type": "{ list: ParsedContent[]; refresh: () => Promise<void>; }",
-            "schema": {
-              "list": {
-                "name": "list",
-                "global": false,
-                "description": "",
-                "tags": [],
-                "required": true,
-                "type": "ParsedContent[]",
-                "declarations": [
-                  {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentList.vue.d.ts",
-                    "range": [
-                      3410,
-                      3432
-                    ]
-                  }
-                ],
-                "schema": {
-                  "kind": "array",
-                  "type": "ParsedContent[]",
-                  "schema": [
-                    {
-                      "kind": "object",
-                      "type": "ParsedContent",
-                      "schema": {
-                        "excerpt": {
-                          "name": "excerpt",
-                          "global": false,
-                          "description": "Excerpt",
-                          "tags": [],
-                          "required": false,
-                          "type": "MarkdownRoot | undefined",
-                          "declarations": [
-                            {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                              "range": [
-                                2459,
-                                2482
-                              ]
-                            }
-                          ],
-                          "schema": {
-                            "kind": "enum",
-                            "type": "MarkdownRoot | undefined",
-                            "schema": [
-                              "undefined",
-                              {
-                                "kind": "object",
-                                "type": "MarkdownRoot",
-                                "schema": {
-                                  "type": {
-                                    "name": "type",
-                                    "global": false,
-                                    "description": "",
-                                    "tags": [],
-                                    "required": true,
-                                    "type": "\"root\"",
-                                    "declarations": [
-                                      {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                        "range": [
-                                          1465,
-                                          1478
-                                        ]
-                                      }
-                                    ],
-                                    "schema": "\"root\""
-                                  },
-                                  "children": {
-                                    "name": "children",
-                                    "global": false,
-                                    "description": "",
-                                    "tags": [],
-                                    "required": true,
-                                    "type": "MarkdownNode[]",
-                                    "declarations": [
-                                      {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                        "range": [
-                                          1483,
-                                          1508
-                                        ]
-                                      }
-                                    ],
-                                    "schema": {
-                                      "kind": "array",
-                                      "type": "MarkdownNode[]",
-                                      "schema": [
-                                        {
-                                          "kind": "object",
-                                          "type": "MarkdownNode",
-                                          "schema": {
-                                            "type": {
-                                              "name": "type",
-                                              "global": false,
-                                              "description": "",
-                                              "tags": [],
-                                              "required": true,
-                                              "type": "string",
-                                              "declarations": [
-                                                {
-                                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                                  "range": [
-                                                    1214,
-                                                    1227
-                                                  ]
-                                                }
-                                              ],
-                                              "schema": "string"
-                                            },
-                                            "tag": {
-                                              "name": "tag",
-                                              "global": false,
-                                              "description": "",
-                                              "tags": [],
-                                              "required": false,
-                                              "type": "string | undefined",
-                                              "declarations": [
-                                                {
-                                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                                  "range": [
-                                                    1232,
-                                                    1245
-                                                  ]
-                                                }
-                                              ],
-                                              "schema": {
-                                                "kind": "enum",
-                                                "type": "string | undefined",
-                                                "schema": [
-                                                  "undefined",
-                                                  "string"
-                                                ]
-                                              }
-                                            },
-                                            "value": {
-                                              "name": "value",
-                                              "global": false,
-                                              "description": "",
-                                              "tags": [],
-                                              "required": false,
-                                              "type": "string | undefined",
-                                              "declarations": [
-                                                {
-                                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                                  "range": [
-                                                    1250,
-                                                    1265
-                                                  ]
-                                                }
-                                              ],
-                                              "schema": "string | undefined"
-                                            },
-                                            "props": {
-                                              "name": "props",
-                                              "global": false,
-                                              "description": "",
-                                              "tags": [],
-                                              "required": false,
-                                              "type": "Record<string, any> | undefined",
-                                              "declarations": [
-                                                {
-                                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                                  "range": [
-                                                    1270,
-                                                    1298
-                                                  ]
-                                                }
-                                              ],
-                                              "schema": {
-                                                "kind": "enum",
-                                                "type": "Record<string, any> | undefined",
-                                                "schema": [
-                                                  "undefined",
-                                                  "Record<string, any>"
-                                                ]
-                                              }
-                                            },
-                                            "content": {
-                                              "name": "content",
-                                              "global": false,
-                                              "description": "",
-                                              "tags": [],
-                                              "required": false,
-                                              "type": "any",
-                                              "declarations": [
-                                                {
-                                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                                  "range": [
-                                                    1303,
-                                                    1317
-                                                  ]
-                                                }
-                                              ],
-                                              "schema": "any"
-                                            },
-                                            "children": {
-                                              "name": "children",
-                                              "global": false,
-                                              "description": "",
-                                              "tags": [],
-                                              "required": false,
-                                              "type": "MarkdownNode[] | undefined",
-                                              "declarations": [
-                                                {
-                                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                                  "range": [
-                                                    1322,
-                                                    1348
-                                                  ]
-                                                }
-                                              ],
-                                              "schema": {
-                                                "kind": "enum",
-                                                "type": "MarkdownNode[] | undefined",
-                                                "schema": [
-                                                  "undefined",
-                                                  "MarkdownNode[]"
-                                                ]
-                                              }
-                                            },
-                                            "attributes": {
-                                              "name": "attributes",
-                                              "global": false,
-                                              "description": "",
-                                              "tags": [],
-                                              "required": false,
-                                              "type": "Record<string, any> | undefined",
-                                              "declarations": [
-                                                {
-                                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                                  "range": [
-                                                    1353,
-                                                    1386
-                                                  ]
-                                                }
-                                              ],
-                                              "schema": "Record<string, any> | undefined"
-                                            },
-                                            "fmAttributes": {
-                                              "name": "fmAttributes",
-                                              "global": false,
-                                              "description": "",
-                                              "tags": [],
-                                              "required": false,
-                                              "type": "Record<string, any> | undefined",
-                                              "declarations": [
-                                                {
-                                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                                  "range": [
-                                                    1391,
-                                                    1426
-                                                  ]
-                                                }
-                                              ],
-                                              "schema": "Record<string, any> | undefined"
-                                            }
-                                          }
-                                        }
-                                      ]
-                                    }
-                                  },
-                                  "props": {
-                                    "name": "props",
-                                    "global": false,
-                                    "description": "",
-                                    "tags": [],
-                                    "required": false,
-                                    "type": "Record<string, any> | undefined",
-                                    "declarations": [
-                                      {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                        "range": [
-                                          1513,
-                                          1541
-                                        ]
-                                      }
-                                    ],
-                                    "schema": "Record<string, any> | undefined"
-                                  },
-                                  "toc": {
-                                    "name": "toc",
-                                    "global": false,
-                                    "description": "",
-                                    "tags": [],
-                                    "required": false,
-                                    "type": "Toc | undefined",
-                                    "declarations": [
-                                      {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                        "range": [
-                                          1546,
-                                          1556
-                                        ]
-                                      }
-                                    ],
-                                    "schema": {
-                                      "kind": "enum",
-                                      "type": "Toc | undefined",
-                                      "schema": [
-                                        "undefined",
-                                        {
-                                          "kind": "object",
-                                          "type": "Toc",
-                                          "schema": {
-                                            "title": {
-                                              "name": "title",
-                                              "global": false,
-                                              "description": "",
-                                              "tags": [],
-                                              "required": true,
-                                              "type": "string",
-                                              "declarations": [
-                                                {
-                                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                                  "range": [
-                                                    1095,
-                                                    1109
-                                                  ]
-                                                }
-                                              ],
-                                              "schema": "string"
-                                            },
-                                            "depth": {
-                                              "name": "depth",
-                                              "global": false,
-                                              "description": "",
-                                              "tags": [],
-                                              "required": true,
-                                              "type": "number",
-                                              "declarations": [
-                                                {
-                                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                                  "range": [
-                                                    1114,
-                                                    1128
-                                                  ]
-                                                }
-                                              ],
-                                              "schema": "number"
-                                            },
-                                            "searchDepth": {
-                                              "name": "searchDepth",
-                                              "global": false,
-                                              "description": "",
-                                              "tags": [],
-                                              "required": true,
-                                              "type": "number",
-                                              "declarations": [
-                                                {
-                                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                                  "range": [
-                                                    1133,
-                                                    1153
-                                                  ]
-                                                }
-                                              ],
-                                              "schema": "number"
-                                            },
-                                            "links": {
-                                              "name": "links",
-                                              "global": false,
-                                              "description": "",
-                                              "tags": [],
-                                              "required": true,
-                                              "type": "TocLink[]",
-                                              "declarations": [
-                                                {
-                                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                                  "range": [
-                                                    1158,
-                                                    1175
-                                                  ]
-                                                }
-                                              ],
-                                              "schema": {
-                                                "kind": "array",
-                                                "type": "TocLink[]",
-                                                "schema": [
+                                            "kind": "object",
+                                            "type": "TocLink",
+                                            "schema": {
+                                              "id": {
+                                                "name": "id",
+                                                "global": false,
+                                                "description": "",
+                                                "tags": [],
+                                                "required": true,
+                                                "type": "string",
+                                                "declarations": [
                                                   {
-                                                    "kind": "object",
-                                                    "type": "TocLink",
-                                                    "schema": {
-                                                      "id": {
-                                                        "name": "id",
-                                                        "global": false,
-                                                        "description": "",
-                                                        "tags": [],
-                                                        "required": true,
-                                                        "type": "string",
-                                                        "declarations": [
-                                                          {
-                                                            "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                                            "range": [
-                                                              991,
-                                                              1002
-                                                            ]
-                                                          }
-                                                        ],
-                                                        "schema": "string"
-                                                      },
-                                                      "text": {
-                                                        "name": "text",
-                                                        "global": false,
-                                                        "description": "",
-                                                        "tags": [],
-                                                        "required": true,
-                                                        "type": "string",
-                                                        "declarations": [
-                                                          {
-                                                            "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                                            "range": [
-                                                              1007,
-                                                              1020
-                                                            ]
-                                                          }
-                                                        ],
-                                                        "schema": "string"
-                                                      },
-                                                      "depth": {
-                                                        "name": "depth",
-                                                        "global": false,
-                                                        "description": "",
-                                                        "tags": [],
-                                                        "required": true,
-                                                        "type": "number",
-                                                        "declarations": [
-                                                          {
-                                                            "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                                            "range": [
-                                                              1025,
-                                                              1039
-                                                            ]
-                                                          }
-                                                        ],
-                                                        "schema": "number"
-                                                      },
-                                                      "children": {
-                                                        "name": "children",
-                                                        "global": false,
-                                                        "description": "",
-                                                        "tags": [],
-                                                        "required": false,
-                                                        "type": "TocLink[] | undefined",
-                                                        "declarations": [
-                                                          {
-                                                            "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                                            "range": [
-                                                              1044,
-                                                              1065
-                                                            ]
-                                                          }
-                                                        ],
-                                                        "schema": {
-                                                          "kind": "enum",
-                                                          "type": "TocLink[] | undefined",
-                                                          "schema": [
-                                                            "undefined",
-                                                            "TocLink[]"
-                                                          ]
-                                                        }
-                                                      }
-                                                    }
+                                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                                    "range": [
+                                                      991,
+                                                      1002
+                                                    ]
                                                   }
-                                                ]
+                                                ],
+                                                "schema": "string"
+                                              },
+                                              "text": {
+                                                "name": "text",
+                                                "global": false,
+                                                "description": "",
+                                                "tags": [],
+                                                "required": true,
+                                                "type": "string",
+                                                "declarations": [
+                                                  {
+                                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                                    "range": [
+                                                      1007,
+                                                      1020
+                                                    ]
+                                                  }
+                                                ],
+                                                "schema": "string"
+                                              },
+                                              "depth": {
+                                                "name": "depth",
+                                                "global": false,
+                                                "description": "",
+                                                "tags": [],
+                                                "required": true,
+                                                "type": "number",
+                                                "declarations": [
+                                                  {
+                                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                                    "range": [
+                                                      1025,
+                                                      1039
+                                                    ]
+                                                  }
+                                                ],
+                                                "schema": "number"
+                                              },
+                                              "children": {
+                                                "name": "children",
+                                                "global": false,
+                                                "description": "",
+                                                "tags": [],
+                                                "required": false,
+                                                "type": "TocLink[]",
+                                                "declarations": [
+                                                  {
+                                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                                    "range": [
+                                                      1044,
+                                                      1065
+                                                    ]
+                                                  }
+                                                ],
+                                                "schema": "TocLink[]"
                                               }
                                             }
                                           }
-                                        }
-                                      ]
+                                        ]
+                                      }
                                     }
                                   }
                                 }
                               }
-                            ]
+                            }
                           }
                         },
                         "body": {
@@ -12335,7 +11160,7 @@ export default {
                           "description": "Content body",
                           "tags": [],
                           "required": true,
-                          "type": "MarkdownRoot | null",
+                          "type": "MarkdownRoot",
                           "declarations": [
                             {
                               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -12345,14 +11170,7 @@ export default {
                               ]
                             }
                           ],
-                          "schema": {
-                            "kind": "enum",
-                            "type": "MarkdownRoot | null",
-                            "schema": [
-                              "null",
-                              "MarkdownRoot"
-                            ]
-                          }
+                          "schema": "MarkdownRoot"
                         },
                         "layout": {
                           "name": "layout",
@@ -12360,7 +11178,7 @@ export default {
                           "description": "Layout",
                           "tags": [],
                           "required": false,
-                          "type": "LayoutKey | undefined",
+                          "type": "LayoutKey",
                           "declarations": [
                             {
                               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -12371,13 +11189,9 @@ export default {
                             }
                           ],
                           "schema": {
-                            "kind": "enum",
-                            "type": "LayoutKey | undefined",
-                            "schema": [
-                              "undefined",
-                              "\"default\"",
-                              "\"page\""
-                            ]
+                            "kind": "array",
+                            "type": "LayoutKey",
+                            "schema": []
                           }
                         },
                         "_id": {
@@ -12404,7 +11218,7 @@ export default {
                           "description": "Content source",
                           "tags": [],
                           "required": false,
-                          "type": "string | undefined",
+                          "type": "string",
                           "declarations": [
                             {
                               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -12414,7 +11228,7 @@ export default {
                               ]
                             }
                           ],
-                          "schema": "string | undefined"
+                          "schema": "string"
                         },
                         "_path": {
                           "name": "_path",
@@ -12422,7 +11236,7 @@ export default {
                           "description": "Content path, this path is source agnostic and it the content my live in any source",
                           "tags": [],
                           "required": false,
-                          "type": "string | undefined",
+                          "type": "string",
                           "declarations": [
                             {
                               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -12432,7 +11246,7 @@ export default {
                               ]
                             }
                           ],
-                          "schema": "string | undefined"
+                          "schema": "string"
                         },
                         "title": {
                           "name": "title",
@@ -12440,7 +11254,7 @@ export default {
                           "description": "Content title",
                           "tags": [],
                           "required": false,
-                          "type": "string | undefined",
+                          "type": "string",
                           "declarations": [
                             {
                               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -12450,7 +11264,7 @@ export default {
                               ]
                             }
                           ],
-                          "schema": "string | undefined"
+                          "schema": "string"
                         },
                         "_draft": {
                           "name": "_draft",
@@ -12458,7 +11272,7 @@ export default {
                           "description": "Content draft status",
                           "tags": [],
                           "required": false,
-                          "type": "boolean | undefined",
+                          "type": "boolean",
                           "declarations": [
                             {
                               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -12470,9 +11284,8 @@ export default {
                           ],
                           "schema": {
                             "kind": "enum",
-                            "type": "boolean | undefined",
+                            "type": "boolean",
                             "schema": [
-                              "undefined",
                               "false",
                               "true"
                             ]
@@ -12484,7 +11297,7 @@ export default {
                           "description": "Content partial status",
                           "tags": [],
                           "required": false,
-                          "type": "boolean | undefined",
+                          "type": "boolean",
                           "declarations": [
                             {
                               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -12494,7 +11307,7 @@ export default {
                               ]
                             }
                           ],
-                          "schema": "boolean | undefined"
+                          "schema": "boolean"
                         },
                         "_locale": {
                           "name": "_locale",
@@ -12502,7 +11315,7 @@ export default {
                           "description": "Content locale",
                           "tags": [],
                           "required": false,
-                          "type": "string | undefined",
+                          "type": "string",
                           "declarations": [
                             {
                               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -12512,7 +11325,7 @@ export default {
                               ]
                             }
                           ],
-                          "schema": "string | undefined"
+                          "schema": "string"
                         },
                         "_type": {
                           "name": "_type",
@@ -12520,7 +11333,7 @@ export default {
                           "description": "File type of the content, i.e `markdown`",
                           "tags": [],
                           "required": false,
-                          "type": "\"markdown\" | \"yaml\" | \"json\" | \"csv\" | undefined",
+                          "type": "\"markdown\" | \"yaml\" | \"json\" | \"csv\"",
                           "declarations": [
                             {
                               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -12532,9 +11345,8 @@ export default {
                           ],
                           "schema": {
                             "kind": "enum",
-                            "type": "\"markdown\" | \"yaml\" | \"json\" | \"csv\" | undefined",
+                            "type": "\"markdown\" | \"yaml\" | \"json\" | \"csv\"",
                             "schema": [
-                              "undefined",
                               "\"markdown\"",
                               "\"yaml\"",
                               "\"json\"",
@@ -12548,7 +11360,7 @@ export default {
                           "description": "Path to the file relative to the content directory",
                           "tags": [],
                           "required": false,
-                          "type": "string | undefined",
+                          "type": "string",
                           "declarations": [
                             {
                               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -12558,7 +11370,7 @@ export default {
                               ]
                             }
                           ],
-                          "schema": "string | undefined"
+                          "schema": "string"
                         },
                         "_extension": {
                           "name": "_extension",
@@ -12566,7 +11378,7 @@ export default {
                           "description": "Extension of the file",
                           "tags": [],
                           "required": false,
-                          "type": "\"yaml\" | \"json\" | \"csv\" | \"md\" | \"yml\" | \"json5\" | undefined",
+                          "type": "\"yaml\" | \"json\" | \"csv\" | \"md\" | \"yml\" | \"json5\"",
                           "declarations": [
                             {
                               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -12578,9 +11390,8 @@ export default {
                           ],
                           "schema": {
                             "kind": "enum",
-                            "type": "\"yaml\" | \"json\" | \"csv\" | \"md\" | \"yml\" | \"json5\" | undefined",
+                            "type": "\"yaml\" | \"json\" | \"csv\" | \"md\" | \"yml\" | \"json5\"",
                             "schema": [
-                              "undefined",
                               "\"yaml\"",
                               "\"json\"",
                               "\"csv\"",
@@ -12624,7 +11435,7 @@ export default {
       "exposed": [
         {
           "name": "$slots",
-          "type": "Readonly<InternalSlots> & { default: (context: { list: ParsedContent[]; refresh: () => Promise<void>; }) => VNode<RendererNode, RendererElement, { ...; }>[] | undefined; }",
+          "type": "Readonly<InternalSlots> & { default: (context: { list: ParsedContent[]; refresh: () => Promise<void>; }) => VNode<RendererNode, RendererElement, { ...; }>[]; }",
           "description": "",
           "declarations": [
             {
@@ -12644,7 +11455,7 @@ export default {
           ],
           "schema": {
             "kind": "object",
-            "type": "Readonly<InternalSlots> & { default: (context: { list: ParsedContent[]; refresh: () => Promise<void>; }) => VNode<RendererNode, RendererElement, { ...; }>[] | undefined; }",
+            "type": "Readonly<InternalSlots> & { default: (context: { list: ParsedContent[]; refresh: () => Promise<void>; }) => VNode<RendererNode, RendererElement, { ...; }>[]; }",
             "schema": {
               "default": {
                 "name": "default",
@@ -12652,7 +11463,7 @@ export default {
                 "description": "",
                 "tags": [],
                 "required": true,
-                "type": "(context: { list: ParsedContent[]; refresh: () => Promise<void>; }) => VNode<RendererNode, RendererElement, { [key: string]: any; }>[] | undefined",
+                "type": "(context: { list: ParsedContent[]; refresh: () => Promise<void>; }) => VNode<RendererNode, RendererElement, { [key: string]: any; }>[]",
                 "declarations": [
                   {
                     "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentList.vue.d.ts",
@@ -12664,7 +11475,7 @@ export default {
                 ],
                 "schema": {
                   "kind": "event",
-                  "type": "(context: { list: ParsedContent[]; refresh: () => Promise<void>; }): VNode<RendererNode, RendererElement, { [key: string]: any; }>[] | undefined",
+                  "type": "(context: { list: ParsedContent[]; refresh: () => Promise<void>; }): VNode<RendererNode, RendererElement, { [key: string]: any; }>[]",
                   "schema": []
                 }
               }
@@ -12673,7 +11484,7 @@ export default {
         },
         {
           "name": "path",
-          "type": "string | undefined",
+          "type": "string",
           "description": "The path of the content to load from content source.",
           "declarations": [
             {
@@ -12684,18 +11495,11 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          }
+          "schema": "string"
         },
         {
           "name": "query",
-          "type": "QueryBuilderParams | undefined",
+          "type": "undefined",
           "description": "A query builder params object to be passed to <ContentQuery /> component.",
           "declarations": [
             {
@@ -12706,973 +11510,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "QueryBuilderParams | undefined",
-            "schema": [
-              "undefined",
-              {
-                "kind": "object",
-                "type": "QueryBuilderParams",
-                "schema": {
-                  "first": {
-                    "name": "first",
-                    "global": false,
-                    "description": "",
-                    "tags": [],
-                    "required": false,
-                    "type": "boolean | undefined",
-                    "declarations": [
-                      {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                        "range": [
-                          9172,
-                          9188
-                        ]
-                      }
-                    ],
-                    "schema": {
-                      "kind": "enum",
-                      "type": "boolean | undefined",
-                      "schema": [
-                        "undefined",
-                        "false",
-                        "true"
-                      ]
-                    }
-                  },
-                  "skip": {
-                    "name": "skip",
-                    "global": false,
-                    "description": "",
-                    "tags": [],
-                    "required": false,
-                    "type": "number | undefined",
-                    "declarations": [
-                      {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                        "range": [
-                          9193,
-                          9207
-                        ]
-                      }
-                    ],
-                    "schema": {
-                      "kind": "enum",
-                      "type": "number | undefined",
-                      "schema": [
-                        "undefined",
-                        "number"
-                      ]
-                    }
-                  },
-                  "limit": {
-                    "name": "limit",
-                    "global": false,
-                    "description": "",
-                    "tags": [],
-                    "required": false,
-                    "type": "number | undefined",
-                    "declarations": [
-                      {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                        "range": [
-                          9212,
-                          9227
-                        ]
-                      }
-                    ],
-                    "schema": "number | undefined"
-                  },
-                  "only": {
-                    "name": "only",
-                    "global": false,
-                    "description": "",
-                    "tags": [],
-                    "required": false,
-                    "type": "string[] | undefined",
-                    "declarations": [
-                      {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                        "range": [
-                          9232,
-                          9248
-                        ]
-                      }
-                    ],
-                    "schema": {
-                      "kind": "enum",
-                      "type": "string[] | undefined",
-                      "schema": [
-                        "undefined",
-                        {
-                          "kind": "array",
-                          "type": "string[]",
-                          "schema": [
-                            "string"
-                          ]
-                        }
-                      ]
-                    }
-                  },
-                  "without": {
-                    "name": "without",
-                    "global": false,
-                    "description": "",
-                    "tags": [],
-                    "required": false,
-                    "type": "string[] | undefined",
-                    "declarations": [
-                      {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                        "range": [
-                          9253,
-                          9272
-                        ]
-                      }
-                    ],
-                    "schema": "string[] | undefined"
-                  },
-                  "sort": {
-                    "name": "sort",
-                    "global": false,
-                    "description": "",
-                    "tags": [],
-                    "required": false,
-                    "type": "SortOptions[] | undefined",
-                    "declarations": [
-                      {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                        "range": [
-                          9277,
-                          9298
-                        ]
-                      }
-                    ],
-                    "schema": {
-                      "kind": "enum",
-                      "type": "SortOptions[] | undefined",
-                      "schema": [
-                        "undefined",
-                        {
-                          "kind": "array",
-                          "type": "SortOptions[]",
-                          "schema": [
-                            {
-                              "kind": "enum",
-                              "type": "SortOptions",
-                              "schema": [
-                                {
-                                  "kind": "object",
-                                  "type": "SortParams",
-                                  "schema": {
-                                    "$locale": {
-                                      "name": "$locale",
-                                      "global": false,
-                                      "description": "Locale specifier for sorting\nA string with a BCP 47 language tag",
-                                      "tags": [
-                                        {
-                                          "name": "default",
-                                          "text": "undefined"
-                                        }
-                                      ],
-                                      "required": false,
-                                      "type": "string | undefined",
-                                      "declarations": [
-                                        {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                          "range": [
-                                            3558,
-                                            3575
-                                          ]
-                                        }
-                                      ],
-                                      "schema": {
-                                        "kind": "enum",
-                                        "type": "string | undefined",
-                                        "schema": [
-                                          "undefined",
-                                          "string"
-                                        ]
-                                      }
-                                    },
-                                    "$numeric": {
-                                      "name": "$numeric",
-                                      "global": false,
-                                      "description": "Whether numeric collation should be used, such that \"1\" < \"2\" < \"10\".\nPossible values are `true` and `false`;",
-                                      "tags": [
-                                        {
-                                          "name": "default",
-                                          "text": "false"
-                                        }
-                                      ],
-                                      "required": false,
-                                      "type": "boolean | undefined",
-                                      "declarations": [
-                                        {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                          "range": [
-                                            3749,
-                                            3768
-                                          ]
-                                        }
-                                      ],
-                                      "schema": "boolean | undefined"
-                                    },
-                                    "$caseFirst": {
-                                      "name": "$caseFirst",
-                                      "global": false,
-                                      "description": "Whether upper case or lower case should sort first.\nPossible values are `\"upper\"`, `\"lower\"`, or `\"false\"`",
-                                      "tags": [
-                                        {
-                                          "name": "default",
-                                          "text": "\"depends on locale\""
-                                        }
-                                      ],
-                                      "required": false,
-                                      "type": "\"upper\" | \"lower\" | \"false\" | undefined",
-                                      "declarations": [
-                                        {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                          "range": [
-                                            3953,
-                                            3994
-                                          ]
-                                        }
-                                      ],
-                                      "schema": {
-                                        "kind": "enum",
-                                        "type": "\"upper\" | \"lower\" | \"false\" | undefined",
-                                        "schema": [
-                                          "undefined",
-                                          "\"upper\"",
-                                          "\"lower\"",
-                                          "\"false\""
-                                        ]
-                                      }
-                                    },
-                                    "$sensitivity": {
-                                      "name": "$sensitivity",
-                                      "global": false,
-                                      "description": "Which differences in the strings should lead to non-zero result values. Possible values are:\n - \"base\": Only strings that differ in base letters compare as unequal. Examples: a ≠ b, a = á, a = A.\n - \"accent\": Only strings that differ in base letters or accents and other diacritic marks compare as unequal. Examples: a ≠ b, a ≠ á, a = A.\n - \"case\": Only strings that differ in base letters or case compare as unequal. Examples: a ≠ b, a = á, a ≠ A.\n - \"variant\": Strings that differ in base letters, accents and other diacritic marks, or case compare as unequal. Other differences may also be taken into consideration. Examples: a ≠ b, a ≠ á, a ≠ A.",
-                                      "tags": [
-                                        {
-                                          "name": "default",
-                                          "text": "\"variant\""
-                                        }
-                                      ],
-                                      "required": false,
-                                      "type": "\"base\" | \"accent\" | \"case\" | \"variant\" | undefined",
-                                      "declarations": [
-                                        {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                          "range": [
-                                            4733,
-                                            4787
-                                          ]
-                                        }
-                                      ],
-                                      "schema": {
-                                        "kind": "enum",
-                                        "type": "\"base\" | \"accent\" | \"case\" | \"variant\" | undefined",
-                                        "schema": [
-                                          "undefined",
-                                          "\"base\"",
-                                          "\"accent\"",
-                                          "\"case\"",
-                                          "\"variant\""
-                                        ]
-                                      }
-                                    }
-                                  }
-                                },
-                                {
-                                  "kind": "object",
-                                  "type": "SortFields",
-                                  "schema": {}
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  },
-                  "where": {
-                    "name": "where",
-                    "global": false,
-                    "description": "",
-                    "tags": [],
-                    "required": false,
-                    "type": "QueryBuilderWhere[] | undefined",
-                    "declarations": [
-                      {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                        "range": [
-                          9303,
-                          9331
-                        ]
-                      }
-                    ],
-                    "schema": {
-                      "kind": "enum",
-                      "type": "QueryBuilderWhere[] | undefined",
-                      "schema": [
-                        "undefined",
-                        {
-                          "kind": "array",
-                          "type": "QueryBuilderWhere[]",
-                          "schema": [
-                            {
-                              "kind": "object",
-                              "type": "QueryBuilderWhere",
-                              "schema": {
-                                "$and": {
-                                  "name": "$and",
-                                  "global": false,
-                                  "description": "Match only if all of nested conditions are true",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n $and: [\n   { score: { $gte: 5 } },\n   { score: { $lte: 10 } }\n ]\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "QueryBuilderWhere[] | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        5305,
-                                        5332
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "QueryBuilderWhere[] | undefined"
-                                },
-                                "$or": {
-                                  "name": "$or",
-                                  "global": false,
-                                  "description": "Match if any of nested conditions is true",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n $or: [\n   { score: { $gt: 5 } },\n   { score: { $lt: 3 } }\n ]\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "QueryBuilderWhere[] | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        5576,
-                                        5602
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "QueryBuilderWhere[] | undefined"
-                                },
-                                "$not": {
-                                  "name": "$not",
-                                  "global": false,
-                                  "description": "Match is condition is false",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n title: {\n   $not: 'Hello World'\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        5799,
-                                        5861
-                                      ]
-                                    }
-                                  ],
-                                  "schema": {
-                                    "kind": "enum",
-                                    "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                    "schema": [
-                                      "undefined",
-                                      "string",
-                                      "number",
-                                      "false",
-                                      "true",
-                                      {
-                                        "kind": "object",
-                                        "type": "RegExp",
-                                        "schema": {}
-                                      },
-                                      "QueryBuilderWhere"
-                                    ]
-                                  }
-                                },
-                                "$eq": {
-                                  "name": "$eq",
-                                  "global": false,
-                                  "description": "Match if item equals condition",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n title: {\n   $eq: 'Hello World'\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        6060,
-                                        6101
-                                      ]
-                                    }
-                                  ],
-                                  "schema": {
-                                    "kind": "enum",
-                                    "type": "string | number | boolean | RegExp | undefined",
-                                    "schema": [
-                                      "undefined",
-                                      "string",
-                                      "number",
-                                      "false",
-                                      "true",
-                                      "RegExp"
-                                    ]
-                                  }
-                                },
-                                "$ne": {
-                                  "name": "$ne",
-                                  "global": false,
-                                  "description": "Match if item not equals condition",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n score: {\n   $ne: 100\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        6294,
-                                        6335
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "string | number | boolean | RegExp | undefined"
-                                },
-                                "$gt": {
-                                  "name": "$gt",
-                                  "global": false,
-                                  "description": "Check if item is greater than condition",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n score: {\n   $gt: 99.5\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "number | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        6533,
-                                        6546
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "number | undefined"
-                                },
-                                "$gte": {
-                                  "name": "$gte",
-                                  "global": false,
-                                  "description": "Check if item is greater than or equal to condition",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n score: {\n   $gte: 99.5\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "number | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        6757,
-                                        6771
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "number | undefined"
-                                },
-                                "$lt": {
-                                  "name": "$lt",
-                                  "global": false,
-                                  "description": "Check if item is less than condition",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n score: {\n   $lt: 99.5\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "number | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        6966,
-                                        6979
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "number | undefined"
-                                },
-                                "$lte": {
-                                  "name": "$lte",
-                                  "global": false,
-                                  "description": "Check if item is less than or equal to condition",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n score: {\n   $lte: 99.5\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "number | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        7187,
-                                        7201
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "number | undefined"
-                                },
-                                "$regex": {
-                                  "name": "$regex",
-                                  "global": false,
-                                  "description": "Provides regular expression capabilities for pattern matching strings.",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n title: {\n   $regex: /^foo/\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "string | RegExp | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        7435,
-                                        7460
-                                      ]
-                                    }
-                                  ],
-                                  "schema": {
-                                    "kind": "enum",
-                                    "type": "string | RegExp | undefined",
-                                    "schema": [
-                                      "undefined",
-                                      "string",
-                                      "RegExp"
-                                    ]
-                                  }
-                                },
-                                "$type": {
-                                  "name": "$type",
-                                  "global": false,
-                                  "description": "Match if type of item equals condition",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n field: {\n   $type: 'boolean'\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "string | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        7664,
-                                        7679
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "string | undefined"
-                                },
-                                "$exists": {
-                                  "name": "$exists",
-                                  "global": false,
-                                  "description": "Check key existence",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n tag: {\n   $exists: false\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "boolean | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        7860,
-                                        7878
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "boolean | undefined"
-                                },
-                                "$contains": {
-                                  "name": "$contains",
-                                  "global": false,
-                                  "description": "Match if item contains every condition or math every rule in condition array",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n title: {\n   $contains: ['Hello', 'World']\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "string | number | boolean | (string | number | boolean)[] | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        8134,
-                                        8207
-                                      ]
-                                    }
-                                  ],
-                                  "schema": {
-                                    "kind": "enum",
-                                    "type": "string | number | boolean | (string | number | boolean)[] | undefined",
-                                    "schema": [
-                                      "undefined",
-                                      "string",
-                                      "number",
-                                      "false",
-                                      "true",
-                                      {
-                                        "kind": "array",
-                                        "type": "(string | number | boolean)[]",
-                                        "schema": [
-                                          {
-                                            "kind": "enum",
-                                            "type": "string | number | boolean",
-                                            "schema": [
-                                              "string",
-                                              "number",
-                                              "false",
-                                              "true"
-                                            ]
-                                          }
-                                        ]
-                                      }
-                                    ]
-                                  }
-                                },
-                                "$containsAny": {
-                                  "name": "$containsAny",
-                                  "global": false,
-                                  "description": "Match if item contains at least one rule from condition array",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n title: {\n   $containsAny: ['Hello', 'World']\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "(string | number | boolean)[] | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        8450,
-                                        8498
-                                      ]
-                                    }
-                                  ],
-                                  "schema": {
-                                    "kind": "enum",
-                                    "type": "(string | number | boolean)[] | undefined",
-                                    "schema": [
-                                      "undefined",
-                                      "(string | number | boolean)[]"
-                                    ]
-                                  }
-                                },
-                                "$icontains": {
-                                  "name": "$icontains",
-                                  "global": false,
-                                  "description": "Ignore case contains",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n title: {\n   $icontains: 'hello world'\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "string | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        8694,
-                                        8714
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "string | undefined"
-                                },
-                                "$in": {
-                                  "name": "$in",
-                                  "global": false,
-                                  "description": "Match if item is in condition array",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n category: {\n   $in: ['sport', 'nature', 'travel']\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "string | (string | number | boolean)[] | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        8937,
-                                        8985
-                                      ]
-                                    }
-                                  ],
-                                  "schema": {
-                                    "kind": "enum",
-                                    "type": "string | (string | number | boolean)[] | undefined",
-                                    "schema": [
-                                      "undefined",
-                                      "string",
-                                      "(string | number | boolean)[]"
-                                    ]
-                                  }
-                                },
-                                "title": {
-                                  "name": "title",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "_id": {
-                                  "name": "_id",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "_source": {
-                                  "name": "_source",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "_path": {
-                                  "name": "_path",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "_draft": {
-                                  "name": "_draft",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "_partial": {
-                                  "name": "_partial",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "_locale": {
-                                  "name": "_locale",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "_type": {
-                                  "name": "_type",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "_file": {
-                                  "name": "_file",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "_extension": {
-                                  "name": "_extension",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                }
-                              }
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  },
-                  "surround": {
-                    "name": "surround",
-                    "global": false,
-                    "description": "",
-                    "tags": [],
-                    "required": false,
-                    "type": "{ query: string | QueryBuilderWhere; before?: number | undefined; after?: number | undefined; } | undefined",
-                    "declarations": [
-                      {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                        "range": [
-                          9336,
-                          9447
-                        ]
-                      }
-                    ],
-                    "schema": {
-                      "kind": "enum",
-                      "type": "{ query: string | QueryBuilderWhere; before?: number | undefined; after?: number | undefined; } | undefined",
-                      "schema": [
-                        "undefined",
-                        {
-                          "kind": "object",
-                          "type": "{ query: string | QueryBuilderWhere; before?: number | undefined; after?: number | undefined; }",
-                          "schema": {
-                            "query": {
-                              "name": "query",
-                              "global": false,
-                              "description": "",
-                              "tags": [],
-                              "required": true,
-                              "type": "string | QueryBuilderWhere",
-                              "declarations": [
-                                {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                  "range": [
-                                    9357,
-                                    9391
-                                  ]
-                                }
-                              ],
-                              "schema": {
-                                "kind": "enum",
-                                "type": "string | QueryBuilderWhere",
-                                "schema": [
-                                  "string",
-                                  "QueryBuilderWhere"
-                                ]
-                              }
-                            },
-                            "before": {
-                              "name": "before",
-                              "global": false,
-                              "description": "",
-                              "tags": [],
-                              "required": false,
-                              "type": "number | undefined",
-                              "declarations": [
-                                {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                  "range": [
-                                    9400,
-                                    9416
-                                  ]
-                                }
-                              ],
-                              "schema": "number | undefined"
-                            },
-                            "after": {
-                              "name": "after",
-                              "global": false,
-                              "description": "",
-                              "tags": [],
-                              "required": false,
-                              "type": "number | undefined",
-                              "declarations": [
-                                {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                  "range": [
-                                    9425,
-                                    9440
-                                  ]
-                                }
-                              ],
-                              "schema": "number | undefined"
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  }
-                }
-              }
-            ]
-          }
+          "schema": "undefined"
         }
       ]
     }
@@ -13699,7 +11537,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "QueryBuilderParams | QueryBuilder<ParsedContentMeta> | undefined",
+          "type": "QueryBuilderParams | QueryBuilder<ParsedContentMeta>",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.vue.d.ts",
@@ -13711,9 +11549,8 @@ export default {
           ],
           "schema": {
             "kind": "enum",
-            "type": "QueryBuilderParams | QueryBuilder<ParsedContentMeta> | undefined",
+            "type": "QueryBuilderParams | QueryBuilder<ParsedContentMeta>",
             "schema": [
-              "undefined",
               {
                 "kind": "object",
                 "type": "QueryBuilderParams",
@@ -13724,7 +11561,7 @@ export default {
                     "description": "",
                     "tags": [],
                     "required": false,
-                    "type": "boolean | undefined",
+                    "type": "boolean",
                     "declarations": [
                       {
                         "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -13736,9 +11573,8 @@ export default {
                     ],
                     "schema": {
                       "kind": "enum",
-                      "type": "boolean | undefined",
+                      "type": "boolean",
                       "schema": [
-                        "undefined",
                         "false",
                         "true"
                       ]
@@ -13750,7 +11586,7 @@ export default {
                     "description": "",
                     "tags": [],
                     "required": false,
-                    "type": "number | undefined",
+                    "type": "number",
                     "declarations": [
                       {
                         "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -13760,14 +11596,7 @@ export default {
                         ]
                       }
                     ],
-                    "schema": {
-                      "kind": "enum",
-                      "type": "number | undefined",
-                      "schema": [
-                        "undefined",
-                        "number"
-                      ]
-                    }
+                    "schema": "number"
                   },
                   "limit": {
                     "name": "limit",
@@ -13775,7 +11604,7 @@ export default {
                     "description": "",
                     "tags": [],
                     "required": false,
-                    "type": "number | undefined",
+                    "type": "number",
                     "declarations": [
                       {
                         "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -13785,7 +11614,7 @@ export default {
                         ]
                       }
                     ],
-                    "schema": "number | undefined"
+                    "schema": "number"
                   },
                   "only": {
                     "name": "only",
@@ -13793,7 +11622,7 @@ export default {
                     "description": "",
                     "tags": [],
                     "required": false,
-                    "type": "string[] | undefined",
+                    "type": "string[]",
                     "declarations": [
                       {
                         "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -13804,17 +11633,10 @@ export default {
                       }
                     ],
                     "schema": {
-                      "kind": "enum",
-                      "type": "string[] | undefined",
+                      "kind": "array",
+                      "type": "string[]",
                       "schema": [
-                        "undefined",
-                        {
-                          "kind": "array",
-                          "type": "string[]",
-                          "schema": [
-                            "string"
-                          ]
-                        }
+                        "string"
                       ]
                     }
                   },
@@ -13824,7 +11646,7 @@ export default {
                     "description": "",
                     "tags": [],
                     "required": false,
-                    "type": "string[] | undefined",
+                    "type": "string[]",
                     "declarations": [
                       {
                         "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -13834,7 +11656,7 @@ export default {
                         ]
                       }
                     ],
-                    "schema": "string[] | undefined"
+                    "schema": "string[]"
                   },
                   "sort": {
                     "name": "sort",
@@ -13842,7 +11664,7 @@ export default {
                     "description": "",
                     "tags": [],
                     "required": false,
-                    "type": "SortOptions[] | undefined",
+                    "type": "SortOptions[]",
                     "declarations": [
                       {
                         "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -13853,148 +11675,132 @@ export default {
                       }
                     ],
                     "schema": {
-                      "kind": "enum",
-                      "type": "SortOptions[] | undefined",
+                      "kind": "array",
+                      "type": "SortOptions[]",
                       "schema": [
-                        "undefined",
                         {
-                          "kind": "array",
-                          "type": "SortOptions[]",
+                          "kind": "enum",
+                          "type": "SortOptions",
                           "schema": [
                             {
-                              "kind": "enum",
-                              "type": "SortOptions",
-                              "schema": [
-                                {
-                                  "kind": "object",
-                                  "type": "SortParams",
-                                  "schema": {
-                                    "$locale": {
-                                      "name": "$locale",
-                                      "global": false,
-                                      "description": "Locale specifier for sorting\nA string with a BCP 47 language tag",
-                                      "tags": [
-                                        {
-                                          "name": "default",
-                                          "text": "undefined"
-                                        }
-                                      ],
-                                      "required": false,
-                                      "type": "string | undefined",
-                                      "declarations": [
-                                        {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                          "range": [
-                                            3558,
-                                            3575
-                                          ]
-                                        }
-                                      ],
-                                      "schema": {
-                                        "kind": "enum",
-                                        "type": "string | undefined",
-                                        "schema": [
-                                          "undefined",
-                                          "string"
-                                        ]
-                                      }
-                                    },
-                                    "$numeric": {
-                                      "name": "$numeric",
-                                      "global": false,
-                                      "description": "Whether numeric collation should be used, such that \"1\" < \"2\" < \"10\".\nPossible values are `true` and `false`;",
-                                      "tags": [
-                                        {
-                                          "name": "default",
-                                          "text": "false"
-                                        }
-                                      ],
-                                      "required": false,
-                                      "type": "boolean | undefined",
-                                      "declarations": [
-                                        {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                          "range": [
-                                            3749,
-                                            3768
-                                          ]
-                                        }
-                                      ],
-                                      "schema": "boolean | undefined"
-                                    },
-                                    "$caseFirst": {
-                                      "name": "$caseFirst",
-                                      "global": false,
-                                      "description": "Whether upper case or lower case should sort first.\nPossible values are `\"upper\"`, `\"lower\"`, or `\"false\"`",
-                                      "tags": [
-                                        {
-                                          "name": "default",
-                                          "text": "\"depends on locale\""
-                                        }
-                                      ],
-                                      "required": false,
-                                      "type": "\"upper\" | \"lower\" | \"false\" | undefined",
-                                      "declarations": [
-                                        {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                          "range": [
-                                            3953,
-                                            3994
-                                          ]
-                                        }
-                                      ],
-                                      "schema": {
-                                        "kind": "enum",
-                                        "type": "\"upper\" | \"lower\" | \"false\" | undefined",
-                                        "schema": [
-                                          "undefined",
-                                          "\"upper\"",
-                                          "\"lower\"",
-                                          "\"false\""
-                                        ]
-                                      }
-                                    },
-                                    "$sensitivity": {
-                                      "name": "$sensitivity",
-                                      "global": false,
-                                      "description": "Which differences in the strings should lead to non-zero result values. Possible values are:\n - \"base\": Only strings that differ in base letters compare as unequal. Examples: a ≠ b, a = á, a = A.\n - \"accent\": Only strings that differ in base letters or accents and other diacritic marks compare as unequal. Examples: a ≠ b, a ≠ á, a = A.\n - \"case\": Only strings that differ in base letters or case compare as unequal. Examples: a ≠ b, a = á, a ≠ A.\n - \"variant\": Strings that differ in base letters, accents and other diacritic marks, or case compare as unequal. Other differences may also be taken into consideration. Examples: a ≠ b, a ≠ á, a ≠ A.",
-                                      "tags": [
-                                        {
-                                          "name": "default",
-                                          "text": "\"variant\""
-                                        }
-                                      ],
-                                      "required": false,
-                                      "type": "\"base\" | \"accent\" | \"case\" | \"variant\" | undefined",
-                                      "declarations": [
-                                        {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                          "range": [
-                                            4733,
-                                            4787
-                                          ]
-                                        }
-                                      ],
-                                      "schema": {
-                                        "kind": "enum",
-                                        "type": "\"base\" | \"accent\" | \"case\" | \"variant\" | undefined",
-                                        "schema": [
-                                          "undefined",
-                                          "\"base\"",
-                                          "\"accent\"",
-                                          "\"case\"",
-                                          "\"variant\""
-                                        ]
-                                      }
+                              "kind": "object",
+                              "type": "SortParams",
+                              "schema": {
+                                "$locale": {
+                                  "name": "$locale",
+                                  "global": false,
+                                  "description": "Locale specifier for sorting\nA string with a BCP 47 language tag",
+                                  "tags": [
+                                    {
+                                      "name": "default",
+                                      "text": "undefined"
                                     }
+                                  ],
+                                  "required": false,
+                                  "type": "string",
+                                  "declarations": [
+                                    {
+                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                      "range": [
+                                        3558,
+                                        3575
+                                      ]
+                                    }
+                                  ],
+                                  "schema": "string"
+                                },
+                                "$numeric": {
+                                  "name": "$numeric",
+                                  "global": false,
+                                  "description": "Whether numeric collation should be used, such that \"1\" < \"2\" < \"10\".\nPossible values are `true` and `false`;",
+                                  "tags": [
+                                    {
+                                      "name": "default",
+                                      "text": "false"
+                                    }
+                                  ],
+                                  "required": false,
+                                  "type": "boolean",
+                                  "declarations": [
+                                    {
+                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                      "range": [
+                                        3749,
+                                        3768
+                                      ]
+                                    }
+                                  ],
+                                  "schema": "boolean"
+                                },
+                                "$caseFirst": {
+                                  "name": "$caseFirst",
+                                  "global": false,
+                                  "description": "Whether upper case or lower case should sort first.\nPossible values are `\"upper\"`, `\"lower\"`, or `\"false\"`",
+                                  "tags": [
+                                    {
+                                      "name": "default",
+                                      "text": "\"depends on locale\""
+                                    }
+                                  ],
+                                  "required": false,
+                                  "type": "\"upper\" | \"lower\" | \"false\"",
+                                  "declarations": [
+                                    {
+                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                      "range": [
+                                        3953,
+                                        3994
+                                      ]
+                                    }
+                                  ],
+                                  "schema": {
+                                    "kind": "enum",
+                                    "type": "\"upper\" | \"lower\" | \"false\"",
+                                    "schema": [
+                                      "\"upper\"",
+                                      "\"lower\"",
+                                      "\"false\""
+                                    ]
                                   }
                                 },
-                                {
-                                  "kind": "object",
-                                  "type": "SortFields",
-                                  "schema": {}
+                                "$sensitivity": {
+                                  "name": "$sensitivity",
+                                  "global": false,
+                                  "description": "Which differences in the strings should lead to non-zero result values. Possible values are:\n - \"base\": Only strings that differ in base letters compare as unequal. Examples: a ≠ b, a = á, a = A.\n - \"accent\": Only strings that differ in base letters or accents and other diacritic marks compare as unequal. Examples: a ≠ b, a ≠ á, a = A.\n - \"case\": Only strings that differ in base letters or case compare as unequal. Examples: a ≠ b, a = á, a ≠ A.\n - \"variant\": Strings that differ in base letters, accents and other diacritic marks, or case compare as unequal. Other differences may also be taken into consideration. Examples: a ≠ b, a ≠ á, a ≠ A.",
+                                  "tags": [
+                                    {
+                                      "name": "default",
+                                      "text": "\"variant\""
+                                    }
+                                  ],
+                                  "required": false,
+                                  "type": "\"base\" | \"accent\" | \"case\" | \"variant\"",
+                                  "declarations": [
+                                    {
+                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                      "range": [
+                                        4733,
+                                        4787
+                                      ]
+                                    }
+                                  ],
+                                  "schema": {
+                                    "kind": "enum",
+                                    "type": "\"base\" | \"accent\" | \"case\" | \"variant\"",
+                                    "schema": [
+                                      "\"base\"",
+                                      "\"accent\"",
+                                      "\"case\"",
+                                      "\"variant\""
+                                    ]
+                                  }
                                 }
-                              ]
+                              }
+                            },
+                            {
+                              "kind": "object",
+                              "type": "SortFields",
+                              "schema": {}
                             }
                           ]
                         }
@@ -14007,7 +11813,7 @@ export default {
                     "description": "",
                     "tags": [],
                     "required": false,
-                    "type": "QueryBuilderWhere[] | undefined",
+                    "type": "QueryBuilderWhere[]",
                     "declarations": [
                       {
                         "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -14018,565 +11824,546 @@ export default {
                       }
                     ],
                     "schema": {
-                      "kind": "enum",
-                      "type": "QueryBuilderWhere[] | undefined",
+                      "kind": "array",
+                      "type": "QueryBuilderWhere[]",
                       "schema": [
-                        "undefined",
                         {
-                          "kind": "array",
-                          "type": "QueryBuilderWhere[]",
-                          "schema": [
-                            {
-                              "kind": "object",
-                              "type": "QueryBuilderWhere",
+                          "kind": "object",
+                          "type": "QueryBuilderWhere",
+                          "schema": {
+                            "$and": {
+                              "name": "$and",
+                              "global": false,
+                              "description": "Match only if all of nested conditions are true",
+                              "tags": [
+                                {
+                                  "name": "example",
+                                  "text": "```ts\nqueryContent().where({\n $and: [\n   { score: { $gte: 5 } },\n   { score: { $lte: 10 } }\n ]\n})\n```"
+                                }
+                              ],
+                              "required": false,
+                              "type": "QueryBuilderWhere[]",
+                              "declarations": [
+                                {
+                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "range": [
+                                    5305,
+                                    5332
+                                  ]
+                                }
+                              ],
+                              "schema": "QueryBuilderWhere[]"
+                            },
+                            "$or": {
+                              "name": "$or",
+                              "global": false,
+                              "description": "Match if any of nested conditions is true",
+                              "tags": [
+                                {
+                                  "name": "example",
+                                  "text": "```ts\nqueryContent().where({\n $or: [\n   { score: { $gt: 5 } },\n   { score: { $lt: 3 } }\n ]\n})\n```"
+                                }
+                              ],
+                              "required": false,
+                              "type": "QueryBuilderWhere[]",
+                              "declarations": [
+                                {
+                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "range": [
+                                    5576,
+                                    5602
+                                  ]
+                                }
+                              ],
+                              "schema": "QueryBuilderWhere[]"
+                            },
+                            "$not": {
+                              "name": "$not",
+                              "global": false,
+                              "description": "Match is condition is false",
+                              "tags": [
+                                {
+                                  "name": "example",
+                                  "text": "```ts\nqueryContent().where({\n title: {\n   $not: 'Hello World'\n }\n})\n```"
+                                }
+                              ],
+                              "required": false,
+                              "type": "string | number | boolean | RegExp | QueryBuilderWhere",
+                              "declarations": [
+                                {
+                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "range": [
+                                    5799,
+                                    5861
+                                  ]
+                                }
+                              ],
                               "schema": {
-                                "$and": {
-                                  "name": "$and",
-                                  "global": false,
-                                  "description": "Match only if all of nested conditions are true",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n $and: [\n   { score: { $gte: 5 } },\n   { score: { $lte: 10 } }\n ]\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "QueryBuilderWhere[] | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        5305,
-                                        5332
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "QueryBuilderWhere[] | undefined"
-                                },
-                                "$or": {
-                                  "name": "$or",
-                                  "global": false,
-                                  "description": "Match if any of nested conditions is true",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n $or: [\n   { score: { $gt: 5 } },\n   { score: { $lt: 3 } }\n ]\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "QueryBuilderWhere[] | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        5576,
-                                        5602
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "QueryBuilderWhere[] | undefined"
-                                },
-                                "$not": {
-                                  "name": "$not",
-                                  "global": false,
-                                  "description": "Match is condition is false",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n title: {\n   $not: 'Hello World'\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        5799,
-                                        5861
-                                      ]
-                                    }
-                                  ],
-                                  "schema": {
-                                    "kind": "enum",
-                                    "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
+                                "kind": "enum",
+                                "type": "string | number | boolean | RegExp | QueryBuilderWhere",
+                                "schema": [
+                                  "string",
+                                  "number",
+                                  "false",
+                                  "true",
+                                  {
+                                    "kind": "object",
+                                    "type": "RegExp",
+                                    "schema": {}
+                                  },
+                                  "QueryBuilderWhere"
+                                ]
+                              }
+                            },
+                            "$eq": {
+                              "name": "$eq",
+                              "global": false,
+                              "description": "Match if item equals condition",
+                              "tags": [
+                                {
+                                  "name": "example",
+                                  "text": "```ts\nqueryContent().where({\n title: {\n   $eq: 'Hello World'\n }\n})\n```"
+                                }
+                              ],
+                              "required": false,
+                              "type": "string | number | boolean | RegExp",
+                              "declarations": [
+                                {
+                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "range": [
+                                    6060,
+                                    6101
+                                  ]
+                                }
+                              ],
+                              "schema": {
+                                "kind": "enum",
+                                "type": "string | number | boolean | RegExp",
+                                "schema": [
+                                  "string",
+                                  "number",
+                                  "false",
+                                  "true",
+                                  "RegExp"
+                                ]
+                              }
+                            },
+                            "$ne": {
+                              "name": "$ne",
+                              "global": false,
+                              "description": "Match if item not equals condition",
+                              "tags": [
+                                {
+                                  "name": "example",
+                                  "text": "```ts\nqueryContent().where({\n score: {\n   $ne: 100\n }\n})\n```"
+                                }
+                              ],
+                              "required": false,
+                              "type": "string | number | boolean | RegExp",
+                              "declarations": [
+                                {
+                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "range": [
+                                    6294,
+                                    6335
+                                  ]
+                                }
+                              ],
+                              "schema": "string | number | boolean | RegExp"
+                            },
+                            "$gt": {
+                              "name": "$gt",
+                              "global": false,
+                              "description": "Check if item is greater than condition",
+                              "tags": [
+                                {
+                                  "name": "example",
+                                  "text": "```ts\nqueryContent().where({\n score: {\n   $gt: 99.5\n }\n})\n```"
+                                }
+                              ],
+                              "required": false,
+                              "type": "number",
+                              "declarations": [
+                                {
+                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "range": [
+                                    6533,
+                                    6546
+                                  ]
+                                }
+                              ],
+                              "schema": "number"
+                            },
+                            "$gte": {
+                              "name": "$gte",
+                              "global": false,
+                              "description": "Check if item is greater than or equal to condition",
+                              "tags": [
+                                {
+                                  "name": "example",
+                                  "text": "```ts\nqueryContent().where({\n score: {\n   $gte: 99.5\n }\n})\n```"
+                                }
+                              ],
+                              "required": false,
+                              "type": "number",
+                              "declarations": [
+                                {
+                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "range": [
+                                    6757,
+                                    6771
+                                  ]
+                                }
+                              ],
+                              "schema": "number"
+                            },
+                            "$lt": {
+                              "name": "$lt",
+                              "global": false,
+                              "description": "Check if item is less than condition",
+                              "tags": [
+                                {
+                                  "name": "example",
+                                  "text": "```ts\nqueryContent().where({\n score: {\n   $lt: 99.5\n }\n})\n```"
+                                }
+                              ],
+                              "required": false,
+                              "type": "number",
+                              "declarations": [
+                                {
+                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "range": [
+                                    6966,
+                                    6979
+                                  ]
+                                }
+                              ],
+                              "schema": "number"
+                            },
+                            "$lte": {
+                              "name": "$lte",
+                              "global": false,
+                              "description": "Check if item is less than or equal to condition",
+                              "tags": [
+                                {
+                                  "name": "example",
+                                  "text": "```ts\nqueryContent().where({\n score: {\n   $lte: 99.5\n }\n})\n```"
+                                }
+                              ],
+                              "required": false,
+                              "type": "number",
+                              "declarations": [
+                                {
+                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "range": [
+                                    7187,
+                                    7201
+                                  ]
+                                }
+                              ],
+                              "schema": "number"
+                            },
+                            "$regex": {
+                              "name": "$regex",
+                              "global": false,
+                              "description": "Provides regular expression capabilities for pattern matching strings.",
+                              "tags": [
+                                {
+                                  "name": "example",
+                                  "text": "```ts\nqueryContent().where({\n title: {\n   $regex: /^foo/\n }\n})\n```"
+                                }
+                              ],
+                              "required": false,
+                              "type": "string | RegExp",
+                              "declarations": [
+                                {
+                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "range": [
+                                    7435,
+                                    7460
+                                  ]
+                                }
+                              ],
+                              "schema": {
+                                "kind": "enum",
+                                "type": "string | RegExp",
+                                "schema": [
+                                  "string",
+                                  "RegExp"
+                                ]
+                              }
+                            },
+                            "$type": {
+                              "name": "$type",
+                              "global": false,
+                              "description": "Match if type of item equals condition",
+                              "tags": [
+                                {
+                                  "name": "example",
+                                  "text": "```ts\nqueryContent().where({\n field: {\n   $type: 'boolean'\n }\n})\n```"
+                                }
+                              ],
+                              "required": false,
+                              "type": "string",
+                              "declarations": [
+                                {
+                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "range": [
+                                    7664,
+                                    7679
+                                  ]
+                                }
+                              ],
+                              "schema": "string"
+                            },
+                            "$exists": {
+                              "name": "$exists",
+                              "global": false,
+                              "description": "Check key existence",
+                              "tags": [
+                                {
+                                  "name": "example",
+                                  "text": "```ts\nqueryContent().where({\n tag: {\n   $exists: false\n }\n})\n```"
+                                }
+                              ],
+                              "required": false,
+                              "type": "boolean",
+                              "declarations": [
+                                {
+                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "range": [
+                                    7860,
+                                    7878
+                                  ]
+                                }
+                              ],
+                              "schema": "boolean"
+                            },
+                            "$contains": {
+                              "name": "$contains",
+                              "global": false,
+                              "description": "Match if item contains every condition or math every rule in condition array",
+                              "tags": [
+                                {
+                                  "name": "example",
+                                  "text": "```ts\nqueryContent().where({\n title: {\n   $contains: ['Hello', 'World']\n }\n})\n```"
+                                }
+                              ],
+                              "required": false,
+                              "type": "string | number | boolean | (string | number | boolean)[]",
+                              "declarations": [
+                                {
+                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "range": [
+                                    8134,
+                                    8207
+                                  ]
+                                }
+                              ],
+                              "schema": {
+                                "kind": "enum",
+                                "type": "string | number | boolean | (string | number | boolean)[]",
+                                "schema": [
+                                  "string",
+                                  "number",
+                                  "false",
+                                  "true",
+                                  {
+                                    "kind": "array",
+                                    "type": "(string | number | boolean)[]",
                                     "schema": [
-                                      "undefined",
-                                      "string",
-                                      "number",
-                                      "false",
-                                      "true",
                                       {
-                                        "kind": "object",
-                                        "type": "RegExp",
-                                        "schema": {}
-                                      },
-                                      "QueryBuilderWhere"
-                                    ]
-                                  }
-                                },
-                                "$eq": {
-                                  "name": "$eq",
-                                  "global": false,
-                                  "description": "Match if item equals condition",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n title: {\n   $eq: 'Hello World'\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        6060,
-                                        6101
-                                      ]
-                                    }
-                                  ],
-                                  "schema": {
-                                    "kind": "enum",
-                                    "type": "string | number | boolean | RegExp | undefined",
-                                    "schema": [
-                                      "undefined",
-                                      "string",
-                                      "number",
-                                      "false",
-                                      "true",
-                                      "RegExp"
-                                    ]
-                                  }
-                                },
-                                "$ne": {
-                                  "name": "$ne",
-                                  "global": false,
-                                  "description": "Match if item not equals condition",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n score: {\n   $ne: 100\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        6294,
-                                        6335
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "string | number | boolean | RegExp | undefined"
-                                },
-                                "$gt": {
-                                  "name": "$gt",
-                                  "global": false,
-                                  "description": "Check if item is greater than condition",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n score: {\n   $gt: 99.5\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "number | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        6533,
-                                        6546
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "number | undefined"
-                                },
-                                "$gte": {
-                                  "name": "$gte",
-                                  "global": false,
-                                  "description": "Check if item is greater than or equal to condition",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n score: {\n   $gte: 99.5\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "number | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        6757,
-                                        6771
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "number | undefined"
-                                },
-                                "$lt": {
-                                  "name": "$lt",
-                                  "global": false,
-                                  "description": "Check if item is less than condition",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n score: {\n   $lt: 99.5\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "number | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        6966,
-                                        6979
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "number | undefined"
-                                },
-                                "$lte": {
-                                  "name": "$lte",
-                                  "global": false,
-                                  "description": "Check if item is less than or equal to condition",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n score: {\n   $lte: 99.5\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "number | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        7187,
-                                        7201
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "number | undefined"
-                                },
-                                "$regex": {
-                                  "name": "$regex",
-                                  "global": false,
-                                  "description": "Provides regular expression capabilities for pattern matching strings.",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n title: {\n   $regex: /^foo/\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "string | RegExp | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        7435,
-                                        7460
-                                      ]
-                                    }
-                                  ],
-                                  "schema": {
-                                    "kind": "enum",
-                                    "type": "string | RegExp | undefined",
-                                    "schema": [
-                                      "undefined",
-                                      "string",
-                                      "RegExp"
-                                    ]
-                                  }
-                                },
-                                "$type": {
-                                  "name": "$type",
-                                  "global": false,
-                                  "description": "Match if type of item equals condition",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n field: {\n   $type: 'boolean'\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "string | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        7664,
-                                        7679
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "string | undefined"
-                                },
-                                "$exists": {
-                                  "name": "$exists",
-                                  "global": false,
-                                  "description": "Check key existence",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n tag: {\n   $exists: false\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "boolean | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        7860,
-                                        7878
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "boolean | undefined"
-                                },
-                                "$contains": {
-                                  "name": "$contains",
-                                  "global": false,
-                                  "description": "Match if item contains every condition or math every rule in condition array",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n title: {\n   $contains: ['Hello', 'World']\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "string | number | boolean | (string | number | boolean)[] | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        8134,
-                                        8207
-                                      ]
-                                    }
-                                  ],
-                                  "schema": {
-                                    "kind": "enum",
-                                    "type": "string | number | boolean | (string | number | boolean)[] | undefined",
-                                    "schema": [
-                                      "undefined",
-                                      "string",
-                                      "number",
-                                      "false",
-                                      "true",
-                                      {
-                                        "kind": "array",
-                                        "type": "(string | number | boolean)[]",
+                                        "kind": "enum",
+                                        "type": "string | number | boolean",
                                         "schema": [
-                                          {
-                                            "kind": "enum",
-                                            "type": "string | number | boolean",
-                                            "schema": [
-                                              "string",
-                                              "number",
-                                              "false",
-                                              "true"
-                                            ]
-                                          }
+                                          "string",
+                                          "number",
+                                          "false",
+                                          "true"
                                         ]
                                       }
                                     ]
                                   }
-                                },
-                                "$containsAny": {
-                                  "name": "$containsAny",
-                                  "global": false,
-                                  "description": "Match if item contains at least one rule from condition array",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n title: {\n   $containsAny: ['Hello', 'World']\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "(string | number | boolean)[] | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        8450,
-                                        8498
-                                      ]
-                                    }
-                                  ],
-                                  "schema": {
-                                    "kind": "enum",
-                                    "type": "(string | number | boolean)[] | undefined",
-                                    "schema": [
-                                      "undefined",
-                                      "(string | number | boolean)[]"
-                                    ]
-                                  }
-                                },
-                                "$icontains": {
-                                  "name": "$icontains",
-                                  "global": false,
-                                  "description": "Ignore case contains",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n title: {\n   $icontains: 'hello world'\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "string | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        8694,
-                                        8714
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "string | undefined"
-                                },
-                                "$in": {
-                                  "name": "$in",
-                                  "global": false,
-                                  "description": "Match if item is in condition array",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n category: {\n   $in: ['sport', 'nature', 'travel']\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "string | (string | number | boolean)[] | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        8937,
-                                        8985
-                                      ]
-                                    }
-                                  ],
-                                  "schema": {
-                                    "kind": "enum",
-                                    "type": "string | (string | number | boolean)[] | undefined",
-                                    "schema": [
-                                      "undefined",
-                                      "string",
-                                      "(string | number | boolean)[]"
-                                    ]
-                                  }
-                                },
-                                "title": {
-                                  "name": "title",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "_id": {
-                                  "name": "_id",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "_source": {
-                                  "name": "_source",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "_path": {
-                                  "name": "_path",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "_draft": {
-                                  "name": "_draft",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "_partial": {
-                                  "name": "_partial",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "_locale": {
-                                  "name": "_locale",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "_type": {
-                                  "name": "_type",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "_file": {
-                                  "name": "_file",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "_extension": {
-                                  "name": "_extension",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                }
+                                ]
                               }
+                            },
+                            "$containsAny": {
+                              "name": "$containsAny",
+                              "global": false,
+                              "description": "Match if item contains at least one rule from condition array",
+                              "tags": [
+                                {
+                                  "name": "example",
+                                  "text": "```ts\nqueryContent().where({\n title: {\n   $containsAny: ['Hello', 'World']\n }\n})\n```"
+                                }
+                              ],
+                              "required": false,
+                              "type": "(string | number | boolean)[]",
+                              "declarations": [
+                                {
+                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "range": [
+                                    8450,
+                                    8498
+                                  ]
+                                }
+                              ],
+                              "schema": "(string | number | boolean)[]"
+                            },
+                            "$icontains": {
+                              "name": "$icontains",
+                              "global": false,
+                              "description": "Ignore case contains",
+                              "tags": [
+                                {
+                                  "name": "example",
+                                  "text": "```ts\nqueryContent().where({\n title: {\n   $icontains: 'hello world'\n }\n})\n```"
+                                }
+                              ],
+                              "required": false,
+                              "type": "string",
+                              "declarations": [
+                                {
+                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "range": [
+                                    8694,
+                                    8714
+                                  ]
+                                }
+                              ],
+                              "schema": "string"
+                            },
+                            "$in": {
+                              "name": "$in",
+                              "global": false,
+                              "description": "Match if item is in condition array",
+                              "tags": [
+                                {
+                                  "name": "example",
+                                  "text": "```ts\nqueryContent().where({\n category: {\n   $in: ['sport', 'nature', 'travel']\n }\n})\n```"
+                                }
+                              ],
+                              "required": false,
+                              "type": "string | (string | number | boolean)[]",
+                              "declarations": [
+                                {
+                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "range": [
+                                    8937,
+                                    8985
+                                  ]
+                                }
+                              ],
+                              "schema": {
+                                "kind": "enum",
+                                "type": "string | (string | number | boolean)[]",
+                                "schema": [
+                                  "string",
+                                  "(string | number | boolean)[]"
+                                ]
+                              }
+                            },
+                            "title": {
+                              "name": "title",
+                              "global": false,
+                              "description": "",
+                              "tags": [],
+                              "required": false,
+                              "type": "string | number | boolean | RegExp | QueryBuilderWhere",
+                              "declarations": [],
+                              "schema": "string | number | boolean | RegExp | QueryBuilderWhere"
+                            },
+                            "_id": {
+                              "name": "_id",
+                              "global": false,
+                              "description": "",
+                              "tags": [],
+                              "required": false,
+                              "type": "string | number | boolean | RegExp | QueryBuilderWhere",
+                              "declarations": [],
+                              "schema": "string | number | boolean | RegExp | QueryBuilderWhere"
+                            },
+                            "_source": {
+                              "name": "_source",
+                              "global": false,
+                              "description": "",
+                              "tags": [],
+                              "required": false,
+                              "type": "string | number | boolean | RegExp | QueryBuilderWhere",
+                              "declarations": [],
+                              "schema": "string | number | boolean | RegExp | QueryBuilderWhere"
+                            },
+                            "_path": {
+                              "name": "_path",
+                              "global": false,
+                              "description": "",
+                              "tags": [],
+                              "required": false,
+                              "type": "string | number | boolean | RegExp | QueryBuilderWhere",
+                              "declarations": [],
+                              "schema": "string | number | boolean | RegExp | QueryBuilderWhere"
+                            },
+                            "_draft": {
+                              "name": "_draft",
+                              "global": false,
+                              "description": "",
+                              "tags": [],
+                              "required": false,
+                              "type": "string | number | boolean | RegExp | QueryBuilderWhere",
+                              "declarations": [],
+                              "schema": "string | number | boolean | RegExp | QueryBuilderWhere"
+                            },
+                            "_partial": {
+                              "name": "_partial",
+                              "global": false,
+                              "description": "",
+                              "tags": [],
+                              "required": false,
+                              "type": "string | number | boolean | RegExp | QueryBuilderWhere",
+                              "declarations": [],
+                              "schema": "string | number | boolean | RegExp | QueryBuilderWhere"
+                            },
+                            "_locale": {
+                              "name": "_locale",
+                              "global": false,
+                              "description": "",
+                              "tags": [],
+                              "required": false,
+                              "type": "string | number | boolean | RegExp | QueryBuilderWhere",
+                              "declarations": [],
+                              "schema": "string | number | boolean | RegExp | QueryBuilderWhere"
+                            },
+                            "_type": {
+                              "name": "_type",
+                              "global": false,
+                              "description": "",
+                              "tags": [],
+                              "required": false,
+                              "type": "string | number | boolean | RegExp | QueryBuilderWhere",
+                              "declarations": [],
+                              "schema": "string | number | boolean | RegExp | QueryBuilderWhere"
+                            },
+                            "_file": {
+                              "name": "_file",
+                              "global": false,
+                              "description": "",
+                              "tags": [],
+                              "required": false,
+                              "type": "string | number | boolean | RegExp | QueryBuilderWhere",
+                              "declarations": [],
+                              "schema": "string | number | boolean | RegExp | QueryBuilderWhere"
+                            },
+                            "_extension": {
+                              "name": "_extension",
+                              "global": false,
+                              "description": "",
+                              "tags": [],
+                              "required": false,
+                              "type": "string | number | boolean | RegExp | QueryBuilderWhere",
+                              "declarations": [],
+                              "schema": "string | number | boolean | RegExp | QueryBuilderWhere"
                             }
-                          ]
+                          }
                         }
                       ]
                     }
@@ -14587,7 +12374,7 @@ export default {
                     "description": "",
                     "tags": [],
                     "required": false,
-                    "type": "{ query: string | QueryBuilderWhere; before?: number | undefined; after?: number | undefined; } | undefined",
+                    "type": "{ query: string | QueryBuilderWhere; before?: number; after?: number; }",
                     "declarations": [
                       {
                         "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -14598,78 +12385,71 @@ export default {
                       }
                     ],
                     "schema": {
-                      "kind": "enum",
-                      "type": "{ query: string | QueryBuilderWhere; before?: number | undefined; after?: number | undefined; } | undefined",
-                      "schema": [
-                        "undefined",
-                        {
-                          "kind": "object",
-                          "type": "{ query: string | QueryBuilderWhere; before?: number | undefined; after?: number | undefined; }",
-                          "schema": {
-                            "query": {
-                              "name": "query",
-                              "global": false,
-                              "description": "",
-                              "tags": [],
-                              "required": true,
-                              "type": "string | QueryBuilderWhere",
-                              "declarations": [
-                                {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                  "range": [
-                                    9357,
-                                    9391
-                                  ]
-                                }
-                              ],
-                              "schema": {
-                                "kind": "enum",
-                                "type": "string | QueryBuilderWhere",
-                                "schema": [
-                                  "string",
-                                  "QueryBuilderWhere"
-                                ]
-                              }
-                            },
-                            "before": {
-                              "name": "before",
-                              "global": false,
-                              "description": "",
-                              "tags": [],
-                              "required": false,
-                              "type": "number | undefined",
-                              "declarations": [
-                                {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                  "range": [
-                                    9400,
-                                    9416
-                                  ]
-                                }
-                              ],
-                              "schema": "number | undefined"
-                            },
-                            "after": {
-                              "name": "after",
-                              "global": false,
-                              "description": "",
-                              "tags": [],
-                              "required": false,
-                              "type": "number | undefined",
-                              "declarations": [
-                                {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                  "range": [
-                                    9425,
-                                    9440
-                                  ]
-                                }
-                              ],
-                              "schema": "number | undefined"
+                      "kind": "object",
+                      "type": "{ query: string | QueryBuilderWhere; before?: number; after?: number; }",
+                      "schema": {
+                        "query": {
+                          "name": "query",
+                          "global": false,
+                          "description": "",
+                          "tags": [],
+                          "required": true,
+                          "type": "string | QueryBuilderWhere",
+                          "declarations": [
+                            {
+                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "range": [
+                                9357,
+                                9391
+                              ]
                             }
+                          ],
+                          "schema": {
+                            "kind": "enum",
+                            "type": "string | QueryBuilderWhere",
+                            "schema": [
+                              "string",
+                              "QueryBuilderWhere"
+                            ]
                           }
+                        },
+                        "before": {
+                          "name": "before",
+                          "global": false,
+                          "description": "",
+                          "tags": [],
+                          "required": false,
+                          "type": "number",
+                          "declarations": [
+                            {
+                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "range": [
+                                9400,
+                                9416
+                              ]
+                            }
+                          ],
+                          "schema": "number"
+                        },
+                        "after": {
+                          "name": "after",
+                          "global": false,
+                          "description": "",
+                          "tags": [],
+                          "required": false,
+                          "type": "number",
+                          "declarations": [
+                            {
+                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "range": [
+                                9425,
+                                9440
+                              ]
+                            }
+                          ],
+                          "schema": "number"
                         }
-                      ]
+                      }
                     }
                   }
                 }
@@ -14763,7 +12543,7 @@ export default {
                           "description": "",
                           "tags": [],
                           "required": false,
-                          "type": "string | undefined",
+                          "type": "string",
                           "declarations": [
                             {
                               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -14773,14 +12553,7 @@ export default {
                               ]
                             }
                           ],
-                          "schema": {
-                            "kind": "enum",
-                            "type": "string | undefined",
-                            "schema": [
-                              "undefined",
-                              "string"
-                            ]
-                          }
+                          "schema": "string"
                         },
                         "_draft": {
                           "name": "_draft",
@@ -14788,7 +12561,7 @@ export default {
                           "description": "",
                           "tags": [],
                           "required": false,
-                          "type": "boolean | undefined",
+                          "type": "boolean",
                           "declarations": [
                             {
                               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -14800,9 +12573,8 @@ export default {
                           ],
                           "schema": {
                             "kind": "enum",
-                            "type": "boolean | undefined",
+                            "type": "boolean",
                             "schema": [
-                              "undefined",
                               "false",
                               "true"
                             ]
@@ -14814,7 +12586,7 @@ export default {
                           "description": "",
                           "tags": [],
                           "required": false,
-                          "type": "NavItem[] | undefined",
+                          "type": "NavItem[]",
                           "declarations": [
                             {
                               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -14824,14 +12596,7 @@ export default {
                               ]
                             }
                           ],
-                          "schema": {
-                            "kind": "enum",
-                            "type": "NavItem[] | undefined",
-                            "schema": [
-                              "undefined",
-                              "NavItem[]"
-                            ]
-                          }
+                          "schema": "NavItem[]"
                         }
                       }
                     }
@@ -14846,7 +12611,7 @@ export default {
       "exposed": [
         {
           "name": "$slots",
-          "type": "Readonly<InternalSlots> & { default: ({ navigation }: { navigation: NavItem[]; }) => VNode<RendererNode, RendererElement, { ...; }>[] | undefined; }",
+          "type": "Readonly<InternalSlots> & { default: ({ navigation }: { navigation: NavItem[]; }) => VNode<RendererNode, RendererElement, { ...; }>[]; }",
           "description": "",
           "declarations": [
             {
@@ -14866,7 +12631,7 @@ export default {
           ],
           "schema": {
             "kind": "object",
-            "type": "Readonly<InternalSlots> & { default: ({ navigation }: { navigation: NavItem[]; }) => VNode<RendererNode, RendererElement, { ...; }>[] | undefined; }",
+            "type": "Readonly<InternalSlots> & { default: ({ navigation }: { navigation: NavItem[]; }) => VNode<RendererNode, RendererElement, { ...; }>[]; }",
             "schema": {
               "default": {
                 "name": "default",
@@ -14874,7 +12639,7 @@ export default {
                 "description": "",
                 "tags": [],
                 "required": true,
-                "type": "({ navigation }: { navigation: NavItem[]; }) => VNode<RendererNode, RendererElement, { [key: string]: any; }>[] | undefined",
+                "type": "({ navigation }: { navigation: NavItem[]; }) => VNode<RendererNode, RendererElement, { [key: string]: any; }>[]",
                 "declarations": [
                   {
                     "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.vue.d.ts",
@@ -14886,7 +12651,7 @@ export default {
                 ],
                 "schema": {
                   "kind": "event",
-                  "type": "({ navigation }: { navigation: NavItem[]; }): VNode<RendererNode, RendererElement, { [key: string]: any; }>[] | undefined",
+                  "type": "({ navigation }: { navigation: NavItem[]; }): VNode<RendererNode, RendererElement, { [key: string]: any; }>[]",
                   "schema": []
                 }
               }
@@ -14895,7 +12660,7 @@ export default {
         },
         {
           "name": "query",
-          "type": "QueryBuilderParams | QueryBuilder<ParsedContentMeta> | undefined",
+          "type": "undefined",
           "description": "A query to be passed to `fetchContentNavigation()`.",
           "declarations": [
             {
@@ -14906,974 +12671,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "QueryBuilderParams | QueryBuilder<ParsedContentMeta> | undefined",
-            "schema": [
-              "undefined",
-              {
-                "kind": "object",
-                "type": "QueryBuilderParams",
-                "schema": {
-                  "first": {
-                    "name": "first",
-                    "global": false,
-                    "description": "",
-                    "tags": [],
-                    "required": false,
-                    "type": "boolean | undefined",
-                    "declarations": [
-                      {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                        "range": [
-                          9172,
-                          9188
-                        ]
-                      }
-                    ],
-                    "schema": {
-                      "kind": "enum",
-                      "type": "boolean | undefined",
-                      "schema": [
-                        "undefined",
-                        "false",
-                        "true"
-                      ]
-                    }
-                  },
-                  "skip": {
-                    "name": "skip",
-                    "global": false,
-                    "description": "",
-                    "tags": [],
-                    "required": false,
-                    "type": "number | undefined",
-                    "declarations": [
-                      {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                        "range": [
-                          9193,
-                          9207
-                        ]
-                      }
-                    ],
-                    "schema": {
-                      "kind": "enum",
-                      "type": "number | undefined",
-                      "schema": [
-                        "undefined",
-                        "number"
-                      ]
-                    }
-                  },
-                  "limit": {
-                    "name": "limit",
-                    "global": false,
-                    "description": "",
-                    "tags": [],
-                    "required": false,
-                    "type": "number | undefined",
-                    "declarations": [
-                      {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                        "range": [
-                          9212,
-                          9227
-                        ]
-                      }
-                    ],
-                    "schema": "number | undefined"
-                  },
-                  "only": {
-                    "name": "only",
-                    "global": false,
-                    "description": "",
-                    "tags": [],
-                    "required": false,
-                    "type": "string[] | undefined",
-                    "declarations": [
-                      {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                        "range": [
-                          9232,
-                          9248
-                        ]
-                      }
-                    ],
-                    "schema": {
-                      "kind": "enum",
-                      "type": "string[] | undefined",
-                      "schema": [
-                        "undefined",
-                        {
-                          "kind": "array",
-                          "type": "string[]",
-                          "schema": [
-                            "string"
-                          ]
-                        }
-                      ]
-                    }
-                  },
-                  "without": {
-                    "name": "without",
-                    "global": false,
-                    "description": "",
-                    "tags": [],
-                    "required": false,
-                    "type": "string[] | undefined",
-                    "declarations": [
-                      {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                        "range": [
-                          9253,
-                          9272
-                        ]
-                      }
-                    ],
-                    "schema": "string[] | undefined"
-                  },
-                  "sort": {
-                    "name": "sort",
-                    "global": false,
-                    "description": "",
-                    "tags": [],
-                    "required": false,
-                    "type": "SortOptions[] | undefined",
-                    "declarations": [
-                      {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                        "range": [
-                          9277,
-                          9298
-                        ]
-                      }
-                    ],
-                    "schema": {
-                      "kind": "enum",
-                      "type": "SortOptions[] | undefined",
-                      "schema": [
-                        "undefined",
-                        {
-                          "kind": "array",
-                          "type": "SortOptions[]",
-                          "schema": [
-                            {
-                              "kind": "enum",
-                              "type": "SortOptions",
-                              "schema": [
-                                {
-                                  "kind": "object",
-                                  "type": "SortParams",
-                                  "schema": {
-                                    "$locale": {
-                                      "name": "$locale",
-                                      "global": false,
-                                      "description": "Locale specifier for sorting\nA string with a BCP 47 language tag",
-                                      "tags": [
-                                        {
-                                          "name": "default",
-                                          "text": "undefined"
-                                        }
-                                      ],
-                                      "required": false,
-                                      "type": "string | undefined",
-                                      "declarations": [
-                                        {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                          "range": [
-                                            3558,
-                                            3575
-                                          ]
-                                        }
-                                      ],
-                                      "schema": {
-                                        "kind": "enum",
-                                        "type": "string | undefined",
-                                        "schema": [
-                                          "undefined",
-                                          "string"
-                                        ]
-                                      }
-                                    },
-                                    "$numeric": {
-                                      "name": "$numeric",
-                                      "global": false,
-                                      "description": "Whether numeric collation should be used, such that \"1\" < \"2\" < \"10\".\nPossible values are `true` and `false`;",
-                                      "tags": [
-                                        {
-                                          "name": "default",
-                                          "text": "false"
-                                        }
-                                      ],
-                                      "required": false,
-                                      "type": "boolean | undefined",
-                                      "declarations": [
-                                        {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                          "range": [
-                                            3749,
-                                            3768
-                                          ]
-                                        }
-                                      ],
-                                      "schema": "boolean | undefined"
-                                    },
-                                    "$caseFirst": {
-                                      "name": "$caseFirst",
-                                      "global": false,
-                                      "description": "Whether upper case or lower case should sort first.\nPossible values are `\"upper\"`, `\"lower\"`, or `\"false\"`",
-                                      "tags": [
-                                        {
-                                          "name": "default",
-                                          "text": "\"depends on locale\""
-                                        }
-                                      ],
-                                      "required": false,
-                                      "type": "\"upper\" | \"lower\" | \"false\" | undefined",
-                                      "declarations": [
-                                        {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                          "range": [
-                                            3953,
-                                            3994
-                                          ]
-                                        }
-                                      ],
-                                      "schema": {
-                                        "kind": "enum",
-                                        "type": "\"upper\" | \"lower\" | \"false\" | undefined",
-                                        "schema": [
-                                          "undefined",
-                                          "\"upper\"",
-                                          "\"lower\"",
-                                          "\"false\""
-                                        ]
-                                      }
-                                    },
-                                    "$sensitivity": {
-                                      "name": "$sensitivity",
-                                      "global": false,
-                                      "description": "Which differences in the strings should lead to non-zero result values. Possible values are:\n - \"base\": Only strings that differ in base letters compare as unequal. Examples: a ≠ b, a = á, a = A.\n - \"accent\": Only strings that differ in base letters or accents and other diacritic marks compare as unequal. Examples: a ≠ b, a ≠ á, a = A.\n - \"case\": Only strings that differ in base letters or case compare as unequal. Examples: a ≠ b, a = á, a ≠ A.\n - \"variant\": Strings that differ in base letters, accents and other diacritic marks, or case compare as unequal. Other differences may also be taken into consideration. Examples: a ≠ b, a ≠ á, a ≠ A.",
-                                      "tags": [
-                                        {
-                                          "name": "default",
-                                          "text": "\"variant\""
-                                        }
-                                      ],
-                                      "required": false,
-                                      "type": "\"base\" | \"accent\" | \"case\" | \"variant\" | undefined",
-                                      "declarations": [
-                                        {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                          "range": [
-                                            4733,
-                                            4787
-                                          ]
-                                        }
-                                      ],
-                                      "schema": {
-                                        "kind": "enum",
-                                        "type": "\"base\" | \"accent\" | \"case\" | \"variant\" | undefined",
-                                        "schema": [
-                                          "undefined",
-                                          "\"base\"",
-                                          "\"accent\"",
-                                          "\"case\"",
-                                          "\"variant\""
-                                        ]
-                                      }
-                                    }
-                                  }
-                                },
-                                {
-                                  "kind": "object",
-                                  "type": "SortFields",
-                                  "schema": {}
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  },
-                  "where": {
-                    "name": "where",
-                    "global": false,
-                    "description": "",
-                    "tags": [],
-                    "required": false,
-                    "type": "QueryBuilderWhere[] | undefined",
-                    "declarations": [
-                      {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                        "range": [
-                          9303,
-                          9331
-                        ]
-                      }
-                    ],
-                    "schema": {
-                      "kind": "enum",
-                      "type": "QueryBuilderWhere[] | undefined",
-                      "schema": [
-                        "undefined",
-                        {
-                          "kind": "array",
-                          "type": "QueryBuilderWhere[]",
-                          "schema": [
-                            {
-                              "kind": "object",
-                              "type": "QueryBuilderWhere",
-                              "schema": {
-                                "$and": {
-                                  "name": "$and",
-                                  "global": false,
-                                  "description": "Match only if all of nested conditions are true",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n $and: [\n   { score: { $gte: 5 } },\n   { score: { $lte: 10 } }\n ]\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "QueryBuilderWhere[] | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        5305,
-                                        5332
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "QueryBuilderWhere[] | undefined"
-                                },
-                                "$or": {
-                                  "name": "$or",
-                                  "global": false,
-                                  "description": "Match if any of nested conditions is true",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n $or: [\n   { score: { $gt: 5 } },\n   { score: { $lt: 3 } }\n ]\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "QueryBuilderWhere[] | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        5576,
-                                        5602
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "QueryBuilderWhere[] | undefined"
-                                },
-                                "$not": {
-                                  "name": "$not",
-                                  "global": false,
-                                  "description": "Match is condition is false",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n title: {\n   $not: 'Hello World'\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        5799,
-                                        5861
-                                      ]
-                                    }
-                                  ],
-                                  "schema": {
-                                    "kind": "enum",
-                                    "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                    "schema": [
-                                      "undefined",
-                                      "string",
-                                      "number",
-                                      "false",
-                                      "true",
-                                      {
-                                        "kind": "object",
-                                        "type": "RegExp",
-                                        "schema": {}
-                                      },
-                                      "QueryBuilderWhere"
-                                    ]
-                                  }
-                                },
-                                "$eq": {
-                                  "name": "$eq",
-                                  "global": false,
-                                  "description": "Match if item equals condition",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n title: {\n   $eq: 'Hello World'\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        6060,
-                                        6101
-                                      ]
-                                    }
-                                  ],
-                                  "schema": {
-                                    "kind": "enum",
-                                    "type": "string | number | boolean | RegExp | undefined",
-                                    "schema": [
-                                      "undefined",
-                                      "string",
-                                      "number",
-                                      "false",
-                                      "true",
-                                      "RegExp"
-                                    ]
-                                  }
-                                },
-                                "$ne": {
-                                  "name": "$ne",
-                                  "global": false,
-                                  "description": "Match if item not equals condition",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n score: {\n   $ne: 100\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        6294,
-                                        6335
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "string | number | boolean | RegExp | undefined"
-                                },
-                                "$gt": {
-                                  "name": "$gt",
-                                  "global": false,
-                                  "description": "Check if item is greater than condition",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n score: {\n   $gt: 99.5\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "number | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        6533,
-                                        6546
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "number | undefined"
-                                },
-                                "$gte": {
-                                  "name": "$gte",
-                                  "global": false,
-                                  "description": "Check if item is greater than or equal to condition",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n score: {\n   $gte: 99.5\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "number | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        6757,
-                                        6771
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "number | undefined"
-                                },
-                                "$lt": {
-                                  "name": "$lt",
-                                  "global": false,
-                                  "description": "Check if item is less than condition",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n score: {\n   $lt: 99.5\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "number | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        6966,
-                                        6979
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "number | undefined"
-                                },
-                                "$lte": {
-                                  "name": "$lte",
-                                  "global": false,
-                                  "description": "Check if item is less than or equal to condition",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n score: {\n   $lte: 99.5\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "number | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        7187,
-                                        7201
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "number | undefined"
-                                },
-                                "$regex": {
-                                  "name": "$regex",
-                                  "global": false,
-                                  "description": "Provides regular expression capabilities for pattern matching strings.",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n title: {\n   $regex: /^foo/\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "string | RegExp | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        7435,
-                                        7460
-                                      ]
-                                    }
-                                  ],
-                                  "schema": {
-                                    "kind": "enum",
-                                    "type": "string | RegExp | undefined",
-                                    "schema": [
-                                      "undefined",
-                                      "string",
-                                      "RegExp"
-                                    ]
-                                  }
-                                },
-                                "$type": {
-                                  "name": "$type",
-                                  "global": false,
-                                  "description": "Match if type of item equals condition",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n field: {\n   $type: 'boolean'\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "string | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        7664,
-                                        7679
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "string | undefined"
-                                },
-                                "$exists": {
-                                  "name": "$exists",
-                                  "global": false,
-                                  "description": "Check key existence",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n tag: {\n   $exists: false\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "boolean | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        7860,
-                                        7878
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "boolean | undefined"
-                                },
-                                "$contains": {
-                                  "name": "$contains",
-                                  "global": false,
-                                  "description": "Match if item contains every condition or math every rule in condition array",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n title: {\n   $contains: ['Hello', 'World']\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "string | number | boolean | (string | number | boolean)[] | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        8134,
-                                        8207
-                                      ]
-                                    }
-                                  ],
-                                  "schema": {
-                                    "kind": "enum",
-                                    "type": "string | number | boolean | (string | number | boolean)[] | undefined",
-                                    "schema": [
-                                      "undefined",
-                                      "string",
-                                      "number",
-                                      "false",
-                                      "true",
-                                      {
-                                        "kind": "array",
-                                        "type": "(string | number | boolean)[]",
-                                        "schema": [
-                                          {
-                                            "kind": "enum",
-                                            "type": "string | number | boolean",
-                                            "schema": [
-                                              "string",
-                                              "number",
-                                              "false",
-                                              "true"
-                                            ]
-                                          }
-                                        ]
-                                      }
-                                    ]
-                                  }
-                                },
-                                "$containsAny": {
-                                  "name": "$containsAny",
-                                  "global": false,
-                                  "description": "Match if item contains at least one rule from condition array",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n title: {\n   $containsAny: ['Hello', 'World']\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "(string | number | boolean)[] | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        8450,
-                                        8498
-                                      ]
-                                    }
-                                  ],
-                                  "schema": {
-                                    "kind": "enum",
-                                    "type": "(string | number | boolean)[] | undefined",
-                                    "schema": [
-                                      "undefined",
-                                      "(string | number | boolean)[]"
-                                    ]
-                                  }
-                                },
-                                "$icontains": {
-                                  "name": "$icontains",
-                                  "global": false,
-                                  "description": "Ignore case contains",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n title: {\n   $icontains: 'hello world'\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "string | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        8694,
-                                        8714
-                                      ]
-                                    }
-                                  ],
-                                  "schema": "string | undefined"
-                                },
-                                "$in": {
-                                  "name": "$in",
-                                  "global": false,
-                                  "description": "Match if item is in condition array",
-                                  "tags": [
-                                    {
-                                      "name": "example",
-                                      "text": "```ts\nqueryContent().where({\n category: {\n   $in: ['sport', 'nature', 'travel']\n }\n})\n```"
-                                    }
-                                  ],
-                                  "required": false,
-                                  "type": "string | (string | number | boolean)[] | undefined",
-                                  "declarations": [
-                                    {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                      "range": [
-                                        8937,
-                                        8985
-                                      ]
-                                    }
-                                  ],
-                                  "schema": {
-                                    "kind": "enum",
-                                    "type": "string | (string | number | boolean)[] | undefined",
-                                    "schema": [
-                                      "undefined",
-                                      "string",
-                                      "(string | number | boolean)[]"
-                                    ]
-                                  }
-                                },
-                                "title": {
-                                  "name": "title",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "_id": {
-                                  "name": "_id",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "_source": {
-                                  "name": "_source",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "_path": {
-                                  "name": "_path",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "_draft": {
-                                  "name": "_draft",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "_partial": {
-                                  "name": "_partial",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "_locale": {
-                                  "name": "_locale",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "_type": {
-                                  "name": "_type",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "_file": {
-                                  "name": "_file",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                },
-                                "_extension": {
-                                  "name": "_extension",
-                                  "global": false,
-                                  "description": "",
-                                  "tags": [],
-                                  "required": false,
-                                  "type": "string | number | boolean | RegExp | QueryBuilderWhere | undefined",
-                                  "declarations": [],
-                                  "schema": "string | number | boolean | RegExp | QueryBuilderWhere | undefined"
-                                }
-                              }
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  },
-                  "surround": {
-                    "name": "surround",
-                    "global": false,
-                    "description": "",
-                    "tags": [],
-                    "required": false,
-                    "type": "{ query: string | QueryBuilderWhere; before?: number | undefined; after?: number | undefined; } | undefined",
-                    "declarations": [
-                      {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                        "range": [
-                          9336,
-                          9447
-                        ]
-                      }
-                    ],
-                    "schema": {
-                      "kind": "enum",
-                      "type": "{ query: string | QueryBuilderWhere; before?: number | undefined; after?: number | undefined; } | undefined",
-                      "schema": [
-                        "undefined",
-                        {
-                          "kind": "object",
-                          "type": "{ query: string | QueryBuilderWhere; before?: number | undefined; after?: number | undefined; }",
-                          "schema": {
-                            "query": {
-                              "name": "query",
-                              "global": false,
-                              "description": "",
-                              "tags": [],
-                              "required": true,
-                              "type": "string | QueryBuilderWhere",
-                              "declarations": [
-                                {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                  "range": [
-                                    9357,
-                                    9391
-                                  ]
-                                }
-                              ],
-                              "schema": {
-                                "kind": "enum",
-                                "type": "string | QueryBuilderWhere",
-                                "schema": [
-                                  "string",
-                                  "QueryBuilderWhere"
-                                ]
-                              }
-                            },
-                            "before": {
-                              "name": "before",
-                              "global": false,
-                              "description": "",
-                              "tags": [],
-                              "required": false,
-                              "type": "number | undefined",
-                              "declarations": [
-                                {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                  "range": [
-                                    9400,
-                                    9416
-                                  ]
-                                }
-                              ],
-                              "schema": "number | undefined"
-                            },
-                            "after": {
-                              "name": "after",
-                              "global": false,
-                              "description": "",
-                              "tags": [],
-                              "required": false,
-                              "type": "number | undefined",
-                              "declarations": [
-                                {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                  "range": [
-                                    9425,
-                                    9440
-                                  ]
-                                }
-                              ],
-                              "schema": "number | undefined"
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  }
-                }
-              },
-              "QueryBuilder<ParsedContentMeta>"
-            ]
-          }
+          "schema": "undefined"
         },
         {
           "name": "navigation",
@@ -15915,7 +12713,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "number | undefined",
+          "type": "number",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
@@ -15925,14 +12723,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "number | undefined",
-            "schema": [
-              "undefined",
-              "number"
-            ]
-          }
+          "schema": "number"
         },
         {
           "name": "limit",
@@ -15940,7 +12731,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "number | undefined",
+          "type": "number",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
@@ -15950,14 +12741,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "number | undefined",
-            "schema": [
-              "undefined",
-              "number"
-            ]
-          }
+          "schema": "number"
         },
         {
           "name": "only",
@@ -15965,7 +12749,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "string[] | undefined",
+          "type": "string[]",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
@@ -15976,17 +12760,10 @@ export default {
             }
           ],
           "schema": {
-            "kind": "enum",
-            "type": "string[] | undefined",
+            "kind": "array",
+            "type": "string[]",
             "schema": [
-              "undefined",
-              {
-                "kind": "array",
-                "type": "string[]",
-                "schema": [
-                  "string"
-                ]
-              }
+              "string"
             ]
           }
         },
@@ -15996,7 +12773,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "string[] | undefined",
+          "type": "string[]",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
@@ -16007,17 +12784,10 @@ export default {
             }
           ],
           "schema": {
-            "kind": "enum",
-            "type": "string[] | undefined",
+            "kind": "array",
+            "type": "string[]",
             "schema": [
-              "undefined",
-              {
-                "kind": "array",
-                "type": "string[]",
-                "schema": [
-                  "string"
-                ]
-              }
+              "string"
             ]
           }
         },
@@ -16027,7 +12797,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "SortParams | undefined",
+          "type": "SortParams",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
@@ -16038,143 +12808,126 @@ export default {
             }
           ],
           "schema": {
-            "kind": "enum",
-            "type": "SortParams | undefined",
-            "schema": [
-              "undefined",
-              {
-                "kind": "object",
-                "type": "SortParams",
-                "schema": {
-                  "$locale": {
-                    "name": "$locale",
-                    "global": false,
-                    "description": "Locale specifier for sorting\nA string with a BCP 47 language tag",
-                    "tags": [
-                      {
-                        "name": "default",
-                        "text": "undefined"
-                      }
-                    ],
-                    "required": false,
-                    "type": "string | undefined",
-                    "declarations": [
-                      {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                        "range": [
-                          3558,
-                          3575
-                        ]
-                      }
-                    ],
-                    "schema": {
-                      "kind": "enum",
-                      "type": "string | undefined",
-                      "schema": [
-                        "undefined",
-                        "string"
-                      ]
-                    }
-                  },
-                  "$numeric": {
-                    "name": "$numeric",
-                    "global": false,
-                    "description": "Whether numeric collation should be used, such that \"1\" < \"2\" < \"10\".\nPossible values are `true` and `false`;",
-                    "tags": [
-                      {
-                        "name": "default",
-                        "text": "false"
-                      }
-                    ],
-                    "required": false,
-                    "type": "boolean | undefined",
-                    "declarations": [
-                      {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                        "range": [
-                          3749,
-                          3768
-                        ]
-                      }
-                    ],
-                    "schema": {
-                      "kind": "enum",
-                      "type": "boolean | undefined",
-                      "schema": [
-                        "undefined",
-                        "false",
-                        "true"
-                      ]
-                    }
-                  },
-                  "$caseFirst": {
-                    "name": "$caseFirst",
-                    "global": false,
-                    "description": "Whether upper case or lower case should sort first.\nPossible values are `\"upper\"`, `\"lower\"`, or `\"false\"`",
-                    "tags": [
-                      {
-                        "name": "default",
-                        "text": "\"depends on locale\""
-                      }
-                    ],
-                    "required": false,
-                    "type": "\"upper\" | \"lower\" | \"false\" | undefined",
-                    "declarations": [
-                      {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                        "range": [
-                          3953,
-                          3994
-                        ]
-                      }
-                    ],
-                    "schema": {
-                      "kind": "enum",
-                      "type": "\"upper\" | \"lower\" | \"false\" | undefined",
-                      "schema": [
-                        "undefined",
-                        "\"upper\"",
-                        "\"lower\"",
-                        "\"false\""
-                      ]
-                    }
-                  },
-                  "$sensitivity": {
-                    "name": "$sensitivity",
-                    "global": false,
-                    "description": "Which differences in the strings should lead to non-zero result values. Possible values are:\n - \"base\": Only strings that differ in base letters compare as unequal. Examples: a ≠ b, a = á, a = A.\n - \"accent\": Only strings that differ in base letters or accents and other diacritic marks compare as unequal. Examples: a ≠ b, a ≠ á, a = A.\n - \"case\": Only strings that differ in base letters or case compare as unequal. Examples: a ≠ b, a = á, a ≠ A.\n - \"variant\": Strings that differ in base letters, accents and other diacritic marks, or case compare as unequal. Other differences may also be taken into consideration. Examples: a ≠ b, a ≠ á, a ≠ A.",
-                    "tags": [
-                      {
-                        "name": "default",
-                        "text": "\"variant\""
-                      }
-                    ],
-                    "required": false,
-                    "type": "\"base\" | \"accent\" | \"case\" | \"variant\" | undefined",
-                    "declarations": [
-                      {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                        "range": [
-                          4733,
-                          4787
-                        ]
-                      }
-                    ],
-                    "schema": {
-                      "kind": "enum",
-                      "type": "\"base\" | \"accent\" | \"case\" | \"variant\" | undefined",
-                      "schema": [
-                        "undefined",
-                        "\"base\"",
-                        "\"accent\"",
-                        "\"case\"",
-                        "\"variant\""
-                      ]
-                    }
+            "kind": "object",
+            "type": "SortParams",
+            "schema": {
+              "$locale": {
+                "name": "$locale",
+                "global": false,
+                "description": "Locale specifier for sorting\nA string with a BCP 47 language tag",
+                "tags": [
+                  {
+                    "name": "default",
+                    "text": "undefined"
                   }
+                ],
+                "required": false,
+                "type": "string",
+                "declarations": [
+                  {
+                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "range": [
+                      3558,
+                      3575
+                    ]
+                  }
+                ],
+                "schema": "string"
+              },
+              "$numeric": {
+                "name": "$numeric",
+                "global": false,
+                "description": "Whether numeric collation should be used, such that \"1\" < \"2\" < \"10\".\nPossible values are `true` and `false`;",
+                "tags": [
+                  {
+                    "name": "default",
+                    "text": "false"
+                  }
+                ],
+                "required": false,
+                "type": "boolean",
+                "declarations": [
+                  {
+                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "range": [
+                      3749,
+                      3768
+                    ]
+                  }
+                ],
+                "schema": {
+                  "kind": "enum",
+                  "type": "boolean",
+                  "schema": [
+                    "false",
+                    "true"
+                  ]
+                }
+              },
+              "$caseFirst": {
+                "name": "$caseFirst",
+                "global": false,
+                "description": "Whether upper case or lower case should sort first.\nPossible values are `\"upper\"`, `\"lower\"`, or `\"false\"`",
+                "tags": [
+                  {
+                    "name": "default",
+                    "text": "\"depends on locale\""
+                  }
+                ],
+                "required": false,
+                "type": "\"upper\" | \"lower\" | \"false\"",
+                "declarations": [
+                  {
+                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "range": [
+                      3953,
+                      3994
+                    ]
+                  }
+                ],
+                "schema": {
+                  "kind": "enum",
+                  "type": "\"upper\" | \"lower\" | \"false\"",
+                  "schema": [
+                    "\"upper\"",
+                    "\"lower\"",
+                    "\"false\""
+                  ]
+                }
+              },
+              "$sensitivity": {
+                "name": "$sensitivity",
+                "global": false,
+                "description": "Which differences in the strings should lead to non-zero result values. Possible values are:\n - \"base\": Only strings that differ in base letters compare as unequal. Examples: a ≠ b, a = á, a = A.\n - \"accent\": Only strings that differ in base letters or accents and other diacritic marks compare as unequal. Examples: a ≠ b, a ≠ á, a = A.\n - \"case\": Only strings that differ in base letters or case compare as unequal. Examples: a ≠ b, a = á, a ≠ A.\n - \"variant\": Strings that differ in base letters, accents and other diacritic marks, or case compare as unequal. Other differences may also be taken into consideration. Examples: a ≠ b, a ≠ á, a ≠ A.",
+                "tags": [
+                  {
+                    "name": "default",
+                    "text": "\"variant\""
+                  }
+                ],
+                "required": false,
+                "type": "\"base\" | \"accent\" | \"case\" | \"variant\"",
+                "declarations": [
+                  {
+                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "range": [
+                      4733,
+                      4787
+                    ]
+                  }
+                ],
+                "schema": {
+                  "kind": "enum",
+                  "type": "\"base\" | \"accent\" | \"case\" | \"variant\"",
+                  "schema": [
+                    "\"base\"",
+                    "\"accent\"",
+                    "\"case\"",
+                    "\"variant\""
+                  ]
                 }
               }
-            ]
+            }
           }
         },
         {
@@ -16183,7 +12936,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "{ [key: string]: any; } | undefined",
+          "type": "{ [key: string]: any; }",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
@@ -16194,16 +12947,9 @@ export default {
             }
           ],
           "schema": {
-            "kind": "enum",
-            "type": "{ [key: string]: any; } | undefined",
-            "schema": [
-              "undefined",
-              {
-                "kind": "object",
-                "type": "{ [key: string]: any; }",
-                "schema": {}
-              }
-            ]
+            "kind": "object",
+            "type": "{ [key: string]: any; }",
+            "schema": {}
           }
         },
         {
@@ -16212,7 +12958,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "\"surround\" | \"one\" | undefined",
+          "type": "\"surround\" | \"one\"",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
@@ -16224,9 +12970,8 @@ export default {
           ],
           "schema": {
             "kind": "enum",
-            "type": "\"surround\" | \"one\" | undefined",
+            "type": "\"surround\" | \"one\"",
             "schema": [
-              "undefined",
               "\"surround\"",
               "\"one\""
             ]
@@ -16238,7 +12983,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "string | undefined",
+          "type": "string",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
@@ -16248,14 +12993,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          }
+          "schema": "string"
         },
         {
           "name": "locale",
@@ -16263,7 +13001,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "string | undefined",
+          "type": "string",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
@@ -16273,14 +13011,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          }
+          "schema": "string"
         }
       ],
       "slots": [
@@ -16331,7 +13062,7 @@ export default {
                           "description": "Excerpt",
                           "tags": [],
                           "required": false,
-                          "type": "MarkdownRoot | undefined",
+                          "type": "MarkdownRoot",
                           "declarations": [
                             {
                               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -16342,439 +13073,397 @@ export default {
                             }
                           ],
                           "schema": {
-                            "kind": "enum",
-                            "type": "MarkdownRoot | undefined",
-                            "schema": [
-                              "undefined",
-                              {
-                                "kind": "object",
-                                "type": "MarkdownRoot",
+                            "kind": "object",
+                            "type": "MarkdownRoot",
+                            "schema": {
+                              "type": {
+                                "name": "type",
+                                "global": false,
+                                "description": "",
+                                "tags": [],
+                                "required": true,
+                                "type": "\"root\"",
+                                "declarations": [
+                                  {
+                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "range": [
+                                      1465,
+                                      1478
+                                    ]
+                                  }
+                                ],
+                                "schema": "\"root\""
+                              },
+                              "children": {
+                                "name": "children",
+                                "global": false,
+                                "description": "",
+                                "tags": [],
+                                "required": true,
+                                "type": "MarkdownNode[]",
+                                "declarations": [
+                                  {
+                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "range": [
+                                      1483,
+                                      1508
+                                    ]
+                                  }
+                                ],
                                 "schema": {
-                                  "type": {
-                                    "name": "type",
-                                    "global": false,
-                                    "description": "",
-                                    "tags": [],
-                                    "required": true,
-                                    "type": "\"root\"",
-                                    "declarations": [
-                                      {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                        "range": [
-                                          1465,
-                                          1478
-                                        ]
-                                      }
-                                    ],
-                                    "schema": "\"root\""
-                                  },
-                                  "children": {
-                                    "name": "children",
-                                    "global": false,
-                                    "description": "",
-                                    "tags": [],
-                                    "required": true,
-                                    "type": "MarkdownNode[]",
-                                    "declarations": [
-                                      {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                        "range": [
-                                          1483,
-                                          1508
-                                        ]
-                                      }
-                                    ],
-                                    "schema": {
-                                      "kind": "array",
-                                      "type": "MarkdownNode[]",
-                                      "schema": [
-                                        {
-                                          "kind": "object",
-                                          "type": "MarkdownNode",
-                                          "schema": {
-                                            "type": {
-                                              "name": "type",
-                                              "global": false,
-                                              "description": "",
-                                              "tags": [],
-                                              "required": true,
-                                              "type": "string",
-                                              "declarations": [
-                                                {
-                                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                                  "range": [
-                                                    1214,
-                                                    1227
-                                                  ]
-                                                }
-                                              ],
-                                              "schema": "string"
-                                            },
-                                            "tag": {
-                                              "name": "tag",
-                                              "global": false,
-                                              "description": "",
-                                              "tags": [],
-                                              "required": false,
-                                              "type": "string | undefined",
-                                              "declarations": [
-                                                {
-                                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                                  "range": [
-                                                    1232,
-                                                    1245
-                                                  ]
-                                                }
-                                              ],
-                                              "schema": {
-                                                "kind": "enum",
-                                                "type": "string | undefined",
-                                                "schema": [
-                                                  "undefined",
-                                                  "string"
-                                                ]
-                                              }
-                                            },
-                                            "value": {
-                                              "name": "value",
-                                              "global": false,
-                                              "description": "",
-                                              "tags": [],
-                                              "required": false,
-                                              "type": "string | undefined",
-                                              "declarations": [
-                                                {
-                                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                                  "range": [
-                                                    1250,
-                                                    1265
-                                                  ]
-                                                }
-                                              ],
-                                              "schema": "string | undefined"
-                                            },
-                                            "props": {
-                                              "name": "props",
-                                              "global": false,
-                                              "description": "",
-                                              "tags": [],
-                                              "required": false,
-                                              "type": "Record<string, any> | undefined",
-                                              "declarations": [
-                                                {
-                                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                                  "range": [
-                                                    1270,
-                                                    1298
-                                                  ]
-                                                }
-                                              ],
-                                              "schema": {
-                                                "kind": "enum",
-                                                "type": "Record<string, any> | undefined",
-                                                "schema": [
-                                                  "undefined",
-                                                  "Record<string, any>"
-                                                ]
-                                              }
-                                            },
-                                            "content": {
-                                              "name": "content",
-                                              "global": false,
-                                              "description": "",
-                                              "tags": [],
-                                              "required": false,
-                                              "type": "any",
-                                              "declarations": [
-                                                {
-                                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                                  "range": [
-                                                    1303,
-                                                    1317
-                                                  ]
-                                                }
-                                              ],
-                                              "schema": "any"
-                                            },
-                                            "children": {
-                                              "name": "children",
-                                              "global": false,
-                                              "description": "",
-                                              "tags": [],
-                                              "required": false,
-                                              "type": "MarkdownNode[] | undefined",
-                                              "declarations": [
-                                                {
-                                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                                  "range": [
-                                                    1322,
-                                                    1348
-                                                  ]
-                                                }
-                                              ],
-                                              "schema": {
-                                                "kind": "enum",
-                                                "type": "MarkdownNode[] | undefined",
-                                                "schema": [
-                                                  "undefined",
-                                                  "MarkdownNode[]"
-                                                ]
-                                              }
-                                            },
-                                            "attributes": {
-                                              "name": "attributes",
-                                              "global": false,
-                                              "description": "",
-                                              "tags": [],
-                                              "required": false,
-                                              "type": "Record<string, any> | undefined",
-                                              "declarations": [
-                                                {
-                                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                                  "range": [
-                                                    1353,
-                                                    1386
-                                                  ]
-                                                }
-                                              ],
-                                              "schema": "Record<string, any> | undefined"
-                                            },
-                                            "fmAttributes": {
-                                              "name": "fmAttributes",
-                                              "global": false,
-                                              "description": "",
-                                              "tags": [],
-                                              "required": false,
-                                              "type": "Record<string, any> | undefined",
-                                              "declarations": [
-                                                {
-                                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                                  "range": [
-                                                    1391,
-                                                    1426
-                                                  ]
-                                                }
-                                              ],
-                                              "schema": "Record<string, any> | undefined"
+                                  "kind": "array",
+                                  "type": "MarkdownNode[]",
+                                  "schema": [
+                                    {
+                                      "kind": "object",
+                                      "type": "MarkdownNode",
+                                      "schema": {
+                                        "type": {
+                                          "name": "type",
+                                          "global": false,
+                                          "description": "",
+                                          "tags": [],
+                                          "required": true,
+                                          "type": "string",
+                                          "declarations": [
+                                            {
+                                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                              "range": [
+                                                1214,
+                                                1227
+                                              ]
                                             }
-                                          }
+                                          ],
+                                          "schema": "string"
+                                        },
+                                        "tag": {
+                                          "name": "tag",
+                                          "global": false,
+                                          "description": "",
+                                          "tags": [],
+                                          "required": false,
+                                          "type": "string",
+                                          "declarations": [
+                                            {
+                                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                              "range": [
+                                                1232,
+                                                1245
+                                              ]
+                                            }
+                                          ],
+                                          "schema": "string"
+                                        },
+                                        "value": {
+                                          "name": "value",
+                                          "global": false,
+                                          "description": "",
+                                          "tags": [],
+                                          "required": false,
+                                          "type": "string",
+                                          "declarations": [
+                                            {
+                                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                              "range": [
+                                                1250,
+                                                1265
+                                              ]
+                                            }
+                                          ],
+                                          "schema": "string"
+                                        },
+                                        "props": {
+                                          "name": "props",
+                                          "global": false,
+                                          "description": "",
+                                          "tags": [],
+                                          "required": false,
+                                          "type": "Record<string, any>",
+                                          "declarations": [
+                                            {
+                                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                              "range": [
+                                                1270,
+                                                1298
+                                              ]
+                                            }
+                                          ],
+                                          "schema": "Record<string, any>"
+                                        },
+                                        "content": {
+                                          "name": "content",
+                                          "global": false,
+                                          "description": "",
+                                          "tags": [],
+                                          "required": false,
+                                          "type": "any",
+                                          "declarations": [
+                                            {
+                                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                              "range": [
+                                                1303,
+                                                1317
+                                              ]
+                                            }
+                                          ],
+                                          "schema": "any"
+                                        },
+                                        "children": {
+                                          "name": "children",
+                                          "global": false,
+                                          "description": "",
+                                          "tags": [],
+                                          "required": false,
+                                          "type": "MarkdownNode[]",
+                                          "declarations": [
+                                            {
+                                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                              "range": [
+                                                1322,
+                                                1348
+                                              ]
+                                            }
+                                          ],
+                                          "schema": "MarkdownNode[]"
+                                        },
+                                        "attributes": {
+                                          "name": "attributes",
+                                          "global": false,
+                                          "description": "",
+                                          "tags": [],
+                                          "required": false,
+                                          "type": "Record<string, any>",
+                                          "declarations": [
+                                            {
+                                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                              "range": [
+                                                1353,
+                                                1386
+                                              ]
+                                            }
+                                          ],
+                                          "schema": "Record<string, any>"
+                                        },
+                                        "fmAttributes": {
+                                          "name": "fmAttributes",
+                                          "global": false,
+                                          "description": "",
+                                          "tags": [],
+                                          "required": false,
+                                          "type": "Record<string, any>",
+                                          "declarations": [
+                                            {
+                                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                              "range": [
+                                                1391,
+                                                1426
+                                              ]
+                                            }
+                                          ],
+                                          "schema": "Record<string, any>"
                                         }
-                                      ]
+                                      }
                                     }
-                                  },
-                                  "props": {
-                                    "name": "props",
-                                    "global": false,
-                                    "description": "",
-                                    "tags": [],
-                                    "required": false,
-                                    "type": "Record<string, any> | undefined",
-                                    "declarations": [
-                                      {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                        "range": [
-                                          1513,
-                                          1541
-                                        ]
-                                      }
-                                    ],
-                                    "schema": "Record<string, any> | undefined"
-                                  },
-                                  "toc": {
-                                    "name": "toc",
-                                    "global": false,
-                                    "description": "",
-                                    "tags": [],
-                                    "required": false,
-                                    "type": "Toc | undefined",
-                                    "declarations": [
-                                      {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                        "range": [
-                                          1546,
-                                          1556
-                                        ]
-                                      }
-                                    ],
-                                    "schema": {
-                                      "kind": "enum",
-                                      "type": "Toc | undefined",
-                                      "schema": [
-                                        "undefined",
+                                  ]
+                                }
+                              },
+                              "props": {
+                                "name": "props",
+                                "global": false,
+                                "description": "",
+                                "tags": [],
+                                "required": false,
+                                "type": "Record<string, any>",
+                                "declarations": [
+                                  {
+                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "range": [
+                                      1513,
+                                      1541
+                                    ]
+                                  }
+                                ],
+                                "schema": "Record<string, any>"
+                              },
+                              "toc": {
+                                "name": "toc",
+                                "global": false,
+                                "description": "",
+                                "tags": [],
+                                "required": false,
+                                "type": "Toc",
+                                "declarations": [
+                                  {
+                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "range": [
+                                      1546,
+                                      1556
+                                    ]
+                                  }
+                                ],
+                                "schema": {
+                                  "kind": "object",
+                                  "type": "Toc",
+                                  "schema": {
+                                    "title": {
+                                      "name": "title",
+                                      "global": false,
+                                      "description": "",
+                                      "tags": [],
+                                      "required": true,
+                                      "type": "string",
+                                      "declarations": [
                                         {
-                                          "kind": "object",
-                                          "type": "Toc",
-                                          "schema": {
-                                            "title": {
-                                              "name": "title",
-                                              "global": false,
-                                              "description": "",
-                                              "tags": [],
-                                              "required": true,
-                                              "type": "string",
-                                              "declarations": [
-                                                {
-                                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                                  "range": [
-                                                    1095,
-                                                    1109
-                                                  ]
-                                                }
-                                              ],
-                                              "schema": "string"
-                                            },
-                                            "depth": {
-                                              "name": "depth",
-                                              "global": false,
-                                              "description": "",
-                                              "tags": [],
-                                              "required": true,
-                                              "type": "number",
-                                              "declarations": [
-                                                {
-                                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                                  "range": [
-                                                    1114,
-                                                    1128
-                                                  ]
-                                                }
-                                              ],
-                                              "schema": "number"
-                                            },
-                                            "searchDepth": {
-                                              "name": "searchDepth",
-                                              "global": false,
-                                              "description": "",
-                                              "tags": [],
-                                              "required": true,
-                                              "type": "number",
-                                              "declarations": [
-                                                {
-                                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                                  "range": [
-                                                    1133,
-                                                    1153
-                                                  ]
-                                                }
-                                              ],
-                                              "schema": "number"
-                                            },
-                                            "links": {
-                                              "name": "links",
-                                              "global": false,
-                                              "description": "",
-                                              "tags": [],
-                                              "required": true,
-                                              "type": "TocLink[]",
-                                              "declarations": [
-                                                {
-                                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                                  "range": [
-                                                    1158,
-                                                    1175
-                                                  ]
-                                                }
-                                              ],
-                                              "schema": {
-                                                "kind": "array",
-                                                "type": "TocLink[]",
-                                                "schema": [
+                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "range": [
+                                            1095,
+                                            1109
+                                          ]
+                                        }
+                                      ],
+                                      "schema": "string"
+                                    },
+                                    "depth": {
+                                      "name": "depth",
+                                      "global": false,
+                                      "description": "",
+                                      "tags": [],
+                                      "required": true,
+                                      "type": "number",
+                                      "declarations": [
+                                        {
+                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "range": [
+                                            1114,
+                                            1128
+                                          ]
+                                        }
+                                      ],
+                                      "schema": "number"
+                                    },
+                                    "searchDepth": {
+                                      "name": "searchDepth",
+                                      "global": false,
+                                      "description": "",
+                                      "tags": [],
+                                      "required": true,
+                                      "type": "number",
+                                      "declarations": [
+                                        {
+                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "range": [
+                                            1133,
+                                            1153
+                                          ]
+                                        }
+                                      ],
+                                      "schema": "number"
+                                    },
+                                    "links": {
+                                      "name": "links",
+                                      "global": false,
+                                      "description": "",
+                                      "tags": [],
+                                      "required": true,
+                                      "type": "TocLink[]",
+                                      "declarations": [
+                                        {
+                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "range": [
+                                            1158,
+                                            1175
+                                          ]
+                                        }
+                                      ],
+                                      "schema": {
+                                        "kind": "array",
+                                        "type": "TocLink[]",
+                                        "schema": [
+                                          {
+                                            "kind": "object",
+                                            "type": "TocLink",
+                                            "schema": {
+                                              "id": {
+                                                "name": "id",
+                                                "global": false,
+                                                "description": "",
+                                                "tags": [],
+                                                "required": true,
+                                                "type": "string",
+                                                "declarations": [
                                                   {
-                                                    "kind": "object",
-                                                    "type": "TocLink",
-                                                    "schema": {
-                                                      "id": {
-                                                        "name": "id",
-                                                        "global": false,
-                                                        "description": "",
-                                                        "tags": [],
-                                                        "required": true,
-                                                        "type": "string",
-                                                        "declarations": [
-                                                          {
-                                                            "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                                            "range": [
-                                                              991,
-                                                              1002
-                                                            ]
-                                                          }
-                                                        ],
-                                                        "schema": "string"
-                                                      },
-                                                      "text": {
-                                                        "name": "text",
-                                                        "global": false,
-                                                        "description": "",
-                                                        "tags": [],
-                                                        "required": true,
-                                                        "type": "string",
-                                                        "declarations": [
-                                                          {
-                                                            "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                                            "range": [
-                                                              1007,
-                                                              1020
-                                                            ]
-                                                          }
-                                                        ],
-                                                        "schema": "string"
-                                                      },
-                                                      "depth": {
-                                                        "name": "depth",
-                                                        "global": false,
-                                                        "description": "",
-                                                        "tags": [],
-                                                        "required": true,
-                                                        "type": "number",
-                                                        "declarations": [
-                                                          {
-                                                            "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                                            "range": [
-                                                              1025,
-                                                              1039
-                                                            ]
-                                                          }
-                                                        ],
-                                                        "schema": "number"
-                                                      },
-                                                      "children": {
-                                                        "name": "children",
-                                                        "global": false,
-                                                        "description": "",
-                                                        "tags": [],
-                                                        "required": false,
-                                                        "type": "TocLink[] | undefined",
-                                                        "declarations": [
-                                                          {
-                                                            "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                                            "range": [
-                                                              1044,
-                                                              1065
-                                                            ]
-                                                          }
-                                                        ],
-                                                        "schema": {
-                                                          "kind": "enum",
-                                                          "type": "TocLink[] | undefined",
-                                                          "schema": [
-                                                            "undefined",
-                                                            "TocLink[]"
-                                                          ]
-                                                        }
-                                                      }
-                                                    }
+                                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                                    "range": [
+                                                      991,
+                                                      1002
+                                                    ]
                                                   }
-                                                ]
+                                                ],
+                                                "schema": "string"
+                                              },
+                                              "text": {
+                                                "name": "text",
+                                                "global": false,
+                                                "description": "",
+                                                "tags": [],
+                                                "required": true,
+                                                "type": "string",
+                                                "declarations": [
+                                                  {
+                                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                                    "range": [
+                                                      1007,
+                                                      1020
+                                                    ]
+                                                  }
+                                                ],
+                                                "schema": "string"
+                                              },
+                                              "depth": {
+                                                "name": "depth",
+                                                "global": false,
+                                                "description": "",
+                                                "tags": [],
+                                                "required": true,
+                                                "type": "number",
+                                                "declarations": [
+                                                  {
+                                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                                    "range": [
+                                                      1025,
+                                                      1039
+                                                    ]
+                                                  }
+                                                ],
+                                                "schema": "number"
+                                              },
+                                              "children": {
+                                                "name": "children",
+                                                "global": false,
+                                                "description": "",
+                                                "tags": [],
+                                                "required": false,
+                                                "type": "TocLink[]",
+                                                "declarations": [
+                                                  {
+                                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                                    "range": [
+                                                      1044,
+                                                      1065
+                                                    ]
+                                                  }
+                                                ],
+                                                "schema": "TocLink[]"
                                               }
                                             }
                                           }
-                                        }
-                                      ]
+                                        ]
+                                      }
                                     }
                                   }
                                 }
                               }
-                            ]
+                            }
                           }
                         },
                         "body": {
@@ -16783,7 +13472,7 @@ export default {
                           "description": "Content body",
                           "tags": [],
                           "required": true,
-                          "type": "MarkdownRoot | null",
+                          "type": "MarkdownRoot",
                           "declarations": [
                             {
                               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -16793,14 +13482,7 @@ export default {
                               ]
                             }
                           ],
-                          "schema": {
-                            "kind": "enum",
-                            "type": "MarkdownRoot | null",
-                            "schema": [
-                              "null",
-                              "MarkdownRoot"
-                            ]
-                          }
+                          "schema": "MarkdownRoot"
                         },
                         "layout": {
                           "name": "layout",
@@ -16808,7 +13490,7 @@ export default {
                           "description": "Layout",
                           "tags": [],
                           "required": false,
-                          "type": "LayoutKey | undefined",
+                          "type": "LayoutKey",
                           "declarations": [
                             {
                               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -16819,13 +13501,9 @@ export default {
                             }
                           ],
                           "schema": {
-                            "kind": "enum",
-                            "type": "LayoutKey | undefined",
-                            "schema": [
-                              "undefined",
-                              "\"default\"",
-                              "\"page\""
-                            ]
+                            "kind": "array",
+                            "type": "LayoutKey",
+                            "schema": []
                           }
                         },
                         "_id": {
@@ -16852,7 +13530,7 @@ export default {
                           "description": "Content source",
                           "tags": [],
                           "required": false,
-                          "type": "string | undefined",
+                          "type": "string",
                           "declarations": [
                             {
                               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -16862,7 +13540,7 @@ export default {
                               ]
                             }
                           ],
-                          "schema": "string | undefined"
+                          "schema": "string"
                         },
                         "_path": {
                           "name": "_path",
@@ -16870,7 +13548,7 @@ export default {
                           "description": "Content path, this path is source agnostic and it the content my live in any source",
                           "tags": [],
                           "required": false,
-                          "type": "string | undefined",
+                          "type": "string",
                           "declarations": [
                             {
                               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -16880,7 +13558,7 @@ export default {
                               ]
                             }
                           ],
-                          "schema": "string | undefined"
+                          "schema": "string"
                         },
                         "title": {
                           "name": "title",
@@ -16888,7 +13566,7 @@ export default {
                           "description": "Content title",
                           "tags": [],
                           "required": false,
-                          "type": "string | undefined",
+                          "type": "string",
                           "declarations": [
                             {
                               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -16898,7 +13576,7 @@ export default {
                               ]
                             }
                           ],
-                          "schema": "string | undefined"
+                          "schema": "string"
                         },
                         "_draft": {
                           "name": "_draft",
@@ -16906,7 +13584,7 @@ export default {
                           "description": "Content draft status",
                           "tags": [],
                           "required": false,
-                          "type": "boolean | undefined",
+                          "type": "boolean",
                           "declarations": [
                             {
                               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -16918,9 +13596,8 @@ export default {
                           ],
                           "schema": {
                             "kind": "enum",
-                            "type": "boolean | undefined",
+                            "type": "boolean",
                             "schema": [
-                              "undefined",
                               "false",
                               "true"
                             ]
@@ -16932,7 +13609,7 @@ export default {
                           "description": "Content partial status",
                           "tags": [],
                           "required": false,
-                          "type": "boolean | undefined",
+                          "type": "boolean",
                           "declarations": [
                             {
                               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -16942,7 +13619,7 @@ export default {
                               ]
                             }
                           ],
-                          "schema": "boolean | undefined"
+                          "schema": "boolean"
                         },
                         "_locale": {
                           "name": "_locale",
@@ -16950,7 +13627,7 @@ export default {
                           "description": "Content locale",
                           "tags": [],
                           "required": false,
-                          "type": "string | undefined",
+                          "type": "string",
                           "declarations": [
                             {
                               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -16960,7 +13637,7 @@ export default {
                               ]
                             }
                           ],
-                          "schema": "string | undefined"
+                          "schema": "string"
                         },
                         "_type": {
                           "name": "_type",
@@ -16968,7 +13645,7 @@ export default {
                           "description": "File type of the content, i.e `markdown`",
                           "tags": [],
                           "required": false,
-                          "type": "\"markdown\" | \"yaml\" | \"json\" | \"csv\" | undefined",
+                          "type": "\"markdown\" | \"yaml\" | \"json\" | \"csv\"",
                           "declarations": [
                             {
                               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -16980,9 +13657,8 @@ export default {
                           ],
                           "schema": {
                             "kind": "enum",
-                            "type": "\"markdown\" | \"yaml\" | \"json\" | \"csv\" | undefined",
+                            "type": "\"markdown\" | \"yaml\" | \"json\" | \"csv\"",
                             "schema": [
-                              "undefined",
                               "\"markdown\"",
                               "\"yaml\"",
                               "\"json\"",
@@ -16996,7 +13672,7 @@ export default {
                           "description": "Path to the file relative to the content directory",
                           "tags": [],
                           "required": false,
-                          "type": "string | undefined",
+                          "type": "string",
                           "declarations": [
                             {
                               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -17006,7 +13682,7 @@ export default {
                               ]
                             }
                           ],
-                          "schema": "string | undefined"
+                          "schema": "string"
                         },
                         "_extension": {
                           "name": "_extension",
@@ -17014,7 +13690,7 @@ export default {
                           "description": "Extension of the file",
                           "tags": [],
                           "required": false,
-                          "type": "\"yaml\" | \"json\" | \"csv\" | \"md\" | \"yml\" | \"json5\" | undefined",
+                          "type": "\"yaml\" | \"json\" | \"csv\" | \"md\" | \"yml\" | \"json5\"",
                           "declarations": [
                             {
                               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -17026,9 +13702,8 @@ export default {
                           ],
                           "schema": {
                             "kind": "enum",
-                            "type": "\"yaml\" | \"json\" | \"csv\" | \"md\" | \"yml\" | \"json5\" | undefined",
+                            "type": "\"yaml\" | \"json\" | \"csv\" | \"md\" | \"yml\" | \"json5\"",
                             "schema": [
-                              "undefined",
                               "\"yaml\"",
                               "\"json\"",
                               "\"csv\"",
@@ -17087,14 +13762,7 @@ export default {
                     ]
                   }
                 ],
-                "schema": {
-                  "kind": "enum",
-                  "type": "boolean",
-                  "schema": [
-                    "false",
-                    "true"
-                  ]
-                }
+                "schema": "boolean"
               }
             }
           }
@@ -17104,7 +13772,7 @@ export default {
       "exposed": [
         {
           "name": "$slots",
-          "type": "Readonly<InternalSlots> & { default: (context: ContentQueryDefaultSlotContext) => VNode<RendererNode, RendererElement, { ...; }>[] | undefined; }",
+          "type": "Readonly<InternalSlots> & { default: (context: ContentQueryDefaultSlotContext) => VNode<RendererNode, RendererElement, { ...; }>[]; }",
           "description": "",
           "declarations": [
             {
@@ -17124,7 +13792,7 @@ export default {
           ],
           "schema": {
             "kind": "object",
-            "type": "Readonly<InternalSlots> & { default: (context: ContentQueryDefaultSlotContext) => VNode<RendererNode, RendererElement, { ...; }>[] | undefined; }",
+            "type": "Readonly<InternalSlots> & { default: (context: ContentQueryDefaultSlotContext) => VNode<RendererNode, RendererElement, { ...; }>[]; }",
             "schema": {
               "default": {
                 "name": "default",
@@ -17132,7 +13800,7 @@ export default {
                 "description": "",
                 "tags": [],
                 "required": true,
-                "type": "(context: ContentQueryDefaultSlotContext) => VNode<RendererNode, RendererElement, { [key: string]: any; }>[] | undefined",
+                "type": "(context: ContentQueryDefaultSlotContext) => VNode<RendererNode, RendererElement, { [key: string]: any; }>[]",
                 "declarations": [
                   {
                     "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
@@ -17144,7 +13812,7 @@ export default {
                 ],
                 "schema": {
                   "kind": "event",
-                  "type": "(context: ContentQueryDefaultSlotContext): VNode<RendererNode, RendererElement, { [key: string]: any; }>[] | undefined",
+                  "type": "(context: ContentQueryDefaultSlotContext): VNode<RendererNode, RendererElement, { [key: string]: any; }>[]",
                   "schema": []
                 }
               }
@@ -17153,7 +13821,7 @@ export default {
         },
         {
           "name": "sort",
-          "type": "SortParams | undefined",
+          "type": "undefined",
           "description": "Sort results",
           "declarations": [
             {
@@ -17164,149 +13832,11 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "SortParams | undefined",
-            "schema": [
-              "undefined",
-              {
-                "kind": "object",
-                "type": "SortParams",
-                "schema": {
-                  "$locale": {
-                    "name": "$locale",
-                    "global": false,
-                    "description": "Locale specifier for sorting\nA string with a BCP 47 language tag",
-                    "tags": [
-                      {
-                        "name": "default",
-                        "text": "undefined"
-                      }
-                    ],
-                    "required": false,
-                    "type": "string | undefined",
-                    "declarations": [
-                      {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                        "range": [
-                          3558,
-                          3575
-                        ]
-                      }
-                    ],
-                    "schema": {
-                      "kind": "enum",
-                      "type": "string | undefined",
-                      "schema": [
-                        "undefined",
-                        "string"
-                      ]
-                    }
-                  },
-                  "$numeric": {
-                    "name": "$numeric",
-                    "global": false,
-                    "description": "Whether numeric collation should be used, such that \"1\" < \"2\" < \"10\".\nPossible values are `true` and `false`;",
-                    "tags": [
-                      {
-                        "name": "default",
-                        "text": "false"
-                      }
-                    ],
-                    "required": false,
-                    "type": "boolean | undefined",
-                    "declarations": [
-                      {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                        "range": [
-                          3749,
-                          3768
-                        ]
-                      }
-                    ],
-                    "schema": {
-                      "kind": "enum",
-                      "type": "boolean | undefined",
-                      "schema": [
-                        "undefined",
-                        "false",
-                        "true"
-                      ]
-                    }
-                  },
-                  "$caseFirst": {
-                    "name": "$caseFirst",
-                    "global": false,
-                    "description": "Whether upper case or lower case should sort first.\nPossible values are `\"upper\"`, `\"lower\"`, or `\"false\"`",
-                    "tags": [
-                      {
-                        "name": "default",
-                        "text": "\"depends on locale\""
-                      }
-                    ],
-                    "required": false,
-                    "type": "\"upper\" | \"lower\" | \"false\" | undefined",
-                    "declarations": [
-                      {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                        "range": [
-                          3953,
-                          3994
-                        ]
-                      }
-                    ],
-                    "schema": {
-                      "kind": "enum",
-                      "type": "\"upper\" | \"lower\" | \"false\" | undefined",
-                      "schema": [
-                        "undefined",
-                        "\"upper\"",
-                        "\"lower\"",
-                        "\"false\""
-                      ]
-                    }
-                  },
-                  "$sensitivity": {
-                    "name": "$sensitivity",
-                    "global": false,
-                    "description": "Which differences in the strings should lead to non-zero result values. Possible values are:\n - \"base\": Only strings that differ in base letters compare as unequal. Examples: a ≠ b, a = á, a = A.\n - \"accent\": Only strings that differ in base letters or accents and other diacritic marks compare as unequal. Examples: a ≠ b, a ≠ á, a = A.\n - \"case\": Only strings that differ in base letters or case compare as unequal. Examples: a ≠ b, a = á, a ≠ A.\n - \"variant\": Strings that differ in base letters, accents and other diacritic marks, or case compare as unequal. Other differences may also be taken into consideration. Examples: a ≠ b, a ≠ á, a ≠ A.",
-                    "tags": [
-                      {
-                        "name": "default",
-                        "text": "\"variant\""
-                      }
-                    ],
-                    "required": false,
-                    "type": "\"base\" | \"accent\" | \"case\" | \"variant\" | undefined",
-                    "declarations": [
-                      {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                        "range": [
-                          4733,
-                          4787
-                        ]
-                      }
-                    ],
-                    "schema": {
-                      "kind": "enum",
-                      "type": "\"base\" | \"accent\" | \"case\" | \"variant\" | undefined",
-                      "schema": [
-                        "undefined",
-                        "\"base\"",
-                        "\"accent\"",
-                        "\"case\"",
-                        "\"variant\""
-                      ]
-                    }
-                  }
-                }
-              }
-            ]
-          }
+          "schema": "undefined"
         },
         {
           "name": "find",
-          "type": "\"surround\" | \"one\" | undefined",
+          "type": "\"surround\" | \"one\"",
           "description": "A type of query to be made.",
           "declarations": [
             {
@@ -17319,9 +13849,8 @@ export default {
           ],
           "schema": {
             "kind": "enum",
-            "type": "\"surround\" | \"one\" | undefined",
+            "type": "\"surround\" | \"one\"",
             "schema": [
-              "undefined",
               "\"surround\"",
               "\"one\""
             ]
@@ -17329,7 +13858,7 @@ export default {
         },
         {
           "name": "path",
-          "type": "string | undefined",
+          "type": "string",
           "description": "The path of the content to load from content source.",
           "declarations": [
             {
@@ -17340,18 +13869,11 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          }
+          "schema": "string"
         },
         {
           "name": "only",
-          "type": "string[] | undefined",
+          "type": "string[]",
           "description": "Select a subset of fields",
           "declarations": [
             {
@@ -17363,23 +13885,16 @@ export default {
             }
           ],
           "schema": {
-            "kind": "enum",
-            "type": "string[] | undefined",
+            "kind": "array",
+            "type": "string[]",
             "schema": [
-              "undefined",
-              {
-                "kind": "array",
-                "type": "string[]",
-                "schema": [
-                  "string"
-                ]
-              }
+              "string"
             ]
           }
         },
         {
           "name": "without",
-          "type": "string[] | undefined",
+          "type": "string[]",
           "description": "Remove a subset of fields",
           "declarations": [
             {
@@ -17391,23 +13906,16 @@ export default {
             }
           ],
           "schema": {
-            "kind": "enum",
-            "type": "string[] | undefined",
+            "kind": "array",
+            "type": "string[]",
             "schema": [
-              "undefined",
-              {
-                "kind": "array",
-                "type": "string[]",
-                "schema": [
-                  "string"
-                ]
-              }
+              "string"
             ]
           }
         },
         {
           "name": "where",
-          "type": "{ [key: string]: any; } | undefined",
+          "type": "undefined",
           "description": "Filter results",
           "declarations": [
             {
@@ -17418,22 +13926,11 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "{ [key: string]: any; } | undefined",
-            "schema": [
-              "undefined",
-              {
-                "kind": "object",
-                "type": "{ [key: string]: any; }",
-                "schema": {}
-              }
-            ]
-          }
+          "schema": "undefined"
         },
         {
           "name": "limit",
-          "type": "number | undefined",
+          "type": "number",
           "description": "Limit number of results",
           "declarations": [
             {
@@ -17444,18 +13941,11 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "number | undefined",
-            "schema": [
-              "undefined",
-              "number"
-            ]
-          }
+          "schema": "number"
         },
         {
           "name": "skip",
-          "type": "number | undefined",
+          "type": "number",
           "description": "Skip number of results",
           "declarations": [
             {
@@ -17466,18 +13956,11 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "number | undefined",
-            "schema": [
-              "undefined",
-              "number"
-            ]
-          }
+          "schema": "number"
         },
         {
           "name": "locale",
-          "type": "string | undefined",
+          "type": "string",
           "description": "Filter contents based on locale",
           "declarations": [
             {
@@ -17488,14 +13971,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          }
+          "schema": "string"
         },
         {
           "name": "isPartial",
@@ -17562,12 +14038,50 @@ export default {
       "type": 1,
       "props": [
         {
+          "name": "tag",
+          "global": false,
+          "description": "",
+          "tags": [],
+          "required": false,
+          "type": "string",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.vue.d.ts",
+              "range": [
+                1256,
+                1268
+              ]
+            }
+          ],
+          "schema": "string",
+          "default": "\"div\""
+        },
+        {
+          "name": "value",
+          "global": false,
+          "description": "",
+          "tags": [],
+          "required": false,
+          "type": "Record<string, any>",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.vue.d.ts",
+              "range": [
+                1273,
+                1300
+              ]
+            }
+          ],
+          "schema": "Record<string, any>",
+          "default": "{}"
+        },
+        {
           "name": "excerpt",
           "global": false,
           "description": "",
           "tags": [],
           "required": false,
-          "type": "boolean | undefined",
+          "type": "boolean",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.vue.d.ts",
@@ -17579,66 +14093,13 @@ export default {
           ],
           "schema": {
             "kind": "enum",
-            "type": "boolean | undefined",
+            "type": "boolean",
             "schema": [
-              "undefined",
               "false",
               "true"
             ]
           },
           "default": "false"
-        },
-        {
-          "name": "tag",
-          "global": false,
-          "description": "",
-          "tags": [],
-          "required": false,
-          "type": "string | undefined",
-          "declarations": [
-            {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.vue.d.ts",
-              "range": [
-                1256,
-                1268
-              ]
-            }
-          ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          },
-          "default": "\"div\""
-        },
-        {
-          "name": "value",
-          "global": false,
-          "description": "",
-          "tags": [],
-          "required": false,
-          "type": "Record<string, any> | undefined",
-          "declarations": [
-            {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.vue.d.ts",
-              "range": [
-                1273,
-                1300
-              ]
-            }
-          ],
-          "schema": {
-            "kind": "enum",
-            "type": "Record<string, any> | undefined",
-            "schema": [
-              "undefined",
-              "Record<string, any>"
-            ]
-          },
-          "default": "{}"
         }
       ],
       "slots": [],
@@ -17746,7 +14207,7 @@ export default {
           "description": "Root tag to use for rendering",
           "tags": [],
           "required": false,
-          "type": "string | undefined",
+          "type": "string",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
@@ -17756,15 +14217,46 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          },
+          "schema": "string",
           "default": "\"div\""
+        },
+        {
+          "name": "data",
+          "global": false,
+          "description": "",
+          "tags": [],
+          "required": false,
+          "type": "Record<string, any>",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
+              "range": [
+                739,
+                792
+              ]
+            }
+          ],
+          "schema": "Record<string, any>",
+          "default": "{}"
+        },
+        {
+          "name": "components",
+          "global": false,
+          "description": "The map of custom components to use for rendering.",
+          "tags": [],
+          "required": false,
+          "type": "Record<string, any>",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
+              "range": [
+                675,
+                734
+              ]
+            }
+          ],
+          "schema": "Record<string, any>",
+          "default": "{}"
         },
         {
           "name": "excerpt",
@@ -17772,7 +14264,7 @@ export default {
           "description": "Render only the excerpt",
           "tags": [],
           "required": false,
-          "type": "boolean | undefined",
+          "type": "boolean",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
@@ -17784,66 +14276,13 @@ export default {
           ],
           "schema": {
             "kind": "enum",
-            "type": "boolean | undefined",
+            "type": "boolean",
             "schema": [
-              "undefined",
               "false",
               "true"
             ]
           },
           "default": "false"
-        },
-        {
-          "name": "data",
-          "global": false,
-          "description": "",
-          "tags": [],
-          "required": false,
-          "type": "Record<string, any> | undefined",
-          "declarations": [
-            {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
-              "range": [
-                739,
-                792
-              ]
-            }
-          ],
-          "schema": {
-            "kind": "enum",
-            "type": "Record<string, any> | undefined",
-            "schema": [
-              "undefined",
-              "Record<string, any>"
-            ]
-          },
-          "default": "{}"
-        },
-        {
-          "name": "components",
-          "global": false,
-          "description": "The map of custom components to use for rendering.",
-          "tags": [],
-          "required": false,
-          "type": "Record<string, any> | undefined",
-          "declarations": [
-            {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
-              "range": [
-                675,
-                734
-              ]
-            }
-          ],
-          "schema": {
-            "kind": "enum",
-            "type": "Record<string, any> | undefined",
-            "schema": [
-              "undefined",
-              "Record<string, any>"
-            ]
-          },
-          "default": "{}"
         }
       ],
       "slots": [],
@@ -17887,21 +14326,6 @@ export default {
           }
         },
         {
-          "name": "data",
-          "type": "Record<string, any>",
-          "description": "",
-          "declarations": [
-            {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
-              "range": [
-                739,
-                792
-              ]
-            }
-          ],
-          "schema": "Record<string, any>"
-        },
-        {
           "name": "value",
           "type": "Record<string, any>",
           "description": "Content to render",
@@ -17911,6 +14335,21 @@ export default {
               "range": [
                 359,
                 408
+              ]
+            }
+          ],
+          "schema": "Record<string, any>"
+        },
+        {
+          "name": "data",
+          "type": "Record<string, any>",
+          "description": "",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
+              "range": [
+                739,
+                792
               ]
             }
           ],
@@ -17956,7 +14395,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "Function | undefined",
+          "type": "Function",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentSlot.vue.d.ts",
@@ -17967,16 +14406,236 @@ export default {
             }
           ],
           "schema": {
-            "kind": "enum",
-            "type": "Function | undefined",
-            "schema": [
-              "undefined",
-              {
-                "kind": "object",
+            "kind": "object",
+            "type": "Function",
+            "schema": {
+              "apply": {
+                "name": "apply",
+                "global": false,
+                "description": "Calls the function, substituting the specified object for the this value of the function, and the specified array for the arguments of the function.",
+                "tags": [
+                  {
+                    "name": "param",
+                    "text": "thisArg The object to be used as the this object."
+                  },
+                  {
+                    "name": "param",
+                    "text": "argArray A set of arguments to be passed to the function."
+                  }
+                ],
+                "required": true,
+                "type": "(this: Function, thisArg: any, argArray?: any) => any",
+                "declarations": [
+                  {
+                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                    "range": [
+                      10258,
+                      10315
+                    ]
+                  }
+                ],
+                "schema": {
+                  "kind": "event",
+                  "type": "(this: Function, thisArg: any, argArray?: any): any",
+                  "schema": []
+                }
+              },
+              "call": {
+                "name": "call",
+                "global": false,
+                "description": "Calls a method of an object, substituting another object for the current object.",
+                "tags": [
+                  {
+                    "name": "param",
+                    "text": "thisArg The object to be used as the current object."
+                  },
+                  {
+                    "name": "param",
+                    "text": "argArray A list of arguments to be passed to the method."
+                  }
+                ],
+                "required": true,
+                "type": "(this: Function, thisArg: any, ...argArray: any[]) => any",
+                "declarations": [
+                  {
+                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                    "range": [
+                      10563,
+                      10623
+                    ]
+                  }
+                ],
+                "schema": {
+                  "kind": "event",
+                  "type": "(this: Function, thisArg: any, ...argArray: any[]): any",
+                  "schema": []
+                }
+              },
+              "bind": {
+                "name": "bind",
+                "global": false,
+                "description": "For a given function, creates a bound function that has the same body as the original function.\nThe this object of the bound function is associated with the specified object, and has the specified initial parameters.",
+                "tags": [
+                  {
+                    "name": "param",
+                    "text": "thisArg An object to which the this keyword can refer inside the new function."
+                  },
+                  {
+                    "name": "param",
+                    "text": "argArray A list of arguments to be passed to the new function."
+                  }
+                ],
+                "required": true,
+                "type": "(this: Function, thisArg: any, ...argArray: any[]) => any",
+                "declarations": [
+                  {
+                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                    "range": [
+                      11046,
+                      11106
+                    ]
+                  }
+                ],
+                "schema": {
+                  "kind": "event",
+                  "type": "(this: Function, thisArg: any, ...argArray: any[]): any",
+                  "schema": []
+                }
+              },
+              "toString": {
+                "name": "toString",
+                "global": false,
+                "description": "Returns a string representation of a function.",
+                "tags": [],
+                "required": true,
+                "type": "() => string",
+                "declarations": [
+                  {
+                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                    "range": [
+                      11170,
+                      11189
+                    ]
+                  }
+                ],
+                "schema": {
+                  "kind": "event",
+                  "type": "(): string"
+                }
+              },
+              "prototype": {
+                "name": "prototype",
+                "global": false,
+                "description": "",
+                "tags": [],
+                "required": true,
+                "type": "any",
+                "declarations": [
+                  {
+                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                    "range": [
+                      11195,
+                      11210
+                    ]
+                  }
+                ],
+                "schema": "any"
+              },
+              "length": {
+                "name": "length",
+                "global": false,
+                "description": "",
+                "tags": [],
+                "required": true,
+                "type": "number",
+                "declarations": [
+                  {
+                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                    "range": [
+                      11215,
+                      11239
+                    ]
+                  }
+                ],
+                "schema": "number"
+              },
+              "arguments": {
+                "name": "arguments",
+                "global": false,
+                "description": "",
+                "tags": [],
+                "required": true,
+                "type": "any",
+                "declarations": [
+                  {
+                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                    "range": [
+                      11276,
+                      11291
+                    ]
+                  }
+                ],
+                "schema": "any"
+              },
+              "caller": {
+                "name": "caller",
+                "global": false,
+                "description": "",
+                "tags": [],
+                "required": true,
                 "type": "Function",
-                "schema": {}
+                "declarations": [
+                  {
+                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                    "range": [
+                      11296,
+                      11313
+                    ]
+                  }
+                ],
+                "schema": "Function"
+              },
+              "name": {
+                "name": "name",
+                "global": false,
+                "description": "Returns the name of the function. Function names are read-only and can not be changed.",
+                "tags": [],
+                "required": true,
+                "type": "string",
+                "declarations": [
+                  {
+                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es2015.core.d.ts",
+                    "range": [
+                      4364,
+                      4386
+                    ]
+                  }
+                ],
+                "schema": "string"
+              },
+              "__@hasInstance@757": {
+                "name": "__@hasInstance@757",
+                "global": false,
+                "description": "Determines whether the given value inherits from this function if this function was used\nas a constructor function.\n\nA constructor function can control which objects are recognized as its instances by\n'instanceof' by overriding this method.",
+                "tags": [],
+                "required": true,
+                "type": "(value: any) => boolean",
+                "declarations": [
+                  {
+                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+                    "range": [
+                      5097,
+                      5139
+                    ]
+                  }
+                ],
+                "schema": {
+                  "kind": "event",
+                  "type": "(value: any): boolean",
+                  "schema": []
+                }
               }
-            ]
+            }
           },
           "default": "void 0"
         },
@@ -17986,7 +14645,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "string | boolean | undefined",
+          "type": "string | boolean",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentSlot.vue.d.ts",
@@ -17998,9 +14657,8 @@ export default {
           ],
           "schema": {
             "kind": "enum",
-            "type": "string | boolean | undefined",
+            "type": "string | boolean",
             "schema": [
-              "undefined",
               "string",
               "false",
               "true"
@@ -18014,7 +14672,7 @@ export default {
       "exposed": [
         {
           "name": "use",
-          "type": "Function | undefined",
+          "type": "Function",
           "description": "A slot name or function",
           "declarations": [
             {
@@ -18026,16 +14684,236 @@ export default {
             }
           ],
           "schema": {
-            "kind": "enum",
-            "type": "Function | undefined",
-            "schema": [
-              "undefined",
-              {
-                "kind": "object",
+            "kind": "object",
+            "type": "Function",
+            "schema": {
+              "apply": {
+                "name": "apply",
+                "global": false,
+                "description": "Calls the function, substituting the specified object for the this value of the function, and the specified array for the arguments of the function.",
+                "tags": [
+                  {
+                    "name": "param",
+                    "text": "thisArg The object to be used as the this object."
+                  },
+                  {
+                    "name": "param",
+                    "text": "argArray A set of arguments to be passed to the function."
+                  }
+                ],
+                "required": true,
+                "type": "(this: Function, thisArg: any, argArray?: any) => any",
+                "declarations": [
+                  {
+                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                    "range": [
+                      10258,
+                      10315
+                    ]
+                  }
+                ],
+                "schema": {
+                  "kind": "event",
+                  "type": "(this: Function, thisArg: any, argArray?: any): any",
+                  "schema": []
+                }
+              },
+              "call": {
+                "name": "call",
+                "global": false,
+                "description": "Calls a method of an object, substituting another object for the current object.",
+                "tags": [
+                  {
+                    "name": "param",
+                    "text": "thisArg The object to be used as the current object."
+                  },
+                  {
+                    "name": "param",
+                    "text": "argArray A list of arguments to be passed to the method."
+                  }
+                ],
+                "required": true,
+                "type": "(this: Function, thisArg: any, ...argArray: any[]) => any",
+                "declarations": [
+                  {
+                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                    "range": [
+                      10563,
+                      10623
+                    ]
+                  }
+                ],
+                "schema": {
+                  "kind": "event",
+                  "type": "(this: Function, thisArg: any, ...argArray: any[]): any",
+                  "schema": []
+                }
+              },
+              "bind": {
+                "name": "bind",
+                "global": false,
+                "description": "For a given function, creates a bound function that has the same body as the original function.\nThe this object of the bound function is associated with the specified object, and has the specified initial parameters.",
+                "tags": [
+                  {
+                    "name": "param",
+                    "text": "thisArg An object to which the this keyword can refer inside the new function."
+                  },
+                  {
+                    "name": "param",
+                    "text": "argArray A list of arguments to be passed to the new function."
+                  }
+                ],
+                "required": true,
+                "type": "(this: Function, thisArg: any, ...argArray: any[]) => any",
+                "declarations": [
+                  {
+                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                    "range": [
+                      11046,
+                      11106
+                    ]
+                  }
+                ],
+                "schema": {
+                  "kind": "event",
+                  "type": "(this: Function, thisArg: any, ...argArray: any[]): any",
+                  "schema": []
+                }
+              },
+              "toString": {
+                "name": "toString",
+                "global": false,
+                "description": "Returns a string representation of a function.",
+                "tags": [],
+                "required": true,
+                "type": "() => string",
+                "declarations": [
+                  {
+                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                    "range": [
+                      11170,
+                      11189
+                    ]
+                  }
+                ],
+                "schema": {
+                  "kind": "event",
+                  "type": "(): string"
+                }
+              },
+              "prototype": {
+                "name": "prototype",
+                "global": false,
+                "description": "",
+                "tags": [],
+                "required": true,
+                "type": "any",
+                "declarations": [
+                  {
+                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                    "range": [
+                      11195,
+                      11210
+                    ]
+                  }
+                ],
+                "schema": "any"
+              },
+              "length": {
+                "name": "length",
+                "global": false,
+                "description": "",
+                "tags": [],
+                "required": true,
+                "type": "number",
+                "declarations": [
+                  {
+                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                    "range": [
+                      11215,
+                      11239
+                    ]
+                  }
+                ],
+                "schema": "number"
+              },
+              "arguments": {
+                "name": "arguments",
+                "global": false,
+                "description": "",
+                "tags": [],
+                "required": true,
+                "type": "any",
+                "declarations": [
+                  {
+                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                    "range": [
+                      11276,
+                      11291
+                    ]
+                  }
+                ],
+                "schema": "any"
+              },
+              "caller": {
+                "name": "caller",
+                "global": false,
+                "description": "",
+                "tags": [],
+                "required": true,
                 "type": "Function",
-                "schema": {}
+                "declarations": [
+                  {
+                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                    "range": [
+                      11296,
+                      11313
+                    ]
+                  }
+                ],
+                "schema": "Function"
+              },
+              "name": {
+                "name": "name",
+                "global": false,
+                "description": "Returns the name of the function. Function names are read-only and can not be changed.",
+                "tags": [],
+                "required": true,
+                "type": "string",
+                "declarations": [
+                  {
+                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es2015.core.d.ts",
+                    "range": [
+                      4364,
+                      4386
+                    ]
+                  }
+                ],
+                "schema": "string"
+              },
+              "__@hasInstance@757": {
+                "name": "__@hasInstance@757",
+                "global": false,
+                "description": "Determines whether the given value inherits from this function if this function was used\nas a constructor function.\n\nA constructor function can control which objects are recognized as its instances by\n'instanceof' by overriding this method.",
+                "tags": [],
+                "required": true,
+                "type": "(value: any) => boolean",
+                "declarations": [
+                  {
+                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+                    "range": [
+                      5097,
+                      5139
+                    ]
+                  }
+                ],
+                "schema": {
+                  "kind": "event",
+                  "type": "(value: any): boolean",
+                  "schema": []
+                }
               }
-            ]
+            }
           }
         },
         {
@@ -18113,7 +14991,7 @@ export default {
                 "description": "Excerpt",
                 "tags": [],
                 "required": false,
-                "type": "MarkdownRoot | undefined",
+                "type": "MarkdownRoot",
                 "declarations": [
                   {
                     "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -18124,439 +15002,397 @@ export default {
                   }
                 ],
                 "schema": {
-                  "kind": "enum",
-                  "type": "MarkdownRoot | undefined",
-                  "schema": [
-                    "undefined",
-                    {
-                      "kind": "object",
-                      "type": "MarkdownRoot",
+                  "kind": "object",
+                  "type": "MarkdownRoot",
+                  "schema": {
+                    "type": {
+                      "name": "type",
+                      "global": false,
+                      "description": "",
+                      "tags": [],
+                      "required": true,
+                      "type": "\"root\"",
+                      "declarations": [
+                        {
+                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "range": [
+                            1465,
+                            1478
+                          ]
+                        }
+                      ],
+                      "schema": "\"root\""
+                    },
+                    "children": {
+                      "name": "children",
+                      "global": false,
+                      "description": "",
+                      "tags": [],
+                      "required": true,
+                      "type": "MarkdownNode[]",
+                      "declarations": [
+                        {
+                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "range": [
+                            1483,
+                            1508
+                          ]
+                        }
+                      ],
                       "schema": {
-                        "type": {
-                          "name": "type",
-                          "global": false,
-                          "description": "",
-                          "tags": [],
-                          "required": true,
-                          "type": "\"root\"",
-                          "declarations": [
-                            {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                              "range": [
-                                1465,
-                                1478
-                              ]
-                            }
-                          ],
-                          "schema": "\"root\""
-                        },
-                        "children": {
-                          "name": "children",
-                          "global": false,
-                          "description": "",
-                          "tags": [],
-                          "required": true,
-                          "type": "MarkdownNode[]",
-                          "declarations": [
-                            {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                              "range": [
-                                1483,
-                                1508
-                              ]
-                            }
-                          ],
-                          "schema": {
-                            "kind": "array",
-                            "type": "MarkdownNode[]",
-                            "schema": [
-                              {
-                                "kind": "object",
-                                "type": "MarkdownNode",
-                                "schema": {
-                                  "type": {
-                                    "name": "type",
-                                    "global": false,
-                                    "description": "",
-                                    "tags": [],
-                                    "required": true,
-                                    "type": "string",
-                                    "declarations": [
-                                      {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                        "range": [
-                                          1214,
-                                          1227
-                                        ]
-                                      }
-                                    ],
-                                    "schema": "string"
-                                  },
-                                  "tag": {
-                                    "name": "tag",
-                                    "global": false,
-                                    "description": "",
-                                    "tags": [],
-                                    "required": false,
-                                    "type": "string | undefined",
-                                    "declarations": [
-                                      {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                        "range": [
-                                          1232,
-                                          1245
-                                        ]
-                                      }
-                                    ],
-                                    "schema": {
-                                      "kind": "enum",
-                                      "type": "string | undefined",
-                                      "schema": [
-                                        "undefined",
-                                        "string"
-                                      ]
-                                    }
-                                  },
-                                  "value": {
-                                    "name": "value",
-                                    "global": false,
-                                    "description": "",
-                                    "tags": [],
-                                    "required": false,
-                                    "type": "string | undefined",
-                                    "declarations": [
-                                      {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                        "range": [
-                                          1250,
-                                          1265
-                                        ]
-                                      }
-                                    ],
-                                    "schema": "string | undefined"
-                                  },
-                                  "props": {
-                                    "name": "props",
-                                    "global": false,
-                                    "description": "",
-                                    "tags": [],
-                                    "required": false,
-                                    "type": "Record<string, any> | undefined",
-                                    "declarations": [
-                                      {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                        "range": [
-                                          1270,
-                                          1298
-                                        ]
-                                      }
-                                    ],
-                                    "schema": {
-                                      "kind": "enum",
-                                      "type": "Record<string, any> | undefined",
-                                      "schema": [
-                                        "undefined",
-                                        "Record<string, any>"
-                                      ]
-                                    }
-                                  },
-                                  "content": {
-                                    "name": "content",
-                                    "global": false,
-                                    "description": "",
-                                    "tags": [],
-                                    "required": false,
-                                    "type": "any",
-                                    "declarations": [
-                                      {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                        "range": [
-                                          1303,
-                                          1317
-                                        ]
-                                      }
-                                    ],
-                                    "schema": "any"
-                                  },
-                                  "children": {
-                                    "name": "children",
-                                    "global": false,
-                                    "description": "",
-                                    "tags": [],
-                                    "required": false,
-                                    "type": "MarkdownNode[] | undefined",
-                                    "declarations": [
-                                      {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                        "range": [
-                                          1322,
-                                          1348
-                                        ]
-                                      }
-                                    ],
-                                    "schema": {
-                                      "kind": "enum",
-                                      "type": "MarkdownNode[] | undefined",
-                                      "schema": [
-                                        "undefined",
-                                        "MarkdownNode[]"
-                                      ]
-                                    }
-                                  },
-                                  "attributes": {
-                                    "name": "attributes",
-                                    "global": false,
-                                    "description": "",
-                                    "tags": [],
-                                    "required": false,
-                                    "type": "Record<string, any> | undefined",
-                                    "declarations": [
-                                      {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                        "range": [
-                                          1353,
-                                          1386
-                                        ]
-                                      }
-                                    ],
-                                    "schema": "Record<string, any> | undefined"
-                                  },
-                                  "fmAttributes": {
-                                    "name": "fmAttributes",
-                                    "global": false,
-                                    "description": "",
-                                    "tags": [],
-                                    "required": false,
-                                    "type": "Record<string, any> | undefined",
-                                    "declarations": [
-                                      {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                        "range": [
-                                          1391,
-                                          1426
-                                        ]
-                                      }
-                                    ],
-                                    "schema": "Record<string, any> | undefined"
+                        "kind": "array",
+                        "type": "MarkdownNode[]",
+                        "schema": [
+                          {
+                            "kind": "object",
+                            "type": "MarkdownNode",
+                            "schema": {
+                              "type": {
+                                "name": "type",
+                                "global": false,
+                                "description": "",
+                                "tags": [],
+                                "required": true,
+                                "type": "string",
+                                "declarations": [
+                                  {
+                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "range": [
+                                      1214,
+                                      1227
+                                    ]
                                   }
-                                }
+                                ],
+                                "schema": "string"
+                              },
+                              "tag": {
+                                "name": "tag",
+                                "global": false,
+                                "description": "",
+                                "tags": [],
+                                "required": false,
+                                "type": "string",
+                                "declarations": [
+                                  {
+                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "range": [
+                                      1232,
+                                      1245
+                                    ]
+                                  }
+                                ],
+                                "schema": "string"
+                              },
+                              "value": {
+                                "name": "value",
+                                "global": false,
+                                "description": "",
+                                "tags": [],
+                                "required": false,
+                                "type": "string",
+                                "declarations": [
+                                  {
+                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "range": [
+                                      1250,
+                                      1265
+                                    ]
+                                  }
+                                ],
+                                "schema": "string"
+                              },
+                              "props": {
+                                "name": "props",
+                                "global": false,
+                                "description": "",
+                                "tags": [],
+                                "required": false,
+                                "type": "Record<string, any>",
+                                "declarations": [
+                                  {
+                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "range": [
+                                      1270,
+                                      1298
+                                    ]
+                                  }
+                                ],
+                                "schema": "Record<string, any>"
+                              },
+                              "content": {
+                                "name": "content",
+                                "global": false,
+                                "description": "",
+                                "tags": [],
+                                "required": false,
+                                "type": "any",
+                                "declarations": [
+                                  {
+                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "range": [
+                                      1303,
+                                      1317
+                                    ]
+                                  }
+                                ],
+                                "schema": "any"
+                              },
+                              "children": {
+                                "name": "children",
+                                "global": false,
+                                "description": "",
+                                "tags": [],
+                                "required": false,
+                                "type": "MarkdownNode[]",
+                                "declarations": [
+                                  {
+                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "range": [
+                                      1322,
+                                      1348
+                                    ]
+                                  }
+                                ],
+                                "schema": "MarkdownNode[]"
+                              },
+                              "attributes": {
+                                "name": "attributes",
+                                "global": false,
+                                "description": "",
+                                "tags": [],
+                                "required": false,
+                                "type": "Record<string, any>",
+                                "declarations": [
+                                  {
+                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "range": [
+                                      1353,
+                                      1386
+                                    ]
+                                  }
+                                ],
+                                "schema": "Record<string, any>"
+                              },
+                              "fmAttributes": {
+                                "name": "fmAttributes",
+                                "global": false,
+                                "description": "",
+                                "tags": [],
+                                "required": false,
+                                "type": "Record<string, any>",
+                                "declarations": [
+                                  {
+                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "range": [
+                                      1391,
+                                      1426
+                                    ]
+                                  }
+                                ],
+                                "schema": "Record<string, any>"
                               }
-                            ]
+                            }
                           }
-                        },
-                        "props": {
-                          "name": "props",
-                          "global": false,
-                          "description": "",
-                          "tags": [],
-                          "required": false,
-                          "type": "Record<string, any> | undefined",
-                          "declarations": [
-                            {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                              "range": [
-                                1513,
-                                1541
-                              ]
-                            }
-                          ],
-                          "schema": "Record<string, any> | undefined"
-                        },
-                        "toc": {
-                          "name": "toc",
-                          "global": false,
-                          "description": "",
-                          "tags": [],
-                          "required": false,
-                          "type": "Toc | undefined",
-                          "declarations": [
-                            {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                              "range": [
-                                1546,
-                                1556
-                              ]
-                            }
-                          ],
-                          "schema": {
-                            "kind": "enum",
-                            "type": "Toc | undefined",
-                            "schema": [
-                              "undefined",
+                        ]
+                      }
+                    },
+                    "props": {
+                      "name": "props",
+                      "global": false,
+                      "description": "",
+                      "tags": [],
+                      "required": false,
+                      "type": "Record<string, any>",
+                      "declarations": [
+                        {
+                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "range": [
+                            1513,
+                            1541
+                          ]
+                        }
+                      ],
+                      "schema": "Record<string, any>"
+                    },
+                    "toc": {
+                      "name": "toc",
+                      "global": false,
+                      "description": "",
+                      "tags": [],
+                      "required": false,
+                      "type": "Toc",
+                      "declarations": [
+                        {
+                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "range": [
+                            1546,
+                            1556
+                          ]
+                        }
+                      ],
+                      "schema": {
+                        "kind": "object",
+                        "type": "Toc",
+                        "schema": {
+                          "title": {
+                            "name": "title",
+                            "global": false,
+                            "description": "",
+                            "tags": [],
+                            "required": true,
+                            "type": "string",
+                            "declarations": [
                               {
-                                "kind": "object",
-                                "type": "Toc",
-                                "schema": {
-                                  "title": {
-                                    "name": "title",
-                                    "global": false,
-                                    "description": "",
-                                    "tags": [],
-                                    "required": true,
-                                    "type": "string",
-                                    "declarations": [
-                                      {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                        "range": [
-                                          1095,
-                                          1109
-                                        ]
-                                      }
-                                    ],
-                                    "schema": "string"
-                                  },
-                                  "depth": {
-                                    "name": "depth",
-                                    "global": false,
-                                    "description": "",
-                                    "tags": [],
-                                    "required": true,
-                                    "type": "number",
-                                    "declarations": [
-                                      {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                        "range": [
-                                          1114,
-                                          1128
-                                        ]
-                                      }
-                                    ],
-                                    "schema": "number"
-                                  },
-                                  "searchDepth": {
-                                    "name": "searchDepth",
-                                    "global": false,
-                                    "description": "",
-                                    "tags": [],
-                                    "required": true,
-                                    "type": "number",
-                                    "declarations": [
-                                      {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                        "range": [
-                                          1133,
-                                          1153
-                                        ]
-                                      }
-                                    ],
-                                    "schema": "number"
-                                  },
-                                  "links": {
-                                    "name": "links",
-                                    "global": false,
-                                    "description": "",
-                                    "tags": [],
-                                    "required": true,
-                                    "type": "TocLink[]",
-                                    "declarations": [
-                                      {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                        "range": [
-                                          1158,
-                                          1175
-                                        ]
-                                      }
-                                    ],
-                                    "schema": {
-                                      "kind": "array",
-                                      "type": "TocLink[]",
-                                      "schema": [
+                                "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                "range": [
+                                  1095,
+                                  1109
+                                ]
+                              }
+                            ],
+                            "schema": "string"
+                          },
+                          "depth": {
+                            "name": "depth",
+                            "global": false,
+                            "description": "",
+                            "tags": [],
+                            "required": true,
+                            "type": "number",
+                            "declarations": [
+                              {
+                                "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                "range": [
+                                  1114,
+                                  1128
+                                ]
+                              }
+                            ],
+                            "schema": "number"
+                          },
+                          "searchDepth": {
+                            "name": "searchDepth",
+                            "global": false,
+                            "description": "",
+                            "tags": [],
+                            "required": true,
+                            "type": "number",
+                            "declarations": [
+                              {
+                                "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                "range": [
+                                  1133,
+                                  1153
+                                ]
+                              }
+                            ],
+                            "schema": "number"
+                          },
+                          "links": {
+                            "name": "links",
+                            "global": false,
+                            "description": "",
+                            "tags": [],
+                            "required": true,
+                            "type": "TocLink[]",
+                            "declarations": [
+                              {
+                                "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                "range": [
+                                  1158,
+                                  1175
+                                ]
+                              }
+                            ],
+                            "schema": {
+                              "kind": "array",
+                              "type": "TocLink[]",
+                              "schema": [
+                                {
+                                  "kind": "object",
+                                  "type": "TocLink",
+                                  "schema": {
+                                    "id": {
+                                      "name": "id",
+                                      "global": false,
+                                      "description": "",
+                                      "tags": [],
+                                      "required": true,
+                                      "type": "string",
+                                      "declarations": [
                                         {
-                                          "kind": "object",
-                                          "type": "TocLink",
-                                          "schema": {
-                                            "id": {
-                                              "name": "id",
-                                              "global": false,
-                                              "description": "",
-                                              "tags": [],
-                                              "required": true,
-                                              "type": "string",
-                                              "declarations": [
-                                                {
-                                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                                  "range": [
-                                                    991,
-                                                    1002
-                                                  ]
-                                                }
-                                              ],
-                                              "schema": "string"
-                                            },
-                                            "text": {
-                                              "name": "text",
-                                              "global": false,
-                                              "description": "",
-                                              "tags": [],
-                                              "required": true,
-                                              "type": "string",
-                                              "declarations": [
-                                                {
-                                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                                  "range": [
-                                                    1007,
-                                                    1020
-                                                  ]
-                                                }
-                                              ],
-                                              "schema": "string"
-                                            },
-                                            "depth": {
-                                              "name": "depth",
-                                              "global": false,
-                                              "description": "",
-                                              "tags": [],
-                                              "required": true,
-                                              "type": "number",
-                                              "declarations": [
-                                                {
-                                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                                  "range": [
-                                                    1025,
-                                                    1039
-                                                  ]
-                                                }
-                                              ],
-                                              "schema": "number"
-                                            },
-                                            "children": {
-                                              "name": "children",
-                                              "global": false,
-                                              "description": "",
-                                              "tags": [],
-                                              "required": false,
-                                              "type": "TocLink[] | undefined",
-                                              "declarations": [
-                                                {
-                                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                                  "range": [
-                                                    1044,
-                                                    1065
-                                                  ]
-                                                }
-                                              ],
-                                              "schema": {
-                                                "kind": "enum",
-                                                "type": "TocLink[] | undefined",
-                                                "schema": [
-                                                  "undefined",
-                                                  "TocLink[]"
-                                                ]
-                                              }
-                                            }
-                                          }
+                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "range": [
+                                            991,
+                                            1002
+                                          ]
                                         }
-                                      ]
+                                      ],
+                                      "schema": "string"
+                                    },
+                                    "text": {
+                                      "name": "text",
+                                      "global": false,
+                                      "description": "",
+                                      "tags": [],
+                                      "required": true,
+                                      "type": "string",
+                                      "declarations": [
+                                        {
+                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "range": [
+                                            1007,
+                                            1020
+                                          ]
+                                        }
+                                      ],
+                                      "schema": "string"
+                                    },
+                                    "depth": {
+                                      "name": "depth",
+                                      "global": false,
+                                      "description": "",
+                                      "tags": [],
+                                      "required": true,
+                                      "type": "number",
+                                      "declarations": [
+                                        {
+                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "range": [
+                                            1025,
+                                            1039
+                                          ]
+                                        }
+                                      ],
+                                      "schema": "number"
+                                    },
+                                    "children": {
+                                      "name": "children",
+                                      "global": false,
+                                      "description": "",
+                                      "tags": [],
+                                      "required": false,
+                                      "type": "TocLink[]",
+                                      "declarations": [
+                                        {
+                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "range": [
+                                            1044,
+                                            1065
+                                          ]
+                                        }
+                                      ],
+                                      "schema": "TocLink[]"
                                     }
                                   }
                                 }
-                              }
-                            ]
+                              ]
+                            }
                           }
                         }
                       }
                     }
-                  ]
+                  }
                 }
               },
               "body": {
@@ -18565,7 +15401,7 @@ export default {
                 "description": "Content body",
                 "tags": [],
                 "required": true,
-                "type": "MarkdownRoot | null",
+                "type": "MarkdownRoot",
                 "declarations": [
                   {
                     "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -18575,14 +15411,7 @@ export default {
                     ]
                   }
                 ],
-                "schema": {
-                  "kind": "enum",
-                  "type": "MarkdownRoot | null",
-                  "schema": [
-                    "null",
-                    "MarkdownRoot"
-                  ]
-                }
+                "schema": "MarkdownRoot"
               },
               "layout": {
                 "name": "layout",
@@ -18590,7 +15419,7 @@ export default {
                 "description": "Layout",
                 "tags": [],
                 "required": false,
-                "type": "LayoutKey | undefined",
+                "type": "LayoutKey",
                 "declarations": [
                   {
                     "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -18601,13 +15430,9 @@ export default {
                   }
                 ],
                 "schema": {
-                  "kind": "enum",
-                  "type": "LayoutKey | undefined",
-                  "schema": [
-                    "undefined",
-                    "\"default\"",
-                    "\"page\""
-                  ]
+                  "kind": "array",
+                  "type": "LayoutKey",
+                  "schema": []
                 }
               },
               "_id": {
@@ -18634,7 +15459,7 @@ export default {
                 "description": "Content source",
                 "tags": [],
                 "required": false,
-                "type": "string | undefined",
+                "type": "string",
                 "declarations": [
                   {
                     "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -18644,7 +15469,7 @@ export default {
                     ]
                   }
                 ],
-                "schema": "string | undefined"
+                "schema": "string"
               },
               "_path": {
                 "name": "_path",
@@ -18652,7 +15477,7 @@ export default {
                 "description": "Content path, this path is source agnostic and it the content my live in any source",
                 "tags": [],
                 "required": false,
-                "type": "string | undefined",
+                "type": "string",
                 "declarations": [
                   {
                     "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -18662,7 +15487,7 @@ export default {
                     ]
                   }
                 ],
-                "schema": "string | undefined"
+                "schema": "string"
               },
               "title": {
                 "name": "title",
@@ -18670,7 +15495,7 @@ export default {
                 "description": "Content title",
                 "tags": [],
                 "required": false,
-                "type": "string | undefined",
+                "type": "string",
                 "declarations": [
                   {
                     "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -18680,7 +15505,7 @@ export default {
                     ]
                   }
                 ],
-                "schema": "string | undefined"
+                "schema": "string"
               },
               "_draft": {
                 "name": "_draft",
@@ -18688,7 +15513,7 @@ export default {
                 "description": "Content draft status",
                 "tags": [],
                 "required": false,
-                "type": "boolean | undefined",
+                "type": "boolean",
                 "declarations": [
                   {
                     "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -18700,9 +15525,8 @@ export default {
                 ],
                 "schema": {
                   "kind": "enum",
-                  "type": "boolean | undefined",
+                  "type": "boolean",
                   "schema": [
-                    "undefined",
                     "false",
                     "true"
                   ]
@@ -18714,7 +15538,7 @@ export default {
                 "description": "Content partial status",
                 "tags": [],
                 "required": false,
-                "type": "boolean | undefined",
+                "type": "boolean",
                 "declarations": [
                   {
                     "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -18724,7 +15548,7 @@ export default {
                     ]
                   }
                 ],
-                "schema": "boolean | undefined"
+                "schema": "boolean"
               },
               "_locale": {
                 "name": "_locale",
@@ -18732,7 +15556,7 @@ export default {
                 "description": "Content locale",
                 "tags": [],
                 "required": false,
-                "type": "string | undefined",
+                "type": "string",
                 "declarations": [
                   {
                     "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -18742,7 +15566,7 @@ export default {
                     ]
                   }
                 ],
-                "schema": "string | undefined"
+                "schema": "string"
               },
               "_type": {
                 "name": "_type",
@@ -18750,7 +15574,7 @@ export default {
                 "description": "File type of the content, i.e `markdown`",
                 "tags": [],
                 "required": false,
-                "type": "\"markdown\" | \"yaml\" | \"json\" | \"csv\" | undefined",
+                "type": "\"markdown\" | \"yaml\" | \"json\" | \"csv\"",
                 "declarations": [
                   {
                     "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -18762,9 +15586,8 @@ export default {
                 ],
                 "schema": {
                   "kind": "enum",
-                  "type": "\"markdown\" | \"yaml\" | \"json\" | \"csv\" | undefined",
+                  "type": "\"markdown\" | \"yaml\" | \"json\" | \"csv\"",
                   "schema": [
-                    "undefined",
                     "\"markdown\"",
                     "\"yaml\"",
                     "\"json\"",
@@ -18778,7 +15601,7 @@ export default {
                 "description": "Path to the file relative to the content directory",
                 "tags": [],
                 "required": false,
-                "type": "string | undefined",
+                "type": "string",
                 "declarations": [
                   {
                     "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -18788,7 +15611,7 @@ export default {
                     ]
                   }
                 ],
-                "schema": "string | undefined"
+                "schema": "string"
               },
               "_extension": {
                 "name": "_extension",
@@ -18796,7 +15619,7 @@ export default {
                 "description": "Extension of the file",
                 "tags": [],
                 "required": false,
-                "type": "\"yaml\" | \"json\" | \"csv\" | \"md\" | \"yml\" | \"json5\" | undefined",
+                "type": "\"yaml\" | \"json\" | \"csv\" | \"md\" | \"yml\" | \"json5\"",
                 "declarations": [
                   {
                     "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -18808,9 +15631,8 @@ export default {
                 ],
                 "schema": {
                   "kind": "enum",
-                  "type": "\"yaml\" | \"json\" | \"csv\" | \"md\" | \"yml\" | \"json5\" | undefined",
+                  "type": "\"yaml\" | \"json\" | \"csv\" | \"md\" | \"yml\" | \"json5\"",
                   "schema": [
-                    "undefined",
                     "\"yaml\"",
                     "\"json\"",
                     "\"csv\"",
@@ -18850,7 +15672,7 @@ export default {
                 "description": "Excerpt",
                 "tags": [],
                 "required": false,
-                "type": "MarkdownRoot | undefined",
+                "type": "MarkdownRoot",
                 "declarations": [
                   {
                     "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -18861,439 +15683,397 @@ export default {
                   }
                 ],
                 "schema": {
-                  "kind": "enum",
-                  "type": "MarkdownRoot | undefined",
-                  "schema": [
-                    "undefined",
-                    {
-                      "kind": "object",
-                      "type": "MarkdownRoot",
+                  "kind": "object",
+                  "type": "MarkdownRoot",
+                  "schema": {
+                    "type": {
+                      "name": "type",
+                      "global": false,
+                      "description": "",
+                      "tags": [],
+                      "required": true,
+                      "type": "\"root\"",
+                      "declarations": [
+                        {
+                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "range": [
+                            1465,
+                            1478
+                          ]
+                        }
+                      ],
+                      "schema": "\"root\""
+                    },
+                    "children": {
+                      "name": "children",
+                      "global": false,
+                      "description": "",
+                      "tags": [],
+                      "required": true,
+                      "type": "MarkdownNode[]",
+                      "declarations": [
+                        {
+                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "range": [
+                            1483,
+                            1508
+                          ]
+                        }
+                      ],
                       "schema": {
-                        "type": {
-                          "name": "type",
-                          "global": false,
-                          "description": "",
-                          "tags": [],
-                          "required": true,
-                          "type": "\"root\"",
-                          "declarations": [
-                            {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                              "range": [
-                                1465,
-                                1478
-                              ]
-                            }
-                          ],
-                          "schema": "\"root\""
-                        },
-                        "children": {
-                          "name": "children",
-                          "global": false,
-                          "description": "",
-                          "tags": [],
-                          "required": true,
-                          "type": "MarkdownNode[]",
-                          "declarations": [
-                            {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                              "range": [
-                                1483,
-                                1508
-                              ]
-                            }
-                          ],
-                          "schema": {
-                            "kind": "array",
-                            "type": "MarkdownNode[]",
-                            "schema": [
-                              {
-                                "kind": "object",
-                                "type": "MarkdownNode",
-                                "schema": {
-                                  "type": {
-                                    "name": "type",
-                                    "global": false,
-                                    "description": "",
-                                    "tags": [],
-                                    "required": true,
-                                    "type": "string",
-                                    "declarations": [
-                                      {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                        "range": [
-                                          1214,
-                                          1227
-                                        ]
-                                      }
-                                    ],
-                                    "schema": "string"
-                                  },
-                                  "tag": {
-                                    "name": "tag",
-                                    "global": false,
-                                    "description": "",
-                                    "tags": [],
-                                    "required": false,
-                                    "type": "string | undefined",
-                                    "declarations": [
-                                      {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                        "range": [
-                                          1232,
-                                          1245
-                                        ]
-                                      }
-                                    ],
-                                    "schema": {
-                                      "kind": "enum",
-                                      "type": "string | undefined",
-                                      "schema": [
-                                        "undefined",
-                                        "string"
-                                      ]
-                                    }
-                                  },
-                                  "value": {
-                                    "name": "value",
-                                    "global": false,
-                                    "description": "",
-                                    "tags": [],
-                                    "required": false,
-                                    "type": "string | undefined",
-                                    "declarations": [
-                                      {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                        "range": [
-                                          1250,
-                                          1265
-                                        ]
-                                      }
-                                    ],
-                                    "schema": "string | undefined"
-                                  },
-                                  "props": {
-                                    "name": "props",
-                                    "global": false,
-                                    "description": "",
-                                    "tags": [],
-                                    "required": false,
-                                    "type": "Record<string, any> | undefined",
-                                    "declarations": [
-                                      {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                        "range": [
-                                          1270,
-                                          1298
-                                        ]
-                                      }
-                                    ],
-                                    "schema": {
-                                      "kind": "enum",
-                                      "type": "Record<string, any> | undefined",
-                                      "schema": [
-                                        "undefined",
-                                        "Record<string, any>"
-                                      ]
-                                    }
-                                  },
-                                  "content": {
-                                    "name": "content",
-                                    "global": false,
-                                    "description": "",
-                                    "tags": [],
-                                    "required": false,
-                                    "type": "any",
-                                    "declarations": [
-                                      {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                        "range": [
-                                          1303,
-                                          1317
-                                        ]
-                                      }
-                                    ],
-                                    "schema": "any"
-                                  },
-                                  "children": {
-                                    "name": "children",
-                                    "global": false,
-                                    "description": "",
-                                    "tags": [],
-                                    "required": false,
-                                    "type": "MarkdownNode[] | undefined",
-                                    "declarations": [
-                                      {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                        "range": [
-                                          1322,
-                                          1348
-                                        ]
-                                      }
-                                    ],
-                                    "schema": {
-                                      "kind": "enum",
-                                      "type": "MarkdownNode[] | undefined",
-                                      "schema": [
-                                        "undefined",
-                                        "MarkdownNode[]"
-                                      ]
-                                    }
-                                  },
-                                  "attributes": {
-                                    "name": "attributes",
-                                    "global": false,
-                                    "description": "",
-                                    "tags": [],
-                                    "required": false,
-                                    "type": "Record<string, any> | undefined",
-                                    "declarations": [
-                                      {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                        "range": [
-                                          1353,
-                                          1386
-                                        ]
-                                      }
-                                    ],
-                                    "schema": "Record<string, any> | undefined"
-                                  },
-                                  "fmAttributes": {
-                                    "name": "fmAttributes",
-                                    "global": false,
-                                    "description": "",
-                                    "tags": [],
-                                    "required": false,
-                                    "type": "Record<string, any> | undefined",
-                                    "declarations": [
-                                      {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                        "range": [
-                                          1391,
-                                          1426
-                                        ]
-                                      }
-                                    ],
-                                    "schema": "Record<string, any> | undefined"
+                        "kind": "array",
+                        "type": "MarkdownNode[]",
+                        "schema": [
+                          {
+                            "kind": "object",
+                            "type": "MarkdownNode",
+                            "schema": {
+                              "type": {
+                                "name": "type",
+                                "global": false,
+                                "description": "",
+                                "tags": [],
+                                "required": true,
+                                "type": "string",
+                                "declarations": [
+                                  {
+                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "range": [
+                                      1214,
+                                      1227
+                                    ]
                                   }
-                                }
+                                ],
+                                "schema": "string"
+                              },
+                              "tag": {
+                                "name": "tag",
+                                "global": false,
+                                "description": "",
+                                "tags": [],
+                                "required": false,
+                                "type": "string",
+                                "declarations": [
+                                  {
+                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "range": [
+                                      1232,
+                                      1245
+                                    ]
+                                  }
+                                ],
+                                "schema": "string"
+                              },
+                              "value": {
+                                "name": "value",
+                                "global": false,
+                                "description": "",
+                                "tags": [],
+                                "required": false,
+                                "type": "string",
+                                "declarations": [
+                                  {
+                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "range": [
+                                      1250,
+                                      1265
+                                    ]
+                                  }
+                                ],
+                                "schema": "string"
+                              },
+                              "props": {
+                                "name": "props",
+                                "global": false,
+                                "description": "",
+                                "tags": [],
+                                "required": false,
+                                "type": "Record<string, any>",
+                                "declarations": [
+                                  {
+                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "range": [
+                                      1270,
+                                      1298
+                                    ]
+                                  }
+                                ],
+                                "schema": "Record<string, any>"
+                              },
+                              "content": {
+                                "name": "content",
+                                "global": false,
+                                "description": "",
+                                "tags": [],
+                                "required": false,
+                                "type": "any",
+                                "declarations": [
+                                  {
+                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "range": [
+                                      1303,
+                                      1317
+                                    ]
+                                  }
+                                ],
+                                "schema": "any"
+                              },
+                              "children": {
+                                "name": "children",
+                                "global": false,
+                                "description": "",
+                                "tags": [],
+                                "required": false,
+                                "type": "MarkdownNode[]",
+                                "declarations": [
+                                  {
+                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "range": [
+                                      1322,
+                                      1348
+                                    ]
+                                  }
+                                ],
+                                "schema": "MarkdownNode[]"
+                              },
+                              "attributes": {
+                                "name": "attributes",
+                                "global": false,
+                                "description": "",
+                                "tags": [],
+                                "required": false,
+                                "type": "Record<string, any>",
+                                "declarations": [
+                                  {
+                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "range": [
+                                      1353,
+                                      1386
+                                    ]
+                                  }
+                                ],
+                                "schema": "Record<string, any>"
+                              },
+                              "fmAttributes": {
+                                "name": "fmAttributes",
+                                "global": false,
+                                "description": "",
+                                "tags": [],
+                                "required": false,
+                                "type": "Record<string, any>",
+                                "declarations": [
+                                  {
+                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "range": [
+                                      1391,
+                                      1426
+                                    ]
+                                  }
+                                ],
+                                "schema": "Record<string, any>"
                               }
-                            ]
+                            }
                           }
-                        },
-                        "props": {
-                          "name": "props",
-                          "global": false,
-                          "description": "",
-                          "tags": [],
-                          "required": false,
-                          "type": "Record<string, any> | undefined",
-                          "declarations": [
-                            {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                              "range": [
-                                1513,
-                                1541
-                              ]
-                            }
-                          ],
-                          "schema": "Record<string, any> | undefined"
-                        },
-                        "toc": {
-                          "name": "toc",
-                          "global": false,
-                          "description": "",
-                          "tags": [],
-                          "required": false,
-                          "type": "Toc | undefined",
-                          "declarations": [
-                            {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                              "range": [
-                                1546,
-                                1556
-                              ]
-                            }
-                          ],
-                          "schema": {
-                            "kind": "enum",
-                            "type": "Toc | undefined",
-                            "schema": [
-                              "undefined",
+                        ]
+                      }
+                    },
+                    "props": {
+                      "name": "props",
+                      "global": false,
+                      "description": "",
+                      "tags": [],
+                      "required": false,
+                      "type": "Record<string, any>",
+                      "declarations": [
+                        {
+                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "range": [
+                            1513,
+                            1541
+                          ]
+                        }
+                      ],
+                      "schema": "Record<string, any>"
+                    },
+                    "toc": {
+                      "name": "toc",
+                      "global": false,
+                      "description": "",
+                      "tags": [],
+                      "required": false,
+                      "type": "Toc",
+                      "declarations": [
+                        {
+                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "range": [
+                            1546,
+                            1556
+                          ]
+                        }
+                      ],
+                      "schema": {
+                        "kind": "object",
+                        "type": "Toc",
+                        "schema": {
+                          "title": {
+                            "name": "title",
+                            "global": false,
+                            "description": "",
+                            "tags": [],
+                            "required": true,
+                            "type": "string",
+                            "declarations": [
                               {
-                                "kind": "object",
-                                "type": "Toc",
-                                "schema": {
-                                  "title": {
-                                    "name": "title",
-                                    "global": false,
-                                    "description": "",
-                                    "tags": [],
-                                    "required": true,
-                                    "type": "string",
-                                    "declarations": [
-                                      {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                        "range": [
-                                          1095,
-                                          1109
-                                        ]
-                                      }
-                                    ],
-                                    "schema": "string"
-                                  },
-                                  "depth": {
-                                    "name": "depth",
-                                    "global": false,
-                                    "description": "",
-                                    "tags": [],
-                                    "required": true,
-                                    "type": "number",
-                                    "declarations": [
-                                      {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                        "range": [
-                                          1114,
-                                          1128
-                                        ]
-                                      }
-                                    ],
-                                    "schema": "number"
-                                  },
-                                  "searchDepth": {
-                                    "name": "searchDepth",
-                                    "global": false,
-                                    "description": "",
-                                    "tags": [],
-                                    "required": true,
-                                    "type": "number",
-                                    "declarations": [
-                                      {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                        "range": [
-                                          1133,
-                                          1153
-                                        ]
-                                      }
-                                    ],
-                                    "schema": "number"
-                                  },
-                                  "links": {
-                                    "name": "links",
-                                    "global": false,
-                                    "description": "",
-                                    "tags": [],
-                                    "required": true,
-                                    "type": "TocLink[]",
-                                    "declarations": [
-                                      {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                        "range": [
-                                          1158,
-                                          1175
-                                        ]
-                                      }
-                                    ],
-                                    "schema": {
-                                      "kind": "array",
-                                      "type": "TocLink[]",
-                                      "schema": [
+                                "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                "range": [
+                                  1095,
+                                  1109
+                                ]
+                              }
+                            ],
+                            "schema": "string"
+                          },
+                          "depth": {
+                            "name": "depth",
+                            "global": false,
+                            "description": "",
+                            "tags": [],
+                            "required": true,
+                            "type": "number",
+                            "declarations": [
+                              {
+                                "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                "range": [
+                                  1114,
+                                  1128
+                                ]
+                              }
+                            ],
+                            "schema": "number"
+                          },
+                          "searchDepth": {
+                            "name": "searchDepth",
+                            "global": false,
+                            "description": "",
+                            "tags": [],
+                            "required": true,
+                            "type": "number",
+                            "declarations": [
+                              {
+                                "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                "range": [
+                                  1133,
+                                  1153
+                                ]
+                              }
+                            ],
+                            "schema": "number"
+                          },
+                          "links": {
+                            "name": "links",
+                            "global": false,
+                            "description": "",
+                            "tags": [],
+                            "required": true,
+                            "type": "TocLink[]",
+                            "declarations": [
+                              {
+                                "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                "range": [
+                                  1158,
+                                  1175
+                                ]
+                              }
+                            ],
+                            "schema": {
+                              "kind": "array",
+                              "type": "TocLink[]",
+                              "schema": [
+                                {
+                                  "kind": "object",
+                                  "type": "TocLink",
+                                  "schema": {
+                                    "id": {
+                                      "name": "id",
+                                      "global": false,
+                                      "description": "",
+                                      "tags": [],
+                                      "required": true,
+                                      "type": "string",
+                                      "declarations": [
                                         {
-                                          "kind": "object",
-                                          "type": "TocLink",
-                                          "schema": {
-                                            "id": {
-                                              "name": "id",
-                                              "global": false,
-                                              "description": "",
-                                              "tags": [],
-                                              "required": true,
-                                              "type": "string",
-                                              "declarations": [
-                                                {
-                                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                                  "range": [
-                                                    991,
-                                                    1002
-                                                  ]
-                                                }
-                                              ],
-                                              "schema": "string"
-                                            },
-                                            "text": {
-                                              "name": "text",
-                                              "global": false,
-                                              "description": "",
-                                              "tags": [],
-                                              "required": true,
-                                              "type": "string",
-                                              "declarations": [
-                                                {
-                                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                                  "range": [
-                                                    1007,
-                                                    1020
-                                                  ]
-                                                }
-                                              ],
-                                              "schema": "string"
-                                            },
-                                            "depth": {
-                                              "name": "depth",
-                                              "global": false,
-                                              "description": "",
-                                              "tags": [],
-                                              "required": true,
-                                              "type": "number",
-                                              "declarations": [
-                                                {
-                                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                                  "range": [
-                                                    1025,
-                                                    1039
-                                                  ]
-                                                }
-                                              ],
-                                              "schema": "number"
-                                            },
-                                            "children": {
-                                              "name": "children",
-                                              "global": false,
-                                              "description": "",
-                                              "tags": [],
-                                              "required": false,
-                                              "type": "TocLink[] | undefined",
-                                              "declarations": [
-                                                {
-                                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
-                                                  "range": [
-                                                    1044,
-                                                    1065
-                                                  ]
-                                                }
-                                              ],
-                                              "schema": {
-                                                "kind": "enum",
-                                                "type": "TocLink[] | undefined",
-                                                "schema": [
-                                                  "undefined",
-                                                  "TocLink[]"
-                                                ]
-                                              }
-                                            }
-                                          }
+                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "range": [
+                                            991,
+                                            1002
+                                          ]
                                         }
-                                      ]
+                                      ],
+                                      "schema": "string"
+                                    },
+                                    "text": {
+                                      "name": "text",
+                                      "global": false,
+                                      "description": "",
+                                      "tags": [],
+                                      "required": true,
+                                      "type": "string",
+                                      "declarations": [
+                                        {
+                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "range": [
+                                            1007,
+                                            1020
+                                          ]
+                                        }
+                                      ],
+                                      "schema": "string"
+                                    },
+                                    "depth": {
+                                      "name": "depth",
+                                      "global": false,
+                                      "description": "",
+                                      "tags": [],
+                                      "required": true,
+                                      "type": "number",
+                                      "declarations": [
+                                        {
+                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "range": [
+                                            1025,
+                                            1039
+                                          ]
+                                        }
+                                      ],
+                                      "schema": "number"
+                                    },
+                                    "children": {
+                                      "name": "children",
+                                      "global": false,
+                                      "description": "",
+                                      "tags": [],
+                                      "required": false,
+                                      "type": "TocLink[]",
+                                      "declarations": [
+                                        {
+                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "range": [
+                                            1044,
+                                            1065
+                                          ]
+                                        }
+                                      ],
+                                      "schema": "TocLink[]"
                                     }
                                   }
                                 }
-                              }
-                            ]
+                              ]
+                            }
                           }
                         }
                       }
                     }
-                  ]
+                  }
                 }
               },
               "body": {
@@ -19302,7 +16082,7 @@ export default {
                 "description": "Content body",
                 "tags": [],
                 "required": true,
-                "type": "MarkdownRoot | null",
+                "type": "MarkdownRoot",
                 "declarations": [
                   {
                     "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -19312,14 +16092,7 @@ export default {
                     ]
                   }
                 ],
-                "schema": {
-                  "kind": "enum",
-                  "type": "MarkdownRoot | null",
-                  "schema": [
-                    "null",
-                    "MarkdownRoot"
-                  ]
-                }
+                "schema": "MarkdownRoot"
               },
               "layout": {
                 "name": "layout",
@@ -19327,7 +16100,7 @@ export default {
                 "description": "Layout",
                 "tags": [],
                 "required": false,
-                "type": "LayoutKey | undefined",
+                "type": "LayoutKey",
                 "declarations": [
                   {
                     "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -19338,13 +16111,9 @@ export default {
                   }
                 ],
                 "schema": {
-                  "kind": "enum",
-                  "type": "LayoutKey | undefined",
-                  "schema": [
-                    "undefined",
-                    "\"default\"",
-                    "\"page\""
-                  ]
+                  "kind": "array",
+                  "type": "LayoutKey",
+                  "schema": []
                 }
               },
               "_id": {
@@ -19371,7 +16140,7 @@ export default {
                 "description": "Content source",
                 "tags": [],
                 "required": false,
-                "type": "string | undefined",
+                "type": "string",
                 "declarations": [
                   {
                     "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -19381,7 +16150,7 @@ export default {
                     ]
                   }
                 ],
-                "schema": "string | undefined"
+                "schema": "string"
               },
               "_path": {
                 "name": "_path",
@@ -19389,7 +16158,7 @@ export default {
                 "description": "Content path, this path is source agnostic and it the content my live in any source",
                 "tags": [],
                 "required": false,
-                "type": "string | undefined",
+                "type": "string",
                 "declarations": [
                   {
                     "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -19399,7 +16168,7 @@ export default {
                     ]
                   }
                 ],
-                "schema": "string | undefined"
+                "schema": "string"
               },
               "title": {
                 "name": "title",
@@ -19407,7 +16176,7 @@ export default {
                 "description": "Content title",
                 "tags": [],
                 "required": false,
-                "type": "string | undefined",
+                "type": "string",
                 "declarations": [
                   {
                     "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -19417,7 +16186,7 @@ export default {
                     ]
                   }
                 ],
-                "schema": "string | undefined"
+                "schema": "string"
               },
               "_draft": {
                 "name": "_draft",
@@ -19425,7 +16194,7 @@ export default {
                 "description": "Content draft status",
                 "tags": [],
                 "required": false,
-                "type": "boolean | undefined",
+                "type": "boolean",
                 "declarations": [
                   {
                     "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -19437,9 +16206,8 @@ export default {
                 ],
                 "schema": {
                   "kind": "enum",
-                  "type": "boolean | undefined",
+                  "type": "boolean",
                   "schema": [
-                    "undefined",
                     "false",
                     "true"
                   ]
@@ -19451,7 +16219,7 @@ export default {
                 "description": "Content partial status",
                 "tags": [],
                 "required": false,
-                "type": "boolean | undefined",
+                "type": "boolean",
                 "declarations": [
                   {
                     "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -19461,7 +16229,7 @@ export default {
                     ]
                   }
                 ],
-                "schema": "boolean | undefined"
+                "schema": "boolean"
               },
               "_locale": {
                 "name": "_locale",
@@ -19469,7 +16237,7 @@ export default {
                 "description": "Content locale",
                 "tags": [],
                 "required": false,
-                "type": "string | undefined",
+                "type": "string",
                 "declarations": [
                   {
                     "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -19479,7 +16247,7 @@ export default {
                     ]
                   }
                 ],
-                "schema": "string | undefined"
+                "schema": "string"
               },
               "_type": {
                 "name": "_type",
@@ -19487,7 +16255,7 @@ export default {
                 "description": "File type of the content, i.e `markdown`",
                 "tags": [],
                 "required": false,
-                "type": "\"markdown\" | \"yaml\" | \"json\" | \"csv\" | undefined",
+                "type": "\"markdown\" | \"yaml\" | \"json\" | \"csv\"",
                 "declarations": [
                   {
                     "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -19499,9 +16267,8 @@ export default {
                 ],
                 "schema": {
                   "kind": "enum",
-                  "type": "\"markdown\" | \"yaml\" | \"json\" | \"csv\" | undefined",
+                  "type": "\"markdown\" | \"yaml\" | \"json\" | \"csv\"",
                   "schema": [
-                    "undefined",
                     "\"markdown\"",
                     "\"yaml\"",
                     "\"json\"",
@@ -19515,7 +16282,7 @@ export default {
                 "description": "Path to the file relative to the content directory",
                 "tags": [],
                 "required": false,
-                "type": "string | undefined",
+                "type": "string",
                 "declarations": [
                   {
                     "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -19525,7 +16292,7 @@ export default {
                     ]
                   }
                 ],
-                "schema": "string | undefined"
+                "schema": "string"
               },
               "_extension": {
                 "name": "_extension",
@@ -19533,7 +16300,7 @@ export default {
                 "description": "Extension of the file",
                 "tags": [],
                 "required": false,
-                "type": "\"yaml\" | \"json\" | \"csv\" | \"md\" | \"yml\" | \"json5\" | undefined",
+                "type": "\"yaml\" | \"json\" | \"csv\" | \"md\" | \"yml\" | \"json5\"",
                 "declarations": [
                   {
                     "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
@@ -19545,9 +16312,8 @@ export default {
                 ],
                 "schema": {
                   "kind": "enum",
-                  "type": "\"yaml\" | \"json\" | \"csv\" | \"md\" | \"yml\" | \"json5\" | undefined",
+                  "type": "\"yaml\" | \"json\" | \"csv\" | \"md\" | \"yml\" | \"json5\"",
                   "schema": [
-                    "undefined",
                     "\"yaml\"",
                     "\"json\"",
                     "\"csv\"",
@@ -19606,7 +16372,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "string | undefined",
+          "type": "string",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
@@ -19616,14 +16382,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          },
+          "schema": "string",
           "default": "\"\""
         },
         {
@@ -19632,7 +16391,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "string | undefined",
+          "type": "string",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
@@ -19642,14 +16401,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          },
+          "schema": "string",
           "default": "null"
         },
         {
@@ -19658,7 +16410,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "string | undefined",
+          "type": "string",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
@@ -19668,14 +16420,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          },
+          "schema": "string",
           "default": "null"
         },
         {
@@ -19684,7 +16429,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "number[] | undefined",
+          "type": "number[]",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
@@ -19695,17 +16440,10 @@ export default {
             }
           ],
           "schema": {
-            "kind": "enum",
-            "type": "number[] | undefined",
+            "kind": "array",
+            "type": "number[]",
             "schema": [
-              "undefined",
-              {
-                "kind": "array",
-                "type": "number[]",
-                "schema": [
-                  "number"
-                ]
-              }
+              "number"
             ]
           },
           "default": "[]"
@@ -19716,7 +16454,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "string | undefined",
+          "type": "string",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
@@ -19726,14 +16464,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          },
+          "schema": "string",
           "default": "null"
         }
       ],
@@ -19775,19 +16506,12 @@ export default {
                 "description": "",
                 "tags": [],
                 "required": false,
-                "type": "((_: {}) => any) | undefined",
+                "type": "(_: {}) => any",
                 "declarations": [],
                 "schema": {
-                  "kind": "enum",
-                  "type": "((_: {}) => any) | undefined",
-                  "schema": [
-                    "undefined",
-                    {
-                      "kind": "event",
-                      "type": "(_: {}): any",
-                      "schema": []
-                    }
-                  ]
+                  "kind": "event",
+                  "type": "(_: {}): any",
+                  "schema": []
                 }
               }
             }
@@ -19936,7 +16660,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "string | undefined",
+          "type": "string",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseScript.vue",
@@ -19946,14 +16670,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          },
+          "schema": "string",
           "default": "\"\""
         }
       ],
@@ -20026,7 +16743,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "string | undefined",
+          "type": "string",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/Icon.vue",
@@ -20036,14 +16753,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          },
+          "schema": "string",
           "default": "\"\""
         }
       ],
@@ -20085,19 +16795,12 @@ export default {
                 "description": "",
                 "tags": [],
                 "required": false,
-                "type": "((_: {}) => any) | undefined",
+                "type": "(_: {}) => any",
                 "declarations": [],
                 "schema": {
-                  "kind": "enum",
-                  "type": "((_: {}) => any) | undefined",
-                  "schema": [
-                    "undefined",
-                    {
-                      "kind": "event",
-                      "type": "(_: {}): any",
-                      "schema": []
-                    }
-                  ]
+                  "kind": "event",
+                  "type": "(_: {}): any",
+                  "schema": []
                 }
               }
             }
@@ -20184,7 +16887,7 @@ export default {
           "description": "",
           "tags": [],
           "required": false,
-          "type": "string | undefined",
+          "type": "string",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
@@ -20194,14 +16897,7 @@ export default {
               ]
             }
           ],
-          "schema": {
-            "kind": "enum",
-            "type": "string | undefined",
-            "schema": [
-              "undefined",
-              "string"
-            ]
-          },
+          "schema": "string",
           "default": "\"\""
         }
       ],

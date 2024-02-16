@@ -4,135 +4,135 @@
     {
       "name": "vite:load-fallback",
       "result": "import { createError, showError } from \"#app/composables/error\";\nimport { useNuxtApp } from \"#app/nuxt\";\nimport { defineNuxtRouteMiddleware, useRouter } from \"#app/composables/router\";\nexport default defineNuxtRouteMiddleware(async (to) => {\n  if (!to.meta?.validate) {\n    return;\n  }\n  const nuxtApp = useNuxtApp();\n  const router = useRouter();\n  const result = await Promise.resolve(to.meta.validate(to));\n  if (result === true) {\n    return;\n  }\n  if (import.meta.server) {\n    return result;\n  }\n  const error = createError({\n    statusCode: 404,\n    statusMessage: `Page Not Found: ${to.fullPath}`,\n    data: {\n      path: to.fullPath\n    }\n  });\n  const unsub = router.beforeResolve((final) => {\n    unsub();\n    if (final === to) {\n      const unsub2 = router.afterEach(async () => {\n        unsub2();\n        await nuxtApp.runWithContext(() => showError(error));\n        window.history.pushState({}, \"\", to.fullPath);\n      });\n      return false;\n    }\n  });\n});\n",
-      "start": 1707990831577,
-      "end": 1707990831687,
+      "start": 1708087957889,
+      "end": 1708087958007,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1707990831687,
-      "end": 1707990831687,
+      "start": 1708087958007,
+      "end": 1708087958007,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1707990831687,
-      "end": 1707990831687,
+      "start": 1708087958007,
+      "end": 1708087958007,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1707990831688,
-      "end": 1707990831688,
+      "start": 1708087958007,
+      "end": 1708087958007,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1707990831688,
-      "end": 1707990831688,
+      "start": 1708087958007,
+      "end": 1708087958007,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
-      "start": 1707990831688,
-      "end": 1707990831688,
+      "start": 1708087958007,
+      "end": 1708087958007,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
-      "start": 1707990831688,
-      "end": 1707990831688,
+      "start": 1708087958007,
+      "end": 1708087958007,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1707990831688,
-      "end": 1707990831688,
+      "start": 1708087958007,
+      "end": 1708087958007,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1707990831688,
-      "end": 1707990831688,
+      "start": 1708087958007,
+      "end": 1708087958007,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1707990831688,
-      "end": 1707990831688,
+      "start": 1708087958007,
+      "end": 1708087958007,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1707990831688,
-      "end": 1707990831688,
+      "start": 1708087958007,
+      "end": 1708087958007,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1707990831688,
-      "end": 1707990831688,
+      "start": 1708087958007,
+      "end": 1708087958007,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1707990831688,
-      "end": 1707990831688,
+      "start": 1708087958007,
+      "end": 1708087958007,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1707990831688,
-      "end": 1707990831688,
+      "start": 1708087958007,
+      "end": 1708087958007,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1707990831688,
-      "end": 1707990831688,
+      "start": 1708087958007,
+      "end": 1708087958007,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1707990831688,
-      "end": 1707990831688,
+      "start": 1708087958008,
+      "end": 1708087958008,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1707990831688,
-      "end": 1707990831688,
+      "start": 1708087958008,
+      "end": 1708087958008,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1707990831688,
-      "end": 1707990831688,
+      "start": 1708087958008,
+      "end": 1708087958008,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1707990831688,
-      "end": 1707990831688,
+      "start": 1708087958008,
+      "end": 1708087958008,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1707990831688,
-      "end": 1707990831688,
+      "start": 1708087958008,
+      "end": 1708087958008,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1707990831688,
-      "end": 1707990831688,
+      "start": 1708087958008,
+      "end": 1708087958008,
       "order": "normal"
     },
     {
       "name": "replace",
       "result": "import { createError, showError } from \"#app/composables/error\";\nimport { useNuxtApp } from \"#app/nuxt\";\nimport { defineNuxtRouteMiddleware, useRouter } from \"#app/composables/router\";\nexport default defineNuxtRouteMiddleware(async (to) => {\n  if (!to.meta?.validate) {\n    return;\n  }\n  const nuxtApp = useNuxtApp();\n  const router = useRouter();\n  const result = await Promise.resolve(to.meta.validate(to));\n  if (result === true) {\n    return;\n  }\n  if (true) {\n    return result;\n  }\n  const error = createError({\n    statusCode: 404,\n    statusMessage: `Page Not Found: ${to.fullPath}`,\n    data: {\n      path: to.fullPath\n    }\n  });\n  const unsub = router.beforeResolve((final) => {\n    unsub();\n    if (final === to) {\n      const unsub2 = router.afterEach(async () => {\n        unsub2();\n        await nuxtApp.runWithContext(() => showError(error));\n        window.history.pushState({}, \"\", to.fullPath);\n      });\n      return false;\n    }\n  });\n});\n",
-      "start": 1707990831688,
-      "end": 1707990831688,
+      "start": 1708087958008,
+      "end": 1708087958008,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -145,89 +145,89 @@
     },
     {
       "name": "ssr-styles",
-      "start": 1707990831688,
-      "end": 1707990831688,
+      "start": 1708087958008,
+      "end": 1708087958008,
       "order": "normal"
     },
     {
       "name": "vite:define",
       "result": "import { createError, showError } from \"#app/composables/error\";\nimport { useNuxtApp } from \"#app/nuxt\";\nimport { defineNuxtRouteMiddleware, useRouter } from \"#app/composables/router\";\nexport default defineNuxtRouteMiddleware(async (to) => {\n  if (!to.meta?.validate) {\n    return;\n  }\n  const nuxtApp = useNuxtApp();\n  const router = useRouter();\n  const result = await Promise.resolve(to.meta.validate(to));\n  if (result === true) {\n    return;\n  }\n  if (true) {\n    return result;\n  }\n  const error = createError({\n    statusCode: 404,\n    statusMessage: `Page Not Found: ${to.fullPath}`,\n    data: {\n      path: to.fullPath\n    }\n  });\n  const unsub = router.beforeResolve((final) => {\n    unsub();\n    if (final === to) {\n      const unsub2 = router.afterEach(async () => {\n        unsub2();\n        await nuxtApp.runWithContext(() => showError(error));\n        (void 0).history.pushState({}, \"\", to.fullPath);\n      });\n      return false;\n    }\n  });\n});\n",
-      "start": 1707990831688,
-      "end": 1707990832195,
+      "start": 1708087958008,
+      "end": 1708087958017,
       "order": "normal",
       "sourcemaps": "{\n  \"version\": 3,\n  \"sources\": [\"/workspace/Kubernetes-Bootcamp/node_modules/nuxt/dist/pages/runtime/validate.js\"],\n  \"sourcesContent\": [\"import { createError, showError } from \\\"#app/composables/error\\\";\\nimport { useNuxtApp } from \\\"#app/nuxt\\\";\\nimport { defineNuxtRouteMiddleware, useRouter } from \\\"#app/composables/router\\\";\\nexport default defineNuxtRouteMiddleware(async (to) => {\\n  if (!to.meta?.validate) {\\n    return;\\n  }\\n  const nuxtApp = useNuxtApp();\\n  const router = useRouter();\\n  const result = await Promise.resolve(to.meta.validate(to));\\n  if (result === true) {\\n    return;\\n  }\\n  if (true) {\\n    return result;\\n  }\\n  const error = createError({\\n    statusCode: 404,\\n    statusMessage: `Page Not Found: ${to.fullPath}`,\\n    data: {\\n      path: to.fullPath\\n    }\\n  });\\n  const unsub = router.beforeResolve((final) => {\\n    unsub();\\n    if (final === to) {\\n      const unsub2 = router.afterEach(async () => {\\n        unsub2();\\n        await nuxtApp.runWithContext(() => showError(error));\\n        window.history.pushState({}, \\\"\\\", to.fullPath);\\n      });\\n      return false;\\n    }\\n  });\\n});\\n\"],\n  \"mappings\": \"AAAA,SAAS,aAAa,iBAAiB;AACvC,SAAS,kBAAkB;AAC3B,SAAS,2BAA2B,iBAAiB;AACrD,eAAe,0BAA0B,OAAO,OAAO;AACrD,MAAI,CAAC,GAAG,MAAM,UAAU;AACtB;AAAA,EACF;AACA,QAAM,UAAU,WAAW;AAC3B,QAAM,SAAS,UAAU;AACzB,QAAM,SAAS,MAAM,QAAQ,QAAQ,GAAG,KAAK,SAAS,EAAE,CAAC;AACzD,MAAI,WAAW,MAAM;AACnB;AAAA,EACF;AACA,MAAI,MAAM;AACR,WAAO;AAAA,EACT;AACA,QAAM,QAAQ,YAAY;AAAA,IACxB,YAAY;AAAA,IACZ,eAAe,mBAAmB,GAAG,QAAQ;AAAA,IAC7C,MAAM;AAAA,MACJ,MAAM,GAAG;AAAA,IACX;AAAA,EACF,CAAC;AACD,QAAM,QAAQ,OAAO,cAAc,CAAC,UAAU;AAC5C,UAAM;AACN,QAAI,UAAU,IAAI;AAChB,YAAM,SAAS,OAAO,UAAU,YAAY;AAC1C,eAAO;AACP,cAAM,QAAQ,eAAe,MAAM,UAAU,KAAK,CAAC;AACnD,iBAAO,QAAQ,UAAU,CAAC,GAAG,IAAI,GAAG,QAAQ;AAAA,MAC9C,CAAC;AACD,aAAO;AAAA,IACT;AAAA,EACF,CAAC;AACH,CAAC;\",\n  \"names\": []\n}\n"
     },
     {
       "name": "vite:css-post",
-      "start": 1707990832195,
-      "end": 1707990832196,
+      "start": 1708087958017,
+      "end": 1708087958017,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1707990832196,
-      "end": 1707990832196,
+      "start": 1708087958017,
+      "end": 1708087958017,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1707990832196,
-      "end": 1707990832196,
+      "start": 1708087958017,
+      "end": 1708087958017,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1707990832196,
-      "end": 1707990832196,
+      "start": 1708087958017,
+      "end": 1708087958017,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1707990832197,
-      "end": 1707990832197,
+      "start": 1708087958018,
+      "end": 1708087958018,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1707990832197,
-      "end": 1707990832197,
+      "start": 1708087958018,
+      "end": 1708087958019,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1707990832197,
-      "end": 1707990832197,
+      "start": 1708087958019,
+      "end": 1708087958019,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1707990832198,
-      "end": 1707990832198,
+      "start": 1708087958019,
+      "end": 1708087958019,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1707990832198,
-      "end": 1707990832198,
+      "start": 1708087958019,
+      "end": 1708087958019,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1707990832199,
-      "end": 1707990832199,
+      "start": 1708087958019,
+      "end": 1708087958019,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1707990832199,
-      "end": 1707990832199,
+      "start": 1708087958019,
+      "end": 1708087958019,
       "order": "post"
     },
     {
       "name": "unctx:transform",
       "result": "/* _processed_nuxt_unctx_transform */\nimport { executeAsync as __executeAsync } from \"/workspace/Kubernetes-Bootcamp/node_modules/unctx/dist/index.mjs\";import { createError, showError } from \"#app/composables/error\";\nimport { useNuxtApp } from \"#app/nuxt\";\nimport { defineNuxtRouteMiddleware, useRouter } from \"#app/composables/router\";\nexport default defineNuxtRouteMiddleware(async (to) => {let __temp, __restore;\n  if (!to.meta?.validate) {\n    return;\n  }\n  const nuxtApp = useNuxtApp();\n  const router = useRouter();\n  const result = (([__temp,__restore]=__executeAsync(()=>Promise.resolve(to.meta.validate(to)))),__temp=await __temp,__restore(),__temp);\n  if (result === true) {\n    return;\n  }\n  if (true) {\n    return result;\n  }\n  const error = createError({\n    statusCode: 404,\n    statusMessage: `Page Not Found: ${to.fullPath}`,\n    data: {\n      path: to.fullPath\n    }\n  });\n  const unsub = router.beforeResolve((final) => {\n    unsub();\n    if (final === to) {\n      const unsub2 = router.afterEach(async () => {\n        unsub2();\n        await nuxtApp.runWithContext(() => showError(error));\n        (void 0).history.pushState({}, \"\", to.fullPath);\n      });\n      return false;\n    }\n  });\n},1);\n",
-      "start": 1707990832199,
-      "end": 1707990832200,
+      "start": 1708087958020,
+      "end": 1708087958020,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -241,8 +241,8 @@
     {
       "name": "unctx:transform",
       "result": "/* _processed_nuxt_unctx_transform */\nimport { executeAsync as __executeAsync } from \"/workspace/Kubernetes-Bootcamp/node_modules/unctx/dist/index.mjs\";import { createError, showError } from \"#app/composables/error\";\nimport { useNuxtApp } from \"#app/nuxt\";\nimport { defineNuxtRouteMiddleware, useRouter } from \"#app/composables/router\";\nexport default defineNuxtRouteMiddleware(async (to) => {let __temp, __restore;\n  if (!to.meta?.validate) {\n    return;\n  }\n  const nuxtApp = useNuxtApp();\n  const router = useRouter();\n  const result = (([__temp,__restore]=__executeAsync(()=>Promise.resolve(to.meta.validate(to)))),__temp=await __temp,__restore(),__temp);\n  if (result === true) {\n    return;\n  }\n  if (true) {\n    return result;\n  }\n  const error = createError({\n    statusCode: 404,\n    statusMessage: `Page Not Found: ${to.fullPath}`,\n    data: {\n      path: to.fullPath\n    }\n  });\n  const unsub = router.beforeResolve((final) => {\n    unsub();\n    if (final === to) {\n      const unsub2 = router.afterEach(async () => {\n        unsub2();\n        await nuxtApp.runWithContext(() => showError(error));\n        (void 0).history.pushState({}, \"\", to.fullPath);\n      });\n      return false;\n    }\n  });\n},1);\n",
-      "start": 1707990832199,
-      "end": 1707990832200,
+      "start": 1708087958020,
+      "end": 1708087958020,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -255,44 +255,44 @@
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1707990832200,
-      "end": 1707990832200,
+      "start": 1708087958020,
+      "end": 1708087958020,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1707990832200,
-      "end": 1707990832200,
+      "start": 1708087958020,
+      "end": 1708087958020,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1707990832200,
-      "end": 1707990832200,
+      "start": 1708087958020,
+      "end": 1708087958020,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1707990832200,
-      "end": 1707990832200,
+      "start": 1708087958020,
+      "end": 1708087958020,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1707990832200,
-      "end": 1707990832201,
+      "start": 1708087958020,
+      "end": 1708087958020,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1707990832201,
-      "end": 1707990832201,
+      "start": 1708087958021,
+      "end": 1708087958021,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1707990832201,
-      "end": 1707990832201,
+      "start": 1708087958021,
+      "end": 1708087958021,
       "order": "normal"
     }
   ]

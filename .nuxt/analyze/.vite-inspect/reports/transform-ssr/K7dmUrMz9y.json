@@ -4,8 +4,8 @@
     {
       "name": "pinceau-transforms",
       "result": ".docs-toc-links .depth-3{padding-left:var(--space-3);}.docs-toc-links .depth-4{padding-left:var(--space-6);}.docs-toc-links a{display:block;padding:var(--space-1) 0;font-size:var(--text-sm-fontSize);line-height:var(--text-sm-lineHeight);color:var(--color-gray-500);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}@media (min-width: 1024px){.docs-toc-links a{padding-right:var(--space-3);}}.docs-toc-links a:not(.active):hover{color:var(--color-gray-900);}:root.dark .docs-toc-links a:not(.active):hover{color:var(--color-gray-400);}.docs-toc-links a.active{color:var(--color-primary-500);}",
-      "start": 1707990832124,
-      "end": 1707990832126,
+      "start": 1708087958410,
+      "end": 1708087958412,
       "sourcemaps": {
         "version": 3,
         "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsTocLinks.vue",
@@ -21,65 +21,65 @@
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1707990832129,
-      "end": 1707990832129,
+      "start": 1708087958420,
+      "end": 1708087958420,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1707990832129,
-      "end": 1707990832129,
+      "start": 1708087958420,
+      "end": 1708087958421,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1707990832130,
-      "end": 1707990832130,
+      "start": 1708087958421,
+      "end": 1708087958421,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1707990832130,
-      "end": 1707990832130,
+      "start": 1708087958421,
+      "end": 1708087958421,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": ".docs-toc-links .depth-3{padding-left:var(--space-3);}.docs-toc-links .depth-4{padding-left:var(--space-6);}.docs-toc-links a{display:block;padding:var(--space-1) 0;font-size:var(--text-sm-fontSize);line-height:var(--text-sm-lineHeight);color:var(--color-gray-500);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}@media (min-width: 1024px){.docs-toc-links a{padding-right:var(--space-3);}}.docs-toc-links a:not(.active):hover{color:var(--color-gray-900);}:root.dark .docs-toc-links a:not(.active):hover{color:var(--color-gray-400);}.docs-toc-links a.active{color:var(--color-primary-500);}",
-      "start": 1707990832130,
-      "end": 1707990832130,
+      "start": 1708087958421,
+      "end": 1708087958421,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": ".docs-toc-links .depth-3{padding-left:var(--space-3);}.docs-toc-links .depth-4{padding-left:var(--space-6);}.docs-toc-links a{display:block;padding:var(--space-1) 0;font-size:var(--text-sm-fontSize);line-height:var(--text-sm-lineHeight);color:var(--color-gray-500);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}@media (min-width: 1024px){.docs-toc-links a{padding-right:var(--space-3);}}.docs-toc-links a:not(.active):hover{color:var(--color-gray-900);}:root.dark .docs-toc-links a:not(.active):hover{color:var(--color-gray-400);}.docs-toc-links a.active{color:var(--color-primary-500);}",
-      "start": 1707990832130,
-      "end": 1707990832130,
+      "start": 1708087958421,
+      "end": 1708087958421,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1707990832130,
-      "end": 1707990832130,
+      "start": 1708087958422,
+      "end": 1708087958422,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1707990832130,
-      "end": 1707990832130,
+      "start": 1708087958422,
+      "end": 1708087958422,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1707990832130,
-      "end": 1707990832131,
+      "start": 1708087958422,
+      "end": 1708087958422,
       "order": "pre"
     },
     {
       "name": "vite:css",
       "result": ".docs-toc-links .depth-3{padding-left:var(--space-3)}.docs-toc-links .depth-4{padding-left:var(--space-6)}.docs-toc-links a{color:var(--color-gray-500);display:block;font-size:var(--text-sm-fontSize);line-height:var(--text-sm-lineHeight);overflow:hidden;padding:var(--space-1) 0;text-overflow:ellipsis;white-space:nowrap}@media (min-width:1024px){.docs-toc-links a{padding-right:var(--space-3)}}.docs-toc-links a:not(.active):hover{color:var(--color-gray-900)}:root.dark .docs-toc-links a:not(.active):hover{color:var(--color-gray-400)}.docs-toc-links a.active{color:var(--color-primary-500)}",
-      "start": 1707990832133,
-      "end": 1707990832138,
+      "start": 1708087958426,
+      "end": 1708087958433,
       "order": "normal",
       "sourcemaps": {
         "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsTocLinks.vue",
@@ -96,27 +96,27 @@
     },
     {
       "name": "vite:esbuild",
-      "start": 1707990832138,
-      "end": 1707990832138,
+      "start": 1708087958433,
+      "end": 1708087958433,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1707990832138,
-      "end": 1707990832138,
+      "start": 1708087958434,
+      "end": 1708087958434,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1707990832139,
-      "end": 1707990832139,
+      "start": 1708087958434,
+      "end": 1708087958434,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": ".docs-toc-links .depth-3[data-v-a97df893]{padding-left:var(--space-3)}.docs-toc-links .depth-4[data-v-a97df893]{padding-left:var(--space-6)}.docs-toc-links a[data-v-a97df893]{color:var(--color-gray-500);display:block;font-size:var(--text-sm-fontSize);line-height:var(--text-sm-lineHeight);overflow:hidden;padding:var(--space-1) 0;text-overflow:ellipsis;white-space:nowrap}@media (min-width:1024px){.docs-toc-links a[data-v-a97df893]{padding-right:var(--space-3)}}.docs-toc-links a[data-v-a97df893]:not(.active):hover{color:var(--color-gray-900)}:root.dark .docs-toc-links a[data-v-a97df893]:not(.active):hover{color:var(--color-gray-400)}.docs-toc-links a.active[data-v-a97df893]{color:var(--color-primary-500)}",
-      "start": 1707990832139,
-      "end": 1707990832140,
+      "start": 1708087958434,
+      "end": 1708087958435,
       "order": "normal",
       "sourcemaps": {
         "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsTocLinks.vue",
@@ -133,63 +133,63 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1707990832140,
-      "end": 1707990832140,
+      "start": 1708087958437,
+      "end": 1708087958437,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1707990832140,
-      "end": 1707990832140,
+      "start": 1708087958438,
+      "end": 1708087958439,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1707990832140,
-      "end": 1707990832140,
+      "start": 1708087958438,
+      "end": 1708087958439,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1707990832141,
-      "end": 1707990832141,
+      "start": 1708087958440,
+      "end": 1708087958440,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1707990832141,
-      "end": 1707990832141,
+      "start": 1708087958440,
+      "end": 1708087958441,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1707990832141,
-      "end": 1707990832141,
+      "start": 1708087958442,
+      "end": 1708087958442,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1707990832141,
-      "end": 1707990832141,
+      "start": 1708087958443,
+      "end": 1708087958443,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1707990832141,
-      "end": 1707990832141,
+      "start": 1708087958443,
+      "end": 1708087958444,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1707990832141,
-      "end": 1707990832141,
+      "start": 1708087958445,
+      "end": 1708087958445,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
       "result": "",
-      "start": 1707990832149,
-      "end": 1707990832149,
+      "start": 1708087958445,
+      "end": 1708087958445,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -197,116 +197,116 @@
     },
     {
       "name": "vite:build-html",
-      "start": 1707990832149,
-      "end": 1707990832149,
+      "start": 1708087958448,
+      "end": 1708087958448,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1707990832149,
-      "end": 1707990832149,
+      "start": 1708087958449,
+      "end": 1708087958449,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1707990832149,
-      "end": 1707990832149,
+      "start": 1708087958449,
+      "end": 1708087958449,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1707990832149,
-      "end": 1707990832149,
+      "start": 1708087958450,
+      "end": 1708087958450,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1707990832149,
-      "end": 1707990832149,
+      "start": 1708087958451,
+      "end": 1708087958451,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1707990832150,
-      "end": 1707990832150,
+      "start": 1708087958453,
+      "end": 1708087958453,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1707990832152,
-      "end": 1707990832153,
+      "start": 1708087958453,
+      "end": 1708087958453,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1707990832152,
-      "end": 1707990832153,
+      "start": 1708087958453,
+      "end": 1708087958453,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1707990832153,
-      "end": 1707990832158,
+      "start": 1708087958469,
+      "end": 1708087958471,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1707990832153,
-      "end": 1707990832158,
+      "start": 1708087958469,
+      "end": 1708087958471,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1707990832161,
-      "end": 1707990832161,
+      "start": 1708087958473,
+      "end": 1708087958473,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1707990832161,
-      "end": 1707990832161,
+      "start": 1708087958473,
+      "end": 1708087958473,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1707990832163,
-      "end": 1707990832163,
+      "start": 1708087958473,
+      "end": 1708087958473,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1707990832163,
-      "end": 1707990832163,
+      "start": 1708087958473,
+      "end": 1708087958473,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1707990832163,
-      "end": 1707990832163,
+      "start": 1708087958474,
+      "end": 1708087958474,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1707990832164,
-      "end": 1707990832164,
+      "start": 1708087958474,
+      "end": 1708087958475,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1707990832165,
-      "end": 1707990832165,
+      "start": 1708087958475,
+      "end": 1708087958475,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1707990832169,
-      "end": 1707990832169,
+      "start": 1708087958476,
+      "end": 1708087958476,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1707990832171,
-      "end": 1707990832171,
+      "start": 1708087958476,
+      "end": 1708087958476,
       "order": "normal"
     }
   ]

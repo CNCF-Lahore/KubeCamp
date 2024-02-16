@@ -4,100 +4,100 @@
     {
       "name": "vite:load-fallback",
       "result": "import { withoutTrailingSlash, hasProtocol } from \"ufo\";\nimport { pascalCase } from \"scule\";\nimport { callWithNuxt } from \"#app/nuxt\";\nimport { useContentState } from \"../../composables/content.js\";\nimport { useContentHelpers } from \"../../composables/helpers.js\";\nimport { fetchContentNavigation } from \"../composables/navigation.js\";\nimport { queryContent } from \"../composables/query.js\";\nimport { useRuntimeConfig, addRouteMiddleware, navigateTo, useRoute, defineNuxtPlugin, prefetchComponents, useRouter } from \"#imports\";\nimport { componentNames } from \"#components\";\nimport layouts from \"#build/layouts\";\nexport default defineNuxtPlugin((nuxt) => {\n  const moduleOptions = useRuntimeConfig()?.public?.content.documentDriven;\n  const isClientDBEnabled = useRuntimeConfig()?.public?.content.experimental.clientDB;\n  const { navigation, pages, globals, surrounds } = useContentState();\n  const findLayout = (to, page, navigation2, globals2) => {\n    if (page && page?.layout) {\n      return page.layout;\n    }\n    if (to.matched.length && to.matched[0].meta?.layout) {\n      return to.matched[0].meta.layout;\n    }\n    if (navigation2 && page) {\n      const { navKeyFromPath } = useContentHelpers();\n      const layoutFromNav = navKeyFromPath(page._path, \"layout\", navigation2);\n      if (layoutFromNav) {\n        return layoutFromNav;\n      }\n    }\n    if (moduleOptions.layoutFallbacks && globals2) {\n      let layoutFallback;\n      for (const fallback of moduleOptions.layoutFallbacks) {\n        if (globals2[fallback] && globals2[fallback].layout) {\n          layoutFallback = globals2[fallback].layout;\n          break;\n        }\n      }\n      if (layoutFallback) {\n        return layoutFallback;\n      }\n    }\n    return \"default\";\n  };\n  const refresh = async (to, dedup = false) => {\n    nuxt.callHook(\"content:document-driven:start\", { route: to, dedup });\n    const routeConfig = to.meta.documentDriven || {};\n    if (to.meta.documentDriven === false) {\n      return;\n    }\n    const _path = withoutTrailingSlash(to.path);\n    const promises = [];\n    if (moduleOptions.navigation && routeConfig.navigation !== false) {\n      const navigationQuery = () => {\n        const { navigation: navigation2 } = useContentState();\n        if (navigation2.value && !dedup) {\n          return navigation2.value;\n        }\n        return fetchContentNavigation().then((_navigation) => {\n          navigation2.value = _navigation;\n          return _navigation;\n        }).catch(() => null);\n      };\n      promises.push(navigationQuery);\n    } else {\n      promises.push(() => Promise.resolve(null));\n    }\n    if (moduleOptions.globals) {\n      const globalsQuery = () => {\n        const { globals: globals2 } = useContentState();\n        if (typeof moduleOptions.globals === \"object\" && Array.isArray(moduleOptions.globals)) {\n          console.log(\"Globals must be a list of keys with QueryBuilderParams as a value.\");\n          return;\n        }\n        return Promise.all(\n          Object.entries(moduleOptions.globals).map(\n            ([key, query]) => {\n              if (!dedup && globals2.value[key]) {\n                return globals2.value[key];\n              }\n              let type = \"findOne\";\n              if (query?.type) {\n                type = query.type;\n              }\n              return queryContent(query)[type]().catch(() => null);\n            }\n          )\n        ).then(\n          (values) => {\n            return values.reduce(\n              (acc, value, index) => {\n                const key = Object.keys(moduleOptions.globals)[index];\n                acc[key] = value;\n                return acc;\n              },\n              {}\n            );\n          }\n        );\n      };\n      promises.push(globalsQuery);\n    } else {\n      promises.push(() => Promise.resolve(null));\n    }\n    if (moduleOptions.page && routeConfig.page !== false) {\n      let where = { _path };\n      if (typeof routeConfig.page === \"string\") {\n        where = { _path: routeConfig.page };\n      }\n      if (typeof routeConfig.page === \"object\") {\n        where = routeConfig.page;\n      }\n      const pageQuery = () => {\n        const { pages: pages2 } = useContentState();\n        if (!dedup && pages2.value[_path] && pages2.value[_path]._path === _path) {\n          return pages2.value[_path];\n        }\n        return queryContent().where(where).findOne().catch(() => null);\n      };\n      promises.push(pageQuery);\n    } else {\n      promises.push(() => Promise.resolve(null));\n    }\n    if (moduleOptions.surround && routeConfig.surround !== false) {\n      let surround = _path;\n      if ([\"string\", \"object\"].includes(typeof routeConfig.page)) {\n        surround = routeConfig.page;\n      }\n      if ([\"string\", \"object\"].includes(typeof routeConfig.surround)) {\n        surround = routeConfig.surround;\n      }\n      const surroundQuery = () => {\n        const { surrounds: surrounds2 } = useContentState();\n        if (!dedup && surrounds2.value[_path]) {\n          return surrounds2.value[_path];\n        }\n        return queryContent().where({\n          _partial: { $not: true },\n          navigation: { $not: false }\n        }).without([\"body\"]).findSurround(surround).catch(() => null);\n      };\n      promises.push(surroundQuery);\n    } else {\n      promises.push(() => Promise.resolve(null));\n    }\n    return await Promise.all(promises.map((promise) => promise())).then(async ([\n      _navigation,\n      _globals,\n      _page,\n      _surround\n    ]) => {\n      if (_navigation) {\n        navigation.value = _navigation;\n      }\n      if (_globals) {\n        globals.value = _globals;\n      }\n      if (_surround) {\n        surrounds.value[_path] = _surround;\n      }\n      const redirectTo = _page?.redirect || _page?._dir?.navigation?.redirect;\n      if (redirectTo) {\n        pages.value[_path] = _page;\n        return redirectTo;\n      }\n      if (_page) {\n        const layoutName = findLayout(to, _page, _navigation, _globals);\n        const layout = layouts[layoutName];\n        if (layout && typeof layout === \"function\") {\n          await layout();\n        }\n        to.meta.layout = layoutName;\n        _page.layout = layoutName;\n      }\n      pages.value[_path] = _page;\n      await nuxt.callHook(\"content:document-driven:finish\", { route: to, dedup, page: _page, navigation: _navigation, globals: _globals, surround: _surround });\n    });\n  };\n  if (process.client) {\n    const router = useRouter();\n    nuxt.hook(\"link:prefetch\", (link) => {\n      if (!(link in pages.value) && !hasProtocol(link)) {\n        const route = router.resolve(link);\n        if (route.matched.length > 0) {\n          refresh(route);\n        }\n      }\n    });\n    nuxt.hooks.hook(\"content:document-driven:finish\", ({ page }) => {\n      if (page?.body?.children) {\n        prefetchBodyComponents(page.body.children);\n      }\n    });\n  }\n  addRouteMiddleware(async (to, from) => {\n    if (process.client && !isClientDBEnabled && to.path === from.path) {\n      if (!to.meta.layout) {\n        const _path = withoutTrailingSlash(to.path);\n        if (pages.value[_path]) {\n          to.meta.layout = pages.value[_path].layout;\n        }\n      }\n      return;\n    }\n    const redirect = await refresh(to, false);\n    if (redirect) {\n      if (hasProtocol(redirect)) {\n        return callWithNuxt(nuxt, navigateTo, [redirect, { external: true }]);\n      } else {\n        return redirect;\n      }\n    }\n  });\n  nuxt.hook(\"app:data:refresh\", async () => process.client && await refresh(useRoute(), true));\n});\nfunction prefetchBodyComponents(nodes) {\n  for (const node of nodes) {\n    if (node.children) {\n      prefetchBodyComponents(node.children);\n    }\n    if (node.type === \"element\" && node.tag) {\n      const el = pascalCase(node.tag);\n      for (const name of [\"Prose\" + el, el]) {\n        if (componentNames.includes(name)) {\n          prefetchComponents(name);\n        }\n      }\n    }\n  }\n}\n",
-      "start": 1707990823553,
-      "end": 1707990823658,
+      "start": 1708087950098,
+      "end": 1708087950245,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1707990823658,
-      "end": 1707990823658,
+      "start": 1708087950245,
+      "end": 1708087950245,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1707990823658,
-      "end": 1707990823658,
+      "start": 1708087950245,
+      "end": 1708087950245,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { withoutTrailingSlash, hasProtocol } from \"ufo\";\nimport { pascalCase } from \"scule\";\nimport { callWithNuxt } from \"#app/nuxt\";\nimport { useContentState } from \"../../composables/content.js\";\nimport { useContentHelpers } from \"../../composables/helpers.js\";\nimport { fetchContentNavigation } from \"../composables/navigation.js\";\nimport { queryContent } from \"../composables/query.js\";\nimport { useRuntimeConfig, addRouteMiddleware, navigateTo, useRoute, defineNuxtPlugin, prefetchComponents, useRouter } from \"#imports\";\nimport { componentNames } from \"#components\";\nimport layouts from \"#build/layouts\";\nexport default defineNuxtPlugin((nuxt) => {\n  const moduleOptions = useRuntimeConfig()?.public?.content.documentDriven;\n  const isClientDBEnabled = useRuntimeConfig()?.public?.content.experimental.clientDB;\n  const { navigation, pages, globals, surrounds } = useContentState();\n  const findLayout = (to, page, navigation2, globals2) => {\n    if (page && page?.layout) {\n      return page.layout;\n    }\n    if (to.matched.length && to.matched[0].meta?.layout) {\n      return to.matched[0].meta.layout;\n    }\n    if (navigation2 && page) {\n      const { navKeyFromPath } = useContentHelpers();\n      const layoutFromNav = navKeyFromPath(page._path, \"layout\", navigation2);\n      if (layoutFromNav) {\n        return layoutFromNav;\n      }\n    }\n    if (moduleOptions.layoutFallbacks && globals2) {\n      let layoutFallback;\n      for (const fallback of moduleOptions.layoutFallbacks) {\n        if (globals2[fallback] && globals2[fallback].layout) {\n          layoutFallback = globals2[fallback].layout;\n          break;\n        }\n      }\n      if (layoutFallback) {\n        return layoutFallback;\n      }\n    }\n    return \"default\";\n  };\n  const refresh = async (to, dedup = false) => {\n    nuxt.callHook(\"content:document-driven:start\", { route: to, dedup });\n    const routeConfig = to.meta.documentDriven || {};\n    if (to.meta.documentDriven === false) {\n      return;\n    }\n    const _path = withoutTrailingSlash(to.path);\n    const promises = [];\n    if (moduleOptions.navigation && routeConfig.navigation !== false) {\n      const navigationQuery = () => {\n        const { navigation: navigation2 } = useContentState();\n        if (navigation2.value && !dedup) {\n          return navigation2.value;\n        }\n        return fetchContentNavigation().then((_navigation) => {\n          navigation2.value = _navigation;\n          return _navigation;\n        }).catch(() => null);\n      };\n      promises.push(navigationQuery);\n    } else {\n      promises.push(() => Promise.resolve(null));\n    }\n    if (moduleOptions.globals) {\n      const globalsQuery = () => {\n        const { globals: globals2 } = useContentState();\n        if (typeof moduleOptions.globals === \"object\" && Array.isArray(moduleOptions.globals)) {\n          console.log(\"Globals must be a list of keys with QueryBuilderParams as a value.\");\n          return;\n        }\n        return Promise.all(\n          Object.entries(moduleOptions.globals).map(\n            ([key, query]) => {\n              if (!dedup && globals2.value[key]) {\n                return globals2.value[key];\n              }\n              let type = \"findOne\";\n              if (query?.type) {\n                type = query.type;\n              }\n              return queryContent(query)[type]().catch(() => null);\n            }\n          )\n        ).then(\n          (values) => {\n            return values.reduce(\n              (acc, value, index) => {\n                const key = Object.keys(moduleOptions.globals)[index];\n                acc[key] = value;\n                return acc;\n              },\n              {}\n            );\n          }\n        );\n      };\n      promises.push(globalsQuery);\n    } else {\n      promises.push(() => Promise.resolve(null));\n    }\n    if (moduleOptions.page && routeConfig.page !== false) {\n      let where = { _path };\n      if (typeof routeConfig.page === \"string\") {\n        where = { _path: routeConfig.page };\n      }\n      if (typeof routeConfig.page === \"object\") {\n        where = routeConfig.page;\n      }\n      const pageQuery = () => {\n        const { pages: pages2 } = useContentState();\n        if (!dedup && pages2.value[_path] && pages2.value[_path]._path === _path) {\n          return pages2.value[_path];\n        }\n        return queryContent().where(where).findOne().catch(() => null);\n      };\n      promises.push(pageQuery);\n    } else {\n      promises.push(() => Promise.resolve(null));\n    }\n    if (moduleOptions.surround && routeConfig.surround !== false) {\n      let surround = _path;\n      if ([\"string\", \"object\"].includes(typeof routeConfig.page)) {\n        surround = routeConfig.page;\n      }\n      if ([\"string\", \"object\"].includes(typeof routeConfig.surround)) {\n        surround = routeConfig.surround;\n      }\n      const surroundQuery = () => {\n        const { surrounds: surrounds2 } = useContentState();\n        if (!dedup && surrounds2.value[_path]) {\n          return surrounds2.value[_path];\n        }\n        return queryContent().where({\n          _partial: { $not: true },\n          navigation: { $not: false }\n        }).without([\"body\"]).findSurround(surround).catch(() => null);\n      };\n      promises.push(surroundQuery);\n    } else {\n      promises.push(() => Promise.resolve(null));\n    }\n    return await Promise.all(promises.map((promise) => promise())).then(async ([\n      _navigation,\n      _globals,\n      _page,\n      _surround\n    ]) => {\n      if (_navigation) {\n        navigation.value = _navigation;\n      }\n      if (_globals) {\n        globals.value = _globals;\n      }\n      if (_surround) {\n        surrounds.value[_path] = _surround;\n      }\n      const redirectTo = _page?.redirect || _page?._dir?.navigation?.redirect;\n      if (redirectTo) {\n        pages.value[_path] = _page;\n        return redirectTo;\n      }\n      if (_page) {\n        const layoutName = findLayout(to, _page, _navigation, _globals);\n        const layout = layouts[layoutName];\n        if (layout && typeof layout === \"function\") {\n          await layout();\n        }\n        to.meta.layout = layoutName;\n        _page.layout = layoutName;\n      }\n      pages.value[_path] = _page;\n      await nuxt.callHook(\"content:document-driven:finish\", { route: to, dedup, page: _page, navigation: _navigation, globals: _globals, surround: _surround });\n    });\n  };\n  if (process.client) {\n    const router = useRouter();\n    nuxt.hook(\"link:prefetch\", (link) => {\n      if (!(link in pages.value) && !hasProtocol(link)) {\n        const route = router.resolve(link);\n        if (route.matched.length > 0) {\n          refresh(route);\n        }\n      }\n    });\n    nuxt.hooks.hook(\"content:document-driven:finish\", ({ page }) => {\n      if (page?.body?.children) {\n        prefetchBodyComponents(page.body.children);\n      }\n    });\n  }\n  addRouteMiddleware(async (to, from) => {\n    if (process.client && !isClientDBEnabled && to.path === from.path) {\n      if (!to.meta.layout) {\n        const _path = withoutTrailingSlash(to.path);\n        if (pages.value[_path]) {\n          to.meta.layout = pages.value[_path].layout;\n        }\n      }\n      return;\n    }\n    const redirect = await refresh(to, false);\n    if (redirect) {\n      if (hasProtocol(redirect)) {\n        return callWithNuxt(nuxt, navigateTo, [redirect, { external: true }]);\n      } else {\n        return redirect;\n      }\n    }\n  });\n  nuxt.hook(\"app:data:refresh\", async () => process.client && await refresh(useRoute(), true));\n});\nfunction prefetchBodyComponents(nodes) {\n  for (const node of nodes) {\n    if (node.children) {\n      prefetchBodyComponents(node.children);\n    }\n    if (node.type === \"element\" && node.tag) {\n      const el = pascalCase(node.tag);\n      for (const name of [\"Prose\" + el, el]) {\n        if (componentNames.includes(name)) {\n          prefetchComponents(name);\n        }\n      }\n    }\n  }\n}\n",
-      "start": 1707990823658,
-      "end": 1707990823658,
+      "start": 1708087950245,
+      "end": 1708087950245,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1707990823658,
-      "end": 1707990823658,
+      "start": 1708087950245,
+      "end": 1708087950245,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1707990823658,
-      "end": 1707990823658,
+      "start": 1708087950245,
+      "end": 1708087950245,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1707990823658,
-      "end": 1707990823658,
+      "start": 1708087950245,
+      "end": 1708087950245,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1707990823658,
-      "end": 1707990823658,
+      "start": 1708087950245,
+      "end": 1708087950245,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1707990823658,
-      "end": 1707990823658,
+      "start": 1708087950245,
+      "end": 1708087950245,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1707990823658,
-      "end": 1707990823658,
+      "start": 1708087950245,
+      "end": 1708087950246,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1707990823658,
-      "end": 1707990823658,
+      "start": 1708087950246,
+      "end": 1708087950246,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1707990823658,
-      "end": 1707990823658,
+      "start": 1708087950246,
+      "end": 1708087950246,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1707990823658,
-      "end": 1707990823658,
+      "start": 1708087950246,
+      "end": 1708087950246,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1707990823658,
-      "end": 1707990823660,
+      "start": 1708087950246,
+      "end": 1708087950247,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1707990823660,
-      "end": 1707990823660,
+      "start": 1708087950247,
+      "end": 1708087950247,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
       "result": "import { componentNames } from '#build/component-names';\nimport { withoutTrailingSlash, hasProtocol } from \"ufo\";\nimport { pascalCase } from \"scule\";\nimport { callWithNuxt } from \"#app/nuxt\";\nimport { useContentState } from \"../../composables/content.js\";\nimport { useContentHelpers } from \"../../composables/helpers.js\";\nimport { fetchContentNavigation } from \"../composables/navigation.js\";\nimport { queryContent } from \"../composables/query.js\";\nimport { useRuntimeConfig, addRouteMiddleware, navigateTo, useRoute, defineNuxtPlugin, prefetchComponents, useRouter } from \"#imports\";\nimport layouts from \"#build/layouts\";\nexport default defineNuxtPlugin((nuxt) => {\n  const moduleOptions = useRuntimeConfig()?.public?.content.documentDriven;\n  const isClientDBEnabled = useRuntimeConfig()?.public?.content.experimental.clientDB;\n  const { navigation, pages, globals, surrounds } = useContentState();\n  const findLayout = (to, page, navigation2, globals2) => {\n    if (page && page?.layout) {\n      return page.layout;\n    }\n    if (to.matched.length && to.matched[0].meta?.layout) {\n      return to.matched[0].meta.layout;\n    }\n    if (navigation2 && page) {\n      const { navKeyFromPath } = useContentHelpers();\n      const layoutFromNav = navKeyFromPath(page._path, \"layout\", navigation2);\n      if (layoutFromNav) {\n        return layoutFromNav;\n      }\n    }\n    if (moduleOptions.layoutFallbacks && globals2) {\n      let layoutFallback;\n      for (const fallback of moduleOptions.layoutFallbacks) {\n        if (globals2[fallback] && globals2[fallback].layout) {\n          layoutFallback = globals2[fallback].layout;\n          break;\n        }\n      }\n      if (layoutFallback) {\n        return layoutFallback;\n      }\n    }\n    return \"default\";\n  };\n  const refresh = async (to, dedup = false) => {\n    nuxt.callHook(\"content:document-driven:start\", { route: to, dedup });\n    const routeConfig = to.meta.documentDriven || {};\n    if (to.meta.documentDriven === false) {\n      return;\n    }\n    const _path = withoutTrailingSlash(to.path);\n    const promises = [];\n    if (moduleOptions.navigation && routeConfig.navigation !== false) {\n      const navigationQuery = () => {\n        const { navigation: navigation2 } = useContentState();\n        if (navigation2.value && !dedup) {\n          return navigation2.value;\n        }\n        return fetchContentNavigation().then((_navigation) => {\n          navigation2.value = _navigation;\n          return _navigation;\n        }).catch(() => null);\n      };\n      promises.push(navigationQuery);\n    } else {\n      promises.push(() => Promise.resolve(null));\n    }\n    if (moduleOptions.globals) {\n      const globalsQuery = () => {\n        const { globals: globals2 } = useContentState();\n        if (typeof moduleOptions.globals === \"object\" && Array.isArray(moduleOptions.globals)) {\n          console.log(\"Globals must be a list of keys with QueryBuilderParams as a value.\");\n          return;\n        }\n        return Promise.all(\n          Object.entries(moduleOptions.globals).map(\n            ([key, query]) => {\n              if (!dedup && globals2.value[key]) {\n                return globals2.value[key];\n              }\n              let type = \"findOne\";\n              if (query?.type) {\n                type = query.type;\n              }\n              return queryContent(query)[type]().catch(() => null);\n            }\n          )\n        ).then(\n          (values) => {\n            return values.reduce(\n              (acc, value, index) => {\n                const key = Object.keys(moduleOptions.globals)[index];\n                acc[key] = value;\n                return acc;\n              },\n              {}\n            );\n          }\n        );\n      };\n      promises.push(globalsQuery);\n    } else {\n      promises.push(() => Promise.resolve(null));\n    }\n    if (moduleOptions.page && routeConfig.page !== false) {\n      let where = { _path };\n      if (typeof routeConfig.page === \"string\") {\n        where = { _path: routeConfig.page };\n      }\n      if (typeof routeConfig.page === \"object\") {\n        where = routeConfig.page;\n      }\n      const pageQuery = () => {\n        const { pages: pages2 } = useContentState();\n        if (!dedup && pages2.value[_path] && pages2.value[_path]._path === _path) {\n          return pages2.value[_path];\n        }\n        return queryContent().where(where).findOne().catch(() => null);\n      };\n      promises.push(pageQuery);\n    } else {\n      promises.push(() => Promise.resolve(null));\n    }\n    if (moduleOptions.surround && routeConfig.surround !== false) {\n      let surround = _path;\n      if ([\"string\", \"object\"].includes(typeof routeConfig.page)) {\n        surround = routeConfig.page;\n      }\n      if ([\"string\", \"object\"].includes(typeof routeConfig.surround)) {\n        surround = routeConfig.surround;\n      }\n      const surroundQuery = () => {\n        const { surrounds: surrounds2 } = useContentState();\n        if (!dedup && surrounds2.value[_path]) {\n          return surrounds2.value[_path];\n        }\n        return queryContent().where({\n          _partial: { $not: true },\n          navigation: { $not: false }\n        }).without([\"body\"]).findSurround(surround).catch(() => null);\n      };\n      promises.push(surroundQuery);\n    } else {\n      promises.push(() => Promise.resolve(null));\n    }\n    return await Promise.all(promises.map((promise) => promise())).then(async ([\n      _navigation,\n      _globals,\n      _page,\n      _surround\n    ]) => {\n      if (_navigation) {\n        navigation.value = _navigation;\n      }\n      if (_globals) {\n        globals.value = _globals;\n      }\n      if (_surround) {\n        surrounds.value[_path] = _surround;\n      }\n      const redirectTo = _page?.redirect || _page?._dir?.navigation?.redirect;\n      if (redirectTo) {\n        pages.value[_path] = _page;\n        return redirectTo;\n      }\n      if (_page) {\n        const layoutName = findLayout(to, _page, _navigation, _globals);\n        const layout = layouts[layoutName];\n        if (layout && typeof layout === \"function\") {\n          await layout();\n        }\n        to.meta.layout = layoutName;\n        _page.layout = layoutName;\n      }\n      pages.value[_path] = _page;\n      await nuxt.callHook(\"content:document-driven:finish\", { route: to, dedup, page: _page, navigation: _navigation, globals: _globals, surround: _surround });\n    });\n  };\n  if (process.client) {\n    const router = useRouter();\n    nuxt.hook(\"link:prefetch\", (link) => {\n      if (!(link in pages.value) && !hasProtocol(link)) {\n        const route = router.resolve(link);\n        if (route.matched.length > 0) {\n          refresh(route);\n        }\n      }\n    });\n    nuxt.hooks.hook(\"content:document-driven:finish\", ({ page }) => {\n      if (page?.body?.children) {\n        prefetchBodyComponents(page.body.children);\n      }\n    });\n  }\n  addRouteMiddleware(async (to, from) => {\n    if (process.client && !isClientDBEnabled && to.path === from.path) {\n      if (!to.meta.layout) {\n        const _path = withoutTrailingSlash(to.path);\n        if (pages.value[_path]) {\n          to.meta.layout = pages.value[_path].layout;\n        }\n      }\n      return;\n    }\n    const redirect = await refresh(to, false);\n    if (redirect) {\n      if (hasProtocol(redirect)) {\n        return callWithNuxt(nuxt, navigateTo, [redirect, { external: true }]);\n      } else {\n        return redirect;\n      }\n    }\n  });\n  nuxt.hook(\"app:data:refresh\", async () => process.client && await refresh(useRoute(), true));\n});\nfunction prefetchBodyComponents(nodes) {\n  for (const node of nodes) {\n    if (node.children) {\n      prefetchBodyComponents(node.children);\n    }\n    if (node.type === \"element\" && node.tag) {\n      const el = pascalCase(node.tag);\n      for (const name of [\"Prose\" + el, el]) {\n        if (componentNames.includes(name)) {\n          prefetchComponents(name);\n        }\n      }\n    }\n  }\n}\n",
-      "start": 1707990823660,
-      "end": 1707990823663,
+      "start": 1708087950247,
+      "end": 1708087950250,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -110,77 +110,77 @@
     },
     {
       "name": "replace",
-      "start": 1707990823663,
-      "end": 1707990823663,
+      "start": 1708087950250,
+      "end": 1708087950250,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1707990823663,
-      "end": 1707990823663,
+      "start": 1708087950250,
+      "end": 1708087950250,
       "order": "normal"
     },
     {
       "name": "vite:define",
       "result": "import { componentNames } from \"#build/component-names\";\nimport { withoutTrailingSlash, hasProtocol } from \"ufo\";\nimport { pascalCase } from \"scule\";\nimport { callWithNuxt } from \"#app/nuxt\";\nimport { useContentState } from \"../../composables/content.js\";\nimport { useContentHelpers } from \"../../composables/helpers.js\";\nimport { fetchContentNavigation } from \"../composables/navigation.js\";\nimport { queryContent } from \"../composables/query.js\";\nimport { useRuntimeConfig, addRouteMiddleware, navigateTo, useRoute, defineNuxtPlugin, prefetchComponents, useRouter } from \"#imports\";\nimport layouts from \"#build/layouts\";\nexport default defineNuxtPlugin((nuxt) => {\n  const moduleOptions = useRuntimeConfig()?.public?.content.documentDriven;\n  const isClientDBEnabled = useRuntimeConfig()?.public?.content.experimental.clientDB;\n  const { navigation, pages, globals, surrounds } = useContentState();\n  const findLayout = (to, page, navigation2, globals2) => {\n    if (page && page?.layout) {\n      return page.layout;\n    }\n    if (to.matched.length && to.matched[0].meta?.layout) {\n      return to.matched[0].meta.layout;\n    }\n    if (navigation2 && page) {\n      const { navKeyFromPath } = useContentHelpers();\n      const layoutFromNav = navKeyFromPath(page._path, \"layout\", navigation2);\n      if (layoutFromNav) {\n        return layoutFromNav;\n      }\n    }\n    if (moduleOptions.layoutFallbacks && globals2) {\n      let layoutFallback;\n      for (const fallback of moduleOptions.layoutFallbacks) {\n        if (globals2[fallback] && globals2[fallback].layout) {\n          layoutFallback = globals2[fallback].layout;\n          break;\n        }\n      }\n      if (layoutFallback) {\n        return layoutFallback;\n      }\n    }\n    return \"default\";\n  };\n  const refresh = async (to, dedup = false) => {\n    nuxt.callHook(\"content:document-driven:start\", { route: to, dedup });\n    const routeConfig = to.meta.documentDriven || {};\n    if (to.meta.documentDriven === false) {\n      return;\n    }\n    const _path = withoutTrailingSlash(to.path);\n    const promises = [];\n    if (moduleOptions.navigation && routeConfig.navigation !== false) {\n      const navigationQuery = () => {\n        const { navigation: navigation2 } = useContentState();\n        if (navigation2.value && !dedup) {\n          return navigation2.value;\n        }\n        return fetchContentNavigation().then((_navigation) => {\n          navigation2.value = _navigation;\n          return _navigation;\n        }).catch(() => null);\n      };\n      promises.push(navigationQuery);\n    } else {\n      promises.push(() => Promise.resolve(null));\n    }\n    if (moduleOptions.globals) {\n      const globalsQuery = () => {\n        const { globals: globals2 } = useContentState();\n        if (typeof moduleOptions.globals === \"object\" && Array.isArray(moduleOptions.globals)) {\n          console.log(\"Globals must be a list of keys with QueryBuilderParams as a value.\");\n          return;\n        }\n        return Promise.all(\n          Object.entries(moduleOptions.globals).map(\n            ([key, query]) => {\n              if (!dedup && globals2.value[key]) {\n                return globals2.value[key];\n              }\n              let type = \"findOne\";\n              if (query?.type) {\n                type = query.type;\n              }\n              return queryContent(query)[type]().catch(() => null);\n            }\n          )\n        ).then(\n          (values) => {\n            return values.reduce(\n              (acc, value, index) => {\n                const key = Object.keys(moduleOptions.globals)[index];\n                acc[key] = value;\n                return acc;\n              },\n              {}\n            );\n          }\n        );\n      };\n      promises.push(globalsQuery);\n    } else {\n      promises.push(() => Promise.resolve(null));\n    }\n    if (moduleOptions.page && routeConfig.page !== false) {\n      let where = { _path };\n      if (typeof routeConfig.page === \"string\") {\n        where = { _path: routeConfig.page };\n      }\n      if (typeof routeConfig.page === \"object\") {\n        where = routeConfig.page;\n      }\n      const pageQuery = () => {\n        const { pages: pages2 } = useContentState();\n        if (!dedup && pages2.value[_path] && pages2.value[_path]._path === _path) {\n          return pages2.value[_path];\n        }\n        return queryContent().where(where).findOne().catch(() => null);\n      };\n      promises.push(pageQuery);\n    } else {\n      promises.push(() => Promise.resolve(null));\n    }\n    if (moduleOptions.surround && routeConfig.surround !== false) {\n      let surround = _path;\n      if ([\"string\", \"object\"].includes(typeof routeConfig.page)) {\n        surround = routeConfig.page;\n      }\n      if ([\"string\", \"object\"].includes(typeof routeConfig.surround)) {\n        surround = routeConfig.surround;\n      }\n      const surroundQuery = () => {\n        const { surrounds: surrounds2 } = useContentState();\n        if (!dedup && surrounds2.value[_path]) {\n          return surrounds2.value[_path];\n        }\n        return queryContent().where({\n          _partial: { $not: true },\n          navigation: { $not: false }\n        }).without([\"body\"]).findSurround(surround).catch(() => null);\n      };\n      promises.push(surroundQuery);\n    } else {\n      promises.push(() => Promise.resolve(null));\n    }\n    return await Promise.all(promises.map((promise) => promise())).then(async ([\n      _navigation,\n      _globals,\n      _page,\n      _surround\n    ]) => {\n      if (_navigation) {\n        navigation.value = _navigation;\n      }\n      if (_globals) {\n        globals.value = _globals;\n      }\n      if (_surround) {\n        surrounds.value[_path] = _surround;\n      }\n      const redirectTo = _page?.redirect || _page?._dir?.navigation?.redirect;\n      if (redirectTo) {\n        pages.value[_path] = _page;\n        return redirectTo;\n      }\n      if (_page) {\n        const layoutName = findLayout(to, _page, _navigation, _globals);\n        const layout = layouts[layoutName];\n        if (layout && typeof layout === \"function\") {\n          await layout();\n        }\n        to.meta.layout = layoutName;\n        _page.layout = layoutName;\n      }\n      pages.value[_path] = _page;\n      await nuxt.callHook(\"content:document-driven:finish\", { route: to, dedup, page: _page, navigation: _navigation, globals: _globals, surround: _surround });\n    });\n  };\n  if (true) {\n    const router = useRouter();\n    nuxt.hook(\"link:prefetch\", (link) => {\n      if (!(link in pages.value) && !hasProtocol(link)) {\n        const route = router.resolve(link);\n        if (route.matched.length > 0) {\n          refresh(route);\n        }\n      }\n    });\n    nuxt.hooks.hook(\"content:document-driven:finish\", ({ page }) => {\n      if (page?.body?.children) {\n        prefetchBodyComponents(page.body.children);\n      }\n    });\n  }\n  addRouteMiddleware(async (to, from) => {\n    if (!isClientDBEnabled && to.path === from.path) {\n      if (!to.meta.layout) {\n        const _path = withoutTrailingSlash(to.path);\n        if (pages.value[_path]) {\n          to.meta.layout = pages.value[_path].layout;\n        }\n      }\n      return;\n    }\n    const redirect = await refresh(to, false);\n    if (redirect) {\n      if (hasProtocol(redirect)) {\n        return callWithNuxt(nuxt, navigateTo, [redirect, { external: true }]);\n      } else {\n        return redirect;\n      }\n    }\n  });\n  nuxt.hook(\"app:data:refresh\", async () => await refresh(useRoute(), true));\n});\nfunction prefetchBodyComponents(nodes) {\n  for (const node of nodes) {\n    if (node.children) {\n      prefetchBodyComponents(node.children);\n    }\n    if (node.type === \"element\" && node.tag) {\n      const el = pascalCase(node.tag);\n      for (const name of [\"Prose\" + el, el]) {\n        if (componentNames.includes(name)) {\n          prefetchComponents(name);\n        }\n      }\n    }\n  }\n}\n",
-      "start": 1707990823663,
-      "end": 1707990823737,
+      "start": 1708087950250,
+      "end": 1708087950285,
       "order": "normal",
       "sourcemaps": null
     },
     {
       "name": "vite:css-post",
-      "start": 1707990823737,
-      "end": 1707990823737,
+      "start": 1708087950285,
+      "end": 1708087950285,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1707990823737,
-      "end": 1707990823737,
+      "start": 1708087950285,
+      "end": 1708087950285,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1707990823737,
-      "end": 1707990823737,
+      "start": 1708087950285,
+      "end": 1708087950285,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1707990823737,
-      "end": 1707990823737,
+      "start": 1708087950286,
+      "end": 1708087950286,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1707990823737,
-      "end": 1707990823738,
+      "start": 1708087950286,
+      "end": 1708087950286,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1707990823738,
-      "end": 1707990823739,
+      "start": 1708087950286,
+      "end": 1708087950287,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1707990823739,
-      "end": 1707990823739,
+      "start": 1708087950287,
+      "end": 1708087950287,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1707990823739,
-      "end": 1707990823739,
+      "start": 1708087950287,
+      "end": 1708087950287,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { useRuntimeConfig, defineNuxtPlugin } from '#app/nuxt';\nimport { addRouteMiddleware, navigateTo, useRoute, useRouter } from '#app/composables/router';\nimport { prefetchComponents } from '#app/composables/preload';\nimport { componentNames } from \"#build/component-names\";\nimport { withoutTrailingSlash, hasProtocol } from \"ufo\";\nimport { pascalCase } from \"scule\";\nimport { callWithNuxt } from \"#app/nuxt\";\nimport { useContentState } from \"../../composables/content.js\";\nimport { useContentHelpers } from \"../../composables/helpers.js\";\nimport { fetchContentNavigation } from \"../composables/navigation.js\";\nimport { queryContent } from \"../composables/query.js\";\nimport layouts from \"#build/layouts\";\nexport default defineNuxtPlugin((nuxt) => {\n  const moduleOptions = useRuntimeConfig()?.public?.content.documentDriven;\n  const isClientDBEnabled = useRuntimeConfig()?.public?.content.experimental.clientDB;\n  const { navigation, pages, globals, surrounds } = useContentState();\n  const findLayout = (to, page, navigation2, globals2) => {\n    if (page && page?.layout) {\n      return page.layout;\n    }\n    if (to.matched.length && to.matched[0].meta?.layout) {\n      return to.matched[0].meta.layout;\n    }\n    if (navigation2 && page) {\n      const { navKeyFromPath } = useContentHelpers();\n      const layoutFromNav = navKeyFromPath(page._path, \"layout\", navigation2);\n      if (layoutFromNav) {\n        return layoutFromNav;\n      }\n    }\n    if (moduleOptions.layoutFallbacks && globals2) {\n      let layoutFallback;\n      for (const fallback of moduleOptions.layoutFallbacks) {\n        if (globals2[fallback] && globals2[fallback].layout) {\n          layoutFallback = globals2[fallback].layout;\n          break;\n        }\n      }\n      if (layoutFallback) {\n        return layoutFallback;\n      }\n    }\n    return \"default\";\n  };\n  const refresh = async (to, dedup = false) => {\n    nuxt.callHook(\"content:document-driven:start\", { route: to, dedup });\n    const routeConfig = to.meta.documentDriven || {};\n    if (to.meta.documentDriven === false) {\n      return;\n    }\n    const _path = withoutTrailingSlash(to.path);\n    const promises = [];\n    if (moduleOptions.navigation && routeConfig.navigation !== false) {\n      const navigationQuery = () => {\n        const { navigation: navigation2 } = useContentState();\n        if (navigation2.value && !dedup) {\n          return navigation2.value;\n        }\n        return fetchContentNavigation().then((_navigation) => {\n          navigation2.value = _navigation;\n          return _navigation;\n        }).catch(() => null);\n      };\n      promises.push(navigationQuery);\n    } else {\n      promises.push(() => Promise.resolve(null));\n    }\n    if (moduleOptions.globals) {\n      const globalsQuery = () => {\n        const { globals: globals2 } = useContentState();\n        if (typeof moduleOptions.globals === \"object\" && Array.isArray(moduleOptions.globals)) {\n          console.log(\"Globals must be a list of keys with QueryBuilderParams as a value.\");\n          return;\n        }\n        return Promise.all(\n          Object.entries(moduleOptions.globals).map(\n            ([key, query]) => {\n              if (!dedup && globals2.value[key]) {\n                return globals2.value[key];\n              }\n              let type = \"findOne\";\n              if (query?.type) {\n                type = query.type;\n              }\n              return queryContent(query)[type]().catch(() => null);\n            }\n          )\n        ).then(\n          (values) => {\n            return values.reduce(\n              (acc, value, index) => {\n                const key = Object.keys(moduleOptions.globals)[index];\n                acc[key] = value;\n                return acc;\n              },\n              {}\n            );\n          }\n        );\n      };\n      promises.push(globalsQuery);\n    } else {\n      promises.push(() => Promise.resolve(null));\n    }\n    if (moduleOptions.page && routeConfig.page !== false) {\n      let where = { _path };\n      if (typeof routeConfig.page === \"string\") {\n        where = { _path: routeConfig.page };\n      }\n      if (typeof routeConfig.page === \"object\") {\n        where = routeConfig.page;\n      }\n      const pageQuery = () => {\n        const { pages: pages2 } = useContentState();\n        if (!dedup && pages2.value[_path] && pages2.value[_path]._path === _path) {\n          return pages2.value[_path];\n        }\n        return queryContent().where(where).findOne().catch(() => null);\n      };\n      promises.push(pageQuery);\n    } else {\n      promises.push(() => Promise.resolve(null));\n    }\n    if (moduleOptions.surround && routeConfig.surround !== false) {\n      let surround = _path;\n      if ([\"string\", \"object\"].includes(typeof routeConfig.page)) {\n        surround = routeConfig.page;\n      }\n      if ([\"string\", \"object\"].includes(typeof routeConfig.surround)) {\n        surround = routeConfig.surround;\n      }\n      const surroundQuery = () => {\n        const { surrounds: surrounds2 } = useContentState();\n        if (!dedup && surrounds2.value[_path]) {\n          return surrounds2.value[_path];\n        }\n        return queryContent().where({\n          _partial: { $not: true },\n          navigation: { $not: false }\n        }).without([\"body\"]).findSurround(surround).catch(() => null);\n      };\n      promises.push(surroundQuery);\n    } else {\n      promises.push(() => Promise.resolve(null));\n    }\n    return await Promise.all(promises.map((promise) => promise())).then(async ([\n      _navigation,\n      _globals,\n      _page,\n      _surround\n    ]) => {\n      if (_navigation) {\n        navigation.value = _navigation;\n      }\n      if (_globals) {\n        globals.value = _globals;\n      }\n      if (_surround) {\n        surrounds.value[_path] = _surround;\n      }\n      const redirectTo = _page?.redirect || _page?._dir?.navigation?.redirect;\n      if (redirectTo) {\n        pages.value[_path] = _page;\n        return redirectTo;\n      }\n      if (_page) {\n        const layoutName = findLayout(to, _page, _navigation, _globals);\n        const layout = layouts[layoutName];\n        if (layout && typeof layout === \"function\") {\n          await layout();\n        }\n        to.meta.layout = layoutName;\n        _page.layout = layoutName;\n      }\n      pages.value[_path] = _page;\n      await nuxt.callHook(\"content:document-driven:finish\", { route: to, dedup, page: _page, navigation: _navigation, globals: _globals, surround: _surround });\n    });\n  };\n  if (true) {\n    const router = useRouter();\n    nuxt.hook(\"link:prefetch\", (link) => {\n      if (!(link in pages.value) && !hasProtocol(link)) {\n        const route = router.resolve(link);\n        if (route.matched.length > 0) {\n          refresh(route);\n        }\n      }\n    });\n    nuxt.hooks.hook(\"content:document-driven:finish\", ({ page }) => {\n      if (page?.body?.children) {\n        prefetchBodyComponents(page.body.children);\n      }\n    });\n  }\n  addRouteMiddleware(async (to, from) => {\n    if (!isClientDBEnabled && to.path === from.path) {\n      if (!to.meta.layout) {\n        const _path = withoutTrailingSlash(to.path);\n        if (pages.value[_path]) {\n          to.meta.layout = pages.value[_path].layout;\n        }\n      }\n      return;\n    }\n    const redirect = await refresh(to, false);\n    if (redirect) {\n      if (hasProtocol(redirect)) {\n        return callWithNuxt(nuxt, navigateTo, [redirect, { external: true }]);\n      } else {\n        return redirect;\n      }\n    }\n  });\n  nuxt.hook(\"app:data:refresh\", async () => await refresh(useRoute(), true));\n});\nfunction prefetchBodyComponents(nodes) {\n  for (const node of nodes) {\n    if (node.children) {\n      prefetchBodyComponents(node.children);\n    }\n    if (node.type === \"element\" && node.tag) {\n      const el = pascalCase(node.tag);\n      for (const name of [\"Prose\" + el, el]) {\n        if (componentNames.includes(name)) {\n          prefetchComponents(name);\n        }\n      }\n    }\n  }\n}\n",
-      "start": 1707990823739,
-      "end": 1707990823742,
+      "start": 1708087950287,
+      "end": 1708087950290,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -193,50 +193,50 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1707990823742,
-      "end": 1707990823745,
+      "start": 1708087950290,
+      "end": 1708087950293,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1707990823745,
-      "end": 1707990823745,
+      "start": 1708087950293,
+      "end": 1708087950293,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1707990823745,
-      "end": 1707990823745,
+      "start": 1708087950293,
+      "end": 1708087950293,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1707990823745,
-      "end": 1707990823745,
+      "start": 1708087950293,
+      "end": 1708087950293,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1707990823745,
-      "end": 1707990823745,
+      "start": 1708087950293,
+      "end": 1708087950293,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1707990823745,
-      "end": 1707990823745,
+      "start": 1708087950293,
+      "end": 1708087950293,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1707990823745,
-      "end": 1707990823745,
+      "start": 1708087950293,
+      "end": 1708087950293,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1707990823745,
-      "end": 1707990823745,
+      "start": 1708087950293,
+      "end": 1708087950293,
       "order": "normal"
     }
   ]

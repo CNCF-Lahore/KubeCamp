@@ -757,34 +757,39 @@ const validate = /* @__PURE__ */ defineNuxtRouteMiddleware(async (to) => {
 });
 const cfg0 = defineAppConfig({
   docus: {
-    title: "Kubernetes Bootcamp",
-    description: "The Kubernetes Mastery Bootcamp is a comprehensive, free training program that offers in-depth knowledge and hands-on experience in deploying, managing, and scaling containerized applications using Kubernetes. Participants will benefit from workshops, access to a sandbox environment for practical exercises, and training from industry experts.",
-    image: "https://cncf-lahore.github.io/static/media/logo.07df0d71aa68491bbca25e45a62ac299.svg",
-    socials: {
-      twitter: "cncflahore",
-      github: "CNCF-Lahore"
-    },
-    github: {
-      dir: ".starters/default/content",
-      branch: "main",
-      repo: "Kubernetes-Bootcamp",
-      owner: "CNCF-Lahore",
-      edit: true
+    title: "Kubernetes BootCamp",
+    description: "The best place to start your Kubernetes Journey",
+    url: "cncf-lahore.github.io/Kubernetes-Bootcamp",
+    image: "https://i.ibb.co/PGkhK2D/logo-07df0d71aa68491bbca25e45a62ac299.png",
+    socials: {},
+    layout: "default",
+    header: {
+      title: "",
+      logo: false,
+      showLinkIcon: false,
+      fluid: false,
+      exclude: []
     },
     aside: {
       level: 0,
       collapsed: false,
       exclude: []
     },
-    main: {
-      padded: true,
-      fluid: true
+    footer: {
+      credits: {
+        icon: "",
+        text: "Made with ❤️by Adil Shahzad",
+        href: "https://www.linkedin.com/in/adilshehzad7/"
+      },
+      textLinks: [],
+      iconLinks: [],
+      fluid: false
     },
-    header: {
-      logo: true,
-      showLinkIcon: true,
-      exclude: [],
-      fluid: true
+    github: {
+      branch: "main",
+      repo: "/Kubernetes-Bootcamp/",
+      owner: "CNCF-Lahore",
+      edit: false
     }
   }
 });
@@ -841,7 +846,7 @@ const cfg2 = defineAppConfig({
 const cfg3 = defineAppConfig({});
 const inlineConfig = {
   "nuxt": {
-    "buildId": "79f64cce-e655-425e-b89f-246e39c604c3"
+    "buildId": "dea3365d-4fc2-4a13-83a7-752d825d5c36"
   }
 };
 const __appConfig = /* @__PURE__ */ defuFn(cfg0, cfg1, cfg2, cfg3, inlineConfig);

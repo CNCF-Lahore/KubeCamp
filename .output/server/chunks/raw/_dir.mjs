@@ -1,5 +1,5 @@
 // ROLLUP_NO_REPLACE 
- const _dir = "{\"parsed\":{\"_path\":\"/introduction/_dir\",\"_dir\":\"introduction\",\"_draft\":false,\"_partial\":true,\"_locale\":\"\",\"icon\":\"ph:star-duotone\",\"navigation\":{\"redirect\":\"/introduction/getting-started\"},\"_id\":\"content:introduction:_dir.yml\",\"_type\":\"yaml\",\"title\":\"Dir\",\"_source\":\"content\",\"_file\":\"introduction/_dir.yml\",\"_extension\":\"yml\"},\"hash\":\"FW5NRlJNjf\"}";
+ const _dir = "{\"parsed\":{\"_path\":\"/introduction/_dir\",\"_dir\":\"introduction\",\"_draft\":false,\"_partial\":true,\"_locale\":\"\",\"icon\":\"ph:star-duotone\",\"navigation\":{\"redirect\":\"/introduction/getting-started\"},\"_id\":\"content:introduction:_dir.yml\",\"_type\":\"yaml\",\"title\":\"Dir\",\"_source\":\"content\",\"_file\":\"introduction/_dir.yml\",\"_extension\":\"yml\"},\"hash\":\"mdT4Gk52og\"}";
 
 export { _dir as default };
 //# sourceMappingURL=_dir.mjs.map

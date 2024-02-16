@@ -4,51 +4,51 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, renderList as _renderList, Fragment as _Fragment, toDisplayString as _toDisplayString, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-63eb7158\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = {\n  key: 0,\n  class: \"copied\"\n}\nconst _hoisted_2 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"div\", { class: \"scrim\" }, null, -1))\nconst _hoisted_3 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"div\", { class: \"content\" }, \" Copied! \", -1))\nconst _hoisted_4 = [\n  _hoisted_2,\n  _hoisted_3\n]\nconst _hoisted_5 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"div\", { class: \"header\" }, [\n  /*#__PURE__*/_createElementVNode(\"div\", { class: \"controls\" }, [\n    /*#__PURE__*/_createElementVNode(\"div\"),\n    /*#__PURE__*/_createElementVNode(\"div\"),\n    /*#__PURE__*/_createElementVNode(\"div\")\n  ]),\n  /*#__PURE__*/_createElementVNode(\"div\", { class: \"title\" }, \" Bash \")\n], -1))\nconst _hoisted_6 = { class: \"window\" }\nconst _hoisted_7 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"span\", { class: \"sign\" }, \"$\", -1))\nconst _hoisted_8 = { class: \"content\" }\nconst _hoisted_9 = {\n  key: 1,\n  class: \"prompt\"\n}\n\nimport { PropType } from 'vue'\nimport { useClipboard } from '@vueuse/core'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'Terminal',\n  props: {\n  content: {\n    type: [Array, String] as PropType<string[] | string>,\n    required: true\n  }\n},\n  setup(__props) {\n\nconst props = __props\n\nconst { copy: copyToClipboard } = useClipboard()\n\nconst state = ref('init')\n\nconst lines = computed(() => {\n  if (typeof props.content === 'string') { return [props.content] }\n  return props.content\n})\n\nconst copy = (e: MouseEvent) => {\n  copyToClipboard(lines.value.join('\\n'))\n    .then(() => {\n      state.value = 'copied'\n\n      setTimeout(() => {\n        state.value = 'init'\n      }, 1000)\n    })\n    .catch(() => {\n      console.warn(\"Couldn't copy to clipboard!\")\n    })\n}\n\nreturn (_ctx: any,_cache: any) => {\n  return (_openBlock(), _createElementBlock(\"div\", {\n    class: \"terminal\",\n    onClick: copy\n  }, [\n    (_unref(state) === 'copied')\n      ? (_openBlock(), _createElementBlock(\"div\", _hoisted_1, _hoisted_4))\n      : _createCommentVNode(\"\", true),\n    _hoisted_5,\n    _createElementVNode(\"div\", _hoisted_6, [\n      (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_unref(lines), (line) => {\n        return (_openBlock(), _createElementBlock(\"span\", {\n          key: line,\n          class: \"line\"\n        }, [\n          _hoisted_7,\n          _createElementVNode(\"span\", _hoisted_8, _toDisplayString(line), 1)\n        ]))\n      }), 128))\n    ]),\n    (_unref(state) !== 'copied')\n      ? (_openBlock(), _createElementBlock(\"div\", _hoisted_9, \" Click to copy \"))\n      : _createCommentVNode(\"\", true)\n  ]))\n}\n}\n\n})",
-      "start": 1707990825959,
-      "end": 1707990825959
+      "start": 1708087952560,
+      "end": 1708087952560
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1707990825961,
-      "end": 1707990825961,
+      "start": 1708087952567,
+      "end": 1708087952567,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1707990825969,
-      "end": 1707990825970,
+      "start": 1708087952579,
+      "end": 1708087952579,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, renderList as _renderList, Fragment as _Fragment, toDisplayString as _toDisplayString, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-63eb7158\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = {\n  key: 0,\n  class: \"copied\"\n}\nconst _hoisted_2 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"div\", { class: \"scrim\" }, null, -1))\nconst _hoisted_3 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"div\", { class: \"content\" }, \" Copied! \", -1))\nconst _hoisted_4 = [\n  _hoisted_2,\n  _hoisted_3\n]\nconst _hoisted_5 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"div\", { class: \"header\" }, [\n  /*#__PURE__*/_createElementVNode(\"div\", { class: \"controls\" }, [\n    /*#__PURE__*/_createElementVNode(\"div\"),\n    /*#__PURE__*/_createElementVNode(\"div\"),\n    /*#__PURE__*/_createElementVNode(\"div\")\n  ]),\n  /*#__PURE__*/_createElementVNode(\"div\", { class: \"title\" }, \" Bash \")\n], -1))\nconst _hoisted_6 = { class: \"window\" }\nconst _hoisted_7 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"span\", { class: \"sign\" }, \"$\", -1))\nconst _hoisted_8 = { class: \"content\" }\nconst _hoisted_9 = {\n  key: 1,\n  class: \"prompt\"\n}\n\nimport { PropType } from 'vue'\nimport { useClipboard } from '@vueuse/core'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'Terminal',\n  props: {\n  content: {\n    type: [Array, String] as PropType<string[] | string>,\n    required: true\n  }\n},\n  setup(__props) {\n\nconst props = __props\n\nconst { copy: copyToClipboard } = useClipboard()\n\nconst state = ref('init')\n\nconst lines = computed(() => {\n  if (typeof props.content === 'string') { return [props.content] }\n  return props.content\n})\n\nconst copy = (e: MouseEvent) => {\n  copyToClipboard(lines.value.join('\\n'))\n    .then(() => {\n      state.value = 'copied'\n\n      setTimeout(() => {\n        state.value = 'init'\n      }, 1000)\n    })\n    .catch(() => {\n      console.warn(\"Couldn't copy to clipboard!\")\n    })\n}\n\nreturn (_ctx: any,_cache: any) => {\n  return (_openBlock(), _createElementBlock(\"div\", {\n    class: \"terminal\",\n    onClick: copy\n  }, [\n    (_unref(state) === 'copied')\n      ? (_openBlock(), _createElementBlock(\"div\", _hoisted_1, _hoisted_4))\n      : _createCommentVNode(\"\", true),\n    _hoisted_5,\n    _createElementVNode(\"div\", _hoisted_6, [\n      (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_unref(lines), (line) => {\n        return (_openBlock(), _createElementBlock(\"span\", {\n          key: line,\n          class: \"line\"\n        }, [\n          _hoisted_7,\n          _createElementVNode(\"span\", _hoisted_8, _toDisplayString(line), 1)\n        ]))\n      }), 128))\n    ]),\n    (_unref(state) !== 'copied')\n      ? (_openBlock(), _createElementBlock(\"div\", _hoisted_9, \" Click to copy \"))\n      : _createCommentVNode(\"\", true)\n  ]))\n}\n}\n\n})",
-      "start": 1707990825972,
-      "end": 1707990825973,
+      "start": 1708087952579,
+      "end": 1708087952579,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1707990825973,
-      "end": 1707990825973,
+      "start": 1708087952581,
+      "end": 1708087952581,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1707990825973,
-      "end": 1707990825973,
+      "start": 1708087952581,
+      "end": 1708087952581,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1707990825973,
-      "end": 1707990825973,
+      "start": 1708087952581,
+      "end": 1708087952581,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, renderList as _renderList, Fragment as _Fragment, toDisplayString as _toDisplayString, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-63eb7158\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = {\n  key: 0,\n  class: \"copied\"\n};\nconst _hoisted_2 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"div\", { class: \"scrim\" }, null, -1));\nconst _hoisted_3 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"div\", { class: \"content\" }, \" Copied! \", -1));\nconst _hoisted_4 = [\n  _hoisted_2,\n  _hoisted_3\n];\nconst _hoisted_5 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"div\", { class: \"header\" }, [\n  /* @__PURE__ */ _createElementVNode(\"div\", { class: \"controls\" }, [\n    /* @__PURE__ */ _createElementVNode(\"div\"),\n    /* @__PURE__ */ _createElementVNode(\"div\"),\n    /* @__PURE__ */ _createElementVNode(\"div\")\n  ]),\n  /* @__PURE__ */ _createElementVNode(\"div\", { class: \"title\" }, \" Bash \")\n], -1));\nconst _hoisted_6 = { class: \"window\" };\nconst _hoisted_7 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"span\", { class: \"sign\" }, \"$\", -1));\nconst _hoisted_8 = { class: \"content\" };\nconst _hoisted_9 = {\n  key: 1,\n  class: \"prompt\"\n};\nimport { useClipboard } from \"@vueuse/core\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"Terminal\",\n  props: {\n    content: {\n      type: [Array, String],\n      required: true\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const { copy: copyToClipboard } = useClipboard();\n    const state = ref(\"init\");\n    const lines = computed(() => {\n      if (typeof props.content === \"string\") {\n        return [props.content];\n      }\n      return props.content;\n    });\n    const copy = (e) => {\n      copyToClipboard(lines.value.join(\"\\n\")).then(() => {\n        state.value = \"copied\";\n        setTimeout(() => {\n          state.value = \"init\";\n        }, 1e3);\n      }).catch(() => {\n        console.warn(\"Couldn't copy to clipboard!\");\n      });\n    };\n    return (_ctx, _cache) => {\n      return _openBlock(), _createElementBlock(\"div\", {\n        class: \"terminal\",\n        onClick: copy\n      }, [\n        _unref(state) === \"copied\" ? (_openBlock(), _createElementBlock(\"div\", _hoisted_1, _hoisted_4)) : _createCommentVNode(\"\", true),\n        _hoisted_5,\n        _createElementVNode(\"div\", _hoisted_6, [\n          (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_unref(lines), (line) => {\n            return _openBlock(), _createElementBlock(\"span\", {\n              key: line,\n              class: \"line\"\n            }, [\n              _hoisted_7,\n              _createElementVNode(\"span\", _hoisted_8, _toDisplayString(line), 1)\n            ]);\n          }), 128))\n        ]),\n        _unref(state) !== \"copied\" ? (_openBlock(), _createElementBlock(\"div\", _hoisted_9, \" Click to copy \")) : _createCommentVNode(\"\", true)\n      ]);\n    };\n  }\n});\n",
-      "start": 1707990825973,
-      "end": 1707990826267,
+      "start": 1708087952581,
+      "end": 1708087952850,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -64,123 +64,123 @@
     },
     {
       "name": "vite:json",
-      "start": 1707990826267,
-      "end": 1707990826267,
+      "start": 1708087952850,
+      "end": 1708087952850,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1707990826267,
-      "end": 1707990826267,
+      "start": 1708087952850,
+      "end": 1708087952850,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1707990826267,
-      "end": 1707990826267,
+      "start": 1708087952850,
+      "end": 1708087952851,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1707990826267,
-      "end": 1707990826267,
+      "start": 1708087952851,
+      "end": 1708087952851,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1707990826267,
-      "end": 1707990826267,
+      "start": 1708087952851,
+      "end": 1708087952854,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1707990826267,
-      "end": 1707990826267,
+      "start": 1708087952854,
+      "end": 1708087952855,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1707990826267,
-      "end": 1707990826267,
+      "start": 1708087952855,
+      "end": 1708087952855,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1707990826267,
-      "end": 1707990826268,
+      "start": 1708087952855,
+      "end": 1708087952855,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1707990826268,
-      "end": 1707990826268,
+      "start": 1708087952855,
+      "end": 1708087952855,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1707990826268,
-      "end": 1707990826268,
+      "start": 1708087952855,
+      "end": 1708087952856,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1707990826268,
-      "end": 1707990826268,
+      "start": 1708087952856,
+      "end": 1708087952856,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1707990826268,
-      "end": 1707990826268,
+      "start": 1708087952856,
+      "end": 1708087952856,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1707990826268,
-      "end": 1707990826268,
+      "start": 1708087952856,
+      "end": 1708087952856,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1707990826268,
-      "end": 1707990826268,
+      "start": 1708087952856,
+      "end": 1708087952856,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1707990826268,
-      "end": 1707990826268,
+      "start": 1708087952856,
+      "end": 1708087952856,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1707990826268,
-      "end": 1707990826268,
+      "start": 1708087952857,
+      "end": 1708087952857,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1707990826268,
-      "end": 1707990826268,
+      "start": 1708087952857,
+      "end": 1708087952857,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1707990826268,
-      "end": 1707990826268,
+      "start": 1708087952857,
+      "end": 1708087952857,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1707990826268,
-      "end": 1707990826268,
+      "start": 1708087952857,
+      "end": 1708087952857,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { ref, computed } from 'vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, renderList as _renderList, Fragment as _Fragment, toDisplayString as _toDisplayString, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-63eb7158\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = {\n  key: 0,\n  class: \"copied\"\n};\nconst _hoisted_2 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"div\", { class: \"scrim\" }, null, -1));\nconst _hoisted_3 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"div\", { class: \"content\" }, \" Copied! \", -1));\nconst _hoisted_4 = [\n  _hoisted_2,\n  _hoisted_3\n];\nconst _hoisted_5 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"div\", { class: \"header\" }, [\n  /* @__PURE__ */ _createElementVNode(\"div\", { class: \"controls\" }, [\n    /* @__PURE__ */ _createElementVNode(\"div\"),\n    /* @__PURE__ */ _createElementVNode(\"div\"),\n    /* @__PURE__ */ _createElementVNode(\"div\")\n  ]),\n  /* @__PURE__ */ _createElementVNode(\"div\", { class: \"title\" }, \" Bash \")\n], -1));\nconst _hoisted_6 = { class: \"window\" };\nconst _hoisted_7 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"span\", { class: \"sign\" }, \"$\", -1));\nconst _hoisted_8 = { class: \"content\" };\nconst _hoisted_9 = {\n  key: 1,\n  class: \"prompt\"\n};\nimport { useClipboard } from \"@vueuse/core\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"Terminal\",\n  props: {\n    content: {\n      type: [Array, String],\n      required: true\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const { copy: copyToClipboard } = useClipboard();\n    const state = ref(\"init\");\n    const lines = computed(() => {\n      if (typeof props.content === \"string\") {\n        return [props.content];\n      }\n      return props.content;\n    });\n    const copy = (e) => {\n      copyToClipboard(lines.value.join(\"\\n\")).then(() => {\n        state.value = \"copied\";\n        setTimeout(() => {\n          state.value = \"init\";\n        }, 1e3);\n      }).catch(() => {\n        console.warn(\"Couldn't copy to clipboard!\");\n      });\n    };\n    return (_ctx, _cache) => {\n      return _openBlock(), _createElementBlock(\"div\", {\n        class: \"terminal\",\n        onClick: copy\n      }, [\n        _unref(state) === \"copied\" ? (_openBlock(), _createElementBlock(\"div\", _hoisted_1, _hoisted_4)) : _createCommentVNode(\"\", true),\n        _hoisted_5,\n        _createElementVNode(\"div\", _hoisted_6, [\n          (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_unref(lines), (line) => {\n            return _openBlock(), _createElementBlock(\"span\", {\n              key: line,\n              class: \"line\"\n            }, [\n              _hoisted_7,\n              _createElementVNode(\"span\", _hoisted_8, _toDisplayString(line), 1)\n            ]);\n          }), 128))\n        ]),\n        _unref(state) !== \"copied\" ? (_openBlock(), _createElementBlock(\"div\", _hoisted_9, \" Click to copy \")) : _createCommentVNode(\"\", true)\n      ]);\n    };\n  }\n});\n",
-      "start": 1707990826269,
-      "end": 1707990826276,
+      "start": 1708087952857,
+      "end": 1708087952864,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -193,50 +193,50 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1707990826277,
-      "end": 1707990826277,
+      "start": 1708087952864,
+      "end": 1708087952864,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1707990826277,
-      "end": 1707990826277,
+      "start": 1708087952864,
+      "end": 1708087952864,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1707990826277,
-      "end": 1707990826277,
+      "start": 1708087952865,
+      "end": 1708087952865,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1707990826277,
-      "end": 1707990826277,
+      "start": 1708087952865,
+      "end": 1708087952865,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1707990826277,
-      "end": 1707990826278,
+      "start": 1708087952865,
+      "end": 1708087952865,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1707990826278,
-      "end": 1707990826278,
+      "start": 1708087952865,
+      "end": 1708087952865,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1707990826278,
-      "end": 1707990826278,
+      "start": 1708087952865,
+      "end": 1708087952865,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1707990826278,
-      "end": 1707990826278,
+      "start": 1708087952865,
+      "end": 1708087952865,
       "order": "normal"
     }
   ]
