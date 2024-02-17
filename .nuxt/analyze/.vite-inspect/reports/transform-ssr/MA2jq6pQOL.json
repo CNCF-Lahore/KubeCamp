@@ -4,93 +4,93 @@
     {
       "name": "vite:load-fallback",
       "result": "<script setup lang=\"ts\">\nimport type { PropType } from 'vue'\n\nconst props = defineProps({\n  links: {\n    type: Array as PropType<any>,\n    default: () => []\n  },\n  level: {\n    type: Number,\n    default: 0\n  },\n  max: {\n    type: Number,\n    default: null\n  },\n  parent: {\n    type: Object as PropType<any>,\n    default: null\n  }\n})\n\nconst route = useRoute()\nconst { config } = useDocus()\n\nconst collapsedMap = useState(`docus-docs-aside-collapse-map-${props.parent?._path || '/'}`, () => {\n  if (props.level === 0) {\n    return {}\n  }\n  return (props.links as any [])\n    .filter(link => !!link.children)\n    .reduce((map, link) => {\n      map[link._path] = true\n      return map\n    }, {})\n})\n\nconst isActive = (link: any) => {\n  return route.path === link._path\n}\n\nconst isCollapsed = (link: any) => {\n  if (link.children) {\n    // Directory has been toggled manually, use its state\n    if (typeof collapsedMap.value[link._path] !== 'undefined') {\n      return collapsedMap.value[link._path]\n    }\n\n    // Check if aside.collapsed has been set in YML\n    if ([true, false].includes(link?.aside?.collapsed)) { return link.aside.collapsed }\n\n    // Return value grabbed from the link\n    if (link?.collapsed) { return link?.collapsed }\n\n    if (config?.value?.aside?.collapsed) { return config.value.aside?.collapsed }\n  }\n\n  return false\n}\n\nconst toggleCollapse = (link: any) => (collapsedMap.value[link._path] = !isCollapsed(link))\n\nconst hasNesting = computed(() => props.links.some((link: any) => link.children))\n</script>\n\n<template>\n  <ul class=\"docs-aside-tree\">\n    <li\n      v-for=\"link in links\"\n      :key=\"link._path\"\n      :class=\"{\n        'has-parent-icon': parent?.icon,\n        'has-children': level > 0 && link.children,\n        'bordered': level > 0 || !hasNesting,\n        'active': isActive(link),\n      }\"\n    >\n      <button\n        v-if=\"link.children\"\n        class=\"title-collapsible-button\"\n        @click=\"toggleCollapse(link)\"\n      >\n        <span class=\"content\">\n          <Icon\n            v-if=\"link?.navigation?.icon || link.icon\"\n            :name=\"link?.navigation?.icon || link.icon\"\n            class=\"icon\"\n          />\n          <span>{{ link?.navigation?.title || link.title || link._path }}</span>\n        </span>\n        <span>\n          <Icon\n            :name=\"isCollapsed(link) ? 'lucide:chevrons-up-down' : 'lucide:chevrons-down-up'\"\n            class=\"collapsible-icon\"\n          />\n        </span>\n      </button>\n\n      <NuxtLink\n        v-else\n        :to=\"link.redirect ? link.redirect : link._path\"\n        class=\"link\"\n        :exact=\"link.exact\"\n        :class=\"{\n          'padded': level > 0 || !hasNesting,\n          'active': isActive(link),\n        }\"\n      >\n        <span class=\"content\">\n          <Icon\n            v-if=\"link?.navigation?.icon || link.icon\"\n            :name=\"link?.navigation?.icon || link.icon\"\n            class=\"icon\"\n          />\n          <span>{{ link?.navigation?.title || link.title || link._path }}</span>\n        </span>\n      </NuxtLink>\n\n      <DocsAsideTree\n        v-show=\"!isCollapsed(link)\"\n        v-if=\"link.children?.length && (max === null || level + 1 < max)\"\n        :links=\"link.children\"\n        :level=\"level + 1\"\n        :parent=\"link\"\n        :max=\"max\"\n        class=\"recursive\"\n      />\n    </li>\n  </ul>\n</template>\n\n<style scoped lang=\"ts\">\ncss({\n  '.docs-aside-tree': {\n    li: {\n      '&.bordered': {\n        borderLeft: '1px solid {elements.border.primary.static}',\n        '&:hover': {\n          borderColor: '{elements.border.primary.hover}'\n        },\n        '&.active': {\n          borderColor: '{color.primary.400}',\n          '@dark': {\n            borderColor: '{color.primary.600}'\n          },\n        },\n        '&.has-children': {\n          paddingLeft: '{space.4}'\n        },\n        '&.has-parent-icon': {\n          marginLeft: '{space.2}'\n        }\n      }\n    },\n    '.recursive': {\n      padding: '{space.2} 0'\n    },\n    '.title-collapsible-button': {\n      display: 'flex',\n      alignItems: 'center',\n      justifyContent: 'space-between',\n      padding: '{space.rem.375} 0',\n      fontSize: '{text.sm.fontSize}',\n      lineHeight: '{text.sm.lineHeight}',\n      fontWeight: '{fontWeight.semibold}',\n      width: \"100%\",\n      color: '{color.gray.900}',\n      '@dark': {\n        color: '{color.gray.50}'\n      },\n      '.content': {\n        display: 'flex',\n        alignItems: 'center',\n        '.icon': {\n          width: '{space.4}',\n          height: '{space.4}',\n          marginRight: '{space.2}'\n        }\n      },\n      '.collapsible-icon': {\n        width: '{space.3}',\n        height: '{space.3}',\n        color: '{color.gray.400}',\n        '@dark': {\n          color: '{color.gray.500}',\n        }\n      }\n    },\n    '.link': {\n      display: 'flex',\n      alignItems: 'center',\n      justifyContent: 'space-between',\n      padding: '{space.rem.375} 0',\n      fontSize: '{text.sm.fontSize}',\n      lineHeight: '{text.sm.lineHeight}',\n      color: '{color.gray.500}',\n      '&:hover': {\n        color: '{color.gray.900}',\n      },\n      '@dark': {\n        '&:not(.active)': {\n          color: '{color.gray.400}',\n          '&:hover': {\n            color: '{color.gray.50}',\n          }\n        }\n      },\n      '&.padded': {\n        paddingLeft: '{space.4}'\n      },\n      '&.active': {\n        color: '{color.primary.500}',\n        fontWeight: '{fontWeight.medium}'\n      },\n      '.content': {\n        display: 'inline-flex',\n        alignItems: 'center'\n      },\n      '.icon': {\n        width: '{space.4}',\n        height: '{space.4}',\n        marginRight: '{space.1}'\n      }\n    }\n  }\n})\n</style>\n",
-      "start": 1708190401561,
-      "end": 1708190401754,
+      "start": 1708195455988,
+      "end": 1708195456167,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708190401754,
-      "end": 1708190401754,
+      "start": 1708195456168,
+      "end": 1708195456168,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708190401754,
-      "end": 1708190401754,
+      "start": 1708195456168,
+      "end": 1708195456168,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708190401754,
-      "end": 1708190401754,
+      "start": 1708195456168,
+      "end": 1708195456168,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708190401754,
-      "end": 1708190401754,
+      "start": 1708195456168,
+      "end": 1708195456168,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
-      "start": 1708190401754,
-      "end": 1708190401754,
+      "start": 1708195456168,
+      "end": 1708195456168,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
-      "start": 1708190401754,
-      "end": 1708190401754,
+      "start": 1708195456168,
+      "end": 1708195456168,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708190401754,
-      "end": 1708190401754,
+      "start": 1708195456168,
+      "end": 1708195456168,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708190401754,
-      "end": 1708190401754,
+      "start": 1708195456168,
+      "end": 1708195456168,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708190401754,
-      "end": 1708190401754,
+      "start": 1708195456168,
+      "end": 1708195456168,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708190401754,
-      "end": 1708190401754,
+      "start": 1708195456168,
+      "end": 1708195456168,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1708190401754,
-      "end": 1708190401754,
+      "start": 1708195456168,
+      "end": 1708195456168,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1708190401754,
-      "end": 1708190401754,
+      "start": 1708195456168,
+      "end": 1708195456168,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708190401754,
-      "end": 1708190401754,
+      "start": 1708195456168,
+      "end": 1708195456168,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "import _sfc_main from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsAsideTree.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsAsideTree.vue?vue&type=script&setup=true&lang.ts\";\nimport \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsAsideTree.vue?vue&type=style&index=0&scoped=0cffa3e9&lang.ts\";\nimport { useSSRContext as __vite_useSSRContext } from \"vue\";\nconst _sfc_setup = _sfc_main.setup;\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext();\n  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add(\"node_modules/@nuxt-themes/docus/components/docs/DocsAsideTree.vue\");\n  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;\n};\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"__scopeId\", \"data-v-0cffa3e9\"]]);\n",
-      "start": 1708190401754,
-      "end": 1708190401773,
+      "start": 1708195456168,
+      "end": 1708195456208,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -98,178 +98,178 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708190401773,
-      "end": 1708190401773,
+      "start": 1708195456208,
+      "end": 1708195456208,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708190401773,
-      "end": 1708190401773,
+      "start": 1708195456208,
+      "end": 1708195456208,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708190401773,
-      "end": 1708190401773,
+      "start": 1708195456208,
+      "end": 1708195456208,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708190401774,
-      "end": 1708190401774,
+      "start": 1708195456208,
+      "end": 1708195456208,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708190401774,
-      "end": 1708190401774,
+      "start": 1708195456208,
+      "end": 1708195456208,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
       "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsAsideTree.vue\").then(r => r.default))",
-      "start": 1708190401774,
-      "end": 1708190401774,
+      "start": 1708195456209,
+      "end": 1708195456209,
       "order": "normal",
       "sourcemaps": null
     },
     {
       "name": "replace",
-      "start": 1708190401774,
-      "end": 1708190401774,
+      "start": 1708195456209,
+      "end": 1708195456209,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708190401774,
-      "end": 1708190401774,
+      "start": 1708195456209,
+      "end": 1708195456209,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708190401774,
-      "end": 1708190401774,
+      "start": 1708195456209,
+      "end": 1708195456209,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708190401774,
-      "end": 1708190401774,
+      "start": 1708195456209,
+      "end": 1708195456209,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708190401779,
-      "end": 1708190401779,
+      "start": 1708195456209,
+      "end": 1708195456209,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708190401795,
-      "end": 1708190401795,
+      "start": 1708195456209,
+      "end": 1708195456209,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708190401795,
-      "end": 1708190401795,
+      "start": 1708195456209,
+      "end": 1708195456209,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708190401795,
-      "end": 1708190401795,
+      "start": 1708195456209,
+      "end": 1708195456209,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708190401795,
-      "end": 1708190401795,
+      "start": 1708195456209,
+      "end": 1708195456209,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708190401795,
-      "end": 1708190401795,
+      "start": 1708195456209,
+      "end": 1708195456209,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708190401796,
-      "end": 1708190401796,
+      "start": 1708195456209,
+      "end": 1708195456209,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708190401796,
-      "end": 1708190401796,
+      "start": 1708195456209,
+      "end": 1708195456209,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708190401797,
-      "end": 1708190401798,
+      "start": 1708195456210,
+      "end": 1708195456210,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708190401797,
-      "end": 1708190401798,
+      "start": 1708195456210,
+      "end": 1708195456210,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708190401798,
-      "end": 1708190401800,
+      "start": 1708195456210,
+      "end": 1708195456210,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708190401798,
-      "end": 1708190401800,
+      "start": 1708195456210,
+      "end": 1708195456210,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708190401801,
-      "end": 1708190401801,
+      "start": 1708195456211,
+      "end": 1708195456211,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708190401801,
-      "end": 1708190401801,
+      "start": 1708195456211,
+      "end": 1708195456211,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1708190401801,
-      "end": 1708190401801,
+      "start": 1708195456211,
+      "end": 1708195456211,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1708190401801,
-      "end": 1708190401801,
+      "start": 1708195456211,
+      "end": 1708195456211,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708190401801,
-      "end": 1708190401801,
+      "start": 1708195456211,
+      "end": 1708195456211,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708190401801,
-      "end": 1708190401801,
+      "start": 1708195456211,
+      "end": 1708195456211,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708190401801,
-      "end": 1708190401801,
+      "start": 1708195456211,
+      "end": 1708195456211,
       "order": "normal"
     }
   ]

@@ -1,0 +1,92 @@
+## Understanding Rolling Updates
+
+Rolling updates are a fundamental feature in Kubernetes, enabling you to update the running version of your application seamlessly and without downtime. This approach is crucial for maintaining continuous availability, meeting the modern expectations of both users and developers for frequent updates.
+
+A rolling update in Kubernetes incrementally replaces old Pods with new ones, which are based on a new version of the deployment image. This process ensures that the application remains available to users and that the update does not consume all resources, allowing for a balanced deployment.
+
+### Architecture and Workflow
+
+1. **Update Trigger**: An update is triggered (usually by changing the Docker image version in a Deployment).
+2. **Pod Replacement**: Kubernetes schedules new Pods with the new version while gradually terminating the old ones, ensuring that the service remains available throughout the process.
+3. **Resource Management**: New Pods are only scheduled on Nodes with sufficient free resources, which optimizes resource use across the cluster.
+4. **Zero Downtime**: Thanks to load balancing, users continue to access the service without interruption. The Service object in Kubernetes automatically redirects traffic to the available and updated Pods.
+
+### Requirements for Zero Downtime
+
+- **Multiple Instances**: Running multiple instances of your application is essential. This redundancy allows some Pods to be updated while others continue to serve user requests.
+- **Proper Configuration**: The Deployment must be properly configured to define the maximum number of Pods that can be unavailable and the maximum number of new Pods that can be created during the update.
+
+## Rolling Update Commands
+
+### Updating a Deployment
+
+To perform a rolling update, you typically update the image of the Deployment. For example, to update an application to a new version, you use the following command:
+
+```shell
+kubectl set image deployment/<deployment-name> <container-name>=<new-image>:<tag>
+```
+
+This command sets a new image for the specified container within your Deployment. Kubernetes then starts a rolling update automatically.
+
+### Checking the Rollout Status
+
+To monitor the status of the rollout, use:
+
+```shell
+kubectl rollout status deployment/<deployment-name>
+```
+
+This command provides real-time feedback on the progress of the update.
+
+### Rolling Back an Update
+
+If something goes wrong, Kubernetes allows you to rollback to a previous state of the Deployment:
+
+```shell
+kubectl rollout undo deployment/<deployment-name>
+```
+
+This command reverts the Deployment to its previous state, leveraging Kubernetes' versioned update feature.
+
+## Strategies for Zero Downtime Deployments
+
+- **Readiness Probes**: Ensure your Pods have readiness probes configured. This makes Kubernetes only send traffic to Pods that are ready to handle requests.
+- **Resource Limits**: Define appropriate resource requests and limits to ensure that your containers have enough resources to run effectively but do not monopolize cluster resources.
+- **Surge and Unavailability Settings**: Customize the `maxSurge` and `maxUnavailable` settings in your Deployment configuration. `maxSurge` defines the maximum number of Pods that can be created above the desired number of Pods during an update. `maxUnavailable` defines the maximum number of Pods that can be unavailable during the update process.
+
+### Example Deployment Configuration for Rolling Updates
+
+Here's a snippet of a Deployment manifest that specifies these parameters:
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: example-deployment
+spec:
+  replicas: 3
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+  selector:
+    matchLabels:
+      app: example
+  template:
+    metadata:
+      labels:
+        app: example
+    spec:
+      containers:
+      - name: example-container
+        image: example/image:v1
+        ports:
+        - containerPort: 80
+```
+
+This configuration ensures a rolling update with at most one extra Pod beyond the desired count (`maxSurge`) and at most one Pod unavailable (`maxUnavailable`) at any time during the update process.
+
+## Summary
+
+Rolling updates are a powerful feature of Kubernetes, allowing for continuous integration and delivery with zero downtime. By understanding and utilizing the concepts and commands outlined in this module, you can ensure that your applications remain available and responsive, even as you deploy updates and improvements.

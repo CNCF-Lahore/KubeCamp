@@ -4,39 +4,39 @@
     {
       "name": "vite:load-fallback",
       "result": "<script>\nimport { defineComponent, h, useSlots } from \"vue\";\nimport { withTrailingSlash } from \"ufo\";\nimport ContentRenderer from \"./ContentRenderer.vue\";\nimport ContentQuery from \"./ContentQuery.vue\";\nimport { useRuntimeConfig, useRoute, useContentHead } from \"#imports\";\nconst ContentDoc = defineComponent({\n  name: \"ContentDoc\",\n  props: {\n    /**\n     * Renderer props\n     */\n    /**\n     * The tag to use for the renderer element if it is used.\n     * @default 'div'\n     */\n    tag: {\n      type: String,\n      required: false,\n      default: \"div\"\n    },\n    /**\n     * Whether or not to render the excerpt.\n     * @default false\n     */\n    excerpt: {\n      type: Boolean,\n      default: false\n    },\n    /**\n     * Query props\n     */\n    /**\n     * The path of the content to load from content source.\n     * @default useRoute().path\n     */\n    path: {\n      type: String,\n      required: false,\n      default: void 0\n    },\n    /**\n     * A query builder params object to be passed to <ContentQuery /> component.\n     */\n    query: {\n      type: Object,\n      required: false,\n      default: void 0\n    },\n    /**\n     * Whether or not to map the document data to the `head` property.\n     */\n    head: {\n      type: Boolean,\n      required: false,\n      default: void 0\n    }\n  },\n  /**\n   * Document empty fallback\n   * @slot empty\n   */\n  /**\n   * Document not found fallback\n   * @slot not-found\n   */\n  render(ctx) {\n    const { contentHead } = useRuntimeConfig().public.content;\n    const slots = useSlots();\n    const { tag, excerpt, path, query, head } = ctx;\n    const shouldInjectContentHead = head === void 0 ? contentHead : head;\n    const contentQueryProps = {\n      ...query || {},\n      path: path || query?.path || withTrailingSlash(useRoute().path),\n      find: \"one\"\n    };\n    const emptyNode = (slot, data) => h(\"pre\", null, JSON.stringify({ message: \"You should use slots with <ContentDoc>\", slot, data }, null, 2));\n    return h(\n      ContentQuery,\n      contentQueryProps,\n      {\n        // Default slot\n        default: slots?.default ? ({ data, refresh, isPartial }) => {\n          if (shouldInjectContentHead) {\n            useContentHead(data);\n          }\n          return slots.default?.({ doc: data, refresh, isPartial, excerpt, ...this.$attrs });\n        } : ({ data }) => {\n          if (shouldInjectContentHead) {\n            useContentHead(data);\n          }\n          return h(\n            ContentRenderer,\n            { value: data, excerpt, tag, ...this.$attrs },\n            // Forward local `empty` slots to ContentRenderer if it is used.\n            { empty: (bindings) => slots?.empty ? slots.empty(bindings) : emptyNode(\"default\", data) }\n          );\n        },\n        // Empty slot\n        empty: (bindings) => slots?.empty?.(bindings) || h(\"p\", null, \"Document is empty, overwrite this content with #empty slot in <ContentDoc>.\"),\n        // Not Found slot\n        \"not-found\": (bindings) => slots?.[\"not-found\"]?.(bindings) || h(\"p\", null, \"Document not found, overwrite this content with #not-found slot in <ContentDoc>.\")\n      }\n    );\n  }\n});\nexport default ContentDoc;\n</script>\n",
-      "start": 1708190403226,
-      "end": 1708190403329,
+      "start": 1708195457254,
+      "end": 1708195457347,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708190403329,
-      "end": 1708190403329,
+      "start": 1708195457347,
+      "end": 1708195457347,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708190403329,
-      "end": 1708190403329,
+      "start": 1708195457347,
+      "end": 1708195457347,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708190403329,
-      "end": 1708190403329,
+      "start": 1708195457347,
+      "end": 1708195457347,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708190403329,
-      "end": 1708190403329,
+      "start": 1708195457347,
+      "end": 1708195457347,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "<script>\nimport { defineComponent, h, useSlots } from \"vue\";\nimport { withTrailingSlash } from \"ufo\";\nimport ContentRenderer from \"./ContentRenderer.vue\";\nimport ContentQuery from \"./ContentQuery.vue\";\nimport { useRuntimeConfig, useRoute, useContentHead } from \"#imports\";\nconst ContentDoc = defineComponent({\n  name: \"ContentDoc\",\n  props: {\n    /**\n     * Renderer props\n     */\n    /**\n     * The tag to use for the renderer element if it is used.\n     * @default 'div'\n     */\n    tag: {\n      type: String,\n      required: false,\n      default: \"div\"\n    },\n    /**\n     * Whether or not to render the excerpt.\n     * @default false\n     */\n    excerpt: {\n      type: Boolean,\n      default: false\n    },\n    /**\n     * Query props\n     */\n    /**\n     * The path of the content to load from content source.\n     * @default useRoute().path\n     */\n    path: {\n      type: String,\n      required: false,\n      default: void 0\n    },\n    /**\n     * A query builder params object to be passed to <ContentQuery /> component.\n     */\n    query: {\n      type: Object,\n      required: false,\n      default: void 0\n    },\n    /**\n     * Whether or not to map the document data to the `head` property.\n     */\n    head: {\n      type: Boolean,\n      required: false,\n      default: void 0\n    }\n  },\n  /**\n   * Document empty fallback\n   * @slot empty\n   */\n  /**\n   * Document not found fallback\n   * @slot not-found\n   */\n  render(ctx) {\n    const { contentHead } = useRuntimeConfig().public.content;\n    const slots = useSlots();\n    const { tag, excerpt, path, query, head } = ctx;\n    const shouldInjectContentHead = head === void 0 ? contentHead : head;\n    const contentQueryProps = {\n      ...query || {},\n      path: path || query?.path || withTrailingSlash(useRoute().path),\n      find: \"one\"\n    };\n    const emptyNode = (slot, data) => h(\"pre\", null, JSON.stringify({ message: \"You should use slots with <ContentDoc>\", slot, data }, null, 2));\n    return h(\n      ContentQuery,\n      contentQueryProps,\n      {\n        // Default slot\n        default: slots?.default ? ({ data, refresh, isPartial }) => {\n          if (shouldInjectContentHead) {\n            useContentHead(data);\n          }\n          return slots.default?.({ doc: data, refresh, isPartial, excerpt, ...this.$attrs });\n        } : ({ data }) => {\n          if (shouldInjectContentHead) {\n            useContentHead(data);\n          }\n          return h(\n            ContentRenderer,\n            { value: data, excerpt, tag, ...this.$attrs },\n            // Forward local `empty` slots to ContentRenderer if it is used.\n            { empty: (bindings) => slots?.empty ? slots.empty(bindings) : emptyNode(\"default\", data) }\n          );\n        },\n        // Empty slot\n        empty: (bindings) => slots?.empty?.(bindings) || h(\"p\", null, \"Document is empty, overwrite this content with #empty slot in <ContentDoc>.\"),\n        // Not Found slot\n        \"not-found\": (bindings) => slots?.[\"not-found\"]?.(bindings) || h(\"p\", null, \"Document not found, overwrite this content with #not-found slot in <ContentDoc>.\")\n      }\n    );\n  }\n});\nexport default ContentDoc;\n</script>\n",
-      "start": 1708190403329,
-      "end": 1708190403329,
+      "start": 1708195457347,
+      "end": 1708195457347,
       "order": "pre",
       "sourcemaps": {
         "version": 3,
@@ -51,8 +51,8 @@
     {
       "name": "pinceau-transforms",
       "result": "<script>\nimport { defineComponent, h, useSlots } from \"vue\";\nimport { withTrailingSlash } from \"ufo\";\nimport ContentRenderer from \"./ContentRenderer.vue\";\nimport ContentQuery from \"./ContentQuery.vue\";\nimport { useRuntimeConfig, useRoute, useContentHead } from \"#imports\";\nconst ContentDoc = defineComponent({\n  name: \"ContentDoc\",\n  props: {\n    /**\n     * Renderer props\n     */\n    /**\n     * The tag to use for the renderer element if it is used.\n     * @default 'div'\n     */\n    tag: {\n      type: String,\n      required: false,\n      default: \"div\"\n    },\n    /**\n     * Whether or not to render the excerpt.\n     * @default false\n     */\n    excerpt: {\n      type: Boolean,\n      default: false\n    },\n    /**\n     * Query props\n     */\n    /**\n     * The path of the content to load from content source.\n     * @default useRoute().path\n     */\n    path: {\n      type: String,\n      required: false,\n      default: void 0\n    },\n    /**\n     * A query builder params object to be passed to <ContentQuery /> component.\n     */\n    query: {\n      type: Object,\n      required: false,\n      default: void 0\n    },\n    /**\n     * Whether or not to map the document data to the `head` property.\n     */\n    head: {\n      type: Boolean,\n      required: false,\n      default: void 0\n    }\n  },\n  /**\n   * Document empty fallback\n   * @slot empty\n   */\n  /**\n   * Document not found fallback\n   * @slot not-found\n   */\n  render(ctx) {\n    const { contentHead } = useRuntimeConfig().public.content;\n    const slots = useSlots();\n    const { tag, excerpt, path, query, head } = ctx;\n    const shouldInjectContentHead = head === void 0 ? contentHead : head;\n    const contentQueryProps = {\n      ...query || {},\n      path: path || query?.path || withTrailingSlash(useRoute().path),\n      find: \"one\"\n    };\n    const emptyNode = (slot, data) => h(\"pre\", null, JSON.stringify({ message: \"You should use slots with <ContentDoc>\", slot, data }, null, 2));\n    return h(\n      ContentQuery,\n      contentQueryProps,\n      {\n        // Default slot\n        default: slots?.default ? ({ data, refresh, isPartial }) => {\n          if (shouldInjectContentHead) {\n            useContentHead(data);\n          }\n          return slots.default?.({ doc: data, refresh, isPartial, excerpt, ...this.$attrs });\n        } : ({ data }) => {\n          if (shouldInjectContentHead) {\n            useContentHead(data);\n          }\n          return h(\n            ContentRenderer,\n            { value: data, excerpt, tag, ...this.$attrs },\n            // Forward local `empty` slots to ContentRenderer if it is used.\n            { empty: (bindings) => slots?.empty ? slots.empty(bindings) : emptyNode(\"default\", data) }\n          );\n        },\n        // Empty slot\n        empty: (bindings) => slots?.empty?.(bindings) || h(\"p\", null, \"Document is empty, overwrite this content with #empty slot in <ContentDoc>.\"),\n        // Not Found slot\n        \"not-found\": (bindings) => slots?.[\"not-found\"]?.(bindings) || h(\"p\", null, \"Document not found, overwrite this content with #not-found slot in <ContentDoc>.\")\n      }\n    );\n  }\n});\nexport default ContentDoc;\n</script>\n",
-      "start": 1708190403329,
-      "end": 1708190403329,
+      "start": 1708195457347,
+      "end": 1708195457347,
       "order": "pre",
       "sourcemaps": {
         "version": 3,
@@ -66,51 +66,51 @@
     },
     {
       "name": "content-slot",
-      "start": 1708190403329,
-      "end": 1708190403329,
+      "start": 1708195457347,
+      "end": 1708195457347,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708190403329,
-      "end": 1708190403329,
+      "start": 1708195457347,
+      "end": 1708195457347,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708190403329,
-      "end": 1708190403329,
+      "start": 1708195457347,
+      "end": 1708195457347,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708190403329,
-      "end": 1708190403329,
+      "start": 1708195457347,
+      "end": 1708195457347,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1708190403329,
-      "end": 1708190403329,
+      "start": 1708195457348,
+      "end": 1708195457348,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1708190403329,
-      "end": 1708190403329,
+      "start": 1708195457348,
+      "end": 1708195457348,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708190403329,
-      "end": 1708190403329,
+      "start": 1708195457348,
+      "end": 1708195457348,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "\nimport { defineComponent, h, useSlots } from \"vue\";\nimport { withTrailingSlash } from \"ufo\";\nimport ContentRenderer from \"./ContentRenderer.vue\";\nimport ContentQuery from \"./ContentQuery.vue\";\nimport { useRuntimeConfig, useRoute, useContentHead } from \"#imports\";\nconst ContentDoc = defineComponent({\n  name: \"ContentDoc\",\n  props: {\n    /**\n     * Renderer props\n     */\n    /**\n     * The tag to use for the renderer element if it is used.\n     * @default 'div'\n     */\n    tag: {\n      type: String,\n      required: false,\n      default: \"div\"\n    },\n    /**\n     * Whether or not to render the excerpt.\n     * @default false\n     */\n    excerpt: {\n      type: Boolean,\n      default: false\n    },\n    /**\n     * Query props\n     */\n    /**\n     * The path of the content to load from content source.\n     * @default useRoute().path\n     */\n    path: {\n      type: String,\n      required: false,\n      default: void 0\n    },\n    /**\n     * A query builder params object to be passed to <ContentQuery /> component.\n     */\n    query: {\n      type: Object,\n      required: false,\n      default: void 0\n    },\n    /**\n     * Whether or not to map the document data to the `head` property.\n     */\n    head: {\n      type: Boolean,\n      required: false,\n      default: void 0\n    }\n  },\n  /**\n   * Document empty fallback\n   * @slot empty\n   */\n  /**\n   * Document not found fallback\n   * @slot not-found\n   */\n  render(ctx) {\n    const { contentHead } = useRuntimeConfig().public.content;\n    const slots = useSlots();\n    const { tag, excerpt, path, query, head } = ctx;\n    const shouldInjectContentHead = head === void 0 ? contentHead : head;\n    const contentQueryProps = {\n      ...query || {},\n      path: path || query?.path || withTrailingSlash(useRoute().path),\n      find: \"one\"\n    };\n    const emptyNode = (slot, data) => h(\"pre\", null, JSON.stringify({ message: \"You should use slots with <ContentDoc>\", slot, data }, null, 2));\n    return h(\n      ContentQuery,\n      contentQueryProps,\n      {\n        // Default slot\n        default: slots?.default ? ({ data, refresh, isPartial }) => {\n          if (shouldInjectContentHead) {\n            useContentHead(data);\n          }\n          return slots.default?.({ doc: data, refresh, isPartial, excerpt, ...this.$attrs });\n        } : ({ data }) => {\n          if (shouldInjectContentHead) {\n            useContentHead(data);\n          }\n          return h(\n            ContentRenderer,\n            { value: data, excerpt, tag, ...this.$attrs },\n            // Forward local `empty` slots to ContentRenderer if it is used.\n            { empty: (bindings) => slots?.empty ? slots.empty(bindings) : emptyNode(\"default\", data) }\n          );\n        },\n        // Empty slot\n        empty: (bindings) => slots?.empty?.(bindings) || h(\"p\", null, \"Document is empty, overwrite this content with #empty slot in <ContentDoc>.\"),\n        // Not Found slot\n        \"not-found\": (bindings) => slots?.[\"not-found\"]?.(bindings) || h(\"p\", null, \"Document not found, overwrite this content with #not-found slot in <ContentDoc>.\")\n      }\n    );\n  }\n});\nconst _sfc_main = ContentDoc;\n\n\n\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nexport default _sfc_main",
-      "start": 1708190403329,
-      "end": 1708190403329,
+      "start": 1708195457348,
+      "end": 1708195457348,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -128,119 +128,119 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708190403329,
-      "end": 1708190403329,
+      "start": 1708195457348,
+      "end": 1708195457348,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708190403329,
-      "end": 1708190403329,
+      "start": 1708195457348,
+      "end": 1708195457348,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708190403329,
-      "end": 1708190403329,
+      "start": 1708195457348,
+      "end": 1708195457348,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708190403329,
-      "end": 1708190403329,
+      "start": 1708195457348,
+      "end": 1708195457348,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708190403329,
-      "end": 1708190403329,
+      "start": 1708195457348,
+      "end": 1708195457348,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708190403329,
-      "end": 1708190403330,
+      "start": 1708195457348,
+      "end": 1708195457348,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708190403330,
-      "end": 1708190403330,
+      "start": 1708195457348,
+      "end": 1708195457348,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708190403330,
-      "end": 1708190403330,
+      "start": 1708195457348,
+      "end": 1708195457348,
       "order": "normal"
     },
     {
       "name": "vite:define",
       "result": "import { defineComponent, h, useSlots } from \"vue\";\nimport { withTrailingSlash } from \"ufo\";\nimport ContentRenderer from \"./ContentRenderer.vue\";\nimport ContentQuery from \"./ContentQuery.vue\";\nimport { useRuntimeConfig, useRoute, useContentHead } from \"#imports\";\nconst ContentDoc = defineComponent({\n  name: \"ContentDoc\",\n  props: {\n    /**\n     * Renderer props\n     */\n    /**\n     * The tag to use for the renderer element if it is used.\n     * @default 'div'\n     */\n    tag: {\n      type: String,\n      required: false,\n      default: \"div\"\n    },\n    /**\n     * Whether or not to render the excerpt.\n     * @default false\n     */\n    excerpt: {\n      type: Boolean,\n      default: false\n    },\n    /**\n     * Query props\n     */\n    /**\n     * The path of the content to load from content source.\n     * @default useRoute().path\n     */\n    path: {\n      type: String,\n      required: false,\n      default: void 0\n    },\n    /**\n     * A query builder params object to be passed to <ContentQuery /> component.\n     */\n    query: {\n      type: Object,\n      required: false,\n      default: void 0\n    },\n    /**\n     * Whether or not to map the document data to the `head` property.\n     */\n    head: {\n      type: Boolean,\n      required: false,\n      default: void 0\n    }\n  },\n  /**\n   * Document empty fallback\n   * @slot empty\n   */\n  /**\n   * Document not found fallback\n   * @slot not-found\n   */\n  render(ctx) {\n    const { contentHead } = useRuntimeConfig().public.content;\n    const slots = useSlots();\n    const { tag, excerpt, path, query, head } = ctx;\n    const shouldInjectContentHead = head === void 0 ? contentHead : head;\n    const contentQueryProps = {\n      ...query || {},\n      path: path || query?.path || withTrailingSlash(useRoute().path),\n      find: \"one\"\n    };\n    const emptyNode = (slot, data) => h(\"pre\", null, JSON.stringify({ message: \"You should use slots with <ContentDoc>\", slot, data }, null, 2));\n    return h(\n      ContentQuery,\n      contentQueryProps,\n      {\n        // Default slot\n        default: slots?.default ? ({ data, refresh, isPartial }) => {\n          if (shouldInjectContentHead) {\n            useContentHead(data);\n          }\n          return slots.default?.({ doc: data, refresh, isPartial, excerpt, ...this.$attrs });\n        } : ({ data }) => {\n          if (shouldInjectContentHead) {\n            useContentHead(data);\n          }\n          return h(\n            ContentRenderer,\n            { value: data, excerpt, tag, ...this.$attrs },\n            // Forward local `empty` slots to ContentRenderer if it is used.\n            { empty: (bindings) => slots?.empty ? slots.empty(bindings) : emptyNode(\"default\", data) }\n          );\n        },\n        // Empty slot\n        empty: (bindings) => slots?.empty?.(bindings) || h(\"p\", null, \"Document is empty, overwrite this content with #empty slot in <ContentDoc>.\"),\n        // Not Found slot\n        \"not-found\": (bindings) => slots?.[\"not-found\"]?.(bindings) || h(\"p\", null, \"Document not found, overwrite this content with #not-found slot in <ContentDoc>.\")\n      }\n    );\n  }\n});\nconst _sfc_main = ContentDoc;\nimport { useSSRContext as __vite_useSSRContext } from \"vue\";\nconst _sfc_setup = _sfc_main.setup;\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext();\n  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add(\"node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue\");\n  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;\n};\nexport default _sfc_main;\n",
-      "start": 1708190403330,
-      "end": 1708190403338,
+      "start": 1708195457348,
+      "end": 1708195457367,
       "order": "normal",
       "sourcemaps": "{\n  \"version\": 3,\n  \"sources\": [\"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue\"],\n  \"sourcesContent\": [\"\\nimport { defineComponent, h, useSlots } from \\\"vue\\\";\\nimport { withTrailingSlash } from \\\"ufo\\\";\\nimport ContentRenderer from \\\"./ContentRenderer.vue\\\";\\nimport ContentQuery from \\\"./ContentQuery.vue\\\";\\nimport { useRuntimeConfig, useRoute, useContentHead } from \\\"#imports\\\";\\nconst ContentDoc = defineComponent({\\n  name: \\\"ContentDoc\\\",\\n  props: {\\n    /**\\n     * Renderer props\\n     */\\n    /**\\n     * The tag to use for the renderer element if it is used.\\n     * @default 'div'\\n     */\\n    tag: {\\n      type: String,\\n      required: false,\\n      default: \\\"div\\\"\\n    },\\n    /**\\n     * Whether or not to render the excerpt.\\n     * @default false\\n     */\\n    excerpt: {\\n      type: Boolean,\\n      default: false\\n    },\\n    /**\\n     * Query props\\n     */\\n    /**\\n     * The path of the content to load from content source.\\n     * @default useRoute().path\\n     */\\n    path: {\\n      type: String,\\n      required: false,\\n      default: void 0\\n    },\\n    /**\\n     * A query builder params object to be passed to <ContentQuery /> component.\\n     */\\n    query: {\\n      type: Object,\\n      required: false,\\n      default: void 0\\n    },\\n    /**\\n     * Whether or not to map the document data to the `head` property.\\n     */\\n    head: {\\n      type: Boolean,\\n      required: false,\\n      default: void 0\\n    }\\n  },\\n  /**\\n   * Document empty fallback\\n   * @slot empty\\n   */\\n  /**\\n   * Document not found fallback\\n   * @slot not-found\\n   */\\n  render(ctx) {\\n    const { contentHead } = useRuntimeConfig().public.content;\\n    const slots = useSlots();\\n    const { tag, excerpt, path, query, head } = ctx;\\n    const shouldInjectContentHead = head === void 0 ? contentHead : head;\\n    const contentQueryProps = {\\n      ...query || {},\\n      path: path || query?.path || withTrailingSlash(useRoute().path),\\n      find: \\\"one\\\"\\n    };\\n    const emptyNode = (slot, data) => h(\\\"pre\\\", null, JSON.stringify({ message: \\\"You should use slots with <ContentDoc>\\\", slot, data }, null, 2));\\n    return h(\\n      ContentQuery,\\n      contentQueryProps,\\n      {\\n        // Default slot\\n        default: slots?.default ? ({ data, refresh, isPartial }) => {\\n          if (shouldInjectContentHead) {\\n            useContentHead(data);\\n          }\\n          return slots.default?.({ doc: data, refresh, isPartial, excerpt, ...this.$attrs });\\n        } : ({ data }) => {\\n          if (shouldInjectContentHead) {\\n            useContentHead(data);\\n          }\\n          return h(\\n            ContentRenderer,\\n            { value: data, excerpt, tag, ...this.$attrs },\\n            // Forward local `empty` slots to ContentRenderer if it is used.\\n            { empty: (bindings) => slots?.empty ? slots.empty(bindings) : emptyNode(\\\"default\\\", data) }\\n          );\\n        },\\n        // Empty slot\\n        empty: (bindings) => slots?.empty?.(bindings) || h(\\\"p\\\", null, \\\"Document is empty, overwrite this content with #empty slot in <ContentDoc>.\\\"),\\n        // Not Found slot\\n        \\\"not-found\\\": (bindings) => slots?.[\\\"not-found\\\"]?.(bindings) || h(\\\"p\\\", null, \\\"Document not found, overwrite this content with #not-found slot in <ContentDoc>.\\\")\\n      }\\n    );\\n  }\\n});\\nconst _sfc_main = ContentDoc;\\n\\n\\n\\n\\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\\nconst _sfc_setup = _sfc_main.setup\\n_sfc_main.setup = (props, ctx) => {\\n  const ssrContext = __vite_useSSRContext()\\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\\\"node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue\\\")\\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\\n}\\nexport default _sfc_main\"],\n  \"mappings\": \"AACA,SAAS,iBAAiB,GAAG,gBAAgB;AAC7C,SAAS,yBAAyB;AAClC,OAAO,qBAAqB;AAC5B,OAAO,kBAAkB;AACzB,SAAS,kBAAkB,UAAU,sBAAsB;AAC3D,MAAM,aAAa,gBAAgB;AAAA,EACjC,MAAM;AAAA,EACN,OAAO;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,IAQL,KAAK;AAAA,MACH,MAAM;AAAA,MACN,UAAU;AAAA,MACV,SAAS;AAAA,IACX;AAAA;AAAA;AAAA;AAAA;AAAA,IAKA,SAAS;AAAA,MACP,MAAM;AAAA,MACN,SAAS;AAAA,IACX;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,IAQA,MAAM;AAAA,MACJ,MAAM;AAAA,MACN,UAAU;AAAA,MACV,SAAS;AAAA,IACX;AAAA;AAAA;AAAA;AAAA,IAIA,OAAO;AAAA,MACL,MAAM;AAAA,MACN,UAAU;AAAA,MACV,SAAS;AAAA,IACX;AAAA;AAAA;AAAA;AAAA,IAIA,MAAM;AAAA,MACJ,MAAM;AAAA,MACN,UAAU;AAAA,MACV,SAAS;AAAA,IACX;AAAA,EACF;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,EASA,OAAO,KAAK;AACV,UAAM,EAAE,YAAY,IAAI,iBAAiB,EAAE,OAAO;AAClD,UAAM,QAAQ,SAAS;AACvB,UAAM,EAAE,KAAK,SAAS,MAAM,OAAO,KAAK,IAAI;AAC5C,UAAM,0BAA0B,SAAS,SAAS,cAAc;AAChE,UAAM,oBAAoB;AAAA,MACxB,GAAG,SAAS,CAAC;AAAA,MACb,MAAM,QAAQ,OAAO,QAAQ,kBAAkB,SAAS,EAAE,IAAI;AAAA,MAC9D,MAAM;AAAA,IACR;AACA,UAAM,YAAY,CAAC,MAAM,SAAS,EAAE,OAAO,MAAM,KAAK,UAAU,EAAE,SAAS,0CAA0C,MAAM,KAAK,GAAG,MAAM,CAAC,CAAC;AAC3I,WAAO;AAAA,MACL;AAAA,MACA;AAAA,MACA;AAAA;AAAA,QAEE,SAAS,OAAO,UAAU,CAAC,EAAE,MAAM,SAAS,UAAU,MAAM;AAC1D,cAAI,yBAAyB;AAC3B,2BAAe,IAAI;AAAA,UACrB;AACA,iBAAO,MAAM,UAAU,EAAE,KAAK,MAAM,SAAS,WAAW,SAAS,GAAG,KAAK,OAAO,CAAC;AAAA,QACnF,IAAI,CAAC,EAAE,KAAK,MAAM;AAChB,cAAI,yBAAyB;AAC3B,2BAAe,IAAI;AAAA,UACrB;AACA,iBAAO;AAAA,YACL;AAAA,YACA,EAAE,OAAO,MAAM,SAAS,KAAK,GAAG,KAAK,OAAO;AAAA;AAAA,YAE5C,EAAE,OAAO,CAAC,aAAa,OAAO,QAAQ,MAAM,MAAM,QAAQ,IAAI,UAAU,WAAW,IAAI,EAAE;AAAA,UAC3F;AAAA,QACF;AAAA;AAAA,QAEA,OAAO,CAAC,aAAa,OAAO,QAAQ,QAAQ,KAAK,EAAE,KAAK,MAAM,6EAA6E;AAAA;AAAA,QAE3I,aAAa,CAAC,aAAa,QAAQ,WAAW,IAAI,QAAQ,KAAK,EAAE,KAAK,MAAM,kFAAkF;AAAA,MAChK;AAAA,IACF;AAAA,EACF;AACF,CAAC;AACD,MAAM,YAAY;AAKlB,SAAS,iBAAiB,4BAA4B;AACtD,MAAM,aAAa,UAAU;AAC7B,UAAU,QAAQ,CAAC,OAAO,QAAQ;AAChC,QAAM,aAAa,qBAAqB;AACvC,GAAC,WAAW,YAAY,WAAW,UAAU,oBAAI,IAAI,IAAI,IAAI,mEAAmE;AACjI,SAAO,aAAa,WAAW,OAAO,GAAG,IAAI;AAC/C;AACA,eAAe;\",\n  \"names\": []\n}\n"
     },
     {
       "name": "vite:css-post",
-      "start": 1708190403338,
-      "end": 1708190403338,
+      "start": 1708195457367,
+      "end": 1708195457367,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708190403338,
-      "end": 1708190403338,
+      "start": 1708195457367,
+      "end": 1708195457367,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708190403338,
-      "end": 1708190403338,
+      "start": 1708195457367,
+      "end": 1708195457367,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708190403338,
-      "end": 1708190403338,
+      "start": 1708195457367,
+      "end": 1708195457367,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708190403338,
-      "end": 1708190403338,
+      "start": 1708195457367,
+      "end": 1708195457367,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708190403338,
-      "end": 1708190403338,
+      "start": 1708195457367,
+      "end": 1708195457367,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708190403338,
-      "end": 1708190403338,
+      "start": 1708195457367,
+      "end": 1708195457367,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708190403338,
-      "end": 1708190403338,
+      "start": 1708195457367,
+      "end": 1708195457367,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708190403338,
-      "end": 1708190403338,
+      "start": 1708195457367,
+      "end": 1708195457367,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { useRuntimeConfig } from '#app/nuxt';\nimport { useRoute } from '#app/composables/router';\nimport { useContentHead } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/composables/head';\nimport { defineComponent, h, useSlots } from \"vue\";\nimport { withTrailingSlash } from \"ufo\";\nimport ContentRenderer from \"./ContentRenderer.vue\";\nimport ContentQuery from \"./ContentQuery.vue\";\nconst ContentDoc = defineComponent({\n  name: \"ContentDoc\",\n  props: {\n    /**\n     * Renderer props\n     */\n    /**\n     * The tag to use for the renderer element if it is used.\n     * @default 'div'\n     */\n    tag: {\n      type: String,\n      required: false,\n      default: \"div\"\n    },\n    /**\n     * Whether or not to render the excerpt.\n     * @default false\n     */\n    excerpt: {\n      type: Boolean,\n      default: false\n    },\n    /**\n     * Query props\n     */\n    /**\n     * The path of the content to load from content source.\n     * @default useRoute().path\n     */\n    path: {\n      type: String,\n      required: false,\n      default: void 0\n    },\n    /**\n     * A query builder params object to be passed to <ContentQuery /> component.\n     */\n    query: {\n      type: Object,\n      required: false,\n      default: void 0\n    },\n    /**\n     * Whether or not to map the document data to the `head` property.\n     */\n    head: {\n      type: Boolean,\n      required: false,\n      default: void 0\n    }\n  },\n  /**\n   * Document empty fallback\n   * @slot empty\n   */\n  /**\n   * Document not found fallback\n   * @slot not-found\n   */\n  render(ctx) {\n    const { contentHead } = useRuntimeConfig().public.content;\n    const slots = useSlots();\n    const { tag, excerpt, path, query, head } = ctx;\n    const shouldInjectContentHead = head === void 0 ? contentHead : head;\n    const contentQueryProps = {\n      ...query || {},\n      path: path || query?.path || withTrailingSlash(useRoute().path),\n      find: \"one\"\n    };\n    const emptyNode = (slot, data) => h(\"pre\", null, JSON.stringify({ message: \"You should use slots with <ContentDoc>\", slot, data }, null, 2));\n    return h(\n      ContentQuery,\n      contentQueryProps,\n      {\n        // Default slot\n        default: slots?.default ? ({ data, refresh, isPartial }) => {\n          if (shouldInjectContentHead) {\n            useContentHead(data);\n          }\n          return slots.default?.({ doc: data, refresh, isPartial, excerpt, ...this.$attrs });\n        } : ({ data }) => {\n          if (shouldInjectContentHead) {\n            useContentHead(data);\n          }\n          return h(\n            ContentRenderer,\n            { value: data, excerpt, tag, ...this.$attrs },\n            // Forward local `empty` slots to ContentRenderer if it is used.\n            { empty: (bindings) => slots?.empty ? slots.empty(bindings) : emptyNode(\"default\", data) }\n          );\n        },\n        // Empty slot\n        empty: (bindings) => slots?.empty?.(bindings) || h(\"p\", null, \"Document is empty, overwrite this content with #empty slot in <ContentDoc>.\"),\n        // Not Found slot\n        \"not-found\": (bindings) => slots?.[\"not-found\"]?.(bindings) || h(\"p\", null, \"Document not found, overwrite this content with #not-found slot in <ContentDoc>.\")\n      }\n    );\n  }\n});\nconst _sfc_main = ContentDoc;\nimport { useSSRContext as __vite_useSSRContext } from \"vue\";\nconst _sfc_setup = _sfc_main.setup;\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext();\n  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add(\"node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue\");\n  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;\n};\nexport default _sfc_main;\n",
-      "start": 1708190403338,
-      "end": 1708190403340,
+      "start": 1708195457367,
+      "end": 1708195457369,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -254,8 +254,8 @@
     {
       "name": "nuxt:imports-transform",
       "result": "import { useRuntimeConfig } from '#app/nuxt';\nimport { useRoute } from '#app/composables/router';\nimport { useContentHead } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/composables/head';\nimport { defineComponent, h, useSlots } from \"vue\";\nimport { withTrailingSlash } from \"ufo\";\nimport ContentRenderer from \"./ContentRenderer.vue\";\nimport ContentQuery from \"./ContentQuery.vue\";\nconst ContentDoc = defineComponent({\n  name: \"ContentDoc\",\n  props: {\n    /**\n     * Renderer props\n     */\n    /**\n     * The tag to use for the renderer element if it is used.\n     * @default 'div'\n     */\n    tag: {\n      type: String,\n      required: false,\n      default: \"div\"\n    },\n    /**\n     * Whether or not to render the excerpt.\n     * @default false\n     */\n    excerpt: {\n      type: Boolean,\n      default: false\n    },\n    /**\n     * Query props\n     */\n    /**\n     * The path of the content to load from content source.\n     * @default useRoute().path\n     */\n    path: {\n      type: String,\n      required: false,\n      default: void 0\n    },\n    /**\n     * A query builder params object to be passed to <ContentQuery /> component.\n     */\n    query: {\n      type: Object,\n      required: false,\n      default: void 0\n    },\n    /**\n     * Whether or not to map the document data to the `head` property.\n     */\n    head: {\n      type: Boolean,\n      required: false,\n      default: void 0\n    }\n  },\n  /**\n   * Document empty fallback\n   * @slot empty\n   */\n  /**\n   * Document not found fallback\n   * @slot not-found\n   */\n  render(ctx) {\n    const { contentHead } = useRuntimeConfig().public.content;\n    const slots = useSlots();\n    const { tag, excerpt, path, query, head } = ctx;\n    const shouldInjectContentHead = head === void 0 ? contentHead : head;\n    const contentQueryProps = {\n      ...query || {},\n      path: path || query?.path || withTrailingSlash(useRoute().path),\n      find: \"one\"\n    };\n    const emptyNode = (slot, data) => h(\"pre\", null, JSON.stringify({ message: \"You should use slots with <ContentDoc>\", slot, data }, null, 2));\n    return h(\n      ContentQuery,\n      contentQueryProps,\n      {\n        // Default slot\n        default: slots?.default ? ({ data, refresh, isPartial }) => {\n          if (shouldInjectContentHead) {\n            useContentHead(data);\n          }\n          return slots.default?.({ doc: data, refresh, isPartial, excerpt, ...this.$attrs });\n        } : ({ data }) => {\n          if (shouldInjectContentHead) {\n            useContentHead(data);\n          }\n          return h(\n            ContentRenderer,\n            { value: data, excerpt, tag, ...this.$attrs },\n            // Forward local `empty` slots to ContentRenderer if it is used.\n            { empty: (bindings) => slots?.empty ? slots.empty(bindings) : emptyNode(\"default\", data) }\n          );\n        },\n        // Empty slot\n        empty: (bindings) => slots?.empty?.(bindings) || h(\"p\", null, \"Document is empty, overwrite this content with #empty slot in <ContentDoc>.\"),\n        // Not Found slot\n        \"not-found\": (bindings) => slots?.[\"not-found\"]?.(bindings) || h(\"p\", null, \"Document not found, overwrite this content with #not-found slot in <ContentDoc>.\")\n      }\n    );\n  }\n});\nconst _sfc_main = ContentDoc;\nimport { useSSRContext as __vite_useSSRContext } from \"vue\";\nconst _sfc_setup = _sfc_main.setup;\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext();\n  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add(\"node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue\");\n  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;\n};\nexport default _sfc_main;\n",
-      "start": 1708190403338,
-      "end": 1708190403340,
+      "start": 1708195457367,
+      "end": 1708195457369,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -268,56 +268,56 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1708190403340,
-      "end": 1708190403340,
+      "start": 1708195457369,
+      "end": 1708195457369,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708190403340,
-      "end": 1708190403340,
+      "start": 1708195457369,
+      "end": 1708195457369,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708190403340,
-      "end": 1708190403340,
+      "start": 1708195457369,
+      "end": 1708195457369,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708190403340,
-      "end": 1708190403340,
+      "start": 1708195457369,
+      "end": 1708195457369,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1708190403340,
-      "end": 1708190403340,
+      "start": 1708195457369,
+      "end": 1708195457369,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1708190403340,
-      "end": 1708190403340,
+      "start": 1708195457369,
+      "end": 1708195457369,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708190403340,
-      "end": 1708190403341,
+      "start": 1708195457369,
+      "end": 1708195457369,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708190403341,
-      "end": 1708190403341,
+      "start": 1708195457369,
+      "end": 1708195457369,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708190403341,
-      "end": 1708190403341,
+      "start": 1708195457369,
+      "end": 1708195457369,
       "order": "normal"
     }
   ]

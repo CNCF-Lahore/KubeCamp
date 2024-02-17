@@ -4,51 +4,51 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, renderSlot as _renderSlot, createElementVNode as _createElementVNode, unref as _unref, normalizeClass as _normalizeClass, vShow as _vShow, withDirectives as _withDirectives, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\nimport { renderSlot as _renderMDCSlot } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/utils/slot'\n\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-e294706d\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"summary\" }\nconst _hoisted_2 = { class: \"content\" }\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'Callout',\n  props: {\n  /**\n   * @values info, success, warning, danger\n   */\n  type: {\n    type: String,\n    default: 'info',\n    validator (value: string) {\n      return ['info', 'success', 'warning', 'danger', 'primary'].includes(value)\n    }\n  },\n  modelValue: {\n    required: false,\n    default: () => ref(false)\n  }\n},\n  emits: ['update:modelValue'],\n  setup(__props, { emit: __emit }) {\n\nconst props = __props\n\nconst emit = __emit\n\nconst isOpen = ref(props.modelValue)\n\nconst toggle = () => {\n  isOpen.value = !isOpen.value\n  emit('update:modelValue', isOpen.value)\n}\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_MDCSlot = _resolveComponent(\"MDCSlot\")!\n  const _component_Icon = _resolveComponent(\"Icon\")!\n\n  return (_openBlock(), _createElementBlock(\"div\", {\n    class: _normalizeClass([\"callout\", [__props.type]])\n  }, [\n    _createElementVNode(\"span\", {\n      class: \"preview\",\n      onClick: toggle\n    }, [\n      _createElementVNode(\"span\", _hoisted_1, [\n        _renderMDCSlot(_ctx.$slots, \"summary\", {}, undefined, true)\n      ]),\n      _createVNode(_component_Icon, {\n        name: \"heroicons-outline:chevron-right\",\n        class: _normalizeClass([\"icon\", [_unref(isOpen) && 'rotate']])\n      }, null, 8, [\"class\"])\n    ]),\n    _withDirectives(_createElementVNode(\"div\", _hoisted_2, [\n      _renderMDCSlot(_ctx.$slots, \"content\", {}, undefined, true)\n    ], 512), [\n      [_vShow, _unref(isOpen)]\n    ])\n  ], 2))\n}\n}\n\n})",
-      "start": 1708190397227,
-      "end": 1708190397227
+      "start": 1708195451577,
+      "end": 1708195451577
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708190397228,
-      "end": 1708190397228,
+      "start": 1708195451581,
+      "end": 1708195451581,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708190397232,
-      "end": 1708190397232,
+      "start": 1708195451589,
+      "end": 1708195451589,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, renderSlot as _renderSlot, createElementVNode as _createElementVNode, unref as _unref, normalizeClass as _normalizeClass, vShow as _vShow, withDirectives as _withDirectives, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\nimport { renderSlot as _renderMDCSlot } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/utils/slot'\n\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-e294706d\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"summary\" }\nconst _hoisted_2 = { class: \"content\" }\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'Callout',\n  props: {\n  /**\n   * @values info, success, warning, danger\n   */\n  type: {\n    type: String,\n    default: 'info',\n    validator (value: string) {\n      return ['info', 'success', 'warning', 'danger', 'primary'].includes(value)\n    }\n  },\n  modelValue: {\n    required: false,\n    default: () => ref(false)\n  }\n},\n  emits: ['update:modelValue'],\n  setup(__props, { emit: __emit }) {\n\nconst props = __props\n\nconst emit = __emit\n\nconst isOpen = ref(props.modelValue)\n\nconst toggle = () => {\n  isOpen.value = !isOpen.value\n  emit('update:modelValue', isOpen.value)\n}\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_MDCSlot = _resolveComponent(\"MDCSlot\")!\n  const _component_Icon = _resolveComponent(\"Icon\")!\n\n  return (_openBlock(), _createElementBlock(\"div\", {\n    class: _normalizeClass([\"callout\", [__props.type]])\n  }, [\n    _createElementVNode(\"span\", {\n      class: \"preview\",\n      onClick: toggle\n    }, [\n      _createElementVNode(\"span\", _hoisted_1, [\n        _renderMDCSlot(_ctx.$slots, \"summary\", {}, undefined, true)\n      ]),\n      _createVNode(_component_Icon, {\n        name: \"heroicons-outline:chevron-right\",\n        class: _normalizeClass([\"icon\", [_unref(isOpen) && 'rotate']])\n      }, null, 8, [\"class\"])\n    ]),\n    _withDirectives(_createElementVNode(\"div\", _hoisted_2, [\n      _renderMDCSlot(_ctx.$slots, \"content\", {}, undefined, true)\n    ], 512), [\n      [_vShow, _unref(isOpen)]\n    ])\n  ], 2))\n}\n}\n\n})",
-      "start": 1708190397233,
-      "end": 1708190397233,
+      "start": 1708195451600,
+      "end": 1708195451600,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708190397233,
-      "end": 1708190397233,
+      "start": 1708195451600,
+      "end": 1708195451600,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708190397233,
-      "end": 1708190397233,
+      "start": 1708195451601,
+      "end": 1708195451601,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708190397233,
-      "end": 1708190397233,
+      "start": 1708195451601,
+      "end": 1708195451601,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, createElementVNode as _createElementVNode, unref as _unref, normalizeClass as _normalizeClass, vShow as _vShow, withDirectives as _withDirectives, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nimport { renderSlot as _renderMDCSlot } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/utils/slot\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-e294706d\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = { class: \"summary\" };\nconst _hoisted_2 = { class: \"content\" };\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"Callout\",\n  props: {\n    /**\n     * @values info, success, warning, danger\n     */\n    type: {\n      type: String,\n      default: \"info\",\n      validator(value) {\n        return [\"info\", \"success\", \"warning\", \"danger\", \"primary\"].includes(value);\n      }\n    },\n    modelValue: {\n      required: false,\n      default: () => ref(false)\n    }\n  },\n  emits: [\"update:modelValue\"],\n  setup(__props, { emit: __emit }) {\n    const props = __props;\n    const emit = __emit;\n    const isOpen = ref(props.modelValue);\n    const toggle = () => {\n      isOpen.value = !isOpen.value;\n      emit(\"update:modelValue\", isOpen.value);\n    };\n    return (_ctx, _cache) => {\n      const _component_MDCSlot = _resolveComponent(\"MDCSlot\");\n      const _component_Icon = _resolveComponent(\"Icon\");\n      return _openBlock(), _createElementBlock(\"div\", {\n        class: _normalizeClass([\"callout\", [__props.type]])\n      }, [\n        _createElementVNode(\"span\", {\n          class: \"preview\",\n          onClick: toggle\n        }, [\n          _createElementVNode(\"span\", _hoisted_1, [\n            _renderMDCSlot(_ctx.$slots, \"summary\", {}, void 0, true)\n          ]),\n          _createVNode(_component_Icon, {\n            name: \"heroicons-outline:chevron-right\",\n            class: _normalizeClass([\"icon\", [_unref(isOpen) && \"rotate\"]])\n          }, null, 8, [\"class\"])\n        ]),\n        _withDirectives(_createElementVNode(\"div\", _hoisted_2, [\n          _renderMDCSlot(_ctx.$slots, \"content\", {}, void 0, true)\n        ], 512), [\n          [_vShow, _unref(isOpen)]\n        ])\n      ], 2);\n    };\n  }\n});\n",
-      "start": 1708190397233,
-      "end": 1708190397598,
+      "start": 1708195451601,
+      "end": 1708195451858,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -64,123 +64,123 @@
     },
     {
       "name": "vite:json",
-      "start": 1708190397604,
-      "end": 1708190397604,
+      "start": 1708195451858,
+      "end": 1708195451858,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708190397604,
-      "end": 1708190397604,
+      "start": 1708195451858,
+      "end": 1708195451858,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708190397605,
-      "end": 1708190397605,
+      "start": 1708195451859,
+      "end": 1708195451859,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708190397605,
-      "end": 1708190397605,
+      "start": 1708195451859,
+      "end": 1708195451859,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708190397605,
-      "end": 1708190397605,
+      "start": 1708195451860,
+      "end": 1708195451860,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708190397605,
-      "end": 1708190397605,
+      "start": 1708195451860,
+      "end": 1708195451860,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1708190397605,
-      "end": 1708190397605,
+      "start": 1708195451861,
+      "end": 1708195451861,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708190397606,
-      "end": 1708190397606,
+      "start": 1708195451862,
+      "end": 1708195451862,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708190397606,
-      "end": 1708190397606,
+      "start": 1708195451863,
+      "end": 1708195451863,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708190397606,
-      "end": 1708190397606,
+      "start": 1708195451863,
+      "end": 1708195451863,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708190397607,
-      "end": 1708190397607,
+      "start": 1708195451863,
+      "end": 1708195451863,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708190397607,
-      "end": 1708190397607,
+      "start": 1708195451864,
+      "end": 1708195451864,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708190397607,
-      "end": 1708190397607,
+      "start": 1708195451864,
+      "end": 1708195451864,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708190397607,
-      "end": 1708190397607,
+      "start": 1708195451864,
+      "end": 1708195451864,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708190397607,
-      "end": 1708190397607,
+      "start": 1708195451864,
+      "end": 1708195451864,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708190397607,
-      "end": 1708190397607,
+      "start": 1708195451864,
+      "end": 1708195451865,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708190397607,
-      "end": 1708190397607,
+      "start": 1708195451865,
+      "end": 1708195451865,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708190397607,
-      "end": 1708190397608,
+      "start": 1708195451865,
+      "end": 1708195451865,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708190397608,
-      "end": 1708190397608,
+      "start": 1708195451866,
+      "end": 1708195451866,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { ref } from 'vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, createElementVNode as _createElementVNode, unref as _unref, normalizeClass as _normalizeClass, vShow as _vShow, withDirectives as _withDirectives, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nimport { renderSlot as _renderMDCSlot } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/utils/slot\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-e294706d\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = { class: \"summary\" };\nconst _hoisted_2 = { class: \"content\" };\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"Callout\",\n  props: {\n    /**\n     * @values info, success, warning, danger\n     */\n    type: {\n      type: String,\n      default: \"info\",\n      validator(value) {\n        return [\"info\", \"success\", \"warning\", \"danger\", \"primary\"].includes(value);\n      }\n    },\n    modelValue: {\n      required: false,\n      default: () => ref(false)\n    }\n  },\n  emits: [\"update:modelValue\"],\n  setup(__props, { emit: __emit }) {\n    const props = __props;\n    const emit = __emit;\n    const isOpen = ref(props.modelValue);\n    const toggle = () => {\n      isOpen.value = !isOpen.value;\n      emit(\"update:modelValue\", isOpen.value);\n    };\n    return (_ctx, _cache) => {\n      const _component_MDCSlot = _resolveComponent(\"MDCSlot\");\n      const _component_Icon = _resolveComponent(\"Icon\");\n      return _openBlock(), _createElementBlock(\"div\", {\n        class: _normalizeClass([\"callout\", [__props.type]])\n      }, [\n        _createElementVNode(\"span\", {\n          class: \"preview\",\n          onClick: toggle\n        }, [\n          _createElementVNode(\"span\", _hoisted_1, [\n            _renderMDCSlot(_ctx.$slots, \"summary\", {}, void 0, true)\n          ]),\n          _createVNode(_component_Icon, {\n            name: \"heroicons-outline:chevron-right\",\n            class: _normalizeClass([\"icon\", [_unref(isOpen) && \"rotate\"]])\n          }, null, 8, [\"class\"])\n        ]),\n        _withDirectives(_createElementVNode(\"div\", _hoisted_2, [\n          _renderMDCSlot(_ctx.$slots, \"content\", {}, void 0, true)\n        ], 512), [\n          [_vShow, _unref(isOpen)]\n        ])\n      ], 2);\n    };\n  }\n});\n",
-      "start": 1708190397608,
-      "end": 1708190397616,
+      "start": 1708195451867,
+      "end": 1708195451881,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -193,51 +193,51 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1708190397616,
-      "end": 1708190397616,
+      "start": 1708195451881,
+      "end": 1708195451882,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708190397616,
-      "end": 1708190397616,
+      "start": 1708195451882,
+      "end": 1708195451882,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1708190397616,
-      "end": 1708190397616,
+      "start": 1708195451882,
+      "end": 1708195451882,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1708190397617,
-      "end": 1708190397617,
+      "start": 1708195451883,
+      "end": 1708195451883,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
       "result": "import { default as __nuxt_component_0 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/components/MDCSlot\";\nimport { default as __nuxt_component_1 } from \"/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/Icon.vue\";\nimport { ref } from 'vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, createElementVNode as _createElementVNode, unref as _unref, normalizeClass as _normalizeClass, vShow as _vShow, withDirectives as _withDirectives, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nimport { renderSlot as _renderMDCSlot } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/utils/slot\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-e294706d\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = { class: \"summary\" };\nconst _hoisted_2 = { class: \"content\" };\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"Callout\",\n  props: {\n    /**\n     * @values info, success, warning, danger\n     */\n    type: {\n      type: String,\n      default: \"info\",\n      validator(value) {\n        return [\"info\", \"success\", \"warning\", \"danger\", \"primary\"].includes(value);\n      }\n    },\n    modelValue: {\n      required: false,\n      default: () => ref(false)\n    }\n  },\n  emits: [\"update:modelValue\"],\n  setup(__props, { emit: __emit }) {\n    const props = __props;\n    const emit = __emit;\n    const isOpen = ref(props.modelValue);\n    const toggle = () => {\n      isOpen.value = !isOpen.value;\n      emit(\"update:modelValue\", isOpen.value);\n    };\n    return (_ctx, _cache) => {\n      const _component_MDCSlot = __nuxt_component_0;\n      const _component_Icon = __nuxt_component_1;\n      return _openBlock(), _createElementBlock(\"div\", {\n        class: _normalizeClass([\"callout\", [__props.type]])\n      }, [\n        _createElementVNode(\"span\", {\n          class: \"preview\",\n          onClick: toggle\n        }, [\n          _createElementVNode(\"span\", _hoisted_1, [\n            _renderMDCSlot(_ctx.$slots, \"summary\", {}, void 0, true)\n          ]),\n          _createVNode(_component_Icon, {\n            name: \"heroicons-outline:chevron-right\",\n            class: _normalizeClass([\"icon\", [_unref(isOpen) && \"rotate\"]])\n          }, null, 8, [\"class\"])\n        ]),\n        _withDirectives(_createElementVNode(\"div\", _hoisted_2, [\n          _renderMDCSlot(_ctx.$slots, \"content\", {}, void 0, true)\n        ], 512), [\n          [_vShow, _unref(isOpen)]\n        ])\n      ], 2);\n    };\n  }\n});\n",
-      "start": 1708190397618,
-      "end": 1708190397618,
+      "start": 1708195451885,
+      "end": 1708195451885,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708190397618,
-      "end": 1708190397618,
+      "start": 1708195451891,
+      "end": 1708195451891,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708190397618,
-      "end": 1708190397618,
+      "start": 1708195451891,
+      "end": 1708195451891,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708190397618,
-      "end": 1708190397618,
+      "start": 1708195451891,
+      "end": 1708195451891,
       "order": "normal"
     }
   ]
