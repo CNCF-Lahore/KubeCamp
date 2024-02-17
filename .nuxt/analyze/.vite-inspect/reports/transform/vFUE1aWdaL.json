@@ -4,51 +4,51 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, renderSlot as _renderSlot, createTextVNode as _createTextVNode, withCtx as _withCtx, createVNode as _createVNode, createElementVNode as _createElementVNode, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\nimport { renderSlot as _renderMDCSlot } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/utils/slot'\n\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-34524c46\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"card\" }\nconst _hoisted_2 = { class: \"title\" }\nconst _hoisted_3 = { class: \"description\" }\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'Card',\n  props: {\n  icon: {\n    type: String,\n    default: ''\n  }\n},\n  setup(__props) {\n\n\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_Icon = _resolveComponent(\"Icon\")!\n  const _component_MDCSlot = _resolveComponent(\"MDCSlot\")!\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    (__props.icon)\n      ? (_openBlock(), _createBlock(_component_Icon, {\n          key: 0,\n          name: __props.icon\n        }, null, 8, [\"name\"]))\n      : _createCommentVNode(\"\", true),\n    _renderSlot(_ctx.$slots, \"default\", {}, undefined, true),\n    _createElementVNode(\"div\", null, [\n      _createElementVNode(\"h3\", _hoisted_2, [\n        _renderMDCSlot(_ctx.$slots, \"title\", { unwrap: \"p\" }, () => [\n          _createTextVNode(\" Card title \")\n        ], true)\n      ]),\n      _createElementVNode(\"p\", _hoisted_3, [\n        _renderMDCSlot(_ctx.$slots, \"description\", { unwrap: \"p\" }, () => [\n          _createTextVNode(\" Card description \")\n        ], true)\n      ])\n    ])\n  ]))\n}\n}\n\n})",
-      "start": 1708195452095,
-      "end": 1708195452095
+      "start": 1708210049502,
+      "end": 1708210049502
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708195452098,
-      "end": 1708195452098,
+      "start": 1708210049503,
+      "end": 1708210049503,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708195452104,
-      "end": 1708195452104,
+      "start": 1708210049506,
+      "end": 1708210049506,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, renderSlot as _renderSlot, createTextVNode as _createTextVNode, withCtx as _withCtx, createVNode as _createVNode, createElementVNode as _createElementVNode, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\nimport { renderSlot as _renderMDCSlot } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/utils/slot'\n\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-34524c46\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"card\" }\nconst _hoisted_2 = { class: \"title\" }\nconst _hoisted_3 = { class: \"description\" }\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'Card',\n  props: {\n  icon: {\n    type: String,\n    default: ''\n  }\n},\n  setup(__props) {\n\n\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_Icon = _resolveComponent(\"Icon\")!\n  const _component_MDCSlot = _resolveComponent(\"MDCSlot\")!\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    (__props.icon)\n      ? (_openBlock(), _createBlock(_component_Icon, {\n          key: 0,\n          name: __props.icon\n        }, null, 8, [\"name\"]))\n      : _createCommentVNode(\"\", true),\n    _renderSlot(_ctx.$slots, \"default\", {}, undefined, true),\n    _createElementVNode(\"div\", null, [\n      _createElementVNode(\"h3\", _hoisted_2, [\n        _renderMDCSlot(_ctx.$slots, \"title\", { unwrap: \"p\" }, () => [\n          _createTextVNode(\" Card title \")\n        ], true)\n      ]),\n      _createElementVNode(\"p\", _hoisted_3, [\n        _renderMDCSlot(_ctx.$slots, \"description\", { unwrap: \"p\" }, () => [\n          _createTextVNode(\" Card description \")\n        ], true)\n      ])\n    ])\n  ]))\n}\n}\n\n})",
-      "start": 1708195452106,
-      "end": 1708195452107,
+      "start": 1708210049507,
+      "end": 1708210049507,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708195452107,
-      "end": 1708195452107,
+      "start": 1708210049508,
+      "end": 1708210049508,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708195452107,
-      "end": 1708195452107,
+      "start": 1708210049508,
+      "end": 1708210049508,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708195452108,
-      "end": 1708195452108,
+      "start": 1708210049508,
+      "end": 1708210049508,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, renderSlot as _renderSlot, createTextVNode as _createTextVNode, createElementVNode as _createElementVNode, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nimport { renderSlot as _renderMDCSlot } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/utils/slot\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-34524c46\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = { class: \"card\" };\nconst _hoisted_2 = { class: \"title\" };\nconst _hoisted_3 = { class: \"description\" };\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"Card\",\n  props: {\n    icon: {\n      type: String,\n      default: \"\"\n    }\n  },\n  setup(__props) {\n    return (_ctx, _cache) => {\n      const _component_Icon = _resolveComponent(\"Icon\");\n      const _component_MDCSlot = _resolveComponent(\"MDCSlot\");\n      return _openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        __props.icon ? (_openBlock(), _createBlock(_component_Icon, {\n          key: 0,\n          name: __props.icon\n        }, null, 8, [\"name\"])) : _createCommentVNode(\"\", true),\n        _renderSlot(_ctx.$slots, \"default\", {}, void 0, true),\n        _createElementVNode(\"div\", null, [\n          _createElementVNode(\"h3\", _hoisted_2, [\n            _renderMDCSlot(_ctx.$slots, \"title\", { unwrap: \"p\" }, () => [\n              _createTextVNode(\" Card title \")\n            ], true)\n          ]),\n          _createElementVNode(\"p\", _hoisted_3, [\n            _renderMDCSlot(_ctx.$slots, \"description\", { unwrap: \"p\" }, () => [\n              _createTextVNode(\" Card description \")\n            ], true)\n          ])\n        ])\n      ]);\n    };\n  }\n});\n",
-      "start": 1708195452108,
-      "end": 1708195452370,
+      "start": 1708210049508,
+      "end": 1708210049766,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -64,171 +64,171 @@
     },
     {
       "name": "vite:json",
-      "start": 1708195452370,
-      "end": 1708195452370,
+      "start": 1708210049766,
+      "end": 1708210049766,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708195452370,
-      "end": 1708195452370,
+      "start": 1708210049766,
+      "end": 1708210049766,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708195452370,
-      "end": 1708195452370,
+      "start": 1708210049766,
+      "end": 1708210049766,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708195452370,
-      "end": 1708195452370,
+      "start": 1708210049766,
+      "end": 1708210049766,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708195452370,
-      "end": 1708195452370,
+      "start": 1708210049766,
+      "end": 1708210049766,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708195452371,
-      "end": 1708195452371,
+      "start": 1708210049766,
+      "end": 1708210049766,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1708195452371,
-      "end": 1708195452371,
+      "start": 1708210049766,
+      "end": 1708210049766,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708195452371,
-      "end": 1708195452371,
+      "start": 1708210049766,
+      "end": 1708210049767,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708195452371,
-      "end": 1708195452371,
+      "start": 1708210049767,
+      "end": 1708210049767,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708195452372,
-      "end": 1708195452372,
+      "start": 1708210049767,
+      "end": 1708210049767,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708195452372,
-      "end": 1708195452372,
+      "start": 1708210049767,
+      "end": 1708210049767,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708195452373,
-      "end": 1708195452373,
+      "start": 1708210049767,
+      "end": 1708210049767,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708195452373,
-      "end": 1708195452373,
+      "start": 1708210049767,
+      "end": 1708210049767,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708195452373,
-      "end": 1708195452373,
+      "start": 1708210049767,
+      "end": 1708210049767,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708195452373,
-      "end": 1708195452373,
+      "start": 1708210049767,
+      "end": 1708210049767,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708195452374,
-      "end": 1708195452374,
+      "start": 1708210049767,
+      "end": 1708210049767,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708195452374,
-      "end": 1708195452374,
+      "start": 1708210049767,
+      "end": 1708210049767,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708195452374,
-      "end": 1708195452374,
+      "start": 1708210049767,
+      "end": 1708210049767,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708195452374,
-      "end": 1708195452374,
+      "start": 1708210049767,
+      "end": 1708210049768,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708195452374,
-      "end": 1708195452377,
+      "start": 1708210049768,
+      "end": 1708210049777,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708195452377,
-      "end": 1708195452377,
+      "start": 1708210049777,
+      "end": 1708210049777,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708195452377,
-      "end": 1708195452377,
+      "start": 1708210049777,
+      "end": 1708210049777,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1708195452377,
-      "end": 1708195452377,
+      "start": 1708210049777,
+      "end": 1708210049777,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1708195452377,
-      "end": 1708195452377,
+      "start": 1708210049777,
+      "end": 1708210049777,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
       "result": "import { default as __nuxt_component_0 } from \"/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/Icon.vue\";\nimport { default as __nuxt_component_1 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/components/MDCSlot\";\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, renderSlot as _renderSlot, createTextVNode as _createTextVNode, createElementVNode as _createElementVNode, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nimport { renderSlot as _renderMDCSlot } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/utils/slot\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-34524c46\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = { class: \"card\" };\nconst _hoisted_2 = { class: \"title\" };\nconst _hoisted_3 = { class: \"description\" };\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"Card\",\n  props: {\n    icon: {\n      type: String,\n      default: \"\"\n    }\n  },\n  setup(__props) {\n    return (_ctx, _cache) => {\n      const _component_Icon = __nuxt_component_0;\n      const _component_MDCSlot = __nuxt_component_1;\n      return _openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        __props.icon ? (_openBlock(), _createBlock(_component_Icon, {\n          key: 0,\n          name: __props.icon\n        }, null, 8, [\"name\"])) : _createCommentVNode(\"\", true),\n        _renderSlot(_ctx.$slots, \"default\", {}, void 0, true),\n        _createElementVNode(\"div\", null, [\n          _createElementVNode(\"h3\", _hoisted_2, [\n            _renderMDCSlot(_ctx.$slots, \"title\", { unwrap: \"p\" }, () => [\n              _createTextVNode(\" Card title \")\n            ], true)\n          ]),\n          _createElementVNode(\"p\", _hoisted_3, [\n            _renderMDCSlot(_ctx.$slots, \"description\", { unwrap: \"p\" }, () => [\n              _createTextVNode(\" Card description \")\n            ], true)\n          ])\n        ])\n      ]);\n    };\n  }\n});\n",
-      "start": 1708195452377,
-      "end": 1708195452377,
+      "start": 1708210049777,
+      "end": 1708210049778,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708195452377,
-      "end": 1708195452377,
+      "start": 1708210049778,
+      "end": 1708210049778,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708195452378,
-      "end": 1708195452378,
+      "start": 1708210049778,
+      "end": 1708210049778,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708195452378,
-      "end": 1708195452378,
+      "start": 1708210049778,
+      "end": 1708210049778,
       "order": "normal"
     }
   ]

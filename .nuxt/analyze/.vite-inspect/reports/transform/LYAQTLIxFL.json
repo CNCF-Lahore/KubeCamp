@@ -4,51 +4,51 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, createVNode as _createVNode, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-ebd2b6b2\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"docs-toc\" }\nconst _hoisted_2 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"div\", { class: \"docs-toc-title\" }, [\n  /*#__PURE__*/_createElementVNode(\"span\", null, \"Table of Contents\")\n], -1))\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'DocsToc',\n  emits: ['move'],\n  setup(__props, { emit: __emit }) {\n\nconst { toc } = useContent()\nconst emit = __emit\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_DocsTocLinks = _resolveComponent(\"DocsTocLinks\")!\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    (_unref(toc)?.links?.length)\n      ? (_openBlock(), _createElementBlock(_Fragment, { key: 0 }, [\n          _hoisted_2,\n          _createVNode(_component_DocsTocLinks, {\n            links: _unref(toc).links,\n            onMove: _cache[0] || (_cache[0] = ($event: any) => (emit('move')))\n          }, null, 8, [\"links\"])\n        ], 64))\n      : _createCommentVNode(\"\", true)\n  ]))\n}\n}\n\n})",
-      "start": 1708195451153,
-      "end": 1708195451153
+      "start": 1708210049024,
+      "end": 1708210049024
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708195451155,
-      "end": 1708195451155,
+      "start": 1708210049026,
+      "end": 1708210049026,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708195451159,
-      "end": 1708195451159,
+      "start": 1708210049029,
+      "end": 1708210049030,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, createVNode as _createVNode, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-ebd2b6b2\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"docs-toc\" }\nconst _hoisted_2 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"div\", { class: \"docs-toc-title\" }, [\n  /*#__PURE__*/_createElementVNode(\"span\", null, \"Table of Contents\")\n], -1))\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'DocsToc',\n  emits: ['move'],\n  setup(__props, { emit: __emit }) {\n\nconst { toc } = useContent()\nconst emit = __emit\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_DocsTocLinks = _resolveComponent(\"DocsTocLinks\")!\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    (_unref(toc)?.links?.length)\n      ? (_openBlock(), _createElementBlock(_Fragment, { key: 0 }, [\n          _hoisted_2,\n          _createVNode(_component_DocsTocLinks, {\n            links: _unref(toc).links,\n            onMove: _cache[0] || (_cache[0] = ($event: any) => (emit('move')))\n          }, null, 8, [\"links\"])\n        ], 64))\n      : _createCommentVNode(\"\", true)\n  ]))\n}\n}\n\n})",
-      "start": 1708195451167,
-      "end": 1708195451168,
+      "start": 1708210049033,
+      "end": 1708210049033,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708195451168,
-      "end": 1708195451168,
+      "start": 1708210049033,
+      "end": 1708210049033,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708195451168,
-      "end": 1708195451168,
+      "start": 1708210049034,
+      "end": 1708210049034,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708195451169,
-      "end": 1708195451169,
+      "start": 1708210049034,
+      "end": 1708210049034,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, createVNode as _createVNode, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-ebd2b6b2\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = { class: \"docs-toc\" };\nconst _hoisted_2 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"div\", { class: \"docs-toc-title\" }, [\n  /* @__PURE__ */ _createElementVNode(\"span\", null, \"Table of Contents\")\n], -1));\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"DocsToc\",\n  emits: [\"move\"],\n  setup(__props, { emit: __emit }) {\n    const { toc } = useContent();\n    const emit = __emit;\n    return (_ctx, _cache) => {\n      const _component_DocsTocLinks = _resolveComponent(\"DocsTocLinks\");\n      return _openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _unref(toc)?.links?.length ? (_openBlock(), _createElementBlock(_Fragment, { key: 0 }, [\n          _hoisted_2,\n          _createVNode(_component_DocsTocLinks, {\n            links: _unref(toc).links,\n            onMove: _cache[0] || (_cache[0] = ($event) => emit(\"move\"))\n          }, null, 8, [\"links\"])\n        ], 64)) : _createCommentVNode(\"\", true)\n      ]);\n    };\n  }\n});\n",
-      "start": 1708195451169,
-      "end": 1708195451817,
+      "start": 1708210049034,
+      "end": 1708210049728,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -64,123 +64,123 @@
     },
     {
       "name": "vite:json",
-      "start": 1708195451817,
-      "end": 1708195451817,
+      "start": 1708210049729,
+      "end": 1708210049729,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708195451817,
-      "end": 1708195451817,
+      "start": 1708210049729,
+      "end": 1708210049729,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708195451818,
-      "end": 1708195451818,
+      "start": 1708210049729,
+      "end": 1708210049729,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708195451818,
-      "end": 1708195451818,
+      "start": 1708210049729,
+      "end": 1708210049729,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708195451818,
-      "end": 1708195451818,
+      "start": 1708210049729,
+      "end": 1708210049729,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708195451818,
-      "end": 1708195451818,
+      "start": 1708210049729,
+      "end": 1708210049729,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1708195451818,
-      "end": 1708195451818,
+      "start": 1708210049729,
+      "end": 1708210049729,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708195451818,
-      "end": 1708195451819,
+      "start": 1708210049729,
+      "end": 1708210049730,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708195451819,
-      "end": 1708195451820,
+      "start": 1708210049730,
+      "end": 1708210049730,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708195451820,
-      "end": 1708195451820,
+      "start": 1708210049730,
+      "end": 1708210049730,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708195451820,
-      "end": 1708195451820,
+      "start": 1708210049730,
+      "end": 1708210049730,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708195451820,
-      "end": 1708195451820,
+      "start": 1708210049730,
+      "end": 1708210049730,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708195451821,
-      "end": 1708195451821,
+      "start": 1708210049730,
+      "end": 1708210049730,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708195451821,
-      "end": 1708195451821,
+      "start": 1708210049730,
+      "end": 1708210049730,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708195451821,
-      "end": 1708195451821,
+      "start": 1708210049730,
+      "end": 1708210049730,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708195451821,
-      "end": 1708195451821,
+      "start": 1708210049730,
+      "end": 1708210049730,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708195451821,
-      "end": 1708195451821,
+      "start": 1708210049730,
+      "end": 1708210049730,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708195451821,
-      "end": 1708195451821,
+      "start": 1708210049730,
+      "end": 1708210049730,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708195451821,
-      "end": 1708195451824,
+      "start": 1708210049732,
+      "end": 1708210049732,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { useContent } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/composables/content';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, createVNode as _createVNode, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-ebd2b6b2\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = { class: \"docs-toc\" };\nconst _hoisted_2 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"div\", { class: \"docs-toc-title\" }, [\n  /* @__PURE__ */ _createElementVNode(\"span\", null, \"Table of Contents\")\n], -1));\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"DocsToc\",\n  emits: [\"move\"],\n  setup(__props, { emit: __emit }) {\n    const { toc } = useContent();\n    const emit = __emit;\n    return (_ctx, _cache) => {\n      const _component_DocsTocLinks = _resolveComponent(\"DocsTocLinks\");\n      return _openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _unref(toc)?.links?.length ? (_openBlock(), _createElementBlock(_Fragment, { key: 0 }, [\n          _hoisted_2,\n          _createVNode(_component_DocsTocLinks, {\n            links: _unref(toc).links,\n            onMove: _cache[0] || (_cache[0] = ($event) => emit(\"move\"))\n          }, null, 8, [\"links\"])\n        ], 64)) : _createCommentVNode(\"\", true)\n      ]);\n    };\n  }\n});\n",
-      "start": 1708195451824,
-      "end": 1708195451841,
+      "start": 1708210049732,
+      "end": 1708210049739,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -193,51 +193,51 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1708195451842,
-      "end": 1708195451842,
+      "start": 1708210049739,
+      "end": 1708210049739,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708195451842,
-      "end": 1708195451842,
+      "start": 1708210049740,
+      "end": 1708210049740,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1708195451843,
-      "end": 1708195451843,
+      "start": 1708210049740,
+      "end": 1708210049740,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1708195451843,
-      "end": 1708195451843,
+      "start": 1708210049740,
+      "end": 1708210049740,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
       "result": "import { default as __nuxt_component_0 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsTocLinks.vue\";\nimport { useContent } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/composables/content';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, createVNode as _createVNode, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-ebd2b6b2\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = { class: \"docs-toc\" };\nconst _hoisted_2 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"div\", { class: \"docs-toc-title\" }, [\n  /* @__PURE__ */ _createElementVNode(\"span\", null, \"Table of Contents\")\n], -1));\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"DocsToc\",\n  emits: [\"move\"],\n  setup(__props, { emit: __emit }) {\n    const { toc } = useContent();\n    const emit = __emit;\n    return (_ctx, _cache) => {\n      const _component_DocsTocLinks = __nuxt_component_0;\n      return _openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _unref(toc)?.links?.length ? (_openBlock(), _createElementBlock(_Fragment, { key: 0 }, [\n          _hoisted_2,\n          _createVNode(_component_DocsTocLinks, {\n            links: _unref(toc).links,\n            onMove: _cache[0] || (_cache[0] = ($event) => emit(\"move\"))\n          }, null, 8, [\"links\"])\n        ], 64)) : _createCommentVNode(\"\", true)\n      ]);\n    };\n  }\n});\n",
-      "start": 1708195451843,
-      "end": 1708195451844,
+      "start": 1708210049740,
+      "end": 1708210049740,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708195451845,
-      "end": 1708195451845,
+      "start": 1708210049741,
+      "end": 1708210049741,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708195451845,
-      "end": 1708195451845,
+      "start": 1708210049741,
+      "end": 1708210049741,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708195451846,
-      "end": 1708195451846,
+      "start": 1708210049741,
+      "end": 1708210049741,
       "order": "normal"
     }
   ]

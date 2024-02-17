@@ -4,209 +4,209 @@
     {
       "name": "virtual",
       "result": "import '@unocss/reset/tailwind.css'\nimport { dirname, join } from 'pathe'\nimport { useRuntimeConfig } from '#imports'\nimport { plugin as pinceau } from 'pinceau/runtime'\nimport utils from '#build/pinceau/utils'\nimport theme from '#build/pinceau/index'\n\nexport default defineNuxtPlugin(async (nuxtApp) => {\n              nuxtApp.vueApp.use(pinceau, { colorSchemeMode: 'class', theme, utils })\n\n              const { pinceau: runtimeConfig } = useRuntimeConfig()\n\n              // Handle first render of SSR styles\n              nuxtApp.hook('app:rendered', async (app) => {\n                app.ssrContext.event.pinceauContent = app.ssrContext.event.pinceauContent || {}\n                const content = app.ssrContext.nuxt.vueApp.config.globalProperties.$pinceauSsr.get()\n                app.ssrContext.event.pinceauContent.runtime = content\n              })\n            })",
-      "start": 1708195455767,
-      "end": 1708195455767,
+      "start": 1708210053592,
+      "end": 1708210053592,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708195455767,
-      "end": 1708195455767,
+      "start": 1708210053592,
+      "end": 1708210053592,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708195455767,
-      "end": 1708195455767,
+      "start": 1708210053592,
+      "end": 1708210053592,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708195455767,
-      "end": 1708195455767,
+      "start": 1708210053592,
+      "end": 1708210053592,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708195455767,
-      "end": 1708195455767,
+      "start": 1708210053592,
+      "end": 1708210053592,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import '@unocss/reset/tailwind.css'\nimport { dirname, join } from 'pathe'\nimport { useRuntimeConfig } from '#imports'\nimport { plugin as pinceau } from 'pinceau/runtime'\nimport utils from '#build/pinceau/utils'\nimport theme from '#build/pinceau/index'\n\nexport default defineNuxtPlugin(async (nuxtApp) => {\n              nuxtApp.vueApp.use(pinceau, { colorSchemeMode: 'class', theme, utils })\n\n              const { pinceau: runtimeConfig } = useRuntimeConfig()\n\n              // Handle first render of SSR styles\n              nuxtApp.hook('app:rendered', async (app) => {\n                app.ssrContext.event.pinceauContent = app.ssrContext.event.pinceauContent || {}\n                const content = app.ssrContext.nuxt.vueApp.config.globalProperties.$pinceauSsr.get()\n                app.ssrContext.event.pinceauContent.runtime = content\n              })\n            })",
-      "start": 1708195455767,
-      "end": 1708195455767,
+      "start": 1708210053593,
+      "end": 1708210053593,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import '@unocss/reset/tailwind.css'\nimport { dirname, join } from 'pathe'\nimport { useRuntimeConfig } from '#imports'\nimport { plugin as pinceau } from 'pinceau/runtime'\nimport utils from '#build/pinceau/utils'\nimport theme from '#build/pinceau/index'\n\nexport default defineNuxtPlugin(async (nuxtApp) => {\n              nuxtApp.vueApp.use(pinceau, { colorSchemeMode: 'class', theme, utils })\n\n              const { pinceau: runtimeConfig } = useRuntimeConfig()\n\n              // Handle first render of SSR styles\n              nuxtApp.hook('app:rendered', async (app) => {\n                app.ssrContext.event.pinceauContent = app.ssrContext.event.pinceauContent || {}\n                const content = app.ssrContext.nuxt.vueApp.config.globalProperties.$pinceauSsr.get()\n                app.ssrContext.event.pinceauContent.runtime = content\n              })\n            })",
-      "start": 1708195455767,
-      "end": 1708195455767,
+      "start": 1708210053593,
+      "end": 1708210053593,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708195455767,
-      "end": 1708195455767,
+      "start": 1708210053593,
+      "end": 1708210053593,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708195455767,
-      "end": 1708195455767,
+      "start": 1708210053593,
+      "end": 1708210053593,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708195455767,
-      "end": 1708195455767,
+      "start": 1708210053593,
+      "end": 1708210053593,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708195455767,
-      "end": 1708195455767,
+      "start": 1708210053593,
+      "end": 1708210053593,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1708195455767,
-      "end": 1708195455767,
+      "start": 1708210053593,
+      "end": 1708210053593,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1708195455767,
-      "end": 1708195455767,
+      "start": 1708210053593,
+      "end": 1708210053593,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708195455768,
-      "end": 1708195455768,
+      "start": 1708210053593,
+      "end": 1708210053593,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708195455768,
-      "end": 1708195455768,
+      "start": 1708210053593,
+      "end": 1708210053593,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708195455768,
-      "end": 1708195455768,
+      "start": 1708210053593,
+      "end": 1708210053593,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708195455768,
-      "end": 1708195455768,
+      "start": 1708210053593,
+      "end": 1708210053593,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708195455768,
-      "end": 1708195455768,
+      "start": 1708210053593,
+      "end": 1708210053593,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708195455768,
-      "end": 1708195455768,
+      "start": 1708210053593,
+      "end": 1708210053593,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708195455768,
-      "end": 1708195455768,
+      "start": 1708210053593,
+      "end": 1708210053593,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708195455770,
-      "end": 1708195455770,
+      "start": 1708210053594,
+      "end": 1708210053594,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708195455772,
-      "end": 1708195455773,
+      "start": 1708210053595,
+      "end": 1708210053596,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708195455775,
-      "end": 1708195455775,
+      "start": 1708210053596,
+      "end": 1708210053596,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708195455775,
-      "end": 1708195455775,
+      "start": 1708210053596,
+      "end": 1708210053596,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708195455775,
-      "end": 1708195455775,
+      "start": 1708210053597,
+      "end": 1708210053597,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708195455777,
-      "end": 1708195455777,
+      "start": 1708210053598,
+      "end": 1708210053598,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708195455777,
-      "end": 1708195455777,
+      "start": 1708210053598,
+      "end": 1708210053598,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708195455777,
-      "end": 1708195455777,
+      "start": 1708210053598,
+      "end": 1708210053598,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708195455777,
-      "end": 1708195455777,
+      "start": 1708210053598,
+      "end": 1708210053598,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708195455777,
-      "end": 1708195455777,
+      "start": 1708210053598,
+      "end": 1708210053598,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708195455777,
-      "end": 1708195455777,
+      "start": 1708210053598,
+      "end": 1708210053598,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708195455777,
-      "end": 1708195455777,
+      "start": 1708210053598,
+      "end": 1708210053598,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708195455777,
-      "end": 1708195455777,
+      "start": 1708210053598,
+      "end": 1708210053598,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { defineNuxtPlugin, useRuntimeConfig } from '#app/nuxt';\nimport '@unocss/reset/tailwind.css'\nimport { dirname, join } from 'pathe'\nimport { plugin as pinceau } from 'pinceau/runtime'\nimport utils from '#build/pinceau/utils'\nimport theme from '#build/pinceau/index'\n\nexport default defineNuxtPlugin(async (nuxtApp) => {\n              nuxtApp.vueApp.use(pinceau, { colorSchemeMode: 'class', theme, utils })\n\n              const { pinceau: runtimeConfig } = useRuntimeConfig()\n\n              // Handle first render of SSR styles\n              nuxtApp.hook('app:rendered', async (app) => {\n                app.ssrContext.event.pinceauContent = app.ssrContext.event.pinceauContent || {}\n                const content = app.ssrContext.nuxt.vueApp.config.globalProperties.$pinceauSsr.get()\n                app.ssrContext.event.pinceauContent.runtime = content\n              })\n            })",
-      "start": 1708195455777,
-      "end": 1708195455781,
+      "start": 1708210053598,
+      "end": 1708210053600,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -220,8 +220,8 @@
     {
       "name": "nuxt:imports-transform",
       "result": "import { defineNuxtPlugin, useRuntimeConfig } from '#app/nuxt';\nimport '@unocss/reset/tailwind.css'\nimport { dirname, join } from 'pathe'\nimport { plugin as pinceau } from 'pinceau/runtime'\nimport utils from '#build/pinceau/utils'\nimport theme from '#build/pinceau/index'\n\nexport default defineNuxtPlugin(async (nuxtApp) => {\n              nuxtApp.vueApp.use(pinceau, { colorSchemeMode: 'class', theme, utils })\n\n              const { pinceau: runtimeConfig } = useRuntimeConfig()\n\n              // Handle first render of SSR styles\n              nuxtApp.hook('app:rendered', async (app) => {\n                app.ssrContext.event.pinceauContent = app.ssrContext.event.pinceauContent || {}\n                const content = app.ssrContext.nuxt.vueApp.config.globalProperties.$pinceauSsr.get()\n                app.ssrContext.event.pinceauContent.runtime = content\n              })\n            })",
-      "start": 1708195455777,
-      "end": 1708195455783,
+      "start": 1708210053598,
+      "end": 1708210053602,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -234,56 +234,56 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1708195455787,
-      "end": 1708195455788,
+      "start": 1708210053604,
+      "end": 1708210053605,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708195455787,
-      "end": 1708195455788,
+      "start": 1708210053604,
+      "end": 1708210053605,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708195455791,
-      "end": 1708195455791,
+      "start": 1708210053607,
+      "end": 1708210053607,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708195455791,
-      "end": 1708195455791,
+      "start": 1708210053607,
+      "end": 1708210053607,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1708195455791,
-      "end": 1708195455791,
+      "start": 1708210053607,
+      "end": 1708210053607,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1708195455791,
-      "end": 1708195455792,
+      "start": 1708210053607,
+      "end": 1708210053607,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708195455792,
-      "end": 1708195455792,
+      "start": 1708210053607,
+      "end": 1708210053607,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708195455792,
-      "end": 1708195455792,
+      "start": 1708210053607,
+      "end": 1708210053607,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708195455792,
-      "end": 1708195455793,
+      "start": 1708210053607,
+      "end": 1708210053608,
       "order": "normal"
     }
   ]

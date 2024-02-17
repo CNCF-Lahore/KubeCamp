@@ -4,39 +4,39 @@
     {
       "name": "vite:load-fallback",
       "result": "<script setup lang=\"ts\">\ndefineProps({\n  icon: {\n    type: String,\n    default: ''\n  }\n})\n</script>\n\n<template>\n  <div class=\"card\">\n    <Icon v-if=\"icon\" :name=\"icon\" />\n    <slot />\n    <div>\n      <h3 class=\"title\">\n        <ContentSlot :use=\"$slots.title\" unwrap=\"p\">\n          Card title\n        </ContentSlot>\n      </h3>\n      <p class=\"description\">\n        <ContentSlot :use=\"$slots.description\" unwrap=\"p\">\n          Card description\n        </ContentSlot>\n      </p>\n    </div>\n  </div>\n</template>\n\n<style scoped lang=\"ts\">\ncss({\n  '.card': {\n    display: 'block',\n    position: 'relative',\n    width: '100%',\n    padding: '{space.8}',\n    borderRadius: '{radii.xl}',\n    border: '1px solid {elements.border.primary.static}',\n    background: '{elements.backdrop.background}',\n    backdropFilter: '{elements.backdrop.filter}',\n    '.icon': {\n      display: 'inline-block',\n      marginBottom: '{space.2}',\n      width: '{space.6}',\n      height: '{space.6}'\n    },\n    '.title': {\n      marginBottom: '{space.2}',\n      fontSize: '{text.lg.fontSize}',\n      lineHeight: '{text.lg.lineHeight}',\n      fontWeight: '{fontWeight.semibold}',\n      color: '{elements.text.primary.color.static}'\n    },\n    '.description': {\n      fontSize: '{text.sm.fontSize}',\n      lineHeight: '{text.sm.lineHeight}',\n      fontWeight: '{fontWeight.medium}',\n      color: '{elements.text.secondary.color.static}'\n    }\n  }\n})\n</style>\n",
-      "start": 1708195457209,
-      "end": 1708195457299,
+      "start": 1708210055758,
+      "end": 1708210055929,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708195457299,
-      "end": 1708195457299,
+      "start": 1708210055929,
+      "end": 1708210055929,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708195457299,
-      "end": 1708195457299,
+      "start": 1708210055929,
+      "end": 1708210055929,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708195457299,
-      "end": 1708195457299,
+      "start": 1708210055929,
+      "end": 1708210055929,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708195457299,
-      "end": 1708195457299,
+      "start": 1708210055929,
+      "end": 1708210055929,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "<script setup lang=\"ts\">\ndefineProps({\n  icon: {\n    type: String,\n    default: ''\n  }\n})\n</script>\n\n<template>\n  <div class=\"card\">\n    <Icon v-if=\"icon\" :name=\"icon\" />\n    <slot />\n    <div>\n      <h3 class=\"title\">\n        <ContentSlot :use=\"$slots.title\" unwrap=\"p\">\n          Card title\n        </ContentSlot>\n      </h3>\n      <p class=\"description\">\n        <ContentSlot :use=\"$slots.description\" unwrap=\"p\">\n          Card description\n        </ContentSlot>\n      </p>\n    </div>\n  </div>\n</template>\n\n<style scoped lang=\"postcss\" transformed>\n.card{display:block;position:relative;width:100%;padding:var(--space-8);border-radius:var(--radii-xl);border:1px solid var(--elements-border-primary-static);background:var(--elements-backdrop-background);backdrop-filter:var(--elements-backdrop-filter);}.card .icon{display:inline-block;margin-bottom:var(--space-2);width:var(--space-6);height:var(--space-6);}.card .title{margin-bottom:var(--space-2);font-size:var(--text-lg-fontSize);line-height:var(--text-lg-lineHeight);font-weight:var(--fontWeight-semibold);color:var(--elements-text-primary-color-static);}.card .description{font-size:var(--text-sm-fontSize);line-height:var(--text-sm-lineHeight);font-weight:var(--fontWeight-medium);color:var(--elements-text-secondary-color-static);}\n</style>\n",
-      "start": 1708195457299,
-      "end": 1708195457305,
+      "start": 1708210055929,
+      "end": 1708210055931,
       "order": "pre",
       "sourcemaps": {
         "version": 3,
@@ -51,8 +51,8 @@
     {
       "name": "pinceau-transforms",
       "result": "<script setup lang=\"ts\">\ndefineProps({\n  icon: {\n    type: String,\n    default: ''\n  }\n})\n</script>\n\n<template>\n  <div class=\"card\">\n    <Icon v-if=\"icon\" :name=\"icon\" />\n    <slot />\n    <div>\n      <h3 class=\"title\">\n        <ContentSlot :use=\"$slots.title\" unwrap=\"p\">\n          Card title\n        </ContentSlot>\n      </h3>\n      <p class=\"description\">\n        <ContentSlot :use=\"$slots.description\" unwrap=\"p\">\n          Card description\n        </ContentSlot>\n      </p>\n    </div>\n  </div>\n</template>\n\n<style scoped lang=\"postcss\" transformed>\n.card{display:block;position:relative;width:100%;padding:var(--space-8);border-radius:var(--radii-xl);border:1px solid var(--elements-border-primary-static);background:var(--elements-backdrop-background);backdrop-filter:var(--elements-backdrop-filter);}.card .icon{display:inline-block;margin-bottom:var(--space-2);width:var(--space-6);height:var(--space-6);}.card .title{margin-bottom:var(--space-2);font-size:var(--text-lg-fontSize);line-height:var(--text-lg-lineHeight);font-weight:var(--fontWeight-semibold);color:var(--elements-text-primary-color-static);}.card .description{font-size:var(--text-sm-fontSize);line-height:var(--text-sm-lineHeight);font-weight:var(--fontWeight-medium);color:var(--elements-text-secondary-color-static);}\n</style>\n",
-      "start": 1708195457299,
-      "end": 1708195457305,
+      "start": 1708210055929,
+      "end": 1708210055931,
       "order": "pre",
       "sourcemaps": {
         "version": 3,
@@ -67,8 +67,8 @@
     {
       "name": "content-slot",
       "result": "<script setup lang=\"ts\">\ndefineProps({\n  icon: {\n    type: String,\n    default: ''\n  }\n})\n</script>\n\n<template>\n  <div class=\"card\">\n    <Icon v-if=\"icon\" :name=\"icon\" />\n    <slot />\n    <div>\n      <h3 class=\"title\">\n        <MDCSlot  name=\"title\" unwrap=\"p\">\n          Card title\n        </MDCSlot>\n      </h3>\n      <p class=\"description\">\n        <MDCSlot  name=\"description\" unwrap=\"p\">\n          Card description\n        </MDCSlot>\n      </p>\n    </div>\n  </div>\n</template>\n\n<style scoped lang=\"postcss\" transformed>\n.card{display:block;position:relative;width:100%;padding:var(--space-8);border-radius:var(--radii-xl);border:1px solid var(--elements-border-primary-static);background:var(--elements-backdrop-background);backdrop-filter:var(--elements-backdrop-filter);}.card .icon{display:inline-block;margin-bottom:var(--space-2);width:var(--space-6);height:var(--space-6);}.card .title{margin-bottom:var(--space-2);font-size:var(--text-lg-fontSize);line-height:var(--text-lg-lineHeight);font-weight:var(--fontWeight-semibold);color:var(--elements-text-primary-color-static);}.card .description{font-size:var(--text-sm-fontSize);line-height:var(--text-sm-lineHeight);font-weight:var(--fontWeight-medium);color:var(--elements-text-secondary-color-static);}\n</style>\n",
-      "start": 1708195457305,
-      "end": 1708195457305,
+      "start": 1708210055931,
+      "end": 1708210055931,
       "order": "pre",
       "sourcemaps": {
         "mappings": ""
@@ -77,8 +77,8 @@
     {
       "name": "content-slot",
       "result": "<script setup lang=\"ts\">\ndefineProps({\n  icon: {\n    type: String,\n    default: ''\n  }\n})\n</script>\n\n<template>\n  <div class=\"card\">\n    <Icon v-if=\"icon\" :name=\"icon\" />\n    <slot />\n    <div>\n      <h3 class=\"title\">\n        <MDCSlot  name=\"title\" unwrap=\"p\">\n          Card title\n        </MDCSlot>\n      </h3>\n      <p class=\"description\">\n        <MDCSlot  name=\"description\" unwrap=\"p\">\n          Card description\n        </MDCSlot>\n      </p>\n    </div>\n  </div>\n</template>\n\n<style scoped lang=\"postcss\" transformed>\n.card{display:block;position:relative;width:100%;padding:var(--space-8);border-radius:var(--radii-xl);border:1px solid var(--elements-border-primary-static);background:var(--elements-backdrop-background);backdrop-filter:var(--elements-backdrop-filter);}.card .icon{display:inline-block;margin-bottom:var(--space-2);width:var(--space-6);height:var(--space-6);}.card .title{margin-bottom:var(--space-2);font-size:var(--text-lg-fontSize);line-height:var(--text-lg-lineHeight);font-weight:var(--fontWeight-semibold);color:var(--elements-text-primary-color-static);}.card .description{font-size:var(--text-sm-fontSize);line-height:var(--text-sm-lineHeight);font-weight:var(--fontWeight-medium);color:var(--elements-text-secondary-color-static);}\n</style>\n",
-      "start": 1708195457305,
-      "end": 1708195457305,
+      "start": 1708210055931,
+      "end": 1708210055931,
       "order": "pre",
       "sourcemaps": {
         "mappings": ""
@@ -86,39 +86,39 @@
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708195457305,
-      "end": 1708195457305,
+      "start": 1708210055931,
+      "end": 1708210055931,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708195457305,
-      "end": 1708195457305,
+      "start": 1708210055931,
+      "end": 1708210055931,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1708195457305,
-      "end": 1708195457305,
+      "start": 1708210055931,
+      "end": 1708210055931,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1708195457305,
-      "end": 1708195457305,
+      "start": 1708210055931,
+      "end": 1708210055931,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708195457305,
-      "end": 1708195457305,
+      "start": 1708210055931,
+      "end": 1708210055931,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "import _sfc_main from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/landing/Card.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/landing/Card.vue?vue&type=script&setup=true&lang.ts\";\nimport \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/landing/Card.vue?vue&type=style&index=0&scoped=34524c46&transformed=true&lang.postcss\";\nimport { useSSRContext as __vite_useSSRContext } from \"vue\";\nconst _sfc_setup = _sfc_main.setup;\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext();\n  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add(\"node_modules/@nuxt-themes/elements/components/landing/Card.vue\");\n  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;\n};\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"__scopeId\", \"data-v-34524c46\"]]);\n",
-      "start": 1708195457305,
-      "end": 1708195457313,
+      "start": 1708210055931,
+      "end": 1708210055964,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -126,176 +126,176 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708195457313,
-      "end": 1708195457313,
+      "start": 1708210055965,
+      "end": 1708210055965,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708195457313,
-      "end": 1708195457313,
+      "start": 1708210055965,
+      "end": 1708210055965,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708195457313,
-      "end": 1708195457313,
+      "start": 1708210055965,
+      "end": 1708210055965,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708195457314,
-      "end": 1708195457314,
+      "start": 1708210055965,
+      "end": 1708210055965,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708195457314,
-      "end": 1708195457314,
+      "start": 1708210055965,
+      "end": 1708210055965,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708195457314,
-      "end": 1708195457314,
+      "start": 1708210055965,
+      "end": 1708210055965,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708195457314,
-      "end": 1708195457314,
+      "start": 1708210055965,
+      "end": 1708210055965,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708195457314,
-      "end": 1708195457314,
+      "start": 1708210055965,
+      "end": 1708210055965,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708195457314,
-      "end": 1708195457314,
+      "start": 1708210055965,
+      "end": 1708210055965,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708195457314,
-      "end": 1708195457314,
+      "start": 1708210055965,
+      "end": 1708210055965,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708195457314,
-      "end": 1708195457314,
+      "start": 1708210055965,
+      "end": 1708210055965,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708195457314,
-      "end": 1708195457314,
+      "start": 1708210055965,
+      "end": 1708210055965,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708195457314,
-      "end": 1708195457314,
+      "start": 1708210055966,
+      "end": 1708210055966,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708195457314,
-      "end": 1708195457314,
+      "start": 1708210055966,
+      "end": 1708210055966,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708195457314,
-      "end": 1708195457314,
+      "start": 1708210055966,
+      "end": 1708210055966,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708195457314,
-      "end": 1708195457314,
+      "start": 1708210055966,
+      "end": 1708210055966,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708195457314,
-      "end": 1708195457314,
+      "start": 1708210055966,
+      "end": 1708210055966,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708195457314,
-      "end": 1708195457314,
+      "start": 1708210055966,
+      "end": 1708210055966,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708195457314,
-      "end": 1708195457315,
+      "start": 1708210055966,
+      "end": 1708210055967,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708195457314,
-      "end": 1708195457315,
+      "start": 1708210055966,
+      "end": 1708210055967,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708195457315,
-      "end": 1708195457315,
+      "start": 1708210055967,
+      "end": 1708210055967,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708195457315,
-      "end": 1708195457315,
+      "start": 1708210055967,
+      "end": 1708210055967,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708195457315,
-      "end": 1708195457315,
+      "start": 1708210055967,
+      "end": 1708210055967,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708195457315,
-      "end": 1708195457315,
+      "start": 1708210055967,
+      "end": 1708210055967,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1708195457315,
-      "end": 1708195457315,
+      "start": 1708210055967,
+      "end": 1708210055968,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1708195457315,
-      "end": 1708195457316,
+      "start": 1708210055968,
+      "end": 1708210055968,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708195457316,
-      "end": 1708195457316,
+      "start": 1708210055968,
+      "end": 1708210055968,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708195457316,
-      "end": 1708195457316,
+      "start": 1708210055968,
+      "end": 1708210055968,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708195457316,
-      "end": 1708195457316,
+      "start": 1708210055968,
+      "end": 1708210055968,
       "order": "normal"
     }
   ]

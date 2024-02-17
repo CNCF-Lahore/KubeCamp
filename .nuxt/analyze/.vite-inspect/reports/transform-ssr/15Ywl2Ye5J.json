@@ -4,8 +4,8 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { resolveComponent as _resolveComponent, unref as _unref } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderTeleport as _ssrRenderTeleport } from \"vue/server-renderer\"\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'AppHeaderDialog',\n  __ssrInlineRender: true,\n  setup(__props) {\n\nconst { navigation } = useContent()\nconst { config } = useDocus()\n\nconst show = ref(false)\n\nconst filtered = computed(() => config.value.aside?.exclude || [])\n\nconst links = computed(() => {\n  return (navigation.value || []).filter((item: any) => {\n    if (filtered.value.includes(item._path)) { return false }\n    return true\n  })\n})\n\nconst { close, open } = useMenu()\n\nwatch(show, v => (v ? open() : close()))\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_Icon = _resolveComponent(\"Icon\")!\n  const _component_AppSocialIcons = _resolveComponent(\"AppSocialIcons\")!\n  const _component_DocsAsideTree = _resolveComponent(\"DocsAsideTree\")!\n\n  _push(`<!--[--><button aria-label=\"Menu\" data-v-8fd30205>`)\n  _push(_ssrRenderComponent(_component_Icon, {\n    name: \"heroicons-outline:menu\",\n    \"aria-hidden\": \"”true”\"\n  }, null, _parent))\n  _push(`</button>`)\n  _ssrRenderTeleport(_push, (_push) => {\n    if (_unref(show)) {\n      _push(`<nav class=\"dialog\" data-v-8fd30205><div data-v-8fd30205><div class=\"wrapper\" data-v-8fd30205><button aria-label=\"Menu\" data-v-8fd30205>`)\n      _push(_ssrRenderComponent(_component_Icon, {\n        name: \"heroicons-outline:x\",\n        \"aria-hidden\": \"”true”\"\n      }, null, _parent))\n      _push(`</button><div class=\"icons\" data-v-8fd30205>`)\n      _push(_ssrRenderComponent(_component_AppSocialIcons, null, null, _parent))\n      _push(`</div></div>`)\n      _push(_ssrRenderComponent(_component_DocsAsideTree, { links: _unref(links) }, null, _parent))\n      _push(`</div></nav>`)\n    } else {\n      _push(`<!---->`)\n    }\n  }, \"body\", false, _parent)\n  _push(`<!--]-->`)\n}\n}\n\n})",
-      "start": 1708195457418,
-      "end": 1708195457418,
+      "start": 1708210056081,
+      "end": 1708210056081,
       "sourcemaps": {
         "version": 3,
         "sources": [
@@ -20,71 +20,71 @@
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708195457419,
-      "end": 1708195457419,
+      "start": 1708210056082,
+      "end": 1708210056082,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708195457419,
-      "end": 1708195457419,
+      "start": 1708210056082,
+      "end": 1708210056082,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708195457423,
-      "end": 1708195457423,
+      "start": 1708210056086,
+      "end": 1708210056086,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708195457423,
-      "end": 1708195457423,
+      "start": 1708210056086,
+      "end": 1708210056086,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { resolveComponent as _resolveComponent, unref as _unref } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderTeleport as _ssrRenderTeleport } from \"vue/server-renderer\"\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'AppHeaderDialog',\n  __ssrInlineRender: true,\n  setup(__props) {\n\nconst { navigation } = useContent()\nconst { config } = useDocus()\n\nconst show = ref(false)\n\nconst filtered = computed(() => config.value.aside?.exclude || [])\n\nconst links = computed(() => {\n  return (navigation.value || []).filter((item: any) => {\n    if (filtered.value.includes(item._path)) { return false }\n    return true\n  })\n})\n\nconst { close, open } = useMenu()\n\nwatch(show, v => (v ? open() : close()))\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_Icon = _resolveComponent(\"Icon\")!\n  const _component_AppSocialIcons = _resolveComponent(\"AppSocialIcons\")!\n  const _component_DocsAsideTree = _resolveComponent(\"DocsAsideTree\")!\n\n  _push(`<!--[--><button aria-label=\"Menu\" data-v-8fd30205>`)\n  _push(_ssrRenderComponent(_component_Icon, {\n    name: \"heroicons-outline:menu\",\n    \"aria-hidden\": \"”true”\"\n  }, null, _parent))\n  _push(`</button>`)\n  _ssrRenderTeleport(_push, (_push) => {\n    if (_unref(show)) {\n      _push(`<nav class=\"dialog\" data-v-8fd30205><div data-v-8fd30205><div class=\"wrapper\" data-v-8fd30205><button aria-label=\"Menu\" data-v-8fd30205>`)\n      _push(_ssrRenderComponent(_component_Icon, {\n        name: \"heroicons-outline:x\",\n        \"aria-hidden\": \"”true”\"\n      }, null, _parent))\n      _push(`</button><div class=\"icons\" data-v-8fd30205>`)\n      _push(_ssrRenderComponent(_component_AppSocialIcons, null, null, _parent))\n      _push(`</div></div>`)\n      _push(_ssrRenderComponent(_component_DocsAsideTree, { links: _unref(links) }, null, _parent))\n      _push(`</div></nav>`)\n    } else {\n      _push(`<!---->`)\n    }\n  }, \"body\", false, _parent)\n  _push(`<!--]-->`)\n}\n}\n\n})",
-      "start": 1708195457423,
-      "end": 1708195457423,
+      "start": 1708210056088,
+      "end": 1708210056088,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { resolveComponent as _resolveComponent, unref as _unref } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderTeleport as _ssrRenderTeleport } from \"vue/server-renderer\"\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'AppHeaderDialog',\n  __ssrInlineRender: true,\n  setup(__props) {\n\nconst { navigation } = useContent()\nconst { config } = useDocus()\n\nconst show = ref(false)\n\nconst filtered = computed(() => config.value.aside?.exclude || [])\n\nconst links = computed(() => {\n  return (navigation.value || []).filter((item: any) => {\n    if (filtered.value.includes(item._path)) { return false }\n    return true\n  })\n})\n\nconst { close, open } = useMenu()\n\nwatch(show, v => (v ? open() : close()))\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_Icon = _resolveComponent(\"Icon\")!\n  const _component_AppSocialIcons = _resolveComponent(\"AppSocialIcons\")!\n  const _component_DocsAsideTree = _resolveComponent(\"DocsAsideTree\")!\n\n  _push(`<!--[--><button aria-label=\"Menu\" data-v-8fd30205>`)\n  _push(_ssrRenderComponent(_component_Icon, {\n    name: \"heroicons-outline:menu\",\n    \"aria-hidden\": \"”true”\"\n  }, null, _parent))\n  _push(`</button>`)\n  _ssrRenderTeleport(_push, (_push) => {\n    if (_unref(show)) {\n      _push(`<nav class=\"dialog\" data-v-8fd30205><div data-v-8fd30205><div class=\"wrapper\" data-v-8fd30205><button aria-label=\"Menu\" data-v-8fd30205>`)\n      _push(_ssrRenderComponent(_component_Icon, {\n        name: \"heroicons-outline:x\",\n        \"aria-hidden\": \"”true”\"\n      }, null, _parent))\n      _push(`</button><div class=\"icons\" data-v-8fd30205>`)\n      _push(_ssrRenderComponent(_component_AppSocialIcons, null, null, _parent))\n      _push(`</div></div>`)\n      _push(_ssrRenderComponent(_component_DocsAsideTree, { links: _unref(links) }, null, _parent))\n      _push(`</div></nav>`)\n    } else {\n      _push(`<!---->`)\n    }\n  }, \"body\", false, _parent)\n  _push(`<!--]-->`)\n}\n}\n\n})",
-      "start": 1708195457423,
-      "end": 1708195457423,
+      "start": 1708210056088,
+      "end": 1708210056088,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708195457423,
-      "end": 1708195457423,
+      "start": 1708210056089,
+      "end": 1708210056089,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708195457423,
-      "end": 1708195457423,
+      "start": 1708210056089,
+      "end": 1708210056089,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708195457423,
-      "end": 1708195457423,
+      "start": 1708210056090,
+      "end": 1708210056090,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708195457423,
-      "end": 1708195457423,
+      "start": 1708210056090,
+      "end": 1708210056090,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { resolveComponent as _resolveComponent, unref as _unref } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderTeleport as _ssrRenderTeleport } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"AppHeaderDialog\",\n  __ssrInlineRender: true,\n  setup(__props) {\n    const { navigation } = useContent();\n    const { config } = useDocus();\n    const show = ref(false);\n    const filtered = computed(() => config.value.aside?.exclude || []);\n    const links = computed(() => {\n      return (navigation.value || []).filter((item) => {\n        if (filtered.value.includes(item._path)) {\n          return false;\n        }\n        return true;\n      });\n    });\n    const { close, open } = useMenu();\n    watch(show, (v) => v ? open() : close());\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_Icon = _resolveComponent(\"Icon\");\n      const _component_AppSocialIcons = _resolveComponent(\"AppSocialIcons\");\n      const _component_DocsAsideTree = _resolveComponent(\"DocsAsideTree\");\n      _push(`<!--[--><button aria-label=\"Menu\" data-v-8fd30205>`);\n      _push(_ssrRenderComponent(_component_Icon, {\n        name: \"heroicons-outline:menu\",\n        \"aria-hidden\": \"”true”\"\n      }, null, _parent));\n      _push(`</button>`);\n      _ssrRenderTeleport(_push, (_push2) => {\n        if (_unref(show)) {\n          _push2(`<nav class=\"dialog\" data-v-8fd30205><div data-v-8fd30205><div class=\"wrapper\" data-v-8fd30205><button aria-label=\"Menu\" data-v-8fd30205>`);\n          _push2(_ssrRenderComponent(_component_Icon, {\n            name: \"heroicons-outline:x\",\n            \"aria-hidden\": \"”true”\"\n          }, null, _parent));\n          _push2(`</button><div class=\"icons\" data-v-8fd30205>`);\n          _push2(_ssrRenderComponent(_component_AppSocialIcons, null, null, _parent));\n          _push2(`</div></div>`);\n          _push2(_ssrRenderComponent(_component_DocsAsideTree, { links: _unref(links) }, null, _parent));\n          _push2(`</div></nav>`);\n        } else {\n          _push2(`<!---->`);\n        }\n      }, \"body\", false, _parent);\n      _push(`<!--]-->`);\n    };\n  }\n});\n",
-      "start": 1708195457423,
-      "end": 1708195457786,
+      "start": 1708210056090,
+      "end": 1708210056521,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -102,135 +102,135 @@
     },
     {
       "name": "vite:json",
-      "start": 1708195457786,
-      "end": 1708195457786,
+      "start": 1708210056521,
+      "end": 1708210056521,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708195457786,
-      "end": 1708195457786,
+      "start": 1708210056521,
+      "end": 1708210056521,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708195457786,
-      "end": 1708195457786,
+      "start": 1708210056521,
+      "end": 1708210056521,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708195457786,
-      "end": 1708195457786,
+      "start": 1708210056521,
+      "end": 1708210056521,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708195457790,
-      "end": 1708195457790,
+      "start": 1708210056521,
+      "end": 1708210056522,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708195457790,
-      "end": 1708195457790,
+      "start": 1708210056521,
+      "end": 1708210056522,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708195457790,
-      "end": 1708195457790,
+      "start": 1708210056522,
+      "end": 1708210056522,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708195457790,
-      "end": 1708195457790,
+      "start": 1708210056522,
+      "end": 1708210056522,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708195457790,
-      "end": 1708195457791,
+      "start": 1708210056522,
+      "end": 1708210056522,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708195457791,
-      "end": 1708195457791,
+      "start": 1708210056522,
+      "end": 1708210056522,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708195457791,
-      "end": 1708195457791,
+      "start": 1708210056522,
+      "end": 1708210056523,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708195457791,
-      "end": 1708195457792,
+      "start": 1708210056523,
+      "end": 1708210056524,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708195457792,
-      "end": 1708195457792,
+      "start": 1708210056524,
+      "end": 1708210056524,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708195457793,
-      "end": 1708195457793,
+      "start": 1708210056524,
+      "end": 1708210056524,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708195457793,
-      "end": 1708195457793,
+      "start": 1708210056525,
+      "end": 1708210056525,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708195457793,
-      "end": 1708195457793,
+      "start": 1708210056525,
+      "end": 1708210056525,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708195457793,
-      "end": 1708195457793,
+      "start": 1708210056525,
+      "end": 1708210056525,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708195457793,
-      "end": 1708195457793,
+      "start": 1708210056525,
+      "end": 1708210056525,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708195457793,
-      "end": 1708195457793,
+      "start": 1708210056525,
+      "end": 1708210056525,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708195457794,
-      "end": 1708195457794,
+      "start": 1708210056526,
+      "end": 1708210056526,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708195457794,
-      "end": 1708195457794,
+      "start": 1708210056526,
+      "end": 1708210056526,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { useContent } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/composables/content';\nimport { useDocus } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/composables/useDocus.ts';\nimport { ref, computed, watch } from 'vue';\nimport { useMenu } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/composables/useMenu.ts';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { resolveComponent as _resolveComponent, unref as _unref } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderTeleport as _ssrRenderTeleport } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"AppHeaderDialog\",\n  __ssrInlineRender: true,\n  setup(__props) {\n    const { navigation } = useContent();\n    const { config } = useDocus();\n    const show = ref(false);\n    const filtered = computed(() => config.value.aside?.exclude || []);\n    const links = computed(() => {\n      return (navigation.value || []).filter((item) => {\n        if (filtered.value.includes(item._path)) {\n          return false;\n        }\n        return true;\n      });\n    });\n    const { close, open } = useMenu();\n    watch(show, (v) => v ? open() : close());\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_Icon = _resolveComponent(\"Icon\");\n      const _component_AppSocialIcons = _resolveComponent(\"AppSocialIcons\");\n      const _component_DocsAsideTree = _resolveComponent(\"DocsAsideTree\");\n      _push(`<!--[--><button aria-label=\"Menu\" data-v-8fd30205>`);\n      _push(_ssrRenderComponent(_component_Icon, {\n        name: \"heroicons-outline:menu\",\n        \"aria-hidden\": \"”true”\"\n      }, null, _parent));\n      _push(`</button>`);\n      _ssrRenderTeleport(_push, (_push2) => {\n        if (_unref(show)) {\n          _push2(`<nav class=\"dialog\" data-v-8fd30205><div data-v-8fd30205><div class=\"wrapper\" data-v-8fd30205><button aria-label=\"Menu\" data-v-8fd30205>`);\n          _push2(_ssrRenderComponent(_component_Icon, {\n            name: \"heroicons-outline:x\",\n            \"aria-hidden\": \"”true”\"\n          }, null, _parent));\n          _push2(`</button><div class=\"icons\" data-v-8fd30205>`);\n          _push2(_ssrRenderComponent(_component_AppSocialIcons, null, null, _parent));\n          _push2(`</div></div>`);\n          _push2(_ssrRenderComponent(_component_DocsAsideTree, { links: _unref(links) }, null, _parent));\n          _push2(`</div></nav>`);\n        } else {\n          _push2(`<!---->`);\n        }\n      }, \"body\", false, _parent);\n      _push(`<!--]-->`);\n    };\n  }\n});\n",
-      "start": 1708195457794,
-      "end": 1708195457800,
+      "start": 1708210056526,
+      "end": 1708210056536,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -244,8 +244,8 @@
     {
       "name": "nuxt:imports-transform",
       "result": "import { useContent } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/composables/content';\nimport { useDocus } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/composables/useDocus.ts';\nimport { ref, computed, watch } from 'vue';\nimport { useMenu } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/composables/useMenu.ts';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { resolveComponent as _resolveComponent, unref as _unref } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderTeleport as _ssrRenderTeleport } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"AppHeaderDialog\",\n  __ssrInlineRender: true,\n  setup(__props) {\n    const { navigation } = useContent();\n    const { config } = useDocus();\n    const show = ref(false);\n    const filtered = computed(() => config.value.aside?.exclude || []);\n    const links = computed(() => {\n      return (navigation.value || []).filter((item) => {\n        if (filtered.value.includes(item._path)) {\n          return false;\n        }\n        return true;\n      });\n    });\n    const { close, open } = useMenu();\n    watch(show, (v) => v ? open() : close());\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_Icon = _resolveComponent(\"Icon\");\n      const _component_AppSocialIcons = _resolveComponent(\"AppSocialIcons\");\n      const _component_DocsAsideTree = _resolveComponent(\"DocsAsideTree\");\n      _push(`<!--[--><button aria-label=\"Menu\" data-v-8fd30205>`);\n      _push(_ssrRenderComponent(_component_Icon, {\n        name: \"heroicons-outline:menu\",\n        \"aria-hidden\": \"”true”\"\n      }, null, _parent));\n      _push(`</button>`);\n      _ssrRenderTeleport(_push, (_push2) => {\n        if (_unref(show)) {\n          _push2(`<nav class=\"dialog\" data-v-8fd30205><div data-v-8fd30205><div class=\"wrapper\" data-v-8fd30205><button aria-label=\"Menu\" data-v-8fd30205>`);\n          _push2(_ssrRenderComponent(_component_Icon, {\n            name: \"heroicons-outline:x\",\n            \"aria-hidden\": \"”true”\"\n          }, null, _parent));\n          _push2(`</button><div class=\"icons\" data-v-8fd30205>`);\n          _push2(_ssrRenderComponent(_component_AppSocialIcons, null, null, _parent));\n          _push2(`</div></div>`);\n          _push2(_ssrRenderComponent(_component_DocsAsideTree, { links: _unref(links) }, null, _parent));\n          _push2(`</div></nav>`);\n        } else {\n          _push2(`<!---->`);\n        }\n      }, \"body\", false, _parent);\n      _push(`<!--]-->`);\n    };\n  }\n});\n",
-      "start": 1708195457794,
-      "end": 1708195457800,
+      "start": 1708210056526,
+      "end": 1708210056536,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -258,39 +258,39 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1708195457800,
-      "end": 1708195457800,
+      "start": 1708210056536,
+      "end": 1708210056536,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708195457800,
-      "end": 1708195457800,
+      "start": 1708210056536,
+      "end": 1708210056536,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708195457800,
-      "end": 1708195457800,
+      "start": 1708210056536,
+      "end": 1708210056536,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708195457800,
-      "end": 1708195457800,
+      "start": 1708210056536,
+      "end": 1708210056536,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1708195457801,
-      "end": 1708195457801,
+      "start": 1708210056536,
+      "end": 1708210056536,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
       "result": "import { default as __nuxt_component_0 } from \"/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/Icon.vue\";\nimport { default as __nuxt_component_1 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppSocialIcons.vue\";\nimport { default as __nuxt_component_2 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsAsideTree.vue\";\nimport { useContent } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/composables/content';\nimport { useDocus } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/composables/useDocus.ts';\nimport { ref, computed, watch } from 'vue';\nimport { useMenu } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/composables/useMenu.ts';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { resolveComponent as _resolveComponent, unref as _unref } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderTeleport as _ssrRenderTeleport } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"AppHeaderDialog\",\n  __ssrInlineRender: true,\n  setup(__props) {\n    const { navigation } = useContent();\n    const { config } = useDocus();\n    const show = ref(false);\n    const filtered = computed(() => config.value.aside?.exclude || []);\n    const links = computed(() => {\n      return (navigation.value || []).filter((item) => {\n        if (filtered.value.includes(item._path)) {\n          return false;\n        }\n        return true;\n      });\n    });\n    const { close, open } = useMenu();\n    watch(show, (v) => v ? open() : close());\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_Icon = __nuxt_component_0;\n      const _component_AppSocialIcons = __nuxt_component_1;\n      const _component_DocsAsideTree = __nuxt_component_2;\n      _push(`<!--[--><button aria-label=\"Menu\" data-v-8fd30205>`);\n      _push(_ssrRenderComponent(_component_Icon, {\n        name: \"heroicons-outline:menu\",\n        \"aria-hidden\": \"”true”\"\n      }, null, _parent));\n      _push(`</button>`);\n      _ssrRenderTeleport(_push, (_push2) => {\n        if (_unref(show)) {\n          _push2(`<nav class=\"dialog\" data-v-8fd30205><div data-v-8fd30205><div class=\"wrapper\" data-v-8fd30205><button aria-label=\"Menu\" data-v-8fd30205>`);\n          _push2(_ssrRenderComponent(_component_Icon, {\n            name: \"heroicons-outline:x\",\n            \"aria-hidden\": \"”true”\"\n          }, null, _parent));\n          _push2(`</button><div class=\"icons\" data-v-8fd30205>`);\n          _push2(_ssrRenderComponent(_component_AppSocialIcons, null, null, _parent));\n          _push2(`</div></div>`);\n          _push2(_ssrRenderComponent(_component_DocsAsideTree, { links: _unref(links) }, null, _parent));\n          _push2(`</div></nav>`);\n        } else {\n          _push2(`<!---->`);\n        }\n      }, \"body\", false, _parent);\n      _push(`<!--]-->`);\n    };\n  }\n});\n",
-      "start": 1708195457801,
-      "end": 1708195457802,
+      "start": 1708210056537,
+      "end": 1708210056538,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -303,20 +303,20 @@
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708195457803,
-      "end": 1708195457803,
+      "start": 1708210056539,
+      "end": 1708210056539,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708195457803,
-      "end": 1708195457803,
+      "start": 1708210056539,
+      "end": 1708210056539,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708195457803,
-      "end": 1708195457803,
+      "start": 1708210056539,
+      "end": 1708210056539,
       "order": "normal"
     }
   ]

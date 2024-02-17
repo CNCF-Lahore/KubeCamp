@@ -4,51 +4,51 @@
     {
       "name": "vite:vue",
       "result": "\nimport { joinURL } from 'ufo'\nimport type { PropType } from 'vue'\nimport { computed, defineComponent, useSlots } from 'vue'\nimport { useAppConfig } from '#imports'\n\nexport default defineComponent({\n  props: {\n    /**\n     * GitHub base URL.\n     */\n    baseUrl: {\n      type: String,\n      default: () => useAppConfig()?.docus?.github?.baseUrl || 'https://github.com',\n      required: false\n    },\n    /**\n     * Repository owner.\n     */\n    owner: {\n      type: String,\n      default: () => useAppConfig()?.docus?.github?.owner,\n      required: false\n    },\n    /**\n     * Repository name.\n     */\n    repo: {\n      type: String,\n      default: () => useAppConfig()?.docus?.github?.repo,\n      required: false\n    },\n    /**\n     * The branch to use for the edit link.\n     */\n    branch: {\n      type: String,\n      default: () => useAppConfig()?.docus?.github?.branch,\n      required: false\n    },\n    /**\n     * A base directory to append to the source path.\n     *\n     * Won't be used if `page` is set.\n     */\n    dir: {\n      type: String,\n      default: () => useAppConfig()?.docus?.github?.dir,\n      required: false\n    },\n    /**\n     * Source file path.\n     *\n     * Won't be used if `page` is set.\n     */\n    source: {\n      type: String,\n      required: false,\n      default: undefined\n    },\n    /**\n     * Use page from @nuxt/content.\n     */\n    page: {\n      type: Object as PropType<any>,\n      required: false,\n      default: undefined\n    },\n    /**\n     * Content directory (to be used with `page`)\n     */\n    contentDir: {\n      type: String,\n      required: false,\n      default: () => useAppConfig()?.docus?.github?.dir || 'content'\n    },\n    /**\n     * Send to an edit page or not.\n     */\n    edit: {\n      type: Boolean,\n      required: false,\n      default: () => useAppConfig()?.docus?.github?.edit\n    }\n  },\n  setup (props) {\n    if (!props.owner || !props.repo || !props.branch) {\n      throw new Error('If you want to use `GithubLink` component, you must specify: `owner`, `repo` and `branch`.')\n    }\n\n    const source = computed(() => {\n      let { baseUrl, repo, owner, branch, contentDir } = props\n      let prefix = ''\n\n      // Resolve source from content sources\n      if (useAppConfig()?.public?.content) {\n        let source\n        const { sources } = useAppConfig().public.content\n\n        for (const key in sources || []) {\n          if (props.page._id.startsWith(key)) {\n            source = sources[key]\n            break\n          }\n        }\n\n        if (source?.driver === 'github') {\n          repo = source.repo || props.repo || ''\n          owner = source.owner || props.owner || ''\n          branch = source.branch || props.branch || 'main'\n          contentDir = source.dir || props.contentDir || ''\n          prefix = source.prefix || ''\n        }\n      }\n\n      return { baseUrl, repo, owner, branch, contentDir, prefix }\n    })\n\n    const base = computed(() => joinURL(`${source.value.baseUrl}/${source.value.owner}/${source.value.repo}`))\n\n    const path = computed(() => {\n      const dirParts: string[] = []\n\n      // @nuxt/content support\n      // Create the URL from a document data.\n      if (props?.page?._path) {\n        // Use content dir\n        if (source.value.contentDir) { dirParts.push(source.value.contentDir) }\n\n        // Get page file from page data\n        dirParts.push(props.page._file.substring(source.value.prefix.length))\n\n        return dirParts\n      }\n\n      // Use props dir\n      if (props.dir) {\n        dirParts.push(props.dir)\n      }\n\n      // Use props source\n      if (props.source) {\n        dirParts.push(props.source)\n      }\n\n      return dirParts\n    })\n\n    /**\n     * Create edit link.\n     */\n    const url = computed(() => {\n      const parts = [base.value]\n\n      if (props.edit) { parts.push('edit') } else { parts.push('tree') }\n\n      parts.push(source?.value?.branch || '', ...path.value)\n\n      return parts.filter(Boolean).join('/')\n    })\n\n    return {\n      url\n    }\n  },\n  render (ctx: any) {\n    const { url } = ctx\n\n    const slots = useSlots()\n\n    return slots?.default?.({ url })\n  }\n})\n",
-      "start": 1708195451407,
-      "end": 1708195451407
+      "start": 1708210049056,
+      "end": 1708210049056
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708195451411,
-      "end": 1708195451411,
+      "start": 1708210049057,
+      "end": 1708210049058,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708195451412,
-      "end": 1708195451412,
+      "start": 1708210049058,
+      "end": 1708210049058,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "\nimport { joinURL } from 'ufo'\nimport type { PropType } from 'vue'\nimport { computed, defineComponent, useSlots } from 'vue'\nimport { useAppConfig } from '#imports'\n\nexport default defineComponent({\n  props: {\n    /**\n     * GitHub base URL.\n     */\n    baseUrl: {\n      type: String,\n      default: () => useAppConfig()?.docus?.github?.baseUrl || 'https://github.com',\n      required: false\n    },\n    /**\n     * Repository owner.\n     */\n    owner: {\n      type: String,\n      default: () => useAppConfig()?.docus?.github?.owner,\n      required: false\n    },\n    /**\n     * Repository name.\n     */\n    repo: {\n      type: String,\n      default: () => useAppConfig()?.docus?.github?.repo,\n      required: false\n    },\n    /**\n     * The branch to use for the edit link.\n     */\n    branch: {\n      type: String,\n      default: () => useAppConfig()?.docus?.github?.branch,\n      required: false\n    },\n    /**\n     * A base directory to append to the source path.\n     *\n     * Won't be used if `page` is set.\n     */\n    dir: {\n      type: String,\n      default: () => useAppConfig()?.docus?.github?.dir,\n      required: false\n    },\n    /**\n     * Source file path.\n     *\n     * Won't be used if `page` is set.\n     */\n    source: {\n      type: String,\n      required: false,\n      default: undefined\n    },\n    /**\n     * Use page from @nuxt/content.\n     */\n    page: {\n      type: Object as PropType<any>,\n      required: false,\n      default: undefined\n    },\n    /**\n     * Content directory (to be used with `page`)\n     */\n    contentDir: {\n      type: String,\n      required: false,\n      default: () => useAppConfig()?.docus?.github?.dir || 'content'\n    },\n    /**\n     * Send to an edit page or not.\n     */\n    edit: {\n      type: Boolean,\n      required: false,\n      default: () => useAppConfig()?.docus?.github?.edit\n    }\n  },\n  setup (props) {\n    if (!props.owner || !props.repo || !props.branch) {\n      throw new Error('If you want to use `GithubLink` component, you must specify: `owner`, `repo` and `branch`.')\n    }\n\n    const source = computed(() => {\n      let { baseUrl, repo, owner, branch, contentDir } = props\n      let prefix = ''\n\n      // Resolve source from content sources\n      if (useAppConfig()?.public?.content) {\n        let source\n        const { sources } = useAppConfig().public.content\n\n        for (const key in sources || []) {\n          if (props.page._id.startsWith(key)) {\n            source = sources[key]\n            break\n          }\n        }\n\n        if (source?.driver === 'github') {\n          repo = source.repo || props.repo || ''\n          owner = source.owner || props.owner || ''\n          branch = source.branch || props.branch || 'main'\n          contentDir = source.dir || props.contentDir || ''\n          prefix = source.prefix || ''\n        }\n      }\n\n      return { baseUrl, repo, owner, branch, contentDir, prefix }\n    })\n\n    const base = computed(() => joinURL(`${source.value.baseUrl}/${source.value.owner}/${source.value.repo}`))\n\n    const path = computed(() => {\n      const dirParts: string[] = []\n\n      // @nuxt/content support\n      // Create the URL from a document data.\n      if (props?.page?._path) {\n        // Use content dir\n        if (source.value.contentDir) { dirParts.push(source.value.contentDir) }\n\n        // Get page file from page data\n        dirParts.push(props.page._file.substring(source.value.prefix.length))\n\n        return dirParts\n      }\n\n      // Use props dir\n      if (props.dir) {\n        dirParts.push(props.dir)\n      }\n\n      // Use props source\n      if (props.source) {\n        dirParts.push(props.source)\n      }\n\n      return dirParts\n    })\n\n    /**\n     * Create edit link.\n     */\n    const url = computed(() => {\n      const parts = [base.value]\n\n      if (props.edit) { parts.push('edit') } else { parts.push('tree') }\n\n      parts.push(source?.value?.branch || '', ...path.value)\n\n      return parts.filter(Boolean).join('/')\n    })\n\n    return {\n      url\n    }\n  },\n  render (ctx: any) {\n    const { url } = ctx\n\n    const slots = useSlots()\n\n    return slots?.default?.({ url })\n  }\n})\n",
-      "start": 1708195451416,
-      "end": 1708195451416,
+      "start": 1708210049059,
+      "end": 1708210049060,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708195451416,
-      "end": 1708195451416,
+      "start": 1708210049060,
+      "end": 1708210049060,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708195451417,
-      "end": 1708195451417,
+      "start": 1708210049060,
+      "end": 1708210049060,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708195451417,
-      "end": 1708195451417,
+      "start": 1708210049060,
+      "end": 1708210049060,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { joinURL } from \"ufo\";\nimport { computed, defineComponent, useSlots } from \"vue\";\nimport { useAppConfig } from \"#imports\";\nexport default defineComponent({\n  props: {\n    /**\n     * GitHub base URL.\n     */\n    baseUrl: {\n      type: String,\n      default: () => useAppConfig()?.docus?.github?.baseUrl || \"https://github.com\",\n      required: false\n    },\n    /**\n     * Repository owner.\n     */\n    owner: {\n      type: String,\n      default: () => useAppConfig()?.docus?.github?.owner,\n      required: false\n    },\n    /**\n     * Repository name.\n     */\n    repo: {\n      type: String,\n      default: () => useAppConfig()?.docus?.github?.repo,\n      required: false\n    },\n    /**\n     * The branch to use for the edit link.\n     */\n    branch: {\n      type: String,\n      default: () => useAppConfig()?.docus?.github?.branch,\n      required: false\n    },\n    /**\n     * A base directory to append to the source path.\n     *\n     * Won't be used if `page` is set.\n     */\n    dir: {\n      type: String,\n      default: () => useAppConfig()?.docus?.github?.dir,\n      required: false\n    },\n    /**\n     * Source file path.\n     *\n     * Won't be used if `page` is set.\n     */\n    source: {\n      type: String,\n      required: false,\n      default: void 0\n    },\n    /**\n     * Use page from @nuxt/content.\n     */\n    page: {\n      type: Object,\n      required: false,\n      default: void 0\n    },\n    /**\n     * Content directory (to be used with `page`)\n     */\n    contentDir: {\n      type: String,\n      required: false,\n      default: () => useAppConfig()?.docus?.github?.dir || \"content\"\n    },\n    /**\n     * Send to an edit page or not.\n     */\n    edit: {\n      type: Boolean,\n      required: false,\n      default: () => useAppConfig()?.docus?.github?.edit\n    }\n  },\n  setup(props) {\n    if (!props.owner || !props.repo || !props.branch) {\n      throw new Error(\"If you want to use `GithubLink` component, you must specify: `owner`, `repo` and `branch`.\");\n    }\n    const source = computed(() => {\n      let { baseUrl, repo, owner, branch, contentDir } = props;\n      let prefix = \"\";\n      if (useAppConfig()?.public?.content) {\n        let source2;\n        const { sources } = useAppConfig().public.content;\n        for (const key in sources || []) {\n          if (props.page._id.startsWith(key)) {\n            source2 = sources[key];\n            break;\n          }\n        }\n        if (source2?.driver === \"github\") {\n          repo = source2.repo || props.repo || \"\";\n          owner = source2.owner || props.owner || \"\";\n          branch = source2.branch || props.branch || \"main\";\n          contentDir = source2.dir || props.contentDir || \"\";\n          prefix = source2.prefix || \"\";\n        }\n      }\n      return { baseUrl, repo, owner, branch, contentDir, prefix };\n    });\n    const base = computed(() => joinURL(`${source.value.baseUrl}/${source.value.owner}/${source.value.repo}`));\n    const path = computed(() => {\n      const dirParts = [];\n      if (props?.page?._path) {\n        if (source.value.contentDir) {\n          dirParts.push(source.value.contentDir);\n        }\n        dirParts.push(props.page._file.substring(source.value.prefix.length));\n        return dirParts;\n      }\n      if (props.dir) {\n        dirParts.push(props.dir);\n      }\n      if (props.source) {\n        dirParts.push(props.source);\n      }\n      return dirParts;\n    });\n    const url = computed(() => {\n      const parts = [base.value];\n      if (props.edit) {\n        parts.push(\"edit\");\n      } else {\n        parts.push(\"tree\");\n      }\n      parts.push(source?.value?.branch || \"\", ...path.value);\n      return parts.filter(Boolean).join(\"/\");\n    });\n    return {\n      url\n    };\n  },\n  render(ctx) {\n    const { url } = ctx;\n    const slots = useSlots();\n    return slots?.default?.({ url });\n  }\n});\n",
-      "start": 1708195451418,
-      "end": 1708195451817,
+      "start": 1708210049060,
+      "end": 1708210049728,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -66,123 +66,123 @@
     },
     {
       "name": "vite:json",
-      "start": 1708195451817,
-      "end": 1708195451817,
+      "start": 1708210049729,
+      "end": 1708210049729,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708195451817,
-      "end": 1708195451818,
+      "start": 1708210049729,
+      "end": 1708210049729,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708195451818,
-      "end": 1708195451818,
+      "start": 1708210049729,
+      "end": 1708210049729,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708195451818,
-      "end": 1708195451818,
+      "start": 1708210049729,
+      "end": 1708210049729,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708195451818,
-      "end": 1708195451818,
+      "start": 1708210049729,
+      "end": 1708210049729,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708195451818,
-      "end": 1708195451818,
+      "start": 1708210049729,
+      "end": 1708210049729,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1708195451818,
-      "end": 1708195451818,
+      "start": 1708210049729,
+      "end": 1708210049729,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708195451819,
-      "end": 1708195451819,
+      "start": 1708210049729,
+      "end": 1708210049730,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708195451820,
-      "end": 1708195451820,
+      "start": 1708210049730,
+      "end": 1708210049730,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708195451820,
-      "end": 1708195451820,
+      "start": 1708210049730,
+      "end": 1708210049730,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708195451820,
-      "end": 1708195451820,
+      "start": 1708210049730,
+      "end": 1708210049730,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708195451820,
-      "end": 1708195451820,
+      "start": 1708210049730,
+      "end": 1708210049730,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708195451821,
-      "end": 1708195451821,
+      "start": 1708210049730,
+      "end": 1708210049730,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708195451821,
-      "end": 1708195451821,
+      "start": 1708210049730,
+      "end": 1708210049730,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708195451821,
-      "end": 1708195451821,
+      "start": 1708210049730,
+      "end": 1708210049730,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708195451821,
-      "end": 1708195451821,
+      "start": 1708210049730,
+      "end": 1708210049730,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708195451821,
-      "end": 1708195451821,
+      "start": 1708210049730,
+      "end": 1708210049730,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708195451821,
-      "end": 1708195451821,
+      "start": 1708210049730,
+      "end": 1708210049730,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708195451824,
-      "end": 1708195451824,
+      "start": 1708210049732,
+      "end": 1708210049732,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { useAppConfig } from '#app/config';\nimport { joinURL } from \"ufo\";\nimport { computed, defineComponent, useSlots } from \"vue\";\nexport default defineComponent({\n  props: {\n    /**\n     * GitHub base URL.\n     */\n    baseUrl: {\n      type: String,\n      default: () => useAppConfig()?.docus?.github?.baseUrl || \"https://github.com\",\n      required: false\n    },\n    /**\n     * Repository owner.\n     */\n    owner: {\n      type: String,\n      default: () => useAppConfig()?.docus?.github?.owner,\n      required: false\n    },\n    /**\n     * Repository name.\n     */\n    repo: {\n      type: String,\n      default: () => useAppConfig()?.docus?.github?.repo,\n      required: false\n    },\n    /**\n     * The branch to use for the edit link.\n     */\n    branch: {\n      type: String,\n      default: () => useAppConfig()?.docus?.github?.branch,\n      required: false\n    },\n    /**\n     * A base directory to append to the source path.\n     *\n     * Won't be used if `page` is set.\n     */\n    dir: {\n      type: String,\n      default: () => useAppConfig()?.docus?.github?.dir,\n      required: false\n    },\n    /**\n     * Source file path.\n     *\n     * Won't be used if `page` is set.\n     */\n    source: {\n      type: String,\n      required: false,\n      default: void 0\n    },\n    /**\n     * Use page from @nuxt/content.\n     */\n    page: {\n      type: Object,\n      required: false,\n      default: void 0\n    },\n    /**\n     * Content directory (to be used with `page`)\n     */\n    contentDir: {\n      type: String,\n      required: false,\n      default: () => useAppConfig()?.docus?.github?.dir || \"content\"\n    },\n    /**\n     * Send to an edit page or not.\n     */\n    edit: {\n      type: Boolean,\n      required: false,\n      default: () => useAppConfig()?.docus?.github?.edit\n    }\n  },\n  setup(props) {\n    if (!props.owner || !props.repo || !props.branch) {\n      throw new Error(\"If you want to use `GithubLink` component, you must specify: `owner`, `repo` and `branch`.\");\n    }\n    const source = computed(() => {\n      let { baseUrl, repo, owner, branch, contentDir } = props;\n      let prefix = \"\";\n      if (useAppConfig()?.public?.content) {\n        let source2;\n        const { sources } = useAppConfig().public.content;\n        for (const key in sources || []) {\n          if (props.page._id.startsWith(key)) {\n            source2 = sources[key];\n            break;\n          }\n        }\n        if (source2?.driver === \"github\") {\n          repo = source2.repo || props.repo || \"\";\n          owner = source2.owner || props.owner || \"\";\n          branch = source2.branch || props.branch || \"main\";\n          contentDir = source2.dir || props.contentDir || \"\";\n          prefix = source2.prefix || \"\";\n        }\n      }\n      return { baseUrl, repo, owner, branch, contentDir, prefix };\n    });\n    const base = computed(() => joinURL(`${source.value.baseUrl}/${source.value.owner}/${source.value.repo}`));\n    const path = computed(() => {\n      const dirParts = [];\n      if (props?.page?._path) {\n        if (source.value.contentDir) {\n          dirParts.push(source.value.contentDir);\n        }\n        dirParts.push(props.page._file.substring(source.value.prefix.length));\n        return dirParts;\n      }\n      if (props.dir) {\n        dirParts.push(props.dir);\n      }\n      if (props.source) {\n        dirParts.push(props.source);\n      }\n      return dirParts;\n    });\n    const url = computed(() => {\n      const parts = [base.value];\n      if (props.edit) {\n        parts.push(\"edit\");\n      } else {\n        parts.push(\"tree\");\n      }\n      parts.push(source?.value?.branch || \"\", ...path.value);\n      return parts.filter(Boolean).join(\"/\");\n    });\n    return {\n      url\n    };\n  },\n  render(ctx) {\n    const { url } = ctx;\n    const slots = useSlots();\n    return slots?.default?.({ url });\n  }\n});\n",
-      "start": 1708195451824,
-      "end": 1708195451841,
+      "start": 1708210049732,
+      "end": 1708210049739,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -195,50 +195,50 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1708195451842,
-      "end": 1708195451842,
+      "start": 1708210049739,
+      "end": 1708210049739,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708195451842,
-      "end": 1708195451842,
+      "start": 1708210049740,
+      "end": 1708210049740,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1708195451843,
-      "end": 1708195451843,
+      "start": 1708210049740,
+      "end": 1708210049740,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1708195451843,
-      "end": 1708195451843,
+      "start": 1708210049740,
+      "end": 1708210049740,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1708195451844,
-      "end": 1708195451844,
+      "start": 1708210049740,
+      "end": 1708210049740,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708195451845,
-      "end": 1708195451845,
+      "start": 1708210049741,
+      "end": 1708210049741,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708195451845,
-      "end": 1708195451845,
+      "start": 1708210049741,
+      "end": 1708210049741,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708195451846,
-      "end": 1708195451846,
+      "start": 1708210049741,
+      "end": 1708210049741,
       "order": "normal"
     }
   ]

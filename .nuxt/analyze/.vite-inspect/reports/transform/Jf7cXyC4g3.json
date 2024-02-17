@@ -4,27 +4,27 @@
     {
       "name": "vite:load-fallback",
       "result": "<script setup lang=\"ts\">\nimport { ref } from 'vue'\nimport { useClipboard, onClickOutside } from '@vueuse/core'\nimport { useAppConfig } from '#imports'\n\nconst props = defineProps({\n  content: {\n    type: String,\n    default: ''\n  },\n  show: {\n    type: Boolean,\n    default: false\n  }\n})\n\nconst copyButtonRef = ref<HTMLElement>()\n\nconst { copy: copyToClipboard } = useClipboard()\nonClickOutside(copyButtonRef, () => {\n  if (state.value === 'copied') {\n    state.value = 'init'\n  }\n})\nconst { prose } = useAppConfig()\n\nconst state = ref('init')\n\nconst copy = (_e: MouseEvent) => {\n  copyToClipboard(props.content)\n    .then(() => {\n      state.value = 'copied'\n    })\n    .catch((err) => {\n      // eslint-disable-next-line no-console\n      console.warn(\"Couldn't copy to clipboard!\", err)\n    })\n}\n</script>\n\n<template>\n  <button ref=\"copyButtonRef\" :class=\"[(show || state === 'copied') && 'show' ]\" @click=\"copy\">\n    <span class=\"sr-only\">Copy to clipboard</span>\n    <span class=\"icon-wrapper\">\n      <Transition name=\"fade\">\n        <Icon v-if=\"state === 'copied'\" :name=\"prose.copyButton?.iconCopied\" size=\"18\" class=\"copied\" />\n        <Icon v-else :name=\"prose.copyButton?.iconCopy\" size=\"18\" />\n      </Transition>\n    </span>\n  </button>\n</template>\n\n<style scoped lang=\"ts\">\ncss({\n  button: {\n    padding: '4px',\n    margin: '4px',\n    borderRadius: '3px',\n    transition: 'all 200ms',\n    transform: \"scale(0.75)\",\n    opacity: 0,\n\n    '&:hover': {\n      backgroundColor: '{elements.surface.secondary.backgroundColor}',\n    },\n\n    '&:focus': {\n      opacity: 1,\n      outline: 'none',\n      boxShadow: '0 0 0 2px {color.blue.500}',\n    },\n\n    '&.show': {\n      transform: \"scale(1)\",\n      opacity: 1\n    },\n    '.icon-wrapper': {\n      display: 'block',\n      position: 'relative',\n      width: '18px',\n      height: '18px',\n      '.icon': {\n        display: 'block',\n        position: 'absolute'\n      },\n      '.fade-enter-active, .fade-leave-active': {\n        transition: 'opacity 200ms'\n      },\n      '.fade-enter-from, .fade-leave-to': {\n        opacity: 0\n      }\n    }\n  },\n})\n</style>\n",
-      "start": 1708195452500,
-      "end": 1708195452704,
+      "start": 1708210050227,
+      "end": 1708210050424,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708195452704,
-      "end": 1708195452704,
+      "start": 1708210050424,
+      "end": 1708210050424,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708195452704,
-      "end": 1708195452704,
+      "start": 1708210050424,
+      "end": 1708210050424,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "<script setup lang=\"ts\">\nimport { ref } from 'vue'\nimport { useClipboard, onClickOutside } from '@vueuse/core'\nimport { useAppConfig } from '#imports'\n\nconst props = defineProps({\n  content: {\n    type: String,\n    default: ''\n  },\n  show: {\n    type: Boolean,\n    default: false\n  }\n})\n\nconst copyButtonRef = ref<HTMLElement>()\n\nconst { copy: copyToClipboard } = useClipboard()\nonClickOutside(copyButtonRef, () => {\n  if (state.value === 'copied') {\n    state.value = 'init'\n  }\n})\nconst { prose } = useAppConfig()\n\nconst state = ref('init')\n\nconst copy = (_e: MouseEvent) => {\n  copyToClipboard(props.content)\n    .then(() => {\n      state.value = 'copied'\n    })\n    .catch((err) => {\n      // eslint-disable-next-line no-console\n      console.warn(\"Couldn't copy to clipboard!\", err)\n    })\n}\n</script>\n\n<template>\n  <button ref=\"copyButtonRef\" :class=\"[(show || state === 'copied') && 'show' ]\" @click=\"copy\">\n    <span class=\"sr-only\">Copy to clipboard</span>\n    <span class=\"icon-wrapper\">\n      <Transition name=\"fade\">\n        <Icon v-if=\"state === 'copied'\" :name=\"prose.copyButton?.iconCopied\" size=\"18\" class=\"copied\" />\n        <Icon v-else :name=\"prose.copyButton?.iconCopy\" size=\"18\" />\n      </Transition>\n    </span>\n  </button>\n</template>\n\n<style scoped lang=\"postcss\" transformed>\nbutton{padding:4px;margin:4px;border-radius:3px;transition:all 200ms;transform:scale(0.75);opacity:0;}button:hover{background-color:var(--elements-surface-secondary-backgroundColor);}button:focus{opacity:1;outline:none;box-shadow:0 0 0 2px var(--color-blue-500);}button.show{transform:scale(1);opacity:1;}button .icon-wrapper{display:block;position:relative;width:18px;height:18px;}button .icon-wrapper .icon{display:block;position:absolute;}button .icon-wrapper .fade-enter-active,button .icon-wrapper .fade-leave-active{transition:opacity 200ms;}button .icon-wrapper .fade-enter-from,button .icon-wrapper .fade-leave-to{opacity:0;}\n</style>\n",
-      "start": 1708195452704,
-      "end": 1708195452708,
+      "start": 1708210050424,
+      "end": 1708210050429,
       "order": "pre",
       "sourcemaps": {
         "version": 3,
@@ -38,45 +38,45 @@
     },
     {
       "name": "content-slot",
-      "start": 1708195452708,
-      "end": 1708195452708,
+      "start": 1708210050429,
+      "end": 1708210050429,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708195452708,
-      "end": 1708195452708,
+      "start": 1708210050429,
+      "end": 1708210050429,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708195452708,
-      "end": 1708195452708,
+      "start": 1708210050429,
+      "end": 1708210050429,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1708195452708,
-      "end": 1708195452708,
+      "start": 1708210050430,
+      "end": 1708210050430,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1708195452708,
-      "end": 1708195452708,
+      "start": 1708210050430,
+      "end": 1708210050430,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708195452708,
-      "end": 1708195452708,
+      "start": 1708210050430,
+      "end": 1708210050430,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "import _sfc_main from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/ProseCodeCopyButton.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/ProseCodeCopyButton.vue?vue&type=script&setup=true&lang.ts\";\nimport \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/ProseCodeCopyButton.vue?vue&type=style&index=0&scoped=4a003820&transformed=true&lang.postcss\";\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"__scopeId\", \"data-v-4a003820\"]]);\n",
-      "start": 1708195452708,
-      "end": 1708195452714,
+      "start": 1708210050430,
+      "end": 1708210050441,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -84,152 +84,152 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708195452714,
-      "end": 1708195452714,
+      "start": 1708210050441,
+      "end": 1708210050441,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708195452714,
-      "end": 1708195452714,
+      "start": 1708210050441,
+      "end": 1708210050441,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708195452715,
-      "end": 1708195452715,
+      "start": 1708210050441,
+      "end": 1708210050441,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1708195452715,
-      "end": 1708195452715,
+      "start": 1708210050441,
+      "end": 1708210050441,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708195452715,
-      "end": 1708195452715,
+      "start": 1708210050444,
+      "end": 1708210050444,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708195452715,
-      "end": 1708195452715,
+      "start": 1708210050444,
+      "end": 1708210050444,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708195452715,
-      "end": 1708195452715,
+      "start": 1708210050444,
+      "end": 1708210050444,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708195452715,
-      "end": 1708195452715,
+      "start": 1708210050445,
+      "end": 1708210050445,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708195452715,
-      "end": 1708195452716,
+      "start": 1708210050445,
+      "end": 1708210050445,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708195452716,
-      "end": 1708195452716,
+      "start": 1708210050445,
+      "end": 1708210050445,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708195452716,
-      "end": 1708195452716,
+      "start": 1708210050445,
+      "end": 1708210050445,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708195452716,
-      "end": 1708195452716,
+      "start": 1708210050445,
+      "end": 1708210050445,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708195452716,
-      "end": 1708195452716,
+      "start": 1708210050445,
+      "end": 1708210050445,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708195452716,
-      "end": 1708195452716,
+      "start": 1708210050445,
+      "end": 1708210050445,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708195452716,
-      "end": 1708195452716,
+      "start": 1708210050445,
+      "end": 1708210050445,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708195452716,
-      "end": 1708195452717,
+      "start": 1708210050445,
+      "end": 1708210050445,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708195452717,
-      "end": 1708195452717,
+      "start": 1708210050445,
+      "end": 1708210050446,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708195452717,
-      "end": 1708195452717,
+      "start": 1708210050446,
+      "end": 1708210050446,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708195452718,
-      "end": 1708195452718,
+      "start": 1708210050446,
+      "end": 1708210050446,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1708195452719,
-      "end": 1708195452719,
+      "start": 1708210050446,
+      "end": 1708210050446,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1708195452719,
-      "end": 1708195452719,
+      "start": 1708210050446,
+      "end": 1708210050446,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1708195452719,
-      "end": 1708195452719,
+      "start": 1708210050446,
+      "end": 1708210050446,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708195452720,
-      "end": 1708195452720,
+      "start": 1708210050446,
+      "end": 1708210050446,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708195452720,
-      "end": 1708195452720,
+      "start": 1708210050446,
+      "end": 1708210050446,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708195452720,
-      "end": 1708195452720,
+      "start": 1708210050446,
+      "end": 1708210050446,
       "order": "normal"
     }
   ]

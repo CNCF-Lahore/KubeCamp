@@ -4,27 +4,27 @@
     {
       "name": "vite:load-fallback",
       "result": "<script setup lang=\"ts\">\nimport type { PropType } from 'vue'\nimport { ref } from 'vue'\nimport type { Lang } from 'shiki-es'\n\ndefineProps({\n  code: {\n    type: String,\n    default: ''\n  },\n  language: {\n    type: String as PropType<Lang>,\n    default: null\n  },\n  filename: {\n    type: String,\n    default: null\n  },\n  highlights: {\n    type: Array as () => number[],\n    default: () => []\n  }\n})\n\nconst hovered = ref(false)\n</script>\n\n<template>\n  <div :class=\"[`highlight-${language}`]\" class=\"prose-code\" @mouseenter=\"hovered = true\" @mouseleave=\"hovered = false\">\n    <span v-if=\"filename\" class=\"filename\">\n      {{ filename }}\n    </span>\n\n    <slot />\n\n    <ProseCodeCopyButton :show=\"hovered\" :content=\"code\" class=\"copy-button\" />\n  </div>\n</template>\n\n<style lang=\"ts\" scoped>\ncss({\n  \".prose-code\": {\n    position: \"relative\",\n    overflow: \"hidden\",\n    width: \"100%\",\n    fontSize: '{prose.code.block.fontSize}',\n    margin: '{prose.code.block.margin}',\n    borderRadius: '{radii.md}',\n    borderWidth: '{prose.code.block.border.width}',\n    borderStyle: '{prose.code.block.border.style}',\n    borderColor: '{prose.code.block.border.color}',\n    color: '{prose.code.block.color}',\n    backgroundColor: '{prose.code.block.backgroundColor}',\n    backdropFilter: '{prose.code.block.backdropFilter}',\n\n    \"&.highlight-zsh, &.highlight-sh, &.highlight-bash, &.highlight-shell, &.highlight-shellscript\": {\n      \":deep(code)\": {\n        \".line\": {\n          position: \"relative\",\n          paddingInlineStart: \"1rem\"\n        },\n        \".line::before\": {\n          content: \"'>'\",\n          position: \"absolute\",\n          top: \"0\",\n          insetInlineStart: \"-0.1rem\",\n          display: \"block\",\n          userSelect: \"none\",\n          fontWeight: 700,\n          color: '{typography.color.primary.500}',\n          fontFamily: '{font.mono}'\n        }\n      }\n    }\n  },\n\n  '.copy-button': {\n    position: \"absolute\",\n    insetInlineEnd: 0,\n    bottom: 0,\n  },\n\n  \":deep(code)\": { display: \"flex\", flexDirection: \"column\" },\n\n  \":deep(.line)\": { display: \"inline-table\", minHeight: \"1rem\" },\n\n  \".filename\": {\n    position: \"absolute\",\n    top: 0,\n    insetInlineEnd: 0,\n    padding: '0.5rem 0.75rem',\n    fontFamily: '{typography.font.code}',\n    color: '{prose.code.block.color}',\n    borderRadius: '{radii.lg}',\n    fontSize: '{fontSize.xs}',\n    lineHeight: '{lead.normal}',\n    transition: 'opacity 200ms',\n    backdropFilter: 'blur(4px)',\n  },\n\n  '.prose-code:hover .filename': {\n    opacity: 0\n  },\n  '.prose-code:hover .filename:hover': {\n    opacity: 1\n  },\n  \":deep(pre)\": {\n    display: \"flex\",\n    flex: 1,\n    overflowX: \"auto\",\n    margin: \"0\",\n    padding: '{prose.code.block.pre.padding}',\n    lineHeight: '{lead.relaxed}',\n  },\n  \":deep(pre code)\": {\n    paddingInlineEnd: '30px',\n  },\n\n  \":deep(.line.highlight)\": {\n    backgroundColor: '{prose.code.block.border.color}',\n  }\n})\n</style>\n",
-      "start": 1708195449997,
-      "end": 1708195450161,
+      "start": 1708210047991,
+      "end": 1708210048133,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708195450161,
-      "end": 1708195450161,
+      "start": 1708210048134,
+      "end": 1708210048134,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708195450161,
-      "end": 1708195450161,
+      "start": 1708210048134,
+      "end": 1708210048134,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "<script setup lang=\"ts\">\nimport type { PropType } from 'vue'\nimport { ref } from 'vue'\nimport type { Lang } from 'shiki-es'\n\ndefineProps({\n  code: {\n    type: String,\n    default: ''\n  },\n  language: {\n    type: String as PropType<Lang>,\n    default: null\n  },\n  filename: {\n    type: String,\n    default: null\n  },\n  highlights: {\n    type: Array as () => number[],\n    default: () => []\n  }\n})\n\nconst hovered = ref(false)\n</script>\n\n<template>\n  <div :class=\"[`highlight-${language}`]\" class=\"prose-code\" @mouseenter=\"hovered = true\" @mouseleave=\"hovered = false\">\n    <span v-if=\"filename\" class=\"filename\">\n      {{ filename }}\n    </span>\n\n    <slot />\n\n    <ProseCodeCopyButton :show=\"hovered\" :content=\"code\" class=\"copy-button\" />\n  </div>\n</template>\n\n<style lang=\"postcss\" transformed scoped>\n.prose-code{position:relative;overflow:hidden;width:100%;font-size:var(--prose-code-block-fontSize);margin:var(--prose-code-block-margin);border-radius:var(--radii-md);border-width:var(--prose-code-block-border-width);border-style:var(--prose-code-block-border-style);border-color:var(--prose-code-block-border-color);color:var(--prose-code-block-color);background-color:var(--prose-code-block-backgroundColor);backdrop-filter:var(--prose-code-block-backdropFilter);}.prose-code.highlight-zsh :deep(code) .line,.prose-code.highlight-sh :deep(code) .line,.prose-code.highlight-bash :deep(code) .line,.prose-code.highlight-shell :deep(code) .line,.prose-code.highlight-shellscript :deep(code) .line{position:relative;padding-inline-start:1rem;}.prose-code.highlight-zsh :deep(code) .line::before,.prose-code.highlight-sh :deep(code) .line::before,.prose-code.highlight-bash :deep(code) .line::before,.prose-code.highlight-shell :deep(code) .line::before,.prose-code.highlight-shellscript :deep(code) .line::before{content:'>';position:absolute;top:0;inset-inline-start:-0.1rem;display:block;user-select:none;font-weight:700;color:var(--typography-color-primary-500);font-family:var(--font-mono);}.copy-button{position:absolute;inset-inline-end:0;bottom:0;}:deep(code){display:flex;flex-direction:column;}:deep(.line){display:inline-table;min-height:1rem;}.filename{position:absolute;top:0;inset-inline-end:0;padding:0.5rem 0.75rem;font-family:var(--typography-font-code);color:var(--prose-code-block-color);border-radius:var(--radii-lg);font-size:var(--fontSize-xs);line-height:var(--lead-normal);transition:opacity 200ms;backdrop-filter:blur(4px);}.prose-code:hover .filename{opacity:0;}.prose-code:hover .filename:hover{opacity:1;}:deep(pre){display:flex;flex:1;overflow-x:auto;margin:0;padding:var(--prose-code-block-pre-padding);line-height:var(--lead-relaxed);}:deep(pre code){padding-inline-end:30px;}:deep(.line.highlight){background-color:var(--prose-code-block-border-color);}\n</style>\n",
-      "start": 1708195450161,
-      "end": 1708195450170,
+      "start": 1708210048134,
+      "end": 1708210048139,
       "order": "pre",
       "sourcemaps": {
         "version": 3,
@@ -38,45 +38,45 @@
     },
     {
       "name": "content-slot",
-      "start": 1708195450170,
-      "end": 1708195450170,
+      "start": 1708210048139,
+      "end": 1708210048139,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708195450170,
-      "end": 1708195450170,
+      "start": 1708210048139,
+      "end": 1708210048139,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708195450170,
-      "end": 1708195450170,
+      "start": 1708210048139,
+      "end": 1708210048139,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1708195450170,
-      "end": 1708195450170,
+      "start": 1708210048139,
+      "end": 1708210048139,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1708195450170,
-      "end": 1708195450170,
+      "start": 1708210048139,
+      "end": 1708210048139,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708195450170,
-      "end": 1708195450170,
+      "start": 1708210048139,
+      "end": 1708210048139,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "import _sfc_main from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseCode.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseCode.vue?vue&type=script&setup=true&lang.ts\";\nimport \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseCode.vue?vue&type=style&index=0&scoped=c164ce0a&transformed=true&lang.postcss\";\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"__scopeId\", \"data-v-c164ce0a\"]]);\n",
-      "start": 1708195450170,
-      "end": 1708195450250,
+      "start": 1708210048139,
+      "end": 1708210048157,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -84,152 +84,152 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708195450250,
-      "end": 1708195450250,
+      "start": 1708210048157,
+      "end": 1708210048157,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708195450250,
-      "end": 1708195450250,
+      "start": 1708210048157,
+      "end": 1708210048157,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708195450250,
-      "end": 1708195450250,
+      "start": 1708210048157,
+      "end": 1708210048157,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1708195450250,
-      "end": 1708195450250,
+      "start": 1708210048157,
+      "end": 1708210048157,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708195450251,
-      "end": 1708195450251,
+      "start": 1708210048157,
+      "end": 1708210048157,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708195450251,
-      "end": 1708195450251,
+      "start": 1708210048157,
+      "end": 1708210048158,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708195450251,
-      "end": 1708195450251,
+      "start": 1708210048158,
+      "end": 1708210048158,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708195450251,
-      "end": 1708195450251,
+      "start": 1708210048158,
+      "end": 1708210048158,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708195450251,
-      "end": 1708195450251,
+      "start": 1708210048158,
+      "end": 1708210048158,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708195450251,
-      "end": 1708195450251,
+      "start": 1708210048158,
+      "end": 1708210048158,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708195450251,
-      "end": 1708195450251,
+      "start": 1708210048158,
+      "end": 1708210048158,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708195450251,
-      "end": 1708195450251,
+      "start": 1708210048158,
+      "end": 1708210048158,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708195450251,
-      "end": 1708195450251,
+      "start": 1708210048158,
+      "end": 1708210048158,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708195450251,
-      "end": 1708195450251,
+      "start": 1708210048158,
+      "end": 1708210048158,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708195450251,
-      "end": 1708195450251,
+      "start": 1708210048158,
+      "end": 1708210048158,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708195450251,
-      "end": 1708195450252,
+      "start": 1708210048158,
+      "end": 1708210048158,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708195450252,
-      "end": 1708195450253,
+      "start": 1708210048158,
+      "end": 1708210048160,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708195450254,
-      "end": 1708195450254,
+      "start": 1708210048160,
+      "end": 1708210048160,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708195450254,
-      "end": 1708195450254,
+      "start": 1708210048160,
+      "end": 1708210048160,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1708195450254,
-      "end": 1708195450254,
+      "start": 1708210048160,
+      "end": 1708210048160,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1708195450254,
-      "end": 1708195450254,
+      "start": 1708210048160,
+      "end": 1708210048160,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1708195450254,
-      "end": 1708195450254,
+      "start": 1708210048160,
+      "end": 1708210048160,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708195450254,
-      "end": 1708195450254,
+      "start": 1708210048160,
+      "end": 1708210048160,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708195450254,
-      "end": 1708195450254,
+      "start": 1708210048160,
+      "end": 1708210048160,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708195450255,
-      "end": 1708195450255,
+      "start": 1708210048160,
+      "end": 1708210048160,
       "order": "normal"
     }
   ]

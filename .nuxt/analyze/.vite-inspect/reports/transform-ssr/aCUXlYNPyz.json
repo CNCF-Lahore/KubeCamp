@@ -4,39 +4,39 @@
     {
       "name": "vite:load-fallback",
       "result": "<script setup lang=\"ts\">\nimport type { PropType } from 'vue'\n\ndefineProps({\n  cta: {\n    type: Array as PropType<string[]>,\n    required: false,\n    default: () => []\n  },\n  secondary: {\n    type: Array as PropType<string[]>,\n    required: false,\n    default: () => []\n  },\n  video: {\n    type: String,\n    required: false,\n    default: ''\n  },\n  snippet: {\n    type: [Array, String] as PropType<string[] | string>,\n    required: false,\n    default: ''\n  }\n})\n</script>\n\n<template>\n  <section class=\"block-hero\">\n    <div class=\"layout\">\n      <div class=\"content\">\n        <p v-if=\"$slots.announce\" class=\"announce\">\n          <ContentSlot :use=\"$slots.announce\" unwrap=\"p\" />\n        </p>\n\n        <h1 class=\"title\">\n          <ContentSlot :use=\"$slots.title\" unwrap=\"p\">\n            Hero Title\n          </ContentSlot>\n        </h1>\n\n        <p class=\"description\">\n          <ContentSlot :use=\"$slots.description\" unwrap=\"p\">\n            Hero default description.\n          </ContentSlot>\n        </p>\n\n        <div v-if=\"$slots.extra\" class=\"extra\">\n          <ContentSlot :use=\"$slots.extra\" unwrap=\"p\" />\n        </div>\n\n        <div class=\"actions\">\n          <ContentSlot v-if=\"$slots.actions\" :use=\"$slots.actions\" unwrap=\"p\" />\n          <template v-else>\n            <ButtonLink v-if=\"cta\" class=\"cta\" bold size=\"medium\" :href=\"(cta[1] as any)\">\n              {{ cta[0] }}\n            </ButtonLink>\n            <a v-if=\"secondary\" :href=\"(secondary[1] as any)\" class=\"secondary\">\n              {{ secondary[0] }}\n            </a>\n          </template>\n        </div>\n      </div>\n\n      <div class=\"support\">\n        <slot name=\"support\">\n          <Terminal v-if=\"snippet\" :content=\"snippet\" />\n          <VideoPlayer v-else-if=\"video\" :src=\"video\" />\n        </slot>\n      </div>\n    </div>\n  </section>\n</template>\n\n<style scoped lang=\"ts\">\ncss({\n  '.block-hero': {\n    padding: '{space.20} 0',\n    '@sm': {\n      padding: '{space.24} 0',\n    },\n    '@lg': {\n      padding: '{space.32} 0',\n    },\n    '.layout': {\n      display: 'grid',\n      gap: '{space.16}',\n      '@lg': {\n        gap: '{space.8}',\n        gridTemplateColumns: 'repeat(3, minmax(0, 1fr))'\n      }\n    },\n    '.content': {\n      '@lg': {\n        gridColumn: 'span 2 / span 2'\n      },\n      '.announce': {\n        marginBottom: '{space.2}',\n        textAlign: 'center',\n        '@lg': {\n          textAlign: 'start'\n        }\n      },\n      '.title': {\n        color: '{elements.text.primary.color.static}',\n        fontWeight: '{fontWeight.bold}',\n        letterSpacing: '{letterSpacing.tight}',\n        textAlign: 'center',\n        fontSize: '{text.4xl.fontSize}',\n        lineHeight: '{text.4xl.lineHeight}',\n        marginBottom: '{space.8}',\n        px: '{space.8}',\n        '@sm': {\n          fontSize: '{text.5xl.fontSize}',\n          lineHeight: '{text.5xl.lineHeight}',\n        },\n        '@lg': {\n          px: '{space.0}',\n          fontSize: '{text.6xl.fontSize}',\n          lineHeight: '{text.6xl.lineHeight}',\n          textAlign: 'start'\n        }\n      },\n      '.description': {\n        marginBottom: '{space.12}',\n        fontSize: '{text.lg.fontSize}',\n        lineHeight: '{text.lg.lineHeight}',\n        textAlign: 'center',\n        color: '{elements.text.secondary.color.static}',\n        px: '{space.2}',\n        '@lg': {\n          textAlign: 'start'\n        }\n      },\n      '.extra': {\n        marginBottom: '{space.16}',\n        display: 'flex',\n        justifyContent: 'center',\n        '@lg': {\n          justifyContent: 'flex-start'\n        }\n      },\n      '.actions': {\n        display: 'flex',\n        flexDirection: 'column',\n        alignItems: 'center',\n        justifyContent: 'center',\n        gap: '{space.4}',\n        '@sm': {\n          flexDirection: 'row',\n          gap: '{space.6}'\n        },\n        '@lg': {\n          justifyContent: 'flex-start'\n        },\n        '.cta': {\n          marginBottom: 0\n        },\n        '.secondary': {\n          fontWeight: '{fontWeight.medium}',\n          color: '{elements.text.secondary.color.static}',\n          '&:hover': {\n            color: '{elements.text.secondary.color.hover}'\n          }\n        }\n      }\n    }\n  }\n})\n</style>\n",
-      "start": 1708195457242,
-      "end": 1708195457326,
+      "start": 1708210055770,
+      "end": 1708210055932,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708195457326,
-      "end": 1708195457326,
+      "start": 1708210055932,
+      "end": 1708210055932,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708195457326,
-      "end": 1708195457326,
+      "start": 1708210055932,
+      "end": 1708210055932,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708195457326,
-      "end": 1708195457326,
+      "start": 1708210055932,
+      "end": 1708210055932,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708195457326,
-      "end": 1708195457326,
+      "start": 1708210055932,
+      "end": 1708210055932,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "<script setup lang=\"ts\">\nimport type { PropType } from 'vue'\n\ndefineProps({\n  cta: {\n    type: Array as PropType<string[]>,\n    required: false,\n    default: () => []\n  },\n  secondary: {\n    type: Array as PropType<string[]>,\n    required: false,\n    default: () => []\n  },\n  video: {\n    type: String,\n    required: false,\n    default: ''\n  },\n  snippet: {\n    type: [Array, String] as PropType<string[] | string>,\n    required: false,\n    default: ''\n  }\n})\n</script>\n\n<template>\n  <section class=\"block-hero\">\n    <div class=\"layout\">\n      <div class=\"content\">\n        <p v-if=\"$slots.announce\" class=\"announce\">\n          <ContentSlot :use=\"$slots.announce\" unwrap=\"p\" />\n        </p>\n\n        <h1 class=\"title\">\n          <ContentSlot :use=\"$slots.title\" unwrap=\"p\">\n            Hero Title\n          </ContentSlot>\n        </h1>\n\n        <p class=\"description\">\n          <ContentSlot :use=\"$slots.description\" unwrap=\"p\">\n            Hero default description.\n          </ContentSlot>\n        </p>\n\n        <div v-if=\"$slots.extra\" class=\"extra\">\n          <ContentSlot :use=\"$slots.extra\" unwrap=\"p\" />\n        </div>\n\n        <div class=\"actions\">\n          <ContentSlot v-if=\"$slots.actions\" :use=\"$slots.actions\" unwrap=\"p\" />\n          <template v-else>\n            <ButtonLink v-if=\"cta\" class=\"cta\" bold size=\"medium\" :href=\"(cta[1] as any)\">\n              {{ cta[0] }}\n            </ButtonLink>\n            <a v-if=\"secondary\" :href=\"(secondary[1] as any)\" class=\"secondary\">\n              {{ secondary[0] }}\n            </a>\n          </template>\n        </div>\n      </div>\n\n      <div class=\"support\">\n        <slot name=\"support\">\n          <Terminal v-if=\"snippet\" :content=\"snippet\" />\n          <VideoPlayer v-else-if=\"video\" :src=\"video\" />\n        </slot>\n      </div>\n    </div>\n  </section>\n</template>\n\n<style scoped lang=\"postcss\" transformed>\n.block-hero{padding:var(--space-20) 0;}@media (min-width: 640px){.block-hero{padding:var(--space-24) 0;}}@media (min-width: 1024px){.block-hero{padding:var(--space-32) 0;}}.block-hero .layout{display:grid;gap:var(--space-16);}@media (min-width: 1024px){.block-hero .layout{gap:var(--space-8);grid-template-columns:repeat(3, minmax(0, 1fr));}}@media (min-width: 1024px){.block-hero .content{grid-column:span 2 / span 2;}}.block-hero .content .announce{margin-bottom:var(--space-2);text-align:center;}@media (min-width: 1024px){.block-hero .content .announce{text-align:start;}}.block-hero .content .title{color:var(--elements-text-primary-color-static);font-weight:var(--fontWeight-bold);letter-spacing:var(--letterSpacing-tight);text-align:center;font-size:var(--text-4xl-fontSize);line-height:var(--text-4xl-lineHeight);margin-bottom:var(--space-8);padding-left:var(--space-8);padding-right:var(--space-8);}@media (min-width: 640px){.block-hero .content .title{font-size:var(--text-5xl-fontSize);line-height:var(--text-5xl-lineHeight);}}@media (min-width: 1024px){.block-hero .content .title{padding-left:var(--space-0);padding-right:var(--space-0);font-size:var(--text-6xl-fontSize);line-height:var(--text-6xl-lineHeight);text-align:start;}}.block-hero .content .description{margin-bottom:var(--space-12);font-size:var(--text-lg-fontSize);line-height:var(--text-lg-lineHeight);text-align:center;color:var(--elements-text-secondary-color-static);padding-left:var(--space-2);padding-right:var(--space-2);}@media (min-width: 1024px){.block-hero .content .description{text-align:start;}}.block-hero .content .extra{margin-bottom:var(--space-16);display:flex;justify-content:center;}@media (min-width: 1024px){.block-hero .content .extra{justify-content:flex-start;}}.block-hero .content .actions{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:var(--space-4);}@media (min-width: 640px){.block-hero .content .actions{flex-direction:row;gap:var(--space-6);}}@media (min-width: 1024px){.block-hero .content .actions{justify-content:flex-start;}}.block-hero .content .actions .cta{margin-bottom:0;}.block-hero .content .actions .secondary{font-weight:var(--fontWeight-medium);color:var(--elements-text-secondary-color-static);}.block-hero .content .actions .secondary:hover{color:var(--elements-text-secondary-color-hover);}\n</style>\n",
-      "start": 1708195457326,
-      "end": 1708195457330,
+      "start": 1708210055932,
+      "end": 1708210055941,
       "order": "pre",
       "sourcemaps": {
         "version": 3,
@@ -51,8 +51,8 @@
     {
       "name": "pinceau-transforms",
       "result": "<script setup lang=\"ts\">\nimport type { PropType } from 'vue'\n\ndefineProps({\n  cta: {\n    type: Array as PropType<string[]>,\n    required: false,\n    default: () => []\n  },\n  secondary: {\n    type: Array as PropType<string[]>,\n    required: false,\n    default: () => []\n  },\n  video: {\n    type: String,\n    required: false,\n    default: ''\n  },\n  snippet: {\n    type: [Array, String] as PropType<string[] | string>,\n    required: false,\n    default: ''\n  }\n})\n</script>\n\n<template>\n  <section class=\"block-hero\">\n    <div class=\"layout\">\n      <div class=\"content\">\n        <p v-if=\"$slots.announce\" class=\"announce\">\n          <ContentSlot :use=\"$slots.announce\" unwrap=\"p\" />\n        </p>\n\n        <h1 class=\"title\">\n          <ContentSlot :use=\"$slots.title\" unwrap=\"p\">\n            Hero Title\n          </ContentSlot>\n        </h1>\n\n        <p class=\"description\">\n          <ContentSlot :use=\"$slots.description\" unwrap=\"p\">\n            Hero default description.\n          </ContentSlot>\n        </p>\n\n        <div v-if=\"$slots.extra\" class=\"extra\">\n          <ContentSlot :use=\"$slots.extra\" unwrap=\"p\" />\n        </div>\n\n        <div class=\"actions\">\n          <ContentSlot v-if=\"$slots.actions\" :use=\"$slots.actions\" unwrap=\"p\" />\n          <template v-else>\n            <ButtonLink v-if=\"cta\" class=\"cta\" bold size=\"medium\" :href=\"(cta[1] as any)\">\n              {{ cta[0] }}\n            </ButtonLink>\n            <a v-if=\"secondary\" :href=\"(secondary[1] as any)\" class=\"secondary\">\n              {{ secondary[0] }}\n            </a>\n          </template>\n        </div>\n      </div>\n\n      <div class=\"support\">\n        <slot name=\"support\">\n          <Terminal v-if=\"snippet\" :content=\"snippet\" />\n          <VideoPlayer v-else-if=\"video\" :src=\"video\" />\n        </slot>\n      </div>\n    </div>\n  </section>\n</template>\n\n<style scoped lang=\"postcss\" transformed>\n.block-hero{padding:var(--space-20) 0;}@media (min-width: 640px){.block-hero{padding:var(--space-24) 0;}}@media (min-width: 1024px){.block-hero{padding:var(--space-32) 0;}}.block-hero .layout{display:grid;gap:var(--space-16);}@media (min-width: 1024px){.block-hero .layout{gap:var(--space-8);grid-template-columns:repeat(3, minmax(0, 1fr));}}@media (min-width: 1024px){.block-hero .content{grid-column:span 2 / span 2;}}.block-hero .content .announce{margin-bottom:var(--space-2);text-align:center;}@media (min-width: 1024px){.block-hero .content .announce{text-align:start;}}.block-hero .content .title{color:var(--elements-text-primary-color-static);font-weight:var(--fontWeight-bold);letter-spacing:var(--letterSpacing-tight);text-align:center;font-size:var(--text-4xl-fontSize);line-height:var(--text-4xl-lineHeight);margin-bottom:var(--space-8);padding-left:var(--space-8);padding-right:var(--space-8);}@media (min-width: 640px){.block-hero .content .title{font-size:var(--text-5xl-fontSize);line-height:var(--text-5xl-lineHeight);}}@media (min-width: 1024px){.block-hero .content .title{padding-left:var(--space-0);padding-right:var(--space-0);font-size:var(--text-6xl-fontSize);line-height:var(--text-6xl-lineHeight);text-align:start;}}.block-hero .content .description{margin-bottom:var(--space-12);font-size:var(--text-lg-fontSize);line-height:var(--text-lg-lineHeight);text-align:center;color:var(--elements-text-secondary-color-static);padding-left:var(--space-2);padding-right:var(--space-2);}@media (min-width: 1024px){.block-hero .content .description{text-align:start;}}.block-hero .content .extra{margin-bottom:var(--space-16);display:flex;justify-content:center;}@media (min-width: 1024px){.block-hero .content .extra{justify-content:flex-start;}}.block-hero .content .actions{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:var(--space-4);}@media (min-width: 640px){.block-hero .content .actions{flex-direction:row;gap:var(--space-6);}}@media (min-width: 1024px){.block-hero .content .actions{justify-content:flex-start;}}.block-hero .content .actions .cta{margin-bottom:0;}.block-hero .content .actions .secondary{font-weight:var(--fontWeight-medium);color:var(--elements-text-secondary-color-static);}.block-hero .content .actions .secondary:hover{color:var(--elements-text-secondary-color-hover);}\n</style>\n",
-      "start": 1708195457326,
-      "end": 1708195457330,
+      "start": 1708210055932,
+      "end": 1708210055941,
       "order": "pre",
       "sourcemaps": {
         "version": 3,
@@ -67,8 +67,8 @@
     {
       "name": "content-slot",
       "result": "<script setup lang=\"ts\">\nimport type { PropType } from 'vue'\n\ndefineProps({\n  cta: {\n    type: Array as PropType<string[]>,\n    required: false,\n    default: () => []\n  },\n  secondary: {\n    type: Array as PropType<string[]>,\n    required: false,\n    default: () => []\n  },\n  video: {\n    type: String,\n    required: false,\n    default: ''\n  },\n  snippet: {\n    type: [Array, String] as PropType<string[] | string>,\n    required: false,\n    default: ''\n  }\n})\n</script>\n\n<template>\n  <section class=\"block-hero\">\n    <div class=\"layout\">\n      <div class=\"content\">\n        <p v-if=\"$slots.announce\" class=\"announce\">\n          <MDCSlot  name=\"announce\" unwrap=\"p\" />\n        </p>\n\n        <h1 class=\"title\">\n          <MDCSlot  name=\"title\" unwrap=\"p\">\n            Hero Title\n          </MDCSlot>\n        </h1>\n\n        <p class=\"description\">\n          <MDCSlot  name=\"description\" unwrap=\"p\">\n            Hero default description.\n          </MDCSlot>\n        </p>\n\n        <div v-if=\"$slots.extra\" class=\"extra\">\n          <MDCSlot  name=\"extra\" unwrap=\"p\" />\n        </div>\n\n        <div class=\"actions\">\n          <MDCSlot v-if=\"$slots.actions\" :use=\"$slots.actions\" unwrap=\"p\" />\n          <template v-else>\n            <ButtonLink v-if=\"cta\" class=\"cta\" bold size=\"medium\" :href=\"(cta[1] as any)\">\n              {{ cta[0] }}\n            </ButtonLink>\n            <a v-if=\"secondary\" :href=\"(secondary[1] as any)\" class=\"secondary\">\n              {{ secondary[0] }}\n            </a>\n          </template>\n        </div>\n      </div>\n\n      <div class=\"support\">\n        <slot name=\"support\">\n          <Terminal v-if=\"snippet\" :content=\"snippet\" />\n          <VideoPlayer v-else-if=\"video\" :src=\"video\" />\n        </slot>\n      </div>\n    </div>\n  </section>\n</template>\n\n<style scoped lang=\"postcss\" transformed>\n.block-hero{padding:var(--space-20) 0;}@media (min-width: 640px){.block-hero{padding:var(--space-24) 0;}}@media (min-width: 1024px){.block-hero{padding:var(--space-32) 0;}}.block-hero .layout{display:grid;gap:var(--space-16);}@media (min-width: 1024px){.block-hero .layout{gap:var(--space-8);grid-template-columns:repeat(3, minmax(0, 1fr));}}@media (min-width: 1024px){.block-hero .content{grid-column:span 2 / span 2;}}.block-hero .content .announce{margin-bottom:var(--space-2);text-align:center;}@media (min-width: 1024px){.block-hero .content .announce{text-align:start;}}.block-hero .content .title{color:var(--elements-text-primary-color-static);font-weight:var(--fontWeight-bold);letter-spacing:var(--letterSpacing-tight);text-align:center;font-size:var(--text-4xl-fontSize);line-height:var(--text-4xl-lineHeight);margin-bottom:var(--space-8);padding-left:var(--space-8);padding-right:var(--space-8);}@media (min-width: 640px){.block-hero .content .title{font-size:var(--text-5xl-fontSize);line-height:var(--text-5xl-lineHeight);}}@media (min-width: 1024px){.block-hero .content .title{padding-left:var(--space-0);padding-right:var(--space-0);font-size:var(--text-6xl-fontSize);line-height:var(--text-6xl-lineHeight);text-align:start;}}.block-hero .content .description{margin-bottom:var(--space-12);font-size:var(--text-lg-fontSize);line-height:var(--text-lg-lineHeight);text-align:center;color:var(--elements-text-secondary-color-static);padding-left:var(--space-2);padding-right:var(--space-2);}@media (min-width: 1024px){.block-hero .content .description{text-align:start;}}.block-hero .content .extra{margin-bottom:var(--space-16);display:flex;justify-content:center;}@media (min-width: 1024px){.block-hero .content .extra{justify-content:flex-start;}}.block-hero .content .actions{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:var(--space-4);}@media (min-width: 640px){.block-hero .content .actions{flex-direction:row;gap:var(--space-6);}}@media (min-width: 1024px){.block-hero .content .actions{justify-content:flex-start;}}.block-hero .content .actions .cta{margin-bottom:0;}.block-hero .content .actions .secondary{font-weight:var(--fontWeight-medium);color:var(--elements-text-secondary-color-static);}.block-hero .content .actions .secondary:hover{color:var(--elements-text-secondary-color-hover);}\n</style>\n",
-      "start": 1708195457330,
-      "end": 1708195457330,
+      "start": 1708210055941,
+      "end": 1708210055941,
       "order": "pre",
       "sourcemaps": {
         "mappings": ""
@@ -77,8 +77,8 @@
     {
       "name": "content-slot",
       "result": "<script setup lang=\"ts\">\nimport type { PropType } from 'vue'\n\ndefineProps({\n  cta: {\n    type: Array as PropType<string[]>,\n    required: false,\n    default: () => []\n  },\n  secondary: {\n    type: Array as PropType<string[]>,\n    required: false,\n    default: () => []\n  },\n  video: {\n    type: String,\n    required: false,\n    default: ''\n  },\n  snippet: {\n    type: [Array, String] as PropType<string[] | string>,\n    required: false,\n    default: ''\n  }\n})\n</script>\n\n<template>\n  <section class=\"block-hero\">\n    <div class=\"layout\">\n      <div class=\"content\">\n        <p v-if=\"$slots.announce\" class=\"announce\">\n          <MDCSlot  name=\"announce\" unwrap=\"p\" />\n        </p>\n\n        <h1 class=\"title\">\n          <MDCSlot  name=\"title\" unwrap=\"p\">\n            Hero Title\n          </MDCSlot>\n        </h1>\n\n        <p class=\"description\">\n          <MDCSlot  name=\"description\" unwrap=\"p\">\n            Hero default description.\n          </MDCSlot>\n        </p>\n\n        <div v-if=\"$slots.extra\" class=\"extra\">\n          <MDCSlot  name=\"extra\" unwrap=\"p\" />\n        </div>\n\n        <div class=\"actions\">\n          <MDCSlot v-if=\"$slots.actions\" :use=\"$slots.actions\" unwrap=\"p\" />\n          <template v-else>\n            <ButtonLink v-if=\"cta\" class=\"cta\" bold size=\"medium\" :href=\"(cta[1] as any)\">\n              {{ cta[0] }}\n            </ButtonLink>\n            <a v-if=\"secondary\" :href=\"(secondary[1] as any)\" class=\"secondary\">\n              {{ secondary[0] }}\n            </a>\n          </template>\n        </div>\n      </div>\n\n      <div class=\"support\">\n        <slot name=\"support\">\n          <Terminal v-if=\"snippet\" :content=\"snippet\" />\n          <VideoPlayer v-else-if=\"video\" :src=\"video\" />\n        </slot>\n      </div>\n    </div>\n  </section>\n</template>\n\n<style scoped lang=\"postcss\" transformed>\n.block-hero{padding:var(--space-20) 0;}@media (min-width: 640px){.block-hero{padding:var(--space-24) 0;}}@media (min-width: 1024px){.block-hero{padding:var(--space-32) 0;}}.block-hero .layout{display:grid;gap:var(--space-16);}@media (min-width: 1024px){.block-hero .layout{gap:var(--space-8);grid-template-columns:repeat(3, minmax(0, 1fr));}}@media (min-width: 1024px){.block-hero .content{grid-column:span 2 / span 2;}}.block-hero .content .announce{margin-bottom:var(--space-2);text-align:center;}@media (min-width: 1024px){.block-hero .content .announce{text-align:start;}}.block-hero .content .title{color:var(--elements-text-primary-color-static);font-weight:var(--fontWeight-bold);letter-spacing:var(--letterSpacing-tight);text-align:center;font-size:var(--text-4xl-fontSize);line-height:var(--text-4xl-lineHeight);margin-bottom:var(--space-8);padding-left:var(--space-8);padding-right:var(--space-8);}@media (min-width: 640px){.block-hero .content .title{font-size:var(--text-5xl-fontSize);line-height:var(--text-5xl-lineHeight);}}@media (min-width: 1024px){.block-hero .content .title{padding-left:var(--space-0);padding-right:var(--space-0);font-size:var(--text-6xl-fontSize);line-height:var(--text-6xl-lineHeight);text-align:start;}}.block-hero .content .description{margin-bottom:var(--space-12);font-size:var(--text-lg-fontSize);line-height:var(--text-lg-lineHeight);text-align:center;color:var(--elements-text-secondary-color-static);padding-left:var(--space-2);padding-right:var(--space-2);}@media (min-width: 1024px){.block-hero .content .description{text-align:start;}}.block-hero .content .extra{margin-bottom:var(--space-16);display:flex;justify-content:center;}@media (min-width: 1024px){.block-hero .content .extra{justify-content:flex-start;}}.block-hero .content .actions{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:var(--space-4);}@media (min-width: 640px){.block-hero .content .actions{flex-direction:row;gap:var(--space-6);}}@media (min-width: 1024px){.block-hero .content .actions{justify-content:flex-start;}}.block-hero .content .actions .cta{margin-bottom:0;}.block-hero .content .actions .secondary{font-weight:var(--fontWeight-medium);color:var(--elements-text-secondary-color-static);}.block-hero .content .actions .secondary:hover{color:var(--elements-text-secondary-color-hover);}\n</style>\n",
-      "start": 1708195457330,
-      "end": 1708195457330,
+      "start": 1708210055941,
+      "end": 1708210055941,
       "order": "pre",
       "sourcemaps": {
         "mappings": ""
@@ -86,39 +86,39 @@
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708195457330,
-      "end": 1708195457331,
+      "start": 1708210055941,
+      "end": 1708210055941,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708195457331,
-      "end": 1708195457331,
+      "start": 1708210055941,
+      "end": 1708210055941,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1708195457331,
-      "end": 1708195457331,
+      "start": 1708210055941,
+      "end": 1708210055941,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1708195457331,
-      "end": 1708195457331,
+      "start": 1708210055941,
+      "end": 1708210055941,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708195457331,
-      "end": 1708195457331,
+      "start": 1708210055941,
+      "end": 1708210055941,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "import _sfc_main from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/landing/BlockHero.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/landing/BlockHero.vue?vue&type=script&setup=true&lang.ts\";\nimport \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/landing/BlockHero.vue?vue&type=style&index=0&scoped=c04ae554&transformed=true&lang.postcss\";\nimport { useSSRContext as __vite_useSSRContext } from \"vue\";\nconst _sfc_setup = _sfc_main.setup;\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext();\n  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add(\"node_modules/@nuxt-themes/elements/components/landing/BlockHero.vue\");\n  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;\n};\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"__scopeId\", \"data-v-c04ae554\"]]);\n",
-      "start": 1708195457331,
-      "end": 1708195457349,
+      "start": 1708210055941,
+      "end": 1708210055964,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -126,176 +126,176 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708195457350,
-      "end": 1708195457350,
+      "start": 1708210055965,
+      "end": 1708210055965,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708195457350,
-      "end": 1708195457350,
+      "start": 1708210055965,
+      "end": 1708210055965,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708195457350,
-      "end": 1708195457350,
+      "start": 1708210055965,
+      "end": 1708210055965,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708195457350,
-      "end": 1708195457350,
+      "start": 1708210055965,
+      "end": 1708210055965,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708195457350,
-      "end": 1708195457350,
+      "start": 1708210055965,
+      "end": 1708210055965,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708195457350,
-      "end": 1708195457350,
+      "start": 1708210055965,
+      "end": 1708210055965,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708195457350,
-      "end": 1708195457350,
+      "start": 1708210055965,
+      "end": 1708210055965,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708195457350,
-      "end": 1708195457350,
+      "start": 1708210055965,
+      "end": 1708210055965,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708195457350,
-      "end": 1708195457350,
+      "start": 1708210055965,
+      "end": 1708210055965,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708195457350,
-      "end": 1708195457350,
+      "start": 1708210055965,
+      "end": 1708210055965,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708195457350,
-      "end": 1708195457350,
+      "start": 1708210055965,
+      "end": 1708210055965,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708195457350,
-      "end": 1708195457350,
+      "start": 1708210055965,
+      "end": 1708210055965,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708195457350,
-      "end": 1708195457350,
+      "start": 1708210055966,
+      "end": 1708210055966,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708195457350,
-      "end": 1708195457350,
+      "start": 1708210055966,
+      "end": 1708210055966,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708195457350,
-      "end": 1708195457350,
+      "start": 1708210055966,
+      "end": 1708210055966,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708195457350,
-      "end": 1708195457350,
+      "start": 1708210055966,
+      "end": 1708210055966,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708195457350,
-      "end": 1708195457350,
+      "start": 1708210055966,
+      "end": 1708210055966,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708195457350,
-      "end": 1708195457350,
+      "start": 1708210055966,
+      "end": 1708210055966,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708195457350,
-      "end": 1708195457352,
+      "start": 1708210055966,
+      "end": 1708210055967,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708195457350,
-      "end": 1708195457352,
+      "start": 1708210055966,
+      "end": 1708210055967,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708195457352,
-      "end": 1708195457352,
+      "start": 1708210055967,
+      "end": 1708210055967,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708195457352,
-      "end": 1708195457352,
+      "start": 1708210055967,
+      "end": 1708210055967,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708195457352,
-      "end": 1708195457352,
+      "start": 1708210055967,
+      "end": 1708210055967,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708195457352,
-      "end": 1708195457352,
+      "start": 1708210055967,
+      "end": 1708210055967,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1708195457352,
-      "end": 1708195457352,
+      "start": 1708210055967,
+      "end": 1708210055968,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1708195457352,
-      "end": 1708195457352,
+      "start": 1708210055968,
+      "end": 1708210055968,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708195457352,
-      "end": 1708195457352,
+      "start": 1708210055968,
+      "end": 1708210055968,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708195457352,
-      "end": 1708195457352,
+      "start": 1708210055968,
+      "end": 1708210055968,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708195457352,
-      "end": 1708195457352,
+      "start": 1708210055968,
+      "end": 1708210055968,
       "order": "normal"
     }
   ]

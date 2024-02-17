@@ -4,8 +4,8 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\nimport { useClipboard } from '@vueuse/core'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'CopyButton',\n  __ssrInlineRender: true,\n  props: {\n  content: {\n    type: String,\n    default: ''\n  }\n},\n  setup(__props) {\n\nconst props = __props\n\nconst { copy: copyToClipboard } = useClipboard()\n\nconst state = ref('init')\n\nconst copy = (e: MouseEvent) => {\n  copyToClipboard(props.content)\n    .then(() => {\n      state.value = 'copied'\n\n      setTimeout(() => {\n        state.value = 'init'\n      }, 1000)\n    })\n    .catch(() => {\n      console.warn(\"Couldn't copy to clipboard!\")\n    })\n}\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_Icon = _resolveComponent(\"Icon\")!\n\n  _push(`<button${_ssrRenderAttrs(_mergeProps({ class: \"copy rounded-lg bg-gray-800 px-2 py-2 font-mono text-xs font-semibold leading-none text-gray-400 focus:outline-none dark:bg-black\" }, _attrs))}>`)\n  if (_unref(state) === 'copied') {\n    _push(_ssrRenderComponent(_component_Icon, {\n      name: \"fa-check\",\n      class: \"h-4 w-4\"\n    }, null, _parent))\n  } else {\n    _push(_ssrRenderComponent(_component_Icon, {\n      name: \"fa-copy\",\n      class: \"h-4 w-4\"\n    }, null, _parent))\n  }\n  _push(`</button>`)\n}\n}\n\n})",
-      "start": 1708195458050,
-      "end": 1708195458050,
+      "start": 1708210056804,
+      "end": 1708210056804,
       "sourcemaps": {
         "version": 3,
         "sources": [
@@ -20,71 +20,71 @@
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708195458050,
-      "end": 1708195458050,
+      "start": 1708210056805,
+      "end": 1708210056805,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708195458050,
-      "end": 1708195458050,
+      "start": 1708210056805,
+      "end": 1708210056805,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708195458050,
-      "end": 1708195458050,
+      "start": 1708210056807,
+      "end": 1708210056807,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708195458050,
-      "end": 1708195458051,
+      "start": 1708210056807,
+      "end": 1708210056807,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\nimport { useClipboard } from '@vueuse/core'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'CopyButton',\n  __ssrInlineRender: true,\n  props: {\n  content: {\n    type: String,\n    default: ''\n  }\n},\n  setup(__props) {\n\nconst props = __props\n\nconst { copy: copyToClipboard } = useClipboard()\n\nconst state = ref('init')\n\nconst copy = (e: MouseEvent) => {\n  copyToClipboard(props.content)\n    .then(() => {\n      state.value = 'copied'\n\n      setTimeout(() => {\n        state.value = 'init'\n      }, 1000)\n    })\n    .catch(() => {\n      console.warn(\"Couldn't copy to clipboard!\")\n    })\n}\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_Icon = _resolveComponent(\"Icon\")!\n\n  _push(`<button${_ssrRenderAttrs(_mergeProps({ class: \"copy rounded-lg bg-gray-800 px-2 py-2 font-mono text-xs font-semibold leading-none text-gray-400 focus:outline-none dark:bg-black\" }, _attrs))}>`)\n  if (_unref(state) === 'copied') {\n    _push(_ssrRenderComponent(_component_Icon, {\n      name: \"fa-check\",\n      class: \"h-4 w-4\"\n    }, null, _parent))\n  } else {\n    _push(_ssrRenderComponent(_component_Icon, {\n      name: \"fa-copy\",\n      class: \"h-4 w-4\"\n    }, null, _parent))\n  }\n  _push(`</button>`)\n}\n}\n\n})",
-      "start": 1708195458051,
-      "end": 1708195458051,
+      "start": 1708210056808,
+      "end": 1708210056809,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\nimport { useClipboard } from '@vueuse/core'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'CopyButton',\n  __ssrInlineRender: true,\n  props: {\n  content: {\n    type: String,\n    default: ''\n  }\n},\n  setup(__props) {\n\nconst props = __props\n\nconst { copy: copyToClipboard } = useClipboard()\n\nconst state = ref('init')\n\nconst copy = (e: MouseEvent) => {\n  copyToClipboard(props.content)\n    .then(() => {\n      state.value = 'copied'\n\n      setTimeout(() => {\n        state.value = 'init'\n      }, 1000)\n    })\n    .catch(() => {\n      console.warn(\"Couldn't copy to clipboard!\")\n    })\n}\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_Icon = _resolveComponent(\"Icon\")!\n\n  _push(`<button${_ssrRenderAttrs(_mergeProps({ class: \"copy rounded-lg bg-gray-800 px-2 py-2 font-mono text-xs font-semibold leading-none text-gray-400 focus:outline-none dark:bg-black\" }, _attrs))}>`)\n  if (_unref(state) === 'copied') {\n    _push(_ssrRenderComponent(_component_Icon, {\n      name: \"fa-check\",\n      class: \"h-4 w-4\"\n    }, null, _parent))\n  } else {\n    _push(_ssrRenderComponent(_component_Icon, {\n      name: \"fa-copy\",\n      class: \"h-4 w-4\"\n    }, null, _parent))\n  }\n  _push(`</button>`)\n}\n}\n\n})",
-      "start": 1708195458051,
-      "end": 1708195458051,
+      "start": 1708210056808,
+      "end": 1708210056809,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708195458051,
-      "end": 1708195458051,
+      "start": 1708210056809,
+      "end": 1708210056809,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708195458051,
-      "end": 1708195458051,
+      "start": 1708210056809,
+      "end": 1708210056809,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708195458051,
-      "end": 1708195458051,
+      "start": 1708210056809,
+      "end": 1708210056809,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708195458051,
-      "end": 1708195458051,
+      "start": 1708210056810,
+      "end": 1708210056810,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nimport { useClipboard } from \"@vueuse/core\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"CopyButton\",\n  __ssrInlineRender: true,\n  props: {\n    content: {\n      type: String,\n      default: \"\"\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const { copy: copyToClipboard } = useClipboard();\n    const state = ref(\"init\");\n    const copy = (e) => {\n      copyToClipboard(props.content).then(() => {\n        state.value = \"copied\";\n        setTimeout(() => {\n          state.value = \"init\";\n        }, 1e3);\n      }).catch(() => {\n        console.warn(\"Couldn't copy to clipboard!\");\n      });\n    };\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_Icon = _resolveComponent(\"Icon\");\n      _push(`<button${_ssrRenderAttrs(_mergeProps({ class: \"copy rounded-lg bg-gray-800 px-2 py-2 font-mono text-xs font-semibold leading-none text-gray-400 focus:outline-none dark:bg-black\" }, _attrs))}>`);\n      if (_unref(state) === \"copied\") {\n        _push(_ssrRenderComponent(_component_Icon, {\n          name: \"fa-check\",\n          class: \"h-4 w-4\"\n        }, null, _parent));\n      } else {\n        _push(_ssrRenderComponent(_component_Icon, {\n          name: \"fa-copy\",\n          class: \"h-4 w-4\"\n        }, null, _parent));\n      }\n      _push(`</button>`);\n    };\n  }\n});\n",
-      "start": 1708195458052,
-      "end": 1708195458225,
+      "start": 1708210056810,
+      "end": 1708210056997,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -100,135 +100,135 @@
     },
     {
       "name": "vite:json",
-      "start": 1708195458225,
-      "end": 1708195458225,
+      "start": 1708210056997,
+      "end": 1708210056997,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708195458225,
-      "end": 1708195458225,
+      "start": 1708210056998,
+      "end": 1708210056998,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708195458225,
-      "end": 1708195458225,
+      "start": 1708210056998,
+      "end": 1708210056998,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708195458225,
-      "end": 1708195458225,
+      "start": 1708210056998,
+      "end": 1708210056998,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708195458226,
-      "end": 1708195458226,
+      "start": 1708210056998,
+      "end": 1708210056998,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708195458226,
-      "end": 1708195458226,
+      "start": 1708210056998,
+      "end": 1708210056998,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708195458226,
-      "end": 1708195458226,
+      "start": 1708210056998,
+      "end": 1708210056998,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708195458226,
-      "end": 1708195458226,
+      "start": 1708210056998,
+      "end": 1708210056998,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708195458226,
-      "end": 1708195458226,
+      "start": 1708210056999,
+      "end": 1708210056999,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708195458226,
-      "end": 1708195458226,
+      "start": 1708210056999,
+      "end": 1708210056999,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708195458227,
-      "end": 1708195458227,
+      "start": 1708210057000,
+      "end": 1708210057000,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708195458227,
-      "end": 1708195458228,
+      "start": 1708210057001,
+      "end": 1708210057001,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708195458228,
-      "end": 1708195458228,
+      "start": 1708210057001,
+      "end": 1708210057001,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708195458228,
-      "end": 1708195458228,
+      "start": 1708210057001,
+      "end": 1708210057002,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708195458228,
-      "end": 1708195458228,
+      "start": 1708210057002,
+      "end": 1708210057002,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708195458228,
-      "end": 1708195458228,
+      "start": 1708210057002,
+      "end": 1708210057002,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708195458228,
-      "end": 1708195458228,
+      "start": 1708210057002,
+      "end": 1708210057002,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708195458228,
-      "end": 1708195458228,
+      "start": 1708210057002,
+      "end": 1708210057002,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708195458228,
-      "end": 1708195458228,
+      "start": 1708210057002,
+      "end": 1708210057002,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708195458229,
-      "end": 1708195458229,
+      "start": 1708210057002,
+      "end": 1708210057003,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708195458229,
-      "end": 1708195458229,
+      "start": 1708210057002,
+      "end": 1708210057003,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { ref } from 'vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nimport { useClipboard } from \"@vueuse/core\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"CopyButton\",\n  __ssrInlineRender: true,\n  props: {\n    content: {\n      type: String,\n      default: \"\"\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const { copy: copyToClipboard } = useClipboard();\n    const state = ref(\"init\");\n    const copy = (e) => {\n      copyToClipboard(props.content).then(() => {\n        state.value = \"copied\";\n        setTimeout(() => {\n          state.value = \"init\";\n        }, 1e3);\n      }).catch(() => {\n        console.warn(\"Couldn't copy to clipboard!\");\n      });\n    };\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_Icon = _resolveComponent(\"Icon\");\n      _push(`<button${_ssrRenderAttrs(_mergeProps({ class: \"copy rounded-lg bg-gray-800 px-2 py-2 font-mono text-xs font-semibold leading-none text-gray-400 focus:outline-none dark:bg-black\" }, _attrs))}>`);\n      if (_unref(state) === \"copied\") {\n        _push(_ssrRenderComponent(_component_Icon, {\n          name: \"fa-check\",\n          class: \"h-4 w-4\"\n        }, null, _parent));\n      } else {\n        _push(_ssrRenderComponent(_component_Icon, {\n          name: \"fa-copy\",\n          class: \"h-4 w-4\"\n        }, null, _parent));\n      }\n      _push(`</button>`);\n    };\n  }\n});\n",
-      "start": 1708195458229,
-      "end": 1708195458235,
+      "start": 1708210057003,
+      "end": 1708210057009,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -242,8 +242,8 @@
     {
       "name": "nuxt:imports-transform",
       "result": "import { ref } from 'vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nimport { useClipboard } from \"@vueuse/core\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"CopyButton\",\n  __ssrInlineRender: true,\n  props: {\n    content: {\n      type: String,\n      default: \"\"\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const { copy: copyToClipboard } = useClipboard();\n    const state = ref(\"init\");\n    const copy = (e) => {\n      copyToClipboard(props.content).then(() => {\n        state.value = \"copied\";\n        setTimeout(() => {\n          state.value = \"init\";\n        }, 1e3);\n      }).catch(() => {\n        console.warn(\"Couldn't copy to clipboard!\");\n      });\n    };\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_Icon = _resolveComponent(\"Icon\");\n      _push(`<button${_ssrRenderAttrs(_mergeProps({ class: \"copy rounded-lg bg-gray-800 px-2 py-2 font-mono text-xs font-semibold leading-none text-gray-400 focus:outline-none dark:bg-black\" }, _attrs))}>`);\n      if (_unref(state) === \"copied\") {\n        _push(_ssrRenderComponent(_component_Icon, {\n          name: \"fa-check\",\n          class: \"h-4 w-4\"\n        }, null, _parent));\n      } else {\n        _push(_ssrRenderComponent(_component_Icon, {\n          name: \"fa-copy\",\n          class: \"h-4 w-4\"\n        }, null, _parent));\n      }\n      _push(`</button>`);\n    };\n  }\n});\n",
-      "start": 1708195458229,
-      "end": 1708195458235,
+      "start": 1708210057003,
+      "end": 1708210057009,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -256,39 +256,39 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1708195458235,
-      "end": 1708195458235,
+      "start": 1708210057010,
+      "end": 1708210057010,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708195458235,
-      "end": 1708195458235,
+      "start": 1708210057010,
+      "end": 1708210057010,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708195458236,
-      "end": 1708195458236,
+      "start": 1708210057010,
+      "end": 1708210057010,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708195458236,
-      "end": 1708195458236,
+      "start": 1708210057010,
+      "end": 1708210057010,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1708195458236,
-      "end": 1708195458236,
+      "start": 1708210057010,
+      "end": 1708210057010,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
       "result": "import { default as __nuxt_component_0 } from \"/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/Icon.vue\";\nimport { ref } from 'vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nimport { useClipboard } from \"@vueuse/core\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"CopyButton\",\n  __ssrInlineRender: true,\n  props: {\n    content: {\n      type: String,\n      default: \"\"\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const { copy: copyToClipboard } = useClipboard();\n    const state = ref(\"init\");\n    const copy = (e) => {\n      copyToClipboard(props.content).then(() => {\n        state.value = \"copied\";\n        setTimeout(() => {\n          state.value = \"init\";\n        }, 1e3);\n      }).catch(() => {\n        console.warn(\"Couldn't copy to clipboard!\");\n      });\n    };\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_Icon = __nuxt_component_0;\n      _push(`<button${_ssrRenderAttrs(_mergeProps({ class: \"copy rounded-lg bg-gray-800 px-2 py-2 font-mono text-xs font-semibold leading-none text-gray-400 focus:outline-none dark:bg-black\" }, _attrs))}>`);\n      if (_unref(state) === \"copied\") {\n        _push(_ssrRenderComponent(_component_Icon, {\n          name: \"fa-check\",\n          class: \"h-4 w-4\"\n        }, null, _parent));\n      } else {\n        _push(_ssrRenderComponent(_component_Icon, {\n          name: \"fa-copy\",\n          class: \"h-4 w-4\"\n        }, null, _parent));\n      }\n      _push(`</button>`);\n    };\n  }\n});\n",
-      "start": 1708195458237,
-      "end": 1708195458237,
+      "start": 1708210057011,
+      "end": 1708210057012,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -301,20 +301,20 @@
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708195458237,
-      "end": 1708195458238,
+      "start": 1708210057013,
+      "end": 1708210057013,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708195458238,
-      "end": 1708195458238,
+      "start": 1708210057013,
+      "end": 1708210057013,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708195458238,
-      "end": 1708195458238,
+      "start": 1708210057013,
+      "end": 1708210057013,
       "order": "normal"
     }
   ]

@@ -4,69 +4,69 @@
     {
       "name": "vite:load-fallback",
       "result": "<script setup lang=\"ts\">\nimport type { PropType } from 'vue'\nimport { ref } from 'vue'\nimport type { Lang } from 'shiki-es'\n\ndefineProps({\n  code: {\n    type: String,\n    default: ''\n  },\n  language: {\n    type: String as PropType<Lang>,\n    default: null\n  },\n  filename: {\n    type: String,\n    default: null\n  },\n  highlights: {\n    type: Array as () => number[],\n    default: () => []\n  }\n})\n\nconst hovered = ref(false)\n</script>\n\n<template>\n  <div :class=\"[`highlight-${language}`]\" class=\"prose-code\" @mouseenter=\"hovered = true\" @mouseleave=\"hovered = false\">\n    <span v-if=\"filename\" class=\"filename\">\n      {{ filename }}\n    </span>\n\n    <slot />\n\n    <ProseCodeCopyButton :show=\"hovered\" :content=\"code\" class=\"copy-button\" />\n  </div>\n</template>\n\n<style lang=\"ts\" scoped>\ncss({\n  \".prose-code\": {\n    position: \"relative\",\n    overflow: \"hidden\",\n    width: \"100%\",\n    fontSize: '{prose.code.block.fontSize}',\n    margin: '{prose.code.block.margin}',\n    borderRadius: '{radii.md}',\n    borderWidth: '{prose.code.block.border.width}',\n    borderStyle: '{prose.code.block.border.style}',\n    borderColor: '{prose.code.block.border.color}',\n    color: '{prose.code.block.color}',\n    backgroundColor: '{prose.code.block.backgroundColor}',\n    backdropFilter: '{prose.code.block.backdropFilter}',\n\n    \"&.highlight-zsh, &.highlight-sh, &.highlight-bash, &.highlight-shell, &.highlight-shellscript\": {\n      \":deep(code)\": {\n        \".line\": {\n          position: \"relative\",\n          paddingInlineStart: \"1rem\"\n        },\n        \".line::before\": {\n          content: \"'>'\",\n          position: \"absolute\",\n          top: \"0\",\n          insetInlineStart: \"-0.1rem\",\n          display: \"block\",\n          userSelect: \"none\",\n          fontWeight: 700,\n          color: '{typography.color.primary.500}',\n          fontFamily: '{font.mono}'\n        }\n      }\n    }\n  },\n\n  '.copy-button': {\n    position: \"absolute\",\n    insetInlineEnd: 0,\n    bottom: 0,\n  },\n\n  \":deep(code)\": { display: \"flex\", flexDirection: \"column\" },\n\n  \":deep(.line)\": { display: \"inline-table\", minHeight: \"1rem\" },\n\n  \".filename\": {\n    position: \"absolute\",\n    top: 0,\n    insetInlineEnd: 0,\n    padding: '0.5rem 0.75rem',\n    fontFamily: '{typography.font.code}',\n    color: '{prose.code.block.color}',\n    borderRadius: '{radii.lg}',\n    fontSize: '{fontSize.xs}',\n    lineHeight: '{lead.normal}',\n    transition: 'opacity 200ms',\n    backdropFilter: 'blur(4px)',\n  },\n\n  '.prose-code:hover .filename': {\n    opacity: 0\n  },\n  '.prose-code:hover .filename:hover': {\n    opacity: 1\n  },\n  \":deep(pre)\": {\n    display: \"flex\",\n    flex: 1,\n    overflowX: \"auto\",\n    margin: \"0\",\n    padding: '{prose.code.block.pre.padding}',\n    lineHeight: '{lead.relaxed}',\n  },\n  \":deep(pre code)\": {\n    paddingInlineEnd: '30px',\n  },\n\n  \":deep(.line.highlight)\": {\n    backgroundColor: '{prose.code.block.border.color}',\n  }\n})\n</style>\n",
-      "start": 1708195449322,
-      "end": 1708195449466,
+      "start": 1708210047266,
+      "end": 1708210047378,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708195449466,
-      "end": 1708195449466,
+      "start": 1708210047378,
+      "end": 1708210047378,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708195449466,
-      "end": 1708195449466,
+      "start": 1708210047378,
+      "end": 1708210047378,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
-      "start": 1708195449466,
-      "end": 1708195449466,
+      "start": 1708210047378,
+      "end": 1708210047379,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708195449466,
-      "end": 1708195449466,
+      "start": 1708210047379,
+      "end": 1708210047379,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708195449466,
-      "end": 1708195449466,
+      "start": 1708210047379,
+      "end": 1708210047379,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708195449466,
-      "end": 1708195449466,
+      "start": 1708210047379,
+      "end": 1708210047379,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1708195449466,
-      "end": 1708195449466,
+      "start": 1708210047379,
+      "end": 1708210047379,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1708195449466,
-      "end": 1708195449466,
+      "start": 1708210047379,
+      "end": 1708210047379,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708195449466,
-      "end": 1708195449466,
+      "start": 1708210047379,
+      "end": 1708210047379,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "import _sfc_main from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseCode.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseCode.vue?vue&type=script&setup=true&lang.ts\";\nimport \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseCode.vue?vue&type=style&index=0&scoped=3951b275&lang.ts\";\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"__scopeId\", \"data-v-3951b275\"]]);\n",
-      "start": 1708195449466,
-      "end": 1708195449480,
+      "start": 1708210047379,
+      "end": 1708210047411,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -74,156 +74,156 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708195449481,
-      "end": 1708195449481,
+      "start": 1708210047411,
+      "end": 1708210047411,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708195449481,
-      "end": 1708195449481,
+      "start": 1708210047411,
+      "end": 1708210047411,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708195449481,
-      "end": 1708195449481,
+      "start": 1708210047411,
+      "end": 1708210047412,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1708195449481,
-      "end": 1708195449481,
+      "start": 1708210047412,
+      "end": 1708210047412,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
       "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseCode.vue\").then(r => r.default))",
-      "start": 1708195449482,
-      "end": 1708195449482,
+      "start": 1708210047412,
+      "end": 1708210047412,
       "order": "normal",
       "sourcemaps": null
     },
     {
       "name": "replace",
-      "start": 1708195449487,
-      "end": 1708195449487,
+      "start": 1708210047412,
+      "end": 1708210047412,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708195449487,
-      "end": 1708195449487,
+      "start": 1708210047412,
+      "end": 1708210047412,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708195449487,
-      "end": 1708195449487,
+      "start": 1708210047412,
+      "end": 1708210047412,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708195449487,
-      "end": 1708195449487,
+      "start": 1708210047412,
+      "end": 1708210047412,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708195449487,
-      "end": 1708195449487,
+      "start": 1708210047412,
+      "end": 1708210047412,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708195449487,
-      "end": 1708195449487,
+      "start": 1708210047412,
+      "end": 1708210047412,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708195449487,
-      "end": 1708195449487,
+      "start": 1708210047412,
+      "end": 1708210047412,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708195449487,
-      "end": 1708195449487,
+      "start": 1708210047413,
+      "end": 1708210047413,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708195449487,
-      "end": 1708195449487,
+      "start": 1708210047413,
+      "end": 1708210047413,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708195449488,
-      "end": 1708195449488,
+      "start": 1708210047413,
+      "end": 1708210047413,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708195449488,
-      "end": 1708195449488,
+      "start": 1708210047413,
+      "end": 1708210047413,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708195449488,
-      "end": 1708195449490,
+      "start": 1708210047413,
+      "end": 1708210047414,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708195449490,
-      "end": 1708195449490,
+      "start": 1708210047414,
+      "end": 1708210047414,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708195449490,
-      "end": 1708195449490,
+      "start": 1708210047414,
+      "end": 1708210047414,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1708195449491,
-      "end": 1708195449491,
+      "start": 1708210047414,
+      "end": 1708210047414,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1708195449491,
-      "end": 1708195449491,
+      "start": 1708210047415,
+      "end": 1708210047415,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1708195449491,
-      "end": 1708195449491,
+      "start": 1708210047415,
+      "end": 1708210047415,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708195449491,
-      "end": 1708195449491,
+      "start": 1708210047415,
+      "end": 1708210047415,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
       "result": "import { __vitePreload } from \"\u0000vite/preload-helper.js\";import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => __vitePreload(() => import(\"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseCode.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(r => r.default))",
-      "start": 1708195449491,
-      "end": 1708195449492,
+      "start": 1708210047415,
+      "end": 1708210047415,
       "order": "normal",
       "sourcemaps": null
     },
     {
       "name": "vite:reporter",
-      "start": 1708195449492,
-      "end": 1708195449492,
+      "start": 1708210047416,
+      "end": 1708210047416,
       "order": "normal"
     }
   ]

@@ -4,77 +4,77 @@
     {
       "name": "vite:load-fallback",
       "result": "export default defineAppConfig({\n  docus: {\n    title: 'Docus',\n\n    description: 'The best place to start your documentation.',\n\n    url: 'https://docus.dev',\n\n    image: 'https://user-images.githubusercontent.com/904724/185365452-87b7ca7b-6030-4813-a2db-5e65c785bf88.png',\n\n    socials: {},\n\n    layout: 'default',\n\n    header: {\n      title: '',\n      logo: false,\n      showLinkIcon: false,\n      fluid: false,\n      exclude: []\n    },\n\n    aside: {\n      level: 0,\n      collapsed: false,\n      exclude: []\n    },\n\n    footer: {\n      credits: {\n        icon: 'IconDocus',\n        text: 'Powered by Docus',\n        href: 'https://docus.dev'\n      },\n      textLinks: [],\n      iconLinks: [],\n      fluid: false\n    },\n\n    github: {\n      dir: undefined,\n      branch: undefined,\n      repo: undefined,\n      owner: undefined,\n      edit: false\n    },\n  }\n})\n",
-      "start": 1708195459163,
-      "end": 1708195459450,
+      "start": 1708210057850,
+      "end": 1708210057936,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708195459450,
-      "end": 1708195459450,
+      "start": 1708210057936,
+      "end": 1708210057936,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708195459450,
-      "end": 1708195459450,
+      "start": 1708210057936,
+      "end": 1708210057936,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708195459450,
-      "end": 1708195459450,
+      "start": 1708210057936,
+      "end": 1708210057936,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708195459450,
-      "end": 1708195459450,
+      "start": 1708210057936,
+      "end": 1708210057936,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "export default defineAppConfig({\n  docus: {\n    title: 'Docus',\n\n    description: 'The best place to start your documentation.',\n\n    url: 'https://docus.dev',\n\n    image: 'https://user-images.githubusercontent.com/904724/185365452-87b7ca7b-6030-4813-a2db-5e65c785bf88.png',\n\n    socials: {},\n\n    layout: 'default',\n\n    header: {\n      title: '',\n      logo: false,\n      showLinkIcon: false,\n      fluid: false,\n      exclude: []\n    },\n\n    aside: {\n      level: 0,\n      collapsed: false,\n      exclude: []\n    },\n\n    footer: {\n      credits: {\n        icon: 'IconDocus',\n        text: 'Powered by Docus',\n        href: 'https://docus.dev'\n      },\n      textLinks: [],\n      iconLinks: [],\n      fluid: false\n    },\n\n    github: {\n      dir: undefined,\n      branch: undefined,\n      repo: undefined,\n      owner: undefined,\n      edit: false\n    },\n  }\n})\n",
-      "start": 1708195459450,
-      "end": 1708195459450,
+      "start": 1708210057936,
+      "end": 1708210057936,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "export default defineAppConfig({\n  docus: {\n    title: 'Docus',\n\n    description: 'The best place to start your documentation.',\n\n    url: 'https://docus.dev',\n\n    image: 'https://user-images.githubusercontent.com/904724/185365452-87b7ca7b-6030-4813-a2db-5e65c785bf88.png',\n\n    socials: {},\n\n    layout: 'default',\n\n    header: {\n      title: '',\n      logo: false,\n      showLinkIcon: false,\n      fluid: false,\n      exclude: []\n    },\n\n    aside: {\n      level: 0,\n      collapsed: false,\n      exclude: []\n    },\n\n    footer: {\n      credits: {\n        icon: 'IconDocus',\n        text: 'Powered by Docus',\n        href: 'https://docus.dev'\n      },\n      textLinks: [],\n      iconLinks: [],\n      fluid: false\n    },\n\n    github: {\n      dir: undefined,\n      branch: undefined,\n      repo: undefined,\n      owner: undefined,\n      edit: false\n    },\n  }\n})\n",
-      "start": 1708195459450,
-      "end": 1708195459450,
+      "start": 1708210057936,
+      "end": 1708210057936,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708195459450,
-      "end": 1708195459450,
+      "start": 1708210057936,
+      "end": 1708210057936,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708195459450,
-      "end": 1708195459450,
+      "start": 1708210057936,
+      "end": 1708210057936,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708195459450,
-      "end": 1708195459450,
+      "start": 1708210057936,
+      "end": 1708210057936,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708195459450,
-      "end": 1708195459450,
+      "start": 1708210057936,
+      "end": 1708210057936,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "export default defineAppConfig({\n  docus: {\n    title: \"Docus\",\n    description: \"The best place to start your documentation.\",\n    url: \"https://docus.dev\",\n    image: \"https://user-images.githubusercontent.com/904724/185365452-87b7ca7b-6030-4813-a2db-5e65c785bf88.png\",\n    socials: {},\n    layout: \"default\",\n    header: {\n      title: \"\",\n      logo: false,\n      showLinkIcon: false,\n      fluid: false,\n      exclude: []\n    },\n    aside: {\n      level: 0,\n      collapsed: false,\n      exclude: []\n    },\n    footer: {\n      credits: {\n        icon: \"IconDocus\",\n        text: \"Powered by Docus\",\n        href: \"https://docus.dev\"\n      },\n      textLinks: [],\n      iconLinks: [],\n      fluid: false\n    },\n    github: {\n      dir: void 0,\n      branch: void 0,\n      repo: void 0,\n      owner: void 0,\n      edit: false\n    }\n  }\n});\n",
-      "start": 1708195459450,
-      "end": 1708195459452,
+      "start": 1708210057936,
+      "end": 1708210058100,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -90,137 +90,137 @@
     },
     {
       "name": "vite:json",
-      "start": 1708195459452,
-      "end": 1708195459452,
+      "start": 1708210058101,
+      "end": 1708210058101,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708195459452,
-      "end": 1708195459452,
+      "start": 1708210058101,
+      "end": 1708210058101,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708195459452,
-      "end": 1708195459452,
+      "start": 1708210058101,
+      "end": 1708210058101,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708195459452,
-      "end": 1708195459452,
+      "start": 1708210058101,
+      "end": 1708210058101,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708195459452,
-      "end": 1708195459452,
+      "start": 1708210058101,
+      "end": 1708210058101,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708195459452,
-      "end": 1708195459452,
+      "start": 1708210058101,
+      "end": 1708210058101,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708195459452,
-      "end": 1708195459452,
+      "start": 1708210058101,
+      "end": 1708210058101,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708195459452,
-      "end": 1708195459452,
+      "start": 1708210058101,
+      "end": 1708210058101,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708195459452,
-      "end": 1708195459452,
+      "start": 1708210058101,
+      "end": 1708210058101,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708195459452,
-      "end": 1708195459452,
+      "start": 1708210058101,
+      "end": 1708210058101,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708195459452,
-      "end": 1708195459452,
+      "start": 1708210058101,
+      "end": 1708210058101,
       "order": "normal"
     },
     {
       "name": "vite:define",
       "result": "export default defineAppConfig({\n  docus: {\n    title: \"Docus\",\n    description: \"The best place to start your documentation.\",\n    url: \"https://docus.dev\",\n    image: \"https://user-images.githubusercontent.com/904724/185365452-87b7ca7b-6030-4813-a2db-5e65c785bf88.png\",\n    socials: {},\n    layout: \"default\",\n    header: {\n      title: \"\",\n      logo: false,\n      showLinkIcon: false,\n      fluid: false,\n      exclude: []\n    },\n    aside: {\n      level: 0,\n      collapsed: false,\n      exclude: []\n    },\n    footer: {\n      credits: {\n        icon: \"IconDocus\",\n        text: \"Powered by Docus\",\n        href: \"https://docus.dev\"\n      },\n      textLinks: [],\n      iconLinks: [],\n      fluid: false\n    },\n    github: {\n      dir: void 0,\n      branch: void 0,\n      repo: void 0,\n      owner: void 0,\n      edit: false\n    }\n  }\n});\n",
-      "start": 1708195459453,
-      "end": 1708195459454,
+      "start": 1708210058101,
+      "end": 1708210058103,
       "order": "normal",
       "sourcemaps": "{\n  \"version\": 3,\n  \"sources\": [\"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/app.config.ts\"],\n  \"sourcesContent\": [\"export default defineAppConfig({\\n  docus: {\\n    title: \\\"Docus\\\",\\n    description: \\\"The best place to start your documentation.\\\",\\n    url: \\\"https://docus.dev\\\",\\n    image: \\\"https://user-images.githubusercontent.com/904724/185365452-87b7ca7b-6030-4813-a2db-5e65c785bf88.png\\\",\\n    socials: {},\\n    layout: \\\"default\\\",\\n    header: {\\n      title: \\\"\\\",\\n      logo: false,\\n      showLinkIcon: false,\\n      fluid: false,\\n      exclude: []\\n    },\\n    aside: {\\n      level: 0,\\n      collapsed: false,\\n      exclude: []\\n    },\\n    footer: {\\n      credits: {\\n        icon: \\\"IconDocus\\\",\\n        text: \\\"Powered by Docus\\\",\\n        href: \\\"https://docus.dev\\\"\\n      },\\n      textLinks: [],\\n      iconLinks: [],\\n      fluid: false\\n    },\\n    github: {\\n      dir: void 0,\\n      branch: void 0,\\n      repo: void 0,\\n      owner: void 0,\\n      edit: false\\n    }\\n  }\\n});\\n\"],\n  \"mappings\": \"AAAA,eAAe,gBAAgB;AAAA,EAC7B,OAAO;AAAA,IACL,OAAO;AAAA,IACP,aAAa;AAAA,IACb,KAAK;AAAA,IACL,OAAO;AAAA,IACP,SAAS,CAAC;AAAA,IACV,QAAQ;AAAA,IACR,QAAQ;AAAA,MACN,OAAO;AAAA,MACP,MAAM;AAAA,MACN,cAAc;AAAA,MACd,OAAO;AAAA,MACP,SAAS,CAAC;AAAA,IACZ;AAAA,IACA,OAAO;AAAA,MACL,OAAO;AAAA,MACP,WAAW;AAAA,MACX,SAAS,CAAC;AAAA,IACZ;AAAA,IACA,QAAQ;AAAA,MACN,SAAS;AAAA,QACP,MAAM;AAAA,QACN,MAAM;AAAA,QACN,MAAM;AAAA,MACR;AAAA,MACA,WAAW,CAAC;AAAA,MACZ,WAAW,CAAC;AAAA,MACZ,OAAO;AAAA,IACT;AAAA,IACA,QAAQ;AAAA,MACN,KAAK;AAAA,MACL,QAAQ;AAAA,MACR,MAAM;AAAA,MACN,OAAO;AAAA,MACP,MAAM;AAAA,IACR;AAAA,EACF;AACF,CAAC;\",\n  \"names\": []\n}\n"
     },
     {
       "name": "vite:css-post",
-      "start": 1708195459454,
-      "end": 1708195459454,
+      "start": 1708210058103,
+      "end": 1708210058103,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708195459454,
-      "end": 1708195459454,
+      "start": 1708210058103,
+      "end": 1708210058103,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708195459454,
-      "end": 1708195459454,
+      "start": 1708210058103,
+      "end": 1708210058103,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708195459454,
-      "end": 1708195459455,
+      "start": 1708210058103,
+      "end": 1708210058103,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708195459455,
-      "end": 1708195459455,
+      "start": 1708210058103,
+      "end": 1708210058103,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708195459455,
-      "end": 1708195459455,
+      "start": 1708210058103,
+      "end": 1708210058103,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708195459455,
-      "end": 1708195459455,
+      "start": 1708210058103,
+      "end": 1708210058103,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708195459455,
-      "end": 1708195459455,
+      "start": 1708210058103,
+      "end": 1708210058103,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708195459455,
-      "end": 1708195459455,
+      "start": 1708210058103,
+      "end": 1708210058103,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { defineAppConfig } from '#app/nuxt';\nexport default defineAppConfig({\n  docus: {\n    title: \"Docus\",\n    description: \"The best place to start your documentation.\",\n    url: \"https://docus.dev\",\n    image: \"https://user-images.githubusercontent.com/904724/185365452-87b7ca7b-6030-4813-a2db-5e65c785bf88.png\",\n    socials: {},\n    layout: \"default\",\n    header: {\n      title: \"\",\n      logo: false,\n      showLinkIcon: false,\n      fluid: false,\n      exclude: []\n    },\n    aside: {\n      level: 0,\n      collapsed: false,\n      exclude: []\n    },\n    footer: {\n      credits: {\n        icon: \"IconDocus\",\n        text: \"Powered by Docus\",\n        href: \"https://docus.dev\"\n      },\n      textLinks: [],\n      iconLinks: [],\n      fluid: false\n    },\n    github: {\n      dir: void 0,\n      branch: void 0,\n      repo: void 0,\n      owner: void 0,\n      edit: false\n    }\n  }\n});\n",
-      "start": 1708195459455,
-      "end": 1708195459455,
+      "start": 1708210058103,
+      "end": 1708210058104,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -234,8 +234,8 @@
     {
       "name": "nuxt:imports-transform",
       "result": "import { defineAppConfig } from '#app/nuxt';\nexport default defineAppConfig({\n  docus: {\n    title: \"Docus\",\n    description: \"The best place to start your documentation.\",\n    url: \"https://docus.dev\",\n    image: \"https://user-images.githubusercontent.com/904724/185365452-87b7ca7b-6030-4813-a2db-5e65c785bf88.png\",\n    socials: {},\n    layout: \"default\",\n    header: {\n      title: \"\",\n      logo: false,\n      showLinkIcon: false,\n      fluid: false,\n      exclude: []\n    },\n    aside: {\n      level: 0,\n      collapsed: false,\n      exclude: []\n    },\n    footer: {\n      credits: {\n        icon: \"IconDocus\",\n        text: \"Powered by Docus\",\n        href: \"https://docus.dev\"\n      },\n      textLinks: [],\n      iconLinks: [],\n      fluid: false\n    },\n    github: {\n      dir: void 0,\n      branch: void 0,\n      repo: void 0,\n      owner: void 0,\n      edit: false\n    }\n  }\n});\n",
-      "start": 1708195459455,
-      "end": 1708195459455,
+      "start": 1708210058103,
+      "end": 1708210058104,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -248,56 +248,56 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1708195459455,
-      "end": 1708195459455,
+      "start": 1708210058104,
+      "end": 1708210058104,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708195459455,
-      "end": 1708195459455,
+      "start": 1708210058104,
+      "end": 1708210058104,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708195459455,
-      "end": 1708195459455,
+      "start": 1708210058104,
+      "end": 1708210058104,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708195459455,
-      "end": 1708195459455,
+      "start": 1708210058104,
+      "end": 1708210058104,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1708195459455,
-      "end": 1708195459455,
+      "start": 1708210058104,
+      "end": 1708210058104,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1708195459455,
-      "end": 1708195459455,
+      "start": 1708210058104,
+      "end": 1708210058104,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708195459455,
-      "end": 1708195459455,
+      "start": 1708210058104,
+      "end": 1708210058104,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708195459455,
-      "end": 1708195459455,
+      "start": 1708210058104,
+      "end": 1708210058104,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708195459455,
-      "end": 1708195459455,
+      "start": 1708210058104,
+      "end": 1708210058104,
       "order": "normal"
     }
   ]
