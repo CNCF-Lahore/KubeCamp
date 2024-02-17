@@ -4,51 +4,51 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, createVNode as _createVNode, toDisplayString as _toDisplayString, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, createElementVNode as _createElementVNode, withCtx as _withCtx, createBlock as _createBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-30e1aea1\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = {\n  key: 0,\n  class: \"docs-prev-next\"\n}\nconst _hoisted_2 = { class: \"wrapper\" }\nconst _hoisted_3 = {\n  key: 0,\n  class: \"directory\"\n}\nconst _hoisted_4 = { class: \"title\" }\nconst _hoisted_5 = { key: 1 }\nconst _hoisted_6 = { class: \"wrapper\" }\nconst _hoisted_7 = {\n  key: 0,\n  class: \"directory\"\n}\nconst _hoisted_8 = { class: \"title\" }\n\nimport { upperFirst } from 'scule'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'DocsPrevNext',\n  setup(__props) {\n\nconst { prev, next, navigation } = useContent()\nconst { navDirFromPath } = useContentHelpers()\n\nconst directory = (link: any) => {\n  const nav = navDirFromPath(link._path, navigation.value || [])\n\n  if (nav && nav[0]) {\n    return nav[0]?._path ?? ''\n  } else {\n    const dirs = link.split('/')\n    const directory = dirs.length > 1 ? dirs[dirs.length - 2] : ''\n    return directory.split('-').map(upperFirst).join(' ')\n  }\n}\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_Icon = _resolveComponent(\"Icon\")!\n  const _component_NuxtLink = _resolveComponent(\"NuxtLink\")!\n\n  return (_unref(prev) || _unref(next))\n    ? (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        (_unref(prev) && _unref(prev)._path)\n          ? (_openBlock(), _createBlock(_component_NuxtLink, {\n              key: 0,\n              to: _unref(prev)._path,\n              class: \"prev\"\n            }, {\n              default: _withCtx(() => [\n                _createVNode(_component_Icon, {\n                  name: \"heroicons-outline:arrow-sm-left\",\n                  class: \"icon\"\n                }),\n                _createElementVNode(\"div\", _hoisted_2, [\n                  (directory(_unref(prev)._path))\n                    ? (_openBlock(), _createElementBlock(\"span\", _hoisted_3, _toDisplayString(directory(_unref(prev)._path)), 1))\n                    : _createCommentVNode(\"\", true),\n                  _createElementVNode(\"span\", _hoisted_4, _toDisplayString(_unref(prev).title), 1)\n                ])\n              ]),\n              _: 1\n            }, 8, [\"to\"]))\n          : (_openBlock(), _createElementBlock(\"span\", _hoisted_5)),\n        (_unref(next) && _unref(next)._path)\n          ? (_openBlock(), _createBlock(_component_NuxtLink, {\n              key: 2,\n              to: _unref(next)._path,\n              class: \"next\"\n            }, {\n              default: _withCtx(() => [\n                _createElementVNode(\"div\", _hoisted_6, [\n                  (directory(_unref(next)._path))\n                    ? (_openBlock(), _createElementBlock(\"span\", _hoisted_7, _toDisplayString(directory(_unref(next)._path)), 1))\n                    : _createCommentVNode(\"\", true),\n                  _createElementVNode(\"span\", _hoisted_8, _toDisplayString(_unref(next).title), 1)\n                ]),\n                _createVNode(_component_Icon, {\n                  name: \"heroicons-outline:arrow-sm-right\",\n                  class: \"icon\"\n                })\n              ]),\n              _: 1\n            }, 8, [\"to\"]))\n          : _createCommentVNode(\"\", true)\n      ]))\n    : _createCommentVNode(\"\", true)\n}\n}\n\n})",
-      "start": 1708087952142,
-      "end": 1708087952142
+      "start": 1708178208519,
+      "end": 1708178208519
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708087952142,
-      "end": 1708087952142,
+      "start": 1708178208523,
+      "end": 1708178208523,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708087952148,
-      "end": 1708087952148,
+      "start": 1708178208530,
+      "end": 1708178208531,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, createVNode as _createVNode, toDisplayString as _toDisplayString, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, createElementVNode as _createElementVNode, withCtx as _withCtx, createBlock as _createBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-30e1aea1\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = {\n  key: 0,\n  class: \"docs-prev-next\"\n}\nconst _hoisted_2 = { class: \"wrapper\" }\nconst _hoisted_3 = {\n  key: 0,\n  class: \"directory\"\n}\nconst _hoisted_4 = { class: \"title\" }\nconst _hoisted_5 = { key: 1 }\nconst _hoisted_6 = { class: \"wrapper\" }\nconst _hoisted_7 = {\n  key: 0,\n  class: \"directory\"\n}\nconst _hoisted_8 = { class: \"title\" }\n\nimport { upperFirst } from 'scule'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'DocsPrevNext',\n  setup(__props) {\n\nconst { prev, next, navigation } = useContent()\nconst { navDirFromPath } = useContentHelpers()\n\nconst directory = (link: any) => {\n  const nav = navDirFromPath(link._path, navigation.value || [])\n\n  if (nav && nav[0]) {\n    return nav[0]?._path ?? ''\n  } else {\n    const dirs = link.split('/')\n    const directory = dirs.length > 1 ? dirs[dirs.length - 2] : ''\n    return directory.split('-').map(upperFirst).join(' ')\n  }\n}\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_Icon = _resolveComponent(\"Icon\")!\n  const _component_NuxtLink = _resolveComponent(\"NuxtLink\")!\n\n  return (_unref(prev) || _unref(next))\n    ? (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        (_unref(prev) && _unref(prev)._path)\n          ? (_openBlock(), _createBlock(_component_NuxtLink, {\n              key: 0,\n              to: _unref(prev)._path,\n              class: \"prev\"\n            }, {\n              default: _withCtx(() => [\n                _createVNode(_component_Icon, {\n                  name: \"heroicons-outline:arrow-sm-left\",\n                  class: \"icon\"\n                }),\n                _createElementVNode(\"div\", _hoisted_2, [\n                  (directory(_unref(prev)._path))\n                    ? (_openBlock(), _createElementBlock(\"span\", _hoisted_3, _toDisplayString(directory(_unref(prev)._path)), 1))\n                    : _createCommentVNode(\"\", true),\n                  _createElementVNode(\"span\", _hoisted_4, _toDisplayString(_unref(prev).title), 1)\n                ])\n              ]),\n              _: 1\n            }, 8, [\"to\"]))\n          : (_openBlock(), _createElementBlock(\"span\", _hoisted_5)),\n        (_unref(next) && _unref(next)._path)\n          ? (_openBlock(), _createBlock(_component_NuxtLink, {\n              key: 2,\n              to: _unref(next)._path,\n              class: \"next\"\n            }, {\n              default: _withCtx(() => [\n                _createElementVNode(\"div\", _hoisted_6, [\n                  (directory(_unref(next)._path))\n                    ? (_openBlock(), _createElementBlock(\"span\", _hoisted_7, _toDisplayString(directory(_unref(next)._path)), 1))\n                    : _createCommentVNode(\"\", true),\n                  _createElementVNode(\"span\", _hoisted_8, _toDisplayString(_unref(next).title), 1)\n                ]),\n                _createVNode(_component_Icon, {\n                  name: \"heroicons-outline:arrow-sm-right\",\n                  class: \"icon\"\n                })\n              ]),\n              _: 1\n            }, 8, [\"to\"]))\n          : _createCommentVNode(\"\", true)\n      ]))\n    : _createCommentVNode(\"\", true)\n}\n}\n\n})",
-      "start": 1708087952148,
-      "end": 1708087952149,
+      "start": 1708178208537,
+      "end": 1708178208537,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708087952149,
-      "end": 1708087952149,
+      "start": 1708178208537,
+      "end": 1708178208537,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708087952149,
-      "end": 1708087952149,
+      "start": 1708178208538,
+      "end": 1708178208538,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708087952149,
-      "end": 1708087952149,
+      "start": 1708178208538,
+      "end": 1708178208538,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, createVNode as _createVNode, toDisplayString as _toDisplayString, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, createElementVNode as _createElementVNode, withCtx as _withCtx, createBlock as _createBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-30e1aea1\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = {\n  key: 0,\n  class: \"docs-prev-next\"\n};\nconst _hoisted_2 = { class: \"wrapper\" };\nconst _hoisted_3 = {\n  key: 0,\n  class: \"directory\"\n};\nconst _hoisted_4 = { class: \"title\" };\nconst _hoisted_5 = { key: 1 };\nconst _hoisted_6 = { class: \"wrapper\" };\nconst _hoisted_7 = {\n  key: 0,\n  class: \"directory\"\n};\nconst _hoisted_8 = { class: \"title\" };\nimport { upperFirst } from \"scule\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"DocsPrevNext\",\n  setup(__props) {\n    const { prev, next, navigation } = useContent();\n    const { navDirFromPath } = useContentHelpers();\n    const directory = (link) => {\n      const nav = navDirFromPath(link._path, navigation.value || []);\n      if (nav && nav[0]) {\n        return nav[0]?._path ?? \"\";\n      } else {\n        const dirs = link.split(\"/\");\n        const directory2 = dirs.length > 1 ? dirs[dirs.length - 2] : \"\";\n        return directory2.split(\"-\").map(upperFirst).join(\" \");\n      }\n    };\n    return (_ctx, _cache) => {\n      const _component_Icon = _resolveComponent(\"Icon\");\n      const _component_NuxtLink = _resolveComponent(\"NuxtLink\");\n      return _unref(prev) || _unref(next) ? (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _unref(prev) && _unref(prev)._path ? (_openBlock(), _createBlock(_component_NuxtLink, {\n          key: 0,\n          to: _unref(prev)._path,\n          class: \"prev\"\n        }, {\n          default: _withCtx(() => [\n            _createVNode(_component_Icon, {\n              name: \"heroicons-outline:arrow-sm-left\",\n              class: \"icon\"\n            }),\n            _createElementVNode(\"div\", _hoisted_2, [\n              directory(_unref(prev)._path) ? (_openBlock(), _createElementBlock(\"span\", _hoisted_3, _toDisplayString(directory(_unref(prev)._path)), 1)) : _createCommentVNode(\"\", true),\n              _createElementVNode(\"span\", _hoisted_4, _toDisplayString(_unref(prev).title), 1)\n            ])\n          ]),\n          _: 1\n        }, 8, [\"to\"])) : (_openBlock(), _createElementBlock(\"span\", _hoisted_5)),\n        _unref(next) && _unref(next)._path ? (_openBlock(), _createBlock(_component_NuxtLink, {\n          key: 2,\n          to: _unref(next)._path,\n          class: \"next\"\n        }, {\n          default: _withCtx(() => [\n            _createElementVNode(\"div\", _hoisted_6, [\n              directory(_unref(next)._path) ? (_openBlock(), _createElementBlock(\"span\", _hoisted_7, _toDisplayString(directory(_unref(next)._path)), 1)) : _createCommentVNode(\"\", true),\n              _createElementVNode(\"span\", _hoisted_8, _toDisplayString(_unref(next).title), 1)\n            ]),\n            _createVNode(_component_Icon, {\n              name: \"heroicons-outline:arrow-sm-right\",\n              class: \"icon\"\n            })\n          ]),\n          _: 1\n        }, 8, [\"to\"])) : _createCommentVNode(\"\", true)\n      ])) : _createCommentVNode(\"\", true);\n    };\n  }\n});\n",
-      "start": 1708087952149,
-      "end": 1708087952809,
+      "start": 1708178208538,
+      "end": 1708178208990,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -66,123 +66,123 @@
     },
     {
       "name": "vite:json",
-      "start": 1708087952809,
-      "end": 1708087952809,
+      "start": 1708178208991,
+      "end": 1708178208991,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708087952810,
-      "end": 1708087952810,
+      "start": 1708178208991,
+      "end": 1708178208991,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708087952810,
-      "end": 1708087952810,
+      "start": 1708178208991,
+      "end": 1708178208991,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708087952810,
-      "end": 1708087952810,
+      "start": 1708178208991,
+      "end": 1708178208991,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708087952810,
-      "end": 1708087952810,
+      "start": 1708178208991,
+      "end": 1708178208991,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708087952810,
-      "end": 1708087952810,
+      "start": 1708178208991,
+      "end": 1708178208991,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1708087952810,
-      "end": 1708087952810,
+      "start": 1708178208991,
+      "end": 1708178208991,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708087952810,
-      "end": 1708087952810,
+      "start": 1708178208991,
+      "end": 1708178208991,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708087952810,
-      "end": 1708087952810,
+      "start": 1708178208991,
+      "end": 1708178208992,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708087952811,
-      "end": 1708087952811,
+      "start": 1708178208992,
+      "end": 1708178208992,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708087952811,
-      "end": 1708087952811,
+      "start": 1708178208992,
+      "end": 1708178208992,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708087952811,
-      "end": 1708087952811,
+      "start": 1708178208992,
+      "end": 1708178208992,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708087952811,
-      "end": 1708087952811,
+      "start": 1708178208992,
+      "end": 1708178208992,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708087952811,
-      "end": 1708087952811,
+      "start": 1708178208992,
+      "end": 1708178208992,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708087952811,
-      "end": 1708087952811,
+      "start": 1708178208992,
+      "end": 1708178208992,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708087952811,
-      "end": 1708087952811,
+      "start": 1708178208992,
+      "end": 1708178208992,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708087952811,
-      "end": 1708087952811,
+      "start": 1708178208992,
+      "end": 1708178208992,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708087952811,
-      "end": 1708087952811,
+      "start": 1708178208992,
+      "end": 1708178208992,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708087952815,
-      "end": 1708087952815,
+      "start": 1708178208994,
+      "end": 1708178208994,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { useContent } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/composables/content';\nimport { useContentHelpers } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/composables/helpers';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, createVNode as _createVNode, toDisplayString as _toDisplayString, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, createElementVNode as _createElementVNode, withCtx as _withCtx, createBlock as _createBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-30e1aea1\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = {\n  key: 0,\n  class: \"docs-prev-next\"\n};\nconst _hoisted_2 = { class: \"wrapper\" };\nconst _hoisted_3 = {\n  key: 0,\n  class: \"directory\"\n};\nconst _hoisted_4 = { class: \"title\" };\nconst _hoisted_5 = { key: 1 };\nconst _hoisted_6 = { class: \"wrapper\" };\nconst _hoisted_7 = {\n  key: 0,\n  class: \"directory\"\n};\nconst _hoisted_8 = { class: \"title\" };\nimport { upperFirst } from \"scule\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"DocsPrevNext\",\n  setup(__props) {\n    const { prev, next, navigation } = useContent();\n    const { navDirFromPath } = useContentHelpers();\n    const directory = (link) => {\n      const nav = navDirFromPath(link._path, navigation.value || []);\n      if (nav && nav[0]) {\n        return nav[0]?._path ?? \"\";\n      } else {\n        const dirs = link.split(\"/\");\n        const directory2 = dirs.length > 1 ? dirs[dirs.length - 2] : \"\";\n        return directory2.split(\"-\").map(upperFirst).join(\" \");\n      }\n    };\n    return (_ctx, _cache) => {\n      const _component_Icon = _resolveComponent(\"Icon\");\n      const _component_NuxtLink = _resolveComponent(\"NuxtLink\");\n      return _unref(prev) || _unref(next) ? (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _unref(prev) && _unref(prev)._path ? (_openBlock(), _createBlock(_component_NuxtLink, {\n          key: 0,\n          to: _unref(prev)._path,\n          class: \"prev\"\n        }, {\n          default: _withCtx(() => [\n            _createVNode(_component_Icon, {\n              name: \"heroicons-outline:arrow-sm-left\",\n              class: \"icon\"\n            }),\n            _createElementVNode(\"div\", _hoisted_2, [\n              directory(_unref(prev)._path) ? (_openBlock(), _createElementBlock(\"span\", _hoisted_3, _toDisplayString(directory(_unref(prev)._path)), 1)) : _createCommentVNode(\"\", true),\n              _createElementVNode(\"span\", _hoisted_4, _toDisplayString(_unref(prev).title), 1)\n            ])\n          ]),\n          _: 1\n        }, 8, [\"to\"])) : (_openBlock(), _createElementBlock(\"span\", _hoisted_5)),\n        _unref(next) && _unref(next)._path ? (_openBlock(), _createBlock(_component_NuxtLink, {\n          key: 2,\n          to: _unref(next)._path,\n          class: \"next\"\n        }, {\n          default: _withCtx(() => [\n            _createElementVNode(\"div\", _hoisted_6, [\n              directory(_unref(next)._path) ? (_openBlock(), _createElementBlock(\"span\", _hoisted_7, _toDisplayString(directory(_unref(next)._path)), 1)) : _createCommentVNode(\"\", true),\n              _createElementVNode(\"span\", _hoisted_8, _toDisplayString(_unref(next).title), 1)\n            ]),\n            _createVNode(_component_Icon, {\n              name: \"heroicons-outline:arrow-sm-right\",\n              class: \"icon\"\n            })\n          ]),\n          _: 1\n        }, 8, [\"to\"])) : _createCommentVNode(\"\", true)\n      ])) : _createCommentVNode(\"\", true);\n    };\n  }\n});\n",
-      "start": 1708087952815,
-      "end": 1708087952822,
+      "start": 1708178208994,
+      "end": 1708178209000,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -195,51 +195,51 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1708087952823,
-      "end": 1708087952823,
+      "start": 1708178209001,
+      "end": 1708178209001,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708087952823,
-      "end": 1708087952823,
+      "start": 1708178209001,
+      "end": 1708178209001,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1708087952823,
-      "end": 1708087952823,
+      "start": 1708178209001,
+      "end": 1708178209001,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1708087952823,
-      "end": 1708087952823,
+      "start": 1708178209001,
+      "end": 1708178209001,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
       "result": "import { default as __nuxt_component_0 } from \"/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/Icon.vue\";\nimport { default as __nuxt_component_1 } from \"/workspace/Kubernetes-Bootcamp/node_modules/nuxt/dist/app/components/nuxt-link\";\nimport { useContent } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/composables/content';\nimport { useContentHelpers } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/composables/helpers';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, createVNode as _createVNode, toDisplayString as _toDisplayString, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, createElementVNode as _createElementVNode, withCtx as _withCtx, createBlock as _createBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-30e1aea1\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = {\n  key: 0,\n  class: \"docs-prev-next\"\n};\nconst _hoisted_2 = { class: \"wrapper\" };\nconst _hoisted_3 = {\n  key: 0,\n  class: \"directory\"\n};\nconst _hoisted_4 = { class: \"title\" };\nconst _hoisted_5 = { key: 1 };\nconst _hoisted_6 = { class: \"wrapper\" };\nconst _hoisted_7 = {\n  key: 0,\n  class: \"directory\"\n};\nconst _hoisted_8 = { class: \"title\" };\nimport { upperFirst } from \"scule\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"DocsPrevNext\",\n  setup(__props) {\n    const { prev, next, navigation } = useContent();\n    const { navDirFromPath } = useContentHelpers();\n    const directory = (link) => {\n      const nav = navDirFromPath(link._path, navigation.value || []);\n      if (nav && nav[0]) {\n        return nav[0]?._path ?? \"\";\n      } else {\n        const dirs = link.split(\"/\");\n        const directory2 = dirs.length > 1 ? dirs[dirs.length - 2] : \"\";\n        return directory2.split(\"-\").map(upperFirst).join(\" \");\n      }\n    };\n    return (_ctx, _cache) => {\n      const _component_Icon = __nuxt_component_0;\n      const _component_NuxtLink = __nuxt_component_1;\n      return _unref(prev) || _unref(next) ? (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _unref(prev) && _unref(prev)._path ? (_openBlock(), _createBlock(_component_NuxtLink, {\n          key: 0,\n          to: _unref(prev)._path,\n          class: \"prev\"\n        }, {\n          default: _withCtx(() => [\n            _createVNode(_component_Icon, {\n              name: \"heroicons-outline:arrow-sm-left\",\n              class: \"icon\"\n            }),\n            _createElementVNode(\"div\", _hoisted_2, [\n              directory(_unref(prev)._path) ? (_openBlock(), _createElementBlock(\"span\", _hoisted_3, _toDisplayString(directory(_unref(prev)._path)), 1)) : _createCommentVNode(\"\", true),\n              _createElementVNode(\"span\", _hoisted_4, _toDisplayString(_unref(prev).title), 1)\n            ])\n          ]),\n          _: 1\n        }, 8, [\"to\"])) : (_openBlock(), _createElementBlock(\"span\", _hoisted_5)),\n        _unref(next) && _unref(next)._path ? (_openBlock(), _createBlock(_component_NuxtLink, {\n          key: 2,\n          to: _unref(next)._path,\n          class: \"next\"\n        }, {\n          default: _withCtx(() => [\n            _createElementVNode(\"div\", _hoisted_6, [\n              directory(_unref(next)._path) ? (_openBlock(), _createElementBlock(\"span\", _hoisted_7, _toDisplayString(directory(_unref(next)._path)), 1)) : _createCommentVNode(\"\", true),\n              _createElementVNode(\"span\", _hoisted_8, _toDisplayString(_unref(next).title), 1)\n            ]),\n            _createVNode(_component_Icon, {\n              name: \"heroicons-outline:arrow-sm-right\",\n              class: \"icon\"\n            })\n          ]),\n          _: 1\n        }, 8, [\"to\"])) : _createCommentVNode(\"\", true)\n      ])) : _createCommentVNode(\"\", true);\n    };\n  }\n});\n",
-      "start": 1708087952824,
-      "end": 1708087952824,
+      "start": 1708178209001,
+      "end": 1708178209002,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708087952824,
-      "end": 1708087952825,
+      "start": 1708178209002,
+      "end": 1708178209002,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708087952825,
-      "end": 1708087952825,
+      "start": 1708178209002,
+      "end": 1708178209002,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708087952825,
-      "end": 1708087952825,
+      "start": 1708178209002,
+      "end": 1708178209002,
       "order": "normal"
     }
   ]

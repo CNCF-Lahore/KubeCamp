@@ -4,69 +4,69 @@
     {
       "name": "vite:load-fallback",
       "result": "<script setup lang=\"ts\">\nimport { upperFirst } from 'scule'\n\nconst { prev, next, navigation } = useContent()\nconst { navDirFromPath } = useContentHelpers()\n\nconst directory = (link: any) => {\n  const nav = navDirFromPath(link._path, navigation.value || [])\n\n  if (nav && nav[0]) {\n    return nav[0]?._path ?? ''\n  } else {\n    const dirs = link.split('/')\n    const directory = dirs.length > 1 ? dirs[dirs.length - 2] : ''\n    return directory.split('-').map(upperFirst).join(' ')\n  }\n}\n</script>\n\n<template>\n  <div\n    v-if=\"prev || next\"\n    class=\"docs-prev-next\"\n  >\n    <NuxtLink\n      v-if=\"prev && prev._path\"\n      :to=\"prev._path\"\n      class=\"prev\"\n    >\n      <Icon\n        name=\"heroicons-outline:arrow-sm-left\"\n        class=\"icon\"\n      />\n      <div class=\"wrapper\">\n        <span\n          v-if=\"directory(prev._path)\"\n          class=\"directory\"\n        >\n          {{ directory(prev._path) }}\n        </span>\n        <span class=\"title\">{{ prev.title }}</span>\n      </div>\n    </NuxtLink>\n\n    <span v-else />\n\n    <NuxtLink\n      v-if=\"next && next._path\"\n      :to=\"next._path\"\n      class=\"next\"\n    >\n      <div class=\"wrapper\">\n        <span\n          v-if=\"directory(next._path)\"\n          class=\"directory\"\n        >\n          {{ directory(next._path) }}\n        </span>\n        <span class=\"title\">{{ next.title }}</span>\n      </div>\n      <Icon\n        name=\"heroicons-outline:arrow-sm-right\"\n        class=\"icon\"\n      />\n    </NuxtLink>\n  </div>\n</template>\n\n<style scoped lang=\"ts\">\ncss({\n  '.docs-prev-next': {\n    display: 'flex',\n    flexDirection: 'column',\n    justifyContent: 'space-between',\n    gap: '{space.3}',\n    '@sm': {\n      flexDirection: 'row',\n      alignItems: 'center'\n    },\n    a: {\n      position: 'relative',\n      minWidth: '0px',\n      padding: '{space.3}',\n      border: '1px solid {elements.border.primary.static}',\n      borderRadius: '{radii.md}',\n      '&:hover': {\n        backgroundColor: '{color.gray.50}',\n        borderColor: '{color.gray.50}',\n        color: '{color.primary.500}',\n      },\n      '@dark': {\n        '&:hover': {\n          backgroundColor: '{color.gray.900}',\n          borderColor: '{color.gray.900}',\n        }\n      },\n      '&.prev': {\n        textAlign: 'left',\n        display: 'flex',\n        gap: '{space.3}',\n        '.directory': {\n          display: 'block',\n          marginBottom: '{space.1}',\n          fontSize: '{text.xs.fontSize}',\n          lineHeight: '{text.xs.lineHeight}',\n          fontWeight: '{fontWeight.medium}',\n          color: '{color.gray.500}',\n          truncate: true\n        },\n        '@sm': {\n          '.wrapper': {\n            alignItems: 'flex-end'\n          }\n        }\n      },\n      '&.next': {\n        textAlign: 'right',\n        display: 'flex',\n        justifyContent: 'flex-end',\n        gap: '{space.3}',\n        '.directory': {\n          display: 'block',\n          marginBottom: '{space.1}',\n          fontSize: '{text.xs.fontSize}',\n          lineHeight: '{text.xs.lineHeight}',\n          fontWeight: '{fontWeight.medium}',\n          color: '{color.gray.500}',\n          truncate: true\n        },\n        '@sm': {\n          '.wrapper': {\n            alignItems: 'flex-start'\n          }\n        }\n      },\n      '.wrapper': {\n        display: 'flex',\n        flexDirection: 'column',\n      },\n      '.icon': {\n        alignSelf: 'flex-end',\n        flexShrink: 0,\n        width: '{space.5}',\n        height: '{space.5}'\n      },\n      '.title': {\n        flex: '1 1 0%',\n        fontWeight: '{fontWeight.medium}',\n        lineHeight: '{lead.5}',\n        truncate: true\n      }\n    }\n  }\n})\n</style>\n",
-      "start": 1708087950424,
-      "end": 1708087950582,
+      "start": 1708178207067,
+      "end": 1708178207221,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708087950582,
-      "end": 1708087950582,
+      "start": 1708178207221,
+      "end": 1708178207221,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708087950582,
-      "end": 1708087950582,
+      "start": 1708178207222,
+      "end": 1708178207222,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
-      "start": 1708087950582,
-      "end": 1708087950582,
+      "start": 1708178207222,
+      "end": 1708178207222,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708087950582,
-      "end": 1708087950582,
+      "start": 1708178207222,
+      "end": 1708178207222,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708087950582,
-      "end": 1708087950582,
+      "start": 1708178207222,
+      "end": 1708178207222,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708087950582,
-      "end": 1708087950582,
+      "start": 1708178207222,
+      "end": 1708178207222,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1708087950582,
-      "end": 1708087950582,
+      "start": 1708178207222,
+      "end": 1708178207222,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1708087950582,
-      "end": 1708087950582,
+      "start": 1708178207222,
+      "end": 1708178207222,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708087950582,
-      "end": 1708087950582,
+      "start": 1708178207222,
+      "end": 1708178207222,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "import _sfc_main from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsPrevNext.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsPrevNext.vue?vue&type=script&setup=true&lang.ts\";\nimport \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsPrevNext.vue?vue&type=style&index=0&scoped=e378d83b&lang.ts\";\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"__scopeId\", \"data-v-e378d83b\"]]);\n",
-      "start": 1708087950582,
-      "end": 1708087950620,
+      "start": 1708178207222,
+      "end": 1708178207257,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -74,156 +74,156 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708087950620,
-      "end": 1708087950620,
+      "start": 1708178207257,
+      "end": 1708178207257,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708087950620,
-      "end": 1708087950620,
+      "start": 1708178207257,
+      "end": 1708178207257,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708087950620,
-      "end": 1708087950620,
+      "start": 1708178207257,
+      "end": 1708178207257,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1708087950621,
-      "end": 1708087950621,
+      "start": 1708178207257,
+      "end": 1708178207257,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
       "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsPrevNext.vue\").then(r => r.default))",
-      "start": 1708087950621,
-      "end": 1708087950621,
+      "start": 1708178207258,
+      "end": 1708178207258,
       "order": "normal",
       "sourcemaps": null
     },
     {
       "name": "replace",
-      "start": 1708087950622,
-      "end": 1708087950622,
+      "start": 1708178207258,
+      "end": 1708178207258,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708087950622,
-      "end": 1708087950622,
+      "start": 1708178207258,
+      "end": 1708178207258,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708087950622,
-      "end": 1708087950622,
+      "start": 1708178207258,
+      "end": 1708178207258,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708087950622,
-      "end": 1708087950622,
+      "start": 1708178207258,
+      "end": 1708178207259,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708087950622,
-      "end": 1708087950622,
+      "start": 1708178207259,
+      "end": 1708178207259,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708087950622,
-      "end": 1708087950622,
+      "start": 1708178207259,
+      "end": 1708178207259,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708087950622,
-      "end": 1708087950622,
+      "start": 1708178207259,
+      "end": 1708178207259,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708087950622,
-      "end": 1708087950622,
+      "start": 1708178207259,
+      "end": 1708178207259,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708087950622,
-      "end": 1708087950622,
+      "start": 1708178207259,
+      "end": 1708178207259,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708087950622,
-      "end": 1708087950622,
+      "start": 1708178207259,
+      "end": 1708178207259,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708087950623,
-      "end": 1708087950623,
+      "start": 1708178207259,
+      "end": 1708178207259,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708087950623,
-      "end": 1708087950624,
+      "start": 1708178207259,
+      "end": 1708178207261,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708087950625,
-      "end": 1708087950625,
+      "start": 1708178207261,
+      "end": 1708178207261,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708087950625,
-      "end": 1708087950625,
+      "start": 1708178207261,
+      "end": 1708178207262,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1708087950625,
-      "end": 1708087950625,
+      "start": 1708178207262,
+      "end": 1708178207262,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1708087950625,
-      "end": 1708087950626,
+      "start": 1708178207262,
+      "end": 1708178207262,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1708087950626,
-      "end": 1708087950626,
+      "start": 1708178207262,
+      "end": 1708178207262,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708087950626,
-      "end": 1708087950626,
+      "start": 1708178207262,
+      "end": 1708178207263,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
       "result": "import { __vitePreload } from \"\u0000vite/preload-helper.js\";import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => __vitePreload(() => import(\"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsPrevNext.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(r => r.default))",
-      "start": 1708087950626,
-      "end": 1708087950627,
+      "start": 1708178207263,
+      "end": 1708178207263,
       "order": "normal",
       "sourcemaps": null
     },
     {
       "name": "vite:reporter",
-      "start": 1708087950627,
-      "end": 1708087950627,
+      "start": 1708178207263,
+      "end": 1708178207263,
       "order": "normal"
     }
   ]

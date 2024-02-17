@@ -4,211 +4,211 @@
     {
       "name": "vite:load-fallback",
       "result": "import { reactive, computed, unref } from \"vue\";\nimport { useNuxtApp, useAsyncData } from \"#imports\";\nexport const __getComponentMeta = async () => {\n  const __metas = await import(\"#nuxt-component-meta\");\n  return __metas?.default || __metas;\n};\nexport async function useComponentMeta(componentName) {\n  const nuxtApp = useNuxtApp();\n  const _componentName = unref(componentName);\n  if (process.dev) {\n    const __componentMeta = await __getComponentMeta();\n    if (!nuxtApp._componentMeta) {\n      nuxtApp._componentMeta = reactive(__componentMeta);\n    }\n    if (_componentName) {\n      return computed(() => nuxtApp._componentMeta[_componentName]);\n    }\n    return computed(() => nuxtApp._componentMeta);\n  } else {\n    const { data } = await useAsyncData(\n      `nuxt-component-meta${_componentName ? `-${_componentName}` : \"\"}`,\n      () => {\n        return $fetch(`/api/component-meta${_componentName ? `/${_componentName}` : \"\"}`);\n      }\n    );\n    return computed(() => data.value);\n  }\n}\nif (process.dev) {\n  async function applyHMR(newConfig) {\n    const componentMetas = await useComponentMeta();\n    if (newConfig && componentMetas.value) {\n      for (const key in newConfig) {\n        componentMetas.value[key] = newConfig[key];\n      }\n      for (const key in componentMetas.value) {\n        if (!(key in newConfig)) {\n          delete componentMetas.value[key];\n        }\n      }\n    }\n  }\n  if (import.meta.hot) {\n    import.meta.hot.accept(async (newModule) => {\n      const newMetas = await newModule.__getComponentMeta();\n      applyHMR(newMetas);\n    });\n  }\n}\n",
-      "start": 1708087959220,
-      "end": 1708087959423,
+      "start": 1708178214524,
+      "end": 1708178214883,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708087959423,
-      "end": 1708087959423,
+      "start": 1708178214883,
+      "end": 1708178214883,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708087959423,
-      "end": 1708087959423,
+      "start": 1708178214883,
+      "end": 1708178214883,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708087959423,
-      "end": 1708087959423,
+      "start": 1708178214883,
+      "end": 1708178214883,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708087959423,
-      "end": 1708087959423,
+      "start": 1708178214883,
+      "end": 1708178214883,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { reactive, computed, unref } from \"vue\";\nimport { useNuxtApp, useAsyncData } from \"#imports\";\nexport const __getComponentMeta = async () => {\n  const __metas = await import(\"#nuxt-component-meta\");\n  return __metas?.default || __metas;\n};\nexport async function useComponentMeta(componentName) {\n  const nuxtApp = useNuxtApp();\n  const _componentName = unref(componentName);\n  if (process.dev) {\n    const __componentMeta = await __getComponentMeta();\n    if (!nuxtApp._componentMeta) {\n      nuxtApp._componentMeta = reactive(__componentMeta);\n    }\n    if (_componentName) {\n      return computed(() => nuxtApp._componentMeta[_componentName]);\n    }\n    return computed(() => nuxtApp._componentMeta);\n  } else {\n    const { data } = await useAsyncData(\n      `nuxt-component-meta${_componentName ? `-${_componentName}` : \"\"}`,\n      () => {\n        return $fetch(`/api/component-meta${_componentName ? `/${_componentName}` : \"\"}`);\n      }\n    );\n    return computed(() => data.value);\n  }\n}\nif (process.dev) {\n  async function applyHMR(newConfig) {\n    const componentMetas = await useComponentMeta();\n    if (newConfig && componentMetas.value) {\n      for (const key in newConfig) {\n        componentMetas.value[key] = newConfig[key];\n      }\n      for (const key in componentMetas.value) {\n        if (!(key in newConfig)) {\n          delete componentMetas.value[key];\n        }\n      }\n    }\n  }\n  if (import.meta.hot) {\n    import.meta.hot.accept(async (newModule) => {\n      const newMetas = await newModule.__getComponentMeta();\n      applyHMR(newMetas);\n    });\n  }\n}\n",
-      "start": 1708087959423,
-      "end": 1708087959423,
+      "start": 1708178214883,
+      "end": 1708178214883,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { reactive, computed, unref } from \"vue\";\nimport { useNuxtApp, useAsyncData } from \"#imports\";\nexport const __getComponentMeta = async () => {\n  const __metas = await import(\"#nuxt-component-meta\");\n  return __metas?.default || __metas;\n};\nexport async function useComponentMeta(componentName) {\n  const nuxtApp = useNuxtApp();\n  const _componentName = unref(componentName);\n  if (process.dev) {\n    const __componentMeta = await __getComponentMeta();\n    if (!nuxtApp._componentMeta) {\n      nuxtApp._componentMeta = reactive(__componentMeta);\n    }\n    if (_componentName) {\n      return computed(() => nuxtApp._componentMeta[_componentName]);\n    }\n    return computed(() => nuxtApp._componentMeta);\n  } else {\n    const { data } = await useAsyncData(\n      `nuxt-component-meta${_componentName ? `-${_componentName}` : \"\"}`,\n      () => {\n        return $fetch(`/api/component-meta${_componentName ? `/${_componentName}` : \"\"}`);\n      }\n    );\n    return computed(() => data.value);\n  }\n}\nif (process.dev) {\n  async function applyHMR(newConfig) {\n    const componentMetas = await useComponentMeta();\n    if (newConfig && componentMetas.value) {\n      for (const key in newConfig) {\n        componentMetas.value[key] = newConfig[key];\n      }\n      for (const key in componentMetas.value) {\n        if (!(key in newConfig)) {\n          delete componentMetas.value[key];\n        }\n      }\n    }\n  }\n  if (import.meta.hot) {\n    import.meta.hot.accept(async (newModule) => {\n      const newMetas = await newModule.__getComponentMeta();\n      applyHMR(newMetas);\n    });\n  }\n}\n",
-      "start": 1708087959423,
-      "end": 1708087959423,
+      "start": 1708178214883,
+      "end": 1708178214883,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708087959423,
-      "end": 1708087959423,
+      "start": 1708178214883,
+      "end": 1708178214883,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708087959423,
-      "end": 1708087959423,
+      "start": 1708178214883,
+      "end": 1708178214883,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708087959423,
-      "end": 1708087959423,
+      "start": 1708178214883,
+      "end": 1708178214883,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708087959423,
-      "end": 1708087959423,
+      "start": 1708178214883,
+      "end": 1708178214883,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1708087959423,
-      "end": 1708087959423,
+      "start": 1708178214883,
+      "end": 1708178214883,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1708087959423,
-      "end": 1708087959423,
+      "start": 1708178214883,
+      "end": 1708178214883,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708087959423,
-      "end": 1708087959423,
+      "start": 1708178214883,
+      "end": 1708178214883,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708087959423,
-      "end": 1708087959423,
+      "start": 1708178214883,
+      "end": 1708178214883,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708087959423,
-      "end": 1708087959423,
+      "start": 1708178214883,
+      "end": 1708178214883,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708087959423,
-      "end": 1708087959423,
+      "start": 1708178214883,
+      "end": 1708178214883,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708087959423,
-      "end": 1708087959423,
+      "start": 1708178214883,
+      "end": 1708178214883,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708087959423,
-      "end": 1708087959423,
+      "start": 1708178214883,
+      "end": 1708178214883,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708087959423,
-      "end": 1708087959423,
+      "start": 1708178214883,
+      "end": 1708178214883,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708087959423,
-      "end": 1708087959423,
+      "start": 1708178214883,
+      "end": 1708178214883,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708087959423,
-      "end": 1708087959423,
+      "start": 1708178214883,
+      "end": 1708178214883,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708087959423,
-      "end": 1708087959423,
+      "start": 1708178214883,
+      "end": 1708178214883,
       "order": "normal"
     },
     {
       "name": "vite:define",
       "result": "import { reactive, computed, unref } from \"vue\";\nimport { useNuxtApp, useAsyncData } from \"#imports\";\nexport const __getComponentMeta = async () => {\n  const __metas = await import(\"#nuxt-component-meta\");\n  return __metas?.default || __metas;\n};\nexport async function useComponentMeta(componentName) {\n  const nuxtApp = useNuxtApp();\n  const _componentName = unref(componentName);\n  if (false) {\n    const __componentMeta = await __getComponentMeta();\n    if (!nuxtApp._componentMeta) {\n      nuxtApp._componentMeta = reactive(__componentMeta);\n    }\n    if (_componentName) {\n      return computed(() => nuxtApp._componentMeta[_componentName]);\n    }\n    return computed(() => nuxtApp._componentMeta);\n  } else {\n    const { data } = await useAsyncData(\n      `nuxt-component-meta${_componentName ? `-${_componentName}` : \"\"}`,\n      () => {\n        return $fetch(`/api/component-meta${_componentName ? `/${_componentName}` : \"\"}`);\n      }\n    );\n    return computed(() => data.value);\n  }\n}\nif (false) {\n  async function applyHMR(newConfig) {\n    const componentMetas = await useComponentMeta();\n    if (newConfig && componentMetas.value) {\n      for (const key in newConfig) {\n        componentMetas.value[key] = newConfig[key];\n      }\n      for (const key in componentMetas.value) {\n        if (!(key in newConfig)) {\n          delete componentMetas.value[key];\n        }\n      }\n    }\n  }\n  if (void 0) {\n    (void 0).accept(async (newModule) => {\n      const newMetas = await newModule.__getComponentMeta();\n      applyHMR(newMetas);\n    });\n  }\n}\n",
-      "start": 1708087959423,
-      "end": 1708087959438,
+      "start": 1708178214883,
+      "end": 1708178214921,
       "order": "normal",
       "sourcemaps": "{\n  \"version\": 3,\n  \"sources\": [\"/workspace/Kubernetes-Bootcamp/node_modules/nuxt-component-meta/dist/runtime/composables/useComponentMeta.mjs\"],\n  \"sourcesContent\": [\"import { reactive, computed, unref } from \\\"vue\\\";\\nimport { useNuxtApp, useAsyncData } from \\\"#imports\\\";\\nexport const __getComponentMeta = async () => {\\n  const __metas = await import(\\\"#nuxt-component-meta\\\");\\n  return __metas?.default || __metas;\\n};\\nexport async function useComponentMeta(componentName) {\\n  const nuxtApp = useNuxtApp();\\n  const _componentName = unref(componentName);\\n  if (process.dev) {\\n    const __componentMeta = await __getComponentMeta();\\n    if (!nuxtApp._componentMeta) {\\n      nuxtApp._componentMeta = reactive(__componentMeta);\\n    }\\n    if (_componentName) {\\n      return computed(() => nuxtApp._componentMeta[_componentName]);\\n    }\\n    return computed(() => nuxtApp._componentMeta);\\n  } else {\\n    const { data } = await useAsyncData(\\n      `nuxt-component-meta${_componentName ? `-${_componentName}` : \\\"\\\"}`,\\n      () => {\\n        return $fetch(`/api/component-meta${_componentName ? `/${_componentName}` : \\\"\\\"}`);\\n      }\\n    );\\n    return computed(() => data.value);\\n  }\\n}\\nif (process.dev) {\\n  async function applyHMR(newConfig) {\\n    const componentMetas = await useComponentMeta();\\n    if (newConfig && componentMetas.value) {\\n      for (const key in newConfig) {\\n        componentMetas.value[key] = newConfig[key];\\n      }\\n      for (const key in componentMetas.value) {\\n        if (!(key in newConfig)) {\\n          delete componentMetas.value[key];\\n        }\\n      }\\n    }\\n  }\\n  if (import.meta.hot) {\\n    import.meta.hot.accept(async (newModule) => {\\n      const newMetas = await newModule.__getComponentMeta();\\n      applyHMR(newMetas);\\n    });\\n  }\\n}\\n\"],\n  \"mappings\": \"AAAA,SAAS,UAAU,UAAU,aAAa;AAC1C,SAAS,YAAY,oBAAoB;AAClC,aAAM,qBAAqB,YAAY;AAC5C,QAAM,UAAU,MAAM,OAAO,sBAAsB;AACnD,SAAO,SAAS,WAAW;AAC7B;AACA,sBAAsB,iBAAiB,eAAe;AACpD,QAAM,UAAU,WAAW;AAC3B,QAAM,iBAAiB,MAAM,aAAa;AAC1C,MAAI,OAAa;AACf,UAAM,kBAAkB,MAAM,mBAAmB;AACjD,QAAI,CAAC,QAAQ,gBAAgB;AAC3B,cAAQ,iBAAiB,SAAS,eAAe;AAAA,IACnD;AACA,QAAI,gBAAgB;AAClB,aAAO,SAAS,MAAM,QAAQ,eAAe,cAAc,CAAC;AAAA,IAC9D;AACA,WAAO,SAAS,MAAM,QAAQ,cAAc;AAAA,EAC9C,OAAO;AACL,UAAM,EAAE,KAAK,IAAI,MAAM;AAAA,MACrB,sBAAsB,iBAAiB,IAAI,cAAc,KAAK,EAAE;AAAA,MAChE,MAAM;AACJ,eAAO,OAAO,sBAAsB,iBAAiB,IAAI,cAAc,KAAK,EAAE,EAAE;AAAA,MAClF;AAAA,IACF;AACA,WAAO,SAAS,MAAM,KAAK,KAAK;AAAA,EAClC;AACF;AACA,IAAI,OAAa;AACf,iBAAe,SAAS,WAAW;AACjC,UAAM,iBAAiB,MAAM,iBAAiB;AAC9C,QAAI,aAAa,eAAe,OAAO;AACrC,iBAAW,OAAO,WAAW;AAC3B,uBAAe,MAAM,GAAG,IAAI,UAAU,GAAG;AAAA,MAC3C;AACA,iBAAW,OAAO,eAAe,OAAO;AACtC,YAAI,EAAE,OAAO,YAAY;AACvB,iBAAO,eAAe,MAAM,GAAG;AAAA,QACjC;AAAA,MACF;AAAA,IACF;AAAA,EACF;AACA,MAAI,QAAiB;AACnB,aAAgB,OAAO,OAAO,cAAc;AAC1C,YAAM,WAAW,MAAM,UAAU,mBAAmB;AACpD,eAAS,QAAQ;AAAA,IACnB,CAAC;AAAA,EACH;AACF;\",\n  \"names\": []\n}\n"
     },
     {
       "name": "vite:css-post",
-      "start": 1708087959438,
-      "end": 1708087959438,
+      "start": 1708178214922,
+      "end": 1708178214922,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708087959438,
-      "end": 1708087959438,
+      "start": 1708178214922,
+      "end": 1708178214922,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708087959438,
-      "end": 1708087959438,
+      "start": 1708178214922,
+      "end": 1708178214922,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708087959438,
-      "end": 1708087959438,
+      "start": 1708178214922,
+      "end": 1708178214922,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708087959439,
-      "end": 1708087959439,
+      "start": 1708178214922,
+      "end": 1708178214922,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708087959439,
-      "end": 1708087959439,
+      "start": 1708178214922,
+      "end": 1708178214922,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708087959439,
-      "end": 1708087959439,
+      "start": 1708178214922,
+      "end": 1708178214922,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708087959439,
-      "end": 1708087959440,
+      "start": 1708178214922,
+      "end": 1708178214923,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708087959439,
-      "end": 1708087959440,
+      "start": 1708178214922,
+      "end": 1708178214923,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { useNuxtApp } from '#app/nuxt';\nimport { useAsyncData } from '#app/composables/asyncData';\nimport { reactive, computed, unref } from \"vue\";\nexport const __getComponentMeta = async () => {\n  const __metas = await import(\"#nuxt-component-meta\");\n  return __metas?.default || __metas;\n};\nexport async function useComponentMeta(componentName) {\n  const nuxtApp = useNuxtApp();\n  const _componentName = unref(componentName);\n  if (false) {\n    const __componentMeta = await __getComponentMeta();\n    if (!nuxtApp._componentMeta) {\n      nuxtApp._componentMeta = reactive(__componentMeta);\n    }\n    if (_componentName) {\n      return computed(() => nuxtApp._componentMeta[_componentName]);\n    }\n    return computed(() => nuxtApp._componentMeta);\n  } else {\n    const { data } = await useAsyncData(\n      `nuxt-component-meta${_componentName ? `-${_componentName}` : \"\"}`,\n      () => {\n        return $fetch(`/api/component-meta${_componentName ? `/${_componentName}` : \"\"}`);\n      }\n    );\n    return computed(() => data.value);\n  }\n}\nif (false) {\n  async function applyHMR(newConfig) {\n    const componentMetas = await useComponentMeta();\n    if (newConfig && componentMetas.value) {\n      for (const key in newConfig) {\n        componentMetas.value[key] = newConfig[key];\n      }\n      for (const key in componentMetas.value) {\n        if (!(key in newConfig)) {\n          delete componentMetas.value[key];\n        }\n      }\n    }\n  }\n  if (void 0) {\n    (void 0).accept(async (newModule) => {\n      const newMetas = await newModule.__getComponentMeta();\n      applyHMR(newMetas);\n    });\n  }\n}\n",
-      "start": 1708087959440,
-      "end": 1708087959441,
+      "start": 1708178214923,
+      "end": 1708178214926,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -222,8 +222,8 @@
     {
       "name": "nuxt:imports-transform",
       "result": "import { useNuxtApp } from '#app/nuxt';\nimport { useAsyncData } from '#app/composables/asyncData';\nimport { reactive, computed, unref } from \"vue\";\nexport const __getComponentMeta = async () => {\n  const __metas = await import(\"#nuxt-component-meta\");\n  return __metas?.default || __metas;\n};\nexport async function useComponentMeta(componentName) {\n  const nuxtApp = useNuxtApp();\n  const _componentName = unref(componentName);\n  if (false) {\n    const __componentMeta = await __getComponentMeta();\n    if (!nuxtApp._componentMeta) {\n      nuxtApp._componentMeta = reactive(__componentMeta);\n    }\n    if (_componentName) {\n      return computed(() => nuxtApp._componentMeta[_componentName]);\n    }\n    return computed(() => nuxtApp._componentMeta);\n  } else {\n    const { data } = await useAsyncData(\n      `nuxt-component-meta${_componentName ? `-${_componentName}` : \"\"}`,\n      () => {\n        return $fetch(`/api/component-meta${_componentName ? `/${_componentName}` : \"\"}`);\n      }\n    );\n    return computed(() => data.value);\n  }\n}\nif (false) {\n  async function applyHMR(newConfig) {\n    const componentMetas = await useComponentMeta();\n    if (newConfig && componentMetas.value) {\n      for (const key in newConfig) {\n        componentMetas.value[key] = newConfig[key];\n      }\n      for (const key in componentMetas.value) {\n        if (!(key in newConfig)) {\n          delete componentMetas.value[key];\n        }\n      }\n    }\n  }\n  if (void 0) {\n    (void 0).accept(async (newModule) => {\n      const newMetas = await newModule.__getComponentMeta();\n      applyHMR(newMetas);\n    });\n  }\n}\n",
-      "start": 1708087959440,
-      "end": 1708087959441,
+      "start": 1708178214923,
+      "end": 1708178214926,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -236,56 +236,56 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1708087959441,
-      "end": 1708087959441,
+      "start": 1708178214926,
+      "end": 1708178214926,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708087959441,
-      "end": 1708087959441,
+      "start": 1708178214926,
+      "end": 1708178214926,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708087959442,
-      "end": 1708087959442,
+      "start": 1708178214926,
+      "end": 1708178214926,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708087959442,
-      "end": 1708087959442,
+      "start": 1708178214926,
+      "end": 1708178214926,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1708087959442,
-      "end": 1708087959442,
+      "start": 1708178214926,
+      "end": 1708178214927,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1708087959442,
-      "end": 1708087959442,
+      "start": 1708178214927,
+      "end": 1708178214927,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708087959442,
-      "end": 1708087959442,
+      "start": 1708178214927,
+      "end": 1708178214927,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708087959443,
-      "end": 1708087959443,
+      "start": 1708178214927,
+      "end": 1708178214927,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708087959443,
-      "end": 1708087959445,
+      "start": 1708178214928,
+      "end": 1708178214928,
       "order": "normal"
     }
   ]

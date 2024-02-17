@@ -4,105 +4,105 @@
     {
       "name": "vite:load-fallback",
       "result": "import { createError, showError } from \"#app/composables/error\";\nimport { useNuxtApp } from \"#app/nuxt\";\nimport { defineNuxtRouteMiddleware, useRouter } from \"#app/composables/router\";\nexport default defineNuxtRouteMiddleware(async (to) => {\n  if (!to.meta?.validate) {\n    return;\n  }\n  const nuxtApp = useNuxtApp();\n  const router = useRouter();\n  const result = await Promise.resolve(to.meta.validate(to));\n  if (result === true) {\n    return;\n  }\n  if (import.meta.server) {\n    return result;\n  }\n  const error = createError({\n    statusCode: 404,\n    statusMessage: `Page Not Found: ${to.fullPath}`,\n    data: {\n      path: to.fullPath\n    }\n  });\n  const unsub = router.beforeResolve((final) => {\n    unsub();\n    if (final === to) {\n      const unsub2 = router.afterEach(async () => {\n        unsub2();\n        await nuxtApp.runWithContext(() => showError(error));\n        window.history.pushState({}, \"\", to.fullPath);\n      });\n      return false;\n    }\n  });\n});\n",
-      "start": 1708087951570,
-      "end": 1708087951672,
+      "start": 1708178208055,
+      "end": 1708178208146,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708087951672,
-      "end": 1708087951672,
+      "start": 1708178208146,
+      "end": 1708178208146,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708087951672,
-      "end": 1708087951672,
+      "start": 1708178208146,
+      "end": 1708178208146,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
-      "start": 1708087951672,
-      "end": 1708087951672,
+      "start": 1708178208146,
+      "end": 1708178208146,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708087951672,
-      "end": 1708087951672,
+      "start": 1708178208146,
+      "end": 1708178208146,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708087951672,
-      "end": 1708087951672,
+      "start": 1708178208146,
+      "end": 1708178208146,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708087951672,
-      "end": 1708087951672,
+      "start": 1708178208146,
+      "end": 1708178208146,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1708087951672,
-      "end": 1708087951672,
+      "start": 1708178208146,
+      "end": 1708178208146,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1708087951672,
-      "end": 1708087951672,
+      "start": 1708178208146,
+      "end": 1708178208147,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708087951672,
-      "end": 1708087951672,
+      "start": 1708178208147,
+      "end": 1708178208147,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708087951672,
-      "end": 1708087951672,
+      "start": 1708178208147,
+      "end": 1708178208147,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708087951672,
-      "end": 1708087951672,
+      "start": 1708178208147,
+      "end": 1708178208147,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708087951672,
-      "end": 1708087951672,
+      "start": 1708178208147,
+      "end": 1708178208147,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708087951672,
-      "end": 1708087951672,
+      "start": 1708178208147,
+      "end": 1708178208147,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1708087951672,
-      "end": 1708087951672,
+      "start": 1708178208147,
+      "end": 1708178208147,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708087951672,
-      "end": 1708087951672,
+      "start": 1708178208147,
+      "end": 1708178208147,
       "order": "normal"
     },
     {
       "name": "replace",
       "result": "import { createError, showError } from \"#app/composables/error\";\nimport { useNuxtApp } from \"#app/nuxt\";\nimport { defineNuxtRouteMiddleware, useRouter } from \"#app/composables/router\";\nexport default defineNuxtRouteMiddleware(async (to) => {\n  if (!to.meta?.validate) {\n    return;\n  }\n  const nuxtApp = useNuxtApp();\n  const router = useRouter();\n  const result = await Promise.resolve(to.meta.validate(to));\n  if (result === true) {\n    return;\n  }\n  if (false) {\n    return result;\n  }\n  const error = createError({\n    statusCode: 404,\n    statusMessage: `Page Not Found: ${to.fullPath}`,\n    data: {\n      path: to.fullPath\n    }\n  });\n  const unsub = router.beforeResolve((final) => {\n    unsub();\n    if (final === to) {\n      const unsub2 = router.afterEach(async () => {\n        unsub2();\n        await nuxtApp.runWithContext(() => showError(error));\n        window.history.pushState({}, \"\", to.fullPath);\n      });\n      return false;\n    }\n  });\n});\n",
-      "start": 1708087951672,
-      "end": 1708087951673,
+      "start": 1708178208147,
+      "end": 1708178208147,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -115,75 +115,75 @@
     },
     {
       "name": "ssr-styles",
-      "start": 1708087951673,
-      "end": 1708087951673,
+      "start": 1708178208147,
+      "end": 1708178208147,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708087951673,
-      "end": 1708087951673,
+      "start": 1708178208147,
+      "end": 1708178208147,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708087951673,
-      "end": 1708087951673,
+      "start": 1708178208147,
+      "end": 1708178208147,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708087951673,
-      "end": 1708087951673,
+      "start": 1708178208147,
+      "end": 1708178208147,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708087951673,
-      "end": 1708087951673,
+      "start": 1708178208147,
+      "end": 1708178208147,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708087951673,
-      "end": 1708087951673,
+      "start": 1708178208147,
+      "end": 1708178208147,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708087951673,
-      "end": 1708087951673,
+      "start": 1708178208147,
+      "end": 1708178208147,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708087951673,
-      "end": 1708087951673,
+      "start": 1708178208147,
+      "end": 1708178208147,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708087951673,
-      "end": 1708087951673,
+      "start": 1708178208147,
+      "end": 1708178208147,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708087951673,
-      "end": 1708087951673,
+      "start": 1708178208147,
+      "end": 1708178208147,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708087951673,
-      "end": 1708087951673,
+      "start": 1708178208147,
+      "end": 1708178208147,
       "order": "post"
     },
     {
       "name": "unctx:transform",
       "result": "/* _processed_nuxt_unctx_transform */\nimport { executeAsync as __executeAsync } from \"/workspace/Kubernetes-Bootcamp/node_modules/unctx/dist/index.mjs\";import { createError, showError } from \"#app/composables/error\";\nimport { useNuxtApp } from \"#app/nuxt\";\nimport { defineNuxtRouteMiddleware, useRouter } from \"#app/composables/router\";\nexport default defineNuxtRouteMiddleware(async (to) => {let __temp, __restore;\n  if (!to.meta?.validate) {\n    return;\n  }\n  const nuxtApp = useNuxtApp();\n  const router = useRouter();\n  const result = (([__temp,__restore]=__executeAsync(()=>Promise.resolve(to.meta.validate(to)))),__temp=await __temp,__restore(),__temp);\n  if (result === true) {\n    return;\n  }\n  if (false) {\n    return result;\n  }\n  const error = createError({\n    statusCode: 404,\n    statusMessage: `Page Not Found: ${to.fullPath}`,\n    data: {\n      path: to.fullPath\n    }\n  });\n  const unsub = router.beforeResolve((final) => {\n    unsub();\n    if (final === to) {\n      const unsub2 = router.afterEach(async () => {\n        unsub2();\n        await nuxtApp.runWithContext(() => showError(error));\n        window.history.pushState({}, \"\", to.fullPath);\n      });\n      return false;\n    }\n  });\n},1);\n",
-      "start": 1708087951673,
-      "end": 1708087951674,
+      "start": 1708178208147,
+      "end": 1708178208148,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -196,44 +196,44 @@
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708087951674,
-      "end": 1708087951674,
+      "start": 1708178208148,
+      "end": 1708178208148,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1708087951674,
-      "end": 1708087951674,
+      "start": 1708178208148,
+      "end": 1708178208148,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1708087951674,
-      "end": 1708087951674,
+      "start": 1708178208148,
+      "end": 1708178208148,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1708087951674,
-      "end": 1708087951674,
+      "start": 1708178208148,
+      "end": 1708178208148,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708087951674,
-      "end": 1708087951674,
+      "start": 1708178208148,
+      "end": 1708178208148,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708087951674,
-      "end": 1708087951674,
+      "start": 1708178208148,
+      "end": 1708178208148,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708087951674,
-      "end": 1708087951674,
+      "start": 1708178208148,
+      "end": 1708178208148,
       "order": "normal"
     }
   ]
