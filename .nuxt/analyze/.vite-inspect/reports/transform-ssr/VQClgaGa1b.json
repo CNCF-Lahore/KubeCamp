@@ -4,8 +4,8 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, createVNode as _createVNode, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'AppHeader',\n  __ssrInlineRender: true,\n  props: {\n  \n},\n  setup(__props) {\n\nconst { config } = useDocus()\nconst { navigation } = useContent()\nconst { hasDocSearch } = useDocSearch()\n\nconst hasDialog = computed(() => navigation.value?.length > 1 || navigation.value?.[0]?.children?.length)\n\n\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_Container = _resolveComponent(\"Container\")!\n  const _component_AppHeaderDialog = _resolveComponent(\"AppHeaderDialog\")!\n  const _component_AppHeaderLogo = _resolveComponent(\"AppHeaderLogo\")!\n  const _component_AppHeaderNavigation = _resolveComponent(\"AppHeaderNavigation\")!\n  const _component_AppDocSearch = _resolveComponent(\"AppDocSearch\")!\n  const _component_AppSearch = _resolveComponent(\"AppSearch\")!\n  const _component_ThemeSelect = _resolveComponent(\"ThemeSelect\")!\n  const _component_AppSocialIcons = _resolveComponent(\"AppSocialIcons\")!\n\n  _push(`<header${_ssrRenderAttrs(_mergeProps({\n    class: { 'has-dialog': _unref(hasDialog) }\n  }, _attrs))} data-v-f465a985>`)\n  _push(_ssrRenderComponent(_component_Container, {\n    fluid: _unref(config)?.header?.fluid \n  }, {\n    default: _withCtx((_, _push, _parent, _scopeId) => {\n      if (_push) {\n        _push(`<div class=\"section left\" data-v-f465a985${_scopeId}>`)\n        if (_unref(hasDialog)) {\n          _push(_ssrRenderComponent(_component_AppHeaderDialog, null, null, _parent, _scopeId))\n        } else {\n          _push(`<!---->`)\n        }\n        _push(_ssrRenderComponent(_component_AppHeaderLogo, null, null, _parent, _scopeId))\n        _push(`</div><div class=\"section center\" data-v-f465a985${_scopeId}>`)\n        if (_unref(hasDialog)) {\n          _push(_ssrRenderComponent(_component_AppHeaderLogo, null, null, _parent, _scopeId))\n        } else {\n          _push(`<!---->`)\n        }\n        _push(_ssrRenderComponent(_component_AppHeaderNavigation, null, null, _parent, _scopeId))\n        _push(`</div><div class=\"section right\" data-v-f465a985${_scopeId}>`)\n        if (_unref(hasDocSearch)) {\n          _push(_ssrRenderComponent(_component_AppDocSearch, null, null, _parent, _scopeId))\n        } else {\n          _push(_ssrRenderComponent(_component_AppSearch, {\n            fuse: _unref(config).fuse\n          }, null, _parent, _scopeId))\n        }\n        _push(_ssrRenderComponent(_component_ThemeSelect, null, null, _parent, _scopeId))\n        _push(`<div class=\"social-icons\" data-v-f465a985${_scopeId}>`)\n        _push(_ssrRenderComponent(_component_AppSocialIcons, null, null, _parent, _scopeId))\n        _push(`</div></div>`)\n      } else {\n        return [\n          _createVNode(\"div\", { class: \"section left\" }, [\n            (_unref(hasDialog))\n              ? (_openBlock(), _createBlock(_component_AppHeaderDialog, { key: 0 }))\n              : _createCommentVNode(\"\", true),\n            _createVNode(_component_AppHeaderLogo)\n          ]),\n          _createVNode(\"div\", { class: \"section center\" }, [\n            (_unref(hasDialog))\n              ? (_openBlock(), _createBlock(_component_AppHeaderLogo, { key: 0 }))\n              : _createCommentVNode(\"\", true),\n            _createVNode(_component_AppHeaderNavigation)\n          ]),\n          _createVNode(\"div\", { class: \"section right\" }, [\n            (_unref(hasDocSearch))\n              ? (_openBlock(), _createBlock(_component_AppDocSearch, { key: 0 }))\n              : (_openBlock(), _createBlock(_component_AppSearch, {\n                  key: 1,\n                  fuse: _unref(config).fuse\n                }, null, 8, [\"fuse\"])),\n            _createVNode(_component_ThemeSelect),\n            _createVNode(\"div\", { class: \"social-icons\" }, [\n              _createVNode(_component_AppSocialIcons)\n            ])\n          ])\n        ]\n      }\n    }),\n    _: 1\n  }, _parent))\n  _push(`</header>`)\n}\n}\n\n})",
-      "start": 1708178213699,
-      "end": 1708178213699,
+      "start": 1708190403538,
+      "end": 1708190403538,
       "sourcemaps": {
         "version": 3,
         "sources": [
@@ -20,71 +20,71 @@
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708178213699,
-      "end": 1708178213699,
+      "start": 1708190403539,
+      "end": 1708190403539,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708178213699,
-      "end": 1708178213699,
+      "start": 1708190403539,
+      "end": 1708190403539,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708178213703,
-      "end": 1708178213703,
+      "start": 1708190403542,
+      "end": 1708190403542,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708178213703,
-      "end": 1708178213703,
+      "start": 1708190403542,
+      "end": 1708190403542,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, createVNode as _createVNode, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'AppHeader',\n  __ssrInlineRender: true,\n  props: {\n  \n},\n  setup(__props) {\n\nconst { config } = useDocus()\nconst { navigation } = useContent()\nconst { hasDocSearch } = useDocSearch()\n\nconst hasDialog = computed(() => navigation.value?.length > 1 || navigation.value?.[0]?.children?.length)\n\n\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_Container = _resolveComponent(\"Container\")!\n  const _component_AppHeaderDialog = _resolveComponent(\"AppHeaderDialog\")!\n  const _component_AppHeaderLogo = _resolveComponent(\"AppHeaderLogo\")!\n  const _component_AppHeaderNavigation = _resolveComponent(\"AppHeaderNavigation\")!\n  const _component_AppDocSearch = _resolveComponent(\"AppDocSearch\")!\n  const _component_AppSearch = _resolveComponent(\"AppSearch\")!\n  const _component_ThemeSelect = _resolveComponent(\"ThemeSelect\")!\n  const _component_AppSocialIcons = _resolveComponent(\"AppSocialIcons\")!\n\n  _push(`<header${_ssrRenderAttrs(_mergeProps({\n    class: { 'has-dialog': _unref(hasDialog) }\n  }, _attrs))} data-v-f465a985>`)\n  _push(_ssrRenderComponent(_component_Container, {\n    fluid: _unref(config)?.header?.fluid \n  }, {\n    default: _withCtx((_, _push, _parent, _scopeId) => {\n      if (_push) {\n        _push(`<div class=\"section left\" data-v-f465a985${_scopeId}>`)\n        if (_unref(hasDialog)) {\n          _push(_ssrRenderComponent(_component_AppHeaderDialog, null, null, _parent, _scopeId))\n        } else {\n          _push(`<!---->`)\n        }\n        _push(_ssrRenderComponent(_component_AppHeaderLogo, null, null, _parent, _scopeId))\n        _push(`</div><div class=\"section center\" data-v-f465a985${_scopeId}>`)\n        if (_unref(hasDialog)) {\n          _push(_ssrRenderComponent(_component_AppHeaderLogo, null, null, _parent, _scopeId))\n        } else {\n          _push(`<!---->`)\n        }\n        _push(_ssrRenderComponent(_component_AppHeaderNavigation, null, null, _parent, _scopeId))\n        _push(`</div><div class=\"section right\" data-v-f465a985${_scopeId}>`)\n        if (_unref(hasDocSearch)) {\n          _push(_ssrRenderComponent(_component_AppDocSearch, null, null, _parent, _scopeId))\n        } else {\n          _push(_ssrRenderComponent(_component_AppSearch, {\n            fuse: _unref(config).fuse\n          }, null, _parent, _scopeId))\n        }\n        _push(_ssrRenderComponent(_component_ThemeSelect, null, null, _parent, _scopeId))\n        _push(`<div class=\"social-icons\" data-v-f465a985${_scopeId}>`)\n        _push(_ssrRenderComponent(_component_AppSocialIcons, null, null, _parent, _scopeId))\n        _push(`</div></div>`)\n      } else {\n        return [\n          _createVNode(\"div\", { class: \"section left\" }, [\n            (_unref(hasDialog))\n              ? (_openBlock(), _createBlock(_component_AppHeaderDialog, { key: 0 }))\n              : _createCommentVNode(\"\", true),\n            _createVNode(_component_AppHeaderLogo)\n          ]),\n          _createVNode(\"div\", { class: \"section center\" }, [\n            (_unref(hasDialog))\n              ? (_openBlock(), _createBlock(_component_AppHeaderLogo, { key: 0 }))\n              : _createCommentVNode(\"\", true),\n            _createVNode(_component_AppHeaderNavigation)\n          ]),\n          _createVNode(\"div\", { class: \"section right\" }, [\n            (_unref(hasDocSearch))\n              ? (_openBlock(), _createBlock(_component_AppDocSearch, { key: 0 }))\n              : (_openBlock(), _createBlock(_component_AppSearch, {\n                  key: 1,\n                  fuse: _unref(config).fuse\n                }, null, 8, [\"fuse\"])),\n            _createVNode(_component_ThemeSelect),\n            _createVNode(\"div\", { class: \"social-icons\" }, [\n              _createVNode(_component_AppSocialIcons)\n            ])\n          ])\n        ]\n      }\n    }),\n    _: 1\n  }, _parent))\n  _push(`</header>`)\n}\n}\n\n})",
-      "start": 1708178213703,
-      "end": 1708178213703,
+      "start": 1708190403542,
+      "end": 1708190403543,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, createVNode as _createVNode, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'AppHeader',\n  __ssrInlineRender: true,\n  props: {\n  \n},\n  setup(__props) {\n\nconst { config } = useDocus()\nconst { navigation } = useContent()\nconst { hasDocSearch } = useDocSearch()\n\nconst hasDialog = computed(() => navigation.value?.length > 1 || navigation.value?.[0]?.children?.length)\n\n\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_Container = _resolveComponent(\"Container\")!\n  const _component_AppHeaderDialog = _resolveComponent(\"AppHeaderDialog\")!\n  const _component_AppHeaderLogo = _resolveComponent(\"AppHeaderLogo\")!\n  const _component_AppHeaderNavigation = _resolveComponent(\"AppHeaderNavigation\")!\n  const _component_AppDocSearch = _resolveComponent(\"AppDocSearch\")!\n  const _component_AppSearch = _resolveComponent(\"AppSearch\")!\n  const _component_ThemeSelect = _resolveComponent(\"ThemeSelect\")!\n  const _component_AppSocialIcons = _resolveComponent(\"AppSocialIcons\")!\n\n  _push(`<header${_ssrRenderAttrs(_mergeProps({\n    class: { 'has-dialog': _unref(hasDialog) }\n  }, _attrs))} data-v-f465a985>`)\n  _push(_ssrRenderComponent(_component_Container, {\n    fluid: _unref(config)?.header?.fluid \n  }, {\n    default: _withCtx((_, _push, _parent, _scopeId) => {\n      if (_push) {\n        _push(`<div class=\"section left\" data-v-f465a985${_scopeId}>`)\n        if (_unref(hasDialog)) {\n          _push(_ssrRenderComponent(_component_AppHeaderDialog, null, null, _parent, _scopeId))\n        } else {\n          _push(`<!---->`)\n        }\n        _push(_ssrRenderComponent(_component_AppHeaderLogo, null, null, _parent, _scopeId))\n        _push(`</div><div class=\"section center\" data-v-f465a985${_scopeId}>`)\n        if (_unref(hasDialog)) {\n          _push(_ssrRenderComponent(_component_AppHeaderLogo, null, null, _parent, _scopeId))\n        } else {\n          _push(`<!---->`)\n        }\n        _push(_ssrRenderComponent(_component_AppHeaderNavigation, null, null, _parent, _scopeId))\n        _push(`</div><div class=\"section right\" data-v-f465a985${_scopeId}>`)\n        if (_unref(hasDocSearch)) {\n          _push(_ssrRenderComponent(_component_AppDocSearch, null, null, _parent, _scopeId))\n        } else {\n          _push(_ssrRenderComponent(_component_AppSearch, {\n            fuse: _unref(config).fuse\n          }, null, _parent, _scopeId))\n        }\n        _push(_ssrRenderComponent(_component_ThemeSelect, null, null, _parent, _scopeId))\n        _push(`<div class=\"social-icons\" data-v-f465a985${_scopeId}>`)\n        _push(_ssrRenderComponent(_component_AppSocialIcons, null, null, _parent, _scopeId))\n        _push(`</div></div>`)\n      } else {\n        return [\n          _createVNode(\"div\", { class: \"section left\" }, [\n            (_unref(hasDialog))\n              ? (_openBlock(), _createBlock(_component_AppHeaderDialog, { key: 0 }))\n              : _createCommentVNode(\"\", true),\n            _createVNode(_component_AppHeaderLogo)\n          ]),\n          _createVNode(\"div\", { class: \"section center\" }, [\n            (_unref(hasDialog))\n              ? (_openBlock(), _createBlock(_component_AppHeaderLogo, { key: 0 }))\n              : _createCommentVNode(\"\", true),\n            _createVNode(_component_AppHeaderNavigation)\n          ]),\n          _createVNode(\"div\", { class: \"section right\" }, [\n            (_unref(hasDocSearch))\n              ? (_openBlock(), _createBlock(_component_AppDocSearch, { key: 0 }))\n              : (_openBlock(), _createBlock(_component_AppSearch, {\n                  key: 1,\n                  fuse: _unref(config).fuse\n                }, null, 8, [\"fuse\"])),\n            _createVNode(_component_ThemeSelect),\n            _createVNode(\"div\", { class: \"social-icons\" }, [\n              _createVNode(_component_AppSocialIcons)\n            ])\n          ])\n        ]\n      }\n    }),\n    _: 1\n  }, _parent))\n  _push(`</header>`)\n}\n}\n\n})",
-      "start": 1708178213703,
-      "end": 1708178213703,
+      "start": 1708190403542,
+      "end": 1708190403543,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708178213707,
-      "end": 1708178213707,
+      "start": 1708190403543,
+      "end": 1708190403543,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708178213707,
-      "end": 1708178213707,
+      "start": 1708190403543,
+      "end": 1708190403543,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708178213707,
-      "end": 1708178213707,
+      "start": 1708190403543,
+      "end": 1708190403543,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708178213707,
-      "end": 1708178213707,
+      "start": 1708190403543,
+      "end": 1708190403543,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, createVNode as _createVNode, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"AppHeader\",\n  __ssrInlineRender: true,\n  props: {},\n  setup(__props) {\n    const { config } = useDocus();\n    const { navigation } = useContent();\n    const { hasDocSearch } = useDocSearch();\n    const hasDialog = computed(() => navigation.value?.length > 1 || navigation.value?.[0]?.children?.length);\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_Container = _resolveComponent(\"Container\");\n      const _component_AppHeaderDialog = _resolveComponent(\"AppHeaderDialog\");\n      const _component_AppHeaderLogo = _resolveComponent(\"AppHeaderLogo\");\n      const _component_AppHeaderNavigation = _resolveComponent(\"AppHeaderNavigation\");\n      const _component_AppDocSearch = _resolveComponent(\"AppDocSearch\");\n      const _component_AppSearch = _resolveComponent(\"AppSearch\");\n      const _component_ThemeSelect = _resolveComponent(\"ThemeSelect\");\n      const _component_AppSocialIcons = _resolveComponent(\"AppSocialIcons\");\n      _push(`<header${_ssrRenderAttrs(_mergeProps({\n        class: { \"has-dialog\": _unref(hasDialog) }\n      }, _attrs))} data-v-f465a985>`);\n      _push(_ssrRenderComponent(_component_Container, {\n        fluid: _unref(config)?.header?.fluid\n      }, {\n        default: _withCtx((_, _push2, _parent2, _scopeId) => {\n          if (_push2) {\n            _push2(`<div class=\"section left\" data-v-f465a985${_scopeId}>`);\n            if (_unref(hasDialog)) {\n              _push2(_ssrRenderComponent(_component_AppHeaderDialog, null, null, _parent2, _scopeId));\n            } else {\n              _push2(`<!---->`);\n            }\n            _push2(_ssrRenderComponent(_component_AppHeaderLogo, null, null, _parent2, _scopeId));\n            _push2(`</div><div class=\"section center\" data-v-f465a985${_scopeId}>`);\n            if (_unref(hasDialog)) {\n              _push2(_ssrRenderComponent(_component_AppHeaderLogo, null, null, _parent2, _scopeId));\n            } else {\n              _push2(`<!---->`);\n            }\n            _push2(_ssrRenderComponent(_component_AppHeaderNavigation, null, null, _parent2, _scopeId));\n            _push2(`</div><div class=\"section right\" data-v-f465a985${_scopeId}>`);\n            if (_unref(hasDocSearch)) {\n              _push2(_ssrRenderComponent(_component_AppDocSearch, null, null, _parent2, _scopeId));\n            } else {\n              _push2(_ssrRenderComponent(_component_AppSearch, {\n                fuse: _unref(config).fuse\n              }, null, _parent2, _scopeId));\n            }\n            _push2(_ssrRenderComponent(_component_ThemeSelect, null, null, _parent2, _scopeId));\n            _push2(`<div class=\"social-icons\" data-v-f465a985${_scopeId}>`);\n            _push2(_ssrRenderComponent(_component_AppSocialIcons, null, null, _parent2, _scopeId));\n            _push2(`</div></div>`);\n          } else {\n            return [\n              _createVNode(\"div\", { class: \"section left\" }, [\n                _unref(hasDialog) ? (_openBlock(), _createBlock(_component_AppHeaderDialog, { key: 0 })) : _createCommentVNode(\"\", true),\n                _createVNode(_component_AppHeaderLogo)\n              ]),\n              _createVNode(\"div\", { class: \"section center\" }, [\n                _unref(hasDialog) ? (_openBlock(), _createBlock(_component_AppHeaderLogo, { key: 0 })) : _createCommentVNode(\"\", true),\n                _createVNode(_component_AppHeaderNavigation)\n              ]),\n              _createVNode(\"div\", { class: \"section right\" }, [\n                _unref(hasDocSearch) ? (_openBlock(), _createBlock(_component_AppDocSearch, { key: 0 })) : (_openBlock(), _createBlock(_component_AppSearch, {\n                  key: 1,\n                  fuse: _unref(config).fuse\n                }, null, 8, [\"fuse\"])),\n                _createVNode(_component_ThemeSelect),\n                _createVNode(\"div\", { class: \"social-icons\" }, [\n                  _createVNode(_component_AppSocialIcons)\n                ])\n              ])\n            ];\n          }\n        }),\n        _: 1\n      }, _parent));\n      _push(`</header>`);\n    };\n  }\n});\n",
-      "start": 1708178213707,
-      "end": 1708178214012,
+      "start": 1708190403543,
+      "end": 1708190403853,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -103,135 +103,135 @@
     },
     {
       "name": "vite:json",
-      "start": 1708178214012,
-      "end": 1708178214012,
+      "start": 1708190403853,
+      "end": 1708190403853,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708178214012,
-      "end": 1708178214012,
+      "start": 1708190403853,
+      "end": 1708190403853,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708178214012,
-      "end": 1708178214013,
+      "start": 1708190403853,
+      "end": 1708190403853,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708178214013,
-      "end": 1708178214013,
+      "start": 1708190403853,
+      "end": 1708190403853,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708178214013,
-      "end": 1708178214013,
+      "start": 1708190403853,
+      "end": 1708190403853,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708178214013,
-      "end": 1708178214013,
+      "start": 1708190403853,
+      "end": 1708190403853,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708178214013,
-      "end": 1708178214013,
+      "start": 1708190403853,
+      "end": 1708190403853,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708178214013,
-      "end": 1708178214013,
+      "start": 1708190403853,
+      "end": 1708190403853,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708178214013,
-      "end": 1708178214013,
+      "start": 1708190403853,
+      "end": 1708190403854,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708178214013,
-      "end": 1708178214013,
+      "start": 1708190403854,
+      "end": 1708190403854,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708178214014,
-      "end": 1708178214014,
+      "start": 1708190403854,
+      "end": 1708190403854,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708178214014,
-      "end": 1708178214015,
+      "start": 1708190403854,
+      "end": 1708190403855,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708178214015,
-      "end": 1708178214015,
+      "start": 1708190403855,
+      "end": 1708190403855,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708178214015,
-      "end": 1708178214015,
+      "start": 1708190403855,
+      "end": 1708190403855,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708178214015,
-      "end": 1708178214015,
+      "start": 1708190403855,
+      "end": 1708190403855,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708178214015,
-      "end": 1708178214015,
+      "start": 1708190403855,
+      "end": 1708190403855,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708178214015,
-      "end": 1708178214015,
+      "start": 1708190403855,
+      "end": 1708190403855,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708178214015,
-      "end": 1708178214015,
+      "start": 1708190403855,
+      "end": 1708190403855,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708178214016,
-      "end": 1708178214016,
+      "start": 1708190403855,
+      "end": 1708190403855,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708178214016,
-      "end": 1708178214016,
+      "start": 1708190403855,
+      "end": 1708190403855,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708178214016,
-      "end": 1708178214016,
+      "start": 1708190403855,
+      "end": 1708190403855,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { useDocus } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/composables/useDocus.ts';\nimport { useContent } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/composables/content';\nimport { useDocSearch } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/composables/useDocSearch.ts';\nimport { computed } from 'vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, createVNode as _createVNode, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"AppHeader\",\n  __ssrInlineRender: true,\n  props: {},\n  setup(__props) {\n    const { config } = useDocus();\n    const { navigation } = useContent();\n    const { hasDocSearch } = useDocSearch();\n    const hasDialog = computed(() => navigation.value?.length > 1 || navigation.value?.[0]?.children?.length);\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_Container = _resolveComponent(\"Container\");\n      const _component_AppHeaderDialog = _resolveComponent(\"AppHeaderDialog\");\n      const _component_AppHeaderLogo = _resolveComponent(\"AppHeaderLogo\");\n      const _component_AppHeaderNavigation = _resolveComponent(\"AppHeaderNavigation\");\n      const _component_AppDocSearch = _resolveComponent(\"AppDocSearch\");\n      const _component_AppSearch = _resolveComponent(\"AppSearch\");\n      const _component_ThemeSelect = _resolveComponent(\"ThemeSelect\");\n      const _component_AppSocialIcons = _resolveComponent(\"AppSocialIcons\");\n      _push(`<header${_ssrRenderAttrs(_mergeProps({\n        class: { \"has-dialog\": _unref(hasDialog) }\n      }, _attrs))} data-v-f465a985>`);\n      _push(_ssrRenderComponent(_component_Container, {\n        fluid: _unref(config)?.header?.fluid\n      }, {\n        default: _withCtx((_, _push2, _parent2, _scopeId) => {\n          if (_push2) {\n            _push2(`<div class=\"section left\" data-v-f465a985${_scopeId}>`);\n            if (_unref(hasDialog)) {\n              _push2(_ssrRenderComponent(_component_AppHeaderDialog, null, null, _parent2, _scopeId));\n            } else {\n              _push2(`<!---->`);\n            }\n            _push2(_ssrRenderComponent(_component_AppHeaderLogo, null, null, _parent2, _scopeId));\n            _push2(`</div><div class=\"section center\" data-v-f465a985${_scopeId}>`);\n            if (_unref(hasDialog)) {\n              _push2(_ssrRenderComponent(_component_AppHeaderLogo, null, null, _parent2, _scopeId));\n            } else {\n              _push2(`<!---->`);\n            }\n            _push2(_ssrRenderComponent(_component_AppHeaderNavigation, null, null, _parent2, _scopeId));\n            _push2(`</div><div class=\"section right\" data-v-f465a985${_scopeId}>`);\n            if (_unref(hasDocSearch)) {\n              _push2(_ssrRenderComponent(_component_AppDocSearch, null, null, _parent2, _scopeId));\n            } else {\n              _push2(_ssrRenderComponent(_component_AppSearch, {\n                fuse: _unref(config).fuse\n              }, null, _parent2, _scopeId));\n            }\n            _push2(_ssrRenderComponent(_component_ThemeSelect, null, null, _parent2, _scopeId));\n            _push2(`<div class=\"social-icons\" data-v-f465a985${_scopeId}>`);\n            _push2(_ssrRenderComponent(_component_AppSocialIcons, null, null, _parent2, _scopeId));\n            _push2(`</div></div>`);\n          } else {\n            return [\n              _createVNode(\"div\", { class: \"section left\" }, [\n                _unref(hasDialog) ? (_openBlock(), _createBlock(_component_AppHeaderDialog, { key: 0 })) : _createCommentVNode(\"\", true),\n                _createVNode(_component_AppHeaderLogo)\n              ]),\n              _createVNode(\"div\", { class: \"section center\" }, [\n                _unref(hasDialog) ? (_openBlock(), _createBlock(_component_AppHeaderLogo, { key: 0 })) : _createCommentVNode(\"\", true),\n                _createVNode(_component_AppHeaderNavigation)\n              ]),\n              _createVNode(\"div\", { class: \"section right\" }, [\n                _unref(hasDocSearch) ? (_openBlock(), _createBlock(_component_AppDocSearch, { key: 0 })) : (_openBlock(), _createBlock(_component_AppSearch, {\n                  key: 1,\n                  fuse: _unref(config).fuse\n                }, null, 8, [\"fuse\"])),\n                _createVNode(_component_ThemeSelect),\n                _createVNode(\"div\", { class: \"social-icons\" }, [\n                  _createVNode(_component_AppSocialIcons)\n                ])\n              ])\n            ];\n          }\n        }),\n        _: 1\n      }, _parent));\n      _push(`</header>`);\n    };\n  }\n});\n",
-      "start": 1708178214016,
-      "end": 1708178214025,
+      "start": 1708190403855,
+      "end": 1708190403860,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -245,8 +245,8 @@
     {
       "name": "nuxt:imports-transform",
       "result": "import { useDocus } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/composables/useDocus.ts';\nimport { useContent } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/composables/content';\nimport { useDocSearch } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/composables/useDocSearch.ts';\nimport { computed } from 'vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, createVNode as _createVNode, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"AppHeader\",\n  __ssrInlineRender: true,\n  props: {},\n  setup(__props) {\n    const { config } = useDocus();\n    const { navigation } = useContent();\n    const { hasDocSearch } = useDocSearch();\n    const hasDialog = computed(() => navigation.value?.length > 1 || navigation.value?.[0]?.children?.length);\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_Container = _resolveComponent(\"Container\");\n      const _component_AppHeaderDialog = _resolveComponent(\"AppHeaderDialog\");\n      const _component_AppHeaderLogo = _resolveComponent(\"AppHeaderLogo\");\n      const _component_AppHeaderNavigation = _resolveComponent(\"AppHeaderNavigation\");\n      const _component_AppDocSearch = _resolveComponent(\"AppDocSearch\");\n      const _component_AppSearch = _resolveComponent(\"AppSearch\");\n      const _component_ThemeSelect = _resolveComponent(\"ThemeSelect\");\n      const _component_AppSocialIcons = _resolveComponent(\"AppSocialIcons\");\n      _push(`<header${_ssrRenderAttrs(_mergeProps({\n        class: { \"has-dialog\": _unref(hasDialog) }\n      }, _attrs))} data-v-f465a985>`);\n      _push(_ssrRenderComponent(_component_Container, {\n        fluid: _unref(config)?.header?.fluid\n      }, {\n        default: _withCtx((_, _push2, _parent2, _scopeId) => {\n          if (_push2) {\n            _push2(`<div class=\"section left\" data-v-f465a985${_scopeId}>`);\n            if (_unref(hasDialog)) {\n              _push2(_ssrRenderComponent(_component_AppHeaderDialog, null, null, _parent2, _scopeId));\n            } else {\n              _push2(`<!---->`);\n            }\n            _push2(_ssrRenderComponent(_component_AppHeaderLogo, null, null, _parent2, _scopeId));\n            _push2(`</div><div class=\"section center\" data-v-f465a985${_scopeId}>`);\n            if (_unref(hasDialog)) {\n              _push2(_ssrRenderComponent(_component_AppHeaderLogo, null, null, _parent2, _scopeId));\n            } else {\n              _push2(`<!---->`);\n            }\n            _push2(_ssrRenderComponent(_component_AppHeaderNavigation, null, null, _parent2, _scopeId));\n            _push2(`</div><div class=\"section right\" data-v-f465a985${_scopeId}>`);\n            if (_unref(hasDocSearch)) {\n              _push2(_ssrRenderComponent(_component_AppDocSearch, null, null, _parent2, _scopeId));\n            } else {\n              _push2(_ssrRenderComponent(_component_AppSearch, {\n                fuse: _unref(config).fuse\n              }, null, _parent2, _scopeId));\n            }\n            _push2(_ssrRenderComponent(_component_ThemeSelect, null, null, _parent2, _scopeId));\n            _push2(`<div class=\"social-icons\" data-v-f465a985${_scopeId}>`);\n            _push2(_ssrRenderComponent(_component_AppSocialIcons, null, null, _parent2, _scopeId));\n            _push2(`</div></div>`);\n          } else {\n            return [\n              _createVNode(\"div\", { class: \"section left\" }, [\n                _unref(hasDialog) ? (_openBlock(), _createBlock(_component_AppHeaderDialog, { key: 0 })) : _createCommentVNode(\"\", true),\n                _createVNode(_component_AppHeaderLogo)\n              ]),\n              _createVNode(\"div\", { class: \"section center\" }, [\n                _unref(hasDialog) ? (_openBlock(), _createBlock(_component_AppHeaderLogo, { key: 0 })) : _createCommentVNode(\"\", true),\n                _createVNode(_component_AppHeaderNavigation)\n              ]),\n              _createVNode(\"div\", { class: \"section right\" }, [\n                _unref(hasDocSearch) ? (_openBlock(), _createBlock(_component_AppDocSearch, { key: 0 })) : (_openBlock(), _createBlock(_component_AppSearch, {\n                  key: 1,\n                  fuse: _unref(config).fuse\n                }, null, 8, [\"fuse\"])),\n                _createVNode(_component_ThemeSelect),\n                _createVNode(\"div\", { class: \"social-icons\" }, [\n                  _createVNode(_component_AppSocialIcons)\n                ])\n              ])\n            ];\n          }\n        }),\n        _: 1\n      }, _parent));\n      _push(`</header>`);\n    };\n  }\n});\n",
-      "start": 1708178214016,
-      "end": 1708178214025,
+      "start": 1708190403855,
+      "end": 1708190403860,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -259,39 +259,39 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1708178214025,
-      "end": 1708178214025,
+      "start": 1708190403860,
+      "end": 1708190403860,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708178214025,
-      "end": 1708178214025,
+      "start": 1708190403860,
+      "end": 1708190403860,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708178214025,
-      "end": 1708178214025,
+      "start": 1708190403860,
+      "end": 1708190403860,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708178214025,
-      "end": 1708178214025,
+      "start": 1708190403860,
+      "end": 1708190403860,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1708178214025,
-      "end": 1708178214025,
+      "start": 1708190403860,
+      "end": 1708190403861,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
       "result": "import { default as __nuxt_component_0 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Container.vue\";\nimport { default as __nuxt_component_1 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppHeaderDialog.vue\";\nimport { default as __nuxt_component_2 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppHeaderLogo.vue\";\nimport { default as __nuxt_component_3 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppHeaderNavigation.vue\";\nimport { default as __nuxt_component_4 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppDocSearch.vue\";\nimport { default as __nuxt_component_5 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppSearch.vue\";\nimport { default as __nuxt_component_6 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/ThemeSelect.vue\";\nimport { default as __nuxt_component_7 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppSocialIcons.vue\";\nimport { useDocus } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/composables/useDocus.ts';\nimport { useContent } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/composables/content';\nimport { useDocSearch } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/composables/useDocSearch.ts';\nimport { computed } from 'vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, createVNode as _createVNode, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"AppHeader\",\n  __ssrInlineRender: true,\n  props: {},\n  setup(__props) {\n    const { config } = useDocus();\n    const { navigation } = useContent();\n    const { hasDocSearch } = useDocSearch();\n    const hasDialog = computed(() => navigation.value?.length > 1 || navigation.value?.[0]?.children?.length);\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_Container = __nuxt_component_0;\n      const _component_AppHeaderDialog = __nuxt_component_1;\n      const _component_AppHeaderLogo = __nuxt_component_2;\n      const _component_AppHeaderNavigation = __nuxt_component_3;\n      const _component_AppDocSearch = __nuxt_component_4;\n      const _component_AppSearch = __nuxt_component_5;\n      const _component_ThemeSelect = __nuxt_component_6;\n      const _component_AppSocialIcons = __nuxt_component_7;\n      _push(`<header${_ssrRenderAttrs(_mergeProps({\n        class: { \"has-dialog\": _unref(hasDialog) }\n      }, _attrs))} data-v-f465a985>`);\n      _push(_ssrRenderComponent(_component_Container, {\n        fluid: _unref(config)?.header?.fluid\n      }, {\n        default: _withCtx((_, _push2, _parent2, _scopeId) => {\n          if (_push2) {\n            _push2(`<div class=\"section left\" data-v-f465a985${_scopeId}>`);\n            if (_unref(hasDialog)) {\n              _push2(_ssrRenderComponent(_component_AppHeaderDialog, null, null, _parent2, _scopeId));\n            } else {\n              _push2(`<!---->`);\n            }\n            _push2(_ssrRenderComponent(_component_AppHeaderLogo, null, null, _parent2, _scopeId));\n            _push2(`</div><div class=\"section center\" data-v-f465a985${_scopeId}>`);\n            if (_unref(hasDialog)) {\n              _push2(_ssrRenderComponent(_component_AppHeaderLogo, null, null, _parent2, _scopeId));\n            } else {\n              _push2(`<!---->`);\n            }\n            _push2(_ssrRenderComponent(_component_AppHeaderNavigation, null, null, _parent2, _scopeId));\n            _push2(`</div><div class=\"section right\" data-v-f465a985${_scopeId}>`);\n            if (_unref(hasDocSearch)) {\n              _push2(_ssrRenderComponent(_component_AppDocSearch, null, null, _parent2, _scopeId));\n            } else {\n              _push2(_ssrRenderComponent(_component_AppSearch, {\n                fuse: _unref(config).fuse\n              }, null, _parent2, _scopeId));\n            }\n            _push2(_ssrRenderComponent(_component_ThemeSelect, null, null, _parent2, _scopeId));\n            _push2(`<div class=\"social-icons\" data-v-f465a985${_scopeId}>`);\n            _push2(_ssrRenderComponent(_component_AppSocialIcons, null, null, _parent2, _scopeId));\n            _push2(`</div></div>`);\n          } else {\n            return [\n              _createVNode(\"div\", { class: \"section left\" }, [\n                _unref(hasDialog) ? (_openBlock(), _createBlock(_component_AppHeaderDialog, { key: 0 })) : _createCommentVNode(\"\", true),\n                _createVNode(_component_AppHeaderLogo)\n              ]),\n              _createVNode(\"div\", { class: \"section center\" }, [\n                _unref(hasDialog) ? (_openBlock(), _createBlock(_component_AppHeaderLogo, { key: 0 })) : _createCommentVNode(\"\", true),\n                _createVNode(_component_AppHeaderNavigation)\n              ]),\n              _createVNode(\"div\", { class: \"section right\" }, [\n                _unref(hasDocSearch) ? (_openBlock(), _createBlock(_component_AppDocSearch, { key: 0 })) : (_openBlock(), _createBlock(_component_AppSearch, {\n                  key: 1,\n                  fuse: _unref(config).fuse\n                }, null, 8, [\"fuse\"])),\n                _createVNode(_component_ThemeSelect),\n                _createVNode(\"div\", { class: \"social-icons\" }, [\n                  _createVNode(_component_AppSocialIcons)\n                ])\n              ])\n            ];\n          }\n        }),\n        _: 1\n      }, _parent));\n      _push(`</header>`);\n    };\n  }\n});\n",
-      "start": 1708178214026,
-      "end": 1708178214027,
+      "start": 1708190403861,
+      "end": 1708190403862,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -304,20 +304,20 @@
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708178214027,
-      "end": 1708178214028,
+      "start": 1708190403862,
+      "end": 1708190403862,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708178214028,
-      "end": 1708178214028,
+      "start": 1708190403862,
+      "end": 1708190403862,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708178214028,
-      "end": 1708178214028,
+      "start": 1708190403862,
+      "end": 1708190403862,
       "order": "normal"
     }
   ]

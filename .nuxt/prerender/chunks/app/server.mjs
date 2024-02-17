@@ -846,7 +846,7 @@ const cfg2 = defineAppConfig({
 const cfg3 = defineAppConfig({});
 const inlineConfig = {
   "nuxt": {
-    "buildId": "661423a3-4a55-439f-84d4-95f8612bd600"
+    "buildId": "f8ced477-efdd-4bd5-bb8e-d5095951d390"
   }
 };
 const __appConfig = /* @__PURE__ */ defuFn(cfg0, cfg1, cfg2, cfg3, inlineConfig);

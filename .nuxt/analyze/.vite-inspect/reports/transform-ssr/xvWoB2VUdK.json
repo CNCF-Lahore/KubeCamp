@@ -4,51 +4,51 @@
     {
       "name": "vite:load-fallback",
       "result": "<script setup lang=\"ts\">\ndefineProps({\n  title: {\n    type: String,\n    default: 'Features'\n  }\n})\n</script>\n\n<template>\n  <section class=\"card-grid\">\n    <ContentSlot :use=\"$slots.root\" />\n\n    <h2 class=\"title\">\n      <ContentSlot :use=\"$slots.title\" unwrap=\"p\">\n        {{ title }}\n      </ContentSlot>\n    </h2>\n    <div class=\"layout\">\n      <slot />\n    </div>\n  </section>\n</template>\n\n<style scoped lang=\"ts\">\ncss({\n  '.card-grid': {\n    position: 'relative',\n    paddingBottom: '{space.20}',\n    '@sm': {\n      paddingBottom: '{space.24}',\n    },\n    '@lg': {\n      paddingBottom: '{space.32}',\n    },\n    '.title': {\n      marginBottom: '{space.8}',\n      fontSize: '{text.3xl.fontSize}',\n      lineHeight: '{text.3xl.lineHeight}',\n      fontWeight: '{fontWeight.bold}',\n      letterSpacing: '{letterSpacing.tight}',\n      color: '{elements.text.primary.color.static}',\n      '@sm': {\n        fontSize: '{text.4xl.fontSize}',\n        lineHeight: '{text.4xl.lineHeight}',\n      }\n    },\n    '.layout': {\n      display: 'grid',\n      gap: '{space.4}',\n      textAlign: 'start',\n      '@sm': {\n        gridTemplateColumns: 'repeat(2, minmax(0, 1fr))'\n      },\n      '@lg': {\n        gridTemplateColumns: 'repeat(3, minmax(0, 1fr))'\n      },\n      '@2xl': {\n        gap: '{space.8}'\n      }\n    }\n  }\n})\n</style>\n",
-      "start": 1708178212393,
-      "end": 1708178212472,
+      "start": 1708190401957,
+      "end": 1708190402078,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708178212472,
-      "end": 1708178212472,
+      "start": 1708190402078,
+      "end": 1708190402078,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708178212472,
-      "end": 1708178212472,
+      "start": 1708190402078,
+      "end": 1708190402078,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708178212472,
-      "end": 1708178212473,
+      "start": 1708190402078,
+      "end": 1708190402078,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708178212472,
-      "end": 1708178212473,
+      "start": 1708190402078,
+      "end": 1708190402078,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
-      "start": 1708178212473,
-      "end": 1708178212473,
+      "start": 1708190402078,
+      "end": 1708190402079,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
-      "start": 1708178212473,
-      "end": 1708178212473,
+      "start": 1708190402078,
+      "end": 1708190402079,
       "order": "pre"
     },
     {
       "name": "content-slot",
       "result": "<script setup lang=\"ts\">\ndefineProps({\n  title: {\n    type: String,\n    default: 'Features'\n  }\n})\n</script>\n\n<template>\n  <section class=\"card-grid\">\n    <MDCSlot  name=\"root\" />\n\n    <h2 class=\"title\">\n      <MDCSlot  name=\"title\" unwrap=\"p\">\n        {{ title }}\n      </MDCSlot>\n    </h2>\n    <div class=\"layout\">\n      <slot />\n    </div>\n  </section>\n</template>\n\n<style scoped lang=\"ts\">\ncss({\n  '.card-grid': {\n    position: 'relative',\n    paddingBottom: '{space.20}',\n    '@sm': {\n      paddingBottom: '{space.24}',\n    },\n    '@lg': {\n      paddingBottom: '{space.32}',\n    },\n    '.title': {\n      marginBottom: '{space.8}',\n      fontSize: '{text.3xl.fontSize}',\n      lineHeight: '{text.3xl.lineHeight}',\n      fontWeight: '{fontWeight.bold}',\n      letterSpacing: '{letterSpacing.tight}',\n      color: '{elements.text.primary.color.static}',\n      '@sm': {\n        fontSize: '{text.4xl.fontSize}',\n        lineHeight: '{text.4xl.lineHeight}',\n      }\n    },\n    '.layout': {\n      display: 'grid',\n      gap: '{space.4}',\n      textAlign: 'start',\n      '@sm': {\n        gridTemplateColumns: 'repeat(2, minmax(0, 1fr))'\n      },\n      '@lg': {\n        gridTemplateColumns: 'repeat(3, minmax(0, 1fr))'\n      },\n      '@2xl': {\n        gap: '{space.8}'\n      }\n    }\n  }\n})\n</style>\n",
-      "start": 1708178212473,
-      "end": 1708178212473,
+      "start": 1708190402079,
+      "end": 1708190402079,
       "order": "pre",
       "sourcemaps": {
         "mappings": ""
@@ -57,8 +57,8 @@
     {
       "name": "content-slot",
       "result": "<script setup lang=\"ts\">\ndefineProps({\n  title: {\n    type: String,\n    default: 'Features'\n  }\n})\n</script>\n\n<template>\n  <section class=\"card-grid\">\n    <MDCSlot  name=\"root\" />\n\n    <h2 class=\"title\">\n      <MDCSlot  name=\"title\" unwrap=\"p\">\n        {{ title }}\n      </MDCSlot>\n    </h2>\n    <div class=\"layout\">\n      <slot />\n    </div>\n  </section>\n</template>\n\n<style scoped lang=\"ts\">\ncss({\n  '.card-grid': {\n    position: 'relative',\n    paddingBottom: '{space.20}',\n    '@sm': {\n      paddingBottom: '{space.24}',\n    },\n    '@lg': {\n      paddingBottom: '{space.32}',\n    },\n    '.title': {\n      marginBottom: '{space.8}',\n      fontSize: '{text.3xl.fontSize}',\n      lineHeight: '{text.3xl.lineHeight}',\n      fontWeight: '{fontWeight.bold}',\n      letterSpacing: '{letterSpacing.tight}',\n      color: '{elements.text.primary.color.static}',\n      '@sm': {\n        fontSize: '{text.4xl.fontSize}',\n        lineHeight: '{text.4xl.lineHeight}',\n      }\n    },\n    '.layout': {\n      display: 'grid',\n      gap: '{space.4}',\n      textAlign: 'start',\n      '@sm': {\n        gridTemplateColumns: 'repeat(2, minmax(0, 1fr))'\n      },\n      '@lg': {\n        gridTemplateColumns: 'repeat(3, minmax(0, 1fr))'\n      },\n      '@2xl': {\n        gap: '{space.8}'\n      }\n    }\n  }\n})\n</style>\n",
-      "start": 1708178212473,
-      "end": 1708178212473,
+      "start": 1708190402079,
+      "end": 1708190402079,
       "order": "pre",
       "sourcemaps": {
         "mappings": ""
@@ -66,39 +66,39 @@
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708178212473,
-      "end": 1708178212473,
+      "start": 1708190402079,
+      "end": 1708190402079,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708178212473,
-      "end": 1708178212473,
+      "start": 1708190402079,
+      "end": 1708190402079,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1708178212473,
-      "end": 1708178212473,
+      "start": 1708190402079,
+      "end": 1708190402079,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1708178212473,
-      "end": 1708178212473,
+      "start": 1708190402079,
+      "end": 1708190402079,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708178212473,
-      "end": 1708178212473,
+      "start": 1708190402079,
+      "end": 1708190402079,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "import _sfc_main from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/landing/CardGrid.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/landing/CardGrid.vue?vue&type=script&setup=true&lang.ts\";\nimport \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/landing/CardGrid.vue?vue&type=style&index=0&scoped=81277734&lang.ts\";\nimport { useSSRContext as __vite_useSSRContext } from \"vue\";\nconst _sfc_setup = _sfc_main.setup;\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext();\n  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add(\"node_modules/@nuxt-themes/elements/components/landing/CardGrid.vue\");\n  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;\n};\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"__scopeId\", \"data-v-81277734\"]]);\n",
-      "start": 1708178212473,
-      "end": 1708178212588,
+      "start": 1708190402079,
+      "end": 1708190402098,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -106,178 +106,178 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708178212588,
-      "end": 1708178212588,
+      "start": 1708190402099,
+      "end": 1708190402099,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708178212589,
-      "end": 1708178212589,
+      "start": 1708190402099,
+      "end": 1708190402099,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708178212589,
-      "end": 1708178212589,
+      "start": 1708190402099,
+      "end": 1708190402099,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708178212589,
-      "end": 1708178212589,
+      "start": 1708190402099,
+      "end": 1708190402099,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708178212589,
-      "end": 1708178212589,
+      "start": 1708190402099,
+      "end": 1708190402099,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
       "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/landing/CardGrid.vue\").then(r => r.default))",
-      "start": 1708178212590,
-      "end": 1708178212590,
+      "start": 1708190402099,
+      "end": 1708190402099,
       "order": "normal",
       "sourcemaps": null
     },
     {
       "name": "replace",
-      "start": 1708178212590,
-      "end": 1708178212590,
+      "start": 1708190402099,
+      "end": 1708190402099,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708178212591,
-      "end": 1708178212591,
+      "start": 1708190402099,
+      "end": 1708190402099,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708178212591,
-      "end": 1708178212591,
+      "start": 1708190402099,
+      "end": 1708190402099,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708178212591,
-      "end": 1708178212591,
+      "start": 1708190402100,
+      "end": 1708190402100,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708178212592,
-      "end": 1708178212592,
+      "start": 1708190402100,
+      "end": 1708190402100,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708178212593,
-      "end": 1708178212593,
+      "start": 1708190402100,
+      "end": 1708190402100,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708178212593,
-      "end": 1708178212593,
+      "start": 1708190402100,
+      "end": 1708190402100,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708178212593,
-      "end": 1708178212593,
+      "start": 1708190402100,
+      "end": 1708190402100,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708178212593,
-      "end": 1708178212594,
+      "start": 1708190402100,
+      "end": 1708190402100,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708178212594,
-      "end": 1708178212594,
+      "start": 1708190402100,
+      "end": 1708190402100,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708178212594,
-      "end": 1708178212594,
+      "start": 1708190402100,
+      "end": 1708190402100,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708178212594,
-      "end": 1708178212594,
+      "start": 1708190402100,
+      "end": 1708190402100,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708178212595,
-      "end": 1708178212596,
+      "start": 1708190402100,
+      "end": 1708190402101,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708178212595,
-      "end": 1708178212596,
+      "start": 1708190402100,
+      "end": 1708190402101,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708178212596,
-      "end": 1708178212597,
+      "start": 1708190402101,
+      "end": 1708190402101,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708178212596,
-      "end": 1708178212597,
+      "start": 1708190402101,
+      "end": 1708190402101,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708178212597,
-      "end": 1708178212597,
+      "start": 1708190402101,
+      "end": 1708190402101,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708178212597,
-      "end": 1708178212597,
+      "start": 1708190402101,
+      "end": 1708190402101,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1708178212598,
-      "end": 1708178212598,
+      "start": 1708190402101,
+      "end": 1708190402102,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1708178212598,
-      "end": 1708178212598,
+      "start": 1708190402102,
+      "end": 1708190402102,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708178212599,
-      "end": 1708178212599,
+      "start": 1708190402102,
+      "end": 1708190402102,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708178212599,
-      "end": 1708178212599,
+      "start": 1708190402102,
+      "end": 1708190402102,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708178212599,
-      "end": 1708178212599,
+      "start": 1708190402102,
+      "end": 1708190402102,
       "order": "normal"
     }
   ]

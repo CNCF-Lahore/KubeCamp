@@ -4,69 +4,69 @@
     {
       "name": "vite:load-fallback",
       "result": "<script setup lang=\"ts\">\nimport { useClipboard } from '@vueuse/core'\n\nconst props = defineProps({\n  content: {\n    type: String,\n    default: ''\n  }\n})\n\nconst { copy: copyToClipboard } = useClipboard()\n\nconst state = ref('init')\n\nconst copy = (e: MouseEvent) => {\n  copyToClipboard(props.content)\n    .then(() => {\n      state.value = 'copied'\n\n      setTimeout(() => {\n        state.value = 'init'\n      }, 1000)\n    })\n    .catch(() => {\n      console.warn(\"Couldn't copy to clipboard!\")\n    })\n}\n</script>\n\n<template>\n  <button class=\"copy rounded-lg bg-gray-800 px-2 py-2 font-mono text-xs font-semibold leading-none text-gray-400 focus:outline-none dark:bg-black\" @click=\"copy\">\n    <Icon v-if=\"state === 'copied'\" name=\"fa-check\" class=\"h-4 w-4\" />\n    <Icon v-else name=\"fa-copy\" class=\"h-4 w-4\" />\n  </button>\n</template>\n",
-      "start": 1708178207281,
-      "end": 1708178207330,
+      "start": 1708190394469,
+      "end": 1708190394578,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708178207330,
-      "end": 1708178207330,
+      "start": 1708190394578,
+      "end": 1708190394579,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708178207330,
-      "end": 1708178207330,
+      "start": 1708190394579,
+      "end": 1708190394579,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
-      "start": 1708178207330,
-      "end": 1708178207330,
+      "start": 1708190394579,
+      "end": 1708190394579,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708178207330,
-      "end": 1708178207330,
+      "start": 1708190394579,
+      "end": 1708190394579,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708178207330,
-      "end": 1708178207330,
+      "start": 1708190394579,
+      "end": 1708190394579,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708178207330,
-      "end": 1708178207330,
+      "start": 1708190394579,
+      "end": 1708190394579,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1708178207330,
-      "end": 1708178207330,
+      "start": 1708190394579,
+      "end": 1708190394579,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1708178207330,
-      "end": 1708178207330,
+      "start": 1708190394579,
+      "end": 1708190394579,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708178207330,
-      "end": 1708178207330,
+      "start": 1708190394579,
+      "end": 1708190394579,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "import _sfc_main from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/CopyButton.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/CopyButton.vue?vue&type=script&setup=true&lang.ts\";\nexport default _sfc_main;\n",
-      "start": 1708178207330,
-      "end": 1708178207376,
+      "start": 1708190394579,
+      "end": 1708190394602,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -74,156 +74,156 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708178207376,
-      "end": 1708178207376,
+      "start": 1708190394602,
+      "end": 1708190394602,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708178207376,
-      "end": 1708178207380,
+      "start": 1708190394602,
+      "end": 1708190394602,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708178207380,
-      "end": 1708178207380,
+      "start": 1708190394602,
+      "end": 1708190394602,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1708178207380,
-      "end": 1708178207380,
+      "start": 1708190394602,
+      "end": 1708190394603,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
       "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/CopyButton.vue\").then(r => r.default))",
-      "start": 1708178207380,
-      "end": 1708178207381,
+      "start": 1708190394603,
+      "end": 1708190394603,
       "order": "normal",
       "sourcemaps": null
     },
     {
       "name": "replace",
-      "start": 1708178207381,
-      "end": 1708178207381,
+      "start": 1708190394603,
+      "end": 1708190394603,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708178207381,
-      "end": 1708178207381,
+      "start": 1708190394603,
+      "end": 1708190394603,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708178207381,
-      "end": 1708178207381,
+      "start": 1708190394603,
+      "end": 1708190394603,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708178207381,
-      "end": 1708178207381,
+      "start": 1708190394603,
+      "end": 1708190394603,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708178207381,
-      "end": 1708178207381,
+      "start": 1708190394603,
+      "end": 1708190394603,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708178207381,
-      "end": 1708178207381,
+      "start": 1708190394603,
+      "end": 1708190394604,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708178207381,
-      "end": 1708178207381,
+      "start": 1708190394604,
+      "end": 1708190394604,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708178207381,
-      "end": 1708178207381,
+      "start": 1708190394604,
+      "end": 1708190394604,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708178207381,
-      "end": 1708178207381,
+      "start": 1708190394604,
+      "end": 1708190394604,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708178207381,
-      "end": 1708178207381,
+      "start": 1708190394604,
+      "end": 1708190394604,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708178207381,
-      "end": 1708178207382,
+      "start": 1708190394604,
+      "end": 1708190394604,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708178207382,
-      "end": 1708178207383,
+      "start": 1708190394604,
+      "end": 1708190394605,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708178207383,
-      "end": 1708178207383,
+      "start": 1708190394606,
+      "end": 1708190394606,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708178207383,
-      "end": 1708178207383,
+      "start": 1708190394606,
+      "end": 1708190394606,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1708178207383,
-      "end": 1708178207383,
+      "start": 1708190394606,
+      "end": 1708190394606,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1708178207383,
-      "end": 1708178207383,
+      "start": 1708190394606,
+      "end": 1708190394606,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1708178207383,
-      "end": 1708178207383,
+      "start": 1708190394606,
+      "end": 1708190394606,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708178207383,
-      "end": 1708178207383,
+      "start": 1708190394607,
+      "end": 1708190394607,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
       "result": "import { __vitePreload } from \"\u0000vite/preload-helper.js\";import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => __vitePreload(() => import(\"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/CopyButton.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(r => r.default))",
-      "start": 1708178207384,
-      "end": 1708178207384,
+      "start": 1708190394607,
+      "end": 1708190394607,
       "order": "normal",
       "sourcemaps": null
     },
     {
       "name": "vite:reporter",
-      "start": 1708178207384,
-      "end": 1708178207384,
+      "start": 1708190394607,
+      "end": 1708190394607,
       "order": "normal"
     }
   ]

@@ -4,8 +4,8 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\"\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'AppSocialIcons',\n  __ssrInlineRender: true,\n  setup(__props) {\n\nconst socials = ['twitter', 'facebook', 'instagram', 'tiktok', 'youtube', 'github', 'medium']\n\nconst { config } = useDocus()\n\nconst icons = computed<any>(() => {\n  return Object.entries(config.value.socials || {})\n    .map(([key, value]) => {\n      if (typeof value === 'object') {\n        return value\n      } else if (typeof value === 'string' && value && socials.includes(key)) {\n        return {\n          href: /^https?:\\/\\//.test(value) ? value : `https://${key}.com/${value}`,\n          icon: `fa-brands:${key}`,\n          label: value,\n          rel: 'noopener noreferrer'\n        }\n      } else {\n        return null\n      }\n    })\n    .filter(Boolean)\n})\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_NuxtLink = _resolveComponent(\"NuxtLink\")!\n  const _component_Icon = _resolveComponent(\"Icon\")!\n\n  _push(`<!--[-->`)\n  _ssrRenderList(_unref(icons), (icon) => {\n    _push(_ssrRenderComponent(_component_NuxtLink, {\n      key: icon.label,\n      rel: icon.rel,\n      title: icon.label,\n      \"aria-label\": icon.label,\n      href: icon.href,\n      target: \"_blank\"\n    }, {\n      default: _withCtx((_, _push, _parent, _scopeId) => {\n        if (_push) {\n          if (icon.icon) {\n            _push(_ssrRenderComponent(_component_Icon, {\n              name: icon.icon\n            }, null, _parent, _scopeId))\n          } else {\n            _push(`<!---->`)\n          }\n        } else {\n          return [\n            (icon.icon)\n              ? (_openBlock(), _createBlock(_component_Icon, {\n                  key: 0,\n                  name: icon.icon\n                }, null, 8, [\"name\"]))\n              : _createCommentVNode(\"\", true)\n          ]\n        }\n      }),\n      _: 2\n    }, _parent))\n  })\n  _push(`<!--]-->`)\n}\n}\n\n})",
-      "start": 1708178213785,
-      "end": 1708178213785,
+      "start": 1708190403546,
+      "end": 1708190403546,
       "sourcemaps": {
         "version": 3,
         "sources": [
@@ -20,71 +20,71 @@
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708178213787,
-      "end": 1708178213788,
+      "start": 1708190403547,
+      "end": 1708190403548,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708178213787,
-      "end": 1708178213788,
+      "start": 1708190403547,
+      "end": 1708190403548,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708178213790,
-      "end": 1708178213790,
+      "start": 1708190403549,
+      "end": 1708190403549,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708178213790,
-      "end": 1708178213790,
+      "start": 1708190403549,
+      "end": 1708190403550,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\"\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'AppSocialIcons',\n  __ssrInlineRender: true,\n  setup(__props) {\n\nconst socials = ['twitter', 'facebook', 'instagram', 'tiktok', 'youtube', 'github', 'medium']\n\nconst { config } = useDocus()\n\nconst icons = computed<any>(() => {\n  return Object.entries(config.value.socials || {})\n    .map(([key, value]) => {\n      if (typeof value === 'object') {\n        return value\n      } else if (typeof value === 'string' && value && socials.includes(key)) {\n        return {\n          href: /^https?:\\/\\//.test(value) ? value : `https://${key}.com/${value}`,\n          icon: `fa-brands:${key}`,\n          label: value,\n          rel: 'noopener noreferrer'\n        }\n      } else {\n        return null\n      }\n    })\n    .filter(Boolean)\n})\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_NuxtLink = _resolveComponent(\"NuxtLink\")!\n  const _component_Icon = _resolveComponent(\"Icon\")!\n\n  _push(`<!--[-->`)\n  _ssrRenderList(_unref(icons), (icon) => {\n    _push(_ssrRenderComponent(_component_NuxtLink, {\n      key: icon.label,\n      rel: icon.rel,\n      title: icon.label,\n      \"aria-label\": icon.label,\n      href: icon.href,\n      target: \"_blank\"\n    }, {\n      default: _withCtx((_, _push, _parent, _scopeId) => {\n        if (_push) {\n          if (icon.icon) {\n            _push(_ssrRenderComponent(_component_Icon, {\n              name: icon.icon\n            }, null, _parent, _scopeId))\n          } else {\n            _push(`<!---->`)\n          }\n        } else {\n          return [\n            (icon.icon)\n              ? (_openBlock(), _createBlock(_component_Icon, {\n                  key: 0,\n                  name: icon.icon\n                }, null, 8, [\"name\"]))\n              : _createCommentVNode(\"\", true)\n          ]\n        }\n      }),\n      _: 2\n    }, _parent))\n  })\n  _push(`<!--]-->`)\n}\n}\n\n})",
-      "start": 1708178213796,
-      "end": 1708178213796,
+      "start": 1708190403551,
+      "end": 1708190403551,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\"\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'AppSocialIcons',\n  __ssrInlineRender: true,\n  setup(__props) {\n\nconst socials = ['twitter', 'facebook', 'instagram', 'tiktok', 'youtube', 'github', 'medium']\n\nconst { config } = useDocus()\n\nconst icons = computed<any>(() => {\n  return Object.entries(config.value.socials || {})\n    .map(([key, value]) => {\n      if (typeof value === 'object') {\n        return value\n      } else if (typeof value === 'string' && value && socials.includes(key)) {\n        return {\n          href: /^https?:\\/\\//.test(value) ? value : `https://${key}.com/${value}`,\n          icon: `fa-brands:${key}`,\n          label: value,\n          rel: 'noopener noreferrer'\n        }\n      } else {\n        return null\n      }\n    })\n    .filter(Boolean)\n})\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_NuxtLink = _resolveComponent(\"NuxtLink\")!\n  const _component_Icon = _resolveComponent(\"Icon\")!\n\n  _push(`<!--[-->`)\n  _ssrRenderList(_unref(icons), (icon) => {\n    _push(_ssrRenderComponent(_component_NuxtLink, {\n      key: icon.label,\n      rel: icon.rel,\n      title: icon.label,\n      \"aria-label\": icon.label,\n      href: icon.href,\n      target: \"_blank\"\n    }, {\n      default: _withCtx((_, _push, _parent, _scopeId) => {\n        if (_push) {\n          if (icon.icon) {\n            _push(_ssrRenderComponent(_component_Icon, {\n              name: icon.icon\n            }, null, _parent, _scopeId))\n          } else {\n            _push(`<!---->`)\n          }\n        } else {\n          return [\n            (icon.icon)\n              ? (_openBlock(), _createBlock(_component_Icon, {\n                  key: 0,\n                  name: icon.icon\n                }, null, 8, [\"name\"]))\n              : _createCommentVNode(\"\", true)\n          ]\n        }\n      }),\n      _: 2\n    }, _parent))\n  })\n  _push(`<!--]-->`)\n}\n}\n\n})",
-      "start": 1708178213796,
-      "end": 1708178213796,
+      "start": 1708190403551,
+      "end": 1708190403551,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708178213797,
-      "end": 1708178213797,
+      "start": 1708190403552,
+      "end": 1708190403552,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708178213797,
-      "end": 1708178213797,
+      "start": 1708190403552,
+      "end": 1708190403552,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708178213797,
-      "end": 1708178213797,
+      "start": 1708190403552,
+      "end": 1708190403552,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708178213797,
-      "end": 1708178213797,
+      "start": 1708190403552,
+      "end": 1708190403552,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"AppSocialIcons\",\n  __ssrInlineRender: true,\n  setup(__props) {\n    const socials = [\"twitter\", \"facebook\", \"instagram\", \"tiktok\", \"youtube\", \"github\", \"medium\"];\n    const { config } = useDocus();\n    const icons = computed(() => {\n      return Object.entries(config.value.socials || {}).map(([key, value]) => {\n        if (typeof value === \"object\") {\n          return value;\n        } else if (typeof value === \"string\" && value && socials.includes(key)) {\n          return {\n            href: /^https?:\\/\\//.test(value) ? value : `https://${key}.com/${value}`,\n            icon: `fa-brands:${key}`,\n            label: value,\n            rel: \"noopener noreferrer\"\n          };\n        } else {\n          return null;\n        }\n      }).filter(Boolean);\n    });\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_NuxtLink = _resolveComponent(\"NuxtLink\");\n      const _component_Icon = _resolveComponent(\"Icon\");\n      _push(`<!--[-->`);\n      _ssrRenderList(_unref(icons), (icon) => {\n        _push(_ssrRenderComponent(_component_NuxtLink, {\n          key: icon.label,\n          rel: icon.rel,\n          title: icon.label,\n          \"aria-label\": icon.label,\n          href: icon.href,\n          target: \"_blank\"\n        }, {\n          default: _withCtx((_, _push2, _parent2, _scopeId) => {\n            if (_push2) {\n              if (icon.icon) {\n                _push2(_ssrRenderComponent(_component_Icon, {\n                  name: icon.icon\n                }, null, _parent2, _scopeId));\n              } else {\n                _push2(`<!---->`);\n              }\n            } else {\n              return [\n                icon.icon ? (_openBlock(), _createBlock(_component_Icon, {\n                  key: 0,\n                  name: icon.icon\n                }, null, 8, [\"name\"])) : _createCommentVNode(\"\", true)\n              ];\n            }\n          }),\n          _: 2\n        }, _parent));\n      });\n      _push(`<!--]-->`);\n    };\n  }\n});\n",
-      "start": 1708178213797,
-      "end": 1708178214031,
+      "start": 1708190403552,
+      "end": 1708190403853,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -103,135 +103,135 @@
     },
     {
       "name": "vite:json",
-      "start": 1708178214031,
-      "end": 1708178214031,
+      "start": 1708190403853,
+      "end": 1708190403853,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708178214031,
-      "end": 1708178214031,
+      "start": 1708190403853,
+      "end": 1708190403853,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708178214031,
-      "end": 1708178214031,
+      "start": 1708190403853,
+      "end": 1708190403853,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708178214031,
-      "end": 1708178214031,
+      "start": 1708190403853,
+      "end": 1708190403853,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708178214032,
-      "end": 1708178214032,
+      "start": 1708190403853,
+      "end": 1708190403853,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708178214032,
-      "end": 1708178214032,
+      "start": 1708190403853,
+      "end": 1708190403853,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708178214032,
-      "end": 1708178214032,
+      "start": 1708190403853,
+      "end": 1708190403853,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708178214032,
-      "end": 1708178214032,
+      "start": 1708190403853,
+      "end": 1708190403853,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708178214032,
-      "end": 1708178214032,
+      "start": 1708190403854,
+      "end": 1708190403854,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708178214032,
-      "end": 1708178214032,
+      "start": 1708190403854,
+      "end": 1708190403854,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708178214032,
-      "end": 1708178214032,
+      "start": 1708190403854,
+      "end": 1708190403854,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708178214032,
-      "end": 1708178214033,
+      "start": 1708190403855,
+      "end": 1708190403855,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708178214033,
-      "end": 1708178214033,
+      "start": 1708190403855,
+      "end": 1708190403855,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708178214033,
-      "end": 1708178214033,
+      "start": 1708190403855,
+      "end": 1708190403855,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708178214033,
-      "end": 1708178214033,
+      "start": 1708190403855,
+      "end": 1708190403855,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708178214033,
-      "end": 1708178214033,
+      "start": 1708190403855,
+      "end": 1708190403855,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708178214033,
-      "end": 1708178214033,
+      "start": 1708190403855,
+      "end": 1708190403855,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708178214033,
-      "end": 1708178214033,
+      "start": 1708190403855,
+      "end": 1708190403855,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708178214033,
-      "end": 1708178214033,
+      "start": 1708190403855,
+      "end": 1708190403855,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708178214033,
-      "end": 1708178214033,
+      "start": 1708190403855,
+      "end": 1708190403855,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708178214033,
-      "end": 1708178214033,
+      "start": 1708190403855,
+      "end": 1708190403855,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { useDocus } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/composables/useDocus.ts';\nimport { computed } from 'vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"AppSocialIcons\",\n  __ssrInlineRender: true,\n  setup(__props) {\n    const socials = [\"twitter\", \"facebook\", \"instagram\", \"tiktok\", \"youtube\", \"github\", \"medium\"];\n    const { config } = useDocus();\n    const icons = computed(() => {\n      return Object.entries(config.value.socials || {}).map(([key, value]) => {\n        if (typeof value === \"object\") {\n          return value;\n        } else if (typeof value === \"string\" && value && socials.includes(key)) {\n          return {\n            href: /^https?:\\/\\//.test(value) ? value : `https://${key}.com/${value}`,\n            icon: `fa-brands:${key}`,\n            label: value,\n            rel: \"noopener noreferrer\"\n          };\n        } else {\n          return null;\n        }\n      }).filter(Boolean);\n    });\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_NuxtLink = _resolveComponent(\"NuxtLink\");\n      const _component_Icon = _resolveComponent(\"Icon\");\n      _push(`<!--[-->`);\n      _ssrRenderList(_unref(icons), (icon) => {\n        _push(_ssrRenderComponent(_component_NuxtLink, {\n          key: icon.label,\n          rel: icon.rel,\n          title: icon.label,\n          \"aria-label\": icon.label,\n          href: icon.href,\n          target: \"_blank\"\n        }, {\n          default: _withCtx((_, _push2, _parent2, _scopeId) => {\n            if (_push2) {\n              if (icon.icon) {\n                _push2(_ssrRenderComponent(_component_Icon, {\n                  name: icon.icon\n                }, null, _parent2, _scopeId));\n              } else {\n                _push2(`<!---->`);\n              }\n            } else {\n              return [\n                icon.icon ? (_openBlock(), _createBlock(_component_Icon, {\n                  key: 0,\n                  name: icon.icon\n                }, null, 8, [\"name\"])) : _createCommentVNode(\"\", true)\n              ];\n            }\n          }),\n          _: 2\n        }, _parent));\n      });\n      _push(`<!--]-->`);\n    };\n  }\n});\n",
-      "start": 1708178214033,
-      "end": 1708178214038,
+      "start": 1708190403855,
+      "end": 1708190403860,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -245,8 +245,8 @@
     {
       "name": "nuxt:imports-transform",
       "result": "import { useDocus } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/composables/useDocus.ts';\nimport { computed } from 'vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"AppSocialIcons\",\n  __ssrInlineRender: true,\n  setup(__props) {\n    const socials = [\"twitter\", \"facebook\", \"instagram\", \"tiktok\", \"youtube\", \"github\", \"medium\"];\n    const { config } = useDocus();\n    const icons = computed(() => {\n      return Object.entries(config.value.socials || {}).map(([key, value]) => {\n        if (typeof value === \"object\") {\n          return value;\n        } else if (typeof value === \"string\" && value && socials.includes(key)) {\n          return {\n            href: /^https?:\\/\\//.test(value) ? value : `https://${key}.com/${value}`,\n            icon: `fa-brands:${key}`,\n            label: value,\n            rel: \"noopener noreferrer\"\n          };\n        } else {\n          return null;\n        }\n      }).filter(Boolean);\n    });\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_NuxtLink = _resolveComponent(\"NuxtLink\");\n      const _component_Icon = _resolveComponent(\"Icon\");\n      _push(`<!--[-->`);\n      _ssrRenderList(_unref(icons), (icon) => {\n        _push(_ssrRenderComponent(_component_NuxtLink, {\n          key: icon.label,\n          rel: icon.rel,\n          title: icon.label,\n          \"aria-label\": icon.label,\n          href: icon.href,\n          target: \"_blank\"\n        }, {\n          default: _withCtx((_, _push2, _parent2, _scopeId) => {\n            if (_push2) {\n              if (icon.icon) {\n                _push2(_ssrRenderComponent(_component_Icon, {\n                  name: icon.icon\n                }, null, _parent2, _scopeId));\n              } else {\n                _push2(`<!---->`);\n              }\n            } else {\n              return [\n                icon.icon ? (_openBlock(), _createBlock(_component_Icon, {\n                  key: 0,\n                  name: icon.icon\n                }, null, 8, [\"name\"])) : _createCommentVNode(\"\", true)\n              ];\n            }\n          }),\n          _: 2\n        }, _parent));\n      });\n      _push(`<!--]-->`);\n    };\n  }\n});\n",
-      "start": 1708178214033,
-      "end": 1708178214038,
+      "start": 1708190403855,
+      "end": 1708190403860,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -259,39 +259,39 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1708178214038,
-      "end": 1708178214038,
+      "start": 1708190403860,
+      "end": 1708190403860,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708178214038,
-      "end": 1708178214038,
+      "start": 1708190403860,
+      "end": 1708190403860,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708178214038,
-      "end": 1708178214038,
+      "start": 1708190403860,
+      "end": 1708190403860,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708178214038,
-      "end": 1708178214038,
+      "start": 1708190403860,
+      "end": 1708190403860,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1708178214038,
-      "end": 1708178214038,
+      "start": 1708190403861,
+      "end": 1708190403861,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
       "result": "import { default as __nuxt_component_0 } from \"/workspace/Kubernetes-Bootcamp/node_modules/nuxt/dist/app/components/nuxt-link\";\nimport { default as __nuxt_component_1 } from \"/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/Icon.vue\";\nimport { useDocus } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/composables/useDocus.ts';\nimport { computed } from 'vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"AppSocialIcons\",\n  __ssrInlineRender: true,\n  setup(__props) {\n    const socials = [\"twitter\", \"facebook\", \"instagram\", \"tiktok\", \"youtube\", \"github\", \"medium\"];\n    const { config } = useDocus();\n    const icons = computed(() => {\n      return Object.entries(config.value.socials || {}).map(([key, value]) => {\n        if (typeof value === \"object\") {\n          return value;\n        } else if (typeof value === \"string\" && value && socials.includes(key)) {\n          return {\n            href: /^https?:\\/\\//.test(value) ? value : `https://${key}.com/${value}`,\n            icon: `fa-brands:${key}`,\n            label: value,\n            rel: \"noopener noreferrer\"\n          };\n        } else {\n          return null;\n        }\n      }).filter(Boolean);\n    });\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_NuxtLink = __nuxt_component_0;\n      const _component_Icon = __nuxt_component_1;\n      _push(`<!--[-->`);\n      _ssrRenderList(_unref(icons), (icon) => {\n        _push(_ssrRenderComponent(_component_NuxtLink, {\n          key: icon.label,\n          rel: icon.rel,\n          title: icon.label,\n          \"aria-label\": icon.label,\n          href: icon.href,\n          target: \"_blank\"\n        }, {\n          default: _withCtx((_, _push2, _parent2, _scopeId) => {\n            if (_push2) {\n              if (icon.icon) {\n                _push2(_ssrRenderComponent(_component_Icon, {\n                  name: icon.icon\n                }, null, _parent2, _scopeId));\n              } else {\n                _push2(`<!---->`);\n              }\n            } else {\n              return [\n                icon.icon ? (_openBlock(), _createBlock(_component_Icon, {\n                  key: 0,\n                  name: icon.icon\n                }, null, 8, [\"name\"])) : _createCommentVNode(\"\", true)\n              ];\n            }\n          }),\n          _: 2\n        }, _parent));\n      });\n      _push(`<!--]-->`);\n    };\n  }\n});\n",
-      "start": 1708178214039,
-      "end": 1708178214039,
+      "start": 1708190403861,
+      "end": 1708190403862,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -304,20 +304,20 @@
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708178214039,
-      "end": 1708178214039,
+      "start": 1708190403862,
+      "end": 1708190403862,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708178214039,
-      "end": 1708178214039,
+      "start": 1708190403862,
+      "end": 1708190403862,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708178214039,
-      "end": 1708178214039,
+      "start": 1708190403862,
+      "end": 1708190403862,
       "order": "normal"
     }
   ]

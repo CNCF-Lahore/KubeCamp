@@ -4,52 +4,52 @@
     {
       "name": "vite:load-fallback",
       "result": "import { PinceauTheme, PropertyValue } from 'pinceau'\n\nexport const my = (value: PropertyValue<'margin'>) => {\n  return {\n    marginTop: value,\n    marginBottom: value,\n  }\n}\n\nexport const mx = (value: PropertyValue<'margin'>) => {\n  return {\n    marginLeft: value,\n    marginRight: value,\n  }\n}\n\nexport const py = (value: PropertyValue<'margin'>) => {\n  return {\n    paddingTop: value,\n    paddingBottom: value,\n  }\n}\n\nexport const px = (value: PropertyValue<'margin'>) => {\n  return {\n    paddingLeft: value,\n    paddingRight: value,\n  }\n}\n\nexport const truncate = {\n  overflow: 'hidden',\n  textOverflow: 'ellipsis',\n  whiteSpace: 'nowrap',\n} as any\n\nexport const lineClamp = (lines: number | string) => (({\n  'overflow': 'hidden',\n  'display': '-webkit-box',\n  '-webkit-box-orient': 'vertical',\n  '-webkit-line-clamp': lines\n}) as any)\n\nexport const text = (size: keyof PinceauTheme['text']) => ({\n  fontSize: `{text.${size}.fontSize}`,\n  lineHeight: `{text.${size}.lineHeight}`,\n})\n\nexport const stateColors = (value: any) => {\n  return {\n    color: `{elements.state.${value}.color.primary} !important`,\n    backgroundColor: `{elements.state.${value}.backgroundColor.primary} !important`,\n    borderColor: `{elements.state.${value}.borderColor.primary} !important`,\n    ':deep(p code)': {\n      color: `{elements.state.${value}.color.secondary} !important`,\n      backgroundColor: `{elements.state.${value}.backgroundColor.secondary} !important`\n    },\n    ':deep(code)': {\n      color: `{elements.state.${value}.color.primary} !important`,\n      backgroundColor: `{elements.state.${value}.backgroundColor.secondary} !important`\n    },\n    ':deep(a code)': {\n      borderColor: `{elements.state.${value}.borderColor.primary} !important`\n    },\n    ':deep(a)': {\n      borderColor: 'currentColor',\n      code: {\n        backgroundColor: `{elements.state.${value}.backgroundColor.primary} !important`\n      },\n      '&:hover': {\n        color: `{elements.state.${value}.color.secondary} !important`,\n        borderColor: 'currentColor !important',\n        code: {\n          backgroundColor: `{elements.state.${value}.backgroundColor.secondary} !important`,\n          color: `{elements.state.${value}.color.secondary} !important`,\n          borderColor: `{elements.state.${value}.borderColor.secondary} !important`\n        }\n      }\n    }\n  }\n}\n\nexport const utils = { my, mx, py, px, truncate, lineClamp, text, stateColors }\n\nexport type GeneratedPinceauUtils = typeof utils\n\nexport default utils",
-      "start": 1708178206860,
-      "end": 1708178207068,
+      "start": 1708190393918,
+      "end": 1708190394180,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708178207068,
-      "end": 1708178207068,
+      "start": 1708190394181,
+      "end": 1708190394181,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708178207068,
-      "end": 1708178207068,
+      "start": 1708190394181,
+      "end": 1708190394181,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { PinceauTheme, PropertyValue } from 'pinceau'\n\nexport const my = (value: PropertyValue<'margin'>) => {\n  return {\n    marginTop: value,\n    marginBottom: value,\n  }\n}\n\nexport const mx = (value: PropertyValue<'margin'>) => {\n  return {\n    marginLeft: value,\n    marginRight: value,\n  }\n}\n\nexport const py = (value: PropertyValue<'margin'>) => {\n  return {\n    paddingTop: value,\n    paddingBottom: value,\n  }\n}\n\nexport const px = (value: PropertyValue<'margin'>) => {\n  return {\n    paddingLeft: value,\n    paddingRight: value,\n  }\n}\n\nexport const truncate = {\n  overflow: 'hidden',\n  textOverflow: 'ellipsis',\n  whiteSpace: 'nowrap',\n} as any\n\nexport const lineClamp = (lines: number | string) => (({\n  'overflow': 'hidden',\n  'display': '-webkit-box',\n  '-webkit-box-orient': 'vertical',\n  '-webkit-line-clamp': lines\n}) as any)\n\nexport const text = (size: keyof PinceauTheme['text']) => ({\n  fontSize: `{text.${size}.fontSize}`,\n  lineHeight: `{text.${size}.lineHeight}`,\n})\n\nexport const stateColors = (value: any) => {\n  return {\n    color: `{elements.state.${value}.color.primary} !important`,\n    backgroundColor: `{elements.state.${value}.backgroundColor.primary} !important`,\n    borderColor: `{elements.state.${value}.borderColor.primary} !important`,\n    ':deep(p code)': {\n      color: `{elements.state.${value}.color.secondary} !important`,\n      backgroundColor: `{elements.state.${value}.backgroundColor.secondary} !important`\n    },\n    ':deep(code)': {\n      color: `{elements.state.${value}.color.primary} !important`,\n      backgroundColor: `{elements.state.${value}.backgroundColor.secondary} !important`\n    },\n    ':deep(a code)': {\n      borderColor: `{elements.state.${value}.borderColor.primary} !important`\n    },\n    ':deep(a)': {\n      borderColor: 'currentColor',\n      code: {\n        backgroundColor: `{elements.state.${value}.backgroundColor.primary} !important`\n      },\n      '&:hover': {\n        color: `{elements.state.${value}.color.secondary} !important`,\n        borderColor: 'currentColor !important',\n        code: {\n          backgroundColor: `{elements.state.${value}.backgroundColor.secondary} !important`,\n          color: `{elements.state.${value}.color.secondary} !important`,\n          borderColor: `{elements.state.${value}.borderColor.secondary} !important`\n        }\n      }\n    }\n  }\n}\n\nexport const utils = { my, mx, py, px, truncate, lineClamp, text, stateColors }\n\nexport type GeneratedPinceauUtils = typeof utils\n\nexport default utils",
-      "start": 1708178207068,
-      "end": 1708178207068,
+      "start": 1708190394181,
+      "end": 1708190394181,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708178207068,
-      "end": 1708178207068,
+      "start": 1708190394181,
+      "end": 1708190394181,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708178207068,
-      "end": 1708178207068,
+      "start": 1708190394181,
+      "end": 1708190394181,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708178207068,
-      "end": 1708178207068,
+      "start": 1708190394181,
+      "end": 1708190394181,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "export const my = (value) => {\n  return {\n    marginTop: value,\n    marginBottom: value\n  };\n};\nexport const mx = (value) => {\n  return {\n    marginLeft: value,\n    marginRight: value\n  };\n};\nexport const py = (value) => {\n  return {\n    paddingTop: value,\n    paddingBottom: value\n  };\n};\nexport const px = (value) => {\n  return {\n    paddingLeft: value,\n    paddingRight: value\n  };\n};\nexport const truncate = {\n  overflow: \"hidden\",\n  textOverflow: \"ellipsis\",\n  whiteSpace: \"nowrap\"\n};\nexport const lineClamp = (lines) => ({\n  \"overflow\": \"hidden\",\n  \"display\": \"-webkit-box\",\n  \"-webkit-box-orient\": \"vertical\",\n  \"-webkit-line-clamp\": lines\n});\nexport const text = (size) => ({\n  fontSize: `{text.${size}.fontSize}`,\n  lineHeight: `{text.${size}.lineHeight}`\n});\nexport const stateColors = (value) => {\n  return {\n    color: `{elements.state.${value}.color.primary} !important`,\n    backgroundColor: `{elements.state.${value}.backgroundColor.primary} !important`,\n    borderColor: `{elements.state.${value}.borderColor.primary} !important`,\n    \":deep(p code)\": {\n      color: `{elements.state.${value}.color.secondary} !important`,\n      backgroundColor: `{elements.state.${value}.backgroundColor.secondary} !important`\n    },\n    \":deep(code)\": {\n      color: `{elements.state.${value}.color.primary} !important`,\n      backgroundColor: `{elements.state.${value}.backgroundColor.secondary} !important`\n    },\n    \":deep(a code)\": {\n      borderColor: `{elements.state.${value}.borderColor.primary} !important`\n    },\n    \":deep(a)\": {\n      borderColor: \"currentColor\",\n      code: {\n        backgroundColor: `{elements.state.${value}.backgroundColor.primary} !important`\n      },\n      \"&:hover\": {\n        color: `{elements.state.${value}.color.secondary} !important`,\n        borderColor: \"currentColor !important\",\n        code: {\n          backgroundColor: `{elements.state.${value}.backgroundColor.secondary} !important`,\n          color: `{elements.state.${value}.color.secondary} !important`,\n          borderColor: `{elements.state.${value}.borderColor.secondary} !important`\n        }\n      }\n    }\n  };\n};\nexport const utils = { my, mx, py, px, truncate, lineClamp, text, stateColors };\nexport default utils;\n",
-      "start": 1708178207068,
-      "end": 1708178207135,
+      "start": 1708190394181,
+      "end": 1708190394279,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -65,170 +65,170 @@
     },
     {
       "name": "vite:json",
-      "start": 1708178207135,
-      "end": 1708178207136,
+      "start": 1708190394279,
+      "end": 1708190394280,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708178207136,
-      "end": 1708178207136,
+      "start": 1708190394280,
+      "end": 1708190394280,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708178207136,
-      "end": 1708178207136,
+      "start": 1708190394280,
+      "end": 1708190394280,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708178207136,
-      "end": 1708178207136,
+      "start": 1708190394280,
+      "end": 1708190394280,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708178207136,
-      "end": 1708178207137,
+      "start": 1708190394280,
+      "end": 1708190394281,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708178207137,
-      "end": 1708178207137,
+      "start": 1708190394282,
+      "end": 1708190394282,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1708178207137,
-      "end": 1708178207137,
+      "start": 1708190394282,
+      "end": 1708190394282,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708178207138,
-      "end": 1708178207138,
+      "start": 1708190394282,
+      "end": 1708190394282,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708178207138,
-      "end": 1708178207138,
+      "start": 1708190394282,
+      "end": 1708190394282,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708178207138,
-      "end": 1708178207138,
+      "start": 1708190394287,
+      "end": 1708190394287,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708178207139,
-      "end": 1708178207139,
+      "start": 1708190394287,
+      "end": 1708190394287,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708178207139,
-      "end": 1708178207139,
+      "start": 1708190394287,
+      "end": 1708190394287,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708178207139,
-      "end": 1708178207139,
+      "start": 1708190394288,
+      "end": 1708190394288,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708178207139,
-      "end": 1708178207139,
+      "start": 1708190394288,
+      "end": 1708190394288,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708178207140,
-      "end": 1708178207140,
+      "start": 1708190394288,
+      "end": 1708190394288,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708178207140,
-      "end": 1708178207140,
+      "start": 1708190394288,
+      "end": 1708190394289,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708178207140,
-      "end": 1708178207141,
+      "start": 1708190394289,
+      "end": 1708190394289,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708178207141,
-      "end": 1708178207141,
+      "start": 1708190394290,
+      "end": 1708190394291,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708178207142,
-      "end": 1708178207142,
+      "start": 1708190394292,
+      "end": 1708190394292,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708178207142,
-      "end": 1708178207146,
+      "start": 1708190394292,
+      "end": 1708190394294,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708178207147,
-      "end": 1708178207147,
+      "start": 1708190394294,
+      "end": 1708190394295,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708178207147,
-      "end": 1708178207147,
+      "start": 1708190394295,
+      "end": 1708190394295,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1708178207148,
-      "end": 1708178207148,
+      "start": 1708190394295,
+      "end": 1708190394296,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1708178207148,
-      "end": 1708178207148,
+      "start": 1708190394296,
+      "end": 1708190394296,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1708178207149,
-      "end": 1708178207149,
+      "start": 1708190394296,
+      "end": 1708190394296,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708178207149,
-      "end": 1708178207149,
+      "start": 1708190394296,
+      "end": 1708190394297,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708178207150,
-      "end": 1708178207150,
+      "start": 1708190394297,
+      "end": 1708190394297,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708178207150,
-      "end": 1708178207150,
+      "start": 1708190394297,
+      "end": 1708190394297,
       "order": "normal"
     }
   ]
