@@ -4,51 +4,51 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, createVNode as _createVNode, createElementVNode as _createElementVNode, withCtx as _withCtx, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-346454d4\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = {\n  key: 0,\n  class: \"docs-page-bottom\"\n}\nconst _hoisted_2 = {\n  key: 0,\n  class: \"edit-link\"\n}\nconst _hoisted_3 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"span\", null, \" Edit this page on GitHub \", -1))\nconst _hoisted_4 = { key: 1 }\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'DocsPageBottom',\n  setup(__props) {\n\nconst { page } = useContent()\nconst { config } = useDocus()\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_Icon = _resolveComponent(\"Icon\")!\n  const _component_ProseA = _resolveComponent(\"ProseA\")!\n  const _component_EditOnLink = _resolveComponent(\"EditOnLink\")!\n\n  return (_unref(page))\n    ? (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        (_unref(config)?.github?.edit)\n          ? (_openBlock(), _createElementBlock(\"div\", _hoisted_2, [\n              _createVNode(_component_Icon, { name: \"uil:edit\" }),\n              _createVNode(_component_EditOnLink, { page: _unref(page) }, {\n                default: _withCtx(({ url }) => [\n                  _createVNode(_component_ProseA, { to: url }, {\n                    default: _withCtx(() => [\n                      _hoisted_3\n                    ]),\n                    _: 2\n                  }, 1032, [\"to\"])\n                ]),\n                _: 1\n              }, 8, [\"page\"])\n            ]))\n          : _createCommentVNode(\"\", true),\n        (_unref(page)?.mtime)\n          ? (_openBlock(), _createElementBlock(\"span\", _hoisted_4, [\n              _createTextVNode(\"Updated on \"),\n              _createElementVNode(\"b\", null, _toDisplayString(new Intl.DateTimeFormat('en-US').format(Date.parse(_unref(page).mtime))), 1)\n            ]))\n          : _createCommentVNode(\"\", true)\n      ]))\n    : _createCommentVNode(\"\", true)\n}\n}\n\n})",
-      "start": 1708210048890,
-      "end": 1708210048890
+      "start": 1708283010394,
+      "end": 1708283010394
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708210048893,
-      "end": 1708210048893,
+      "start": 1708283010403,
+      "end": 1708283010403,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708210048896,
-      "end": 1708210048896,
+      "start": 1708283010408,
+      "end": 1708283010409,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, createVNode as _createVNode, createElementVNode as _createElementVNode, withCtx as _withCtx, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-346454d4\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = {\n  key: 0,\n  class: \"docs-page-bottom\"\n}\nconst _hoisted_2 = {\n  key: 0,\n  class: \"edit-link\"\n}\nconst _hoisted_3 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"span\", null, \" Edit this page on GitHub \", -1))\nconst _hoisted_4 = { key: 1 }\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'DocsPageBottom',\n  setup(__props) {\n\nconst { page } = useContent()\nconst { config } = useDocus()\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_Icon = _resolveComponent(\"Icon\")!\n  const _component_ProseA = _resolveComponent(\"ProseA\")!\n  const _component_EditOnLink = _resolveComponent(\"EditOnLink\")!\n\n  return (_unref(page))\n    ? (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        (_unref(config)?.github?.edit)\n          ? (_openBlock(), _createElementBlock(\"div\", _hoisted_2, [\n              _createVNode(_component_Icon, { name: \"uil:edit\" }),\n              _createVNode(_component_EditOnLink, { page: _unref(page) }, {\n                default: _withCtx(({ url }) => [\n                  _createVNode(_component_ProseA, { to: url }, {\n                    default: _withCtx(() => [\n                      _hoisted_3\n                    ]),\n                    _: 2\n                  }, 1032, [\"to\"])\n                ]),\n                _: 1\n              }, 8, [\"page\"])\n            ]))\n          : _createCommentVNode(\"\", true),\n        (_unref(page)?.mtime)\n          ? (_openBlock(), _createElementBlock(\"span\", _hoisted_4, [\n              _createTextVNode(\"Updated on \"),\n              _createElementVNode(\"b\", null, _toDisplayString(new Intl.DateTimeFormat('en-US').format(Date.parse(_unref(page).mtime))), 1)\n            ]))\n          : _createCommentVNode(\"\", true)\n      ]))\n    : _createCommentVNode(\"\", true)\n}\n}\n\n})",
-      "start": 1708210048900,
-      "end": 1708210048900,
+      "start": 1708283010416,
+      "end": 1708283010416,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708210048901,
-      "end": 1708210048901,
+      "start": 1708283010417,
+      "end": 1708283010417,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708210048901,
-      "end": 1708210048901,
+      "start": 1708283010418,
+      "end": 1708283010418,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708210048901,
-      "end": 1708210048901,
+      "start": 1708283010422,
+      "end": 1708283010422,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, createVNode as _createVNode, createElementVNode as _createElementVNode, withCtx as _withCtx, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-346454d4\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = {\n  key: 0,\n  class: \"docs-page-bottom\"\n};\nconst _hoisted_2 = {\n  key: 0,\n  class: \"edit-link\"\n};\nconst _hoisted_3 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"span\", null, \" Edit this page on GitHub \", -1));\nconst _hoisted_4 = { key: 1 };\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"DocsPageBottom\",\n  setup(__props) {\n    const { page } = useContent();\n    const { config } = useDocus();\n    return (_ctx, _cache) => {\n      const _component_Icon = _resolveComponent(\"Icon\");\n      const _component_ProseA = _resolveComponent(\"ProseA\");\n      const _component_EditOnLink = _resolveComponent(\"EditOnLink\");\n      return _unref(page) ? (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _unref(config)?.github?.edit ? (_openBlock(), _createElementBlock(\"div\", _hoisted_2, [\n          _createVNode(_component_Icon, { name: \"uil:edit\" }),\n          _createVNode(_component_EditOnLink, { page: _unref(page) }, {\n            default: _withCtx(({ url }) => [\n              _createVNode(_component_ProseA, { to: url }, {\n                default: _withCtx(() => [\n                  _hoisted_3\n                ]),\n                _: 2\n              }, 1032, [\"to\"])\n            ]),\n            _: 1\n          }, 8, [\"page\"])\n        ])) : _createCommentVNode(\"\", true),\n        _unref(page)?.mtime ? (_openBlock(), _createElementBlock(\"span\", _hoisted_4, [\n          _createTextVNode(\"Updated on \"),\n          _createElementVNode(\"b\", null, _toDisplayString(new Intl.DateTimeFormat(\"en-US\").format(Date.parse(_unref(page).mtime))), 1)\n        ])) : _createCommentVNode(\"\", true)\n      ])) : _createCommentVNode(\"\", true);\n    };\n  }\n});\n",
-      "start": 1708210048901,
-      "end": 1708210049702,
+      "start": 1708283010423,
+      "end": 1708283011591,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -64,123 +64,123 @@
     },
     {
       "name": "vite:json",
-      "start": 1708210049702,
-      "end": 1708210049702,
+      "start": 1708283011591,
+      "end": 1708283011591,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708210049703,
-      "end": 1708210049703,
+      "start": 1708283011591,
+      "end": 1708283011591,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708210049703,
-      "end": 1708210049703,
+      "start": 1708283011591,
+      "end": 1708283011591,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708210049703,
-      "end": 1708210049703,
+      "start": 1708283011592,
+      "end": 1708283011592,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708210049703,
-      "end": 1708210049703,
+      "start": 1708283011592,
+      "end": 1708283011592,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708210049703,
-      "end": 1708210049703,
+      "start": 1708283011592,
+      "end": 1708283011592,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1708210049703,
-      "end": 1708210049703,
+      "start": 1708283011592,
+      "end": 1708283011592,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708210049703,
-      "end": 1708210049703,
+      "start": 1708283011592,
+      "end": 1708283011593,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708210049704,
-      "end": 1708210049704,
+      "start": 1708283011593,
+      "end": 1708283011593,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708210049704,
-      "end": 1708210049704,
+      "start": 1708283011593,
+      "end": 1708283011593,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708210049704,
-      "end": 1708210049704,
+      "start": 1708283011593,
+      "end": 1708283011594,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708210049704,
-      "end": 1708210049704,
+      "start": 1708283011594,
+      "end": 1708283011594,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708210049704,
-      "end": 1708210049704,
+      "start": 1708283011594,
+      "end": 1708283011594,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708210049704,
-      "end": 1708210049704,
+      "start": 1708283011594,
+      "end": 1708283011594,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708210049704,
-      "end": 1708210049704,
+      "start": 1708283011594,
+      "end": 1708283011594,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708210049704,
-      "end": 1708210049704,
+      "start": 1708283011594,
+      "end": 1708283011594,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708210049704,
-      "end": 1708210049704,
+      "start": 1708283011594,
+      "end": 1708283011594,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708210049704,
-      "end": 1708210049704,
+      "start": 1708283011594,
+      "end": 1708283011594,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708210049709,
-      "end": 1708210049709,
+      "start": 1708283011594,
+      "end": 1708283011597,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { useContent } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/composables/content';\nimport { useDocus } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/composables/useDocus.ts';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, createVNode as _createVNode, createElementVNode as _createElementVNode, withCtx as _withCtx, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-346454d4\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = {\n  key: 0,\n  class: \"docs-page-bottom\"\n};\nconst _hoisted_2 = {\n  key: 0,\n  class: \"edit-link\"\n};\nconst _hoisted_3 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"span\", null, \" Edit this page on GitHub \", -1));\nconst _hoisted_4 = { key: 1 };\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"DocsPageBottom\",\n  setup(__props) {\n    const { page } = useContent();\n    const { config } = useDocus();\n    return (_ctx, _cache) => {\n      const _component_Icon = _resolveComponent(\"Icon\");\n      const _component_ProseA = _resolveComponent(\"ProseA\");\n      const _component_EditOnLink = _resolveComponent(\"EditOnLink\");\n      return _unref(page) ? (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _unref(config)?.github?.edit ? (_openBlock(), _createElementBlock(\"div\", _hoisted_2, [\n          _createVNode(_component_Icon, { name: \"uil:edit\" }),\n          _createVNode(_component_EditOnLink, { page: _unref(page) }, {\n            default: _withCtx(({ url }) => [\n              _createVNode(_component_ProseA, { to: url }, {\n                default: _withCtx(() => [\n                  _hoisted_3\n                ]),\n                _: 2\n              }, 1032, [\"to\"])\n            ]),\n            _: 1\n          }, 8, [\"page\"])\n        ])) : _createCommentVNode(\"\", true),\n        _unref(page)?.mtime ? (_openBlock(), _createElementBlock(\"span\", _hoisted_4, [\n          _createTextVNode(\"Updated on \"),\n          _createElementVNode(\"b\", null, _toDisplayString(new Intl.DateTimeFormat(\"en-US\").format(Date.parse(_unref(page).mtime))), 1)\n        ])) : _createCommentVNode(\"\", true)\n      ])) : _createCommentVNode(\"\", true);\n    };\n  }\n});\n",
-      "start": 1708210049709,
-      "end": 1708210049723,
+      "start": 1708283011597,
+      "end": 1708283011609,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -193,51 +193,51 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1708210049723,
-      "end": 1708210049723,
+      "start": 1708283011610,
+      "end": 1708283011610,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708210049723,
-      "end": 1708210049723,
+      "start": 1708283011610,
+      "end": 1708283011610,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1708210049723,
-      "end": 1708210049723,
+      "start": 1708283011610,
+      "end": 1708283011610,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1708210049723,
-      "end": 1708210049723,
+      "start": 1708283011610,
+      "end": 1708283011611,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
       "result": "import { default as __nuxt_component_0 } from \"/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/Icon.vue\";\nimport { default as __nuxt_component_1 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseA.vue\";\nimport { default as __nuxt_component_2 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue\";\nimport { useContent } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/composables/content';\nimport { useDocus } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/composables/useDocus.ts';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, createVNode as _createVNode, createElementVNode as _createElementVNode, withCtx as _withCtx, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-346454d4\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = {\n  key: 0,\n  class: \"docs-page-bottom\"\n};\nconst _hoisted_2 = {\n  key: 0,\n  class: \"edit-link\"\n};\nconst _hoisted_3 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"span\", null, \" Edit this page on GitHub \", -1));\nconst _hoisted_4 = { key: 1 };\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"DocsPageBottom\",\n  setup(__props) {\n    const { page } = useContent();\n    const { config } = useDocus();\n    return (_ctx, _cache) => {\n      const _component_Icon = __nuxt_component_0;\n      const _component_ProseA = __nuxt_component_1;\n      const _component_EditOnLink = __nuxt_component_2;\n      return _unref(page) ? (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _unref(config)?.github?.edit ? (_openBlock(), _createElementBlock(\"div\", _hoisted_2, [\n          _createVNode(_component_Icon, { name: \"uil:edit\" }),\n          _createVNode(_component_EditOnLink, { page: _unref(page) }, {\n            default: _withCtx(({ url }) => [\n              _createVNode(_component_ProseA, { to: url }, {\n                default: _withCtx(() => [\n                  _hoisted_3\n                ]),\n                _: 2\n              }, 1032, [\"to\"])\n            ]),\n            _: 1\n          }, 8, [\"page\"])\n        ])) : _createCommentVNode(\"\", true),\n        _unref(page)?.mtime ? (_openBlock(), _createElementBlock(\"span\", _hoisted_4, [\n          _createTextVNode(\"Updated on \"),\n          _createElementVNode(\"b\", null, _toDisplayString(new Intl.DateTimeFormat(\"en-US\").format(Date.parse(_unref(page).mtime))), 1)\n        ])) : _createCommentVNode(\"\", true)\n      ])) : _createCommentVNode(\"\", true);\n    };\n  }\n});\n",
-      "start": 1708210049724,
-      "end": 1708210049724,
+      "start": 1708283011611,
+      "end": 1708283011611,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708210049725,
-      "end": 1708210049725,
+      "start": 1708283011612,
+      "end": 1708283011612,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708210049725,
-      "end": 1708210049725,
+      "start": 1708283011613,
+      "end": 1708283011613,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708210049725,
-      "end": 1708210049725,
+      "start": 1708283011613,
+      "end": 1708283011613,
       "order": "normal"
     }
   ]

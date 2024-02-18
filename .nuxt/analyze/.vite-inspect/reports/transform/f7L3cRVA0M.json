@@ -4,27 +4,27 @@
     {
       "name": "vite:load-fallback",
       "result": "<script setup lang=\"ts\">\ndefineProps({\n  title: {\n    type: String,\n    default: 'Features'\n  }\n})\n</script>\n\n<template>\n  <section class=\"card-grid\">\n    <ContentSlot :use=\"$slots.root\" />\n\n    <h2 class=\"title\">\n      <ContentSlot :use=\"$slots.title\" unwrap=\"p\">\n        {{ title }}\n      </ContentSlot>\n    </h2>\n    <div class=\"layout\">\n      <slot />\n    </div>\n  </section>\n</template>\n\n<style scoped lang=\"ts\">\ncss({\n  '.card-grid': {\n    position: 'relative',\n    paddingBottom: '{space.20}',\n    '@sm': {\n      paddingBottom: '{space.24}',\n    },\n    '@lg': {\n      paddingBottom: '{space.32}',\n    },\n    '.title': {\n      marginBottom: '{space.8}',\n      fontSize: '{text.3xl.fontSize}',\n      lineHeight: '{text.3xl.lineHeight}',\n      fontWeight: '{fontWeight.bold}',\n      letterSpacing: '{letterSpacing.tight}',\n      color: '{elements.text.primary.color.static}',\n      '@sm': {\n        fontSize: '{text.4xl.fontSize}',\n        lineHeight: '{text.4xl.lineHeight}',\n      }\n    },\n    '.layout': {\n      display: 'grid',\n      gap: '{space.4}',\n      textAlign: 'start',\n      '@sm': {\n        gridTemplateColumns: 'repeat(2, minmax(0, 1fr))'\n      },\n      '@lg': {\n        gridTemplateColumns: 'repeat(3, minmax(0, 1fr))'\n      },\n      '@2xl': {\n        gap: '{space.8}'\n      }\n    }\n  }\n})\n</style>\n",
-      "start": 1708210048282,
-      "end": 1708210048393,
+      "start": 1708283008951,
+      "end": 1708283009262,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708210048393,
-      "end": 1708210048393,
+      "start": 1708283009262,
+      "end": 1708283009262,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708210048393,
-      "end": 1708210048393,
+      "start": 1708283009262,
+      "end": 1708283009262,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "<script setup lang=\"ts\">\ndefineProps({\n  title: {\n    type: String,\n    default: 'Features'\n  }\n})\n</script>\n\n<template>\n  <section class=\"card-grid\">\n    <ContentSlot :use=\"$slots.root\" />\n\n    <h2 class=\"title\">\n      <ContentSlot :use=\"$slots.title\" unwrap=\"p\">\n        {{ title }}\n      </ContentSlot>\n    </h2>\n    <div class=\"layout\">\n      <slot />\n    </div>\n  </section>\n</template>\n\n<style scoped lang=\"postcss\" transformed>\n.card-grid{position:relative;padding-bottom:var(--space-20);}@media (min-width: 640px){.card-grid{padding-bottom:var(--space-24);}}@media (min-width: 1024px){.card-grid{padding-bottom:var(--space-32);}}.card-grid .title{margin-bottom:var(--space-8);font-size:var(--text-3xl-fontSize);line-height:var(--text-3xl-lineHeight);font-weight:var(--fontWeight-bold);letter-spacing:var(--letterSpacing-tight);color:var(--elements-text-primary-color-static);}@media (min-width: 640px){.card-grid .title{font-size:var(--text-4xl-fontSize);line-height:var(--text-4xl-lineHeight);}}.card-grid .layout{display:grid;gap:var(--space-4);text-align:start;}@media (min-width: 640px){.card-grid .layout{grid-template-columns:repeat(2, minmax(0, 1fr));}}@media (min-width: 1024px){.card-grid .layout{grid-template-columns:repeat(3, minmax(0, 1fr));}}@media (min-width: 1536px){.card-grid .layout{gap:var(--space-8);}}\n</style>\n",
-      "start": 1708210048393,
-      "end": 1708210048396,
+      "start": 1708283009262,
+      "end": 1708283009267,
       "order": "pre",
       "sourcemaps": {
         "version": 3,
@@ -39,8 +39,8 @@
     {
       "name": "content-slot",
       "result": "<script setup lang=\"ts\">\ndefineProps({\n  title: {\n    type: String,\n    default: 'Features'\n  }\n})\n</script>\n\n<template>\n  <section class=\"card-grid\">\n    <MDCSlot  name=\"root\" />\n\n    <h2 class=\"title\">\n      <MDCSlot  name=\"title\" unwrap=\"p\">\n        {{ title }}\n      </MDCSlot>\n    </h2>\n    <div class=\"layout\">\n      <slot />\n    </div>\n  </section>\n</template>\n\n<style scoped lang=\"postcss\" transformed>\n.card-grid{position:relative;padding-bottom:var(--space-20);}@media (min-width: 640px){.card-grid{padding-bottom:var(--space-24);}}@media (min-width: 1024px){.card-grid{padding-bottom:var(--space-32);}}.card-grid .title{margin-bottom:var(--space-8);font-size:var(--text-3xl-fontSize);line-height:var(--text-3xl-lineHeight);font-weight:var(--fontWeight-bold);letter-spacing:var(--letterSpacing-tight);color:var(--elements-text-primary-color-static);}@media (min-width: 640px){.card-grid .title{font-size:var(--text-4xl-fontSize);line-height:var(--text-4xl-lineHeight);}}.card-grid .layout{display:grid;gap:var(--space-4);text-align:start;}@media (min-width: 640px){.card-grid .layout{grid-template-columns:repeat(2, minmax(0, 1fr));}}@media (min-width: 1024px){.card-grid .layout{grid-template-columns:repeat(3, minmax(0, 1fr));}}@media (min-width: 1536px){.card-grid .layout{gap:var(--space-8);}}\n</style>\n",
-      "start": 1708210048396,
-      "end": 1708210048396,
+      "start": 1708283009267,
+      "end": 1708283009267,
       "order": "pre",
       "sourcemaps": {
         "mappings": ""
@@ -48,39 +48,39 @@
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708210048396,
-      "end": 1708210048396,
+      "start": 1708283009267,
+      "end": 1708283009267,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708210048396,
-      "end": 1708210048396,
+      "start": 1708283009267,
+      "end": 1708283009267,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1708210048396,
-      "end": 1708210048396,
+      "start": 1708283009267,
+      "end": 1708283009267,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1708210048396,
-      "end": 1708210048396,
+      "start": 1708283009267,
+      "end": 1708283009267,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708210048396,
-      "end": 1708210048396,
+      "start": 1708283009267,
+      "end": 1708283009267,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "import _sfc_main from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/landing/CardGrid.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/landing/CardGrid.vue?vue&type=script&setup=true&lang.ts\";\nimport \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/landing/CardGrid.vue?vue&type=style&index=0&scoped=f9e22db6&transformed=true&lang.postcss\";\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"__scopeId\", \"data-v-f9e22db6\"]]);\n",
-      "start": 1708210048396,
-      "end": 1708210048411,
+      "start": 1708283009267,
+      "end": 1708283009334,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -88,152 +88,152 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708210048411,
-      "end": 1708210048411,
+      "start": 1708283009334,
+      "end": 1708283009334,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708210048411,
-      "end": 1708210048411,
+      "start": 1708283009334,
+      "end": 1708283009334,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708210048411,
-      "end": 1708210048411,
+      "start": 1708283009335,
+      "end": 1708283009335,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1708210048411,
-      "end": 1708210048411,
+      "start": 1708283009335,
+      "end": 1708283009335,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708210048411,
-      "end": 1708210048411,
+      "start": 1708283009335,
+      "end": 1708283009335,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708210048411,
-      "end": 1708210048411,
+      "start": 1708283009335,
+      "end": 1708283009335,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708210048411,
-      "end": 1708210048411,
+      "start": 1708283009335,
+      "end": 1708283009335,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708210048411,
-      "end": 1708210048411,
+      "start": 1708283009336,
+      "end": 1708283009336,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708210048411,
-      "end": 1708210048411,
+      "start": 1708283009336,
+      "end": 1708283009336,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708210048412,
-      "end": 1708210048412,
+      "start": 1708283009336,
+      "end": 1708283009336,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708210048412,
-      "end": 1708210048412,
+      "start": 1708283009336,
+      "end": 1708283009336,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708210048412,
-      "end": 1708210048412,
+      "start": 1708283009336,
+      "end": 1708283009336,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708210048412,
-      "end": 1708210048412,
+      "start": 1708283009336,
+      "end": 1708283009336,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708210048412,
-      "end": 1708210048412,
+      "start": 1708283009336,
+      "end": 1708283009336,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708210048412,
-      "end": 1708210048412,
+      "start": 1708283009336,
+      "end": 1708283009336,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708210048412,
-      "end": 1708210048412,
+      "start": 1708283009337,
+      "end": 1708283009337,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708210048412,
-      "end": 1708210048413,
+      "start": 1708283009337,
+      "end": 1708283009340,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708210048413,
-      "end": 1708210048413,
+      "start": 1708283009340,
+      "end": 1708283009340,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708210048413,
-      "end": 1708210048413,
+      "start": 1708283009340,
+      "end": 1708283009340,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1708210048413,
-      "end": 1708210048413,
+      "start": 1708283009340,
+      "end": 1708283009341,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1708210048413,
-      "end": 1708210048413,
+      "start": 1708283009341,
+      "end": 1708283009341,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1708210048413,
-      "end": 1708210048413,
+      "start": 1708283009341,
+      "end": 1708283009341,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708210048413,
-      "end": 1708210048413,
+      "start": 1708283009341,
+      "end": 1708283009342,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708210048413,
-      "end": 1708210048413,
+      "start": 1708283009342,
+      "end": 1708283009342,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708210048413,
-      "end": 1708210048413,
+      "start": 1708283009342,
+      "end": 1708283009342,
       "order": "normal"
     }
   ]

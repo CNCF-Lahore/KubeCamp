@@ -4,172 +4,172 @@
     {
       "name": "vite:load-fallback",
       "result": "import { createApp } from \"vue\";\nimport { createDefu } from \"defu\";\nimport { callWithNuxt } from \"#app\";\nimport ContentPreviewMode from \"../components/ContentPreviewMode.vue\";\nimport { createSingleton, deepAssign, deepDelete, mergeDraft, StudioConfigFiles } from \"../utils/index.mjs\";\nimport { useAppConfig, useNuxtApp, useRuntimeConfig, useState, useContentState, queryContent, ref, toRaw, useRoute, useRouter } from \"#imports\";\nconst useDefaultAppConfig = createSingleton(() => JSON.parse(JSON.stringify(useAppConfig())));\nconst defu = createDefu((obj, key, value) => {\n  if (Array.isArray(obj[key]) && Array.isArray(value)) {\n    obj[key] = value;\n    return true;\n  }\n});\nexport const useStudio = () => {\n  const nuxtApp = useNuxtApp();\n  const { studio: studioConfig, content: contentConfig } = useRuntimeConfig().public;\n  const contentPathMap = {};\n  const initialAppConfig = useDefaultAppConfig();\n  let initialTokensConfig;\n  const storage = useState(\"studio-client-db\", () => null);\n  const dbFiles = useState(\"studio-preview-db-files\", () => []);\n  if (!storage.value) {\n    nuxtApp.hook(\"content:storage\", (_storage) => {\n      storage.value = _storage;\n    });\n    queryContent(\"/non-existing-path\").findOne();\n  }\n  const syncPreviewFiles = async (contentStorage, files) => {\n    const previewToken = window.sessionStorage.getItem(\"previewToken\");\n    const keys = await contentStorage.getKeys(`${previewToken}:`);\n    await Promise.all(keys.map((key) => contentStorage.removeItem(key)));\n    const sources = new Set(files.map((file) => file.parsed._id.split(\":\").shift()));\n    await contentStorage.setItem(`${previewToken}$`, JSON.stringify({ ignoreSources: Array.from(sources) }));\n    await Promise.all(\n      files.map((item) => {\n        contentPathMap[item.parsed._path] = item.parsed;\n        return contentStorage.setItem(`${previewToken}:${item.parsed._id}`, JSON.stringify(item.parsed));\n      })\n    );\n  };\n  const syncPreviewAppConfig = (appConfig) => {\n    const _appConfig = callWithNuxt(nuxtApp, useAppConfig);\n    if (_appConfig?.ui) {\n      _appConfig.ui.icons = { ..._appConfig.ui.icons, dynamic: true };\n    }\n    deepAssign(_appConfig, defu(appConfig, initialAppConfig));\n    if (!appConfig) {\n      deepDelete(_appConfig, initialAppConfig);\n    }\n  };\n  const syncPreviewTokensConfig = (tokensConfig) => {\n    const themeSheet = nuxtApp?.vueApp?._context?.config?.globalProperties?.$pinceauTheme;\n    if (!themeSheet || !themeSheet?.updateTheme) {\n      return;\n    }\n    if (!initialTokensConfig) {\n      initialTokensConfig = JSON.parse(JSON.stringify(themeSheet?.theme.value || {}));\n    }\n    callWithNuxt(\n      nuxtApp,\n      themeSheet.updateTheme,\n      [\n        // Using `defu` to merge with initial tokens\n        // This is important to revert to default values for missing properties\n        defu(tokensConfig, initialTokensConfig)\n      ]\n    );\n  };\n  const syncPreview = async (data) => {\n    dbFiles.value = data.files = data.files || dbFiles.value || [];\n    if (!storage.value) {\n      return false;\n    }\n    const mergedFiles = mergeDraft(data.files, data.additions, data.deletions);\n    const contentFiles = mergedFiles.filter((item) => ![StudioConfigFiles.appConfig, StudioConfigFiles.nuxtConfig, StudioConfigFiles.tokensConfig].includes(item.path));\n    await syncPreviewFiles(storage.value, contentFiles);\n    const appConfig = mergedFiles.find((item) => item.path === StudioConfigFiles.appConfig);\n    syncPreviewAppConfig(appConfig?.parsed);\n    const tokensConfig = mergedFiles.find((item) => item.path === StudioConfigFiles.tokensConfig);\n    syncPreviewTokensConfig(tokensConfig?.parsed);\n    requestRerender();\n    return true;\n  };\n  const requestPreviewSynchronization = async () => {\n    const previewToken = window.sessionStorage.getItem(\"previewToken\");\n    await $fetch(\"api/projects/preview/sync\", {\n      baseURL: studioConfig?.apiURL,\n      method: \"POST\",\n      params: {\n        token: previewToken\n      }\n    });\n  };\n  const mountPreviewUI = () => {\n    const previewToken = window.sessionStorage.getItem(\"previewToken\");\n    const el = document.createElement(\"div\");\n    el.id = \"__nuxt_preview_wrapper\";\n    document.body.appendChild(el);\n    createApp(ContentPreviewMode, {\n      previewToken,\n      apiURL: studioConfig?.apiURL,\n      syncPreview,\n      requestPreviewSyncAPI: requestPreviewSynchronization\n    }).mount(el);\n  };\n  const findContentWithId = async (path) => {\n    const previewToken = window.sessionStorage.getItem(\"previewToken\");\n    if (!path) {\n      return null;\n    }\n    path = path.replace(/\\/$/, \"\");\n    let content = await storage.value?.getItem(`${previewToken}:${path}`);\n    if (!content) {\n      content = await storage.value?.getItem(`cached:${path}`);\n    }\n    if (!content) {\n      content = content = await storage.value?.getItem(path);\n    }\n    if (!content) {\n      content = contentPathMap[path || \"/\"];\n    }\n    return content;\n  };\n  const updateContent = (content) => {\n    const previewToken = window.sessionStorage.getItem(\"previewToken\");\n    if (!storage.value) {\n      return;\n    }\n    contentPathMap[content.parsed._path] = content.parsed;\n    storage.value.setItem(`${previewToken}:${content.parsed?._id}`, JSON.stringify(content.parsed));\n  };\n  const removeContentWithId = async (path) => {\n    const previewToken = window.sessionStorage.getItem(\"previewToken\");\n    const content = await findContentWithId(path);\n    await storage.value?.removeItem(`${previewToken}:${path}`);\n    if (content) {\n      delete contentPathMap[content._path];\n      const nonDraftContent = await findContentWithId(content._id);\n      if (nonDraftContent) {\n        contentPathMap[nonDraftContent._path] = nonDraftContent;\n      }\n    }\n  };\n  const requestRerender = async () => {\n    if (contentConfig?.documentDriven) {\n      const { pages } = callWithNuxt(nuxtApp, useContentState);\n      const contents = await Promise.all(Object.keys(pages.value).map(async (key) => {\n        return await findContentWithId(pages.value[key]?._id ?? key);\n      }));\n      pages.value = contents.reduce((acc, item, index) => {\n        if (item) {\n          acc[Object.keys(pages.value)[index]] = item;\n        }\n        return acc;\n      }, {});\n    }\n    await nuxtApp.hooks.callHookParallel(\"app:data:refresh\");\n  };\n  return {\n    apiURL: studioConfig?.apiURL,\n    contentStorage: storage,\n    syncPreviewFiles,\n    syncPreviewAppConfig,\n    syncPreviewTokensConfig,\n    requestPreviewSynchronization,\n    findContentWithId,\n    updateContent,\n    removeContentWithId,\n    requestRerender,\n    mountPreviewUI,\n    initiateIframeCommunication\n  };\n  function initiateIframeCommunication() {\n    if (!window.parent || window.self === window.parent) {\n      return;\n    }\n    const router = useRouter();\n    const route = useRoute();\n    const editorSelectedPath = ref(\"\");\n    const routePayload = (route2) => ({\n      path: route2.path,\n      query: toRaw(route2.query),\n      params: toRaw(route2.params),\n      fullPath: route2.fullPath,\n      meta: toRaw(route2.meta)\n    });\n    window.addEventListener(\"keydown\", (e) => {\n      if (e.metaKey || e.ctrlKey || e.altKey || e.shiftKey) {\n        window.parent.postMessage({\n          type: \"nuxt-studio:preview:keydown\",\n          payload: {\n            key: e.key,\n            metaKey: e.metaKey,\n            ctrlKey: e.ctrlKey,\n            shiftKey: e.shiftKey,\n            altKey: e.altKey\n          }\n        }, \"*\");\n      }\n    });\n    window.addEventListener(\"message\", async (e) => {\n      if (![\"https://nuxt.studio\", \"https://dev.nuxt.studio\", \"http://localhost:3000\"].includes(e.origin)) {\n        return;\n      }\n      const { type, payload = {} } = e.data || {};\n      switch (type) {\n        case \"nuxt-studio:editor:file-selected\": {\n          const content = await findContentWithId(payload.path);\n          if (!content) {\n          } else if (content._partial) {\n          } else if (content._path !== useRoute().path) {\n            editorSelectedPath.value = content._path;\n            router.push(content._path);\n          }\n          break;\n        }\n        case \"nuxt-studio:editor:file-changed\": {\n          const { additions = [], deletions = [] } = payload;\n          for (const addition of additions) {\n            await updateContent(addition);\n          }\n          for (const deletion of deletions) {\n            await removeContentWithId(deletion.path);\n          }\n          requestRerender();\n          break;\n        }\n        case \"nuxt-studio:preview:sync\": {\n          syncPreview(payload);\n          break;\n        }\n        case \"nuxt-studio:config:file-changed\": {\n          const { additions = [], deletions = [] } = payload;\n          const appConfig = additions.find((item) => item.path === StudioConfigFiles.appConfig);\n          if (appConfig) {\n            syncPreviewAppConfig(appConfig?.parsed);\n          }\n          const shouldRemoveAppConfig = deletions.find((item) => item.path === StudioConfigFiles.appConfig);\n          if (shouldRemoveAppConfig) {\n            syncPreviewAppConfig(void 0);\n          }\n          const tokensConfig = additions.find((item) => item.path === StudioConfigFiles.tokensConfig);\n          if (tokensConfig) {\n            syncPreviewTokensConfig(tokensConfig?.parsed);\n          }\n          const shouldRemoveTokensConfig = deletions.find((item) => item.path === StudioConfigFiles.tokensConfig);\n          if (shouldRemoveTokensConfig) {\n            syncPreviewTokensConfig(void 0);\n          }\n          break;\n        }\n      }\n    });\n    nuxtApp.hook(\"page:finish\", () => {\n      detectRenderedContents();\n      if (nuxtApp.payload.prerenderedAt) {\n        requestRerender();\n      }\n    });\n    nuxtApp.hook(\"content:document-driven:finish\", ({ route: route2, page }) => {\n      route2.meta.studio_page_contentId = page?._id;\n    });\n    nuxtApp.hook(\"nuxt-studio:preview:ready\", () => {\n      window.parent.postMessage({\n        type: \"nuxt-studio:preview:ready\",\n        payload: routePayload(useRoute())\n      }, \"*\");\n      setTimeout(() => {\n        detectRenderedContents();\n      }, 100);\n    });\n    function detectRenderedContents() {\n      const renderedContents = Array.from(window.document.querySelectorAll(\"[data-content-id]\")).map((el) => el.getAttribute(\"data-content-id\"));\n      const contentIds = Array.from(/* @__PURE__ */ new Set([route.meta.studio_page_contentId, ...renderedContents])).filter(Boolean);\n      if (editorSelectedPath.value === contentIds[0]) {\n        editorSelectedPath.value = \"\";\n        return;\n      }\n      window.openContentInStudioEditor(contentIds, { navigate: true, pageContentId: route.meta.studio_page_contentId });\n    }\n    window.openContentInStudioEditor = (contentIds, data = {}) => {\n      window.parent.postMessage({\n        type: \"nuxt-studio:preview:navigate\",\n        payload: {\n          ...routePayload(route),\n          contentIds,\n          ...data\n        }\n      }, \"*\");\n    };\n  }\n};\n",
-      "start": 1708210047662,
-      "end": 1708210047827,
+      "start": 1708283007140,
+      "end": 1708283007541,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708210047828,
-      "end": 1708210047828,
+      "start": 1708283007541,
+      "end": 1708283007541,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708210047828,
-      "end": 1708210047828,
+      "start": 1708283007541,
+      "end": 1708283007541,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { createApp } from \"vue\";\nimport { createDefu } from \"defu\";\nimport { callWithNuxt } from \"#app\";\nimport ContentPreviewMode from \"../components/ContentPreviewMode.vue\";\nimport { createSingleton, deepAssign, deepDelete, mergeDraft, StudioConfigFiles } from \"../utils/index.mjs\";\nimport { useAppConfig, useNuxtApp, useRuntimeConfig, useState, useContentState, queryContent, ref, toRaw, useRoute, useRouter } from \"#imports\";\nconst useDefaultAppConfig = createSingleton(() => JSON.parse(JSON.stringify(useAppConfig())));\nconst defu = createDefu((obj, key, value) => {\n  if (Array.isArray(obj[key]) && Array.isArray(value)) {\n    obj[key] = value;\n    return true;\n  }\n});\nexport const useStudio = () => {\n  const nuxtApp = useNuxtApp();\n  const { studio: studioConfig, content: contentConfig } = useRuntimeConfig().public;\n  const contentPathMap = {};\n  const initialAppConfig = useDefaultAppConfig();\n  let initialTokensConfig;\n  const storage = useState(\"studio-client-db\", () => null);\n  const dbFiles = useState(\"studio-preview-db-files\", () => []);\n  if (!storage.value) {\n    nuxtApp.hook(\"content:storage\", (_storage) => {\n      storage.value = _storage;\n    });\n    queryContent(\"/non-existing-path\").findOne();\n  }\n  const syncPreviewFiles = async (contentStorage, files) => {\n    const previewToken = window.sessionStorage.getItem(\"previewToken\");\n    const keys = await contentStorage.getKeys(`${previewToken}:`);\n    await Promise.all(keys.map((key) => contentStorage.removeItem(key)));\n    const sources = new Set(files.map((file) => file.parsed._id.split(\":\").shift()));\n    await contentStorage.setItem(`${previewToken}$`, JSON.stringify({ ignoreSources: Array.from(sources) }));\n    await Promise.all(\n      files.map((item) => {\n        contentPathMap[item.parsed._path] = item.parsed;\n        return contentStorage.setItem(`${previewToken}:${item.parsed._id}`, JSON.stringify(item.parsed));\n      })\n    );\n  };\n  const syncPreviewAppConfig = (appConfig) => {\n    const _appConfig = callWithNuxt(nuxtApp, useAppConfig);\n    if (_appConfig?.ui) {\n      _appConfig.ui.icons = { ..._appConfig.ui.icons, dynamic: true };\n    }\n    deepAssign(_appConfig, defu(appConfig, initialAppConfig));\n    if (!appConfig) {\n      deepDelete(_appConfig, initialAppConfig);\n    }\n  };\n  const syncPreviewTokensConfig = (tokensConfig) => {\n    const themeSheet = nuxtApp?.vueApp?._context?.config?.globalProperties?.$pinceauTheme;\n    if (!themeSheet || !themeSheet?.updateTheme) {\n      return;\n    }\n    if (!initialTokensConfig) {\n      initialTokensConfig = JSON.parse(JSON.stringify(themeSheet?.theme.value || {}));\n    }\n    callWithNuxt(\n      nuxtApp,\n      themeSheet.updateTheme,\n      [\n        // Using `defu` to merge with initial tokens\n        // This is important to revert to default values for missing properties\n        defu(tokensConfig, initialTokensConfig)\n      ]\n    );\n  };\n  const syncPreview = async (data) => {\n    dbFiles.value = data.files = data.files || dbFiles.value || [];\n    if (!storage.value) {\n      return false;\n    }\n    const mergedFiles = mergeDraft(data.files, data.additions, data.deletions);\n    const contentFiles = mergedFiles.filter((item) => ![StudioConfigFiles.appConfig, StudioConfigFiles.nuxtConfig, StudioConfigFiles.tokensConfig].includes(item.path));\n    await syncPreviewFiles(storage.value, contentFiles);\n    const appConfig = mergedFiles.find((item) => item.path === StudioConfigFiles.appConfig);\n    syncPreviewAppConfig(appConfig?.parsed);\n    const tokensConfig = mergedFiles.find((item) => item.path === StudioConfigFiles.tokensConfig);\n    syncPreviewTokensConfig(tokensConfig?.parsed);\n    requestRerender();\n    return true;\n  };\n  const requestPreviewSynchronization = async () => {\n    const previewToken = window.sessionStorage.getItem(\"previewToken\");\n    await $fetch(\"api/projects/preview/sync\", {\n      baseURL: studioConfig?.apiURL,\n      method: \"POST\",\n      params: {\n        token: previewToken\n      }\n    });\n  };\n  const mountPreviewUI = () => {\n    const previewToken = window.sessionStorage.getItem(\"previewToken\");\n    const el = document.createElement(\"div\");\n    el.id = \"__nuxt_preview_wrapper\";\n    document.body.appendChild(el);\n    createApp(ContentPreviewMode, {\n      previewToken,\n      apiURL: studioConfig?.apiURL,\n      syncPreview,\n      requestPreviewSyncAPI: requestPreviewSynchronization\n    }).mount(el);\n  };\n  const findContentWithId = async (path) => {\n    const previewToken = window.sessionStorage.getItem(\"previewToken\");\n    if (!path) {\n      return null;\n    }\n    path = path.replace(/\\/$/, \"\");\n    let content = await storage.value?.getItem(`${previewToken}:${path}`);\n    if (!content) {\n      content = await storage.value?.getItem(`cached:${path}`);\n    }\n    if (!content) {\n      content = content = await storage.value?.getItem(path);\n    }\n    if (!content) {\n      content = contentPathMap[path || \"/\"];\n    }\n    return content;\n  };\n  const updateContent = (content) => {\n    const previewToken = window.sessionStorage.getItem(\"previewToken\");\n    if (!storage.value) {\n      return;\n    }\n    contentPathMap[content.parsed._path] = content.parsed;\n    storage.value.setItem(`${previewToken}:${content.parsed?._id}`, JSON.stringify(content.parsed));\n  };\n  const removeContentWithId = async (path) => {\n    const previewToken = window.sessionStorage.getItem(\"previewToken\");\n    const content = await findContentWithId(path);\n    await storage.value?.removeItem(`${previewToken}:${path}`);\n    if (content) {\n      delete contentPathMap[content._path];\n      const nonDraftContent = await findContentWithId(content._id);\n      if (nonDraftContent) {\n        contentPathMap[nonDraftContent._path] = nonDraftContent;\n      }\n    }\n  };\n  const requestRerender = async () => {\n    if (contentConfig?.documentDriven) {\n      const { pages } = callWithNuxt(nuxtApp, useContentState);\n      const contents = await Promise.all(Object.keys(pages.value).map(async (key) => {\n        return await findContentWithId(pages.value[key]?._id ?? key);\n      }));\n      pages.value = contents.reduce((acc, item, index) => {\n        if (item) {\n          acc[Object.keys(pages.value)[index]] = item;\n        }\n        return acc;\n      }, {});\n    }\n    await nuxtApp.hooks.callHookParallel(\"app:data:refresh\");\n  };\n  return {\n    apiURL: studioConfig?.apiURL,\n    contentStorage: storage,\n    syncPreviewFiles,\n    syncPreviewAppConfig,\n    syncPreviewTokensConfig,\n    requestPreviewSynchronization,\n    findContentWithId,\n    updateContent,\n    removeContentWithId,\n    requestRerender,\n    mountPreviewUI,\n    initiateIframeCommunication\n  };\n  function initiateIframeCommunication() {\n    if (!window.parent || window.self === window.parent) {\n      return;\n    }\n    const router = useRouter();\n    const route = useRoute();\n    const editorSelectedPath = ref(\"\");\n    const routePayload = (route2) => ({\n      path: route2.path,\n      query: toRaw(route2.query),\n      params: toRaw(route2.params),\n      fullPath: route2.fullPath,\n      meta: toRaw(route2.meta)\n    });\n    window.addEventListener(\"keydown\", (e) => {\n      if (e.metaKey || e.ctrlKey || e.altKey || e.shiftKey) {\n        window.parent.postMessage({\n          type: \"nuxt-studio:preview:keydown\",\n          payload: {\n            key: e.key,\n            metaKey: e.metaKey,\n            ctrlKey: e.ctrlKey,\n            shiftKey: e.shiftKey,\n            altKey: e.altKey\n          }\n        }, \"*\");\n      }\n    });\n    window.addEventListener(\"message\", async (e) => {\n      if (![\"https://nuxt.studio\", \"https://dev.nuxt.studio\", \"http://localhost:3000\"].includes(e.origin)) {\n        return;\n      }\n      const { type, payload = {} } = e.data || {};\n      switch (type) {\n        case \"nuxt-studio:editor:file-selected\": {\n          const content = await findContentWithId(payload.path);\n          if (!content) {\n          } else if (content._partial) {\n          } else if (content._path !== useRoute().path) {\n            editorSelectedPath.value = content._path;\n            router.push(content._path);\n          }\n          break;\n        }\n        case \"nuxt-studio:editor:file-changed\": {\n          const { additions = [], deletions = [] } = payload;\n          for (const addition of additions) {\n            await updateContent(addition);\n          }\n          for (const deletion of deletions) {\n            await removeContentWithId(deletion.path);\n          }\n          requestRerender();\n          break;\n        }\n        case \"nuxt-studio:preview:sync\": {\n          syncPreview(payload);\n          break;\n        }\n        case \"nuxt-studio:config:file-changed\": {\n          const { additions = [], deletions = [] } = payload;\n          const appConfig = additions.find((item) => item.path === StudioConfigFiles.appConfig);\n          if (appConfig) {\n            syncPreviewAppConfig(appConfig?.parsed);\n          }\n          const shouldRemoveAppConfig = deletions.find((item) => item.path === StudioConfigFiles.appConfig);\n          if (shouldRemoveAppConfig) {\n            syncPreviewAppConfig(void 0);\n          }\n          const tokensConfig = additions.find((item) => item.path === StudioConfigFiles.tokensConfig);\n          if (tokensConfig) {\n            syncPreviewTokensConfig(tokensConfig?.parsed);\n          }\n          const shouldRemoveTokensConfig = deletions.find((item) => item.path === StudioConfigFiles.tokensConfig);\n          if (shouldRemoveTokensConfig) {\n            syncPreviewTokensConfig(void 0);\n          }\n          break;\n        }\n      }\n    });\n    nuxtApp.hook(\"page:finish\", () => {\n      detectRenderedContents();\n      if (nuxtApp.payload.prerenderedAt) {\n        requestRerender();\n      }\n    });\n    nuxtApp.hook(\"content:document-driven:finish\", ({ route: route2, page }) => {\n      route2.meta.studio_page_contentId = page?._id;\n    });\n    nuxtApp.hook(\"nuxt-studio:preview:ready\", () => {\n      window.parent.postMessage({\n        type: \"nuxt-studio:preview:ready\",\n        payload: routePayload(useRoute())\n      }, \"*\");\n      setTimeout(() => {\n        detectRenderedContents();\n      }, 100);\n    });\n    function detectRenderedContents() {\n      const renderedContents = Array.from(window.document.querySelectorAll(\"[data-content-id]\")).map((el) => el.getAttribute(\"data-content-id\"));\n      const contentIds = Array.from(/* @__PURE__ */ new Set([route.meta.studio_page_contentId, ...renderedContents])).filter(Boolean);\n      if (editorSelectedPath.value === contentIds[0]) {\n        editorSelectedPath.value = \"\";\n        return;\n      }\n      window.openContentInStudioEditor(contentIds, { navigate: true, pageContentId: route.meta.studio_page_contentId });\n    }\n    window.openContentInStudioEditor = (contentIds, data = {}) => {\n      window.parent.postMessage({\n        type: \"nuxt-studio:preview:navigate\",\n        payload: {\n          ...routePayload(route),\n          contentIds,\n          ...data\n        }\n      }, \"*\");\n    };\n  }\n};\n",
-      "start": 1708210047828,
-      "end": 1708210047828,
+      "start": 1708283007541,
+      "end": 1708283007541,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708210047828,
-      "end": 1708210047828,
+      "start": 1708283007541,
+      "end": 1708283007541,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708210047828,
-      "end": 1708210047828,
+      "start": 1708283007541,
+      "end": 1708283007541,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708210047828,
-      "end": 1708210047828,
+      "start": 1708283007541,
+      "end": 1708283007542,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1708210047828,
-      "end": 1708210047828,
+      "start": 1708283007542,
+      "end": 1708283007542,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1708210047828,
-      "end": 1708210047828,
+      "start": 1708283007542,
+      "end": 1708283007542,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708210047828,
-      "end": 1708210047828,
+      "start": 1708283007542,
+      "end": 1708283007542,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708210047828,
-      "end": 1708210047828,
+      "start": 1708283007542,
+      "end": 1708283007542,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708210047828,
-      "end": 1708210047828,
+      "start": 1708283007542,
+      "end": 1708283007542,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708210047828,
-      "end": 1708210047828,
+      "start": 1708283007542,
+      "end": 1708283007542,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708210047828,
-      "end": 1708210047828,
+      "start": 1708283007542,
+      "end": 1708283007542,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1708210047828,
-      "end": 1708210047828,
+      "start": 1708283007542,
+      "end": 1708283007542,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708210047828,
-      "end": 1708210047828,
+      "start": 1708283007542,
+      "end": 1708283007542,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708210047828,
-      "end": 1708210047828,
+      "start": 1708283007542,
+      "end": 1708283007542,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708210047828,
-      "end": 1708210047828,
+      "start": 1708283007542,
+      "end": 1708283007542,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708210047828,
-      "end": 1708210047828,
+      "start": 1708283007542,
+      "end": 1708283007542,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708210047828,
-      "end": 1708210047828,
+      "start": 1708283007542,
+      "end": 1708283007542,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708210047828,
-      "end": 1708210047828,
+      "start": 1708283007542,
+      "end": 1708283007542,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708210047828,
-      "end": 1708210047828,
+      "start": 1708283007542,
+      "end": 1708283007542,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708210047828,
-      "end": 1708210047828,
+      "start": 1708283007542,
+      "end": 1708283007542,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708210047828,
-      "end": 1708210047828,
+      "start": 1708283007542,
+      "end": 1708283007542,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708210047828,
-      "end": 1708210047828,
+      "start": 1708283007542,
+      "end": 1708283007542,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708210047828,
-      "end": 1708210047828,
+      "start": 1708283007542,
+      "end": 1708283007542,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708210047828,
-      "end": 1708210047831,
+      "start": 1708283007542,
+      "end": 1708283007547,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { useAppConfig } from '#app/config';\nimport { useNuxtApp, useRuntimeConfig } from '#app/nuxt';\nimport { useState } from '#app/composables/state';\nimport { useContentState } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/composables/content';\nimport { queryContent } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/legacy/composables/query';\nimport { ref, toRaw } from 'vue';\nimport { useRoute, useRouter } from '#app/composables/router';\nimport { createApp } from \"vue\";\nimport { createDefu } from \"defu\";\nimport { callWithNuxt } from \"#app\";\nimport ContentPreviewMode from \"../components/ContentPreviewMode.vue\";\nimport { createSingleton, deepAssign, deepDelete, mergeDraft, StudioConfigFiles } from \"../utils/index.mjs\";\nconst useDefaultAppConfig = createSingleton(() => JSON.parse(JSON.stringify(useAppConfig())));\nconst defu = createDefu((obj, key, value) => {\n  if (Array.isArray(obj[key]) && Array.isArray(value)) {\n    obj[key] = value;\n    return true;\n  }\n});\nexport const useStudio = () => {\n  const nuxtApp = useNuxtApp();\n  const { studio: studioConfig, content: contentConfig } = useRuntimeConfig().public;\n  const contentPathMap = {};\n  const initialAppConfig = useDefaultAppConfig();\n  let initialTokensConfig;\n  const storage = useState(\"studio-client-db\", () => null);\n  const dbFiles = useState(\"studio-preview-db-files\", () => []);\n  if (!storage.value) {\n    nuxtApp.hook(\"content:storage\", (_storage) => {\n      storage.value = _storage;\n    });\n    queryContent(\"/non-existing-path\").findOne();\n  }\n  const syncPreviewFiles = async (contentStorage, files) => {\n    const previewToken = window.sessionStorage.getItem(\"previewToken\");\n    const keys = await contentStorage.getKeys(`${previewToken}:`);\n    await Promise.all(keys.map((key) => contentStorage.removeItem(key)));\n    const sources = new Set(files.map((file) => file.parsed._id.split(\":\").shift()));\n    await contentStorage.setItem(`${previewToken}$`, JSON.stringify({ ignoreSources: Array.from(sources) }));\n    await Promise.all(\n      files.map((item) => {\n        contentPathMap[item.parsed._path] = item.parsed;\n        return contentStorage.setItem(`${previewToken}:${item.parsed._id}`, JSON.stringify(item.parsed));\n      })\n    );\n  };\n  const syncPreviewAppConfig = (appConfig) => {\n    const _appConfig = callWithNuxt(nuxtApp, useAppConfig);\n    if (_appConfig?.ui) {\n      _appConfig.ui.icons = { ..._appConfig.ui.icons, dynamic: true };\n    }\n    deepAssign(_appConfig, defu(appConfig, initialAppConfig));\n    if (!appConfig) {\n      deepDelete(_appConfig, initialAppConfig);\n    }\n  };\n  const syncPreviewTokensConfig = (tokensConfig) => {\n    const themeSheet = nuxtApp?.vueApp?._context?.config?.globalProperties?.$pinceauTheme;\n    if (!themeSheet || !themeSheet?.updateTheme) {\n      return;\n    }\n    if (!initialTokensConfig) {\n      initialTokensConfig = JSON.parse(JSON.stringify(themeSheet?.theme.value || {}));\n    }\n    callWithNuxt(\n      nuxtApp,\n      themeSheet.updateTheme,\n      [\n        // Using `defu` to merge with initial tokens\n        // This is important to revert to default values for missing properties\n        defu(tokensConfig, initialTokensConfig)\n      ]\n    );\n  };\n  const syncPreview = async (data) => {\n    dbFiles.value = data.files = data.files || dbFiles.value || [];\n    if (!storage.value) {\n      return false;\n    }\n    const mergedFiles = mergeDraft(data.files, data.additions, data.deletions);\n    const contentFiles = mergedFiles.filter((item) => ![StudioConfigFiles.appConfig, StudioConfigFiles.nuxtConfig, StudioConfigFiles.tokensConfig].includes(item.path));\n    await syncPreviewFiles(storage.value, contentFiles);\n    const appConfig = mergedFiles.find((item) => item.path === StudioConfigFiles.appConfig);\n    syncPreviewAppConfig(appConfig?.parsed);\n    const tokensConfig = mergedFiles.find((item) => item.path === StudioConfigFiles.tokensConfig);\n    syncPreviewTokensConfig(tokensConfig?.parsed);\n    requestRerender();\n    return true;\n  };\n  const requestPreviewSynchronization = async () => {\n    const previewToken = window.sessionStorage.getItem(\"previewToken\");\n    await $fetch(\"api/projects/preview/sync\", {\n      baseURL: studioConfig?.apiURL,\n      method: \"POST\",\n      params: {\n        token: previewToken\n      }\n    });\n  };\n  const mountPreviewUI = () => {\n    const previewToken = window.sessionStorage.getItem(\"previewToken\");\n    const el = document.createElement(\"div\");\n    el.id = \"__nuxt_preview_wrapper\";\n    document.body.appendChild(el);\n    createApp(ContentPreviewMode, {\n      previewToken,\n      apiURL: studioConfig?.apiURL,\n      syncPreview,\n      requestPreviewSyncAPI: requestPreviewSynchronization\n    }).mount(el);\n  };\n  const findContentWithId = async (path) => {\n    const previewToken = window.sessionStorage.getItem(\"previewToken\");\n    if (!path) {\n      return null;\n    }\n    path = path.replace(/\\/$/, \"\");\n    let content = await storage.value?.getItem(`${previewToken}:${path}`);\n    if (!content) {\n      content = await storage.value?.getItem(`cached:${path}`);\n    }\n    if (!content) {\n      content = content = await storage.value?.getItem(path);\n    }\n    if (!content) {\n      content = contentPathMap[path || \"/\"];\n    }\n    return content;\n  };\n  const updateContent = (content) => {\n    const previewToken = window.sessionStorage.getItem(\"previewToken\");\n    if (!storage.value) {\n      return;\n    }\n    contentPathMap[content.parsed._path] = content.parsed;\n    storage.value.setItem(`${previewToken}:${content.parsed?._id}`, JSON.stringify(content.parsed));\n  };\n  const removeContentWithId = async (path) => {\n    const previewToken = window.sessionStorage.getItem(\"previewToken\");\n    const content = await findContentWithId(path);\n    await storage.value?.removeItem(`${previewToken}:${path}`);\n    if (content) {\n      delete contentPathMap[content._path];\n      const nonDraftContent = await findContentWithId(content._id);\n      if (nonDraftContent) {\n        contentPathMap[nonDraftContent._path] = nonDraftContent;\n      }\n    }\n  };\n  const requestRerender = async () => {\n    if (contentConfig?.documentDriven) {\n      const { pages } = callWithNuxt(nuxtApp, useContentState);\n      const contents = await Promise.all(Object.keys(pages.value).map(async (key) => {\n        return await findContentWithId(pages.value[key]?._id ?? key);\n      }));\n      pages.value = contents.reduce((acc, item, index) => {\n        if (item) {\n          acc[Object.keys(pages.value)[index]] = item;\n        }\n        return acc;\n      }, {});\n    }\n    await nuxtApp.hooks.callHookParallel(\"app:data:refresh\");\n  };\n  return {\n    apiURL: studioConfig?.apiURL,\n    contentStorage: storage,\n    syncPreviewFiles,\n    syncPreviewAppConfig,\n    syncPreviewTokensConfig,\n    requestPreviewSynchronization,\n    findContentWithId,\n    updateContent,\n    removeContentWithId,\n    requestRerender,\n    mountPreviewUI,\n    initiateIframeCommunication\n  };\n  function initiateIframeCommunication() {\n    if (!window.parent || window.self === window.parent) {\n      return;\n    }\n    const router = useRouter();\n    const route = useRoute();\n    const editorSelectedPath = ref(\"\");\n    const routePayload = (route2) => ({\n      path: route2.path,\n      query: toRaw(route2.query),\n      params: toRaw(route2.params),\n      fullPath: route2.fullPath,\n      meta: toRaw(route2.meta)\n    });\n    window.addEventListener(\"keydown\", (e) => {\n      if (e.metaKey || e.ctrlKey || e.altKey || e.shiftKey) {\n        window.parent.postMessage({\n          type: \"nuxt-studio:preview:keydown\",\n          payload: {\n            key: e.key,\n            metaKey: e.metaKey,\n            ctrlKey: e.ctrlKey,\n            shiftKey: e.shiftKey,\n            altKey: e.altKey\n          }\n        }, \"*\");\n      }\n    });\n    window.addEventListener(\"message\", async (e) => {\n      if (![\"https://nuxt.studio\", \"https://dev.nuxt.studio\", \"http://localhost:3000\"].includes(e.origin)) {\n        return;\n      }\n      const { type, payload = {} } = e.data || {};\n      switch (type) {\n        case \"nuxt-studio:editor:file-selected\": {\n          const content = await findContentWithId(payload.path);\n          if (!content) {\n          } else if (content._partial) {\n          } else if (content._path !== useRoute().path) {\n            editorSelectedPath.value = content._path;\n            router.push(content._path);\n          }\n          break;\n        }\n        case \"nuxt-studio:editor:file-changed\": {\n          const { additions = [], deletions = [] } = payload;\n          for (const addition of additions) {\n            await updateContent(addition);\n          }\n          for (const deletion of deletions) {\n            await removeContentWithId(deletion.path);\n          }\n          requestRerender();\n          break;\n        }\n        case \"nuxt-studio:preview:sync\": {\n          syncPreview(payload);\n          break;\n        }\n        case \"nuxt-studio:config:file-changed\": {\n          const { additions = [], deletions = [] } = payload;\n          const appConfig = additions.find((item) => item.path === StudioConfigFiles.appConfig);\n          if (appConfig) {\n            syncPreviewAppConfig(appConfig?.parsed);\n          }\n          const shouldRemoveAppConfig = deletions.find((item) => item.path === StudioConfigFiles.appConfig);\n          if (shouldRemoveAppConfig) {\n            syncPreviewAppConfig(void 0);\n          }\n          const tokensConfig = additions.find((item) => item.path === StudioConfigFiles.tokensConfig);\n          if (tokensConfig) {\n            syncPreviewTokensConfig(tokensConfig?.parsed);\n          }\n          const shouldRemoveTokensConfig = deletions.find((item) => item.path === StudioConfigFiles.tokensConfig);\n          if (shouldRemoveTokensConfig) {\n            syncPreviewTokensConfig(void 0);\n          }\n          break;\n        }\n      }\n    });\n    nuxtApp.hook(\"page:finish\", () => {\n      detectRenderedContents();\n      if (nuxtApp.payload.prerenderedAt) {\n        requestRerender();\n      }\n    });\n    nuxtApp.hook(\"content:document-driven:finish\", ({ route: route2, page }) => {\n      route2.meta.studio_page_contentId = page?._id;\n    });\n    nuxtApp.hook(\"nuxt-studio:preview:ready\", () => {\n      window.parent.postMessage({\n        type: \"nuxt-studio:preview:ready\",\n        payload: routePayload(useRoute())\n      }, \"*\");\n      setTimeout(() => {\n        detectRenderedContents();\n      }, 100);\n    });\n    function detectRenderedContents() {\n      const renderedContents = Array.from(window.document.querySelectorAll(\"[data-content-id]\")).map((el) => el.getAttribute(\"data-content-id\"));\n      const contentIds = Array.from(/* @__PURE__ */ new Set([route.meta.studio_page_contentId, ...renderedContents])).filter(Boolean);\n      if (editorSelectedPath.value === contentIds[0]) {\n        editorSelectedPath.value = \"\";\n        return;\n      }\n      window.openContentInStudioEditor(contentIds, { navigate: true, pageContentId: route.meta.studio_page_contentId });\n    }\n    window.openContentInStudioEditor = (contentIds, data = {}) => {\n      window.parent.postMessage({\n        type: \"nuxt-studio:preview:navigate\",\n        payload: {\n          ...routePayload(route),\n          contentIds,\n          ...data\n        }\n      }, \"*\");\n    };\n  }\n};\n",
-      "start": 1708210047831,
-      "end": 1708210047834,
+      "start": 1708283007547,
+      "end": 1708283007558,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -182,50 +182,50 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1708210047834,
-      "end": 1708210047834,
+      "start": 1708283007558,
+      "end": 1708283007558,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708210047834,
-      "end": 1708210047834,
+      "start": 1708283007558,
+      "end": 1708283007559,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1708210047834,
-      "end": 1708210047834,
+      "start": 1708283007559,
+      "end": 1708283007559,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1708210047834,
-      "end": 1708210047834,
+      "start": 1708283007559,
+      "end": 1708283007559,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1708210047834,
-      "end": 1708210047834,
+      "start": 1708283007559,
+      "end": 1708283007559,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708210047834,
-      "end": 1708210047834,
+      "start": 1708283007559,
+      "end": 1708283007559,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708210047834,
-      "end": 1708210047834,
+      "start": 1708283007559,
+      "end": 1708283007559,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708210047834,
-      "end": 1708210047834,
+      "start": 1708283007559,
+      "end": 1708283007559,
       "order": "normal"
     }
   ]

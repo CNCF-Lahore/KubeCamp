@@ -4,69 +4,69 @@
     {
       "name": "vite:load-fallback",
       "result": "<template>\n  <div v-if=\"isDev\">\n    Rendering the <code>script</code> element is dangerous and is disabled by default. Consider implementing your own <code>ProseScript</code> element to have control over script rendering.\n  </div>\n</template>\n\n<script setup lang=\"ts\">\nimport { computed } from 'vue'\n\ndefineProps({\n  src: {\n    type: String,\n    default: ''\n  }\n})\nconst isDev = computed(() => process.dev)\n</script>\n",
-      "start": 1708210047545,
-      "end": 1708210047630,
+      "start": 1708283006838,
+      "end": 1708283007138,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708210047630,
-      "end": 1708210047630,
+      "start": 1708283007138,
+      "end": 1708283007138,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708210047631,
-      "end": 1708210047631,
+      "start": 1708283007138,
+      "end": 1708283007138,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
-      "start": 1708210047631,
-      "end": 1708210047631,
+      "start": 1708283007138,
+      "end": 1708283007138,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708210047631,
-      "end": 1708210047631,
+      "start": 1708283007138,
+      "end": 1708283007138,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708210047631,
-      "end": 1708210047631,
+      "start": 1708283007138,
+      "end": 1708283007138,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708210047631,
-      "end": 1708210047631,
+      "start": 1708283007138,
+      "end": 1708283007138,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1708210047631,
-      "end": 1708210047631,
+      "start": 1708283007138,
+      "end": 1708283007138,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1708210047631,
-      "end": 1708210047631,
+      "start": 1708283007138,
+      "end": 1708283007138,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708210047631,
-      "end": 1708210047631,
+      "start": 1708283007138,
+      "end": 1708283007138,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "import _sfc_main from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseScript.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseScript.vue?vue&type=script&setup=true&lang.ts\";\nexport default _sfc_main;\n",
-      "start": 1708210047631,
-      "end": 1708210047763,
+      "start": 1708283007138,
+      "end": 1708283007268,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -74,156 +74,156 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708210047763,
-      "end": 1708210047763,
+      "start": 1708283007268,
+      "end": 1708283007268,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708210047763,
-      "end": 1708210047763,
+      "start": 1708283007268,
+      "end": 1708283007268,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708210047763,
-      "end": 1708210047763,
+      "start": 1708283007268,
+      "end": 1708283007268,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1708210047763,
-      "end": 1708210047763,
+      "start": 1708283007268,
+      "end": 1708283007268,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
       "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseScript.vue\").then(r => r.default))",
-      "start": 1708210047763,
-      "end": 1708210047763,
+      "start": 1708283007269,
+      "end": 1708283007269,
       "order": "normal",
       "sourcemaps": null
     },
     {
       "name": "replace",
-      "start": 1708210047763,
-      "end": 1708210047764,
+      "start": 1708283007269,
+      "end": 1708283007269,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708210047764,
-      "end": 1708210047764,
+      "start": 1708283007269,
+      "end": 1708283007269,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708210047764,
-      "end": 1708210047764,
+      "start": 1708283007269,
+      "end": 1708283007270,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708210047764,
-      "end": 1708210047764,
+      "start": 1708283007270,
+      "end": 1708283007270,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708210047764,
-      "end": 1708210047764,
+      "start": 1708283007270,
+      "end": 1708283007270,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708210047764,
-      "end": 1708210047764,
+      "start": 1708283007270,
+      "end": 1708283007270,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708210047764,
-      "end": 1708210047764,
+      "start": 1708283007270,
+      "end": 1708283007270,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708210047764,
-      "end": 1708210047764,
+      "start": 1708283007270,
+      "end": 1708283007270,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708210047764,
-      "end": 1708210047764,
+      "start": 1708283007270,
+      "end": 1708283007271,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708210047764,
-      "end": 1708210047764,
+      "start": 1708283007271,
+      "end": 1708283007271,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708210047764,
-      "end": 1708210047765,
+      "start": 1708283007271,
+      "end": 1708283007271,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708210047765,
-      "end": 1708210047765,
+      "start": 1708283007272,
+      "end": 1708283007272,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708210047765,
-      "end": 1708210047765,
+      "start": 1708283007272,
+      "end": 1708283007273,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708210047765,
-      "end": 1708210047765,
+      "start": 1708283007273,
+      "end": 1708283007273,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1708210047765,
-      "end": 1708210047765,
+      "start": 1708283007273,
+      "end": 1708283007273,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1708210047766,
-      "end": 1708210047766,
+      "start": 1708283007275,
+      "end": 1708283007275,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1708210047766,
-      "end": 1708210047766,
+      "start": 1708283007276,
+      "end": 1708283007276,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708210047766,
-      "end": 1708210047766,
+      "start": 1708283007276,
+      "end": 1708283007276,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
       "result": "import { __vitePreload } from \"\u0000vite/preload-helper.js\";import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => __vitePreload(() => import(\"/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseScript.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(r => r.default))",
-      "start": 1708210047766,
-      "end": 1708210047767,
+      "start": 1708283007276,
+      "end": 1708283007277,
       "order": "normal",
       "sourcemaps": null
     },
     {
       "name": "vite:reporter",
-      "start": 1708210047767,
-      "end": 1708210047767,
+      "start": 1708283007277,
+      "end": 1708283007277,
       "order": "normal"
     }
   ]

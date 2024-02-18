@@ -4,51 +4,51 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { renderSlot as _renderSlot, normalizeClass as _normalizeClass, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'CodeBlock',\n  props: {\n  /**\n   * Label to display for the tab\n   */\n  label: {\n    type: String,\n    required: true\n  },\n  /**\n   * Select which tab should be active\n   * TODO: seems like it's not used \n   */\n  active: {\n    type: Boolean,\n    default: false\n  },\n  /**\n   * Preview block are bordered and have small padding.\n   * TODO: seems like it's not used\n   */\n  preview: {\n    type: Boolean,\n    default: false\n  }\n},\n  setup(__props) {\n\n\n\nreturn (_ctx: any,_cache: any) => {\n  return (_openBlock(), _createElementBlock(\"div\", {\n    class: _normalizeClass([\"code-block\", {\n      active: __props.active,\n      'rounded-lg p-4': __props.preview,\n    }])\n  }, [\n    _renderSlot(_ctx.$slots, \"default\", {}, undefined, true)\n  ], 2))\n}\n}\n\n})",
-      "start": 1708210049366,
-      "end": 1708210049366
+      "start": 1708283011028,
+      "end": 1708283011028
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708210049367,
-      "end": 1708210049367,
+      "start": 1708283011030,
+      "end": 1708283011030,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708210049367,
-      "end": 1708210049368,
+      "start": 1708283011031,
+      "end": 1708283011031,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { renderSlot as _renderSlot, normalizeClass as _normalizeClass, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'CodeBlock',\n  props: {\n  /**\n   * Label to display for the tab\n   */\n  label: {\n    type: String,\n    required: true\n  },\n  /**\n   * Select which tab should be active\n   * TODO: seems like it's not used \n   */\n  active: {\n    type: Boolean,\n    default: false\n  },\n  /**\n   * Preview block are bordered and have small padding.\n   * TODO: seems like it's not used\n   */\n  preview: {\n    type: Boolean,\n    default: false\n  }\n},\n  setup(__props) {\n\n\n\nreturn (_ctx: any,_cache: any) => {\n  return (_openBlock(), _createElementBlock(\"div\", {\n    class: _normalizeClass([\"code-block\", {\n      active: __props.active,\n      'rounded-lg p-4': __props.preview,\n    }])\n  }, [\n    _renderSlot(_ctx.$slots, \"default\", {}, undefined, true)\n  ], 2))\n}\n}\n\n})",
-      "start": 1708210049371,
-      "end": 1708210049371,
+      "start": 1708283011035,
+      "end": 1708283011035,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708210049371,
-      "end": 1708210049371,
+      "start": 1708283011035,
+      "end": 1708283011035,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708210049372,
-      "end": 1708210049372,
+      "start": 1708283011036,
+      "end": 1708283011036,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708210049372,
-      "end": 1708210049372,
+      "start": 1708283011036,
+      "end": 1708283011036,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { renderSlot as _renderSlot, normalizeClass as _normalizeClass, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"CodeBlock\",\n  props: {\n    /**\n     * Label to display for the tab\n     */\n    label: {\n      type: String,\n      required: true\n    },\n    /**\n     * Select which tab should be active\n     * TODO: seems like it's not used \n     */\n    active: {\n      type: Boolean,\n      default: false\n    },\n    /**\n     * Preview block are bordered and have small padding.\n     * TODO: seems like it's not used\n     */\n    preview: {\n      type: Boolean,\n      default: false\n    }\n  },\n  setup(__props) {\n    return (_ctx, _cache) => {\n      return _openBlock(), _createElementBlock(\"div\", {\n        class: _normalizeClass([\"code-block\", {\n          active: __props.active,\n          \"rounded-lg p-4\": __props.preview\n        }])\n      }, [\n        _renderSlot(_ctx.$slots, \"default\", {}, void 0, true)\n      ], 2);\n    };\n  }\n});\n",
-      "start": 1708210049372,
-      "end": 1708210049750,
+      "start": 1708283011036,
+      "end": 1708283011625,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -64,170 +64,170 @@
     },
     {
       "name": "vite:json",
-      "start": 1708210049750,
-      "end": 1708210049750,
+      "start": 1708283011625,
+      "end": 1708283011625,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708210049750,
-      "end": 1708210049750,
+      "start": 1708283011625,
+      "end": 1708283011625,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708210049750,
-      "end": 1708210049750,
+      "start": 1708283011625,
+      "end": 1708283011625,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708210049750,
-      "end": 1708210049750,
+      "start": 1708283011626,
+      "end": 1708283011626,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708210049750,
-      "end": 1708210049751,
+      "start": 1708283011626,
+      "end": 1708283011626,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708210049751,
-      "end": 1708210049751,
+      "start": 1708283011626,
+      "end": 1708283011626,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1708210049751,
-      "end": 1708210049751,
+      "start": 1708283011626,
+      "end": 1708283011626,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708210049751,
-      "end": 1708210049751,
+      "start": 1708283011627,
+      "end": 1708283011627,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708210049751,
-      "end": 1708210049751,
+      "start": 1708283011627,
+      "end": 1708283011627,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708210049752,
-      "end": 1708210049752,
+      "start": 1708283011628,
+      "end": 1708283011628,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708210049752,
-      "end": 1708210049752,
+      "start": 1708283011628,
+      "end": 1708283011628,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708210049752,
-      "end": 1708210049752,
+      "start": 1708283011628,
+      "end": 1708283011628,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708210049752,
-      "end": 1708210049752,
+      "start": 1708283011628,
+      "end": 1708283011628,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708210049752,
-      "end": 1708210049752,
+      "start": 1708283011628,
+      "end": 1708283011628,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708210049752,
-      "end": 1708210049752,
+      "start": 1708283011629,
+      "end": 1708283011629,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708210049752,
-      "end": 1708210049752,
+      "start": 1708283011629,
+      "end": 1708283011629,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708210049752,
-      "end": 1708210049752,
+      "start": 1708283011629,
+      "end": 1708283011629,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708210049752,
-      "end": 1708210049752,
+      "start": 1708283011629,
+      "end": 1708283011629,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708210049752,
-      "end": 1708210049752,
+      "start": 1708283011629,
+      "end": 1708283011630,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708210049753,
-      "end": 1708210049760,
+      "start": 1708283011630,
+      "end": 1708283011641,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708210049761,
-      "end": 1708210049761,
+      "start": 1708283011646,
+      "end": 1708283011646,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708210049761,
-      "end": 1708210049761,
+      "start": 1708283011646,
+      "end": 1708283011646,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1708210049761,
-      "end": 1708210049761,
+      "start": 1708283011647,
+      "end": 1708283011647,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1708210049761,
-      "end": 1708210049761,
+      "start": 1708283011647,
+      "end": 1708283011647,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1708210049762,
-      "end": 1708210049762,
+      "start": 1708283011648,
+      "end": 1708283011648,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708210049763,
-      "end": 1708210049763,
+      "start": 1708283011649,
+      "end": 1708283011650,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708210049763,
-      "end": 1708210049763,
+      "start": 1708283011650,
+      "end": 1708283011650,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708210049763,
-      "end": 1708210049763,
+      "start": 1708283011650,
+      "end": 1708283011650,
       "order": "normal"
     }
   ]

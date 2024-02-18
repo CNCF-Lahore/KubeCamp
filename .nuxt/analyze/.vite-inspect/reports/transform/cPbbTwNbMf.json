@@ -4,27 +4,27 @@
     {
       "name": "vite:load-fallback",
       "result": "<script setup lang=\"ts\">\nimport type { PropType } from 'vue'\n\ndefineProps({\n  width: {\n    type: String,\n    default: '10rem'\n  },\n  height: {\n    type: String,\n    default: '10rem'\n  },\n  zIndex: {\n    type: String,\n    default: '10'\n  },\n  top: {\n    type: String,\n    default: '0'\n  },\n  left: {\n    type: String,\n    default: 'auto'\n  },\n  right: {\n    type: String,\n    default: 'auto'\n  },\n  blur: {\n    type: String,\n    default: '50px'\n  },\n  colors: {\n    type: Array as PropType<string[]>,\n    default: () => ['rgba(0, 71, 225, 0.22)', 'rgba(26, 214, 255, 0.22)', 'rgba(0, 220, 130, 0.22)']\n  }\n})\n</script>\n\n<template>\n  <div class=\"ellipsis\">\n    <div class=\"ellipsis-item\" />\n  </div>\n</template>\n\n<style scoped lang=\"ts\">\ncss({\n  '.ellipsis': {\n    pointerEvents: 'none',\n    position: 'absolute',\n    top: (props) => props.top,\n    insetInlineStart: (props) => props.left,\n    insetInlineEnd: (props) => props.right,\n    zIndex: (props) => props.zIndex,\n    width: '-webkit-fill-available',\n    maxWidth: (props) => props.width,\n    height: (props) => props.height,\n    filter: (props) => `blur(${props.blur})`,\n    '.ellipsis-item': {\n      width: '100%',\n      height: '100%',\n      background: (props) => `linear-gradient(97.62deg, ${props?.colors?.[0]} 2.27%, ${props?.colors?.[1]} 50.88%, ${props?.colors?.[2]} 98.48%)`,\n    }\n  }\n})\n</style>\n",
-      "start": 1708210047838,
-      "end": 1708210047991,
+      "start": 1708283007542,
+      "end": 1708283008054,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708210047991,
-      "end": 1708210047991,
+      "start": 1708283008054,
+      "end": 1708283008054,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708210047991,
-      "end": 1708210047991,
+      "start": 1708283008054,
+      "end": 1708283008054,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "<script setup lang=\"ts\">\nconst _cCN_top = computed(() => ((props = __$pProps) => props.top)())\n\nconst _eih_insetInlineStart = computed(() => ((props = __$pProps) => props.left)())\n\nconst _IfB_insetInlineEnd = computed(() => ((props = __$pProps) => props.right)())\n\nconst _SsE_zIndex = computed(() => ((props = __$pProps) => props.zIndex)())\n\nconst _wj8_maxWidth = computed(() => ((props = __$pProps) => props.width)())\n\nconst _t33_height = computed(() => ((props = __$pProps) => props.height)())\n\nconst _Jfd_filter = computed(() => ((props = __$pProps) => `blur(${props.blur})`)())\n\nconst _yUj_background = computed(() => ((props = __$pProps) => `linear-gradient(97.62deg, ${props?.colors?.[0]} 2.27%, ${props?.colors?.[1]} 50.88%, ${props?.colors?.[2]} 98.48%)`)())\nimport { reactive, computed, getCurrentInstance, ref } from 'vue'\nimport { usePinceauRuntime } from 'pinceau/runtime'\n\nimport type { PropType } from 'vue'\n\nconst __$pProps = defineProps({\n  width: {\n    type: String,\n    default: '10rem'\n  },\n  height: {\n    type: String,\n    default: '10rem'\n  },\n  zIndex: {\n    type: String,\n    default: '10'\n  },\n  top: {\n    type: String,\n    default: '0'\n  },\n  left: {\n    type: String,\n    default: 'auto'\n  },\n  right: {\n    type: String,\n    default: 'auto'\n  },\n  blur: {\n    type: String,\n    default: '50px'\n  },\n  colors: {\n    type: Array as PropType<string[]>,\n    default: () => ['rgba(0, 71, 225, 0.22)', 'rgba(26, 214, 255, 0.22)', 'rgba(0, 220, 130, 0.22)']\n  }\n})\n\nconst { $pinceau } = usePinceauRuntime(__$pProps, undefined, { _cCN_top,_eih_insetInlineStart,_IfB_insetInlineEnd,_SsE_zIndex,_wj8_maxWidth,_t33_height,_Jfd_filter,_yUj_background })\n</script>\n\n<template>\n  <div class=\"ellipsis\" :class=\"[$pinceau]\">\n    <div class=\"ellipsis-item\" />\n  </div>\n</template>\n\n<style scoped lang=\"postcss\" transformed>\n.ellipsis{pointer-events:none;position:absolute;top:var(---c-cn-top);inset-inline-start:var(---eih-inset-inline-start);inset-inline-end:var(---if-b-inset-inline-end);z-index:var(---ss-e-z-index);width:-webkit-fill-available;max-width:var(---wj8-max-width);height:var(---t33-height);filter:var(---jfd-filter);}.ellipsis .ellipsis-item{width:100%;height:100%;background:var(---y-uj-background);}\n</style>\n",
-      "start": 1708210047991,
-      "end": 1708210048002,
+      "start": 1708283008054,
+      "end": 1708283008068,
       "order": "pre",
       "sourcemaps": {
         "version": 3,
@@ -38,45 +38,45 @@
     },
     {
       "name": "content-slot",
-      "start": 1708210048002,
-      "end": 1708210048002,
+      "start": 1708283008068,
+      "end": 1708283008068,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708210048002,
-      "end": 1708210048002,
+      "start": 1708283008068,
+      "end": 1708283008068,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708210048002,
-      "end": 1708210048002,
+      "start": 1708283008068,
+      "end": 1708283008068,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1708210048002,
-      "end": 1708210048002,
+      "start": 1708283008068,
+      "end": 1708283008068,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1708210048002,
-      "end": 1708210048002,
+      "start": 1708283008068,
+      "end": 1708283008068,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708210048002,
-      "end": 1708210048002,
+      "start": 1708283008068,
+      "end": 1708283008068,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "import _sfc_main from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/Ellipsis.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/Ellipsis.vue?vue&type=script&setup=true&lang.ts\";\nimport \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/Ellipsis.vue?vue&type=style&index=0&scoped=03072fdb&transformed=true&lang.postcss\";\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"__scopeId\", \"data-v-03072fdb\"]]);\n",
-      "start": 1708210048002,
-      "end": 1708210048068,
+      "start": 1708283008068,
+      "end": 1708283008285,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -84,152 +84,152 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708210048068,
-      "end": 1708210048068,
+      "start": 1708283008286,
+      "end": 1708283008286,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708210048068,
-      "end": 1708210048068,
+      "start": 1708283008286,
+      "end": 1708283008286,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708210048068,
-      "end": 1708210048068,
+      "start": 1708283008286,
+      "end": 1708283008286,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1708210048069,
-      "end": 1708210048069,
+      "start": 1708283008286,
+      "end": 1708283008286,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708210048069,
-      "end": 1708210048069,
+      "start": 1708283008288,
+      "end": 1708283008288,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708210048069,
-      "end": 1708210048069,
+      "start": 1708283008288,
+      "end": 1708283008288,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708210048069,
-      "end": 1708210048069,
+      "start": 1708283008288,
+      "end": 1708283008288,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708210048069,
-      "end": 1708210048069,
+      "start": 1708283008289,
+      "end": 1708283008289,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708210048069,
-      "end": 1708210048069,
+      "start": 1708283008289,
+      "end": 1708283008290,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708210048069,
-      "end": 1708210048069,
+      "start": 1708283008291,
+      "end": 1708283008291,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708210048070,
-      "end": 1708210048070,
+      "start": 1708283008293,
+      "end": 1708283008293,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708210048070,
-      "end": 1708210048070,
+      "start": 1708283008293,
+      "end": 1708283008293,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708210048070,
-      "end": 1708210048070,
+      "start": 1708283008293,
+      "end": 1708283008293,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708210048070,
-      "end": 1708210048070,
+      "start": 1708283008294,
+      "end": 1708283008294,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708210048070,
-      "end": 1708210048070,
+      "start": 1708283008294,
+      "end": 1708283008294,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708210048070,
-      "end": 1708210048070,
+      "start": 1708283008294,
+      "end": 1708283008294,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708210048070,
-      "end": 1708210048072,
+      "start": 1708283008295,
+      "end": 1708283008324,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708210048073,
-      "end": 1708210048073,
+      "start": 1708283008325,
+      "end": 1708283008325,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708210048073,
-      "end": 1708210048073,
+      "start": 1708283008326,
+      "end": 1708283008326,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1708210048073,
-      "end": 1708210048073,
+      "start": 1708283008326,
+      "end": 1708283008326,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1708210048073,
-      "end": 1708210048073,
+      "start": 1708283008326,
+      "end": 1708283008327,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1708210048073,
-      "end": 1708210048073,
+      "start": 1708283008327,
+      "end": 1708283008327,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708210048073,
-      "end": 1708210048074,
+      "start": 1708283008327,
+      "end": 1708283008328,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708210048074,
-      "end": 1708210048074,
+      "start": 1708283008328,
+      "end": 1708283008328,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708210048074,
-      "end": 1708210048074,
+      "start": 1708283008328,
+      "end": 1708283008328,
       "order": "normal"
     }
   ]
