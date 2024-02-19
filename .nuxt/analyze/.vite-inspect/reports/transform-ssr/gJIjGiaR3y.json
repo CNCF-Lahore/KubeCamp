@@ -4,8 +4,8 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\"\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'DocsPageBottom',\n  __ssrInlineRender: true,\n  setup(__props) {\n\nconst { page } = useContent()\nconst { config } = useDocus()\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_Icon = _resolveComponent(\"Icon\")!\n  const _component_EditOnLink = _resolveComponent(\"EditOnLink\")!\n  const _component_ProseA = _resolveComponent(\"ProseA\")!\n\n  if (_unref(page)) {\n    _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"docs-page-bottom\" }, _attrs))} data-v-346454d4>`)\n    if (_unref(config)?.github?.edit) {\n      _push(`<div class=\"edit-link\" data-v-346454d4>`)\n      _push(_ssrRenderComponent(_component_Icon, { name: \"uil:edit\" }, null, _parent))\n      _push(_ssrRenderComponent(_component_EditOnLink, { page: _unref(page) }, {\n        default: _withCtx(({ url }, _push, _parent, _scopeId) => {\n          if (_push) {\n            _push(_ssrRenderComponent(_component_ProseA, { to: url }, {\n              default: _withCtx((_, _push, _parent, _scopeId) => {\n                if (_push) {\n                  _push(`<span data-v-346454d4${_scopeId}> Edit this page on GitHub </span>`)\n                } else {\n                  return [\n                    _createVNode(\"span\", null, \" Edit this page on GitHub \")\n                  ]\n                }\n              }),\n              _: 2\n            }, _parent, _scopeId))\n          } else {\n            return [\n              _createVNode(_component_ProseA, { to: url }, {\n                default: _withCtx(() => [\n                  _createVNode(\"span\", null, \" Edit this page on GitHub \")\n                ]),\n                _: 2\n              }, 1032, [\"to\"])\n            ]\n          }\n        }),\n        _: 1\n      }, _parent))\n      _push(`</div>`)\n    } else {\n      _push(`<!---->`)\n    }\n    if (_unref(page)?.mtime) {\n      _push(`<span data-v-346454d4>Updated on <b data-v-346454d4>${_ssrInterpolate(new Intl.DateTimeFormat('en-US').format(Date.parse(_unref(page).mtime)))}</b></span>`)\n    } else {\n      _push(`<!---->`)\n    }\n    _push(`</div>`)\n  } else {\n    _push(`<!---->`)\n  }\n}\n}\n\n})",
-      "start": 1708283021117,
-      "end": 1708283021117,
+      "start": 1708374882449,
+      "end": 1708374882449,
       "sourcemaps": {
         "version": 3,
         "sources": [
@@ -20,71 +20,71 @@
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708283021119,
-      "end": 1708283021119,
+      "start": 1708374882450,
+      "end": 1708374882451,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708283021119,
-      "end": 1708283021120,
+      "start": 1708374882450,
+      "end": 1708374882451,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708283021124,
-      "end": 1708283021124,
+      "start": 1708374882455,
+      "end": 1708374882455,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708283021124,
-      "end": 1708283021124,
+      "start": 1708374882455,
+      "end": 1708374882455,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\"\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'DocsPageBottom',\n  __ssrInlineRender: true,\n  setup(__props) {\n\nconst { page } = useContent()\nconst { config } = useDocus()\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_Icon = _resolveComponent(\"Icon\")!\n  const _component_EditOnLink = _resolveComponent(\"EditOnLink\")!\n  const _component_ProseA = _resolveComponent(\"ProseA\")!\n\n  if (_unref(page)) {\n    _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"docs-page-bottom\" }, _attrs))} data-v-346454d4>`)\n    if (_unref(config)?.github?.edit) {\n      _push(`<div class=\"edit-link\" data-v-346454d4>`)\n      _push(_ssrRenderComponent(_component_Icon, { name: \"uil:edit\" }, null, _parent))\n      _push(_ssrRenderComponent(_component_EditOnLink, { page: _unref(page) }, {\n        default: _withCtx(({ url }, _push, _parent, _scopeId) => {\n          if (_push) {\n            _push(_ssrRenderComponent(_component_ProseA, { to: url }, {\n              default: _withCtx((_, _push, _parent, _scopeId) => {\n                if (_push) {\n                  _push(`<span data-v-346454d4${_scopeId}> Edit this page on GitHub </span>`)\n                } else {\n                  return [\n                    _createVNode(\"span\", null, \" Edit this page on GitHub \")\n                  ]\n                }\n              }),\n              _: 2\n            }, _parent, _scopeId))\n          } else {\n            return [\n              _createVNode(_component_ProseA, { to: url }, {\n                default: _withCtx(() => [\n                  _createVNode(\"span\", null, \" Edit this page on GitHub \")\n                ]),\n                _: 2\n              }, 1032, [\"to\"])\n            ]\n          }\n        }),\n        _: 1\n      }, _parent))\n      _push(`</div>`)\n    } else {\n      _push(`<!---->`)\n    }\n    if (_unref(page)?.mtime) {\n      _push(`<span data-v-346454d4>Updated on <b data-v-346454d4>${_ssrInterpolate(new Intl.DateTimeFormat('en-US').format(Date.parse(_unref(page).mtime)))}</b></span>`)\n    } else {\n      _push(`<!---->`)\n    }\n    _push(`</div>`)\n  } else {\n    _push(`<!---->`)\n  }\n}\n}\n\n})",
-      "start": 1708283021125,
-      "end": 1708283021125,
+      "start": 1708374882459,
+      "end": 1708374882459,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\"\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'DocsPageBottom',\n  __ssrInlineRender: true,\n  setup(__props) {\n\nconst { page } = useContent()\nconst { config } = useDocus()\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_Icon = _resolveComponent(\"Icon\")!\n  const _component_EditOnLink = _resolveComponent(\"EditOnLink\")!\n  const _component_ProseA = _resolveComponent(\"ProseA\")!\n\n  if (_unref(page)) {\n    _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"docs-page-bottom\" }, _attrs))} data-v-346454d4>`)\n    if (_unref(config)?.github?.edit) {\n      _push(`<div class=\"edit-link\" data-v-346454d4>`)\n      _push(_ssrRenderComponent(_component_Icon, { name: \"uil:edit\" }, null, _parent))\n      _push(_ssrRenderComponent(_component_EditOnLink, { page: _unref(page) }, {\n        default: _withCtx(({ url }, _push, _parent, _scopeId) => {\n          if (_push) {\n            _push(_ssrRenderComponent(_component_ProseA, { to: url }, {\n              default: _withCtx((_, _push, _parent, _scopeId) => {\n                if (_push) {\n                  _push(`<span data-v-346454d4${_scopeId}> Edit this page on GitHub </span>`)\n                } else {\n                  return [\n                    _createVNode(\"span\", null, \" Edit this page on GitHub \")\n                  ]\n                }\n              }),\n              _: 2\n            }, _parent, _scopeId))\n          } else {\n            return [\n              _createVNode(_component_ProseA, { to: url }, {\n                default: _withCtx(() => [\n                  _createVNode(\"span\", null, \" Edit this page on GitHub \")\n                ]),\n                _: 2\n              }, 1032, [\"to\"])\n            ]\n          }\n        }),\n        _: 1\n      }, _parent))\n      _push(`</div>`)\n    } else {\n      _push(`<!---->`)\n    }\n    if (_unref(page)?.mtime) {\n      _push(`<span data-v-346454d4>Updated on <b data-v-346454d4>${_ssrInterpolate(new Intl.DateTimeFormat('en-US').format(Date.parse(_unref(page).mtime)))}</b></span>`)\n    } else {\n      _push(`<!---->`)\n    }\n    _push(`</div>`)\n  } else {\n    _push(`<!---->`)\n  }\n}\n}\n\n})",
-      "start": 1708283021125,
-      "end": 1708283021125,
+      "start": 1708374882459,
+      "end": 1708374882459,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708283021130,
-      "end": 1708283021130,
+      "start": 1708374882460,
+      "end": 1708374882460,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708283021130,
-      "end": 1708283021130,
+      "start": 1708374882460,
+      "end": 1708374882460,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708283021130,
-      "end": 1708283021130,
+      "start": 1708374882460,
+      "end": 1708374882460,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708283021131,
-      "end": 1708283021131,
+      "start": 1708374882460,
+      "end": 1708374882461,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"DocsPageBottom\",\n  __ssrInlineRender: true,\n  setup(__props) {\n    const { page } = useContent();\n    const { config } = useDocus();\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_Icon = _resolveComponent(\"Icon\");\n      const _component_EditOnLink = _resolveComponent(\"EditOnLink\");\n      const _component_ProseA = _resolveComponent(\"ProseA\");\n      if (_unref(page)) {\n        _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"docs-page-bottom\" }, _attrs))} data-v-346454d4>`);\n        if (_unref(config)?.github?.edit) {\n          _push(`<div class=\"edit-link\" data-v-346454d4>`);\n          _push(_ssrRenderComponent(_component_Icon, { name: \"uil:edit\" }, null, _parent));\n          _push(_ssrRenderComponent(_component_EditOnLink, { page: _unref(page) }, {\n            default: _withCtx(({ url }, _push2, _parent2, _scopeId) => {\n              if (_push2) {\n                _push2(_ssrRenderComponent(_component_ProseA, { to: url }, {\n                  default: _withCtx((_, _push3, _parent3, _scopeId2) => {\n                    if (_push3) {\n                      _push3(`<span data-v-346454d4${_scopeId2}> Edit this page on GitHub </span>`);\n                    } else {\n                      return [\n                        _createVNode(\"span\", null, \" Edit this page on GitHub \")\n                      ];\n                    }\n                  }),\n                  _: 2\n                }, _parent2, _scopeId));\n              } else {\n                return [\n                  _createVNode(_component_ProseA, { to: url }, {\n                    default: _withCtx(() => [\n                      _createVNode(\"span\", null, \" Edit this page on GitHub \")\n                    ]),\n                    _: 2\n                  }, 1032, [\"to\"])\n                ];\n              }\n            }),\n            _: 1\n          }, _parent));\n          _push(`</div>`);\n        } else {\n          _push(`<!---->`);\n        }\n        if (_unref(page)?.mtime) {\n          _push(`<span data-v-346454d4>Updated on <b data-v-346454d4>${_ssrInterpolate(new Intl.DateTimeFormat(\"en-US\").format(Date.parse(_unref(page).mtime)))}</b></span>`);\n        } else {\n          _push(`<!---->`);\n        }\n        _push(`</div>`);\n      } else {\n        _push(`<!---->`);\n      }\n    };\n  }\n});\n",
-      "start": 1708283021131,
-      "end": 1708283021511,
+      "start": 1708374882461,
+      "end": 1708374883079,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -104,135 +104,135 @@
     },
     {
       "name": "vite:json",
-      "start": 1708283021511,
-      "end": 1708283021511,
+      "start": 1708374883079,
+      "end": 1708374883079,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708283021511,
-      "end": 1708283021511,
+      "start": 1708374883079,
+      "end": 1708374883079,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708283021511,
-      "end": 1708283021511,
+      "start": 1708374883079,
+      "end": 1708374883079,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708283021511,
-      "end": 1708283021512,
+      "start": 1708374883079,
+      "end": 1708374883079,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708283021512,
-      "end": 1708283021512,
+      "start": 1708374883079,
+      "end": 1708374883079,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708283021512,
-      "end": 1708283021512,
+      "start": 1708374883079,
+      "end": 1708374883079,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708283021512,
-      "end": 1708283021512,
+      "start": 1708374883079,
+      "end": 1708374883079,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708283021512,
-      "end": 1708283021512,
+      "start": 1708374883079,
+      "end": 1708374883079,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708283021512,
-      "end": 1708283021512,
+      "start": 1708374883079,
+      "end": 1708374883080,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708283021512,
-      "end": 1708283021512,
+      "start": 1708374883080,
+      "end": 1708374883080,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708283021512,
-      "end": 1708283021512,
+      "start": 1708374883080,
+      "end": 1708374883080,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708283021513,
-      "end": 1708283021514,
+      "start": 1708374883080,
+      "end": 1708374883081,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708283021514,
-      "end": 1708283021514,
+      "start": 1708374883081,
+      "end": 1708374883081,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708283021514,
-      "end": 1708283021514,
+      "start": 1708374883081,
+      "end": 1708374883081,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708283021514,
-      "end": 1708283021514,
+      "start": 1708374883081,
+      "end": 1708374883081,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708283021514,
-      "end": 1708283021514,
+      "start": 1708374883081,
+      "end": 1708374883081,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708283021514,
-      "end": 1708283021514,
+      "start": 1708374883081,
+      "end": 1708374883081,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708283021514,
-      "end": 1708283021514,
+      "start": 1708374883081,
+      "end": 1708374883081,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708283021514,
-      "end": 1708283021514,
+      "start": 1708374883081,
+      "end": 1708374883081,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708283021516,
-      "end": 1708283021519,
+      "start": 1708374883081,
+      "end": 1708374883084,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708283021516,
-      "end": 1708283021519,
+      "start": 1708374883081,
+      "end": 1708374883084,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { useContent } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/composables/content';\nimport { useDocus } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/composables/useDocus.ts';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"DocsPageBottom\",\n  __ssrInlineRender: true,\n  setup(__props) {\n    const { page } = useContent();\n    const { config } = useDocus();\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_Icon = _resolveComponent(\"Icon\");\n      const _component_EditOnLink = _resolveComponent(\"EditOnLink\");\n      const _component_ProseA = _resolveComponent(\"ProseA\");\n      if (_unref(page)) {\n        _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"docs-page-bottom\" }, _attrs))} data-v-346454d4>`);\n        if (_unref(config)?.github?.edit) {\n          _push(`<div class=\"edit-link\" data-v-346454d4>`);\n          _push(_ssrRenderComponent(_component_Icon, { name: \"uil:edit\" }, null, _parent));\n          _push(_ssrRenderComponent(_component_EditOnLink, { page: _unref(page) }, {\n            default: _withCtx(({ url }, _push2, _parent2, _scopeId) => {\n              if (_push2) {\n                _push2(_ssrRenderComponent(_component_ProseA, { to: url }, {\n                  default: _withCtx((_, _push3, _parent3, _scopeId2) => {\n                    if (_push3) {\n                      _push3(`<span data-v-346454d4${_scopeId2}> Edit this page on GitHub </span>`);\n                    } else {\n                      return [\n                        _createVNode(\"span\", null, \" Edit this page on GitHub \")\n                      ];\n                    }\n                  }),\n                  _: 2\n                }, _parent2, _scopeId));\n              } else {\n                return [\n                  _createVNode(_component_ProseA, { to: url }, {\n                    default: _withCtx(() => [\n                      _createVNode(\"span\", null, \" Edit this page on GitHub \")\n                    ]),\n                    _: 2\n                  }, 1032, [\"to\"])\n                ];\n              }\n            }),\n            _: 1\n          }, _parent));\n          _push(`</div>`);\n        } else {\n          _push(`<!---->`);\n        }\n        if (_unref(page)?.mtime) {\n          _push(`<span data-v-346454d4>Updated on <b data-v-346454d4>${_ssrInterpolate(new Intl.DateTimeFormat(\"en-US\").format(Date.parse(_unref(page).mtime)))}</b></span>`);\n        } else {\n          _push(`<!---->`);\n        }\n        _push(`</div>`);\n      } else {\n        _push(`<!---->`);\n      }\n    };\n  }\n});\n",
-      "start": 1708283021519,
-      "end": 1708283021529,
+      "start": 1708374883084,
+      "end": 1708374883093,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -246,8 +246,8 @@
     {
       "name": "nuxt:imports-transform",
       "result": "import { useContent } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/composables/content';\nimport { useDocus } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/composables/useDocus.ts';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"DocsPageBottom\",\n  __ssrInlineRender: true,\n  setup(__props) {\n    const { page } = useContent();\n    const { config } = useDocus();\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_Icon = _resolveComponent(\"Icon\");\n      const _component_EditOnLink = _resolveComponent(\"EditOnLink\");\n      const _component_ProseA = _resolveComponent(\"ProseA\");\n      if (_unref(page)) {\n        _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"docs-page-bottom\" }, _attrs))} data-v-346454d4>`);\n        if (_unref(config)?.github?.edit) {\n          _push(`<div class=\"edit-link\" data-v-346454d4>`);\n          _push(_ssrRenderComponent(_component_Icon, { name: \"uil:edit\" }, null, _parent));\n          _push(_ssrRenderComponent(_component_EditOnLink, { page: _unref(page) }, {\n            default: _withCtx(({ url }, _push2, _parent2, _scopeId) => {\n              if (_push2) {\n                _push2(_ssrRenderComponent(_component_ProseA, { to: url }, {\n                  default: _withCtx((_, _push3, _parent3, _scopeId2) => {\n                    if (_push3) {\n                      _push3(`<span data-v-346454d4${_scopeId2}> Edit this page on GitHub </span>`);\n                    } else {\n                      return [\n                        _createVNode(\"span\", null, \" Edit this page on GitHub \")\n                      ];\n                    }\n                  }),\n                  _: 2\n                }, _parent2, _scopeId));\n              } else {\n                return [\n                  _createVNode(_component_ProseA, { to: url }, {\n                    default: _withCtx(() => [\n                      _createVNode(\"span\", null, \" Edit this page on GitHub \")\n                    ]),\n                    _: 2\n                  }, 1032, [\"to\"])\n                ];\n              }\n            }),\n            _: 1\n          }, _parent));\n          _push(`</div>`);\n        } else {\n          _push(`<!---->`);\n        }\n        if (_unref(page)?.mtime) {\n          _push(`<span data-v-346454d4>Updated on <b data-v-346454d4>${_ssrInterpolate(new Intl.DateTimeFormat(\"en-US\").format(Date.parse(_unref(page).mtime)))}</b></span>`);\n        } else {\n          _push(`<!---->`);\n        }\n        _push(`</div>`);\n      } else {\n        _push(`<!---->`);\n      }\n    };\n  }\n});\n",
-      "start": 1708283021519,
-      "end": 1708283021529,
+      "start": 1708374883084,
+      "end": 1708374883093,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -260,39 +260,39 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1708283021530,
-      "end": 1708283021530,
+      "start": 1708374883094,
+      "end": 1708374883094,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708283021530,
-      "end": 1708283021530,
+      "start": 1708374883094,
+      "end": 1708374883094,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708283021530,
-      "end": 1708283021530,
+      "start": 1708374883094,
+      "end": 1708374883094,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708283021530,
-      "end": 1708283021530,
+      "start": 1708374883094,
+      "end": 1708374883094,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1708283021531,
-      "end": 1708283021531,
+      "start": 1708374883094,
+      "end": 1708374883095,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
       "result": "import { default as __nuxt_component_0 } from \"/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/Icon.vue\";\nimport { default as __nuxt_component_1 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue\";\nimport { default as __nuxt_component_2 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseA.vue\";\nimport { useContent } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/composables/content';\nimport { useDocus } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/composables/useDocus.ts';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"DocsPageBottom\",\n  __ssrInlineRender: true,\n  setup(__props) {\n    const { page } = useContent();\n    const { config } = useDocus();\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_Icon = __nuxt_component_0;\n      const _component_EditOnLink = __nuxt_component_1;\n      const _component_ProseA = __nuxt_component_2;\n      if (_unref(page)) {\n        _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"docs-page-bottom\" }, _attrs))} data-v-346454d4>`);\n        if (_unref(config)?.github?.edit) {\n          _push(`<div class=\"edit-link\" data-v-346454d4>`);\n          _push(_ssrRenderComponent(_component_Icon, { name: \"uil:edit\" }, null, _parent));\n          _push(_ssrRenderComponent(_component_EditOnLink, { page: _unref(page) }, {\n            default: _withCtx(({ url }, _push2, _parent2, _scopeId) => {\n              if (_push2) {\n                _push2(_ssrRenderComponent(_component_ProseA, { to: url }, {\n                  default: _withCtx((_, _push3, _parent3, _scopeId2) => {\n                    if (_push3) {\n                      _push3(`<span data-v-346454d4${_scopeId2}> Edit this page on GitHub </span>`);\n                    } else {\n                      return [\n                        _createVNode(\"span\", null, \" Edit this page on GitHub \")\n                      ];\n                    }\n                  }),\n                  _: 2\n                }, _parent2, _scopeId));\n              } else {\n                return [\n                  _createVNode(_component_ProseA, { to: url }, {\n                    default: _withCtx(() => [\n                      _createVNode(\"span\", null, \" Edit this page on GitHub \")\n                    ]),\n                    _: 2\n                  }, 1032, [\"to\"])\n                ];\n              }\n            }),\n            _: 1\n          }, _parent));\n          _push(`</div>`);\n        } else {\n          _push(`<!---->`);\n        }\n        if (_unref(page)?.mtime) {\n          _push(`<span data-v-346454d4>Updated on <b data-v-346454d4>${_ssrInterpolate(new Intl.DateTimeFormat(\"en-US\").format(Date.parse(_unref(page).mtime)))}</b></span>`);\n        } else {\n          _push(`<!---->`);\n        }\n        _push(`</div>`);\n      } else {\n        _push(`<!---->`);\n      }\n    };\n  }\n});\n",
-      "start": 1708283021532,
-      "end": 1708283021533,
+      "start": 1708374883095,
+      "end": 1708374883096,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -305,20 +305,20 @@
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708283021534,
-      "end": 1708283021534,
+      "start": 1708374883097,
+      "end": 1708374883098,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708283021540,
-      "end": 1708283021540,
+      "start": 1708374883107,
+      "end": 1708374883107,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708283021540,
-      "end": 1708283021540,
+      "start": 1708374883107,
+      "end": 1708374883107,
       "order": "normal"
     }
   ]

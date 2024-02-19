@@ -4,8 +4,8 @@
     {
       "name": "pinceau-transforms",
       "result": "\n#__nuxt_preview {\n  height: 50px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  gap: 10px;\n  font-family: Helvetica, sans-serif;\n  font-weight: 500;\n  position: fixed;\n  bottom: -60px;\n  left: 0;\n  right: 0;\n  background: rgba(255, 255, 255, 0.3);\n  color: black;\n  backdrop-filter: blur(20px);\n  border-top: 1px #eee solid;\n  transition: bottom 0.3s ease-in-out;\n  font-size: 16px;\n  z-index: 10000;\n}\n#__nuxt_preview.__preview_ready {\n  bottom: 0;\n}\n\n#__preview_background {\n  position: fixed;\n  top: 0;\n  left: 0;\n  z-index: 9000;\n  width: 100vw;\n  height: 100vh;\n  background: rgba(255, 255, 255, 0.3);\n  backdrop-filter: blur(8px);\n}\n\n#__preview_loader {\n  position: fixed;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  gap: 8px;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  font-size: 1.4rem;\n  z-index: 9500;\n  color: black;\n  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\n}\n#__preview_loader p {\n  margin: 10px 0;\n}\n\n.dark #__preview_background,\n.dark-mode #__preview_background {\n  background: rgba(0, 0, 0, 0.3);\n}\n.dark #__preview_loader,\n.dark-mode #__preview_loader {\n  color: white;\n}\n\n.preview-loading-enter-active,\n.preview-loading-leave-active {\n  transition: opacity 0.4s;\n}\n.preview-loading-enter,\n.preview-loading-leave-to {\n  opacity: 0;\n}\n\n#__preview_loading_icon {\n  animation: spin 1s linear infinite;\n}\n\n.dark #__nuxt_preview,\n.dark-mode #__nuxt_preview {\n  background: rgba(0, 0, 0, 0.3);\n  border-top: 1px #111 solid;\n  color: white;\n}\n#__nuxt_preview svg {\n  display: inline-block;\n  width: 30px;\n  height: 30px;\n  color: black;\n}\n.dark #__nuxt_preview svg,\n.dark-mode #__nuxt_preview svg {\n  color: white;\n}\nbutton {\n  cursor: pointer;\n  border: 1px solid rgba(0, 0, 0, 0.2);\n  padding: 4px 10px;\n  border-radius: 3px;\n  background: transparent;\n  margin-left: 5px;\n  margin-right: 8px;\n  color: rgba(0, 0, 0, 0.8);\n  font-size: 14px;\n  line-height: 1rem;\n  transition: none;\n  text-align: center;\n  font-weight: normal;\n  box-shadow: none;\n  display: inline-block;\n  width: auto;\n  margin: 0;\n}\nbutton:hover {\n  color: rgba(0, 0, 0, 0.9);\n  border-color: rgba(0, 0, 0, 0.4);\n}\n.dark-mode button,\n.dark button {\n  color: lightgray;\n  border-color: rgba(255, 255, 255, 0.2)\n}\n.dark-mode button:hover,\n.dark button:hover {\n  color: white;\n  border-color: rgba(255, 255, 255, 0.4)\n}\n#__nuxt_preview button:hover,\n#__nuxt_preview button:focus {\n  background: rgba(0, 0, 0, 0.1);\n}\n#__nuxt_preview button:active {\n  background: rgba(0, 0, 0, 0.2);\n}\n.dark #__nuxt_preview button,\n.dark-mode #__nuxt_preview button {\n  border: 1px solid rgba(255, 255, 255, 0.2);\n  color: rgba(255, 255, 255, 0.8);\n}\n.dark #__nuxt_preview button:hover,\n.dark #__nuxt_preview button:hover,\n.dark-mode #__nuxt_preview button:focus,\n.dark-mode #__nuxt_preview button:focus {\n  background: rgba(255, 255, 255, 0.1);\n}\n.dark #__nuxt_preview button:active,\n.dark-mode #__nuxt_preview button:active {\n  background: rgba(255, 255, 255, 0.2);\n}\n\na {\n  font-weight: 600;\n}\n#__nuxt_preview.__preview_refreshing svg,\n#__nuxt_preview.__preview_refreshing span,\n#__nuxt_preview.__preview_refreshing button {\n  animation: nuxt_pulsate 1s ease-out;\n  animation-iteration-count: infinite;\n  opacity: 0.5;\n}\n@keyframes nuxt_pulsate {\n  0% {\n      opacity: 1;\n  }\n  50% {\n      opacity: 0.5;\n  }\n  100% {\n      opacity: 1;\n  }\n}\n\n@keyframes spin {\n  0% {\n    transform: rotate(360deg);\n  }\n  100% {\n    transform: rotate(0deg);\n  }\n}\n",
-      "start": 1708283012845,
-      "end": 1708283012845,
+      "start": 1708374873927,
+      "end": 1708374873927,
       "sourcemaps": {
         "version": 3,
         "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxthq/studio/dist/runtime/components/ContentPreviewMode.vue",
@@ -21,40 +21,40 @@
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708283012846,
-      "end": 1708283012846,
+      "start": 1708374873927,
+      "end": 1708374873927,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708283012846,
-      "end": 1708283012846,
+      "start": 1708374873927,
+      "end": 1708374873927,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "\n#__nuxt_preview {\n  height: 50px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  gap: 10px;\n  font-family: Helvetica, sans-serif;\n  font-weight: 500;\n  position: fixed;\n  bottom: -60px;\n  left: 0;\n  right: 0;\n  background: rgba(255, 255, 255, 0.3);\n  color: black;\n  backdrop-filter: blur(20px);\n  border-top: 1px #eee solid;\n  transition: bottom 0.3s ease-in-out;\n  font-size: 16px;\n  z-index: 10000;\n}\n#__nuxt_preview.__preview_ready {\n  bottom: 0;\n}\n\n#__preview_background {\n  position: fixed;\n  top: 0;\n  left: 0;\n  z-index: 9000;\n  width: 100vw;\n  height: 100vh;\n  background: rgba(255, 255, 255, 0.3);\n  backdrop-filter: blur(8px);\n}\n\n#__preview_loader {\n  position: fixed;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  gap: 8px;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  font-size: 1.4rem;\n  z-index: 9500;\n  color: black;\n  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\n}\n#__preview_loader p {\n  margin: 10px 0;\n}\n\n.dark #__preview_background,\n.dark-mode #__preview_background {\n  background: rgba(0, 0, 0, 0.3);\n}\n.dark #__preview_loader,\n.dark-mode #__preview_loader {\n  color: white;\n}\n\n.preview-loading-enter-active,\n.preview-loading-leave-active {\n  transition: opacity 0.4s;\n}\n.preview-loading-enter,\n.preview-loading-leave-to {\n  opacity: 0;\n}\n\n#__preview_loading_icon {\n  animation: spin 1s linear infinite;\n}\n\n.dark #__nuxt_preview,\n.dark-mode #__nuxt_preview {\n  background: rgba(0, 0, 0, 0.3);\n  border-top: 1px #111 solid;\n  color: white;\n}\n#__nuxt_preview svg {\n  display: inline-block;\n  width: 30px;\n  height: 30px;\n  color: black;\n}\n.dark #__nuxt_preview svg,\n.dark-mode #__nuxt_preview svg {\n  color: white;\n}\nbutton {\n  cursor: pointer;\n  border: 1px solid rgba(0, 0, 0, 0.2);\n  padding: 4px 10px;\n  border-radius: 3px;\n  background: transparent;\n  margin-left: 5px;\n  margin-right: 8px;\n  color: rgba(0, 0, 0, 0.8);\n  font-size: 14px;\n  line-height: 1rem;\n  transition: none;\n  text-align: center;\n  font-weight: normal;\n  box-shadow: none;\n  display: inline-block;\n  width: auto;\n  margin: 0;\n}\nbutton:hover {\n  color: rgba(0, 0, 0, 0.9);\n  border-color: rgba(0, 0, 0, 0.4);\n}\n.dark-mode button,\n.dark button {\n  color: lightgray;\n  border-color: rgba(255, 255, 255, 0.2)\n}\n.dark-mode button:hover,\n.dark button:hover {\n  color: white;\n  border-color: rgba(255, 255, 255, 0.4)\n}\n#__nuxt_preview button:hover,\n#__nuxt_preview button:focus {\n  background: rgba(0, 0, 0, 0.1);\n}\n#__nuxt_preview button:active {\n  background: rgba(0, 0, 0, 0.2);\n}\n.dark #__nuxt_preview button,\n.dark-mode #__nuxt_preview button {\n  border: 1px solid rgba(255, 255, 255, 0.2);\n  color: rgba(255, 255, 255, 0.8);\n}\n.dark #__nuxt_preview button:hover,\n.dark #__nuxt_preview button:hover,\n.dark-mode #__nuxt_preview button:focus,\n.dark-mode #__nuxt_preview button:focus {\n  background: rgba(255, 255, 255, 0.1);\n}\n.dark #__nuxt_preview button:active,\n.dark-mode #__nuxt_preview button:active {\n  background: rgba(255, 255, 255, 0.2);\n}\n\na {\n  font-weight: 600;\n}\n#__nuxt_preview.__preview_refreshing svg,\n#__nuxt_preview.__preview_refreshing span,\n#__nuxt_preview.__preview_refreshing button {\n  animation: nuxt_pulsate 1s ease-out;\n  animation-iteration-count: infinite;\n  opacity: 0.5;\n}\n@keyframes nuxt_pulsate {\n  0% {\n      opacity: 1;\n  }\n  50% {\n      opacity: 0.5;\n  }\n  100% {\n      opacity: 1;\n  }\n}\n\n@keyframes spin {\n  0% {\n    transform: rotate(360deg);\n  }\n  100% {\n    transform: rotate(0deg);\n  }\n}\n",
-      "start": 1708283012846,
-      "end": 1708283012846,
+      "start": 1708374873927,
+      "end": 1708374873928,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708283012847,
-      "end": 1708283012847,
+      "start": 1708374873928,
+      "end": 1708374873928,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708283012850,
-      "end": 1708283012850,
+      "start": 1708374873930,
+      "end": 1708374873931,
       "order": "pre"
     },
     {
       "name": "vite:css",
       "result": "#__nuxt_preview{align-items:center;-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);background:hsla(0,0%,100%,.3);border-top:1px solid #eee;bottom:-60px;color:#000;display:flex;font-family:Helvetica,sans-serif;font-size:16px;font-weight:500;gap:10px;height:50px;justify-content:center;left:0;position:fixed;right:0;transition:bottom .3s ease-in-out;z-index:10000}#__nuxt_preview.__preview_ready{bottom:0}#__preview_background{-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);background:hsla(0,0%,100%,.3);height:100vh;left:0;position:fixed;top:0;width:100vw;z-index:9000}#__preview_loader{align-items:center;color:#000;display:flex;flex-direction:column;font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;font-size:1.4rem;gap:8px;left:50%;position:fixed;top:50%;transform:translate(-50%,-50%);z-index:9500}#__preview_loader p{margin:10px 0}.dark #__preview_background,.dark-mode #__preview_background{background:rgba(0,0,0,.3)}.dark #__preview_loader,.dark-mode #__preview_loader{color:#fff}.preview-loading-enter-active,.preview-loading-leave-active{transition:opacity .4s}.preview-loading-enter,.preview-loading-leave-to{opacity:0}#__preview_loading_icon{animation:spin 1s linear infinite}.dark #__nuxt_preview,.dark-mode #__nuxt_preview{background:rgba(0,0,0,.3);border-top:1px solid #111;color:#fff}#__nuxt_preview svg{color:#000;display:inline-block;height:30px;width:30px}.dark #__nuxt_preview svg,.dark-mode #__nuxt_preview svg{color:#fff}button{background:transparent;border:1px solid rgba(0,0,0,.2);border-radius:3px;box-shadow:none;color:rgba(0,0,0,.8);cursor:pointer;display:inline-block;font-size:14px;font-weight:400;line-height:1rem;margin:0;padding:4px 10px;text-align:center;transition:none;width:auto}button:hover{border-color:rgba(0,0,0,.4);color:rgba(0,0,0,.9)}.dark button,.dark-mode button{border-color:hsla(0,0%,100%,.2);color:#d3d3d3}.dark button:hover,.dark-mode button:hover{border-color:hsla(0,0%,100%,.4);color:#fff}#__nuxt_preview button:focus,#__nuxt_preview button:hover{background:rgba(0,0,0,.1)}#__nuxt_preview button:active{background:rgba(0,0,0,.2)}.dark #__nuxt_preview button,.dark-mode #__nuxt_preview button{border:1px solid hsla(0,0%,100%,.2);color:hsla(0,0%,100%,.8)}.dark #__nuxt_preview button:hover,.dark-mode #__nuxt_preview button:focus{background:hsla(0,0%,100%,.1)}.dark #__nuxt_preview button:active,.dark-mode #__nuxt_preview button:active{background:hsla(0,0%,100%,.2)}a{font-weight:600}#__nuxt_preview.__preview_refreshing button,#__nuxt_preview.__preview_refreshing span,#__nuxt_preview.__preview_refreshing svg{animation:nuxt_pulsate 1s ease-out;animation-iteration-count:infinite;opacity:.5}@keyframes nuxt_pulsate{0%{opacity:1}50%{opacity:.5}to{opacity:1}}@keyframes spin{0%{transform:rotate(1turn)}to{transform:rotate(0deg)}}",
-      "start": 1708283012850,
-      "end": 1708283012880,
+      "start": 1708374873931,
+      "end": 1708374873956,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -62,27 +62,27 @@
     },
     {
       "name": "vite:esbuild",
-      "start": 1708283012880,
-      "end": 1708283012880,
+      "start": 1708374873957,
+      "end": 1708374873957,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1708283012881,
-      "end": 1708283012881,
+      "start": 1708374873958,
+      "end": 1708374873958,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708283012881,
-      "end": 1708283012881,
+      "start": 1708374873958,
+      "end": 1708374873958,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "#__nuxt_preview[data-v-9c967cf1]{align-items:center;-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);background:hsla(0,0%,100%,.3);border-top:1px solid #eee;bottom:-60px;color:#000;display:flex;font-family:Helvetica,sans-serif;font-size:16px;font-weight:500;gap:10px;height:50px;justify-content:center;left:0;position:fixed;right:0;transition:bottom .3s ease-in-out;z-index:10000}#__nuxt_preview.__preview_ready[data-v-9c967cf1]{bottom:0}#__preview_background[data-v-9c967cf1]{-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);background:hsla(0,0%,100%,.3);height:100vh;left:0;position:fixed;top:0;width:100vw;z-index:9000}#__preview_loader[data-v-9c967cf1]{align-items:center;color:#000;display:flex;flex-direction:column;font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;font-size:1.4rem;gap:8px;left:50%;position:fixed;top:50%;transform:translate(-50%,-50%);z-index:9500}#__preview_loader p[data-v-9c967cf1]{margin:10px 0}.dark #__preview_background[data-v-9c967cf1],.dark-mode #__preview_background[data-v-9c967cf1]{background:rgba(0,0,0,.3)}.dark #__preview_loader[data-v-9c967cf1],.dark-mode #__preview_loader[data-v-9c967cf1]{color:#fff}.preview-loading-enter-active[data-v-9c967cf1],.preview-loading-leave-active[data-v-9c967cf1]{transition:opacity .4s}.preview-loading-enter[data-v-9c967cf1],.preview-loading-leave-to[data-v-9c967cf1]{opacity:0}#__preview_loading_icon[data-v-9c967cf1]{animation:spin-9c967cf1 1s linear infinite}.dark #__nuxt_preview[data-v-9c967cf1],.dark-mode #__nuxt_preview[data-v-9c967cf1]{background:rgba(0,0,0,.3);border-top:1px solid #111;color:#fff}#__nuxt_preview svg[data-v-9c967cf1]{color:#000;display:inline-block;height:30px;width:30px}.dark #__nuxt_preview svg[data-v-9c967cf1],.dark-mode #__nuxt_preview svg[data-v-9c967cf1]{color:#fff}button[data-v-9c967cf1]{background:transparent;border:1px solid rgba(0,0,0,.2);border-radius:3px;box-shadow:none;color:rgba(0,0,0,.8);cursor:pointer;display:inline-block;font-size:14px;font-weight:400;line-height:1rem;margin:0;padding:4px 10px;text-align:center;transition:none;width:auto}button[data-v-9c967cf1]:hover{border-color:rgba(0,0,0,.4);color:rgba(0,0,0,.9)}.dark button[data-v-9c967cf1],.dark-mode button[data-v-9c967cf1]{border-color:hsla(0,0%,100%,.2);color:#d3d3d3}.dark button[data-v-9c967cf1]:hover,.dark-mode button[data-v-9c967cf1]:hover{border-color:hsla(0,0%,100%,.4);color:#fff}#__nuxt_preview button[data-v-9c967cf1]:focus,#__nuxt_preview button[data-v-9c967cf1]:hover{background:rgba(0,0,0,.1)}#__nuxt_preview button[data-v-9c967cf1]:active{background:rgba(0,0,0,.2)}.dark #__nuxt_preview button[data-v-9c967cf1],.dark-mode #__nuxt_preview button[data-v-9c967cf1]{border:1px solid hsla(0,0%,100%,.2);color:hsla(0,0%,100%,.8)}.dark #__nuxt_preview button[data-v-9c967cf1]:hover,.dark-mode #__nuxt_preview button[data-v-9c967cf1]:focus{background:hsla(0,0%,100%,.1)}.dark #__nuxt_preview button[data-v-9c967cf1]:active,.dark-mode #__nuxt_preview button[data-v-9c967cf1]:active{background:hsla(0,0%,100%,.2)}a[data-v-9c967cf1]{font-weight:600}#__nuxt_preview.__preview_refreshing button[data-v-9c967cf1],#__nuxt_preview.__preview_refreshing span[data-v-9c967cf1],#__nuxt_preview.__preview_refreshing svg[data-v-9c967cf1]{animation:nuxt_pulsate-9c967cf1 1s ease-out;animation-iteration-count:infinite;opacity:.5}@keyframes nuxt_pulsate-9c967cf1{0%{opacity:1}50%{opacity:.5}to{opacity:1}}@keyframes spin-9c967cf1{0%{transform:rotate(1turn)}to{transform:rotate(0deg)}}",
-      "start": 1708283012881,
-      "end": 1708283012888,
+      "start": 1708374873958,
+      "end": 1708374873991,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -90,57 +90,57 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708283012889,
-      "end": 1708283012889,
+      "start": 1708374873991,
+      "end": 1708374873991,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708283012889,
-      "end": 1708283012889,
+      "start": 1708374873991,
+      "end": 1708374873991,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708283012889,
-      "end": 1708283012889,
+      "start": 1708374873991,
+      "end": 1708374873991,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1708283012889,
-      "end": 1708283012889,
+      "start": 1708374873991,
+      "end": 1708374873991,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708283012889,
-      "end": 1708283012889,
+      "start": 1708374873991,
+      "end": 1708374873991,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708283012889,
-      "end": 1708283012889,
+      "start": 1708374873991,
+      "end": 1708374873991,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708283012890,
-      "end": 1708283012890,
+      "start": 1708374873992,
+      "end": 1708374873992,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708283012890,
-      "end": 1708283012890,
+      "start": 1708374873992,
+      "end": 1708374873992,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
       "result": "",
-      "start": 1708283012890,
-      "end": 1708283012890,
+      "start": 1708374873992,
+      "end": 1708374873992,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -148,98 +148,98 @@
     },
     {
       "name": "vite:build-html",
-      "start": 1708283012890,
-      "end": 1708283012890,
+      "start": 1708374873992,
+      "end": 1708374873992,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708283012890,
-      "end": 1708283012890,
+      "start": 1708374873992,
+      "end": 1708374873992,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708283012890,
-      "end": 1708283012890,
+      "start": 1708374873992,
+      "end": 1708374873992,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708283012890,
-      "end": 1708283012890,
+      "start": 1708374873992,
+      "end": 1708374873992,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708283012890,
-      "end": 1708283012890,
+      "start": 1708374873992,
+      "end": 1708374873992,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708283012890,
-      "end": 1708283012890,
+      "start": 1708374873992,
+      "end": 1708374873992,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708283012890,
-      "end": 1708283012890,
+      "start": 1708374873992,
+      "end": 1708374873992,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708283012890,
-      "end": 1708283012890,
+      "start": 1708374873992,
+      "end": 1708374873992,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708283012890,
-      "end": 1708283012890,
+      "start": 1708374873992,
+      "end": 1708374873992,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708283012890,
-      "end": 1708283012890,
+      "start": 1708374873992,
+      "end": 1708374873992,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1708283012890,
-      "end": 1708283012890,
+      "start": 1708374873992,
+      "end": 1708374873992,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1708283012891,
-      "end": 1708283012891,
+      "start": 1708374873992,
+      "end": 1708374873992,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1708283012891,
-      "end": 1708283012891,
+      "start": 1708374873992,
+      "end": 1708374873992,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708283012891,
-      "end": 1708283012891,
+      "start": 1708374873992,
+      "end": 1708374873993,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708283012891,
-      "end": 1708283012891,
+      "start": 1708374873993,
+      "end": 1708374873993,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708283012891,
-      "end": 1708283012891,
+      "start": 1708374873993,
+      "end": 1708374873993,
       "order": "normal"
     }
   ]

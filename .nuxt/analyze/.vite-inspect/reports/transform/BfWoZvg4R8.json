@@ -4,52 +4,52 @@
     {
       "name": "vite:load-fallback",
       "result": "export const useDocus = () => {\n  const docus = computed(() => useAppConfig()?.docus || {})\n  const { navPageFromPath, navDirFromPath, navKeyFromPath } = useContentHelpers()\n  const { navigation, page } = useContent()\n  const route = useRoute()\n\n  /**\n   * Returns fallbacked values for `main`, `header`, `aside` and `footer`.\n   *\n   * It allows to configure `app.config` per page/_dir.\n   */\n  const config = computed(\n    () => {\n      const titleTemplate = docus?.value?.titleTemplate || navKeyFromPath(page?.value?._path, 'titleTemplate', navigation.value || []) || `%s · ${docus?.value?.title || 'Docus'}`\n      const main = docus?.value?.main || {}\n      const header = docus?.value?.header || {}\n      const aside = docus?.value?.aside || {}\n      const footer = docus?.value?.footer || {}\n\n      return {\n        // Raw appConfig\n        ...docus.value,\n\n        // Merged attributes\n        titleTemplate,\n        main: {\n          ...main,\n          ...navKeyFromPath(route.path, 'main', navigation.value || []),\n          ...page.value?.main\n        } as typeof main,\n        header: {\n          ...header,\n          ...navKeyFromPath(route.path, 'header', navigation.value || []),\n          ...page.value?.header\n        } as typeof header,\n        aside: {\n          ...aside,\n          ...navKeyFromPath(route.path, 'aside', navigation.value || []),\n          ...page.value?.aside\n        } as typeof aside,\n        footer: {\n          ...footer,\n          ...navKeyFromPath(route.path, 'footer', navigation.value || []),\n          ...page.value?.footer\n        } as typeof footer\n      }\n    }\n  )\n\n  /**\n   * Current aside tree.\n   */\n  const tree = computed(() => {\n    let nav = navigation.value || []\n    const _path = route.path\n    const level = config?.value?.aside?.level || 0\n    const filtered = config?.value?.aside?.exclude || []\n\n    if (level) {\n      // Filter if `aside.level` is enabled in docus configuration\n      const path = _path.split('/')\n\n      // Get level\n      const leveledPath = path.splice(0, 1 + level).join('/')\n\n      nav = navDirFromPath(leveledPath, nav) || []\n\n      if (!Array.isArray(nav)) { nav = [nav] }\n    }\n\n    // No navigation found; try to resolve page url\n    if (nav.length === 0) {\n      nav = navPageFromPath(page.value?._path || '/', navigation.value || [])\n\n      if (!nav) { return [] }\n\n      if (!Array.isArray(nav)) { nav = [nav] }\n    }\n\n    // Filtered using `aside.exclude` in docus configuration\n    return nav.filter((item: any) => {\n      if (filtered.includes(item._path)) { return false }\n      return true\n    })\n  })\n\n  return { tree, config }\n}\n",
-      "start": 1708283012671,
-      "end": 1708283012906,
+      "start": 1708374873752,
+      "end": 1708374874014,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708283012906,
-      "end": 1708283012906,
+      "start": 1708374874014,
+      "end": 1708374874014,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708283012906,
-      "end": 1708283012906,
+      "start": 1708374874014,
+      "end": 1708374874015,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "export const useDocus = () => {\n  const docus = computed(() => useAppConfig()?.docus || {})\n  const { navPageFromPath, navDirFromPath, navKeyFromPath } = useContentHelpers()\n  const { navigation, page } = useContent()\n  const route = useRoute()\n\n  /**\n   * Returns fallbacked values for `main`, `header`, `aside` and `footer`.\n   *\n   * It allows to configure `app.config` per page/_dir.\n   */\n  const config = computed(\n    () => {\n      const titleTemplate = docus?.value?.titleTemplate || navKeyFromPath(page?.value?._path, 'titleTemplate', navigation.value || []) || `%s · ${docus?.value?.title || 'Docus'}`\n      const main = docus?.value?.main || {}\n      const header = docus?.value?.header || {}\n      const aside = docus?.value?.aside || {}\n      const footer = docus?.value?.footer || {}\n\n      return {\n        // Raw appConfig\n        ...docus.value,\n\n        // Merged attributes\n        titleTemplate,\n        main: {\n          ...main,\n          ...navKeyFromPath(route.path, 'main', navigation.value || []),\n          ...page.value?.main\n        } as typeof main,\n        header: {\n          ...header,\n          ...navKeyFromPath(route.path, 'header', navigation.value || []),\n          ...page.value?.header\n        } as typeof header,\n        aside: {\n          ...aside,\n          ...navKeyFromPath(route.path, 'aside', navigation.value || []),\n          ...page.value?.aside\n        } as typeof aside,\n        footer: {\n          ...footer,\n          ...navKeyFromPath(route.path, 'footer', navigation.value || []),\n          ...page.value?.footer\n        } as typeof footer\n      }\n    }\n  )\n\n  /**\n   * Current aside tree.\n   */\n  const tree = computed(() => {\n    let nav = navigation.value || []\n    const _path = route.path\n    const level = config?.value?.aside?.level || 0\n    const filtered = config?.value?.aside?.exclude || []\n\n    if (level) {\n      // Filter if `aside.level` is enabled in docus configuration\n      const path = _path.split('/')\n\n      // Get level\n      const leveledPath = path.splice(0, 1 + level).join('/')\n\n      nav = navDirFromPath(leveledPath, nav) || []\n\n      if (!Array.isArray(nav)) { nav = [nav] }\n    }\n\n    // No navigation found; try to resolve page url\n    if (nav.length === 0) {\n      nav = navPageFromPath(page.value?._path || '/', navigation.value || [])\n\n      if (!nav) { return [] }\n\n      if (!Array.isArray(nav)) { nav = [nav] }\n    }\n\n    // Filtered using `aside.exclude` in docus configuration\n    return nav.filter((item: any) => {\n      if (filtered.includes(item._path)) { return false }\n      return true\n    })\n  })\n\n  return { tree, config }\n}\n",
-      "start": 1708283012906,
-      "end": 1708283012906,
+      "start": 1708374874015,
+      "end": 1708374874015,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708283012906,
-      "end": 1708283012906,
+      "start": 1708374874015,
+      "end": 1708374874015,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708283012906,
-      "end": 1708283012906,
+      "start": 1708374874015,
+      "end": 1708374874015,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708283012907,
-      "end": 1708283012907,
+      "start": 1708374874015,
+      "end": 1708374874015,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "export const useDocus = () => {\n  const docus = computed(() => useAppConfig()?.docus || {});\n  const { navPageFromPath, navDirFromPath, navKeyFromPath } = useContentHelpers();\n  const { navigation, page } = useContent();\n  const route = useRoute();\n  const config = computed(\n    () => {\n      const titleTemplate = docus?.value?.titleTemplate || navKeyFromPath(page?.value?._path, \"titleTemplate\", navigation.value || []) || `%s · ${docus?.value?.title || \"Docus\"}`;\n      const main = docus?.value?.main || {};\n      const header = docus?.value?.header || {};\n      const aside = docus?.value?.aside || {};\n      const footer = docus?.value?.footer || {};\n      return {\n        // Raw appConfig\n        ...docus.value,\n        // Merged attributes\n        titleTemplate,\n        main: {\n          ...main,\n          ...navKeyFromPath(route.path, \"main\", navigation.value || []),\n          ...page.value?.main\n        },\n        header: {\n          ...header,\n          ...navKeyFromPath(route.path, \"header\", navigation.value || []),\n          ...page.value?.header\n        },\n        aside: {\n          ...aside,\n          ...navKeyFromPath(route.path, \"aside\", navigation.value || []),\n          ...page.value?.aside\n        },\n        footer: {\n          ...footer,\n          ...navKeyFromPath(route.path, \"footer\", navigation.value || []),\n          ...page.value?.footer\n        }\n      };\n    }\n  );\n  const tree = computed(() => {\n    let nav = navigation.value || [];\n    const _path = route.path;\n    const level = config?.value?.aside?.level || 0;\n    const filtered = config?.value?.aside?.exclude || [];\n    if (level) {\n      const path = _path.split(\"/\");\n      const leveledPath = path.splice(0, 1 + level).join(\"/\");\n      nav = navDirFromPath(leveledPath, nav) || [];\n      if (!Array.isArray(nav)) {\n        nav = [nav];\n      }\n    }\n    if (nav.length === 0) {\n      nav = navPageFromPath(page.value?._path || \"/\", navigation.value || []);\n      if (!nav) {\n        return [];\n      }\n      if (!Array.isArray(nav)) {\n        nav = [nav];\n      }\n    }\n    return nav.filter((item) => {\n      if (filtered.includes(item._path)) {\n        return false;\n      }\n      return true;\n    });\n  });\n  return { tree, config };\n};\n",
-      "start": 1708283012907,
-      "end": 1708283013208,
+      "start": 1708374874015,
+      "end": 1708374874228,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -65,123 +65,123 @@
     },
     {
       "name": "vite:json",
-      "start": 1708283013208,
-      "end": 1708283013208,
+      "start": 1708374874228,
+      "end": 1708374874228,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708283013208,
-      "end": 1708283013208,
+      "start": 1708374874229,
+      "end": 1708374874229,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708283013208,
-      "end": 1708283013208,
+      "start": 1708374874229,
+      "end": 1708374874229,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708283013208,
-      "end": 1708283013208,
+      "start": 1708374874229,
+      "end": 1708374874229,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708283013209,
-      "end": 1708283013209,
+      "start": 1708374874229,
+      "end": 1708374874235,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708283013209,
-      "end": 1708283013209,
+      "start": 1708374874235,
+      "end": 1708374874235,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1708283013209,
-      "end": 1708283013209,
+      "start": 1708374874235,
+      "end": 1708374874235,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708283013209,
-      "end": 1708283013209,
+      "start": 1708374874235,
+      "end": 1708374874235,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708283013209,
-      "end": 1708283013210,
+      "start": 1708374874236,
+      "end": 1708374874236,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708283013210,
-      "end": 1708283013223,
+      "start": 1708374874236,
+      "end": 1708374874236,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708283013223,
-      "end": 1708283013223,
+      "start": 1708374874236,
+      "end": 1708374874236,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708283013223,
-      "end": 1708283013223,
+      "start": 1708374874236,
+      "end": 1708374874236,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708283013223,
-      "end": 1708283013223,
+      "start": 1708374874236,
+      "end": 1708374874236,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708283013223,
-      "end": 1708283013223,
+      "start": 1708374874236,
+      "end": 1708374874236,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708283013223,
-      "end": 1708283013224,
+      "start": 1708374874236,
+      "end": 1708374874237,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708283013224,
-      "end": 1708283013224,
+      "start": 1708374874237,
+      "end": 1708374874237,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708283013224,
-      "end": 1708283013224,
+      "start": 1708374874237,
+      "end": 1708374874237,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708283013225,
-      "end": 1708283013225,
+      "start": 1708374874237,
+      "end": 1708374874237,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708283013225,
-      "end": 1708283013225,
+      "start": 1708374874237,
+      "end": 1708374874237,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { computed } from 'vue';\nimport { useAppConfig } from '#app/config';\nimport { useContentHelpers } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/composables/helpers';\nimport { useContent } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/composables/content';\nimport { useRoute } from '#app/composables/router';\nexport const useDocus = () => {\n  const docus = computed(() => useAppConfig()?.docus || {});\n  const { navPageFromPath, navDirFromPath, navKeyFromPath } = useContentHelpers();\n  const { navigation, page } = useContent();\n  const route = useRoute();\n  const config = computed(\n    () => {\n      const titleTemplate = docus?.value?.titleTemplate || navKeyFromPath(page?.value?._path, \"titleTemplate\", navigation.value || []) || `%s · ${docus?.value?.title || \"Docus\"}`;\n      const main = docus?.value?.main || {};\n      const header = docus?.value?.header || {};\n      const aside = docus?.value?.aside || {};\n      const footer = docus?.value?.footer || {};\n      return {\n        // Raw appConfig\n        ...docus.value,\n        // Merged attributes\n        titleTemplate,\n        main: {\n          ...main,\n          ...navKeyFromPath(route.path, \"main\", navigation.value || []),\n          ...page.value?.main\n        },\n        header: {\n          ...header,\n          ...navKeyFromPath(route.path, \"header\", navigation.value || []),\n          ...page.value?.header\n        },\n        aside: {\n          ...aside,\n          ...navKeyFromPath(route.path, \"aside\", navigation.value || []),\n          ...page.value?.aside\n        },\n        footer: {\n          ...footer,\n          ...navKeyFromPath(route.path, \"footer\", navigation.value || []),\n          ...page.value?.footer\n        }\n      };\n    }\n  );\n  const tree = computed(() => {\n    let nav = navigation.value || [];\n    const _path = route.path;\n    const level = config?.value?.aside?.level || 0;\n    const filtered = config?.value?.aside?.exclude || [];\n    if (level) {\n      const path = _path.split(\"/\");\n      const leveledPath = path.splice(0, 1 + level).join(\"/\");\n      nav = navDirFromPath(leveledPath, nav) || [];\n      if (!Array.isArray(nav)) {\n        nav = [nav];\n      }\n    }\n    if (nav.length === 0) {\n      nav = navPageFromPath(page.value?._path || \"/\", navigation.value || []);\n      if (!nav) {\n        return [];\n      }\n      if (!Array.isArray(nav)) {\n        nav = [nav];\n      }\n    }\n    return nav.filter((item) => {\n      if (filtered.includes(item._path)) {\n        return false;\n      }\n      return true;\n    });\n  });\n  return { tree, config };\n};\n",
-      "start": 1708283013225,
-      "end": 1708283013227,
+      "start": 1708374874237,
+      "end": 1708374874240,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -194,50 +194,50 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1708283013228,
-      "end": 1708283013228,
+      "start": 1708374874240,
+      "end": 1708374874240,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708283013228,
-      "end": 1708283013228,
+      "start": 1708374874240,
+      "end": 1708374874240,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1708283013228,
-      "end": 1708283013228,
+      "start": 1708374874240,
+      "end": 1708374874240,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1708283013228,
-      "end": 1708283013228,
+      "start": 1708374874241,
+      "end": 1708374874241,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1708283013229,
-      "end": 1708283013229,
+      "start": 1708374874241,
+      "end": 1708374874241,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708283013229,
-      "end": 1708283013229,
+      "start": 1708374874241,
+      "end": 1708374874241,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708283013229,
-      "end": 1708283013229,
+      "start": 1708374874241,
+      "end": 1708374874241,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708283013230,
-      "end": 1708283013230,
+      "start": 1708374874242,
+      "end": 1708374874242,
       "order": "normal"
     }
   ]

@@ -4,219 +4,219 @@
     {
       "name": "vite:load-fallback",
       "result": "import { Transport } from \"../transport.js\";\nimport { nextTick } from \"./websocket-constructor.js\";\nimport { createPacketDecoderStream, createPacketEncoderStream, } from \"engine.io-parser\";\nexport class WT extends Transport {\n    get name() {\n        return \"webtransport\";\n    }\n    doOpen() {\n        // @ts-ignore\n        if (typeof WebTransport !== \"function\") {\n            return;\n        }\n        // @ts-ignore\n        this.transport = new WebTransport(this.createUri(\"https\"), this.opts.transportOptions[this.name]);\n        this.transport.closed\n            .then(() => {\n            this.onClose();\n        })\n            .catch((err) => {\n            this.onError(\"webtransport error\", err);\n        });\n        // note: we could have used async/await, but that would require some additional polyfills\n        this.transport.ready.then(() => {\n            this.transport.createBidirectionalStream().then((stream) => {\n                const decoderStream = createPacketDecoderStream(Number.MAX_SAFE_INTEGER, this.socket.binaryType);\n                const reader = stream.readable.pipeThrough(decoderStream).getReader();\n                const encoderStream = createPacketEncoderStream();\n                encoderStream.readable.pipeTo(stream.writable);\n                this.writer = encoderStream.writable.getWriter();\n                const read = () => {\n                    reader\n                        .read()\n                        .then(({ done, value }) => {\n                        if (done) {\n                            return;\n                        }\n                        this.onPacket(value);\n                        read();\n                    })\n                        .catch((err) => {\n                    });\n                };\n                read();\n                const packet = { type: \"open\" };\n                if (this.query.sid) {\n                    packet.data = `{\"sid\":\"${this.query.sid}\"}`;\n                }\n                this.writer.write(packet).then(() => this.onOpen());\n            });\n        });\n    }\n    write(packets) {\n        this.writable = false;\n        for (let i = 0; i < packets.length; i++) {\n            const packet = packets[i];\n            const lastPacket = i === packets.length - 1;\n            this.writer.write(packet).then(() => {\n                if (lastPacket) {\n                    nextTick(() => {\n                        this.writable = true;\n                        this.emitReserved(\"drain\");\n                    }, this.setTimeoutFn);\n                }\n            });\n        }\n    }\n    doClose() {\n        var _a;\n        (_a = this.transport) === null || _a === void 0 ? void 0 : _a.close();\n    }\n}\n",
-      "start": 1708283014506,
-      "end": 1708283014529,
+      "start": 1708374876120,
+      "end": 1708374876128,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708283014529,
-      "end": 1708283014529,
+      "start": 1708374876128,
+      "end": 1708374876128,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708283014530,
-      "end": 1708283014530,
+      "start": 1708374876128,
+      "end": 1708374876128,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { Transport } from \"../transport.js\";\nimport { nextTick } from \"./websocket-constructor.js\";\nimport { createPacketDecoderStream, createPacketEncoderStream, } from \"engine.io-parser\";\nexport class WT extends Transport {\n    get name() {\n        return \"webtransport\";\n    }\n    doOpen() {\n        // @ts-ignore\n        if (typeof WebTransport !== \"function\") {\n            return;\n        }\n        // @ts-ignore\n        this.transport = new WebTransport(this.createUri(\"https\"), this.opts.transportOptions[this.name]);\n        this.transport.closed\n            .then(() => {\n            this.onClose();\n        })\n            .catch((err) => {\n            this.onError(\"webtransport error\", err);\n        });\n        // note: we could have used async/await, but that would require some additional polyfills\n        this.transport.ready.then(() => {\n            this.transport.createBidirectionalStream().then((stream) => {\n                const decoderStream = createPacketDecoderStream(Number.MAX_SAFE_INTEGER, this.socket.binaryType);\n                const reader = stream.readable.pipeThrough(decoderStream).getReader();\n                const encoderStream = createPacketEncoderStream();\n                encoderStream.readable.pipeTo(stream.writable);\n                this.writer = encoderStream.writable.getWriter();\n                const read = () => {\n                    reader\n                        .read()\n                        .then(({ done, value }) => {\n                        if (done) {\n                            return;\n                        }\n                        this.onPacket(value);\n                        read();\n                    })\n                        .catch((err) => {\n                    });\n                };\n                read();\n                const packet = { type: \"open\" };\n                if (this.query.sid) {\n                    packet.data = `{\"sid\":\"${this.query.sid}\"}`;\n                }\n                this.writer.write(packet).then(() => this.onOpen());\n            });\n        });\n    }\n    write(packets) {\n        this.writable = false;\n        for (let i = 0; i < packets.length; i++) {\n            const packet = packets[i];\n            const lastPacket = i === packets.length - 1;\n            this.writer.write(packet).then(() => {\n                if (lastPacket) {\n                    nextTick(() => {\n                        this.writable = true;\n                        this.emitReserved(\"drain\");\n                    }, this.setTimeoutFn);\n                }\n            });\n        }\n    }\n    doClose() {\n        var _a;\n        (_a = this.transport) === null || _a === void 0 ? void 0 : _a.close();\n    }\n}\n",
-      "start": 1708283014530,
-      "end": 1708283014530,
+      "start": 1708374876128,
+      "end": 1708374876128,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708283014530,
-      "end": 1708283014530,
+      "start": 1708374876128,
+      "end": 1708374876128,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708283014530,
-      "end": 1708283014530,
+      "start": 1708374876128,
+      "end": 1708374876128,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708283014530,
-      "end": 1708283014530,
+      "start": 1708374876128,
+      "end": 1708374876128,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1708283014530,
-      "end": 1708283014530,
+      "start": 1708374876128,
+      "end": 1708374876128,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1708283014530,
-      "end": 1708283014530,
+      "start": 1708374876128,
+      "end": 1708374876128,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708283014530,
-      "end": 1708283014530,
+      "start": 1708374876128,
+      "end": 1708374876128,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708283014530,
-      "end": 1708283014530,
+      "start": 1708374876128,
+      "end": 1708374876128,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708283014530,
-      "end": 1708283014530,
+      "start": 1708374876128,
+      "end": 1708374876128,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708283014530,
-      "end": 1708283014530,
+      "start": 1708374876128,
+      "end": 1708374876128,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708283014530,
-      "end": 1708283014530,
+      "start": 1708374876128,
+      "end": 1708374876128,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1708283014530,
-      "end": 1708283014530,
+      "start": 1708374876128,
+      "end": 1708374876128,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708283014530,
-      "end": 1708283014530,
+      "start": 1708374876128,
+      "end": 1708374876128,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708283014530,
-      "end": 1708283014530,
+      "start": 1708374876128,
+      "end": 1708374876128,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708283014530,
-      "end": 1708283014530,
+      "start": 1708374876128,
+      "end": 1708374876128,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708283014530,
-      "end": 1708283014530,
+      "start": 1708374876128,
+      "end": 1708374876128,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708283014530,
-      "end": 1708283014530,
+      "start": 1708374876128,
+      "end": 1708374876128,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708283014530,
-      "end": 1708283014530,
+      "start": 1708374876128,
+      "end": 1708374876128,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708283014530,
-      "end": 1708283014530,
+      "start": 1708374876128,
+      "end": 1708374876128,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708283014530,
-      "end": 1708283014530,
+      "start": 1708374876128,
+      "end": 1708374876128,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708283014530,
-      "end": 1708283014531,
+      "start": 1708374876128,
+      "end": 1708374876128,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708283014531,
-      "end": 1708283014531,
+      "start": 1708374876128,
+      "end": 1708374876128,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708283014531,
-      "end": 1708283014531,
+      "start": 1708374876128,
+      "end": 1708374876128,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708283014531,
-      "end": 1708283014531,
+      "start": 1708374876128,
+      "end": 1708374876128,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708283014531,
-      "end": 1708283014531,
+      "start": 1708374876128,
+      "end": 1708374876128,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708283014531,
-      "end": 1708283014531,
+      "start": 1708374876128,
+      "end": 1708374876128,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708283014531,
-      "end": 1708283014531,
+      "start": 1708374876128,
+      "end": 1708374876128,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1708283014531,
-      "end": 1708283014531,
+      "start": 1708374876128,
+      "end": 1708374876128,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1708283014531,
-      "end": 1708283014531,
+      "start": 1708374876128,
+      "end": 1708374876128,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1708283014531,
-      "end": 1708283014531,
+      "start": 1708374876128,
+      "end": 1708374876128,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708283014531,
-      "end": 1708283014531,
+      "start": 1708374876128,
+      "end": 1708374876128,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708283014531,
-      "end": 1708283014531,
+      "start": 1708374876128,
+      "end": 1708374876128,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708283014531,
-      "end": 1708283014531,
+      "start": 1708374876128,
+      "end": 1708374876128,
       "order": "normal"
     }
   ]

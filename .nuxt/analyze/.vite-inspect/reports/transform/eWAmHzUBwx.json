@@ -4,51 +4,51 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { renderSlot as _renderSlot, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, withCtx as _withCtx, createVNode as _createVNode, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-2001208a\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = [\"id\"]\n\nimport { computed } from 'vue'\nimport { useAppConfig } from '#imports'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'ProseH1',\n  props: {\n    id: {}\n  },\n  setup(__props: any) {\n\n\n\nconst { prose } = useAppConfig() as any\nconst hasIcon = computed(() => prose?.h1?.icon && prose?.headings?.icon)\nconst icon = computed(() => prose?.h1?.icon || prose?.headings?.icon)\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_Icon = _resolveComponent(\"Icon\")!\n  const _component_NuxtLink = _resolveComponent(\"NuxtLink\")!\n\n  return (_openBlock(), _createElementBlock(\"h1\", { id: _ctx.id }, [\n    _createVNode(_component_NuxtLink, {\n      href: `#${_ctx.id}`\n    }, {\n      default: _withCtx(() => [\n        _renderSlot(_ctx.$slots, \"default\", {}, undefined, true),\n        (hasIcon.value)\n          ? (_openBlock(), _createBlock(_component_Icon, {\n              key: 0,\n              name: icon.value\n            }, null, 8, [\"name\"]))\n          : _createCommentVNode(\"\", true)\n      ]),\n      _: 3\n    }, 8, [\"href\"])\n  ], 8, _hoisted_1))\n}\n}\n\n})",
-      "start": 1708283010632,
-      "end": 1708283010632
+      "start": 1708374872102,
+      "end": 1708374872102
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708283010637,
-      "end": 1708283010637,
+      "start": 1708374872107,
+      "end": 1708374872108,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708283010641,
-      "end": 1708283010641,
+      "start": 1708374872113,
+      "end": 1708374872113,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { renderSlot as _renderSlot, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, withCtx as _withCtx, createVNode as _createVNode, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-2001208a\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = [\"id\"]\n\nimport { computed } from 'vue'\nimport { useAppConfig } from '#imports'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'ProseH1',\n  props: {\n    id: {}\n  },\n  setup(__props: any) {\n\n\n\nconst { prose } = useAppConfig() as any\nconst hasIcon = computed(() => prose?.h1?.icon && prose?.headings?.icon)\nconst icon = computed(() => prose?.h1?.icon || prose?.headings?.icon)\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_Icon = _resolveComponent(\"Icon\")!\n  const _component_NuxtLink = _resolveComponent(\"NuxtLink\")!\n\n  return (_openBlock(), _createElementBlock(\"h1\", { id: _ctx.id }, [\n    _createVNode(_component_NuxtLink, {\n      href: `#${_ctx.id}`\n    }, {\n      default: _withCtx(() => [\n        _renderSlot(_ctx.$slots, \"default\", {}, undefined, true),\n        (hasIcon.value)\n          ? (_openBlock(), _createBlock(_component_Icon, {\n              key: 0,\n              name: icon.value\n            }, null, 8, [\"name\"]))\n          : _createCommentVNode(\"\", true)\n      ]),\n      _: 3\n    }, 8, [\"href\"])\n  ], 8, _hoisted_1))\n}\n}\n\n})",
-      "start": 1708283010646,
-      "end": 1708283010651,
+      "start": 1708374872117,
+      "end": 1708374872118,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708283010651,
-      "end": 1708283010651,
+      "start": 1708374872118,
+      "end": 1708374872118,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708283010652,
-      "end": 1708283010652,
+      "start": 1708374872118,
+      "end": 1708374872118,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708283010652,
-      "end": 1708283010652,
+      "start": 1708374872118,
+      "end": 1708374872118,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { renderSlot as _renderSlot, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, withCtx as _withCtx, createVNode as _createVNode, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-2001208a\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = [\"id\"];\nimport { computed } from \"vue\";\nimport { useAppConfig } from \"#imports\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ProseH1\",\n  props: {\n    id: {}\n  },\n  setup(__props) {\n    const { prose } = useAppConfig();\n    const hasIcon = computed(() => prose?.h1?.icon && prose?.headings?.icon);\n    const icon = computed(() => prose?.h1?.icon || prose?.headings?.icon);\n    return (_ctx, _cache) => {\n      const _component_Icon = _resolveComponent(\"Icon\");\n      const _component_NuxtLink = _resolveComponent(\"NuxtLink\");\n      return _openBlock(), _createElementBlock(\"h1\", { id: _ctx.id }, [\n        _createVNode(_component_NuxtLink, {\n          href: `#${_ctx.id}`\n        }, {\n          default: _withCtx(() => [\n            _renderSlot(_ctx.$slots, \"default\", {}, void 0, true),\n            hasIcon.value ? (_openBlock(), _createBlock(_component_Icon, {\n              key: 0,\n              name: icon.value\n            }, null, 8, [\"name\"])) : _createCommentVNode(\"\", true)\n          ]),\n          _: 3\n        }, 8, [\"href\"])\n      ], 8, _hoisted_1);\n    };\n  }\n});\n",
-      "start": 1708283010652,
-      "end": 1708283011591,
+      "start": 1708374872118,
+      "end": 1708374873147,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -64,123 +64,123 @@
     },
     {
       "name": "vite:json",
-      "start": 1708283011591,
-      "end": 1708283011591,
+      "start": 1708374873147,
+      "end": 1708374873147,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708283011591,
-      "end": 1708283011591,
+      "start": 1708374873147,
+      "end": 1708374873147,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708283011591,
-      "end": 1708283011591,
+      "start": 1708374873147,
+      "end": 1708374873147,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708283011592,
-      "end": 1708283011592,
+      "start": 1708374873147,
+      "end": 1708374873147,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708283011592,
-      "end": 1708283011592,
+      "start": 1708374873147,
+      "end": 1708374873147,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708283011592,
-      "end": 1708283011592,
+      "start": 1708374873148,
+      "end": 1708374873148,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1708283011592,
-      "end": 1708283011592,
+      "start": 1708374873148,
+      "end": 1708374873148,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708283011593,
-      "end": 1708283011593,
+      "start": 1708374873148,
+      "end": 1708374873148,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708283011593,
-      "end": 1708283011593,
+      "start": 1708374873149,
+      "end": 1708374873149,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708283011593,
-      "end": 1708283011593,
+      "start": 1708374873149,
+      "end": 1708374873149,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708283011594,
-      "end": 1708283011594,
+      "start": 1708374873149,
+      "end": 1708374873149,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708283011594,
-      "end": 1708283011594,
+      "start": 1708374873149,
+      "end": 1708374873149,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708283011594,
-      "end": 1708283011594,
+      "start": 1708374873149,
+      "end": 1708374873149,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708283011594,
-      "end": 1708283011594,
+      "start": 1708374873149,
+      "end": 1708374873149,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708283011594,
-      "end": 1708283011594,
+      "start": 1708374873149,
+      "end": 1708374873149,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708283011594,
-      "end": 1708283011594,
+      "start": 1708374873149,
+      "end": 1708374873149,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708283011594,
-      "end": 1708283011594,
+      "start": 1708374873149,
+      "end": 1708374873149,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708283011594,
-      "end": 1708283011594,
+      "start": 1708374873149,
+      "end": 1708374873149,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708283011597,
-      "end": 1708283011597,
+      "start": 1708374873151,
+      "end": 1708374873151,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { useAppConfig } from '#app/config';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { renderSlot as _renderSlot, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, withCtx as _withCtx, createVNode as _createVNode, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-2001208a\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = [\"id\"];\nimport { computed } from \"vue\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ProseH1\",\n  props: {\n    id: {}\n  },\n  setup(__props) {\n    const { prose } = useAppConfig();\n    const hasIcon = computed(() => prose?.h1?.icon && prose?.headings?.icon);\n    const icon = computed(() => prose?.h1?.icon || prose?.headings?.icon);\n    return (_ctx, _cache) => {\n      const _component_Icon = _resolveComponent(\"Icon\");\n      const _component_NuxtLink = _resolveComponent(\"NuxtLink\");\n      return _openBlock(), _createElementBlock(\"h1\", { id: _ctx.id }, [\n        _createVNode(_component_NuxtLink, {\n          href: `#${_ctx.id}`\n        }, {\n          default: _withCtx(() => [\n            _renderSlot(_ctx.$slots, \"default\", {}, void 0, true),\n            hasIcon.value ? (_openBlock(), _createBlock(_component_Icon, {\n              key: 0,\n              name: icon.value\n            }, null, 8, [\"name\"])) : _createCommentVNode(\"\", true)\n          ]),\n          _: 3\n        }, 8, [\"href\"])\n      ], 8, _hoisted_1);\n    };\n  }\n});\n",
-      "start": 1708283011597,
-      "end": 1708283011609,
+      "start": 1708374873152,
+      "end": 1708374873190,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -193,51 +193,51 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1708283011610,
-      "end": 1708283011610,
+      "start": 1708374873191,
+      "end": 1708374873191,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708283011610,
-      "end": 1708283011610,
+      "start": 1708374873191,
+      "end": 1708374873191,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1708283011610,
-      "end": 1708283011610,
+      "start": 1708374873191,
+      "end": 1708374873191,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1708283011611,
-      "end": 1708283011611,
+      "start": 1708374873191,
+      "end": 1708374873191,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
       "result": "import { default as __nuxt_component_0 } from \"/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/Icon.vue\";\nimport { default as __nuxt_component_1 } from \"/workspace/Kubernetes-Bootcamp/node_modules/nuxt/dist/app/components/nuxt-link\";\nimport { useAppConfig } from '#app/config';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { renderSlot as _renderSlot, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, withCtx as _withCtx, createVNode as _createVNode, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-2001208a\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = [\"id\"];\nimport { computed } from \"vue\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ProseH1\",\n  props: {\n    id: {}\n  },\n  setup(__props) {\n    const { prose } = useAppConfig();\n    const hasIcon = computed(() => prose?.h1?.icon && prose?.headings?.icon);\n    const icon = computed(() => prose?.h1?.icon || prose?.headings?.icon);\n    return (_ctx, _cache) => {\n      const _component_Icon = __nuxt_component_0;\n      const _component_NuxtLink = __nuxt_component_1;\n      return _openBlock(), _createElementBlock(\"h1\", { id: _ctx.id }, [\n        _createVNode(_component_NuxtLink, {\n          href: `#${_ctx.id}`\n        }, {\n          default: _withCtx(() => [\n            _renderSlot(_ctx.$slots, \"default\", {}, void 0, true),\n            hasIcon.value ? (_openBlock(), _createBlock(_component_Icon, {\n              key: 0,\n              name: icon.value\n            }, null, 8, [\"name\"])) : _createCommentVNode(\"\", true)\n          ]),\n          _: 3\n        }, 8, [\"href\"])\n      ], 8, _hoisted_1);\n    };\n  }\n});\n",
-      "start": 1708283011612,
-      "end": 1708283011612,
+      "start": 1708374873193,
+      "end": 1708374873193,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708283011613,
-      "end": 1708283011613,
+      "start": 1708374873194,
+      "end": 1708374873194,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708283011613,
-      "end": 1708283011613,
+      "start": 1708374873194,
+      "end": 1708374873194,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708283011613,
-      "end": 1708283011613,
+      "start": 1708374873194,
+      "end": 1708374873194,
       "order": "normal"
     }
   ]

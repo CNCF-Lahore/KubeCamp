@@ -4,27 +4,27 @@
     {
       "name": "vite:load-fallback",
       "result": "<script setup lang=\"ts\">\nconst socials = ['twitter', 'facebook', 'instagram', 'tiktok', 'youtube', 'github', 'medium']\n\nconst { config } = useDocus()\n\nconst icons = computed<any>(() => {\n  return Object.entries(config.value.socials || {})\n    .map(([key, value]) => {\n      if (typeof value === 'object') {\n        return value\n      } else if (typeof value === 'string' && value && socials.includes(key)) {\n        return {\n          href: /^https?:\\/\\//.test(value) ? value : `https://${key}.com/${value}`,\n          icon: `fa-brands:${key}`,\n          label: value,\n          rel: 'noopener noreferrer'\n        }\n      } else {\n        return null\n      }\n    })\n    .filter(Boolean)\n})\n</script>\n\n<template>\n  <NuxtLink\n    v-for=\"icon in icons\"\n    :key=\"icon.label\"\n    :rel=\"icon.rel\"\n    :title=\"icon.label\"\n    :aria-label=\"icon.label\"\n    :href=\"icon.href\"\n    target=\"_blank\"\n  >\n    <Icon\n      v-if=\"icon.icon\"\n      :name=\"icon.icon\"\n    />\n  </NuxtLink>\n</template>\n\n<style lang=\"ts\" scoped>\ncss({\n  a: {\n    display: 'flex',\n    color: '{color.gray.500}',\n    padding: '{space.4}',\n\n    '@dark': {\n      color: '{color.gray.400}'\n    },\n\n    '&:hover': {\n      color: '{color.gray.700}',\n      '@dark': {\n        color: '{color.gray.200}',\n      }\n    },\n  }\n})\n</style>\n",
-      "start": 1708283007539,
-      "end": 1708283008047,
+      "start": 1708374870258,
+      "end": 1708374870515,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708283008047,
-      "end": 1708283008047,
+      "start": 1708374870515,
+      "end": 1708374870515,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708283008047,
-      "end": 1708283008047,
+      "start": 1708374870515,
+      "end": 1708374870515,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "<script setup lang=\"ts\">\nconst socials = ['twitter', 'facebook', 'instagram', 'tiktok', 'youtube', 'github', 'medium']\n\nconst { config } = useDocus()\n\nconst icons = computed<any>(() => {\n  return Object.entries(config.value.socials || {})\n    .map(([key, value]) => {\n      if (typeof value === 'object') {\n        return value\n      } else if (typeof value === 'string' && value && socials.includes(key)) {\n        return {\n          href: /^https?:\\/\\//.test(value) ? value : `https://${key}.com/${value}`,\n          icon: `fa-brands:${key}`,\n          label: value,\n          rel: 'noopener noreferrer'\n        }\n      } else {\n        return null\n      }\n    })\n    .filter(Boolean)\n})\n</script>\n\n<template>\n  <NuxtLink\n    v-for=\"icon in icons\"\n    :key=\"icon.label\"\n    :rel=\"icon.rel\"\n    :title=\"icon.label\"\n    :aria-label=\"icon.label\"\n    :href=\"icon.href\"\n    target=\"_blank\"\n  >\n    <Icon\n      v-if=\"icon.icon\"\n      :name=\"icon.icon\"\n    />\n  </NuxtLink>\n</template>\n\n<style lang=\"postcss\" transformed scoped>\na{display:flex;color:var(--color-gray-500);padding:var(--space-4);}:root.dark a{color:var(--color-gray-400);}a:hover{color:var(--color-gray-700);}:root.dark a:hover{color:var(--color-gray-200);}\n</style>\n",
-      "start": 1708283008047,
-      "end": 1708283008050,
+      "start": 1708374870515,
+      "end": 1708374870519,
       "order": "pre",
       "sourcemaps": {
         "version": 3,
@@ -38,45 +38,45 @@
     },
     {
       "name": "content-slot",
-      "start": 1708283008050,
-      "end": 1708283008050,
+      "start": 1708374870519,
+      "end": 1708374870519,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708283008050,
-      "end": 1708283008050,
+      "start": 1708374870519,
+      "end": 1708374870519,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708283008051,
-      "end": 1708283008051,
+      "start": 1708374870519,
+      "end": 1708374870519,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1708283008051,
-      "end": 1708283008051,
+      "start": 1708374870519,
+      "end": 1708374870519,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1708283008051,
-      "end": 1708283008051,
+      "start": 1708374870519,
+      "end": 1708374870519,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708283008051,
-      "end": 1708283008051,
+      "start": 1708374870519,
+      "end": 1708374870519,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "import _sfc_main from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppSocialIcons.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppSocialIcons.vue?vue&type=script&setup=true&lang.ts\";\nimport \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppSocialIcons.vue?vue&type=style&index=0&scoped=22569e45&transformed=true&lang.postcss\";\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"__scopeId\", \"data-v-22569e45\"]]);\n",
-      "start": 1708283008051,
-      "end": 1708283008285,
+      "start": 1708374870519,
+      "end": 1708374870536,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -84,152 +84,152 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708283008286,
-      "end": 1708283008286,
+      "start": 1708374870536,
+      "end": 1708374870536,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708283008286,
-      "end": 1708283008286,
+      "start": 1708374870536,
+      "end": 1708374870536,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708283008286,
-      "end": 1708283008286,
+      "start": 1708374870536,
+      "end": 1708374870536,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1708283008286,
-      "end": 1708283008286,
+      "start": 1708374870536,
+      "end": 1708374870536,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708283008288,
-      "end": 1708283008288,
+      "start": 1708374870536,
+      "end": 1708374870536,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708283008288,
-      "end": 1708283008288,
+      "start": 1708374870536,
+      "end": 1708374870536,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708283008288,
-      "end": 1708283008288,
+      "start": 1708374870536,
+      "end": 1708374870536,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708283008289,
-      "end": 1708283008289,
+      "start": 1708374870536,
+      "end": 1708374870536,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708283008289,
-      "end": 1708283008290,
+      "start": 1708374870536,
+      "end": 1708374870536,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708283008291,
-      "end": 1708283008291,
+      "start": 1708374870536,
+      "end": 1708374870536,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708283008293,
-      "end": 1708283008293,
+      "start": 1708374870536,
+      "end": 1708374870536,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708283008293,
-      "end": 1708283008293,
+      "start": 1708374870536,
+      "end": 1708374870536,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708283008293,
-      "end": 1708283008293,
+      "start": 1708374870536,
+      "end": 1708374870536,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708283008294,
-      "end": 1708283008294,
+      "start": 1708374870536,
+      "end": 1708374870536,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708283008294,
-      "end": 1708283008294,
+      "start": 1708374870536,
+      "end": 1708374870536,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708283008294,
-      "end": 1708283008294,
+      "start": 1708374870536,
+      "end": 1708374870536,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708283008295,
-      "end": 1708283008324,
+      "start": 1708374870536,
+      "end": 1708374870537,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708283008325,
-      "end": 1708283008325,
+      "start": 1708374870537,
+      "end": 1708374870537,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708283008326,
-      "end": 1708283008326,
+      "start": 1708374870537,
+      "end": 1708374870537,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1708283008326,
-      "end": 1708283008326,
+      "start": 1708374870537,
+      "end": 1708374870537,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1708283008326,
-      "end": 1708283008327,
+      "start": 1708374870537,
+      "end": 1708374870537,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1708283008327,
-      "end": 1708283008327,
+      "start": 1708374870537,
+      "end": 1708374870537,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708283008327,
-      "end": 1708283008328,
+      "start": 1708374870537,
+      "end": 1708374870537,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708283008328,
-      "end": 1708283008328,
+      "start": 1708374870537,
+      "end": 1708374870537,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708283008328,
-      "end": 1708283008328,
+      "start": 1708374870537,
+      "end": 1708374870537,
       "order": "normal"
     }
   ]

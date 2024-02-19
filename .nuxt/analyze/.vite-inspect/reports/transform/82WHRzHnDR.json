@@ -4,219 +4,219 @@
     {
       "name": "vite:load-fallback",
       "result": "import { url } from \"./url.js\";\nimport { Manager } from \"./manager.js\";\nimport { Socket } from \"./socket.js\";\n/**\n * Managers cache.\n */\nconst cache = {};\nfunction lookup(uri, opts) {\n    if (typeof uri === \"object\") {\n        opts = uri;\n        uri = undefined;\n    }\n    opts = opts || {};\n    const parsed = url(uri, opts.path || \"/socket.io\");\n    const source = parsed.source;\n    const id = parsed.id;\n    const path = parsed.path;\n    const sameNamespace = cache[id] && path in cache[id][\"nsps\"];\n    const newConnection = opts.forceNew ||\n        opts[\"force new connection\"] ||\n        false === opts.multiplex ||\n        sameNamespace;\n    let io;\n    if (newConnection) {\n        io = new Manager(source, opts);\n    }\n    else {\n        if (!cache[id]) {\n            cache[id] = new Manager(source, opts);\n        }\n        io = cache[id];\n    }\n    if (parsed.query && !opts.query) {\n        opts.query = parsed.queryKey;\n    }\n    return io.socket(parsed.path, opts);\n}\n// so that \"lookup\" can be used both as a function (e.g. `io(...)`) and as a\n// namespace (e.g. `io.connect(...)`), for backward compatibility\nObject.assign(lookup, {\n    Manager,\n    Socket,\n    io: lookup,\n    connect: lookup,\n});\n/**\n * Protocol version.\n *\n * @public\n */\nexport { protocol } from \"socket.io-parser\";\n/**\n * Expose constructors for standalone build.\n *\n * @public\n */\nexport { Manager, Socket, lookup as io, lookup as connect, lookup as default, };\n",
-      "start": 1708283013671,
-      "end": 1708283013952,
+      "start": 1708374875387,
+      "end": 1708374875549,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708283013952,
-      "end": 1708283013952,
+      "start": 1708374875549,
+      "end": 1708374875549,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708283013952,
-      "end": 1708283013952,
+      "start": 1708374875549,
+      "end": 1708374875549,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { url } from \"./url.js\";\nimport { Manager } from \"./manager.js\";\nimport { Socket } from \"./socket.js\";\n/**\n * Managers cache.\n */\nconst cache = {};\nfunction lookup(uri, opts) {\n    if (typeof uri === \"object\") {\n        opts = uri;\n        uri = undefined;\n    }\n    opts = opts || {};\n    const parsed = url(uri, opts.path || \"/socket.io\");\n    const source = parsed.source;\n    const id = parsed.id;\n    const path = parsed.path;\n    const sameNamespace = cache[id] && path in cache[id][\"nsps\"];\n    const newConnection = opts.forceNew ||\n        opts[\"force new connection\"] ||\n        false === opts.multiplex ||\n        sameNamespace;\n    let io;\n    if (newConnection) {\n        io = new Manager(source, opts);\n    }\n    else {\n        if (!cache[id]) {\n            cache[id] = new Manager(source, opts);\n        }\n        io = cache[id];\n    }\n    if (parsed.query && !opts.query) {\n        opts.query = parsed.queryKey;\n    }\n    return io.socket(parsed.path, opts);\n}\n// so that \"lookup\" can be used both as a function (e.g. `io(...)`) and as a\n// namespace (e.g. `io.connect(...)`), for backward compatibility\nObject.assign(lookup, {\n    Manager,\n    Socket,\n    io: lookup,\n    connect: lookup,\n});\n/**\n * Protocol version.\n *\n * @public\n */\nexport { protocol } from \"socket.io-parser\";\n/**\n * Expose constructors for standalone build.\n *\n * @public\n */\nexport { Manager, Socket, lookup as io, lookup as connect, lookup as default, };\n",
-      "start": 1708283013952,
-      "end": 1708283013952,
+      "start": 1708374875549,
+      "end": 1708374875549,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708283013952,
-      "end": 1708283013952,
+      "start": 1708374875549,
+      "end": 1708374875549,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708283013952,
-      "end": 1708283013952,
+      "start": 1708374875549,
+      "end": 1708374875549,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708283013952,
-      "end": 1708283013952,
+      "start": 1708374875549,
+      "end": 1708374875549,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1708283013952,
-      "end": 1708283013952,
+      "start": 1708374875549,
+      "end": 1708374875549,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1708283013952,
-      "end": 1708283013952,
+      "start": 1708374875549,
+      "end": 1708374875549,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708283013952,
-      "end": 1708283013952,
+      "start": 1708374875549,
+      "end": 1708374875549,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708283013952,
-      "end": 1708283013952,
+      "start": 1708374875549,
+      "end": 1708374875549,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708283013952,
-      "end": 1708283013952,
+      "start": 1708374875549,
+      "end": 1708374875549,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708283013952,
-      "end": 1708283013952,
+      "start": 1708374875549,
+      "end": 1708374875549,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708283013952,
-      "end": 1708283013952,
+      "start": 1708374875549,
+      "end": 1708374875549,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1708283013952,
-      "end": 1708283013952,
+      "start": 1708374875549,
+      "end": 1708374875549,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708283013952,
-      "end": 1708283013952,
+      "start": 1708374875549,
+      "end": 1708374875549,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708283013952,
-      "end": 1708283013952,
+      "start": 1708374875549,
+      "end": 1708374875549,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708283013952,
-      "end": 1708283013952,
+      "start": 1708374875549,
+      "end": 1708374875549,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708283013952,
-      "end": 1708283013952,
+      "start": 1708374875549,
+      "end": 1708374875549,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708283013952,
-      "end": 1708283013952,
+      "start": 1708374875549,
+      "end": 1708374875549,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708283013952,
-      "end": 1708283013952,
+      "start": 1708374875549,
+      "end": 1708374875549,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708283013952,
-      "end": 1708283013952,
+      "start": 1708374875550,
+      "end": 1708374875550,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708283013952,
-      "end": 1708283013952,
+      "start": 1708374875550,
+      "end": 1708374875550,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708283013952,
-      "end": 1708283013953,
+      "start": 1708374875550,
+      "end": 1708374875550,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708283013953,
-      "end": 1708283013953,
+      "start": 1708374875550,
+      "end": 1708374875550,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708283013953,
-      "end": 1708283013953,
+      "start": 1708374875550,
+      "end": 1708374875550,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708283013953,
-      "end": 1708283013953,
+      "start": 1708374875550,
+      "end": 1708374875550,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708283013953,
-      "end": 1708283013953,
+      "start": 1708374875550,
+      "end": 1708374875550,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708283013953,
-      "end": 1708283013953,
+      "start": 1708374875550,
+      "end": 1708374875550,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708283013953,
-      "end": 1708283013953,
+      "start": 1708374875550,
+      "end": 1708374875550,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1708283013953,
-      "end": 1708283013953,
+      "start": 1708374875550,
+      "end": 1708374875550,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1708283013953,
-      "end": 1708283013953,
+      "start": 1708374875550,
+      "end": 1708374875550,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1708283013953,
-      "end": 1708283013953,
+      "start": 1708374875550,
+      "end": 1708374875550,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708283013953,
-      "end": 1708283013953,
+      "start": 1708374875550,
+      "end": 1708374875550,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708283013953,
-      "end": 1708283013953,
+      "start": 1708374875550,
+      "end": 1708374875550,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708283013953,
-      "end": 1708283013953,
+      "start": 1708374875550,
+      "end": 1708374875550,
       "order": "normal"
     }
   ]
