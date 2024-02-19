@@ -45,7 +45,3 @@ export default defineAppConfig({
     },
   }
 })
-
-function defineAppConfig(arg0: { docus: { title: string; description: string; url: string; image: string; socials: {}; layout: string; header: { title: string; logo: boolean; showLinkIcon: boolean; fluid: boolean; exclude: never[]; }; aside: { level: number; collapsed: boolean; exclude: never[]; }; footer: { credits: { icon: string; text: string; href: string; }; textLinks: never[]; iconLinks: never[]; fluid: boolean; }; github: { branch: string; repo: string; owner: string; edit: boolean; }; }; }) {
-  throw new Error("Function not implemented.");
-}
