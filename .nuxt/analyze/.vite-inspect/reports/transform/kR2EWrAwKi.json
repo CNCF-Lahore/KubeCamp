@@ -4,51 +4,51 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, renderSlot as _renderSlot, normalizeClass as _normalizeClass, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\nimport { renderSlot as _renderMDCSlot } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/utils/slot'\n\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'Badge',\n  props: {\n  /**\n   * @values info, success, warning, danger\n   */\n  type: {\n    type: String,\n    default: 'info',\n    validator (value: string) {\n      return ['info', 'success', 'warning', 'danger', 'primary'].includes(value)\n    }\n  }\n},\n  setup(__props) {\n\n\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_MDCSlot = _resolveComponent(\"MDCSlot\")!\n\n  return (_openBlock(), _createElementBlock(\"span\", {\n    class: _normalizeClass([[__props.type], \"badge\"])\n  }, [\n    _renderMDCSlot(_ctx.$slots, \"default\", { unwrap: \"p\" }, undefined, true)\n  ], 2))\n}\n}\n\n})",
-      "start": 1708374872352,
-      "end": 1708374872352
+      "start": 1708425375531,
+      "end": 1708425375531
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708374872353,
-      "end": 1708374872353,
+      "start": 1708425375537,
+      "end": 1708425375537,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708374872359,
-      "end": 1708374872359,
+      "start": 1708425375543,
+      "end": 1708425375544,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, renderSlot as _renderSlot, normalizeClass as _normalizeClass, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\nimport { renderSlot as _renderMDCSlot } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/utils/slot'\n\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'Badge',\n  props: {\n  /**\n   * @values info, success, warning, danger\n   */\n  type: {\n    type: String,\n    default: 'info',\n    validator (value: string) {\n      return ['info', 'success', 'warning', 'danger', 'primary'].includes(value)\n    }\n  }\n},\n  setup(__props) {\n\n\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_MDCSlot = _resolveComponent(\"MDCSlot\")!\n\n  return (_openBlock(), _createElementBlock(\"span\", {\n    class: _normalizeClass([[__props.type], \"badge\"])\n  }, [\n    _renderMDCSlot(_ctx.$slots, \"default\", { unwrap: \"p\" }, undefined, true)\n  ], 2))\n}\n}\n\n})",
-      "start": 1708374872361,
-      "end": 1708374872361,
+      "start": 1708425375558,
+      "end": 1708425375558,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708374872362,
-      "end": 1708374872362,
+      "start": 1708425375559,
+      "end": 1708425375559,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708374872362,
-      "end": 1708374872362,
+      "start": 1708425375559,
+      "end": 1708425375559,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708374872362,
-      "end": 1708374872362,
+      "start": 1708425375559,
+      "end": 1708425375559,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { resolveComponent as _resolveComponent, normalizeClass as _normalizeClass, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\";\nimport { renderSlot as _renderMDCSlot } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/utils/slot\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"Badge\",\n  props: {\n    /**\n     * @values info, success, warning, danger\n     */\n    type: {\n      type: String,\n      default: \"info\",\n      validator(value) {\n        return [\"info\", \"success\", \"warning\", \"danger\", \"primary\"].includes(value);\n      }\n    }\n  },\n  setup(__props) {\n    return (_ctx, _cache) => {\n      const _component_MDCSlot = _resolveComponent(\"MDCSlot\");\n      return _openBlock(), _createElementBlock(\"span\", {\n        class: _normalizeClass([[__props.type], \"badge\"])\n      }, [\n        _renderMDCSlot(_ctx.$slots, \"default\", { unwrap: \"p\" }, void 0, true)\n      ], 2);\n    };\n  }\n});\n",
-      "start": 1708374872362,
-      "end": 1708374873210,
+      "start": 1708425375559,
+      "end": 1708425375987,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -64,171 +64,171 @@
     },
     {
       "name": "vite:json",
-      "start": 1708374873210,
-      "end": 1708374873210,
+      "start": 1708425375987,
+      "end": 1708425375987,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708374873210,
-      "end": 1708374873210,
+      "start": 1708425375988,
+      "end": 1708425375988,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708374873210,
-      "end": 1708374873210,
+      "start": 1708425375988,
+      "end": 1708425375988,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708374873211,
-      "end": 1708374873211,
+      "start": 1708425375988,
+      "end": 1708425375988,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708374873211,
-      "end": 1708374873211,
+      "start": 1708425375988,
+      "end": 1708425375988,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708374873211,
-      "end": 1708374873211,
+      "start": 1708425375988,
+      "end": 1708425375988,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1708374873211,
-      "end": 1708374873211,
+      "start": 1708425375988,
+      "end": 1708425375988,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708374873212,
-      "end": 1708374873212,
+      "start": 1708425375989,
+      "end": 1708425375989,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708374873213,
-      "end": 1708374873213,
+      "start": 1708425375989,
+      "end": 1708425375989,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708374873213,
-      "end": 1708374873213,
+      "start": 1708425375989,
+      "end": 1708425375989,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708374873213,
-      "end": 1708374873213,
+      "start": 1708425375989,
+      "end": 1708425375989,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708374873213,
-      "end": 1708374873213,
+      "start": 1708425375989,
+      "end": 1708425375989,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708374873213,
-      "end": 1708374873213,
+      "start": 1708425375990,
+      "end": 1708425375990,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708374873213,
-      "end": 1708374873213,
+      "start": 1708425375990,
+      "end": 1708425375990,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708374873214,
-      "end": 1708374873214,
+      "start": 1708425375990,
+      "end": 1708425375990,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708374873214,
-      "end": 1708374873214,
+      "start": 1708425375990,
+      "end": 1708425375990,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708374873214,
-      "end": 1708374873214,
+      "start": 1708425375990,
+      "end": 1708425375990,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708374873214,
-      "end": 1708374873214,
+      "start": 1708425375990,
+      "end": 1708425375990,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708374873214,
-      "end": 1708374873215,
+      "start": 1708425375990,
+      "end": 1708425375990,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708374873215,
-      "end": 1708374873228,
+      "start": 1708425375991,
+      "end": 1708425376005,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708374873229,
-      "end": 1708374873229,
+      "start": 1708425376006,
+      "end": 1708425376006,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708374873229,
-      "end": 1708374873229,
+      "start": 1708425376006,
+      "end": 1708425376006,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1708374873229,
-      "end": 1708374873229,
+      "start": 1708425376006,
+      "end": 1708425376006,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1708374873229,
-      "end": 1708374873229,
+      "start": 1708425376007,
+      "end": 1708425376007,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
       "result": "import { default as __nuxt_component_0 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/components/MDCSlot\";\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { resolveComponent as _resolveComponent, normalizeClass as _normalizeClass, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\";\nimport { renderSlot as _renderMDCSlot } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/utils/slot\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"Badge\",\n  props: {\n    /**\n     * @values info, success, warning, danger\n     */\n    type: {\n      type: String,\n      default: \"info\",\n      validator(value) {\n        return [\"info\", \"success\", \"warning\", \"danger\", \"primary\"].includes(value);\n      }\n    }\n  },\n  setup(__props) {\n    return (_ctx, _cache) => {\n      const _component_MDCSlot = __nuxt_component_0;\n      return _openBlock(), _createElementBlock(\"span\", {\n        class: _normalizeClass([[__props.type], \"badge\"])\n      }, [\n        _renderMDCSlot(_ctx.$slots, \"default\", { unwrap: \"p\" }, void 0, true)\n      ], 2);\n    };\n  }\n});\n",
-      "start": 1708374873230,
-      "end": 1708374873230,
+      "start": 1708425376007,
+      "end": 1708425376008,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708374873231,
-      "end": 1708374873231,
+      "start": 1708425376008,
+      "end": 1708425376008,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708374873232,
-      "end": 1708374873232,
+      "start": 1708425376009,
+      "end": 1708425376009,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708374873232,
-      "end": 1708374873232,
+      "start": 1708425376009,
+      "end": 1708425376009,
       "order": "normal"
     }
   ]

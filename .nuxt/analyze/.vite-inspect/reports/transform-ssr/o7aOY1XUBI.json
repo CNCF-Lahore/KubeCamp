@@ -4,39 +4,39 @@
     {
       "name": "vite:load-fallback",
       "result": "<script setup lang=\"ts\">\nconst { page } = useContent()\nconst { config, tree } = useDocus()\nconst route = useRoute()\n\nconst fallbackValue = (value: string, fallback = true) => {\n  if (typeof page.value?.[value] !== 'undefined') { return page.value[value] }\n  return fallback\n}\n\nconst hasBody = computed(() => !page.value || page.value?.body?.children?.length > 0)\nconst hasToc = computed(() => page.value?.toc !== false && page.value?.body?.toc?.links?.length >= 2)\n\nconst hasAside = computed(() => page.value?.aside !== false && (tree.value?.length > 1 || tree.value?.[0]?.children?.length))\nconst bottom = computed(() => fallbackValue('bottom', true))\nconst isOpen = ref(false)\n\n/*\n** This below is a workaround until Nuxt has a proper support for layouts and Suspense\n*/\nconst asideNav = ref<any>(null)\n\nconst getParentPath = () => route.path.split('/').slice(0, 2).join('/')\nconst asideScroll = useState('asideScroll', () => {\n  return {\n    parentPath: getParentPath(),\n    scrollTop: asideNav.value?.scrollTop || 0\n  }\n})\n\nfunction watchScrollHeight () {\n  if (!asideNav.value) { return }\n  if (asideNav.value.scrollHeight === 0) {\n    setTimeout(watchScrollHeight, 0)\n  }\n  asideNav.value.scrollTop = asideScroll.value.scrollTop\n}\n\nonMounted(() => {\n  if (asideScroll.value.parentPath !== getParentPath()) {\n    asideScroll.value.parentPath = getParentPath()\n    asideScroll.value.scrollTop = 0\n  } else {\n    watchScrollHeight()\n  }\n})\n\nonBeforeUnmount(() => {\n  if (!asideNav.value) { return }\n  asideScroll.value.scrollTop = asideNav.value.scrollTop\n})\n</script>\n\n<template>\n  <Container\n    :fluid=\"config?.main?.fluid\"\n    :padded=\"config?.main?.padded\"\n    class=\"docs-page-content\"\n    :class=\"{\n      fluid: config?.main?.fluid,\n      'has-toc': hasToc,\n      'has-aside': hasAside,\n    }\"\n  >\n    <!-- Aside -->\n    <aside\n      v-if=\"hasAside\"\n      ref=\"asideNav\"\n      class=\"aside-nav\"\n    >\n      <DocsAside class=\"app-aside\" />\n    </aside>\n\n    <!-- Page Body -->\n    <article class=\"page-body\">\n      <slot v-if=\"hasBody\" />\n      <Alert\n        v-else\n        type=\"info\"\n      >\n        Start writing in <ProseCodeInline>content/{{ page._file }}</ProseCodeInline> to see this page taking shape.\n      </Alert>\n      <template v-if=\"hasBody && page && bottom\">\n        <DocsPageBottom />\n        <DocsPrevNext />\n      </template>\n    </article>\n\n    <!-- TOC -->\n    <div\n      v-if=\"hasToc\"\n      class=\"toc\"\n    >\n      <div class=\"toc-wrapper\">\n        <button @click=\"isOpen = !isOpen\">\n          <span class=\"title\">Table of Contents</span>\n          <Icon\n            name=\"heroicons-outline:chevron-right\"\n            class=\"icon\"\n            :class=\"[isOpen && 'rotate']\"\n          />\n        </button>\n\n        <div\n          class=\"docs-toc-wrapper\"\n          :class=\"[isOpen && 'opened']\"\n        >\n          <DocsToc @move=\"isOpen = false\" />\n        </div>\n      </div>\n    </div>\n  </Container>\n</template>\n\n<style scoped lang=\"ts\">\ncss({\n  '.docs-page-content': {\n    position: 'relative',\n    display: 'flex',\n    flexDirection: 'column-reverse',\n    '@lg': {\n      display: 'grid',\n      gap: '{space.8}',\n    },\n    '&.has-toc': {\n      '@lg': {\n        gridTemplateColumns: 'minmax(320px, 1fr) minmax(250px, 250px)'\n      }\n    },\n    '&.has-aside': {\n      '@lg': {\n        gridTemplateColumns: 'minmax(250px, 250px) minmax(320px, 1fr)'\n      }\n    },\n    '&.has-aside.has-toc': {\n      '@lg': {\n        gridTemplateColumns: 'minmax(250px, 250px) minmax(320px, 1fr) minmax(250px, 250px)'\n      }\n    },\n  },\n  '.aside-nav': {\n    display: 'none',\n    overflowY: 'auto',\n    '@lg': {\n      display: 'block',\n      position: 'sticky',\n      top: '{docus.header.height}',\n      // gridColumn: 'span 2/span 2',\n      alignSelf: 'flex-start',\n      height: 'calc(100vh - {docus.header.height})',\n      py: '{space.8}',\n      paddingRight: '{space.8}',\n      '.fluid &&': {\n        borderRight: '1px solid {elements.border.primary.static}',\n      }\n    }\n  },\n  '.page-body': {\n    position: 'relative',\n    display: 'flex',\n    flexDirection: \"column\",\n    flex: '1 1 0%',\n    py: '{space.8}',\n    width: '100%',\n    // maxWidth: '{docus.readableLine}',\n    mx: 'auto',\n    '.has-toc &&': {\n      paddingTop: '{space.12}',\n      '@lg': {\n        paddingTop: '{space.8}',\n      }\n    },\n    '@lg': {\n      marginTop: 0,\n      // gridColumnStart: 2,\n    },\n    // `.not-prose` can be useful if creating <h1> with a component (404 page is an example)\n    ':deep(h1:not(.not-prose):first-child)': {\n      marginTop: 0,\n      fontSize: '{text.4xl.fontSize}',\n      lineHeight: '{text.4xl.lineHeight}',\n      '@sm': {\n        fontSize: '{text.5xl.fontSize}',\n        lineHeight: '{text.5xl.lineHeight}',\n      }\n    },\n    // `.not-prose` can be useful if creating <h1> with a component (404 page is an example)\n    ':deep(h1:not(.not-prose)first-child + p)': {\n      marginTop: 0,\n      marginBottom: '{space.8}',\n      paddingBottom: '{space.8}',\n      borderBottom: '1px solid {elements.border.primary.static}',\n      color: '{color.gray.500}',\n      '@sm': {\n        fontSize: '{text.lg.fontSize}',\n        lineHeight: '{text.lg.lineHeight}',\n      },\n      '@dark': {\n        color: '{color.gray.400}',\n      },\n      a: {\n        color: '{color.gray.700}',\n        '@dark': {\n          color: '{color.gray.200}',\n        },\n        \"&:hover\": {\n          borderColor: '{color.gray.700}'\n        }\n      }\n    },\n    '.docs-prev-next': {\n      marginTop: '{space.4}'\n    }\n  },\n  '.toc': {\n    position: 'sticky',\n    top: '{docus.header.height}',\n    display: 'flex',\n    mx: 'calc(0px - {space.4})',\n    overflow: 'auto',\n    borderBottom: '1px solid {elements.border.primary.static}',\n    '@sm': {\n      mx: 'calc(0px - {space.6})',\n    },\n    '@lg': {\n      mx: 0,\n      alignSelf: 'flex-start',\n      py: '{space.8}',\n      px: '{space.8}',\n      height: 'calc(100vh - {docus.header.height})',\n      maxHeight: 'none',\n      borderBottom: 'none',\n      '.fluid &&': {\n        borderLeft: '1px solid {elements.border.primary.static}',\n      }\n    },\n    '.toc-wrapper': {\n      width: '100%',\n      height: '100%',\n      backdropFilter: '{elements.backdrop.filter}',\n      backgroundColor: '{elements.backdrop.background}',\n      '@lg': {\n        backgroundColor: 'transparent',\n        backdropFilter: 'none'\n      },\n      button: {\n        display: 'flex',\n        alignItems: 'center',\n        width: '100%',\n        height: '100%',\n        py: '{space.4}',\n        px: '{space.4}',\n        '@sm': {\n          px: '{space.6}',\n        },\n        '@lg': {\n          display: 'none'\n        },\n        '.title': {\n          fontSize: '{text.sm.fontSize}',\n          lineHeight: '{text.sm.lineHeight}',\n          fontWeight: '{fontWeight.semibold}',\n          marginRight: '{space.1}',\n        },\n        '.icon': {\n          width: '{space.4}',\n          height: '{space.4}',\n          transition: 'transform 100ms',\n          '&.rotate': {\n            transform: 'rotate(90deg)'\n          }\n        }\n      },\n      '.docs-toc-wrapper': {\n        display: 'none',\n        marginBottom: '{space.4}',\n        '&.opened': {\n          display: 'block',\n          px: '{space.4}',\n          maxHeight: '50vh',\n          overflow: 'auto',\n          '@sm': {\n            px: '{space.6}',\n          },\n          '@lg': {\n            maxHeight: 'none',\n            px: 0,\n          },\n        },\n        '@lg': {\n          marginTop: 0,\n          display: 'block'\n        }\n      }\n    }\n  }\n})\n</style>\n",
-      "start": 1708374880929,
-      "end": 1708374881558,
+      "start": 1708425380391,
+      "end": 1708425380788,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708374881558,
-      "end": 1708374881558,
+      "start": 1708425380788,
+      "end": 1708425380788,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708374881558,
-      "end": 1708374881558,
+      "start": 1708425380788,
+      "end": 1708425380788,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708374881558,
-      "end": 1708374881558,
+      "start": 1708425380788,
+      "end": 1708425380788,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708374881558,
-      "end": 1708374881558,
+      "start": 1708425380788,
+      "end": 1708425380788,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "<script setup lang=\"ts\">\nconst { page } = useContent()\nconst { config, tree } = useDocus()\nconst route = useRoute()\n\nconst fallbackValue = (value: string, fallback = true) => {\n  if (typeof page.value?.[value] !== 'undefined') { return page.value[value] }\n  return fallback\n}\n\nconst hasBody = computed(() => !page.value || page.value?.body?.children?.length > 0)\nconst hasToc = computed(() => page.value?.toc !== false && page.value?.body?.toc?.links?.length >= 2)\n\nconst hasAside = computed(() => page.value?.aside !== false && (tree.value?.length > 1 || tree.value?.[0]?.children?.length))\nconst bottom = computed(() => fallbackValue('bottom', true))\nconst isOpen = ref(false)\n\n/*\n** This below is a workaround until Nuxt has a proper support for layouts and Suspense\n*/\nconst asideNav = ref<any>(null)\n\nconst getParentPath = () => route.path.split('/').slice(0, 2).join('/')\nconst asideScroll = useState('asideScroll', () => {\n  return {\n    parentPath: getParentPath(),\n    scrollTop: asideNav.value?.scrollTop || 0\n  }\n})\n\nfunction watchScrollHeight () {\n  if (!asideNav.value) { return }\n  if (asideNav.value.scrollHeight === 0) {\n    setTimeout(watchScrollHeight, 0)\n  }\n  asideNav.value.scrollTop = asideScroll.value.scrollTop\n}\n\nonMounted(() => {\n  if (asideScroll.value.parentPath !== getParentPath()) {\n    asideScroll.value.parentPath = getParentPath()\n    asideScroll.value.scrollTop = 0\n  } else {\n    watchScrollHeight()\n  }\n})\n\nonBeforeUnmount(() => {\n  if (!asideNav.value) { return }\n  asideScroll.value.scrollTop = asideNav.value.scrollTop\n})\n</script>\n\n<template>\n  <Container\n    :fluid=\"config?.main?.fluid\"\n    :padded=\"config?.main?.padded\"\n    class=\"docs-page-content\"\n    :class=\"{\n      fluid: config?.main?.fluid,\n      'has-toc': hasToc,\n      'has-aside': hasAside,\n    }\"\n  >\n    <!-- Aside -->\n    <aside\n      v-if=\"hasAside\"\n      ref=\"asideNav\"\n      class=\"aside-nav\"\n    >\n      <DocsAside class=\"app-aside\" />\n    </aside>\n\n    <!-- Page Body -->\n    <article class=\"page-body\">\n      <slot v-if=\"hasBody\" />\n      <Alert\n        v-else\n        type=\"info\"\n      >\n        Start writing in <ProseCodeInline>content/{{ page._file }}</ProseCodeInline> to see this page taking shape.\n      </Alert>\n      <template v-if=\"hasBody && page && bottom\">\n        <DocsPageBottom />\n        <DocsPrevNext />\n      </template>\n    </article>\n\n    <!-- TOC -->\n    <div\n      v-if=\"hasToc\"\n      class=\"toc\"\n    >\n      <div class=\"toc-wrapper\">\n        <button @click=\"isOpen = !isOpen\">\n          <span class=\"title\">Table of Contents</span>\n          <Icon\n            name=\"heroicons-outline:chevron-right\"\n            class=\"icon\"\n            :class=\"[isOpen && 'rotate']\"\n          />\n        </button>\n\n        <div\n          class=\"docs-toc-wrapper\"\n          :class=\"[isOpen && 'opened']\"\n        >\n          <DocsToc @move=\"isOpen = false\" />\n        </div>\n      </div>\n    </div>\n  </Container>\n</template>\n\n<style scoped lang=\"postcss\" transformed>\n.docs-page-content{position:relative;display:flex;flex-direction:column-reverse;}@media (min-width: 1024px){.docs-page-content{display:grid;gap:var(--space-8);}}@media (min-width: 1024px){.docs-page-content.has-toc{grid-template-columns:minmax(320px, 1fr) minmax(250px, 250px);}}@media (min-width: 1024px){.docs-page-content.has-aside{grid-template-columns:minmax(250px, 250px) minmax(320px, 1fr);}}@media (min-width: 1024px){.docs-page-content.has-aside.has-toc{grid-template-columns:minmax(250px, 250px) minmax(320px, 1fr) minmax(250px, 250px);}}.aside-nav{display:none;overflow-y:auto;}@media (min-width: 1024px){.aside-nav{display:block;position:sticky;top:var(--docus-header-height);align-self:flex-start;height:calc(100vh - var(--docus-header-height));padding-top:var(--space-8);padding-bottom:var(--space-8);padding-right:var(--space-8);}.fluid .aside-nav.aside-nav{border-right:1px solid var(--elements-border-primary-static);}}.page-body{position:relative;display:flex;flex-direction:column;flex:1 1 0%;padding-top:var(--space-8);padding-bottom:var(--space-8);width:100%;margin-left:auto;margin-right:auto;}.has-toc .page-body.page-body{padding-top:var(--space-12);}@media (min-width: 1024px){.has-toc .page-body.page-body{padding-top:var(--space-8);}}@media (min-width: 1024px){.page-body{margin-top:0;}}.page-body :deep(h1:not(.not-prose):first-child){margin-top:0;font-size:var(--text-4xl-fontSize);line-height:var(--text-4xl-lineHeight);}@media (min-width: 640px){.page-body :deep(h1:not(.not-prose):first-child){font-size:var(--text-5xl-fontSize);line-height:var(--text-5xl-lineHeight);}}.page-body :deep(h1:not(.not-prose)first-child + p){margin-top:0;margin-bottom:var(--space-8);padding-bottom:var(--space-8);border-bottom:1px solid var(--elements-border-primary-static);color:var(--color-gray-500);}@media (min-width: 640px){.page-body :deep(h1:not(.not-prose)first-child + p){font-size:var(--text-lg-fontSize);line-height:var(--text-lg-lineHeight);}}:root.dark .page-body :deep(h1:not(.not-prose)first-child + p){color:var(--color-gray-400);}.page-body :deep(h1:not(.not-prose)first-child + p) a{color:var(--color-gray-700);}:root.dark .page-body :deep(h1:not(.not-prose)first-child + p) a{color:var(--color-gray-200);}.page-body :deep(h1:not(.not-prose)first-child + p) a:hover{border-color:var(--color-gray-700);}.page-body .docs-prev-next{margin-top:var(--space-4);}.toc{position:sticky;top:var(--docus-header-height);display:flex;margin-left:calc(0px - var(--space-4));margin-right:calc(0px - var(--space-4));overflow:auto;border-bottom:1px solid var(--elements-border-primary-static);}@media (min-width: 640px){.toc{margin-left:calc(0px - var(--space-6));margin-right:calc(0px - var(--space-6));}}@media (min-width: 1024px){.toc{margin-left:0;margin-right:0;align-self:flex-start;padding-top:var(--space-8);padding-bottom:var(--space-8);padding-left:var(--space-8);padding-right:var(--space-8);height:calc(100vh - var(--docus-header-height));max-height:none;border-bottom:none;}.fluid .toc.toc{border-left:1px solid var(--elements-border-primary-static);}}.toc .toc-wrapper{width:100%;height:100%;backdrop-filter:var(--elements-backdrop-filter);background-color:var(--elements-backdrop-background);}@media (min-width: 1024px){.toc .toc-wrapper{background-color:transparent;backdrop-filter:none;}}.toc .toc-wrapper button{display:flex;align-items:center;width:100%;height:100%;padding-top:var(--space-4);padding-bottom:var(--space-4);padding-left:var(--space-4);padding-right:var(--space-4);}@media (min-width: 640px){.toc .toc-wrapper button{padding-left:var(--space-6);padding-right:var(--space-6);}}@media (min-width: 1024px){.toc .toc-wrapper button{display:none;}}.toc .toc-wrapper button .title{font-size:var(--text-sm-fontSize);line-height:var(--text-sm-lineHeight);font-weight:var(--fontWeight-semibold);margin-right:var(--space-1);}.toc .toc-wrapper button .icon{width:var(--space-4);height:var(--space-4);transition:transform 100ms;}.toc .toc-wrapper button .icon.rotate{transform:rotate(90deg);}.toc .toc-wrapper .docs-toc-wrapper{display:none;margin-bottom:var(--space-4);}.toc .toc-wrapper .docs-toc-wrapper.opened{display:block;padding-left:var(--space-4);padding-right:var(--space-4);max-height:50vh;overflow:auto;}@media (min-width: 640px){.toc .toc-wrapper .docs-toc-wrapper.opened{padding-left:var(--space-6);padding-right:var(--space-6);}}@media (min-width: 1024px){.toc .toc-wrapper .docs-toc-wrapper.opened{max-height:none;padding-left:0;padding-right:0;}}@media (min-width: 1024px){.toc .toc-wrapper .docs-toc-wrapper{margin-top:0;display:block;}}\n</style>\n",
-      "start": 1708374881558,
-      "end": 1708374881570,
+      "start": 1708425380788,
+      "end": 1708425380797,
       "order": "pre",
       "sourcemaps": {
         "version": 3,
@@ -51,8 +51,8 @@
     {
       "name": "pinceau-transforms",
       "result": "<script setup lang=\"ts\">\nconst { page } = useContent()\nconst { config, tree } = useDocus()\nconst route = useRoute()\n\nconst fallbackValue = (value: string, fallback = true) => {\n  if (typeof page.value?.[value] !== 'undefined') { return page.value[value] }\n  return fallback\n}\n\nconst hasBody = computed(() => !page.value || page.value?.body?.children?.length > 0)\nconst hasToc = computed(() => page.value?.toc !== false && page.value?.body?.toc?.links?.length >= 2)\n\nconst hasAside = computed(() => page.value?.aside !== false && (tree.value?.length > 1 || tree.value?.[0]?.children?.length))\nconst bottom = computed(() => fallbackValue('bottom', true))\nconst isOpen = ref(false)\n\n/*\n** This below is a workaround until Nuxt has a proper support for layouts and Suspense\n*/\nconst asideNav = ref<any>(null)\n\nconst getParentPath = () => route.path.split('/').slice(0, 2).join('/')\nconst asideScroll = useState('asideScroll', () => {\n  return {\n    parentPath: getParentPath(),\n    scrollTop: asideNav.value?.scrollTop || 0\n  }\n})\n\nfunction watchScrollHeight () {\n  if (!asideNav.value) { return }\n  if (asideNav.value.scrollHeight === 0) {\n    setTimeout(watchScrollHeight, 0)\n  }\n  asideNav.value.scrollTop = asideScroll.value.scrollTop\n}\n\nonMounted(() => {\n  if (asideScroll.value.parentPath !== getParentPath()) {\n    asideScroll.value.parentPath = getParentPath()\n    asideScroll.value.scrollTop = 0\n  } else {\n    watchScrollHeight()\n  }\n})\n\nonBeforeUnmount(() => {\n  if (!asideNav.value) { return }\n  asideScroll.value.scrollTop = asideNav.value.scrollTop\n})\n</script>\n\n<template>\n  <Container\n    :fluid=\"config?.main?.fluid\"\n    :padded=\"config?.main?.padded\"\n    class=\"docs-page-content\"\n    :class=\"{\n      fluid: config?.main?.fluid,\n      'has-toc': hasToc,\n      'has-aside': hasAside,\n    }\"\n  >\n    <!-- Aside -->\n    <aside\n      v-if=\"hasAside\"\n      ref=\"asideNav\"\n      class=\"aside-nav\"\n    >\n      <DocsAside class=\"app-aside\" />\n    </aside>\n\n    <!-- Page Body -->\n    <article class=\"page-body\">\n      <slot v-if=\"hasBody\" />\n      <Alert\n        v-else\n        type=\"info\"\n      >\n        Start writing in <ProseCodeInline>content/{{ page._file }}</ProseCodeInline> to see this page taking shape.\n      </Alert>\n      <template v-if=\"hasBody && page && bottom\">\n        <DocsPageBottom />\n        <DocsPrevNext />\n      </template>\n    </article>\n\n    <!-- TOC -->\n    <div\n      v-if=\"hasToc\"\n      class=\"toc\"\n    >\n      <div class=\"toc-wrapper\">\n        <button @click=\"isOpen = !isOpen\">\n          <span class=\"title\">Table of Contents</span>\n          <Icon\n            name=\"heroicons-outline:chevron-right\"\n            class=\"icon\"\n            :class=\"[isOpen && 'rotate']\"\n          />\n        </button>\n\n        <div\n          class=\"docs-toc-wrapper\"\n          :class=\"[isOpen && 'opened']\"\n        >\n          <DocsToc @move=\"isOpen = false\" />\n        </div>\n      </div>\n    </div>\n  </Container>\n</template>\n\n<style scoped lang=\"postcss\" transformed>\n.docs-page-content{position:relative;display:flex;flex-direction:column-reverse;}@media (min-width: 1024px){.docs-page-content{display:grid;gap:var(--space-8);}}@media (min-width: 1024px){.docs-page-content.has-toc{grid-template-columns:minmax(320px, 1fr) minmax(250px, 250px);}}@media (min-width: 1024px){.docs-page-content.has-aside{grid-template-columns:minmax(250px, 250px) minmax(320px, 1fr);}}@media (min-width: 1024px){.docs-page-content.has-aside.has-toc{grid-template-columns:minmax(250px, 250px) minmax(320px, 1fr) minmax(250px, 250px);}}.aside-nav{display:none;overflow-y:auto;}@media (min-width: 1024px){.aside-nav{display:block;position:sticky;top:var(--docus-header-height);align-self:flex-start;height:calc(100vh - var(--docus-header-height));padding-top:var(--space-8);padding-bottom:var(--space-8);padding-right:var(--space-8);}.fluid .aside-nav.aside-nav{border-right:1px solid var(--elements-border-primary-static);}}.page-body{position:relative;display:flex;flex-direction:column;flex:1 1 0%;padding-top:var(--space-8);padding-bottom:var(--space-8);width:100%;margin-left:auto;margin-right:auto;}.has-toc .page-body.page-body{padding-top:var(--space-12);}@media (min-width: 1024px){.has-toc .page-body.page-body{padding-top:var(--space-8);}}@media (min-width: 1024px){.page-body{margin-top:0;}}.page-body :deep(h1:not(.not-prose):first-child){margin-top:0;font-size:var(--text-4xl-fontSize);line-height:var(--text-4xl-lineHeight);}@media (min-width: 640px){.page-body :deep(h1:not(.not-prose):first-child){font-size:var(--text-5xl-fontSize);line-height:var(--text-5xl-lineHeight);}}.page-body :deep(h1:not(.not-prose)first-child + p){margin-top:0;margin-bottom:var(--space-8);padding-bottom:var(--space-8);border-bottom:1px solid var(--elements-border-primary-static);color:var(--color-gray-500);}@media (min-width: 640px){.page-body :deep(h1:not(.not-prose)first-child + p){font-size:var(--text-lg-fontSize);line-height:var(--text-lg-lineHeight);}}:root.dark .page-body :deep(h1:not(.not-prose)first-child + p){color:var(--color-gray-400);}.page-body :deep(h1:not(.not-prose)first-child + p) a{color:var(--color-gray-700);}:root.dark .page-body :deep(h1:not(.not-prose)first-child + p) a{color:var(--color-gray-200);}.page-body :deep(h1:not(.not-prose)first-child + p) a:hover{border-color:var(--color-gray-700);}.page-body .docs-prev-next{margin-top:var(--space-4);}.toc{position:sticky;top:var(--docus-header-height);display:flex;margin-left:calc(0px - var(--space-4));margin-right:calc(0px - var(--space-4));overflow:auto;border-bottom:1px solid var(--elements-border-primary-static);}@media (min-width: 640px){.toc{margin-left:calc(0px - var(--space-6));margin-right:calc(0px - var(--space-6));}}@media (min-width: 1024px){.toc{margin-left:0;margin-right:0;align-self:flex-start;padding-top:var(--space-8);padding-bottom:var(--space-8);padding-left:var(--space-8);padding-right:var(--space-8);height:calc(100vh - var(--docus-header-height));max-height:none;border-bottom:none;}.fluid .toc.toc{border-left:1px solid var(--elements-border-primary-static);}}.toc .toc-wrapper{width:100%;height:100%;backdrop-filter:var(--elements-backdrop-filter);background-color:var(--elements-backdrop-background);}@media (min-width: 1024px){.toc .toc-wrapper{background-color:transparent;backdrop-filter:none;}}.toc .toc-wrapper button{display:flex;align-items:center;width:100%;height:100%;padding-top:var(--space-4);padding-bottom:var(--space-4);padding-left:var(--space-4);padding-right:var(--space-4);}@media (min-width: 640px){.toc .toc-wrapper button{padding-left:var(--space-6);padding-right:var(--space-6);}}@media (min-width: 1024px){.toc .toc-wrapper button{display:none;}}.toc .toc-wrapper button .title{font-size:var(--text-sm-fontSize);line-height:var(--text-sm-lineHeight);font-weight:var(--fontWeight-semibold);margin-right:var(--space-1);}.toc .toc-wrapper button .icon{width:var(--space-4);height:var(--space-4);transition:transform 100ms;}.toc .toc-wrapper button .icon.rotate{transform:rotate(90deg);}.toc .toc-wrapper .docs-toc-wrapper{display:none;margin-bottom:var(--space-4);}.toc .toc-wrapper .docs-toc-wrapper.opened{display:block;padding-left:var(--space-4);padding-right:var(--space-4);max-height:50vh;overflow:auto;}@media (min-width: 640px){.toc .toc-wrapper .docs-toc-wrapper.opened{padding-left:var(--space-6);padding-right:var(--space-6);}}@media (min-width: 1024px){.toc .toc-wrapper .docs-toc-wrapper.opened{max-height:none;padding-left:0;padding-right:0;}}@media (min-width: 1024px){.toc .toc-wrapper .docs-toc-wrapper{margin-top:0;display:block;}}\n</style>\n",
-      "start": 1708374881558,
-      "end": 1708374881570,
+      "start": 1708425380788,
+      "end": 1708425380797,
       "order": "pre",
       "sourcemaps": {
         "version": 3,
@@ -66,51 +66,51 @@
     },
     {
       "name": "content-slot",
-      "start": 1708374881570,
-      "end": 1708374881570,
+      "start": 1708425380797,
+      "end": 1708425380797,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708374881570,
-      "end": 1708374881570,
+      "start": 1708425380797,
+      "end": 1708425380797,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708374881570,
-      "end": 1708374881570,
+      "start": 1708425380797,
+      "end": 1708425380797,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708374881570,
-      "end": 1708374881570,
+      "start": 1708425380797,
+      "end": 1708425380797,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1708374881570,
-      "end": 1708374881570,
+      "start": 1708425380797,
+      "end": 1708425380797,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1708374881570,
-      "end": 1708374881570,
+      "start": 1708425380797,
+      "end": 1708425380797,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708374881570,
-      "end": 1708374881570,
+      "start": 1708425380797,
+      "end": 1708425380797,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "import _sfc_main from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsPageLayout.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsPageLayout.vue?vue&type=script&setup=true&lang.ts\";\nimport \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsPageLayout.vue?vue&type=style&index=0&scoped=73d798d2&transformed=true&lang.postcss\";\nimport { useSSRContext as __vite_useSSRContext } from \"vue\";\nconst _sfc_setup = _sfc_main.setup;\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext();\n  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add(\"node_modules/@nuxt-themes/docus/components/docs/DocsPageLayout.vue\");\n  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;\n};\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"__scopeId\", \"data-v-73d798d2\"]]);\n",
-      "start": 1708374881570,
-      "end": 1708374881623,
+      "start": 1708425380797,
+      "end": 1708425380902,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -118,176 +118,176 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708374881623,
-      "end": 1708374881623,
+      "start": 1708425380902,
+      "end": 1708425380902,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708374881623,
-      "end": 1708374881623,
+      "start": 1708425380903,
+      "end": 1708425380903,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708374881623,
-      "end": 1708374881623,
+      "start": 1708425380903,
+      "end": 1708425380903,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708374881623,
-      "end": 1708374881623,
+      "start": 1708425380903,
+      "end": 1708425380903,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708374881623,
-      "end": 1708374881623,
+      "start": 1708425380903,
+      "end": 1708425380903,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708374881623,
-      "end": 1708374881623,
+      "start": 1708425380903,
+      "end": 1708425380903,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708374881623,
-      "end": 1708374881623,
+      "start": 1708425380903,
+      "end": 1708425380903,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708374881623,
-      "end": 1708374881623,
+      "start": 1708425380903,
+      "end": 1708425380903,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708374881623,
-      "end": 1708374881624,
+      "start": 1708425380904,
+      "end": 1708425380904,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708374881624,
-      "end": 1708374881624,
+      "start": 1708425380904,
+      "end": 1708425380904,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708374881624,
-      "end": 1708374881624,
+      "start": 1708425380904,
+      "end": 1708425380904,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708374881624,
-      "end": 1708374881624,
+      "start": 1708425380904,
+      "end": 1708425380904,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708374881624,
-      "end": 1708374881624,
+      "start": 1708425380904,
+      "end": 1708425380904,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708374881624,
-      "end": 1708374881624,
+      "start": 1708425380904,
+      "end": 1708425380904,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708374881624,
-      "end": 1708374881624,
+      "start": 1708425380904,
+      "end": 1708425380905,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708374881624,
-      "end": 1708374881624,
+      "start": 1708425380905,
+      "end": 1708425380905,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708374881624,
-      "end": 1708374881624,
+      "start": 1708425380905,
+      "end": 1708425380905,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708374881624,
-      "end": 1708374881624,
+      "start": 1708425380905,
+      "end": 1708425380905,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708374881624,
-      "end": 1708374881626,
+      "start": 1708425380905,
+      "end": 1708425380908,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708374881624,
-      "end": 1708374881626,
+      "start": 1708425380905,
+      "end": 1708425380908,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708374881626,
-      "end": 1708374881626,
+      "start": 1708425380908,
+      "end": 1708425380908,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708374881626,
-      "end": 1708374881626,
+      "start": 1708425380908,
+      "end": 1708425380908,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708374881626,
-      "end": 1708374881626,
+      "start": 1708425380908,
+      "end": 1708425380908,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708374881626,
-      "end": 1708374881626,
+      "start": 1708425380908,
+      "end": 1708425380908,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1708374881626,
-      "end": 1708374881627,
+      "start": 1708425380908,
+      "end": 1708425380908,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1708374881627,
-      "end": 1708374881627,
+      "start": 1708425380909,
+      "end": 1708425380909,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708374881627,
-      "end": 1708374881627,
+      "start": 1708425380909,
+      "end": 1708425380909,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708374881627,
-      "end": 1708374881627,
+      "start": 1708425380909,
+      "end": 1708425380909,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708374881627,
-      "end": 1708374881627,
+      "start": 1708425380909,
+      "end": 1708425380909,
       "order": "normal"
     }
   ]

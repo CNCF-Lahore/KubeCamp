@@ -4,33 +4,33 @@
     {
       "name": "vite:load-fallback",
       "result": "<script setup lang=\"ts\">\ndefineProps({\n  icon: {\n    type: String,\n    default: ''\n  }\n})\n</script>\n\n<template>\n  <div class=\"card\">\n    <Icon v-if=\"icon\" :name=\"icon\" />\n    <slot />\n    <div>\n      <h3 class=\"title\">\n        <ContentSlot :use=\"$slots.title\" unwrap=\"p\">\n          Card title\n        </ContentSlot>\n      </h3>\n      <p class=\"description\">\n        <ContentSlot :use=\"$slots.description\" unwrap=\"p\">\n          Card description\n        </ContentSlot>\n      </p>\n    </div>\n  </div>\n</template>\n\n<style scoped lang=\"ts\">\ncss({\n  '.card': {\n    display: 'block',\n    position: 'relative',\n    width: '100%',\n    padding: '{space.8}',\n    borderRadius: '{radii.xl}',\n    border: '1px solid {elements.border.primary.static}',\n    background: '{elements.backdrop.background}',\n    backdropFilter: '{elements.backdrop.filter}',\n    '.icon': {\n      display: 'inline-block',\n      marginBottom: '{space.2}',\n      width: '{space.6}',\n      height: '{space.6}'\n    },\n    '.title': {\n      marginBottom: '{space.2}',\n      fontSize: '{text.lg.fontSize}',\n      lineHeight: '{text.lg.lineHeight}',\n      fontWeight: '{fontWeight.semibold}',\n      color: '{elements.text.primary.color.static}'\n    },\n    '.description': {\n      fontSize: '{text.sm.fontSize}',\n      lineHeight: '{text.sm.lineHeight}',\n      fontWeight: '{fontWeight.medium}',\n      color: '{elements.text.secondary.color.static}'\n    }\n  }\n})\n</style>\n",
-      "start": 1708374869686,
-      "end": 1708374869793,
+      "start": 1708425373389,
+      "end": 1708425373483,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708374869793,
-      "end": 1708374869793,
+      "start": 1708425373483,
+      "end": 1708425373483,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708374869793,
-      "end": 1708374869793,
+      "start": 1708425373483,
+      "end": 1708425373483,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
-      "start": 1708374869793,
-      "end": 1708374869793,
+      "start": 1708425373483,
+      "end": 1708425373483,
       "order": "pre"
     },
     {
       "name": "content-slot",
       "result": "<script setup lang=\"ts\">\ndefineProps({\n  icon: {\n    type: String,\n    default: ''\n  }\n})\n</script>\n\n<template>\n  <div class=\"card\">\n    <Icon v-if=\"icon\" :name=\"icon\" />\n    <slot />\n    <div>\n      <h3 class=\"title\">\n        <MDCSlot  name=\"title\" unwrap=\"p\">\n          Card title\n        </MDCSlot>\n      </h3>\n      <p class=\"description\">\n        <MDCSlot  name=\"description\" unwrap=\"p\">\n          Card description\n        </MDCSlot>\n      </p>\n    </div>\n  </div>\n</template>\n\n<style scoped lang=\"ts\">\ncss({\n  '.card': {\n    display: 'block',\n    position: 'relative',\n    width: '100%',\n    padding: '{space.8}',\n    borderRadius: '{radii.xl}',\n    border: '1px solid {elements.border.primary.static}',\n    background: '{elements.backdrop.background}',\n    backdropFilter: '{elements.backdrop.filter}',\n    '.icon': {\n      display: 'inline-block',\n      marginBottom: '{space.2}',\n      width: '{space.6}',\n      height: '{space.6}'\n    },\n    '.title': {\n      marginBottom: '{space.2}',\n      fontSize: '{text.lg.fontSize}',\n      lineHeight: '{text.lg.lineHeight}',\n      fontWeight: '{fontWeight.semibold}',\n      color: '{elements.text.primary.color.static}'\n    },\n    '.description': {\n      fontSize: '{text.sm.fontSize}',\n      lineHeight: '{text.sm.lineHeight}',\n      fontWeight: '{fontWeight.medium}',\n      color: '{elements.text.secondary.color.static}'\n    }\n  }\n})\n</style>\n",
-      "start": 1708374869793,
-      "end": 1708374869793,
+      "start": 1708425373483,
+      "end": 1708425373483,
       "order": "pre",
       "sourcemaps": {
         "mappings": ""
@@ -38,39 +38,39 @@
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708374869793,
-      "end": 1708374869793,
+      "start": 1708425373483,
+      "end": 1708425373483,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708374869793,
-      "end": 1708374869793,
+      "start": 1708425373483,
+      "end": 1708425373483,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1708374869793,
-      "end": 1708374869793,
+      "start": 1708425373483,
+      "end": 1708425373483,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1708374869793,
-      "end": 1708374869793,
+      "start": 1708425373483,
+      "end": 1708425373483,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708374869793,
-      "end": 1708374869793,
+      "start": 1708425373483,
+      "end": 1708425373483,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "import _sfc_main from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/landing/Card.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/landing/Card.vue?vue&type=script&setup=true&lang.ts\";\nimport \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/landing/Card.vue?vue&type=style&index=0&scoped=b2756363&lang.ts\";\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"__scopeId\", \"data-v-b2756363\"]]);\n",
-      "start": 1708374869793,
-      "end": 1708374869840,
+      "start": 1708425373483,
+      "end": 1708425373490,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -78,156 +78,156 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708374869840,
-      "end": 1708374869840,
+      "start": 1708425373490,
+      "end": 1708425373490,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708374869841,
-      "end": 1708374869841,
+      "start": 1708425373490,
+      "end": 1708425373490,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708374869841,
-      "end": 1708374869841,
+      "start": 1708425373490,
+      "end": 1708425373490,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1708374869841,
-      "end": 1708374869841,
+      "start": 1708425373490,
+      "end": 1708425373490,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
       "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/landing/Card.vue\").then(r => r.default))",
-      "start": 1708374869841,
-      "end": 1708374869842,
+      "start": 1708425373491,
+      "end": 1708425373491,
       "order": "normal",
       "sourcemaps": null
     },
     {
       "name": "replace",
-      "start": 1708374869842,
-      "end": 1708374869842,
+      "start": 1708425373491,
+      "end": 1708425373491,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708374869842,
-      "end": 1708374869842,
+      "start": 1708425373491,
+      "end": 1708425373491,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708374869842,
-      "end": 1708374869842,
+      "start": 1708425373491,
+      "end": 1708425373491,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708374869842,
-      "end": 1708374869842,
+      "start": 1708425373491,
+      "end": 1708425373491,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708374869842,
-      "end": 1708374869842,
+      "start": 1708425373491,
+      "end": 1708425373491,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708374869842,
-      "end": 1708374869842,
+      "start": 1708425373491,
+      "end": 1708425373491,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708374869842,
-      "end": 1708374869842,
+      "start": 1708425373491,
+      "end": 1708425373491,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708374869842,
-      "end": 1708374869842,
+      "start": 1708425373491,
+      "end": 1708425373491,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708374869842,
-      "end": 1708374869842,
+      "start": 1708425373492,
+      "end": 1708425373492,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708374869842,
-      "end": 1708374869842,
+      "start": 1708425373492,
+      "end": 1708425373492,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708374869842,
-      "end": 1708374869842,
+      "start": 1708425373492,
+      "end": 1708425373492,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708374869843,
-      "end": 1708374869843,
+      "start": 1708425373492,
+      "end": 1708425373493,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708374869844,
-      "end": 1708374869844,
+      "start": 1708425373493,
+      "end": 1708425373493,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708374869844,
-      "end": 1708374869844,
+      "start": 1708425373493,
+      "end": 1708425373493,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1708374869844,
-      "end": 1708374869844,
+      "start": 1708425373494,
+      "end": 1708425373494,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1708374869844,
-      "end": 1708374869844,
+      "start": 1708425373494,
+      "end": 1708425373494,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1708374869844,
-      "end": 1708374869844,
+      "start": 1708425373494,
+      "end": 1708425373494,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708374869844,
-      "end": 1708374869844,
+      "start": 1708425373494,
+      "end": 1708425373494,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
       "result": "import { __vitePreload } from \"\u0000vite/preload-helper.js\";import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => __vitePreload(() => import(\"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/landing/Card.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(r => r.default))",
-      "start": 1708374869844,
-      "end": 1708374869845,
+      "start": 1708425373495,
+      "end": 1708425373495,
       "order": "normal",
       "sourcemaps": null
     },
     {
       "name": "vite:reporter",
-      "start": 1708374869845,
-      "end": 1708374869845,
+      "start": 1708425373495,
+      "end": 1708425373495,
       "order": "normal"
     }
   ]

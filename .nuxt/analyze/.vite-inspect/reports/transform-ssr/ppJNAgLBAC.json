@@ -3,78 +3,78 @@
   "transforms": [
     {
       "name": "vite:load-fallback",
-      "result": "export default defineAppConfig({\n  docus: {\n    title: 'Kubernetes BootCamp',\n\n    description: 'The best place to start your Kubernetes Journey',\n\n    url: 'cncf-lahore.github.io/Kubernetes-Bootcamp',\n\n    image: 'https://i.ibb.co/PGkhK2D/logo-07df0d71aa68491bbca25e45a62ac299.png',\n\n    socials: {},\n\n    layout: 'default',\n\n    header: {\n      title: '',\n      logo: false,\n      showLinkIcon: false,\n      fluid: false,\n      exclude: []\n    },\n\n    aside: {\n      level: 0,\n      collapsed: false,\n      exclude: []\n    },\n\n    footer: {\n      credits: {\n        icon: '',\n        text: 'Made with ❤️by Adil Shahzad',\n        href: 'https://www.linkedin.com/in/adilshehzad7/'\n      },\n      textLinks: [],\n      iconLinks: [],\n      fluid: false\n    },\n\n    github: {\n      branch: 'main',\n      repo: '/Kubernetes-Bootcamp/',\n      owner: 'CNCF-Lahore',\n      edit: false\n    },\n  }\n})",
-      "start": 1708374884208,
-      "end": 1708374884278,
+      "result": "export default defineAppConfig({\n  docus: {\n    title: 'Kubernetes BootCamp',\n\n    description: 'The best place to start your Kubernetes Journey',\n\n    url: 'cncf-lahore.github.io/Kubernetes-Bootcamp',\n\n    image: 'https://i.ibb.co/PGkhK2D/logo-07df0d71aa68491bbca25e45a62ac299.png',\n\n    socials: {},\n\n    layout: 'default',\n\n    header: {\n      title: '',\n      logo: false,\n      showLinkIcon: false,\n      fluid: false,\n      exclude: []\n    },\n\n    aside: {\n      level: 0,\n      collapsed: false,\n      exclude: []\n    },\n\n    footer: {\n      credits: {\n        icon: '',\n        text: 'Made with ❤️by Adil Shahzad',\n        href: 'https://www.linkedin.com/in/adilshehzad7/'\n      },\n      textLinks: [],\n      iconLinks: [],\n      fluid: false\n    },\n\n    github: {\n      branch: 'main',\n      repo: '/Kubernetes-Bootcamp/',\n      owner: 'CNCF-Lahore',\n      edit: false\n    },\n  }\n})\n",
+      "start": 1708425383234,
+      "end": 1708425383426,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708374884278,
-      "end": 1708374884278,
+      "start": 1708425383426,
+      "end": 1708425383426,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708374884278,
-      "end": 1708374884278,
+      "start": 1708425383426,
+      "end": 1708425383426,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708374884278,
-      "end": 1708374884278,
+      "start": 1708425383426,
+      "end": 1708425383426,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708374884278,
-      "end": 1708374884278,
+      "start": 1708425383426,
+      "end": 1708425383426,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
-      "result": "export default defineAppConfig({\n  docus: {\n    title: 'Kubernetes BootCamp',\n\n    description: 'The best place to start your Kubernetes Journey',\n\n    url: 'cncf-lahore.github.io/Kubernetes-Bootcamp',\n\n    image: 'https://i.ibb.co/PGkhK2D/logo-07df0d71aa68491bbca25e45a62ac299.png',\n\n    socials: {},\n\n    layout: 'default',\n\n    header: {\n      title: '',\n      logo: false,\n      showLinkIcon: false,\n      fluid: false,\n      exclude: []\n    },\n\n    aside: {\n      level: 0,\n      collapsed: false,\n      exclude: []\n    },\n\n    footer: {\n      credits: {\n        icon: '',\n        text: 'Made with ❤️by Adil Shahzad',\n        href: 'https://www.linkedin.com/in/adilshehzad7/'\n      },\n      textLinks: [],\n      iconLinks: [],\n      fluid: false\n    },\n\n    github: {\n      branch: 'main',\n      repo: '/Kubernetes-Bootcamp/',\n      owner: 'CNCF-Lahore',\n      edit: false\n    },\n  }\n})",
-      "start": 1708374884278,
-      "end": 1708374884278,
+      "result": "export default defineAppConfig({\n  docus: {\n    title: 'Kubernetes BootCamp',\n\n    description: 'The best place to start your Kubernetes Journey',\n\n    url: 'cncf-lahore.github.io/Kubernetes-Bootcamp',\n\n    image: 'https://i.ibb.co/PGkhK2D/logo-07df0d71aa68491bbca25e45a62ac299.png',\n\n    socials: {},\n\n    layout: 'default',\n\n    header: {\n      title: '',\n      logo: false,\n      showLinkIcon: false,\n      fluid: false,\n      exclude: []\n    },\n\n    aside: {\n      level: 0,\n      collapsed: false,\n      exclude: []\n    },\n\n    footer: {\n      credits: {\n        icon: '',\n        text: 'Made with ❤️by Adil Shahzad',\n        href: 'https://www.linkedin.com/in/adilshehzad7/'\n      },\n      textLinks: [],\n      iconLinks: [],\n      fluid: false\n    },\n\n    github: {\n      branch: 'main',\n      repo: '/Kubernetes-Bootcamp/',\n      owner: 'CNCF-Lahore',\n      edit: false\n    },\n  }\n})\n",
+      "start": 1708425383426,
+      "end": 1708425383426,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
-      "result": "export default defineAppConfig({\n  docus: {\n    title: 'Kubernetes BootCamp',\n\n    description: 'The best place to start your Kubernetes Journey',\n\n    url: 'cncf-lahore.github.io/Kubernetes-Bootcamp',\n\n    image: 'https://i.ibb.co/PGkhK2D/logo-07df0d71aa68491bbca25e45a62ac299.png',\n\n    socials: {},\n\n    layout: 'default',\n\n    header: {\n      title: '',\n      logo: false,\n      showLinkIcon: false,\n      fluid: false,\n      exclude: []\n    },\n\n    aside: {\n      level: 0,\n      collapsed: false,\n      exclude: []\n    },\n\n    footer: {\n      credits: {\n        icon: '',\n        text: 'Made with ❤️by Adil Shahzad',\n        href: 'https://www.linkedin.com/in/adilshehzad7/'\n      },\n      textLinks: [],\n      iconLinks: [],\n      fluid: false\n    },\n\n    github: {\n      branch: 'main',\n      repo: '/Kubernetes-Bootcamp/',\n      owner: 'CNCF-Lahore',\n      edit: false\n    },\n  }\n})",
-      "start": 1708374884278,
-      "end": 1708374884278,
+      "result": "export default defineAppConfig({\n  docus: {\n    title: 'Kubernetes BootCamp',\n\n    description: 'The best place to start your Kubernetes Journey',\n\n    url: 'cncf-lahore.github.io/Kubernetes-Bootcamp',\n\n    image: 'https://i.ibb.co/PGkhK2D/logo-07df0d71aa68491bbca25e45a62ac299.png',\n\n    socials: {},\n\n    layout: 'default',\n\n    header: {\n      title: '',\n      logo: false,\n      showLinkIcon: false,\n      fluid: false,\n      exclude: []\n    },\n\n    aside: {\n      level: 0,\n      collapsed: false,\n      exclude: []\n    },\n\n    footer: {\n      credits: {\n        icon: '',\n        text: 'Made with ❤️by Adil Shahzad',\n        href: 'https://www.linkedin.com/in/adilshehzad7/'\n      },\n      textLinks: [],\n      iconLinks: [],\n      fluid: false\n    },\n\n    github: {\n      branch: 'main',\n      repo: '/Kubernetes-Bootcamp/',\n      owner: 'CNCF-Lahore',\n      edit: false\n    },\n  }\n})\n",
+      "start": 1708425383426,
+      "end": 1708425383426,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708374884278,
-      "end": 1708374884278,
+      "start": 1708425383426,
+      "end": 1708425383426,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708374884278,
-      "end": 1708374884278,
+      "start": 1708425383426,
+      "end": 1708425383426,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708374884278,
-      "end": 1708374884279,
+      "start": 1708425383426,
+      "end": 1708425383426,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708374884279,
-      "end": 1708374884279,
+      "start": 1708425383426,
+      "end": 1708425383426,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "export default defineAppConfig({\n  docus: {\n    title: \"Kubernetes BootCamp\",\n    description: \"The best place to start your Kubernetes Journey\",\n    url: \"cncf-lahore.github.io/Kubernetes-Bootcamp\",\n    image: \"https://i.ibb.co/PGkhK2D/logo-07df0d71aa68491bbca25e45a62ac299.png\",\n    socials: {},\n    layout: \"default\",\n    header: {\n      title: \"\",\n      logo: false,\n      showLinkIcon: false,\n      fluid: false,\n      exclude: []\n    },\n    aside: {\n      level: 0,\n      collapsed: false,\n      exclude: []\n    },\n    footer: {\n      credits: {\n        icon: \"\",\n        text: \"Made with ❤️by Adil Shahzad\",\n        href: \"https://www.linkedin.com/in/adilshehzad7/\"\n      },\n      textLinks: [],\n      iconLinks: [],\n      fluid: false\n    },\n    github: {\n      branch: \"main\",\n      repo: \"/Kubernetes-Bootcamp/\",\n      owner: \"CNCF-Lahore\",\n      edit: false\n    }\n  }\n});\n",
-      "start": 1708374884279,
-      "end": 1708374884307,
+      "start": 1708425383426,
+      "end": 1708425383478,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -82,7 +82,7 @@
           "/workspace/Kubernetes-Bootcamp/app.config.ts"
         ],
         "sourcesContent": [
-          "export default defineAppConfig({\n  docus: {\n    title: 'Kubernetes BootCamp',\n\n    description: 'The best place to start your Kubernetes Journey',\n\n    url: 'cncf-lahore.github.io/Kubernetes-Bootcamp',\n\n    image: 'https://i.ibb.co/PGkhK2D/logo-07df0d71aa68491bbca25e45a62ac299.png',\n\n    socials: {},\n\n    layout: 'default',\n\n    header: {\n      title: '',\n      logo: false,\n      showLinkIcon: false,\n      fluid: false,\n      exclude: []\n    },\n\n    aside: {\n      level: 0,\n      collapsed: false,\n      exclude: []\n    },\n\n    footer: {\n      credits: {\n        icon: '',\n        text: 'Made with ❤️by Adil Shahzad',\n        href: 'https://www.linkedin.com/in/adilshehzad7/'\n      },\n      textLinks: [],\n      iconLinks: [],\n      fluid: false\n    },\n\n    github: {\n      branch: 'main',\n      repo: '/Kubernetes-Bootcamp/',\n      owner: 'CNCF-Lahore',\n      edit: false\n    },\n  }\n})"
+          "export default defineAppConfig({\n  docus: {\n    title: 'Kubernetes BootCamp',\n\n    description: 'The best place to start your Kubernetes Journey',\n\n    url: 'cncf-lahore.github.io/Kubernetes-Bootcamp',\n\n    image: 'https://i.ibb.co/PGkhK2D/logo-07df0d71aa68491bbca25e45a62ac299.png',\n\n    socials: {},\n\n    layout: 'default',\n\n    header: {\n      title: '',\n      logo: false,\n      showLinkIcon: false,\n      fluid: false,\n      exclude: []\n    },\n\n    aside: {\n      level: 0,\n      collapsed: false,\n      exclude: []\n    },\n\n    footer: {\n      credits: {\n        icon: '',\n        text: 'Made with ❤️by Adil Shahzad',\n        href: 'https://www.linkedin.com/in/adilshehzad7/'\n      },\n      textLinks: [],\n      iconLinks: [],\n      fluid: false\n    },\n\n    github: {\n      branch: 'main',\n      repo: '/Kubernetes-Bootcamp/',\n      owner: 'CNCF-Lahore',\n      edit: false\n    },\n  }\n})\n"
         ],
         "mappings": "AAAA,eAAe,gBAAgB;AAAA,EAC7B,OAAO;AAAA,IACL,OAAO;AAAA,IAEP,aAAa;AAAA,IAEb,KAAK;AAAA,IAEL,OAAO;AAAA,IAEP,SAAS,CAAC;AAAA,IAEV,QAAQ;AAAA,IAER,QAAQ;AAAA,MACN,OAAO;AAAA,MACP,MAAM;AAAA,MACN,cAAc;AAAA,MACd,OAAO;AAAA,MACP,SAAS,CAAC;AAAA,IACZ;AAAA,IAEA,OAAO;AAAA,MACL,OAAO;AAAA,MACP,WAAW;AAAA,MACX,SAAS,CAAC;AAAA,IACZ;AAAA,IAEA,QAAQ;AAAA,MACN,SAAS;AAAA,QACP,MAAM;AAAA,QACN,MAAM;AAAA,QACN,MAAM;AAAA,MACR;AAAA,MACA,WAAW,CAAC;AAAA,MACZ,WAAW,CAAC;AAAA,MACZ,OAAO;AAAA,IACT;AAAA,IAEA,QAAQ;AAAA,MACN,QAAQ;AAAA,MACR,MAAM;AAAA,MACN,OAAO;AAAA,MACP,MAAM;AAAA,IACR;AAAA,EACF;AACF,CAAC;",
         "names": []
@@ -90,135 +90,135 @@
     },
     {
       "name": "vite:json",
-      "start": 1708374884309,
-      "end": 1708374884309,
+      "start": 1708425383478,
+      "end": 1708425383478,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708374884309,
-      "end": 1708374884309,
+      "start": 1708425383478,
+      "end": 1708425383478,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708374884309,
-      "end": 1708374884309,
+      "start": 1708425383478,
+      "end": 1708425383478,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708374884309,
-      "end": 1708374884309,
+      "start": 1708425383478,
+      "end": 1708425383478,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708374884309,
-      "end": 1708374884309,
+      "start": 1708425383478,
+      "end": 1708425383479,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708374884309,
-      "end": 1708374884309,
+      "start": 1708425383478,
+      "end": 1708425383479,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708374884310,
-      "end": 1708374884310,
+      "start": 1708425383479,
+      "end": 1708425383479,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708374884310,
-      "end": 1708374884310,
+      "start": 1708425383479,
+      "end": 1708425383479,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708374884310,
-      "end": 1708374884310,
+      "start": 1708425383479,
+      "end": 1708425383479,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708374884311,
-      "end": 1708374884311,
+      "start": 1708425383479,
+      "end": 1708425383479,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708374884360,
-      "end": 1708374884360,
+      "start": 1708425383479,
+      "end": 1708425383479,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708374884462,
-      "end": 1708374884462,
+      "start": 1708425383479,
+      "end": 1708425383479,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708374884462,
-      "end": 1708374884462,
+      "start": 1708425383479,
+      "end": 1708425383479,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708374884463,
-      "end": 1708374884463,
+      "start": 1708425383479,
+      "end": 1708425383479,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708374884463,
-      "end": 1708374884463,
+      "start": 1708425383479,
+      "end": 1708425383479,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708374884463,
-      "end": 1708374884463,
+      "start": 1708425383479,
+      "end": 1708425383479,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708374884463,
-      "end": 1708374884463,
+      "start": 1708425383479,
+      "end": 1708425383479,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708374884473,
-      "end": 1708374884473,
+      "start": 1708425383479,
+      "end": 1708425383479,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708374884476,
-      "end": 1708374884476,
+      "start": 1708425383479,
+      "end": 1708425383479,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708374884476,
-      "end": 1708374884476,
+      "start": 1708425383479,
+      "end": 1708425383479,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708374884476,
-      "end": 1708374884476,
+      "start": 1708425383479,
+      "end": 1708425383479,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { defineAppConfig } from '#app/nuxt';\nexport default defineAppConfig({\n  docus: {\n    title: \"Kubernetes BootCamp\",\n    description: \"The best place to start your Kubernetes Journey\",\n    url: \"cncf-lahore.github.io/Kubernetes-Bootcamp\",\n    image: \"https://i.ibb.co/PGkhK2D/logo-07df0d71aa68491bbca25e45a62ac299.png\",\n    socials: {},\n    layout: \"default\",\n    header: {\n      title: \"\",\n      logo: false,\n      showLinkIcon: false,\n      fluid: false,\n      exclude: []\n    },\n    aside: {\n      level: 0,\n      collapsed: false,\n      exclude: []\n    },\n    footer: {\n      credits: {\n        icon: \"\",\n        text: \"Made with ❤️by Adil Shahzad\",\n        href: \"https://www.linkedin.com/in/adilshehzad7/\"\n      },\n      textLinks: [],\n      iconLinks: [],\n      fluid: false\n    },\n    github: {\n      branch: \"main\",\n      repo: \"/Kubernetes-Bootcamp/\",\n      owner: \"CNCF-Lahore\",\n      edit: false\n    }\n  }\n});\n",
-      "start": 1708374884489,
-      "end": 1708374884491,
+      "start": 1708425383479,
+      "end": 1708425383480,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -232,8 +232,8 @@
     {
       "name": "nuxt:imports-transform",
       "result": "import { defineAppConfig } from '#app/nuxt';\nexport default defineAppConfig({\n  docus: {\n    title: \"Kubernetes BootCamp\",\n    description: \"The best place to start your Kubernetes Journey\",\n    url: \"cncf-lahore.github.io/Kubernetes-Bootcamp\",\n    image: \"https://i.ibb.co/PGkhK2D/logo-07df0d71aa68491bbca25e45a62ac299.png\",\n    socials: {},\n    layout: \"default\",\n    header: {\n      title: \"\",\n      logo: false,\n      showLinkIcon: false,\n      fluid: false,\n      exclude: []\n    },\n    aside: {\n      level: 0,\n      collapsed: false,\n      exclude: []\n    },\n    footer: {\n      credits: {\n        icon: \"\",\n        text: \"Made with ❤️by Adil Shahzad\",\n        href: \"https://www.linkedin.com/in/adilshehzad7/\"\n      },\n      textLinks: [],\n      iconLinks: [],\n      fluid: false\n    },\n    github: {\n      branch: \"main\",\n      repo: \"/Kubernetes-Bootcamp/\",\n      owner: \"CNCF-Lahore\",\n      edit: false\n    }\n  }\n});\n",
-      "start": 1708374884489,
-      "end": 1708374884491,
+      "start": 1708425383479,
+      "end": 1708425383480,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -246,56 +246,56 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1708374884491,
-      "end": 1708374884491,
+      "start": 1708425383480,
+      "end": 1708425383480,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708374884491,
-      "end": 1708374884491,
+      "start": 1708425383480,
+      "end": 1708425383480,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708374884491,
-      "end": 1708374884491,
+      "start": 1708425383480,
+      "end": 1708425383480,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708374884491,
-      "end": 1708374884491,
+      "start": 1708425383480,
+      "end": 1708425383480,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1708374884491,
-      "end": 1708374884491,
+      "start": 1708425383480,
+      "end": 1708425383481,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1708374884491,
-      "end": 1708374884491,
+      "start": 1708425383481,
+      "end": 1708425383481,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708374884491,
-      "end": 1708374884491,
+      "start": 1708425383481,
+      "end": 1708425383481,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708374884491,
-      "end": 1708374884491,
+      "start": 1708425383481,
+      "end": 1708425383481,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708374884491,
-      "end": 1708374884491,
+      "start": 1708425383481,
+      "end": 1708425383481,
       "order": "normal"
     }
   ]

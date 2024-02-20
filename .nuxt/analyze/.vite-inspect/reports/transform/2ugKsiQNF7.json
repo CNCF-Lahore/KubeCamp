@@ -4,69 +4,69 @@
     {
       "name": "vite:load-fallback",
       "result": "<script setup lang=\"ts\">\nconst { element } = useDocSearch()\n\nconst onClick = () => element.value.querySelector('button').click()\n</script>\n\n<template>\n  <button\n    type=\"button\"\n    aria-label=\"Search\"\n    @click=\"onClick\"\n  >\n    <span class=\"content\">\n      <Icon name=\"heroicons-outline:search\" />\n      <span>Search</span>\n      <span>\n        <kbd>⌘</kbd>\n        <kbd>K</kbd>\n      </span>\n    </span>\n  </button>\n</template>\n\n<style scoped lang=\"ts\">\ncss({\n  button: {\n    padding: '{space.2} {space.2}',\n    '.content': {\n      borderRadius: '{radii.md}',\n      display: 'flex',\n      alignItems: 'center',\n      color: '{color.gray.500}',\n      borderStyle: 'solid',\n      borderWidth: '1px',\n      borderColor: '{color.gray.100}',\n      fontSize: '{fontSize.xs}',\n      gap: '{space.2}',\n      padding: '{space.rem.375}',\n      '@dark': {\n        color: '{color.gray.400}',\n        borderColor: '{color.gray.900}',\n      },\n      '&:hover': {\n        color: '{color.gray.700}',\n        borderColor: '{color.gray.400}',\n        '@dark': {\n          color: '{color.gray.200}',\n          borderColor: '{color.gray.700}',\n        }\n      },\n      span: {\n        flex: 'none',\n        display: 'none',\n        fontSize: '{fontSize.xs}',\n        '@lg': {\n          display: 'block'\n        }\n      }\n    }\n  },\n})\n</style>\n",
-      "start": 1708374869028,
-      "end": 1708374869230,
+      "start": 1708425372764,
+      "end": 1708425372917,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708374869230,
-      "end": 1708374869230,
+      "start": 1708425372917,
+      "end": 1708425372917,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708374869230,
-      "end": 1708374869230,
+      "start": 1708425372917,
+      "end": 1708425372917,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
-      "start": 1708374869230,
-      "end": 1708374869230,
+      "start": 1708425372917,
+      "end": 1708425372917,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708374869230,
-      "end": 1708374869230,
+      "start": 1708425372917,
+      "end": 1708425372917,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708374869230,
-      "end": 1708374869230,
+      "start": 1708425372917,
+      "end": 1708425372917,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708374869230,
-      "end": 1708374869230,
+      "start": 1708425372917,
+      "end": 1708425372917,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1708374869230,
-      "end": 1708374869230,
+      "start": 1708425372917,
+      "end": 1708425372917,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1708374869230,
-      "end": 1708374869230,
+      "start": 1708425372917,
+      "end": 1708425372917,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708374869230,
-      "end": 1708374869230,
+      "start": 1708425372917,
+      "end": 1708425372917,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "import _sfc_main from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppDocSearch.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppDocSearch.vue?vue&type=script&setup=true&lang.ts\";\nimport \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppDocSearch.vue?vue&type=style&index=0&scoped=19b3482e&lang.ts\";\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"__scopeId\", \"data-v-19b3482e\"]]);\n",
-      "start": 1708374869230,
-      "end": 1708374869528,
+      "start": 1708425372917,
+      "end": 1708425373194,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -74,156 +74,156 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708374869528,
-      "end": 1708374869528,
+      "start": 1708425373194,
+      "end": 1708425373194,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708374869528,
-      "end": 1708374869528,
+      "start": 1708425373194,
+      "end": 1708425373195,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708374869528,
-      "end": 1708374869528,
+      "start": 1708425373195,
+      "end": 1708425373195,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1708374869528,
-      "end": 1708374869528,
+      "start": 1708425373195,
+      "end": 1708425373195,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
       "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppDocSearch.vue\").then(r => r.default))",
-      "start": 1708374869529,
-      "end": 1708374869529,
+      "start": 1708425373195,
+      "end": 1708425373197,
       "order": "normal",
       "sourcemaps": null
     },
     {
       "name": "replace",
-      "start": 1708374869529,
-      "end": 1708374869530,
+      "start": 1708425373197,
+      "end": 1708425373197,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708374869530,
-      "end": 1708374869530,
+      "start": 1708425373198,
+      "end": 1708425373198,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708374869530,
-      "end": 1708374869530,
+      "start": 1708425373198,
+      "end": 1708425373198,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708374869530,
-      "end": 1708374869530,
+      "start": 1708425373198,
+      "end": 1708425373198,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708374869531,
-      "end": 1708374869531,
+      "start": 1708425373198,
+      "end": 1708425373198,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708374869531,
-      "end": 1708374869531,
+      "start": 1708425373199,
+      "end": 1708425373199,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708374869531,
-      "end": 1708374869531,
+      "start": 1708425373199,
+      "end": 1708425373199,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708374869531,
-      "end": 1708374869531,
+      "start": 1708425373199,
+      "end": 1708425373199,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708374869531,
-      "end": 1708374869531,
+      "start": 1708425373199,
+      "end": 1708425373199,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708374869532,
-      "end": 1708374869532,
+      "start": 1708425373199,
+      "end": 1708425373199,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708374869532,
-      "end": 1708374869533,
+      "start": 1708425373200,
+      "end": 1708425373200,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708374869533,
-      "end": 1708374869535,
+      "start": 1708425373201,
+      "end": 1708425373204,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708374869535,
-      "end": 1708374869536,
+      "start": 1708425373204,
+      "end": 1708425373205,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708374869536,
-      "end": 1708374869536,
+      "start": 1708425373206,
+      "end": 1708425373207,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1708374869537,
-      "end": 1708374869537,
+      "start": 1708425373208,
+      "end": 1708425373208,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1708374869537,
-      "end": 1708374869537,
+      "start": 1708425373209,
+      "end": 1708425373209,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1708374869537,
-      "end": 1708374869537,
+      "start": 1708425373209,
+      "end": 1708425373210,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708374869538,
-      "end": 1708374869538,
+      "start": 1708425373210,
+      "end": 1708425373210,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
       "result": "import { __vitePreload } from \"\u0000vite/preload-helper.js\";import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => __vitePreload(() => import(\"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppDocSearch.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(r => r.default))",
-      "start": 1708374869538,
-      "end": 1708374869538,
+      "start": 1708425373211,
+      "end": 1708425373212,
       "order": "normal",
       "sourcemaps": null
     },
     {
       "name": "vite:reporter",
-      "start": 1708374869539,
-      "end": 1708374869539,
+      "start": 1708425373212,
+      "end": 1708425373212,
       "order": "normal"
     }
   ]

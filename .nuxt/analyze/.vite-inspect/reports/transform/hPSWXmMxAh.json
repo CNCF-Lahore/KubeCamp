@@ -4,51 +4,51 @@
     {
       "name": "vite:vue",
       "result": "\nimport { withBase } from 'ufo'\nimport type { PropType } from 'vue'\n\ntype NuxtThemedImg = {\n  light: string\n  dark: string\n}\ntype NuxtImg = string & NuxtThemedImg\n\nexport default defineComponent({\n  props: {\n    src: {\n      type: [String, Object] as PropType<NuxtImg>,\n      default: null\n    }\n  },\n  setup (props) {\n    const srcWithBase = (src?: string) => {\n      if (src && src.startsWith('/') && !src.startsWith('//')) {\n        return withBase(src, useRuntimeConfig().app.baseURL)\n      }\n\n      return src\n    }\n\n    const imgSrc = computed(() => {\n      let src: NuxtImg = props.src\n\n      try {\n        src = JSON.parse(src as any)\n      } catch (e) {\n        src = props.src\n      }\n\n      if (typeof src === 'string') { return srcWithBase(props.src) }\n\n      return {\n        light: srcWithBase((src as NuxtThemedImg).light),\n        dark: srcWithBase((src as NuxtThemedImg).dark)\n      }\n    })\n\n    return {\n      imgSrc\n    }\n  },\n  render ({ imgSrc }) {\n    // String as `src`; return a single image\n    if (typeof imgSrc === 'string') { return h('img', { src: imgSrc, ...this.$attrs }) }\n\n    // Object as `src`; return a light and dark image if present\n    const nodes = []\n    if (imgSrc.light) { nodes.push(h('img', { src: imgSrc.light, class: ['dark-img'], ...this.$attrs })) }\n    if (imgSrc.dark) { nodes.push(h('img', { src: imgSrc.dark, class: ['light-img'], ...this.$attrs })) }\n\n    return nodes\n  }\n})\n",
-      "start": 1708374872531,
-      "end": 1708374872531
+      "start": 1708425375663,
+      "end": 1708425375663
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708374872545,
-      "end": 1708374872545,
+      "start": 1708425375664,
+      "end": 1708425375664,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708374872547,
-      "end": 1708374872548,
+      "start": 1708425375664,
+      "end": 1708425375664,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "\nimport { withBase } from 'ufo'\nimport type { PropType } from 'vue'\n\ntype NuxtThemedImg = {\n  light: string\n  dark: string\n}\ntype NuxtImg = string & NuxtThemedImg\n\nexport default defineComponent({\n  props: {\n    src: {\n      type: [String, Object] as PropType<NuxtImg>,\n      default: null\n    }\n  },\n  setup (props) {\n    const srcWithBase = (src?: string) => {\n      if (src && src.startsWith('/') && !src.startsWith('//')) {\n        return withBase(src, useRuntimeConfig().app.baseURL)\n      }\n\n      return src\n    }\n\n    const imgSrc = computed(() => {\n      let src: NuxtImg = props.src\n\n      try {\n        src = JSON.parse(src as any)\n      } catch (e) {\n        src = props.src\n      }\n\n      if (typeof src === 'string') { return srcWithBase(props.src) }\n\n      return {\n        light: srcWithBase((src as NuxtThemedImg).light),\n        dark: srcWithBase((src as NuxtThemedImg).dark)\n      }\n    })\n\n    return {\n      imgSrc\n    }\n  },\n  render ({ imgSrc }) {\n    // String as `src`; return a single image\n    if (typeof imgSrc === 'string') { return h('img', { src: imgSrc, ...this.$attrs }) }\n\n    // Object as `src`; return a light and dark image if present\n    const nodes = []\n    if (imgSrc.light) { nodes.push(h('img', { src: imgSrc.light, class: ['dark-img'], ...this.$attrs })) }\n    if (imgSrc.dark) { nodes.push(h('img', { src: imgSrc.dark, class: ['light-img'], ...this.$attrs })) }\n\n    return nodes\n  }\n})\n",
-      "start": 1708374872588,
-      "end": 1708374872588,
+      "start": 1708425375665,
+      "end": 1708425375665,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708374872589,
-      "end": 1708374872589,
+      "start": 1708425375665,
+      "end": 1708425375665,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708374872589,
-      "end": 1708374872589,
+      "start": 1708425375665,
+      "end": 1708425375665,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708374872589,
-      "end": 1708374872589,
+      "start": 1708425375665,
+      "end": 1708425375665,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { withBase } from \"ufo\";\nexport default defineComponent({\n  props: {\n    src: {\n      type: [String, Object],\n      default: null\n    }\n  },\n  setup(props) {\n    const srcWithBase = (src) => {\n      if (src && src.startsWith(\"/\") && !src.startsWith(\"//\")) {\n        return withBase(src, useRuntimeConfig().app.baseURL);\n      }\n      return src;\n    };\n    const imgSrc = computed(() => {\n      let src = props.src;\n      try {\n        src = JSON.parse(src);\n      } catch (e) {\n        src = props.src;\n      }\n      if (typeof src === \"string\") {\n        return srcWithBase(props.src);\n      }\n      return {\n        light: srcWithBase(src.light),\n        dark: srcWithBase(src.dark)\n      };\n    });\n    return {\n      imgSrc\n    };\n  },\n  render({ imgSrc }) {\n    if (typeof imgSrc === \"string\") {\n      return h(\"img\", { src: imgSrc, ...this.$attrs });\n    }\n    const nodes = [];\n    if (imgSrc.light) {\n      nodes.push(h(\"img\", { src: imgSrc.light, class: [\"dark-img\"], ...this.$attrs }));\n    }\n    if (imgSrc.dark) {\n      nodes.push(h(\"img\", { src: imgSrc.dark, class: [\"light-img\"], ...this.$attrs }));\n    }\n    return nodes;\n  }\n});\n",
-      "start": 1708374872589,
-      "end": 1708374873234,
+      "start": 1708425375665,
+      "end": 1708425376012,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -64,123 +64,123 @@
     },
     {
       "name": "vite:json",
-      "start": 1708374873235,
-      "end": 1708374873235,
+      "start": 1708425376012,
+      "end": 1708425376012,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708374873235,
-      "end": 1708374873235,
+      "start": 1708425376012,
+      "end": 1708425376012,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708374873235,
-      "end": 1708374873235,
+      "start": 1708425376012,
+      "end": 1708425376012,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708374873235,
-      "end": 1708374873235,
+      "start": 1708425376013,
+      "end": 1708425376013,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708374873235,
-      "end": 1708374873235,
+      "start": 1708425376013,
+      "end": 1708425376013,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708374873235,
-      "end": 1708374873235,
+      "start": 1708425376013,
+      "end": 1708425376013,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1708374873235,
-      "end": 1708374873235,
+      "start": 1708425376013,
+      "end": 1708425376013,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708374873235,
-      "end": 1708374873236,
+      "start": 1708425376013,
+      "end": 1708425376013,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708374873236,
-      "end": 1708374873236,
+      "start": 1708425376013,
+      "end": 1708425376013,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708374873236,
-      "end": 1708374873236,
+      "start": 1708425376013,
+      "end": 1708425376014,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708374873236,
-      "end": 1708374873236,
+      "start": 1708425376014,
+      "end": 1708425376014,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708374873236,
-      "end": 1708374873236,
+      "start": 1708425376014,
+      "end": 1708425376014,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708374873236,
-      "end": 1708374873236,
+      "start": 1708425376014,
+      "end": 1708425376014,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708374873236,
-      "end": 1708374873236,
+      "start": 1708425376014,
+      "end": 1708425376014,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708374873236,
-      "end": 1708374873236,
+      "start": 1708425376014,
+      "end": 1708425376014,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708374873236,
-      "end": 1708374873236,
+      "start": 1708425376014,
+      "end": 1708425376014,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708374873236,
-      "end": 1708374873236,
+      "start": 1708425376014,
+      "end": 1708425376014,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708374873236,
-      "end": 1708374873236,
+      "start": 1708425376014,
+      "end": 1708425376014,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708374873236,
-      "end": 1708374873236,
+      "start": 1708425376014,
+      "end": 1708425376015,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { defineComponent, computed, h } from 'vue';\nimport { useRuntimeConfig } from '#app/nuxt';\nimport { withBase } from \"ufo\";\nexport default defineComponent({\n  props: {\n    src: {\n      type: [String, Object],\n      default: null\n    }\n  },\n  setup(props) {\n    const srcWithBase = (src) => {\n      if (src && src.startsWith(\"/\") && !src.startsWith(\"//\")) {\n        return withBase(src, useRuntimeConfig().app.baseURL);\n      }\n      return src;\n    };\n    const imgSrc = computed(() => {\n      let src = props.src;\n      try {\n        src = JSON.parse(src);\n      } catch (e) {\n        src = props.src;\n      }\n      if (typeof src === \"string\") {\n        return srcWithBase(props.src);\n      }\n      return {\n        light: srcWithBase(src.light),\n        dark: srcWithBase(src.dark)\n      };\n    });\n    return {\n      imgSrc\n    };\n  },\n  render({ imgSrc }) {\n    if (typeof imgSrc === \"string\") {\n      return h(\"img\", { src: imgSrc, ...this.$attrs });\n    }\n    const nodes = [];\n    if (imgSrc.light) {\n      nodes.push(h(\"img\", { src: imgSrc.light, class: [\"dark-img\"], ...this.$attrs }));\n    }\n    if (imgSrc.dark) {\n      nodes.push(h(\"img\", { src: imgSrc.dark, class: [\"light-img\"], ...this.$attrs }));\n    }\n    return nodes;\n  }\n});\n",
-      "start": 1708374873236,
-      "end": 1708374873243,
+      "start": 1708425376015,
+      "end": 1708425376023,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -193,50 +193,50 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1708374873244,
-      "end": 1708374873244,
+      "start": 1708425376023,
+      "end": 1708425376023,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708374873244,
-      "end": 1708374873244,
+      "start": 1708425376023,
+      "end": 1708425376023,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1708374873244,
-      "end": 1708374873244,
+      "start": 1708425376023,
+      "end": 1708425376024,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1708374873244,
-      "end": 1708374873244,
+      "start": 1708425376024,
+      "end": 1708425376024,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1708374873244,
-      "end": 1708374873245,
+      "start": 1708425376024,
+      "end": 1708425376024,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708374873245,
-      "end": 1708374873245,
+      "start": 1708425376024,
+      "end": 1708425376025,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708374873245,
-      "end": 1708374873245,
+      "start": 1708425376025,
+      "end": 1708425376025,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708374873245,
-      "end": 1708374873245,
+      "start": 1708425376025,
+      "end": 1708425376025,
       "order": "normal"
     }
   ]

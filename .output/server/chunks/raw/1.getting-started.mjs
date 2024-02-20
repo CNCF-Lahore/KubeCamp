@@ -1,0 +1,5 @@
+// ROLLUP_NO_REPLACE 
+ const _1_gettingStarted = "{\"parsed\":{\"_path\":\"/introduction/getting-started\",\"_dir\":\"introduction\",\"_draft\":false,\"_partial\":false,\"_locale\":\"\",\"title\":\"Before You Start\",\"description\":\"I want to tell you something... About Kubernetes passionaters and how\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"before-you-start\"},\"children\":[{\"type\":\"text\",\"value\":\"Before You Start\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"I want to tell you something... About Kubernetes passionaters and how\"}]}],\"toc\":{\"title\":\"\",\"searchDepth\":2,\"depth\":2,\"links\":[]}},\"_type\":\"markdown\",\"_id\":\"content:1.introduction:1.getting-started.md\",\"_source\":\"content\",\"_file\":\"1.introduction/1.getting-started.md\",\"_extension\":\"md\"},\"hash\":\"Q2pWlNmHUu\"}";
+
+export { _1_gettingStarted as default };
+//# sourceMappingURL=1.getting-started.mjs.map

@@ -4,174 +4,174 @@
     {
       "name": "vite:load-fallback",
       "result": "import { useCookie, useRoute } from \"#imports\";\nlet showWarning = true;\nexport const useContentPreview = () => {\n  const getPreviewToken = () => {\n    return useCookie(\"previewToken\").value || process.client && sessionStorage.getItem(\"previewToken\") || void 0;\n  };\n  const setPreviewToken = (token) => {\n    useCookie(\"previewToken\").value = token;\n    useRoute().query.preview = token || \"\";\n    if (process.client) {\n      if (token) {\n        sessionStorage.setItem(\"previewToken\", token);\n      } else {\n        sessionStorage.removeItem(\"previewToken\");\n      }\n      window.location.reload();\n    }\n  };\n  const isEnabled = () => {\n    const query = useRoute().query;\n    if (Object.prototype.hasOwnProperty.call(query, \"preview\") && !query.preview) {\n      return false;\n    }\n    if (query.preview || useCookie(\"previewToken\").value) {\n      if (process.dev && showWarning) {\n        console.warn(\"[content] Client DB enabled since a preview token is set (either in query or cookie).\");\n        showWarning = false;\n      }\n      return true;\n    }\n    if (process.client && sessionStorage.getItem(\"previewToken\")) {\n      return true;\n    }\n    return false;\n  };\n  return {\n    isEnabled,\n    getPreviewToken,\n    setPreviewToken\n  };\n};\n",
-      "start": 1708374871477,
-      "end": 1708374873727,
+      "start": 1708425374793,
+      "end": 1708425376488,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708374873727,
-      "end": 1708374873727,
+      "start": 1708425376488,
+      "end": 1708425376488,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708374873727,
-      "end": 1708374873727,
+      "start": 1708425376488,
+      "end": 1708425376488,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { useCookie, useRoute } from \"#imports\";\nlet showWarning = true;\nexport const useContentPreview = () => {\n  const getPreviewToken = () => {\n    return useCookie(\"previewToken\").value || process.client && sessionStorage.getItem(\"previewToken\") || void 0;\n  };\n  const setPreviewToken = (token) => {\n    useCookie(\"previewToken\").value = token;\n    useRoute().query.preview = token || \"\";\n    if (process.client) {\n      if (token) {\n        sessionStorage.setItem(\"previewToken\", token);\n      } else {\n        sessionStorage.removeItem(\"previewToken\");\n      }\n      window.location.reload();\n    }\n  };\n  const isEnabled = () => {\n    const query = useRoute().query;\n    if (Object.prototype.hasOwnProperty.call(query, \"preview\") && !query.preview) {\n      return false;\n    }\n    if (query.preview || useCookie(\"previewToken\").value) {\n      if (process.dev && showWarning) {\n        console.warn(\"[content] Client DB enabled since a preview token is set (either in query or cookie).\");\n        showWarning = false;\n      }\n      return true;\n    }\n    if (process.client && sessionStorage.getItem(\"previewToken\")) {\n      return true;\n    }\n    return false;\n  };\n  return {\n    isEnabled,\n    getPreviewToken,\n    setPreviewToken\n  };\n};\n",
-      "start": 1708374873727,
-      "end": 1708374873727,
+      "start": 1708425376488,
+      "end": 1708425376488,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708374873727,
-      "end": 1708374873727,
+      "start": 1708425376488,
+      "end": 1708425376488,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708374873727,
-      "end": 1708374873727,
+      "start": 1708425376488,
+      "end": 1708425376488,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708374873727,
-      "end": 1708374873727,
+      "start": 1708425376488,
+      "end": 1708425376488,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1708374873727,
-      "end": 1708374873727,
+      "start": 1708425376489,
+      "end": 1708425376489,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1708374873727,
-      "end": 1708374873727,
+      "start": 1708425376489,
+      "end": 1708425376489,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708374873727,
-      "end": 1708374873727,
+      "start": 1708425376489,
+      "end": 1708425376489,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708374873727,
-      "end": 1708374873727,
+      "start": 1708425376489,
+      "end": 1708425376489,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708374873727,
-      "end": 1708374873727,
+      "start": 1708425376489,
+      "end": 1708425376489,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708374873727,
-      "end": 1708374873727,
+      "start": 1708425376489,
+      "end": 1708425376489,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708374873727,
-      "end": 1708374873727,
+      "start": 1708425376489,
+      "end": 1708425376489,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1708374873728,
-      "end": 1708374873728,
+      "start": 1708425376489,
+      "end": 1708425376489,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708374873728,
-      "end": 1708374873728,
+      "start": 1708425376489,
+      "end": 1708425376489,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708374873728,
-      "end": 1708374873728,
+      "start": 1708425376489,
+      "end": 1708425376489,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708374873728,
-      "end": 1708374873728,
+      "start": 1708425376489,
+      "end": 1708425376489,
       "order": "normal"
     },
     {
       "name": "vite:define",
       "result": "import { useCookie, useRoute } from \"#imports\";\nlet showWarning = true;\nexport const useContentPreview = () => {\n  const getPreviewToken = () => {\n    return useCookie(\"previewToken\").value || sessionStorage.getItem(\"previewToken\") || void 0;\n  };\n  const setPreviewToken = (token) => {\n    useCookie(\"previewToken\").value = token;\n    useRoute().query.preview = token || \"\";\n    if (true) {\n      if (token) {\n        sessionStorage.setItem(\"previewToken\", token);\n      } else {\n        sessionStorage.removeItem(\"previewToken\");\n      }\n      window.location.reload();\n    }\n  };\n  const isEnabled = () => {\n    const query = useRoute().query;\n    if (Object.prototype.hasOwnProperty.call(query, \"preview\") && !query.preview) {\n      return false;\n    }\n    if (query.preview || useCookie(\"previewToken\").value) {\n      if (false) {\n        console.warn(\"[content] Client DB enabled since a preview token is set (either in query or cookie).\");\n        showWarning = false;\n      }\n      return true;\n    }\n    if (sessionStorage.getItem(\"previewToken\")) {\n      return true;\n    }\n    return false;\n  };\n  return {\n    isEnabled,\n    getPreviewToken,\n    setPreviewToken\n  };\n};\n",
-      "start": 1708374873728,
-      "end": 1708374873827,
+      "start": 1708425376489,
+      "end": 1708425376558,
       "order": "normal",
       "sourcemaps": null
     },
     {
       "name": "vite:css-post",
-      "start": 1708374873827,
-      "end": 1708374873827,
+      "start": 1708425376558,
+      "end": 1708425376558,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708374873827,
-      "end": 1708374873827,
+      "start": 1708425376558,
+      "end": 1708425376558,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708374873827,
-      "end": 1708374873827,
+      "start": 1708425376558,
+      "end": 1708425376558,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708374873827,
-      "end": 1708374873827,
+      "start": 1708425376558,
+      "end": 1708425376558,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708374873827,
-      "end": 1708374873828,
+      "start": 1708425376558,
+      "end": 1708425376559,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708374873828,
-      "end": 1708374873828,
+      "start": 1708425376559,
+      "end": 1708425376559,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708374873828,
-      "end": 1708374873828,
+      "start": 1708425376559,
+      "end": 1708425376559,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708374873828,
-      "end": 1708374873829,
+      "start": 1708425376560,
+      "end": 1708425376560,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { useCookie } from '#app/composables/cookie';\nimport { useRoute } from '#app/composables/router';\nlet showWarning = true;\nexport const useContentPreview = () => {\n  const getPreviewToken = () => {\n    return useCookie(\"previewToken\").value || sessionStorage.getItem(\"previewToken\") || void 0;\n  };\n  const setPreviewToken = (token) => {\n    useCookie(\"previewToken\").value = token;\n    useRoute().query.preview = token || \"\";\n    if (true) {\n      if (token) {\n        sessionStorage.setItem(\"previewToken\", token);\n      } else {\n        sessionStorage.removeItem(\"previewToken\");\n      }\n      window.location.reload();\n    }\n  };\n  const isEnabled = () => {\n    const query = useRoute().query;\n    if (Object.prototype.hasOwnProperty.call(query, \"preview\") && !query.preview) {\n      return false;\n    }\n    if (query.preview || useCookie(\"previewToken\").value) {\n      if (false) {\n        console.warn(\"[content] Client DB enabled since a preview token is set (either in query or cookie).\");\n        showWarning = false;\n      }\n      return true;\n    }\n    if (sessionStorage.getItem(\"previewToken\")) {\n      return true;\n    }\n    return false;\n  };\n  return {\n    isEnabled,\n    getPreviewToken,\n    setPreviewToken\n  };\n};\n",
-      "start": 1708374873829,
-      "end": 1708374873832,
+      "start": 1708425376560,
+      "end": 1708425376562,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -184,50 +184,50 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1708374873832,
-      "end": 1708374873832,
+      "start": 1708425376562,
+      "end": 1708425376563,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708374873832,
-      "end": 1708374873832,
+      "start": 1708425376563,
+      "end": 1708425376563,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1708374873832,
-      "end": 1708374873832,
+      "start": 1708425376563,
+      "end": 1708425376563,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1708374873832,
-      "end": 1708374873832,
+      "start": 1708425376563,
+      "end": 1708425376563,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1708374873832,
-      "end": 1708374873832,
+      "start": 1708425376563,
+      "end": 1708425376563,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708374873833,
-      "end": 1708374873833,
+      "start": 1708425376563,
+      "end": 1708425376563,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708374873833,
-      "end": 1708374873833,
+      "start": 1708425376563,
+      "end": 1708425376563,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708374873833,
-      "end": 1708374873833,
+      "start": 1708425376563,
+      "end": 1708425376563,
       "order": "normal"
     }
   ]
