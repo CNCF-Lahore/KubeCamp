@@ -1,10 +1,10 @@
-import Highlight from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/shiki/index.mjs'
+import Highlight from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/highlighter/rehype.mjs'
 
 export const remarkPlugins = {
 }
 
 export const rehypePlugins = {
-  'highlight': { instance: Highlight, options: {"src":"/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/shiki/index.mjs"} },
+  'highlight': { instance: Highlight, options: {} },
 }
 
-export const highlight = {"theme":{"dark":"github-dark","default":"github-light"},"preload":["json","js","ts","html","css","vue","diff","shell","markdown","yaml","bash","ini"]}
+export const highlight = {"theme":{"dark":"github-dark","default":"github-light"}}

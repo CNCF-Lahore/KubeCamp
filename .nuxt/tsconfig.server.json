@@ -57,8 +57,14 @@
       "#color-mode-options": [
         "./color-mode-options"
       ],
+      "#mdc-configs": [
+        "./mdc-configs"
+      ],
+      "#mdc-highlighter": [
+        "./mdc-highlighter"
+      ],
       "#mdc-imports": [
-        "./file:/workspace/Kubernetes-Bootcamp/.nuxt/mdc-imports"
+        "./mdc-imports"
       ],
       "#content/server": [
         "../node_modules/@nuxt/content/dist/runtime/legacy/server"
