@@ -4,39 +4,39 @@
     {
       "name": "vite:load-fallback",
       "result": "<template>\n  <MDCRenderer\n    :body=\"body\"\n    :data=\"data\"\n    :tag=\"tag\"\n    :components=\"mdcComponents\"\n    :data-content-id=\"debug ? value._id : undefined\"\n  />\n</template>\n\n<script setup lang=\"ts\">\nimport { computed } from 'vue'\nimport { useContentPreview } from '../composables/preview'\n\nconst props = defineProps({\n  /**\n   * Content to render\n   */\n  value: {\n    type: Object,\n    required: true\n  },\n  /**\n   * Render only the excerpt\n   */\n  excerpt: {\n    type: Boolean,\n    default: false\n  },\n  /**\n   * Root tag to use for rendering\n   */\n  tag: {\n    type: String,\n    default: 'div'\n  },\n  /**\n   * The map of custom components to use for rendering.\n   */\n  components: {\n    type: Object,\n    default: () => ({})\n  },\n\n  data: {\n    type: Object,\n    default: () => ({})\n  }\n})\n\nconst debug = process.dev || useContentPreview().isEnabled()\n\nconst body = computed(() => {\n  let body = props.value.body || props.value\n  if (props.excerpt && props.value.excerpt) {\n    body = props.value.excerpt\n  }\n\n  return body\n})\n\nconst data = computed(() => {\n  // eslint-disable-next-line @typescript-eslint/no-unused-vars\n  const { body, excerpt, ...data } = props.value\n  return {\n    ...data,\n    ...props.data\n  }\n})\n\nconst mdcComponents = computed(() => {\n  return {\n    ...props.components,\n    ...(data.value._components || {})\n  }\n})\n</script>\n",
-      "start": 1708606107241,
-      "end": 1708606108162,
+      "start": 1708620641479,
+      "end": 1708620641588,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708606108162,
-      "end": 1708606108162,
+      "start": 1708620641588,
+      "end": 1708620641588,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708606108162,
-      "end": 1708606108162,
+      "start": 1708620641588,
+      "end": 1708620641588,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708606108162,
-      "end": 1708606108162,
+      "start": 1708620641589,
+      "end": 1708620641589,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708606108162,
-      "end": 1708606108162,
+      "start": 1708620641589,
+      "end": 1708620641589,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "<template>\n  <MDCRenderer\n    :body=\"body\"\n    :data=\"data\"\n    :tag=\"tag\"\n    :components=\"mdcComponents\"\n    :data-content-id=\"debug ? value._id : undefined\"\n  />\n</template>\n\n<script setup lang=\"ts\">\nimport { computed } from 'vue'\nimport { useContentPreview } from '../composables/preview'\n\nconst props = defineProps({\n  /**\n   * Content to render\n   */\n  value: {\n    type: Object,\n    required: true\n  },\n  /**\n   * Render only the excerpt\n   */\n  excerpt: {\n    type: Boolean,\n    default: false\n  },\n  /**\n   * Root tag to use for rendering\n   */\n  tag: {\n    type: String,\n    default: 'div'\n  },\n  /**\n   * The map of custom components to use for rendering.\n   */\n  components: {\n    type: Object,\n    default: () => ({})\n  },\n\n  data: {\n    type: Object,\n    default: () => ({})\n  }\n})\n\nconst debug = process.dev || useContentPreview().isEnabled()\n\nconst body = computed(() => {\n  let body = props.value.body || props.value\n  if (props.excerpt && props.value.excerpt) {\n    body = props.value.excerpt\n  }\n\n  return body\n})\n\nconst data = computed(() => {\n  // eslint-disable-next-line @typescript-eslint/no-unused-vars\n  const { body, excerpt, ...data } = props.value\n  return {\n    ...data,\n    ...props.data\n  }\n})\n\nconst mdcComponents = computed(() => {\n  return {\n    ...props.components,\n    ...(data.value._components || {})\n  }\n})\n</script>\n",
-      "start": 1708606108162,
-      "end": 1708606108162,
+      "start": 1708620641589,
+      "end": 1708620641589,
       "order": "pre",
       "sourcemaps": {
         "version": 3,
@@ -51,8 +51,8 @@
     {
       "name": "pinceau-transforms",
       "result": "<template>\n  <MDCRenderer\n    :body=\"body\"\n    :data=\"data\"\n    :tag=\"tag\"\n    :components=\"mdcComponents\"\n    :data-content-id=\"debug ? value._id : undefined\"\n  />\n</template>\n\n<script setup lang=\"ts\">\nimport { computed } from 'vue'\nimport { useContentPreview } from '../composables/preview'\n\nconst props = defineProps({\n  /**\n   * Content to render\n   */\n  value: {\n    type: Object,\n    required: true\n  },\n  /**\n   * Render only the excerpt\n   */\n  excerpt: {\n    type: Boolean,\n    default: false\n  },\n  /**\n   * Root tag to use for rendering\n   */\n  tag: {\n    type: String,\n    default: 'div'\n  },\n  /**\n   * The map of custom components to use for rendering.\n   */\n  components: {\n    type: Object,\n    default: () => ({})\n  },\n\n  data: {\n    type: Object,\n    default: () => ({})\n  }\n})\n\nconst debug = process.dev || useContentPreview().isEnabled()\n\nconst body = computed(() => {\n  let body = props.value.body || props.value\n  if (props.excerpt && props.value.excerpt) {\n    body = props.value.excerpt\n  }\n\n  return body\n})\n\nconst data = computed(() => {\n  // eslint-disable-next-line @typescript-eslint/no-unused-vars\n  const { body, excerpt, ...data } = props.value\n  return {\n    ...data,\n    ...props.data\n  }\n})\n\nconst mdcComponents = computed(() => {\n  return {\n    ...props.components,\n    ...(data.value._components || {})\n  }\n})\n</script>\n",
-      "start": 1708606108162,
-      "end": 1708606108162,
+      "start": 1708620641589,
+      "end": 1708620641589,
       "order": "pre",
       "sourcemaps": {
         "version": 3,
@@ -66,51 +66,51 @@
     },
     {
       "name": "content-slot",
-      "start": 1708606108162,
-      "end": 1708606108162,
+      "start": 1708620641589,
+      "end": 1708620641589,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708606108162,
-      "end": 1708606108162,
+      "start": 1708620641589,
+      "end": 1708620641589,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708606108162,
-      "end": 1708606108162,
+      "start": 1708620641589,
+      "end": 1708620641589,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708606108162,
-      "end": 1708606108162,
+      "start": 1708620641589,
+      "end": 1708620641589,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1708606108162,
-      "end": 1708606108162,
+      "start": 1708620641589,
+      "end": 1708620641589,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1708606108162,
-      "end": 1708606108162,
+      "start": 1708620641589,
+      "end": 1708620641589,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708606108162,
-      "end": 1708606108162,
+      "start": 1708620641590,
+      "end": 1708620641590,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "import _sfc_main from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue?vue&type=script&setup=true&lang.ts\";\nimport { useSSRContext as __vite_useSSRContext } from \"vue\";\nconst _sfc_setup = _sfc_main.setup;\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext();\n  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add(\"node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue\");\n  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;\n};\nexport default _sfc_main;\n",
-      "start": 1708606108162,
-      "end": 1708606108282,
+      "start": 1708620641591,
+      "end": 1708620641957,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -118,176 +118,176 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708606108282,
-      "end": 1708606108282,
+      "start": 1708620641958,
+      "end": 1708620641958,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708606108282,
-      "end": 1708606108282,
+      "start": 1708620641958,
+      "end": 1708620641958,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708606108282,
-      "end": 1708606108282,
+      "start": 1708620641958,
+      "end": 1708620641958,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708606108282,
-      "end": 1708606108282,
+      "start": 1708620641958,
+      "end": 1708620641958,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708606108282,
-      "end": 1708606108282,
+      "start": 1708620641958,
+      "end": 1708620641958,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708606108283,
-      "end": 1708606108283,
+      "start": 1708620641958,
+      "end": 1708620641958,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708606108283,
-      "end": 1708606108283,
+      "start": 1708620641959,
+      "end": 1708620641959,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708606108283,
-      "end": 1708606108283,
+      "start": 1708620641959,
+      "end": 1708620641959,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708606108283,
-      "end": 1708606108283,
+      "start": 1708620641959,
+      "end": 1708620641959,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708606108284,
-      "end": 1708606108284,
+      "start": 1708620641959,
+      "end": 1708620641959,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708606108284,
-      "end": 1708606108284,
+      "start": 1708620641960,
+      "end": 1708620641960,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708606108285,
-      "end": 1708606108285,
+      "start": 1708620641961,
+      "end": 1708620641962,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708606108286,
-      "end": 1708606108286,
+      "start": 1708620641962,
+      "end": 1708620641962,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708606108287,
-      "end": 1708606108287,
+      "start": 1708620641962,
+      "end": 1708620641962,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708606108287,
-      "end": 1708606108287,
+      "start": 1708620641962,
+      "end": 1708620641962,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708606108287,
-      "end": 1708606108287,
+      "start": 1708620641962,
+      "end": 1708620641962,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708606108287,
-      "end": 1708606108287,
+      "start": 1708620641962,
+      "end": 1708620641962,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708606108287,
-      "end": 1708606108287,
+      "start": 1708620641962,
+      "end": 1708620641962,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708606108290,
-      "end": 1708606108290,
+      "start": 1708620641962,
+      "end": 1708620641962,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708606108290,
-      "end": 1708606108290,
+      "start": 1708620641962,
+      "end": 1708620641962,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708606108291,
-      "end": 1708606108291,
+      "start": 1708620641963,
+      "end": 1708620641963,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708606108291,
-      "end": 1708606108291,
+      "start": 1708620641963,
+      "end": 1708620641963,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708606108291,
-      "end": 1708606108291,
+      "start": 1708620641963,
+      "end": 1708620641963,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708606108291,
-      "end": 1708606108291,
+      "start": 1708620641963,
+      "end": 1708620641963,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1708606108296,
-      "end": 1708606108296,
+      "start": 1708620641964,
+      "end": 1708620641964,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1708606108299,
-      "end": 1708606108300,
+      "start": 1708620641966,
+      "end": 1708620641967,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708606108301,
-      "end": 1708606108301,
+      "start": 1708620641968,
+      "end": 1708620641968,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708606108301,
-      "end": 1708606108301,
+      "start": 1708620641968,
+      "end": 1708620641968,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708606108302,
-      "end": 1708606108302,
+      "start": 1708620641968,
+      "end": 1708620641968,
       "order": "normal"
     }
   ]

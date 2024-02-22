@@ -4,209 +4,209 @@
     {
       "name": "vite:load-fallback",
       "result": "import { reactive, ref } from \"vue\";\nimport { defineNuxtPlugin, isVue2, isVue3, useHead, useState, useRouter } from \"#imports\";\nimport { preference, hid, script, dataValue } from \"#color-mode-options\";\nconst addScript = (head) => {\n  head.script = head.script || [];\n  head.script.push({\n    hid,\n    innerHTML: script\n  });\n  const serializeProp = \"__dangerouslyDisableSanitizersByTagID\";\n  head[serializeProp] = head[serializeProp] || {};\n  head[serializeProp][hid] = [\"innerHTML\"];\n};\nexport default defineNuxtPlugin((nuxtApp) => {\n  const colorMode = nuxtApp.ssrContext?.islandContext ? ref({}) : useState(\"color-mode\", () => reactive({\n    preference,\n    value: preference,\n    unknown: true,\n    forced: false\n  })).value;\n  const htmlAttrs = {};\n  if (isVue2) {\n    const app = nuxtApp.nuxt2Context.app;\n    if (typeof app.head === \"function\") {\n      const originalHead = app.head;\n      app.head = function() {\n        const head = originalHead.call(this) || {};\n        addScript(head);\n        head.htmlAttrs = htmlAttrs;\n        return head;\n      };\n    } else {\n      addScript(app.head);\n      app.head.htmlAttrs = htmlAttrs;\n    }\n  }\n  if (isVue3) {\n    useHead({ htmlAttrs });\n  }\n  useRouter().afterEach((to) => {\n    const forcedColorMode = isVue2 ? to.matched[0]?.components.default?.options?.colorMode : to.meta.colorMode;\n    if (forcedColorMode && forcedColorMode !== \"system\") {\n      colorMode.value = htmlAttrs[\"data-color-mode-forced\"] = forcedColorMode;\n      if (dataValue) {\n        htmlAttrs[`data-${dataValue}`] = colorMode.value;\n      }\n      colorMode.forced = true;\n    } else if (forcedColorMode === \"system\") {\n      console.warn(\"You cannot force the colorMode to system at the page level.\");\n    }\n  });\n  nuxtApp.provide(\"colorMode\", colorMode);\n});\n",
-      "start": 1708606105503,
-      "end": 1708606105614,
+      "start": 1708620639843,
+      "end": 1708620640025,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708606105614,
-      "end": 1708606105618,
+      "start": 1708620640025,
+      "end": 1708620640025,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708606105614,
-      "end": 1708606105618,
+      "start": 1708620640025,
+      "end": 1708620640025,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708606105618,
-      "end": 1708606105618,
+      "start": 1708620640025,
+      "end": 1708620640025,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708606105618,
-      "end": 1708606105618,
+      "start": 1708620640025,
+      "end": 1708620640025,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { reactive, ref } from \"vue\";\nimport { defineNuxtPlugin, isVue2, isVue3, useHead, useState, useRouter } from \"#imports\";\nimport { preference, hid, script, dataValue } from \"#color-mode-options\";\nconst addScript = (head) => {\n  head.script = head.script || [];\n  head.script.push({\n    hid,\n    innerHTML: script\n  });\n  const serializeProp = \"__dangerouslyDisableSanitizersByTagID\";\n  head[serializeProp] = head[serializeProp] || {};\n  head[serializeProp][hid] = [\"innerHTML\"];\n};\nexport default defineNuxtPlugin((nuxtApp) => {\n  const colorMode = nuxtApp.ssrContext?.islandContext ? ref({}) : useState(\"color-mode\", () => reactive({\n    preference,\n    value: preference,\n    unknown: true,\n    forced: false\n  })).value;\n  const htmlAttrs = {};\n  if (isVue2) {\n    const app = nuxtApp.nuxt2Context.app;\n    if (typeof app.head === \"function\") {\n      const originalHead = app.head;\n      app.head = function() {\n        const head = originalHead.call(this) || {};\n        addScript(head);\n        head.htmlAttrs = htmlAttrs;\n        return head;\n      };\n    } else {\n      addScript(app.head);\n      app.head.htmlAttrs = htmlAttrs;\n    }\n  }\n  if (isVue3) {\n    useHead({ htmlAttrs });\n  }\n  useRouter().afterEach((to) => {\n    const forcedColorMode = isVue2 ? to.matched[0]?.components.default?.options?.colorMode : to.meta.colorMode;\n    if (forcedColorMode && forcedColorMode !== \"system\") {\n      colorMode.value = htmlAttrs[\"data-color-mode-forced\"] = forcedColorMode;\n      if (dataValue) {\n        htmlAttrs[`data-${dataValue}`] = colorMode.value;\n      }\n      colorMode.forced = true;\n    } else if (forcedColorMode === \"system\") {\n      console.warn(\"You cannot force the colorMode to system at the page level.\");\n    }\n  });\n  nuxtApp.provide(\"colorMode\", colorMode);\n});\n",
-      "start": 1708606105618,
-      "end": 1708606105618,
+      "start": 1708620640025,
+      "end": 1708620640025,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { reactive, ref } from \"vue\";\nimport { defineNuxtPlugin, isVue2, isVue3, useHead, useState, useRouter } from \"#imports\";\nimport { preference, hid, script, dataValue } from \"#color-mode-options\";\nconst addScript = (head) => {\n  head.script = head.script || [];\n  head.script.push({\n    hid,\n    innerHTML: script\n  });\n  const serializeProp = \"__dangerouslyDisableSanitizersByTagID\";\n  head[serializeProp] = head[serializeProp] || {};\n  head[serializeProp][hid] = [\"innerHTML\"];\n};\nexport default defineNuxtPlugin((nuxtApp) => {\n  const colorMode = nuxtApp.ssrContext?.islandContext ? ref({}) : useState(\"color-mode\", () => reactive({\n    preference,\n    value: preference,\n    unknown: true,\n    forced: false\n  })).value;\n  const htmlAttrs = {};\n  if (isVue2) {\n    const app = nuxtApp.nuxt2Context.app;\n    if (typeof app.head === \"function\") {\n      const originalHead = app.head;\n      app.head = function() {\n        const head = originalHead.call(this) || {};\n        addScript(head);\n        head.htmlAttrs = htmlAttrs;\n        return head;\n      };\n    } else {\n      addScript(app.head);\n      app.head.htmlAttrs = htmlAttrs;\n    }\n  }\n  if (isVue3) {\n    useHead({ htmlAttrs });\n  }\n  useRouter().afterEach((to) => {\n    const forcedColorMode = isVue2 ? to.matched[0]?.components.default?.options?.colorMode : to.meta.colorMode;\n    if (forcedColorMode && forcedColorMode !== \"system\") {\n      colorMode.value = htmlAttrs[\"data-color-mode-forced\"] = forcedColorMode;\n      if (dataValue) {\n        htmlAttrs[`data-${dataValue}`] = colorMode.value;\n      }\n      colorMode.forced = true;\n    } else if (forcedColorMode === \"system\") {\n      console.warn(\"You cannot force the colorMode to system at the page level.\");\n    }\n  });\n  nuxtApp.provide(\"colorMode\", colorMode);\n});\n",
-      "start": 1708606105618,
-      "end": 1708606105618,
+      "start": 1708620640025,
+      "end": 1708620640025,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708606105618,
-      "end": 1708606105618,
+      "start": 1708620640025,
+      "end": 1708620640025,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708606105618,
-      "end": 1708606105618,
+      "start": 1708620640025,
+      "end": 1708620640025,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708606105618,
-      "end": 1708606105618,
+      "start": 1708620640025,
+      "end": 1708620640025,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708606105618,
-      "end": 1708606105618,
+      "start": 1708620640025,
+      "end": 1708620640025,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1708606105618,
-      "end": 1708606105618,
+      "start": 1708620640025,
+      "end": 1708620640025,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1708606105618,
-      "end": 1708606105618,
+      "start": 1708620640025,
+      "end": 1708620640025,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708606105618,
-      "end": 1708606105618,
+      "start": 1708620640025,
+      "end": 1708620640025,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708606105618,
-      "end": 1708606105618,
+      "start": 1708620640025,
+      "end": 1708620640025,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708606105618,
-      "end": 1708606105618,
+      "start": 1708620640025,
+      "end": 1708620640025,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708606105618,
-      "end": 1708606105618,
+      "start": 1708620640025,
+      "end": 1708620640025,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708606105618,
-      "end": 1708606105618,
+      "start": 1708620640025,
+      "end": 1708620640025,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708606105618,
-      "end": 1708606105619,
+      "start": 1708620640025,
+      "end": 1708620640026,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708606105618,
-      "end": 1708606105619,
+      "start": 1708620640025,
+      "end": 1708620640026,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708606105619,
-      "end": 1708606105619,
+      "start": 1708620640026,
+      "end": 1708620640026,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708606105619,
-      "end": 1708606105619,
+      "start": 1708620640026,
+      "end": 1708620640026,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708606105619,
-      "end": 1708606105619,
+      "start": 1708620640026,
+      "end": 1708620640026,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708606105619,
-      "end": 1708606105619,
+      "start": 1708620640026,
+      "end": 1708620640026,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708606105619,
-      "end": 1708606105619,
+      "start": 1708620640026,
+      "end": 1708620640026,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708606105619,
-      "end": 1708606105619,
+      "start": 1708620640026,
+      "end": 1708620640026,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708606105619,
-      "end": 1708606105619,
+      "start": 1708620640026,
+      "end": 1708620640026,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708606105619,
-      "end": 1708606105619,
+      "start": 1708620640026,
+      "end": 1708620640026,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708606105619,
-      "end": 1708606105619,
+      "start": 1708620640026,
+      "end": 1708620640026,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708606105619,
-      "end": 1708606105619,
+      "start": 1708620640026,
+      "end": 1708620640026,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708606105619,
-      "end": 1708606105619,
+      "start": 1708620640026,
+      "end": 1708620640026,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708606105619,
-      "end": 1708606105620,
+      "start": 1708620640026,
+      "end": 1708620640027,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708606105619,
-      "end": 1708606105620,
+      "start": 1708620640026,
+      "end": 1708620640027,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { defineNuxtPlugin } from '#app/nuxt';\nimport { isVue2, isVue3 } from 'vue-demi';\nimport { useHead } from '@unhead/vue';\nimport { useState } from '#app/composables/state';\nimport { useRouter } from '#app/composables/router';\nimport { reactive, ref } from \"vue\";\nimport { preference, hid, script, dataValue } from \"#color-mode-options\";\nconst addScript = (head) => {\n  head.script = head.script || [];\n  head.script.push({\n    hid,\n    innerHTML: script\n  });\n  const serializeProp = \"__dangerouslyDisableSanitizersByTagID\";\n  head[serializeProp] = head[serializeProp] || {};\n  head[serializeProp][hid] = [\"innerHTML\"];\n};\nexport default defineNuxtPlugin((nuxtApp) => {\n  const colorMode = nuxtApp.ssrContext?.islandContext ? ref({}) : useState(\"color-mode\", () => reactive({\n    preference,\n    value: preference,\n    unknown: true,\n    forced: false\n  })).value;\n  const htmlAttrs = {};\n  if (isVue2) {\n    const app = nuxtApp.nuxt2Context.app;\n    if (typeof app.head === \"function\") {\n      const originalHead = app.head;\n      app.head = function() {\n        const head = originalHead.call(this) || {};\n        addScript(head);\n        head.htmlAttrs = htmlAttrs;\n        return head;\n      };\n    } else {\n      addScript(app.head);\n      app.head.htmlAttrs = htmlAttrs;\n    }\n  }\n  if (isVue3) {\n    useHead({ htmlAttrs });\n  }\n  useRouter().afterEach((to) => {\n    const forcedColorMode = isVue2 ? to.matched[0]?.components.default?.options?.colorMode : to.meta.colorMode;\n    if (forcedColorMode && forcedColorMode !== \"system\") {\n      colorMode.value = htmlAttrs[\"data-color-mode-forced\"] = forcedColorMode;\n      if (dataValue) {\n        htmlAttrs[`data-${dataValue}`] = colorMode.value;\n      }\n      colorMode.forced = true;\n    } else if (forcedColorMode === \"system\") {\n      console.warn(\"You cannot force the colorMode to system at the page level.\");\n    }\n  });\n  nuxtApp.provide(\"colorMode\", colorMode);\n});\n",
-      "start": 1708606105620,
-      "end": 1708606105621,
+      "start": 1708620640027,
+      "end": 1708620640028,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -220,8 +220,8 @@
     {
       "name": "nuxt:imports-transform",
       "result": "import { defineNuxtPlugin } from '#app/nuxt';\nimport { isVue2, isVue3 } from 'vue-demi';\nimport { useHead } from '@unhead/vue';\nimport { useState } from '#app/composables/state';\nimport { useRouter } from '#app/composables/router';\nimport { reactive, ref } from \"vue\";\nimport { preference, hid, script, dataValue } from \"#color-mode-options\";\nconst addScript = (head) => {\n  head.script = head.script || [];\n  head.script.push({\n    hid,\n    innerHTML: script\n  });\n  const serializeProp = \"__dangerouslyDisableSanitizersByTagID\";\n  head[serializeProp] = head[serializeProp] || {};\n  head[serializeProp][hid] = [\"innerHTML\"];\n};\nexport default defineNuxtPlugin((nuxtApp) => {\n  const colorMode = nuxtApp.ssrContext?.islandContext ? ref({}) : useState(\"color-mode\", () => reactive({\n    preference,\n    value: preference,\n    unknown: true,\n    forced: false\n  })).value;\n  const htmlAttrs = {};\n  if (isVue2) {\n    const app = nuxtApp.nuxt2Context.app;\n    if (typeof app.head === \"function\") {\n      const originalHead = app.head;\n      app.head = function() {\n        const head = originalHead.call(this) || {};\n        addScript(head);\n        head.htmlAttrs = htmlAttrs;\n        return head;\n      };\n    } else {\n      addScript(app.head);\n      app.head.htmlAttrs = htmlAttrs;\n    }\n  }\n  if (isVue3) {\n    useHead({ htmlAttrs });\n  }\n  useRouter().afterEach((to) => {\n    const forcedColorMode = isVue2 ? to.matched[0]?.components.default?.options?.colorMode : to.meta.colorMode;\n    if (forcedColorMode && forcedColorMode !== \"system\") {\n      colorMode.value = htmlAttrs[\"data-color-mode-forced\"] = forcedColorMode;\n      if (dataValue) {\n        htmlAttrs[`data-${dataValue}`] = colorMode.value;\n      }\n      colorMode.forced = true;\n    } else if (forcedColorMode === \"system\") {\n      console.warn(\"You cannot force the colorMode to system at the page level.\");\n    }\n  });\n  nuxtApp.provide(\"colorMode\", colorMode);\n});\n",
-      "start": 1708606105620,
-      "end": 1708606105621,
+      "start": 1708620640027,
+      "end": 1708620640028,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -234,56 +234,56 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1708606105621,
-      "end": 1708606105622,
+      "start": 1708620640028,
+      "end": 1708620640029,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708606105621,
-      "end": 1708606105622,
+      "start": 1708620640028,
+      "end": 1708620640029,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708606105622,
-      "end": 1708606105622,
+      "start": 1708620640029,
+      "end": 1708620640029,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708606105622,
-      "end": 1708606105622,
+      "start": 1708620640029,
+      "end": 1708620640029,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1708606105622,
-      "end": 1708606105622,
+      "start": 1708620640029,
+      "end": 1708620640029,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1708606105622,
-      "end": 1708606105622,
+      "start": 1708620640029,
+      "end": 1708620640029,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708606105622,
-      "end": 1708606105622,
+      "start": 1708620640029,
+      "end": 1708620640029,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708606105622,
-      "end": 1708606105622,
+      "start": 1708620640029,
+      "end": 1708620640029,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708606105622,
-      "end": 1708606105622,
+      "start": 1708620640029,
+      "end": 1708620640029,
       "order": "normal"
     }
   ]

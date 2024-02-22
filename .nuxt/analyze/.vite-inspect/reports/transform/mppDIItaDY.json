@@ -4,219 +4,219 @@
     {
       "name": "vite:load-fallback",
       "result": "import { ERROR_PACKET, PACKET_TYPES_REVERSE } from \"./commons.js\";\nimport { decode } from \"./contrib/base64-arraybuffer.js\";\nconst withNativeArrayBuffer = typeof ArrayBuffer === \"function\";\nexport const decodePacket = (encodedPacket, binaryType) => {\n    if (typeof encodedPacket !== \"string\") {\n        return {\n            type: \"message\",\n            data: mapBinary(encodedPacket, binaryType)\n        };\n    }\n    const type = encodedPacket.charAt(0);\n    if (type === \"b\") {\n        return {\n            type: \"message\",\n            data: decodeBase64Packet(encodedPacket.substring(1), binaryType)\n        };\n    }\n    const packetType = PACKET_TYPES_REVERSE[type];\n    if (!packetType) {\n        return ERROR_PACKET;\n    }\n    return encodedPacket.length > 1\n        ? {\n            type: PACKET_TYPES_REVERSE[type],\n            data: encodedPacket.substring(1)\n        }\n        : {\n            type: PACKET_TYPES_REVERSE[type]\n        };\n};\nconst decodeBase64Packet = (data, binaryType) => {\n    if (withNativeArrayBuffer) {\n        const decoded = decode(data);\n        return mapBinary(decoded, binaryType);\n    }\n    else {\n        return { base64: true, data }; // fallback for old browsers\n    }\n};\nconst mapBinary = (data, binaryType) => {\n    switch (binaryType) {\n        case \"blob\":\n            if (data instanceof Blob) {\n                // from WebSocket + binaryType \"blob\"\n                return data;\n            }\n            else {\n                // from HTTP long-polling or WebTransport\n                return new Blob([data]);\n            }\n        case \"arraybuffer\":\n        default:\n            if (data instanceof ArrayBuffer) {\n                // from HTTP long-polling (base64) or WebSocket + binaryType \"arraybuffer\"\n                return data;\n            }\n            else {\n                // from WebTransport (Uint8Array)\n                return data.buffer;\n            }\n    }\n};\n",
-      "start": 1708606103064,
-      "end": 1708606103070,
+      "start": 1708620637668,
+      "end": 1708620637672,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708606103070,
-      "end": 1708606103070,
+      "start": 1708620637672,
+      "end": 1708620637672,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708606103070,
-      "end": 1708606103070,
+      "start": 1708620637672,
+      "end": 1708620637672,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { ERROR_PACKET, PACKET_TYPES_REVERSE } from \"./commons.js\";\nimport { decode } from \"./contrib/base64-arraybuffer.js\";\nconst withNativeArrayBuffer = typeof ArrayBuffer === \"function\";\nexport const decodePacket = (encodedPacket, binaryType) => {\n    if (typeof encodedPacket !== \"string\") {\n        return {\n            type: \"message\",\n            data: mapBinary(encodedPacket, binaryType)\n        };\n    }\n    const type = encodedPacket.charAt(0);\n    if (type === \"b\") {\n        return {\n            type: \"message\",\n            data: decodeBase64Packet(encodedPacket.substring(1), binaryType)\n        };\n    }\n    const packetType = PACKET_TYPES_REVERSE[type];\n    if (!packetType) {\n        return ERROR_PACKET;\n    }\n    return encodedPacket.length > 1\n        ? {\n            type: PACKET_TYPES_REVERSE[type],\n            data: encodedPacket.substring(1)\n        }\n        : {\n            type: PACKET_TYPES_REVERSE[type]\n        };\n};\nconst decodeBase64Packet = (data, binaryType) => {\n    if (withNativeArrayBuffer) {\n        const decoded = decode(data);\n        return mapBinary(decoded, binaryType);\n    }\n    else {\n        return { base64: true, data }; // fallback for old browsers\n    }\n};\nconst mapBinary = (data, binaryType) => {\n    switch (binaryType) {\n        case \"blob\":\n            if (data instanceof Blob) {\n                // from WebSocket + binaryType \"blob\"\n                return data;\n            }\n            else {\n                // from HTTP long-polling or WebTransport\n                return new Blob([data]);\n            }\n        case \"arraybuffer\":\n        default:\n            if (data instanceof ArrayBuffer) {\n                // from HTTP long-polling (base64) or WebSocket + binaryType \"arraybuffer\"\n                return data;\n            }\n            else {\n                // from WebTransport (Uint8Array)\n                return data.buffer;\n            }\n    }\n};\n",
-      "start": 1708606103070,
-      "end": 1708606103071,
+      "start": 1708620637672,
+      "end": 1708620637672,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708606103071,
-      "end": 1708606103071,
+      "start": 1708620637672,
+      "end": 1708620637672,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708606103071,
-      "end": 1708606103071,
+      "start": 1708620637672,
+      "end": 1708620637672,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708606103071,
-      "end": 1708606103071,
+      "start": 1708620637672,
+      "end": 1708620637672,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1708606103071,
-      "end": 1708606103071,
+      "start": 1708620637672,
+      "end": 1708620637672,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1708606103071,
-      "end": 1708606103071,
+      "start": 1708620637672,
+      "end": 1708620637672,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708606103071,
-      "end": 1708606103071,
+      "start": 1708620637672,
+      "end": 1708620637672,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708606103071,
-      "end": 1708606103071,
+      "start": 1708620637672,
+      "end": 1708620637672,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708606103071,
-      "end": 1708606103071,
+      "start": 1708620637672,
+      "end": 1708620637672,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708606103071,
-      "end": 1708606103071,
+      "start": 1708620637672,
+      "end": 1708620637672,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708606103071,
-      "end": 1708606103071,
+      "start": 1708620637672,
+      "end": 1708620637672,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1708606103071,
-      "end": 1708606103071,
+      "start": 1708620637672,
+      "end": 1708620637672,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708606103071,
-      "end": 1708606103071,
+      "start": 1708620637672,
+      "end": 1708620637672,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708606103071,
-      "end": 1708606103071,
+      "start": 1708620637672,
+      "end": 1708620637672,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708606103071,
-      "end": 1708606103071,
+      "start": 1708620637672,
+      "end": 1708620637672,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708606103071,
-      "end": 1708606103071,
+      "start": 1708620637672,
+      "end": 1708620637672,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708606103071,
-      "end": 1708606103071,
+      "start": 1708620637672,
+      "end": 1708620637672,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708606103071,
-      "end": 1708606103071,
+      "start": 1708620637672,
+      "end": 1708620637672,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708606103071,
-      "end": 1708606103071,
+      "start": 1708620637672,
+      "end": 1708620637672,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708606103071,
-      "end": 1708606103071,
+      "start": 1708620637672,
+      "end": 1708620637672,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708606103071,
-      "end": 1708606103071,
+      "start": 1708620637672,
+      "end": 1708620637672,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708606103071,
-      "end": 1708606103071,
+      "start": 1708620637672,
+      "end": 1708620637672,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708606103071,
-      "end": 1708606103071,
+      "start": 1708620637672,
+      "end": 1708620637672,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708606103071,
-      "end": 1708606103071,
+      "start": 1708620637672,
+      "end": 1708620637672,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708606103071,
-      "end": 1708606103071,
+      "start": 1708620637672,
+      "end": 1708620637672,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708606103071,
-      "end": 1708606103071,
+      "start": 1708620637672,
+      "end": 1708620637672,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708606103071,
-      "end": 1708606103071,
+      "start": 1708620637672,
+      "end": 1708620637672,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1708606103071,
-      "end": 1708606103071,
+      "start": 1708620637672,
+      "end": 1708620637672,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1708606103071,
-      "end": 1708606103071,
+      "start": 1708620637672,
+      "end": 1708620637672,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1708606103071,
-      "end": 1708606103071,
+      "start": 1708620637672,
+      "end": 1708620637672,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708606103071,
-      "end": 1708606103071,
+      "start": 1708620637672,
+      "end": 1708620637672,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708606103071,
-      "end": 1708606103071,
+      "start": 1708620637672,
+      "end": 1708620637672,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708606103071,
-      "end": 1708606103071,
+      "start": 1708620637672,
+      "end": 1708620637672,
       "order": "normal"
     }
   ]
