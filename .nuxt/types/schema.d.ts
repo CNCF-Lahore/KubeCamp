@@ -32,6 +32,20 @@ declare module 'nuxt/schema' {
       outputDir: string,
    },
 
+   mdc: {
+      highlight: {
+         theme: {
+            dark: string,
+
+            default: string,
+         },
+
+         preload: Array<string>,
+
+         wrapperStyle: any,
+      },
+   },
+
    content: {
       cacheVersion: number,
 
@@ -75,10 +89,6 @@ declare module 'nuxt/schema' {
          },
 
          preload: Array<string>,
-
-         highlighter: string,
-
-         langs: Array<string>,
       },
 
       markdown: {
@@ -1886,10 +1896,6 @@ declare module 'nuxt/schema' {
          },
 
          preload: Array<string>,
-
-         highlighter: string,
-
-         langs: Array<string>,
       },
 
       wsUrl: string,

@@ -4,8 +4,8 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderAttr as _ssrRenderAttr, ssrRenderClass as _ssrRenderClass, ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\"\n\nimport type { PropType } from 'vue'\nimport type { TocLink } from '@nuxt/content/dist/runtime/types'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'DocsTocLinks',\n  __ssrInlineRender: true,\n  props: {\n  links: {\n    type: Array as PropType<TocLink[]>,\n    default: () => []\n  }\n},\n  emits: ['move'],\n  setup(__props, { emit: __emit }) {\n\n\n\nconst emit = __emit\n\nconst router = useRouter()\n\nconst { activeHeadings, updateHeadings } = useScrollspy()\n\nif (process.client) {\n  setTimeout(() => {\n    updateHeadings([\n      ...document.querySelectorAll('.document-driven-page h1, .docus-content h1'),\n      ...document.querySelectorAll('.document-driven-page h2, .docus-content h2'),\n      ...document.querySelectorAll('.document-driven-page h3, .docus-content h3'),\n      ...document.querySelectorAll('.document-driven-page h4, .docus-content h4')\n    ])\n  }, 300)\n}\n\nfunction scrollToHeading (id: string) {\n  router.push(`#${id}`)\n  emit('move', id)\n}\n\nfunction childMove(id: string) {\n  emit('move', id)\n}\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_DocsTocLinks = _resolveComponent(\"DocsTocLinks\", true)!\n\n  _push(`<ul${_ssrRenderAttrs(_mergeProps({ class: \"docs-toc-links\" }, _attrs))} data-v-a97df893><!--[-->`)\n  _ssrRenderList(__props.links, (link) => {\n    _push(`<li class=\"${\n      _ssrRenderClass([`depth-${link.depth}`])\n    }\" data-v-a97df893><a${\n      _ssrRenderAttr(\"href\", `#${link.id}`)\n    } class=\"${\n      _ssrRenderClass([_unref(activeHeadings).includes(link.id) && 'active'])\n    }\" data-v-a97df893>${\n      _ssrInterpolate(link.text)\n    }</a>`)\n    if (link.children) {\n      _push(_ssrRenderComponent(_component_DocsTocLinks, {\n        links: link.children,\n        onMove: ($event: any) => (childMove($event))\n      }, null, _parent))\n    } else {\n      _push(`<!---->`)\n    }\n    _push(`</li>`)\n  })\n  _push(`<!--]--></ul>`)\n}\n}\n\n})",
-      "start": 1708425381579,
-      "end": 1708425381579,
+      "start": 1708606107580,
+      "end": 1708606107580,
       "sourcemaps": {
         "version": 3,
         "sources": [
@@ -20,71 +20,71 @@
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708425381580,
-      "end": 1708425381580,
+      "start": 1708606107581,
+      "end": 1708606107581,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708425381580,
-      "end": 1708425381581,
+      "start": 1708606107581,
+      "end": 1708606107581,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708425381583,
-      "end": 1708425381583,
+      "start": 1708606107584,
+      "end": 1708606107584,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708425381583,
-      "end": 1708425381583,
+      "start": 1708606107584,
+      "end": 1708606107584,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderAttr as _ssrRenderAttr, ssrRenderClass as _ssrRenderClass, ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\"\n\nimport type { PropType } from 'vue'\nimport type { TocLink } from '@nuxt/content/dist/runtime/types'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'DocsTocLinks',\n  __ssrInlineRender: true,\n  props: {\n  links: {\n    type: Array as PropType<TocLink[]>,\n    default: () => []\n  }\n},\n  emits: ['move'],\n  setup(__props, { emit: __emit }) {\n\n\n\nconst emit = __emit\n\nconst router = useRouter()\n\nconst { activeHeadings, updateHeadings } = useScrollspy()\n\nif (process.client) {\n  setTimeout(() => {\n    updateHeadings([\n      ...document.querySelectorAll('.document-driven-page h1, .docus-content h1'),\n      ...document.querySelectorAll('.document-driven-page h2, .docus-content h2'),\n      ...document.querySelectorAll('.document-driven-page h3, .docus-content h3'),\n      ...document.querySelectorAll('.document-driven-page h4, .docus-content h4')\n    ])\n  }, 300)\n}\n\nfunction scrollToHeading (id: string) {\n  router.push(`#${id}`)\n  emit('move', id)\n}\n\nfunction childMove(id: string) {\n  emit('move', id)\n}\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_DocsTocLinks = _resolveComponent(\"DocsTocLinks\", true)!\n\n  _push(`<ul${_ssrRenderAttrs(_mergeProps({ class: \"docs-toc-links\" }, _attrs))} data-v-a97df893><!--[-->`)\n  _ssrRenderList(__props.links, (link) => {\n    _push(`<li class=\"${\n      _ssrRenderClass([`depth-${link.depth}`])\n    }\" data-v-a97df893><a${\n      _ssrRenderAttr(\"href\", `#${link.id}`)\n    } class=\"${\n      _ssrRenderClass([_unref(activeHeadings).includes(link.id) && 'active'])\n    }\" data-v-a97df893>${\n      _ssrInterpolate(link.text)\n    }</a>`)\n    if (link.children) {\n      _push(_ssrRenderComponent(_component_DocsTocLinks, {\n        links: link.children,\n        onMove: ($event: any) => (childMove($event))\n      }, null, _parent))\n    } else {\n      _push(`<!---->`)\n    }\n    _push(`</li>`)\n  })\n  _push(`<!--]--></ul>`)\n}\n}\n\n})",
-      "start": 1708425381585,
-      "end": 1708425381586,
+      "start": 1708606107586,
+      "end": 1708606107586,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderAttr as _ssrRenderAttr, ssrRenderClass as _ssrRenderClass, ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\"\n\nimport type { PropType } from 'vue'\nimport type { TocLink } from '@nuxt/content/dist/runtime/types'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'DocsTocLinks',\n  __ssrInlineRender: true,\n  props: {\n  links: {\n    type: Array as PropType<TocLink[]>,\n    default: () => []\n  }\n},\n  emits: ['move'],\n  setup(__props, { emit: __emit }) {\n\n\n\nconst emit = __emit\n\nconst router = useRouter()\n\nconst { activeHeadings, updateHeadings } = useScrollspy()\n\nif (process.client) {\n  setTimeout(() => {\n    updateHeadings([\n      ...document.querySelectorAll('.document-driven-page h1, .docus-content h1'),\n      ...document.querySelectorAll('.document-driven-page h2, .docus-content h2'),\n      ...document.querySelectorAll('.document-driven-page h3, .docus-content h3'),\n      ...document.querySelectorAll('.document-driven-page h4, .docus-content h4')\n    ])\n  }, 300)\n}\n\nfunction scrollToHeading (id: string) {\n  router.push(`#${id}`)\n  emit('move', id)\n}\n\nfunction childMove(id: string) {\n  emit('move', id)\n}\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_DocsTocLinks = _resolveComponent(\"DocsTocLinks\", true)!\n\n  _push(`<ul${_ssrRenderAttrs(_mergeProps({ class: \"docs-toc-links\" }, _attrs))} data-v-a97df893><!--[-->`)\n  _ssrRenderList(__props.links, (link) => {\n    _push(`<li class=\"${\n      _ssrRenderClass([`depth-${link.depth}`])\n    }\" data-v-a97df893><a${\n      _ssrRenderAttr(\"href\", `#${link.id}`)\n    } class=\"${\n      _ssrRenderClass([_unref(activeHeadings).includes(link.id) && 'active'])\n    }\" data-v-a97df893>${\n      _ssrInterpolate(link.text)\n    }</a>`)\n    if (link.children) {\n      _push(_ssrRenderComponent(_component_DocsTocLinks, {\n        links: link.children,\n        onMove: ($event: any) => (childMove($event))\n      }, null, _parent))\n    } else {\n      _push(`<!---->`)\n    }\n    _push(`</li>`)\n  })\n  _push(`<!--]--></ul>`)\n}\n}\n\n})",
-      "start": 1708425381585,
-      "end": 1708425381586,
+      "start": 1708606107586,
+      "end": 1708606107587,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708425381586,
-      "end": 1708425381586,
+      "start": 1708606107587,
+      "end": 1708606107587,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708425381586,
-      "end": 1708425381586,
+      "start": 1708606107587,
+      "end": 1708606107587,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708425381587,
-      "end": 1708425381587,
+      "start": 1708606107587,
+      "end": 1708606107587,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708425381587,
-      "end": 1708425381587,
+      "start": 1708606107587,
+      "end": 1708606107588,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderAttr as _ssrRenderAttr, ssrRenderClass as _ssrRenderClass, ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"DocsTocLinks\",\n  __ssrInlineRender: true,\n  props: {\n    links: {\n      type: Array,\n      default: () => []\n    }\n  },\n  emits: [\"move\"],\n  setup(__props, { emit: __emit }) {\n    const emit = __emit;\n    const router = useRouter();\n    const { activeHeadings, updateHeadings } = useScrollspy();\n    if (process.client) {\n      setTimeout(() => {\n        updateHeadings([\n          ...document.querySelectorAll(\".document-driven-page h1, .docus-content h1\"),\n          ...document.querySelectorAll(\".document-driven-page h2, .docus-content h2\"),\n          ...document.querySelectorAll(\".document-driven-page h3, .docus-content h3\"),\n          ...document.querySelectorAll(\".document-driven-page h4, .docus-content h4\")\n        ]);\n      }, 300);\n    }\n    function scrollToHeading(id) {\n      router.push(`#${id}`);\n      emit(\"move\", id);\n    }\n    function childMove(id) {\n      emit(\"move\", id);\n    }\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_DocsTocLinks = _resolveComponent(\"DocsTocLinks\", true);\n      _push(`<ul${_ssrRenderAttrs(_mergeProps({ class: \"docs-toc-links\" }, _attrs))} data-v-a97df893><!--[-->`);\n      _ssrRenderList(__props.links, (link) => {\n        _push(`<li class=\"${_ssrRenderClass([`depth-${link.depth}`])}\" data-v-a97df893><a${_ssrRenderAttr(\"href\", `#${link.id}`)} class=\"${_ssrRenderClass([_unref(activeHeadings).includes(link.id) && \"active\"])}\" data-v-a97df893>${_ssrInterpolate(link.text)}</a>`);\n        if (link.children) {\n          _push(_ssrRenderComponent(_component_DocsTocLinks, {\n            links: link.children,\n            onMove: ($event) => childMove($event)\n          }, null, _parent));\n        } else {\n          _push(`<!---->`);\n        }\n        _push(`</li>`);\n      });\n      _push(`<!--]--></ul>`);\n    };\n  }\n});\n",
-      "start": 1708425381587,
-      "end": 1708425381823,
+      "start": 1708606107588,
+      "end": 1708606107963,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -100,137 +100,137 @@
     },
     {
       "name": "vite:json",
-      "start": 1708425381823,
-      "end": 1708425381823,
+      "start": 1708606107963,
+      "end": 1708606107963,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708425381823,
-      "end": 1708425381823,
+      "start": 1708606107964,
+      "end": 1708606107964,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708425381823,
-      "end": 1708425381823,
+      "start": 1708606107964,
+      "end": 1708606107964,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708425381823,
-      "end": 1708425381823,
+      "start": 1708606107964,
+      "end": 1708606107964,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708425381823,
-      "end": 1708425381823,
+      "start": 1708606107964,
+      "end": 1708606107964,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708425381823,
-      "end": 1708425381823,
+      "start": 1708606107964,
+      "end": 1708606107964,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708425381823,
-      "end": 1708425381823,
+      "start": 1708606107964,
+      "end": 1708606107964,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708425381823,
-      "end": 1708425381823,
+      "start": 1708606107964,
+      "end": 1708606107964,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708425381823,
-      "end": 1708425381824,
+      "start": 1708606107964,
+      "end": 1708606107964,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708425381824,
-      "end": 1708425381824,
+      "start": 1708606107965,
+      "end": 1708606107965,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708425381824,
-      "end": 1708425381824,
+      "start": 1708606107965,
+      "end": 1708606107965,
       "order": "normal"
     },
     {
       "name": "vite:define",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderAttr as _ssrRenderAttr, ssrRenderClass as _ssrRenderClass, ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"DocsTocLinks\",\n  __ssrInlineRender: true,\n  props: {\n    links: {\n      type: Array,\n      default: () => []\n    }\n  },\n  emits: [\"move\"],\n  setup(__props, { emit: __emit }) {\n    const emit = __emit;\n    const router = useRouter();\n    const { activeHeadings, updateHeadings } = useScrollspy();\n    if (false) {\n      setTimeout(() => {\n        updateHeadings([\n          ...(void 0).querySelectorAll(\".document-driven-page h1, .docus-content h1\"),\n          ...(void 0).querySelectorAll(\".document-driven-page h2, .docus-content h2\"),\n          ...(void 0).querySelectorAll(\".document-driven-page h3, .docus-content h3\"),\n          ...(void 0).querySelectorAll(\".document-driven-page h4, .docus-content h4\")\n        ]);\n      }, 300);\n    }\n    function scrollToHeading(id) {\n      router.push(`#${id}`);\n      emit(\"move\", id);\n    }\n    function childMove(id) {\n      emit(\"move\", id);\n    }\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_DocsTocLinks = _resolveComponent(\"DocsTocLinks\", true);\n      _push(`<ul${_ssrRenderAttrs(_mergeProps({ class: \"docs-toc-links\" }, _attrs))} data-v-a97df893><!--[-->`);\n      _ssrRenderList(__props.links, (link) => {\n        _push(`<li class=\"${_ssrRenderClass([`depth-${link.depth}`])}\" data-v-a97df893><a${_ssrRenderAttr(\"href\", `#${link.id}`)} class=\"${_ssrRenderClass([_unref(activeHeadings).includes(link.id) && \"active\"])}\" data-v-a97df893>${_ssrInterpolate(link.text)}</a>`);\n        if (link.children) {\n          _push(_ssrRenderComponent(_component_DocsTocLinks, {\n            links: link.children,\n            onMove: ($event) => childMove($event)\n          }, null, _parent));\n        } else {\n          _push(`<!---->`);\n        }\n        _push(`</li>`);\n      });\n      _push(`<!--]--></ul>`);\n    };\n  }\n});\n",
-      "start": 1708425381824,
-      "end": 1708425381875,
+      "start": 1708606107965,
+      "end": 1708606108014,
       "order": "normal",
       "sourcemaps": "{\n  \"version\": 3,\n  \"sources\": [\"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsTocLinks.vue?vue&type=script&setup=true&lang.ts\"],\n  \"sourcesContent\": [\"import { defineComponent as _defineComponent } from \\\"vue\\\";\\nimport { unref as _unref, resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \\\"vue\\\";\\nimport { ssrRenderAttr as _ssrRenderAttr, ssrRenderClass as _ssrRenderClass, ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate, ssrRenderList as _ssrRenderList } from \\\"vue/server-renderer\\\";\\nexport default /* @__PURE__ */ _defineComponent({\\n  __name: \\\"DocsTocLinks\\\",\\n  __ssrInlineRender: true,\\n  props: {\\n    links: {\\n      type: Array,\\n      default: () => []\\n    }\\n  },\\n  emits: [\\\"move\\\"],\\n  setup(__props, { emit: __emit }) {\\n    const emit = __emit;\\n    const router = useRouter();\\n    const { activeHeadings, updateHeadings } = useScrollspy();\\n    if (process.client) {\\n      setTimeout(() => {\\n        updateHeadings([\\n          ...document.querySelectorAll(\\\".document-driven-page h1, .docus-content h1\\\"),\\n          ...document.querySelectorAll(\\\".document-driven-page h2, .docus-content h2\\\"),\\n          ...document.querySelectorAll(\\\".document-driven-page h3, .docus-content h3\\\"),\\n          ...document.querySelectorAll(\\\".document-driven-page h4, .docus-content h4\\\")\\n        ]);\\n      }, 300);\\n    }\\n    function scrollToHeading(id) {\\n      router.push(`#${id}`);\\n      emit(\\\"move\\\", id);\\n    }\\n    function childMove(id) {\\n      emit(\\\"move\\\", id);\\n    }\\n    return (_ctx, _push, _parent, _attrs) => {\\n      const _component_DocsTocLinks = _resolveComponent(\\\"DocsTocLinks\\\", true);\\n      _push(`<ul${_ssrRenderAttrs(_mergeProps({ class: \\\"docs-toc-links\\\" }, _attrs))} data-v-a97df893><!--[-->`);\\n      _ssrRenderList(__props.links, (link) => {\\n        _push(`<li class=\\\"${_ssrRenderClass([`depth-${link.depth}`])}\\\" data-v-a97df893><a${_ssrRenderAttr(\\\"href\\\", `#${link.id}`)} class=\\\"${_ssrRenderClass([_unref(activeHeadings).includes(link.id) && \\\"active\\\"])}\\\" data-v-a97df893>${_ssrInterpolate(link.text)}</a>`);\\n        if (link.children) {\\n          _push(_ssrRenderComponent(_component_DocsTocLinks, {\\n            links: link.children,\\n            onMove: ($event) => childMove($event)\\n          }, null, _parent));\\n        } else {\\n          _push(`<!---->`);\\n        }\\n        _push(`</li>`);\\n      });\\n      _push(`<!--]--></ul>`);\\n    };\\n  }\\n});\\n\"],\n  \"mappings\": \"AAAA,SAAS,mBAAmB,wBAAwB;AACpD,SAAS,SAAS,QAAQ,oBAAoB,mBAAmB,cAAc,mBAAmB;AAClG,SAAS,iBAAiB,gBAAgB,kBAAkB,iBAAiB,sBAAsB,qBAAqB,kBAAkB,iBAAiB,kBAAkB,iBAAiB,iBAAiB,sBAAsB;AACrO,eAA+B,iCAAiB;AAAA,EAC9C,QAAQ;AAAA,EACR,mBAAmB;AAAA,EACnB,OAAO;AAAA,IACL,OAAO;AAAA,MACL,MAAM;AAAA,MACN,SAAS,MAAM,CAAC;AAAA,IAClB;AAAA,EACF;AAAA,EACA,OAAO,CAAC,MAAM;AAAA,EACd,MAAM,SAAS,EAAE,MAAM,OAAO,GAAG;AAC/B,UAAM,OAAO;AACb,UAAM,SAAS,UAAU;AACzB,UAAM,EAAE,gBAAgB,eAAe,IAAI,aAAa;AACxD,QAAI,OAAgB;AAClB,iBAAW,MAAM;AACf,uBAAe;AAAA,UACb,GAAG,SAAS,iBAAiB,6CAA6C;AAAA,UAC1E,GAAG,SAAS,iBAAiB,6CAA6C;AAAA,UAC1E,GAAG,SAAS,iBAAiB,6CAA6C;AAAA,UAC1E,GAAG,SAAS,iBAAiB,6CAA6C;AAAA,QAC5E,CAAC;AAAA,MACH,GAAG,GAAG;AAAA,IACR;AACA,aAAS,gBAAgB,IAAI;AAC3B,aAAO,KAAK,IAAI,EAAE,EAAE;AACpB,WAAK,QAAQ,EAAE;AAAA,IACjB;AACA,aAAS,UAAU,IAAI;AACrB,WAAK,QAAQ,EAAE;AAAA,IACjB;AACA,WAAO,CAAC,MAAM,OAAO,SAAS,WAAW;AACvC,YAAM,0BAA0B,kBAAkB,gBAAgB,IAAI;AACtE,YAAM,MAAM,gBAAgB,YAAY,EAAE,OAAO,iBAAiB,GAAG,MAAM,CAAC,CAAC,2BAA2B;AACxG,qBAAe,QAAQ,OAAO,CAAC,SAAS;AACtC,cAAM,cAAc,gBAAgB,CAAC,SAAS,KAAK,KAAK,EAAE,CAAC,CAAC,uBAAuB,eAAe,QAAQ,IAAI,KAAK,EAAE,EAAE,CAAC,WAAW,gBAAgB,CAAC,OAAO,cAAc,EAAE,SAAS,KAAK,EAAE,KAAK,QAAQ,CAAC,CAAC,qBAAqB,gBAAgB,KAAK,IAAI,CAAC,MAAM;AAC/P,YAAI,KAAK,UAAU;AACjB,gBAAM,oBAAoB,yBAAyB;AAAA,YACjD,OAAO,KAAK;AAAA,YACZ,QAAQ,CAAC,WAAW,UAAU,MAAM;AAAA,UACtC,GAAG,MAAM,OAAO,CAAC;AAAA,QACnB,OAAO;AACL,gBAAM,SAAS;AAAA,QACjB;AACA,cAAM,OAAO;AAAA,MACf,CAAC;AACD,YAAM,eAAe;AAAA,IACvB;AAAA,EACF;AACF,CAAC;\",\n  \"names\": []\n}\n"
     },
     {
       "name": "vite:css-post",
-      "start": 1708425381875,
-      "end": 1708425381875,
+      "start": 1708606108014,
+      "end": 1708606108014,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708425381875,
-      "end": 1708425381875,
+      "start": 1708606108014,
+      "end": 1708606108014,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708425381875,
-      "end": 1708425381875,
+      "start": 1708606108014,
+      "end": 1708606108014,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708425381875,
-      "end": 1708425381875,
+      "start": 1708606108014,
+      "end": 1708606108014,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708425381875,
-      "end": 1708425381875,
+      "start": 1708606108014,
+      "end": 1708606108014,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708425381875,
-      "end": 1708425381875,
+      "start": 1708606108015,
+      "end": 1708606108015,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708425381875,
-      "end": 1708425381875,
+      "start": 1708606108015,
+      "end": 1708606108015,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708425381877,
-      "end": 1708425381877,
+      "start": 1708606108017,
+      "end": 1708606108017,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708425381877,
-      "end": 1708425381877,
+      "start": 1708606108017,
+      "end": 1708606108017,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { useRouter } from '#app/composables/router';\nimport { useScrollspy } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/composables/useScrollspy.ts';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderAttr as _ssrRenderAttr, ssrRenderClass as _ssrRenderClass, ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"DocsTocLinks\",\n  __ssrInlineRender: true,\n  props: {\n    links: {\n      type: Array,\n      default: () => []\n    }\n  },\n  emits: [\"move\"],\n  setup(__props, { emit: __emit }) {\n    const emit = __emit;\n    const router = useRouter();\n    const { activeHeadings, updateHeadings } = useScrollspy();\n    if (false) {\n      setTimeout(() => {\n        updateHeadings([\n          ...(void 0).querySelectorAll(\".document-driven-page h1, .docus-content h1\"),\n          ...(void 0).querySelectorAll(\".document-driven-page h2, .docus-content h2\"),\n          ...(void 0).querySelectorAll(\".document-driven-page h3, .docus-content h3\"),\n          ...(void 0).querySelectorAll(\".document-driven-page h4, .docus-content h4\")\n        ]);\n      }, 300);\n    }\n    function scrollToHeading(id) {\n      router.push(`#${id}`);\n      emit(\"move\", id);\n    }\n    function childMove(id) {\n      emit(\"move\", id);\n    }\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_DocsTocLinks = _resolveComponent(\"DocsTocLinks\", true);\n      _push(`<ul${_ssrRenderAttrs(_mergeProps({ class: \"docs-toc-links\" }, _attrs))} data-v-a97df893><!--[-->`);\n      _ssrRenderList(__props.links, (link) => {\n        _push(`<li class=\"${_ssrRenderClass([`depth-${link.depth}`])}\" data-v-a97df893><a${_ssrRenderAttr(\"href\", `#${link.id}`)} class=\"${_ssrRenderClass([_unref(activeHeadings).includes(link.id) && \"active\"])}\" data-v-a97df893>${_ssrInterpolate(link.text)}</a>`);\n        if (link.children) {\n          _push(_ssrRenderComponent(_component_DocsTocLinks, {\n            links: link.children,\n            onMove: ($event) => childMove($event)\n          }, null, _parent));\n        } else {\n          _push(`<!---->`);\n        }\n        _push(`</li>`);\n      });\n      _push(`<!--]--></ul>`);\n    };\n  }\n});\n",
-      "start": 1708425381878,
-      "end": 1708425381882,
+      "start": 1708606108017,
+      "end": 1708606108021,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -244,8 +244,8 @@
     {
       "name": "nuxt:imports-transform",
       "result": "import { useRouter } from '#app/composables/router';\nimport { useScrollspy } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/composables/useScrollspy.ts';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderAttr as _ssrRenderAttr, ssrRenderClass as _ssrRenderClass, ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"DocsTocLinks\",\n  __ssrInlineRender: true,\n  props: {\n    links: {\n      type: Array,\n      default: () => []\n    }\n  },\n  emits: [\"move\"],\n  setup(__props, { emit: __emit }) {\n    const emit = __emit;\n    const router = useRouter();\n    const { activeHeadings, updateHeadings } = useScrollspy();\n    if (false) {\n      setTimeout(() => {\n        updateHeadings([\n          ...(void 0).querySelectorAll(\".document-driven-page h1, .docus-content h1\"),\n          ...(void 0).querySelectorAll(\".document-driven-page h2, .docus-content h2\"),\n          ...(void 0).querySelectorAll(\".document-driven-page h3, .docus-content h3\"),\n          ...(void 0).querySelectorAll(\".document-driven-page h4, .docus-content h4\")\n        ]);\n      }, 300);\n    }\n    function scrollToHeading(id) {\n      router.push(`#${id}`);\n      emit(\"move\", id);\n    }\n    function childMove(id) {\n      emit(\"move\", id);\n    }\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_DocsTocLinks = _resolveComponent(\"DocsTocLinks\", true);\n      _push(`<ul${_ssrRenderAttrs(_mergeProps({ class: \"docs-toc-links\" }, _attrs))} data-v-a97df893><!--[-->`);\n      _ssrRenderList(__props.links, (link) => {\n        _push(`<li class=\"${_ssrRenderClass([`depth-${link.depth}`])}\" data-v-a97df893><a${_ssrRenderAttr(\"href\", `#${link.id}`)} class=\"${_ssrRenderClass([_unref(activeHeadings).includes(link.id) && \"active\"])}\" data-v-a97df893>${_ssrInterpolate(link.text)}</a>`);\n        if (link.children) {\n          _push(_ssrRenderComponent(_component_DocsTocLinks, {\n            links: link.children,\n            onMove: ($event) => childMove($event)\n          }, null, _parent));\n        } else {\n          _push(`<!---->`);\n        }\n        _push(`</li>`);\n      });\n      _push(`<!--]--></ul>`);\n    };\n  }\n});\n",
-      "start": 1708425381878,
-      "end": 1708425381882,
+      "start": 1708606108017,
+      "end": 1708606108021,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -258,39 +258,39 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1708425381882,
-      "end": 1708425381882,
+      "start": 1708606108021,
+      "end": 1708606108021,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708425381882,
-      "end": 1708425381882,
+      "start": 1708606108021,
+      "end": 1708606108021,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708425381882,
-      "end": 1708425381882,
+      "start": 1708606108021,
+      "end": 1708606108021,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708425381882,
-      "end": 1708425381882,
+      "start": 1708606108021,
+      "end": 1708606108021,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1708425381882,
-      "end": 1708425381882,
+      "start": 1708606108021,
+      "end": 1708606108021,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
       "result": "import { default as __nuxt_component_0 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsTocLinks.vue\";\nimport { useRouter } from '#app/composables/router';\nimport { useScrollspy } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/composables/useScrollspy.ts';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderAttr as _ssrRenderAttr, ssrRenderClass as _ssrRenderClass, ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"DocsTocLinks\",\n  __ssrInlineRender: true,\n  props: {\n    links: {\n      type: Array,\n      default: () => []\n    }\n  },\n  emits: [\"move\"],\n  setup(__props, { emit: __emit }) {\n    const emit = __emit;\n    const router = useRouter();\n    const { activeHeadings, updateHeadings } = useScrollspy();\n    if (false) {\n      setTimeout(() => {\n        updateHeadings([\n          ...(void 0).querySelectorAll(\".document-driven-page h1, .docus-content h1\"),\n          ...(void 0).querySelectorAll(\".document-driven-page h2, .docus-content h2\"),\n          ...(void 0).querySelectorAll(\".document-driven-page h3, .docus-content h3\"),\n          ...(void 0).querySelectorAll(\".document-driven-page h4, .docus-content h4\")\n        ]);\n      }, 300);\n    }\n    function scrollToHeading(id) {\n      router.push(`#${id}`);\n      emit(\"move\", id);\n    }\n    function childMove(id) {\n      emit(\"move\", id);\n    }\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_DocsTocLinks = __nuxt_component_0;\n      _push(`<ul${_ssrRenderAttrs(_mergeProps({ class: \"docs-toc-links\" }, _attrs))} data-v-a97df893><!--[-->`);\n      _ssrRenderList(__props.links, (link) => {\n        _push(`<li class=\"${_ssrRenderClass([`depth-${link.depth}`])}\" data-v-a97df893><a${_ssrRenderAttr(\"href\", `#${link.id}`)} class=\"${_ssrRenderClass([_unref(activeHeadings).includes(link.id) && \"active\"])}\" data-v-a97df893>${_ssrInterpolate(link.text)}</a>`);\n        if (link.children) {\n          _push(_ssrRenderComponent(_component_DocsTocLinks, {\n            links: link.children,\n            onMove: ($event) => childMove($event)\n          }, null, _parent));\n        } else {\n          _push(`<!---->`);\n        }\n        _push(`</li>`);\n      });\n      _push(`<!--]--></ul>`);\n    };\n  }\n});\n",
-      "start": 1708425381883,
-      "end": 1708425381883,
+      "start": 1708606108022,
+      "end": 1708606108022,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -303,20 +303,20 @@
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708425381888,
-      "end": 1708425381888,
+      "start": 1708606108026,
+      "end": 1708606108026,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708425381888,
-      "end": 1708425381888,
+      "start": 1708606108026,
+      "end": 1708606108026,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708425381888,
-      "end": 1708425381888,
+      "start": 1708606108027,
+      "end": 1708606108027,
       "order": "normal"
     }
   ]

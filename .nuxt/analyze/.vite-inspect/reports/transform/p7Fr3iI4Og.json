@@ -4,51 +4,51 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { renderSlot as _renderSlot, resolveComponent as _resolveComponent, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock } from \"vue\"\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'ProseA',\n  props: {\n  href: {\n    type: String,\n    default: ''\n  },\n  target: {\n    type: String,\n    default: undefined,\n    required: false\n  }\n},\n  setup(__props) {\n\n\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_NuxtLink = _resolveComponent(\"NuxtLink\")!\n\n  return (_openBlock(), _createBlock(_component_NuxtLink, {\n    to: __props.href,\n    target: __props.target\n  }, {\n    default: _withCtx(() => [\n      _renderSlot(_ctx.$slots, \"default\", {}, undefined, true)\n    ]),\n    _: 3\n  }, 8, [\"to\", \"target\"]))\n}\n}\n\n})",
-      "start": 1708425375286,
-      "end": 1708425375286
+      "start": 1708606101098,
+      "end": 1708606101098
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708425375287,
-      "end": 1708425375287,
+      "start": 1708606101099,
+      "end": 1708606101099,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708425375292,
-      "end": 1708425375292,
+      "start": 1708606101102,
+      "end": 1708606101102,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { renderSlot as _renderSlot, resolveComponent as _resolveComponent, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock } from \"vue\"\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'ProseA',\n  props: {\n  href: {\n    type: String,\n    default: ''\n  },\n  target: {\n    type: String,\n    default: undefined,\n    required: false\n  }\n},\n  setup(__props) {\n\n\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_NuxtLink = _resolveComponent(\"NuxtLink\")!\n\n  return (_openBlock(), _createBlock(_component_NuxtLink, {\n    to: __props.href,\n    target: __props.target\n  }, {\n    default: _withCtx(() => [\n      _renderSlot(_ctx.$slots, \"default\", {}, undefined, true)\n    ]),\n    _: 3\n  }, 8, [\"to\", \"target\"]))\n}\n}\n\n})",
-      "start": 1708425375294,
-      "end": 1708425375295,
+      "start": 1708606101102,
+      "end": 1708606101102,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708425375295,
-      "end": 1708425375295,
+      "start": 1708606101102,
+      "end": 1708606101102,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708425375295,
-      "end": 1708425375295,
+      "start": 1708606101103,
+      "end": 1708606101103,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708425375295,
-      "end": 1708425375295,
+      "start": 1708606101103,
+      "end": 1708606101103,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { renderSlot as _renderSlot, resolveComponent as _resolveComponent, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock } from \"vue\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ProseA\",\n  props: {\n    href: {\n      type: String,\n      default: \"\"\n    },\n    target: {\n      type: String,\n      default: void 0,\n      required: false\n    }\n  },\n  setup(__props) {\n    return (_ctx, _cache) => {\n      const _component_NuxtLink = _resolveComponent(\"NuxtLink\");\n      return _openBlock(), _createBlock(_component_NuxtLink, {\n        to: __props.href,\n        target: __props.target\n      }, {\n        default: _withCtx(() => [\n          _renderSlot(_ctx.$slots, \"default\", {}, void 0, true)\n        ]),\n        _: 3\n      }, 8, [\"to\", \"target\"]);\n    };\n  }\n});\n",
-      "start": 1708425375295,
-      "end": 1708425375966,
+      "start": 1708606101103,
+      "end": 1708606101660,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -64,171 +64,171 @@
     },
     {
       "name": "vite:json",
-      "start": 1708425375966,
-      "end": 1708425375966,
+      "start": 1708606101660,
+      "end": 1708606101660,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708425375966,
-      "end": 1708425375966,
+      "start": 1708606101660,
+      "end": 1708606101660,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708425375966,
-      "end": 1708425375966,
+      "start": 1708606101660,
+      "end": 1708606101660,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708425375966,
-      "end": 1708425375966,
+      "start": 1708606101660,
+      "end": 1708606101660,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708425375967,
-      "end": 1708425375967,
+      "start": 1708606101660,
+      "end": 1708606101660,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708425375967,
-      "end": 1708425375967,
+      "start": 1708606101660,
+      "end": 1708606101660,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1708425375967,
-      "end": 1708425375967,
+      "start": 1708606101660,
+      "end": 1708606101660,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708425375967,
-      "end": 1708425375967,
+      "start": 1708606101661,
+      "end": 1708606101661,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708425375967,
-      "end": 1708425375967,
+      "start": 1708606101661,
+      "end": 1708606101661,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708425375967,
-      "end": 1708425375967,
+      "start": 1708606101661,
+      "end": 1708606101661,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708425375968,
-      "end": 1708425375968,
+      "start": 1708606101666,
+      "end": 1708606101666,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708425375968,
-      "end": 1708425375968,
+      "start": 1708606101666,
+      "end": 1708606101666,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708425375968,
-      "end": 1708425375968,
+      "start": 1708606101666,
+      "end": 1708606101666,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708425375968,
-      "end": 1708425375968,
+      "start": 1708606101667,
+      "end": 1708606101667,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708425375968,
-      "end": 1708425375968,
+      "start": 1708606101667,
+      "end": 1708606101667,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708425375968,
-      "end": 1708425375968,
+      "start": 1708606101667,
+      "end": 1708606101667,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708425375968,
-      "end": 1708425375968,
+      "start": 1708606101667,
+      "end": 1708606101667,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708425375968,
-      "end": 1708425375968,
+      "start": 1708606101667,
+      "end": 1708606101667,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708425375970,
-      "end": 1708425375970,
+      "start": 1708606101669,
+      "end": 1708606101669,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708425375970,
-      "end": 1708425375977,
+      "start": 1708606101669,
+      "end": 1708606101676,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708425375978,
-      "end": 1708425375978,
+      "start": 1708606101676,
+      "end": 1708606101677,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708425375978,
-      "end": 1708425375978,
+      "start": 1708606101677,
+      "end": 1708606101677,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1708425375979,
-      "end": 1708425375979,
+      "start": 1708606101677,
+      "end": 1708606101677,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1708425375979,
-      "end": 1708425375979,
+      "start": 1708606101677,
+      "end": 1708606101677,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
       "result": "import { default as __nuxt_component_0 } from \"/workspace/Kubernetes-Bootcamp/node_modules/nuxt/dist/app/components/nuxt-link\";\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { renderSlot as _renderSlot, resolveComponent as _resolveComponent, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock } from \"vue\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ProseA\",\n  props: {\n    href: {\n      type: String,\n      default: \"\"\n    },\n    target: {\n      type: String,\n      default: void 0,\n      required: false\n    }\n  },\n  setup(__props) {\n    return (_ctx, _cache) => {\n      const _component_NuxtLink = __nuxt_component_0;\n      return _openBlock(), _createBlock(_component_NuxtLink, {\n        to: __props.href,\n        target: __props.target\n      }, {\n        default: _withCtx(() => [\n          _renderSlot(_ctx.$slots, \"default\", {}, void 0, true)\n        ]),\n        _: 3\n      }, 8, [\"to\", \"target\"]);\n    };\n  }\n});\n",
-      "start": 1708425375979,
-      "end": 1708425375979,
+      "start": 1708606101677,
+      "end": 1708606101678,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708425375980,
-      "end": 1708425375980,
+      "start": 1708606101678,
+      "end": 1708606101678,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708425375980,
-      "end": 1708425375980,
+      "start": 1708606101678,
+      "end": 1708606101678,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708425375980,
-      "end": 1708425375980,
+      "start": 1708606101678,
+      "end": 1708606101678,
       "order": "normal"
     }
   ]

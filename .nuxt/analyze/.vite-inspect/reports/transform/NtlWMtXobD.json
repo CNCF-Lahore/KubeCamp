@@ -4,27 +4,27 @@
     {
       "name": "vite:load-fallback",
       "result": "<script setup lang=\"ts\">\nimport type { PropType } from 'vue'\nimport type { TocLink } from '@nuxt/content/dist/runtime/types'\n\ndefineProps({\n  links: {\n    type: Array as PropType<TocLink[]>,\n    default: () => []\n  }\n})\n\nconst emit = defineEmits(['move'])\n\nconst router = useRouter()\n\nconst { activeHeadings, updateHeadings } = useScrollspy()\n\nif (process.client) {\n  setTimeout(() => {\n    updateHeadings([\n      ...document.querySelectorAll('.document-driven-page h1, .docus-content h1'),\n      ...document.querySelectorAll('.document-driven-page h2, .docus-content h2'),\n      ...document.querySelectorAll('.document-driven-page h3, .docus-content h3'),\n      ...document.querySelectorAll('.document-driven-page h4, .docus-content h4')\n    ])\n  }, 300)\n}\n\nfunction scrollToHeading (id: string) {\n  router.push(`#${id}`)\n  emit('move', id)\n}\n\nfunction childMove(id: string) {\n  emit('move', id)\n}\n</script>\n\n<template>\n  <ul class=\"docs-toc-links\">\n    <li\n      v-for=\"link in links\"\n      :key=\"link.text\"\n      :class=\"[`depth-${link.depth}`]\"\n    >\n      <a\n        :href=\"`#${link.id}`\"\n        :class=\"[activeHeadings.includes(link.id) && 'active']\"\n        @click.prevent=\"scrollToHeading(link.id)\"\n      >\n        {{ link.text }}\n      </a>\n      <DocsTocLinks\n        v-if=\"link.children\"\n        :links=\"link.children\"\n        @move=\"childMove($event)\"\n      />\n    </li>\n  </ul>\n</template>\n\n<style scoped lang=\"ts\">\ncss({\n  '.docs-toc-links': {\n    '.depth-3': {\n      paddingLeft: '{space.3}'\n    },\n    '.depth-4': {\n      paddingLeft: '{space.6}'\n    },\n    a: {\n      display: 'block',\n      padding: '{space.1} 0',\n      fontSize: '{text.sm.fontSize}',\n      lineHeight: '{text.sm.lineHeight}',\n      color: '{color.gray.500}',\n      truncate: true,\n      '@lg': {\n        paddingRight: '{space.3}'\n      },\n      '&:not(.active):hover': {\n        color: '{color.gray.900}',\n      },\n      '@dark': {\n        '&:not(.active):hover': {\n          color: '{color.gray.400}',\n        },\n      },\n      '&.active': {\n        color: '{color.primary.500}'\n      }\n    }\n  }\n})\n</style>\n",
-      "start": 1708425373891,
-      "end": 1708425374094,
+      "start": 1708606099796,
+      "end": 1708606100038,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708425374094,
-      "end": 1708425374094,
+      "start": 1708606100038,
+      "end": 1708606100038,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708425374094,
-      "end": 1708425374094,
+      "start": 1708606100038,
+      "end": 1708606100038,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "<script setup lang=\"ts\">\nimport type { PropType } from 'vue'\nimport type { TocLink } from '@nuxt/content/dist/runtime/types'\n\ndefineProps({\n  links: {\n    type: Array as PropType<TocLink[]>,\n    default: () => []\n  }\n})\n\nconst emit = defineEmits(['move'])\n\nconst router = useRouter()\n\nconst { activeHeadings, updateHeadings } = useScrollspy()\n\nif (process.client) {\n  setTimeout(() => {\n    updateHeadings([\n      ...document.querySelectorAll('.document-driven-page h1, .docus-content h1'),\n      ...document.querySelectorAll('.document-driven-page h2, .docus-content h2'),\n      ...document.querySelectorAll('.document-driven-page h3, .docus-content h3'),\n      ...document.querySelectorAll('.document-driven-page h4, .docus-content h4')\n    ])\n  }, 300)\n}\n\nfunction scrollToHeading (id: string) {\n  router.push(`#${id}`)\n  emit('move', id)\n}\n\nfunction childMove(id: string) {\n  emit('move', id)\n}\n</script>\n\n<template>\n  <ul class=\"docs-toc-links\">\n    <li\n      v-for=\"link in links\"\n      :key=\"link.text\"\n      :class=\"[`depth-${link.depth}`]\"\n    >\n      <a\n        :href=\"`#${link.id}`\"\n        :class=\"[activeHeadings.includes(link.id) && 'active']\"\n        @click.prevent=\"scrollToHeading(link.id)\"\n      >\n        {{ link.text }}\n      </a>\n      <DocsTocLinks\n        v-if=\"link.children\"\n        :links=\"link.children\"\n        @move=\"childMove($event)\"\n      />\n    </li>\n  </ul>\n</template>\n\n<style scoped lang=\"postcss\" transformed>\n.docs-toc-links .depth-3{padding-left:var(--space-3);}.docs-toc-links .depth-4{padding-left:var(--space-6);}.docs-toc-links a{display:block;padding:var(--space-1) 0;font-size:var(--text-sm-fontSize);line-height:var(--text-sm-lineHeight);color:var(--color-gray-500);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}@media (min-width: 1024px){.docs-toc-links a{padding-right:var(--space-3);}}.docs-toc-links a:not(.active):hover{color:var(--color-gray-900);}:root.dark .docs-toc-links a:not(.active):hover{color:var(--color-gray-400);}.docs-toc-links a.active{color:var(--color-primary-500);}\n</style>\n",
-      "start": 1708425374094,
-      "end": 1708425374101,
+      "start": 1708606100038,
+      "end": 1708606100042,
       "order": "pre",
       "sourcemaps": {
         "version": 3,
@@ -38,45 +38,45 @@
     },
     {
       "name": "content-slot",
-      "start": 1708425374101,
-      "end": 1708425374101,
+      "start": 1708606100042,
+      "end": 1708606100042,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708425374101,
-      "end": 1708425374101,
+      "start": 1708606100042,
+      "end": 1708606100042,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708425374101,
-      "end": 1708425374101,
+      "start": 1708606100042,
+      "end": 1708606100042,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1708425374101,
-      "end": 1708425374101,
+      "start": 1708606100042,
+      "end": 1708606100042,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1708425374101,
-      "end": 1708425374101,
+      "start": 1708606100042,
+      "end": 1708606100042,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708425374101,
-      "end": 1708425374101,
+      "start": 1708606100042,
+      "end": 1708606100042,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "import _sfc_main from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsTocLinks.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsTocLinks.vue?vue&type=script&setup=true&lang.ts\";\nimport \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsTocLinks.vue?vue&type=style&index=0&scoped=a97df893&transformed=true&lang.postcss\";\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"__scopeId\", \"data-v-a97df893\"]]);\n",
-      "start": 1708425374101,
-      "end": 1708425374123,
+      "start": 1708606100042,
+      "end": 1708606100078,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -84,152 +84,152 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708425374123,
-      "end": 1708425374123,
+      "start": 1708606100078,
+      "end": 1708606100078,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708425374124,
-      "end": 1708425374124,
+      "start": 1708606100078,
+      "end": 1708606100078,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708425374124,
-      "end": 1708425374124,
+      "start": 1708606100078,
+      "end": 1708606100078,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1708425374124,
-      "end": 1708425374124,
+      "start": 1708606100078,
+      "end": 1708606100078,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708425374124,
-      "end": 1708425374124,
+      "start": 1708606100078,
+      "end": 1708606100078,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708425374124,
-      "end": 1708425374124,
+      "start": 1708606100079,
+      "end": 1708606100079,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708425374124,
-      "end": 1708425374124,
+      "start": 1708606100079,
+      "end": 1708606100079,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708425374124,
-      "end": 1708425374124,
+      "start": 1708606100079,
+      "end": 1708606100079,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708425374124,
-      "end": 1708425374124,
+      "start": 1708606100079,
+      "end": 1708606100079,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708425374124,
-      "end": 1708425374124,
+      "start": 1708606100079,
+      "end": 1708606100079,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708425374125,
-      "end": 1708425374125,
+      "start": 1708606100079,
+      "end": 1708606100079,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708425374125,
-      "end": 1708425374125,
+      "start": 1708606100079,
+      "end": 1708606100079,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708425374125,
-      "end": 1708425374125,
+      "start": 1708606100079,
+      "end": 1708606100079,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708425374125,
-      "end": 1708425374125,
+      "start": 1708606100079,
+      "end": 1708606100079,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708425374125,
-      "end": 1708425374125,
+      "start": 1708606100079,
+      "end": 1708606100079,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708425374125,
-      "end": 1708425374125,
+      "start": 1708606100079,
+      "end": 1708606100079,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708425374125,
-      "end": 1708425374127,
+      "start": 1708606100080,
+      "end": 1708606100082,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708425374127,
-      "end": 1708425374127,
+      "start": 1708606100082,
+      "end": 1708606100082,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708425374127,
-      "end": 1708425374127,
+      "start": 1708606100082,
+      "end": 1708606100082,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1708425374127,
-      "end": 1708425374127,
+      "start": 1708606100082,
+      "end": 1708606100082,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1708425374127,
-      "end": 1708425374127,
+      "start": 1708606100082,
+      "end": 1708606100082,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1708425374128,
-      "end": 1708425374128,
+      "start": 1708606100083,
+      "end": 1708606100083,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708425374128,
-      "end": 1708425374128,
+      "start": 1708606100083,
+      "end": 1708606100083,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708425374128,
-      "end": 1708425374128,
+      "start": 1708606100083,
+      "end": 1708606100083,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708425374128,
-      "end": 1708425374128,
+      "start": 1708606100083,
+      "end": 1708606100083,
       "order": "normal"
     }
   ]
