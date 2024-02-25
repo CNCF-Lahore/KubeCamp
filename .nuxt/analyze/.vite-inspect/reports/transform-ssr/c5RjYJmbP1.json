@@ -4,8 +4,8 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, toDisplayString as _toDisplayString, createVNode as _createVNode, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderClass as _ssrRenderClass, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\"\n\nimport type { PropType } from 'vue'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'DocsAsideTree',\n  __ssrInlineRender: true,\n  props: {\n  links: {\n    type: Array as PropType<any>,\n    default: () => []\n  },\n  level: {\n    type: Number,\n    default: 0\n  },\n  max: {\n    type: Number,\n    default: null\n  },\n  parent: {\n    type: Object as PropType<any>,\n    default: null\n  }\n},\n  setup(__props) {\n\nconst props = __props\n\nconst route = useRoute()\nconst { config } = useDocus()\n\nconst collapsedMap = useState(`docus-docs-aside-collapse-map-${props.parent?._path || '/'}`, () => {\n  if (props.level === 0) {\n    return {}\n  }\n  return (props.links as any [])\n    .filter(link => !!link.children)\n    .reduce((map, link) => {\n      map[link._path] = true\n      return map\n    }, {})\n})\n\nconst isActive = (link: any) => {\n  return route.path === link._path\n}\n\nconst isCollapsed = (link: any) => {\n  if (link.children) {\n    // Directory has been toggled manually, use its state\n    if (typeof collapsedMap.value[link._path] !== 'undefined') {\n      return collapsedMap.value[link._path]\n    }\n\n    // Check if aside.collapsed has been set in YML\n    if ([true, false].includes(link?.aside?.collapsed)) { return link.aside.collapsed }\n\n    // Return value grabbed from the link\n    if (link?.collapsed) { return link?.collapsed }\n\n    if (config?.value?.aside?.collapsed) { return config.value.aside?.collapsed }\n  }\n\n  return false\n}\n\nconst toggleCollapse = (link: any) => (collapsedMap.value[link._path] = !isCollapsed(link))\n\nconst hasNesting = computed(() => props.links.some((link: any) => link.children))\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_Icon = _resolveComponent(\"Icon\")!\n  const _component_NuxtLink = _resolveComponent(\"NuxtLink\")!\n  const _component_DocsAsideTree = _resolveComponent(\"DocsAsideTree\", true)!\n\n  _push(`<ul${_ssrRenderAttrs(_mergeProps({ class: \"docs-aside-tree\" }, _attrs))} data-v-d42239fd><!--[-->`)\n  _ssrRenderList(__props.links, (link) => {\n    _push(`<li class=\"${_ssrRenderClass({\n        'has-parent-icon': __props.parent?.icon,\n        'has-children': __props.level > 0 && link.children,\n        'bordered': __props.level > 0 || !_unref(hasNesting),\n        'active': isActive(link),\n      })}\" data-v-d42239fd>`)\n    if (link.children) {\n      _push(`<button class=\"title-collapsible-button\" data-v-d42239fd><span class=\"content\" data-v-d42239fd>`)\n      if (link?.navigation?.icon || link.icon) {\n        _push(_ssrRenderComponent(_component_Icon, {\n          name: link?.navigation?.icon || link.icon,\n          class: \"icon\"\n        }, null, _parent))\n      } else {\n        _push(`<!---->`)\n      }\n      _push(`<span data-v-d42239fd>${_ssrInterpolate(link?.navigation?.title || link.title || link._path)}</span></span><span data-v-d42239fd>`)\n      _push(_ssrRenderComponent(_component_Icon, {\n        name: isCollapsed(link) ? 'lucide:chevrons-up-down' : 'lucide:chevrons-down-up',\n        class: \"collapsible-icon\"\n      }, null, _parent))\n      _push(`</span></button>`)\n    } else {\n      _push(_ssrRenderComponent(_component_NuxtLink, {\n        to: link.redirect ? link.redirect : link._path,\n        class: [\"link\", {\n          'padded': __props.level > 0 || !_unref(hasNesting),\n          'active': isActive(link),\n        }],\n        exact: link.exact\n      }, {\n        default: _withCtx((_, _push, _parent, _scopeId) => {\n          if (_push) {\n            _push(`<span class=\"content\" data-v-d42239fd${_scopeId}>`)\n            if (link?.navigation?.icon || link.icon) {\n              _push(_ssrRenderComponent(_component_Icon, {\n                name: link?.navigation?.icon || link.icon,\n                class: \"icon\"\n              }, null, _parent, _scopeId))\n            } else {\n              _push(`<!---->`)\n            }\n            _push(`<span data-v-d42239fd${\n              _scopeId\n            }>${\n              _ssrInterpolate(link?.navigation?.title || link.title || link._path)\n            }</span></span>`)\n          } else {\n            return [\n              _createVNode(\"span\", { class: \"content\" }, [\n                (link?.navigation?.icon || link.icon)\n                  ? (_openBlock(), _createBlock(_component_Icon, {\n                      key: 0,\n                      name: link?.navigation?.icon || link.icon,\n                      class: \"icon\"\n                    }, null, 8, [\"name\"]))\n                  : _createCommentVNode(\"\", true),\n                _createVNode(\"span\", null, _toDisplayString(link?.navigation?.title || link.title || link._path), 1)\n              ])\n            ]\n          }\n        }),\n        _: 2\n      }, _parent))\n    }\n    if (link.children?.length && (__props.max === null || __props.level + 1 < __props.max)) {\n      _push(_ssrRenderComponent(_component_DocsAsideTree, {\n        style: (!isCollapsed(link)) ? null : { display: \"none\" },\n        links: link.children,\n        level: __props.level + 1,\n        parent: link,\n        max: __props.max,\n        class: \"recursive\"\n      }, null, _parent))\n    } else {\n      _push(`<!---->`)\n    }\n    _push(`</li>`)\n  })\n  _push(`<!--]--></ul>`)\n}\n}\n\n})",
-      "start": 1708620641848,
-      "end": 1708620641848,
+      "start": 1708886642242,
+      "end": 1708886642242,
       "sourcemaps": {
         "version": 3,
         "sources": [
@@ -20,71 +20,71 @@
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708620641848,
-      "end": 1708620641848,
+      "start": 1708886642243,
+      "end": 1708886642243,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708620641848,
-      "end": 1708620641849,
+      "start": 1708886642243,
+      "end": 1708886642243,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708620641853,
-      "end": 1708620641853,
+      "start": 1708886642247,
+      "end": 1708886642247,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708620641853,
-      "end": 1708620641853,
+      "start": 1708886642247,
+      "end": 1708886642247,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, toDisplayString as _toDisplayString, createVNode as _createVNode, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderClass as _ssrRenderClass, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\"\n\nimport type { PropType } from 'vue'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'DocsAsideTree',\n  __ssrInlineRender: true,\n  props: {\n  links: {\n    type: Array as PropType<any>,\n    default: () => []\n  },\n  level: {\n    type: Number,\n    default: 0\n  },\n  max: {\n    type: Number,\n    default: null\n  },\n  parent: {\n    type: Object as PropType<any>,\n    default: null\n  }\n},\n  setup(__props) {\n\nconst props = __props\n\nconst route = useRoute()\nconst { config } = useDocus()\n\nconst collapsedMap = useState(`docus-docs-aside-collapse-map-${props.parent?._path || '/'}`, () => {\n  if (props.level === 0) {\n    return {}\n  }\n  return (props.links as any [])\n    .filter(link => !!link.children)\n    .reduce((map, link) => {\n      map[link._path] = true\n      return map\n    }, {})\n})\n\nconst isActive = (link: any) => {\n  return route.path === link._path\n}\n\nconst isCollapsed = (link: any) => {\n  if (link.children) {\n    // Directory has been toggled manually, use its state\n    if (typeof collapsedMap.value[link._path] !== 'undefined') {\n      return collapsedMap.value[link._path]\n    }\n\n    // Check if aside.collapsed has been set in YML\n    if ([true, false].includes(link?.aside?.collapsed)) { return link.aside.collapsed }\n\n    // Return value grabbed from the link\n    if (link?.collapsed) { return link?.collapsed }\n\n    if (config?.value?.aside?.collapsed) { return config.value.aside?.collapsed }\n  }\n\n  return false\n}\n\nconst toggleCollapse = (link: any) => (collapsedMap.value[link._path] = !isCollapsed(link))\n\nconst hasNesting = computed(() => props.links.some((link: any) => link.children))\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_Icon = _resolveComponent(\"Icon\")!\n  const _component_NuxtLink = _resolveComponent(\"NuxtLink\")!\n  const _component_DocsAsideTree = _resolveComponent(\"DocsAsideTree\", true)!\n\n  _push(`<ul${_ssrRenderAttrs(_mergeProps({ class: \"docs-aside-tree\" }, _attrs))} data-v-d42239fd><!--[-->`)\n  _ssrRenderList(__props.links, (link) => {\n    _push(`<li class=\"${_ssrRenderClass({\n        'has-parent-icon': __props.parent?.icon,\n        'has-children': __props.level > 0 && link.children,\n        'bordered': __props.level > 0 || !_unref(hasNesting),\n        'active': isActive(link),\n      })}\" data-v-d42239fd>`)\n    if (link.children) {\n      _push(`<button class=\"title-collapsible-button\" data-v-d42239fd><span class=\"content\" data-v-d42239fd>`)\n      if (link?.navigation?.icon || link.icon) {\n        _push(_ssrRenderComponent(_component_Icon, {\n          name: link?.navigation?.icon || link.icon,\n          class: \"icon\"\n        }, null, _parent))\n      } else {\n        _push(`<!---->`)\n      }\n      _push(`<span data-v-d42239fd>${_ssrInterpolate(link?.navigation?.title || link.title || link._path)}</span></span><span data-v-d42239fd>`)\n      _push(_ssrRenderComponent(_component_Icon, {\n        name: isCollapsed(link) ? 'lucide:chevrons-up-down' : 'lucide:chevrons-down-up',\n        class: \"collapsible-icon\"\n      }, null, _parent))\n      _push(`</span></button>`)\n    } else {\n      _push(_ssrRenderComponent(_component_NuxtLink, {\n        to: link.redirect ? link.redirect : link._path,\n        class: [\"link\", {\n          'padded': __props.level > 0 || !_unref(hasNesting),\n          'active': isActive(link),\n        }],\n        exact: link.exact\n      }, {\n        default: _withCtx((_, _push, _parent, _scopeId) => {\n          if (_push) {\n            _push(`<span class=\"content\" data-v-d42239fd${_scopeId}>`)\n            if (link?.navigation?.icon || link.icon) {\n              _push(_ssrRenderComponent(_component_Icon, {\n                name: link?.navigation?.icon || link.icon,\n                class: \"icon\"\n              }, null, _parent, _scopeId))\n            } else {\n              _push(`<!---->`)\n            }\n            _push(`<span data-v-d42239fd${\n              _scopeId\n            }>${\n              _ssrInterpolate(link?.navigation?.title || link.title || link._path)\n            }</span></span>`)\n          } else {\n            return [\n              _createVNode(\"span\", { class: \"content\" }, [\n                (link?.navigation?.icon || link.icon)\n                  ? (_openBlock(), _createBlock(_component_Icon, {\n                      key: 0,\n                      name: link?.navigation?.icon || link.icon,\n                      class: \"icon\"\n                    }, null, 8, [\"name\"]))\n                  : _createCommentVNode(\"\", true),\n                _createVNode(\"span\", null, _toDisplayString(link?.navigation?.title || link.title || link._path), 1)\n              ])\n            ]\n          }\n        }),\n        _: 2\n      }, _parent))\n    }\n    if (link.children?.length && (__props.max === null || __props.level + 1 < __props.max)) {\n      _push(_ssrRenderComponent(_component_DocsAsideTree, {\n        style: (!isCollapsed(link)) ? null : { display: \"none\" },\n        links: link.children,\n        level: __props.level + 1,\n        parent: link,\n        max: __props.max,\n        class: \"recursive\"\n      }, null, _parent))\n    } else {\n      _push(`<!---->`)\n    }\n    _push(`</li>`)\n  })\n  _push(`<!--]--></ul>`)\n}\n}\n\n})",
-      "start": 1708620641853,
-      "end": 1708620641853,
+      "start": 1708886642247,
+      "end": 1708886642247,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, toDisplayString as _toDisplayString, createVNode as _createVNode, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderClass as _ssrRenderClass, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\"\n\nimport type { PropType } from 'vue'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'DocsAsideTree',\n  __ssrInlineRender: true,\n  props: {\n  links: {\n    type: Array as PropType<any>,\n    default: () => []\n  },\n  level: {\n    type: Number,\n    default: 0\n  },\n  max: {\n    type: Number,\n    default: null\n  },\n  parent: {\n    type: Object as PropType<any>,\n    default: null\n  }\n},\n  setup(__props) {\n\nconst props = __props\n\nconst route = useRoute()\nconst { config } = useDocus()\n\nconst collapsedMap = useState(`docus-docs-aside-collapse-map-${props.parent?._path || '/'}`, () => {\n  if (props.level === 0) {\n    return {}\n  }\n  return (props.links as any [])\n    .filter(link => !!link.children)\n    .reduce((map, link) => {\n      map[link._path] = true\n      return map\n    }, {})\n})\n\nconst isActive = (link: any) => {\n  return route.path === link._path\n}\n\nconst isCollapsed = (link: any) => {\n  if (link.children) {\n    // Directory has been toggled manually, use its state\n    if (typeof collapsedMap.value[link._path] !== 'undefined') {\n      return collapsedMap.value[link._path]\n    }\n\n    // Check if aside.collapsed has been set in YML\n    if ([true, false].includes(link?.aside?.collapsed)) { return link.aside.collapsed }\n\n    // Return value grabbed from the link\n    if (link?.collapsed) { return link?.collapsed }\n\n    if (config?.value?.aside?.collapsed) { return config.value.aside?.collapsed }\n  }\n\n  return false\n}\n\nconst toggleCollapse = (link: any) => (collapsedMap.value[link._path] = !isCollapsed(link))\n\nconst hasNesting = computed(() => props.links.some((link: any) => link.children))\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_Icon = _resolveComponent(\"Icon\")!\n  const _component_NuxtLink = _resolveComponent(\"NuxtLink\")!\n  const _component_DocsAsideTree = _resolveComponent(\"DocsAsideTree\", true)!\n\n  _push(`<ul${_ssrRenderAttrs(_mergeProps({ class: \"docs-aside-tree\" }, _attrs))} data-v-d42239fd><!--[-->`)\n  _ssrRenderList(__props.links, (link) => {\n    _push(`<li class=\"${_ssrRenderClass({\n        'has-parent-icon': __props.parent?.icon,\n        'has-children': __props.level > 0 && link.children,\n        'bordered': __props.level > 0 || !_unref(hasNesting),\n        'active': isActive(link),\n      })}\" data-v-d42239fd>`)\n    if (link.children) {\n      _push(`<button class=\"title-collapsible-button\" data-v-d42239fd><span class=\"content\" data-v-d42239fd>`)\n      if (link?.navigation?.icon || link.icon) {\n        _push(_ssrRenderComponent(_component_Icon, {\n          name: link?.navigation?.icon || link.icon,\n          class: \"icon\"\n        }, null, _parent))\n      } else {\n        _push(`<!---->`)\n      }\n      _push(`<span data-v-d42239fd>${_ssrInterpolate(link?.navigation?.title || link.title || link._path)}</span></span><span data-v-d42239fd>`)\n      _push(_ssrRenderComponent(_component_Icon, {\n        name: isCollapsed(link) ? 'lucide:chevrons-up-down' : 'lucide:chevrons-down-up',\n        class: \"collapsible-icon\"\n      }, null, _parent))\n      _push(`</span></button>`)\n    } else {\n      _push(_ssrRenderComponent(_component_NuxtLink, {\n        to: link.redirect ? link.redirect : link._path,\n        class: [\"link\", {\n          'padded': __props.level > 0 || !_unref(hasNesting),\n          'active': isActive(link),\n        }],\n        exact: link.exact\n      }, {\n        default: _withCtx((_, _push, _parent, _scopeId) => {\n          if (_push) {\n            _push(`<span class=\"content\" data-v-d42239fd${_scopeId}>`)\n            if (link?.navigation?.icon || link.icon) {\n              _push(_ssrRenderComponent(_component_Icon, {\n                name: link?.navigation?.icon || link.icon,\n                class: \"icon\"\n              }, null, _parent, _scopeId))\n            } else {\n              _push(`<!---->`)\n            }\n            _push(`<span data-v-d42239fd${\n              _scopeId\n            }>${\n              _ssrInterpolate(link?.navigation?.title || link.title || link._path)\n            }</span></span>`)\n          } else {\n            return [\n              _createVNode(\"span\", { class: \"content\" }, [\n                (link?.navigation?.icon || link.icon)\n                  ? (_openBlock(), _createBlock(_component_Icon, {\n                      key: 0,\n                      name: link?.navigation?.icon || link.icon,\n                      class: \"icon\"\n                    }, null, 8, [\"name\"]))\n                  : _createCommentVNode(\"\", true),\n                _createVNode(\"span\", null, _toDisplayString(link?.navigation?.title || link.title || link._path), 1)\n              ])\n            ]\n          }\n        }),\n        _: 2\n      }, _parent))\n    }\n    if (link.children?.length && (__props.max === null || __props.level + 1 < __props.max)) {\n      _push(_ssrRenderComponent(_component_DocsAsideTree, {\n        style: (!isCollapsed(link)) ? null : { display: \"none\" },\n        links: link.children,\n        level: __props.level + 1,\n        parent: link,\n        max: __props.max,\n        class: \"recursive\"\n      }, null, _parent))\n    } else {\n      _push(`<!---->`)\n    }\n    _push(`</li>`)\n  })\n  _push(`<!--]--></ul>`)\n}\n}\n\n})",
-      "start": 1708620641853,
-      "end": 1708620641853,
+      "start": 1708886642247,
+      "end": 1708886642247,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708620641853,
-      "end": 1708620641853,
+      "start": 1708886642247,
+      "end": 1708886642247,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708620641853,
-      "end": 1708620641853,
+      "start": 1708886642247,
+      "end": 1708886642247,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708620641853,
-      "end": 1708620641854,
+      "start": 1708886642248,
+      "end": 1708886642248,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708620641854,
-      "end": 1708620641854,
+      "start": 1708886642248,
+      "end": 1708886642248,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, toDisplayString as _toDisplayString, createVNode as _createVNode, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderClass as _ssrRenderClass, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"DocsAsideTree\",\n  __ssrInlineRender: true,\n  props: {\n    links: {\n      type: Array,\n      default: () => []\n    },\n    level: {\n      type: Number,\n      default: 0\n    },\n    max: {\n      type: Number,\n      default: null\n    },\n    parent: {\n      type: Object,\n      default: null\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const route = useRoute();\n    const { config } = useDocus();\n    const collapsedMap = useState(`docus-docs-aside-collapse-map-${props.parent?._path || \"/\"}`, () => {\n      if (props.level === 0) {\n        return {};\n      }\n      return props.links.filter((link) => !!link.children).reduce((map, link) => {\n        map[link._path] = true;\n        return map;\n      }, {});\n    });\n    const isActive = (link) => {\n      return route.path === link._path;\n    };\n    const isCollapsed = (link) => {\n      if (link.children) {\n        if (typeof collapsedMap.value[link._path] !== \"undefined\") {\n          return collapsedMap.value[link._path];\n        }\n        if ([true, false].includes(link?.aside?.collapsed)) {\n          return link.aside.collapsed;\n        }\n        if (link?.collapsed) {\n          return link?.collapsed;\n        }\n        if (config?.value?.aside?.collapsed) {\n          return config.value.aside?.collapsed;\n        }\n      }\n      return false;\n    };\n    const toggleCollapse = (link) => collapsedMap.value[link._path] = !isCollapsed(link);\n    const hasNesting = computed(() => props.links.some((link) => link.children));\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_Icon = _resolveComponent(\"Icon\");\n      const _component_NuxtLink = _resolveComponent(\"NuxtLink\");\n      const _component_DocsAsideTree = _resolveComponent(\"DocsAsideTree\", true);\n      _push(`<ul${_ssrRenderAttrs(_mergeProps({ class: \"docs-aside-tree\" }, _attrs))} data-v-d42239fd><!--[-->`);\n      _ssrRenderList(__props.links, (link) => {\n        _push(`<li class=\"${_ssrRenderClass({\n          \"has-parent-icon\": __props.parent?.icon,\n          \"has-children\": __props.level > 0 && link.children,\n          \"bordered\": __props.level > 0 || !_unref(hasNesting),\n          \"active\": isActive(link)\n        })}\" data-v-d42239fd>`);\n        if (link.children) {\n          _push(`<button class=\"title-collapsible-button\" data-v-d42239fd><span class=\"content\" data-v-d42239fd>`);\n          if (link?.navigation?.icon || link.icon) {\n            _push(_ssrRenderComponent(_component_Icon, {\n              name: link?.navigation?.icon || link.icon,\n              class: \"icon\"\n            }, null, _parent));\n          } else {\n            _push(`<!---->`);\n          }\n          _push(`<span data-v-d42239fd>${_ssrInterpolate(link?.navigation?.title || link.title || link._path)}</span></span><span data-v-d42239fd>`);\n          _push(_ssrRenderComponent(_component_Icon, {\n            name: isCollapsed(link) ? \"lucide:chevrons-up-down\" : \"lucide:chevrons-down-up\",\n            class: \"collapsible-icon\"\n          }, null, _parent));\n          _push(`</span></button>`);\n        } else {\n          _push(_ssrRenderComponent(_component_NuxtLink, {\n            to: link.redirect ? link.redirect : link._path,\n            class: [\"link\", {\n              \"padded\": __props.level > 0 || !_unref(hasNesting),\n              \"active\": isActive(link)\n            }],\n            exact: link.exact\n          }, {\n            default: _withCtx((_, _push2, _parent2, _scopeId) => {\n              if (_push2) {\n                _push2(`<span class=\"content\" data-v-d42239fd${_scopeId}>`);\n                if (link?.navigation?.icon || link.icon) {\n                  _push2(_ssrRenderComponent(_component_Icon, {\n                    name: link?.navigation?.icon || link.icon,\n                    class: \"icon\"\n                  }, null, _parent2, _scopeId));\n                } else {\n                  _push2(`<!---->`);\n                }\n                _push2(`<span data-v-d42239fd${_scopeId}>${_ssrInterpolate(link?.navigation?.title || link.title || link._path)}</span></span>`);\n              } else {\n                return [\n                  _createVNode(\"span\", { class: \"content\" }, [\n                    link?.navigation?.icon || link.icon ? (_openBlock(), _createBlock(_component_Icon, {\n                      key: 0,\n                      name: link?.navigation?.icon || link.icon,\n                      class: \"icon\"\n                    }, null, 8, [\"name\"])) : _createCommentVNode(\"\", true),\n                    _createVNode(\"span\", null, _toDisplayString(link?.navigation?.title || link.title || link._path), 1)\n                  ])\n                ];\n              }\n            }),\n            _: 2\n          }, _parent));\n        }\n        if (link.children?.length && (__props.max === null || __props.level + 1 < __props.max)) {\n          _push(_ssrRenderComponent(_component_DocsAsideTree, {\n            style: !isCollapsed(link) ? null : { display: \"none\" },\n            links: link.children,\n            level: __props.level + 1,\n            parent: link,\n            max: __props.max,\n            class: \"recursive\"\n          }, null, _parent));\n        } else {\n          _push(`<!---->`);\n        }\n        _push(`</li>`);\n      });\n      _push(`<!--]--></ul>`);\n    };\n  }\n});\n",
-      "start": 1708620641854,
-      "end": 1708620642030,
+      "start": 1708886642248,
+      "end": 1708886642501,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -103,135 +103,135 @@
     },
     {
       "name": "vite:json",
-      "start": 1708620642030,
-      "end": 1708620642030,
+      "start": 1708886642501,
+      "end": 1708886642501,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708620642030,
-      "end": 1708620642030,
+      "start": 1708886642501,
+      "end": 1708886642501,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708620642030,
-      "end": 1708620642030,
+      "start": 1708886642501,
+      "end": 1708886642501,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708620642030,
-      "end": 1708620642030,
+      "start": 1708886642501,
+      "end": 1708886642501,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708620642030,
-      "end": 1708620642030,
+      "start": 1708886642501,
+      "end": 1708886642502,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708620642030,
-      "end": 1708620642030,
+      "start": 1708886642501,
+      "end": 1708886642502,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708620642030,
-      "end": 1708620642030,
+      "start": 1708886642502,
+      "end": 1708886642502,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708620642030,
-      "end": 1708620642030,
+      "start": 1708886642502,
+      "end": 1708886642502,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708620642030,
-      "end": 1708620642030,
+      "start": 1708886642502,
+      "end": 1708886642502,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708620642036,
-      "end": 1708620642037,
+      "start": 1708886642502,
+      "end": 1708886642502,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708620642037,
-      "end": 1708620642038,
+      "start": 1708886642502,
+      "end": 1708886642502,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708620642039,
-      "end": 1708620642040,
+      "start": 1708886642502,
+      "end": 1708886642503,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708620642042,
-      "end": 1708620642042,
+      "start": 1708886642503,
+      "end": 1708886642503,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708620642042,
-      "end": 1708620642042,
+      "start": 1708886642503,
+      "end": 1708886642503,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708620642042,
-      "end": 1708620642042,
+      "start": 1708886642503,
+      "end": 1708886642503,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708620642042,
-      "end": 1708620642042,
+      "start": 1708886642503,
+      "end": 1708886642503,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708620642043,
-      "end": 1708620642043,
+      "start": 1708886642503,
+      "end": 1708886642503,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708620642048,
-      "end": 1708620642048,
+      "start": 1708886642503,
+      "end": 1708886642503,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708620642048,
-      "end": 1708620642048,
+      "start": 1708886642503,
+      "end": 1708886642503,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708620642048,
-      "end": 1708620642049,
+      "start": 1708886642503,
+      "end": 1708886642506,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708620642048,
-      "end": 1708620642049,
+      "start": 1708886642503,
+      "end": 1708886642506,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { useRoute } from '#app/composables/router';\nimport { useDocus } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/composables/useDocus.ts';\nimport { useState } from '#app/composables/state';\nimport { computed } from 'vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, toDisplayString as _toDisplayString, createVNode as _createVNode, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderClass as _ssrRenderClass, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"DocsAsideTree\",\n  __ssrInlineRender: true,\n  props: {\n    links: {\n      type: Array,\n      default: () => []\n    },\n    level: {\n      type: Number,\n      default: 0\n    },\n    max: {\n      type: Number,\n      default: null\n    },\n    parent: {\n      type: Object,\n      default: null\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const route = useRoute();\n    const { config } = useDocus();\n    const collapsedMap = useState(`docus-docs-aside-collapse-map-${props.parent?._path || \"/\"}`, () => {\n      if (props.level === 0) {\n        return {};\n      }\n      return props.links.filter((link) => !!link.children).reduce((map, link) => {\n        map[link._path] = true;\n        return map;\n      }, {});\n    });\n    const isActive = (link) => {\n      return route.path === link._path;\n    };\n    const isCollapsed = (link) => {\n      if (link.children) {\n        if (typeof collapsedMap.value[link._path] !== \"undefined\") {\n          return collapsedMap.value[link._path];\n        }\n        if ([true, false].includes(link?.aside?.collapsed)) {\n          return link.aside.collapsed;\n        }\n        if (link?.collapsed) {\n          return link?.collapsed;\n        }\n        if (config?.value?.aside?.collapsed) {\n          return config.value.aside?.collapsed;\n        }\n      }\n      return false;\n    };\n    const toggleCollapse = (link) => collapsedMap.value[link._path] = !isCollapsed(link);\n    const hasNesting = computed(() => props.links.some((link) => link.children));\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_Icon = _resolveComponent(\"Icon\");\n      const _component_NuxtLink = _resolveComponent(\"NuxtLink\");\n      const _component_DocsAsideTree = _resolveComponent(\"DocsAsideTree\", true);\n      _push(`<ul${_ssrRenderAttrs(_mergeProps({ class: \"docs-aside-tree\" }, _attrs))} data-v-d42239fd><!--[-->`);\n      _ssrRenderList(__props.links, (link) => {\n        _push(`<li class=\"${_ssrRenderClass({\n          \"has-parent-icon\": __props.parent?.icon,\n          \"has-children\": __props.level > 0 && link.children,\n          \"bordered\": __props.level > 0 || !_unref(hasNesting),\n          \"active\": isActive(link)\n        })}\" data-v-d42239fd>`);\n        if (link.children) {\n          _push(`<button class=\"title-collapsible-button\" data-v-d42239fd><span class=\"content\" data-v-d42239fd>`);\n          if (link?.navigation?.icon || link.icon) {\n            _push(_ssrRenderComponent(_component_Icon, {\n              name: link?.navigation?.icon || link.icon,\n              class: \"icon\"\n            }, null, _parent));\n          } else {\n            _push(`<!---->`);\n          }\n          _push(`<span data-v-d42239fd>${_ssrInterpolate(link?.navigation?.title || link.title || link._path)}</span></span><span data-v-d42239fd>`);\n          _push(_ssrRenderComponent(_component_Icon, {\n            name: isCollapsed(link) ? \"lucide:chevrons-up-down\" : \"lucide:chevrons-down-up\",\n            class: \"collapsible-icon\"\n          }, null, _parent));\n          _push(`</span></button>`);\n        } else {\n          _push(_ssrRenderComponent(_component_NuxtLink, {\n            to: link.redirect ? link.redirect : link._path,\n            class: [\"link\", {\n              \"padded\": __props.level > 0 || !_unref(hasNesting),\n              \"active\": isActive(link)\n            }],\n            exact: link.exact\n          }, {\n            default: _withCtx((_, _push2, _parent2, _scopeId) => {\n              if (_push2) {\n                _push2(`<span class=\"content\" data-v-d42239fd${_scopeId}>`);\n                if (link?.navigation?.icon || link.icon) {\n                  _push2(_ssrRenderComponent(_component_Icon, {\n                    name: link?.navigation?.icon || link.icon,\n                    class: \"icon\"\n                  }, null, _parent2, _scopeId));\n                } else {\n                  _push2(`<!---->`);\n                }\n                _push2(`<span data-v-d42239fd${_scopeId}>${_ssrInterpolate(link?.navigation?.title || link.title || link._path)}</span></span>`);\n              } else {\n                return [\n                  _createVNode(\"span\", { class: \"content\" }, [\n                    link?.navigation?.icon || link.icon ? (_openBlock(), _createBlock(_component_Icon, {\n                      key: 0,\n                      name: link?.navigation?.icon || link.icon,\n                      class: \"icon\"\n                    }, null, 8, [\"name\"])) : _createCommentVNode(\"\", true),\n                    _createVNode(\"span\", null, _toDisplayString(link?.navigation?.title || link.title || link._path), 1)\n                  ])\n                ];\n              }\n            }),\n            _: 2\n          }, _parent));\n        }\n        if (link.children?.length && (__props.max === null || __props.level + 1 < __props.max)) {\n          _push(_ssrRenderComponent(_component_DocsAsideTree, {\n            style: !isCollapsed(link) ? null : { display: \"none\" },\n            links: link.children,\n            level: __props.level + 1,\n            parent: link,\n            max: __props.max,\n            class: \"recursive\"\n          }, null, _parent));\n        } else {\n          _push(`<!---->`);\n        }\n        _push(`</li>`);\n      });\n      _push(`<!--]--></ul>`);\n    };\n  }\n});\n",
-      "start": 1708620642053,
-      "end": 1708620642057,
+      "start": 1708886642506,
+      "end": 1708886642513,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -245,8 +245,8 @@
     {
       "name": "nuxt:imports-transform",
       "result": "import { useRoute } from '#app/composables/router';\nimport { useDocus } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/composables/useDocus.ts';\nimport { useState } from '#app/composables/state';\nimport { computed } from 'vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, toDisplayString as _toDisplayString, createVNode as _createVNode, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderClass as _ssrRenderClass, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"DocsAsideTree\",\n  __ssrInlineRender: true,\n  props: {\n    links: {\n      type: Array,\n      default: () => []\n    },\n    level: {\n      type: Number,\n      default: 0\n    },\n    max: {\n      type: Number,\n      default: null\n    },\n    parent: {\n      type: Object,\n      default: null\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const route = useRoute();\n    const { config } = useDocus();\n    const collapsedMap = useState(`docus-docs-aside-collapse-map-${props.parent?._path || \"/\"}`, () => {\n      if (props.level === 0) {\n        return {};\n      }\n      return props.links.filter((link) => !!link.children).reduce((map, link) => {\n        map[link._path] = true;\n        return map;\n      }, {});\n    });\n    const isActive = (link) => {\n      return route.path === link._path;\n    };\n    const isCollapsed = (link) => {\n      if (link.children) {\n        if (typeof collapsedMap.value[link._path] !== \"undefined\") {\n          return collapsedMap.value[link._path];\n        }\n        if ([true, false].includes(link?.aside?.collapsed)) {\n          return link.aside.collapsed;\n        }\n        if (link?.collapsed) {\n          return link?.collapsed;\n        }\n        if (config?.value?.aside?.collapsed) {\n          return config.value.aside?.collapsed;\n        }\n      }\n      return false;\n    };\n    const toggleCollapse = (link) => collapsedMap.value[link._path] = !isCollapsed(link);\n    const hasNesting = computed(() => props.links.some((link) => link.children));\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_Icon = _resolveComponent(\"Icon\");\n      const _component_NuxtLink = _resolveComponent(\"NuxtLink\");\n      const _component_DocsAsideTree = _resolveComponent(\"DocsAsideTree\", true);\n      _push(`<ul${_ssrRenderAttrs(_mergeProps({ class: \"docs-aside-tree\" }, _attrs))} data-v-d42239fd><!--[-->`);\n      _ssrRenderList(__props.links, (link) => {\n        _push(`<li class=\"${_ssrRenderClass({\n          \"has-parent-icon\": __props.parent?.icon,\n          \"has-children\": __props.level > 0 && link.children,\n          \"bordered\": __props.level > 0 || !_unref(hasNesting),\n          \"active\": isActive(link)\n        })}\" data-v-d42239fd>`);\n        if (link.children) {\n          _push(`<button class=\"title-collapsible-button\" data-v-d42239fd><span class=\"content\" data-v-d42239fd>`);\n          if (link?.navigation?.icon || link.icon) {\n            _push(_ssrRenderComponent(_component_Icon, {\n              name: link?.navigation?.icon || link.icon,\n              class: \"icon\"\n            }, null, _parent));\n          } else {\n            _push(`<!---->`);\n          }\n          _push(`<span data-v-d42239fd>${_ssrInterpolate(link?.navigation?.title || link.title || link._path)}</span></span><span data-v-d42239fd>`);\n          _push(_ssrRenderComponent(_component_Icon, {\n            name: isCollapsed(link) ? \"lucide:chevrons-up-down\" : \"lucide:chevrons-down-up\",\n            class: \"collapsible-icon\"\n          }, null, _parent));\n          _push(`</span></button>`);\n        } else {\n          _push(_ssrRenderComponent(_component_NuxtLink, {\n            to: link.redirect ? link.redirect : link._path,\n            class: [\"link\", {\n              \"padded\": __props.level > 0 || !_unref(hasNesting),\n              \"active\": isActive(link)\n            }],\n            exact: link.exact\n          }, {\n            default: _withCtx((_, _push2, _parent2, _scopeId) => {\n              if (_push2) {\n                _push2(`<span class=\"content\" data-v-d42239fd${_scopeId}>`);\n                if (link?.navigation?.icon || link.icon) {\n                  _push2(_ssrRenderComponent(_component_Icon, {\n                    name: link?.navigation?.icon || link.icon,\n                    class: \"icon\"\n                  }, null, _parent2, _scopeId));\n                } else {\n                  _push2(`<!---->`);\n                }\n                _push2(`<span data-v-d42239fd${_scopeId}>${_ssrInterpolate(link?.navigation?.title || link.title || link._path)}</span></span>`);\n              } else {\n                return [\n                  _createVNode(\"span\", { class: \"content\" }, [\n                    link?.navigation?.icon || link.icon ? (_openBlock(), _createBlock(_component_Icon, {\n                      key: 0,\n                      name: link?.navigation?.icon || link.icon,\n                      class: \"icon\"\n                    }, null, 8, [\"name\"])) : _createCommentVNode(\"\", true),\n                    _createVNode(\"span\", null, _toDisplayString(link?.navigation?.title || link.title || link._path), 1)\n                  ])\n                ];\n              }\n            }),\n            _: 2\n          }, _parent));\n        }\n        if (link.children?.length && (__props.max === null || __props.level + 1 < __props.max)) {\n          _push(_ssrRenderComponent(_component_DocsAsideTree, {\n            style: !isCollapsed(link) ? null : { display: \"none\" },\n            links: link.children,\n            level: __props.level + 1,\n            parent: link,\n            max: __props.max,\n            class: \"recursive\"\n          }, null, _parent));\n        } else {\n          _push(`<!---->`);\n        }\n        _push(`</li>`);\n      });\n      _push(`<!--]--></ul>`);\n    };\n  }\n});\n",
-      "start": 1708620642053,
-      "end": 1708620642057,
+      "start": 1708886642506,
+      "end": 1708886642513,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -259,39 +259,39 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1708620642057,
-      "end": 1708620642057,
+      "start": 1708886642513,
+      "end": 1708886642513,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708620642057,
-      "end": 1708620642057,
+      "start": 1708886642513,
+      "end": 1708886642513,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708620642057,
-      "end": 1708620642057,
+      "start": 1708886642513,
+      "end": 1708886642513,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708620642057,
-      "end": 1708620642057,
+      "start": 1708886642513,
+      "end": 1708886642513,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1708620642057,
-      "end": 1708620642057,
+      "start": 1708886642513,
+      "end": 1708886642513,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
       "result": "import { default as __nuxt_component_0 } from \"/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/Icon.vue\";\nimport { default as __nuxt_component_1 } from \"/workspace/Kubernetes-Bootcamp/node_modules/nuxt/dist/app/components/nuxt-link\";\nimport { default as __nuxt_component_2 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsAsideTree.vue\";\nimport { useRoute } from '#app/composables/router';\nimport { useDocus } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/composables/useDocus.ts';\nimport { useState } from '#app/composables/state';\nimport { computed } from 'vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, toDisplayString as _toDisplayString, createVNode as _createVNode, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderClass as _ssrRenderClass, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"DocsAsideTree\",\n  __ssrInlineRender: true,\n  props: {\n    links: {\n      type: Array,\n      default: () => []\n    },\n    level: {\n      type: Number,\n      default: 0\n    },\n    max: {\n      type: Number,\n      default: null\n    },\n    parent: {\n      type: Object,\n      default: null\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const route = useRoute();\n    const { config } = useDocus();\n    const collapsedMap = useState(`docus-docs-aside-collapse-map-${props.parent?._path || \"/\"}`, () => {\n      if (props.level === 0) {\n        return {};\n      }\n      return props.links.filter((link) => !!link.children).reduce((map, link) => {\n        map[link._path] = true;\n        return map;\n      }, {});\n    });\n    const isActive = (link) => {\n      return route.path === link._path;\n    };\n    const isCollapsed = (link) => {\n      if (link.children) {\n        if (typeof collapsedMap.value[link._path] !== \"undefined\") {\n          return collapsedMap.value[link._path];\n        }\n        if ([true, false].includes(link?.aside?.collapsed)) {\n          return link.aside.collapsed;\n        }\n        if (link?.collapsed) {\n          return link?.collapsed;\n        }\n        if (config?.value?.aside?.collapsed) {\n          return config.value.aside?.collapsed;\n        }\n      }\n      return false;\n    };\n    const toggleCollapse = (link) => collapsedMap.value[link._path] = !isCollapsed(link);\n    const hasNesting = computed(() => props.links.some((link) => link.children));\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_Icon = __nuxt_component_0;\n      const _component_NuxtLink = __nuxt_component_1;\n      const _component_DocsAsideTree = __nuxt_component_2;\n      _push(`<ul${_ssrRenderAttrs(_mergeProps({ class: \"docs-aside-tree\" }, _attrs))} data-v-d42239fd><!--[-->`);\n      _ssrRenderList(__props.links, (link) => {\n        _push(`<li class=\"${_ssrRenderClass({\n          \"has-parent-icon\": __props.parent?.icon,\n          \"has-children\": __props.level > 0 && link.children,\n          \"bordered\": __props.level > 0 || !_unref(hasNesting),\n          \"active\": isActive(link)\n        })}\" data-v-d42239fd>`);\n        if (link.children) {\n          _push(`<button class=\"title-collapsible-button\" data-v-d42239fd><span class=\"content\" data-v-d42239fd>`);\n          if (link?.navigation?.icon || link.icon) {\n            _push(_ssrRenderComponent(_component_Icon, {\n              name: link?.navigation?.icon || link.icon,\n              class: \"icon\"\n            }, null, _parent));\n          } else {\n            _push(`<!---->`);\n          }\n          _push(`<span data-v-d42239fd>${_ssrInterpolate(link?.navigation?.title || link.title || link._path)}</span></span><span data-v-d42239fd>`);\n          _push(_ssrRenderComponent(_component_Icon, {\n            name: isCollapsed(link) ? \"lucide:chevrons-up-down\" : \"lucide:chevrons-down-up\",\n            class: \"collapsible-icon\"\n          }, null, _parent));\n          _push(`</span></button>`);\n        } else {\n          _push(_ssrRenderComponent(_component_NuxtLink, {\n            to: link.redirect ? link.redirect : link._path,\n            class: [\"link\", {\n              \"padded\": __props.level > 0 || !_unref(hasNesting),\n              \"active\": isActive(link)\n            }],\n            exact: link.exact\n          }, {\n            default: _withCtx((_, _push2, _parent2, _scopeId) => {\n              if (_push2) {\n                _push2(`<span class=\"content\" data-v-d42239fd${_scopeId}>`);\n                if (link?.navigation?.icon || link.icon) {\n                  _push2(_ssrRenderComponent(_component_Icon, {\n                    name: link?.navigation?.icon || link.icon,\n                    class: \"icon\"\n                  }, null, _parent2, _scopeId));\n                } else {\n                  _push2(`<!---->`);\n                }\n                _push2(`<span data-v-d42239fd${_scopeId}>${_ssrInterpolate(link?.navigation?.title || link.title || link._path)}</span></span>`);\n              } else {\n                return [\n                  _createVNode(\"span\", { class: \"content\" }, [\n                    link?.navigation?.icon || link.icon ? (_openBlock(), _createBlock(_component_Icon, {\n                      key: 0,\n                      name: link?.navigation?.icon || link.icon,\n                      class: \"icon\"\n                    }, null, 8, [\"name\"])) : _createCommentVNode(\"\", true),\n                    _createVNode(\"span\", null, _toDisplayString(link?.navigation?.title || link.title || link._path), 1)\n                  ])\n                ];\n              }\n            }),\n            _: 2\n          }, _parent));\n        }\n        if (link.children?.length && (__props.max === null || __props.level + 1 < __props.max)) {\n          _push(_ssrRenderComponent(_component_DocsAsideTree, {\n            style: !isCollapsed(link) ? null : { display: \"none\" },\n            links: link.children,\n            level: __props.level + 1,\n            parent: link,\n            max: __props.max,\n            class: \"recursive\"\n          }, null, _parent));\n        } else {\n          _push(`<!---->`);\n        }\n        _push(`</li>`);\n      });\n      _push(`<!--]--></ul>`);\n    };\n  }\n});\n",
-      "start": 1708620642057,
-      "end": 1708620642058,
+      "start": 1708886642514,
+      "end": 1708886642518,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -304,20 +304,20 @@
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708620642058,
-      "end": 1708620642059,
+      "start": 1708886642519,
+      "end": 1708886642519,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708620642059,
-      "end": 1708620642059,
+      "start": 1708886642522,
+      "end": 1708886642522,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708620642059,
-      "end": 1708620642059,
+      "start": 1708886642522,
+      "end": 1708886642522,
       "order": "normal"
     }
   ]

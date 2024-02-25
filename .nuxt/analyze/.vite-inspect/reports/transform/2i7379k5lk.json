@@ -4,218 +4,218 @@
     {
       "name": "vite:load-fallback",
       "result": "import { unref } from 'vue';\nimport { kebabCase } from 'scule';\n\nconst referencesRegex = new RegExp(\n  \"\\\\{([^}]+)\\\\}\",\n  \"g\"\n);\nconst keyRegex = /{(.*)}/g;\nconst mqPlainRegex = /@([^\\s]+)/g;\nconst mqCssRegex = /@([^\\s]+)\\s{/g;\nconst darkRegex = /(@dark\\s{)/g;\nconst lightRegex = /(@light\\s{)/g;\nconst DARK = \"@dark\";\nconst LIGHT = \"@light\";\nconst INITIAL = \"@initial\";\nconst dtRegex = /\\$dt\\(['|`|\"]([a-zA-Z0-9.]+)['|`|\"](?:,\\s*(['|`|\"]([a-zA-Z0-9.]+)['|`|\"]))?\\)?/g;\nconst variantsRegex = /(...)?variants(,)?/mg;\nconst responsiveMediaQueryRegex = /^(:|\\.)/;\nconst outputFileNames = [\n  \"/__pinceau_css.css\",\n  \"/__pinceau_ts.ts\",\n  \"/__pinceau_utils.ts\"\n];\n\nfunction set(object, paths, value, splitter = \".\") {\n  if (typeof paths === \"string\") {\n    paths = paths.split(splitter);\n  }\n  const limit = paths.length - 1;\n  for (let i = 0; i < limit; ++i) {\n    const key2 = paths[i];\n    object = object[key2] ?? (object[key2] = {});\n  }\n  const key = paths[limit];\n  object[key] = value;\n}\nfunction get(object, paths, splitter = \".\") {\n  if (typeof paths === \"string\") {\n    paths = paths.split(splitter);\n  }\n  const limit = paths.length - 1;\n  for (let i = 0; i < limit; ++i) {\n    const key2 = paths[i];\n    object = object[key2] ?? (object[key2] = {});\n  }\n  const key = paths[limit];\n  return object[key];\n}\nfunction walkTokens(obj, cb, paths = []) {\n  let result = {};\n  if (obj.value) {\n    result = cb(obj, result, paths);\n  } else {\n    for (const k in obj) {\n      if (obj[k] && typeof obj[k] === \"object\") {\n        result[k] = walkTokens(obj[k], cb, [...paths, k]);\n      }\n    }\n  }\n  return result;\n}\nfunction normalizeConfig(obj, mqKeys, removeSchemaKeys = false) {\n  let result = {};\n  if (obj.value) {\n    result = obj;\n  } else {\n    for (const k in obj) {\n      if (k === \"$schema\") {\n        if (!removeSchemaKeys) {\n          result[k] = obj[k];\n        }\n        continue;\n      }\n      if (k === \"utils\") {\n        result[k] = obj[k];\n        continue;\n      }\n      if (obj[k] && (typeof obj[k] === \"string\" || typeof obj[k] === \"number\" || typeof obj[k] === \"boolean\" || typeof obj[k] === \"symbol\" || typeof obj[k] === \"bigint\")) {\n        result[k] = { value: obj[k] };\n      } else if (obj[k] && typeof obj[k] === \"object\") {\n        const keys = Object.keys(obj[k]);\n        if (keys.includes(\"initial\") && keys.some((key) => mqKeys.includes(key))) {\n          result[k] = { value: obj[k] };\n          continue;\n        }\n        result[k] = normalizeConfig(obj[k], mqKeys, removeSchemaKeys);\n      }\n    }\n  }\n  return result;\n}\n\nfunction createTokensHelper(theme = {}, options = {}) {\n  const defaultHelperOptions = {\n    key: \"attributes.variable\",\n    onNotFound: false,\n    ...options\n  };\n  function $tokens(path = void 0, options2) {\n    if (!path) {\n      return unref(theme);\n    }\n    const $tokensOptions = { ...defaultHelperOptions, ...options2 };\n    const { key, onNotFound } = $tokensOptions;\n    const token = get(unref(theme), path);\n    if (!token && typeof onNotFound === \"function\") {\n      onNotFound(path, $tokensOptions);\n      return;\n    }\n    return key ? token ? token[key] ? token[key] : get(token, key) : token : token;\n  }\n  return $tokens.bind(this);\n}\nfunction transformTokensToVariable(property) {\n  return (property || \"\").replace(keyRegex, (_, tokenPath) => resolveVariableFromPath(tokenPath));\n}\nfunction resolveVariableFromPath(path) {\n  return `var(${pathToVarName(path)})`;\n}\nfunction pathToVarName(path) {\n  if (Array.isArray(path)) {\n    path = path.join(\"-\");\n  }\n  if (path.charAt(0) === \"{\" && path.charAt(path.length - 1) === \"}\") {\n    path = path.substr(1, path.length - 2);\n  }\n  return `--${path.split(\".\").join(\"-\")}`;\n}\n\nfunction resolveCssProperty(property, value, style, selectors, localTokens = [], ctx, loc) {\n  const directive = resolveCustomDirectives(property, value, selectors, ctx, loc);\n  if (directive) {\n    return directive;\n  }\n  if (ctx?.utils?.[property]) {\n    if (typeof ctx.utils[property] === \"function\") {\n      return ctx.utils[property](value);\n    }\n    return value ? ctx.utils[property] : {};\n  }\n  value = castValues(property, value, localTokens, ctx, loc);\n  return {\n    [property]: value\n  };\n}\nfunction castValues(property, value, localTokens, ctx, loc) {\n  if (Array.isArray(value) || typeof value === \"string\" || typeof value === \"number\") {\n    if (Array.isArray(value)) {\n      value = value.map((v) => castValue(property, v, localTokens, ctx, loc)).join(\",\");\n    } else {\n      value = castValue(property, value, localTokens, ctx, loc);\n    }\n  }\n  return value;\n}\nfunction castValue(property, value, localTokens, ctx, loc) {\n  if (typeof value === \"number\") {\n    return value;\n  }\n  if (value.match(referencesRegex)) {\n    value = resolveReferences(property, value, localTokens, ctx, loc);\n  }\n  if (value === \"{}\") {\n    return \"\";\n  }\n  return value;\n}\nfunction resolveReferences(_, value, localTokens, ctx, loc) {\n  if (!(typeof value === \"string\")) {\n    return value;\n  }\n  value = value.replace(\n    referencesRegex,\n    (_2, tokenPath) => {\n      const varName = pathToVarName(tokenPath);\n      const variable = `var(${varName})`;\n      if (localTokens.includes(varName)) {\n        return variable;\n      }\n      const token = ctx.$tokens(tokenPath, { key: void 0, loc });\n      const tokenValue = typeof token === \"string\" ? token : token?.variable || token?.value;\n      if (!tokenValue) {\n        return variable;\n      }\n      return tokenValue;\n    }\n  );\n  return value;\n}\nfunction resolveCustomDirectives(property, value, selectors, ctx, loc) {\n  if (property.startsWith(\"@\")) {\n    const resolveColorScheme = (scheme) => {\n      scheme = ctx.options.colorSchemeMode === \"class\" ? `:root.${scheme}` : `@media (prefers-color-scheme: ${scheme})`;\n      const isMedia = scheme.startsWith(\"@media\");\n      if (ctx?.runtime) {\n        return {\n          \"@media\": {\n            [scheme]: value\n          }\n        };\n      }\n      return {\n        [isMedia ? scheme : `${scheme} &`]: value\n      };\n    };\n    if (property === DARK) {\n      return resolveColorScheme(\"dark\");\n    }\n    if (property === LIGHT) {\n      return resolveColorScheme(\"light\");\n    }\n    if (property === INITIAL) {\n      const token = ctx.$tokens(\"media.initial\", { key: \"value\", onNotFound: false, loc });\n      return {\n        [`@media${token ? ` ${token}` : \"\"}`]: value\n      };\n    }\n    const mediaQueries = ctx.$tokens(\"media\", { key: void 0, loc });\n    if (mediaQueries) {\n      const query = property.replace(\"@\", \"\");\n      if (mediaQueries[query]) {\n        return {\n          [`@media ${mediaQueries[query].value}`]: value\n        };\n      }\n    }\n    return {\n      [property]: value\n    };\n  }\n}\nfunction resolveThemeRule(mq, content, theme, colorSchemeMode) {\n  let responsiveSelector = \"\";\n  if (mq === \"dark\" || mq === \"light\") {\n    if (colorSchemeMode === \"class\") {\n      responsiveSelector = `:root.${mq}`;\n    } else {\n      responsiveSelector = `(prefers-color-scheme: ${mq})`;\n    }\n  } else if (mq !== \"initial\" && theme) {\n    const queryToken = theme?.media?.[mq];\n    if (queryToken) {\n      responsiveSelector = queryToken.value;\n    }\n  }\n  let prefix;\n  if (!responsiveSelector) {\n    prefix = \"@media { :root {\";\n  } else if (responsiveSelector.startsWith(\".\")) {\n    prefix = `@media { :root${responsiveSelector} {`;\n  } else if (responsiveSelector.startsWith(\":root\")) {\n    prefix = `@media { ${responsiveSelector} {`;\n  } else {\n    prefix = `@media ${responsiveSelector} { :root {`;\n  }\n  return `${`${`${prefix}--pinceau-mq: ${String(mq)}; ${content}`} } }`}\n`;\n}\n\nconst comma = /\\s*,\\s*(?![^()]*\\))/;\nconst getResolvedSelectors = (parentSelectors, nestedSelectors) => parentSelectors.reduce(\n  (resolvedSelectors, parentSelector) => {\n    resolvedSelectors.push(\n      ...nestedSelectors.map(\n        (selector) => selector.includes(\"&\") ? selector.replace(\n          /&/g,\n          /[ +>|~]/.test(parentSelector) && /&.*&/.test(selector) ? `:is(${parentSelector})` : parentSelector\n        ) : `${parentSelector} ${selector}`\n      )\n    );\n    return resolvedSelectors;\n  },\n  []\n);\nconst { prototype: { toString } } = Object;\nconst stringify = (value, replacer = void 0) => {\n  const used = /* @__PURE__ */ new WeakSet();\n  const write = (cssText, selectors, conditions, name, data, isAtRuleLike, isVariableLike) => {\n    for (let i = 0; i < conditions.length; ++i) {\n      if (!used.has(conditions[i])) {\n        used.add(conditions[i]);\n        cssText += `${conditions[i]}{`;\n      }\n    }\n    if (selectors.length && !used.has(selectors)) {\n      used.add(selectors);\n      cssText += `${selectors}{`;\n    }\n    if (isAtRuleLike) {\n      name = `${name} `;\n    } else if (isVariableLike) {\n      name = `${name}:`;\n    } else {\n      name = `${kebabCase(name)}:`;\n    }\n    cssText += `${name + String(data)};`;\n    return cssText;\n  };\n  const parse = (style, selectors, conditions, prevName, prevData) => {\n    let cssText = \"\";\n    for (const name in style) {\n      const isAtRuleLike = name.charCodeAt(0) === 64;\n      const isVariableLike = name.charCodeAt(0) === 45 && name.charCodeAt(1) === 45;\n      for (const data of isAtRuleLike && Array.isArray(style[name]) ? style[name] : [style[name]]) {\n        if (replacer && (name !== prevName || data !== prevData)) {\n          const next = replacer(name, data, style, selectors);\n          if (next !== null) {\n            cssText += typeof next === \"object\" && next ? parse(next, selectors, conditions, name, data) : next == null ? \"\" : next;\n            continue;\n          }\n        }\n        const isObjectLike = typeof data === \"object\" && data && data.toString === toString;\n        if (isObjectLike) {\n          if (used.has(selectors)) {\n            used.delete(selectors);\n            cssText += \"}\";\n          }\n          const usedName = Object(name);\n          let nextSelectors;\n          if (isAtRuleLike) {\n            nextSelectors = selectors;\n            cssText += parse(\n              data,\n              nextSelectors,\n              conditions.concat(usedName)\n            );\n          } else {\n            nextSelectors = selectors.length ? getResolvedSelectors(selectors, name.split(comma)) : name.split(comma);\n            cssText += parse(\n              data,\n              nextSelectors,\n              conditions\n            );\n          }\n          if (used.has(usedName)) {\n            used.delete(usedName);\n            cssText += \"}\";\n          }\n          if (used.has(nextSelectors)) {\n            used.delete(nextSelectors);\n            cssText += \"}\";\n          }\n        } else {\n          cssText = write(cssText, selectors, conditions, name, data, isAtRuleLike, isVariableLike);\n        }\n      }\n    }\n    return cssText;\n  };\n  return parse(value, [], []);\n};\n\nexport { DARK as D, INITIAL as I, LIGHT as L, resolveCssProperty as a, castValues as b, createTokensHelper as c, castValue as d, resolveReferences as e, resolveCustomDirectives as f, resolveThemeRule as g, get as h, referencesRegex as i, mqCssRegex as j, keyRegex as k, darkRegex as l, mqPlainRegex as m, normalizeConfig as n, outputFileNames as o, pathToVarName as p, lightRegex as q, resolveVariableFromPath as r, set as s, transformTokensToVariable as t, dtRegex as u, variantsRegex as v, walkTokens as w, responsiveMediaQueryRegex as x, getResolvedSelectors as y, stringify as z };\n",
-      "start": 1708620635191,
-      "end": 1708620635285,
+      "start": 1708886635206,
+      "end": 1708886635335,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708620635285,
-      "end": 1708620635285,
+      "start": 1708886635335,
+      "end": 1708886635335,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708620635285,
-      "end": 1708620635285,
+      "start": 1708886635335,
+      "end": 1708886635335,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
-      "start": 1708620635285,
-      "end": 1708620635285,
+      "start": 1708886635335,
+      "end": 1708886635335,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708620635285,
-      "end": 1708620635285,
+      "start": 1708886635335,
+      "end": 1708886635335,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708620635285,
-      "end": 1708620635285,
+      "start": 1708886635335,
+      "end": 1708886635335,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708620635285,
-      "end": 1708620635285,
+      "start": 1708886635335,
+      "end": 1708886635335,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1708620635285,
-      "end": 1708620635285,
+      "start": 1708886635335,
+      "end": 1708886635335,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1708620635285,
-      "end": 1708620635285,
+      "start": 1708886635335,
+      "end": 1708886635335,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708620635285,
-      "end": 1708620635285,
+      "start": 1708886635335,
+      "end": 1708886635335,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708620635285,
-      "end": 1708620635285,
+      "start": 1708886635335,
+      "end": 1708886635335,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708620635285,
-      "end": 1708620635285,
+      "start": 1708886635335,
+      "end": 1708886635335,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708620635285,
-      "end": 1708620635285,
+      "start": 1708886635335,
+      "end": 1708886635335,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708620635285,
-      "end": 1708620635285,
+      "start": 1708886635335,
+      "end": 1708886635335,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1708620635285,
-      "end": 1708620635285,
+      "start": 1708886635335,
+      "end": 1708886635335,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708620635285,
-      "end": 1708620635285,
+      "start": 1708886635335,
+      "end": 1708886635335,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708620635285,
-      "end": 1708620635285,
+      "start": 1708886635335,
+      "end": 1708886635335,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708620635285,
-      "end": 1708620635285,
+      "start": 1708886635335,
+      "end": 1708886635335,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708620635285,
-      "end": 1708620635285,
+      "start": 1708886635335,
+      "end": 1708886635335,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708620635285,
-      "end": 1708620635285,
+      "start": 1708886635335,
+      "end": 1708886635335,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708620635285,
-      "end": 1708620635285,
+      "start": 1708886635335,
+      "end": 1708886635335,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708620635285,
-      "end": 1708620635285,
+      "start": 1708886635335,
+      "end": 1708886635335,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708620635285,
-      "end": 1708620635285,
+      "start": 1708886635335,
+      "end": 1708886635335,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708620635286,
-      "end": 1708620635286,
+      "start": 1708886635335,
+      "end": 1708886635335,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708620635286,
-      "end": 1708620635286,
+      "start": 1708886635335,
+      "end": 1708886635335,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708620635286,
-      "end": 1708620635286,
+      "start": 1708886635335,
+      "end": 1708886635335,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708620635286,
-      "end": 1708620635286,
+      "start": 1708886635335,
+      "end": 1708886635335,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708620635286,
-      "end": 1708620635286,
+      "start": 1708886635335,
+      "end": 1708886635335,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708620635286,
-      "end": 1708620635286,
+      "start": 1708886635335,
+      "end": 1708886635335,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708620635286,
-      "end": 1708620635286,
+      "start": 1708886635335,
+      "end": 1708886635335,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1708620635286,
-      "end": 1708620635286,
+      "start": 1708886635336,
+      "end": 1708886635336,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1708620635286,
-      "end": 1708620635286,
+      "start": 1708886635336,
+      "end": 1708886635336,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1708620635286,
-      "end": 1708620635286,
+      "start": 1708886635336,
+      "end": 1708886635336,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708620635286,
-      "end": 1708620635286,
+      "start": 1708886635336,
+      "end": 1708886635336,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708620635286,
-      "end": 1708620635286,
+      "start": 1708886635336,
+      "end": 1708886635336,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708620635286,
-      "end": 1708620635286,
+      "start": 1708886635336,
+      "end": 1708886635336,
       "order": "normal"
     }
   ]

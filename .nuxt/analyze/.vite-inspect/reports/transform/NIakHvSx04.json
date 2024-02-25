@@ -4,51 +4,51 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, createElementBlock as _createElementBlock } from \"vue\"\n\nimport { useClipboard } from '@vueuse/core'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'CopyButton',\n  props: {\n  content: {\n    type: String,\n    default: ''\n  }\n},\n  setup(__props) {\n\nconst props = __props\n\nconst { copy: copyToClipboard } = useClipboard()\n\nconst state = ref('init')\n\nconst copy = (e: MouseEvent) => {\n  copyToClipboard(props.content)\n    .then(() => {\n      state.value = 'copied'\n\n      setTimeout(() => {\n        state.value = 'init'\n      }, 1000)\n    })\n    .catch(() => {\n      console.warn(\"Couldn't copy to clipboard!\")\n    })\n}\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_Icon = _resolveComponent(\"Icon\")!\n\n  return (_openBlock(), _createElementBlock(\"button\", {\n    class: \"copy rounded-lg bg-gray-800 px-2 py-2 font-mono text-xs font-semibold leading-none text-gray-400 focus:outline-none dark:bg-black\",\n    onClick: copy\n  }, [\n    (_unref(state) === 'copied')\n      ? (_openBlock(), _createBlock(_component_Icon, {\n          key: 0,\n          name: \"fa-check\",\n          class: \"h-4 w-4\"\n        }))\n      : (_openBlock(), _createBlock(_component_Icon, {\n          key: 1,\n          name: \"fa-copy\",\n          class: \"h-4 w-4\"\n        }))\n  ]))\n}\n}\n\n})",
-      "start": 1708620636006,
-      "end": 1708620636006
+      "start": 1708886636729,
+      "end": 1708886636729
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708620636007,
-      "end": 1708620636007,
+      "start": 1708886636729,
+      "end": 1708886636729,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708620636009,
-      "end": 1708620636009,
+      "start": 1708886636729,
+      "end": 1708886636730,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, createElementBlock as _createElementBlock } from \"vue\"\n\nimport { useClipboard } from '@vueuse/core'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'CopyButton',\n  props: {\n  content: {\n    type: String,\n    default: ''\n  }\n},\n  setup(__props) {\n\nconst props = __props\n\nconst { copy: copyToClipboard } = useClipboard()\n\nconst state = ref('init')\n\nconst copy = (e: MouseEvent) => {\n  copyToClipboard(props.content)\n    .then(() => {\n      state.value = 'copied'\n\n      setTimeout(() => {\n        state.value = 'init'\n      }, 1000)\n    })\n    .catch(() => {\n      console.warn(\"Couldn't copy to clipboard!\")\n    })\n}\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_Icon = _resolveComponent(\"Icon\")!\n\n  return (_openBlock(), _createElementBlock(\"button\", {\n    class: \"copy rounded-lg bg-gray-800 px-2 py-2 font-mono text-xs font-semibold leading-none text-gray-400 focus:outline-none dark:bg-black\",\n    onClick: copy\n  }, [\n    (_unref(state) === 'copied')\n      ? (_openBlock(), _createBlock(_component_Icon, {\n          key: 0,\n          name: \"fa-check\",\n          class: \"h-4 w-4\"\n        }))\n      : (_openBlock(), _createBlock(_component_Icon, {\n          key: 1,\n          name: \"fa-copy\",\n          class: \"h-4 w-4\"\n        }))\n  ]))\n}\n}\n\n})",
-      "start": 1708620636011,
-      "end": 1708620636011,
+      "start": 1708886636730,
+      "end": 1708886636730,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708620636012,
-      "end": 1708620636012,
+      "start": 1708886636730,
+      "end": 1708886636730,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708620636012,
-      "end": 1708620636012,
+      "start": 1708886636730,
+      "end": 1708886636730,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708620636012,
-      "end": 1708620636012,
+      "start": 1708886636730,
+      "end": 1708886636730,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createElementBlock as _createElementBlock } from \"vue\";\nimport { useClipboard } from \"@vueuse/core\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"CopyButton\",\n  props: {\n    content: {\n      type: String,\n      default: \"\"\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const { copy: copyToClipboard } = useClipboard();\n    const state = ref(\"init\");\n    const copy = (e) => {\n      copyToClipboard(props.content).then(() => {\n        state.value = \"copied\";\n        setTimeout(() => {\n          state.value = \"init\";\n        }, 1e3);\n      }).catch(() => {\n        console.warn(\"Couldn't copy to clipboard!\");\n      });\n    };\n    return (_ctx, _cache) => {\n      const _component_Icon = _resolveComponent(\"Icon\");\n      return _openBlock(), _createElementBlock(\"button\", {\n        class: \"copy rounded-lg bg-gray-800 px-2 py-2 font-mono text-xs font-semibold leading-none text-gray-400 focus:outline-none dark:bg-black\",\n        onClick: copy\n      }, [\n        _unref(state) === \"copied\" ? (_openBlock(), _createBlock(_component_Icon, {\n          key: 0,\n          name: \"fa-check\",\n          class: \"h-4 w-4\"\n        })) : (_openBlock(), _createBlock(_component_Icon, {\n          key: 1,\n          name: \"fa-copy\",\n          class: \"h-4 w-4\"\n        }))\n      ]);\n    };\n  }\n});\n",
-      "start": 1708620636012,
-      "end": 1708620636384,
+      "start": 1708886636730,
+      "end": 1708886636984,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -64,123 +64,123 @@
     },
     {
       "name": "vite:json",
-      "start": 1708620636384,
-      "end": 1708620636384,
+      "start": 1708886636984,
+      "end": 1708886636984,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708620636385,
-      "end": 1708620636385,
+      "start": 1708886636984,
+      "end": 1708886636984,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708620636385,
-      "end": 1708620636385,
+      "start": 1708886636984,
+      "end": 1708886636984,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708620636385,
-      "end": 1708620636385,
+      "start": 1708886636984,
+      "end": 1708886636984,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708620636385,
-      "end": 1708620636385,
+      "start": 1708886636985,
+      "end": 1708886636985,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708620636385,
-      "end": 1708620636385,
+      "start": 1708886636985,
+      "end": 1708886636985,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1708620636385,
-      "end": 1708620636385,
+      "start": 1708886636985,
+      "end": 1708886636985,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708620636386,
-      "end": 1708620636386,
+      "start": 1708886636985,
+      "end": 1708886636985,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708620636386,
-      "end": 1708620636386,
+      "start": 1708886636985,
+      "end": 1708886636985,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708620636386,
-      "end": 1708620636386,
+      "start": 1708886636986,
+      "end": 1708886636986,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708620636386,
-      "end": 1708620636386,
+      "start": 1708886636986,
+      "end": 1708886636986,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708620636386,
-      "end": 1708620636386,
+      "start": 1708886636986,
+      "end": 1708886636986,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708620636386,
-      "end": 1708620636386,
+      "start": 1708886636986,
+      "end": 1708886636986,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708620636386,
-      "end": 1708620636386,
+      "start": 1708886636986,
+      "end": 1708886636986,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708620636387,
-      "end": 1708620636387,
+      "start": 1708886636986,
+      "end": 1708886636986,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708620636387,
-      "end": 1708620636387,
+      "start": 1708886636986,
+      "end": 1708886636986,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708620636387,
-      "end": 1708620636387,
+      "start": 1708886636986,
+      "end": 1708886636986,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708620636387,
-      "end": 1708620636387,
+      "start": 1708886636986,
+      "end": 1708886636986,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708620636387,
-      "end": 1708620636387,
+      "start": 1708886636987,
+      "end": 1708886636987,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { ref } from 'vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createElementBlock as _createElementBlock } from \"vue\";\nimport { useClipboard } from \"@vueuse/core\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"CopyButton\",\n  props: {\n    content: {\n      type: String,\n      default: \"\"\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const { copy: copyToClipboard } = useClipboard();\n    const state = ref(\"init\");\n    const copy = (e) => {\n      copyToClipboard(props.content).then(() => {\n        state.value = \"copied\";\n        setTimeout(() => {\n          state.value = \"init\";\n        }, 1e3);\n      }).catch(() => {\n        console.warn(\"Couldn't copy to clipboard!\");\n      });\n    };\n    return (_ctx, _cache) => {\n      const _component_Icon = _resolveComponent(\"Icon\");\n      return _openBlock(), _createElementBlock(\"button\", {\n        class: \"copy rounded-lg bg-gray-800 px-2 py-2 font-mono text-xs font-semibold leading-none text-gray-400 focus:outline-none dark:bg-black\",\n        onClick: copy\n      }, [\n        _unref(state) === \"copied\" ? (_openBlock(), _createBlock(_component_Icon, {\n          key: 0,\n          name: \"fa-check\",\n          class: \"h-4 w-4\"\n        })) : (_openBlock(), _createBlock(_component_Icon, {\n          key: 1,\n          name: \"fa-copy\",\n          class: \"h-4 w-4\"\n        }))\n      ]);\n    };\n  }\n});\n",
-      "start": 1708620636387,
-      "end": 1708620636395,
+      "start": 1708886636990,
+      "end": 1708886636998,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -193,51 +193,51 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1708620636396,
-      "end": 1708620636396,
+      "start": 1708886636999,
+      "end": 1708886636999,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708620636396,
-      "end": 1708620636396,
+      "start": 1708886636999,
+      "end": 1708886636999,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1708620636396,
-      "end": 1708620636397,
+      "start": 1708886636999,
+      "end": 1708886637000,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1708620636400,
-      "end": 1708620636400,
+      "start": 1708886637000,
+      "end": 1708886637000,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
       "result": "import { default as __nuxt_component_0 } from \"/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/Icon.vue\";\nimport { ref } from 'vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createElementBlock as _createElementBlock } from \"vue\";\nimport { useClipboard } from \"@vueuse/core\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"CopyButton\",\n  props: {\n    content: {\n      type: String,\n      default: \"\"\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const { copy: copyToClipboard } = useClipboard();\n    const state = ref(\"init\");\n    const copy = (e) => {\n      copyToClipboard(props.content).then(() => {\n        state.value = \"copied\";\n        setTimeout(() => {\n          state.value = \"init\";\n        }, 1e3);\n      }).catch(() => {\n        console.warn(\"Couldn't copy to clipboard!\");\n      });\n    };\n    return (_ctx, _cache) => {\n      const _component_Icon = __nuxt_component_0;\n      return _openBlock(), _createElementBlock(\"button\", {\n        class: \"copy rounded-lg bg-gray-800 px-2 py-2 font-mono text-xs font-semibold leading-none text-gray-400 focus:outline-none dark:bg-black\",\n        onClick: copy\n      }, [\n        _unref(state) === \"copied\" ? (_openBlock(), _createBlock(_component_Icon, {\n          key: 0,\n          name: \"fa-check\",\n          class: \"h-4 w-4\"\n        })) : (_openBlock(), _createBlock(_component_Icon, {\n          key: 1,\n          name: \"fa-copy\",\n          class: \"h-4 w-4\"\n        }))\n      ]);\n    };\n  }\n});\n",
-      "start": 1708620636401,
-      "end": 1708620636401,
+      "start": 1708886637000,
+      "end": 1708886637001,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708620636401,
-      "end": 1708620636402,
+      "start": 1708886637001,
+      "end": 1708886637001,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708620636402,
-      "end": 1708620636402,
+      "start": 1708886637002,
+      "end": 1708886637002,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708620636402,
-      "end": 1708620636402,
+      "start": 1708886637002,
+      "end": 1708886637002,
       "order": "normal"
     }
   ]

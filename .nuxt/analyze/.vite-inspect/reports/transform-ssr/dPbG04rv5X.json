@@ -4,39 +4,39 @@
     {
       "name": "vite:load-fallback",
       "result": "<script>\nimport { defineComponent, h, resolveComponent } from \"vue\";\nexport default defineComponent({\n  props: {\n    /**\n     * A slot name or function\n     */\n    use: {\n      type: Function,\n      default: void 0\n    },\n    /**\n     * Tags to unwrap separated by spaces\n     * Example: 'ul li'\n     */\n    unwrap: {\n      type: [Boolean, String],\n      default: false\n    }\n  },\n  render(props) {\n    return h(resolveComponent(\"MDCSlot\"), props);\n  }\n});\n</script>\n",
-      "start": 1708620641467,
-      "end": 1708620641570,
+      "start": 1708886641979,
+      "end": 1708886642063,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708620641570,
-      "end": 1708620641570,
+      "start": 1708886642063,
+      "end": 1708886642063,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708620641570,
-      "end": 1708620641570,
+      "start": 1708886642063,
+      "end": 1708886642063,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708620641570,
-      "end": 1708620641570,
+      "start": 1708886642063,
+      "end": 1708886642063,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708620641570,
-      "end": 1708620641570,
+      "start": 1708886642063,
+      "end": 1708886642063,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "<script>\nimport { defineComponent, h, resolveComponent } from \"vue\";\nexport default defineComponent({\n  props: {\n    /**\n     * A slot name or function\n     */\n    use: {\n      type: Function,\n      default: void 0\n    },\n    /**\n     * Tags to unwrap separated by spaces\n     * Example: 'ul li'\n     */\n    unwrap: {\n      type: [Boolean, String],\n      default: false\n    }\n  },\n  render(props) {\n    return h(resolveComponent(\"MDCSlot\"), props);\n  }\n});\n</script>\n",
-      "start": 1708620641570,
-      "end": 1708620641570,
+      "start": 1708886642063,
+      "end": 1708886642063,
       "order": "pre",
       "sourcemaps": {
         "version": 3,
@@ -51,8 +51,8 @@
     {
       "name": "pinceau-transforms",
       "result": "<script>\nimport { defineComponent, h, resolveComponent } from \"vue\";\nexport default defineComponent({\n  props: {\n    /**\n     * A slot name or function\n     */\n    use: {\n      type: Function,\n      default: void 0\n    },\n    /**\n     * Tags to unwrap separated by spaces\n     * Example: 'ul li'\n     */\n    unwrap: {\n      type: [Boolean, String],\n      default: false\n    }\n  },\n  render(props) {\n    return h(resolveComponent(\"MDCSlot\"), props);\n  }\n});\n</script>\n",
-      "start": 1708620641570,
-      "end": 1708620641570,
+      "start": 1708886642063,
+      "end": 1708886642063,
       "order": "pre",
       "sourcemaps": {
         "version": 3,
@@ -66,51 +66,51 @@
     },
     {
       "name": "content-slot",
-      "start": 1708620641570,
-      "end": 1708620641570,
+      "start": 1708886642063,
+      "end": 1708886642063,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708620641570,
-      "end": 1708620641570,
+      "start": 1708886642063,
+      "end": 1708886642063,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708620641570,
-      "end": 1708620641570,
+      "start": 1708886642063,
+      "end": 1708886642063,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708620641570,
-      "end": 1708620641570,
+      "start": 1708886642063,
+      "end": 1708886642063,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1708620641570,
-      "end": 1708620641570,
+      "start": 1708886642063,
+      "end": 1708886642063,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1708620641570,
-      "end": 1708620641570,
+      "start": 1708886642063,
+      "end": 1708886642063,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708620641570,
-      "end": 1708620641570,
+      "start": 1708886642063,
+      "end": 1708886642063,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "\nimport { defineComponent, h, resolveComponent } from \"vue\";\nconst _sfc_main = defineComponent({\n  props: {\n    /**\n     * A slot name or function\n     */\n    use: {\n      type: Function,\n      default: void 0\n    },\n    /**\n     * Tags to unwrap separated by spaces\n     * Example: 'ul li'\n     */\n    unwrap: {\n      type: [Boolean, String],\n      default: false\n    }\n  },\n  render(props) {\n    return h(resolveComponent(\"MDCSlot\"), props);\n  }\n});\n\n\n\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"node_modules/@nuxt/content/dist/runtime/components/ContentSlot.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nexport default _sfc_main",
-      "start": 1708620641570,
-      "end": 1708620641570,
+      "start": 1708886642063,
+      "end": 1708886642063,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -128,159 +128,159 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708620641571,
-      "end": 1708620641571,
+      "start": 1708886642063,
+      "end": 1708886642063,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708620641571,
-      "end": 1708620641571,
+      "start": 1708886642063,
+      "end": 1708886642063,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708620641571,
-      "end": 1708620641571,
+      "start": 1708886642063,
+      "end": 1708886642063,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708620641571,
-      "end": 1708620641571,
+      "start": 1708886642063,
+      "end": 1708886642063,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708620641571,
-      "end": 1708620641571,
+      "start": 1708886642063,
+      "end": 1708886642063,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708620641571,
-      "end": 1708620641571,
+      "start": 1708886642063,
+      "end": 1708886642063,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708620641571,
-      "end": 1708620641571,
+      "start": 1708886642063,
+      "end": 1708886642063,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708620641571,
-      "end": 1708620641571,
+      "start": 1708886642063,
+      "end": 1708886642063,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708620641571,
-      "end": 1708620641571,
+      "start": 1708886642063,
+      "end": 1708886642063,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708620641571,
-      "end": 1708620641571,
+      "start": 1708886642063,
+      "end": 1708886642063,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708620641571,
-      "end": 1708620641571,
+      "start": 1708886642063,
+      "end": 1708886642063,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708620641571,
-      "end": 1708620641571,
+      "start": 1708886642063,
+      "end": 1708886642063,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708620641571,
-      "end": 1708620641571,
+      "start": 1708886642063,
+      "end": 1708886642063,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708620641571,
-      "end": 1708620641571,
+      "start": 1708886642063,
+      "end": 1708886642063,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708620641571,
-      "end": 1708620641571,
+      "start": 1708886642063,
+      "end": 1708886642063,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708620641571,
-      "end": 1708620641571,
+      "start": 1708886642063,
+      "end": 1708886642063,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708620641571,
-      "end": 1708620641571,
+      "start": 1708886642063,
+      "end": 1708886642063,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708620641571,
-      "end": 1708620641571,
+      "start": 1708886642063,
+      "end": 1708886642063,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708620641571,
-      "end": 1708620641571,
+      "start": 1708886642063,
+      "end": 1708886642063,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708620641571,
-      "end": 1708620641571,
+      "start": 1708886642063,
+      "end": 1708886642063,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708620641571,
-      "end": 1708620641571,
+      "start": 1708886642063,
+      "end": 1708886642063,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708620641571,
-      "end": 1708620641571,
+      "start": 1708886642063,
+      "end": 1708886642063,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708620641571,
-      "end": 1708620641571,
+      "start": 1708886642063,
+      "end": 1708886642063,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708620641571,
-      "end": 1708620641571,
+      "start": 1708886642063,
+      "end": 1708886642063,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1708620641571,
-      "end": 1708620641571,
+      "start": 1708886642063,
+      "end": 1708886642063,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
       "result": "import { default as __nuxt_component_0 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/components/MDCSlot\";\n\nimport { defineComponent, h, resolveComponent } from \"vue\";\nconst _sfc_main = defineComponent({\n  props: {\n    /**\n     * A slot name or function\n     */\n    use: {\n      type: Function,\n      default: void 0\n    },\n    /**\n     * Tags to unwrap separated by spaces\n     * Example: 'ul li'\n     */\n    unwrap: {\n      type: [Boolean, String],\n      default: false\n    }\n  },\n  render(props) {\n    return h(__nuxt_component_0, props);\n  }\n});\n\n\n\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"node_modules/@nuxt/content/dist/runtime/components/ContentSlot.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nexport default _sfc_main",
-      "start": 1708620641571,
-      "end": 1708620641571,
+      "start": 1708886642063,
+      "end": 1708886642064,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -293,20 +293,20 @@
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708620641571,
-      "end": 1708620641571,
+      "start": 1708886642064,
+      "end": 1708886642064,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708620641571,
-      "end": 1708620641571,
+      "start": 1708886642064,
+      "end": 1708886642064,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708620641571,
-      "end": 1708620641571,
+      "start": 1708886642064,
+      "end": 1708886642064,
       "order": "normal"
     }
   ]

@@ -4,51 +4,51 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, renderSlot as _renderSlot, createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-393382c9\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"page-layout\" }\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'page',\n  setup(__props) {\n\nconst { config } = useDocus()\nuseHead({\n  link: {\n    rel: 'search',\n    type: 'application/opensearchdescription+xml',\n    href: 'opensearch.xml'\n  }\n})\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_Container = _resolveComponent(\"Container\")!\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createVNode(_component_Container, {\n      fluid: _unref(config)?.main?.fluid,\n      padded: _unref(config)?.main?.padded\n    }, {\n      default: _withCtx(() => [\n        _createElementVNode(\"article\", null, [\n          _renderSlot(_ctx.$slots, \"default\", {}, undefined, true)\n        ])\n      ]),\n      _: 3\n    }, 8, [\"fluid\", \"padded\"])\n  ]))\n}\n}\n\n})",
-      "start": 1708620636588,
-      "end": 1708620636588
+      "start": 1708886637212,
+      "end": 1708886637212
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708620636589,
-      "end": 1708620636589,
+      "start": 1708886637213,
+      "end": 1708886637213,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708620636591,
-      "end": 1708620636591,
+      "start": 1708886637215,
+      "end": 1708886637215,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, renderSlot as _renderSlot, createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-393382c9\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"page-layout\" }\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'page',\n  setup(__props) {\n\nconst { config } = useDocus()\nuseHead({\n  link: {\n    rel: 'search',\n    type: 'application/opensearchdescription+xml',\n    href: 'opensearch.xml'\n  }\n})\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_Container = _resolveComponent(\"Container\")!\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createVNode(_component_Container, {\n      fluid: _unref(config)?.main?.fluid,\n      padded: _unref(config)?.main?.padded\n    }, {\n      default: _withCtx(() => [\n        _createElementVNode(\"article\", null, [\n          _renderSlot(_ctx.$slots, \"default\", {}, undefined, true)\n        ])\n      ]),\n      _: 3\n    }, 8, [\"fluid\", \"padded\"])\n  ]))\n}\n}\n\n})",
-      "start": 1708620636591,
-      "end": 1708620636591,
+      "start": 1708886637215,
+      "end": 1708886637215,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708620636591,
-      "end": 1708620636591,
+      "start": 1708886637215,
+      "end": 1708886637215,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708620636592,
-      "end": 1708620636592,
+      "start": 1708886637216,
+      "end": 1708886637216,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708620636592,
-      "end": 1708620636592,
+      "start": 1708886637216,
+      "end": 1708886637216,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, renderSlot as _renderSlot, createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-393382c9\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = { class: \"page-layout\" };\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"page\",\n  setup(__props) {\n    const { config } = useDocus();\n    useHead({\n      link: {\n        rel: \"search\",\n        type: \"application/opensearchdescription+xml\",\n        href: \"opensearch.xml\"\n      }\n    });\n    return (_ctx, _cache) => {\n      const _component_Container = _resolveComponent(\"Container\");\n      return _openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _createVNode(_component_Container, {\n          fluid: _unref(config)?.main?.fluid,\n          padded: _unref(config)?.main?.padded\n        }, {\n          default: _withCtx(() => [\n            _createElementVNode(\"article\", null, [\n              _renderSlot(_ctx.$slots, \"default\", {}, void 0, true)\n            ])\n          ]),\n          _: 3\n        }, 8, [\"fluid\", \"padded\"])\n      ]);\n    };\n  }\n});\n",
-      "start": 1708620636592,
-      "end": 1708620636662,
+      "start": 1708886637216,
+      "end": 1708886637237,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -64,123 +64,123 @@
     },
     {
       "name": "vite:json",
-      "start": 1708620636662,
-      "end": 1708620636662,
+      "start": 1708886637237,
+      "end": 1708886637237,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708620636662,
-      "end": 1708620636662,
+      "start": 1708886637237,
+      "end": 1708886637237,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708620636662,
-      "end": 1708620636662,
+      "start": 1708886637237,
+      "end": 1708886637237,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708620636662,
-      "end": 1708620636662,
+      "start": 1708886637237,
+      "end": 1708886637237,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708620636662,
-      "end": 1708620636663,
+      "start": 1708886637238,
+      "end": 1708886637238,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708620636663,
-      "end": 1708620636663,
+      "start": 1708886637238,
+      "end": 1708886637238,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1708620636663,
-      "end": 1708620636663,
+      "start": 1708886637238,
+      "end": 1708886637238,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708620636663,
-      "end": 1708620636663,
+      "start": 1708886637238,
+      "end": 1708886637238,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708620636664,
-      "end": 1708620636664,
+      "start": 1708886637239,
+      "end": 1708886637239,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708620636665,
-      "end": 1708620636665,
+      "start": 1708886637239,
+      "end": 1708886637239,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708620636666,
-      "end": 1708620636666,
+      "start": 1708886637239,
+      "end": 1708886637239,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708620636666,
-      "end": 1708620636666,
+      "start": 1708886637239,
+      "end": 1708886637240,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708620636666,
-      "end": 1708620636666,
+      "start": 1708886637240,
+      "end": 1708886637240,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708620636666,
-      "end": 1708620636666,
+      "start": 1708886637240,
+      "end": 1708886637240,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708620636667,
-      "end": 1708620636667,
+      "start": 1708886637240,
+      "end": 1708886637240,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708620636667,
-      "end": 1708620636667,
+      "start": 1708886637240,
+      "end": 1708886637240,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708620636667,
-      "end": 1708620636667,
+      "start": 1708886637240,
+      "end": 1708886637240,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708620636667,
-      "end": 1708620636667,
+      "start": 1708886637240,
+      "end": 1708886637240,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708620636669,
-      "end": 1708620636669,
+      "start": 1708886637242,
+      "end": 1708886637242,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { useDocus } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/composables/useDocus.ts';\nimport { useHead } from '@unhead/vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, renderSlot as _renderSlot, createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-393382c9\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = { class: \"page-layout\" };\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"page\",\n  setup(__props) {\n    const { config } = useDocus();\n    useHead({\n      link: {\n        rel: \"search\",\n        type: \"application/opensearchdescription+xml\",\n        href: \"opensearch.xml\"\n      }\n    });\n    return (_ctx, _cache) => {\n      const _component_Container = _resolveComponent(\"Container\");\n      return _openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _createVNode(_component_Container, {\n          fluid: _unref(config)?.main?.fluid,\n          padded: _unref(config)?.main?.padded\n        }, {\n          default: _withCtx(() => [\n            _createElementVNode(\"article\", null, [\n              _renderSlot(_ctx.$slots, \"default\", {}, void 0, true)\n            ])\n          ]),\n          _: 3\n        }, 8, [\"fluid\", \"padded\"])\n      ]);\n    };\n  }\n});\n",
-      "start": 1708620636670,
-      "end": 1708620636672,
+      "start": 1708886637242,
+      "end": 1708886637246,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -193,51 +193,51 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1708620636673,
-      "end": 1708620636673,
+      "start": 1708886637246,
+      "end": 1708886637246,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708620636673,
-      "end": 1708620636673,
+      "start": 1708886637246,
+      "end": 1708886637246,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1708620636673,
-      "end": 1708620636673,
+      "start": 1708886637247,
+      "end": 1708886637247,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1708620636673,
-      "end": 1708620636673,
+      "start": 1708886637247,
+      "end": 1708886637247,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
       "result": "import { default as __nuxt_component_0 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Container.vue\";\nimport { useDocus } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/composables/useDocus.ts';\nimport { useHead } from '@unhead/vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, renderSlot as _renderSlot, createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-393382c9\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = { class: \"page-layout\" };\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"page\",\n  setup(__props) {\n    const { config } = useDocus();\n    useHead({\n      link: {\n        rel: \"search\",\n        type: \"application/opensearchdescription+xml\",\n        href: \"opensearch.xml\"\n      }\n    });\n    return (_ctx, _cache) => {\n      const _component_Container = __nuxt_component_0;\n      return _openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _createVNode(_component_Container, {\n          fluid: _unref(config)?.main?.fluid,\n          padded: _unref(config)?.main?.padded\n        }, {\n          default: _withCtx(() => [\n            _createElementVNode(\"article\", null, [\n              _renderSlot(_ctx.$slots, \"default\", {}, void 0, true)\n            ])\n          ]),\n          _: 3\n        }, 8, [\"fluid\", \"padded\"])\n      ]);\n    };\n  }\n});\n",
-      "start": 1708620636673,
-      "end": 1708620636673,
+      "start": 1708886637247,
+      "end": 1708886637247,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708620636673,
-      "end": 1708620636673,
+      "start": 1708886637247,
+      "end": 1708886637247,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708620636673,
-      "end": 1708620636673,
+      "start": 1708886637247,
+      "end": 1708886637247,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708620636674,
-      "end": 1708620636674,
+      "start": 1708886637247,
+      "end": 1708886637247,
       "order": "normal"
     }
   ]

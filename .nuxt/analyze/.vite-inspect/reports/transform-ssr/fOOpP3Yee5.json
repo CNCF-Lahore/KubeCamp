@@ -4,8 +4,8 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { resolveComponent as _resolveComponent, withCtx as _withCtx, toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderSlot as _ssrRenderSlot, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\"\nimport { ssrRenderSlot as _ssrRenderMDCSlot } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/utils/ssrSlot'\n\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'CardGrid',\n  __ssrInlineRender: true,\n  props: {\n  title: {\n    type: String,\n    default: 'Features'\n  }\n},\n  setup(__props) {\n\n\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_MDCSlot = _resolveComponent(\"MDCSlot\")!\n\n  _push(`<section${_ssrRenderAttrs(_mergeProps({ class: \"card-grid\" }, _attrs))} data-v-f9e22db6>`)\n  _ssrRenderMDCSlot(_ctx.$slots, \"root\", {}, null, _push, _parent)\n  _push(`<h2 class=\"title\" data-v-f9e22db6>`)\n  _ssrRenderMDCSlot(_ctx.$slots, \"title\", { unwrap: \"p\" }, () => {\n    _push(`${_ssrInterpolate(__props.title)}`)\n  }, _push, _parent)\n  _push(`</h2><div class=\"layout\" data-v-f9e22db6>`)\n  _ssrRenderSlot(_ctx.$slots, \"default\", {}, null, _push, _parent)\n  _push(`</div></section>`)\n}\n}\n\n})",
-      "start": 1708620642329,
-      "end": 1708620642329,
+      "start": 1708886642773,
+      "end": 1708886642773,
       "sourcemaps": {
         "version": 3,
         "sources": [
@@ -20,71 +20,71 @@
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708620642329,
-      "end": 1708620642329,
+      "start": 1708886642773,
+      "end": 1708886642773,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708620642329,
-      "end": 1708620642329,
+      "start": 1708886642773,
+      "end": 1708886642773,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708620642331,
-      "end": 1708620642331,
+      "start": 1708886642775,
+      "end": 1708886642775,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708620642331,
-      "end": 1708620642331,
+      "start": 1708886642775,
+      "end": 1708886642775,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { resolveComponent as _resolveComponent, withCtx as _withCtx, toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderSlot as _ssrRenderSlot, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\"\nimport { ssrRenderSlot as _ssrRenderMDCSlot } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/utils/ssrSlot'\n\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'CardGrid',\n  __ssrInlineRender: true,\n  props: {\n  title: {\n    type: String,\n    default: 'Features'\n  }\n},\n  setup(__props) {\n\n\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_MDCSlot = _resolveComponent(\"MDCSlot\")!\n\n  _push(`<section${_ssrRenderAttrs(_mergeProps({ class: \"card-grid\" }, _attrs))} data-v-f9e22db6>`)\n  _ssrRenderMDCSlot(_ctx.$slots, \"root\", {}, null, _push, _parent)\n  _push(`<h2 class=\"title\" data-v-f9e22db6>`)\n  _ssrRenderMDCSlot(_ctx.$slots, \"title\", { unwrap: \"p\" }, () => {\n    _push(`${_ssrInterpolate(__props.title)}`)\n  }, _push, _parent)\n  _push(`</h2><div class=\"layout\" data-v-f9e22db6>`)\n  _ssrRenderSlot(_ctx.$slots, \"default\", {}, null, _push, _parent)\n  _push(`</div></section>`)\n}\n}\n\n})",
-      "start": 1708620642331,
-      "end": 1708620642331,
+      "start": 1708886642775,
+      "end": 1708886642775,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { resolveComponent as _resolveComponent, withCtx as _withCtx, toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderSlot as _ssrRenderSlot, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\"\nimport { ssrRenderSlot as _ssrRenderMDCSlot } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/utils/ssrSlot'\n\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'CardGrid',\n  __ssrInlineRender: true,\n  props: {\n  title: {\n    type: String,\n    default: 'Features'\n  }\n},\n  setup(__props) {\n\n\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_MDCSlot = _resolveComponent(\"MDCSlot\")!\n\n  _push(`<section${_ssrRenderAttrs(_mergeProps({ class: \"card-grid\" }, _attrs))} data-v-f9e22db6>`)\n  _ssrRenderMDCSlot(_ctx.$slots, \"root\", {}, null, _push, _parent)\n  _push(`<h2 class=\"title\" data-v-f9e22db6>`)\n  _ssrRenderMDCSlot(_ctx.$slots, \"title\", { unwrap: \"p\" }, () => {\n    _push(`${_ssrInterpolate(__props.title)}`)\n  }, _push, _parent)\n  _push(`</h2><div class=\"layout\" data-v-f9e22db6>`)\n  _ssrRenderSlot(_ctx.$slots, \"default\", {}, null, _push, _parent)\n  _push(`</div></section>`)\n}\n}\n\n})",
-      "start": 1708620642331,
-      "end": 1708620642331,
+      "start": 1708886642775,
+      "end": 1708886642775,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708620642331,
-      "end": 1708620642331,
+      "start": 1708886642775,
+      "end": 1708886642775,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708620642331,
-      "end": 1708620642331,
+      "start": 1708886642775,
+      "end": 1708886642775,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708620642331,
-      "end": 1708620642331,
+      "start": 1708886642775,
+      "end": 1708886642775,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708620642331,
-      "end": 1708620642331,
+      "start": 1708886642775,
+      "end": 1708886642775,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderSlot as _ssrRenderSlot, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\";\nimport { ssrRenderSlot as _ssrRenderMDCSlot } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/utils/ssrSlot\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"CardGrid\",\n  __ssrInlineRender: true,\n  props: {\n    title: {\n      type: String,\n      default: \"Features\"\n    }\n  },\n  setup(__props) {\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_MDCSlot = _resolveComponent(\"MDCSlot\");\n      _push(`<section${_ssrRenderAttrs(_mergeProps({ class: \"card-grid\" }, _attrs))} data-v-f9e22db6>`);\n      _ssrRenderMDCSlot(_ctx.$slots, \"root\", {}, null, _push, _parent);\n      _push(`<h2 class=\"title\" data-v-f9e22db6>`);\n      _ssrRenderMDCSlot(_ctx.$slots, \"title\", { unwrap: \"p\" }, () => {\n        _push(`${_ssrInterpolate(__props.title)}`);\n      }, _push, _parent);\n      _push(`</h2><div class=\"layout\" data-v-f9e22db6>`);\n      _ssrRenderSlot(_ctx.$slots, \"default\", {}, null, _push, _parent);\n      _push(`</div></section>`);\n    };\n  }\n});\n",
-      "start": 1708620642331,
-      "end": 1708620642449,
+      "start": 1708886642776,
+      "end": 1708886642883,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -100,177 +100,177 @@
     },
     {
       "name": "vite:json",
-      "start": 1708620642449,
-      "end": 1708620642449,
+      "start": 1708886642883,
+      "end": 1708886642883,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708620642449,
-      "end": 1708620642449,
+      "start": 1708886642883,
+      "end": 1708886642883,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708620642450,
-      "end": 1708620642450,
+      "start": 1708886642883,
+      "end": 1708886642883,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708620642450,
-      "end": 1708620642450,
+      "start": 1708886642883,
+      "end": 1708886642883,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708620642450,
-      "end": 1708620642450,
+      "start": 1708886642883,
+      "end": 1708886642883,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708620642450,
-      "end": 1708620642450,
+      "start": 1708886642883,
+      "end": 1708886642883,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708620642450,
-      "end": 1708620642450,
+      "start": 1708886642883,
+      "end": 1708886642883,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708620642450,
-      "end": 1708620642450,
+      "start": 1708886642883,
+      "end": 1708886642883,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708620642451,
-      "end": 1708620642451,
+      "start": 1708886642884,
+      "end": 1708886642884,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708620642451,
-      "end": 1708620642451,
+      "start": 1708886642884,
+      "end": 1708886642884,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708620642451,
-      "end": 1708620642451,
+      "start": 1708886642884,
+      "end": 1708886642884,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708620642453,
-      "end": 1708620642453,
+      "start": 1708886642885,
+      "end": 1708886642885,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708620642453,
-      "end": 1708620642453,
+      "start": 1708886642885,
+      "end": 1708886642885,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708620642453,
-      "end": 1708620642453,
+      "start": 1708886642885,
+      "end": 1708886642885,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708620642453,
-      "end": 1708620642453,
+      "start": 1708886642885,
+      "end": 1708886642885,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708620642453,
-      "end": 1708620642453,
+      "start": 1708886642885,
+      "end": 1708886642885,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708620642454,
-      "end": 1708620642454,
+      "start": 1708886642885,
+      "end": 1708886642885,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708620642454,
-      "end": 1708620642454,
+      "start": 1708886642885,
+      "end": 1708886642885,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708620642454,
-      "end": 1708620642454,
+      "start": 1708886642885,
+      "end": 1708886642885,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708620642455,
-      "end": 1708620642455,
+      "start": 1708886642886,
+      "end": 1708886642886,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708620642455,
-      "end": 1708620642455,
+      "start": 1708886642886,
+      "end": 1708886642886,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708620642455,
-      "end": 1708620642461,
+      "start": 1708886642886,
+      "end": 1708886642891,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708620642455,
-      "end": 1708620642462,
+      "start": 1708886642886,
+      "end": 1708886642891,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708620642462,
-      "end": 1708620642462,
+      "start": 1708886642892,
+      "end": 1708886642892,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708620642462,
-      "end": 1708620642462,
+      "start": 1708886642892,
+      "end": 1708886642892,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708620642462,
-      "end": 1708620642462,
+      "start": 1708886642892,
+      "end": 1708886642892,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708620642462,
-      "end": 1708620642462,
+      "start": 1708886642892,
+      "end": 1708886642892,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1708620642462,
-      "end": 1708620642462,
+      "start": 1708886642892,
+      "end": 1708886642892,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
       "result": "import { default as __nuxt_component_0 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/components/MDCSlot\";\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderSlot as _ssrRenderSlot, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\";\nimport { ssrRenderSlot as _ssrRenderMDCSlot } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/utils/ssrSlot\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"CardGrid\",\n  __ssrInlineRender: true,\n  props: {\n    title: {\n      type: String,\n      default: \"Features\"\n    }\n  },\n  setup(__props) {\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_MDCSlot = __nuxt_component_0;\n      _push(`<section${_ssrRenderAttrs(_mergeProps({ class: \"card-grid\" }, _attrs))} data-v-f9e22db6>`);\n      _ssrRenderMDCSlot(_ctx.$slots, \"root\", {}, null, _push, _parent);\n      _push(`<h2 class=\"title\" data-v-f9e22db6>`);\n      _ssrRenderMDCSlot(_ctx.$slots, \"title\", { unwrap: \"p\" }, () => {\n        _push(`${_ssrInterpolate(__props.title)}`);\n      }, _push, _parent);\n      _push(`</h2><div class=\"layout\" data-v-f9e22db6>`);\n      _ssrRenderSlot(_ctx.$slots, \"default\", {}, null, _push, _parent);\n      _push(`</div></section>`);\n    };\n  }\n});\n",
-      "start": 1708620642464,
-      "end": 1708620642464,
+      "start": 1708886642893,
+      "end": 1708886642893,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -283,20 +283,20 @@
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708620642465,
-      "end": 1708620642465,
+      "start": 1708886642894,
+      "end": 1708886642894,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708620642465,
-      "end": 1708620642465,
+      "start": 1708886642894,
+      "end": 1708886642894,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708620642465,
-      "end": 1708620642465,
+      "start": 1708886642894,
+      "end": 1708886642894,
       "order": "normal"
     }
   ]

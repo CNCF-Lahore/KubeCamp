@@ -4,51 +4,51 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, renderSlot as _renderSlot, resolveDynamicComponent as _resolveDynamicComponent, normalizeClass as _normalizeClass, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock } from \"vue\"\n\nimport { reactive, computed, getCurrentInstance, ref } from 'vue'\nimport { usePinceauRuntime } from 'pinceau/runtime'\n\nimport type { PropType } from 'vue'\n\ntype HTMLElementsTags = keyof HTMLElementTagNameMap\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'Container',\n  props: {\n  as: {\n    type: String as PropType<HTMLElementsTags>,\n    required: false,\n    default: 'div'\n  },\n\n  ...{\"padded\":{\"required\":false as const,\"type\":[Boolean, Object] as import('vue').PropType<boolean | { [key in import('pinceau').PinceauMediaQueries]?: boolean }>,\"default\":true as const},\"fluid\":{\"required\":false as const,\"type\":[Boolean, Object] as import('vue').PropType<boolean | { [key in import('pinceau').PinceauMediaQueries]?: boolean }>,\"default\":false as const}}\n},\n  setup(__props) {\nconst __$pProps = __props\nconst __$pVariants = {\"padded\":{\"true\":{\"px\":\"{elements.container.padding.mobile}\",\"@xs\":{\"px\":\"{elements.container.padding.xs}\"},\"@sm\":{\"px\":\"{elements.container.padding.sm}\"},\"@md\":{\"px\":\"{elements.container.padding.md}\"}}},\"fluid\":{\"true\":{},\"false\":{\"maxWidth\":\"{elements.container.maxWidth}\"}}}\n\nconst { $pinceau } = usePinceauRuntime(__$pProps, __$pVariants, undefined)\n\nreturn (_ctx: any,_cache: any) => {\n  return (_openBlock(), _createBlock(_resolveDynamicComponent(__props.as), {\n    class: _normalizeClass([\"container\", [_unref($pinceau)]])\n  }, {\n    default: _withCtx(() => [\n      _renderSlot(_ctx.$slots, \"default\", {}, undefined, true)\n    ]),\n    _: 3\n  }, 8, [\"class\"]))\n}\n}\n\n})",
-      "start": 1708620635969,
-      "end": 1708620635969
+      "start": 1708886636698,
+      "end": 1708886636698
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708620635975,
-      "end": 1708620635975,
+      "start": 1708886636701,
+      "end": 1708886636702,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708620635979,
-      "end": 1708620635979,
+      "start": 1708886636705,
+      "end": 1708886636705,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, renderSlot as _renderSlot, resolveDynamicComponent as _resolveDynamicComponent, normalizeClass as _normalizeClass, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock } from \"vue\"\n\nimport { reactive, computed, getCurrentInstance, ref } from 'vue'\nimport { usePinceauRuntime } from 'pinceau/runtime'\n\nimport type { PropType } from 'vue'\n\ntype HTMLElementsTags = keyof HTMLElementTagNameMap\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'Container',\n  props: {\n  as: {\n    type: String as PropType<HTMLElementsTags>,\n    required: false,\n    default: 'div'\n  },\n\n  ...{\"padded\":{\"required\":false as const,\"type\":[Boolean, Object] as import('vue').PropType<boolean | { [key in import('pinceau').PinceauMediaQueries]?: boolean }>,\"default\":true as const},\"fluid\":{\"required\":false as const,\"type\":[Boolean, Object] as import('vue').PropType<boolean | { [key in import('pinceau').PinceauMediaQueries]?: boolean }>,\"default\":false as const}}\n},\n  setup(__props) {\nconst __$pProps = __props\nconst __$pVariants = {\"padded\":{\"true\":{\"px\":\"{elements.container.padding.mobile}\",\"@xs\":{\"px\":\"{elements.container.padding.xs}\"},\"@sm\":{\"px\":\"{elements.container.padding.sm}\"},\"@md\":{\"px\":\"{elements.container.padding.md}\"}}},\"fluid\":{\"true\":{},\"false\":{\"maxWidth\":\"{elements.container.maxWidth}\"}}}\n\nconst { $pinceau } = usePinceauRuntime(__$pProps, __$pVariants, undefined)\n\nreturn (_ctx: any,_cache: any) => {\n  return (_openBlock(), _createBlock(_resolveDynamicComponent(__props.as), {\n    class: _normalizeClass([\"container\", [_unref($pinceau)]])\n  }, {\n    default: _withCtx(() => [\n      _renderSlot(_ctx.$slots, \"default\", {}, undefined, true)\n    ]),\n    _: 3\n  }, 8, [\"class\"]))\n}\n}\n\n})",
-      "start": 1708620635986,
-      "end": 1708620635986,
+      "start": 1708886636714,
+      "end": 1708886636714,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708620635986,
-      "end": 1708620635986,
+      "start": 1708886636714,
+      "end": 1708886636714,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708620635987,
-      "end": 1708620635987,
+      "start": 1708886636714,
+      "end": 1708886636714,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708620635987,
-      "end": 1708620635987,
+      "start": 1708886636715,
+      "end": 1708886636715,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, renderSlot as _renderSlot, resolveDynamicComponent as _resolveDynamicComponent, normalizeClass as _normalizeClass, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock } from \"vue\";\nimport { usePinceauRuntime } from \"pinceau/runtime\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"Container\",\n  props: {\n    as: {\n      type: String,\n      required: false,\n      default: \"div\"\n    },\n    ...{ \"padded\": { \"required\": false, \"type\": [Boolean, Object], \"default\": true }, \"fluid\": { \"required\": false, \"type\": [Boolean, Object], \"default\": false } }\n  },\n  setup(__props) {\n    const __$pProps = __props;\n    const __$pVariants = { \"padded\": { \"true\": { \"px\": \"{elements.container.padding.mobile}\", \"@xs\": { \"px\": \"{elements.container.padding.xs}\" }, \"@sm\": { \"px\": \"{elements.container.padding.sm}\" }, \"@md\": { \"px\": \"{elements.container.padding.md}\" } } }, \"fluid\": { \"true\": {}, \"false\": { \"maxWidth\": \"{elements.container.maxWidth}\" } } };\n    const { $pinceau } = usePinceauRuntime(__$pProps, __$pVariants, void 0);\n    return (_ctx, _cache) => {\n      return _openBlock(), _createBlock(_resolveDynamicComponent(__props.as), {\n        class: _normalizeClass([\"container\", [_unref($pinceau)]])\n      }, {\n        default: _withCtx(() => [\n          _renderSlot(_ctx.$slots, \"default\", {}, void 0, true)\n        ]),\n        _: 3\n      }, 8, [\"class\"]);\n    };\n  }\n});\n",
-      "start": 1708620635987,
-      "end": 1708620636384,
+      "start": 1708886636715,
+      "end": 1708886636984,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -64,170 +64,170 @@
     },
     {
       "name": "vite:json",
-      "start": 1708620636384,
-      "end": 1708620636384,
+      "start": 1708886636984,
+      "end": 1708886636984,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708620636385,
-      "end": 1708620636385,
+      "start": 1708886636984,
+      "end": 1708886636984,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708620636385,
-      "end": 1708620636385,
+      "start": 1708886636984,
+      "end": 1708886636984,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708620636385,
-      "end": 1708620636385,
+      "start": 1708886636984,
+      "end": 1708886636984,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708620636385,
-      "end": 1708620636385,
+      "start": 1708886636985,
+      "end": 1708886636985,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708620636385,
-      "end": 1708620636385,
+      "start": 1708886636985,
+      "end": 1708886636985,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1708620636385,
-      "end": 1708620636385,
+      "start": 1708886636985,
+      "end": 1708886636985,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708620636386,
-      "end": 1708620636386,
+      "start": 1708886636985,
+      "end": 1708886636985,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708620636386,
-      "end": 1708620636386,
+      "start": 1708886636985,
+      "end": 1708886636985,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708620636386,
-      "end": 1708620636386,
+      "start": 1708886636986,
+      "end": 1708886636986,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708620636386,
-      "end": 1708620636386,
+      "start": 1708886636986,
+      "end": 1708886636986,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708620636386,
-      "end": 1708620636386,
+      "start": 1708886636986,
+      "end": 1708886636986,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708620636386,
-      "end": 1708620636386,
+      "start": 1708886636986,
+      "end": 1708886636986,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708620636386,
-      "end": 1708620636386,
+      "start": 1708886636986,
+      "end": 1708886636986,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708620636387,
-      "end": 1708620636387,
+      "start": 1708886636986,
+      "end": 1708886636986,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708620636387,
-      "end": 1708620636387,
+      "start": 1708886636986,
+      "end": 1708886636986,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708620636387,
-      "end": 1708620636387,
+      "start": 1708886636986,
+      "end": 1708886636986,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708620636387,
-      "end": 1708620636387,
+      "start": 1708886636986,
+      "end": 1708886636986,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708620636387,
-      "end": 1708620636387,
+      "start": 1708886636987,
+      "end": 1708886636987,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708620636387,
-      "end": 1708620636395,
+      "start": 1708886636990,
+      "end": 1708886636998,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708620636396,
-      "end": 1708620636396,
+      "start": 1708886636999,
+      "end": 1708886636999,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708620636396,
-      "end": 1708620636396,
+      "start": 1708886636999,
+      "end": 1708886636999,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1708620636396,
-      "end": 1708620636397,
+      "start": 1708886636999,
+      "end": 1708886637000,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1708620636400,
-      "end": 1708620636400,
+      "start": 1708886637000,
+      "end": 1708886637000,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1708620636401,
-      "end": 1708620636401,
+      "start": 1708886637000,
+      "end": 1708886637001,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708620636401,
-      "end": 1708620636402,
+      "start": 1708886637001,
+      "end": 1708886637001,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708620636402,
-      "end": 1708620636402,
+      "start": 1708886637002,
+      "end": 1708886637002,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708620636402,
-      "end": 1708620636402,
+      "start": 1708886637002,
+      "end": 1708886637002,
       "order": "normal"
     }
   ]

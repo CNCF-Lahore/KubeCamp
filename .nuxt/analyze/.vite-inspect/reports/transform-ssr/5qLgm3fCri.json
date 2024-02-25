@@ -4,8 +4,8 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { resolveComponent as _resolveComponent } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent } from \"vue/server-renderer\"\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'SourceLink',\n  __ssrInlineRender: true,\n  props: {\n  source: {\n    type: String,\n    required: true,\n  },\n},\n  setup(__props) {\n\n\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_ProseP = _resolveComponent(\"ProseP\")!\n\n  _push(_ssrRenderComponent(_component_ProseP, _attrs, null, _parent))\n}\n}\n\n})",
-      "start": 1708620641841,
-      "end": 1708620641841,
+      "start": 1708886642370,
+      "end": 1708886642370,
       "sourcemaps": {
         "version": 3,
         "sources": [
@@ -20,71 +20,71 @@
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708620641843,
-      "end": 1708620641843,
+      "start": 1708886642370,
+      "end": 1708886642370,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708620641843,
-      "end": 1708620641843,
+      "start": 1708886642370,
+      "end": 1708886642371,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708620641843,
-      "end": 1708620641843,
+      "start": 1708886642371,
+      "end": 1708886642371,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708620641843,
-      "end": 1708620641843,
+      "start": 1708886642371,
+      "end": 1708886642371,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { resolveComponent as _resolveComponent } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent } from \"vue/server-renderer\"\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'SourceLink',\n  __ssrInlineRender: true,\n  props: {\n  source: {\n    type: String,\n    required: true,\n  },\n},\n  setup(__props) {\n\n\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_ProseP = _resolveComponent(\"ProseP\")!\n\n  _push(_ssrRenderComponent(_component_ProseP, _attrs, null, _parent))\n}\n}\n\n})",
-      "start": 1708620641843,
-      "end": 1708620641843,
+      "start": 1708886642371,
+      "end": 1708886642371,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { resolveComponent as _resolveComponent } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent } from \"vue/server-renderer\"\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'SourceLink',\n  __ssrInlineRender: true,\n  props: {\n  source: {\n    type: String,\n    required: true,\n  },\n},\n  setup(__props) {\n\n\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_ProseP = _resolveComponent(\"ProseP\")!\n\n  _push(_ssrRenderComponent(_component_ProseP, _attrs, null, _parent))\n}\n}\n\n})",
-      "start": 1708620641843,
-      "end": 1708620641843,
+      "start": 1708886642371,
+      "end": 1708886642371,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708620641844,
-      "end": 1708620641844,
+      "start": 1708886642372,
+      "end": 1708886642372,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708620641844,
-      "end": 1708620641844,
+      "start": 1708886642372,
+      "end": 1708886642372,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708620641844,
-      "end": 1708620641844,
+      "start": 1708886642372,
+      "end": 1708886642372,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708620641844,
-      "end": 1708620641844,
+      "start": 1708886642373,
+      "end": 1708886642373,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { resolveComponent as _resolveComponent } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"SourceLink\",\n  __ssrInlineRender: true,\n  props: {\n    source: {\n      type: String,\n      required: true\n    }\n  },\n  setup(__props) {\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_ProseP = _resolveComponent(\"ProseP\");\n      _push(_ssrRenderComponent(_component_ProseP, _attrs, null, _parent));\n    };\n  }\n});\n",
-      "start": 1708620641844,
-      "end": 1708620642004,
+      "start": 1708886642373,
+      "end": 1708886642529,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -100,177 +100,177 @@
     },
     {
       "name": "vite:json",
-      "start": 1708620642004,
-      "end": 1708620642004,
+      "start": 1708886642529,
+      "end": 1708886642529,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708620642004,
-      "end": 1708620642004,
+      "start": 1708886642530,
+      "end": 1708886642530,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708620642004,
-      "end": 1708620642004,
+      "start": 1708886642530,
+      "end": 1708886642530,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708620642004,
-      "end": 1708620642004,
+      "start": 1708886642530,
+      "end": 1708886642530,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708620642004,
-      "end": 1708620642004,
+      "start": 1708886642530,
+      "end": 1708886642530,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708620642004,
-      "end": 1708620642004,
+      "start": 1708886642530,
+      "end": 1708886642530,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708620642004,
-      "end": 1708620642004,
+      "start": 1708886642530,
+      "end": 1708886642530,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708620642004,
-      "end": 1708620642004,
+      "start": 1708886642530,
+      "end": 1708886642530,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708620642005,
-      "end": 1708620642005,
+      "start": 1708886642530,
+      "end": 1708886642530,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708620642005,
-      "end": 1708620642005,
+      "start": 1708886642531,
+      "end": 1708886642531,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708620642005,
-      "end": 1708620642005,
+      "start": 1708886642531,
+      "end": 1708886642531,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708620642006,
-      "end": 1708620642006,
+      "start": 1708886642531,
+      "end": 1708886642532,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708620642006,
-      "end": 1708620642006,
+      "start": 1708886642532,
+      "end": 1708886642532,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708620642006,
-      "end": 1708620642006,
+      "start": 1708886642532,
+      "end": 1708886642532,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708620642006,
-      "end": 1708620642006,
+      "start": 1708886642532,
+      "end": 1708886642532,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708620642006,
-      "end": 1708620642006,
+      "start": 1708886642532,
+      "end": 1708886642532,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708620642006,
-      "end": 1708620642006,
+      "start": 1708886642532,
+      "end": 1708886642532,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708620642006,
-      "end": 1708620642006,
+      "start": 1708886642532,
+      "end": 1708886642532,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708620642006,
-      "end": 1708620642006,
+      "start": 1708886642532,
+      "end": 1708886642532,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708620642008,
-      "end": 1708620642008,
+      "start": 1708886642533,
+      "end": 1708886642533,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708620642008,
-      "end": 1708620642008,
+      "start": 1708886642533,
+      "end": 1708886642533,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708620642008,
-      "end": 1708620642013,
+      "start": 1708886642533,
+      "end": 1708886642538,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708620642008,
-      "end": 1708620642015,
+      "start": 1708886642533,
+      "end": 1708886642538,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708620642015,
-      "end": 1708620642015,
+      "start": 1708886642540,
+      "end": 1708886642540,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708620642015,
-      "end": 1708620642015,
+      "start": 1708886642540,
+      "end": 1708886642540,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708620642015,
-      "end": 1708620642015,
+      "start": 1708886642540,
+      "end": 1708886642540,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708620642015,
-      "end": 1708620642015,
+      "start": 1708886642540,
+      "end": 1708886642540,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1708620642015,
-      "end": 1708620642015,
+      "start": 1708886642541,
+      "end": 1708886642541,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
       "result": "import { default as __nuxt_component_0 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseP.vue\";\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { resolveComponent as _resolveComponent } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"SourceLink\",\n  __ssrInlineRender: true,\n  props: {\n    source: {\n      type: String,\n      required: true\n    }\n  },\n  setup(__props) {\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_ProseP = __nuxt_component_0;\n      _push(_ssrRenderComponent(_component_ProseP, _attrs, null, _parent));\n    };\n  }\n});\n",
-      "start": 1708620642016,
-      "end": 1708620642016,
+      "start": 1708886642541,
+      "end": 1708886642541,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -283,20 +283,20 @@
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708620642018,
-      "end": 1708620642018,
+      "start": 1708886642545,
+      "end": 1708886642545,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708620642022,
-      "end": 1708620642022,
+      "start": 1708886642546,
+      "end": 1708886642546,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708620642022,
-      "end": 1708620642022,
+      "start": 1708886642546,
+      "end": 1708886642546,
       "order": "normal"
     }
   ]

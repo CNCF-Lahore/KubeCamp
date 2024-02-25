@@ -4,209 +4,209 @@
     {
       "name": "vite:load-fallback",
       "result": "import memoryDriver from \"unstorage/drivers/memory\";\nimport { createStorage, prefixStorage } from \"unstorage\";\nimport { withBase } from \"ufo\";\nimport { createPipelineFetcherLegacy } from \"../../query/match/pipeline-legacy.js\";\nimport { createQuery } from \"../../query/query.js\";\nimport { createNav } from \"../../server/navigation.js\";\nimport { useContentPreview } from \"../../composables/preview.js\";\nimport { useRuntimeConfig, useNuxtApp } from \"#imports\";\nconst withContentBase = (url) => withBase(url, useRuntimeConfig().public.content.api.baseURL);\nexport const contentStorage = prefixStorage(createStorage({ driver: memoryDriver() }), \"@content\");\nexport function createDB(storage) {\n  async function getItems() {\n    const keys = new Set(await storage.getKeys(\"cache:\"));\n    const previewToken = useContentPreview().getPreviewToken();\n    if (previewToken) {\n      const previewMeta = await storage.getItem(`${previewToken}$`).then((data) => data || {});\n      if (Array.isArray(previewMeta.ignoreSources)) {\n        const sources = previewMeta.ignoreSources.map((s) => `cache:${s.trim()}:`);\n        for (const key of keys) {\n          if (sources.some((s) => key.startsWith(s))) {\n            keys.delete(key);\n          }\n        }\n      }\n      const previewKeys = await storage.getKeys(`${previewToken}:`);\n      const previewContents = await Promise.all(previewKeys.map((key) => storage.getItem(key)));\n      for (const pItem of previewContents) {\n        keys.delete(`cache:${pItem._id}`);\n        if (!pItem.__deleted) {\n          keys.add(`${previewToken}:${pItem._id}`);\n        }\n      }\n    }\n    const items = await Promise.all(Array.from(keys).map((key) => storage.getItem(key)));\n    return items;\n  }\n  return {\n    storage,\n    fetch: createPipelineFetcherLegacy(getItems),\n    query: (query) => createQuery(createPipelineFetcherLegacy(getItems), {\n      initialParams: query,\n      legacy: true\n    })\n  };\n}\nlet contentDatabase = null;\nlet contentDatabaseInitPromise = null;\nexport async function useContentDatabase() {\n  if (contentDatabaseInitPromise) {\n    await contentDatabaseInitPromise;\n  } else if (!contentDatabase) {\n    contentDatabaseInitPromise = initContentDatabase();\n    contentDatabase = await contentDatabaseInitPromise;\n  }\n  return contentDatabase;\n}\nasync function initContentDatabase() {\n  const nuxtApp = useNuxtApp();\n  const { content } = useRuntimeConfig().public;\n  const _contentDatabase = createDB(contentStorage);\n  const integrity = await _contentDatabase.storage.getItem(\"integrity\");\n  if (content.integrity !== +(integrity || 0)) {\n    const { contents, navigation } = await $fetch(withContentBase(content.integrity ? `cache.${content.integrity}.json` : \"cache.json\"));\n    await Promise.all(\n      contents.map((content2) => _contentDatabase.storage.setItem(`cache:${content2._id}`, content2))\n    );\n    await _contentDatabase.storage.setItem(\"navigation\", navigation);\n    await _contentDatabase.storage.setItem(\"integrity\", content.integrity);\n  }\n  await nuxtApp.callHook(\"content:storage\", _contentDatabase.storage);\n  return _contentDatabase;\n}\nexport async function generateNavigation(query) {\n  const db = await useContentDatabase();\n  if (!useContentPreview().getPreviewToken() && Object.keys(query || {}).length === 0) {\n    return db.storage.getItem(\"navigation\");\n  }\n  const contents = await db.query(query).where({\n    /**\n     * Partial contents are not included in the navigation\n     * A partial content is a content that has `_` prefix in its path\n     */\n    _partial: false,\n    /**\n    * Exclude any pages which have opted out of navigation via frontmatter.\n    */\n    navigation: {\n      $ne: false\n    }\n  }).find();\n  const dirConfigs = await db.query().where({ _path: /\\/_dir$/i, _partial: true }).find();\n  const configs = dirConfigs.reduce((configs2, conf) => {\n    if (conf.title?.toLowerCase() === \"dir\") {\n      conf.title = void 0;\n    }\n    const key = conf._path.split(\"/\").slice(0, -1).join(\"/\") || \"/\";\n    configs2[key] = {\n      ...conf,\n      // Extract meta from body. (non MD files)\n      ...conf.body\n    };\n    return configs2;\n  }, {});\n  return createNav(contents, configs);\n}\n",
-      "start": 1708620641572,
-      "end": 1708620642501,
+      "start": 1708886642068,
+      "end": 1708886642926,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708620642501,
-      "end": 1708620642501,
+      "start": 1708886642926,
+      "end": 1708886642926,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708620642501,
-      "end": 1708620642501,
+      "start": 1708886642926,
+      "end": 1708886642926,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708620642501,
-      "end": 1708620642501,
+      "start": 1708886642926,
+      "end": 1708886642926,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708620642501,
-      "end": 1708620642501,
+      "start": 1708886642926,
+      "end": 1708886642926,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import memoryDriver from \"unstorage/drivers/memory\";\nimport { createStorage, prefixStorage } from \"unstorage\";\nimport { withBase } from \"ufo\";\nimport { createPipelineFetcherLegacy } from \"../../query/match/pipeline-legacy.js\";\nimport { createQuery } from \"../../query/query.js\";\nimport { createNav } from \"../../server/navigation.js\";\nimport { useContentPreview } from \"../../composables/preview.js\";\nimport { useRuntimeConfig, useNuxtApp } from \"#imports\";\nconst withContentBase = (url) => withBase(url, useRuntimeConfig().public.content.api.baseURL);\nexport const contentStorage = prefixStorage(createStorage({ driver: memoryDriver() }), \"@content\");\nexport function createDB(storage) {\n  async function getItems() {\n    const keys = new Set(await storage.getKeys(\"cache:\"));\n    const previewToken = useContentPreview().getPreviewToken();\n    if (previewToken) {\n      const previewMeta = await storage.getItem(`${previewToken}$`).then((data) => data || {});\n      if (Array.isArray(previewMeta.ignoreSources)) {\n        const sources = previewMeta.ignoreSources.map((s) => `cache:${s.trim()}:`);\n        for (const key of keys) {\n          if (sources.some((s) => key.startsWith(s))) {\n            keys.delete(key);\n          }\n        }\n      }\n      const previewKeys = await storage.getKeys(`${previewToken}:`);\n      const previewContents = await Promise.all(previewKeys.map((key) => storage.getItem(key)));\n      for (const pItem of previewContents) {\n        keys.delete(`cache:${pItem._id}`);\n        if (!pItem.__deleted) {\n          keys.add(`${previewToken}:${pItem._id}`);\n        }\n      }\n    }\n    const items = await Promise.all(Array.from(keys).map((key) => storage.getItem(key)));\n    return items;\n  }\n  return {\n    storage,\n    fetch: createPipelineFetcherLegacy(getItems),\n    query: (query) => createQuery(createPipelineFetcherLegacy(getItems), {\n      initialParams: query,\n      legacy: true\n    })\n  };\n}\nlet contentDatabase = null;\nlet contentDatabaseInitPromise = null;\nexport async function useContentDatabase() {\n  if (contentDatabaseInitPromise) {\n    await contentDatabaseInitPromise;\n  } else if (!contentDatabase) {\n    contentDatabaseInitPromise = initContentDatabase();\n    contentDatabase = await contentDatabaseInitPromise;\n  }\n  return contentDatabase;\n}\nasync function initContentDatabase() {\n  const nuxtApp = useNuxtApp();\n  const { content } = useRuntimeConfig().public;\n  const _contentDatabase = createDB(contentStorage);\n  const integrity = await _contentDatabase.storage.getItem(\"integrity\");\n  if (content.integrity !== +(integrity || 0)) {\n    const { contents, navigation } = await $fetch(withContentBase(content.integrity ? `cache.${content.integrity}.json` : \"cache.json\"));\n    await Promise.all(\n      contents.map((content2) => _contentDatabase.storage.setItem(`cache:${content2._id}`, content2))\n    );\n    await _contentDatabase.storage.setItem(\"navigation\", navigation);\n    await _contentDatabase.storage.setItem(\"integrity\", content.integrity);\n  }\n  await nuxtApp.callHook(\"content:storage\", _contentDatabase.storage);\n  return _contentDatabase;\n}\nexport async function generateNavigation(query) {\n  const db = await useContentDatabase();\n  if (!useContentPreview().getPreviewToken() && Object.keys(query || {}).length === 0) {\n    return db.storage.getItem(\"navigation\");\n  }\n  const contents = await db.query(query).where({\n    /**\n     * Partial contents are not included in the navigation\n     * A partial content is a content that has `_` prefix in its path\n     */\n    _partial: false,\n    /**\n    * Exclude any pages which have opted out of navigation via frontmatter.\n    */\n    navigation: {\n      $ne: false\n    }\n  }).find();\n  const dirConfigs = await db.query().where({ _path: /\\/_dir$/i, _partial: true }).find();\n  const configs = dirConfigs.reduce((configs2, conf) => {\n    if (conf.title?.toLowerCase() === \"dir\") {\n      conf.title = void 0;\n    }\n    const key = conf._path.split(\"/\").slice(0, -1).join(\"/\") || \"/\";\n    configs2[key] = {\n      ...conf,\n      // Extract meta from body. (non MD files)\n      ...conf.body\n    };\n    return configs2;\n  }, {});\n  return createNav(contents, configs);\n}\n",
-      "start": 1708620642501,
-      "end": 1708620642501,
+      "start": 1708886642926,
+      "end": 1708886642926,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import memoryDriver from \"unstorage/drivers/memory\";\nimport { createStorage, prefixStorage } from \"unstorage\";\nimport { withBase } from \"ufo\";\nimport { createPipelineFetcherLegacy } from \"../../query/match/pipeline-legacy.js\";\nimport { createQuery } from \"../../query/query.js\";\nimport { createNav } from \"../../server/navigation.js\";\nimport { useContentPreview } from \"../../composables/preview.js\";\nimport { useRuntimeConfig, useNuxtApp } from \"#imports\";\nconst withContentBase = (url) => withBase(url, useRuntimeConfig().public.content.api.baseURL);\nexport const contentStorage = prefixStorage(createStorage({ driver: memoryDriver() }), \"@content\");\nexport function createDB(storage) {\n  async function getItems() {\n    const keys = new Set(await storage.getKeys(\"cache:\"));\n    const previewToken = useContentPreview().getPreviewToken();\n    if (previewToken) {\n      const previewMeta = await storage.getItem(`${previewToken}$`).then((data) => data || {});\n      if (Array.isArray(previewMeta.ignoreSources)) {\n        const sources = previewMeta.ignoreSources.map((s) => `cache:${s.trim()}:`);\n        for (const key of keys) {\n          if (sources.some((s) => key.startsWith(s))) {\n            keys.delete(key);\n          }\n        }\n      }\n      const previewKeys = await storage.getKeys(`${previewToken}:`);\n      const previewContents = await Promise.all(previewKeys.map((key) => storage.getItem(key)));\n      for (const pItem of previewContents) {\n        keys.delete(`cache:${pItem._id}`);\n        if (!pItem.__deleted) {\n          keys.add(`${previewToken}:${pItem._id}`);\n        }\n      }\n    }\n    const items = await Promise.all(Array.from(keys).map((key) => storage.getItem(key)));\n    return items;\n  }\n  return {\n    storage,\n    fetch: createPipelineFetcherLegacy(getItems),\n    query: (query) => createQuery(createPipelineFetcherLegacy(getItems), {\n      initialParams: query,\n      legacy: true\n    })\n  };\n}\nlet contentDatabase = null;\nlet contentDatabaseInitPromise = null;\nexport async function useContentDatabase() {\n  if (contentDatabaseInitPromise) {\n    await contentDatabaseInitPromise;\n  } else if (!contentDatabase) {\n    contentDatabaseInitPromise = initContentDatabase();\n    contentDatabase = await contentDatabaseInitPromise;\n  }\n  return contentDatabase;\n}\nasync function initContentDatabase() {\n  const nuxtApp = useNuxtApp();\n  const { content } = useRuntimeConfig().public;\n  const _contentDatabase = createDB(contentStorage);\n  const integrity = await _contentDatabase.storage.getItem(\"integrity\");\n  if (content.integrity !== +(integrity || 0)) {\n    const { contents, navigation } = await $fetch(withContentBase(content.integrity ? `cache.${content.integrity}.json` : \"cache.json\"));\n    await Promise.all(\n      contents.map((content2) => _contentDatabase.storage.setItem(`cache:${content2._id}`, content2))\n    );\n    await _contentDatabase.storage.setItem(\"navigation\", navigation);\n    await _contentDatabase.storage.setItem(\"integrity\", content.integrity);\n  }\n  await nuxtApp.callHook(\"content:storage\", _contentDatabase.storage);\n  return _contentDatabase;\n}\nexport async function generateNavigation(query) {\n  const db = await useContentDatabase();\n  if (!useContentPreview().getPreviewToken() && Object.keys(query || {}).length === 0) {\n    return db.storage.getItem(\"navigation\");\n  }\n  const contents = await db.query(query).where({\n    /**\n     * Partial contents are not included in the navigation\n     * A partial content is a content that has `_` prefix in its path\n     */\n    _partial: false,\n    /**\n    * Exclude any pages which have opted out of navigation via frontmatter.\n    */\n    navigation: {\n      $ne: false\n    }\n  }).find();\n  const dirConfigs = await db.query().where({ _path: /\\/_dir$/i, _partial: true }).find();\n  const configs = dirConfigs.reduce((configs2, conf) => {\n    if (conf.title?.toLowerCase() === \"dir\") {\n      conf.title = void 0;\n    }\n    const key = conf._path.split(\"/\").slice(0, -1).join(\"/\") || \"/\";\n    configs2[key] = {\n      ...conf,\n      // Extract meta from body. (non MD files)\n      ...conf.body\n    };\n    return configs2;\n  }, {});\n  return createNav(contents, configs);\n}\n",
-      "start": 1708620642501,
-      "end": 1708620642501,
+      "start": 1708886642926,
+      "end": 1708886642926,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708620642501,
-      "end": 1708620642501,
+      "start": 1708886642926,
+      "end": 1708886642926,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708620642501,
-      "end": 1708620642501,
+      "start": 1708886642926,
+      "end": 1708886642926,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708620642501,
-      "end": 1708620642502,
+      "start": 1708886642926,
+      "end": 1708886642926,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708620642502,
-      "end": 1708620642502,
+      "start": 1708886642926,
+      "end": 1708886642926,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1708620642502,
-      "end": 1708620642502,
+      "start": 1708886642926,
+      "end": 1708886642926,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1708620642502,
-      "end": 1708620642502,
+      "start": 1708886642926,
+      "end": 1708886642926,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708620642502,
-      "end": 1708620642502,
+      "start": 1708886642926,
+      "end": 1708886642926,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708620642502,
-      "end": 1708620642502,
+      "start": 1708886642926,
+      "end": 1708886642926,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708620642502,
-      "end": 1708620642502,
+      "start": 1708886642926,
+      "end": 1708886642926,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708620642502,
-      "end": 1708620642502,
+      "start": 1708886642927,
+      "end": 1708886642927,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708620642502,
-      "end": 1708620642502,
+      "start": 1708886642927,
+      "end": 1708886642927,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708620642502,
-      "end": 1708620642502,
+      "start": 1708886642927,
+      "end": 1708886642927,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708620642502,
-      "end": 1708620642502,
+      "start": 1708886642927,
+      "end": 1708886642927,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708620642502,
-      "end": 1708620642502,
+      "start": 1708886642927,
+      "end": 1708886642927,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708620642502,
-      "end": 1708620642502,
+      "start": 1708886642927,
+      "end": 1708886642927,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708620642502,
-      "end": 1708620642502,
+      "start": 1708886642927,
+      "end": 1708886642927,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708620642502,
-      "end": 1708620642502,
+      "start": 1708886642927,
+      "end": 1708886642927,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708620642502,
-      "end": 1708620642502,
+      "start": 1708886642927,
+      "end": 1708886642927,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708620642502,
-      "end": 1708620642502,
+      "start": 1708886642927,
+      "end": 1708886642927,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708620642502,
-      "end": 1708620642502,
+      "start": 1708886642927,
+      "end": 1708886642927,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708620642502,
-      "end": 1708620642502,
+      "start": 1708886642927,
+      "end": 1708886642927,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708620642502,
-      "end": 1708620642503,
+      "start": 1708886642927,
+      "end": 1708886642928,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708620642503,
-      "end": 1708620642503,
+      "start": 1708886642928,
+      "end": 1708886642928,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708620642503,
-      "end": 1708620642503,
+      "start": 1708886642928,
+      "end": 1708886642928,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708620642503,
-      "end": 1708620642503,
+      "start": 1708886642928,
+      "end": 1708886642928,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708620642503,
-      "end": 1708620642503,
+      "start": 1708886642928,
+      "end": 1708886642928,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { useRuntimeConfig, useNuxtApp } from '#app/nuxt';\nimport memoryDriver from \"unstorage/drivers/memory\";\nimport { createStorage, prefixStorage } from \"unstorage\";\nimport { withBase } from \"ufo\";\nimport { createPipelineFetcherLegacy } from \"../../query/match/pipeline-legacy.js\";\nimport { createQuery } from \"../../query/query.js\";\nimport { createNav } from \"../../server/navigation.js\";\nimport { useContentPreview } from \"../../composables/preview.js\";\nconst withContentBase = (url) => withBase(url, useRuntimeConfig().public.content.api.baseURL);\nexport const contentStorage = prefixStorage(createStorage({ driver: memoryDriver() }), \"@content\");\nexport function createDB(storage) {\n  async function getItems() {\n    const keys = new Set(await storage.getKeys(\"cache:\"));\n    const previewToken = useContentPreview().getPreviewToken();\n    if (previewToken) {\n      const previewMeta = await storage.getItem(`${previewToken}$`).then((data) => data || {});\n      if (Array.isArray(previewMeta.ignoreSources)) {\n        const sources = previewMeta.ignoreSources.map((s) => `cache:${s.trim()}:`);\n        for (const key of keys) {\n          if (sources.some((s) => key.startsWith(s))) {\n            keys.delete(key);\n          }\n        }\n      }\n      const previewKeys = await storage.getKeys(`${previewToken}:`);\n      const previewContents = await Promise.all(previewKeys.map((key) => storage.getItem(key)));\n      for (const pItem of previewContents) {\n        keys.delete(`cache:${pItem._id}`);\n        if (!pItem.__deleted) {\n          keys.add(`${previewToken}:${pItem._id}`);\n        }\n      }\n    }\n    const items = await Promise.all(Array.from(keys).map((key) => storage.getItem(key)));\n    return items;\n  }\n  return {\n    storage,\n    fetch: createPipelineFetcherLegacy(getItems),\n    query: (query) => createQuery(createPipelineFetcherLegacy(getItems), {\n      initialParams: query,\n      legacy: true\n    })\n  };\n}\nlet contentDatabase = null;\nlet contentDatabaseInitPromise = null;\nexport async function useContentDatabase() {\n  if (contentDatabaseInitPromise) {\n    await contentDatabaseInitPromise;\n  } else if (!contentDatabase) {\n    contentDatabaseInitPromise = initContentDatabase();\n    contentDatabase = await contentDatabaseInitPromise;\n  }\n  return contentDatabase;\n}\nasync function initContentDatabase() {\n  const nuxtApp = useNuxtApp();\n  const { content } = useRuntimeConfig().public;\n  const _contentDatabase = createDB(contentStorage);\n  const integrity = await _contentDatabase.storage.getItem(\"integrity\");\n  if (content.integrity !== +(integrity || 0)) {\n    const { contents, navigation } = await $fetch(withContentBase(content.integrity ? `cache.${content.integrity}.json` : \"cache.json\"));\n    await Promise.all(\n      contents.map((content2) => _contentDatabase.storage.setItem(`cache:${content2._id}`, content2))\n    );\n    await _contentDatabase.storage.setItem(\"navigation\", navigation);\n    await _contentDatabase.storage.setItem(\"integrity\", content.integrity);\n  }\n  await nuxtApp.callHook(\"content:storage\", _contentDatabase.storage);\n  return _contentDatabase;\n}\nexport async function generateNavigation(query) {\n  const db = await useContentDatabase();\n  if (!useContentPreview().getPreviewToken() && Object.keys(query || {}).length === 0) {\n    return db.storage.getItem(\"navigation\");\n  }\n  const contents = await db.query(query).where({\n    /**\n     * Partial contents are not included in the navigation\n     * A partial content is a content that has `_` prefix in its path\n     */\n    _partial: false,\n    /**\n    * Exclude any pages which have opted out of navigation via frontmatter.\n    */\n    navigation: {\n      $ne: false\n    }\n  }).find();\n  const dirConfigs = await db.query().where({ _path: /\\/_dir$/i, _partial: true }).find();\n  const configs = dirConfigs.reduce((configs2, conf) => {\n    if (conf.title?.toLowerCase() === \"dir\") {\n      conf.title = void 0;\n    }\n    const key = conf._path.split(\"/\").slice(0, -1).join(\"/\") || \"/\";\n    configs2[key] = {\n      ...conf,\n      // Extract meta from body. (non MD files)\n      ...conf.body\n    };\n    return configs2;\n  }, {});\n  return createNav(contents, configs);\n}\n",
-      "start": 1708620642503,
-      "end": 1708620642505,
+      "start": 1708886642928,
+      "end": 1708886642931,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -220,8 +220,8 @@
     {
       "name": "nuxt:imports-transform",
       "result": "import { useRuntimeConfig, useNuxtApp } from '#app/nuxt';\nimport memoryDriver from \"unstorage/drivers/memory\";\nimport { createStorage, prefixStorage } from \"unstorage\";\nimport { withBase } from \"ufo\";\nimport { createPipelineFetcherLegacy } from \"../../query/match/pipeline-legacy.js\";\nimport { createQuery } from \"../../query/query.js\";\nimport { createNav } from \"../../server/navigation.js\";\nimport { useContentPreview } from \"../../composables/preview.js\";\nconst withContentBase = (url) => withBase(url, useRuntimeConfig().public.content.api.baseURL);\nexport const contentStorage = prefixStorage(createStorage({ driver: memoryDriver() }), \"@content\");\nexport function createDB(storage) {\n  async function getItems() {\n    const keys = new Set(await storage.getKeys(\"cache:\"));\n    const previewToken = useContentPreview().getPreviewToken();\n    if (previewToken) {\n      const previewMeta = await storage.getItem(`${previewToken}$`).then((data) => data || {});\n      if (Array.isArray(previewMeta.ignoreSources)) {\n        const sources = previewMeta.ignoreSources.map((s) => `cache:${s.trim()}:`);\n        for (const key of keys) {\n          if (sources.some((s) => key.startsWith(s))) {\n            keys.delete(key);\n          }\n        }\n      }\n      const previewKeys = await storage.getKeys(`${previewToken}:`);\n      const previewContents = await Promise.all(previewKeys.map((key) => storage.getItem(key)));\n      for (const pItem of previewContents) {\n        keys.delete(`cache:${pItem._id}`);\n        if (!pItem.__deleted) {\n          keys.add(`${previewToken}:${pItem._id}`);\n        }\n      }\n    }\n    const items = await Promise.all(Array.from(keys).map((key) => storage.getItem(key)));\n    return items;\n  }\n  return {\n    storage,\n    fetch: createPipelineFetcherLegacy(getItems),\n    query: (query) => createQuery(createPipelineFetcherLegacy(getItems), {\n      initialParams: query,\n      legacy: true\n    })\n  };\n}\nlet contentDatabase = null;\nlet contentDatabaseInitPromise = null;\nexport async function useContentDatabase() {\n  if (contentDatabaseInitPromise) {\n    await contentDatabaseInitPromise;\n  } else if (!contentDatabase) {\n    contentDatabaseInitPromise = initContentDatabase();\n    contentDatabase = await contentDatabaseInitPromise;\n  }\n  return contentDatabase;\n}\nasync function initContentDatabase() {\n  const nuxtApp = useNuxtApp();\n  const { content } = useRuntimeConfig().public;\n  const _contentDatabase = createDB(contentStorage);\n  const integrity = await _contentDatabase.storage.getItem(\"integrity\");\n  if (content.integrity !== +(integrity || 0)) {\n    const { contents, navigation } = await $fetch(withContentBase(content.integrity ? `cache.${content.integrity}.json` : \"cache.json\"));\n    await Promise.all(\n      contents.map((content2) => _contentDatabase.storage.setItem(`cache:${content2._id}`, content2))\n    );\n    await _contentDatabase.storage.setItem(\"navigation\", navigation);\n    await _contentDatabase.storage.setItem(\"integrity\", content.integrity);\n  }\n  await nuxtApp.callHook(\"content:storage\", _contentDatabase.storage);\n  return _contentDatabase;\n}\nexport async function generateNavigation(query) {\n  const db = await useContentDatabase();\n  if (!useContentPreview().getPreviewToken() && Object.keys(query || {}).length === 0) {\n    return db.storage.getItem(\"navigation\");\n  }\n  const contents = await db.query(query).where({\n    /**\n     * Partial contents are not included in the navigation\n     * A partial content is a content that has `_` prefix in its path\n     */\n    _partial: false,\n    /**\n    * Exclude any pages which have opted out of navigation via frontmatter.\n    */\n    navigation: {\n      $ne: false\n    }\n  }).find();\n  const dirConfigs = await db.query().where({ _path: /\\/_dir$/i, _partial: true }).find();\n  const configs = dirConfigs.reduce((configs2, conf) => {\n    if (conf.title?.toLowerCase() === \"dir\") {\n      conf.title = void 0;\n    }\n    const key = conf._path.split(\"/\").slice(0, -1).join(\"/\") || \"/\";\n    configs2[key] = {\n      ...conf,\n      // Extract meta from body. (non MD files)\n      ...conf.body\n    };\n    return configs2;\n  }, {});\n  return createNav(contents, configs);\n}\n",
-      "start": 1708620642503,
-      "end": 1708620642505,
+      "start": 1708886642928,
+      "end": 1708886642931,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -234,56 +234,56 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1708620642505,
-      "end": 1708620642505,
+      "start": 1708886642931,
+      "end": 1708886642931,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708620642505,
-      "end": 1708620642505,
+      "start": 1708886642931,
+      "end": 1708886642931,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708620642505,
-      "end": 1708620642505,
+      "start": 1708886642931,
+      "end": 1708886642931,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708620642505,
-      "end": 1708620642505,
+      "start": 1708886642931,
+      "end": 1708886642931,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1708620642505,
-      "end": 1708620642505,
+      "start": 1708886642931,
+      "end": 1708886642931,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1708620642505,
-      "end": 1708620642505,
+      "start": 1708886642931,
+      "end": 1708886642931,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708620642505,
-      "end": 1708620642505,
+      "start": 1708886642931,
+      "end": 1708886642931,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708620642505,
-      "end": 1708620642505,
+      "start": 1708886642931,
+      "end": 1708886642931,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708620642505,
-      "end": 1708620642505,
+      "start": 1708886642931,
+      "end": 1708886642931,
       "order": "normal"
     }
   ]

@@ -4,51 +4,51 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock } from \"vue\"\n\nimport { computed } from 'vue'\nimport { useContentPreview } from '../composables/preview'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'ContentRendererMarkdown',\n  props: {\n  /**\n   * Content to render\n   */\n  value: {\n    type: Object,\n    required: true\n  },\n  /**\n   * Render only the excerpt\n   */\n  excerpt: {\n    type: Boolean,\n    default: false\n  },\n  /**\n   * Root tag to use for rendering\n   */\n  tag: {\n    type: String,\n    default: 'div'\n  },\n  /**\n   * The map of custom components to use for rendering.\n   */\n  components: {\n    type: Object,\n    default: () => ({})\n  },\n\n  data: {\n    type: Object,\n    default: () => ({})\n  }\n},\n  setup(__props) {\n\nconst props = __props\n\nconst debug = process.dev || useContentPreview().isEnabled()\n\nconst body = computed(() => {\n  let body = props.value.body || props.value\n  if (props.excerpt && props.value.excerpt) {\n    body = props.value.excerpt\n  }\n\n  return body\n})\n\nconst data = computed(() => {\n  // eslint-disable-next-line @typescript-eslint/no-unused-vars\n  const { body, excerpt, ...data } = props.value\n  return {\n    ...data,\n    ...props.data\n  }\n})\n\nconst mdcComponents = computed(() => {\n  return {\n    ...props.components,\n    ...(data.value._components || {})\n  }\n})\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_MDCRenderer = _resolveComponent(\"MDCRenderer\")!\n\n  return (_openBlock(), _createBlock(_component_MDCRenderer, {\n    body: body.value,\n    data: data.value,\n    tag: __props.tag,\n    components: mdcComponents.value,\n    \"data-content-id\": _unref(debug) ? __props.value._id : undefined\n  }, null, 8, [\"body\", \"data\", \"tag\", \"components\", \"data-content-id\"]))\n}\n}\n\n})",
-      "start": 1708620636581,
-      "end": 1708620636581
+      "start": 1708886637201,
+      "end": 1708886637201
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708620636582,
-      "end": 1708620636582,
+      "start": 1708886637201,
+      "end": 1708886637201,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708620636582,
-      "end": 1708620636582,
+      "start": 1708886637201,
+      "end": 1708886637201,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock } from \"vue\"\n\nimport { computed } from 'vue'\nimport { useContentPreview } from '../composables/preview'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'ContentRendererMarkdown',\n  props: {\n  /**\n   * Content to render\n   */\n  value: {\n    type: Object,\n    required: true\n  },\n  /**\n   * Render only the excerpt\n   */\n  excerpt: {\n    type: Boolean,\n    default: false\n  },\n  /**\n   * Root tag to use for rendering\n   */\n  tag: {\n    type: String,\n    default: 'div'\n  },\n  /**\n   * The map of custom components to use for rendering.\n   */\n  components: {\n    type: Object,\n    default: () => ({})\n  },\n\n  data: {\n    type: Object,\n    default: () => ({})\n  }\n},\n  setup(__props) {\n\nconst props = __props\n\nconst debug = process.dev || useContentPreview().isEnabled()\n\nconst body = computed(() => {\n  let body = props.value.body || props.value\n  if (props.excerpt && props.value.excerpt) {\n    body = props.value.excerpt\n  }\n\n  return body\n})\n\nconst data = computed(() => {\n  // eslint-disable-next-line @typescript-eslint/no-unused-vars\n  const { body, excerpt, ...data } = props.value\n  return {\n    ...data,\n    ...props.data\n  }\n})\n\nconst mdcComponents = computed(() => {\n  return {\n    ...props.components,\n    ...(data.value._components || {})\n  }\n})\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_MDCRenderer = _resolveComponent(\"MDCRenderer\")!\n\n  return (_openBlock(), _createBlock(_component_MDCRenderer, {\n    body: body.value,\n    data: data.value,\n    tag: __props.tag,\n    components: mdcComponents.value,\n    \"data-content-id\": _unref(debug) ? __props.value._id : undefined\n  }, null, 8, [\"body\", \"data\", \"tag\", \"components\", \"data-content-id\"]))\n}\n}\n\n})",
-      "start": 1708620636582,
-      "end": 1708620636582,
+      "start": 1708886637201,
+      "end": 1708886637201,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708620636582,
-      "end": 1708620636582,
+      "start": 1708886637201,
+      "end": 1708886637201,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708620636582,
-      "end": 1708620636582,
+      "start": 1708886637201,
+      "end": 1708886637201,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708620636582,
-      "end": 1708620636582,
+      "start": 1708886637201,
+      "end": 1708886637201,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock } from \"vue\";\nimport { computed } from \"vue\";\nimport { useContentPreview } from \"../composables/preview\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ContentRendererMarkdown\",\n  props: {\n    /**\n     * Content to render\n     */\n    value: {\n      type: Object,\n      required: true\n    },\n    /**\n     * Render only the excerpt\n     */\n    excerpt: {\n      type: Boolean,\n      default: false\n    },\n    /**\n     * Root tag to use for rendering\n     */\n    tag: {\n      type: String,\n      default: \"div\"\n    },\n    /**\n     * The map of custom components to use for rendering.\n     */\n    components: {\n      type: Object,\n      default: () => ({})\n    },\n    data: {\n      type: Object,\n      default: () => ({})\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const debug = process.dev || useContentPreview().isEnabled();\n    const body = computed(() => {\n      let body2 = props.value.body || props.value;\n      if (props.excerpt && props.value.excerpt) {\n        body2 = props.value.excerpt;\n      }\n      return body2;\n    });\n    const data = computed(() => {\n      const { body: body2, excerpt, ...data2 } = props.value;\n      return {\n        ...data2,\n        ...props.data\n      };\n    });\n    const mdcComponents = computed(() => {\n      return {\n        ...props.components,\n        ...data.value._components || {}\n      };\n    });\n    return (_ctx, _cache) => {\n      const _component_MDCRenderer = _resolveComponent(\"MDCRenderer\");\n      return _openBlock(), _createBlock(_component_MDCRenderer, {\n        body: body.value,\n        data: data.value,\n        tag: __props.tag,\n        components: mdcComponents.value,\n        \"data-content-id\": _unref(debug) ? __props.value._id : void 0\n      }, null, 8, [\"body\", \"data\", \"tag\", \"components\", \"data-content-id\"]);\n    };\n  }\n});\n",
-      "start": 1708620636582,
-      "end": 1708620636662,
+      "start": 1708886637201,
+      "end": 1708886637237,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -67,173 +67,173 @@
     },
     {
       "name": "vite:json",
-      "start": 1708620636662,
-      "end": 1708620636662,
+      "start": 1708886637237,
+      "end": 1708886637237,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708620636662,
-      "end": 1708620636662,
+      "start": 1708886637237,
+      "end": 1708886637237,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708620636662,
-      "end": 1708620636662,
+      "start": 1708886637237,
+      "end": 1708886637237,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708620636662,
-      "end": 1708620636662,
+      "start": 1708886637237,
+      "end": 1708886637237,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708620636662,
-      "end": 1708620636663,
+      "start": 1708886637238,
+      "end": 1708886637238,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708620636663,
-      "end": 1708620636663,
+      "start": 1708886637238,
+      "end": 1708886637238,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1708620636663,
-      "end": 1708620636663,
+      "start": 1708886637238,
+      "end": 1708886637238,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708620636663,
-      "end": 1708620636663,
+      "start": 1708886637238,
+      "end": 1708886637238,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708620636664,
-      "end": 1708620636664,
+      "start": 1708886637239,
+      "end": 1708886637239,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708620636665,
-      "end": 1708620636665,
+      "start": 1708886637239,
+      "end": 1708886637239,
       "order": "normal"
     },
     {
       "name": "vite:define",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock } from \"vue\";\nimport { computed } from \"vue\";\nimport { useContentPreview } from \"../composables/preview\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ContentRendererMarkdown\",\n  props: {\n    /**\n     * Content to render\n     */\n    value: {\n      type: Object,\n      required: true\n    },\n    /**\n     * Render only the excerpt\n     */\n    excerpt: {\n      type: Boolean,\n      default: false\n    },\n    /**\n     * Root tag to use for rendering\n     */\n    tag: {\n      type: String,\n      default: \"div\"\n    },\n    /**\n     * The map of custom components to use for rendering.\n     */\n    components: {\n      type: Object,\n      default: () => ({})\n    },\n    data: {\n      type: Object,\n      default: () => ({})\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const debug = useContentPreview().isEnabled();\n    const body = computed(() => {\n      let body2 = props.value.body || props.value;\n      if (props.excerpt && props.value.excerpt) {\n        body2 = props.value.excerpt;\n      }\n      return body2;\n    });\n    const data = computed(() => {\n      const { body: body2, excerpt, ...data2 } = props.value;\n      return {\n        ...data2,\n        ...props.data\n      };\n    });\n    const mdcComponents = computed(() => {\n      return {\n        ...props.components,\n        ...data.value._components || {}\n      };\n    });\n    return (_ctx, _cache) => {\n      const _component_MDCRenderer = _resolveComponent(\"MDCRenderer\");\n      return _openBlock(), _createBlock(_component_MDCRenderer, {\n        body: body.value,\n        data: data.value,\n        tag: __props.tag,\n        components: mdcComponents.value,\n        \"data-content-id\": _unref(debug) ? __props.value._id : void 0\n      }, null, 8, [\"body\", \"data\", \"tag\", \"components\", \"data-content-id\"]);\n    };\n  }\n});\n",
-      "start": 1708620636666,
-      "end": 1708620636687,
+      "start": 1708886637239,
+      "end": 1708886637249,
       "order": "normal",
       "sourcemaps": null
     },
     {
       "name": "vite:css-post",
-      "start": 1708620636687,
-      "end": 1708620636687,
+      "start": 1708886637249,
+      "end": 1708886637249,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708620636687,
-      "end": 1708620636687,
+      "start": 1708886637249,
+      "end": 1708886637249,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708620636687,
-      "end": 1708620636687,
+      "start": 1708886637249,
+      "end": 1708886637249,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708620636687,
-      "end": 1708620636687,
+      "start": 1708886637249,
+      "end": 1708886637249,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708620636687,
-      "end": 1708620636687,
+      "start": 1708886637249,
+      "end": 1708886637249,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708620636687,
-      "end": 1708620636687,
+      "start": 1708886637249,
+      "end": 1708886637249,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708620636687,
-      "end": 1708620636687,
+      "start": 1708886637250,
+      "end": 1708886637250,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708620636687,
-      "end": 1708620636687,
+      "start": 1708886637250,
+      "end": 1708886637250,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708620636687,
-      "end": 1708620636688,
+      "start": 1708886637250,
+      "end": 1708886637250,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708620636688,
-      "end": 1708620636688,
+      "start": 1708886637251,
+      "end": 1708886637251,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708620636688,
-      "end": 1708620636688,
+      "start": 1708886637251,
+      "end": 1708886637252,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1708620636688,
-      "end": 1708620636688,
+      "start": 1708886637252,
+      "end": 1708886637252,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1708620636688,
-      "end": 1708620636688,
+      "start": 1708886637252,
+      "end": 1708886637252,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
       "result": "import { default as __nuxt_component_0 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/components/MDCRenderer\";\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock } from \"vue\";\nimport { computed } from \"vue\";\nimport { useContentPreview } from \"../composables/preview\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ContentRendererMarkdown\",\n  props: {\n    /**\n     * Content to render\n     */\n    value: {\n      type: Object,\n      required: true\n    },\n    /**\n     * Render only the excerpt\n     */\n    excerpt: {\n      type: Boolean,\n      default: false\n    },\n    /**\n     * Root tag to use for rendering\n     */\n    tag: {\n      type: String,\n      default: \"div\"\n    },\n    /**\n     * The map of custom components to use for rendering.\n     */\n    components: {\n      type: Object,\n      default: () => ({})\n    },\n    data: {\n      type: Object,\n      default: () => ({})\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const debug = useContentPreview().isEnabled();\n    const body = computed(() => {\n      let body2 = props.value.body || props.value;\n      if (props.excerpt && props.value.excerpt) {\n        body2 = props.value.excerpt;\n      }\n      return body2;\n    });\n    const data = computed(() => {\n      const { body: body2, excerpt, ...data2 } = props.value;\n      return {\n        ...data2,\n        ...props.data\n      };\n    });\n    const mdcComponents = computed(() => {\n      return {\n        ...props.components,\n        ...data.value._components || {}\n      };\n    });\n    return (_ctx, _cache) => {\n      const _component_MDCRenderer = __nuxt_component_0;\n      return _openBlock(), _createBlock(_component_MDCRenderer, {\n        body: body.value,\n        data: data.value,\n        tag: __props.tag,\n        components: mdcComponents.value,\n        \"data-content-id\": _unref(debug) ? __props.value._id : void 0\n      }, null, 8, [\"body\", \"data\", \"tag\", \"components\", \"data-content-id\"]);\n    };\n  }\n});\n",
-      "start": 1708620636688,
-      "end": 1708620636688,
+      "start": 1708886637252,
+      "end": 1708886637252,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708620636688,
-      "end": 1708620636688,
+      "start": 1708886637253,
+      "end": 1708886637253,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708620636688,
-      "end": 1708620636688,
+      "start": 1708886637253,
+      "end": 1708886637253,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708620636688,
-      "end": 1708620636688,
+      "start": 1708886637253,
+      "end": 1708886637253,
       "order": "normal"
     }
   ]

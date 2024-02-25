@@ -4,8 +4,8 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttr as _ssrRenderAttr, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\"\n\nimport { useVModel } from '@vueuse/core'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'ComponentPlaygroundProps',\n  __ssrInlineRender: true,\n  props: {\n  modelValue: {\n    type: Object,\n    required: true\n  },\n  componentData: {\n    type: Object,\n    required: true\n  }\n},\n  emits: ['update:modelValue'],\n  setup(__props, { emit: __emit }) {\n\nconst props = __props\n\nconst emits = __emit\n\nconst formData = useVModel(props, 'modelValue', emits)\n\nconst propChange = (event: any, propName: any) => {\n  formData.value = {\n    ...formData.value,\n    [propName]: event.target.value\n  }\n}\n\nconst componentProps = computed(() => props?.componentData?.meta?.props)\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_ProseH4 = _resolveComponent(\"ProseH4\")!\n  const _component_ProseCodeInline = _resolveComponent(\"ProseCodeInline\")!\n  const _component_Badge = _resolveComponent(\"Badge\")!\n  const _component_ProseP = _resolveComponent(\"ProseP\")!\n\n  _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"component-playground-data-section\" }, _attrs))} data-v-acf5a6ce><!--[-->`)\n  _ssrRenderList(_unref(componentProps), (prop) => {\n    _push(`<div data-v-acf5a6ce><div${_ssrRenderAttr(\"id\", prop.name)} class=\"prop-title\" data-v-acf5a6ce>`)\n    _push(_ssrRenderComponent(_component_ProseH4, {\n      id: prop.name\n    }, {\n      default: _withCtx((_, _push, _parent, _scopeId) => {\n        if (_push) {\n          _push(`${_ssrInterpolate(prop.name)}`)\n        } else {\n          return [\n            _createTextVNode(_toDisplayString(prop.name), 1)\n          ]\n        }\n      }),\n      _: 2\n    }, _parent))\n    _push(`<span data-v-acf5a6ce>`)\n    _push(_ssrRenderComponent(_component_ProseCodeInline, null, {\n      default: _withCtx((_, _push, _parent, _scopeId) => {\n        if (_push) {\n          _push(`${_ssrInterpolate(prop.type)}`)\n        } else {\n          return [\n            _createTextVNode(_toDisplayString(prop.type), 1)\n          ]\n        }\n      }),\n      _: 2\n    }, _parent))\n    if (!prop.required) {\n      _push(_ssrRenderComponent(_component_Badge, null, {\n        default: _withCtx((_, _push, _parent, _scopeId) => {\n          if (_push) {\n            _push(` Required `)\n          } else {\n            return [\n              _createTextVNode(\" Required \")\n            ]\n          }\n        }),\n        _: 2\n      }, _parent))\n    } else {\n      _push(`<!---->`)\n    }\n    _push(`</span></div>`)\n    if (prop.description) {\n      _push(_ssrRenderComponent(_component_ProseP, null, {\n        default: _withCtx((_, _push, _parent, _scopeId) => {\n          if (_push) {\n            _push(`${_ssrInterpolate(prop.description)}`)\n          } else {\n            return [\n              _createTextVNode(_toDisplayString(prop.description), 1)\n            ]\n          }\n        }),\n        _: 2\n      }, _parent))\n    } else {\n      _push(`<!---->`)\n    }\n    _push(`<input${_ssrRenderAttr(\"value\", _unref(formData)[prop.name])} data-v-acf5a6ce></div>`)\n  })\n  _push(`<!--]--></div>`)\n}\n}\n\n})",
-      "start": 1708620642379,
-      "end": 1708620642379,
+      "start": 1708886642784,
+      "end": 1708886642784,
       "sourcemaps": {
         "version": 3,
         "sources": [
@@ -20,71 +20,71 @@
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708620642380,
-      "end": 1708620642380,
+      "start": 1708886642785,
+      "end": 1708886642785,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708620642380,
-      "end": 1708620642380,
+      "start": 1708886642785,
+      "end": 1708886642785,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708620642382,
-      "end": 1708620642382,
+      "start": 1708886642787,
+      "end": 1708886642787,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708620642382,
-      "end": 1708620642382,
+      "start": 1708886642787,
+      "end": 1708886642787,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttr as _ssrRenderAttr, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\"\n\nimport { useVModel } from '@vueuse/core'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'ComponentPlaygroundProps',\n  __ssrInlineRender: true,\n  props: {\n  modelValue: {\n    type: Object,\n    required: true\n  },\n  componentData: {\n    type: Object,\n    required: true\n  }\n},\n  emits: ['update:modelValue'],\n  setup(__props, { emit: __emit }) {\n\nconst props = __props\n\nconst emits = __emit\n\nconst formData = useVModel(props, 'modelValue', emits)\n\nconst propChange = (event: any, propName: any) => {\n  formData.value = {\n    ...formData.value,\n    [propName]: event.target.value\n  }\n}\n\nconst componentProps = computed(() => props?.componentData?.meta?.props)\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_ProseH4 = _resolveComponent(\"ProseH4\")!\n  const _component_ProseCodeInline = _resolveComponent(\"ProseCodeInline\")!\n  const _component_Badge = _resolveComponent(\"Badge\")!\n  const _component_ProseP = _resolveComponent(\"ProseP\")!\n\n  _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"component-playground-data-section\" }, _attrs))} data-v-acf5a6ce><!--[-->`)\n  _ssrRenderList(_unref(componentProps), (prop) => {\n    _push(`<div data-v-acf5a6ce><div${_ssrRenderAttr(\"id\", prop.name)} class=\"prop-title\" data-v-acf5a6ce>`)\n    _push(_ssrRenderComponent(_component_ProseH4, {\n      id: prop.name\n    }, {\n      default: _withCtx((_, _push, _parent, _scopeId) => {\n        if (_push) {\n          _push(`${_ssrInterpolate(prop.name)}`)\n        } else {\n          return [\n            _createTextVNode(_toDisplayString(prop.name), 1)\n          ]\n        }\n      }),\n      _: 2\n    }, _parent))\n    _push(`<span data-v-acf5a6ce>`)\n    _push(_ssrRenderComponent(_component_ProseCodeInline, null, {\n      default: _withCtx((_, _push, _parent, _scopeId) => {\n        if (_push) {\n          _push(`${_ssrInterpolate(prop.type)}`)\n        } else {\n          return [\n            _createTextVNode(_toDisplayString(prop.type), 1)\n          ]\n        }\n      }),\n      _: 2\n    }, _parent))\n    if (!prop.required) {\n      _push(_ssrRenderComponent(_component_Badge, null, {\n        default: _withCtx((_, _push, _parent, _scopeId) => {\n          if (_push) {\n            _push(` Required `)\n          } else {\n            return [\n              _createTextVNode(\" Required \")\n            ]\n          }\n        }),\n        _: 2\n      }, _parent))\n    } else {\n      _push(`<!---->`)\n    }\n    _push(`</span></div>`)\n    if (prop.description) {\n      _push(_ssrRenderComponent(_component_ProseP, null, {\n        default: _withCtx((_, _push, _parent, _scopeId) => {\n          if (_push) {\n            _push(`${_ssrInterpolate(prop.description)}`)\n          } else {\n            return [\n              _createTextVNode(_toDisplayString(prop.description), 1)\n            ]\n          }\n        }),\n        _: 2\n      }, _parent))\n    } else {\n      _push(`<!---->`)\n    }\n    _push(`<input${_ssrRenderAttr(\"value\", _unref(formData)[prop.name])} data-v-acf5a6ce></div>`)\n  })\n  _push(`<!--]--></div>`)\n}\n}\n\n})",
-      "start": 1708620642383,
-      "end": 1708620642383,
+      "start": 1708886642789,
+      "end": 1708886642789,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttr as _ssrRenderAttr, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\"\n\nimport { useVModel } from '@vueuse/core'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'ComponentPlaygroundProps',\n  __ssrInlineRender: true,\n  props: {\n  modelValue: {\n    type: Object,\n    required: true\n  },\n  componentData: {\n    type: Object,\n    required: true\n  }\n},\n  emits: ['update:modelValue'],\n  setup(__props, { emit: __emit }) {\n\nconst props = __props\n\nconst emits = __emit\n\nconst formData = useVModel(props, 'modelValue', emits)\n\nconst propChange = (event: any, propName: any) => {\n  formData.value = {\n    ...formData.value,\n    [propName]: event.target.value\n  }\n}\n\nconst componentProps = computed(() => props?.componentData?.meta?.props)\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_ProseH4 = _resolveComponent(\"ProseH4\")!\n  const _component_ProseCodeInline = _resolveComponent(\"ProseCodeInline\")!\n  const _component_Badge = _resolveComponent(\"Badge\")!\n  const _component_ProseP = _resolveComponent(\"ProseP\")!\n\n  _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"component-playground-data-section\" }, _attrs))} data-v-acf5a6ce><!--[-->`)\n  _ssrRenderList(_unref(componentProps), (prop) => {\n    _push(`<div data-v-acf5a6ce><div${_ssrRenderAttr(\"id\", prop.name)} class=\"prop-title\" data-v-acf5a6ce>`)\n    _push(_ssrRenderComponent(_component_ProseH4, {\n      id: prop.name\n    }, {\n      default: _withCtx((_, _push, _parent, _scopeId) => {\n        if (_push) {\n          _push(`${_ssrInterpolate(prop.name)}`)\n        } else {\n          return [\n            _createTextVNode(_toDisplayString(prop.name), 1)\n          ]\n        }\n      }),\n      _: 2\n    }, _parent))\n    _push(`<span data-v-acf5a6ce>`)\n    _push(_ssrRenderComponent(_component_ProseCodeInline, null, {\n      default: _withCtx((_, _push, _parent, _scopeId) => {\n        if (_push) {\n          _push(`${_ssrInterpolate(prop.type)}`)\n        } else {\n          return [\n            _createTextVNode(_toDisplayString(prop.type), 1)\n          ]\n        }\n      }),\n      _: 2\n    }, _parent))\n    if (!prop.required) {\n      _push(_ssrRenderComponent(_component_Badge, null, {\n        default: _withCtx((_, _push, _parent, _scopeId) => {\n          if (_push) {\n            _push(` Required `)\n          } else {\n            return [\n              _createTextVNode(\" Required \")\n            ]\n          }\n        }),\n        _: 2\n      }, _parent))\n    } else {\n      _push(`<!---->`)\n    }\n    _push(`</span></div>`)\n    if (prop.description) {\n      _push(_ssrRenderComponent(_component_ProseP, null, {\n        default: _withCtx((_, _push, _parent, _scopeId) => {\n          if (_push) {\n            _push(`${_ssrInterpolate(prop.description)}`)\n          } else {\n            return [\n              _createTextVNode(_toDisplayString(prop.description), 1)\n            ]\n          }\n        }),\n        _: 2\n      }, _parent))\n    } else {\n      _push(`<!---->`)\n    }\n    _push(`<input${_ssrRenderAttr(\"value\", _unref(formData)[prop.name])} data-v-acf5a6ce></div>`)\n  })\n  _push(`<!--]--></div>`)\n}\n}\n\n})",
-      "start": 1708620642383,
-      "end": 1708620642383,
+      "start": 1708886642789,
+      "end": 1708886642789,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708620642383,
-      "end": 1708620642383,
+      "start": 1708886642789,
+      "end": 1708886642789,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708620642383,
-      "end": 1708620642383,
+      "start": 1708886642789,
+      "end": 1708886642789,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708620642383,
-      "end": 1708620642383,
+      "start": 1708886642789,
+      "end": 1708886642789,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708620642384,
-      "end": 1708620642384,
+      "start": 1708886642789,
+      "end": 1708886642789,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttr as _ssrRenderAttr, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\";\nimport { useVModel } from \"@vueuse/core\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ComponentPlaygroundProps\",\n  __ssrInlineRender: true,\n  props: {\n    modelValue: {\n      type: Object,\n      required: true\n    },\n    componentData: {\n      type: Object,\n      required: true\n    }\n  },\n  emits: [\"update:modelValue\"],\n  setup(__props, { emit: __emit }) {\n    const props = __props;\n    const emits = __emit;\n    const formData = useVModel(props, \"modelValue\", emits);\n    const propChange = (event, propName) => {\n      formData.value = {\n        ...formData.value,\n        [propName]: event.target.value\n      };\n    };\n    const componentProps = computed(() => props?.componentData?.meta?.props);\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_ProseH4 = _resolveComponent(\"ProseH4\");\n      const _component_ProseCodeInline = _resolveComponent(\"ProseCodeInline\");\n      const _component_Badge = _resolveComponent(\"Badge\");\n      const _component_ProseP = _resolveComponent(\"ProseP\");\n      _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"component-playground-data-section\" }, _attrs))} data-v-acf5a6ce><!--[-->`);\n      _ssrRenderList(_unref(componentProps), (prop) => {\n        _push(`<div data-v-acf5a6ce><div${_ssrRenderAttr(\"id\", prop.name)} class=\"prop-title\" data-v-acf5a6ce>`);\n        _push(_ssrRenderComponent(_component_ProseH4, {\n          id: prop.name\n        }, {\n          default: _withCtx((_, _push2, _parent2, _scopeId) => {\n            if (_push2) {\n              _push2(`${_ssrInterpolate(prop.name)}`);\n            } else {\n              return [\n                _createTextVNode(_toDisplayString(prop.name), 1)\n              ];\n            }\n          }),\n          _: 2\n        }, _parent));\n        _push(`<span data-v-acf5a6ce>`);\n        _push(_ssrRenderComponent(_component_ProseCodeInline, null, {\n          default: _withCtx((_, _push2, _parent2, _scopeId) => {\n            if (_push2) {\n              _push2(`${_ssrInterpolate(prop.type)}`);\n            } else {\n              return [\n                _createTextVNode(_toDisplayString(prop.type), 1)\n              ];\n            }\n          }),\n          _: 2\n        }, _parent));\n        if (!prop.required) {\n          _push(_ssrRenderComponent(_component_Badge, null, {\n            default: _withCtx((_, _push2, _parent2, _scopeId) => {\n              if (_push2) {\n                _push2(` Required `);\n              } else {\n                return [\n                  _createTextVNode(\" Required \")\n                ];\n              }\n            }),\n            _: 2\n          }, _parent));\n        } else {\n          _push(`<!---->`);\n        }\n        _push(`</span></div>`);\n        if (prop.description) {\n          _push(_ssrRenderComponent(_component_ProseP, null, {\n            default: _withCtx((_, _push2, _parent2, _scopeId) => {\n              if (_push2) {\n                _push2(`${_ssrInterpolate(prop.description)}`);\n              } else {\n                return [\n                  _createTextVNode(_toDisplayString(prop.description), 1)\n                ];\n              }\n            }),\n            _: 2\n          }, _parent));\n        } else {\n          _push(`<!---->`);\n        }\n        _push(`<input${_ssrRenderAttr(\"value\", _unref(formData)[prop.name])} data-v-acf5a6ce></div>`);\n      });\n      _push(`<!--]--></div>`);\n    };\n  }\n});\n",
-      "start": 1708620642384,
-      "end": 1708620642469,
+      "start": 1708886642790,
+      "end": 1708886642897,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -103,135 +103,135 @@
     },
     {
       "name": "vite:json",
-      "start": 1708620642469,
-      "end": 1708620642469,
+      "start": 1708886642898,
+      "end": 1708886642898,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708620642469,
-      "end": 1708620642469,
+      "start": 1708886642898,
+      "end": 1708886642898,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708620642470,
-      "end": 1708620642470,
+      "start": 1708886642898,
+      "end": 1708886642898,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708620642470,
-      "end": 1708620642470,
+      "start": 1708886642898,
+      "end": 1708886642898,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708620642470,
-      "end": 1708620642470,
+      "start": 1708886642898,
+      "end": 1708886642898,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708620642470,
-      "end": 1708620642470,
+      "start": 1708886642898,
+      "end": 1708886642898,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708620642470,
-      "end": 1708620642470,
+      "start": 1708886642899,
+      "end": 1708886642899,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708620642470,
-      "end": 1708620642470,
+      "start": 1708886642899,
+      "end": 1708886642899,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708620642470,
-      "end": 1708620642471,
+      "start": 1708886642899,
+      "end": 1708886642899,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708620642471,
-      "end": 1708620642471,
+      "start": 1708886642899,
+      "end": 1708886642899,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708620642471,
-      "end": 1708620642471,
+      "start": 1708886642899,
+      "end": 1708886642900,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708620642472,
-      "end": 1708620642473,
+      "start": 1708886642901,
+      "end": 1708886642901,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708620642473,
-      "end": 1708620642473,
+      "start": 1708886642902,
+      "end": 1708886642902,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708620642473,
-      "end": 1708620642473,
+      "start": 1708886642902,
+      "end": 1708886642902,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708620642473,
-      "end": 1708620642473,
+      "start": 1708886642902,
+      "end": 1708886642902,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708620642473,
-      "end": 1708620642473,
+      "start": 1708886642902,
+      "end": 1708886642902,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708620642474,
-      "end": 1708620642474,
+      "start": 1708886642903,
+      "end": 1708886642903,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708620642474,
-      "end": 1708620642474,
+      "start": 1708886642905,
+      "end": 1708886642905,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708620642474,
-      "end": 1708620642474,
+      "start": 1708886642905,
+      "end": 1708886642906,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708620642474,
-      "end": 1708620642474,
+      "start": 1708886642906,
+      "end": 1708886642906,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708620642474,
-      "end": 1708620642474,
+      "start": 1708886642906,
+      "end": 1708886642906,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { computed } from 'vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttr as _ssrRenderAttr, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\";\nimport { useVModel } from \"@vueuse/core\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ComponentPlaygroundProps\",\n  __ssrInlineRender: true,\n  props: {\n    modelValue: {\n      type: Object,\n      required: true\n    },\n    componentData: {\n      type: Object,\n      required: true\n    }\n  },\n  emits: [\"update:modelValue\"],\n  setup(__props, { emit: __emit }) {\n    const props = __props;\n    const emits = __emit;\n    const formData = useVModel(props, \"modelValue\", emits);\n    const propChange = (event, propName) => {\n      formData.value = {\n        ...formData.value,\n        [propName]: event.target.value\n      };\n    };\n    const componentProps = computed(() => props?.componentData?.meta?.props);\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_ProseH4 = _resolveComponent(\"ProseH4\");\n      const _component_ProseCodeInline = _resolveComponent(\"ProseCodeInline\");\n      const _component_Badge = _resolveComponent(\"Badge\");\n      const _component_ProseP = _resolveComponent(\"ProseP\");\n      _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"component-playground-data-section\" }, _attrs))} data-v-acf5a6ce><!--[-->`);\n      _ssrRenderList(_unref(componentProps), (prop) => {\n        _push(`<div data-v-acf5a6ce><div${_ssrRenderAttr(\"id\", prop.name)} class=\"prop-title\" data-v-acf5a6ce>`);\n        _push(_ssrRenderComponent(_component_ProseH4, {\n          id: prop.name\n        }, {\n          default: _withCtx((_, _push2, _parent2, _scopeId) => {\n            if (_push2) {\n              _push2(`${_ssrInterpolate(prop.name)}`);\n            } else {\n              return [\n                _createTextVNode(_toDisplayString(prop.name), 1)\n              ];\n            }\n          }),\n          _: 2\n        }, _parent));\n        _push(`<span data-v-acf5a6ce>`);\n        _push(_ssrRenderComponent(_component_ProseCodeInline, null, {\n          default: _withCtx((_, _push2, _parent2, _scopeId) => {\n            if (_push2) {\n              _push2(`${_ssrInterpolate(prop.type)}`);\n            } else {\n              return [\n                _createTextVNode(_toDisplayString(prop.type), 1)\n              ];\n            }\n          }),\n          _: 2\n        }, _parent));\n        if (!prop.required) {\n          _push(_ssrRenderComponent(_component_Badge, null, {\n            default: _withCtx((_, _push2, _parent2, _scopeId) => {\n              if (_push2) {\n                _push2(` Required `);\n              } else {\n                return [\n                  _createTextVNode(\" Required \")\n                ];\n              }\n            }),\n            _: 2\n          }, _parent));\n        } else {\n          _push(`<!---->`);\n        }\n        _push(`</span></div>`);\n        if (prop.description) {\n          _push(_ssrRenderComponent(_component_ProseP, null, {\n            default: _withCtx((_, _push2, _parent2, _scopeId) => {\n              if (_push2) {\n                _push2(`${_ssrInterpolate(prop.description)}`);\n              } else {\n                return [\n                  _createTextVNode(_toDisplayString(prop.description), 1)\n                ];\n              }\n            }),\n            _: 2\n          }, _parent));\n        } else {\n          _push(`<!---->`);\n        }\n        _push(`<input${_ssrRenderAttr(\"value\", _unref(formData)[prop.name])} data-v-acf5a6ce></div>`);\n      });\n      _push(`<!--]--></div>`);\n    };\n  }\n});\n",
-      "start": 1708620642475,
-      "end": 1708620642481,
+      "start": 1708886642909,
+      "end": 1708886642915,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -245,8 +245,8 @@
     {
       "name": "nuxt:imports-transform",
       "result": "import { computed } from 'vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttr as _ssrRenderAttr, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\";\nimport { useVModel } from \"@vueuse/core\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ComponentPlaygroundProps\",\n  __ssrInlineRender: true,\n  props: {\n    modelValue: {\n      type: Object,\n      required: true\n    },\n    componentData: {\n      type: Object,\n      required: true\n    }\n  },\n  emits: [\"update:modelValue\"],\n  setup(__props, { emit: __emit }) {\n    const props = __props;\n    const emits = __emit;\n    const formData = useVModel(props, \"modelValue\", emits);\n    const propChange = (event, propName) => {\n      formData.value = {\n        ...formData.value,\n        [propName]: event.target.value\n      };\n    };\n    const componentProps = computed(() => props?.componentData?.meta?.props);\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_ProseH4 = _resolveComponent(\"ProseH4\");\n      const _component_ProseCodeInline = _resolveComponent(\"ProseCodeInline\");\n      const _component_Badge = _resolveComponent(\"Badge\");\n      const _component_ProseP = _resolveComponent(\"ProseP\");\n      _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"component-playground-data-section\" }, _attrs))} data-v-acf5a6ce><!--[-->`);\n      _ssrRenderList(_unref(componentProps), (prop) => {\n        _push(`<div data-v-acf5a6ce><div${_ssrRenderAttr(\"id\", prop.name)} class=\"prop-title\" data-v-acf5a6ce>`);\n        _push(_ssrRenderComponent(_component_ProseH4, {\n          id: prop.name\n        }, {\n          default: _withCtx((_, _push2, _parent2, _scopeId) => {\n            if (_push2) {\n              _push2(`${_ssrInterpolate(prop.name)}`);\n            } else {\n              return [\n                _createTextVNode(_toDisplayString(prop.name), 1)\n              ];\n            }\n          }),\n          _: 2\n        }, _parent));\n        _push(`<span data-v-acf5a6ce>`);\n        _push(_ssrRenderComponent(_component_ProseCodeInline, null, {\n          default: _withCtx((_, _push2, _parent2, _scopeId) => {\n            if (_push2) {\n              _push2(`${_ssrInterpolate(prop.type)}`);\n            } else {\n              return [\n                _createTextVNode(_toDisplayString(prop.type), 1)\n              ];\n            }\n          }),\n          _: 2\n        }, _parent));\n        if (!prop.required) {\n          _push(_ssrRenderComponent(_component_Badge, null, {\n            default: _withCtx((_, _push2, _parent2, _scopeId) => {\n              if (_push2) {\n                _push2(` Required `);\n              } else {\n                return [\n                  _createTextVNode(\" Required \")\n                ];\n              }\n            }),\n            _: 2\n          }, _parent));\n        } else {\n          _push(`<!---->`);\n        }\n        _push(`</span></div>`);\n        if (prop.description) {\n          _push(_ssrRenderComponent(_component_ProseP, null, {\n            default: _withCtx((_, _push2, _parent2, _scopeId) => {\n              if (_push2) {\n                _push2(`${_ssrInterpolate(prop.description)}`);\n              } else {\n                return [\n                  _createTextVNode(_toDisplayString(prop.description), 1)\n                ];\n              }\n            }),\n            _: 2\n          }, _parent));\n        } else {\n          _push(`<!---->`);\n        }\n        _push(`<input${_ssrRenderAttr(\"value\", _unref(formData)[prop.name])} data-v-acf5a6ce></div>`);\n      });\n      _push(`<!--]--></div>`);\n    };\n  }\n});\n",
-      "start": 1708620642475,
-      "end": 1708620642481,
+      "start": 1708886642909,
+      "end": 1708886642915,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -259,39 +259,39 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1708620642481,
-      "end": 1708620642481,
+      "start": 1708886642916,
+      "end": 1708886642916,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708620642481,
-      "end": 1708620642481,
+      "start": 1708886642916,
+      "end": 1708886642916,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708620642481,
-      "end": 1708620642481,
+      "start": 1708886642916,
+      "end": 1708886642916,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708620642481,
-      "end": 1708620642481,
+      "start": 1708886642916,
+      "end": 1708886642916,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1708620642481,
-      "end": 1708620642481,
+      "start": 1708886642916,
+      "end": 1708886642916,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
       "result": "import { default as __nuxt_component_0 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseH4.vue\";\nimport { default as __nuxt_component_1 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseCodeInline.vue\";\nimport { default as __nuxt_component_2 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Badge.vue\";\nimport { default as __nuxt_component_3 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseP.vue\";\nimport { computed } from 'vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttr as _ssrRenderAttr, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\";\nimport { useVModel } from \"@vueuse/core\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ComponentPlaygroundProps\",\n  __ssrInlineRender: true,\n  props: {\n    modelValue: {\n      type: Object,\n      required: true\n    },\n    componentData: {\n      type: Object,\n      required: true\n    }\n  },\n  emits: [\"update:modelValue\"],\n  setup(__props, { emit: __emit }) {\n    const props = __props;\n    const emits = __emit;\n    const formData = useVModel(props, \"modelValue\", emits);\n    const propChange = (event, propName) => {\n      formData.value = {\n        ...formData.value,\n        [propName]: event.target.value\n      };\n    };\n    const componentProps = computed(() => props?.componentData?.meta?.props);\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_ProseH4 = __nuxt_component_0;\n      const _component_ProseCodeInline = __nuxt_component_1;\n      const _component_Badge = __nuxt_component_2;\n      const _component_ProseP = __nuxt_component_3;\n      _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"component-playground-data-section\" }, _attrs))} data-v-acf5a6ce><!--[-->`);\n      _ssrRenderList(_unref(componentProps), (prop) => {\n        _push(`<div data-v-acf5a6ce><div${_ssrRenderAttr(\"id\", prop.name)} class=\"prop-title\" data-v-acf5a6ce>`);\n        _push(_ssrRenderComponent(_component_ProseH4, {\n          id: prop.name\n        }, {\n          default: _withCtx((_, _push2, _parent2, _scopeId) => {\n            if (_push2) {\n              _push2(`${_ssrInterpolate(prop.name)}`);\n            } else {\n              return [\n                _createTextVNode(_toDisplayString(prop.name), 1)\n              ];\n            }\n          }),\n          _: 2\n        }, _parent));\n        _push(`<span data-v-acf5a6ce>`);\n        _push(_ssrRenderComponent(_component_ProseCodeInline, null, {\n          default: _withCtx((_, _push2, _parent2, _scopeId) => {\n            if (_push2) {\n              _push2(`${_ssrInterpolate(prop.type)}`);\n            } else {\n              return [\n                _createTextVNode(_toDisplayString(prop.type), 1)\n              ];\n            }\n          }),\n          _: 2\n        }, _parent));\n        if (!prop.required) {\n          _push(_ssrRenderComponent(_component_Badge, null, {\n            default: _withCtx((_, _push2, _parent2, _scopeId) => {\n              if (_push2) {\n                _push2(` Required `);\n              } else {\n                return [\n                  _createTextVNode(\" Required \")\n                ];\n              }\n            }),\n            _: 2\n          }, _parent));\n        } else {\n          _push(`<!---->`);\n        }\n        _push(`</span></div>`);\n        if (prop.description) {\n          _push(_ssrRenderComponent(_component_ProseP, null, {\n            default: _withCtx((_, _push2, _parent2, _scopeId) => {\n              if (_push2) {\n                _push2(`${_ssrInterpolate(prop.description)}`);\n              } else {\n                return [\n                  _createTextVNode(_toDisplayString(prop.description), 1)\n                ];\n              }\n            }),\n            _: 2\n          }, _parent));\n        } else {\n          _push(`<!---->`);\n        }\n        _push(`<input${_ssrRenderAttr(\"value\", _unref(formData)[prop.name])} data-v-acf5a6ce></div>`);\n      });\n      _push(`<!--]--></div>`);\n    };\n  }\n});\n",
-      "start": 1708620642486,
-      "end": 1708620642487,
+      "start": 1708886642916,
+      "end": 1708886642917,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -304,20 +304,20 @@
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708620642487,
-      "end": 1708620642487,
+      "start": 1708886642917,
+      "end": 1708886642917,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708620642487,
-      "end": 1708620642487,
+      "start": 1708886642917,
+      "end": 1708886642917,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708620642487,
-      "end": 1708620642487,
+      "start": 1708886642917,
+      "end": 1708886642917,
       "order": "normal"
     }
   ]

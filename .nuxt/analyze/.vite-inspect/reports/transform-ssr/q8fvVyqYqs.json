@@ -4,8 +4,8 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, renderSlot as _renderSlot, createVNode as _createVNode, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderSlot as _ssrRenderSlot, ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'page',\n  __ssrInlineRender: true,\n  setup(__props) {\n\nconst { config } = useDocus()\nuseHead({\n  link: {\n    rel: 'search',\n    type: 'application/opensearchdescription+xml',\n    href: 'opensearch.xml'\n  }\n})\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_Container = _resolveComponent(\"Container\")!\n\n  _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"page-layout\" }, _attrs))} data-v-393382c9>`)\n  _push(_ssrRenderComponent(_component_Container, {\n    fluid: _unref(config)?.main?.fluid,\n    padded: _unref(config)?.main?.padded\n  }, {\n    default: _withCtx((_, _push, _parent, _scopeId) => {\n      if (_push) {\n        _push(`<article data-v-393382c9${_scopeId}>`)\n        _ssrRenderSlot(_ctx.$slots, \"default\", {}, null, _push, _parent, _scopeId)\n        _push(`</article>`)\n      } else {\n        return [\n          _createVNode(\"article\", null, [\n            _renderSlot(_ctx.$slots, \"default\", {}, undefined, true)\n          ])\n        ]\n      }\n    }),\n    _: 3\n  }, _parent))\n  _push(`</div>`)\n}\n}\n\n})",
-      "start": 1708620642540,
-      "end": 1708620642540,
+      "start": 1708886642969,
+      "end": 1708886642969,
       "sourcemaps": {
         "version": 3,
         "sources": [
@@ -20,71 +20,71 @@
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708620642540,
-      "end": 1708620642540,
+      "start": 1708886642969,
+      "end": 1708886642969,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708620642540,
-      "end": 1708620642540,
+      "start": 1708886642969,
+      "end": 1708886642969,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708620642542,
-      "end": 1708620642542,
+      "start": 1708886642971,
+      "end": 1708886642971,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708620642542,
-      "end": 1708620642542,
+      "start": 1708886642971,
+      "end": 1708886642971,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, renderSlot as _renderSlot, createVNode as _createVNode, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderSlot as _ssrRenderSlot, ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'page',\n  __ssrInlineRender: true,\n  setup(__props) {\n\nconst { config } = useDocus()\nuseHead({\n  link: {\n    rel: 'search',\n    type: 'application/opensearchdescription+xml',\n    href: 'opensearch.xml'\n  }\n})\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_Container = _resolveComponent(\"Container\")!\n\n  _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"page-layout\" }, _attrs))} data-v-393382c9>`)\n  _push(_ssrRenderComponent(_component_Container, {\n    fluid: _unref(config)?.main?.fluid,\n    padded: _unref(config)?.main?.padded\n  }, {\n    default: _withCtx((_, _push, _parent, _scopeId) => {\n      if (_push) {\n        _push(`<article data-v-393382c9${_scopeId}>`)\n        _ssrRenderSlot(_ctx.$slots, \"default\", {}, null, _push, _parent, _scopeId)\n        _push(`</article>`)\n      } else {\n        return [\n          _createVNode(\"article\", null, [\n            _renderSlot(_ctx.$slots, \"default\", {}, undefined, true)\n          ])\n        ]\n      }\n    }),\n    _: 3\n  }, _parent))\n  _push(`</div>`)\n}\n}\n\n})",
-      "start": 1708620642542,
-      "end": 1708620642542,
+      "start": 1708886642971,
+      "end": 1708886642971,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, renderSlot as _renderSlot, createVNode as _createVNode, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderSlot as _ssrRenderSlot, ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'page',\n  __ssrInlineRender: true,\n  setup(__props) {\n\nconst { config } = useDocus()\nuseHead({\n  link: {\n    rel: 'search',\n    type: 'application/opensearchdescription+xml',\n    href: 'opensearch.xml'\n  }\n})\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_Container = _resolveComponent(\"Container\")!\n\n  _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"page-layout\" }, _attrs))} data-v-393382c9>`)\n  _push(_ssrRenderComponent(_component_Container, {\n    fluid: _unref(config)?.main?.fluid,\n    padded: _unref(config)?.main?.padded\n  }, {\n    default: _withCtx((_, _push, _parent, _scopeId) => {\n      if (_push) {\n        _push(`<article data-v-393382c9${_scopeId}>`)\n        _ssrRenderSlot(_ctx.$slots, \"default\", {}, null, _push, _parent, _scopeId)\n        _push(`</article>`)\n      } else {\n        return [\n          _createVNode(\"article\", null, [\n            _renderSlot(_ctx.$slots, \"default\", {}, undefined, true)\n          ])\n        ]\n      }\n    }),\n    _: 3\n  }, _parent))\n  _push(`</div>`)\n}\n}\n\n})",
-      "start": 1708620642542,
-      "end": 1708620642542,
+      "start": 1708886642971,
+      "end": 1708886642971,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708620642542,
-      "end": 1708620642542,
+      "start": 1708886642971,
+      "end": 1708886642971,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708620642542,
-      "end": 1708620642542,
+      "start": 1708886642971,
+      "end": 1708886642971,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708620642542,
-      "end": 1708620642542,
+      "start": 1708886642971,
+      "end": 1708886642971,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708620642542,
-      "end": 1708620642542,
+      "start": 1708886642971,
+      "end": 1708886642971,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, renderSlot as _renderSlot, createVNode as _createVNode, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderSlot as _ssrRenderSlot, ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"page\",\n  __ssrInlineRender: true,\n  setup(__props) {\n    const { config } = useDocus();\n    useHead({\n      link: {\n        rel: \"search\",\n        type: \"application/opensearchdescription+xml\",\n        href: \"opensearch.xml\"\n      }\n    });\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_Container = _resolveComponent(\"Container\");\n      _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"page-layout\" }, _attrs))} data-v-393382c9>`);\n      _push(_ssrRenderComponent(_component_Container, {\n        fluid: _unref(config)?.main?.fluid,\n        padded: _unref(config)?.main?.padded\n      }, {\n        default: _withCtx((_, _push2, _parent2, _scopeId) => {\n          if (_push2) {\n            _push2(`<article data-v-393382c9${_scopeId}>`);\n            _ssrRenderSlot(_ctx.$slots, \"default\", {}, null, _push2, _parent2, _scopeId);\n            _push2(`</article>`);\n          } else {\n            return [\n              _createVNode(\"article\", null, [\n                _renderSlot(_ctx.$slots, \"default\", {}, void 0, true)\n              ])\n            ];\n          }\n        }),\n        _: 3\n      }, _parent));\n      _push(`</div>`);\n    };\n  }\n});\n",
-      "start": 1708620642542,
-      "end": 1708620642578,
+      "start": 1708886642971,
+      "end": 1708886642994,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -103,135 +103,135 @@
     },
     {
       "name": "vite:json",
-      "start": 1708620642578,
-      "end": 1708620642578,
+      "start": 1708886642994,
+      "end": 1708886642994,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708620642578,
-      "end": 1708620642578,
+      "start": 1708886642994,
+      "end": 1708886642994,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708620642578,
-      "end": 1708620642578,
+      "start": 1708886642994,
+      "end": 1708886642994,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708620642578,
-      "end": 1708620642578,
+      "start": 1708886642994,
+      "end": 1708886642994,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708620642579,
-      "end": 1708620642579,
+      "start": 1708886642994,
+      "end": 1708886642994,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708620642579,
-      "end": 1708620642579,
+      "start": 1708886642994,
+      "end": 1708886642994,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708620642579,
-      "end": 1708620642579,
+      "start": 1708886642994,
+      "end": 1708886642994,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708620642579,
-      "end": 1708620642579,
+      "start": 1708886642994,
+      "end": 1708886642994,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708620642579,
-      "end": 1708620642579,
+      "start": 1708886642994,
+      "end": 1708886642994,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708620642579,
-      "end": 1708620642579,
+      "start": 1708886642994,
+      "end": 1708886642995,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708620642579,
-      "end": 1708620642579,
+      "start": 1708886642995,
+      "end": 1708886642995,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708620642580,
-      "end": 1708620642580,
+      "start": 1708886642995,
+      "end": 1708886642995,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708620642581,
-      "end": 1708620642581,
+      "start": 1708886642996,
+      "end": 1708886642996,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708620642581,
-      "end": 1708620642581,
+      "start": 1708886642996,
+      "end": 1708886642996,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708620642581,
-      "end": 1708620642581,
+      "start": 1708886642996,
+      "end": 1708886642996,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708620642581,
-      "end": 1708620642581,
+      "start": 1708886642996,
+      "end": 1708886642996,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708620642581,
-      "end": 1708620642581,
+      "start": 1708886642996,
+      "end": 1708886642996,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708620642581,
-      "end": 1708620642581,
+      "start": 1708886642996,
+      "end": 1708886642996,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708620642581,
-      "end": 1708620642581,
+      "start": 1708886642996,
+      "end": 1708886642996,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708620642582,
-      "end": 1708620642582,
+      "start": 1708886642996,
+      "end": 1708886642996,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708620642582,
-      "end": 1708620642582,
+      "start": 1708886642996,
+      "end": 1708886642996,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { useDocus } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/composables/useDocus.ts';\nimport { useHead } from '@unhead/vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, renderSlot as _renderSlot, createVNode as _createVNode, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderSlot as _ssrRenderSlot, ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"page\",\n  __ssrInlineRender: true,\n  setup(__props) {\n    const { config } = useDocus();\n    useHead({\n      link: {\n        rel: \"search\",\n        type: \"application/opensearchdescription+xml\",\n        href: \"opensearch.xml\"\n      }\n    });\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_Container = _resolveComponent(\"Container\");\n      _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"page-layout\" }, _attrs))} data-v-393382c9>`);\n      _push(_ssrRenderComponent(_component_Container, {\n        fluid: _unref(config)?.main?.fluid,\n        padded: _unref(config)?.main?.padded\n      }, {\n        default: _withCtx((_, _push2, _parent2, _scopeId) => {\n          if (_push2) {\n            _push2(`<article data-v-393382c9${_scopeId}>`);\n            _ssrRenderSlot(_ctx.$slots, \"default\", {}, null, _push2, _parent2, _scopeId);\n            _push2(`</article>`);\n          } else {\n            return [\n              _createVNode(\"article\", null, [\n                _renderSlot(_ctx.$slots, \"default\", {}, void 0, true)\n              ])\n            ];\n          }\n        }),\n        _: 3\n      }, _parent));\n      _push(`</div>`);\n    };\n  }\n});\n",
-      "start": 1708620642582,
-      "end": 1708620642583,
+      "start": 1708886642997,
+      "end": 1708886642998,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -245,8 +245,8 @@
     {
       "name": "nuxt:imports-transform",
       "result": "import { useDocus } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/composables/useDocus.ts';\nimport { useHead } from '@unhead/vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, renderSlot as _renderSlot, createVNode as _createVNode, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderSlot as _ssrRenderSlot, ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"page\",\n  __ssrInlineRender: true,\n  setup(__props) {\n    const { config } = useDocus();\n    useHead({\n      link: {\n        rel: \"search\",\n        type: \"application/opensearchdescription+xml\",\n        href: \"opensearch.xml\"\n      }\n    });\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_Container = _resolveComponent(\"Container\");\n      _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"page-layout\" }, _attrs))} data-v-393382c9>`);\n      _push(_ssrRenderComponent(_component_Container, {\n        fluid: _unref(config)?.main?.fluid,\n        padded: _unref(config)?.main?.padded\n      }, {\n        default: _withCtx((_, _push2, _parent2, _scopeId) => {\n          if (_push2) {\n            _push2(`<article data-v-393382c9${_scopeId}>`);\n            _ssrRenderSlot(_ctx.$slots, \"default\", {}, null, _push2, _parent2, _scopeId);\n            _push2(`</article>`);\n          } else {\n            return [\n              _createVNode(\"article\", null, [\n                _renderSlot(_ctx.$slots, \"default\", {}, void 0, true)\n              ])\n            ];\n          }\n        }),\n        _: 3\n      }, _parent));\n      _push(`</div>`);\n    };\n  }\n});\n",
-      "start": 1708620642582,
-      "end": 1708620642583,
+      "start": 1708886642997,
+      "end": 1708886642998,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -259,39 +259,39 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1708620642583,
-      "end": 1708620642583,
+      "start": 1708886642998,
+      "end": 1708886642998,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708620642583,
-      "end": 1708620642583,
+      "start": 1708886642998,
+      "end": 1708886642998,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708620642583,
-      "end": 1708620642583,
+      "start": 1708886642998,
+      "end": 1708886642998,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708620642583,
-      "end": 1708620642583,
+      "start": 1708886642998,
+      "end": 1708886642998,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1708620642583,
-      "end": 1708620642583,
+      "start": 1708886642998,
+      "end": 1708886642998,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
       "result": "import { default as __nuxt_component_0 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Container.vue\";\nimport { useDocus } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/composables/useDocus.ts';\nimport { useHead } from '@unhead/vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, renderSlot as _renderSlot, createVNode as _createVNode, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderSlot as _ssrRenderSlot, ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"page\",\n  __ssrInlineRender: true,\n  setup(__props) {\n    const { config } = useDocus();\n    useHead({\n      link: {\n        rel: \"search\",\n        type: \"application/opensearchdescription+xml\",\n        href: \"opensearch.xml\"\n      }\n    });\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_Container = __nuxt_component_0;\n      _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"page-layout\" }, _attrs))} data-v-393382c9>`);\n      _push(_ssrRenderComponent(_component_Container, {\n        fluid: _unref(config)?.main?.fluid,\n        padded: _unref(config)?.main?.padded\n      }, {\n        default: _withCtx((_, _push2, _parent2, _scopeId) => {\n          if (_push2) {\n            _push2(`<article data-v-393382c9${_scopeId}>`);\n            _ssrRenderSlot(_ctx.$slots, \"default\", {}, null, _push2, _parent2, _scopeId);\n            _push2(`</article>`);\n          } else {\n            return [\n              _createVNode(\"article\", null, [\n                _renderSlot(_ctx.$slots, \"default\", {}, void 0, true)\n              ])\n            ];\n          }\n        }),\n        _: 3\n      }, _parent));\n      _push(`</div>`);\n    };\n  }\n});\n",
-      "start": 1708620642583,
-      "end": 1708620642584,
+      "start": 1708886642998,
+      "end": 1708886642998,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -304,20 +304,20 @@
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708620642584,
-      "end": 1708620642584,
+      "start": 1708886642998,
+      "end": 1708886642998,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708620642584,
-      "end": 1708620642584,
+      "start": 1708886642998,
+      "end": 1708886642998,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708620642584,
-      "end": 1708620642584,
+      "start": 1708886642998,
+      "end": 1708886642998,
       "order": "normal"
     }
   ]
