@@ -1,65 +1,195 @@
-# Kubernetes Learning Resources
+# Kubernetes Cheat Sheet (Updated for 2024)
 
-A comprehensive guide to the best resources available for learning Kubernetes. This list includes courses, labs, cheat sheets, and eBooks, categorized by their access type (free or paid).
+A comprehensive cheat sheet for Kubernetes commands with the latest updates.
 
-## Courses
+## Kubectl Alias
 
-### Free
+To make `kubectl` command shorter and faster to type, you can create an alias.
 
-1. **Kubernetes Basics** - Offered by the Kubernetes Official Website
-   - An interactive tutorial that provides a basic understanding of Kubernetes system and its key components.
-   - [Kubernetes Basics](https://kubernetes.io/docs/tutorials/kubernetes-basics/)
+**Linux**
+```bash
+alias k=kubectl
+```
 
-2. **Introduction to Kubernetes** - Offered by edX
-   - A beginner-friendly course that covers the fundamentals of Kubernetes, including its architecture, ecosystem, and core components.
-   - [Introduction to Kubernetes on edX](https://www.edx.org/course/introduction-to-kubernetes)
+**Windows PowerShell**
+```powershell
+Set-Alias -Name k -Value kubectl
+```
 
-### Paid
+## Cluster Info
 
-1. **Kubernetes for Developers: Core Concepts** - Offered by Pluralsight
-   - Focuses on how developers can utilize Kubernetes, covering deployment, managing applications, and understanding the core concepts of Kubernetes operations.
-   - [Kubernetes for Developers on Pluralsight](https://www.pluralsight.com/courses/kubernetes-developers-core-concepts)
+- **Get clusters**
+  ```bash
+  kubectl config get-clusters
+  ```
 
-2. **The Complete Kubernetes Course** - Offered by Udemy
-   - A comprehensive course that covers Kubernetes from a beginner to advanced level, including running, deploying, and managing containers.
-   - [The Complete Kubernetes Course on Udemy](https://www.udemy.com/course/kubernetes-from-a-to-z/)
+- **Get cluster info**
+  ```bash
+  kubectl cluster-info
+  ```
 
-3. **Kubernetes Hands-on Labs** - Offered by KodeKloud
-   - KodeKloud provides an interactive learning experience with hands-on labs for Kubernetes, making it easier to understand and apply your knowledge in real-world scenarios.
-   - [Kubernetes Hands-on Labs on KodeKloud](https://kodekloud.com/courses/kubernetes-for-the-absolute-beginners-hands-on/)
+## Contexts
 
-## Labs
+Contexts manage the connection parameters for clusters, namespaces, and authentication.
 
-### Free
+- **List all contexts**
+  ```bash
+  kubectl config get-contexts
+  ```
 
-1. **Katacoda - Kubernetes Playground**
-   - An interactive platform that offers free hands-on Kubernetes labs, allowing users to experiment with Kubernetes commands and deployments in a sandbox environment.
-   - [Katacoda Kubernetes Playground](https://www.katacoda.com/courses/kubernetes)
+- **Get the current context**
+  ```bash
+  kubectl config current-context
+  ```
 
-### Paid
+- **Switch the current context**
+  ```bash
+  kubectl config use-context <context-name>
+  ```
 
-1. **Qwiklabs - Kubernetes in the Google Cloud**
-   - Offers detailed labs and quests that dive deep into deploying, managing, and scaling applications with Kubernetes on Google Cloud Platform.
-   - [Kubernetes in the Google Cloud on Qwiklabs](https://www.qwiklabs.com/quests/29)
+- **Set the default namespace for the current context**
+  ```bash
+  kubectl config set-context --current --namespace=<namespace-name>
+  ```
 
-## Cheat Sheets
+For switching between contexts quickly, consider using [kubectx](https://github.com/ahmetb/kubectx).
 
-1. **Kubernetes Cheat Sheet by Denny Zhang**
-   - A comprehensive cheat sheet that covers essential Kubernetes commands and concepts, perfect for beginners and as a quick reference for experts.
-   - [Kubernetes Cheat Sheet](https://dennyzhang.com/kubernetes-cheatsheet)
+## Get Commands
 
-2. **Official Kubernetes Cheat Sheet**
-   - Provided by the Kubernetes official documentation, this cheat sheet offers a quick reference to the most common Kubernetes commands and resources.
-   - [Official Kubernetes Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
+Common `get` commands to retrieve resources.
 
-## eBooks
+```bash
+kubectl get all
+kubectl get namespaces
+kubectl get configmaps
+kubectl get nodes
+kubectl get pods
+kubectl get rs
+kubectl get svc <service-name>
+kubectl get endpoints <endpoint-name>
+```
 
-### Free
+Additional options:
 
-1. **Kubernetes Up & Running** - by Kelsey Hightower, Brendan Burns, and Joe Beda
-   - Dive into the future of infrastructure management with this detailed guide to Kubernetes. Perfect for those looking to understand the application deployment and management at scale.
-   - [Kubernetes Up & Running](https://azure.microsoft.com/en-us/resources/kubernetes-up-and-running/)
+- `-o wide`: Show more information.
+- `--watch` or `-w`: Watch for changes in real-time.
 
-2. **The Children's Illustrated Guide to Kubernetes**
-   - An engaging and highly visual eBook that introduces Kubernetes concepts through storytelling and illustrations, suitable for all ages.
-   - [Children's Illustrated Guide to Kubernetes](https://deis.com/assets/the-childrens-illustrated-guide-to-kubernetes.pdf)
+## Namespaces
+
+- **Specify namespace for a command**
+  ```bash
+  kubectl get pods --namespace=<namespace-name>
+  ```
+
+To switch namespaces for commands without specifying each time, consider using [kubens](https://github.com/ahmetb/kubectx/blob/master/kubens).
+
+## Labels and Selectors
+
+- **Get pods showing labels**
+  ```bash
+  kubectl get pods --show-labels
+  ```
+
+- **Filter pods by label**
+  ```bash
+  kubectl get pods -l environment=production,tier!=frontend
+  kubectl get pods -l 'environment in (production,test),tier notin (frontend,backend)'
+  ```
+
+## Describe and Delete Commands
+
+Detailed information and deletion of resources.
+
+- **Describe resource**
+  ```bash
+  kubectl describe <resource-type> <resource-name>
+  ```
+
+- **Delete resource**
+  ```bash
+  kubectl delete <resource-type> <resource-name>
+  ```
+
+- **Force delete a pod immediately**
+  ```bash
+  kubectl delete pod <pod-name> --grace-period=0 --force
+  ```
+
+## Create vs Apply
+
+`kubectl apply` is recommended for most operations as it applies changes to resources while respecting existing configurations.
+
+- **Create a deployment**
+  ```bash
+  kubectl create deployment <name> --image=<image>
+  ```
+
+- **Apply a configuration from a file**
+  ```bash
+  kubectl apply -f <filename.yaml>
+  ```
+
+## Export YAML for New and Existing Objects
+
+- **Generate YAML for a new pod (dry run)**
+  ```bash
+  kubectl run <pod-name> --image=<image> --dry-run=client -o yaml > <pod-name>.yaml
+  ```
+
+- **Export YAML of an existing object**
+  ```bash
+  kubectl get <resource-type> <resource-name> -o yaml > <file-name>.yaml
+  ```
+
+## Logs and Debugging
+
+- **Tail logs from pods**
+  ```bash
+  kubectl logs -f <pod-name>
+  ```
+
+- **Get logs from a previously terminated container**
+  ```bash
+  kubectl logs <pod-name> --previous
+  ```
+
+## Port Forward
+
+Directly access applications or services from your local machine.
+
+```bash
+kubectl port-forward <type/name> <local-port>:<pod-port>
+```
+
+## Scaling and Autoscaling
+
+- **Manually scale a deployment**
+  ```bash
+  kubectl scale deployment <deployment-name> --replicas=<num-replicas>
+  ```
+
+- **Autoscale a deployment**
+  ```bash
+  kubectl autoscale deployment <deployment-name> --min=<min-pods> --max=<max-pods> --cpu-percent=<target-CPU-utilization
+
+>
+  ```
+
+## Rollouts and Versioning
+
+Manage deployment rollouts.
+
+- **Check rollout status**
+  ```bash
+  kubectl rollout status deployment/<deployment-name>
+  ```
+
+- **View rollout history**
+  ```bash
+  kubectl rollout history deployment/<deployment-name>
+  ```
+
+- **Rollback to a previous revision**
+  ```bash
+  kubectl rollout undo deployment/<deployment-name> --to-revision=<revision>
+  ```
