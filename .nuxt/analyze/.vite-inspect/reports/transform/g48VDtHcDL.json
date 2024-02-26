@@ -4,27 +4,27 @@
     {
       "name": "vite:load-fallback",
       "result": "<script setup lang=\"ts\">\nconst { navigation } = useContent()\nconst { config } = useDocus()\n\nconst show = ref(false)\n\nconst filtered = computed(() => config.value.aside?.exclude || [])\n\nconst links = computed(() => {\n  return (navigation.value || []).filter((item: any) => {\n    if (filtered.value.includes(item._path)) { return false }\n    return true\n  })\n})\n\nconst { close, open } = useMenu()\n\nwatch(show, v => (v ? open() : close()))\n</script>\n\n<template>\n  <button\n    aria-label=\"Menu\"\n    @click=\"show = true\"\n  >\n    <Icon\n      name=\"heroicons-outline:menu\"\n      aria-hidden=\"”true”\"\n    />\n  </button>\n\n  <!-- eslint-disable-next-line vue/no-multiple-template-root -->\n  <teleport to=\"body\">\n    <nav\n      v-if=\"show\"\n      class=\"dialog\"\n      @click=\"show = false\"\n    >\n      <div @click.stop>\n        <div class=\"wrapper\">\n          <button\n            aria-label=\"Menu\"\n            @click=\"show = false\"\n          >\n            <Icon\n              name=\"heroicons-outline:x\"\n              aria-hidden=\"”true”\"\n            />\n          </button>\n\n          <div class=\"icons\">\n            <AppSocialIcons />\n          </div>\n        </div>\n\n        <DocsAsideTree :links=\"links\" />\n      </div>\n    </nav>\n  </teleport>\n</template>\n\n<style scoped lang=\"ts\">\ncss({\n  button: {\n    position: 'relative',\n    zIndex: '10',\n    display: 'flex',\n    padding: '{space.4} {space.4} {space.4} 0',\n    '@lg': {\n      display: 'none'\n    },\n    color: '{color.gray.500}',\n    '@dark': {\n      color: '{color.gray.400}',\n    },\n    '&:hover': {\n      color: '{color.gray.700}',\n      '@dark': {\n        color: '{color.gray.200}',\n      }\n    },\n  },\n  '.dialog': {\n    position: 'fixed',\n    inset: '0 0 0 0',\n    zIndex: '50',\n    display: 'flex',\n    alignItems: 'flex-start',\n    overflowY: 'auto',\n    backgroundColor: 'rgba(255, 255, 255, 0.5)',\n    backdropFilter: '{elements.backdrop.filter}',\n    '@dark': {\n      backgroundColor: 'rgba(0, 0, 0, 0.5)'\n    },\n    '@lg': {\n      display: 'none'\n    },\n    '.icons': {\n      overflow: 'auto'\n    },\n    // Dialog content\n    '& > div': {\n      maxWidth: '{size.xs}',\n      width: '100%',\n      minHeight: '100%',\n      boxShadow: '{shadow.md}',\n      px: '{space.4}',\n      backgroundColor: '{color.white}',\n      '@dark': {\n        backgroundColor: '{color.black}',\n      },\n      '@sm': {\n        px: '{space.6}',\n      },\n      // Dialog header\n      '& > div': {\n        height: '{docus.header.height}',\n        display: 'flex',\n        alignItems: 'center',\n        justifyContent: 'space-between',\n        borderBottom: '1px solid transparent',\n        gap: '{space.2}',\n        '.icons': {\n          display: 'flex',\n          alignItems: 'center',\n        }\n      }\n    }\n  },\n  ':deep(.icon)': {\n    width: '{space.4}',\n    height: '{space.4}'\n  }\n})\n</style>\n",
-      "start": 1708886635223,
-      "end": 1708886635386,
+      "start": 1708974326936,
+      "end": 1708974327096,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708886635386,
-      "end": 1708886635386,
+      "start": 1708974327096,
+      "end": 1708974327096,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708886635386,
-      "end": 1708886635386,
+      "start": 1708974327096,
+      "end": 1708974327096,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "<script setup lang=\"ts\">\nconst { navigation } = useContent()\nconst { config } = useDocus()\n\nconst show = ref(false)\n\nconst filtered = computed(() => config.value.aside?.exclude || [])\n\nconst links = computed(() => {\n  return (navigation.value || []).filter((item: any) => {\n    if (filtered.value.includes(item._path)) { return false }\n    return true\n  })\n})\n\nconst { close, open } = useMenu()\n\nwatch(show, v => (v ? open() : close()))\n</script>\n\n<template>\n  <button\n    aria-label=\"Menu\"\n    @click=\"show = true\"\n  >\n    <Icon\n      name=\"heroicons-outline:menu\"\n      aria-hidden=\"”true”\"\n    />\n  </button>\n\n  <!-- eslint-disable-next-line vue/no-multiple-template-root -->\n  <teleport to=\"body\">\n    <nav\n      v-if=\"show\"\n      class=\"dialog\"\n      @click=\"show = false\"\n    >\n      <div @click.stop>\n        <div class=\"wrapper\">\n          <button\n            aria-label=\"Menu\"\n            @click=\"show = false\"\n          >\n            <Icon\n              name=\"heroicons-outline:x\"\n              aria-hidden=\"”true”\"\n            />\n          </button>\n\n          <div class=\"icons\">\n            <AppSocialIcons />\n          </div>\n        </div>\n\n        <DocsAsideTree :links=\"links\" />\n      </div>\n    </nav>\n  </teleport>\n</template>\n\n<style scoped lang=\"postcss\" transformed>\nbutton{position:relative;z-index:10;display:flex;padding:var(--space-4) var(--space-4) var(--space-4) 0;}@media (min-width: 1024px){button{display:none;}}button{color:var(--color-gray-500);}:root.dark button{color:var(--color-gray-400);}button:hover{color:var(--color-gray-700);}:root.dark button:hover{color:var(--color-gray-200);}.dialog{position:fixed;inset:0 0 0 0;z-index:50;display:flex;align-items:flex-start;overflow-y:auto;background-color:rgba(255, 255, 255, 0.5);backdrop-filter:var(--elements-backdrop-filter);}:root.dark .dialog{background-color:rgba(0, 0, 0, 0.5);}@media (min-width: 1024px){.dialog{display:none;}}.dialog .icons{overflow:auto;}.dialog > div{max-width:var(--size-xs);width:100%;min-height:100%;box-shadow:var(--shadow-md);padding-left:var(--space-4);padding-right:var(--space-4);background-color:var(--color-white);}:root.dark .dialog > div{background-color:var(--color-black);}@media (min-width: 640px){.dialog > div{padding-left:var(--space-6);padding-right:var(--space-6);}}.dialog > div > div{height:var(--docus-header-height);display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid transparent;gap:var(--space-2);}.dialog > div > div .icons{display:flex;align-items:center;}:deep(.icon){width:var(--space-4);height:var(--space-4);}\n</style>\n",
-      "start": 1708886635387,
-      "end": 1708886635395,
+      "start": 1708974327096,
+      "end": 1708974327102,
       "order": "pre",
       "sourcemaps": {
         "version": 3,
@@ -38,45 +38,45 @@
     },
     {
       "name": "content-slot",
-      "start": 1708886635395,
-      "end": 1708886635395,
+      "start": 1708974327102,
+      "end": 1708974327102,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708886635395,
-      "end": 1708886635395,
+      "start": 1708974327102,
+      "end": 1708974327102,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708886635395,
-      "end": 1708886635395,
+      "start": 1708974327102,
+      "end": 1708974327103,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1708886635395,
-      "end": 1708886635395,
+      "start": 1708974327103,
+      "end": 1708974327103,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1708886635395,
-      "end": 1708886635395,
+      "start": 1708974327103,
+      "end": 1708974327103,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708886635395,
-      "end": 1708886635395,
+      "start": 1708974327103,
+      "end": 1708974327103,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "import _sfc_main from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppHeaderDialog.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppHeaderDialog.vue?vue&type=script&setup=true&lang.ts\";\nimport \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppHeaderDialog.vue?vue&type=style&index=0&scoped=8fd30205&transformed=true&lang.postcss\";\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"__scopeId\", \"data-v-8fd30205\"]]);\n",
-      "start": 1708886635395,
-      "end": 1708886635462,
+      "start": 1708974327103,
+      "end": 1708974327191,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -84,152 +84,152 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708886635462,
-      "end": 1708886635462,
+      "start": 1708974327191,
+      "end": 1708974327191,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708886635462,
-      "end": 1708886635462,
+      "start": 1708974327191,
+      "end": 1708974327191,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708886635463,
-      "end": 1708886635463,
+      "start": 1708974327191,
+      "end": 1708974327191,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1708886635463,
-      "end": 1708886635463,
+      "start": 1708974327191,
+      "end": 1708974327191,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708886635464,
-      "end": 1708886635464,
+      "start": 1708974327192,
+      "end": 1708974327192,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708886635464,
-      "end": 1708886635464,
+      "start": 1708974327192,
+      "end": 1708974327192,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708886635464,
-      "end": 1708886635464,
+      "start": 1708974327192,
+      "end": 1708974327192,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708886635464,
-      "end": 1708886635464,
+      "start": 1708974327193,
+      "end": 1708974327193,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708886635464,
-      "end": 1708886635465,
+      "start": 1708974327193,
+      "end": 1708974327193,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708886635465,
-      "end": 1708886635465,
+      "start": 1708974327194,
+      "end": 1708974327194,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708886635466,
-      "end": 1708886635466,
+      "start": 1708974327195,
+      "end": 1708974327195,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708886635466,
-      "end": 1708886635466,
+      "start": 1708974327203,
+      "end": 1708974327204,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708886635467,
-      "end": 1708886635467,
+      "start": 1708974327204,
+      "end": 1708974327204,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708886635467,
-      "end": 1708886635467,
+      "start": 1708974327204,
+      "end": 1708974327204,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708886635467,
-      "end": 1708886635467,
+      "start": 1708974327204,
+      "end": 1708974327204,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708886635467,
-      "end": 1708886635467,
+      "start": 1708974327204,
+      "end": 1708974327204,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708886635467,
-      "end": 1708886635470,
+      "start": 1708974327205,
+      "end": 1708974327209,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708886635470,
-      "end": 1708886635470,
+      "start": 1708974327209,
+      "end": 1708974327209,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708886635471,
-      "end": 1708886635471,
+      "start": 1708974327209,
+      "end": 1708974327209,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1708886635471,
-      "end": 1708886635471,
+      "start": 1708974327210,
+      "end": 1708974327210,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1708886635471,
-      "end": 1708886635471,
+      "start": 1708974327210,
+      "end": 1708974327210,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1708886635471,
-      "end": 1708886635471,
+      "start": 1708974327210,
+      "end": 1708974327210,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708886635471,
-      "end": 1708886635471,
+      "start": 1708974327210,
+      "end": 1708974327210,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708886635472,
-      "end": 1708886635472,
+      "start": 1708974327210,
+      "end": 1708974327210,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708886635472,
-      "end": 1708886635472,
+      "start": 1708974327211,
+      "end": 1708974327211,
       "order": "normal"
     }
   ]

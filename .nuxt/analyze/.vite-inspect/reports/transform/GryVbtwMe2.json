@@ -4,172 +4,172 @@
     {
       "name": "vite:load-fallback",
       "result": "import { withoutTrailingSlash } from \"ufo\";\nimport { computed, shallowReactive, shallowRef, useState, useRoute } from \"#imports\";\nexport const useContentState = () => {\n  const pages = useState(\"dd-pages\", () => shallowRef(shallowReactive({})));\n  const surrounds = useState(\"dd-surrounds\", () => shallowRef(shallowReactive({})));\n  const navigation = useState(\"dd-navigation\");\n  const globals = useState(\"dd-globals\", () => shallowRef(shallowReactive({})));\n  return {\n    pages,\n    surrounds,\n    navigation,\n    globals\n  };\n};\nexport const useContent = () => {\n  const { navigation, pages, surrounds, globals } = useContentState();\n  const _path = computed(() => withoutTrailingSlash(useRoute().path));\n  const page = computed(() => pages.value[_path.value]);\n  const surround = computed(() => surrounds.value[_path.value]);\n  const toc = computed(() => page?.value?.body?.toc);\n  const type = computed(() => page.value?._type);\n  const excerpt = computed(() => page.value?.excerpt);\n  const layout = computed(() => page.value?.layout);\n  const next = computed(() => surround.value?.[1]);\n  const prev = computed(() => surround.value?.[0]);\n  return {\n    // Refs\n    globals,\n    navigation,\n    surround,\n    page,\n    // From page\n    excerpt,\n    toc,\n    type,\n    layout,\n    // From surround\n    next,\n    prev\n  };\n};\n",
-      "start": 1708886635135,
-      "end": 1708886635229,
+      "start": 1708974326847,
+      "end": 1708974326952,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708886635229,
-      "end": 1708886635229,
+      "start": 1708974326952,
+      "end": 1708974326952,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708886635229,
-      "end": 1708886635229,
+      "start": 1708974326952,
+      "end": 1708974326952,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { withoutTrailingSlash } from \"ufo\";\nimport { computed, shallowReactive, shallowRef, useState, useRoute } from \"#imports\";\nexport const useContentState = () => {\n  const pages = useState(\"dd-pages\", () => shallowRef(shallowReactive({})));\n  const surrounds = useState(\"dd-surrounds\", () => shallowRef(shallowReactive({})));\n  const navigation = useState(\"dd-navigation\");\n  const globals = useState(\"dd-globals\", () => shallowRef(shallowReactive({})));\n  return {\n    pages,\n    surrounds,\n    navigation,\n    globals\n  };\n};\nexport const useContent = () => {\n  const { navigation, pages, surrounds, globals } = useContentState();\n  const _path = computed(() => withoutTrailingSlash(useRoute().path));\n  const page = computed(() => pages.value[_path.value]);\n  const surround = computed(() => surrounds.value[_path.value]);\n  const toc = computed(() => page?.value?.body?.toc);\n  const type = computed(() => page.value?._type);\n  const excerpt = computed(() => page.value?.excerpt);\n  const layout = computed(() => page.value?.layout);\n  const next = computed(() => surround.value?.[1]);\n  const prev = computed(() => surround.value?.[0]);\n  return {\n    // Refs\n    globals,\n    navigation,\n    surround,\n    page,\n    // From page\n    excerpt,\n    toc,\n    type,\n    layout,\n    // From surround\n    next,\n    prev\n  };\n};\n",
-      "start": 1708886635229,
-      "end": 1708886635229,
+      "start": 1708974326953,
+      "end": 1708974326953,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708886635229,
-      "end": 1708886635229,
+      "start": 1708974326953,
+      "end": 1708974326953,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708886635230,
-      "end": 1708886635230,
+      "start": 1708974326953,
+      "end": 1708974326953,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708886635230,
-      "end": 1708886635230,
+      "start": 1708974326953,
+      "end": 1708974326953,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1708886635230,
-      "end": 1708886635230,
+      "start": 1708974326953,
+      "end": 1708974326953,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1708886635230,
-      "end": 1708886635230,
+      "start": 1708974326953,
+      "end": 1708974326953,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708886635230,
-      "end": 1708886635230,
+      "start": 1708974326953,
+      "end": 1708974326953,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708886635230,
-      "end": 1708886635230,
+      "start": 1708974326953,
+      "end": 1708974326953,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708886635230,
-      "end": 1708886635230,
+      "start": 1708974326953,
+      "end": 1708974326953,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708886635230,
-      "end": 1708886635230,
+      "start": 1708974326953,
+      "end": 1708974326953,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708886635230,
-      "end": 1708886635230,
+      "start": 1708974326953,
+      "end": 1708974326953,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1708886635230,
-      "end": 1708886635230,
+      "start": 1708974326953,
+      "end": 1708974326953,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708886635230,
-      "end": 1708886635230,
+      "start": 1708974326953,
+      "end": 1708974326953,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708886635230,
-      "end": 1708886635230,
+      "start": 1708974326953,
+      "end": 1708974326953,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708886635230,
-      "end": 1708886635230,
+      "start": 1708974326953,
+      "end": 1708974326953,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708886635230,
-      "end": 1708886635230,
+      "start": 1708974326953,
+      "end": 1708974326953,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708886635230,
-      "end": 1708886635230,
+      "start": 1708974326953,
+      "end": 1708974326953,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708886635230,
-      "end": 1708886635230,
+      "start": 1708974326953,
+      "end": 1708974326953,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708886635230,
-      "end": 1708886635230,
+      "start": 1708974326953,
+      "end": 1708974326953,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708886635230,
-      "end": 1708886635230,
+      "start": 1708974326953,
+      "end": 1708974326953,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708886635230,
-      "end": 1708886635230,
+      "start": 1708974326953,
+      "end": 1708974326953,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708886635230,
-      "end": 1708886635230,
+      "start": 1708974326953,
+      "end": 1708974326953,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708886635230,
-      "end": 1708886635230,
+      "start": 1708974326953,
+      "end": 1708974326953,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708886635230,
-      "end": 1708886635231,
+      "start": 1708974326953,
+      "end": 1708974326954,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { computed, shallowReactive, shallowRef } from 'vue';\nimport { useState } from '#app/composables/state';\nimport { useRoute } from '#app/composables/router';\nimport { withoutTrailingSlash } from \"ufo\";\nexport const useContentState = () => {\n  const pages = useState(\"dd-pages\", () => shallowRef(shallowReactive({})));\n  const surrounds = useState(\"dd-surrounds\", () => shallowRef(shallowReactive({})));\n  const navigation = useState(\"dd-navigation\");\n  const globals = useState(\"dd-globals\", () => shallowRef(shallowReactive({})));\n  return {\n    pages,\n    surrounds,\n    navigation,\n    globals\n  };\n};\nexport const useContent = () => {\n  const { navigation, pages, surrounds, globals } = useContentState();\n  const _path = computed(() => withoutTrailingSlash(useRoute().path));\n  const page = computed(() => pages.value[_path.value]);\n  const surround = computed(() => surrounds.value[_path.value]);\n  const toc = computed(() => page?.value?.body?.toc);\n  const type = computed(() => page.value?._type);\n  const excerpt = computed(() => page.value?.excerpt);\n  const layout = computed(() => page.value?.layout);\n  const next = computed(() => surround.value?.[1]);\n  const prev = computed(() => surround.value?.[0]);\n  return {\n    // Refs\n    globals,\n    navigation,\n    surround,\n    page,\n    // From page\n    excerpt,\n    toc,\n    type,\n    layout,\n    // From surround\n    next,\n    prev\n  };\n};\n",
-      "start": 1708886635231,
-      "end": 1708886635231,
+      "start": 1708974326954,
+      "end": 1708974326954,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -182,50 +182,50 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1708886635231,
-      "end": 1708886635231,
+      "start": 1708974326955,
+      "end": 1708974326955,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708886635232,
-      "end": 1708886635232,
+      "start": 1708974326955,
+      "end": 1708974326955,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1708886635232,
-      "end": 1708886635232,
+      "start": 1708974326955,
+      "end": 1708974326955,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1708886635232,
-      "end": 1708886635232,
+      "start": 1708974326955,
+      "end": 1708974326955,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1708886635232,
-      "end": 1708886635232,
+      "start": 1708974326955,
+      "end": 1708974326955,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708886635232,
-      "end": 1708886635232,
+      "start": 1708974326955,
+      "end": 1708974326955,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708886635232,
-      "end": 1708886635232,
+      "start": 1708974326955,
+      "end": 1708974326955,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708886635232,
-      "end": 1708886635232,
+      "start": 1708974326955,
+      "end": 1708974326955,
       "order": "normal"
     }
   ]

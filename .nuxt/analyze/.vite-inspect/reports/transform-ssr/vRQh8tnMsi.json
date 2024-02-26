@@ -4,8 +4,8 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderSlot as _ssrRenderSlot, ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\"\n\nimport type { PropType } from 'vue'\nimport { ref } from 'vue'\nimport type { Lang } from 'shiki-es'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'ProseCode',\n  __ssrInlineRender: true,\n  props: {\n  code: {\n    type: String,\n    default: ''\n  },\n  language: {\n    type: String as PropType<Lang>,\n    default: null\n  },\n  filename: {\n    type: String,\n    default: null\n  },\n  highlights: {\n    type: Array as () => number[],\n    default: () => []\n  }\n},\n  setup(__props) {\n\n\n\nconst hovered = ref(false)\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_ProseCodeCopyButton = _resolveComponent(\"ProseCodeCopyButton\")!\n\n  _push(`<div${_ssrRenderAttrs(_mergeProps({\n    class: [[`highlight-${__props.language}`], \"prose-code\"]\n  }, _attrs))} data-v-c164ce0a>`)\n  if (__props.filename) {\n    _push(`<span class=\"filename\" data-v-c164ce0a>${_ssrInterpolate(__props.filename)}</span>`)\n  } else {\n    _push(`<!---->`)\n  }\n  _ssrRenderSlot(_ctx.$slots, \"default\", {}, null, _push, _parent)\n  _push(_ssrRenderComponent(_component_ProseCodeCopyButton, {\n    show: hovered.value,\n    content: __props.code,\n    class: \"copy-button\"\n  }, null, _parent))\n  _push(`</div>`)\n}\n}\n\n})",
-      "start": 1708886642373,
-      "end": 1708886642373,
+      "start": 1708974340130,
+      "end": 1708974340130,
       "sourcemaps": {
         "version": 3,
         "sources": [
@@ -20,71 +20,71 @@
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708886642374,
-      "end": 1708886642374,
+      "start": 1708974340131,
+      "end": 1708974340131,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708886642374,
-      "end": 1708886642374,
+      "start": 1708974340131,
+      "end": 1708974340131,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708886642377,
-      "end": 1708886642377,
+      "start": 1708974340140,
+      "end": 1708974340140,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708886642377,
-      "end": 1708886642378,
+      "start": 1708974340140,
+      "end": 1708974340141,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderSlot as _ssrRenderSlot, ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\"\n\nimport type { PropType } from 'vue'\nimport { ref } from 'vue'\nimport type { Lang } from 'shiki-es'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'ProseCode',\n  __ssrInlineRender: true,\n  props: {\n  code: {\n    type: String,\n    default: ''\n  },\n  language: {\n    type: String as PropType<Lang>,\n    default: null\n  },\n  filename: {\n    type: String,\n    default: null\n  },\n  highlights: {\n    type: Array as () => number[],\n    default: () => []\n  }\n},\n  setup(__props) {\n\n\n\nconst hovered = ref(false)\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_ProseCodeCopyButton = _resolveComponent(\"ProseCodeCopyButton\")!\n\n  _push(`<div${_ssrRenderAttrs(_mergeProps({\n    class: [[`highlight-${__props.language}`], \"prose-code\"]\n  }, _attrs))} data-v-c164ce0a>`)\n  if (__props.filename) {\n    _push(`<span class=\"filename\" data-v-c164ce0a>${_ssrInterpolate(__props.filename)}</span>`)\n  } else {\n    _push(`<!---->`)\n  }\n  _ssrRenderSlot(_ctx.$slots, \"default\", {}, null, _push, _parent)\n  _push(_ssrRenderComponent(_component_ProseCodeCopyButton, {\n    show: hovered.value,\n    content: __props.code,\n    class: \"copy-button\"\n  }, null, _parent))\n  _push(`</div>`)\n}\n}\n\n})",
-      "start": 1708886642378,
-      "end": 1708886642378,
+      "start": 1708974340141,
+      "end": 1708974340142,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderSlot as _ssrRenderSlot, ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\"\n\nimport type { PropType } from 'vue'\nimport { ref } from 'vue'\nimport type { Lang } from 'shiki-es'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'ProseCode',\n  __ssrInlineRender: true,\n  props: {\n  code: {\n    type: String,\n    default: ''\n  },\n  language: {\n    type: String as PropType<Lang>,\n    default: null\n  },\n  filename: {\n    type: String,\n    default: null\n  },\n  highlights: {\n    type: Array as () => number[],\n    default: () => []\n  }\n},\n  setup(__props) {\n\n\n\nconst hovered = ref(false)\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_ProseCodeCopyButton = _resolveComponent(\"ProseCodeCopyButton\")!\n\n  _push(`<div${_ssrRenderAttrs(_mergeProps({\n    class: [[`highlight-${__props.language}`], \"prose-code\"]\n  }, _attrs))} data-v-c164ce0a>`)\n  if (__props.filename) {\n    _push(`<span class=\"filename\" data-v-c164ce0a>${_ssrInterpolate(__props.filename)}</span>`)\n  } else {\n    _push(`<!---->`)\n  }\n  _ssrRenderSlot(_ctx.$slots, \"default\", {}, null, _push, _parent)\n  _push(_ssrRenderComponent(_component_ProseCodeCopyButton, {\n    show: hovered.value,\n    content: __props.code,\n    class: \"copy-button\"\n  }, null, _parent))\n  _push(`</div>`)\n}\n}\n\n})",
-      "start": 1708886642378,
-      "end": 1708886642378,
+      "start": 1708974340141,
+      "end": 1708974340142,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708886642378,
-      "end": 1708886642378,
+      "start": 1708974340142,
+      "end": 1708974340142,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708886642378,
-      "end": 1708886642378,
+      "start": 1708974340142,
+      "end": 1708974340142,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708886642378,
-      "end": 1708886642379,
+      "start": 1708974340143,
+      "end": 1708974340143,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708886642379,
-      "end": 1708886642379,
+      "start": 1708974340143,
+      "end": 1708974340143,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderSlot as _ssrRenderSlot, ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\";\nimport { ref } from \"vue\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ProseCode\",\n  __ssrInlineRender: true,\n  props: {\n    code: {\n      type: String,\n      default: \"\"\n    },\n    language: {\n      type: String,\n      default: null\n    },\n    filename: {\n      type: String,\n      default: null\n    },\n    highlights: {\n      type: Array,\n      default: () => []\n    }\n  },\n  setup(__props) {\n    const hovered = ref(false);\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_ProseCodeCopyButton = _resolveComponent(\"ProseCodeCopyButton\");\n      _push(`<div${_ssrRenderAttrs(_mergeProps({\n        class: [[`highlight-${__props.language}`], \"prose-code\"]\n      }, _attrs))} data-v-c164ce0a>`);\n      if (__props.filename) {\n        _push(`<span class=\"filename\" data-v-c164ce0a>${_ssrInterpolate(__props.filename)}</span>`);\n      } else {\n        _push(`<!---->`);\n      }\n      _ssrRenderSlot(_ctx.$slots, \"default\", {}, null, _push, _parent);\n      _push(_ssrRenderComponent(_component_ProseCodeCopyButton, {\n        show: hovered.value,\n        content: __props.code,\n        class: \"copy-button\"\n      }, null, _parent));\n      _push(`</div>`);\n    };\n  }\n});\n",
-      "start": 1708886642379,
-      "end": 1708886642529,
+      "start": 1708974340143,
+      "end": 1708974340772,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -100,177 +100,177 @@
     },
     {
       "name": "vite:json",
-      "start": 1708886642529,
-      "end": 1708886642529,
+      "start": 1708974340772,
+      "end": 1708974340772,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708886642530,
-      "end": 1708886642530,
+      "start": 1708974340772,
+      "end": 1708974340772,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708886642530,
-      "end": 1708886642530,
+      "start": 1708974340772,
+      "end": 1708974340772,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708886642530,
-      "end": 1708886642530,
+      "start": 1708974340772,
+      "end": 1708974340772,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708886642530,
-      "end": 1708886642530,
+      "start": 1708974340772,
+      "end": 1708974340772,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708886642530,
-      "end": 1708886642530,
+      "start": 1708974340772,
+      "end": 1708974340772,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708886642530,
-      "end": 1708886642530,
+      "start": 1708974340772,
+      "end": 1708974340772,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708886642530,
-      "end": 1708886642530,
+      "start": 1708974340772,
+      "end": 1708974340772,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708886642530,
-      "end": 1708886642530,
+      "start": 1708974340773,
+      "end": 1708974340773,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708886642531,
-      "end": 1708886642531,
+      "start": 1708974340773,
+      "end": 1708974340773,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708886642531,
-      "end": 1708886642531,
+      "start": 1708974340773,
+      "end": 1708974340773,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708886642531,
-      "end": 1708886642532,
+      "start": 1708974340773,
+      "end": 1708974340774,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708886642532,
-      "end": 1708886642532,
+      "start": 1708974340774,
+      "end": 1708974340774,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708886642532,
-      "end": 1708886642532,
+      "start": 1708974340774,
+      "end": 1708974340774,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708886642532,
-      "end": 1708886642532,
+      "start": 1708974340774,
+      "end": 1708974340774,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708886642532,
-      "end": 1708886642532,
+      "start": 1708974340774,
+      "end": 1708974340774,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708886642532,
-      "end": 1708886642532,
+      "start": 1708974340774,
+      "end": 1708974340774,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708886642532,
-      "end": 1708886642532,
+      "start": 1708974340774,
+      "end": 1708974340774,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708886642532,
-      "end": 1708886642532,
+      "start": 1708974340774,
+      "end": 1708974340774,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708886642533,
-      "end": 1708886642533,
+      "start": 1708974340775,
+      "end": 1708974340775,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708886642533,
-      "end": 1708886642533,
+      "start": 1708974340775,
+      "end": 1708974340775,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708886642533,
-      "end": 1708886642539,
+      "start": 1708974340775,
+      "end": 1708974340788,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708886642533,
-      "end": 1708886642539,
+      "start": 1708974340775,
+      "end": 1708974340788,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708886642540,
-      "end": 1708886642540,
+      "start": 1708974340789,
+      "end": 1708974340789,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708886642540,
-      "end": 1708886642540,
+      "start": 1708974340789,
+      "end": 1708974340789,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708886642540,
-      "end": 1708886642540,
+      "start": 1708974340789,
+      "end": 1708974340789,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708886642540,
-      "end": 1708886642540,
+      "start": 1708974340789,
+      "end": 1708974340789,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1708886642541,
-      "end": 1708886642541,
+      "start": 1708974340789,
+      "end": 1708974340789,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
       "result": "import { default as __nuxt_component_0 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/ProseCodeCopyButton.vue\";\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderSlot as _ssrRenderSlot, ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\";\nimport { ref } from \"vue\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ProseCode\",\n  __ssrInlineRender: true,\n  props: {\n    code: {\n      type: String,\n      default: \"\"\n    },\n    language: {\n      type: String,\n      default: null\n    },\n    filename: {\n      type: String,\n      default: null\n    },\n    highlights: {\n      type: Array,\n      default: () => []\n    }\n  },\n  setup(__props) {\n    const hovered = ref(false);\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_ProseCodeCopyButton = __nuxt_component_0;\n      _push(`<div${_ssrRenderAttrs(_mergeProps({\n        class: [[`highlight-${__props.language}`], \"prose-code\"]\n      }, _attrs))} data-v-c164ce0a>`);\n      if (__props.filename) {\n        _push(`<span class=\"filename\" data-v-c164ce0a>${_ssrInterpolate(__props.filename)}</span>`);\n      } else {\n        _push(`<!---->`);\n      }\n      _ssrRenderSlot(_ctx.$slots, \"default\", {}, null, _push, _parent);\n      _push(_ssrRenderComponent(_component_ProseCodeCopyButton, {\n        show: hovered.value,\n        content: __props.code,\n        class: \"copy-button\"\n      }, null, _parent));\n      _push(`</div>`);\n    };\n  }\n});\n",
-      "start": 1708886642541,
-      "end": 1708886642544,
+      "start": 1708974340790,
+      "end": 1708974340791,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -283,20 +283,20 @@
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708886642546,
-      "end": 1708886642546,
+      "start": 1708974340792,
+      "end": 1708974340792,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708886642546,
-      "end": 1708886642546,
+      "start": 1708974340793,
+      "end": 1708974340793,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708886642546,
-      "end": 1708886642546,
+      "start": 1708974340793,
+      "end": 1708974340793,
       "order": "normal"
     }
   ]

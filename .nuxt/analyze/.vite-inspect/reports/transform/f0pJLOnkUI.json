@@ -4,51 +4,51 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, mergeProps as _mergeProps, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-2ef15301\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = [\"src\", \"alt\", \"width\", \"height\"]\n\nimport { withBase } from 'ufo'\nimport { useRuntimeConfig, computed } from '#imports'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'ProseImg',\n  props: {\n  src: {\n    type: String,\n    default: ''\n  },\n  alt: {\n    type: String,\n    default: ''\n  },\n  width: {\n    type: [String, Number],\n    default: undefined\n  },\n  height: {\n    type: [String, Number],\n    default: undefined\n  }\n},\n  setup(__props) {\n\nconst props = __props\n\nconst refinedSrc = computed(() => {\n  if (props.src?.startsWith('/') && !props.src.startsWith('//')) {\n    return withBase(props.src, useRuntimeConfig().app.baseURL)\n  }\n  return props.src\n})\n\nreturn (_ctx: any,_cache: any) => {\n  return (_openBlock(), _createElementBlock(\"img\", _mergeProps(_ctx.$attrs, {\n    src: _unref(refinedSrc),\n    alt: __props.alt,\n    width: __props.width,\n    height: __props.height\n  }), null, 16, _hoisted_1))\n}\n}\n\n})",
-      "start": 1708886636595,
-      "end": 1708886636595
+      "start": 1708974329938,
+      "end": 1708974329938
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708886636596,
-      "end": 1708886636596,
+      "start": 1708974329939,
+      "end": 1708974329939,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708886636597,
-      "end": 1708886636597,
+      "start": 1708974329944,
+      "end": 1708974329944,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, mergeProps as _mergeProps, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-2ef15301\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = [\"src\", \"alt\", \"width\", \"height\"]\n\nimport { withBase } from 'ufo'\nimport { useRuntimeConfig, computed } from '#imports'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'ProseImg',\n  props: {\n  src: {\n    type: String,\n    default: ''\n  },\n  alt: {\n    type: String,\n    default: ''\n  },\n  width: {\n    type: [String, Number],\n    default: undefined\n  },\n  height: {\n    type: [String, Number],\n    default: undefined\n  }\n},\n  setup(__props) {\n\nconst props = __props\n\nconst refinedSrc = computed(() => {\n  if (props.src?.startsWith('/') && !props.src.startsWith('//')) {\n    return withBase(props.src, useRuntimeConfig().app.baseURL)\n  }\n  return props.src\n})\n\nreturn (_ctx: any,_cache: any) => {\n  return (_openBlock(), _createElementBlock(\"img\", _mergeProps(_ctx.$attrs, {\n    src: _unref(refinedSrc),\n    alt: __props.alt,\n    width: __props.width,\n    height: __props.height\n  }), null, 16, _hoisted_1))\n}\n}\n\n})",
-      "start": 1708886636598,
-      "end": 1708886636598,
+      "start": 1708974329945,
+      "end": 1708974329945,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708886636599,
-      "end": 1708886636599,
+      "start": 1708974329948,
+      "end": 1708974329948,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708886636599,
-      "end": 1708886636599,
+      "start": 1708974329948,
+      "end": 1708974329948,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708886636599,
-      "end": 1708886636599,
+      "start": 1708974329950,
+      "end": 1708974329950,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, mergeProps as _mergeProps, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-2ef15301\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = [\"src\", \"alt\", \"width\", \"height\"];\nimport { withBase } from \"ufo\";\nimport { useRuntimeConfig, computed } from \"#imports\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ProseImg\",\n  props: {\n    src: {\n      type: String,\n      default: \"\"\n    },\n    alt: {\n      type: String,\n      default: \"\"\n    },\n    width: {\n      type: [String, Number],\n      default: void 0\n    },\n    height: {\n      type: [String, Number],\n      default: void 0\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const refinedSrc = computed(() => {\n      if (props.src?.startsWith(\"/\") && !props.src.startsWith(\"//\")) {\n        return withBase(props.src, useRuntimeConfig().app.baseURL);\n      }\n      return props.src;\n    });\n    return (_ctx, _cache) => {\n      return _openBlock(), _createElementBlock(\"img\", _mergeProps(_ctx.$attrs, {\n        src: _unref(refinedSrc),\n        alt: __props.alt,\n        width: __props.width,\n        height: __props.height\n      }), null, 16, _hoisted_1);\n    };\n  }\n});\n",
-      "start": 1708886636600,
-      "end": 1708886636984,
+      "start": 1708974329950,
+      "end": 1708974331118,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -64,123 +64,123 @@
     },
     {
       "name": "vite:json",
-      "start": 1708886636984,
-      "end": 1708886636984,
+      "start": 1708974331119,
+      "end": 1708974331119,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708886636984,
-      "end": 1708886636984,
+      "start": 1708974331119,
+      "end": 1708974331119,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708886636984,
-      "end": 1708886636984,
+      "start": 1708974331119,
+      "end": 1708974331119,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708886636984,
-      "end": 1708886636984,
+      "start": 1708974331119,
+      "end": 1708974331119,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708886636984,
-      "end": 1708886636985,
+      "start": 1708974331120,
+      "end": 1708974331120,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708886636985,
-      "end": 1708886636985,
+      "start": 1708974331120,
+      "end": 1708974331120,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1708886636985,
-      "end": 1708886636985,
+      "start": 1708974331120,
+      "end": 1708974331120,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708886636985,
-      "end": 1708886636985,
+      "start": 1708974331120,
+      "end": 1708974331121,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708886636985,
-      "end": 1708886636985,
+      "start": 1708974331121,
+      "end": 1708974331121,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708886636986,
-      "end": 1708886636986,
+      "start": 1708974331121,
+      "end": 1708974331121,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708886636986,
-      "end": 1708886636986,
+      "start": 1708974331121,
+      "end": 1708974331121,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708886636986,
-      "end": 1708886636986,
+      "start": 1708974331122,
+      "end": 1708974331122,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708886636986,
-      "end": 1708886636986,
+      "start": 1708974331122,
+      "end": 1708974331122,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708886636986,
-      "end": 1708886636986,
+      "start": 1708974331122,
+      "end": 1708974331122,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708886636986,
-      "end": 1708886636986,
+      "start": 1708974331122,
+      "end": 1708974331122,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708886636986,
-      "end": 1708886636986,
+      "start": 1708974331122,
+      "end": 1708974331122,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708886636986,
-      "end": 1708886636986,
+      "start": 1708974331122,
+      "end": 1708974331122,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708886636986,
-      "end": 1708886636986,
+      "start": 1708974331122,
+      "end": 1708974331122,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708886636986,
-      "end": 1708886636987,
+      "start": 1708974331122,
+      "end": 1708974331123,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { useRuntimeConfig } from '#app/nuxt';\nimport { computed } from 'vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, mergeProps as _mergeProps, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-2ef15301\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = [\"src\", \"alt\", \"width\", \"height\"];\nimport { withBase } from \"ufo\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ProseImg\",\n  props: {\n    src: {\n      type: String,\n      default: \"\"\n    },\n    alt: {\n      type: String,\n      default: \"\"\n    },\n    width: {\n      type: [String, Number],\n      default: void 0\n    },\n    height: {\n      type: [String, Number],\n      default: void 0\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const refinedSrc = computed(() => {\n      if (props.src?.startsWith(\"/\") && !props.src.startsWith(\"//\")) {\n        return withBase(props.src, useRuntimeConfig().app.baseURL);\n      }\n      return props.src;\n    });\n    return (_ctx, _cache) => {\n      return _openBlock(), _createElementBlock(\"img\", _mergeProps(_ctx.$attrs, {\n        src: _unref(refinedSrc),\n        alt: __props.alt,\n        width: __props.width,\n        height: __props.height\n      }), null, 16, _hoisted_1);\n    };\n  }\n});\n",
-      "start": 1708886636987,
-      "end": 1708886636999,
+      "start": 1708974331123,
+      "end": 1708974331136,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -193,50 +193,50 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1708886636999,
-      "end": 1708886636999,
+      "start": 1708974331136,
+      "end": 1708974331136,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708886636999,
-      "end": 1708886636999,
+      "start": 1708974331137,
+      "end": 1708974331137,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1708886637000,
-      "end": 1708886637000,
+      "start": 1708974331137,
+      "end": 1708974331137,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1708886637000,
-      "end": 1708886637000,
+      "start": 1708974331137,
+      "end": 1708974331137,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1708886637001,
-      "end": 1708886637001,
+      "start": 1708974331138,
+      "end": 1708974331139,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708886637001,
-      "end": 1708886637002,
+      "start": 1708974331139,
+      "end": 1708974331139,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708886637002,
-      "end": 1708886637002,
+      "start": 1708974331139,
+      "end": 1708974331139,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708886637002,
-      "end": 1708886637002,
+      "start": 1708974331139,
+      "end": 1708974331139,
       "order": "normal"
     }
   ]

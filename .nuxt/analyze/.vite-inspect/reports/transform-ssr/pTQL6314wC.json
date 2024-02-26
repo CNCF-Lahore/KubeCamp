@@ -4,8 +4,8 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'AppDocSearch',\n  __ssrInlineRender: true,\n  setup(__props) {\n\nconst { element } = useDocSearch()\n\nconst onClick = () => element.value.querySelector('button').click()\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_Icon = _resolveComponent(\"Icon\")!\n\n  _push(`<button${_ssrRenderAttrs(_mergeProps({\n    type: \"button\",\n    \"aria-label\": \"Search\"\n  }, _attrs))} data-v-67a6a092><span class=\"content\" data-v-67a6a092>`)\n  _push(_ssrRenderComponent(_component_Icon, { name: \"heroicons-outline:search\" }, null, _parent))\n  _push(`<span data-v-67a6a092>Search</span><span data-v-67a6a092><kbd data-v-67a6a092>⌘</kbd><kbd data-v-67a6a092>K</kbd></span></span></button>`)\n}\n}\n\n})",
-      "start": 1708886642136,
-      "end": 1708886642136,
+      "start": 1708974339646,
+      "end": 1708974339646,
       "sourcemaps": {
         "version": 3,
         "sources": [
@@ -20,71 +20,71 @@
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708886642137,
-      "end": 1708886642138,
+      "start": 1708974339646,
+      "end": 1708974339646,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708886642137,
-      "end": 1708886642138,
+      "start": 1708974339646,
+      "end": 1708974339646,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708886642140,
-      "end": 1708886642140,
+      "start": 1708974339649,
+      "end": 1708974339649,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708886642140,
-      "end": 1708886642140,
+      "start": 1708974339649,
+      "end": 1708974339649,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'AppDocSearch',\n  __ssrInlineRender: true,\n  setup(__props) {\n\nconst { element } = useDocSearch()\n\nconst onClick = () => element.value.querySelector('button').click()\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_Icon = _resolveComponent(\"Icon\")!\n\n  _push(`<button${_ssrRenderAttrs(_mergeProps({\n    type: \"button\",\n    \"aria-label\": \"Search\"\n  }, _attrs))} data-v-67a6a092><span class=\"content\" data-v-67a6a092>`)\n  _push(_ssrRenderComponent(_component_Icon, { name: \"heroicons-outline:search\" }, null, _parent))\n  _push(`<span data-v-67a6a092>Search</span><span data-v-67a6a092><kbd data-v-67a6a092>⌘</kbd><kbd data-v-67a6a092>K</kbd></span></span></button>`)\n}\n}\n\n})",
-      "start": 1708886642142,
-      "end": 1708886642143,
+      "start": 1708974339649,
+      "end": 1708974339649,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'AppDocSearch',\n  __ssrInlineRender: true,\n  setup(__props) {\n\nconst { element } = useDocSearch()\n\nconst onClick = () => element.value.querySelector('button').click()\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_Icon = _resolveComponent(\"Icon\")!\n\n  _push(`<button${_ssrRenderAttrs(_mergeProps({\n    type: \"button\",\n    \"aria-label\": \"Search\"\n  }, _attrs))} data-v-67a6a092><span class=\"content\" data-v-67a6a092>`)\n  _push(_ssrRenderComponent(_component_Icon, { name: \"heroicons-outline:search\" }, null, _parent))\n  _push(`<span data-v-67a6a092>Search</span><span data-v-67a6a092><kbd data-v-67a6a092>⌘</kbd><kbd data-v-67a6a092>K</kbd></span></span></button>`)\n}\n}\n\n})",
-      "start": 1708886642142,
-      "end": 1708886642143,
+      "start": 1708974339649,
+      "end": 1708974339649,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708886642143,
-      "end": 1708886642143,
+      "start": 1708974339650,
+      "end": 1708974339650,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708886642143,
-      "end": 1708886642143,
+      "start": 1708974339650,
+      "end": 1708974339650,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708886642143,
-      "end": 1708886642143,
+      "start": 1708974339650,
+      "end": 1708974339650,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708886642143,
-      "end": 1708886642143,
+      "start": 1708974339650,
+      "end": 1708974339650,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"AppDocSearch\",\n  __ssrInlineRender: true,\n  setup(__props) {\n    const { element } = useDocSearch();\n    const onClick = () => element.value.querySelector(\"button\").click();\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_Icon = _resolveComponent(\"Icon\");\n      _push(`<button${_ssrRenderAttrs(_mergeProps({\n        type: \"button\",\n        \"aria-label\": \"Search\"\n      }, _attrs))} data-v-67a6a092><span class=\"content\" data-v-67a6a092>`);\n      _push(_ssrRenderComponent(_component_Icon, { name: \"heroicons-outline:search\" }, null, _parent));\n      _push(`<span data-v-67a6a092>Search</span><span data-v-67a6a092><kbd data-v-67a6a092>⌘</kbd><kbd data-v-67a6a092>K</kbd></span></span></button>`);\n    };\n  }\n});\n",
-      "start": 1708886642144,
-      "end": 1708886642465,
+      "start": 1708974339650,
+      "end": 1708974339746,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -100,135 +100,135 @@
     },
     {
       "name": "vite:json",
-      "start": 1708886642465,
-      "end": 1708886642465,
+      "start": 1708974339746,
+      "end": 1708974339746,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708886642465,
-      "end": 1708886642465,
+      "start": 1708974339746,
+      "end": 1708974339746,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708886642465,
-      "end": 1708886642465,
+      "start": 1708974339746,
+      "end": 1708974339746,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708886642465,
-      "end": 1708886642465,
+      "start": 1708974339746,
+      "end": 1708974339746,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708886642465,
-      "end": 1708886642465,
+      "start": 1708974339746,
+      "end": 1708974339746,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708886642465,
-      "end": 1708886642465,
+      "start": 1708974339746,
+      "end": 1708974339746,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708886642466,
-      "end": 1708886642466,
+      "start": 1708974339746,
+      "end": 1708974339746,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708886642466,
-      "end": 1708886642466,
+      "start": 1708974339746,
+      "end": 1708974339746,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708886642466,
-      "end": 1708886642466,
+      "start": 1708974339747,
+      "end": 1708974339747,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708886642466,
-      "end": 1708886642466,
+      "start": 1708974339747,
+      "end": 1708974339747,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708886642467,
-      "end": 1708886642467,
+      "start": 1708974339747,
+      "end": 1708974339747,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708886642468,
-      "end": 1708886642468,
+      "start": 1708974339747,
+      "end": 1708974339748,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708886642468,
-      "end": 1708886642469,
+      "start": 1708974339748,
+      "end": 1708974339748,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708886642469,
-      "end": 1708886642469,
+      "start": 1708974339748,
+      "end": 1708974339748,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708886642469,
-      "end": 1708886642469,
+      "start": 1708974339748,
+      "end": 1708974339748,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708886642469,
-      "end": 1708886642469,
+      "start": 1708974339749,
+      "end": 1708974339749,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708886642469,
-      "end": 1708886642469,
+      "start": 1708974339749,
+      "end": 1708974339749,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708886642469,
-      "end": 1708886642469,
+      "start": 1708974339749,
+      "end": 1708974339749,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708886642470,
-      "end": 1708886642470,
+      "start": 1708974339749,
+      "end": 1708974339749,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708886642470,
-      "end": 1708886642470,
+      "start": 1708974339750,
+      "end": 1708974339750,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708886642470,
-      "end": 1708886642470,
+      "start": 1708974339750,
+      "end": 1708974339750,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { useDocSearch } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/composables/useDocSearch.ts';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"AppDocSearch\",\n  __ssrInlineRender: true,\n  setup(__props) {\n    const { element } = useDocSearch();\n    const onClick = () => element.value.querySelector(\"button\").click();\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_Icon = _resolveComponent(\"Icon\");\n      _push(`<button${_ssrRenderAttrs(_mergeProps({\n        type: \"button\",\n        \"aria-label\": \"Search\"\n      }, _attrs))} data-v-67a6a092><span class=\"content\" data-v-67a6a092>`);\n      _push(_ssrRenderComponent(_component_Icon, { name: \"heroicons-outline:search\" }, null, _parent));\n      _push(`<span data-v-67a6a092>Search</span><span data-v-67a6a092><kbd data-v-67a6a092>⌘</kbd><kbd data-v-67a6a092>K</kbd></span></span></button>`);\n    };\n  }\n});\n",
-      "start": 1708886642470,
-      "end": 1708886642477,
+      "start": 1708974339750,
+      "end": 1708974339755,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -242,8 +242,8 @@
     {
       "name": "nuxt:imports-transform",
       "result": "import { useDocSearch } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/composables/useDocSearch.ts';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"AppDocSearch\",\n  __ssrInlineRender: true,\n  setup(__props) {\n    const { element } = useDocSearch();\n    const onClick = () => element.value.querySelector(\"button\").click();\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_Icon = _resolveComponent(\"Icon\");\n      _push(`<button${_ssrRenderAttrs(_mergeProps({\n        type: \"button\",\n        \"aria-label\": \"Search\"\n      }, _attrs))} data-v-67a6a092><span class=\"content\" data-v-67a6a092>`);\n      _push(_ssrRenderComponent(_component_Icon, { name: \"heroicons-outline:search\" }, null, _parent));\n      _push(`<span data-v-67a6a092>Search</span><span data-v-67a6a092><kbd data-v-67a6a092>⌘</kbd><kbd data-v-67a6a092>K</kbd></span></span></button>`);\n    };\n  }\n});\n",
-      "start": 1708886642470,
-      "end": 1708886642477,
+      "start": 1708974339750,
+      "end": 1708974339755,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -256,39 +256,39 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1708886642477,
-      "end": 1708886642477,
+      "start": 1708974339755,
+      "end": 1708974339755,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708886642477,
-      "end": 1708886642477,
+      "start": 1708974339755,
+      "end": 1708974339755,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708886642477,
-      "end": 1708886642477,
+      "start": 1708974339755,
+      "end": 1708974339755,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708886642477,
-      "end": 1708886642477,
+      "start": 1708974339755,
+      "end": 1708974339755,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1708886642477,
-      "end": 1708886642477,
+      "start": 1708974339755,
+      "end": 1708974339755,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
       "result": "import { default as __nuxt_component_0 } from \"/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/Icon.vue\";\nimport { useDocSearch } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/composables/useDocSearch.ts';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"AppDocSearch\",\n  __ssrInlineRender: true,\n  setup(__props) {\n    const { element } = useDocSearch();\n    const onClick = () => element.value.querySelector(\"button\").click();\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_Icon = __nuxt_component_0;\n      _push(`<button${_ssrRenderAttrs(_mergeProps({\n        type: \"button\",\n        \"aria-label\": \"Search\"\n      }, _attrs))} data-v-67a6a092><span class=\"content\" data-v-67a6a092>`);\n      _push(_ssrRenderComponent(_component_Icon, { name: \"heroicons-outline:search\" }, null, _parent));\n      _push(`<span data-v-67a6a092>Search</span><span data-v-67a6a092><kbd data-v-67a6a092>⌘</kbd><kbd data-v-67a6a092>K</kbd></span></span></button>`);\n    };\n  }\n});\n",
-      "start": 1708886642482,
-      "end": 1708886642482,
+      "start": 1708974339755,
+      "end": 1708974339757,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -301,20 +301,20 @@
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708886642483,
-      "end": 1708886642483,
+      "start": 1708974339757,
+      "end": 1708974339757,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708886642483,
-      "end": 1708886642483,
+      "start": 1708974339757,
+      "end": 1708974339757,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708886642483,
-      "end": 1708886642483,
+      "start": 1708974339757,
+      "end": 1708974339757,
       "order": "normal"
     }
   ]
