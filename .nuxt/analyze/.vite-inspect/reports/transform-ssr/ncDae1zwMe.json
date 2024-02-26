@@ -4,39 +4,39 @@
     {
       "name": "vite:load-fallback",
       "result": "<template>\n  <div class=\"document-driven-not-found not-prose\">\n    <main>\n      <p>\n        404\n      </p>\n      <div class=\"content\">\n        <div class=\"text-section\">\n          <h1>\n            Not Found\n          </h1>\n          <p>\n            This is not the page you're looking for.\n          </p>\n        </div>\n\n        <div class=\"button-section\">\n          <ButtonLink\n            href=\"/\"\n            size=\"large\"\n            variant=\"primary\"\n          >\n            Go back home\n          </ButtonLink>\n        </div>\n      </div>\n    </main>\n  </div>\n</template>\n\n<style scoped lang=\"ts\">\ncss({\n  '.document-driven-not-found': {\n    display: 'flex',\n    flex: '1',\n    px: '{space.4}',\n    py: '{space.16}',\n    '@sm': {\n      px: '{space.6}',\n      py: '{space.24}',\n    },\n\n    '@md': {\n      display: 'grid',\n      placeItems: 'center',\n    },\n\n    '@lg': {\n      px: '{space.8}',\n    },\n\n    main: {\n      mx: 'auto',\n      maxWidth: '{size.full}',\n\n      '@sm': {\n        display: 'flex',\n        gap: '{space.6}'\n      },\n\n      // 404\n      '& > p': {\n        fontSize: '{fontSize.4xl}',\n        fontWeight: '{fontWeight.bold}',\n        lineHeight: '{lead.tight}',\n        color: '{color.primary.500}',\n        '@sm': {\n          fontSize: '{fontSize.5xl}',\n        }\n      },\n\n      '.content': {\n        '.text-section': {\n          borderColor: '{color.gray.200}',\n          borderLeftStyle: 'solid',\n          borderLeftWidth: '1px',\n          border: 'none',\n\n          '@dark': {\n            borderColor: '{color.gray.800}',\n          },\n\n          '@sm': {\n            borderColor: '{color.gray.200}',\n            borderLeftStyle: 'solid',\n            borderLeftWidth: '1px',\n            paddingLeft: '{space.6}'\n          },\n\n          h1: {\n            fontSize: '{fontSize.4xl}',\n            fontWeight: '{fontWeight.extrabold}',\n            letterSpacing: '{letterSpacing.tight}',\n            color: '{color.gray.900}',\n            '@dark': {\n              color: '{color.gray.200}',\n            },\n            '@sm': {\n              fontSize: '{fontSize.5xl}',\n            },\n          },\n\n          p: {\n            marginTop: '{space.1}',\n            fontSize: '{fontSize.xl}',\n            color: '{color.gray.700}',\n            '@dark': {\n              color: '{color.gray.400}',\n            },\n          }\n        },\n\n        // Button section\n        '.button-section': {\n          marginTop: '{space.10}',\n          flex: 'none',\n          gap: '{space.3}'\n        }\n      }\n    }\n  }\n})\n</style>\n",
-      "start": 1708974337706,
-      "end": 1708974337917,
+      "start": 1708988595203,
+      "end": 1708988595382,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708974337917,
-      "end": 1708974337917,
+      "start": 1708988595382,
+      "end": 1708988595382,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708974337917,
-      "end": 1708974337917,
+      "start": 1708988595382,
+      "end": 1708988595382,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708974337917,
-      "end": 1708974337917,
+      "start": 1708988595382,
+      "end": 1708988595382,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708974337917,
-      "end": 1708974337917,
+      "start": 1708988595382,
+      "end": 1708988595382,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "<template>\n  <div class=\"document-driven-not-found not-prose\">\n    <main>\n      <p>\n        404\n      </p>\n      <div class=\"content\">\n        <div class=\"text-section\">\n          <h1>\n            Not Found\n          </h1>\n          <p>\n            This is not the page you're looking for.\n          </p>\n        </div>\n\n        <div class=\"button-section\">\n          <ButtonLink\n            href=\"/\"\n            size=\"large\"\n            variant=\"primary\"\n          >\n            Go back home\n          </ButtonLink>\n        </div>\n      </div>\n    </main>\n  </div>\n</template>\n\n<style scoped lang=\"postcss\" transformed>\n.document-driven-not-found{display:flex;flex:1;padding-left:var(--space-4);padding-right:var(--space-4);padding-top:var(--space-16);padding-bottom:var(--space-16);}@media (min-width: 640px){.document-driven-not-found{padding-left:var(--space-6);padding-right:var(--space-6);padding-top:var(--space-24);padding-bottom:var(--space-24);}}@media (min-width: 768px){.document-driven-not-found{display:grid;place-items:center;}}@media (min-width: 1024px){.document-driven-not-found{padding-left:var(--space-8);padding-right:var(--space-8);}}.document-driven-not-found main{margin-left:auto;margin-right:auto;max-width:var(--size-full);}@media (min-width: 640px){.document-driven-not-found main{display:flex;gap:var(--space-6);}}.document-driven-not-found main > p{font-size:var(--fontSize-4xl);font-weight:var(--fontWeight-bold);line-height:var(--lead-tight);color:var(--color-primary-500);}@media (min-width: 640px){.document-driven-not-found main > p{font-size:var(--fontSize-5xl);}}.document-driven-not-found main .content .text-section{border-color:var(--color-gray-200);border-left-style:solid;border-left-width:1px;border:none;}:root.dark .document-driven-not-found main .content .text-section{border-color:var(--color-gray-800);}@media (min-width: 640px){.document-driven-not-found main .content .text-section{border-color:var(--color-gray-200);border-left-style:solid;border-left-width:1px;padding-left:var(--space-6);}}.document-driven-not-found main .content .text-section h1{font-size:var(--fontSize-4xl);font-weight:var(--fontWeight-extrabold);letter-spacing:var(--letterSpacing-tight);color:var(--color-gray-900);}:root.dark .document-driven-not-found main .content .text-section h1{color:var(--color-gray-200);}@media (min-width: 640px){.document-driven-not-found main .content .text-section h1{font-size:var(--fontSize-5xl);}}.document-driven-not-found main .content .text-section p{margin-top:var(--space-1);font-size:var(--fontSize-xl);color:var(--color-gray-700);}:root.dark .document-driven-not-found main .content .text-section p{color:var(--color-gray-400);}.document-driven-not-found main .content .button-section{margin-top:var(--space-10);flex:none;gap:var(--space-3);}\n</style>\n",
-      "start": 1708974337917,
-      "end": 1708974337922,
+      "start": 1708988595382,
+      "end": 1708988595387,
       "order": "pre",
       "sourcemaps": {
         "version": 3,
@@ -51,8 +51,8 @@
     {
       "name": "pinceau-transforms",
       "result": "<template>\n  <div class=\"document-driven-not-found not-prose\">\n    <main>\n      <p>\n        404\n      </p>\n      <div class=\"content\">\n        <div class=\"text-section\">\n          <h1>\n            Not Found\n          </h1>\n          <p>\n            This is not the page you're looking for.\n          </p>\n        </div>\n\n        <div class=\"button-section\">\n          <ButtonLink\n            href=\"/\"\n            size=\"large\"\n            variant=\"primary\"\n          >\n            Go back home\n          </ButtonLink>\n        </div>\n      </div>\n    </main>\n  </div>\n</template>\n\n<style scoped lang=\"postcss\" transformed>\n.document-driven-not-found{display:flex;flex:1;padding-left:var(--space-4);padding-right:var(--space-4);padding-top:var(--space-16);padding-bottom:var(--space-16);}@media (min-width: 640px){.document-driven-not-found{padding-left:var(--space-6);padding-right:var(--space-6);padding-top:var(--space-24);padding-bottom:var(--space-24);}}@media (min-width: 768px){.document-driven-not-found{display:grid;place-items:center;}}@media (min-width: 1024px){.document-driven-not-found{padding-left:var(--space-8);padding-right:var(--space-8);}}.document-driven-not-found main{margin-left:auto;margin-right:auto;max-width:var(--size-full);}@media (min-width: 640px){.document-driven-not-found main{display:flex;gap:var(--space-6);}}.document-driven-not-found main > p{font-size:var(--fontSize-4xl);font-weight:var(--fontWeight-bold);line-height:var(--lead-tight);color:var(--color-primary-500);}@media (min-width: 640px){.document-driven-not-found main > p{font-size:var(--fontSize-5xl);}}.document-driven-not-found main .content .text-section{border-color:var(--color-gray-200);border-left-style:solid;border-left-width:1px;border:none;}:root.dark .document-driven-not-found main .content .text-section{border-color:var(--color-gray-800);}@media (min-width: 640px){.document-driven-not-found main .content .text-section{border-color:var(--color-gray-200);border-left-style:solid;border-left-width:1px;padding-left:var(--space-6);}}.document-driven-not-found main .content .text-section h1{font-size:var(--fontSize-4xl);font-weight:var(--fontWeight-extrabold);letter-spacing:var(--letterSpacing-tight);color:var(--color-gray-900);}:root.dark .document-driven-not-found main .content .text-section h1{color:var(--color-gray-200);}@media (min-width: 640px){.document-driven-not-found main .content .text-section h1{font-size:var(--fontSize-5xl);}}.document-driven-not-found main .content .text-section p{margin-top:var(--space-1);font-size:var(--fontSize-xl);color:var(--color-gray-700);}:root.dark .document-driven-not-found main .content .text-section p{color:var(--color-gray-400);}.document-driven-not-found main .content .button-section{margin-top:var(--space-10);flex:none;gap:var(--space-3);}\n</style>\n",
-      "start": 1708974337917,
-      "end": 1708974337922,
+      "start": 1708988595382,
+      "end": 1708988595387,
       "order": "pre",
       "sourcemaps": {
         "version": 3,
@@ -66,51 +66,51 @@
     },
     {
       "name": "content-slot",
-      "start": 1708974337922,
-      "end": 1708974337922,
+      "start": 1708988595387,
+      "end": 1708988595387,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708974337922,
-      "end": 1708974337922,
+      "start": 1708988595387,
+      "end": 1708988595387,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708974337922,
-      "end": 1708974337922,
+      "start": 1708988595387,
+      "end": 1708988595387,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708974337922,
-      "end": 1708974337922,
+      "start": 1708988595387,
+      "end": 1708988595387,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1708974337922,
-      "end": 1708974337922,
+      "start": 1708988595387,
+      "end": 1708988595387,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1708974337922,
-      "end": 1708974337922,
+      "start": 1708988595387,
+      "end": 1708988595387,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708974337922,
-      "end": 1708974337922,
+      "start": 1708988595387,
+      "end": 1708988595387,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "const _sfc_main = {}\nimport { resolveComponent as _resolveComponent, withCtx as _withCtx, createTextVNode as _createTextVNode, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs) {\n  const _component_ButtonLink = _resolveComponent(\"ButtonLink\")\n\n  _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"document-driven-not-found not-prose\" }, _attrs))} data-v-b556344b><main data-v-b556344b><p data-v-b556344b> 404 </p><div class=\"content\" data-v-b556344b><div class=\"text-section\" data-v-b556344b><h1 data-v-b556344b> Not Found </h1><p data-v-b556344b> This is not the page you&#39;re looking for. </p></div><div class=\"button-section\" data-v-b556344b>`)\n  _push(_ssrRenderComponent(_component_ButtonLink, {\n    href: \"/\",\n    size: \"large\",\n    variant: \"primary\"\n  }, {\n    default: _withCtx((_, _push, _parent, _scopeId) => {\n      if (_push) {\n        _push(` Go back home `)\n      } else {\n        return [\n          _createTextVNode(\" Go back home \")\n        ]\n      }\n    }),\n    _: 1\n  }, _parent))\n  _push(`</div></div></main></div>`)\n}\n\nimport \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/DocumentDrivenNotFound.vue?vue&type=style&index=0&scoped=b556344b&transformed=true&lang.postcss\"\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"node_modules/@nuxt-themes/docus/components/app/DocumentDrivenNotFound.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',\"data-v-b556344b\"]])",
-      "start": 1708974337922,
-      "end": 1708974337924,
+      "start": 1708988595387,
+      "end": 1708988595388,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -126,161 +126,161 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708974337924,
-      "end": 1708974337924,
+      "start": 1708988595388,
+      "end": 1708988595388,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708974337924,
-      "end": 1708974337924,
+      "start": 1708988595388,
+      "end": 1708988595388,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708974337924,
-      "end": 1708974337924,
+      "start": 1708988595388,
+      "end": 1708988595388,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708974337924,
-      "end": 1708974337924,
+      "start": 1708988595388,
+      "end": 1708988595388,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708974337924,
-      "end": 1708974337924,
+      "start": 1708988595388,
+      "end": 1708988595388,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708974337924,
-      "end": 1708974337924,
+      "start": 1708988595388,
+      "end": 1708988595389,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708974337924,
-      "end": 1708974337924,
+      "start": 1708988595389,
+      "end": 1708988595389,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708974337924,
-      "end": 1708974337924,
+      "start": 1708988595389,
+      "end": 1708988595389,
       "order": "normal"
     },
     {
       "name": "vite:define",
       "result": "const _sfc_main = {};\nimport { resolveComponent as _resolveComponent, withCtx as _withCtx, createTextVNode as _createTextVNode, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs) {\n  const _component_ButtonLink = _resolveComponent(\"ButtonLink\");\n  _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"document-driven-not-found not-prose\" }, _attrs))} data-v-b556344b><main data-v-b556344b><p data-v-b556344b> 404 </p><div class=\"content\" data-v-b556344b><div class=\"text-section\" data-v-b556344b><h1 data-v-b556344b> Not Found </h1><p data-v-b556344b> This is not the page you&#39;re looking for. </p></div><div class=\"button-section\" data-v-b556344b>`);\n  _push(_ssrRenderComponent(_component_ButtonLink, {\n    href: \"/\",\n    size: \"large\",\n    variant: \"primary\"\n  }, {\n    default: _withCtx((_, _push2, _parent2, _scopeId) => {\n      if (_push2) {\n        _push2(` Go back home `);\n      } else {\n        return [\n          _createTextVNode(\" Go back home \")\n        ];\n      }\n    }),\n    _: 1\n  }, _parent));\n  _push(`</div></div></main></div>`);\n}\nimport \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/DocumentDrivenNotFound.vue?vue&type=style&index=0&scoped=b556344b&transformed=true&lang.postcss\";\nimport { useSSRContext as __vite_useSSRContext } from \"vue\";\nconst _sfc_setup = _sfc_main.setup;\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext();\n  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add(\"node_modules/@nuxt-themes/docus/components/app/DocumentDrivenNotFound.vue\");\n  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;\n};\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"ssrRender\", _sfc_ssrRender], [\"__scopeId\", \"data-v-b556344b\"]]);\n",
-      "start": 1708974337924,
-      "end": 1708974338026,
+      "start": 1708988595389,
+      "end": 1708988595447,
       "order": "normal",
       "sourcemaps": "{\n  \"version\": 3,\n  \"sources\": [\"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/DocumentDrivenNotFound.vue\"],\n  \"sourcesContent\": [\"const _sfc_main = {}\\nimport { resolveComponent as _resolveComponent, withCtx as _withCtx, createTextVNode as _createTextVNode, mergeProps as _mergeProps } from \\\"vue\\\"\\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \\\"vue/server-renderer\\\"\\n\\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs) {\\n  const _component_ButtonLink = _resolveComponent(\\\"ButtonLink\\\")\\n\\n  _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \\\"document-driven-not-found not-prose\\\" }, _attrs))} data-v-b556344b><main data-v-b556344b><p data-v-b556344b> 404 </p><div class=\\\"content\\\" data-v-b556344b><div class=\\\"text-section\\\" data-v-b556344b><h1 data-v-b556344b> Not Found </h1><p data-v-b556344b> This is not the page you&#39;re looking for. </p></div><div class=\\\"button-section\\\" data-v-b556344b>`)\\n  _push(_ssrRenderComponent(_component_ButtonLink, {\\n    href: \\\"/\\\",\\n    size: \\\"large\\\",\\n    variant: \\\"primary\\\"\\n  }, {\\n    default: _withCtx((_, _push, _parent, _scopeId) => {\\n      if (_push) {\\n        _push(` Go back home `)\\n      } else {\\n        return [\\n          _createTextVNode(\\\" Go back home \\\")\\n        ]\\n      }\\n    }),\\n    _: 1\\n  }, _parent))\\n  _push(`</div></div></main></div>`)\\n}\\n\\nimport \\\"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/DocumentDrivenNotFound.vue?vue&type=style&index=0&scoped=b556344b&transformed=true&lang.postcss\\\"\\n\\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\\nconst _sfc_setup = _sfc_main.setup\\n_sfc_main.setup = (props, ctx) => {\\n  const ssrContext = __vite_useSSRContext()\\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\\\"node_modules/@nuxt-themes/docus/components/app/DocumentDrivenNotFound.vue\\\")\\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\\n}\\nimport _export_sfc from '\\u0000plugin-vue:export-helper'\\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',\\\"data-v-b556344b\\\"]])\"],\n  \"mappings\": \"AAAA,MAAM,YAAY,CAAC;AACnB,SAAS,oBAAoB,mBAAmB,WAAW,UAAU,mBAAmB,kBAAkB,cAAc,mBAAmB;AAC3I,SAAS,sBAAsB,qBAAqB,kBAAkB,uBAAuB;AAE7F,SAAS,eAAe,MAAM,OAAO,SAAS,QAAQ;AACpD,QAAM,wBAAwB,kBAAkB,YAAY;AAE5D,QAAM,OAAO,gBAAgB,YAAY,EAAE,OAAO,sCAAsC,GAAG,MAAM,CAAC,CAAC,+SAA+S;AAClZ,QAAM,oBAAoB,uBAAuB;AAAA,IAC/C,MAAM;AAAA,IACN,MAAM;AAAA,IACN,SAAS;AAAA,EACX,GAAG;AAAA,IACD,SAAS,SAAS,CAAC,GAAGA,QAAOC,UAAS,aAAa;AACjD,UAAID,QAAO;AACT,QAAAA,OAAM,gBAAgB;AAAA,MACxB,OAAO;AACL,eAAO;AAAA,UACL,iBAAiB,gBAAgB;AAAA,QACnC;AAAA,MACF;AAAA,IACF,CAAC;AAAA,IACD,GAAG;AAAA,EACL,GAAG,OAAO,CAAC;AACX,QAAM,2BAA2B;AACnC;AAEA,OAAO;AAEP,SAAS,iBAAiB,4BAA4B;AACtD,MAAM,aAAa,UAAU;AAC7B,UAAU,QAAQ,CAAC,OAAO,QAAQ;AAChC,QAAM,aAAa,qBAAqB;AACvC,GAAC,WAAW,YAAY,WAAW,UAAU,oBAAI,IAAI,IAAI,IAAI,2EAA2E;AACzI,SAAO,aAAa,WAAW,OAAO,GAAG,IAAI;AAC/C;AACA,OAAO,iBAAiB;AACxB,eAA4B,4BAAY,WAAW,CAAC,CAAC,aAAY,cAAc,GAAE,CAAC,aAAY,iBAAiB,CAAC,CAAC;\",\n  \"names\": [\"_push\", \"_parent\"]\n}\n"
     },
     {
       "name": "vite:css-post",
-      "start": 1708974338028,
-      "end": 1708974338028,
+      "start": 1708988595449,
+      "end": 1708988595449,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708974338028,
-      "end": 1708974338028,
+      "start": 1708988595449,
+      "end": 1708988595449,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708974338028,
-      "end": 1708974338028,
+      "start": 1708988595449,
+      "end": 1708988595449,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708974338028,
-      "end": 1708974338028,
+      "start": 1708988595449,
+      "end": 1708988595449,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708974338028,
-      "end": 1708974338028,
+      "start": 1708988595449,
+      "end": 1708988595449,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708974338029,
-      "end": 1708974338029,
+      "start": 1708988595449,
+      "end": 1708988595449,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708974338029,
-      "end": 1708974338029,
+      "start": 1708988595450,
+      "end": 1708988595450,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708974338030,
-      "end": 1708974338030,
+      "start": 1708988595451,
+      "end": 1708988595451,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708974338030,
-      "end": 1708974338030,
+      "start": 1708988595451,
+      "end": 1708988595451,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708974338031,
-      "end": 1708974338227,
+      "start": 1708988595451,
+      "end": 1708988595643,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708974338031,
-      "end": 1708974338227,
+      "start": 1708988595451,
+      "end": 1708988595643,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708974338227,
-      "end": 1708974338227,
+      "start": 1708988595643,
+      "end": 1708988595643,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708974338227,
-      "end": 1708974338227,
+      "start": 1708988595643,
+      "end": 1708988595643,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708974338228,
-      "end": 1708974338228,
+      "start": 1708988595643,
+      "end": 1708988595643,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708974338228,
-      "end": 1708974338228,
+      "start": 1708988595643,
+      "end": 1708988595643,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1708974338228,
-      "end": 1708974338228,
+      "start": 1708988595643,
+      "end": 1708988595644,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
       "result": "import { default as __nuxt_component_0 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/ButtonLink.vue\";\nconst _sfc_main = {};\nimport { resolveComponent as _resolveComponent, withCtx as _withCtx, createTextVNode as _createTextVNode, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs) {\n  const _component_ButtonLink = __nuxt_component_0;\n  _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"document-driven-not-found not-prose\" }, _attrs))} data-v-b556344b><main data-v-b556344b><p data-v-b556344b> 404 </p><div class=\"content\" data-v-b556344b><div class=\"text-section\" data-v-b556344b><h1 data-v-b556344b> Not Found </h1><p data-v-b556344b> This is not the page you&#39;re looking for. </p></div><div class=\"button-section\" data-v-b556344b>`);\n  _push(_ssrRenderComponent(_component_ButtonLink, {\n    href: \"/\",\n    size: \"large\",\n    variant: \"primary\"\n  }, {\n    default: _withCtx((_, _push2, _parent2, _scopeId) => {\n      if (_push2) {\n        _push2(` Go back home `);\n      } else {\n        return [\n          _createTextVNode(\" Go back home \")\n        ];\n      }\n    }),\n    _: 1\n  }, _parent));\n  _push(`</div></div></main></div>`);\n}\nimport \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/DocumentDrivenNotFound.vue?vue&type=style&index=0&scoped=b556344b&transformed=true&lang.postcss\";\nimport { useSSRContext as __vite_useSSRContext } from \"vue\";\nconst _sfc_setup = _sfc_main.setup;\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext();\n  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add(\"node_modules/@nuxt-themes/docus/components/app/DocumentDrivenNotFound.vue\");\n  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;\n};\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"ssrRender\", _sfc_ssrRender], [\"__scopeId\", \"data-v-b556344b\"]]);\n",
-      "start": 1708974338228,
-      "end": 1708974338228,
+      "start": 1708988595644,
+      "end": 1708988595644,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -293,20 +293,20 @@
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708974338238,
-      "end": 1708974338238,
+      "start": 1708988595661,
+      "end": 1708988595661,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708974338239,
-      "end": 1708974338243,
+      "start": 1708988595662,
+      "end": 1708988595668,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708974338244,
-      "end": 1708974338244,
+      "start": 1708988595669,
+      "end": 1708988595669,
       "order": "normal"
     }
   ]

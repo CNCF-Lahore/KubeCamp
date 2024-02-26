@@ -4,93 +4,93 @@
     {
       "name": "vite:load-fallback",
       "result": "<script lang=\"ts\">\nimport { joinURL } from 'ufo'\nimport type { PropType } from 'vue'\nimport { computed, defineComponent, useSlots } from 'vue'\nimport { useAppConfig } from '#imports'\n\nexport default defineComponent({\n  props: {\n    /**\n     * GitHub base URL.\n     */\n    baseUrl: {\n      type: String,\n      default: () => useAppConfig()?.docus?.github?.baseUrl || 'https://github.com',\n      required: false\n    },\n    /**\n     * Repository owner.\n     */\n    owner: {\n      type: String,\n      default: () => useAppConfig()?.docus?.github?.owner,\n      required: false\n    },\n    /**\n     * Repository name.\n     */\n    repo: {\n      type: String,\n      default: () => useAppConfig()?.docus?.github?.repo,\n      required: false\n    },\n    /**\n     * The branch to use for the edit link.\n     */\n    branch: {\n      type: String,\n      default: () => useAppConfig()?.docus?.github?.branch,\n      required: false\n    },\n    /**\n     * A base directory to append to the source path.\n     *\n     * Won't be used if `page` is set.\n     */\n    dir: {\n      type: String,\n      default: () => useAppConfig()?.docus?.github?.dir,\n      required: false\n    },\n    /**\n     * Source file path.\n     *\n     * Won't be used if `page` is set.\n     */\n    source: {\n      type: String,\n      required: false,\n      default: undefined\n    },\n    /**\n     * Use page from @nuxt/content.\n     */\n    page: {\n      type: Object as PropType<any>,\n      required: false,\n      default: undefined\n    },\n    /**\n     * Content directory (to be used with `page`)\n     */\n    contentDir: {\n      type: String,\n      required: false,\n      default: () => useAppConfig()?.docus?.github?.dir || 'content'\n    },\n    /**\n     * Send to an edit page or not.\n     */\n    edit: {\n      type: Boolean,\n      required: false,\n      default: () => useAppConfig()?.docus?.github?.edit\n    }\n  },\n  setup (props) {\n    if (!props.owner || !props.repo || !props.branch) {\n      throw new Error('If you want to use `GithubLink` component, you must specify: `owner`, `repo` and `branch`.')\n    }\n\n    const source = computed(() => {\n      let { baseUrl, repo, owner, branch, contentDir } = props\n      let prefix = ''\n\n      // Resolve source from content sources\n      if (useAppConfig()?.public?.content) {\n        let source\n        const { sources } = useAppConfig().public.content\n\n        for (const key in sources || []) {\n          if (props.page._id.startsWith(key)) {\n            source = sources[key]\n            break\n          }\n        }\n\n        if (source?.driver === 'github') {\n          repo = source.repo || props.repo || ''\n          owner = source.owner || props.owner || ''\n          branch = source.branch || props.branch || 'main'\n          contentDir = source.dir || props.contentDir || ''\n          prefix = source.prefix || ''\n        }\n      }\n\n      return { baseUrl, repo, owner, branch, contentDir, prefix }\n    })\n\n    const base = computed(() => joinURL(`${source.value.baseUrl}/${source.value.owner}/${source.value.repo}`))\n\n    const path = computed(() => {\n      const dirParts: string[] = []\n\n      // @nuxt/content support\n      // Create the URL from a document data.\n      if (props?.page?._path) {\n        // Use content dir\n        if (source.value.contentDir) { dirParts.push(source.value.contentDir) }\n\n        // Get page file from page data\n        dirParts.push(props.page._file.substring(source.value.prefix.length))\n\n        return dirParts\n      }\n\n      // Use props dir\n      if (props.dir) {\n        dirParts.push(props.dir)\n      }\n\n      // Use props source\n      if (props.source) {\n        dirParts.push(props.source)\n      }\n\n      return dirParts\n    })\n\n    /**\n     * Create edit link.\n     */\n    const url = computed(() => {\n      const parts = [base.value]\n\n      if (props.edit) { parts.push('edit') } else { parts.push('tree') }\n\n      parts.push(source?.value?.branch || '', ...path.value)\n\n      return parts.filter(Boolean).join('/')\n    })\n\n    return {\n      url\n    }\n  },\n  render (ctx: any) {\n    const { url } = ctx\n\n    const slots = useSlots()\n\n    return slots?.default?.({ url })\n  }\n})\n</script>\n",
-      "start": 1708974337054,
-      "end": 1708974337312,
+      "start": 1708988594611,
+      "end": 1708988594834,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708974337312,
-      "end": 1708974337312,
+      "start": 1708988594834,
+      "end": 1708988594834,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708974337312,
-      "end": 1708974337312,
+      "start": 1708988594834,
+      "end": 1708988594834,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708974337312,
-      "end": 1708974337312,
+      "start": 1708988594834,
+      "end": 1708988594834,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708974337312,
-      "end": 1708974337312,
+      "start": 1708988594834,
+      "end": 1708988594834,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
-      "start": 1708974337312,
-      "end": 1708974337312,
+      "start": 1708988594834,
+      "end": 1708988594834,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
-      "start": 1708974337312,
-      "end": 1708974337312,
+      "start": 1708988594834,
+      "end": 1708988594834,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708974337312,
-      "end": 1708974337312,
+      "start": 1708988594834,
+      "end": 1708988594834,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708974337312,
-      "end": 1708974337312,
+      "start": 1708988594834,
+      "end": 1708988594834,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708974337312,
-      "end": 1708974337312,
+      "start": 1708988594834,
+      "end": 1708988594835,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708974337312,
-      "end": 1708974337312,
+      "start": 1708988594835,
+      "end": 1708988594835,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1708974337312,
-      "end": 1708974337312,
+      "start": 1708988594835,
+      "end": 1708988594835,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1708974337312,
-      "end": 1708974337312,
+      "start": 1708988594835,
+      "end": 1708988594835,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708974337312,
-      "end": 1708974337312,
+      "start": 1708988594835,
+      "end": 1708988594835,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "import _sfc_main from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue?vue&type=script&lang.ts\";\nexport * from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue?vue&type=script&lang.ts\";\nimport { useSSRContext as __vite_useSSRContext } from \"vue\";\nconst _sfc_setup = _sfc_main.setup;\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext();\n  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add(\"node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue\");\n  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;\n};\nexport default _sfc_main;\n",
-      "start": 1708974337312,
-      "end": 1708974337334,
+      "start": 1708988594835,
+      "end": 1708988594846,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -98,178 +98,178 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708974337334,
-      "end": 1708974337334,
+      "start": 1708988594846,
+      "end": 1708988594846,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708974337334,
-      "end": 1708974337334,
+      "start": 1708988594846,
+      "end": 1708988594846,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708974337334,
-      "end": 1708974337334,
+      "start": 1708988594846,
+      "end": 1708988594846,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708974337334,
-      "end": 1708974337334,
+      "start": 1708988594847,
+      "end": 1708988594847,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708974337334,
-      "end": 1708974337334,
+      "start": 1708988594847,
+      "end": 1708988594847,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
       "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue\").then(r => r.default))",
-      "start": 1708974337334,
-      "end": 1708974337335,
+      "start": 1708988594847,
+      "end": 1708988594847,
       "order": "normal",
       "sourcemaps": null
     },
     {
       "name": "replace",
-      "start": 1708974337335,
-      "end": 1708974337335,
+      "start": 1708988594847,
+      "end": 1708988594847,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708974337335,
-      "end": 1708974337335,
+      "start": 1708988594848,
+      "end": 1708988594848,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708974337335,
-      "end": 1708974337335,
+      "start": 1708988594848,
+      "end": 1708988594848,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708974337335,
-      "end": 1708974337335,
+      "start": 1708988594848,
+      "end": 1708988594848,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708974337335,
-      "end": 1708974337335,
+      "start": 1708988594848,
+      "end": 1708988594848,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708974337335,
-      "end": 1708974337335,
+      "start": 1708988594848,
+      "end": 1708988594848,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708974337335,
-      "end": 1708974337335,
+      "start": 1708988594848,
+      "end": 1708988594848,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708974337335,
-      "end": 1708974337335,
+      "start": 1708988594848,
+      "end": 1708988594848,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708974337335,
-      "end": 1708974337335,
+      "start": 1708988594848,
+      "end": 1708988594848,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708974337336,
-      "end": 1708974337336,
+      "start": 1708988594848,
+      "end": 1708988594848,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708974337336,
-      "end": 1708974337336,
+      "start": 1708988594849,
+      "end": 1708988594849,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708974337336,
-      "end": 1708974337336,
+      "start": 1708988594849,
+      "end": 1708988594849,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708974337336,
-      "end": 1708974337337,
+      "start": 1708988594849,
+      "end": 1708988594850,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708974337336,
-      "end": 1708974337337,
+      "start": 1708988594849,
+      "end": 1708988594850,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708974337337,
-      "end": 1708974337337,
+      "start": 1708988594850,
+      "end": 1708988594850,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708974337337,
-      "end": 1708974337337,
+      "start": 1708988594850,
+      "end": 1708988594850,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708974337337,
-      "end": 1708974337337,
+      "start": 1708988594851,
+      "end": 1708988594851,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708974337337,
-      "end": 1708974337337,
+      "start": 1708988594851,
+      "end": 1708988594851,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1708974337337,
-      "end": 1708974337337,
+      "start": 1708988594851,
+      "end": 1708988594851,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1708974337338,
-      "end": 1708974337338,
+      "start": 1708988594851,
+      "end": 1708988594851,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708974337338,
-      "end": 1708974337338,
+      "start": 1708988594851,
+      "end": 1708988594851,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708974337338,
-      "end": 1708974337338,
+      "start": 1708988594851,
+      "end": 1708988594852,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708974337338,
-      "end": 1708974337338,
+      "start": 1708988594852,
+      "end": 1708988594852,
       "order": "normal"
     }
   ]

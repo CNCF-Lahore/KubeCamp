@@ -4,77 +4,77 @@
     {
       "name": "vite:load-fallback",
       "result": "export default defineAppConfig({\n  docus: {\n    title: 'Kubernetes BootCamp',\n\n    description: 'The best place to start your Kubernetes Journey',\n\n    url: 'cncf-lahore.github.io/Kubernetes-Bootcamp',\n\n    image: 'https://i.ibb.co/PGkhK2D/logo-07df0d71aa68491bbca25e45a62ac299.png',\n\n    socials: {},\n\n    layout: 'default',\n\n    header: {\n      title: '',\n      logo: false,\n      showLinkIcon: false,\n      fluid: false,\n      exclude: []\n    },\n\n    aside: {\n      level: 0,\n      collapsed: false,\n      exclude: []\n    },\n\n    footer: {\n      credits: {\n        icon: '',\n        text: 'Made with ❤️by Adil Shahzad',\n        href: 'https://www.linkedin.com/in/adilshehzad7/'\n      },\n      textLinks: [],\n      iconLinks: [],\n      fluid: false\n    },\n\n    github: {\n      branch: 'main',\n      repo: '/Kubernetes-Bootcamp/',\n      owner: 'CNCF-Lahore',\n      edit: false\n    },\n  }\n})\n",
-      "start": 1708974342076,
-      "end": 1708974342139,
+      "start": 1708988598299,
+      "end": 1708988598328,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708974342139,
-      "end": 1708974342139,
+      "start": 1708988598328,
+      "end": 1708988598328,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708974342139,
-      "end": 1708974342139,
+      "start": 1708988598328,
+      "end": 1708988598328,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708974342139,
-      "end": 1708974342139,
+      "start": 1708988598328,
+      "end": 1708988598328,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708974342139,
-      "end": 1708974342139,
+      "start": 1708988598328,
+      "end": 1708988598328,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "export default defineAppConfig({\n  docus: {\n    title: 'Kubernetes BootCamp',\n\n    description: 'The best place to start your Kubernetes Journey',\n\n    url: 'cncf-lahore.github.io/Kubernetes-Bootcamp',\n\n    image: 'https://i.ibb.co/PGkhK2D/logo-07df0d71aa68491bbca25e45a62ac299.png',\n\n    socials: {},\n\n    layout: 'default',\n\n    header: {\n      title: '',\n      logo: false,\n      showLinkIcon: false,\n      fluid: false,\n      exclude: []\n    },\n\n    aside: {\n      level: 0,\n      collapsed: false,\n      exclude: []\n    },\n\n    footer: {\n      credits: {\n        icon: '',\n        text: 'Made with ❤️by Adil Shahzad',\n        href: 'https://www.linkedin.com/in/adilshehzad7/'\n      },\n      textLinks: [],\n      iconLinks: [],\n      fluid: false\n    },\n\n    github: {\n      branch: 'main',\n      repo: '/Kubernetes-Bootcamp/',\n      owner: 'CNCF-Lahore',\n      edit: false\n    },\n  }\n})\n",
-      "start": 1708974342139,
-      "end": 1708974342139,
+      "start": 1708988598328,
+      "end": 1708988598328,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "export default defineAppConfig({\n  docus: {\n    title: 'Kubernetes BootCamp',\n\n    description: 'The best place to start your Kubernetes Journey',\n\n    url: 'cncf-lahore.github.io/Kubernetes-Bootcamp',\n\n    image: 'https://i.ibb.co/PGkhK2D/logo-07df0d71aa68491bbca25e45a62ac299.png',\n\n    socials: {},\n\n    layout: 'default',\n\n    header: {\n      title: '',\n      logo: false,\n      showLinkIcon: false,\n      fluid: false,\n      exclude: []\n    },\n\n    aside: {\n      level: 0,\n      collapsed: false,\n      exclude: []\n    },\n\n    footer: {\n      credits: {\n        icon: '',\n        text: 'Made with ❤️by Adil Shahzad',\n        href: 'https://www.linkedin.com/in/adilshehzad7/'\n      },\n      textLinks: [],\n      iconLinks: [],\n      fluid: false\n    },\n\n    github: {\n      branch: 'main',\n      repo: '/Kubernetes-Bootcamp/',\n      owner: 'CNCF-Lahore',\n      edit: false\n    },\n  }\n})\n",
-      "start": 1708974342139,
-      "end": 1708974342139,
+      "start": 1708988598328,
+      "end": 1708988598328,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708974342139,
-      "end": 1708974342139,
+      "start": 1708988598328,
+      "end": 1708988598328,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708974342139,
-      "end": 1708974342139,
+      "start": 1708988598328,
+      "end": 1708988598328,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708974342139,
-      "end": 1708974342139,
+      "start": 1708988598328,
+      "end": 1708988598328,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708974342139,
-      "end": 1708974342139,
+      "start": 1708988598328,
+      "end": 1708988598328,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "export default defineAppConfig({\n  docus: {\n    title: \"Kubernetes BootCamp\",\n    description: \"The best place to start your Kubernetes Journey\",\n    url: \"cncf-lahore.github.io/Kubernetes-Bootcamp\",\n    image: \"https://i.ibb.co/PGkhK2D/logo-07df0d71aa68491bbca25e45a62ac299.png\",\n    socials: {},\n    layout: \"default\",\n    header: {\n      title: \"\",\n      logo: false,\n      showLinkIcon: false,\n      fluid: false,\n      exclude: []\n    },\n    aside: {\n      level: 0,\n      collapsed: false,\n      exclude: []\n    },\n    footer: {\n      credits: {\n        icon: \"\",\n        text: \"Made with ❤️by Adil Shahzad\",\n        href: \"https://www.linkedin.com/in/adilshehzad7/\"\n      },\n      textLinks: [],\n      iconLinks: [],\n      fluid: false\n    },\n    github: {\n      branch: \"main\",\n      repo: \"/Kubernetes-Bootcamp/\",\n      owner: \"CNCF-Lahore\",\n      edit: false\n    }\n  }\n});\n",
-      "start": 1708974342139,
-      "end": 1708974342143,
+      "start": 1708988598329,
+      "end": 1708988598359,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -90,135 +90,135 @@
     },
     {
       "name": "vite:json",
-      "start": 1708974342143,
-      "end": 1708974342143,
+      "start": 1708988598359,
+      "end": 1708988598359,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708974342143,
-      "end": 1708974342143,
+      "start": 1708988598359,
+      "end": 1708988598359,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708974342143,
-      "end": 1708974342143,
+      "start": 1708988598359,
+      "end": 1708988598359,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708974342143,
-      "end": 1708974342143,
+      "start": 1708988598359,
+      "end": 1708988598359,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708974342143,
-      "end": 1708974342143,
+      "start": 1708988598360,
+      "end": 1708988598360,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708974342143,
-      "end": 1708974342143,
+      "start": 1708988598360,
+      "end": 1708988598360,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708974342143,
-      "end": 1708974342143,
+      "start": 1708988598360,
+      "end": 1708988598360,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708974342143,
-      "end": 1708974342143,
+      "start": 1708988598360,
+      "end": 1708988598360,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708974342143,
-      "end": 1708974342143,
+      "start": 1708988598360,
+      "end": 1708988598360,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708974342144,
-      "end": 1708974342144,
+      "start": 1708988598360,
+      "end": 1708988598360,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708974342144,
-      "end": 1708974342144,
+      "start": 1708988598360,
+      "end": 1708988598360,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708974342144,
-      "end": 1708974342144,
+      "start": 1708988598361,
+      "end": 1708988598361,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708974342144,
-      "end": 1708974342144,
+      "start": 1708988598361,
+      "end": 1708988598361,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708974342144,
-      "end": 1708974342144,
+      "start": 1708988598361,
+      "end": 1708988598361,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708974342144,
-      "end": 1708974342144,
+      "start": 1708988598361,
+      "end": 1708988598361,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708974342144,
-      "end": 1708974342144,
+      "start": 1708988598361,
+      "end": 1708988598361,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708974342160,
-      "end": 1708974342160,
+      "start": 1708988598379,
+      "end": 1708988598379,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708974342160,
-      "end": 1708974342160,
+      "start": 1708988598379,
+      "end": 1708988598379,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708974342160,
-      "end": 1708974342160,
+      "start": 1708988598379,
+      "end": 1708988598379,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708974342166,
-      "end": 1708974342166,
+      "start": 1708988598385,
+      "end": 1708988598385,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708974342166,
-      "end": 1708974342166,
+      "start": 1708988598385,
+      "end": 1708988598385,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { defineAppConfig } from '#app/nuxt';\nexport default defineAppConfig({\n  docus: {\n    title: \"Kubernetes BootCamp\",\n    description: \"The best place to start your Kubernetes Journey\",\n    url: \"cncf-lahore.github.io/Kubernetes-Bootcamp\",\n    image: \"https://i.ibb.co/PGkhK2D/logo-07df0d71aa68491bbca25e45a62ac299.png\",\n    socials: {},\n    layout: \"default\",\n    header: {\n      title: \"\",\n      logo: false,\n      showLinkIcon: false,\n      fluid: false,\n      exclude: []\n    },\n    aside: {\n      level: 0,\n      collapsed: false,\n      exclude: []\n    },\n    footer: {\n      credits: {\n        icon: \"\",\n        text: \"Made with ❤️by Adil Shahzad\",\n        href: \"https://www.linkedin.com/in/adilshehzad7/\"\n      },\n      textLinks: [],\n      iconLinks: [],\n      fluid: false\n    },\n    github: {\n      branch: \"main\",\n      repo: \"/Kubernetes-Bootcamp/\",\n      owner: \"CNCF-Lahore\",\n      edit: false\n    }\n  }\n});\n",
-      "start": 1708974342166,
-      "end": 1708974342167,
+      "start": 1708988598385,
+      "end": 1708988598386,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -232,8 +232,8 @@
     {
       "name": "nuxt:imports-transform",
       "result": "import { defineAppConfig } from '#app/nuxt';\nexport default defineAppConfig({\n  docus: {\n    title: \"Kubernetes BootCamp\",\n    description: \"The best place to start your Kubernetes Journey\",\n    url: \"cncf-lahore.github.io/Kubernetes-Bootcamp\",\n    image: \"https://i.ibb.co/PGkhK2D/logo-07df0d71aa68491bbca25e45a62ac299.png\",\n    socials: {},\n    layout: \"default\",\n    header: {\n      title: \"\",\n      logo: false,\n      showLinkIcon: false,\n      fluid: false,\n      exclude: []\n    },\n    aside: {\n      level: 0,\n      collapsed: false,\n      exclude: []\n    },\n    footer: {\n      credits: {\n        icon: \"\",\n        text: \"Made with ❤️by Adil Shahzad\",\n        href: \"https://www.linkedin.com/in/adilshehzad7/\"\n      },\n      textLinks: [],\n      iconLinks: [],\n      fluid: false\n    },\n    github: {\n      branch: \"main\",\n      repo: \"/Kubernetes-Bootcamp/\",\n      owner: \"CNCF-Lahore\",\n      edit: false\n    }\n  }\n});\n",
-      "start": 1708974342166,
-      "end": 1708974342167,
+      "start": 1708988598385,
+      "end": 1708988598386,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -246,56 +246,56 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1708974342167,
-      "end": 1708974342167,
+      "start": 1708988598386,
+      "end": 1708988598386,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708974342167,
-      "end": 1708974342167,
+      "start": 1708988598386,
+      "end": 1708988598386,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708974342167,
-      "end": 1708974342167,
+      "start": 1708988598386,
+      "end": 1708988598386,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708974342167,
-      "end": 1708974342167,
+      "start": 1708988598386,
+      "end": 1708988598386,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1708974342167,
-      "end": 1708974342167,
+      "start": 1708988598386,
+      "end": 1708988598386,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1708974342167,
-      "end": 1708974342167,
+      "start": 1708988598386,
+      "end": 1708988598386,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708974342167,
-      "end": 1708974342167,
+      "start": 1708988598386,
+      "end": 1708988598386,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708974342167,
-      "end": 1708974342168,
+      "start": 1708988598386,
+      "end": 1708988598386,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708974342168,
-      "end": 1708974342168,
+      "start": 1708988598386,
+      "end": 1708988598386,
       "order": "normal"
     }
   ]

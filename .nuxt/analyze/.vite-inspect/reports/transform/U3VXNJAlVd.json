@@ -4,52 +4,52 @@
     {
       "name": "vite:load-fallback",
       "result": "export default defineNuxtPlugin((ctx: any) => {\n  // Menu visible reference\n  const visible = ref(false)\n\n  // Open the menu\n  const open = () => (visible.value = true)\n\n  // Close the menu\n  const close = () => (visible.value = false)\n\n  // Toggle the menu (useful for one-off buttons)\n  const toggle = () => (visible.value = !visible.value)\n\n  // Watch route change, close on change\n  ctx.$router.afterEach(() => setTimeout(close, 50))\n\n  // Watch visible and remove overflow so the scrollbar disappears when menu is opened\n  if (process.client) {\n    watch(\n      visible,\n      (isVisible) => {\n        const html = document.documentElement\n\n        if (isVisible) {\n          html.style.overflow = 'hidden'\n        } else {\n          setTimeout(() => {\n            html.style.overflow = ''\n          }, 100) /* had to put it, because of layout shift on leave transition */\n        }\n      },\n      {\n        immediate: true\n      }\n    )\n  }\n\n  return {\n    provide: {\n      menu: {\n        visible,\n        close,\n        open,\n        toggle\n      }\n    }\n  }\n})",
-      "start": 1708974326060,
-      "end": 1708974326225,
+      "start": 1708988587575,
+      "end": 1708988587712,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708974326225,
-      "end": 1708974326225,
+      "start": 1708988587712,
+      "end": 1708988587712,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708974326225,
-      "end": 1708974326225,
+      "start": 1708988587712,
+      "end": 1708988587712,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "export default defineNuxtPlugin((ctx: any) => {\n  // Menu visible reference\n  const visible = ref(false)\n\n  // Open the menu\n  const open = () => (visible.value = true)\n\n  // Close the menu\n  const close = () => (visible.value = false)\n\n  // Toggle the menu (useful for one-off buttons)\n  const toggle = () => (visible.value = !visible.value)\n\n  // Watch route change, close on change\n  ctx.$router.afterEach(() => setTimeout(close, 50))\n\n  // Watch visible and remove overflow so the scrollbar disappears when menu is opened\n  if (process.client) {\n    watch(\n      visible,\n      (isVisible) => {\n        const html = document.documentElement\n\n        if (isVisible) {\n          html.style.overflow = 'hidden'\n        } else {\n          setTimeout(() => {\n            html.style.overflow = ''\n          }, 100) /* had to put it, because of layout shift on leave transition */\n        }\n      },\n      {\n        immediate: true\n      }\n    )\n  }\n\n  return {\n    provide: {\n      menu: {\n        visible,\n        close,\n        open,\n        toggle\n      }\n    }\n  }\n})",
-      "start": 1708974326225,
-      "end": 1708974326225,
+      "start": 1708988587712,
+      "end": 1708988587713,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708974326225,
-      "end": 1708974326225,
+      "start": 1708988587713,
+      "end": 1708988587713,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708974326225,
-      "end": 1708974326225,
+      "start": 1708988587713,
+      "end": 1708988587713,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708974326225,
-      "end": 1708974326225,
+      "start": 1708988587713,
+      "end": 1708988587713,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "export default defineNuxtPlugin((ctx) => {\n  const visible = ref(false);\n  const open = () => visible.value = true;\n  const close = () => visible.value = false;\n  const toggle = () => visible.value = !visible.value;\n  ctx.$router.afterEach(() => setTimeout(close, 50));\n  if (process.client) {\n    watch(\n      visible,\n      (isVisible) => {\n        const html = document.documentElement;\n        if (isVisible) {\n          html.style.overflow = \"hidden\";\n        } else {\n          setTimeout(() => {\n            html.style.overflow = \"\";\n          }, 100);\n        }\n      },\n      {\n        immediate: true\n      }\n    );\n  }\n  return {\n    provide: {\n      menu: {\n        visible,\n        close,\n        open,\n        toggle\n      }\n    }\n  };\n});\n",
-      "start": 1708974326225,
-      "end": 1708974326285,
+      "start": 1708988587713,
+      "end": 1708988587776,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -65,125 +65,125 @@
     },
     {
       "name": "vite:json",
-      "start": 1708974326285,
-      "end": 1708974326285,
+      "start": 1708988587776,
+      "end": 1708988587776,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708974326285,
-      "end": 1708974326285,
+      "start": 1708988587776,
+      "end": 1708988587776,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708974326285,
-      "end": 1708974326285,
+      "start": 1708988587776,
+      "end": 1708988587776,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708974326285,
-      "end": 1708974326285,
+      "start": 1708988587776,
+      "end": 1708988587776,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708974326286,
-      "end": 1708974326286,
+      "start": 1708988587776,
+      "end": 1708988587776,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708974326286,
-      "end": 1708974326287,
+      "start": 1708988587777,
+      "end": 1708988587777,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1708974326287,
-      "end": 1708974326287,
+      "start": 1708988587777,
+      "end": 1708988587777,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708974326287,
-      "end": 1708974326287,
+      "start": 1708988587777,
+      "end": 1708988587777,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708974326287,
-      "end": 1708974326288,
+      "start": 1708988587777,
+      "end": 1708988587777,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708974326288,
-      "end": 1708974326288,
+      "start": 1708988587777,
+      "end": 1708988587777,
       "order": "normal"
     },
     {
       "name": "vite:define",
       "result": "export default defineNuxtPlugin((ctx) => {\n  const visible = ref(false);\n  const open = () => visible.value = true;\n  const close = () => visible.value = false;\n  const toggle = () => visible.value = !visible.value;\n  ctx.$router.afterEach(() => setTimeout(close, 50));\n  if (true) {\n    watch(\n      visible,\n      (isVisible) => {\n        const html = document.documentElement;\n        if (isVisible) {\n          html.style.overflow = \"hidden\";\n        } else {\n          setTimeout(() => {\n            html.style.overflow = \"\";\n          }, 100);\n        }\n      },\n      {\n        immediate: true\n      }\n    );\n  }\n  return {\n    provide: {\n      menu: {\n        visible,\n        close,\n        open,\n        toggle\n      }\n    }\n  };\n});\n",
-      "start": 1708974326290,
-      "end": 1708974326309,
+      "start": 1708988587777,
+      "end": 1708988587791,
       "order": "normal",
       "sourcemaps": null
     },
     {
       "name": "vite:css-post",
-      "start": 1708974326309,
-      "end": 1708974326309,
+      "start": 1708988587791,
+      "end": 1708988587791,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708974326309,
-      "end": 1708974326310,
+      "start": 1708988587791,
+      "end": 1708988587791,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708974326310,
-      "end": 1708974326310,
+      "start": 1708988587791,
+      "end": 1708988587791,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708974326310,
-      "end": 1708974326310,
+      "start": 1708988587791,
+      "end": 1708988587791,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708974326310,
-      "end": 1708974326310,
+      "start": 1708988587791,
+      "end": 1708988587791,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708974326310,
-      "end": 1708974326310,
+      "start": 1708988587791,
+      "end": 1708988587791,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708974326310,
-      "end": 1708974326310,
+      "start": 1708988587791,
+      "end": 1708988587791,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708974326310,
-      "end": 1708974326310,
+      "start": 1708988587791,
+      "end": 1708988587791,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { defineNuxtPlugin } from '#app/nuxt';\nimport { ref, watch } from 'vue';\nexport default defineNuxtPlugin((ctx) => {\n  const visible = ref(false);\n  const open = () => visible.value = true;\n  const close = () => visible.value = false;\n  const toggle = () => visible.value = !visible.value;\n  ctx.$router.afterEach(() => setTimeout(close, 50));\n  if (true) {\n    watch(\n      visible,\n      (isVisible) => {\n        const html = document.documentElement;\n        if (isVisible) {\n          html.style.overflow = \"hidden\";\n        } else {\n          setTimeout(() => {\n            html.style.overflow = \"\";\n          }, 100);\n        }\n      },\n      {\n        immediate: true\n      }\n    );\n  }\n  return {\n    provide: {\n      menu: {\n        visible,\n        close,\n        open,\n        toggle\n      }\n    }\n  };\n});\n",
-      "start": 1708974326310,
-      "end": 1708974326311,
+      "start": 1708988587791,
+      "end": 1708988587792,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -196,50 +196,50 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1708974326311,
-      "end": 1708974326311,
+      "start": 1708988587792,
+      "end": 1708988587792,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708974326311,
-      "end": 1708974326311,
+      "start": 1708988587792,
+      "end": 1708988587792,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1708974326312,
-      "end": 1708974326312,
+      "start": 1708988587792,
+      "end": 1708988587792,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1708974326312,
-      "end": 1708974326312,
+      "start": 1708988587792,
+      "end": 1708988587792,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1708974326312,
-      "end": 1708974326312,
+      "start": 1708988587792,
+      "end": 1708988587792,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708974326312,
-      "end": 1708974326312,
+      "start": 1708988587792,
+      "end": 1708988587792,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708974326312,
-      "end": 1708974326312,
+      "start": 1708988587792,
+      "end": 1708988587792,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708974326312,
-      "end": 1708974326312,
+      "start": 1708988587792,
+      "end": 1708988587792,
       "order": "normal"
     }
   ]

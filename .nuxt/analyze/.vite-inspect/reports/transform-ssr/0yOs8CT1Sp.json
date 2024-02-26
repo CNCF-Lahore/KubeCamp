@@ -4,93 +4,93 @@
     {
       "name": "vite:load-fallback",
       "result": "<script>\nimport { kebabCase } from 'scule'\n\nexport default defineComponent({\n  props: {\n    of: {\n      type: String,\n      default: undefined\n    },\n    /**\n     * Toggle required column.\n     */\n    required: {\n      type: Boolean,\n      default: undefined\n    },\n    /**\n     * Toggle values column.\n     */\n    values: {\n      type: Boolean,\n      default: undefined\n    },\n    /**\n     * Toggle description column.\n     */\n    description: {\n      type: Boolean,\n      default: undefined\n    },\n    /**\n     * Toglle default column.\n     */\n    default: {\n      type: Boolean,\n      default: undefined\n    }\n  },\n  async setup (props) {\n    // Docs: https://github.com/nuxtlabs/nuxt-component-meta\n    const query = `/api/component-meta/${kebabCase(props.of)}`\n\n    const { data: meta } = await useAsyncData(props.of, () => $fetch(query))\n\n    const properties = computed(() => meta.value.props.filter(prop => !prop.tags?.ignore.includes(prop)))\n\n    const showRequired = computed(() => {\n      if (props.required !== undefined) {\n        return props.required\n      }\n\n      return properties.value?.find(prop => prop.required !== undefined)\n    })\n\n    const showValues = computed(() => {\n      if (props.values !== undefined) {\n        return props.values\n      }\n\n      return properties.value?.find(prop => prop.values)\n    })\n\n    const showDescription = computed(() => {\n      if (props.description !== undefined) {\n        return props.description\n      }\n\n      return properties.value?.find(prop => prop.description)\n    })\n\n    const showDefault = computed(() => {\n      if (props.default !== undefined) {\n        return props.default\n      }\n\n      return properties.value?.find(prop => prop.default)\n    })\n\n    return {\n      meta,\n      properties,\n      showRequired,\n      showValues,\n      showDescription,\n      showDefault\n    }\n  }\n})\n</script>\n\n<template>\n  <ProseTable v-if=\"meta && meta?.props && meta?.props?.length\">\n    <ProseThead>\n      <ProseTr>\n        <ProseTh>Prop</ProseTh>\n        <ProseTh>Type</ProseTh>\n        <ProseTh v-if=\"showRequired\">\n          Required\n        </ProseTh>\n        <ProseTh v-if=\"showDefault\">\n          Default\n        </ProseTh>\n        <ProseTh v-if=\"showValues\">\n          Values\n        </ProseTh>\n        <ProseTh v-if=\"showDescription\">\n          Description\n        </ProseTh>\n      </ProseTr>\n    </ProseThead>\n    <ProseTbody>\n      <ProseTr v-for=\"prop in properties\" :key=\"prop.name\">\n        <ProseTd>\n          <ProseCodeInline>{{ prop?.name || '?' }}</ProseCodeInline>\n        </ProseTd>\n        <ProseTd>\n          <ProseCodeInline>{{ prop?.type || '?' }}</ProseCodeInline>\n        </ProseTd>\n        <ProseTd v-if=\"showRequired\">\n          <ProseCodeInline>{{ prop.required === '?' ? '?' : prop.required ? 'Yes' : 'No' }}</ProseCodeInline>\n        </ProseTd>\n        <ProseTd v-if=\"showDefault\">\n          <ProseCodeInline v-if=\"prop.default\">\n            {{ prop?.default || '?' }}\n          </ProseCodeInline>\n        </ProseTd>\n        <ProseTd v-if=\"showValues\">\n          <ProseCodeInline v-if=\"prop.values\">\n            {{ prop?.values || '?' }}\n          </ProseCodeInline>\n          <ProseCodeInline v-else>\n            -\n          </ProseCodeInline>\n        </ProseTd>\n        <ProseTd v-if=\"showDescription\">\n          <ProseCodeInline>{{ prop.description }}</ProseCodeInline>\n        </ProseTd>\n      </ProseTr>\n    </ProseTbody>\n  </ProseTable>\n</template>\n",
-      "start": 1708974337375,
-      "end": 1708974337455,
+      "start": 1708988594896,
+      "end": 1708988594963,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708974337455,
-      "end": 1708974337455,
+      "start": 1708988594963,
+      "end": 1708988594963,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708974337455,
-      "end": 1708974337455,
+      "start": 1708988594963,
+      "end": 1708988594963,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708974337455,
-      "end": 1708974337455,
+      "start": 1708988594963,
+      "end": 1708988594963,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708974337455,
-      "end": 1708974337455,
+      "start": 1708988594963,
+      "end": 1708988594963,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
-      "start": 1708974337455,
-      "end": 1708974337455,
+      "start": 1708988594963,
+      "end": 1708988594963,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
-      "start": 1708974337455,
-      "end": 1708974337455,
+      "start": 1708988594963,
+      "end": 1708988594963,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708974337455,
-      "end": 1708974337455,
+      "start": 1708988594963,
+      "end": 1708988594963,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708974337455,
-      "end": 1708974337455,
+      "start": 1708988594963,
+      "end": 1708988594963,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708974337455,
-      "end": 1708974337455,
+      "start": 1708988594963,
+      "end": 1708988594963,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708974337456,
-      "end": 1708974337456,
+      "start": 1708988594963,
+      "end": 1708988594963,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1708974337456,
-      "end": 1708974337456,
+      "start": 1708988594963,
+      "end": 1708988594963,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1708974337456,
-      "end": 1708974337456,
+      "start": 1708988594963,
+      "end": 1708988594963,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708974337456,
-      "end": 1708974337456,
+      "start": 1708988594963,
+      "end": 1708988594963,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "\nimport { kebabCase } from 'scule'\n\nconst _sfc_main = defineComponent({\n  props: {\n    of: {\n      type: String,\n      default: undefined\n    },\n    /**\n     * Toggle required column.\n     */\n    required: {\n      type: Boolean,\n      default: undefined\n    },\n    /**\n     * Toggle values column.\n     */\n    values: {\n      type: Boolean,\n      default: undefined\n    },\n    /**\n     * Toggle description column.\n     */\n    description: {\n      type: Boolean,\n      default: undefined\n    },\n    /**\n     * Toglle default column.\n     */\n    default: {\n      type: Boolean,\n      default: undefined\n    }\n  },\n  async setup (props) {\n    // Docs: https://github.com/nuxtlabs/nuxt-component-meta\n    const query = `/api/component-meta/${kebabCase(props.of)}`\n\n    const { data: meta } = await useAsyncData(props.of, () => $fetch(query))\n\n    const properties = computed(() => meta.value.props.filter(prop => !prop.tags?.ignore.includes(prop)))\n\n    const showRequired = computed(() => {\n      if (props.required !== undefined) {\n        return props.required\n      }\n\n      return properties.value?.find(prop => prop.required !== undefined)\n    })\n\n    const showValues = computed(() => {\n      if (props.values !== undefined) {\n        return props.values\n      }\n\n      return properties.value?.find(prop => prop.values)\n    })\n\n    const showDescription = computed(() => {\n      if (props.description !== undefined) {\n        return props.description\n      }\n\n      return properties.value?.find(prop => prop.description)\n    })\n\n    const showDefault = computed(() => {\n      if (props.default !== undefined) {\n        return props.default\n      }\n\n      return properties.value?.find(prop => prop.default)\n    })\n\n    return {\n      meta,\n      properties,\n      showRequired,\n      showValues,\n      showDescription,\n      showDefault\n    }\n  }\n})\n\nimport { resolveComponent as _resolveComponent, withCtx as _withCtx, createTextVNode as _createTextVNode, createVNode as _createVNode, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, toDisplayString as _toDisplayString, renderList as _renderList, Fragment as _Fragment } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrInterpolate as _ssrInterpolate, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\"\n\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {\n  const _component_ProseTable = _resolveComponent(\"ProseTable\")\n  const _component_ProseThead = _resolveComponent(\"ProseThead\")\n  const _component_ProseTr = _resolveComponent(\"ProseTr\")\n  const _component_ProseTh = _resolveComponent(\"ProseTh\")\n  const _component_ProseTbody = _resolveComponent(\"ProseTbody\")\n  const _component_ProseTd = _resolveComponent(\"ProseTd\")\n  const _component_ProseCodeInline = _resolveComponent(\"ProseCodeInline\")\n\n  if (_ctx.meta && _ctx.meta?.props && _ctx.meta?.props?.length) {\n    _push(_ssrRenderComponent(_component_ProseTable, _attrs, {\n      default: _withCtx((_, _push, _parent, _scopeId) => {\n        if (_push) {\n          _push(_ssrRenderComponent(_component_ProseThead, null, {\n            default: _withCtx((_, _push, _parent, _scopeId) => {\n              if (_push) {\n                _push(_ssrRenderComponent(_component_ProseTr, null, {\n                  default: _withCtx((_, _push, _parent, _scopeId) => {\n                    if (_push) {\n                      _push(_ssrRenderComponent(_component_ProseTh, null, {\n                        default: _withCtx((_, _push, _parent, _scopeId) => {\n                          if (_push) {\n                            _push(`Prop`)\n                          } else {\n                            return [\n                              _createTextVNode(\"Prop\")\n                            ]\n                          }\n                        }),\n                        _: 1\n                      }, _parent, _scopeId))\n                      _push(_ssrRenderComponent(_component_ProseTh, null, {\n                        default: _withCtx((_, _push, _parent, _scopeId) => {\n                          if (_push) {\n                            _push(`Type`)\n                          } else {\n                            return [\n                              _createTextVNode(\"Type\")\n                            ]\n                          }\n                        }),\n                        _: 1\n                      }, _parent, _scopeId))\n                      if (_ctx.showRequired) {\n                        _push(_ssrRenderComponent(_component_ProseTh, null, {\n                          default: _withCtx((_, _push, _parent, _scopeId) => {\n                            if (_push) {\n                              _push(` Required `)\n                            } else {\n                              return [\n                                _createTextVNode(\" Required \")\n                              ]\n                            }\n                          }),\n                          _: 1\n                        }, _parent, _scopeId))\n                      } else {\n                        _push(`<!---->`)\n                      }\n                      if (_ctx.showDefault) {\n                        _push(_ssrRenderComponent(_component_ProseTh, null, {\n                          default: _withCtx((_, _push, _parent, _scopeId) => {\n                            if (_push) {\n                              _push(` Default `)\n                            } else {\n                              return [\n                                _createTextVNode(\" Default \")\n                              ]\n                            }\n                          }),\n                          _: 1\n                        }, _parent, _scopeId))\n                      } else {\n                        _push(`<!---->`)\n                      }\n                      if (_ctx.showValues) {\n                        _push(_ssrRenderComponent(_component_ProseTh, null, {\n                          default: _withCtx((_, _push, _parent, _scopeId) => {\n                            if (_push) {\n                              _push(` Values `)\n                            } else {\n                              return [\n                                _createTextVNode(\" Values \")\n                              ]\n                            }\n                          }),\n                          _: 1\n                        }, _parent, _scopeId))\n                      } else {\n                        _push(`<!---->`)\n                      }\n                      if (_ctx.showDescription) {\n                        _push(_ssrRenderComponent(_component_ProseTh, null, {\n                          default: _withCtx((_, _push, _parent, _scopeId) => {\n                            if (_push) {\n                              _push(` Description `)\n                            } else {\n                              return [\n                                _createTextVNode(\" Description \")\n                              ]\n                            }\n                          }),\n                          _: 1\n                        }, _parent, _scopeId))\n                      } else {\n                        _push(`<!---->`)\n                      }\n                    } else {\n                      return [\n                        _createVNode(_component_ProseTh, null, {\n                          default: _withCtx(() => [\n                            _createTextVNode(\"Prop\")\n                          ]),\n                          _: 1\n                        }),\n                        _createVNode(_component_ProseTh, null, {\n                          default: _withCtx(() => [\n                            _createTextVNode(\"Type\")\n                          ]),\n                          _: 1\n                        }),\n                        (_ctx.showRequired)\n                          ? (_openBlock(), _createBlock(_component_ProseTh, { key: 0 }, {\n                              default: _withCtx(() => [\n                                _createTextVNode(\" Required \")\n                              ]),\n                              _: 1\n                            }))\n                          : _createCommentVNode(\"\", true),\n                        (_ctx.showDefault)\n                          ? (_openBlock(), _createBlock(_component_ProseTh, { key: 1 }, {\n                              default: _withCtx(() => [\n                                _createTextVNode(\" Default \")\n                              ]),\n                              _: 1\n                            }))\n                          : _createCommentVNode(\"\", true),\n                        (_ctx.showValues)\n                          ? (_openBlock(), _createBlock(_component_ProseTh, { key: 2 }, {\n                              default: _withCtx(() => [\n                                _createTextVNode(\" Values \")\n                              ]),\n                              _: 1\n                            }))\n                          : _createCommentVNode(\"\", true),\n                        (_ctx.showDescription)\n                          ? (_openBlock(), _createBlock(_component_ProseTh, { key: 3 }, {\n                              default: _withCtx(() => [\n                                _createTextVNode(\" Description \")\n                              ]),\n                              _: 1\n                            }))\n                          : _createCommentVNode(\"\", true)\n                      ]\n                    }\n                  }),\n                  _: 1\n                }, _parent, _scopeId))\n              } else {\n                return [\n                  _createVNode(_component_ProseTr, null, {\n                    default: _withCtx(() => [\n                      _createVNode(_component_ProseTh, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"Prop\")\n                        ]),\n                        _: 1\n                      }),\n                      _createVNode(_component_ProseTh, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"Type\")\n                        ]),\n                        _: 1\n                      }),\n                      (_ctx.showRequired)\n                        ? (_openBlock(), _createBlock(_component_ProseTh, { key: 0 }, {\n                            default: _withCtx(() => [\n                              _createTextVNode(\" Required \")\n                            ]),\n                            _: 1\n                          }))\n                        : _createCommentVNode(\"\", true),\n                      (_ctx.showDefault)\n                        ? (_openBlock(), _createBlock(_component_ProseTh, { key: 1 }, {\n                            default: _withCtx(() => [\n                              _createTextVNode(\" Default \")\n                            ]),\n                            _: 1\n                          }))\n                        : _createCommentVNode(\"\", true),\n                      (_ctx.showValues)\n                        ? (_openBlock(), _createBlock(_component_ProseTh, { key: 2 }, {\n                            default: _withCtx(() => [\n                              _createTextVNode(\" Values \")\n                            ]),\n                            _: 1\n                          }))\n                        : _createCommentVNode(\"\", true),\n                      (_ctx.showDescription)\n                        ? (_openBlock(), _createBlock(_component_ProseTh, { key: 3 }, {\n                            default: _withCtx(() => [\n                              _createTextVNode(\" Description \")\n                            ]),\n                            _: 1\n                          }))\n                        : _createCommentVNode(\"\", true)\n                    ]),\n                    _: 1\n                  })\n                ]\n              }\n            }),\n            _: 1\n          }, _parent, _scopeId))\n          _push(_ssrRenderComponent(_component_ProseTbody, null, {\n            default: _withCtx((_, _push, _parent, _scopeId) => {\n              if (_push) {\n                _push(`<!--[-->`)\n                _ssrRenderList(_ctx.properties, (prop) => {\n                  _push(_ssrRenderComponent(_component_ProseTr, {\n                    key: prop.name\n                  }, {\n                    default: _withCtx((_, _push, _parent, _scopeId) => {\n                      if (_push) {\n                        _push(_ssrRenderComponent(_component_ProseTd, null, {\n                          default: _withCtx((_, _push, _parent, _scopeId) => {\n                            if (_push) {\n                              _push(_ssrRenderComponent(_component_ProseCodeInline, null, {\n                                default: _withCtx((_, _push, _parent, _scopeId) => {\n                                  if (_push) {\n                                    _push(`${_ssrInterpolate(prop?.name || '?')}`)\n                                  } else {\n                                    return [\n                                      _createTextVNode(_toDisplayString(prop?.name || '?'), 1)\n                                    ]\n                                  }\n                                }),\n                                _: 2\n                              }, _parent, _scopeId))\n                            } else {\n                              return [\n                                _createVNode(_component_ProseCodeInline, null, {\n                                  default: _withCtx(() => [\n                                    _createTextVNode(_toDisplayString(prop?.name || '?'), 1)\n                                  ]),\n                                  _: 2\n                                }, 1024)\n                              ]\n                            }\n                          }),\n                          _: 2\n                        }, _parent, _scopeId))\n                        _push(_ssrRenderComponent(_component_ProseTd, null, {\n                          default: _withCtx((_, _push, _parent, _scopeId) => {\n                            if (_push) {\n                              _push(_ssrRenderComponent(_component_ProseCodeInline, null, {\n                                default: _withCtx((_, _push, _parent, _scopeId) => {\n                                  if (_push) {\n                                    _push(`${_ssrInterpolate(prop?.type || '?')}`)\n                                  } else {\n                                    return [\n                                      _createTextVNode(_toDisplayString(prop?.type || '?'), 1)\n                                    ]\n                                  }\n                                }),\n                                _: 2\n                              }, _parent, _scopeId))\n                            } else {\n                              return [\n                                _createVNode(_component_ProseCodeInline, null, {\n                                  default: _withCtx(() => [\n                                    _createTextVNode(_toDisplayString(prop?.type || '?'), 1)\n                                  ]),\n                                  _: 2\n                                }, 1024)\n                              ]\n                            }\n                          }),\n                          _: 2\n                        }, _parent, _scopeId))\n                        if (_ctx.showRequired) {\n                          _push(_ssrRenderComponent(_component_ProseTd, null, {\n                            default: _withCtx((_, _push, _parent, _scopeId) => {\n                              if (_push) {\n                                _push(_ssrRenderComponent(_component_ProseCodeInline, null, {\n                                  default: _withCtx((_, _push, _parent, _scopeId) => {\n                                    if (_push) {\n                                      _push(`${_ssrInterpolate(prop.required === '?' ? '?' : prop.required ? 'Yes' : 'No')}`)\n                                    } else {\n                                      return [\n                                        _createTextVNode(_toDisplayString(prop.required === '?' ? '?' : prop.required ? 'Yes' : 'No'), 1)\n                                      ]\n                                    }\n                                  }),\n                                  _: 2\n                                }, _parent, _scopeId))\n                              } else {\n                                return [\n                                  _createVNode(_component_ProseCodeInline, null, {\n                                    default: _withCtx(() => [\n                                      _createTextVNode(_toDisplayString(prop.required === '?' ? '?' : prop.required ? 'Yes' : 'No'), 1)\n                                    ]),\n                                    _: 2\n                                  }, 1024)\n                                ]\n                              }\n                            }),\n                            _: 2\n                          }, _parent, _scopeId))\n                        } else {\n                          _push(`<!---->`)\n                        }\n                        if (_ctx.showDefault) {\n                          _push(_ssrRenderComponent(_component_ProseTd, null, {\n                            default: _withCtx((_, _push, _parent, _scopeId) => {\n                              if (_push) {\n                                if (prop.default) {\n                                  _push(_ssrRenderComponent(_component_ProseCodeInline, null, {\n                                    default: _withCtx((_, _push, _parent, _scopeId) => {\n                                      if (_push) {\n                                        _push(`${_ssrInterpolate(prop?.default || '?')}`)\n                                      } else {\n                                        return [\n                                          _createTextVNode(_toDisplayString(prop?.default || '?'), 1)\n                                        ]\n                                      }\n                                    }),\n                                    _: 2\n                                  }, _parent, _scopeId))\n                                } else {\n                                  _push(`<!---->`)\n                                }\n                              } else {\n                                return [\n                                  (prop.default)\n                                    ? (_openBlock(), _createBlock(_component_ProseCodeInline, { key: 0 }, {\n                                        default: _withCtx(() => [\n                                          _createTextVNode(_toDisplayString(prop?.default || '?'), 1)\n                                        ]),\n                                        _: 2\n                                      }, 1024))\n                                    : _createCommentVNode(\"\", true)\n                                ]\n                              }\n                            }),\n                            _: 2\n                          }, _parent, _scopeId))\n                        } else {\n                          _push(`<!---->`)\n                        }\n                        if (_ctx.showValues) {\n                          _push(_ssrRenderComponent(_component_ProseTd, null, {\n                            default: _withCtx((_, _push, _parent, _scopeId) => {\n                              if (_push) {\n                                if (prop.values) {\n                                  _push(_ssrRenderComponent(_component_ProseCodeInline, null, {\n                                    default: _withCtx((_, _push, _parent, _scopeId) => {\n                                      if (_push) {\n                                        _push(`${_ssrInterpolate(prop?.values || '?')}`)\n                                      } else {\n                                        return [\n                                          _createTextVNode(_toDisplayString(prop?.values || '?'), 1)\n                                        ]\n                                      }\n                                    }),\n                                    _: 2\n                                  }, _parent, _scopeId))\n                                } else {\n                                  _push(_ssrRenderComponent(_component_ProseCodeInline, null, {\n                                    default: _withCtx((_, _push, _parent, _scopeId) => {\n                                      if (_push) {\n                                        _push(` - `)\n                                      } else {\n                                        return [\n                                          _createTextVNode(\" - \")\n                                        ]\n                                      }\n                                    }),\n                                    _: 2\n                                  }, _parent, _scopeId))\n                                }\n                              } else {\n                                return [\n                                  (prop.values)\n                                    ? (_openBlock(), _createBlock(_component_ProseCodeInline, { key: 0 }, {\n                                        default: _withCtx(() => [\n                                          _createTextVNode(_toDisplayString(prop?.values || '?'), 1)\n                                        ]),\n                                        _: 2\n                                      }, 1024))\n                                    : (_openBlock(), _createBlock(_component_ProseCodeInline, { key: 1 }, {\n                                        default: _withCtx(() => [\n                                          _createTextVNode(\" - \")\n                                        ]),\n                                        _: 1\n                                      }))\n                                ]\n                              }\n                            }),\n                            _: 2\n                          }, _parent, _scopeId))\n                        } else {\n                          _push(`<!---->`)\n                        }\n                        if (_ctx.showDescription) {\n                          _push(_ssrRenderComponent(_component_ProseTd, null, {\n                            default: _withCtx((_, _push, _parent, _scopeId) => {\n                              if (_push) {\n                                _push(_ssrRenderComponent(_component_ProseCodeInline, null, {\n                                  default: _withCtx((_, _push, _parent, _scopeId) => {\n                                    if (_push) {\n                                      _push(`${_ssrInterpolate(prop.description)}`)\n                                    } else {\n                                      return [\n                                        _createTextVNode(_toDisplayString(prop.description), 1)\n                                      ]\n                                    }\n                                  }),\n                                  _: 2\n                                }, _parent, _scopeId))\n                              } else {\n                                return [\n                                  _createVNode(_component_ProseCodeInline, null, {\n                                    default: _withCtx(() => [\n                                      _createTextVNode(_toDisplayString(prop.description), 1)\n                                    ]),\n                                    _: 2\n                                  }, 1024)\n                                ]\n                              }\n                            }),\n                            _: 2\n                          }, _parent, _scopeId))\n                        } else {\n                          _push(`<!---->`)\n                        }\n                      } else {\n                        return [\n                          _createVNode(_component_ProseTd, null, {\n                            default: _withCtx(() => [\n                              _createVNode(_component_ProseCodeInline, null, {\n                                default: _withCtx(() => [\n                                  _createTextVNode(_toDisplayString(prop?.name || '?'), 1)\n                                ]),\n                                _: 2\n                              }, 1024)\n                            ]),\n                            _: 2\n                          }, 1024),\n                          _createVNode(_component_ProseTd, null, {\n                            default: _withCtx(() => [\n                              _createVNode(_component_ProseCodeInline, null, {\n                                default: _withCtx(() => [\n                                  _createTextVNode(_toDisplayString(prop?.type || '?'), 1)\n                                ]),\n                                _: 2\n                              }, 1024)\n                            ]),\n                            _: 2\n                          }, 1024),\n                          (_ctx.showRequired)\n                            ? (_openBlock(), _createBlock(_component_ProseTd, { key: 0 }, {\n                                default: _withCtx(() => [\n                                  _createVNode(_component_ProseCodeInline, null, {\n                                    default: _withCtx(() => [\n                                      _createTextVNode(_toDisplayString(prop.required === '?' ? '?' : prop.required ? 'Yes' : 'No'), 1)\n                                    ]),\n                                    _: 2\n                                  }, 1024)\n                                ]),\n                                _: 2\n                              }, 1024))\n                            : _createCommentVNode(\"\", true),\n                          (_ctx.showDefault)\n                            ? (_openBlock(), _createBlock(_component_ProseTd, { key: 1 }, {\n                                default: _withCtx(() => [\n                                  (prop.default)\n                                    ? (_openBlock(), _createBlock(_component_ProseCodeInline, { key: 0 }, {\n                                        default: _withCtx(() => [\n                                          _createTextVNode(_toDisplayString(prop?.default || '?'), 1)\n                                        ]),\n                                        _: 2\n                                      }, 1024))\n                                    : _createCommentVNode(\"\", true)\n                                ]),\n                                _: 2\n                              }, 1024))\n                            : _createCommentVNode(\"\", true),\n                          (_ctx.showValues)\n                            ? (_openBlock(), _createBlock(_component_ProseTd, { key: 2 }, {\n                                default: _withCtx(() => [\n                                  (prop.values)\n                                    ? (_openBlock(), _createBlock(_component_ProseCodeInline, { key: 0 }, {\n                                        default: _withCtx(() => [\n                                          _createTextVNode(_toDisplayString(prop?.values || '?'), 1)\n                                        ]),\n                                        _: 2\n                                      }, 1024))\n                                    : (_openBlock(), _createBlock(_component_ProseCodeInline, { key: 1 }, {\n                                        default: _withCtx(() => [\n                                          _createTextVNode(\" - \")\n                                        ]),\n                                        _: 1\n                                      }))\n                                ]),\n                                _: 2\n                              }, 1024))\n                            : _createCommentVNode(\"\", true),\n                          (_ctx.showDescription)\n                            ? (_openBlock(), _createBlock(_component_ProseTd, { key: 3 }, {\n                                default: _withCtx(() => [\n                                  _createVNode(_component_ProseCodeInline, null, {\n                                    default: _withCtx(() => [\n                                      _createTextVNode(_toDisplayString(prop.description), 1)\n                                    ]),\n                                    _: 2\n                                  }, 1024)\n                                ]),\n                                _: 2\n                              }, 1024))\n                            : _createCommentVNode(\"\", true)\n                        ]\n                      }\n                    }),\n                    _: 2\n                  }, _parent, _scopeId))\n                })\n                _push(`<!--]-->`)\n              } else {\n                return [\n                  (_openBlock(true), _createBlock(_Fragment, null, _renderList(_ctx.properties, (prop) => {\n                    return (_openBlock(), _createBlock(_component_ProseTr, {\n                      key: prop.name\n                    }, {\n                      default: _withCtx(() => [\n                        _createVNode(_component_ProseTd, null, {\n                          default: _withCtx(() => [\n                            _createVNode(_component_ProseCodeInline, null, {\n                              default: _withCtx(() => [\n                                _createTextVNode(_toDisplayString(prop?.name || '?'), 1)\n                              ]),\n                              _: 2\n                            }, 1024)\n                          ]),\n                          _: 2\n                        }, 1024),\n                        _createVNode(_component_ProseTd, null, {\n                          default: _withCtx(() => [\n                            _createVNode(_component_ProseCodeInline, null, {\n                              default: _withCtx(() => [\n                                _createTextVNode(_toDisplayString(prop?.type || '?'), 1)\n                              ]),\n                              _: 2\n                            }, 1024)\n                          ]),\n                          _: 2\n                        }, 1024),\n                        (_ctx.showRequired)\n                          ? (_openBlock(), _createBlock(_component_ProseTd, { key: 0 }, {\n                              default: _withCtx(() => [\n                                _createVNode(_component_ProseCodeInline, null, {\n                                  default: _withCtx(() => [\n                                    _createTextVNode(_toDisplayString(prop.required === '?' ? '?' : prop.required ? 'Yes' : 'No'), 1)\n                                  ]),\n                                  _: 2\n                                }, 1024)\n                              ]),\n                              _: 2\n                            }, 1024))\n                          : _createCommentVNode(\"\", true),\n                        (_ctx.showDefault)\n                          ? (_openBlock(), _createBlock(_component_ProseTd, { key: 1 }, {\n                              default: _withCtx(() => [\n                                (prop.default)\n                                  ? (_openBlock(), _createBlock(_component_ProseCodeInline, { key: 0 }, {\n                                      default: _withCtx(() => [\n                                        _createTextVNode(_toDisplayString(prop?.default || '?'), 1)\n                                      ]),\n                                      _: 2\n                                    }, 1024))\n                                  : _createCommentVNode(\"\", true)\n                              ]),\n                              _: 2\n                            }, 1024))\n                          : _createCommentVNode(\"\", true),\n                        (_ctx.showValues)\n                          ? (_openBlock(), _createBlock(_component_ProseTd, { key: 2 }, {\n                              default: _withCtx(() => [\n                                (prop.values)\n                                  ? (_openBlock(), _createBlock(_component_ProseCodeInline, { key: 0 }, {\n                                      default: _withCtx(() => [\n                                        _createTextVNode(_toDisplayString(prop?.values || '?'), 1)\n                                      ]),\n                                      _: 2\n                                    }, 1024))\n                                  : (_openBlock(), _createBlock(_component_ProseCodeInline, { key: 1 }, {\n                                      default: _withCtx(() => [\n                                        _createTextVNode(\" - \")\n                                      ]),\n                                      _: 1\n                                    }))\n                              ]),\n                              _: 2\n                            }, 1024))\n                          : _createCommentVNode(\"\", true),\n                        (_ctx.showDescription)\n                          ? (_openBlock(), _createBlock(_component_ProseTd, { key: 3 }, {\n                              default: _withCtx(() => [\n                                _createVNode(_component_ProseCodeInline, null, {\n                                  default: _withCtx(() => [\n                                    _createTextVNode(_toDisplayString(prop.description), 1)\n                                  ]),\n                                  _: 2\n                                }, 1024)\n                              ]),\n                              _: 2\n                            }, 1024))\n                          : _createCommentVNode(\"\", true)\n                      ]),\n                      _: 2\n                    }, 1024))\n                  }), 128))\n                ]\n              }\n            }),\n            _: 1\n          }, _parent, _scopeId))\n        } else {\n          return [\n            _createVNode(_component_ProseThead, null, {\n              default: _withCtx(() => [\n                _createVNode(_component_ProseTr, null, {\n                  default: _withCtx(() => [\n                    _createVNode(_component_ProseTh, null, {\n                      default: _withCtx(() => [\n                        _createTextVNode(\"Prop\")\n                      ]),\n                      _: 1\n                    }),\n                    _createVNode(_component_ProseTh, null, {\n                      default: _withCtx(() => [\n                        _createTextVNode(\"Type\")\n                      ]),\n                      _: 1\n                    }),\n                    (_ctx.showRequired)\n                      ? (_openBlock(), _createBlock(_component_ProseTh, { key: 0 }, {\n                          default: _withCtx(() => [\n                            _createTextVNode(\" Required \")\n                          ]),\n                          _: 1\n                        }))\n                      : _createCommentVNode(\"\", true),\n                    (_ctx.showDefault)\n                      ? (_openBlock(), _createBlock(_component_ProseTh, { key: 1 }, {\n                          default: _withCtx(() => [\n                            _createTextVNode(\" Default \")\n                          ]),\n                          _: 1\n                        }))\n                      : _createCommentVNode(\"\", true),\n                    (_ctx.showValues)\n                      ? (_openBlock(), _createBlock(_component_ProseTh, { key: 2 }, {\n                          default: _withCtx(() => [\n                            _createTextVNode(\" Values \")\n                          ]),\n                          _: 1\n                        }))\n                      : _createCommentVNode(\"\", true),\n                    (_ctx.showDescription)\n                      ? (_openBlock(), _createBlock(_component_ProseTh, { key: 3 }, {\n                          default: _withCtx(() => [\n                            _createTextVNode(\" Description \")\n                          ]),\n                          _: 1\n                        }))\n                      : _createCommentVNode(\"\", true)\n                  ]),\n                  _: 1\n                })\n              ]),\n              _: 1\n            }),\n            _createVNode(_component_ProseTbody, null, {\n              default: _withCtx(() => [\n                (_openBlock(true), _createBlock(_Fragment, null, _renderList(_ctx.properties, (prop) => {\n                  return (_openBlock(), _createBlock(_component_ProseTr, {\n                    key: prop.name\n                  }, {\n                    default: _withCtx(() => [\n                      _createVNode(_component_ProseTd, null, {\n                        default: _withCtx(() => [\n                          _createVNode(_component_ProseCodeInline, null, {\n                            default: _withCtx(() => [\n                              _createTextVNode(_toDisplayString(prop?.name || '?'), 1)\n                            ]),\n                            _: 2\n                          }, 1024)\n                        ]),\n                        _: 2\n                      }, 1024),\n                      _createVNode(_component_ProseTd, null, {\n                        default: _withCtx(() => [\n                          _createVNode(_component_ProseCodeInline, null, {\n                            default: _withCtx(() => [\n                              _createTextVNode(_toDisplayString(prop?.type || '?'), 1)\n                            ]),\n                            _: 2\n                          }, 1024)\n                        ]),\n                        _: 2\n                      }, 1024),\n                      (_ctx.showRequired)\n                        ? (_openBlock(), _createBlock(_component_ProseTd, { key: 0 }, {\n                            default: _withCtx(() => [\n                              _createVNode(_component_ProseCodeInline, null, {\n                                default: _withCtx(() => [\n                                  _createTextVNode(_toDisplayString(prop.required === '?' ? '?' : prop.required ? 'Yes' : 'No'), 1)\n                                ]),\n                                _: 2\n                              }, 1024)\n                            ]),\n                            _: 2\n                          }, 1024))\n                        : _createCommentVNode(\"\", true),\n                      (_ctx.showDefault)\n                        ? (_openBlock(), _createBlock(_component_ProseTd, { key: 1 }, {\n                            default: _withCtx(() => [\n                              (prop.default)\n                                ? (_openBlock(), _createBlock(_component_ProseCodeInline, { key: 0 }, {\n                                    default: _withCtx(() => [\n                                      _createTextVNode(_toDisplayString(prop?.default || '?'), 1)\n                                    ]),\n                                    _: 2\n                                  }, 1024))\n                                : _createCommentVNode(\"\", true)\n                            ]),\n                            _: 2\n                          }, 1024))\n                        : _createCommentVNode(\"\", true),\n                      (_ctx.showValues)\n                        ? (_openBlock(), _createBlock(_component_ProseTd, { key: 2 }, {\n                            default: _withCtx(() => [\n                              (prop.values)\n                                ? (_openBlock(), _createBlock(_component_ProseCodeInline, { key: 0 }, {\n                                    default: _withCtx(() => [\n                                      _createTextVNode(_toDisplayString(prop?.values || '?'), 1)\n                                    ]),\n                                    _: 2\n                                  }, 1024))\n                                : (_openBlock(), _createBlock(_component_ProseCodeInline, { key: 1 }, {\n                                    default: _withCtx(() => [\n                                      _createTextVNode(\" - \")\n                                    ]),\n                                    _: 1\n                                  }))\n                            ]),\n                            _: 2\n                          }, 1024))\n                        : _createCommentVNode(\"\", true),\n                      (_ctx.showDescription)\n                        ? (_openBlock(), _createBlock(_component_ProseTd, { key: 3 }, {\n                            default: _withCtx(() => [\n                              _createVNode(_component_ProseCodeInline, null, {\n                                default: _withCtx(() => [\n                                  _createTextVNode(_toDisplayString(prop.description), 1)\n                                ]),\n                                _: 2\n                              }, 1024)\n                            ]),\n                            _: 2\n                          }, 1024))\n                        : _createCommentVNode(\"\", true)\n                    ]),\n                    _: 2\n                  }, 1024))\n                }), 128))\n              ]),\n              _: 1\n            })\n          ]\n        }\n      }),\n      _: 1\n    }, _parent))\n  } else {\n    _push(`<!---->`)\n  }\n}\n\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"node_modules/@nuxt-themes/elements/components/globals/Props.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['ssrRender',_sfc_ssrRender]])",
-      "start": 1708974337456,
-      "end": 1708974337507,
+      "start": 1708988594963,
+      "end": 1708988594988,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -107,178 +107,178 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708974337507,
-      "end": 1708974337507,
+      "start": 1708988594989,
+      "end": 1708988594989,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708974337507,
-      "end": 1708974337507,
+      "start": 1708988594989,
+      "end": 1708988594989,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708974337507,
-      "end": 1708974337507,
+      "start": 1708988594989,
+      "end": 1708988594989,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708974337507,
-      "end": 1708974337507,
+      "start": 1708988594989,
+      "end": 1708988594989,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708974337507,
-      "end": 1708974337507,
+      "start": 1708988594989,
+      "end": 1708988594989,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
       "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Props.vue\").then(r => r.default))",
-      "start": 1708974337507,
-      "end": 1708974337507,
+      "start": 1708988594989,
+      "end": 1708988594989,
       "order": "normal",
       "sourcemaps": null
     },
     {
       "name": "replace",
-      "start": 1708974337507,
-      "end": 1708974337508,
+      "start": 1708988594989,
+      "end": 1708988594989,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708974337508,
-      "end": 1708974337508,
+      "start": 1708988594989,
+      "end": 1708988594989,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708974337508,
-      "end": 1708974337508,
+      "start": 1708988594989,
+      "end": 1708988594989,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708974337508,
-      "end": 1708974337508,
+      "start": 1708988594989,
+      "end": 1708988594989,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708974337508,
-      "end": 1708974337508,
+      "start": 1708988594989,
+      "end": 1708988594989,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708974337508,
-      "end": 1708974337508,
+      "start": 1708988594989,
+      "end": 1708988594989,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708974337508,
-      "end": 1708974337508,
+      "start": 1708988594989,
+      "end": 1708988594989,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708974337508,
-      "end": 1708974337508,
+      "start": 1708988594989,
+      "end": 1708988594989,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708974337508,
-      "end": 1708974337508,
+      "start": 1708988594989,
+      "end": 1708988594989,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708974337508,
-      "end": 1708974337508,
+      "start": 1708988594989,
+      "end": 1708988594989,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708974337508,
-      "end": 1708974337508,
+      "start": 1708988594989,
+      "end": 1708988594989,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708974337508,
-      "end": 1708974337508,
+      "start": 1708988594989,
+      "end": 1708988594989,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708974337508,
-      "end": 1708974337508,
+      "start": 1708988594989,
+      "end": 1708988594990,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708974337508,
-      "end": 1708974337508,
+      "start": 1708988594989,
+      "end": 1708988594990,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708974337508,
-      "end": 1708974337508,
+      "start": 1708988594990,
+      "end": 1708988594990,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708974337508,
-      "end": 1708974337508,
+      "start": 1708988594990,
+      "end": 1708988594990,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708974337508,
-      "end": 1708974337508,
+      "start": 1708988594990,
+      "end": 1708988594990,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708974337508,
-      "end": 1708974337508,
+      "start": 1708988594990,
+      "end": 1708988594990,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1708974337508,
-      "end": 1708974337508,
+      "start": 1708988594990,
+      "end": 1708988594990,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1708974337508,
-      "end": 1708974337508,
+      "start": 1708988594990,
+      "end": 1708988594990,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708974337508,
-      "end": 1708974337509,
+      "start": 1708988594990,
+      "end": 1708988594990,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708974337509,
-      "end": 1708974337509,
+      "start": 1708988594990,
+      "end": 1708988594990,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708974337509,
-      "end": 1708974337509,
+      "start": 1708988594991,
+      "end": 1708988594991,
       "order": "normal"
     }
   ]

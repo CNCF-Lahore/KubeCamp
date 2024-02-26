@@ -4,51 +4,51 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode } from \"vue\"\n\nconst _hoisted_1 = { key: 0 }\nconst _hoisted_2 = /*#__PURE__*/_createElementVNode(\"code\", null, \"script\", -1)\nconst _hoisted_3 = /*#__PURE__*/_createElementVNode(\"code\", null, \"ProseScript\", -1)\n\nimport { computed } from 'vue'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'ProseScript',\n  props: {\n  src: {\n    type: String,\n    default: ''\n  }\n},\n  setup(__props) {\n\n\nconst isDev = computed(() => process.dev)\n\nreturn (_ctx: any,_cache: any) => {\n  return (isDev.value)\n    ? (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _createTextVNode(\" Rendering the \"),\n        _hoisted_2,\n        _createTextVNode(\" element is dangerous and is disabled by default. Consider implementing your own \"),\n        _hoisted_3,\n        _createTextVNode(\" element to have control over script rendering. \")\n      ]))\n    : _createCommentVNode(\"\", true)\n}\n}\n\n})",
-      "start": 1708974331240,
-      "end": 1708974331240
+      "start": 1708988590983,
+      "end": 1708988590984
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708974331241,
-      "end": 1708974331241,
+      "start": 1708988590984,
+      "end": 1708988590984,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708974331241,
-      "end": 1708974331241,
+      "start": 1708988590984,
+      "end": 1708988590984,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode } from \"vue\"\n\nconst _hoisted_1 = { key: 0 }\nconst _hoisted_2 = /*#__PURE__*/_createElementVNode(\"code\", null, \"script\", -1)\nconst _hoisted_3 = /*#__PURE__*/_createElementVNode(\"code\", null, \"ProseScript\", -1)\n\nimport { computed } from 'vue'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'ProseScript',\n  props: {\n  src: {\n    type: String,\n    default: ''\n  }\n},\n  setup(__props) {\n\n\nconst isDev = computed(() => process.dev)\n\nreturn (_ctx: any,_cache: any) => {\n  return (isDev.value)\n    ? (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _createTextVNode(\" Rendering the \"),\n        _hoisted_2,\n        _createTextVNode(\" element is dangerous and is disabled by default. Consider implementing your own \"),\n        _hoisted_3,\n        _createTextVNode(\" element to have control over script rendering. \")\n      ]))\n    : _createCommentVNode(\"\", true)\n}\n}\n\n})",
-      "start": 1708974331241,
-      "end": 1708974331242,
+      "start": 1708988590985,
+      "end": 1708988590985,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708974331242,
-      "end": 1708974331242,
+      "start": 1708988590985,
+      "end": 1708988590985,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708974331242,
-      "end": 1708974331242,
+      "start": 1708988590985,
+      "end": 1708988590985,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708974331242,
-      "end": 1708974331242,
+      "start": 1708988590985,
+      "end": 1708988590985,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode } from \"vue\";\nconst _hoisted_1 = { key: 0 };\nconst _hoisted_2 = /* @__PURE__ */ _createElementVNode(\"code\", null, \"script\", -1);\nconst _hoisted_3 = /* @__PURE__ */ _createElementVNode(\"code\", null, \"ProseScript\", -1);\nimport { computed } from \"vue\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ProseScript\",\n  props: {\n    src: {\n      type: String,\n      default: \"\"\n    }\n  },\n  setup(__props) {\n    const isDev = computed(() => process.dev);\n    return (_ctx, _cache) => {\n      return isDev.value ? (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _createTextVNode(\" Rendering the \"),\n        _hoisted_2,\n        _createTextVNode(\" element is dangerous and is disabled by default. Consider implementing your own \"),\n        _hoisted_3,\n        _createTextVNode(\" element to have control over script rendering. \")\n      ])) : _createCommentVNode(\"\", true);\n    };\n  }\n});\n",
-      "start": 1708974331242,
-      "end": 1708974331564,
+      "start": 1708988590985,
+      "end": 1708988591165,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -64,172 +64,172 @@
     },
     {
       "name": "vite:json",
-      "start": 1708974331564,
-      "end": 1708974331564,
+      "start": 1708988591166,
+      "end": 1708988591166,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708974331564,
-      "end": 1708974331564,
+      "start": 1708988591166,
+      "end": 1708988591166,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708974331564,
-      "end": 1708974331564,
+      "start": 1708988591166,
+      "end": 1708988591166,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708974331565,
-      "end": 1708974331565,
+      "start": 1708988591166,
+      "end": 1708988591166,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708974331565,
-      "end": 1708974331565,
+      "start": 1708988591166,
+      "end": 1708988591168,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708974331565,
-      "end": 1708974331565,
+      "start": 1708988591168,
+      "end": 1708988591168,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1708974331565,
-      "end": 1708974331565,
+      "start": 1708988591168,
+      "end": 1708988591168,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708974331565,
-      "end": 1708974331565,
+      "start": 1708988591169,
+      "end": 1708988591169,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708974331566,
-      "end": 1708974331566,
+      "start": 1708988591169,
+      "end": 1708988591170,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708974331567,
-      "end": 1708974331567,
+      "start": 1708988591172,
+      "end": 1708988591172,
       "order": "normal"
     },
     {
       "name": "vite:define",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode } from \"vue\";\nconst _hoisted_1 = { key: 0 };\nconst _hoisted_2 = /* @__PURE__ */ _createElementVNode(\"code\", null, \"script\", -1);\nconst _hoisted_3 = /* @__PURE__ */ _createElementVNode(\"code\", null, \"ProseScript\", -1);\nimport { computed } from \"vue\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ProseScript\",\n  props: {\n    src: {\n      type: String,\n      default: \"\"\n    }\n  },\n  setup(__props) {\n    const isDev = computed(() => false);\n    return (_ctx, _cache) => {\n      return isDev.value ? (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _createTextVNode(\" Rendering the \"),\n        _hoisted_2,\n        _createTextVNode(\" element is dangerous and is disabled by default. Consider implementing your own \"),\n        _hoisted_3,\n        _createTextVNode(\" element to have control over script rendering. \")\n      ])) : _createCommentVNode(\"\", true);\n    };\n  }\n});\n",
-      "start": 1708974331604,
-      "end": 1708974331646,
+      "start": 1708988591174,
+      "end": 1708988591225,
       "order": "normal",
       "sourcemaps": null
     },
     {
       "name": "vite:css-post",
-      "start": 1708974331646,
-      "end": 1708974331646,
+      "start": 1708988591225,
+      "end": 1708988591225,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708974331646,
-      "end": 1708974331646,
+      "start": 1708988591225,
+      "end": 1708988591225,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708974331646,
-      "end": 1708974331646,
+      "start": 1708988591225,
+      "end": 1708988591225,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708974331646,
-      "end": 1708974331646,
+      "start": 1708988591225,
+      "end": 1708988591225,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708974331646,
-      "end": 1708974331646,
+      "start": 1708988591225,
+      "end": 1708988591225,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708974331646,
-      "end": 1708974331646,
+      "start": 1708988591225,
+      "end": 1708988591225,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708974331646,
-      "end": 1708974331646,
+      "start": 1708988591226,
+      "end": 1708988591226,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708974331646,
-      "end": 1708974331647,
+      "start": 1708988591226,
+      "end": 1708988591226,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708974331647,
-      "end": 1708974331647,
+      "start": 1708988591226,
+      "end": 1708988591226,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708974331647,
-      "end": 1708974331647,
+      "start": 1708988591226,
+      "end": 1708988591226,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708974331648,
-      "end": 1708974331648,
+      "start": 1708988591227,
+      "end": 1708988591227,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1708974331648,
-      "end": 1708974331648,
+      "start": 1708988591227,
+      "end": 1708988591227,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1708974331648,
-      "end": 1708974331648,
+      "start": 1708988591227,
+      "end": 1708988591227,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1708974331648,
-      "end": 1708974331648,
+      "start": 1708988591227,
+      "end": 1708988591227,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708974331648,
-      "end": 1708974331649,
+      "start": 1708988591227,
+      "end": 1708988591228,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708974331649,
-      "end": 1708974331649,
+      "start": 1708988591228,
+      "end": 1708988591228,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708974331649,
-      "end": 1708974331649,
+      "start": 1708988591228,
+      "end": 1708988591228,
       "order": "normal"
     }
   ]

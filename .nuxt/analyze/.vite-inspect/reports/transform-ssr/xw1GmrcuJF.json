@@ -4,8 +4,8 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'DocsAside',\n  __ssrInlineRender: true,\n  setup(__props) {\n\nconst { tree } = useDocus()\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_DocsAsideTree = _resolveComponent(\"DocsAsideTree\")!\n  const _component_NuxtLink = _resolveComponent(\"NuxtLink\")!\n  const _component_Icon = _resolveComponent(\"Icon\")!\n\n  _push(`<nav${_ssrRenderAttrs(_attrs)} data-v-89fb8999>`)\n  if (_unref(tree)?.length > 0) {\n    _push(_ssrRenderComponent(_component_DocsAsideTree, { links: _unref(tree) }, null, _parent))\n  } else {\n    _push(_ssrRenderComponent(_component_NuxtLink, {\n      to: \"/\",\n      class: \"go-back-link\"\n    }, {\n      default: _withCtx((_, _push, _parent, _scopeId) => {\n        if (_push) {\n          _push(_ssrRenderComponent(_component_Icon, {\n            name: \"heroicons-outline:arrow-left\",\n            class: \"icon\"\n          }, null, _parent, _scopeId))\n          _push(`<span class=\"text\" data-v-89fb8999${_scopeId}>Go back</span>`)\n        } else {\n          return [\n            _createVNode(_component_Icon, {\n              name: \"heroicons-outline:arrow-left\",\n              class: \"icon\"\n            }),\n            _createVNode(\"span\", { class: \"text\" }, \"Go back\")\n          ]\n        }\n      }),\n      _: 1\n    }, _parent))\n  }\n  _push(`</nav>`)\n}\n}\n\n})",
-      "start": 1708974339842,
-      "end": 1708974339842,
+      "start": 1708988596605,
+      "end": 1708988596605,
       "sourcemaps": {
         "version": 3,
         "sources": [
@@ -20,71 +20,71 @@
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708974339843,
-      "end": 1708974339843,
+      "start": 1708988596605,
+      "end": 1708988596605,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708974339843,
-      "end": 1708974339843,
+      "start": 1708988596605,
+      "end": 1708988596605,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708974339846,
-      "end": 1708974339846,
+      "start": 1708988596607,
+      "end": 1708988596608,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708974339846,
-      "end": 1708974339846,
+      "start": 1708988596607,
+      "end": 1708988596608,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'DocsAside',\n  __ssrInlineRender: true,\n  setup(__props) {\n\nconst { tree } = useDocus()\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_DocsAsideTree = _resolveComponent(\"DocsAsideTree\")!\n  const _component_NuxtLink = _resolveComponent(\"NuxtLink\")!\n  const _component_Icon = _resolveComponent(\"Icon\")!\n\n  _push(`<nav${_ssrRenderAttrs(_attrs)} data-v-89fb8999>`)\n  if (_unref(tree)?.length > 0) {\n    _push(_ssrRenderComponent(_component_DocsAsideTree, { links: _unref(tree) }, null, _parent))\n  } else {\n    _push(_ssrRenderComponent(_component_NuxtLink, {\n      to: \"/\",\n      class: \"go-back-link\"\n    }, {\n      default: _withCtx((_, _push, _parent, _scopeId) => {\n        if (_push) {\n          _push(_ssrRenderComponent(_component_Icon, {\n            name: \"heroicons-outline:arrow-left\",\n            class: \"icon\"\n          }, null, _parent, _scopeId))\n          _push(`<span class=\"text\" data-v-89fb8999${_scopeId}>Go back</span>`)\n        } else {\n          return [\n            _createVNode(_component_Icon, {\n              name: \"heroicons-outline:arrow-left\",\n              class: \"icon\"\n            }),\n            _createVNode(\"span\", { class: \"text\" }, \"Go back\")\n          ]\n        }\n      }),\n      _: 1\n    }, _parent))\n  }\n  _push(`</nav>`)\n}\n}\n\n})",
-      "start": 1708974339847,
-      "end": 1708974339847,
+      "start": 1708988596609,
+      "end": 1708988596609,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'DocsAside',\n  __ssrInlineRender: true,\n  setup(__props) {\n\nconst { tree } = useDocus()\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_DocsAsideTree = _resolveComponent(\"DocsAsideTree\")!\n  const _component_NuxtLink = _resolveComponent(\"NuxtLink\")!\n  const _component_Icon = _resolveComponent(\"Icon\")!\n\n  _push(`<nav${_ssrRenderAttrs(_attrs)} data-v-89fb8999>`)\n  if (_unref(tree)?.length > 0) {\n    _push(_ssrRenderComponent(_component_DocsAsideTree, { links: _unref(tree) }, null, _parent))\n  } else {\n    _push(_ssrRenderComponent(_component_NuxtLink, {\n      to: \"/\",\n      class: \"go-back-link\"\n    }, {\n      default: _withCtx((_, _push, _parent, _scopeId) => {\n        if (_push) {\n          _push(_ssrRenderComponent(_component_Icon, {\n            name: \"heroicons-outline:arrow-left\",\n            class: \"icon\"\n          }, null, _parent, _scopeId))\n          _push(`<span class=\"text\" data-v-89fb8999${_scopeId}>Go back</span>`)\n        } else {\n          return [\n            _createVNode(_component_Icon, {\n              name: \"heroicons-outline:arrow-left\",\n              class: \"icon\"\n            }),\n            _createVNode(\"span\", { class: \"text\" }, \"Go back\")\n          ]\n        }\n      }),\n      _: 1\n    }, _parent))\n  }\n  _push(`</nav>`)\n}\n}\n\n})",
-      "start": 1708974339847,
-      "end": 1708974339847,
+      "start": 1708988596609,
+      "end": 1708988596609,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708974339848,
-      "end": 1708974339848,
+      "start": 1708988596610,
+      "end": 1708988596610,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708974339848,
-      "end": 1708974339848,
+      "start": 1708988596610,
+      "end": 1708988596610,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708974339849,
-      "end": 1708974339849,
+      "start": 1708988596610,
+      "end": 1708988596610,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708974339849,
-      "end": 1708974339849,
+      "start": 1708988596611,
+      "end": 1708988596611,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"DocsAside\",\n  __ssrInlineRender: true,\n  setup(__props) {\n    const { tree } = useDocus();\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_DocsAsideTree = _resolveComponent(\"DocsAsideTree\");\n      const _component_NuxtLink = _resolveComponent(\"NuxtLink\");\n      const _component_Icon = _resolveComponent(\"Icon\");\n      _push(`<nav${_ssrRenderAttrs(_attrs)} data-v-89fb8999>`);\n      if (_unref(tree)?.length > 0) {\n        _push(_ssrRenderComponent(_component_DocsAsideTree, { links: _unref(tree) }, null, _parent));\n      } else {\n        _push(_ssrRenderComponent(_component_NuxtLink, {\n          to: \"/\",\n          class: \"go-back-link\"\n        }, {\n          default: _withCtx((_, _push2, _parent2, _scopeId) => {\n            if (_push2) {\n              _push2(_ssrRenderComponent(_component_Icon, {\n                name: \"heroicons-outline:arrow-left\",\n                class: \"icon\"\n              }, null, _parent2, _scopeId));\n              _push2(`<span class=\"text\" data-v-89fb8999${_scopeId}>Go back</span>`);\n            } else {\n              return [\n                _createVNode(_component_Icon, {\n                  name: \"heroicons-outline:arrow-left\",\n                  class: \"icon\"\n                }),\n                _createVNode(\"span\", { class: \"text\" }, \"Go back\")\n              ];\n            }\n          }),\n          _: 1\n        }, _parent));\n      }\n      _push(`</nav>`);\n    };\n  }\n});\n",
-      "start": 1708974339849,
-      "end": 1708974340720,
+      "start": 1708988596611,
+      "end": 1708988597215,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -103,135 +103,135 @@
     },
     {
       "name": "vite:json",
-      "start": 1708974340720,
-      "end": 1708974340720,
+      "start": 1708988597215,
+      "end": 1708988597215,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708974340720,
-      "end": 1708974340720,
+      "start": 1708988597215,
+      "end": 1708988597215,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708974340720,
-      "end": 1708974340720,
+      "start": 1708988597215,
+      "end": 1708988597215,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708974340720,
-      "end": 1708974340720,
+      "start": 1708988597215,
+      "end": 1708988597215,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708974340720,
-      "end": 1708974340720,
+      "start": 1708988597215,
+      "end": 1708988597215,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708974340720,
-      "end": 1708974340720,
+      "start": 1708988597215,
+      "end": 1708988597216,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708974340721,
-      "end": 1708974340721,
+      "start": 1708988597216,
+      "end": 1708988597216,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708974340721,
-      "end": 1708974340721,
+      "start": 1708988597216,
+      "end": 1708988597216,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708974340721,
-      "end": 1708974340721,
+      "start": 1708988597216,
+      "end": 1708988597216,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708974340721,
-      "end": 1708974340721,
+      "start": 1708988597216,
+      "end": 1708988597216,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708974340721,
-      "end": 1708974340721,
+      "start": 1708988597216,
+      "end": 1708988597216,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708974340721,
-      "end": 1708974340722,
+      "start": 1708988597217,
+      "end": 1708988597217,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708974340722,
-      "end": 1708974340722,
+      "start": 1708988597217,
+      "end": 1708988597217,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708974340722,
-      "end": 1708974340722,
+      "start": 1708988597217,
+      "end": 1708988597217,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708974340722,
-      "end": 1708974340722,
+      "start": 1708988597217,
+      "end": 1708988597217,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708974340722,
-      "end": 1708974340722,
+      "start": 1708988597217,
+      "end": 1708988597217,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708974340722,
-      "end": 1708974340722,
+      "start": 1708988597217,
+      "end": 1708988597217,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708974340722,
-      "end": 1708974340722,
+      "start": 1708988597217,
+      "end": 1708988597217,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708974340722,
-      "end": 1708974340722,
+      "start": 1708988597217,
+      "end": 1708988597217,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708974340722,
-      "end": 1708974340722,
+      "start": 1708988597218,
+      "end": 1708988597218,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708974340722,
-      "end": 1708974340722,
+      "start": 1708988597218,
+      "end": 1708988597218,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { useDocus } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/composables/useDocus.ts';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"DocsAside\",\n  __ssrInlineRender: true,\n  setup(__props) {\n    const { tree } = useDocus();\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_DocsAsideTree = _resolveComponent(\"DocsAsideTree\");\n      const _component_NuxtLink = _resolveComponent(\"NuxtLink\");\n      const _component_Icon = _resolveComponent(\"Icon\");\n      _push(`<nav${_ssrRenderAttrs(_attrs)} data-v-89fb8999>`);\n      if (_unref(tree)?.length > 0) {\n        _push(_ssrRenderComponent(_component_DocsAsideTree, { links: _unref(tree) }, null, _parent));\n      } else {\n        _push(_ssrRenderComponent(_component_NuxtLink, {\n          to: \"/\",\n          class: \"go-back-link\"\n        }, {\n          default: _withCtx((_, _push2, _parent2, _scopeId) => {\n            if (_push2) {\n              _push2(_ssrRenderComponent(_component_Icon, {\n                name: \"heroicons-outline:arrow-left\",\n                class: \"icon\"\n              }, null, _parent2, _scopeId));\n              _push2(`<span class=\"text\" data-v-89fb8999${_scopeId}>Go back</span>`);\n            } else {\n              return [\n                _createVNode(_component_Icon, {\n                  name: \"heroicons-outline:arrow-left\",\n                  class: \"icon\"\n                }),\n                _createVNode(\"span\", { class: \"text\" }, \"Go back\")\n              ];\n            }\n          }),\n          _: 1\n        }, _parent));\n      }\n      _push(`</nav>`);\n    };\n  }\n});\n",
-      "start": 1708974340722,
-      "end": 1708974340729,
+      "start": 1708988597218,
+      "end": 1708988597224,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -245,8 +245,8 @@
     {
       "name": "nuxt:imports-transform",
       "result": "import { useDocus } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/composables/useDocus.ts';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"DocsAside\",\n  __ssrInlineRender: true,\n  setup(__props) {\n    const { tree } = useDocus();\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_DocsAsideTree = _resolveComponent(\"DocsAsideTree\");\n      const _component_NuxtLink = _resolveComponent(\"NuxtLink\");\n      const _component_Icon = _resolveComponent(\"Icon\");\n      _push(`<nav${_ssrRenderAttrs(_attrs)} data-v-89fb8999>`);\n      if (_unref(tree)?.length > 0) {\n        _push(_ssrRenderComponent(_component_DocsAsideTree, { links: _unref(tree) }, null, _parent));\n      } else {\n        _push(_ssrRenderComponent(_component_NuxtLink, {\n          to: \"/\",\n          class: \"go-back-link\"\n        }, {\n          default: _withCtx((_, _push2, _parent2, _scopeId) => {\n            if (_push2) {\n              _push2(_ssrRenderComponent(_component_Icon, {\n                name: \"heroicons-outline:arrow-left\",\n                class: \"icon\"\n              }, null, _parent2, _scopeId));\n              _push2(`<span class=\"text\" data-v-89fb8999${_scopeId}>Go back</span>`);\n            } else {\n              return [\n                _createVNode(_component_Icon, {\n                  name: \"heroicons-outline:arrow-left\",\n                  class: \"icon\"\n                }),\n                _createVNode(\"span\", { class: \"text\" }, \"Go back\")\n              ];\n            }\n          }),\n          _: 1\n        }, _parent));\n      }\n      _push(`</nav>`);\n    };\n  }\n});\n",
-      "start": 1708974340722,
-      "end": 1708974340729,
+      "start": 1708988597218,
+      "end": 1708988597224,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -259,39 +259,39 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1708974340729,
-      "end": 1708974340729,
+      "start": 1708988597224,
+      "end": 1708988597224,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708974340729,
-      "end": 1708974340730,
+      "start": 1708988597224,
+      "end": 1708988597224,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708974340730,
-      "end": 1708974340730,
+      "start": 1708988597224,
+      "end": 1708988597224,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708974340730,
-      "end": 1708974340730,
+      "start": 1708988597224,
+      "end": 1708988597224,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1708974340730,
-      "end": 1708974340730,
+      "start": 1708988597224,
+      "end": 1708988597224,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
       "result": "import { default as __nuxt_component_0 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsAsideTree.vue\";\nimport { default as __nuxt_component_1 } from \"/workspace/Kubernetes-Bootcamp/node_modules/nuxt/dist/app/components/nuxt-link\";\nimport { default as __nuxt_component_2 } from \"/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/Icon.vue\";\nimport { useDocus } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/composables/useDocus.ts';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"DocsAside\",\n  __ssrInlineRender: true,\n  setup(__props) {\n    const { tree } = useDocus();\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_DocsAsideTree = __nuxt_component_0;\n      const _component_NuxtLink = __nuxt_component_1;\n      const _component_Icon = __nuxt_component_2;\n      _push(`<nav${_ssrRenderAttrs(_attrs)} data-v-89fb8999>`);\n      if (_unref(tree)?.length > 0) {\n        _push(_ssrRenderComponent(_component_DocsAsideTree, { links: _unref(tree) }, null, _parent));\n      } else {\n        _push(_ssrRenderComponent(_component_NuxtLink, {\n          to: \"/\",\n          class: \"go-back-link\"\n        }, {\n          default: _withCtx((_, _push2, _parent2, _scopeId) => {\n            if (_push2) {\n              _push2(_ssrRenderComponent(_component_Icon, {\n                name: \"heroicons-outline:arrow-left\",\n                class: \"icon\"\n              }, null, _parent2, _scopeId));\n              _push2(`<span class=\"text\" data-v-89fb8999${_scopeId}>Go back</span>`);\n            } else {\n              return [\n                _createVNode(_component_Icon, {\n                  name: \"heroicons-outline:arrow-left\",\n                  class: \"icon\"\n                }),\n                _createVNode(\"span\", { class: \"text\" }, \"Go back\")\n              ];\n            }\n          }),\n          _: 1\n        }, _parent));\n      }\n      _push(`</nav>`);\n    };\n  }\n});\n",
-      "start": 1708974340731,
-      "end": 1708974340732,
+      "start": 1708988597225,
+      "end": 1708988597226,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -304,20 +304,20 @@
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708974340732,
-      "end": 1708974340732,
+      "start": 1708988597226,
+      "end": 1708988597226,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708974340732,
-      "end": 1708974340732,
+      "start": 1708988597226,
+      "end": 1708988597226,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708974340732,
-      "end": 1708974340732,
+      "start": 1708988597226,
+      "end": 1708988597226,
       "order": "normal"
     }
   ]

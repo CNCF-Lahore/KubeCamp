@@ -4,51 +4,51 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveDynamicComponent as _resolveDynamicComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, createElementVNode as _createElementVNode, Fragment as _Fragment, createElementBlock as _createElementBlock, resolveComponent as _resolveComponent, toDisplayString as _toDisplayString, withCtx as _withCtx, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-58a8631e\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = {\n  key: 0,\n  class: \"logo\"\n}\nconst _hoisted_2 = [\"src\"]\nconst _hoisted_3 = [\"src\"]\nconst _hoisted_4 = {\n  key: 1,\n  class: \"title\"\n}\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'AppHeaderLogo',\n  setup(__props) {\n\nconst { config } = useDocus()\nconst logo = computed(() => config.value.header?.logo || false)\nconst title = computed(() => config.value.header?.title || config.value.title)\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_Logo = _resolveComponent(\"Logo\")!\n  const _component_NuxtLink = _resolveComponent(\"NuxtLink\")!\n\n  return (_openBlock(), _createBlock(_component_NuxtLink, {\n    class: \"navbar-logo\",\n    to: \"/\",\n    \"aria-label\": _unref(title)\n  }, {\n    default: _withCtx(() => [\n      (_unref(logo))\n        ? (_openBlock(), _createElementBlock(\"span\", _hoisted_1, [\n            (typeof _unref(logo) === 'string')\n              ? (_openBlock(), _createBlock(_resolveDynamicComponent(_unref(logo)), { key: 0 }))\n              : (_unref(logo).light && _unref(logo).dark)\n                ? (_openBlock(), _createElementBlock(_Fragment, { key: 1 }, [\n                    _createElementVNode(\"img\", {\n                      src: _unref(logo).light,\n                      alt: \"\",\n                      class: \"light-img\"\n                    }, null, 8, _hoisted_2),\n                    _createElementVNode(\"img\", {\n                      src: _unref(logo).dark,\n                      alt: \"\",\n                      class: \"dark-img\"\n                    }, null, 8, _hoisted_3)\n                  ], 64))\n                : (_unref(logo))\n                  ? (_openBlock(), _createBlock(_component_Logo, { key: 2 }))\n                  : _createCommentVNode(\"\", true)\n          ]))\n        : (_openBlock(), _createElementBlock(\"span\", _hoisted_4, _toDisplayString(_unref(title)), 1))\n    ]),\n    _: 1\n  }, 8, [\"aria-label\"]))\n}\n}\n\n})",
-      "start": 1708974329315,
-      "end": 1708974329315
+      "start": 1708988589364,
+      "end": 1708988589364
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708974329316,
-      "end": 1708974329316,
+      "start": 1708988589368,
+      "end": 1708988589368,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708974329321,
-      "end": 1708974329321,
+      "start": 1708988589373,
+      "end": 1708988589373,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveDynamicComponent as _resolveDynamicComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, createElementVNode as _createElementVNode, Fragment as _Fragment, createElementBlock as _createElementBlock, resolveComponent as _resolveComponent, toDisplayString as _toDisplayString, withCtx as _withCtx, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-58a8631e\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = {\n  key: 0,\n  class: \"logo\"\n}\nconst _hoisted_2 = [\"src\"]\nconst _hoisted_3 = [\"src\"]\nconst _hoisted_4 = {\n  key: 1,\n  class: \"title\"\n}\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'AppHeaderLogo',\n  setup(__props) {\n\nconst { config } = useDocus()\nconst logo = computed(() => config.value.header?.logo || false)\nconst title = computed(() => config.value.header?.title || config.value.title)\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_Logo = _resolveComponent(\"Logo\")!\n  const _component_NuxtLink = _resolveComponent(\"NuxtLink\")!\n\n  return (_openBlock(), _createBlock(_component_NuxtLink, {\n    class: \"navbar-logo\",\n    to: \"/\",\n    \"aria-label\": _unref(title)\n  }, {\n    default: _withCtx(() => [\n      (_unref(logo))\n        ? (_openBlock(), _createElementBlock(\"span\", _hoisted_1, [\n            (typeof _unref(logo) === 'string')\n              ? (_openBlock(), _createBlock(_resolveDynamicComponent(_unref(logo)), { key: 0 }))\n              : (_unref(logo).light && _unref(logo).dark)\n                ? (_openBlock(), _createElementBlock(_Fragment, { key: 1 }, [\n                    _createElementVNode(\"img\", {\n                      src: _unref(logo).light,\n                      alt: \"\",\n                      class: \"light-img\"\n                    }, null, 8, _hoisted_2),\n                    _createElementVNode(\"img\", {\n                      src: _unref(logo).dark,\n                      alt: \"\",\n                      class: \"dark-img\"\n                    }, null, 8, _hoisted_3)\n                  ], 64))\n                : (_unref(logo))\n                  ? (_openBlock(), _createBlock(_component_Logo, { key: 2 }))\n                  : _createCommentVNode(\"\", true)\n          ]))\n        : (_openBlock(), _createElementBlock(\"span\", _hoisted_4, _toDisplayString(_unref(title)), 1))\n    ]),\n    _: 1\n  }, 8, [\"aria-label\"]))\n}\n}\n\n})",
-      "start": 1708974329322,
-      "end": 1708974329323,
+      "start": 1708988589377,
+      "end": 1708988589378,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708974329323,
-      "end": 1708974329323,
+      "start": 1708988589378,
+      "end": 1708988589378,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708974329323,
-      "end": 1708974329323,
+      "start": 1708988589378,
+      "end": 1708988589378,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708974329323,
-      "end": 1708974329323,
+      "start": 1708988589379,
+      "end": 1708988589379,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveDynamicComponent as _resolveDynamicComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, createElementVNode as _createElementVNode, Fragment as _Fragment, createElementBlock as _createElementBlock, resolveComponent as _resolveComponent, toDisplayString as _toDisplayString, withCtx as _withCtx, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-58a8631e\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = {\n  key: 0,\n  class: \"logo\"\n};\nconst _hoisted_2 = [\"src\"];\nconst _hoisted_3 = [\"src\"];\nconst _hoisted_4 = {\n  key: 1,\n  class: \"title\"\n};\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"AppHeaderLogo\",\n  setup(__props) {\n    const { config } = useDocus();\n    const logo = computed(() => config.value.header?.logo || false);\n    const title = computed(() => config.value.header?.title || config.value.title);\n    return (_ctx, _cache) => {\n      const _component_Logo = _resolveComponent(\"Logo\");\n      const _component_NuxtLink = _resolveComponent(\"NuxtLink\");\n      return _openBlock(), _createBlock(_component_NuxtLink, {\n        class: \"navbar-logo\",\n        to: \"/\",\n        \"aria-label\": _unref(title)\n      }, {\n        default: _withCtx(() => [\n          _unref(logo) ? (_openBlock(), _createElementBlock(\"span\", _hoisted_1, [\n            typeof _unref(logo) === \"string\" ? (_openBlock(), _createBlock(_resolveDynamicComponent(_unref(logo)), { key: 0 })) : _unref(logo).light && _unref(logo).dark ? (_openBlock(), _createElementBlock(_Fragment, { key: 1 }, [\n              _createElementVNode(\"img\", {\n                src: _unref(logo).light,\n                alt: \"\",\n                class: \"light-img\"\n              }, null, 8, _hoisted_2),\n              _createElementVNode(\"img\", {\n                src: _unref(logo).dark,\n                alt: \"\",\n                class: \"dark-img\"\n              }, null, 8, _hoisted_3)\n            ], 64)) : _unref(logo) ? (_openBlock(), _createBlock(_component_Logo, { key: 2 })) : _createCommentVNode(\"\", true)\n          ])) : (_openBlock(), _createElementBlock(\"span\", _hoisted_4, _toDisplayString(_unref(title)), 1))\n        ]),\n        _: 1\n      }, 8, [\"aria-label\"]);\n    };\n  }\n});\n",
-      "start": 1708974329324,
-      "end": 1708974331021,
+      "start": 1708988589379,
+      "end": 1708988590535,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -64,123 +64,123 @@
     },
     {
       "name": "vite:json",
-      "start": 1708974331021,
-      "end": 1708974331021,
+      "start": 1708988590535,
+      "end": 1708988590535,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708974331021,
-      "end": 1708974331021,
+      "start": 1708988590535,
+      "end": 1708988590535,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708974331022,
-      "end": 1708974331022,
+      "start": 1708988590535,
+      "end": 1708988590535,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708974331022,
-      "end": 1708974331022,
+      "start": 1708988590535,
+      "end": 1708988590535,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708974331022,
-      "end": 1708974331022,
+      "start": 1708988590536,
+      "end": 1708988590536,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708974331022,
-      "end": 1708974331022,
+      "start": 1708988590536,
+      "end": 1708988590536,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1708974331022,
-      "end": 1708974331022,
+      "start": 1708988590536,
+      "end": 1708988590536,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708974331022,
-      "end": 1708974331023,
+      "start": 1708988590536,
+      "end": 1708988590536,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708974331023,
-      "end": 1708974331023,
+      "start": 1708988590537,
+      "end": 1708988590537,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708974331023,
-      "end": 1708974331023,
+      "start": 1708988590537,
+      "end": 1708988590537,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708974331023,
-      "end": 1708974331023,
+      "start": 1708988590537,
+      "end": 1708988590537,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708974331023,
-      "end": 1708974331023,
+      "start": 1708988590537,
+      "end": 1708988590537,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708974331023,
-      "end": 1708974331023,
+      "start": 1708988590537,
+      "end": 1708988590537,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708974331023,
-      "end": 1708974331023,
+      "start": 1708988590537,
+      "end": 1708988590537,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708974331023,
-      "end": 1708974331023,
+      "start": 1708988590538,
+      "end": 1708988590538,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708974331023,
-      "end": 1708974331023,
+      "start": 1708988590538,
+      "end": 1708988590538,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708974331024,
-      "end": 1708974331024,
+      "start": 1708988590538,
+      "end": 1708988590538,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708974331024,
-      "end": 1708974331024,
+      "start": 1708988590538,
+      "end": 1708988590538,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708974331024,
-      "end": 1708974331026,
+      "start": 1708988590539,
+      "end": 1708988590539,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { useDocus } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/composables/useDocus.ts';\nimport { computed } from 'vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveDynamicComponent as _resolveDynamicComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, createElementVNode as _createElementVNode, Fragment as _Fragment, createElementBlock as _createElementBlock, resolveComponent as _resolveComponent, toDisplayString as _toDisplayString, withCtx as _withCtx, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-58a8631e\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = {\n  key: 0,\n  class: \"logo\"\n};\nconst _hoisted_2 = [\"src\"];\nconst _hoisted_3 = [\"src\"];\nconst _hoisted_4 = {\n  key: 1,\n  class: \"title\"\n};\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"AppHeaderLogo\",\n  setup(__props) {\n    const { config } = useDocus();\n    const logo = computed(() => config.value.header?.logo || false);\n    const title = computed(() => config.value.header?.title || config.value.title);\n    return (_ctx, _cache) => {\n      const _component_Logo = _resolveComponent(\"Logo\");\n      const _component_NuxtLink = _resolveComponent(\"NuxtLink\");\n      return _openBlock(), _createBlock(_component_NuxtLink, {\n        class: \"navbar-logo\",\n        to: \"/\",\n        \"aria-label\": _unref(title)\n      }, {\n        default: _withCtx(() => [\n          _unref(logo) ? (_openBlock(), _createElementBlock(\"span\", _hoisted_1, [\n            typeof _unref(logo) === \"string\" ? (_openBlock(), _createBlock(_resolveDynamicComponent(_unref(logo)), { key: 0 })) : _unref(logo).light && _unref(logo).dark ? (_openBlock(), _createElementBlock(_Fragment, { key: 1 }, [\n              _createElementVNode(\"img\", {\n                src: _unref(logo).light,\n                alt: \"\",\n                class: \"light-img\"\n              }, null, 8, _hoisted_2),\n              _createElementVNode(\"img\", {\n                src: _unref(logo).dark,\n                alt: \"\",\n                class: \"dark-img\"\n              }, null, 8, _hoisted_3)\n            ], 64)) : _unref(logo) ? (_openBlock(), _createBlock(_component_Logo, { key: 2 })) : _createCommentVNode(\"\", true)\n          ])) : (_openBlock(), _createElementBlock(\"span\", _hoisted_4, _toDisplayString(_unref(title)), 1))\n        ]),\n        _: 1\n      }, 8, [\"aria-label\"]);\n    };\n  }\n});\n",
-      "start": 1708974331026,
-      "end": 1708974331041,
+      "start": 1708988590539,
+      "end": 1708988590550,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -193,51 +193,51 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1708974331042,
-      "end": 1708974331042,
+      "start": 1708988590550,
+      "end": 1708988590550,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708974331042,
-      "end": 1708974331042,
+      "start": 1708988590550,
+      "end": 1708988590550,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1708974331042,
-      "end": 1708974331042,
+      "start": 1708988590550,
+      "end": 1708988590551,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1708974331043,
-      "end": 1708974331043,
+      "start": 1708988590551,
+      "end": 1708988590551,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
       "result": "import { default as __nuxt_component_0 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/Logo.vue\";\nimport { default as __nuxt_component_1 } from \"/workspace/Kubernetes-Bootcamp/node_modules/nuxt/dist/app/components/nuxt-link\";\nimport { useDocus } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/composables/useDocus.ts';\nimport { computed } from 'vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveDynamicComponent as _resolveDynamicComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, createElementVNode as _createElementVNode, Fragment as _Fragment, createElementBlock as _createElementBlock, resolveComponent as _resolveComponent, toDisplayString as _toDisplayString, withCtx as _withCtx, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-58a8631e\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = {\n  key: 0,\n  class: \"logo\"\n};\nconst _hoisted_2 = [\"src\"];\nconst _hoisted_3 = [\"src\"];\nconst _hoisted_4 = {\n  key: 1,\n  class: \"title\"\n};\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"AppHeaderLogo\",\n  setup(__props) {\n    const { config } = useDocus();\n    const logo = computed(() => config.value.header?.logo || false);\n    const title = computed(() => config.value.header?.title || config.value.title);\n    return (_ctx, _cache) => {\n      const _component_Logo = __nuxt_component_0;\n      const _component_NuxtLink = __nuxt_component_1;\n      return _openBlock(), _createBlock(_component_NuxtLink, {\n        class: \"navbar-logo\",\n        to: \"/\",\n        \"aria-label\": _unref(title)\n      }, {\n        default: _withCtx(() => [\n          _unref(logo) ? (_openBlock(), _createElementBlock(\"span\", _hoisted_1, [\n            typeof _unref(logo) === \"string\" ? (_openBlock(), _createBlock(_resolveDynamicComponent(_unref(logo)), { key: 0 })) : _unref(logo).light && _unref(logo).dark ? (_openBlock(), _createElementBlock(_Fragment, { key: 1 }, [\n              _createElementVNode(\"img\", {\n                src: _unref(logo).light,\n                alt: \"\",\n                class: \"light-img\"\n              }, null, 8, _hoisted_2),\n              _createElementVNode(\"img\", {\n                src: _unref(logo).dark,\n                alt: \"\",\n                class: \"dark-img\"\n              }, null, 8, _hoisted_3)\n            ], 64)) : _unref(logo) ? (_openBlock(), _createBlock(_component_Logo, { key: 2 })) : _createCommentVNode(\"\", true)\n          ])) : (_openBlock(), _createElementBlock(\"span\", _hoisted_4, _toDisplayString(_unref(title)), 1))\n        ]),\n        _: 1\n      }, 8, [\"aria-label\"]);\n    };\n  }\n});\n",
-      "start": 1708974331043,
-      "end": 1708974331044,
+      "start": 1708988590551,
+      "end": 1708988590552,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708974331044,
-      "end": 1708974331044,
+      "start": 1708988590553,
+      "end": 1708988590553,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708974331044,
-      "end": 1708974331045,
+      "start": 1708988590553,
+      "end": 1708988590553,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708974331045,
-      "end": 1708974331045,
+      "start": 1708988590553,
+      "end": 1708988590553,
       "order": "normal"
     }
   ]

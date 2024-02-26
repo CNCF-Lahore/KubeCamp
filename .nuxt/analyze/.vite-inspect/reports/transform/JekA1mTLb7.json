@@ -4,51 +4,51 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, createVNode as _createVNode, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"document-driven-page\" }\n\nimport { useRuntimeConfig, useContent, useContentHead, useRequestEvent } from '#imports'\nimport type { LayoutKey } from '#build/types/layouts'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'document-driven',\n  setup(__props) {\n\nconst { contentHead } = useRuntimeConfig().public.content\nconst { page, layout } = useContent()\n\n// Page not found, set correct status code on SSR\nif (!(page as any).value && process.server) {\n  const event = useRequestEvent()\n  event.res.statusCode = 404\n}\n\nif (contentHead) {\n  useContentHead(page)\n}\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_DocumentDrivenEmpty = _resolveComponent(\"DocumentDrivenEmpty\")!\n  const _component_ContentRenderer = _resolveComponent(\"ContentRenderer\")!\n  const _component_DocumentDrivenNotFound = _resolveComponent(\"DocumentDrivenNotFound\")!\n  const _component_NuxtLayout = _resolveComponent(\"NuxtLayout\")!\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createVNode(_component_NuxtLayout, {\n      name: _unref(layout) as LayoutKey || 'default'\n    }, {\n      default: _withCtx(() => [\n        (_unref(page))\n          ? (_openBlock(), _createBlock(_component_ContentRenderer, {\n              key: (_unref(page) as any)._id,\n              value: _unref(page)\n            }, {\n              empty: _withCtx(({ value }) => [\n                _createVNode(_component_DocumentDrivenEmpty, { value: value }, null, 8, [\"value\"])\n              ]),\n              _: 1\n            }, 8, [\"value\"]))\n          : (_openBlock(), _createBlock(_component_DocumentDrivenNotFound, { key: 1 }))\n      ]),\n      _: 1\n    }, 8, [\"name\"])\n  ]))\n}\n}\n\n})",
-      "start": 1708974330819,
-      "end": 1708974330819
+      "start": 1708988590429,
+      "end": 1708988590429
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708974330819,
-      "end": 1708974330819,
+      "start": 1708988590429,
+      "end": 1708988590429,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708974330819,
-      "end": 1708974330819,
+      "start": 1708988590429,
+      "end": 1708988590429,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, createVNode as _createVNode, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"document-driven-page\" }\n\nimport { useRuntimeConfig, useContent, useContentHead, useRequestEvent } from '#imports'\nimport type { LayoutKey } from '#build/types/layouts'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'document-driven',\n  setup(__props) {\n\nconst { contentHead } = useRuntimeConfig().public.content\nconst { page, layout } = useContent()\n\n// Page not found, set correct status code on SSR\nif (!(page as any).value && process.server) {\n  const event = useRequestEvent()\n  event.res.statusCode = 404\n}\n\nif (contentHead) {\n  useContentHead(page)\n}\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_DocumentDrivenEmpty = _resolveComponent(\"DocumentDrivenEmpty\")!\n  const _component_ContentRenderer = _resolveComponent(\"ContentRenderer\")!\n  const _component_DocumentDrivenNotFound = _resolveComponent(\"DocumentDrivenNotFound\")!\n  const _component_NuxtLayout = _resolveComponent(\"NuxtLayout\")!\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createVNode(_component_NuxtLayout, {\n      name: _unref(layout) as LayoutKey || 'default'\n    }, {\n      default: _withCtx(() => [\n        (_unref(page))\n          ? (_openBlock(), _createBlock(_component_ContentRenderer, {\n              key: (_unref(page) as any)._id,\n              value: _unref(page)\n            }, {\n              empty: _withCtx(({ value }) => [\n                _createVNode(_component_DocumentDrivenEmpty, { value: value }, null, 8, [\"value\"])\n              ]),\n              _: 1\n            }, 8, [\"value\"]))\n          : (_openBlock(), _createBlock(_component_DocumentDrivenNotFound, { key: 1 }))\n      ]),\n      _: 1\n    }, 8, [\"name\"])\n  ]))\n}\n}\n\n})",
-      "start": 1708974330819,
-      "end": 1708974330820,
+      "start": 1708988590429,
+      "end": 1708988590429,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708974330820,
-      "end": 1708974330820,
+      "start": 1708988590429,
+      "end": 1708988590429,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708974330820,
-      "end": 1708974330820,
+      "start": 1708988590429,
+      "end": 1708988590430,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708974330820,
-      "end": 1708974330820,
+      "start": 1708988590430,
+      "end": 1708988590430,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, createVNode as _createVNode, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock, createElementBlock as _createElementBlock } from \"vue\";\nconst _hoisted_1 = { class: \"document-driven-page\" };\nimport { useRuntimeConfig, useContent, useContentHead, useRequestEvent } from \"#imports\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"document-driven\",\n  setup(__props) {\n    const { contentHead } = useRuntimeConfig().public.content;\n    const { page, layout } = useContent();\n    if (!page.value && process.server) {\n      const event = useRequestEvent();\n      event.res.statusCode = 404;\n    }\n    if (contentHead) {\n      useContentHead(page);\n    }\n    return (_ctx, _cache) => {\n      const _component_DocumentDrivenEmpty = _resolveComponent(\"DocumentDrivenEmpty\");\n      const _component_ContentRenderer = _resolveComponent(\"ContentRenderer\");\n      const _component_DocumentDrivenNotFound = _resolveComponent(\"DocumentDrivenNotFound\");\n      const _component_NuxtLayout = _resolveComponent(\"NuxtLayout\");\n      return _openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _createVNode(_component_NuxtLayout, {\n          name: _unref(layout) || \"default\"\n        }, {\n          default: _withCtx(() => [\n            _unref(page) ? (_openBlock(), _createBlock(_component_ContentRenderer, {\n              key: _unref(page)._id,\n              value: _unref(page)\n            }, {\n              empty: _withCtx(({ value }) => [\n                _createVNode(_component_DocumentDrivenEmpty, { value }, null, 8, [\"value\"])\n              ]),\n              _: 1\n            }, 8, [\"value\"])) : (_openBlock(), _createBlock(_component_DocumentDrivenNotFound, { key: 1 }))\n          ]),\n          _: 1\n        }, 8, [\"name\"])\n      ]);\n    };\n  }\n});\n",
-      "start": 1708974330820,
-      "end": 1708974331208,
+      "start": 1708988590430,
+      "end": 1708988590680,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -64,125 +64,125 @@
     },
     {
       "name": "vite:json",
-      "start": 1708974331208,
-      "end": 1708974331208,
+      "start": 1708988590680,
+      "end": 1708988590680,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708974331208,
-      "end": 1708974331208,
+      "start": 1708988590680,
+      "end": 1708988590680,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708974331208,
-      "end": 1708974331208,
+      "start": 1708988590680,
+      "end": 1708988590681,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708974331209,
-      "end": 1708974331209,
+      "start": 1708988590681,
+      "end": 1708988590681,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708974331209,
-      "end": 1708974331210,
+      "start": 1708988590682,
+      "end": 1708988590686,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708974331210,
-      "end": 1708974331210,
+      "start": 1708988590687,
+      "end": 1708988590687,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1708974331210,
-      "end": 1708974331210,
+      "start": 1708988590687,
+      "end": 1708988590687,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708974331215,
-      "end": 1708974331216,
+      "start": 1708988590688,
+      "end": 1708988590688,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708974331216,
-      "end": 1708974331216,
+      "start": 1708988590689,
+      "end": 1708988590689,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708974331217,
-      "end": 1708974331218,
+      "start": 1708988590689,
+      "end": 1708988590689,
       "order": "normal"
     },
     {
       "name": "vite:define",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, createVNode as _createVNode, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock, createElementBlock as _createElementBlock } from \"vue\";\nconst _hoisted_1 = { class: \"document-driven-page\" };\nimport { useRuntimeConfig, useContent, useContentHead, useRequestEvent } from \"#imports\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"document-driven\",\n  setup(__props) {\n    const { contentHead } = useRuntimeConfig().public.content;\n    const { page, layout } = useContent();\n    if (!page.value && false) {\n      const event = useRequestEvent();\n      event.res.statusCode = 404;\n    }\n    if (contentHead) {\n      useContentHead(page);\n    }\n    return (_ctx, _cache) => {\n      const _component_DocumentDrivenEmpty = _resolveComponent(\"DocumentDrivenEmpty\");\n      const _component_ContentRenderer = _resolveComponent(\"ContentRenderer\");\n      const _component_DocumentDrivenNotFound = _resolveComponent(\"DocumentDrivenNotFound\");\n      const _component_NuxtLayout = _resolveComponent(\"NuxtLayout\");\n      return _openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _createVNode(_component_NuxtLayout, {\n          name: _unref(layout) || \"default\"\n        }, {\n          default: _withCtx(() => [\n            _unref(page) ? (_openBlock(), _createBlock(_component_ContentRenderer, {\n              key: _unref(page)._id,\n              value: _unref(page)\n            }, {\n              empty: _withCtx(({ value }) => [\n                _createVNode(_component_DocumentDrivenEmpty, { value }, null, 8, [\"value\"])\n              ]),\n              _: 1\n            }, 8, [\"value\"])) : (_openBlock(), _createBlock(_component_DocumentDrivenNotFound, { key: 1 }))\n          ]),\n          _: 1\n        }, 8, [\"name\"])\n      ]);\n    };\n  }\n});\n",
-      "start": 1708974331219,
-      "end": 1708974331564,
+      "start": 1708988590689,
+      "end": 1708988590699,
       "order": "normal",
       "sourcemaps": null
     },
     {
       "name": "vite:css-post",
-      "start": 1708974331564,
-      "end": 1708974331564,
+      "start": 1708988590699,
+      "end": 1708988590699,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708974331564,
-      "end": 1708974331564,
+      "start": 1708988590699,
+      "end": 1708988590699,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708974331564,
-      "end": 1708974331564,
+      "start": 1708988590699,
+      "end": 1708988590699,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708974331565,
-      "end": 1708974331565,
+      "start": 1708988590699,
+      "end": 1708988590699,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708974331565,
-      "end": 1708974331565,
+      "start": 1708988590733,
+      "end": 1708988590733,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708974331565,
-      "end": 1708974331565,
+      "start": 1708988590734,
+      "end": 1708988590734,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708974331565,
-      "end": 1708974331565,
+      "start": 1708988590734,
+      "end": 1708988590734,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708974331565,
-      "end": 1708974331565,
+      "start": 1708988590735,
+      "end": 1708988590735,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { useRuntimeConfig } from '#app/nuxt';\nimport { useContent } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/composables/content';\nimport { useContentHead } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/composables/head';\nimport { useRequestEvent } from '#app/composables/ssr';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, createVNode as _createVNode, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock, createElementBlock as _createElementBlock } from \"vue\";\nconst _hoisted_1 = { class: \"document-driven-page\" };\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"document-driven\",\n  setup(__props) {\n    const { contentHead } = useRuntimeConfig().public.content;\n    const { page, layout } = useContent();\n    if (!page.value && false) {\n      const event = useRequestEvent();\n      event.res.statusCode = 404;\n    }\n    if (contentHead) {\n      useContentHead(page);\n    }\n    return (_ctx, _cache) => {\n      const _component_DocumentDrivenEmpty = _resolveComponent(\"DocumentDrivenEmpty\");\n      const _component_ContentRenderer = _resolveComponent(\"ContentRenderer\");\n      const _component_DocumentDrivenNotFound = _resolveComponent(\"DocumentDrivenNotFound\");\n      const _component_NuxtLayout = _resolveComponent(\"NuxtLayout\");\n      return _openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _createVNode(_component_NuxtLayout, {\n          name: _unref(layout) || \"default\"\n        }, {\n          default: _withCtx(() => [\n            _unref(page) ? (_openBlock(), _createBlock(_component_ContentRenderer, {\n              key: _unref(page)._id,\n              value: _unref(page)\n            }, {\n              empty: _withCtx(({ value }) => [\n                _createVNode(_component_DocumentDrivenEmpty, { value }, null, 8, [\"value\"])\n              ]),\n              _: 1\n            }, 8, [\"value\"])) : (_openBlock(), _createBlock(_component_DocumentDrivenNotFound, { key: 1 }))\n          ]),\n          _: 1\n        }, 8, [\"name\"])\n      ]);\n    };\n  }\n});\n",
-      "start": 1708974331566,
-      "end": 1708974331604,
+      "start": 1708988590735,
+      "end": 1708988590739,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -195,15 +195,15 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1708974331605,
-      "end": 1708974331605,
+      "start": 1708988590739,
+      "end": 1708988590739,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
       "result": "\nconst __nuxt_page_meta = null\nexport default __nuxt_page_meta\n",
-      "start": 1708974331605,
-      "end": 1708974331606,
+      "start": 1708988590739,
+      "end": 1708988590740,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -216,38 +216,38 @@
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1708974331606,
-      "end": 1708974331606,
+      "start": 1708988590740,
+      "end": 1708988590740,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1708974331606,
-      "end": 1708974331606,
+      "start": 1708988590740,
+      "end": 1708988590741,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1708974331606,
-      "end": 1708974331606,
+      "start": 1708988590747,
+      "end": 1708988590748,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708974331606,
-      "end": 1708974331606,
+      "start": 1708988590748,
+      "end": 1708988590748,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708974331606,
-      "end": 1708974331606,
+      "start": 1708988590748,
+      "end": 1708988590748,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708974331607,
-      "end": 1708974331607,
+      "start": 1708988590749,
+      "end": 1708988590749,
       "order": "normal"
     }
   ]
