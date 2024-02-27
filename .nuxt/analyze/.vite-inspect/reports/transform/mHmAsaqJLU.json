@@ -4,69 +4,69 @@
     {
       "name": "vite:load-fallback",
       "result": "<script setup>\nconst props = defineProps({\n  throttle: {\n    type: Number,\n    default: 200\n  },\n  duration: {\n    type: Number,\n    default: 2000\n  }\n})\n\nconst nuxtApp = useNuxtApp()\n\n// Options & Data\nconst data = reactive({\n  percent: 0,\n  show: false,\n  canSucceed: true\n})\n// Local variables\nlet _timer = null\nlet _throttle = null\nlet _cut\n\n// Functions\nfunction clear () {\n  _timer && clearInterval(_timer)\n  _throttle && clearTimeout(_throttle)\n  _timer = null\n}\nfunction start () {\n  if (data.show) { return }\n  clear()\n  data.percent = 0\n  data.canSucceed = true\n\n  if (props.throttle) {\n    _throttle = setTimeout(startTimer, props.throttle)\n  } else {\n    startTimer()\n  }\n}\nfunction increase (num) {\n  data.percent = Math.min(100, Math.floor(data.percent + num))\n}\nfunction finish () {\n  data.percent = 100\n  hide()\n}\nfunction hide () {\n  clear()\n  setTimeout(() => {\n    data.show = false\n    setTimeout(() => {\n      data.percent = 0\n    }, 400)\n  }, 500)\n}\nfunction startTimer () {\n  data.show = true\n  _cut = 10000 / Math.floor(props.duration)\n  _timer = setInterval(() => {\n    increase(_cut)\n  }, 100)\n}\n\n// Hooks\nnuxtApp.hook('content:middleware:start', start)\nnuxtApp.hook('page:start', start)\nnuxtApp.hook('page:finish', finish)\n\nonBeforeUnmount(() => clear)\n</script>\n\n<template>\n  <div\n    class=\"nuxt-progress\"\n    :class=\"{\n      'nuxt-progress-failed': !data.canSucceed,\n    }\"\n    :style=\"{\n      width: `${data.percent}%`,\n      left: data.left,\n      opacity: data.show ? 1 : 0,\n      backgroundSize: `${(100 / data.percent) * 100}% auto`,\n    }\"\n  />\n</template>\n\n<style lang=\"ts\">\ncss({\n  '.nuxt-progress': {\n    height: '{docus.loadingBar.height}',\n    position: 'fixed',\n    top: '0px',\n    left: '0px',\n    right: '0px',\n    width: '0%',\n    opacity: 1,\n    transition: 'width 0.1s, height 0.4s, opacity 0.4s',\n    background: 'repeating-linear-gradient(to right, {docus.loadingBar.gradientColorStop1} 0%, {docus.loadingBar.gradientColorStop2} 50%, {docus.loadingBar.gradientColorStop3} 100%)',\n    zIndex: '999999',\n  }\n})\n</style>\n",
-      "start": 1708988587681,
-      "end": 1708988587952,
+      "start": 1709041922231,
+      "end": 1709041922629,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708988587952,
-      "end": 1708988587952,
+      "start": 1709041922629,
+      "end": 1709041922629,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708988587953,
-      "end": 1708988587953,
+      "start": 1709041922629,
+      "end": 1709041922629,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
-      "start": 1708988587953,
-      "end": 1708988587953,
+      "start": 1709041922629,
+      "end": 1709041922629,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708988587953,
-      "end": 1708988587953,
+      "start": 1709041922630,
+      "end": 1709041922630,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708988587953,
-      "end": 1708988587953,
+      "start": 1709041922630,
+      "end": 1709041922630,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708988587953,
-      "end": 1708988587953,
+      "start": 1709041922630,
+      "end": 1709041922630,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1708988587953,
-      "end": 1708988587953,
+      "start": 1709041922630,
+      "end": 1709041922630,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1708988587953,
-      "end": 1708988587953,
+      "start": 1709041922630,
+      "end": 1709041922630,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708988587953,
-      "end": 1708988587953,
+      "start": 1709041922630,
+      "end": 1709041922630,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "import { unref as _unref, normalizeClass as _normalizeClass, normalizeStyle as _normalizeStyle, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\n\nconst _sfc_main = {\n  __name: 'AppLoadingBar',\n  props: {\n  throttle: {\n    type: Number,\n    default: 200\n  },\n  duration: {\n    type: Number,\n    default: 2000\n  }\n},\n  setup(__props) {\n\nconst props = __props\n\nconst nuxtApp = useNuxtApp()\n\n// Options & Data\nconst data = reactive({\n  percent: 0,\n  show: false,\n  canSucceed: true\n})\n// Local variables\nlet _timer = null\nlet _throttle = null\nlet _cut\n\n// Functions\nfunction clear () {\n  _timer && clearInterval(_timer)\n  _throttle && clearTimeout(_throttle)\n  _timer = null\n}\nfunction start () {\n  if (data.show) { return }\n  clear()\n  data.percent = 0\n  data.canSucceed = true\n\n  if (props.throttle) {\n    _throttle = setTimeout(startTimer, props.throttle)\n  } else {\n    startTimer()\n  }\n}\nfunction increase (num) {\n  data.percent = Math.min(100, Math.floor(data.percent + num))\n}\nfunction finish () {\n  data.percent = 100\n  hide()\n}\nfunction hide () {\n  clear()\n  setTimeout(() => {\n    data.show = false\n    setTimeout(() => {\n      data.percent = 0\n    }, 400)\n  }, 500)\n}\nfunction startTimer () {\n  data.show = true\n  _cut = 10000 / Math.floor(props.duration)\n  _timer = setInterval(() => {\n    increase(_cut)\n  }, 100)\n}\n\n// Hooks\nnuxtApp.hook('content:middleware:start', start)\nnuxtApp.hook('page:start', start)\nnuxtApp.hook('page:finish', finish)\n\nonBeforeUnmount(() => clear)\n\nreturn (_ctx, _cache) => {\n  return (_openBlock(), _createElementBlock(\"div\", {\n    class: _normalizeClass([\"nuxt-progress\", {\n      'nuxt-progress-failed': !_unref(data).canSucceed,\n    }]),\n    style: _normalizeStyle({\n      width: `${_unref(data).percent}%`,\n      left: _unref(data).left,\n      opacity: _unref(data).show ? 1 : 0,\n      backgroundSize: `${(100 / _unref(data).percent) * 100}% auto`,\n    })\n  }, null, 6))\n}\n}\n\n}\n\n\nimport \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppLoadingBar.vue?vue&type=style&index=0&lang.ts\"\n\nexport default _sfc_main",
-      "start": 1708988587953,
-      "end": 1708988587957,
+      "start": 1709041922630,
+      "end": 1709041922635,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -74,156 +74,156 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708988587957,
-      "end": 1708988587957,
+      "start": 1709041922635,
+      "end": 1709041922635,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708988587957,
-      "end": 1708988587957,
+      "start": 1709041922635,
+      "end": 1709041922635,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708988587957,
-      "end": 1708988587957,
+      "start": 1709041922635,
+      "end": 1709041922635,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1708988587957,
-      "end": 1708988587957,
+      "start": 1709041922635,
+      "end": 1709041922635,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
       "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppLoadingBar.vue\").then(r => r.default))",
-      "start": 1708988587957,
-      "end": 1708988587957,
+      "start": 1709041922635,
+      "end": 1709041922635,
       "order": "normal",
       "sourcemaps": null
     },
     {
       "name": "replace",
-      "start": 1708988587957,
-      "end": 1708988587957,
+      "start": 1709041922635,
+      "end": 1709041922635,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708988587957,
-      "end": 1708988587957,
+      "start": 1709041922636,
+      "end": 1709041922636,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708988587957,
-      "end": 1708988587957,
+      "start": 1709041922636,
+      "end": 1709041922636,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708988587957,
-      "end": 1708988587957,
+      "start": 1709041922636,
+      "end": 1709041922636,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708988587957,
-      "end": 1708988587957,
+      "start": 1709041922636,
+      "end": 1709041922636,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708988587957,
-      "end": 1708988587957,
+      "start": 1709041922636,
+      "end": 1709041922636,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708988587957,
-      "end": 1708988587957,
+      "start": 1709041922636,
+      "end": 1709041922636,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708988587957,
-      "end": 1708988587957,
+      "start": 1709041922636,
+      "end": 1709041922636,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708988587957,
-      "end": 1708988587957,
+      "start": 1709041922636,
+      "end": 1709041922636,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708988587957,
-      "end": 1708988587957,
+      "start": 1709041922636,
+      "end": 1709041922636,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708988587957,
-      "end": 1708988587958,
+      "start": 1709041922636,
+      "end": 1709041922636,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708988587958,
-      "end": 1708988587958,
+      "start": 1709041922636,
+      "end": 1709041922636,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708988587958,
-      "end": 1708988587958,
+      "start": 1709041922636,
+      "end": 1709041922636,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708988587958,
-      "end": 1708988587958,
+      "start": 1709041922636,
+      "end": 1709041922636,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1708988587958,
-      "end": 1708988587958,
+      "start": 1709041922636,
+      "end": 1709041922636,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1708988587958,
-      "end": 1708988587958,
+      "start": 1709041922636,
+      "end": 1709041922636,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1708988587958,
-      "end": 1708988587958,
+      "start": 1709041922636,
+      "end": 1709041922636,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708988587958,
-      "end": 1708988587958,
+      "start": 1709041922636,
+      "end": 1709041922636,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
       "result": "import { __vitePreload } from \"\u0000vite/preload-helper.js\";import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => __vitePreload(() => import(\"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppLoadingBar.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(r => r.default))",
-      "start": 1708988587958,
-      "end": 1708988587958,
+      "start": 1709041922636,
+      "end": 1709041922637,
       "order": "normal",
       "sourcemaps": null
     },
     {
       "name": "vite:reporter",
-      "start": 1708988587958,
-      "end": 1708988587958,
+      "start": 1709041922637,
+      "end": 1709041922637,
       "order": "normal"
     }
   ]

@@ -4,51 +4,51 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, renderSlot as _renderSlot, createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-5c2f7786\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"app-layout\" }\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'AppLayout',\n  setup(__props) {\n\nconst { config } = useDocus()\n\nuseHead({\n  titleTemplate: config.value.titleTemplate,\n  meta: [\n    { name: 'twitter:card', content: 'summary_large_image' }\n  ]\n})\n\nwatch(\n  () => config.value.titleTemplate,\n  () => useHead({ titleTemplate: config.value.titleTemplate })\n)\n\nuseContentHead(config.value as any)\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_AppLoadingBar = _resolveComponent(\"AppLoadingBar\")!\n  const _component_AppHeader = _resolveComponent(\"AppHeader\")!\n  const _component_AppFooter = _resolveComponent(\"AppFooter\")!\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createVNode(_component_AppLoadingBar),\n    _createVNode(_component_AppHeader),\n    _createElementVNode(\"main\", null, [\n      _renderSlot(_ctx.$slots, \"default\", {}, undefined, true)\n    ]),\n    _createVNode(_component_AppFooter)\n  ]))\n}\n}\n\n})",
-      "start": 1708988589519,
-      "end": 1708988589519
+      "start": 1709041924931,
+      "end": 1709041924931
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708988589520,
-      "end": 1708988589520,
+      "start": 1709041924946,
+      "end": 1709041924946,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708988589522,
-      "end": 1708988589522,
+      "start": 1709041924951,
+      "end": 1709041924952,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, renderSlot as _renderSlot, createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-5c2f7786\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"app-layout\" }\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'AppLayout',\n  setup(__props) {\n\nconst { config } = useDocus()\n\nuseHead({\n  titleTemplate: config.value.titleTemplate,\n  meta: [\n    { name: 'twitter:card', content: 'summary_large_image' }\n  ]\n})\n\nwatch(\n  () => config.value.titleTemplate,\n  () => useHead({ titleTemplate: config.value.titleTemplate })\n)\n\nuseContentHead(config.value as any)\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_AppLoadingBar = _resolveComponent(\"AppLoadingBar\")!\n  const _component_AppHeader = _resolveComponent(\"AppHeader\")!\n  const _component_AppFooter = _resolveComponent(\"AppFooter\")!\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createVNode(_component_AppLoadingBar),\n    _createVNode(_component_AppHeader),\n    _createElementVNode(\"main\", null, [\n      _renderSlot(_ctx.$slots, \"default\", {}, undefined, true)\n    ]),\n    _createVNode(_component_AppFooter)\n  ]))\n}\n}\n\n})",
-      "start": 1708988589523,
-      "end": 1708988589523,
+      "start": 1709041924967,
+      "end": 1709041924968,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708988589525,
-      "end": 1708988589525,
+      "start": 1709041924968,
+      "end": 1709041924968,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708988589526,
-      "end": 1708988589526,
+      "start": 1709041924969,
+      "end": 1709041924969,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708988589528,
-      "end": 1708988589528,
+      "start": 1709041924969,
+      "end": 1709041924969,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, renderSlot as _renderSlot, createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-5c2f7786\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = { class: \"app-layout\" };\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"AppLayout\",\n  setup(__props) {\n    const { config } = useDocus();\n    useHead({\n      titleTemplate: config.value.titleTemplate,\n      meta: [\n        { name: \"twitter:card\", content: \"summary_large_image\" }\n      ]\n    });\n    watch(\n      () => config.value.titleTemplate,\n      () => useHead({ titleTemplate: config.value.titleTemplate })\n    );\n    useContentHead(config.value);\n    return (_ctx, _cache) => {\n      const _component_AppLoadingBar = _resolveComponent(\"AppLoadingBar\");\n      const _component_AppHeader = _resolveComponent(\"AppHeader\");\n      const _component_AppFooter = _resolveComponent(\"AppFooter\");\n      return _openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _createVNode(_component_AppLoadingBar),\n        _createVNode(_component_AppHeader),\n        _createElementVNode(\"main\", null, [\n          _renderSlot(_ctx.$slots, \"default\", {}, void 0, true)\n        ]),\n        _createVNode(_component_AppFooter)\n      ]);\n    };\n  }\n});\n",
-      "start": 1708988589528,
-      "end": 1708988590557,
+      "start": 1709041924969,
+      "end": 1709041926218,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -64,123 +64,123 @@
     },
     {
       "name": "vite:json",
-      "start": 1708988590557,
-      "end": 1708988590557,
+      "start": 1709041926218,
+      "end": 1709041926218,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708988590557,
-      "end": 1708988590557,
+      "start": 1709041926218,
+      "end": 1709041926218,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708988590557,
-      "end": 1708988590557,
+      "start": 1709041926219,
+      "end": 1709041926219,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708988590557,
-      "end": 1708988590557,
+      "start": 1709041926219,
+      "end": 1709041926219,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708988590558,
-      "end": 1708988590558,
+      "start": 1709041926219,
+      "end": 1709041926219,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708988590558,
-      "end": 1708988590558,
+      "start": 1709041926219,
+      "end": 1709041926219,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1708988590558,
-      "end": 1708988590558,
+      "start": 1709041926219,
+      "end": 1709041926219,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708988590558,
-      "end": 1708988590558,
+      "start": 1709041926220,
+      "end": 1709041926220,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708988590559,
-      "end": 1708988590559,
+      "start": 1709041926220,
+      "end": 1709041926220,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708988590559,
-      "end": 1708988590559,
+      "start": 1709041926220,
+      "end": 1709041926220,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708988590559,
-      "end": 1708988590559,
+      "start": 1709041926220,
+      "end": 1709041926221,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708988590559,
-      "end": 1708988590559,
+      "start": 1709041926221,
+      "end": 1709041926221,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708988590564,
-      "end": 1708988590564,
+      "start": 1709041926221,
+      "end": 1709041926221,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708988590564,
-      "end": 1708988590564,
+      "start": 1709041926221,
+      "end": 1709041926221,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708988590564,
-      "end": 1708988590564,
+      "start": 1709041926221,
+      "end": 1709041926221,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708988590564,
-      "end": 1708988590564,
+      "start": 1709041926221,
+      "end": 1709041926221,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708988590564,
-      "end": 1708988590564,
+      "start": 1709041926221,
+      "end": 1709041926221,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708988590564,
-      "end": 1708988590564,
+      "start": 1709041926221,
+      "end": 1709041926221,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708988590570,
-      "end": 1708988590572,
+      "start": 1709041926227,
+      "end": 1709041926229,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { useDocus } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/composables/useDocus.ts';\nimport { useHead } from '@unhead/vue';\nimport { watch } from 'vue';\nimport { useContentHead } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/composables/head';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, renderSlot as _renderSlot, createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-5c2f7786\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = { class: \"app-layout\" };\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"AppLayout\",\n  setup(__props) {\n    const { config } = useDocus();\n    useHead({\n      titleTemplate: config.value.titleTemplate,\n      meta: [\n        { name: \"twitter:card\", content: \"summary_large_image\" }\n      ]\n    });\n    watch(\n      () => config.value.titleTemplate,\n      () => useHead({ titleTemplate: config.value.titleTemplate })\n    );\n    useContentHead(config.value);\n    return (_ctx, _cache) => {\n      const _component_AppLoadingBar = _resolveComponent(\"AppLoadingBar\");\n      const _component_AppHeader = _resolveComponent(\"AppHeader\");\n      const _component_AppFooter = _resolveComponent(\"AppFooter\");\n      return _openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _createVNode(_component_AppLoadingBar),\n        _createVNode(_component_AppHeader),\n        _createElementVNode(\"main\", null, [\n          _renderSlot(_ctx.$slots, \"default\", {}, void 0, true)\n        ]),\n        _createVNode(_component_AppFooter)\n      ]);\n    };\n  }\n});\n",
-      "start": 1708988590572,
-      "end": 1708988590586,
+      "start": 1709041926230,
+      "end": 1709041926253,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -193,51 +193,51 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1708988590586,
-      "end": 1708988590586,
+      "start": 1709041926254,
+      "end": 1709041926254,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708988590586,
-      "end": 1708988590586,
+      "start": 1709041926254,
+      "end": 1709041926254,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1708988590587,
-      "end": 1708988590587,
+      "start": 1709041926254,
+      "end": 1709041926254,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1708988590587,
-      "end": 1708988590587,
+      "start": 1709041926255,
+      "end": 1709041926255,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
       "result": "import { default as __nuxt_component_0 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppLoadingBar.vue\";\nimport { default as __nuxt_component_1 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppHeader.vue\";\nimport { default as __nuxt_component_2 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppFooter.vue\";\nimport { useDocus } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/composables/useDocus.ts';\nimport { useHead } from '@unhead/vue';\nimport { watch } from 'vue';\nimport { useContentHead } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/composables/head';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, renderSlot as _renderSlot, createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-5c2f7786\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = { class: \"app-layout\" };\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"AppLayout\",\n  setup(__props) {\n    const { config } = useDocus();\n    useHead({\n      titleTemplate: config.value.titleTemplate,\n      meta: [\n        { name: \"twitter:card\", content: \"summary_large_image\" }\n      ]\n    });\n    watch(\n      () => config.value.titleTemplate,\n      () => useHead({ titleTemplate: config.value.titleTemplate })\n    );\n    useContentHead(config.value);\n    return (_ctx, _cache) => {\n      const _component_AppLoadingBar = __nuxt_component_0;\n      const _component_AppHeader = __nuxt_component_1;\n      const _component_AppFooter = __nuxt_component_2;\n      return _openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _createVNode(_component_AppLoadingBar),\n        _createVNode(_component_AppHeader),\n        _createElementVNode(\"main\", null, [\n          _renderSlot(_ctx.$slots, \"default\", {}, void 0, true)\n        ]),\n        _createVNode(_component_AppFooter)\n      ]);\n    };\n  }\n});\n",
-      "start": 1708988590588,
-      "end": 1708988590588,
+      "start": 1709041926256,
+      "end": 1709041926256,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708988590589,
-      "end": 1708988590589,
+      "start": 1709041926258,
+      "end": 1709041926258,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708988590589,
-      "end": 1708988590589,
+      "start": 1709041926258,
+      "end": 1709041926258,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708988590589,
-      "end": 1708988590589,
+      "start": 1709041926258,
+      "end": 1709041926258,
       "order": "normal"
     }
   ]

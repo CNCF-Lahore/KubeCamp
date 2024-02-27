@@ -4,39 +4,39 @@
     {
       "name": "vite:load-fallback",
       "result": "<script setup lang=\"ts\">\nimport { computed } from 'vue'\nimport { useAppConfig } from '#imports'\nimport { resolveIconName } from './utils'\n\nconst appConfig = useAppConfig() as {\n  nuxtIcon: {\n    size?: string\n    class?: string\n    aliases?: Record<string, string>\n    iconifyApiOptions?: {\n      url?: string\n      publicApiFallback?: boolean\n    }\n  }\n}\n\nconst props = defineProps({\n  name: {\n    type: String,\n    required: true\n  },\n  size: {\n    type: String,\n    default: ''\n  }\n})\n\nconst iconName = computed(() => {\n  if (appConfig.nuxtIcon?.aliases?.[props.name]) {\n    return appConfig.nuxtIcon.aliases[props.name]\n  }\n  return props.name\n})\nconst resolvedIcon = computed(() => resolveIconName(iconName.value))\nconst iconUrl = computed(() => {\n  const customUrl = appConfig.nuxtIcon?.iconifyApiOptions?.url\n\n  if (customUrl) {\n    // validate the custom Iconify API URL\n    try {\n      new URL(customUrl)\n    } catch (e) {\n      console.warn('Nuxt IconCSS: Invalid custom Iconify API URL')\n      return\n    }\n  }\n\n  const baseUrl = customUrl || 'https://api.iconify.design'\n  return `url('${baseUrl}/${resolvedIcon.value.prefix}/${resolvedIcon.value.name}.svg')`\n})\nconst sSize = computed(() => {\n  // Disable size if appConfig.nuxtIcon.size === false\n  if (!props.size && typeof appConfig.nuxtIcon?.size === 'boolean' && !appConfig.nuxtIcon?.size) {\n    return undefined\n  }\n  const size = props.size || appConfig.nuxtIcon?.size || '1em'\n  if (String(Number(size)) === size) {\n    return `${size}px`\n  }\n  return size\n})\n</script>\n\n<template>\n  <span :style=\"{ width: sSize, height: sSize }\" />\n</template>\n\n<style scoped>\nspan {\n  display: inline-block;\n  vertical-align: middle;\n  background-color: currentColor;\n  -webkit-mask-image: v-bind(iconUrl);\n  mask-image: v-bind(iconUrl);\n  -webkit-mask-repeat: no-repeat;\n  mask-repeat: no-repeat;\n  -webkit-mask-size: 100% 100%;\n  mask-size: 100% 100%;\n}\n</style>\n",
-      "start": 1708988596345,
-      "end": 1708988597413,
+      "start": 1709041933826,
+      "end": 1709041935289,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708988597413,
-      "end": 1708988597413,
+      "start": 1709041935289,
+      "end": 1709041935289,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708988597413,
-      "end": 1708988597413,
+      "start": 1709041935289,
+      "end": 1709041935289,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708988597413,
-      "end": 1708988597413,
+      "start": 1709041935289,
+      "end": 1709041935289,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708988597413,
-      "end": 1708988597413,
+      "start": 1709041935289,
+      "end": 1709041935289,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "<script setup lang=\"ts\">\nimport { computed } from 'vue'\nimport { useAppConfig } from '#imports'\nimport { resolveIconName } from './utils'\n\nconst appConfig = useAppConfig() as {\n  nuxtIcon: {\n    size?: string\n    class?: string\n    aliases?: Record<string, string>\n    iconifyApiOptions?: {\n      url?: string\n      publicApiFallback?: boolean\n    }\n  }\n}\n\nconst props = defineProps({\n  name: {\n    type: String,\n    required: true\n  },\n  size: {\n    type: String,\n    default: ''\n  }\n})\n\nconst iconName = computed(() => {\n  if (appConfig.nuxtIcon?.aliases?.[props.name]) {\n    return appConfig.nuxtIcon.aliases[props.name]\n  }\n  return props.name\n})\nconst resolvedIcon = computed(() => resolveIconName(iconName.value))\nconst iconUrl = computed(() => {\n  const customUrl = appConfig.nuxtIcon?.iconifyApiOptions?.url\n\n  if (customUrl) {\n    // validate the custom Iconify API URL\n    try {\n      new URL(customUrl)\n    } catch (e) {\n      console.warn('Nuxt IconCSS: Invalid custom Iconify API URL')\n      return\n    }\n  }\n\n  const baseUrl = customUrl || 'https://api.iconify.design'\n  return `url('${baseUrl}/${resolvedIcon.value.prefix}/${resolvedIcon.value.name}.svg')`\n})\nconst sSize = computed(() => {\n  // Disable size if appConfig.nuxtIcon.size === false\n  if (!props.size && typeof appConfig.nuxtIcon?.size === 'boolean' && !appConfig.nuxtIcon?.size) {\n    return undefined\n  }\n  const size = props.size || appConfig.nuxtIcon?.size || '1em'\n  if (String(Number(size)) === size) {\n    return `${size}px`\n  }\n  return size\n})\n</script>\n\n<template>\n  <span :style=\"{ width: sSize, height: sSize }\" />\n</template>\n\n<style scoped>\n\nspan {\n  display: inline-block;\n  vertical-align: middle;\n  background-color: currentColor;\n  -webkit-mask-image: v-bind(iconUrl);\n  mask-image: v-bind(iconUrl);\n  -webkit-mask-repeat: no-repeat;\n  mask-repeat: no-repeat;\n  -webkit-mask-size: 100% 100%;\n  mask-size: 100% 100%;\n}\n\n</style>\n",
-      "start": 1708988597413,
-      "end": 1708988597413,
+      "start": 1709041935289,
+      "end": 1709041935289,
       "order": "pre",
       "sourcemaps": {
         "version": 3,
@@ -51,8 +51,8 @@
     {
       "name": "pinceau-transforms",
       "result": "<script setup lang=\"ts\">\nimport { computed } from 'vue'\nimport { useAppConfig } from '#imports'\nimport { resolveIconName } from './utils'\n\nconst appConfig = useAppConfig() as {\n  nuxtIcon: {\n    size?: string\n    class?: string\n    aliases?: Record<string, string>\n    iconifyApiOptions?: {\n      url?: string\n      publicApiFallback?: boolean\n    }\n  }\n}\n\nconst props = defineProps({\n  name: {\n    type: String,\n    required: true\n  },\n  size: {\n    type: String,\n    default: ''\n  }\n})\n\nconst iconName = computed(() => {\n  if (appConfig.nuxtIcon?.aliases?.[props.name]) {\n    return appConfig.nuxtIcon.aliases[props.name]\n  }\n  return props.name\n})\nconst resolvedIcon = computed(() => resolveIconName(iconName.value))\nconst iconUrl = computed(() => {\n  const customUrl = appConfig.nuxtIcon?.iconifyApiOptions?.url\n\n  if (customUrl) {\n    // validate the custom Iconify API URL\n    try {\n      new URL(customUrl)\n    } catch (e) {\n      console.warn('Nuxt IconCSS: Invalid custom Iconify API URL')\n      return\n    }\n  }\n\n  const baseUrl = customUrl || 'https://api.iconify.design'\n  return `url('${baseUrl}/${resolvedIcon.value.prefix}/${resolvedIcon.value.name}.svg')`\n})\nconst sSize = computed(() => {\n  // Disable size if appConfig.nuxtIcon.size === false\n  if (!props.size && typeof appConfig.nuxtIcon?.size === 'boolean' && !appConfig.nuxtIcon?.size) {\n    return undefined\n  }\n  const size = props.size || appConfig.nuxtIcon?.size || '1em'\n  if (String(Number(size)) === size) {\n    return `${size}px`\n  }\n  return size\n})\n</script>\n\n<template>\n  <span :style=\"{ width: sSize, height: sSize }\" />\n</template>\n\n<style scoped>\n\nspan {\n  display: inline-block;\n  vertical-align: middle;\n  background-color: currentColor;\n  -webkit-mask-image: v-bind(iconUrl);\n  mask-image: v-bind(iconUrl);\n  -webkit-mask-repeat: no-repeat;\n  mask-repeat: no-repeat;\n  -webkit-mask-size: 100% 100%;\n  mask-size: 100% 100%;\n}\n\n</style>\n",
-      "start": 1708988597413,
-      "end": 1708988597413,
+      "start": 1709041935289,
+      "end": 1709041935289,
       "order": "pre",
       "sourcemaps": {
         "version": 3,
@@ -66,51 +66,51 @@
     },
     {
       "name": "content-slot",
-      "start": 1708988597413,
-      "end": 1708988597413,
+      "start": 1709041935289,
+      "end": 1709041935289,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708988597413,
-      "end": 1708988597413,
+      "start": 1709041935289,
+      "end": 1709041935289,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708988597413,
-      "end": 1708988597413,
+      "start": 1709041935289,
+      "end": 1709041935289,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708988597413,
-      "end": 1708988597413,
+      "start": 1709041935289,
+      "end": 1709041935289,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1708988597413,
-      "end": 1708988597413,
+      "start": 1709041935289,
+      "end": 1709041935289,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1708988597413,
-      "end": 1708988597413,
+      "start": 1709041935289,
+      "end": 1709041935289,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708988597413,
-      "end": 1708988597413,
+      "start": 1709041935289,
+      "end": 1709041935289,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "import _sfc_main from \"/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/IconCSS.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/IconCSS.vue?vue&type=script&setup=true&lang.ts\";\nimport \"/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/IconCSS.vue?vue&type=style&index=0&scoped=26d04dbf&lang.css\";\nimport { useSSRContext as __vite_useSSRContext } from \"vue\";\nconst _sfc_setup = _sfc_main.setup;\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext();\n  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add(\"node_modules/nuxt-icon/dist/runtime/IconCSS.vue\");\n  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;\n};\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"__scopeId\", \"data-v-26d04dbf\"]]);\n",
-      "start": 1708988597413,
-      "end": 1708988597515,
+      "start": 1709041935289,
+      "end": 1709041935364,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -118,176 +118,176 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708988597515,
-      "end": 1708988597515,
+      "start": 1709041935365,
+      "end": 1709041935365,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708988597515,
-      "end": 1708988597515,
+      "start": 1709041935365,
+      "end": 1709041935365,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708988597515,
-      "end": 1708988597515,
+      "start": 1709041935365,
+      "end": 1709041935365,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708988597515,
-      "end": 1708988597515,
+      "start": 1709041935366,
+      "end": 1709041935366,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708988597515,
-      "end": 1708988597515,
+      "start": 1709041935366,
+      "end": 1709041935366,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708988597516,
-      "end": 1708988597516,
+      "start": 1709041935366,
+      "end": 1709041935366,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708988597516,
-      "end": 1708988597516,
+      "start": 1709041935366,
+      "end": 1709041935366,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708988597516,
-      "end": 1708988597516,
+      "start": 1709041935366,
+      "end": 1709041935366,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708988597517,
-      "end": 1708988597517,
+      "start": 1709041935366,
+      "end": 1709041935367,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708988597517,
-      "end": 1708988597517,
+      "start": 1709041935367,
+      "end": 1709041935367,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708988597517,
-      "end": 1708988597518,
+      "start": 1709041935367,
+      "end": 1709041935368,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708988597518,
-      "end": 1708988597519,
+      "start": 1709041935370,
+      "end": 1709041935370,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708988597519,
-      "end": 1708988597519,
+      "start": 1709041935371,
+      "end": 1709041935371,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708988597520,
-      "end": 1708988597520,
+      "start": 1709041935371,
+      "end": 1709041935371,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708988597520,
-      "end": 1708988597520,
+      "start": 1709041935372,
+      "end": 1709041935372,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708988597521,
-      "end": 1708988597521,
+      "start": 1709041935372,
+      "end": 1709041935372,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708988597521,
-      "end": 1708988597521,
+      "start": 1709041935373,
+      "end": 1709041935373,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708988597521,
-      "end": 1708988597521,
+      "start": 1709041935373,
+      "end": 1709041935373,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708988597521,
-      "end": 1708988597521,
+      "start": 1709041935375,
+      "end": 1709041935376,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708988597521,
-      "end": 1708988597521,
+      "start": 1709041935375,
+      "end": 1709041935376,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708988597521,
-      "end": 1708988597521,
+      "start": 1709041935376,
+      "end": 1709041935376,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708988597521,
-      "end": 1708988597521,
+      "start": 1709041935376,
+      "end": 1709041935376,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708988597521,
-      "end": 1708988597521,
+      "start": 1709041935376,
+      "end": 1709041935376,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708988597521,
-      "end": 1708988597521,
+      "start": 1709041935376,
+      "end": 1709041935376,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1708988597522,
-      "end": 1708988597522,
+      "start": 1709041935380,
+      "end": 1709041935380,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1708988597522,
-      "end": 1708988597522,
+      "start": 1709041935381,
+      "end": 1709041935381,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708988597522,
-      "end": 1708988597522,
+      "start": 1709041935381,
+      "end": 1709041935381,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708988597522,
-      "end": 1708988597522,
+      "start": 1709041935381,
+      "end": 1709041935381,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708988597522,
-      "end": 1708988597522,
+      "start": 1709041935381,
+      "end": 1709041935381,
       "order": "normal"
     }
   ]

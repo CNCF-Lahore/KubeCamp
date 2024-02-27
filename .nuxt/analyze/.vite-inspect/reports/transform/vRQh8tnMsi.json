@@ -4,51 +4,51 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { toDisplayString as _toDisplayString, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, renderSlot as _renderSlot, resolveComponent as _resolveComponent, createVNode as _createVNode, normalizeClass as _normalizeClass, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-c164ce0a\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = {\n  key: 0,\n  class: \"filename\"\n}\n\nimport type { PropType } from 'vue'\nimport { ref } from 'vue'\nimport type { Lang } from 'shiki-es'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'ProseCode',\n  props: {\n  code: {\n    type: String,\n    default: ''\n  },\n  language: {\n    type: String as PropType<Lang>,\n    default: null\n  },\n  filename: {\n    type: String,\n    default: null\n  },\n  highlights: {\n    type: Array as () => number[],\n    default: () => []\n  }\n},\n  setup(__props) {\n\n\n\nconst hovered = ref(false)\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_ProseCodeCopyButton = _resolveComponent(\"ProseCodeCopyButton\")!\n\n  return (_openBlock(), _createElementBlock(\"div\", {\n    class: _normalizeClass([[`highlight-${__props.language}`], \"prose-code\"]),\n    onMouseenter: _cache[0] || (_cache[0] = ($event: any) => (hovered.value = true)),\n    onMouseleave: _cache[1] || (_cache[1] = ($event: any) => (hovered.value = false))\n  }, [\n    (__props.filename)\n      ? (_openBlock(), _createElementBlock(\"span\", _hoisted_1, _toDisplayString(__props.filename), 1))\n      : _createCommentVNode(\"\", true),\n    _renderSlot(_ctx.$slots, \"default\", {}, undefined, true),\n    _createVNode(_component_ProseCodeCopyButton, {\n      show: hovered.value,\n      content: __props.code,\n      class: \"copy-button\"\n    }, null, 8, [\"show\", \"content\"])\n  ], 34))\n}\n}\n\n})",
-      "start": 1708988589690,
-      "end": 1708988589690
+      "start": 1709041925342,
+      "end": 1709041925342
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708988589692,
-      "end": 1708988589692,
+      "start": 1709041925343,
+      "end": 1709041925344,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708988589699,
-      "end": 1708988589699,
+      "start": 1709041925352,
+      "end": 1709041925352,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { toDisplayString as _toDisplayString, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, renderSlot as _renderSlot, resolveComponent as _resolveComponent, createVNode as _createVNode, normalizeClass as _normalizeClass, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-c164ce0a\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = {\n  key: 0,\n  class: \"filename\"\n}\n\nimport type { PropType } from 'vue'\nimport { ref } from 'vue'\nimport type { Lang } from 'shiki-es'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'ProseCode',\n  props: {\n  code: {\n    type: String,\n    default: ''\n  },\n  language: {\n    type: String as PropType<Lang>,\n    default: null\n  },\n  filename: {\n    type: String,\n    default: null\n  },\n  highlights: {\n    type: Array as () => number[],\n    default: () => []\n  }\n},\n  setup(__props) {\n\n\n\nconst hovered = ref(false)\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_ProseCodeCopyButton = _resolveComponent(\"ProseCodeCopyButton\")!\n\n  return (_openBlock(), _createElementBlock(\"div\", {\n    class: _normalizeClass([[`highlight-${__props.language}`], \"prose-code\"]),\n    onMouseenter: _cache[0] || (_cache[0] = ($event: any) => (hovered.value = true)),\n    onMouseleave: _cache[1] || (_cache[1] = ($event: any) => (hovered.value = false))\n  }, [\n    (__props.filename)\n      ? (_openBlock(), _createElementBlock(\"span\", _hoisted_1, _toDisplayString(__props.filename), 1))\n      : _createCommentVNode(\"\", true),\n    _renderSlot(_ctx.$slots, \"default\", {}, undefined, true),\n    _createVNode(_component_ProseCodeCopyButton, {\n      show: hovered.value,\n      content: __props.code,\n      class: \"copy-button\"\n    }, null, 8, [\"show\", \"content\"])\n  ], 34))\n}\n}\n\n})",
-      "start": 1708988589700,
-      "end": 1708988589700,
+      "start": 1709041925353,
+      "end": 1709041925353,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708988589700,
-      "end": 1708988589700,
+      "start": 1709041925354,
+      "end": 1709041925354,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708988589701,
-      "end": 1708988589701,
+      "start": 1709041925354,
+      "end": 1709041925354,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708988589701,
-      "end": 1708988589701,
+      "start": 1709041925354,
+      "end": 1709041925354,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { toDisplayString as _toDisplayString, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, renderSlot as _renderSlot, resolveComponent as _resolveComponent, createVNode as _createVNode, normalizeClass as _normalizeClass, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-c164ce0a\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = {\n  key: 0,\n  class: \"filename\"\n};\nimport { ref } from \"vue\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ProseCode\",\n  props: {\n    code: {\n      type: String,\n      default: \"\"\n    },\n    language: {\n      type: String,\n      default: null\n    },\n    filename: {\n      type: String,\n      default: null\n    },\n    highlights: {\n      type: Array,\n      default: () => []\n    }\n  },\n  setup(__props) {\n    const hovered = ref(false);\n    return (_ctx, _cache) => {\n      const _component_ProseCodeCopyButton = _resolveComponent(\"ProseCodeCopyButton\");\n      return _openBlock(), _createElementBlock(\"div\", {\n        class: _normalizeClass([[`highlight-${__props.language}`], \"prose-code\"]),\n        onMouseenter: _cache[0] || (_cache[0] = ($event) => hovered.value = true),\n        onMouseleave: _cache[1] || (_cache[1] = ($event) => hovered.value = false)\n      }, [\n        __props.filename ? (_openBlock(), _createElementBlock(\"span\", _hoisted_1, _toDisplayString(__props.filename), 1)) : _createCommentVNode(\"\", true),\n        _renderSlot(_ctx.$slots, \"default\", {}, void 0, true),\n        _createVNode(_component_ProseCodeCopyButton, {\n          show: hovered.value,\n          content: __props.code,\n          class: \"copy-button\"\n        }, null, 8, [\"show\", \"content\"])\n      ], 34);\n    };\n  }\n});\n",
-      "start": 1708988589701,
-      "end": 1708988590595,
+      "start": 1709041925354,
+      "end": 1709041926305,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -64,171 +64,171 @@
     },
     {
       "name": "vite:json",
-      "start": 1708988590595,
-      "end": 1708988590595,
+      "start": 1709041926305,
+      "end": 1709041926305,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708988590596,
-      "end": 1708988590596,
+      "start": 1709041926305,
+      "end": 1709041926305,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708988590596,
-      "end": 1708988590596,
+      "start": 1709041926305,
+      "end": 1709041926306,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708988590596,
-      "end": 1708988590596,
+      "start": 1709041926306,
+      "end": 1709041926306,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708988590596,
-      "end": 1708988590596,
+      "start": 1709041926306,
+      "end": 1709041926306,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708988590596,
-      "end": 1708988590596,
+      "start": 1709041926306,
+      "end": 1709041926306,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1708988590596,
-      "end": 1708988590596,
+      "start": 1709041926307,
+      "end": 1709041926307,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708988590597,
-      "end": 1708988590597,
+      "start": 1709041926307,
+      "end": 1709041926308,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708988590597,
-      "end": 1708988590597,
+      "start": 1709041926308,
+      "end": 1709041926308,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708988590597,
-      "end": 1708988590597,
+      "start": 1709041926308,
+      "end": 1709041926308,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708988590598,
-      "end": 1708988590598,
+      "start": 1709041926308,
+      "end": 1709041926308,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708988590598,
-      "end": 1708988590598,
+      "start": 1709041926308,
+      "end": 1709041926309,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708988590598,
-      "end": 1708988590598,
+      "start": 1709041926309,
+      "end": 1709041926309,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708988590598,
-      "end": 1708988590598,
+      "start": 1709041926309,
+      "end": 1709041926309,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708988590598,
-      "end": 1708988590598,
+      "start": 1709041926309,
+      "end": 1709041926309,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708988590598,
-      "end": 1708988590598,
+      "start": 1709041926309,
+      "end": 1709041926309,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708988590599,
-      "end": 1708988590599,
+      "start": 1709041926309,
+      "end": 1709041926309,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708988590599,
-      "end": 1708988590599,
+      "start": 1709041926309,
+      "end": 1709041926309,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708988590599,
-      "end": 1708988590599,
+      "start": 1709041926309,
+      "end": 1709041926310,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708988590599,
-      "end": 1708988590614,
+      "start": 1709041926310,
+      "end": 1709041926323,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708988590615,
-      "end": 1708988590615,
+      "start": 1709041926324,
+      "end": 1709041926324,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708988590615,
-      "end": 1708988590615,
+      "start": 1709041926325,
+      "end": 1709041926325,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1708988590615,
-      "end": 1708988590615,
+      "start": 1709041926325,
+      "end": 1709041926325,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1708988590615,
-      "end": 1708988590615,
+      "start": 1709041926325,
+      "end": 1709041926326,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
       "result": "import { default as __nuxt_component_0 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/ProseCodeCopyButton.vue\";\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { toDisplayString as _toDisplayString, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, renderSlot as _renderSlot, resolveComponent as _resolveComponent, createVNode as _createVNode, normalizeClass as _normalizeClass, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-c164ce0a\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = {\n  key: 0,\n  class: \"filename\"\n};\nimport { ref } from \"vue\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ProseCode\",\n  props: {\n    code: {\n      type: String,\n      default: \"\"\n    },\n    language: {\n      type: String,\n      default: null\n    },\n    filename: {\n      type: String,\n      default: null\n    },\n    highlights: {\n      type: Array,\n      default: () => []\n    }\n  },\n  setup(__props) {\n    const hovered = ref(false);\n    return (_ctx, _cache) => {\n      const _component_ProseCodeCopyButton = __nuxt_component_0;\n      return _openBlock(), _createElementBlock(\"div\", {\n        class: _normalizeClass([[`highlight-${__props.language}`], \"prose-code\"]),\n        onMouseenter: _cache[0] || (_cache[0] = ($event) => hovered.value = true),\n        onMouseleave: _cache[1] || (_cache[1] = ($event) => hovered.value = false)\n      }, [\n        __props.filename ? (_openBlock(), _createElementBlock(\"span\", _hoisted_1, _toDisplayString(__props.filename), 1)) : _createCommentVNode(\"\", true),\n        _renderSlot(_ctx.$slots, \"default\", {}, void 0, true),\n        _createVNode(_component_ProseCodeCopyButton, {\n          show: hovered.value,\n          content: __props.code,\n          class: \"copy-button\"\n        }, null, 8, [\"show\", \"content\"])\n      ], 34);\n    };\n  }\n});\n",
-      "start": 1708988590616,
-      "end": 1708988590616,
+      "start": 1709041926326,
+      "end": 1709041926327,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708988590617,
-      "end": 1708988590617,
+      "start": 1709041926328,
+      "end": 1709041926328,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708988590618,
-      "end": 1708988590618,
+      "start": 1709041926328,
+      "end": 1709041926328,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708988590618,
-      "end": 1708988590618,
+      "start": 1709041926329,
+      "end": 1709041926329,
       "order": "normal"
     }
   ]

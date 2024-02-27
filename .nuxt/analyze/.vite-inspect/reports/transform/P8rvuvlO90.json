@@ -4,51 +4,51 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, createBlock as _createBlock, createCommentVNode as _createCommentVNode, createElementVNode as _createElementVNode, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-acf5a6ce\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"component-playground-data-section\" }\nconst _hoisted_2 = [\"id\"]\nconst _hoisted_3 = [\"value\", \"onChange\"]\n\nimport { useVModel } from '@vueuse/core'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'ComponentPlaygroundProps',\n  props: {\n  modelValue: {\n    type: Object,\n    required: true\n  },\n  componentData: {\n    type: Object,\n    required: true\n  }\n},\n  emits: ['update:modelValue'],\n  setup(__props, { emit: __emit }) {\n\nconst props = __props\n\nconst emits = __emit\n\nconst formData = useVModel(props, 'modelValue', emits)\n\nconst propChange = (event: any, propName: any) => {\n  formData.value = {\n    ...formData.value,\n    [propName]: event.target.value\n  }\n}\n\nconst componentProps = computed(() => props?.componentData?.meta?.props)\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_ProseH4 = _resolveComponent(\"ProseH4\")!\n  const _component_ProseCodeInline = _resolveComponent(\"ProseCodeInline\")!\n  const _component_Badge = _resolveComponent(\"Badge\")!\n  const _component_ProseP = _resolveComponent(\"ProseP\")!\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_unref(componentProps), (prop) => {\n      return (_openBlock(), _createElementBlock(\"div\", {\n        key: prop.name\n      }, [\n        _createElementVNode(\"div\", {\n          id: prop.name,\n          class: \"prop-title\"\n        }, [\n          _createVNode(_component_ProseH4, {\n            id: prop.name\n          }, {\n            default: _withCtx(() => [\n              _createTextVNode(_toDisplayString(prop.name), 1)\n            ]),\n            _: 2\n          }, 1032, [\"id\"]),\n          _createElementVNode(\"span\", null, [\n            _createVNode(_component_ProseCodeInline, null, {\n              default: _withCtx(() => [\n                _createTextVNode(_toDisplayString(prop.type), 1)\n              ]),\n              _: 2\n            }, 1024),\n            (!prop.required)\n              ? (_openBlock(), _createBlock(_component_Badge, { key: 0 }, {\n                  default: _withCtx(() => [\n                    _createTextVNode(\" Required \")\n                  ]),\n                  _: 1\n                }))\n              : _createCommentVNode(\"\", true)\n          ])\n        ], 8, _hoisted_2),\n        (prop.description)\n          ? (_openBlock(), _createBlock(_component_ProseP, { key: 0 }, {\n              default: _withCtx(() => [\n                _createTextVNode(_toDisplayString(prop.description), 1)\n              ]),\n              _: 2\n            }, 1024))\n          : _createCommentVNode(\"\", true),\n        _createElementVNode(\"input\", {\n          value: _unref(formData)[prop.name],\n          onChange: (event) => propChange(event, prop.name)\n        }, null, 40, _hoisted_3)\n      ]))\n    }), 128))\n  ]))\n}\n}\n\n})",
-      "start": 1708988591007,
-      "end": 1708988591007
+      "start": 1709041926148,
+      "end": 1709041926148
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708988591008,
-      "end": 1708988591008,
+      "start": 1709041926150,
+      "end": 1709041926150,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708988591018,
-      "end": 1708988591018,
+      "start": 1709041926161,
+      "end": 1709041926162,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, createBlock as _createBlock, createCommentVNode as _createCommentVNode, createElementVNode as _createElementVNode, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-acf5a6ce\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"component-playground-data-section\" }\nconst _hoisted_2 = [\"id\"]\nconst _hoisted_3 = [\"value\", \"onChange\"]\n\nimport { useVModel } from '@vueuse/core'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'ComponentPlaygroundProps',\n  props: {\n  modelValue: {\n    type: Object,\n    required: true\n  },\n  componentData: {\n    type: Object,\n    required: true\n  }\n},\n  emits: ['update:modelValue'],\n  setup(__props, { emit: __emit }) {\n\nconst props = __props\n\nconst emits = __emit\n\nconst formData = useVModel(props, 'modelValue', emits)\n\nconst propChange = (event: any, propName: any) => {\n  formData.value = {\n    ...formData.value,\n    [propName]: event.target.value\n  }\n}\n\nconst componentProps = computed(() => props?.componentData?.meta?.props)\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_ProseH4 = _resolveComponent(\"ProseH4\")!\n  const _component_ProseCodeInline = _resolveComponent(\"ProseCodeInline\")!\n  const _component_Badge = _resolveComponent(\"Badge\")!\n  const _component_ProseP = _resolveComponent(\"ProseP\")!\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_unref(componentProps), (prop) => {\n      return (_openBlock(), _createElementBlock(\"div\", {\n        key: prop.name\n      }, [\n        _createElementVNode(\"div\", {\n          id: prop.name,\n          class: \"prop-title\"\n        }, [\n          _createVNode(_component_ProseH4, {\n            id: prop.name\n          }, {\n            default: _withCtx(() => [\n              _createTextVNode(_toDisplayString(prop.name), 1)\n            ]),\n            _: 2\n          }, 1032, [\"id\"]),\n          _createElementVNode(\"span\", null, [\n            _createVNode(_component_ProseCodeInline, null, {\n              default: _withCtx(() => [\n                _createTextVNode(_toDisplayString(prop.type), 1)\n              ]),\n              _: 2\n            }, 1024),\n            (!prop.required)\n              ? (_openBlock(), _createBlock(_component_Badge, { key: 0 }, {\n                  default: _withCtx(() => [\n                    _createTextVNode(\" Required \")\n                  ]),\n                  _: 1\n                }))\n              : _createCommentVNode(\"\", true)\n          ])\n        ], 8, _hoisted_2),\n        (prop.description)\n          ? (_openBlock(), _createBlock(_component_ProseP, { key: 0 }, {\n              default: _withCtx(() => [\n                _createTextVNode(_toDisplayString(prop.description), 1)\n              ]),\n              _: 2\n            }, 1024))\n          : _createCommentVNode(\"\", true),\n        _createElementVNode(\"input\", {\n          value: _unref(formData)[prop.name],\n          onChange: (event) => propChange(event, prop.name)\n        }, null, 40, _hoisted_3)\n      ]))\n    }), 128))\n  ]))\n}\n}\n\n})",
-      "start": 1708988591019,
-      "end": 1708988591019,
+      "start": 1709041926163,
+      "end": 1709041926163,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708988591019,
-      "end": 1708988591019,
+      "start": 1709041926164,
+      "end": 1709041926164,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708988591020,
-      "end": 1708988591020,
+      "start": 1709041926164,
+      "end": 1709041926164,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708988591020,
-      "end": 1708988591020,
+      "start": 1709041926164,
+      "end": 1709041926164,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, createBlock as _createBlock, createCommentVNode as _createCommentVNode, createElementVNode as _createElementVNode, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-acf5a6ce\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = { class: \"component-playground-data-section\" };\nconst _hoisted_2 = [\"id\"];\nconst _hoisted_3 = [\"value\", \"onChange\"];\nimport { useVModel } from \"@vueuse/core\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ComponentPlaygroundProps\",\n  props: {\n    modelValue: {\n      type: Object,\n      required: true\n    },\n    componentData: {\n      type: Object,\n      required: true\n    }\n  },\n  emits: [\"update:modelValue\"],\n  setup(__props, { emit: __emit }) {\n    const props = __props;\n    const emits = __emit;\n    const formData = useVModel(props, \"modelValue\", emits);\n    const propChange = (event, propName) => {\n      formData.value = {\n        ...formData.value,\n        [propName]: event.target.value\n      };\n    };\n    const componentProps = computed(() => props?.componentData?.meta?.props);\n    return (_ctx, _cache) => {\n      const _component_ProseH4 = _resolveComponent(\"ProseH4\");\n      const _component_ProseCodeInline = _resolveComponent(\"ProseCodeInline\");\n      const _component_Badge = _resolveComponent(\"Badge\");\n      const _component_ProseP = _resolveComponent(\"ProseP\");\n      return _openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_unref(componentProps), (prop) => {\n          return _openBlock(), _createElementBlock(\"div\", {\n            key: prop.name\n          }, [\n            _createElementVNode(\"div\", {\n              id: prop.name,\n              class: \"prop-title\"\n            }, [\n              _createVNode(_component_ProseH4, {\n                id: prop.name\n              }, {\n                default: _withCtx(() => [\n                  _createTextVNode(_toDisplayString(prop.name), 1)\n                ]),\n                _: 2\n              }, 1032, [\"id\"]),\n              _createElementVNode(\"span\", null, [\n                _createVNode(_component_ProseCodeInline, null, {\n                  default: _withCtx(() => [\n                    _createTextVNode(_toDisplayString(prop.type), 1)\n                  ]),\n                  _: 2\n                }, 1024),\n                !prop.required ? (_openBlock(), _createBlock(_component_Badge, { key: 0 }, {\n                  default: _withCtx(() => [\n                    _createTextVNode(\" Required \")\n                  ]),\n                  _: 1\n                })) : _createCommentVNode(\"\", true)\n              ])\n            ], 8, _hoisted_2),\n            prop.description ? (_openBlock(), _createBlock(_component_ProseP, { key: 0 }, {\n              default: _withCtx(() => [\n                _createTextVNode(_toDisplayString(prop.description), 1)\n              ]),\n              _: 2\n            }, 1024)) : _createCommentVNode(\"\", true),\n            _createElementVNode(\"input\", {\n              value: _unref(formData)[prop.name],\n              onChange: (event) => propChange(event, prop.name)\n            }, null, 40, _hoisted_3)\n          ]);\n        }), 128))\n      ]);\n    };\n  }\n});\n",
-      "start": 1708988591020,
-      "end": 1708988591165,
+      "start": 1709041926164,
+      "end": 1709041926359,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -64,123 +64,123 @@
     },
     {
       "name": "vite:json",
-      "start": 1708988591166,
-      "end": 1708988591166,
+      "start": 1709041926359,
+      "end": 1709041926359,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708988591166,
-      "end": 1708988591166,
+      "start": 1709041926359,
+      "end": 1709041926359,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708988591166,
-      "end": 1708988591166,
+      "start": 1709041926359,
+      "end": 1709041926360,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708988591166,
-      "end": 1708988591166,
+      "start": 1709041926360,
+      "end": 1709041926360,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708988591167,
-      "end": 1708988591168,
+      "start": 1709041926361,
+      "end": 1709041926361,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708988591168,
-      "end": 1708988591168,
+      "start": 1709041926361,
+      "end": 1709041926361,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1708988591168,
-      "end": 1708988591168,
+      "start": 1709041926361,
+      "end": 1709041926361,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708988591169,
-      "end": 1708988591169,
+      "start": 1709041926362,
+      "end": 1709041926362,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708988591169,
-      "end": 1708988591170,
+      "start": 1709041926362,
+      "end": 1709041926362,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708988591172,
-      "end": 1708988591172,
+      "start": 1709041926362,
+      "end": 1709041926362,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708988591174,
-      "end": 1708988591174,
+      "start": 1709041926363,
+      "end": 1709041926363,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708988591174,
-      "end": 1708988591174,
+      "start": 1709041926363,
+      "end": 1709041926363,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708988591174,
-      "end": 1708988591174,
+      "start": 1709041926363,
+      "end": 1709041926363,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708988591174,
-      "end": 1708988591174,
+      "start": 1709041926363,
+      "end": 1709041926363,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708988591175,
-      "end": 1708988591175,
+      "start": 1709041926364,
+      "end": 1709041926364,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708988591175,
-      "end": 1708988591175,
+      "start": 1709041926364,
+      "end": 1709041926364,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708988591175,
-      "end": 1708988591175,
+      "start": 1709041926364,
+      "end": 1709041926364,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708988591176,
-      "end": 1708988591176,
+      "start": 1709041926364,
+      "end": 1709041926364,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708988591176,
-      "end": 1708988591178,
+      "start": 1709041926364,
+      "end": 1709041926364,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { computed } from 'vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, createBlock as _createBlock, createCommentVNode as _createCommentVNode, createElementVNode as _createElementVNode, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-acf5a6ce\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = { class: \"component-playground-data-section\" };\nconst _hoisted_2 = [\"id\"];\nconst _hoisted_3 = [\"value\", \"onChange\"];\nimport { useVModel } from \"@vueuse/core\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ComponentPlaygroundProps\",\n  props: {\n    modelValue: {\n      type: Object,\n      required: true\n    },\n    componentData: {\n      type: Object,\n      required: true\n    }\n  },\n  emits: [\"update:modelValue\"],\n  setup(__props, { emit: __emit }) {\n    const props = __props;\n    const emits = __emit;\n    const formData = useVModel(props, \"modelValue\", emits);\n    const propChange = (event, propName) => {\n      formData.value = {\n        ...formData.value,\n        [propName]: event.target.value\n      };\n    };\n    const componentProps = computed(() => props?.componentData?.meta?.props);\n    return (_ctx, _cache) => {\n      const _component_ProseH4 = _resolveComponent(\"ProseH4\");\n      const _component_ProseCodeInline = _resolveComponent(\"ProseCodeInline\");\n      const _component_Badge = _resolveComponent(\"Badge\");\n      const _component_ProseP = _resolveComponent(\"ProseP\");\n      return _openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_unref(componentProps), (prop) => {\n          return _openBlock(), _createElementBlock(\"div\", {\n            key: prop.name\n          }, [\n            _createElementVNode(\"div\", {\n              id: prop.name,\n              class: \"prop-title\"\n            }, [\n              _createVNode(_component_ProseH4, {\n                id: prop.name\n              }, {\n                default: _withCtx(() => [\n                  _createTextVNode(_toDisplayString(prop.name), 1)\n                ]),\n                _: 2\n              }, 1032, [\"id\"]),\n              _createElementVNode(\"span\", null, [\n                _createVNode(_component_ProseCodeInline, null, {\n                  default: _withCtx(() => [\n                    _createTextVNode(_toDisplayString(prop.type), 1)\n                  ]),\n                  _: 2\n                }, 1024),\n                !prop.required ? (_openBlock(), _createBlock(_component_Badge, { key: 0 }, {\n                  default: _withCtx(() => [\n                    _createTextVNode(\" Required \")\n                  ]),\n                  _: 1\n                })) : _createCommentVNode(\"\", true)\n              ])\n            ], 8, _hoisted_2),\n            prop.description ? (_openBlock(), _createBlock(_component_ProseP, { key: 0 }, {\n              default: _withCtx(() => [\n                _createTextVNode(_toDisplayString(prop.description), 1)\n              ]),\n              _: 2\n            }, 1024)) : _createCommentVNode(\"\", true),\n            _createElementVNode(\"input\", {\n              value: _unref(formData)[prop.name],\n              onChange: (event) => propChange(event, prop.name)\n            }, null, 40, _hoisted_3)\n          ]);\n        }), 128))\n      ]);\n    };\n  }\n});\n",
-      "start": 1708988591180,
-      "end": 1708988591186,
+      "start": 1709041926365,
+      "end": 1709041926372,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -193,51 +193,51 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1708988591187,
-      "end": 1708988591187,
+      "start": 1709041926373,
+      "end": 1709041926373,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708988591187,
-      "end": 1708988591187,
+      "start": 1709041926373,
+      "end": 1709041926373,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1708988591188,
-      "end": 1708988591188,
+      "start": 1709041926373,
+      "end": 1709041926373,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1708988591188,
-      "end": 1708988591188,
+      "start": 1709041926373,
+      "end": 1709041926373,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
       "result": "import { default as __nuxt_component_0 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseH4.vue\";\nimport { default as __nuxt_component_1 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseCodeInline.vue\";\nimport { default as __nuxt_component_2 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Badge.vue\";\nimport { default as __nuxt_component_3 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseP.vue\";\nimport { computed } from 'vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, createBlock as _createBlock, createCommentVNode as _createCommentVNode, createElementVNode as _createElementVNode, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-acf5a6ce\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = { class: \"component-playground-data-section\" };\nconst _hoisted_2 = [\"id\"];\nconst _hoisted_3 = [\"value\", \"onChange\"];\nimport { useVModel } from \"@vueuse/core\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ComponentPlaygroundProps\",\n  props: {\n    modelValue: {\n      type: Object,\n      required: true\n    },\n    componentData: {\n      type: Object,\n      required: true\n    }\n  },\n  emits: [\"update:modelValue\"],\n  setup(__props, { emit: __emit }) {\n    const props = __props;\n    const emits = __emit;\n    const formData = useVModel(props, \"modelValue\", emits);\n    const propChange = (event, propName) => {\n      formData.value = {\n        ...formData.value,\n        [propName]: event.target.value\n      };\n    };\n    const componentProps = computed(() => props?.componentData?.meta?.props);\n    return (_ctx, _cache) => {\n      const _component_ProseH4 = __nuxt_component_0;\n      const _component_ProseCodeInline = __nuxt_component_1;\n      const _component_Badge = __nuxt_component_2;\n      const _component_ProseP = __nuxt_component_3;\n      return _openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_unref(componentProps), (prop) => {\n          return _openBlock(), _createElementBlock(\"div\", {\n            key: prop.name\n          }, [\n            _createElementVNode(\"div\", {\n              id: prop.name,\n              class: \"prop-title\"\n            }, [\n              _createVNode(_component_ProseH4, {\n                id: prop.name\n              }, {\n                default: _withCtx(() => [\n                  _createTextVNode(_toDisplayString(prop.name), 1)\n                ]),\n                _: 2\n              }, 1032, [\"id\"]),\n              _createElementVNode(\"span\", null, [\n                _createVNode(_component_ProseCodeInline, null, {\n                  default: _withCtx(() => [\n                    _createTextVNode(_toDisplayString(prop.type), 1)\n                  ]),\n                  _: 2\n                }, 1024),\n                !prop.required ? (_openBlock(), _createBlock(_component_Badge, { key: 0 }, {\n                  default: _withCtx(() => [\n                    _createTextVNode(\" Required \")\n                  ]),\n                  _: 1\n                })) : _createCommentVNode(\"\", true)\n              ])\n            ], 8, _hoisted_2),\n            prop.description ? (_openBlock(), _createBlock(_component_ProseP, { key: 0 }, {\n              default: _withCtx(() => [\n                _createTextVNode(_toDisplayString(prop.description), 1)\n              ]),\n              _: 2\n            }, 1024)) : _createCommentVNode(\"\", true),\n            _createElementVNode(\"input\", {\n              value: _unref(formData)[prop.name],\n              onChange: (event) => propChange(event, prop.name)\n            }, null, 40, _hoisted_3)\n          ]);\n        }), 128))\n      ]);\n    };\n  }\n});\n",
-      "start": 1708988591189,
-      "end": 1708988591189,
+      "start": 1709041926374,
+      "end": 1709041926375,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708988591189,
-      "end": 1708988591189,
+      "start": 1709041926375,
+      "end": 1709041926375,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708988591190,
-      "end": 1708988591190,
+      "start": 1709041926375,
+      "end": 1709041926375,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708988591190,
-      "end": 1708988591190,
+      "start": 1709041926375,
+      "end": 1709041926375,
       "order": "normal"
     }
   ]

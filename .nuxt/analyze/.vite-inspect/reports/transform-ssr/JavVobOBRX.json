@@ -4,8 +4,8 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttr as _ssrRenderAttr, ssrIncludeBooleanAttr as _ssrIncludeBooleanAttr, ssrRenderAttrs as _ssrRenderAttrs, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\"\n\nimport type { PropType } from 'vue'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'VideoPlayer',\n  __ssrInlineRender: true,\n  props: {\n  poster: {\n    type: String,\n    default: ''\n  },\n  src: {\n    type: String,\n    default: ''\n  },\n  sources: {\n    type: Array as PropType<any[]>,\n    default: () => []\n  },\n  autoplay: {\n    type: Boolean,\n    default: false\n  }\n},\n  setup(__props) {\n\nconst props = __props\n\nconst provider = computed(() => {\n  if (props.src && props.src.includes('youtube.com/watch')) {\n    const match = props.src.match(/\\?v=([^&]*)/)\n\n    return {\n      name: 'youtube',\n      src: `https://www.youtube-nocookie.com/embed/${match?.[1] || ''}?autoplay=1`,\n      poster: props.poster || `https://i3.ytimg.com/vi/${match?.[1] || ''}/hqdefault.jpg`\n    }\n  }\n})\n\nconst loaded = ref(false)\n\nif (!props.src && !props.sources.length) { throw new Error('VideoPlayer: you need to provide either `src` or `sources` props') }\n\nconst src = computed(() => props.src || props.sources?.[0]?.src || false)\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_NuxtImg = _resolveComponent(\"NuxtImg\")!\n\n  _push(`<div${_ssrRenderAttrs(_mergeProps({\n    class: [\"video-player\", { loaded: _unref(loaded) }]\n  }, _attrs))} data-v-cfa5f079>`)\n  if (_unref(provider) ? _unref(provider).poster : __props.poster) {\n    _push(_ssrRenderComponent(_component_NuxtImg, {\n      src: (_unref(provider) ? _unref(provider).poster : __props.poster as any)\n    }, null, _parent))\n  } else {\n    _push(`<!---->`)\n  }\n  if (_unref(loaded)) {\n    _push(`<div class=\"loaded\" data-v-cfa5f079>`)\n    if (!_unref(provider)) {\n      _push(`<video${_ssrRenderAttr(\"poster\", __props.poster)} controls autoplay data-v-cfa5f079>`)\n      if (_unref(src)) {\n        _push(`<source${_ssrRenderAttr(\"src\", _unref(src))} data-v-cfa5f079>`)\n      } else {\n        _push(`<!---->`)\n      }\n      _push(`<!--[-->`)\n      _ssrRenderList(__props.sources, (source) => {\n        _push(`<source${\n          _ssrRenderAttr(\"src\", source.src || source)\n        }${\n          _ssrRenderAttr(\"type\", source.type)\n        } data-v-cfa5f079>`)\n      })\n      _push(`<!--]--></video>`)\n    } else if (_unref(provider).name === 'youtube') {\n      _push(`<iframe allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"true\"${\n        (_ssrIncludeBooleanAttr(__props.autoplay)) ? \" autoplay\" : \"\"\n      }${\n        _ssrRenderAttr(\"src\", _unref(provider).src)\n      } data-v-cfa5f079></iframe>`)\n    } else {\n      _push(`<!---->`)\n    }\n    _push(`</div>`)\n  } else {\n    _push(`<!---->`)\n  }\n  if (!_unref(loaded)) {\n    _push(`<div class=\"play-button\" data-v-cfa5f079><button data-v-cfa5f079></button></div>`)\n  } else {\n    _push(`<!---->`)\n  }\n  _push(`</div>`)\n}\n}\n\n})",
-      "start": 1708988597147,
-      "end": 1708988597148,
+      "start": 1709041935055,
+      "end": 1709041935055,
       "sourcemaps": {
         "version": 3,
         "sources": [
@@ -20,71 +20,71 @@
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708988597149,
-      "end": 1708988597149,
+      "start": 1709041935057,
+      "end": 1709041935058,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708988597149,
-      "end": 1708988597149,
+      "start": 1709041935057,
+      "end": 1709041935058,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708988597153,
-      "end": 1708988597153,
+      "start": 1709041935064,
+      "end": 1709041935064,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708988597153,
-      "end": 1708988597153,
+      "start": 1709041935064,
+      "end": 1709041935064,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttr as _ssrRenderAttr, ssrIncludeBooleanAttr as _ssrIncludeBooleanAttr, ssrRenderAttrs as _ssrRenderAttrs, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\"\n\nimport type { PropType } from 'vue'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'VideoPlayer',\n  __ssrInlineRender: true,\n  props: {\n  poster: {\n    type: String,\n    default: ''\n  },\n  src: {\n    type: String,\n    default: ''\n  },\n  sources: {\n    type: Array as PropType<any[]>,\n    default: () => []\n  },\n  autoplay: {\n    type: Boolean,\n    default: false\n  }\n},\n  setup(__props) {\n\nconst props = __props\n\nconst provider = computed(() => {\n  if (props.src && props.src.includes('youtube.com/watch')) {\n    const match = props.src.match(/\\?v=([^&]*)/)\n\n    return {\n      name: 'youtube',\n      src: `https://www.youtube-nocookie.com/embed/${match?.[1] || ''}?autoplay=1`,\n      poster: props.poster || `https://i3.ytimg.com/vi/${match?.[1] || ''}/hqdefault.jpg`\n    }\n  }\n})\n\nconst loaded = ref(false)\n\nif (!props.src && !props.sources.length) { throw new Error('VideoPlayer: you need to provide either `src` or `sources` props') }\n\nconst src = computed(() => props.src || props.sources?.[0]?.src || false)\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_NuxtImg = _resolveComponent(\"NuxtImg\")!\n\n  _push(`<div${_ssrRenderAttrs(_mergeProps({\n    class: [\"video-player\", { loaded: _unref(loaded) }]\n  }, _attrs))} data-v-cfa5f079>`)\n  if (_unref(provider) ? _unref(provider).poster : __props.poster) {\n    _push(_ssrRenderComponent(_component_NuxtImg, {\n      src: (_unref(provider) ? _unref(provider).poster : __props.poster as any)\n    }, null, _parent))\n  } else {\n    _push(`<!---->`)\n  }\n  if (_unref(loaded)) {\n    _push(`<div class=\"loaded\" data-v-cfa5f079>`)\n    if (!_unref(provider)) {\n      _push(`<video${_ssrRenderAttr(\"poster\", __props.poster)} controls autoplay data-v-cfa5f079>`)\n      if (_unref(src)) {\n        _push(`<source${_ssrRenderAttr(\"src\", _unref(src))} data-v-cfa5f079>`)\n      } else {\n        _push(`<!---->`)\n      }\n      _push(`<!--[-->`)\n      _ssrRenderList(__props.sources, (source) => {\n        _push(`<source${\n          _ssrRenderAttr(\"src\", source.src || source)\n        }${\n          _ssrRenderAttr(\"type\", source.type)\n        } data-v-cfa5f079>`)\n      })\n      _push(`<!--]--></video>`)\n    } else if (_unref(provider).name === 'youtube') {\n      _push(`<iframe allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"true\"${\n        (_ssrIncludeBooleanAttr(__props.autoplay)) ? \" autoplay\" : \"\"\n      }${\n        _ssrRenderAttr(\"src\", _unref(provider).src)\n      } data-v-cfa5f079></iframe>`)\n    } else {\n      _push(`<!---->`)\n    }\n    _push(`</div>`)\n  } else {\n    _push(`<!---->`)\n  }\n  if (!_unref(loaded)) {\n    _push(`<div class=\"play-button\" data-v-cfa5f079><button data-v-cfa5f079></button></div>`)\n  } else {\n    _push(`<!---->`)\n  }\n  _push(`</div>`)\n}\n}\n\n})",
-      "start": 1708988597157,
-      "end": 1708988597158,
+      "start": 1709041935067,
+      "end": 1709041935068,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttr as _ssrRenderAttr, ssrIncludeBooleanAttr as _ssrIncludeBooleanAttr, ssrRenderAttrs as _ssrRenderAttrs, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\"\n\nimport type { PropType } from 'vue'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'VideoPlayer',\n  __ssrInlineRender: true,\n  props: {\n  poster: {\n    type: String,\n    default: ''\n  },\n  src: {\n    type: String,\n    default: ''\n  },\n  sources: {\n    type: Array as PropType<any[]>,\n    default: () => []\n  },\n  autoplay: {\n    type: Boolean,\n    default: false\n  }\n},\n  setup(__props) {\n\nconst props = __props\n\nconst provider = computed(() => {\n  if (props.src && props.src.includes('youtube.com/watch')) {\n    const match = props.src.match(/\\?v=([^&]*)/)\n\n    return {\n      name: 'youtube',\n      src: `https://www.youtube-nocookie.com/embed/${match?.[1] || ''}?autoplay=1`,\n      poster: props.poster || `https://i3.ytimg.com/vi/${match?.[1] || ''}/hqdefault.jpg`\n    }\n  }\n})\n\nconst loaded = ref(false)\n\nif (!props.src && !props.sources.length) { throw new Error('VideoPlayer: you need to provide either `src` or `sources` props') }\n\nconst src = computed(() => props.src || props.sources?.[0]?.src || false)\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_NuxtImg = _resolveComponent(\"NuxtImg\")!\n\n  _push(`<div${_ssrRenderAttrs(_mergeProps({\n    class: [\"video-player\", { loaded: _unref(loaded) }]\n  }, _attrs))} data-v-cfa5f079>`)\n  if (_unref(provider) ? _unref(provider).poster : __props.poster) {\n    _push(_ssrRenderComponent(_component_NuxtImg, {\n      src: (_unref(provider) ? _unref(provider).poster : __props.poster as any)\n    }, null, _parent))\n  } else {\n    _push(`<!---->`)\n  }\n  if (_unref(loaded)) {\n    _push(`<div class=\"loaded\" data-v-cfa5f079>`)\n    if (!_unref(provider)) {\n      _push(`<video${_ssrRenderAttr(\"poster\", __props.poster)} controls autoplay data-v-cfa5f079>`)\n      if (_unref(src)) {\n        _push(`<source${_ssrRenderAttr(\"src\", _unref(src))} data-v-cfa5f079>`)\n      } else {\n        _push(`<!---->`)\n      }\n      _push(`<!--[-->`)\n      _ssrRenderList(__props.sources, (source) => {\n        _push(`<source${\n          _ssrRenderAttr(\"src\", source.src || source)\n        }${\n          _ssrRenderAttr(\"type\", source.type)\n        } data-v-cfa5f079>`)\n      })\n      _push(`<!--]--></video>`)\n    } else if (_unref(provider).name === 'youtube') {\n      _push(`<iframe allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"true\"${\n        (_ssrIncludeBooleanAttr(__props.autoplay)) ? \" autoplay\" : \"\"\n      }${\n        _ssrRenderAttr(\"src\", _unref(provider).src)\n      } data-v-cfa5f079></iframe>`)\n    } else {\n      _push(`<!---->`)\n    }\n    _push(`</div>`)\n  } else {\n    _push(`<!---->`)\n  }\n  if (!_unref(loaded)) {\n    _push(`<div class=\"play-button\" data-v-cfa5f079><button data-v-cfa5f079></button></div>`)\n  } else {\n    _push(`<!---->`)\n  }\n  _push(`</div>`)\n}\n}\n\n})",
-      "start": 1708988597157,
-      "end": 1708988597158,
+      "start": 1709041935067,
+      "end": 1709041935068,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708988597163,
-      "end": 1708988597163,
+      "start": 1709041935069,
+      "end": 1709041935069,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708988597163,
-      "end": 1708988597163,
+      "start": 1709041935069,
+      "end": 1709041935069,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708988597163,
-      "end": 1708988597163,
+      "start": 1709041935069,
+      "end": 1709041935069,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708988597163,
-      "end": 1708988597163,
+      "start": 1709041935069,
+      "end": 1709041935069,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttr as _ssrRenderAttr, ssrIncludeBooleanAttr as _ssrIncludeBooleanAttr, ssrRenderAttrs as _ssrRenderAttrs, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"VideoPlayer\",\n  __ssrInlineRender: true,\n  props: {\n    poster: {\n      type: String,\n      default: \"\"\n    },\n    src: {\n      type: String,\n      default: \"\"\n    },\n    sources: {\n      type: Array,\n      default: () => []\n    },\n    autoplay: {\n      type: Boolean,\n      default: false\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const provider = computed(() => {\n      if (props.src && props.src.includes(\"youtube.com/watch\")) {\n        const match = props.src.match(/\\?v=([^&]*)/);\n        return {\n          name: \"youtube\",\n          src: `https://www.youtube-nocookie.com/embed/${match?.[1] || \"\"}?autoplay=1`,\n          poster: props.poster || `https://i3.ytimg.com/vi/${match?.[1] || \"\"}/hqdefault.jpg`\n        };\n      }\n    });\n    const loaded = ref(false);\n    if (!props.src && !props.sources.length) {\n      throw new Error(\"VideoPlayer: you need to provide either `src` or `sources` props\");\n    }\n    const src = computed(() => props.src || props.sources?.[0]?.src || false);\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_NuxtImg = _resolveComponent(\"NuxtImg\");\n      _push(`<div${_ssrRenderAttrs(_mergeProps({\n        class: [\"video-player\", { loaded: _unref(loaded) }]\n      }, _attrs))} data-v-cfa5f079>`);\n      if (_unref(provider) ? _unref(provider).poster : __props.poster) {\n        _push(_ssrRenderComponent(_component_NuxtImg, {\n          src: _unref(provider) ? _unref(provider).poster : __props.poster\n        }, null, _parent));\n      } else {\n        _push(`<!---->`);\n      }\n      if (_unref(loaded)) {\n        _push(`<div class=\"loaded\" data-v-cfa5f079>`);\n        if (!_unref(provider)) {\n          _push(`<video${_ssrRenderAttr(\"poster\", __props.poster)} controls autoplay data-v-cfa5f079>`);\n          if (_unref(src)) {\n            _push(`<source${_ssrRenderAttr(\"src\", _unref(src))} data-v-cfa5f079>`);\n          } else {\n            _push(`<!---->`);\n          }\n          _push(`<!--[-->`);\n          _ssrRenderList(__props.sources, (source) => {\n            _push(`<source${_ssrRenderAttr(\"src\", source.src || source)}${_ssrRenderAttr(\"type\", source.type)} data-v-cfa5f079>`);\n          });\n          _push(`<!--]--></video>`);\n        } else if (_unref(provider).name === \"youtube\") {\n          _push(`<iframe allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"true\"${_ssrIncludeBooleanAttr(__props.autoplay) ? \" autoplay\" : \"\"}${_ssrRenderAttr(\"src\", _unref(provider).src)} data-v-cfa5f079></iframe>`);\n        } else {\n          _push(`<!---->`);\n        }\n        _push(`</div>`);\n      } else {\n        _push(`<!---->`);\n      }\n      if (!_unref(loaded)) {\n        _push(`<div class=\"play-button\" data-v-cfa5f079><button data-v-cfa5f079></button></div>`);\n      } else {\n        _push(`<!---->`);\n      }\n      _push(`</div>`);\n    };\n  }\n});\n",
-      "start": 1708988597163,
-      "end": 1708988597302,
+      "start": 1709041935070,
+      "end": 1709041935331,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -100,135 +100,135 @@
     },
     {
       "name": "vite:json",
-      "start": 1708988597302,
-      "end": 1708988597302,
+      "start": 1709041935331,
+      "end": 1709041935332,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708988597302,
-      "end": 1708988597302,
+      "start": 1709041935332,
+      "end": 1709041935332,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708988597302,
-      "end": 1708988597302,
+      "start": 1709041935332,
+      "end": 1709041935332,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708988597302,
-      "end": 1708988597302,
+      "start": 1709041935332,
+      "end": 1709041935332,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708988597302,
-      "end": 1708988597302,
+      "start": 1709041935333,
+      "end": 1709041935333,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708988597302,
-      "end": 1708988597302,
+      "start": 1709041935333,
+      "end": 1709041935333,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708988597303,
-      "end": 1708988597303,
+      "start": 1709041935333,
+      "end": 1709041935333,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708988597303,
-      "end": 1708988597303,
+      "start": 1709041935333,
+      "end": 1709041935333,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708988597303,
-      "end": 1708988597303,
+      "start": 1709041935333,
+      "end": 1709041935334,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708988597305,
-      "end": 1708988597305,
+      "start": 1709041935334,
+      "end": 1709041935334,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708988597305,
-      "end": 1708988597306,
+      "start": 1709041935334,
+      "end": 1709041935334,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708988597307,
-      "end": 1708988597308,
+      "start": 1709041935335,
+      "end": 1709041935336,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708988597309,
-      "end": 1708988597309,
+      "start": 1709041935336,
+      "end": 1709041935336,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708988597309,
-      "end": 1708988597309,
+      "start": 1709041935336,
+      "end": 1709041935336,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708988597309,
-      "end": 1708988597309,
+      "start": 1709041935336,
+      "end": 1709041935336,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708988597309,
-      "end": 1708988597309,
+      "start": 1709041935336,
+      "end": 1709041935337,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708988597315,
-      "end": 1708988597315,
+      "start": 1709041935337,
+      "end": 1709041935337,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708988597320,
-      "end": 1708988597320,
+      "start": 1709041935337,
+      "end": 1709041935337,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708988597320,
-      "end": 1708988597320,
+      "start": 1709041935338,
+      "end": 1709041935338,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708988597320,
-      "end": 1708988597320,
+      "start": 1709041935338,
+      "end": 1709041935339,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708988597320,
-      "end": 1708988597320,
+      "start": 1709041935338,
+      "end": 1709041935339,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { computed, ref } from 'vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttr as _ssrRenderAttr, ssrIncludeBooleanAttr as _ssrIncludeBooleanAttr, ssrRenderAttrs as _ssrRenderAttrs, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"VideoPlayer\",\n  __ssrInlineRender: true,\n  props: {\n    poster: {\n      type: String,\n      default: \"\"\n    },\n    src: {\n      type: String,\n      default: \"\"\n    },\n    sources: {\n      type: Array,\n      default: () => []\n    },\n    autoplay: {\n      type: Boolean,\n      default: false\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const provider = computed(() => {\n      if (props.src && props.src.includes(\"youtube.com/watch\")) {\n        const match = props.src.match(/\\?v=([^&]*)/);\n        return {\n          name: \"youtube\",\n          src: `https://www.youtube-nocookie.com/embed/${match?.[1] || \"\"}?autoplay=1`,\n          poster: props.poster || `https://i3.ytimg.com/vi/${match?.[1] || \"\"}/hqdefault.jpg`\n        };\n      }\n    });\n    const loaded = ref(false);\n    if (!props.src && !props.sources.length) {\n      throw new Error(\"VideoPlayer: you need to provide either `src` or `sources` props\");\n    }\n    const src = computed(() => props.src || props.sources?.[0]?.src || false);\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_NuxtImg = _resolveComponent(\"NuxtImg\");\n      _push(`<div${_ssrRenderAttrs(_mergeProps({\n        class: [\"video-player\", { loaded: _unref(loaded) }]\n      }, _attrs))} data-v-cfa5f079>`);\n      if (_unref(provider) ? _unref(provider).poster : __props.poster) {\n        _push(_ssrRenderComponent(_component_NuxtImg, {\n          src: _unref(provider) ? _unref(provider).poster : __props.poster\n        }, null, _parent));\n      } else {\n        _push(`<!---->`);\n      }\n      if (_unref(loaded)) {\n        _push(`<div class=\"loaded\" data-v-cfa5f079>`);\n        if (!_unref(provider)) {\n          _push(`<video${_ssrRenderAttr(\"poster\", __props.poster)} controls autoplay data-v-cfa5f079>`);\n          if (_unref(src)) {\n            _push(`<source${_ssrRenderAttr(\"src\", _unref(src))} data-v-cfa5f079>`);\n          } else {\n            _push(`<!---->`);\n          }\n          _push(`<!--[-->`);\n          _ssrRenderList(__props.sources, (source) => {\n            _push(`<source${_ssrRenderAttr(\"src\", source.src || source)}${_ssrRenderAttr(\"type\", source.type)} data-v-cfa5f079>`);\n          });\n          _push(`<!--]--></video>`);\n        } else if (_unref(provider).name === \"youtube\") {\n          _push(`<iframe allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"true\"${_ssrIncludeBooleanAttr(__props.autoplay) ? \" autoplay\" : \"\"}${_ssrRenderAttr(\"src\", _unref(provider).src)} data-v-cfa5f079></iframe>`);\n        } else {\n          _push(`<!---->`);\n        }\n        _push(`</div>`);\n      } else {\n        _push(`<!---->`);\n      }\n      if (!_unref(loaded)) {\n        _push(`<div class=\"play-button\" data-v-cfa5f079><button data-v-cfa5f079></button></div>`);\n      } else {\n        _push(`<!---->`);\n      }\n      _push(`</div>`);\n    };\n  }\n});\n",
-      "start": 1708988597325,
-      "end": 1708988597327,
+      "start": 1709041935339,
+      "end": 1709041935351,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -242,8 +242,8 @@
     {
       "name": "nuxt:imports-transform",
       "result": "import { computed, ref } from 'vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttr as _ssrRenderAttr, ssrIncludeBooleanAttr as _ssrIncludeBooleanAttr, ssrRenderAttrs as _ssrRenderAttrs, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"VideoPlayer\",\n  __ssrInlineRender: true,\n  props: {\n    poster: {\n      type: String,\n      default: \"\"\n    },\n    src: {\n      type: String,\n      default: \"\"\n    },\n    sources: {\n      type: Array,\n      default: () => []\n    },\n    autoplay: {\n      type: Boolean,\n      default: false\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const provider = computed(() => {\n      if (props.src && props.src.includes(\"youtube.com/watch\")) {\n        const match = props.src.match(/\\?v=([^&]*)/);\n        return {\n          name: \"youtube\",\n          src: `https://www.youtube-nocookie.com/embed/${match?.[1] || \"\"}?autoplay=1`,\n          poster: props.poster || `https://i3.ytimg.com/vi/${match?.[1] || \"\"}/hqdefault.jpg`\n        };\n      }\n    });\n    const loaded = ref(false);\n    if (!props.src && !props.sources.length) {\n      throw new Error(\"VideoPlayer: you need to provide either `src` or `sources` props\");\n    }\n    const src = computed(() => props.src || props.sources?.[0]?.src || false);\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_NuxtImg = _resolveComponent(\"NuxtImg\");\n      _push(`<div${_ssrRenderAttrs(_mergeProps({\n        class: [\"video-player\", { loaded: _unref(loaded) }]\n      }, _attrs))} data-v-cfa5f079>`);\n      if (_unref(provider) ? _unref(provider).poster : __props.poster) {\n        _push(_ssrRenderComponent(_component_NuxtImg, {\n          src: _unref(provider) ? _unref(provider).poster : __props.poster\n        }, null, _parent));\n      } else {\n        _push(`<!---->`);\n      }\n      if (_unref(loaded)) {\n        _push(`<div class=\"loaded\" data-v-cfa5f079>`);\n        if (!_unref(provider)) {\n          _push(`<video${_ssrRenderAttr(\"poster\", __props.poster)} controls autoplay data-v-cfa5f079>`);\n          if (_unref(src)) {\n            _push(`<source${_ssrRenderAttr(\"src\", _unref(src))} data-v-cfa5f079>`);\n          } else {\n            _push(`<!---->`);\n          }\n          _push(`<!--[-->`);\n          _ssrRenderList(__props.sources, (source) => {\n            _push(`<source${_ssrRenderAttr(\"src\", source.src || source)}${_ssrRenderAttr(\"type\", source.type)} data-v-cfa5f079>`);\n          });\n          _push(`<!--]--></video>`);\n        } else if (_unref(provider).name === \"youtube\") {\n          _push(`<iframe allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"true\"${_ssrIncludeBooleanAttr(__props.autoplay) ? \" autoplay\" : \"\"}${_ssrRenderAttr(\"src\", _unref(provider).src)} data-v-cfa5f079></iframe>`);\n        } else {\n          _push(`<!---->`);\n        }\n        _push(`</div>`);\n      } else {\n        _push(`<!---->`);\n      }\n      if (!_unref(loaded)) {\n        _push(`<div class=\"play-button\" data-v-cfa5f079><button data-v-cfa5f079></button></div>`);\n      } else {\n        _push(`<!---->`);\n      }\n      _push(`</div>`);\n    };\n  }\n});\n",
-      "start": 1708988597325,
-      "end": 1708988597327,
+      "start": 1709041935339,
+      "end": 1709041935351,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -256,39 +256,39 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1708988597327,
-      "end": 1708988597327,
+      "start": 1709041935351,
+      "end": 1709041935352,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708988597327,
-      "end": 1708988597327,
+      "start": 1709041935351,
+      "end": 1709041935352,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708988597327,
-      "end": 1708988597327,
+      "start": 1709041935352,
+      "end": 1709041935352,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708988597327,
-      "end": 1708988597327,
+      "start": 1709041935352,
+      "end": 1709041935352,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1708988597327,
-      "end": 1708988597327,
+      "start": 1709041935353,
+      "end": 1709041935353,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
       "result": "import { default as __nuxt_component_0 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/NuxtImg.vue\";\nimport { computed, ref } from 'vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttr as _ssrRenderAttr, ssrIncludeBooleanAttr as _ssrIncludeBooleanAttr, ssrRenderAttrs as _ssrRenderAttrs, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"VideoPlayer\",\n  __ssrInlineRender: true,\n  props: {\n    poster: {\n      type: String,\n      default: \"\"\n    },\n    src: {\n      type: String,\n      default: \"\"\n    },\n    sources: {\n      type: Array,\n      default: () => []\n    },\n    autoplay: {\n      type: Boolean,\n      default: false\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const provider = computed(() => {\n      if (props.src && props.src.includes(\"youtube.com/watch\")) {\n        const match = props.src.match(/\\?v=([^&]*)/);\n        return {\n          name: \"youtube\",\n          src: `https://www.youtube-nocookie.com/embed/${match?.[1] || \"\"}?autoplay=1`,\n          poster: props.poster || `https://i3.ytimg.com/vi/${match?.[1] || \"\"}/hqdefault.jpg`\n        };\n      }\n    });\n    const loaded = ref(false);\n    if (!props.src && !props.sources.length) {\n      throw new Error(\"VideoPlayer: you need to provide either `src` or `sources` props\");\n    }\n    const src = computed(() => props.src || props.sources?.[0]?.src || false);\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_NuxtImg = __nuxt_component_0;\n      _push(`<div${_ssrRenderAttrs(_mergeProps({\n        class: [\"video-player\", { loaded: _unref(loaded) }]\n      }, _attrs))} data-v-cfa5f079>`);\n      if (_unref(provider) ? _unref(provider).poster : __props.poster) {\n        _push(_ssrRenderComponent(_component_NuxtImg, {\n          src: _unref(provider) ? _unref(provider).poster : __props.poster\n        }, null, _parent));\n      } else {\n        _push(`<!---->`);\n      }\n      if (_unref(loaded)) {\n        _push(`<div class=\"loaded\" data-v-cfa5f079>`);\n        if (!_unref(provider)) {\n          _push(`<video${_ssrRenderAttr(\"poster\", __props.poster)} controls autoplay data-v-cfa5f079>`);\n          if (_unref(src)) {\n            _push(`<source${_ssrRenderAttr(\"src\", _unref(src))} data-v-cfa5f079>`);\n          } else {\n            _push(`<!---->`);\n          }\n          _push(`<!--[-->`);\n          _ssrRenderList(__props.sources, (source) => {\n            _push(`<source${_ssrRenderAttr(\"src\", source.src || source)}${_ssrRenderAttr(\"type\", source.type)} data-v-cfa5f079>`);\n          });\n          _push(`<!--]--></video>`);\n        } else if (_unref(provider).name === \"youtube\") {\n          _push(`<iframe allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"true\"${_ssrIncludeBooleanAttr(__props.autoplay) ? \" autoplay\" : \"\"}${_ssrRenderAttr(\"src\", _unref(provider).src)} data-v-cfa5f079></iframe>`);\n        } else {\n          _push(`<!---->`);\n        }\n        _push(`</div>`);\n      } else {\n        _push(`<!---->`);\n      }\n      if (!_unref(loaded)) {\n        _push(`<div class=\"play-button\" data-v-cfa5f079><button data-v-cfa5f079></button></div>`);\n      } else {\n        _push(`<!---->`);\n      }\n      _push(`</div>`);\n    };\n  }\n});\n",
-      "start": 1708988597327,
-      "end": 1708988597327,
+      "start": 1709041935354,
+      "end": 1709041935356,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -301,20 +301,20 @@
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708988597327,
-      "end": 1708988597328,
+      "start": 1709041935356,
+      "end": 1709041935357,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708988597328,
-      "end": 1708988597328,
+      "start": 1709041935357,
+      "end": 1709041935357,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708988597328,
-      "end": 1708988597328,
+      "start": 1709041935357,
+      "end": 1709041935357,
       "order": "normal"
     }
   ]

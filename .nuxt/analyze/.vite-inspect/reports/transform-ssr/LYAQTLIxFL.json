@@ -4,8 +4,8 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'DocsToc',\n  __ssrInlineRender: true,\n  emits: ['move'],\n  setup(__props, { emit: __emit }) {\n\nconst { toc } = useContent()\nconst emit = __emit\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_DocsTocLinks = _resolveComponent(\"DocsTocLinks\")!\n\n  _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"docs-toc\" }, _attrs))} data-v-ebd2b6b2>`)\n  if (_unref(toc)?.links?.length) {\n    _push(`<!--[--><div class=\"docs-toc-title\" data-v-ebd2b6b2><span data-v-ebd2b6b2>Table of Contents</span></div>`)\n    _push(_ssrRenderComponent(_component_DocsTocLinks, {\n      links: _unref(toc).links,\n      onMove: ($event: any) => (emit('move'))\n    }, null, _parent))\n    _push(`<!--]-->`)\n  } else {\n    _push(`<!---->`)\n  }\n  _push(`</div>`)\n}\n}\n\n})",
-      "start": 1708988596767,
-      "end": 1708988596768,
+      "start": 1709041934344,
+      "end": 1709041934344,
       "sourcemaps": {
         "version": 3,
         "sources": [
@@ -20,71 +20,71 @@
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708988596768,
-      "end": 1708988596769,
+      "start": 1709041934344,
+      "end": 1709041934344,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708988596768,
-      "end": 1708988596769,
+      "start": 1709041934344,
+      "end": 1709041934344,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708988596771,
-      "end": 1708988596771,
+      "start": 1709041934347,
+      "end": 1709041934347,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708988596771,
-      "end": 1708988596772,
+      "start": 1709041934347,
+      "end": 1709041934347,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'DocsToc',\n  __ssrInlineRender: true,\n  emits: ['move'],\n  setup(__props, { emit: __emit }) {\n\nconst { toc } = useContent()\nconst emit = __emit\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_DocsTocLinks = _resolveComponent(\"DocsTocLinks\")!\n\n  _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"docs-toc\" }, _attrs))} data-v-ebd2b6b2>`)\n  if (_unref(toc)?.links?.length) {\n    _push(`<!--[--><div class=\"docs-toc-title\" data-v-ebd2b6b2><span data-v-ebd2b6b2>Table of Contents</span></div>`)\n    _push(_ssrRenderComponent(_component_DocsTocLinks, {\n      links: _unref(toc).links,\n      onMove: ($event: any) => (emit('move'))\n    }, null, _parent))\n    _push(`<!--]-->`)\n  } else {\n    _push(`<!---->`)\n  }\n  _push(`</div>`)\n}\n}\n\n})",
-      "start": 1708988596772,
-      "end": 1708988596772,
+      "start": 1709041934348,
+      "end": 1709041934348,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'DocsToc',\n  __ssrInlineRender: true,\n  emits: ['move'],\n  setup(__props, { emit: __emit }) {\n\nconst { toc } = useContent()\nconst emit = __emit\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_DocsTocLinks = _resolveComponent(\"DocsTocLinks\")!\n\n  _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"docs-toc\" }, _attrs))} data-v-ebd2b6b2>`)\n  if (_unref(toc)?.links?.length) {\n    _push(`<!--[--><div class=\"docs-toc-title\" data-v-ebd2b6b2><span data-v-ebd2b6b2>Table of Contents</span></div>`)\n    _push(_ssrRenderComponent(_component_DocsTocLinks, {\n      links: _unref(toc).links,\n      onMove: ($event: any) => (emit('move'))\n    }, null, _parent))\n    _push(`<!--]-->`)\n  } else {\n    _push(`<!---->`)\n  }\n  _push(`</div>`)\n}\n}\n\n})",
-      "start": 1708988596772,
-      "end": 1708988596772,
+      "start": 1709041934348,
+      "end": 1709041934348,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708988596773,
-      "end": 1708988596773,
+      "start": 1709041934349,
+      "end": 1709041934349,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708988596773,
-      "end": 1708988596773,
+      "start": 1709041934349,
+      "end": 1709041934349,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708988596774,
-      "end": 1708988596774,
+      "start": 1709041934349,
+      "end": 1709041934349,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708988596774,
-      "end": 1708988596774,
+      "start": 1709041934349,
+      "end": 1709041934349,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"DocsToc\",\n  __ssrInlineRender: true,\n  emits: [\"move\"],\n  setup(__props, { emit: __emit }) {\n    const { toc } = useContent();\n    const emit = __emit;\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_DocsTocLinks = _resolveComponent(\"DocsTocLinks\");\n      _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"docs-toc\" }, _attrs))} data-v-ebd2b6b2>`);\n      if (_unref(toc)?.links?.length) {\n        _push(`<!--[--><div class=\"docs-toc-title\" data-v-ebd2b6b2><span data-v-ebd2b6b2>Table of Contents</span></div>`);\n        _push(_ssrRenderComponent(_component_DocsTocLinks, {\n          links: _unref(toc).links,\n          onMove: ($event) => emit(\"move\")\n        }, null, _parent));\n        _push(`<!--]-->`);\n      } else {\n        _push(`<!---->`);\n      }\n      _push(`</div>`);\n    };\n  }\n});\n",
-      "start": 1708988596774,
-      "end": 1708988597259,
+      "start": 1709041934350,
+      "end": 1709041934665,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -100,135 +100,135 @@
     },
     {
       "name": "vite:json",
-      "start": 1708988597260,
-      "end": 1708988597260,
+      "start": 1709041934666,
+      "end": 1709041934666,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708988597260,
-      "end": 1708988597260,
+      "start": 1709041934666,
+      "end": 1709041934666,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708988597260,
-      "end": 1708988597260,
+      "start": 1709041934666,
+      "end": 1709041934666,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708988597260,
-      "end": 1708988597260,
+      "start": 1709041934666,
+      "end": 1709041934666,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708988597260,
-      "end": 1708988597260,
+      "start": 1709041934666,
+      "end": 1709041934667,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708988597260,
-      "end": 1708988597260,
+      "start": 1709041934666,
+      "end": 1709041934667,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708988597260,
-      "end": 1708988597260,
+      "start": 1709041934667,
+      "end": 1709041934667,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708988597260,
-      "end": 1708988597260,
+      "start": 1709041934667,
+      "end": 1709041934667,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708988597260,
-      "end": 1708988597261,
+      "start": 1709041934667,
+      "end": 1709041934667,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708988597261,
-      "end": 1708988597261,
+      "start": 1709041934668,
+      "end": 1709041934668,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708988597261,
-      "end": 1708988597261,
+      "start": 1709041934668,
+      "end": 1709041934668,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708988597261,
-      "end": 1708988597262,
+      "start": 1709041934668,
+      "end": 1709041934670,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708988597262,
-      "end": 1708988597262,
+      "start": 1709041934670,
+      "end": 1709041934670,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708988597262,
-      "end": 1708988597262,
+      "start": 1709041934670,
+      "end": 1709041934670,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708988597262,
-      "end": 1708988597262,
+      "start": 1709041934670,
+      "end": 1709041934670,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708988597262,
-      "end": 1708988597262,
+      "start": 1709041934670,
+      "end": 1709041934670,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708988597262,
-      "end": 1708988597262,
+      "start": 1709041934670,
+      "end": 1709041934670,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708988597262,
-      "end": 1708988597263,
+      "start": 1709041934670,
+      "end": 1709041934670,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708988597263,
-      "end": 1708988597263,
+      "start": 1709041934671,
+      "end": 1709041934671,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708988597263,
-      "end": 1708988597263,
+      "start": 1709041934671,
+      "end": 1709041934671,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708988597263,
-      "end": 1708988597263,
+      "start": 1709041934671,
+      "end": 1709041934671,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { useContent } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/composables/content';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"DocsToc\",\n  __ssrInlineRender: true,\n  emits: [\"move\"],\n  setup(__props, { emit: __emit }) {\n    const { toc } = useContent();\n    const emit = __emit;\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_DocsTocLinks = _resolveComponent(\"DocsTocLinks\");\n      _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"docs-toc\" }, _attrs))} data-v-ebd2b6b2>`);\n      if (_unref(toc)?.links?.length) {\n        _push(`<!--[--><div class=\"docs-toc-title\" data-v-ebd2b6b2><span data-v-ebd2b6b2>Table of Contents</span></div>`);\n        _push(_ssrRenderComponent(_component_DocsTocLinks, {\n          links: _unref(toc).links,\n          onMove: ($event) => emit(\"move\")\n        }, null, _parent));\n        _push(`<!--]-->`);\n      } else {\n        _push(`<!---->`);\n      }\n      _push(`</div>`);\n    };\n  }\n});\n",
-      "start": 1708988597263,
-      "end": 1708988597270,
+      "start": 1709041934671,
+      "end": 1709041934684,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -242,8 +242,8 @@
     {
       "name": "nuxt:imports-transform",
       "result": "import { useContent } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/composables/content';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"DocsToc\",\n  __ssrInlineRender: true,\n  emits: [\"move\"],\n  setup(__props, { emit: __emit }) {\n    const { toc } = useContent();\n    const emit = __emit;\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_DocsTocLinks = _resolveComponent(\"DocsTocLinks\");\n      _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"docs-toc\" }, _attrs))} data-v-ebd2b6b2>`);\n      if (_unref(toc)?.links?.length) {\n        _push(`<!--[--><div class=\"docs-toc-title\" data-v-ebd2b6b2><span data-v-ebd2b6b2>Table of Contents</span></div>`);\n        _push(_ssrRenderComponent(_component_DocsTocLinks, {\n          links: _unref(toc).links,\n          onMove: ($event) => emit(\"move\")\n        }, null, _parent));\n        _push(`<!--]-->`);\n      } else {\n        _push(`<!---->`);\n      }\n      _push(`</div>`);\n    };\n  }\n});\n",
-      "start": 1708988597263,
-      "end": 1708988597270,
+      "start": 1709041934671,
+      "end": 1709041934684,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -256,39 +256,39 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1708988597271,
-      "end": 1708988597271,
+      "start": 1709041934686,
+      "end": 1709041934686,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708988597271,
-      "end": 1708988597271,
+      "start": 1709041934686,
+      "end": 1709041934686,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708988597271,
-      "end": 1708988597271,
+      "start": 1709041934686,
+      "end": 1709041934686,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708988597271,
-      "end": 1708988597271,
+      "start": 1709041934686,
+      "end": 1709041934686,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1708988597271,
-      "end": 1708988597271,
+      "start": 1709041934687,
+      "end": 1709041934687,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
       "result": "import { default as __nuxt_component_0 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsTocLinks.vue\";\nimport { useContent } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/composables/content';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"DocsToc\",\n  __ssrInlineRender: true,\n  emits: [\"move\"],\n  setup(__props, { emit: __emit }) {\n    const { toc } = useContent();\n    const emit = __emit;\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_DocsTocLinks = __nuxt_component_0;\n      _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"docs-toc\" }, _attrs))} data-v-ebd2b6b2>`);\n      if (_unref(toc)?.links?.length) {\n        _push(`<!--[--><div class=\"docs-toc-title\" data-v-ebd2b6b2><span data-v-ebd2b6b2>Table of Contents</span></div>`);\n        _push(_ssrRenderComponent(_component_DocsTocLinks, {\n          links: _unref(toc).links,\n          onMove: ($event) => emit(\"move\")\n        }, null, _parent));\n        _push(`<!--]-->`);\n      } else {\n        _push(`<!---->`);\n      }\n      _push(`</div>`);\n    };\n  }\n});\n",
-      "start": 1708988597271,
-      "end": 1708988597272,
+      "start": 1709041934687,
+      "end": 1709041934688,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -301,20 +301,20 @@
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708988597273,
-      "end": 1708988597273,
+      "start": 1709041934690,
+      "end": 1709041934691,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708988597274,
-      "end": 1708988597274,
+      "start": 1709041934691,
+      "end": 1709041934691,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708988597274,
-      "end": 1708988597274,
+      "start": 1709041934691,
+      "end": 1709041934691,
       "order": "normal"
     }
   ]

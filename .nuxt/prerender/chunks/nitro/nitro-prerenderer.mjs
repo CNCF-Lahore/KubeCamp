@@ -138,7 +138,7 @@ const appConfig3 = defineAppConfig({});
 
 const inlineAppConfig = {
   "nuxt": {
-    "buildId": "e6182041-4e18-4689-93aa-811c77a19cb7"
+    "buildId": "aa193035-e743-46c8-9bcf-97e62e79b82e"
   }
 };
 
@@ -233,7 +233,7 @@ const _inlineRuntimeConfig = {
     "content": {
       "locales": [],
       "defaultLocale": "",
-      "integrity": 1708988577835,
+      "integrity": 1709041909190,
       "experimental": {
         "stripQueryParameters": false,
         "advanceQuery": false,
@@ -10634,8 +10634,8 @@ const components = {
                                     ],
                                     "schema": "boolean"
                                   },
-                                  "__@match@7850": {
-                                    "name": "__@match@7850",
+                                  "__@match@7844": {
+                                    "name": "__@match@7844",
                                     "global": false,
                                     "description": "Matches a string with this regular expression, and returns an array containing the results of\nthat search.",
                                     "tags": [
@@ -10661,8 +10661,8 @@ const components = {
                                       "schema": []
                                     }
                                   },
-                                  "__@replace@7852": {
-                                    "name": "__@replace@7852",
+                                  "__@replace@7846": {
+                                    "name": "__@replace@7846",
                                     "global": false,
                                     "description": "Replaces text in a string, using this regular expression.",
                                     "tags": [
@@ -10703,8 +10703,8 @@ const components = {
                                     ],
                                     "schema": "{ (string: string, replaceValue: string): string; (string: string, replacer: (substring: string, ...args: any[]) => string): string; }"
                                   },
-                                  "__@search@7855": {
-                                    "name": "__@search@7855",
+                                  "__@search@7849": {
+                                    "name": "__@search@7849",
                                     "global": false,
                                     "description": "Finds the position beginning first substring match in a regular expression search\nusing this regular expression.",
                                     "tags": [
@@ -10730,8 +10730,8 @@ const components = {
                                       "schema": []
                                     }
                                   },
-                                  "__@split@7857": {
-                                    "name": "__@split@7857",
+                                  "__@split@7851": {
+                                    "name": "__@split@7851",
                                     "global": false,
                                     "description": "Returns an array of substrings that were delimited by strings in the original input that\nmatch against this regular expression.\n\nIf the regular expression contains capturing parentheses, then each time this\nregular expression matches, the results (including any undefined results) of the\ncapturing parentheses are spliced.",
                                     "tags": [
@@ -10761,8 +10761,8 @@ const components = {
                                       "schema": []
                                     }
                                   },
-                                  "__@matchAll@7859": {
-                                    "name": "__@matchAll@7859",
+                                  "__@matchAll@7853": {
+                                    "name": "__@matchAll@7853",
                                     "global": false,
                                     "description": "Matches a string with this regular expression, and returns an iterable of matches\ncontaining the results of that search.",
                                     "tags": [
@@ -12160,6 +12160,36 @@ const components = {
           }
         },
         {
+          "name": "path",
+          "type": "string",
+          "description": "The path of the content to load from content source.",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
+              "range": [
+                3983,
+                4099
+              ]
+            }
+          ],
+          "schema": "string"
+        },
+        {
+          "name": "query",
+          "type": "undefined",
+          "description": "A query builder params object to be passed to <ContentQuery /> component.",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
+              "range": [
+                4217,
+                4345
+              ]
+            }
+          ],
+          "schema": "undefined"
+        },
+        {
           "name": "tag",
           "type": "string",
           "description": "The tag to use for the renderer element if it is used.",
@@ -12195,36 +12225,6 @@ const components = {
               "true"
             ]
           }
-        },
-        {
-          "name": "path",
-          "type": "string",
-          "description": "The path of the content to load from content source.",
-          "declarations": [
-            {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
-              "range": [
-                3983,
-                4099
-              ]
-            }
-          ],
-          "schema": "string"
-        },
-        {
-          "name": "query",
-          "type": "undefined",
-          "description": "A query builder params object to be passed to <ContentQuery /> component.",
-          "declarations": [
-            {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
-              "range": [
-                4217,
-                4345
-              ]
-            }
-          ],
-          "schema": "undefined"
         },
         {
           "name": "head",
@@ -12903,8 +12903,8 @@ const components = {
                                     ],
                                     "schema": "boolean"
                                   },
-                                  "__@match@7850": {
-                                    "name": "__@match@7850",
+                                  "__@match@7844": {
+                                    "name": "__@match@7844",
                                     "global": false,
                                     "description": "Matches a string with this regular expression, and returns an array containing the results of\nthat search.",
                                     "tags": [
@@ -12930,8 +12930,8 @@ const components = {
                                       "schema": []
                                     }
                                   },
-                                  "__@replace@7852": {
-                                    "name": "__@replace@7852",
+                                  "__@replace@7846": {
+                                    "name": "__@replace@7846",
                                     "global": false,
                                     "description": "Replaces text in a string, using this regular expression.",
                                     "tags": [
@@ -12972,8 +12972,8 @@ const components = {
                                     ],
                                     "schema": "{ (string: string, replaceValue: string): string; (string: string, replacer: (substring: string, ...args: any[]) => string): string; }"
                                   },
-                                  "__@search@7855": {
-                                    "name": "__@search@7855",
+                                  "__@search@7849": {
+                                    "name": "__@search@7849",
                                     "global": false,
                                     "description": "Finds the position beginning first substring match in a regular expression search\nusing this regular expression.",
                                     "tags": [
@@ -12999,8 +12999,8 @@ const components = {
                                       "schema": []
                                     }
                                   },
-                                  "__@split@7857": {
-                                    "name": "__@split@7857",
+                                  "__@split@7851": {
+                                    "name": "__@split@7851",
                                     "global": false,
                                     "description": "Returns an array of substrings that were delimited by strings in the original input that\nmatch against this regular expression.\n\nIf the regular expression contains capturing parentheses, then each time this\nregular expression matches, the results (including any undefined results) of the\ncapturing parentheses are spliced.",
                                     "tags": [
@@ -13030,8 +13030,8 @@ const components = {
                                       "schema": []
                                     }
                                   },
-                                  "__@matchAll@7859": {
-                                    "name": "__@matchAll@7859",
+                                  "__@matchAll@7853": {
+                                    "name": "__@matchAll@7853",
                                     "global": false,
                                     "description": "Matches a string with this regular expression, and returns an iterable of matches\ncontaining the results of that search.",
                                     "tags": [
@@ -17123,25 +17123,6 @@ const components = {
           "default": "\"div\""
         },
         {
-          "name": "components",
-          "global": false,
-          "description": "The map of custom components to use for rendering.",
-          "tags": [],
-          "required": false,
-          "type": "Record<string, any>",
-          "declarations": [
-            {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
-              "range": [
-                675,
-                734
-              ]
-            }
-          ],
-          "schema": "Record<string, any>",
-          "default": "{}"
-        },
-        {
           "name": "data",
           "global": false,
           "description": "",
@@ -17154,6 +17135,25 @@ const components = {
               "range": [
                 739,
                 792
+              ]
+            }
+          ],
+          "schema": "Record<string, any>",
+          "default": "{}"
+        },
+        {
+          "name": "components",
+          "global": false,
+          "description": "The map of custom components to use for rendering.",
+          "tags": [],
+          "required": false,
+          "type": "Record<string, any>",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
+              "range": [
+                675,
+                734
               ]
             }
           ],
@@ -17228,6 +17228,21 @@ const components = {
           }
         },
         {
+          "name": "data",
+          "type": "Record<string, any>",
+          "description": "",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
+              "range": [
+                739,
+                792
+              ]
+            }
+          ],
+          "schema": "Record<string, any>"
+        },
+        {
           "name": "value",
           "type": "Record<string, any>",
           "description": "Content to render",
@@ -17252,21 +17267,6 @@ const components = {
               "range": [
                 675,
                 734
-              ]
-            }
-          ],
-          "schema": "Record<string, any>"
-        },
-        {
-          "name": "data",
-          "type": "Record<string, any>",
-          "description": "",
-          "declarations": [
-            {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
-              "range": [
-                739,
-                792
               ]
             }
           ],
@@ -21847,7 +21847,7 @@ const handlers = [
   { route: '/api/_content/query/:qid/**:params', handler: _rSvadi, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/query/:qid', handler: _rSvadi, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/query', handler: _rSvadi, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/cache.1708988577835.json', handler: _AD4g7o, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/cache.1709041909190.json', handler: _AD4g7o, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/navigation/:qid/**:params', handler: _QdE0th, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/navigation/:qid', handler: _QdE0th, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/navigation', handler: _QdE0th, lazy: false, middleware: false, method: "get" },

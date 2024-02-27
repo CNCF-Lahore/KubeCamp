@@ -4,8 +4,8 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\nimport { useRuntimeConfig, useContent, useContentHead, useRequestEvent } from '#imports'\nimport type { LayoutKey } from '#build/types/layouts'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'document-driven',\n  __ssrInlineRender: true,\n  setup(__props) {\n\nconst { contentHead } = useRuntimeConfig().public.content\nconst { page, layout } = useContent()\n\n// Page not found, set correct status code on SSR\nif (!(page as any).value && process.server) {\n  const event = useRequestEvent()\n  event.res.statusCode = 404\n}\n\nif (contentHead) {\n  useContentHead(page)\n}\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_NuxtLayout = _resolveComponent(\"NuxtLayout\")!\n  const _component_ContentRenderer = _resolveComponent(\"ContentRenderer\")!\n  const _component_DocumentDrivenEmpty = _resolveComponent(\"DocumentDrivenEmpty\")!\n  const _component_DocumentDrivenNotFound = _resolveComponent(\"DocumentDrivenNotFound\")!\n\n  _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"document-driven-page\" }, _attrs))}>`)\n  _push(_ssrRenderComponent(_component_NuxtLayout, {\n    name: _unref(layout) as LayoutKey || 'default'\n  }, {\n    default: _withCtx((_, _push, _parent, _scopeId) => {\n      if (_push) {\n        if (_unref(page)) {\n          _push(_ssrRenderComponent(_component_ContentRenderer, {\n            key: (_unref(page) as any)._id,\n            value: _unref(page)\n          }, {\n            empty: _withCtx(({ value }, _push, _parent, _scopeId) => {\n              if (_push) {\n                _push(_ssrRenderComponent(_component_DocumentDrivenEmpty, { value: value }, null, _parent, _scopeId))\n              } else {\n                return [\n                  _createVNode(_component_DocumentDrivenEmpty, { value: value }, null, 8, [\"value\"])\n                ]\n              }\n            }),\n            _: 1\n          }, _parent, _scopeId))\n        } else {\n          _push(_ssrRenderComponent(_component_DocumentDrivenNotFound, null, null, _parent, _scopeId))\n        }\n      } else {\n        return [\n          (_unref(page))\n            ? (_openBlock(), _createBlock(_component_ContentRenderer, {\n                key: (_unref(page) as any)._id,\n                value: _unref(page)\n              }, {\n                empty: _withCtx(({ value }) => [\n                  _createVNode(_component_DocumentDrivenEmpty, { value: value }, null, 8, [\"value\"])\n                ]),\n                _: 1\n              }, 8, [\"value\"]))\n            : (_openBlock(), _createBlock(_component_DocumentDrivenNotFound, { key: 1 }))\n        ]\n      }\n    }),\n    _: 1\n  }, _parent))\n  _push(`</div>`)\n}\n}\n\n})",
-      "start": 1708988597408,
-      "end": 1708988597408,
+      "start": 1709041935403,
+      "end": 1709041935403,
       "sourcemaps": {
         "version": 3,
         "sources": [
@@ -20,71 +20,71 @@
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708988597408,
-      "end": 1708988597408,
+      "start": 1709041935403,
+      "end": 1709041935403,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708988597408,
-      "end": 1708988597408,
+      "start": 1709041935403,
+      "end": 1709041935403,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708988597408,
-      "end": 1708988597408,
+      "start": 1709041935403,
+      "end": 1709041935403,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708988597408,
-      "end": 1708988597408,
+      "start": 1709041935403,
+      "end": 1709041935403,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\nimport { useRuntimeConfig, useContent, useContentHead, useRequestEvent } from '#imports'\nimport type { LayoutKey } from '#build/types/layouts'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'document-driven',\n  __ssrInlineRender: true,\n  setup(__props) {\n\nconst { contentHead } = useRuntimeConfig().public.content\nconst { page, layout } = useContent()\n\n// Page not found, set correct status code on SSR\nif (!(page as any).value && process.server) {\n  const event = useRequestEvent()\n  event.res.statusCode = 404\n}\n\nif (contentHead) {\n  useContentHead(page)\n}\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_NuxtLayout = _resolveComponent(\"NuxtLayout\")!\n  const _component_ContentRenderer = _resolveComponent(\"ContentRenderer\")!\n  const _component_DocumentDrivenEmpty = _resolveComponent(\"DocumentDrivenEmpty\")!\n  const _component_DocumentDrivenNotFound = _resolveComponent(\"DocumentDrivenNotFound\")!\n\n  _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"document-driven-page\" }, _attrs))}>`)\n  _push(_ssrRenderComponent(_component_NuxtLayout, {\n    name: _unref(layout) as LayoutKey || 'default'\n  }, {\n    default: _withCtx((_, _push, _parent, _scopeId) => {\n      if (_push) {\n        if (_unref(page)) {\n          _push(_ssrRenderComponent(_component_ContentRenderer, {\n            key: (_unref(page) as any)._id,\n            value: _unref(page)\n          }, {\n            empty: _withCtx(({ value }, _push, _parent, _scopeId) => {\n              if (_push) {\n                _push(_ssrRenderComponent(_component_DocumentDrivenEmpty, { value: value }, null, _parent, _scopeId))\n              } else {\n                return [\n                  _createVNode(_component_DocumentDrivenEmpty, { value: value }, null, 8, [\"value\"])\n                ]\n              }\n            }),\n            _: 1\n          }, _parent, _scopeId))\n        } else {\n          _push(_ssrRenderComponent(_component_DocumentDrivenNotFound, null, null, _parent, _scopeId))\n        }\n      } else {\n        return [\n          (_unref(page))\n            ? (_openBlock(), _createBlock(_component_ContentRenderer, {\n                key: (_unref(page) as any)._id,\n                value: _unref(page)\n              }, {\n                empty: _withCtx(({ value }) => [\n                  _createVNode(_component_DocumentDrivenEmpty, { value: value }, null, 8, [\"value\"])\n                ]),\n                _: 1\n              }, 8, [\"value\"]))\n            : (_openBlock(), _createBlock(_component_DocumentDrivenNotFound, { key: 1 }))\n        ]\n      }\n    }),\n    _: 1\n  }, _parent))\n  _push(`</div>`)\n}\n}\n\n})",
-      "start": 1708988597408,
-      "end": 1708988597408,
+      "start": 1709041935404,
+      "end": 1709041935404,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\nimport { useRuntimeConfig, useContent, useContentHead, useRequestEvent } from '#imports'\nimport type { LayoutKey } from '#build/types/layouts'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'document-driven',\n  __ssrInlineRender: true,\n  setup(__props) {\n\nconst { contentHead } = useRuntimeConfig().public.content\nconst { page, layout } = useContent()\n\n// Page not found, set correct status code on SSR\nif (!(page as any).value && process.server) {\n  const event = useRequestEvent()\n  event.res.statusCode = 404\n}\n\nif (contentHead) {\n  useContentHead(page)\n}\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_NuxtLayout = _resolveComponent(\"NuxtLayout\")!\n  const _component_ContentRenderer = _resolveComponent(\"ContentRenderer\")!\n  const _component_DocumentDrivenEmpty = _resolveComponent(\"DocumentDrivenEmpty\")!\n  const _component_DocumentDrivenNotFound = _resolveComponent(\"DocumentDrivenNotFound\")!\n\n  _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"document-driven-page\" }, _attrs))}>`)\n  _push(_ssrRenderComponent(_component_NuxtLayout, {\n    name: _unref(layout) as LayoutKey || 'default'\n  }, {\n    default: _withCtx((_, _push, _parent, _scopeId) => {\n      if (_push) {\n        if (_unref(page)) {\n          _push(_ssrRenderComponent(_component_ContentRenderer, {\n            key: (_unref(page) as any)._id,\n            value: _unref(page)\n          }, {\n            empty: _withCtx(({ value }, _push, _parent, _scopeId) => {\n              if (_push) {\n                _push(_ssrRenderComponent(_component_DocumentDrivenEmpty, { value: value }, null, _parent, _scopeId))\n              } else {\n                return [\n                  _createVNode(_component_DocumentDrivenEmpty, { value: value }, null, 8, [\"value\"])\n                ]\n              }\n            }),\n            _: 1\n          }, _parent, _scopeId))\n        } else {\n          _push(_ssrRenderComponent(_component_DocumentDrivenNotFound, null, null, _parent, _scopeId))\n        }\n      } else {\n        return [\n          (_unref(page))\n            ? (_openBlock(), _createBlock(_component_ContentRenderer, {\n                key: (_unref(page) as any)._id,\n                value: _unref(page)\n              }, {\n                empty: _withCtx(({ value }) => [\n                  _createVNode(_component_DocumentDrivenEmpty, { value: value }, null, 8, [\"value\"])\n                ]),\n                _: 1\n              }, 8, [\"value\"]))\n            : (_openBlock(), _createBlock(_component_DocumentDrivenNotFound, { key: 1 }))\n        ]\n      }\n    }),\n    _: 1\n  }, _parent))\n  _push(`</div>`)\n}\n}\n\n})",
-      "start": 1708988597408,
-      "end": 1708988597408,
+      "start": 1709041935404,
+      "end": 1709041935404,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708988597408,
-      "end": 1708988597408,
+      "start": 1709041935404,
+      "end": 1709041935404,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708988597408,
-      "end": 1708988597408,
+      "start": 1709041935404,
+      "end": 1709041935404,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708988597408,
-      "end": 1708988597408,
+      "start": 1709041935404,
+      "end": 1709041935404,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708988597408,
-      "end": 1708988597408,
+      "start": 1709041935404,
+      "end": 1709041935404,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createBlock as _createBlock, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nimport { useRuntimeConfig, useContent, useContentHead, useRequestEvent } from \"#imports\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"document-driven\",\n  __ssrInlineRender: true,\n  setup(__props) {\n    const { contentHead } = useRuntimeConfig().public.content;\n    const { page, layout } = useContent();\n    if (!page.value && process.server) {\n      const event = useRequestEvent();\n      event.res.statusCode = 404;\n    }\n    if (contentHead) {\n      useContentHead(page);\n    }\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_NuxtLayout = _resolveComponent(\"NuxtLayout\");\n      const _component_ContentRenderer = _resolveComponent(\"ContentRenderer\");\n      const _component_DocumentDrivenEmpty = _resolveComponent(\"DocumentDrivenEmpty\");\n      const _component_DocumentDrivenNotFound = _resolveComponent(\"DocumentDrivenNotFound\");\n      _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"document-driven-page\" }, _attrs))}>`);\n      _push(_ssrRenderComponent(_component_NuxtLayout, {\n        name: _unref(layout) || \"default\"\n      }, {\n        default: _withCtx((_, _push2, _parent2, _scopeId) => {\n          if (_push2) {\n            if (_unref(page)) {\n              _push2(_ssrRenderComponent(_component_ContentRenderer, {\n                key: _unref(page)._id,\n                value: _unref(page)\n              }, {\n                empty: _withCtx(({ value }, _push3, _parent3, _scopeId2) => {\n                  if (_push3) {\n                    _push3(_ssrRenderComponent(_component_DocumentDrivenEmpty, { value }, null, _parent3, _scopeId2));\n                  } else {\n                    return [\n                      _createVNode(_component_DocumentDrivenEmpty, { value }, null, 8, [\"value\"])\n                    ];\n                  }\n                }),\n                _: 1\n              }, _parent2, _scopeId));\n            } else {\n              _push2(_ssrRenderComponent(_component_DocumentDrivenNotFound, null, null, _parent2, _scopeId));\n            }\n          } else {\n            return [\n              _unref(page) ? (_openBlock(), _createBlock(_component_ContentRenderer, {\n                key: _unref(page)._id,\n                value: _unref(page)\n              }, {\n                empty: _withCtx(({ value }) => [\n                  _createVNode(_component_DocumentDrivenEmpty, { value }, null, 8, [\"value\"])\n                ]),\n                _: 1\n              }, 8, [\"value\"])) : (_openBlock(), _createBlock(_component_DocumentDrivenNotFound, { key: 1 }))\n            ];\n          }\n        }),\n        _: 1\n      }, _parent));\n      _push(`</div>`);\n    };\n  }\n});\n",
-      "start": 1708988597408,
-      "end": 1708988597515,
+      "start": 1709041935404,
+      "end": 1709041935492,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -104,137 +104,137 @@
     },
     {
       "name": "vite:json",
-      "start": 1708988597515,
-      "end": 1708988597515,
+      "start": 1709041935492,
+      "end": 1709041935492,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708988597515,
-      "end": 1708988597515,
+      "start": 1709041935492,
+      "end": 1709041935492,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708988597515,
-      "end": 1708988597515,
+      "start": 1709041935492,
+      "end": 1709041935492,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708988597515,
-      "end": 1708988597515,
+      "start": 1709041935492,
+      "end": 1709041935492,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708988597516,
-      "end": 1708988597516,
+      "start": 1709041935493,
+      "end": 1709041935493,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708988597516,
-      "end": 1708988597516,
+      "start": 1709041935493,
+      "end": 1709041935493,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708988597516,
-      "end": 1708988597516,
+      "start": 1709041935493,
+      "end": 1709041935493,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708988597516,
-      "end": 1708988597516,
+      "start": 1709041935493,
+      "end": 1709041935493,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708988597516,
-      "end": 1708988597517,
+      "start": 1709041935494,
+      "end": 1709041935494,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708988597517,
-      "end": 1708988597517,
+      "start": 1709041935494,
+      "end": 1709041935494,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708988597517,
-      "end": 1708988597518,
+      "start": 1709041935494,
+      "end": 1709041935495,
       "order": "normal"
     },
     {
       "name": "vite:define",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createBlock as _createBlock, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nimport { useRuntimeConfig, useContent, useContentHead, useRequestEvent } from \"#imports\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"document-driven\",\n  __ssrInlineRender: true,\n  setup(__props) {\n    const { contentHead } = useRuntimeConfig().public.content;\n    const { page, layout } = useContent();\n    if (!page.value && true) {\n      const event = useRequestEvent();\n      event.res.statusCode = 404;\n    }\n    if (contentHead) {\n      useContentHead(page);\n    }\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_NuxtLayout = _resolveComponent(\"NuxtLayout\");\n      const _component_ContentRenderer = _resolveComponent(\"ContentRenderer\");\n      const _component_DocumentDrivenEmpty = _resolveComponent(\"DocumentDrivenEmpty\");\n      const _component_DocumentDrivenNotFound = _resolveComponent(\"DocumentDrivenNotFound\");\n      _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"document-driven-page\" }, _attrs))}>`);\n      _push(_ssrRenderComponent(_component_NuxtLayout, {\n        name: _unref(layout) || \"default\"\n      }, {\n        default: _withCtx((_, _push2, _parent2, _scopeId) => {\n          if (_push2) {\n            if (_unref(page)) {\n              _push2(_ssrRenderComponent(_component_ContentRenderer, {\n                key: _unref(page)._id,\n                value: _unref(page)\n              }, {\n                empty: _withCtx(({ value }, _push3, _parent3, _scopeId2) => {\n                  if (_push3) {\n                    _push3(_ssrRenderComponent(_component_DocumentDrivenEmpty, { value }, null, _parent3, _scopeId2));\n                  } else {\n                    return [\n                      _createVNode(_component_DocumentDrivenEmpty, { value }, null, 8, [\"value\"])\n                    ];\n                  }\n                }),\n                _: 1\n              }, _parent2, _scopeId));\n            } else {\n              _push2(_ssrRenderComponent(_component_DocumentDrivenNotFound, null, null, _parent2, _scopeId));\n            }\n          } else {\n            return [\n              _unref(page) ? (_openBlock(), _createBlock(_component_ContentRenderer, {\n                key: _unref(page)._id,\n                value: _unref(page)\n              }, {\n                empty: _withCtx(({ value }) => [\n                  _createVNode(_component_DocumentDrivenEmpty, { value }, null, 8, [\"value\"])\n                ]),\n                _: 1\n              }, 8, [\"value\"])) : (_openBlock(), _createBlock(_component_DocumentDrivenNotFound, { key: 1 }))\n            ];\n          }\n        }),\n        _: 1\n      }, _parent));\n      _push(`</div>`);\n    };\n  }\n});\n",
-      "start": 1708988597518,
-      "end": 1708988597550,
+      "start": 1709041935495,
+      "end": 1709041935608,
       "order": "normal",
       "sourcemaps": "{\n  \"version\": 3,\n  \"sources\": [\"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/pages/document-driven.vue?vue&type=script&setup=true&lang.ts\"],\n  \"sourcesContent\": [\"import { defineComponent as _defineComponent } from \\\"vue\\\";\\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createBlock as _createBlock, mergeProps as _mergeProps } from \\\"vue\\\";\\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \\\"vue/server-renderer\\\";\\nimport { useRuntimeConfig, useContent, useContentHead, useRequestEvent } from \\\"#imports\\\";\\nexport default /* @__PURE__ */ _defineComponent({\\n  __name: \\\"document-driven\\\",\\n  __ssrInlineRender: true,\\n  setup(__props) {\\n    const { contentHead } = useRuntimeConfig().public.content;\\n    const { page, layout } = useContent();\\n    if (!page.value && process.server) {\\n      const event = useRequestEvent();\\n      event.res.statusCode = 404;\\n    }\\n    if (contentHead) {\\n      useContentHead(page);\\n    }\\n    return (_ctx, _push, _parent, _attrs) => {\\n      const _component_NuxtLayout = _resolveComponent(\\\"NuxtLayout\\\");\\n      const _component_ContentRenderer = _resolveComponent(\\\"ContentRenderer\\\");\\n      const _component_DocumentDrivenEmpty = _resolveComponent(\\\"DocumentDrivenEmpty\\\");\\n      const _component_DocumentDrivenNotFound = _resolveComponent(\\\"DocumentDrivenNotFound\\\");\\n      _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \\\"document-driven-page\\\" }, _attrs))}>`);\\n      _push(_ssrRenderComponent(_component_NuxtLayout, {\\n        name: _unref(layout) || \\\"default\\\"\\n      }, {\\n        default: _withCtx((_, _push2, _parent2, _scopeId) => {\\n          if (_push2) {\\n            if (_unref(page)) {\\n              _push2(_ssrRenderComponent(_component_ContentRenderer, {\\n                key: _unref(page)._id,\\n                value: _unref(page)\\n              }, {\\n                empty: _withCtx(({ value }, _push3, _parent3, _scopeId2) => {\\n                  if (_push3) {\\n                    _push3(_ssrRenderComponent(_component_DocumentDrivenEmpty, { value }, null, _parent3, _scopeId2));\\n                  } else {\\n                    return [\\n                      _createVNode(_component_DocumentDrivenEmpty, { value }, null, 8, [\\\"value\\\"])\\n                    ];\\n                  }\\n                }),\\n                _: 1\\n              }, _parent2, _scopeId));\\n            } else {\\n              _push2(_ssrRenderComponent(_component_DocumentDrivenNotFound, null, null, _parent2, _scopeId));\\n            }\\n          } else {\\n            return [\\n              _unref(page) ? (_openBlock(), _createBlock(_component_ContentRenderer, {\\n                key: _unref(page)._id,\\n                value: _unref(page)\\n              }, {\\n                empty: _withCtx(({ value }) => [\\n                  _createVNode(_component_DocumentDrivenEmpty, { value }, null, 8, [\\\"value\\\"])\\n                ]),\\n                _: 1\\n              }, 8, [\\\"value\\\"])) : (_openBlock(), _createBlock(_component_DocumentDrivenNotFound, { key: 1 }))\\n            ];\\n          }\\n        }),\\n        _: 1\\n      }, _parent));\\n      _push(`</div>`);\\n    };\\n  }\\n});\\n\"],\n  \"mappings\": \"AAAA,SAAS,mBAAmB,wBAAwB;AACpD,SAAS,SAAS,QAAQ,oBAAoB,mBAAmB,WAAW,UAAU,eAAe,cAAc,aAAa,YAAY,eAAe,cAAc,cAAc,mBAAmB;AAC1M,SAAS,sBAAsB,qBAAqB,kBAAkB,uBAAuB;AAC7F,SAAS,kBAAkB,YAAY,gBAAgB,uBAAuB;AAC9E,eAA+B,iCAAiB;AAAA,EAC9C,QAAQ;AAAA,EACR,mBAAmB;AAAA,EACnB,MAAM,SAAS;AACb,UAAM,EAAE,YAAY,IAAI,iBAAiB,EAAE,OAAO;AAClD,UAAM,EAAE,MAAM,OAAO,IAAI,WAAW;AACpC,QAAI,CAAC,KAAK,SAAS,MAAgB;AACjC,YAAM,QAAQ,gBAAgB;AAC9B,YAAM,IAAI,aAAa;AAAA,IACzB;AACA,QAAI,aAAa;AACf,qBAAe,IAAI;AAAA,IACrB;AACA,WAAO,CAAC,MAAM,OAAO,SAAS,WAAW;AACvC,YAAM,wBAAwB,kBAAkB,YAAY;AAC5D,YAAM,6BAA6B,kBAAkB,iBAAiB;AACtE,YAAM,iCAAiC,kBAAkB,qBAAqB;AAC9E,YAAM,oCAAoC,kBAAkB,wBAAwB;AACpF,YAAM,OAAO,gBAAgB,YAAY,EAAE,OAAO,uBAAuB,GAAG,MAAM,CAAC,CAAC,GAAG;AACvF,YAAM,oBAAoB,uBAAuB;AAAA,QAC/C,MAAM,OAAO,MAAM,KAAK;AAAA,MAC1B,GAAG;AAAA,QACD,SAAS,SAAS,CAAC,GAAG,QAAQ,UAAU,aAAa;AACnD,cAAI,QAAQ;AACV,gBAAI,OAAO,IAAI,GAAG;AAChB,qBAAO,oBAAoB,4BAA4B;AAAA,gBACrD,KAAK,OAAO,IAAI,EAAE;AAAA,gBAClB,OAAO,OAAO,IAAI;AAAA,cACpB,GAAG;AAAA,gBACD,OAAO,SAAS,CAAC,EAAE,MAAM,GAAG,QAAQ,UAAU,cAAc;AAC1D,sBAAI,QAAQ;AACV,2BAAO,oBAAoB,gCAAgC,EAAE,MAAM,GAAG,MAAM,UAAU,SAAS,CAAC;AAAA,kBAClG,OAAO;AACL,2BAAO;AAAA,sBACL,aAAa,gCAAgC,EAAE,MAAM,GAAG,MAAM,GAAG,CAAC,OAAO,CAAC;AAAA,oBAC5E;AAAA,kBACF;AAAA,gBACF,CAAC;AAAA,gBACD,GAAG;AAAA,cACL,GAAG,UAAU,QAAQ,CAAC;AAAA,YACxB,OAAO;AACL,qBAAO,oBAAoB,mCAAmC,MAAM,MAAM,UAAU,QAAQ,CAAC;AAAA,YAC/F;AAAA,UACF,OAAO;AACL,mBAAO;AAAA,cACL,OAAO,IAAI,KAAK,WAAW,GAAG,aAAa,4BAA4B;AAAA,gBACrE,KAAK,OAAO,IAAI,EAAE;AAAA,gBAClB,OAAO,OAAO,IAAI;AAAA,cACpB,GAAG;AAAA,gBACD,OAAO,SAAS,CAAC,EAAE,MAAM,MAAM;AAAA,kBAC7B,aAAa,gCAAgC,EAAE,MAAM,GAAG,MAAM,GAAG,CAAC,OAAO,CAAC;AAAA,gBAC5E,CAAC;AAAA,gBACD,GAAG;AAAA,cACL,GAAG,GAAG,CAAC,OAAO,CAAC,MAAM,WAAW,GAAG,aAAa,mCAAmC,EAAE,KAAK,EAAE,CAAC;AAAA,YAC/F;AAAA,UACF;AAAA,QACF,CAAC;AAAA,QACD,GAAG;AAAA,MACL,GAAG,OAAO,CAAC;AACX,YAAM,QAAQ;AAAA,IAChB;AAAA,EACF;AACF,CAAC;\",\n  \"names\": []\n}\n"
     },
     {
       "name": "vite:css-post",
-      "start": 1708988597550,
-      "end": 1708988597550,
+      "start": 1709041935608,
+      "end": 1709041935608,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708988597550,
-      "end": 1708988597550,
+      "start": 1709041935608,
+      "end": 1709041935608,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708988597550,
-      "end": 1708988597550,
+      "start": 1709041935608,
+      "end": 1709041935608,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708988597550,
-      "end": 1708988597550,
+      "start": 1709041935608,
+      "end": 1709041935608,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708988597550,
-      "end": 1708988597550,
+      "start": 1709041935608,
+      "end": 1709041935610,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708988597550,
-      "end": 1708988597550,
+      "start": 1709041935610,
+      "end": 1709041935610,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708988597550,
-      "end": 1708988597550,
+      "start": 1709041935610,
+      "end": 1709041935610,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708988597551,
-      "end": 1708988597551,
+      "start": 1709041935610,
+      "end": 1709041935610,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708988597551,
-      "end": 1708988597551,
+      "start": 1709041935610,
+      "end": 1709041935610,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { useRuntimeConfig } from '#app/nuxt';\nimport { useContent } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/composables/content';\nimport { useContentHead } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/composables/head';\nimport { useRequestEvent } from '#app/composables/ssr';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createBlock as _createBlock, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"document-driven\",\n  __ssrInlineRender: true,\n  setup(__props) {\n    const { contentHead } = useRuntimeConfig().public.content;\n    const { page, layout } = useContent();\n    if (!page.value && true) {\n      const event = useRequestEvent();\n      event.res.statusCode = 404;\n    }\n    if (contentHead) {\n      useContentHead(page);\n    }\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_NuxtLayout = _resolveComponent(\"NuxtLayout\");\n      const _component_ContentRenderer = _resolveComponent(\"ContentRenderer\");\n      const _component_DocumentDrivenEmpty = _resolveComponent(\"DocumentDrivenEmpty\");\n      const _component_DocumentDrivenNotFound = _resolveComponent(\"DocumentDrivenNotFound\");\n      _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"document-driven-page\" }, _attrs))}>`);\n      _push(_ssrRenderComponent(_component_NuxtLayout, {\n        name: _unref(layout) || \"default\"\n      }, {\n        default: _withCtx((_, _push2, _parent2, _scopeId) => {\n          if (_push2) {\n            if (_unref(page)) {\n              _push2(_ssrRenderComponent(_component_ContentRenderer, {\n                key: _unref(page)._id,\n                value: _unref(page)\n              }, {\n                empty: _withCtx(({ value }, _push3, _parent3, _scopeId2) => {\n                  if (_push3) {\n                    _push3(_ssrRenderComponent(_component_DocumentDrivenEmpty, { value }, null, _parent3, _scopeId2));\n                  } else {\n                    return [\n                      _createVNode(_component_DocumentDrivenEmpty, { value }, null, 8, [\"value\"])\n                    ];\n                  }\n                }),\n                _: 1\n              }, _parent2, _scopeId));\n            } else {\n              _push2(_ssrRenderComponent(_component_DocumentDrivenNotFound, null, null, _parent2, _scopeId));\n            }\n          } else {\n            return [\n              _unref(page) ? (_openBlock(), _createBlock(_component_ContentRenderer, {\n                key: _unref(page)._id,\n                value: _unref(page)\n              }, {\n                empty: _withCtx(({ value }) => [\n                  _createVNode(_component_DocumentDrivenEmpty, { value }, null, 8, [\"value\"])\n                ]),\n                _: 1\n              }, 8, [\"value\"])) : (_openBlock(), _createBlock(_component_DocumentDrivenNotFound, { key: 1 }))\n            ];\n          }\n        }),\n        _: 1\n      }, _parent));\n      _push(`</div>`);\n    };\n  }\n});\n",
-      "start": 1708988597551,
-      "end": 1708988597552,
+      "start": 1709041935611,
+      "end": 1709041935614,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -248,8 +248,8 @@
     {
       "name": "nuxt:imports-transform",
       "result": "import { useRuntimeConfig } from '#app/nuxt';\nimport { useContent } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/composables/content';\nimport { useContentHead } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/composables/head';\nimport { useRequestEvent } from '#app/composables/ssr';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createBlock as _createBlock, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"document-driven\",\n  __ssrInlineRender: true,\n  setup(__props) {\n    const { contentHead } = useRuntimeConfig().public.content;\n    const { page, layout } = useContent();\n    if (!page.value && true) {\n      const event = useRequestEvent();\n      event.res.statusCode = 404;\n    }\n    if (contentHead) {\n      useContentHead(page);\n    }\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_NuxtLayout = _resolveComponent(\"NuxtLayout\");\n      const _component_ContentRenderer = _resolveComponent(\"ContentRenderer\");\n      const _component_DocumentDrivenEmpty = _resolveComponent(\"DocumentDrivenEmpty\");\n      const _component_DocumentDrivenNotFound = _resolveComponent(\"DocumentDrivenNotFound\");\n      _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"document-driven-page\" }, _attrs))}>`);\n      _push(_ssrRenderComponent(_component_NuxtLayout, {\n        name: _unref(layout) || \"default\"\n      }, {\n        default: _withCtx((_, _push2, _parent2, _scopeId) => {\n          if (_push2) {\n            if (_unref(page)) {\n              _push2(_ssrRenderComponent(_component_ContentRenderer, {\n                key: _unref(page)._id,\n                value: _unref(page)\n              }, {\n                empty: _withCtx(({ value }, _push3, _parent3, _scopeId2) => {\n                  if (_push3) {\n                    _push3(_ssrRenderComponent(_component_DocumentDrivenEmpty, { value }, null, _parent3, _scopeId2));\n                  } else {\n                    return [\n                      _createVNode(_component_DocumentDrivenEmpty, { value }, null, 8, [\"value\"])\n                    ];\n                  }\n                }),\n                _: 1\n              }, _parent2, _scopeId));\n            } else {\n              _push2(_ssrRenderComponent(_component_DocumentDrivenNotFound, null, null, _parent2, _scopeId));\n            }\n          } else {\n            return [\n              _unref(page) ? (_openBlock(), _createBlock(_component_ContentRenderer, {\n                key: _unref(page)._id,\n                value: _unref(page)\n              }, {\n                empty: _withCtx(({ value }) => [\n                  _createVNode(_component_DocumentDrivenEmpty, { value }, null, 8, [\"value\"])\n                ]),\n                _: 1\n              }, 8, [\"value\"])) : (_openBlock(), _createBlock(_component_DocumentDrivenNotFound, { key: 1 }))\n            ];\n          }\n        }),\n        _: 1\n      }, _parent));\n      _push(`</div>`);\n    };\n  }\n});\n",
-      "start": 1708988597551,
-      "end": 1708988597552,
+      "start": 1709041935611,
+      "end": 1709041935615,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -262,39 +262,39 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1708988597552,
-      "end": 1708988597552,
+      "start": 1709041935615,
+      "end": 1709041935615,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708988597552,
-      "end": 1708988597552,
+      "start": 1709041935615,
+      "end": 1709041935615,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708988597552,
-      "end": 1708988597552,
+      "start": 1709041935616,
+      "end": 1709041935616,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708988597552,
-      "end": 1708988597552,
+      "start": 1709041935616,
+      "end": 1709041935616,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1708988597552,
-      "end": 1708988597552,
+      "start": 1709041935616,
+      "end": 1709041935616,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
       "result": "import { default as __nuxt_component_0 } from \"/workspace/Kubernetes-Bootcamp/node_modules/nuxt/dist/app/components/nuxt-layout\";\nimport { default as __nuxt_component_1 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.vue\";\nimport { default as __nuxt_component_2 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/DocumentDrivenEmpty.vue\";\nimport { default as __nuxt_component_3 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/DocumentDrivenNotFound.vue\";\nimport { useRuntimeConfig } from '#app/nuxt';\nimport { useContent } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/composables/content';\nimport { useContentHead } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/composables/head';\nimport { useRequestEvent } from '#app/composables/ssr';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createBlock as _createBlock, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"document-driven\",\n  __ssrInlineRender: true,\n  setup(__props) {\n    const { contentHead } = useRuntimeConfig().public.content;\n    const { page, layout } = useContent();\n    if (!page.value && true) {\n      const event = useRequestEvent();\n      event.res.statusCode = 404;\n    }\n    if (contentHead) {\n      useContentHead(page);\n    }\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_NuxtLayout = __nuxt_component_0;\n      const _component_ContentRenderer = __nuxt_component_1;\n      const _component_DocumentDrivenEmpty = __nuxt_component_2;\n      const _component_DocumentDrivenNotFound = __nuxt_component_3;\n      _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"document-driven-page\" }, _attrs))}>`);\n      _push(_ssrRenderComponent(_component_NuxtLayout, {\n        name: _unref(layout) || \"default\"\n      }, {\n        default: _withCtx((_, _push2, _parent2, _scopeId) => {\n          if (_push2) {\n            if (_unref(page)) {\n              _push2(_ssrRenderComponent(_component_ContentRenderer, {\n                key: _unref(page)._id,\n                value: _unref(page)\n              }, {\n                empty: _withCtx(({ value }, _push3, _parent3, _scopeId2) => {\n                  if (_push3) {\n                    _push3(_ssrRenderComponent(_component_DocumentDrivenEmpty, { value }, null, _parent3, _scopeId2));\n                  } else {\n                    return [\n                      _createVNode(_component_DocumentDrivenEmpty, { value }, null, 8, [\"value\"])\n                    ];\n                  }\n                }),\n                _: 1\n              }, _parent2, _scopeId));\n            } else {\n              _push2(_ssrRenderComponent(_component_DocumentDrivenNotFound, null, null, _parent2, _scopeId));\n            }\n          } else {\n            return [\n              _unref(page) ? (_openBlock(), _createBlock(_component_ContentRenderer, {\n                key: _unref(page)._id,\n                value: _unref(page)\n              }, {\n                empty: _withCtx(({ value }) => [\n                  _createVNode(_component_DocumentDrivenEmpty, { value }, null, 8, [\"value\"])\n                ]),\n                _: 1\n              }, 8, [\"value\"])) : (_openBlock(), _createBlock(_component_DocumentDrivenNotFound, { key: 1 }))\n            ];\n          }\n        }),\n        _: 1\n      }, _parent));\n      _push(`</div>`);\n    };\n  }\n});\n",
-      "start": 1708988597552,
-      "end": 1708988597553,
+      "start": 1709041935620,
+      "end": 1709041935621,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -307,20 +307,20 @@
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708988597553,
-      "end": 1708988597553,
+      "start": 1709041935621,
+      "end": 1709041935621,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708988597553,
-      "end": 1708988597553,
+      "start": 1709041935621,
+      "end": 1709041935621,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708988597553,
-      "end": 1708988597553,
+      "start": 1709041935625,
+      "end": 1709041935625,
       "order": "normal"
     }
   ]

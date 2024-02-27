@@ -4,93 +4,93 @@
     {
       "name": "vite:load-fallback",
       "result": "<script setup lang=\"ts\">\nconst { page } = useContent()\nconst { config, tree } = useDocus()\nconst route = useRoute()\n\nconst fallbackValue = (value: string, fallback = true) => {\n  if (typeof page.value?.[value] !== 'undefined') { return page.value[value] }\n  return fallback\n}\n\nconst hasBody = computed(() => !page.value || page.value?.body?.children?.length > 0)\nconst hasToc = computed(() => page.value?.toc !== false && page.value?.body?.toc?.links?.length >= 2)\n\nconst hasAside = computed(() => page.value?.aside !== false && (tree.value?.length > 1 || tree.value?.[0]?.children?.length))\nconst bottom = computed(() => fallbackValue('bottom', true))\nconst isOpen = ref(false)\n\n/*\n** This below is a workaround until Nuxt has a proper support for layouts and Suspense\n*/\nconst asideNav = ref<any>(null)\n\nconst getParentPath = () => route.path.split('/').slice(0, 2).join('/')\nconst asideScroll = useState('asideScroll', () => {\n  return {\n    parentPath: getParentPath(),\n    scrollTop: asideNav.value?.scrollTop || 0\n  }\n})\n\nfunction watchScrollHeight () {\n  if (!asideNav.value) { return }\n  if (asideNav.value.scrollHeight === 0) {\n    setTimeout(watchScrollHeight, 0)\n  }\n  asideNav.value.scrollTop = asideScroll.value.scrollTop\n}\n\nonMounted(() => {\n  if (asideScroll.value.parentPath !== getParentPath()) {\n    asideScroll.value.parentPath = getParentPath()\n    asideScroll.value.scrollTop = 0\n  } else {\n    watchScrollHeight()\n  }\n})\n\nonBeforeUnmount(() => {\n  if (!asideNav.value) { return }\n  asideScroll.value.scrollTop = asideNav.value.scrollTop\n})\n</script>\n\n<template>\n  <Container\n    :fluid=\"config?.main?.fluid\"\n    :padded=\"config?.main?.padded\"\n    class=\"docs-page-content\"\n    :class=\"{\n      fluid: config?.main?.fluid,\n      'has-toc': hasToc,\n      'has-aside': hasAside,\n    }\"\n  >\n    <!-- Aside -->\n    <aside\n      v-if=\"hasAside\"\n      ref=\"asideNav\"\n      class=\"aside-nav\"\n    >\n      <DocsAside class=\"app-aside\" />\n    </aside>\n\n    <!-- Page Body -->\n    <article class=\"page-body\">\n      <slot v-if=\"hasBody\" />\n      <Alert\n        v-else\n        type=\"info\"\n      >\n        Start writing in <ProseCodeInline>content/{{ page._file }}</ProseCodeInline> to see this page taking shape.\n      </Alert>\n      <template v-if=\"hasBody && page && bottom\">\n        <DocsPageBottom />\n        <DocsPrevNext />\n      </template>\n    </article>\n\n    <!-- TOC -->\n    <div\n      v-if=\"hasToc\"\n      class=\"toc\"\n    >\n      <div class=\"toc-wrapper\">\n        <button @click=\"isOpen = !isOpen\">\n          <span class=\"title\">Table of Contents</span>\n          <Icon\n            name=\"heroicons-outline:chevron-right\"\n            class=\"icon\"\n            :class=\"[isOpen && 'rotate']\"\n          />\n        </button>\n\n        <div\n          class=\"docs-toc-wrapper\"\n          :class=\"[isOpen && 'opened']\"\n        >\n          <DocsToc @move=\"isOpen = false\" />\n        </div>\n      </div>\n    </div>\n  </Container>\n</template>\n\n<style scoped lang=\"ts\">\ncss({\n  '.docs-page-content': {\n    position: 'relative',\n    display: 'flex',\n    flexDirection: 'column-reverse',\n    '@lg': {\n      display: 'grid',\n      gap: '{space.8}',\n    },\n    '&.has-toc': {\n      '@lg': {\n        gridTemplateColumns: 'minmax(320px, 1fr) minmax(250px, 250px)'\n      }\n    },\n    '&.has-aside': {\n      '@lg': {\n        gridTemplateColumns: 'minmax(250px, 250px) minmax(320px, 1fr)'\n      }\n    },\n    '&.has-aside.has-toc': {\n      '@lg': {\n        gridTemplateColumns: 'minmax(250px, 250px) minmax(320px, 1fr) minmax(250px, 250px)'\n      }\n    },\n  },\n  '.aside-nav': {\n    display: 'none',\n    overflowY: 'auto',\n    '@lg': {\n      display: 'block',\n      position: 'sticky',\n      top: '{docus.header.height}',\n      // gridColumn: 'span 2/span 2',\n      alignSelf: 'flex-start',\n      height: 'calc(100vh - {docus.header.height})',\n      py: '{space.8}',\n      paddingRight: '{space.8}',\n      '.fluid &&': {\n        borderRight: '1px solid {elements.border.primary.static}',\n      }\n    }\n  },\n  '.page-body': {\n    position: 'relative',\n    display: 'flex',\n    flexDirection: \"column\",\n    flex: '1 1 0%',\n    py: '{space.8}',\n    width: '100%',\n    // maxWidth: '{docus.readableLine}',\n    mx: 'auto',\n    '.has-toc &&': {\n      paddingTop: '{space.12}',\n      '@lg': {\n        paddingTop: '{space.8}',\n      }\n    },\n    '@lg': {\n      marginTop: 0,\n      // gridColumnStart: 2,\n    },\n    // `.not-prose` can be useful if creating <h1> with a component (404 page is an example)\n    ':deep(h1:not(.not-prose):first-child)': {\n      marginTop: 0,\n      fontSize: '{text.4xl.fontSize}',\n      lineHeight: '{text.4xl.lineHeight}',\n      '@sm': {\n        fontSize: '{text.5xl.fontSize}',\n        lineHeight: '{text.5xl.lineHeight}',\n      }\n    },\n    // `.not-prose` can be useful if creating <h1> with a component (404 page is an example)\n    ':deep(h1:not(.not-prose)first-child + p)': {\n      marginTop: 0,\n      marginBottom: '{space.8}',\n      paddingBottom: '{space.8}',\n      borderBottom: '1px solid {elements.border.primary.static}',\n      color: '{color.gray.500}',\n      '@sm': {\n        fontSize: '{text.lg.fontSize}',\n        lineHeight: '{text.lg.lineHeight}',\n      },\n      '@dark': {\n        color: '{color.gray.400}',\n      },\n      a: {\n        color: '{color.gray.700}',\n        '@dark': {\n          color: '{color.gray.200}',\n        },\n        \"&:hover\": {\n          borderColor: '{color.gray.700}'\n        }\n      }\n    },\n    '.docs-prev-next': {\n      marginTop: '{space.4}'\n    }\n  },\n  '.toc': {\n    position: 'sticky',\n    top: '{docus.header.height}',\n    display: 'flex',\n    mx: 'calc(0px - {space.4})',\n    overflow: 'auto',\n    borderBottom: '1px solid {elements.border.primary.static}',\n    '@sm': {\n      mx: 'calc(0px - {space.6})',\n    },\n    '@lg': {\n      mx: 0,\n      alignSelf: 'flex-start',\n      py: '{space.8}',\n      px: '{space.8}',\n      height: 'calc(100vh - {docus.header.height})',\n      maxHeight: 'none',\n      borderBottom: 'none',\n      '.fluid &&': {\n        borderLeft: '1px solid {elements.border.primary.static}',\n      }\n    },\n    '.toc-wrapper': {\n      width: '100%',\n      height: '100%',\n      backdropFilter: '{elements.backdrop.filter}',\n      backgroundColor: '{elements.backdrop.background}',\n      '@lg': {\n        backgroundColor: 'transparent',\n        backdropFilter: 'none'\n      },\n      button: {\n        display: 'flex',\n        alignItems: 'center',\n        width: '100%',\n        height: '100%',\n        py: '{space.4}',\n        px: '{space.4}',\n        '@sm': {\n          px: '{space.6}',\n        },\n        '@lg': {\n          display: 'none'\n        },\n        '.title': {\n          fontSize: '{text.sm.fontSize}',\n          lineHeight: '{text.sm.lineHeight}',\n          fontWeight: '{fontWeight.semibold}',\n          marginRight: '{space.1}',\n        },\n        '.icon': {\n          width: '{space.4}',\n          height: '{space.4}',\n          transition: 'transform 100ms',\n          '&.rotate': {\n            transform: 'rotate(90deg)'\n          }\n        }\n      },\n      '.docs-toc-wrapper': {\n        display: 'none',\n        marginBottom: '{space.4}',\n        '&.opened': {\n          display: 'block',\n          px: '{space.4}',\n          maxHeight: '50vh',\n          overflow: 'auto',\n          '@sm': {\n            px: '{space.6}',\n          },\n          '@lg': {\n            maxHeight: 'none',\n            px: 0,\n          },\n        },\n        '@lg': {\n          marginTop: 0,\n          display: 'block'\n        }\n      }\n    }\n  }\n})\n</style>\n",
-      "start": 1708988594592,
-      "end": 1708988594805,
+      "start": 1709041931666,
+      "end": 1709041931909,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708988594805,
-      "end": 1708988594805,
+      "start": 1709041931909,
+      "end": 1709041931909,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708988594805,
-      "end": 1708988594805,
+      "start": 1709041931909,
+      "end": 1709041931909,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708988594805,
-      "end": 1708988594805,
+      "start": 1709041931909,
+      "end": 1709041931909,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708988594805,
-      "end": 1708988594805,
+      "start": 1709041931909,
+      "end": 1709041931909,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
-      "start": 1708988594805,
-      "end": 1708988594805,
+      "start": 1709041931909,
+      "end": 1709041931909,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
-      "start": 1708988594805,
-      "end": 1708988594805,
+      "start": 1709041931909,
+      "end": 1709041931909,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708988594805,
-      "end": 1708988594805,
+      "start": 1709041931909,
+      "end": 1709041931909,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708988594805,
-      "end": 1708988594805,
+      "start": 1709041931909,
+      "end": 1709041931909,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708988594805,
-      "end": 1708988594805,
+      "start": 1709041931909,
+      "end": 1709041931909,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708988594805,
-      "end": 1708988594805,
+      "start": 1709041931909,
+      "end": 1709041931909,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1708988594805,
-      "end": 1708988594805,
+      "start": 1709041931909,
+      "end": 1709041931909,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1708988594805,
-      "end": 1708988594805,
+      "start": 1709041931909,
+      "end": 1709041931909,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708988594805,
-      "end": 1708988594805,
+      "start": 1709041931909,
+      "end": 1709041931909,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "import _sfc_main from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsPageLayout.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsPageLayout.vue?vue&type=script&setup=true&lang.ts\";\nimport \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsPageLayout.vue?vue&type=style&index=0&scoped=cebd7c77&lang.ts\";\nimport { useSSRContext as __vite_useSSRContext } from \"vue\";\nconst _sfc_setup = _sfc_main.setup;\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext();\n  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add(\"node_modules/@nuxt-themes/docus/components/docs/DocsPageLayout.vue\");\n  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;\n};\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"__scopeId\", \"data-v-cebd7c77\"]]);\n",
-      "start": 1708988594805,
-      "end": 1708988594846,
+      "start": 1709041931910,
+      "end": 1709041931927,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -98,178 +98,178 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708988594846,
-      "end": 1708988594846,
+      "start": 1709041931928,
+      "end": 1709041931928,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708988594846,
-      "end": 1708988594846,
+      "start": 1709041931928,
+      "end": 1709041931928,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708988594846,
-      "end": 1708988594846,
+      "start": 1709041931928,
+      "end": 1709041931928,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708988594847,
-      "end": 1708988594847,
+      "start": 1709041931928,
+      "end": 1709041931928,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708988594847,
-      "end": 1708988594847,
+      "start": 1709041931928,
+      "end": 1709041931928,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
       "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsPageLayout.vue\").then(r => r.default))",
-      "start": 1708988594847,
-      "end": 1708988594847,
+      "start": 1709041931928,
+      "end": 1709041931928,
       "order": "normal",
       "sourcemaps": null
     },
     {
       "name": "replace",
-      "start": 1708988594847,
-      "end": 1708988594847,
+      "start": 1709041931928,
+      "end": 1709041931928,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708988594847,
-      "end": 1708988594848,
+      "start": 1709041931928,
+      "end": 1709041931928,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708988594848,
-      "end": 1708988594848,
+      "start": 1709041931928,
+      "end": 1709041931928,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1708988594848,
-      "end": 1708988594848,
+      "start": 1709041931928,
+      "end": 1709041931928,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708988594848,
-      "end": 1708988594848,
+      "start": 1709041931928,
+      "end": 1709041931928,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708988594848,
-      "end": 1708988594848,
+      "start": 1709041931928,
+      "end": 1709041931928,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708988594848,
-      "end": 1708988594848,
+      "start": 1709041931929,
+      "end": 1709041931929,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708988594848,
-      "end": 1708988594848,
+      "start": 1709041931929,
+      "end": 1709041931929,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708988594848,
-      "end": 1708988594848,
+      "start": 1709041931929,
+      "end": 1709041931929,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708988594848,
-      "end": 1708988594848,
+      "start": 1709041931929,
+      "end": 1709041931929,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708988594849,
-      "end": 1708988594849,
+      "start": 1709041931929,
+      "end": 1709041931929,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708988594849,
-      "end": 1708988594849,
+      "start": 1709041931929,
+      "end": 1709041931929,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708988594849,
-      "end": 1708988594850,
+      "start": 1709041931929,
+      "end": 1709041931930,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708988594849,
-      "end": 1708988594850,
+      "start": 1709041931929,
+      "end": 1709041931930,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708988594850,
-      "end": 1708988594850,
+      "start": 1709041931930,
+      "end": 1709041931930,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708988594850,
-      "end": 1708988594850,
+      "start": 1709041931930,
+      "end": 1709041931930,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708988594850,
-      "end": 1708988594851,
+      "start": 1709041931930,
+      "end": 1709041931930,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708988594850,
-      "end": 1708988594851,
+      "start": 1709041931930,
+      "end": 1709041931930,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1708988594851,
-      "end": 1708988594851,
+      "start": 1709041931930,
+      "end": 1709041931930,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1708988594851,
-      "end": 1708988594851,
+      "start": 1709041931930,
+      "end": 1709041931930,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708988594851,
-      "end": 1708988594851,
+      "start": 1709041931930,
+      "end": 1709041931931,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708988594851,
-      "end": 1708988594852,
+      "start": 1709041931931,
+      "end": 1709041931931,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708988594852,
-      "end": 1708988594852,
+      "start": 1709041931931,
+      "end": 1709041931931,
       "order": "normal"
     }
   ]

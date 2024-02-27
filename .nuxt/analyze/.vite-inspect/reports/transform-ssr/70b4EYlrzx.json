@@ -4,8 +4,8 @@
     {
       "name": "pinceau-transforms",
       "result": ".badge{display:inline-flex;align-items:center;padding-left:var(--space-3);padding-right:var(--space-3);padding-top:var(--space-1);padding-bottom:var(--space-1);font-size:var(--text-base-fontSize);line-height:var(--text-base-lineHeight);letter-spacing:var(--letterSpacing-tight);border-radius:var(--radii-full);border:1px solid;}.badge.primary{color:var(--elements-state-primary-color-primary) !important;background-color:var(--elements-state-primary-backgroundColor-primary) !important;border-color:var(--elements-state-primary-borderColor-primary) !important;}.badge.primary :deep(p code){color:var(--elements-state-primary-color-secondary) !important;background-color:var(--elements-state-primary-backgroundColor-secondary) !important;}.badge.primary :deep(code){color:var(--elements-state-primary-color-primary) !important;background-color:var(--elements-state-primary-backgroundColor-secondary) !important;}.badge.primary :deep(a code){border-color:var(--elements-state-primary-borderColor-primary) !important;}.badge.primary :deep(a){border-color:currentColor;}.badge.primary :deep(a) code{background-color:var(--elements-state-primary-backgroundColor-primary) !important;}.badge.primary :deep(a):hover{color:var(--elements-state-primary-color-secondary) !important;border-color:currentColor !important;}.badge.primary :deep(a):hover code{background-color:var(--elements-state-primary-backgroundColor-secondary) !important;color:var(--elements-state-primary-color-secondary) !important;border-color:var(--elements-state-primary-borderColor-secondary) !important;}.badge.info{color:var(--elements-state-info-color-primary) !important;background-color:var(--elements-state-info-backgroundColor-primary) !important;border-color:var(--elements-state-info-borderColor-primary) !important;}.badge.info :deep(p code){color:var(--elements-state-info-color-secondary) !important;background-color:var(--elements-state-info-backgroundColor-secondary) !important;}.badge.info :deep(code){color:var(--elements-state-info-color-primary) !important;background-color:var(--elements-state-info-backgroundColor-secondary) !important;}.badge.info :deep(a code){border-color:var(--elements-state-info-borderColor-primary) !important;}.badge.info :deep(a){border-color:currentColor;}.badge.info :deep(a) code{background-color:var(--elements-state-info-backgroundColor-primary) !important;}.badge.info :deep(a):hover{color:var(--elements-state-info-color-secondary) !important;border-color:currentColor !important;}.badge.info :deep(a):hover code{background-color:var(--elements-state-info-backgroundColor-secondary) !important;color:var(--elements-state-info-color-secondary) !important;border-color:var(--elements-state-info-borderColor-secondary) !important;}.badge.success{color:var(--elements-state-success-color-primary) !important;background-color:var(--elements-state-success-backgroundColor-primary) !important;border-color:var(--elements-state-success-borderColor-primary) !important;}.badge.success :deep(p code){color:var(--elements-state-success-color-secondary) !important;background-color:var(--elements-state-success-backgroundColor-secondary) !important;}.badge.success :deep(code){color:var(--elements-state-success-color-primary) !important;background-color:var(--elements-state-success-backgroundColor-secondary) !important;}.badge.success :deep(a code){border-color:var(--elements-state-success-borderColor-primary) !important;}.badge.success :deep(a){border-color:currentColor;}.badge.success :deep(a) code{background-color:var(--elements-state-success-backgroundColor-primary) !important;}.badge.success :deep(a):hover{color:var(--elements-state-success-color-secondary) !important;border-color:currentColor !important;}.badge.success :deep(a):hover code{background-color:var(--elements-state-success-backgroundColor-secondary) !important;color:var(--elements-state-success-color-secondary) !important;border-color:var(--elements-state-success-borderColor-secondary) !important;}.badge.warning{color:var(--elements-state-warning-color-primary) !important;background-color:var(--elements-state-warning-backgroundColor-primary) !important;border-color:var(--elements-state-warning-borderColor-primary) !important;}.badge.warning :deep(p code){color:var(--elements-state-warning-color-secondary) !important;background-color:var(--elements-state-warning-backgroundColor-secondary) !important;}.badge.warning :deep(code){color:var(--elements-state-warning-color-primary) !important;background-color:var(--elements-state-warning-backgroundColor-secondary) !important;}.badge.warning :deep(a code){border-color:var(--elements-state-warning-borderColor-primary) !important;}.badge.warning :deep(a){border-color:currentColor;}.badge.warning :deep(a) code{background-color:var(--elements-state-warning-backgroundColor-primary) !important;}.badge.warning :deep(a):hover{color:var(--elements-state-warning-color-secondary) !important;border-color:currentColor !important;}.badge.warning :deep(a):hover code{background-color:var(--elements-state-warning-backgroundColor-secondary) !important;color:var(--elements-state-warning-color-secondary) !important;border-color:var(--elements-state-warning-borderColor-secondary) !important;}.badge.danger{color:var(--elements-state-danger-color-primary) !important;background-color:var(--elements-state-danger-backgroundColor-primary) !important;border-color:var(--elements-state-danger-borderColor-primary) !important;}.badge.danger :deep(p code){color:var(--elements-state-danger-color-secondary) !important;background-color:var(--elements-state-danger-backgroundColor-secondary) !important;}.badge.danger :deep(code){color:var(--elements-state-danger-color-primary) !important;background-color:var(--elements-state-danger-backgroundColor-secondary) !important;}.badge.danger :deep(a code){border-color:var(--elements-state-danger-borderColor-primary) !important;}.badge.danger :deep(a){border-color:currentColor;}.badge.danger :deep(a) code{background-color:var(--elements-state-danger-backgroundColor-primary) !important;}.badge.danger :deep(a):hover{color:var(--elements-state-danger-color-secondary) !important;border-color:currentColor !important;}.badge.danger :deep(a):hover code{background-color:var(--elements-state-danger-backgroundColor-secondary) !important;color:var(--elements-state-danger-color-secondary) !important;border-color:var(--elements-state-danger-borderColor-secondary) !important;}",
-      "start": 1708988596978,
-      "end": 1708988596982,
+      "start": 1709041934836,
+      "end": 1709041934841,
       "sourcemaps": {
         "version": 3,
         "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Badge.vue",
@@ -21,65 +21,65 @@
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708988596982,
-      "end": 1708988596982,
+      "start": 1709041934859,
+      "end": 1709041934859,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708988596982,
-      "end": 1708988596982,
+      "start": 1709041934859,
+      "end": 1709041934859,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708988596982,
-      "end": 1708988596982,
+      "start": 1709041934860,
+      "end": 1709041934860,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708988596982,
-      "end": 1708988596982,
+      "start": 1709041934860,
+      "end": 1709041934860,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": ".badge{display:inline-flex;align-items:center;padding-left:var(--space-3);padding-right:var(--space-3);padding-top:var(--space-1);padding-bottom:var(--space-1);font-size:var(--text-base-fontSize);line-height:var(--text-base-lineHeight);letter-spacing:var(--letterSpacing-tight);border-radius:var(--radii-full);border:1px solid;}.badge.primary{color:var(--elements-state-primary-color-primary) !important;background-color:var(--elements-state-primary-backgroundColor-primary) !important;border-color:var(--elements-state-primary-borderColor-primary) !important;}.badge.primary :deep(p code){color:var(--elements-state-primary-color-secondary) !important;background-color:var(--elements-state-primary-backgroundColor-secondary) !important;}.badge.primary :deep(code){color:var(--elements-state-primary-color-primary) !important;background-color:var(--elements-state-primary-backgroundColor-secondary) !important;}.badge.primary :deep(a code){border-color:var(--elements-state-primary-borderColor-primary) !important;}.badge.primary :deep(a){border-color:currentColor;}.badge.primary :deep(a) code{background-color:var(--elements-state-primary-backgroundColor-primary) !important;}.badge.primary :deep(a):hover{color:var(--elements-state-primary-color-secondary) !important;border-color:currentColor !important;}.badge.primary :deep(a):hover code{background-color:var(--elements-state-primary-backgroundColor-secondary) !important;color:var(--elements-state-primary-color-secondary) !important;border-color:var(--elements-state-primary-borderColor-secondary) !important;}.badge.info{color:var(--elements-state-info-color-primary) !important;background-color:var(--elements-state-info-backgroundColor-primary) !important;border-color:var(--elements-state-info-borderColor-primary) !important;}.badge.info :deep(p code){color:var(--elements-state-info-color-secondary) !important;background-color:var(--elements-state-info-backgroundColor-secondary) !important;}.badge.info :deep(code){color:var(--elements-state-info-color-primary) !important;background-color:var(--elements-state-info-backgroundColor-secondary) !important;}.badge.info :deep(a code){border-color:var(--elements-state-info-borderColor-primary) !important;}.badge.info :deep(a){border-color:currentColor;}.badge.info :deep(a) code{background-color:var(--elements-state-info-backgroundColor-primary) !important;}.badge.info :deep(a):hover{color:var(--elements-state-info-color-secondary) !important;border-color:currentColor !important;}.badge.info :deep(a):hover code{background-color:var(--elements-state-info-backgroundColor-secondary) !important;color:var(--elements-state-info-color-secondary) !important;border-color:var(--elements-state-info-borderColor-secondary) !important;}.badge.success{color:var(--elements-state-success-color-primary) !important;background-color:var(--elements-state-success-backgroundColor-primary) !important;border-color:var(--elements-state-success-borderColor-primary) !important;}.badge.success :deep(p code){color:var(--elements-state-success-color-secondary) !important;background-color:var(--elements-state-success-backgroundColor-secondary) !important;}.badge.success :deep(code){color:var(--elements-state-success-color-primary) !important;background-color:var(--elements-state-success-backgroundColor-secondary) !important;}.badge.success :deep(a code){border-color:var(--elements-state-success-borderColor-primary) !important;}.badge.success :deep(a){border-color:currentColor;}.badge.success :deep(a) code{background-color:var(--elements-state-success-backgroundColor-primary) !important;}.badge.success :deep(a):hover{color:var(--elements-state-success-color-secondary) !important;border-color:currentColor !important;}.badge.success :deep(a):hover code{background-color:var(--elements-state-success-backgroundColor-secondary) !important;color:var(--elements-state-success-color-secondary) !important;border-color:var(--elements-state-success-borderColor-secondary) !important;}.badge.warning{color:var(--elements-state-warning-color-primary) !important;background-color:var(--elements-state-warning-backgroundColor-primary) !important;border-color:var(--elements-state-warning-borderColor-primary) !important;}.badge.warning :deep(p code){color:var(--elements-state-warning-color-secondary) !important;background-color:var(--elements-state-warning-backgroundColor-secondary) !important;}.badge.warning :deep(code){color:var(--elements-state-warning-color-primary) !important;background-color:var(--elements-state-warning-backgroundColor-secondary) !important;}.badge.warning :deep(a code){border-color:var(--elements-state-warning-borderColor-primary) !important;}.badge.warning :deep(a){border-color:currentColor;}.badge.warning :deep(a) code{background-color:var(--elements-state-warning-backgroundColor-primary) !important;}.badge.warning :deep(a):hover{color:var(--elements-state-warning-color-secondary) !important;border-color:currentColor !important;}.badge.warning :deep(a):hover code{background-color:var(--elements-state-warning-backgroundColor-secondary) !important;color:var(--elements-state-warning-color-secondary) !important;border-color:var(--elements-state-warning-borderColor-secondary) !important;}.badge.danger{color:var(--elements-state-danger-color-primary) !important;background-color:var(--elements-state-danger-backgroundColor-primary) !important;border-color:var(--elements-state-danger-borderColor-primary) !important;}.badge.danger :deep(p code){color:var(--elements-state-danger-color-secondary) !important;background-color:var(--elements-state-danger-backgroundColor-secondary) !important;}.badge.danger :deep(code){color:var(--elements-state-danger-color-primary) !important;background-color:var(--elements-state-danger-backgroundColor-secondary) !important;}.badge.danger :deep(a code){border-color:var(--elements-state-danger-borderColor-primary) !important;}.badge.danger :deep(a){border-color:currentColor;}.badge.danger :deep(a) code{background-color:var(--elements-state-danger-backgroundColor-primary) !important;}.badge.danger :deep(a):hover{color:var(--elements-state-danger-color-secondary) !important;border-color:currentColor !important;}.badge.danger :deep(a):hover code{background-color:var(--elements-state-danger-backgroundColor-secondary) !important;color:var(--elements-state-danger-color-secondary) !important;border-color:var(--elements-state-danger-borderColor-secondary) !important;}",
-      "start": 1708988596982,
-      "end": 1708988596983,
+      "start": 1709041934860,
+      "end": 1709041934861,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": ".badge{display:inline-flex;align-items:center;padding-left:var(--space-3);padding-right:var(--space-3);padding-top:var(--space-1);padding-bottom:var(--space-1);font-size:var(--text-base-fontSize);line-height:var(--text-base-lineHeight);letter-spacing:var(--letterSpacing-tight);border-radius:var(--radii-full);border:1px solid;}.badge.primary{color:var(--elements-state-primary-color-primary) !important;background-color:var(--elements-state-primary-backgroundColor-primary) !important;border-color:var(--elements-state-primary-borderColor-primary) !important;}.badge.primary :deep(p code){color:var(--elements-state-primary-color-secondary) !important;background-color:var(--elements-state-primary-backgroundColor-secondary) !important;}.badge.primary :deep(code){color:var(--elements-state-primary-color-primary) !important;background-color:var(--elements-state-primary-backgroundColor-secondary) !important;}.badge.primary :deep(a code){border-color:var(--elements-state-primary-borderColor-primary) !important;}.badge.primary :deep(a){border-color:currentColor;}.badge.primary :deep(a) code{background-color:var(--elements-state-primary-backgroundColor-primary) !important;}.badge.primary :deep(a):hover{color:var(--elements-state-primary-color-secondary) !important;border-color:currentColor !important;}.badge.primary :deep(a):hover code{background-color:var(--elements-state-primary-backgroundColor-secondary) !important;color:var(--elements-state-primary-color-secondary) !important;border-color:var(--elements-state-primary-borderColor-secondary) !important;}.badge.info{color:var(--elements-state-info-color-primary) !important;background-color:var(--elements-state-info-backgroundColor-primary) !important;border-color:var(--elements-state-info-borderColor-primary) !important;}.badge.info :deep(p code){color:var(--elements-state-info-color-secondary) !important;background-color:var(--elements-state-info-backgroundColor-secondary) !important;}.badge.info :deep(code){color:var(--elements-state-info-color-primary) !important;background-color:var(--elements-state-info-backgroundColor-secondary) !important;}.badge.info :deep(a code){border-color:var(--elements-state-info-borderColor-primary) !important;}.badge.info :deep(a){border-color:currentColor;}.badge.info :deep(a) code{background-color:var(--elements-state-info-backgroundColor-primary) !important;}.badge.info :deep(a):hover{color:var(--elements-state-info-color-secondary) !important;border-color:currentColor !important;}.badge.info :deep(a):hover code{background-color:var(--elements-state-info-backgroundColor-secondary) !important;color:var(--elements-state-info-color-secondary) !important;border-color:var(--elements-state-info-borderColor-secondary) !important;}.badge.success{color:var(--elements-state-success-color-primary) !important;background-color:var(--elements-state-success-backgroundColor-primary) !important;border-color:var(--elements-state-success-borderColor-primary) !important;}.badge.success :deep(p code){color:var(--elements-state-success-color-secondary) !important;background-color:var(--elements-state-success-backgroundColor-secondary) !important;}.badge.success :deep(code){color:var(--elements-state-success-color-primary) !important;background-color:var(--elements-state-success-backgroundColor-secondary) !important;}.badge.success :deep(a code){border-color:var(--elements-state-success-borderColor-primary) !important;}.badge.success :deep(a){border-color:currentColor;}.badge.success :deep(a) code{background-color:var(--elements-state-success-backgroundColor-primary) !important;}.badge.success :deep(a):hover{color:var(--elements-state-success-color-secondary) !important;border-color:currentColor !important;}.badge.success :deep(a):hover code{background-color:var(--elements-state-success-backgroundColor-secondary) !important;color:var(--elements-state-success-color-secondary) !important;border-color:var(--elements-state-success-borderColor-secondary) !important;}.badge.warning{color:var(--elements-state-warning-color-primary) !important;background-color:var(--elements-state-warning-backgroundColor-primary) !important;border-color:var(--elements-state-warning-borderColor-primary) !important;}.badge.warning :deep(p code){color:var(--elements-state-warning-color-secondary) !important;background-color:var(--elements-state-warning-backgroundColor-secondary) !important;}.badge.warning :deep(code){color:var(--elements-state-warning-color-primary) !important;background-color:var(--elements-state-warning-backgroundColor-secondary) !important;}.badge.warning :deep(a code){border-color:var(--elements-state-warning-borderColor-primary) !important;}.badge.warning :deep(a){border-color:currentColor;}.badge.warning :deep(a) code{background-color:var(--elements-state-warning-backgroundColor-primary) !important;}.badge.warning :deep(a):hover{color:var(--elements-state-warning-color-secondary) !important;border-color:currentColor !important;}.badge.warning :deep(a):hover code{background-color:var(--elements-state-warning-backgroundColor-secondary) !important;color:var(--elements-state-warning-color-secondary) !important;border-color:var(--elements-state-warning-borderColor-secondary) !important;}.badge.danger{color:var(--elements-state-danger-color-primary) !important;background-color:var(--elements-state-danger-backgroundColor-primary) !important;border-color:var(--elements-state-danger-borderColor-primary) !important;}.badge.danger :deep(p code){color:var(--elements-state-danger-color-secondary) !important;background-color:var(--elements-state-danger-backgroundColor-secondary) !important;}.badge.danger :deep(code){color:var(--elements-state-danger-color-primary) !important;background-color:var(--elements-state-danger-backgroundColor-secondary) !important;}.badge.danger :deep(a code){border-color:var(--elements-state-danger-borderColor-primary) !important;}.badge.danger :deep(a){border-color:currentColor;}.badge.danger :deep(a) code{background-color:var(--elements-state-danger-backgroundColor-primary) !important;}.badge.danger :deep(a):hover{color:var(--elements-state-danger-color-secondary) !important;border-color:currentColor !important;}.badge.danger :deep(a):hover code{background-color:var(--elements-state-danger-backgroundColor-secondary) !important;color:var(--elements-state-danger-color-secondary) !important;border-color:var(--elements-state-danger-borderColor-secondary) !important;}",
-      "start": 1708988596982,
-      "end": 1708988596983,
+      "start": 1709041934860,
+      "end": 1709041934861,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708988596983,
-      "end": 1708988596983,
+      "start": 1709041934861,
+      "end": 1709041934861,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708988596983,
-      "end": 1708988596983,
+      "start": 1709041934861,
+      "end": 1709041934861,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708988596983,
-      "end": 1708988596983,
+      "start": 1709041934861,
+      "end": 1709041934861,
       "order": "pre"
     },
     {
       "name": "vite:css",
       "result": ".badge{align-items:center;border:1px solid;border-radius:var(--radii-full);display:inline-flex;font-size:var(--text-base-fontSize);letter-spacing:var(--letterSpacing-tight);line-height:var(--text-base-lineHeight);padding:var(--space-1) var(--space-3)}.badge.primary{background-color:var(--elements-state-primary-backgroundColor-primary)!important;border-color:var(--elements-state-primary-borderColor-primary)!important;color:var(--elements-state-primary-color-primary)!important}.badge.primary :deep(p code){background-color:var(--elements-state-primary-backgroundColor-secondary)!important;color:var(--elements-state-primary-color-secondary)!important}.badge.primary :deep(code){background-color:var(--elements-state-primary-backgroundColor-secondary)!important;color:var(--elements-state-primary-color-primary)!important}.badge.primary :deep(a code){border-color:var(--elements-state-primary-borderColor-primary)!important}.badge.primary :deep(a){border-color:currentColor}.badge.primary :deep(a) code{background-color:var(--elements-state-primary-backgroundColor-primary)!important}.badge.primary :deep(a):hover{border-color:currentColor!important;color:var(--elements-state-primary-color-secondary)!important}.badge.primary :deep(a):hover code{background-color:var(--elements-state-primary-backgroundColor-secondary)!important;border-color:var(--elements-state-primary-borderColor-secondary)!important;color:var(--elements-state-primary-color-secondary)!important}.badge.info{background-color:var(--elements-state-info-backgroundColor-primary)!important;border-color:var(--elements-state-info-borderColor-primary)!important;color:var(--elements-state-info-color-primary)!important}.badge.info :deep(p code){background-color:var(--elements-state-info-backgroundColor-secondary)!important;color:var(--elements-state-info-color-secondary)!important}.badge.info :deep(code){background-color:var(--elements-state-info-backgroundColor-secondary)!important;color:var(--elements-state-info-color-primary)!important}.badge.info :deep(a code){border-color:var(--elements-state-info-borderColor-primary)!important}.badge.info :deep(a){border-color:currentColor}.badge.info :deep(a) code{background-color:var(--elements-state-info-backgroundColor-primary)!important}.badge.info :deep(a):hover{border-color:currentColor!important;color:var(--elements-state-info-color-secondary)!important}.badge.info :deep(a):hover code{background-color:var(--elements-state-info-backgroundColor-secondary)!important;border-color:var(--elements-state-info-borderColor-secondary)!important;color:var(--elements-state-info-color-secondary)!important}.badge.success{background-color:var(--elements-state-success-backgroundColor-primary)!important;border-color:var(--elements-state-success-borderColor-primary)!important;color:var(--elements-state-success-color-primary)!important}.badge.success :deep(p code){background-color:var(--elements-state-success-backgroundColor-secondary)!important;color:var(--elements-state-success-color-secondary)!important}.badge.success :deep(code){background-color:var(--elements-state-success-backgroundColor-secondary)!important;color:var(--elements-state-success-color-primary)!important}.badge.success :deep(a code){border-color:var(--elements-state-success-borderColor-primary)!important}.badge.success :deep(a){border-color:currentColor}.badge.success :deep(a) code{background-color:var(--elements-state-success-backgroundColor-primary)!important}.badge.success :deep(a):hover{border-color:currentColor!important;color:var(--elements-state-success-color-secondary)!important}.badge.success :deep(a):hover code{background-color:var(--elements-state-success-backgroundColor-secondary)!important;border-color:var(--elements-state-success-borderColor-secondary)!important;color:var(--elements-state-success-color-secondary)!important}.badge.warning{background-color:var(--elements-state-warning-backgroundColor-primary)!important;border-color:var(--elements-state-warning-borderColor-primary)!important;color:var(--elements-state-warning-color-primary)!important}.badge.warning :deep(p code){background-color:var(--elements-state-warning-backgroundColor-secondary)!important;color:var(--elements-state-warning-color-secondary)!important}.badge.warning :deep(code){background-color:var(--elements-state-warning-backgroundColor-secondary)!important;color:var(--elements-state-warning-color-primary)!important}.badge.warning :deep(a code){border-color:var(--elements-state-warning-borderColor-primary)!important}.badge.warning :deep(a){border-color:currentColor}.badge.warning :deep(a) code{background-color:var(--elements-state-warning-backgroundColor-primary)!important}.badge.warning :deep(a):hover{border-color:currentColor!important;color:var(--elements-state-warning-color-secondary)!important}.badge.warning :deep(a):hover code{background-color:var(--elements-state-warning-backgroundColor-secondary)!important;border-color:var(--elements-state-warning-borderColor-secondary)!important;color:var(--elements-state-warning-color-secondary)!important}.badge.danger{background-color:var(--elements-state-danger-backgroundColor-primary)!important;border-color:var(--elements-state-danger-borderColor-primary)!important;color:var(--elements-state-danger-color-primary)!important}.badge.danger :deep(p code){background-color:var(--elements-state-danger-backgroundColor-secondary)!important;color:var(--elements-state-danger-color-secondary)!important}.badge.danger :deep(code){background-color:var(--elements-state-danger-backgroundColor-secondary)!important;color:var(--elements-state-danger-color-primary)!important}.badge.danger :deep(a code){border-color:var(--elements-state-danger-borderColor-primary)!important}.badge.danger :deep(a){border-color:currentColor}.badge.danger :deep(a) code{background-color:var(--elements-state-danger-backgroundColor-primary)!important}.badge.danger :deep(a):hover{border-color:currentColor!important;color:var(--elements-state-danger-color-secondary)!important}.badge.danger :deep(a):hover code{background-color:var(--elements-state-danger-backgroundColor-secondary)!important;border-color:var(--elements-state-danger-borderColor-secondary)!important;color:var(--elements-state-danger-color-secondary)!important}",
-      "start": 1708988596983,
-      "end": 1708988597003,
+      "start": 1709041934870,
+      "end": 1709041934898,
       "order": "normal",
       "sourcemaps": {
         "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Badge.vue",
@@ -96,27 +96,27 @@
     },
     {
       "name": "vite:esbuild",
-      "start": 1708988597003,
-      "end": 1708988597003,
+      "start": 1709041934898,
+      "end": 1709041934898,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1708988597003,
-      "end": 1708988597003,
+      "start": 1709041934899,
+      "end": 1709041934899,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708988597003,
-      "end": 1708988597003,
+      "start": 1709041934899,
+      "end": 1709041934899,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": ".badge[data-v-0f05aaa2]{align-items:center;border:1px solid;border-radius:var(--radii-full);display:inline-flex;font-size:var(--text-base-fontSize);letter-spacing:var(--letterSpacing-tight);line-height:var(--text-base-lineHeight);padding:var(--space-1) var(--space-3)}.badge.primary[data-v-0f05aaa2]{background-color:var(--elements-state-primary-backgroundColor-primary)!important;border-color:var(--elements-state-primary-borderColor-primary)!important;color:var(--elements-state-primary-color-primary)!important}.badge.primary[data-v-0f05aaa2] p code{background-color:var(--elements-state-primary-backgroundColor-secondary)!important;color:var(--elements-state-primary-color-secondary)!important}.badge.primary[data-v-0f05aaa2] code{background-color:var(--elements-state-primary-backgroundColor-secondary)!important;color:var(--elements-state-primary-color-primary)!important}.badge.primary[data-v-0f05aaa2] a code{border-color:var(--elements-state-primary-borderColor-primary)!important}.badge.primary[data-v-0f05aaa2] a{border-color:currentColor}.badge.primary[data-v-0f05aaa2] a code{background-color:var(--elements-state-primary-backgroundColor-primary)!important}.badge.primary[data-v-0f05aaa2] a:hover{border-color:currentColor!important;color:var(--elements-state-primary-color-secondary)!important}.badge.primary[data-v-0f05aaa2] a:hover code{background-color:var(--elements-state-primary-backgroundColor-secondary)!important;border-color:var(--elements-state-primary-borderColor-secondary)!important;color:var(--elements-state-primary-color-secondary)!important}.badge.info[data-v-0f05aaa2]{background-color:var(--elements-state-info-backgroundColor-primary)!important;border-color:var(--elements-state-info-borderColor-primary)!important;color:var(--elements-state-info-color-primary)!important}.badge.info[data-v-0f05aaa2] p code{background-color:var(--elements-state-info-backgroundColor-secondary)!important;color:var(--elements-state-info-color-secondary)!important}.badge.info[data-v-0f05aaa2] code{background-color:var(--elements-state-info-backgroundColor-secondary)!important;color:var(--elements-state-info-color-primary)!important}.badge.info[data-v-0f05aaa2] a code{border-color:var(--elements-state-info-borderColor-primary)!important}.badge.info[data-v-0f05aaa2] a{border-color:currentColor}.badge.info[data-v-0f05aaa2] a code{background-color:var(--elements-state-info-backgroundColor-primary)!important}.badge.info[data-v-0f05aaa2] a:hover{border-color:currentColor!important;color:var(--elements-state-info-color-secondary)!important}.badge.info[data-v-0f05aaa2] a:hover code{background-color:var(--elements-state-info-backgroundColor-secondary)!important;border-color:var(--elements-state-info-borderColor-secondary)!important;color:var(--elements-state-info-color-secondary)!important}.badge.success[data-v-0f05aaa2]{background-color:var(--elements-state-success-backgroundColor-primary)!important;border-color:var(--elements-state-success-borderColor-primary)!important;color:var(--elements-state-success-color-primary)!important}.badge.success[data-v-0f05aaa2] p code{background-color:var(--elements-state-success-backgroundColor-secondary)!important;color:var(--elements-state-success-color-secondary)!important}.badge.success[data-v-0f05aaa2] code{background-color:var(--elements-state-success-backgroundColor-secondary)!important;color:var(--elements-state-success-color-primary)!important}.badge.success[data-v-0f05aaa2] a code{border-color:var(--elements-state-success-borderColor-primary)!important}.badge.success[data-v-0f05aaa2] a{border-color:currentColor}.badge.success[data-v-0f05aaa2] a code{background-color:var(--elements-state-success-backgroundColor-primary)!important}.badge.success[data-v-0f05aaa2] a:hover{border-color:currentColor!important;color:var(--elements-state-success-color-secondary)!important}.badge.success[data-v-0f05aaa2] a:hover code{background-color:var(--elements-state-success-backgroundColor-secondary)!important;border-color:var(--elements-state-success-borderColor-secondary)!important;color:var(--elements-state-success-color-secondary)!important}.badge.warning[data-v-0f05aaa2]{background-color:var(--elements-state-warning-backgroundColor-primary)!important;border-color:var(--elements-state-warning-borderColor-primary)!important;color:var(--elements-state-warning-color-primary)!important}.badge.warning[data-v-0f05aaa2] p code{background-color:var(--elements-state-warning-backgroundColor-secondary)!important;color:var(--elements-state-warning-color-secondary)!important}.badge.warning[data-v-0f05aaa2] code{background-color:var(--elements-state-warning-backgroundColor-secondary)!important;color:var(--elements-state-warning-color-primary)!important}.badge.warning[data-v-0f05aaa2] a code{border-color:var(--elements-state-warning-borderColor-primary)!important}.badge.warning[data-v-0f05aaa2] a{border-color:currentColor}.badge.warning[data-v-0f05aaa2] a code{background-color:var(--elements-state-warning-backgroundColor-primary)!important}.badge.warning[data-v-0f05aaa2] a:hover{border-color:currentColor!important;color:var(--elements-state-warning-color-secondary)!important}.badge.warning[data-v-0f05aaa2] a:hover code{background-color:var(--elements-state-warning-backgroundColor-secondary)!important;border-color:var(--elements-state-warning-borderColor-secondary)!important;color:var(--elements-state-warning-color-secondary)!important}.badge.danger[data-v-0f05aaa2]{background-color:var(--elements-state-danger-backgroundColor-primary)!important;border-color:var(--elements-state-danger-borderColor-primary)!important;color:var(--elements-state-danger-color-primary)!important}.badge.danger[data-v-0f05aaa2] p code{background-color:var(--elements-state-danger-backgroundColor-secondary)!important;color:var(--elements-state-danger-color-secondary)!important}.badge.danger[data-v-0f05aaa2] code{background-color:var(--elements-state-danger-backgroundColor-secondary)!important;color:var(--elements-state-danger-color-primary)!important}.badge.danger[data-v-0f05aaa2] a code{border-color:var(--elements-state-danger-borderColor-primary)!important}.badge.danger[data-v-0f05aaa2] a{border-color:currentColor}.badge.danger[data-v-0f05aaa2] a code{background-color:var(--elements-state-danger-backgroundColor-primary)!important}.badge.danger[data-v-0f05aaa2] a:hover{border-color:currentColor!important;color:var(--elements-state-danger-color-secondary)!important}.badge.danger[data-v-0f05aaa2] a:hover code{background-color:var(--elements-state-danger-backgroundColor-secondary)!important;border-color:var(--elements-state-danger-borderColor-secondary)!important;color:var(--elements-state-danger-color-secondary)!important}",
-      "start": 1708988597004,
-      "end": 1708988597009,
+      "start": 1709041934900,
+      "end": 1709041934906,
       "order": "normal",
       "sourcemaps": {
         "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Badge.vue",
@@ -133,63 +133,63 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708988597018,
-      "end": 1708988597018,
+      "start": 1709041934908,
+      "end": 1709041934908,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708988597021,
-      "end": 1708988597021,
+      "start": 1709041934909,
+      "end": 1709041934909,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708988597021,
-      "end": 1708988597021,
+      "start": 1709041934909,
+      "end": 1709041934909,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708988597026,
-      "end": 1708988597027,
+      "start": 1709041934912,
+      "end": 1709041934912,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708988597026,
-      "end": 1708988597030,
+      "start": 1709041934912,
+      "end": 1709041934912,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708988597033,
-      "end": 1708988597033,
+      "start": 1709041934913,
+      "end": 1709041934913,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708988597034,
-      "end": 1708988597034,
+      "start": 1709041934913,
+      "end": 1709041934913,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708988597034,
-      "end": 1708988597034,
+      "start": 1709041934913,
+      "end": 1709041934913,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1708988597034,
-      "end": 1708988597034,
+      "start": 1709041934914,
+      "end": 1709041934914,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
       "result": "",
-      "start": 1708988597034,
-      "end": 1708988597034,
+      "start": 1709041934914,
+      "end": 1709041934914,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -197,116 +197,116 @@
     },
     {
       "name": "vite:build-html",
-      "start": 1708988597039,
-      "end": 1708988597039,
+      "start": 1709041934915,
+      "end": 1709041934915,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708988597041,
-      "end": 1708988597041,
+      "start": 1709041934917,
+      "end": 1709041934917,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708988597042,
-      "end": 1708988597042,
+      "start": 1709041934917,
+      "end": 1709041934917,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708988597044,
-      "end": 1708988597044,
+      "start": 1709041934921,
+      "end": 1709041934921,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708988597045,
-      "end": 1708988597045,
+      "start": 1709041934924,
+      "end": 1709041934924,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708988597046,
-      "end": 1708988597046,
+      "start": 1709041934925,
+      "end": 1709041934925,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708988597046,
-      "end": 1708988597046,
+      "start": 1709041934925,
+      "end": 1709041934925,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708988597046,
-      "end": 1708988597046,
+      "start": 1709041934925,
+      "end": 1709041934925,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708988597046,
-      "end": 1708988597047,
+      "start": 1709041934925,
+      "end": 1709041934926,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708988597046,
-      "end": 1708988597047,
+      "start": 1709041934925,
+      "end": 1709041934926,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708988597048,
-      "end": 1708988597048,
+      "start": 1709041934927,
+      "end": 1709041934928,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708988597048,
-      "end": 1708988597048,
+      "start": 1709041934927,
+      "end": 1709041934928,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708988597049,
-      "end": 1708988597049,
+      "start": 1709041934929,
+      "end": 1709041934929,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708988597049,
-      "end": 1708988597049,
+      "start": 1709041934929,
+      "end": 1709041934929,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1708988597050,
-      "end": 1708988597050,
+      "start": 1709041934929,
+      "end": 1709041934929,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1708988597050,
-      "end": 1708988597050,
+      "start": 1709041934931,
+      "end": 1709041934931,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708988597050,
-      "end": 1708988597050,
+      "start": 1709041934931,
+      "end": 1709041934931,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708988597051,
-      "end": 1708988597051,
+      "start": 1709041934932,
+      "end": 1709041934932,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708988597051,
-      "end": 1708988597051,
+      "start": 1709041934932,
+      "end": 1709041934932,
       "order": "normal"
     }
   ]
