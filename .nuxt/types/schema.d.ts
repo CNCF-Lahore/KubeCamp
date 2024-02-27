@@ -1,21 +1,21 @@
 import { NuxtModule, RuntimeConfig } from 'nuxt/schema'
 declare module 'nuxt/schema' {
   interface NuxtConfig {
-    ["plausible"]?: typeof import("@nuxtjs/plausible").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
-    ["icon"]?: typeof import("nuxt-icon").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
-    ["colorMode"]?: typeof import("@nuxtjs/color-mode").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
-    ["pinceau"]?: typeof import("pinceau/nuxt").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
-    ["tokens"]?: typeof import("@nuxt-themes/tokens").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
-    ["studio"]?: typeof import("@nuxthq/studio").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    ["uiPro"]?: typeof import("/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/index").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["mdc"]?: typeof import("@nuxtjs/mdc").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["content"]?: typeof import("@nuxt/content").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
-    ["vueuse"]?: typeof import("@vueuse/nuxt").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
-    ["nuxt-config-schema-compat"]?: typeof import("nuxt-config-schema").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
-    ["docus"]?: typeof import("/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/app/module").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
-    ["@nuxt-themes/docus"]?: typeof import("@nuxt-themes/docus").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    ["icon"]?: typeof import("nuxt-icon").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    ["colorMode"]?: typeof import("@nuxtjs/color-mode").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    ["tailwindcss"]?: typeof import("@nuxtjs/tailwindcss").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    ["ui"]?: typeof import("@nuxt/ui").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    ["studio"]?: typeof import("@nuxthq/studio").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    ["fontMetrics"]?: typeof import("@nuxtjs/fontaine").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    ["googleFonts"]?: typeof import("@nuxtjs/google-fonts").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    ["site"]?: typeof import("/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/nuxt-site-config@1.6.7_@nuxt+devtools@1.0.8_@vue+compiler-core@3.4.19_nuxt@3.10.3_postcss@8.4_r6uuhc4vyomlxbis2jzgwdwngi/node_modules/nuxt-site-config/dist/module").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    ["ogImage"]?: typeof import("nuxt-og-image").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["devtools"]?: typeof import("@nuxt/devtools").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["telemetry"]?: typeof import("@nuxt/telemetry").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
-    modules?: (undefined | null | false | NuxtModule | string | [NuxtModule | string, Record<string, any>] | ["@nuxtjs/plausible", Exclude<NuxtConfig["plausible"], boolean>] | ["nuxt-icon", Exclude<NuxtConfig["icon"], boolean>] | ["@nuxtjs/color-mode", Exclude<NuxtConfig["colorMode"], boolean>] | ["pinceau/nuxt", Exclude<NuxtConfig["pinceau"], boolean>] | ["@nuxt-themes/tokens", Exclude<NuxtConfig["tokens"], boolean>] | ["@nuxthq/studio", Exclude<NuxtConfig["studio"], boolean>] | ["@nuxtjs/mdc", Exclude<NuxtConfig["mdc"], boolean>] | ["@nuxt/content", Exclude<NuxtConfig["content"], boolean>] | ["@vueuse/nuxt", Exclude<NuxtConfig["vueuse"], boolean>] | ["nuxt-config-schema", Exclude<NuxtConfig["nuxt-config-schema-compat"], boolean>] | ["/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/app/module", Exclude<NuxtConfig["docus"], boolean>] | ["@nuxt-themes/docus", Exclude<NuxtConfig["@nuxt-themes/docus"], boolean>] | ["@nuxt/devtools", Exclude<NuxtConfig["devtools"], boolean>] | ["@nuxt/telemetry", Exclude<NuxtConfig["telemetry"], boolean>])[],
+    modules?: (undefined | null | false | NuxtModule | string | [NuxtModule | string, Record<string, any>] | ["/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/index", Exclude<NuxtConfig["uiPro"], boolean>] | ["@nuxtjs/mdc", Exclude<NuxtConfig["mdc"], boolean>] | ["@nuxt/content", Exclude<NuxtConfig["content"], boolean>] | ["nuxt-icon", Exclude<NuxtConfig["icon"], boolean>] | ["@nuxtjs/color-mode", Exclude<NuxtConfig["colorMode"], boolean>] | ["@nuxtjs/tailwindcss", Exclude<NuxtConfig["tailwindcss"], boolean>] | ["@nuxt/ui", Exclude<NuxtConfig["ui"], boolean>] | ["@nuxthq/studio", Exclude<NuxtConfig["studio"], boolean>] | ["@nuxtjs/fontaine", Exclude<NuxtConfig["fontMetrics"], boolean>] | ["@nuxtjs/google-fonts", Exclude<NuxtConfig["googleFonts"], boolean>] | ["/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/nuxt-site-config@1.6.7_@nuxt+devtools@1.0.8_@vue+compiler-core@3.4.19_nuxt@3.10.3_postcss@8.4_r6uuhc4vyomlxbis2jzgwdwngi/node_modules/nuxt-site-config/dist/module", Exclude<NuxtConfig["site"], boolean>] | ["nuxt-og-image", Exclude<NuxtConfig["ogImage"], boolean>] | ["@nuxt/devtools", Exclude<NuxtConfig["devtools"], boolean>] | ["@nuxt/telemetry", Exclude<NuxtConfig["telemetry"], boolean>])[],
   }
   interface RuntimeConfig {
    app: {
@@ -24,26 +24,6 @@ declare module 'nuxt/schema' {
       buildAssetsDir: string,
 
       cdnURL: string,
-   },
-
-   pinceau: {
-      studio: boolean,
-
-      outputDir: string,
-   },
-
-   mdc: {
-      highlight: {
-         theme: {
-            dark: string,
-
-            default: string,
-         },
-
-         preload: Array<string>,
-
-         wrapperStyle: any,
-      },
    },
 
    content: {
@@ -83,12 +63,18 @@ declare module 'nuxt/schema' {
 
       highlight: {
          theme: {
-            dark: string,
+            light: string,
 
             default: string,
+
+            dark: string,
          },
 
          preload: Array<string>,
+
+         highlighter: string,
+
+         langs: Array<string>,
       },
 
       markdown: {
@@ -182,6 +168,48 @@ declare module 'nuxt/schema' {
 
          search: any,
       },
+   },
+
+   "nuxt-site-config": {
+      stack: Array<{
+
+      }>,
+
+      version: string,
+
+      debug: boolean,
+   },
+
+   "nuxt-og-image": {
+      version: string,
+
+      satoriOptions: any,
+
+      runtimeSatori: boolean,
+
+      runtimeBrowser: boolean,
+
+      defaults: {
+         provider: string,
+
+         component: string,
+
+         width: number,
+
+         height: number,
+
+         cache: boolean,
+
+         cacheTtl: number,
+      },
+
+      runtimeCacheStorage: string,
+
+      fonts: Array<{
+
+      }>,
+
+      assetDirs: Array<string>,
    },
 
    appConfigSchema: {
@@ -309,7 +337,7 @@ declare module 'nuxt/schema' {
                },
             },
 
-            prose: {
+            ui: {
                title: string,
 
                description: string,
@@ -319,7 +347,7 @@ declare module 'nuxt/schema' {
                id: string,
 
                properties: {
-                  copyButton: {
+                  icons: {
                      title: string,
 
                      description: string,
@@ -329,45 +357,207 @@ declare module 'nuxt/schema' {
                      id: string,
 
                      properties: {
-                        iconCopy: {
+                        search: {
+                           type: string,
+
                            title: string,
 
                            description: string,
 
-                           tags: Array<any>,
-
-                           id: string,
-
                            default: string,
 
-                           type: string,
+                           tags: Array<string>,
+
+                           id: string,
                         },
 
-                        iconCopied: {
+                        dark: {
+                           type: string,
+
                            title: string,
 
                            description: string,
 
-                           tags: Array<any>,
+                           default: string,
+
+                           tags: Array<string>,
 
                            id: string,
+                        },
+
+                        light: {
+                           type: string,
+
+                           title: string,
+
+                           description: string,
 
                            default: string,
 
+                           tags: Array<string>,
+
+                           id: string,
+                        },
+
+                        external: {
                            type: string,
+
+                           title: string,
+
+                           description: string,
+
+                           default: string,
+
+                           tags: Array<string>,
+
+                           id: string,
+                        },
+
+                        chevron: {
+                           type: string,
+
+                           title: string,
+
+                           description: string,
+
+                           default: string,
+
+                           tags: Array<string>,
+
+                           id: string,
+                        },
+
+                        hash: {
+                           type: string,
+
+                           title: string,
+
+                           description: string,
+
+                           default: string,
+
+                           tags: Array<string>,
+
+                           id: string,
                         },
                      },
 
                      type: string,
 
                      default: {
-                        iconCopy: string,
+                        search: string,
 
-                        iconCopied: string,
+                        dark: string,
+
+                        light: string,
+
+                        external: string,
+
+                        chevron: string,
+
+                        hash: string,
                      },
                   },
 
-                  headings: {
+                  primary: {
+                     type: string,
+
+                     title: string,
+
+                     description: string,
+
+                     default: string,
+
+                     required: Array<string>,
+
+                     tags: Array<string>,
+
+                     id: string,
+                  },
+
+                  gray: {
+                     type: string,
+
+                     title: string,
+
+                     description: string,
+
+                     default: string,
+
+                     required: Array<string>,
+
+                     tags: Array<string>,
+
+                     id: string,
+                  },
+               },
+
+               type: string,
+
+               default: {
+                  icons: {
+                     search: string,
+
+                     dark: string,
+
+                     light: string,
+
+                     external: string,
+
+                     chevron: string,
+
+                     hash: string,
+                  },
+
+                  primary: string,
+
+                  gray: string,
+               },
+            },
+
+            seo: {
+               title: string,
+
+               description: string,
+
+               tags: Array<string>,
+
+               id: string,
+
+               properties: {
+                  siteName: {
+                     type: string,
+
+                     title: string,
+
+                     description: string,
+
+                     default: Array<any>,
+
+                     tags: Array<string>,
+
+                     id: string,
+                  },
+               },
+
+               type: string,
+
+               default: {
+                  siteName: Array<any>,
+               },
+            },
+
+            header: {
+               title: string,
+
+               description: string,
+
+               tags: Array<string>,
+
+               id: string,
+
+               properties: {
+                  logo: {
                      title: string,
 
                      description: string,
@@ -377,231 +567,103 @@ declare module 'nuxt/schema' {
                      id: string,
 
                      properties: {
-                        icon: {
+                        light: {
+                           type: string,
+
                            title: string,
 
                            description: string,
 
-                           tags: Array<any>,
+                           default: string,
 
-                           tsType: string,
+                           tags: Array<string>,
 
                            id: string,
+                        },
+
+                        dark: {
+                           type: string,
+
+                           title: string,
+
+                           description: string,
 
                            default: string,
 
+                           tags: Array<string>,
+
+                           id: string,
+                        },
+
+                        alt: {
                            type: string,
+
+                           title: string,
+
+                           description: string,
+
+                           default: string,
+
+                           tags: Array<string>,
+
+                           id: string,
                         },
                      },
 
                      type: string,
 
                      default: {
-                        icon: string,
+                        light: string,
+
+                        dark: string,
+
+                        alt: string,
                      },
                   },
 
-                  h1: {
+                  search: {
+                     type: string,
+
                      title: string,
 
                      description: string,
 
+                     default: boolean,
+
                      tags: Array<string>,
 
                      id: string,
-
-                     properties: {
-                        icon: {
-                           title: string,
-
-                           description: string,
-
-                           tags: Array<any>,
-
-                           tsType: string,
-
-                           id: string,
-
-                           default: string,
-
-                           type: string,
-                        },
-                     },
-
-                     type: string,
-
-                     default: {
-                        icon: string,
-                     },
                   },
 
-                  h2: {
+                  colorMode: {
+                     type: string,
+
                      title: string,
 
                      description: string,
 
+                     default: boolean,
+
                      tags: Array<string>,
 
                      id: string,
-
-                     properties: {
-                        icon: {
-                           title: string,
-
-                           description: string,
-
-                           tags: Array<any>,
-
-                           tsType: string,
-
-                           id: string,
-
-                           default: string,
-
-                           type: string,
-                        },
-                     },
-
-                     type: string,
-
-                     default: {
-                        icon: string,
-                     },
                   },
 
-                  h3: {
+                  links: {
+                     type: string,
+
                      title: string,
 
                      description: string,
+
+                     default: Array<any>,
 
                      tags: Array<string>,
 
                      id: string,
 
-                     properties: {
-                        icon: {
-                           title: string,
-
-                           description: string,
-
-                           tags: Array<any>,
-
-                           tsType: string,
-
-                           id: string,
-
-                           default: string,
-
-                           type: string,
-                        },
-                     },
-
-                     type: string,
-
-                     default: {
-                        icon: string,
-                     },
-                  },
-
-                  h4: {
-                     title: string,
-
-                     description: string,
-
-                     tags: Array<string>,
-
-                     id: string,
-
-                     properties: {
-                        icon: {
-                           title: string,
-
-                           description: string,
-
-                           tags: Array<any>,
-
-                           tsType: string,
-
-                           id: string,
-
-                           default: string,
-
-                           type: string,
-                        },
-                     },
-
-                     type: string,
-
-                     default: {
-                        icon: string,
-                     },
-                  },
-
-                  h5: {
-                     title: string,
-
-                     description: string,
-
-                     tags: Array<string>,
-
-                     id: string,
-
-                     properties: {
-                        icon: {
-                           title: string,
-
-                           description: string,
-
-                           tags: Array<any>,
-
-                           tsType: string,
-
-                           id: string,
-
-                           default: string,
-
-                           type: string,
-                        },
-                     },
-
-                     type: string,
-
-                     default: {
-                        icon: string,
-                     },
-                  },
-
-                  h6: {
-                     title: string,
-
-                     description: string,
-
-                     tags: Array<string>,
-
-                     id: string,
-
-                     properties: {
-                        icon: {
-                           title: string,
-
-                           description: string,
-
-                           tags: Array<any>,
-
-                           tsType: string,
-
-                           id: string,
-
-                           default: string,
-
-                           type: string,
-                        },
-                     },
-
-                     type: string,
-
-                     default: {
-                        icon: string,
+                     items: {
+                        type: string,
                      },
                   },
                },
@@ -609,43 +671,91 @@ declare module 'nuxt/schema' {
                type: string,
 
                default: {
-                  copyButton: {
-                     iconCopy: string,
+                  logo: {
+                     light: string,
 
-                     iconCopied: string,
+                     dark: string,
+
+                     alt: string,
                   },
 
-                  headings: {
-                     icon: string,
-                  },
+                  search: boolean,
 
-                  h1: {
-                     icon: string,
-                  },
+                  colorMode: boolean,
 
-                  h2: {
-                     icon: string,
-                  },
-
-                  h3: {
-                     icon: string,
-                  },
-
-                  h4: {
-                     icon: string,
-                  },
-
-                  h5: {
-                     icon: string,
-                  },
-
-                  h6: {
-                     icon: string,
-                  },
+                  links: Array<any>,
                },
             },
 
-            docus: {
+            footer: {
+               title: string,
+
+               description: string,
+
+               tags: Array<string>,
+
+               id: string,
+
+               properties: {
+                  credits: {
+                     type: string,
+
+                     title: string,
+
+                     description: string,
+
+                     default: string,
+
+                     tags: Array<string>,
+
+                     id: string,
+                  },
+
+                  colorMode: {
+                     type: string,
+
+                     title: string,
+
+                     description: string,
+
+                     default: boolean,
+
+                     tags: Array<string>,
+
+                     id: string,
+                  },
+
+                  links: {
+                     type: string,
+
+                     title: string,
+
+                     description: string,
+
+                     default: Array<any>,
+
+                     tags: Array<string>,
+
+                     id: string,
+
+                     items: {
+                        type: string,
+                     },
+                  },
+               },
+
+               type: string,
+
+               default: {
+                  credits: string,
+
+                  colorMode: boolean,
+
+                  links: Array<any>,
+               },
+            },
+
+            toc: {
                title: string,
 
                description: string,
@@ -656,276 +766,20 @@ declare module 'nuxt/schema' {
 
                properties: {
                   title: {
+                     type: string,
+
                      title: string,
 
                      description: string,
-
-                     tags: Array<string>,
-
-                     id: string,
 
                      default: string,
 
-                     type: string,
-                  },
-
-                  titleTemplate: {
-                     title: string,
-
-                     description: string,
-
-                     tags: Array<any>,
-
-                     id: string,
-
-                     default: string,
-
-                     type: string,
-                  },
-
-                  description: {
-                     title: string,
-
-                     description: string,
-
                      tags: Array<string>,
 
                      id: string,
-
-                     default: string,
-
-                     type: string,
                   },
 
-                  image: {
-                     title: string,
-
-                     description: string,
-
-                     tags: Array<string>,
-
-                     id: string,
-
-                     default: string,
-
-                     type: string,
-                  },
-
-                  socials: {
-                     title: string,
-
-                     description: string,
-
-                     tags: Array<string>,
-
-                     id: string,
-
-                     properties: {
-                        twitter: {
-                           title: string,
-
-                           description: string,
-
-                           tags: Array<string>,
-
-                           id: string,
-
-                           default: string,
-
-                           type: string,
-                        },
-
-                        github: {
-                           title: string,
-
-                           description: string,
-
-                           tags: Array<string>,
-
-                           id: string,
-
-                           default: string,
-
-                           type: string,
-                        },
-
-                        facebook: {
-                           title: string,
-
-                           description: string,
-
-                           tags: Array<string>,
-
-                           id: string,
-
-                           default: string,
-
-                           type: string,
-                        },
-
-                        instagram: {
-                           title: string,
-
-                           description: string,
-
-                           tags: Array<string>,
-
-                           id: string,
-
-                           default: string,
-
-                           type: string,
-                        },
-
-                        tiktok: {
-                           title: string,
-
-                           description: string,
-
-                           tags: Array<string>,
-
-                           id: string,
-
-                           default: string,
-
-                           type: string,
-                        },
-
-                        youtube: {
-                           title: string,
-
-                           description: string,
-
-                           tags: Array<string>,
-
-                           id: string,
-
-                           default: string,
-
-                           type: string,
-                        },
-
-                        medium: {
-                           title: string,
-
-                           description: string,
-
-                           tags: Array<string>,
-
-                           id: string,
-
-                           default: string,
-
-                           type: string,
-                        },
-                     },
-
-                     type: string,
-
-                     default: {
-                        twitter: string,
-
-                        github: string,
-
-                        facebook: string,
-
-                        instagram: string,
-
-                        tiktok: string,
-
-                        youtube: string,
-
-                        medium: string,
-                     },
-                  },
-
-                  layout: {
-                     title: string,
-
-                     description: string,
-
-                     tags: Array<string>,
-
-                     tsType: string,
-
-                     id: string,
-
-                     default: string,
-
-                     type: string,
-                  },
-
-                  aside: {
-                     title: string,
-
-                     description: string,
-
-                     tags: Array<string>,
-
-                     id: string,
-
-                     properties: {
-                        level: {
-                           title: string,
-
-                           description: string,
-
-                           tags: Array<any>,
-
-                           id: string,
-
-                           default: number,
-
-                           type: string,
-                        },
-
-                        collapsed: {
-                           title: string,
-
-                           description: string,
-
-                           tags: Array<any>,
-
-                           id: string,
-
-                           default: boolean,
-
-                           type: string,
-                        },
-
-                        exclude: {
-                           title: string,
-
-                           description: string,
-
-                           tags: Array<any>,
-
-                           tsType: string,
-
-                           id: string,
-
-                           default: Array<any>,
-
-                           type: string,
-
-                           items: {
-                              type: string,
-                           },
-                        },
-                     },
-
-                     type: string,
-
-                     default: {
-                        level: number,
-
-                        collapsed: boolean,
-
-                        exclude: Array<any>,
-                     },
-                  },
-
-                  header: {
+                  bottom: {
                      title: string,
 
                      description: string,
@@ -936,81 +790,49 @@ declare module 'nuxt/schema' {
 
                      properties: {
                         title: {
+                           type: string,
+
                            title: string,
 
                            description: string,
-
-                           tags: Array<string>,
-
-                           id: string,
 
                            default: string,
 
-                           type: string,
+                           tags: Array<string>,
+
+                           id: string,
                         },
 
-                        logo: {
+                        edit: {
+                           type: string,
+
                            title: string,
 
                            description: string,
+
+                           default: string,
 
                            tags: Array<string>,
 
-                           tsType: string,
-
                            id: string,
-
-                           default: boolean,
-
-                           type: string,
                         },
 
-                        showLinkIcon: {
+                        links: {
+                           type: string,
+
                            title: string,
 
                            description: string,
-
-                           tags: Array<any>,
-
-                           id: string,
-
-                           default: boolean,
-
-                           type: string,
-                        },
-
-                        exclude: {
-                           title: string,
-
-                           description: string,
-
-                           tags: Array<any>,
-
-                           tsType: string,
-
-                           id: string,
 
                            default: Array<any>,
 
-                           type: string,
+                           tags: Array<string>,
+
+                           id: string,
 
                            items: {
                               type: string,
                            },
-                        },
-
-                        fluid: {
-                           title: string,
-
-                           description: string,
-
-                           tags: Array<any>,
-
-                           id: string,
-
-                           default: boolean,
-
-                           type: string,
                         },
                      },
 
@@ -1019,355 +841,9 @@ declare module 'nuxt/schema' {
                      default: {
                         title: string,
 
-                        logo: boolean,
+                        edit: string,
 
-                        showLinkIcon: boolean,
-
-                        exclude: Array<any>,
-
-                        fluid: boolean,
-                     },
-                  },
-
-                  main: {
-                     title: string,
-
-                     description: string,
-
-                     tags: Array<string>,
-
-                     id: string,
-
-                     properties: {
-                        fluid: {
-                           title: string,
-
-                           description: string,
-
-                           tags: Array<any>,
-
-                           id: string,
-
-                           default: boolean,
-
-                           type: string,
-                        },
-
-                        padded: {
-                           title: string,
-
-                           description: string,
-
-                           tags: Array<any>,
-
-                           id: string,
-
-                           default: boolean,
-
-                           type: string,
-                        },
-                     },
-
-                     type: string,
-
-                     default: {
-                        fluid: boolean,
-
-                        padded: boolean,
-                     },
-                  },
-
-                  footer: {
-                     title: string,
-
-                     description: string,
-
-                     tags: Array<string>,
-
-                     id: string,
-
-                     properties: {
-                        credits: {
-                           title: string,
-
-                           description: string,
-
-                           tags: Array<string>,
-
-                           tsType: string,
-
-                           id: string,
-
-                           properties: {
-                              icon: {
-                                 title: string,
-
-                                 description: string,
-
-                                 tags: Array<string>,
-
-                                 id: string,
-
-                                 default: string,
-
-                                 type: string,
-                              },
-
-                              text: {
-                                 type: string,
-
-                                 id: string,
-
-                                 default: string,
-                              },
-
-                              href: {
-                                 type: string,
-
-                                 id: string,
-
-                                 default: string,
-                              },
-                           },
-
-                           type: string,
-
-                           default: {
-                              icon: string,
-
-                              text: string,
-
-                              href: string,
-                           },
-                        },
-
-                        textLinks: {
-                           type: string,
-
-                           items: {
-                              type: string,
-
-                              required: Array<string>,
-
-                              properties: {
-                                 href: {
-                                    type: string,
-
-                                    description: string,
-                                 },
-
-                                 text: {
-                                    type: string,
-
-                                    description: string,
-                                 },
-
-                                 target: {
-                                    type: string,
-
-                                    description: string,
-                                 },
-
-                                 rel: {
-                                    type: string,
-
-                                    description: string,
-                                 },
-                              },
-                           },
-
-                           title: string,
-
-                           description: string,
-
-                           tags: Array<string>,
-
-                           id: string,
-                        },
-
-                        iconLinks: {
-                           type: string,
-
-                           items: {
-                              type: string,
-
-                              required: Array<string>,
-
-                              properties: {
-                                 icon: {
-                                    type: string,
-
-                                    description: string,
-                                 },
-
-                                 href: {
-                                    type: string,
-
-                                    description: string,
-                                 },
-
-                                 label: {
-                                    type: string,
-
-                                    description: string,
-                                 },
-
-                                 rel: {
-                                    type: string,
-
-                                    description: string,
-                                 },
-                              },
-                           },
-
-                           title: string,
-
-                           description: string,
-
-                           tags: Array<string>,
-
-                           id: string,
-                        },
-
-                        fluid: {
-                           title: string,
-
-                           description: string,
-
-                           tags: Array<any>,
-
-                           id: string,
-
-                           default: boolean,
-
-                           type: string,
-                        },
-                     },
-
-                     type: string,
-
-                     default: {
-                        credits: {
-                           icon: string,
-
-                           text: string,
-
-                           href: string,
-                        },
-
-                        fluid: boolean,
-                     },
-                  },
-
-                  github: {
-                     title: string,
-
-                     description: string,
-
-                     tags: Array<string>,
-
-                     id: string,
-
-                     properties: {
-                        baseUrl: {
-                           title: string,
-
-                           description: string,
-
-                           tags: Array<any>,
-
-                           id: string,
-
-                           default: string,
-
-                           type: string,
-                        },
-
-                        dir: {
-                           title: string,
-
-                           description: string,
-
-                           tags: Array<any>,
-
-                           id: string,
-
-                           default: string,
-
-                           type: string,
-                        },
-
-                        branch: {
-                           title: string,
-
-                           description: string,
-
-                           tags: Array<any>,
-
-                           id: string,
-
-                           default: string,
-
-                           type: string,
-                        },
-
-                        repo: {
-                           title: string,
-
-                           description: string,
-
-                           tags: Array<any>,
-
-                           id: string,
-
-                           default: string,
-
-                           type: string,
-                        },
-
-                        owner: {
-                           title: string,
-
-                           description: string,
-
-                           tags: Array<any>,
-
-                           id: string,
-
-                           default: string,
-
-                           type: string,
-                        },
-
-                        edit: {
-                           title: string,
-
-                           description: string,
-
-                           tags: Array<any>,
-
-                           id: string,
-
-                           default: boolean,
-
-                           type: string,
-                        },
-                     },
-
-                     type: string,
-
-                     default: {
-                        baseUrl: string,
-
-                        dir: string,
-
-                        branch: string,
-
-                        repo: string,
-
-                        owner: string,
-
-                        edit: boolean,
+                        links: Array<any>,
                      },
                   },
                },
@@ -1377,80 +853,12 @@ declare module 'nuxt/schema' {
                default: {
                   title: string,
 
-                  titleTemplate: string,
-
-                  description: string,
-
-                  image: string,
-
-                  socials: {
-                     twitter: string,
-
-                     github: string,
-
-                     facebook: string,
-
-                     instagram: string,
-
-                     tiktok: string,
-
-                     youtube: string,
-
-                     medium: string,
-                  },
-
-                  layout: string,
-
-                  aside: {
-                     level: number,
-
-                     collapsed: boolean,
-
-                     exclude: Array<any>,
-                  },
-
-                  header: {
+                  bottom: {
                      title: string,
 
-                     logo: boolean,
+                     edit: string,
 
-                     showLinkIcon: boolean,
-
-                     exclude: Array<any>,
-
-                     fluid: boolean,
-                  },
-
-                  main: {
-                     fluid: boolean,
-
-                     padded: boolean,
-                  },
-
-                  footer: {
-                     credits: {
-                        icon: string,
-
-                        text: string,
-
-                        href: string,
-                     },
-
-                     fluid: boolean,
-                  },
-
-                  github: {
-                     baseUrl: string,
-
-                     dir: string,
-
-                     branch: string,
-
-                     repo: string,
-
-                     owner: string,
-
-                     edit: boolean,
+                     links: Array<any>,
                   },
                },
             },
@@ -1473,119 +881,63 @@ declare module 'nuxt/schema' {
                },
             },
 
-            prose: {
-               copyButton: {
-                  iconCopy: string,
+            ui: {
+               icons: {
+                  search: string,
 
-                  iconCopied: string,
+                  dark: string,
+
+                  light: string,
+
+                  external: string,
+
+                  chevron: string,
+
+                  hash: string,
                },
 
-               headings: {
-                  icon: string,
-               },
+               primary: string,
 
-               h1: {
-                  icon: string,
-               },
-
-               h2: {
-                  icon: string,
-               },
-
-               h3: {
-                  icon: string,
-               },
-
-               h4: {
-                  icon: string,
-               },
-
-               h5: {
-                  icon: string,
-               },
-
-               h6: {
-                  icon: string,
-               },
+               gray: string,
             },
 
-            docus: {
+            seo: {
+               siteName: Array<any>,
+            },
+
+            header: {
+               logo: {
+                  light: string,
+
+                  dark: string,
+
+                  alt: string,
+               },
+
+               search: boolean,
+
+               colorMode: boolean,
+
+               links: Array<any>,
+            },
+
+            footer: {
+               credits: string,
+
+               colorMode: boolean,
+
+               links: Array<any>,
+            },
+
+            toc: {
                title: string,
 
-               titleTemplate: string,
-
-               description: string,
-
-               image: string,
-
-               socials: {
-                  twitter: string,
-
-                  github: string,
-
-                  facebook: string,
-
-                  instagram: string,
-
-                  tiktok: string,
-
-                  youtube: string,
-
-                  medium: string,
-               },
-
-               layout: string,
-
-               aside: {
-                  level: number,
-
-                  collapsed: boolean,
-
-                  exclude: Array<any>,
-               },
-
-               header: {
+               bottom: {
                   title: string,
 
-                  logo: boolean,
+                  edit: string,
 
-                  showLinkIcon: boolean,
-
-                  exclude: Array<any>,
-
-                  fluid: boolean,
-               },
-
-               main: {
-                  fluid: boolean,
-
-                  padded: boolean,
-               },
-
-               footer: {
-                  credits: {
-                     icon: string,
-
-                     text: string,
-
-                     href: string,
-                  },
-
-                  fluid: boolean,
-               },
-
-               github: {
-                  baseUrl: string,
-
-                  dir: string,
-
-                  branch: string,
-
-                  repo: string,
-
-                  owner: string,
-
-                  edit: boolean,
+                  links: Array<any>,
                },
             },
          },
@@ -1606,119 +958,63 @@ declare module 'nuxt/schema' {
             },
          },
 
-         prose: {
-            copyButton: {
-               iconCopy: string,
+         ui: {
+            icons: {
+               search: string,
 
-               iconCopied: string,
+               dark: string,
+
+               light: string,
+
+               external: string,
+
+               chevron: string,
+
+               hash: string,
             },
 
-            headings: {
-               icon: string,
-            },
+            primary: string,
 
-            h1: {
-               icon: string,
-            },
-
-            h2: {
-               icon: string,
-            },
-
-            h3: {
-               icon: string,
-            },
-
-            h4: {
-               icon: string,
-            },
-
-            h5: {
-               icon: string,
-            },
-
-            h6: {
-               icon: string,
-            },
+            gray: string,
          },
 
-         docus: {
+         seo: {
+            siteName: Array<any>,
+         },
+
+         header: {
+            logo: {
+               light: string,
+
+               dark: string,
+
+               alt: string,
+            },
+
+            search: boolean,
+
+            colorMode: boolean,
+
+            links: Array<any>,
+         },
+
+         footer: {
+            credits: string,
+
+            colorMode: boolean,
+
+            links: Array<any>,
+         },
+
+         toc: {
             title: string,
 
-            titleTemplate: string,
-
-            description: string,
-
-            image: string,
-
-            socials: {
-               twitter: string,
-
-               github: string,
-
-               facebook: string,
-
-               instagram: string,
-
-               tiktok: string,
-
-               youtube: string,
-
-               medium: string,
-            },
-
-            layout: string,
-
-            aside: {
-               level: number,
-
-               collapsed: boolean,
-
-               exclude: Array<any>,
-            },
-
-            header: {
+            bottom: {
                title: string,
 
-               logo: boolean,
+               edit: string,
 
-               showLinkIcon: boolean,
-
-               exclude: Array<any>,
-
-               fluid: boolean,
-            },
-
-            main: {
-               fluid: boolean,
-
-               padded: boolean,
-            },
-
-            footer: {
-               credits: {
-                  icon: string,
-
-                  text: string,
-
-                  href: string,
-               },
-
-               fluid: boolean,
-            },
-
-            github: {
-               baseUrl: string,
-
-               dir: string,
-
-               branch: string,
-
-               repo: string,
-
-               owner: string,
-
-               edit: boolean,
+               links: Array<any>,
             },
          },
       },
@@ -1727,20 +1023,6 @@ declare module 'nuxt/schema' {
    contentSchema: any,
   }
   interface PublicRuntimeConfig {
-   plausible: {
-      hashMode: boolean,
-
-      trackLocalhost: boolean,
-
-      domain: string,
-
-      apiHost: string,
-
-      autoPageviews: boolean,
-
-      autoOutboundTracking: boolean,
-   },
-
    mdc: {
       components: {
          prose: boolean,
@@ -1890,29 +1172,23 @@ declare module 'nuxt/schema' {
 
       highlight: {
          theme: {
-            dark: string,
+            light: string,
 
             default: string,
+
+            dark: string,
          },
 
          preload: Array<string>,
+
+         highlighter: string,
+
+         langs: Array<string>,
       },
 
       wsUrl: string,
 
-      documentDriven: {
-         page: boolean,
-
-         navigation: boolean,
-
-         surround: boolean,
-
-         globals: any,
-
-         layoutFallbacks: Array<string>,
-
-         injectPage: boolean,
-      },
+      documentDriven: boolean,
 
       host: string,
 

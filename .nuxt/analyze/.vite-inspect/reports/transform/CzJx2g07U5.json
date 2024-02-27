@@ -3,222 +3,221 @@
   "transforms": [
     {
       "name": "vite:load-fallback",
-      "result": "\nimport { updateAppConfig } from '#app/config'\nimport { defuFn } from 'defu'\n\nconst inlineConfig = {\n  \"nuxt\": {\n    \"buildId\": \"e6182041-4e18-4689-93aa-811c77a19cb7\"\n  }\n}\n\n// Vite - webpack is handled directly in #app/config\nif (import.meta.hot) {\n  import.meta.hot.accept((newModule) => {\n    updateAppConfig(newModule.default)\n  })\n}\n\nimport cfg0 from \"/workspace/Kubernetes-Bootcamp/app.config.ts\"\nimport cfg1 from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/app.config.ts\"\nimport cfg2 from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/app.config.ts\"\nimport cfg3 from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/app.config.ts\"\n\nexport default /*@__PURE__*/ defuFn(cfg0, cfg1, cfg2, cfg3, inlineConfig)\n",
-      "start": 1708988591078,
-      "end": 1708988591352,
+      "result": "\nimport { updateAppConfig } from '#app/config'\nimport { defuFn } from 'defu'\n\nconst inlineConfig = {\n  \"nuxt\": {\n    \"buildId\": \"b34aac9c-decb-420c-a2c1-41de5cf94796\"\n  },\n  \"ui\": {\n    \"primary\": \"green\",\n    \"gray\": \"cool\",\n    \"colors\": [\n      \"red\",\n      \"orange\",\n      \"amber\",\n      \"yellow\",\n      \"lime\",\n      \"green\",\n      \"emerald\",\n      \"teal\",\n      \"cyan\",\n      \"sky\",\n      \"blue\",\n      \"indigo\",\n      \"violet\",\n      \"purple\",\n      \"fuchsia\",\n      \"pink\",\n      \"rose\",\n      \"primary\"\n    ],\n    \"strategy\": \"merge\"\n  }\n}\n\n// Vite - webpack is handled directly in #app/config\nif (import.meta.hot) {\n  import.meta.hot.accept((newModule) => {\n    updateAppConfig(newModule.default)\n  })\n}\n\nimport cfg0 from \"/workspace/Kubernetes-Bootcamp/app.config.ts\"\nimport cfg1 from \"/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/app.config.ts\"\n\nexport default /*@__PURE__*/ defuFn(cfg0, cfg1, inlineConfig)\n",
+      "start": 1709031585305,
+      "end": 1709031585649,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1708988591352,
-      "end": 1708988591352,
+      "start": 1709031585649,
+      "end": 1709031585649,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1708988591352,
-      "end": 1708988591352,
-      "order": "pre"
-    },
-    {
-      "name": "pinceau-transforms",
-      "result": "\nimport { updateAppConfig } from '#app/config'\nimport { defuFn } from 'defu'\n\nconst inlineConfig = {\n  \"nuxt\": {\n    \"buildId\": \"e6182041-4e18-4689-93aa-811c77a19cb7\"\n  }\n}\n\n// Vite - webpack is handled directly in #app/config\nif (import.meta.hot) {\n  import.meta.hot.accept((newModule) => {\n    updateAppConfig(newModule.default)\n  })\n}\n\nimport cfg0 from \"/workspace/Kubernetes-Bootcamp/app.config.ts\"\nimport cfg1 from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/app.config.ts\"\nimport cfg2 from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/app.config.ts\"\nimport cfg3 from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/app.config.ts\"\n\nexport default /*@__PURE__*/ defuFn(cfg0, cfg1, cfg2, cfg3, inlineConfig)\n",
-      "start": 1708988591352,
-      "end": 1708988591352,
+      "start": 1709031585649,
+      "end": 1709031585649,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1708988591352,
-      "end": 1708988591352,
+      "start": 1709031585649,
+      "end": 1709031585649,
+      "order": "pre"
+    },
+    {
+      "name": "fontaine-transform",
+      "start": 1709031585649,
+      "end": 1709031585649,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1708988591352,
-      "end": 1708988591352,
+      "start": 1709031585649,
+      "end": 1709031585649,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1708988591353,
-      "end": 1708988591353,
+      "start": 1709031585649,
+      "end": 1709031585649,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1708988591353,
-      "end": 1708988591353,
+      "start": 1709031585649,
+      "end": 1709031585649,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1708988591353,
-      "end": 1708988591353,
+      "start": 1709031585649,
+      "end": 1709031585649,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1708988591353,
-      "end": 1708988591353,
+      "start": 1709031585649,
+      "end": 1709031585649,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1708988591353,
-      "end": 1708988591353,
+      "start": 1709031585649,
+      "end": 1709031585649,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1708988591353,
-      "end": 1708988591353,
+      "start": 1709031585649,
+      "end": 1709031585649,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708988591353,
-      "end": 1708988591353,
+      "start": 1709031585649,
+      "end": 1709031585649,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1708988591353,
-      "end": 1708988591353,
+      "start": 1709031585649,
+      "end": 1709031585649,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1708988591353,
-      "end": 1708988591353,
+      "start": 1709031585649,
+      "end": 1709031585649,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1708988591353,
-      "end": 1708988591353,
+      "start": 1709031585649,
+      "end": 1709031585649,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1708988591353,
-      "end": 1708988591353,
+      "start": 1709031585649,
+      "end": 1709031585649,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1708988591353,
-      "end": 1708988591353,
+      "start": 1709031585649,
+      "end": 1709031585649,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "result": "import { updateAppConfig } from \"#app/config\";\nimport { defuFn } from \"defu\";\nconst inlineConfig = {\n  \"nuxt\": {\n    \"buildId\": \"e6182041-4e18-4689-93aa-811c77a19cb7\"\n  }\n};\nif (void 0) {\n  (void 0).accept((newModule) => {\n    updateAppConfig(newModule.default);\n  });\n}\nimport cfg0 from \"/workspace/Kubernetes-Bootcamp/app.config.ts\";\nimport cfg1 from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/app.config.ts\";\nimport cfg2 from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/app.config.ts\";\nimport cfg3 from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/app.config.ts\";\nexport default /* @__PURE__ */ defuFn(cfg0, cfg1, cfg2, cfg3, inlineConfig);\n",
-      "start": 1708988591353,
-      "end": 1708988591595,
+      "result": "import { updateAppConfig } from \"#app/config\";\nimport { defuFn } from \"defu\";\nconst inlineConfig = {\n  \"nuxt\": {\n    \"buildId\": \"b34aac9c-decb-420c-a2c1-41de5cf94796\"\n  },\n  \"ui\": {\n    \"primary\": \"green\",\n    \"gray\": \"cool\",\n    \"colors\": [\n      \"red\",\n      \"orange\",\n      \"amber\",\n      \"yellow\",\n      \"lime\",\n      \"green\",\n      \"emerald\",\n      \"teal\",\n      \"cyan\",\n      \"sky\",\n      \"blue\",\n      \"indigo\",\n      \"violet\",\n      \"purple\",\n      \"fuchsia\",\n      \"pink\",\n      \"rose\",\n      \"primary\"\n    ],\n    \"strategy\": \"merge\"\n  }\n};\nif (void 0) {\n  (void 0).accept((newModule) => {\n    updateAppConfig(newModule.default);\n  });\n}\nimport cfg0 from \"/workspace/Kubernetes-Bootcamp/app.config.ts\";\nimport cfg1 from \"/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/app.config.ts\";\nexport default /* @__PURE__ */ defuFn(cfg0, cfg1, inlineConfig);\n",
+      "start": 1709031585649,
+      "end": 1709031585673,
       "order": "normal",
       "sourcemaps": null
     },
     {
       "name": "vite:css-post",
-      "start": 1708988591595,
-      "end": 1708988591595,
+      "start": 1709031585673,
+      "end": 1709031585673,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1708988591595,
-      "end": 1708988591595,
+      "start": 1709031585673,
+      "end": 1709031585673,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1708988591595,
-      "end": 1708988591595,
+      "start": 1709031585673,
+      "end": 1709031585673,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1708988591595,
-      "end": 1708988591595,
+      "start": 1709031585673,
+      "end": 1709031585673,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1708988591595,
-      "end": 1708988591595,
+      "start": 1709031585673,
+      "end": 1709031585675,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1708988591595,
-      "end": 1708988591595,
+      "start": 1709031585675,
+      "end": 1709031585675,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1708988591595,
-      "end": 1708988591595,
+      "start": 1709031585675,
+      "end": 1709031585675,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1708988591595,
-      "end": 1708988591595,
+      "start": 1709031585676,
+      "end": 1709031585676,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1708988591595,
-      "end": 1708988591596,
+      "start": 1709031585676,
+      "end": 1709031585676,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1708988591596,
-      "end": 1708988591596,
+      "start": 1709031585677,
+      "end": 1709031585677,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1708988591596,
-      "end": 1708988591596,
+      "start": 1709031585677,
+      "end": 1709031585677,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1708988591596,
-      "end": 1708988591596,
+      "start": 1709031585677,
+      "end": 1709031585677,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1708988591596,
-      "end": 1708988591596,
+      "start": 1709031585677,
+      "end": 1709031585677,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1708988591596,
-      "end": 1708988591596,
+      "start": 1709031585678,
+      "end": 1709031585678,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1708988591597,
-      "end": 1708988591597,
+      "start": 1709031585678,
+      "end": 1709031585678,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1708988591597,
-      "end": 1708988591597,
+      "start": 1709031585678,
+      "end": 1709031585678,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1708988591597,
-      "end": 1708988591597,
+      "start": 1709031585678,
+      "end": 1709031585678,
       "order": "normal"
     }
   ]

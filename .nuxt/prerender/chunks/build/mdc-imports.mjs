@@ -2,15 +2,10 @@ import { visit } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/unist-
 import { toString } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/hast-util-to-string/index.js';
 
 const defaults = {
-  theme: {
-    default: "github-light",
-    dark: "github-dark"
-  },
-  async highlighter(code, lang, theme, highlights) {
+  theme: {},
+  async highlighter(code, lang, theme, options) {
     if (process.browser && window.sessionStorage.getItem("mdc-shiki-highlighter") === "browser") {
-      return import('../nitro/nitro-prerenderer.mjs').then(function (n) { return n.h; }).then(({ useShikiHighlighter }) => {
-        return useShikiHighlighter().getHighlightedAST(code, lang, theme, { highlights });
-      });
+      return import('../nitro/nitro-prerenderer.mjs').then(function (n) { return n.m; }).then((h) => h.default(code, lang, theme, options));
     }
     try {
       return await $fetch("/api/_mdc/highlight", {
@@ -18,19 +13,19 @@ const defaults = {
           code,
           lang,
           theme: JSON.stringify(theme),
-          highlights: JSON.stringify(highlights)
+          options: JSON.stringify(options)
         }
       });
     } catch (e) {
       if (process.browser && e?.response?.status === 404) {
         window.sessionStorage.setItem("mdc-shiki-highlighter", "browser");
-        return this.highlighter?.(code, lang, theme, highlights);
+        return this.highlighter?.(code, lang, theme, options);
       }
     }
     return Promise.resolve({ tree: [{ type: "text", value: code }], className: "", style: "" });
   }
 };
-function rehypeShiki(opts = {}) {
+function rehypeHighlight(opts = {}) {
   const options = { ...defaults, ...opts };
   return async (tree) => {
     const tasks = [];
@@ -40,11 +35,15 @@ function rehypeShiki(opts = {}) {
       (node) => ["pre", "code"].includes(node.tagName) && !!(node.properties?.language || node.properties?.highlights),
       (node) => {
         const _node = node;
+        const highlights = typeof _node.properties.highlights === "string" ? _node.properties.highlights.split(/[,\s]+/).map(Number) : Array.isArray(_node.properties.highlights) ? _node.properties.highlights.map(Number) : [];
         const task = options.highlighter(
           toString(node),
           _node.properties.language,
           options.theme,
-          _node.properties.highlights ?? []
+          {
+            highlights: highlights.filter(Boolean),
+            meta: _node.properties.meta
+          }
         ).then(({ tree: tree2, className, style, inlineStyle }) => {
           _node.properties.className = ((_node.properties.className || "") + " " + className).trim();
           _node.properties.style = ((_node.properties.style || "") + " " + inlineStyle).trim();
@@ -79,10 +78,10 @@ const remarkPlugins = {
 };
 
 const rehypePlugins = {
-  'highlight': { instance: rehypeShiki, options: {"src":"/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/shiki/index.mjs"} },
+  'highlight': { instance: rehypeHighlight, options: {} },
 };
 
-const highlight = {"theme":{"dark":"github-dark","default":"github-light"},"preload":["json","js","ts","html","css","vue","diff","shell","markdown","yaml","bash","ini"]};
+const highlight = {"theme":{"light":"material-theme-lighter","default":"material-theme","dark":"material-theme-palenight"}};
 
 export { highlight, rehypePlugins, remarkPlugins };
 //# sourceMappingURL=mdc-imports.mjs.map

@@ -2,16 +2,39 @@
 import type { CustomAppConfig } from 'nuxt/schema'
 import type { Defu } from 'defu'
 import cfg0 from "/workspace/Kubernetes-Bootcamp/app.config"
-import cfg1 from "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/app.config"
-import cfg2 from "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/app.config"
-import cfg3 from "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/app.config"
+import cfg1 from "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/app.config"
 
 declare const inlineConfig = {
   "nuxt": {
     "buildId": "dev"
+  },
+  "ui": {
+    "primary": "green",
+    "gray": "cool",
+    "colors": [
+      "red",
+      "orange",
+      "amber",
+      "yellow",
+      "lime",
+      "green",
+      "emerald",
+      "teal",
+      "cyan",
+      "sky",
+      "blue",
+      "indigo",
+      "violet",
+      "purple",
+      "fuchsia",
+      "pink",
+      "rose",
+      "primary"
+    ],
+    "strategy": "merge"
   }
 }
-type ResolvedAppConfig = Defu<typeof inlineConfig, [typeof cfg0, typeof cfg1, typeof cfg2, typeof cfg3]>
+type ResolvedAppConfig = Defu<typeof inlineConfig, [typeof cfg0, typeof cfg1]>
 type IsAny<T> = 0 extends 1 & T ? true : false
 
 type MergedAppConfig<Resolved extends Record<string, unknown>, Custom extends Record<string, unknown>> = {

@@ -5,6 +5,31 @@ import { defuFn } from 'defu'
 const inlineConfig = {
   "nuxt": {
     "buildId": "dev"
+  },
+  "ui": {
+    "primary": "green",
+    "gray": "cool",
+    "colors": [
+      "red",
+      "orange",
+      "amber",
+      "yellow",
+      "lime",
+      "green",
+      "emerald",
+      "teal",
+      "cyan",
+      "sky",
+      "blue",
+      "indigo",
+      "violet",
+      "purple",
+      "fuchsia",
+      "pink",
+      "rose",
+      "primary"
+    ],
+    "strategy": "merge"
   }
 }
 
@@ -16,8 +41,6 @@ if (import.meta.hot) {
 }
 
 import cfg0 from "/workspace/Kubernetes-Bootcamp/app.config.ts"
-import cfg1 from "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/app.config.ts"
-import cfg2 from "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/app.config.ts"
-import cfg3 from "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/app.config.ts"
+import cfg1 from "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/app.config.ts"
 
-export default /*@__PURE__*/ defuFn(cfg0, cfg1, cfg2, cfg3, inlineConfig)
+export default /*@__PURE__*/ defuFn(cfg0, cfg1, inlineConfig)

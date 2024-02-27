@@ -15,11 +15,12 @@ import 'file:///workspace/Kubernetes-Bootcamp/node_modules/unstorage/drivers/mem
 import 'file:///workspace/Kubernetes-Bootcamp/node_modules/unstorage/drivers/lru-cache.mjs';
 import 'file:///workspace/Kubernetes-Bootcamp/node_modules/unstorage/drivers/fs-lite.mjs';
 import 'file:///workspace/Kubernetes-Bootcamp/node_modules/radix3/dist/index.mjs';
+import 'file:///workspace/Kubernetes-Bootcamp/node_modules/vue/index.mjs';
 import 'node:fs';
 import 'node:url';
 import 'file:///workspace/Kubernetes-Bootcamp/node_modules/pathe/dist/index.mjs';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/shikiji/dist/index.mjs';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/shikiji-transformers/dist/index.mjs';
+import 'file:///workspace/Kubernetes-Bootcamp/node_modules/shiki/dist/core.mjs';
+import 'file:///workspace/Kubernetes-Bootcamp/node_modules/@shikijs/transformers/dist/index.mjs';
 import 'file:///workspace/Kubernetes-Bootcamp/node_modules/unified/index.js';
 import 'file:///workspace/Kubernetes-Bootcamp/node_modules/mdast-util-to-string/index.js';
 import 'file:///workspace/Kubernetes-Bootcamp/node_modules/micromark/index.js';

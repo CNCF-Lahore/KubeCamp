@@ -1,53 +1,15 @@
-import { getRequestDependencies, getPreloadLinks, getPrefetchLinks, createRenderer } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/vue-bundle-renderer/dist/runtime.mjs';
-import { eventHandler, setResponseHeader, send, getResponseStatus, setResponseStatus, setResponseHeaders, getQuery, createError, appendResponseHeader, getResponseStatusText } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/h3/dist/index.mjs';
+import { getRequestDependencies, getPreloadLinks, getPrefetchLinks, createRenderer } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/.pnpm/vue-bundle-renderer@2.0.0/node_modules/vue-bundle-renderer/dist/runtime.mjs';
+import { eventHandler, setResponseHeader, send, getResponseStatus, setResponseStatus, setResponseHeaders, getQuery, createError, appendResponseHeader, getResponseStatusText, readBody } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/h3/dist/index.mjs';
 import { stringify, uneval } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/devalue/index.js';
+import destr from 'file:///workspace/Kubernetes-Bootcamp/node_modules/destr/dist/index.mjs';
 import { joinURL, withoutTrailingSlash } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/ufo/dist/index.mjs';
 import { renderToString } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/vue/server-renderer/index.mjs';
+import { hash } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/ohash/dist/index.mjs';
 import { renderSSRHead } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/@unhead/ssr/dist/index.mjs';
-import { a as useNitroApp, b as useRuntimeConfig, c as useStorage, g as getRouteRules } from './nitro/nitro-prerenderer.mjs';
+import { h as useNitroApp, u as useRuntimeConfig, c as useStorage, g as getRouteRules } from './nitro/nitro-prerenderer.mjs';
 import { version, unref } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/vue/index.mjs';
 import { createServerHead as createServerHead$1 } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/unhead/dist/index.mjs';
 import { defineHeadPlugin } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/@unhead/shared/dist/index.mjs';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/ofetch/dist/node.mjs';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/destr/dist/index.mjs';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/unenv/runtime/fetch/index.mjs';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/hookable/dist/index.mjs';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/scule/dist/index.mjs';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/klona/dist/index.mjs';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/defu/dist/defu.mjs';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/ohash/dist/index.mjs';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/unstorage/dist/index.mjs';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/unstorage/drivers/fs.mjs';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/unstorage/drivers/memory.mjs';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/unstorage/drivers/lru-cache.mjs';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/unstorage/drivers/fs-lite.mjs';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/radix3/dist/index.mjs';
-import 'node:fs';
-import 'node:url';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/pathe/dist/index.mjs';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/shikiji/dist/index.mjs';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/shikiji-transformers/dist/index.mjs';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/unified/index.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/mdast-util-to-string/index.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/micromark/index.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/unist-util-stringify-position/index.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/micromark-util-character/index.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/micromark-util-chunked/index.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/micromark-util-resolve-all/index.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/micromark-util-sanitize-uri/index.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/slugify/slugify.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/remark-parse/index.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/remark-rehype/index.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/remark-mdc/dist/index.mjs';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/hast-util-to-string/index.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/github-slugger/index.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/detab/index.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/remark-emoji/index.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/remark-gfm/index.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/rehype-external-links/index.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/rehype-sort-attribute-values/index.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/rehype-sort-attributes/index.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/rehype-raw/index.js';
 
 function defineRenderHandler(handler) {
   return eventHandler(async (event) => {
@@ -147,7 +109,7 @@ function createServerHead(options = {}) {
 
 const unheadPlugins = [];
 
-const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"}],"link":[],"style":[],"script":[],"noscript":[],"htmlAttrs":{"lang":"en"}};
+const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"}],"link":[],"style":[],"script":[],"noscript":[]};
 
 const appRootId = "__nuxt";
 
@@ -156,7 +118,14 @@ const appRootTag = "div";
 globalThis.__buildAssetsURL = buildAssetsURL;
 globalThis.__publicAssetsURL = publicAssetsURL;
 const getClientManifest = () => import('./app/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
+const getEntryIds = () => getClientManifest().then((r) => Object.values(r).filter(
+  (r2) => (
+    // @ts-expect-error internal key set by CSS inlining configuration
+    r2._globalCSS
+  )
+).map((r2) => r2.src));
 const getServerEntry = () => import('./app/server.mjs').then((r) => r.default || r);
+const getSSRStyles = lazyCachedFunction(() => import('./app/styles.mjs').then((r) => r.default || r));
 const getSSRRenderer = lazyCachedFunction(async () => {
   const manifest = await getClientManifest();
   if (!manifest) {
@@ -211,9 +180,29 @@ const getSPARenderer = lazyCachedFunction(async () => {
   };
 });
 const payloadCache = useStorage("internal:nuxt:prerender:payload") ;
-useStorage("internal:nuxt:prerender:island") ;
-useStorage("internal:nuxt:prerender:island-props") ;
+const islandCache = useStorage("internal:nuxt:prerender:island") ;
+const islandPropCache = useStorage("internal:nuxt:prerender:island-props") ;
+async function getIslandContext(event) {
+  let url = event.path || "";
+  if (event.path && await islandPropCache.hasItem(event.path)) {
+    url = await islandPropCache.getItem(event.path);
+  }
+  url = url.substring("/__nuxt_island".length + 1) || "";
+  const [componentName, hashId] = url.split("?")[0].replace(/\.json$/, "").split("_");
+  const context = event.method === "GET" ? getQuery(event) : await readBody(event);
+  const ctx = {
+    url: "/",
+    ...context,
+    id: hashId,
+    name: componentName,
+    props: destr(context.props) || {},
+    slots: {},
+    components: {}
+  };
+  return ctx;
+}
 const PAYLOAD_URL_RE = /\/_payload(\.[a-zA-Z0-9]+)?.json(\?.*)?$/ ;
+const ROOT_NODE_REGEX = new RegExp(`^<${appRootTag}${` id="${appRootId}"` }>([\\s\\S]*)</${appRootTag}>$`);
 const PRERENDER_NO_SSR_ROUTES = /* @__PURE__ */ new Set(["/index.html", "/200.html", "/404.html"]);
 const renderer = defineRenderHandler(async (event) => {
   const nitroApp = useNitroApp();
@@ -227,8 +216,11 @@ const renderer = defineRenderHandler(async (event) => {
       statusMessage: "Page Not Found: /__nuxt_error"
     });
   }
-  const isRenderingIsland = false ;
-  const islandContext = void 0;
+  const isRenderingIsland = event.path.startsWith("/__nuxt_island");
+  const islandContext = isRenderingIsland ? await getIslandContext(event) : void 0;
+  if (islandContext && event.path && await islandCache.hasItem(event.path)) {
+    return islandCache.getItem(event.path);
+  }
   let url = ssrError?.url || islandContext?.url || event.path;
   const isRenderingPayload = PAYLOAD_URL_RE.test(url) && !isRenderingIsland;
   if (isRenderingPayload) {
@@ -244,7 +236,7 @@ const renderer = defineRenderHandler(async (event) => {
     plugins: unheadPlugins
   });
   const headEntryOptions = { mode: "server" };
-  {
+  if (!isRenderingIsland) {
     head.push(appHead, headEntryOptions);
   }
   const ssrContext = {
@@ -258,6 +250,13 @@ const renderer = defineRenderHandler(async (event) => {
     /* NuxtApp */
     payload: ssrError ? { error: ssrError } : {},
     _payloadReducers: {},
+    modules: /* @__PURE__ */ new Set(),
+    set _registeredComponents(value) {
+      this.modules = value;
+    },
+    get _registeredComponents() {
+      return this.modules;
+    },
     islandContext
   };
   const _PAYLOAD_EXTRACTION = !ssrContext.noSSR && !isRenderingIsland;
@@ -266,6 +265,11 @@ const renderer = defineRenderHandler(async (event) => {
     ssrContext.payload.prerenderedAt = Date.now();
   }
   const renderer = ssrContext.noSSR ? await getSPARenderer() : await getSSRRenderer();
+  if (!isRenderingIsland) {
+    for (const id of await getEntryIds()) {
+      ssrContext.modules.add(id);
+    }
+  }
   const _rendered = await renderer.renderToString(ssrContext).catch(async (error) => {
     if (ssrContext._renderResponse && error.message === "skipping render") {
       return {};
@@ -292,7 +296,7 @@ const renderer = defineRenderHandler(async (event) => {
     appendResponseHeader(event, "x-nitro-prerender", joinURL(url, "_payload.json" ));
     await payloadCache.setItem(withoutTrailingSlash(url), renderPayloadResponse(ssrContext));
   }
-  const inlinedStyles = [];
+  const inlinedStyles = await renderInlineStyles(ssrContext.modules ?? []) ;
   const NO_SCRIPTS = routeOptions.experimentalNoScripts;
   const { styles, scripts } = getRequestDependencies(ssrContext, renderer.rendererContext);
   if (_PAYLOAD_EXTRACTION && !isRenderingIsland) {
@@ -303,7 +307,7 @@ const renderer = defineRenderHandler(async (event) => {
     }, headEntryOptions);
   }
   head.push({ style: inlinedStyles });
-  {
+  if (!isRenderingIsland || false) {
     const link = [];
     for (const style in styles) {
       const resource = styles[style];
@@ -346,10 +350,46 @@ const renderer = defineRenderHandler(async (event) => {
     head: normalizeChunks([headTags, ssrContext.styles]),
     bodyAttrs: bodyAttrs ? [bodyAttrs] : [],
     bodyPrepend: normalizeChunks([bodyTagsOpen, ssrContext.teleports?.body]),
-    body: [_rendered.html],
+    body: [replaceIslandTeleports(ssrContext, _rendered.html) ],
     bodyAppend: [bodyTags]
   };
   await nitroApp.hooks.callHook("render:html", htmlContext, { event });
+  if (isRenderingIsland && islandContext) {
+    const islandHead = {
+      link: [],
+      style: []
+    };
+    for (const tag of await head.resolveTags()) {
+      if (tag.tag === "link") {
+        islandHead.link.push({ key: "island-link-" + hash(tag.props), ...tag.props });
+      } else if (tag.tag === "style" && tag.innerHTML) {
+        islandHead.style.push({ key: "island-style-" + hash(tag.innerHTML), innerHTML: tag.innerHTML });
+      }
+    }
+    const islandResponse = {
+      id: islandContext.id,
+      head: islandHead,
+      html: getServerComponentHTML(htmlContext.body),
+      state: ssrContext.payload.state,
+      components: getClientIslandResponse(ssrContext),
+      slots: getSlotIslandResponse(ssrContext)
+    };
+    await nitroApp.hooks.callHook("render:island", islandResponse, { event, islandContext });
+    const response2 = {
+      body: JSON.stringify(islandResponse, null, 2),
+      statusCode: getResponseStatus(event),
+      statusMessage: getResponseStatusText(event),
+      headers: {
+        "content-type": "application/json;charset=utf-8",
+        "x-powered-by": "Nuxt"
+      }
+    };
+    {
+      await islandCache.setItem(`/__nuxt_island/${islandContext.name}_${islandContext.id}.json`, response2);
+      await islandPropCache.setItem(`/__nuxt_island/${islandContext.name}_${islandContext.id}.json`, event.path);
+    }
+    return response2;
+  }
   const response = {
     body: renderHTMLDocument(htmlContext),
     statusCode: getResponseStatus(event),
@@ -384,6 +424,18 @@ function joinAttrs(chunks) {
 }
 function renderHTMLDocument(html) {
   return `<!DOCTYPE html><html${joinAttrs(html.htmlAttrs)}><head>${joinTags(html.head)}</head><body${joinAttrs(html.bodyAttrs)}>${joinTags(html.bodyPrepend)}${joinTags(html.body)}${joinTags(html.bodyAppend)}</body></html>`;
+}
+async function renderInlineStyles(usedModules) {
+  const styleMap = await getSSRStyles();
+  const inlinedStyles = /* @__PURE__ */ new Set();
+  for (const mod of usedModules) {
+    if (mod in styleMap) {
+      for (const style of await styleMap[mod]()) {
+        inlinedStyles.add(style);
+      }
+    }
+  }
+  return Array.from(inlinedStyles).map((style) => ({ innerHTML: style }));
 }
 function renderPayloadResponse(ssrContext) {
   return {
@@ -421,6 +473,74 @@ function splitPayload(ssrContext) {
     payload: { data, prerenderedAt }
   };
 }
+function getServerComponentHTML(body) {
+  const match = body[0].match(ROOT_NODE_REGEX);
+  return match ? match[1] : body[0];
+}
+const SSR_SLOT_TELEPORT_MARKER = /^uid=([^;]*);slot=(.*)$/;
+const SSR_CLIENT_TELEPORT_MARKER = /^uid=([^;]*);client=(.*)$/;
+function getSlotIslandResponse(ssrContext) {
+  if (!ssrContext.islandContext) {
+    return {};
+  }
+  const response = {};
+  for (const slot in ssrContext.islandContext.slots) {
+    response[slot] = {
+      ...ssrContext.islandContext.slots[slot],
+      fallback: ssrContext.teleports?.[`island-fallback=${slot}`]
+    };
+  }
+  return response;
+}
+function getClientIslandResponse(ssrContext) {
+  if (!ssrContext.islandContext) {
+    return {};
+  }
+  const response = {};
+  for (const clientUid in ssrContext.islandContext.components) {
+    const html = ssrContext.teleports?.[clientUid] || "";
+    response[clientUid] = {
+      ...ssrContext.islandContext.components[clientUid],
+      html
+    };
+  }
+  return response;
+}
+function replaceIslandTeleports(ssrContext, html) {
+  const { teleports, islandContext } = ssrContext;
+  if (islandContext || !teleports) {
+    return html;
+  }
+  for (const key in teleports) {
+    const matchClientComp = key.match(SSR_CLIENT_TELEPORT_MARKER);
+    if (matchClientComp) {
+      const [, uid, clientId] = matchClientComp;
+      if (!uid || !clientId) {
+        continue;
+      }
+      html = html.replace(new RegExp(` data-island-component="${clientId}"[^>]*>`), (full) => {
+        return full + teleports[key];
+      });
+      continue;
+    }
+    const matchSlot = key.match(SSR_SLOT_TELEPORT_MARKER);
+    if (matchSlot) {
+      const [, uid, slot] = matchSlot;
+      if (!uid || !slot) {
+        continue;
+      }
+      html = html.replace(new RegExp(` data-island-uid="${uid}" data-island-slot="${slot}"[^>]*>`), (full) => {
+        return full + teleports[key];
+      });
+    }
+  }
+  return html;
+}
 
-export { renderer as default };
+const renderer$1 = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  default: renderer
+});
+
+export { buildAssetsURL as b, renderer$1 as r };
 //# sourceMappingURL=renderer.mjs.map

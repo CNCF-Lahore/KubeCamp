@@ -4,11 +4,9 @@
 import type { Defu } from 'defu'
 
 import type { default as appConfig0 } from "/workspace/Kubernetes-Bootcamp/app.config";
-import type { default as appConfig1 } from "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/app.config";
-import type { default as appConfig2 } from "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/app.config";
-import type { default as appConfig3 } from "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/app.config";
+import type { default as appConfig1 } from "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/app.config";
 
-type UserAppConfig = Defu<{}, [typeof appConfig0, typeof appConfig1, typeof appConfig2, typeof appConfig3]>
+type UserAppConfig = Defu<{}, [typeof appConfig0, typeof appConfig1]>
 
 declare module 'nitropack' {
   interface AppConfig extends UserAppConfig {}

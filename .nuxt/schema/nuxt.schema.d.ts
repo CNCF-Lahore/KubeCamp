@@ -73,545 +73,368 @@ export interface NuxtCustomSchema {
   },
 
   /**
-   * Prose configuration from Nuxt Typography
+   * UI
+   * 
+   * UI Customization.
    * 
    * 
-   * @studioIcon material-symbols:short-text-rounded
-   * 
-   * @studioInput icon
+   * @studioIcon i-mdi-palette-outline
   */
-  prose?: {
+  ui?: {
    /**
-    * Copy button (used in code blocks)
+    * Icons
+    * 
+    * Manage icons used in UI Pro.
     * 
     * 
-    * @studioIcon material-symbols:content-copy
+    * @studioIcon i-mdi-application-settings-outline
    */
-   copyButton?: {
+   icons?: {
     /**
-     * Icon displayed to copy
+     * Search Bar
      * 
-     * @default "ph:copy"
+     * Icon to display in the search bar.
+     * 
+     * @default "i-heroicons-magnifying-glass-20-solid"
+     * 
+     * @studioInput icon
+     * 
+     * @studioIcon i-mdi-magnify
     */
-    iconCopy?: string,
+    search?: string,
 
     /**
-     * Icon displayed when copied
+     * Dark mode
      * 
-     * @default "ph:check"
+     * Icon of color mode button for dark mode.
+     * 
+     * @default "i-heroicons-moon-20-solid"
+     * 
+     * @studioInput icon
+     * 
+     * @studioIcon i-mdi-moon-waning-crescent
     */
-    iconCopied?: string,
+    dark?: string,
+
+    /**
+     * Light mode
+     * 
+     * Icon of color mode button for light mode.
+     * 
+     * @default "i-heroicons-sun-20-solid"
+     * 
+     * @studioInput icon
+     * 
+     * @studioIcon i-mdi-white-balance-sunny
+    */
+    light?: string,
+
+    /**
+     * External Link
+     * 
+     * Icon for external link.
+     * 
+     * @default "i-heroicons-arrow-up-right-20-solid"
+     * 
+     * @studioInput icon
+     * 
+     * @studioIcon i-mdi-arrow-top-right
+    */
+    external?: string,
+
+    /**
+     * Chevron
+     * 
+     * Icon for chevron.
+     * 
+     * @default "i-heroicons-chevron-down-20-solid"
+     * 
+     * @studioInput icon
+     * 
+     * @studioIcon i-mdi-chevron-down
+    */
+    chevron?: string,
+
+    /**
+     * Hash
+     * 
+     * Icon for hash anchors.
+     * 
+     * @default "i-heroicons-hashtag-20-solid"
+     * 
+     * @studioInput icon
+     * 
+     * @studioIcon i-ph-hash
+    */
+    hash?: string,
    },
 
    /**
-    * Default configuration for all headings (h1, h2, h3, h4, h5 and h6)
+    * Primary
     * 
+    * Primary color of your UI.
     * 
-    * @studioIcon material-symbols:title
+    * @default "green"
+    * 
+    * @required sky,mint,rose,amber,violet,emerald,fuchsia,indigo,lime,orange,pink,purple,red,teal,yellow,green,blue,cyan,gray,white,black
+    * 
+    * @studioInput string
+    * 
+    * @studioIcon i-mdi-palette-outline
    */
-   headings?: {
-    /**
-     * Default icon for anchor link on hover
-     * 
-     * @default "ph:link"
-    */
-    icon?: string|false,
-   },
+   primary?: string,
 
    /**
-    * First heading configuration
+    * Gray
     * 
+    * Gray color of your UI.
     * 
-    * @studioIcon material-symbols:format-h1
+    * @default "slate"
+    * 
+    * @required slate,cool,zinc,neutral,stone
+    * 
+    * @studioInput string
+    * 
+    * @studioIcon i-mdi-palette-outline
    */
-   h1?: {
-    /**
-     * Icon displayed for anchor link on hover
-     * 
-     * @default ""
-    */
-    icon?: string|false,
-   },
-
-   /**
-    * Second heading configuration
-    * 
-    * 
-    * @studioIcon material-symbols:format-h2
-   */
-   h2?: {
-    /**
-     * Icon displayed for anchor link on hover
-     * 
-     * @default ""
-    */
-    icon?: string|false,
-   },
-
-   /**
-    * Third heading configuration
-    * 
-    * 
-    * @studioIcon material-symbols:format-h3
-   */
-   h3?: {
-    /**
-     * Icon displayed for anchor link on hover
-     * 
-     * @default ""
-    */
-    icon?: string|false,
-   },
-
-   /**
-    * Fourth heading configuration
-    * 
-    * 
-    * @studioIcon material-symbols:format-h4
-   */
-   h4?: {
-    /**
-     * Icon displayed for anchor link on hover
-     * 
-     * @default ""
-    */
-    icon?: string|false,
-   },
-
-   /**
-    * Fifth heading configuration
-    * 
-    * 
-    * @studioIcon material-symbols:format-h5
-   */
-   h5?: {
-    /**
-     * Icon displayed for anchor link on hover
-     * 
-     * @default ""
-    */
-    icon?: string|false,
-   },
-
-   /**
-    * Sixth heading configuration
-    * 
-    * 
-    * @studioIcon material-symbols:format-h6
-   */
-   h6?: {
-    /**
-     * Icon displayed for anchor link on hover
-     * 
-     * @default ""
-    */
-    icon?: string|false,
-   },
+   gray?: string,
   },
 
   /**
-   * Docus theme configuration.
+   * SEO
+   * 
+   * SEO configuration.
    * 
    * 
-   * @studioIcon material-symbols:docs
+   * @studioIcon i-ph-app-window
   */
-  docus?: {
+  seo?: {
    /**
-    * Website title, used as header default title and meta title.
+    * Site Name
     * 
-    * @default "Docus"
+    * Name used in ogSiteName and used as second part of your page title (My page title - Nuxt UI Pro).
     * 
-    * @studioIcon material-symbols:title
+    * 
+    * @studioInput string
+    * 
+    * @studioIcon i-mdi-web
+   */
+   siteName?: string,
+  },
+
+  /**
+   * Header
+   * 
+   * Header configuration.
+   * 
+   * 
+   * @studioIcon i-mdi-page-layout-header
+  */
+  header?: {
+   /**
+    * Logo
+    * 
+    * Header logo configuration.
+    * 
+    * 
+    * @studioIcon i-mdi-image-filter-center-focus-strong-outline
+   */
+   logo?: {
+    /**
+     * Light Mode Logo
+     * 
+     * Pick an image from your gallery.
+     * 
+     * @default ""
+     * 
+     * @studioInput media
+     * 
+     * @studioIcon i-mdi-white-balance-sunny
+    */
+    light?: string,
+
+    /**
+     * Dark Mode Logo
+     * 
+     * Pick an image from your gallery.
+     * 
+     * @default ""
+     * 
+     * @studioInput media
+     * 
+     * @studioIcon i-mdi-moon-waning-crescent
+    */
+    dark?: string,
+
+    /**
+     * Alt
+     * 
+     * Alt to display for accessibility.
+     * 
+     * @default ""
+     * 
+     * @studioInput string
+     * 
+     * @studioIcon i-mdi-alphabet-latin
+    */
+    alt?: string,
+   },
+
+   /**
+    * Search Bar
+    * 
+    * Hide or display the search bar.
+    * 
+    * @default true
+    * 
+    * @studioInput boolean
+    * 
+    * @studioIcon i-mdi-magnify
+   */
+   search?: boolean,
+
+   /**
+    * Color Mode
+    * 
+    * Hide or display the color mode button in your header.
+    * 
+    * @default true
+    * 
+    * @studioInput boolean
+    * 
+    * @studioIcon i-mdi-moon-waning-crescent
+   */
+   colorMode?: boolean,
+
+   /**
+    * Links
+    * 
+    * Array of link object displayed in header.
+    * 
+    * 
+    * @studioInput array
+    * 
+    * @studioIcon i-mdi-link-variant
+   */
+   links?: Array<any>,
+  },
+
+  /**
+   * Footer
+   * 
+   * Footer configuration.
+   * 
+   * 
+   * @studioIcon i-mdi-page-layout-footer
+  */
+  footer?: {
+   /**
+    * Footer credits section
+    * 
+    * Text to display as credits in the footer.
+    * 
+    * @default ""
+    * 
+    * @studioInput string
+    * 
+    * @studioIcon i-mdi-circle-edit-outline
+   */
+   credits?: string,
+
+   /**
+    * Color Mode
+    * 
+    * Hide or display the color mode button in the footer.
+    * 
+    * @default false
+    * 
+    * @studioInput boolean
+    * 
+    * @studioIcon i-mdi-moon-waning-crescent
+   */
+   colorMode?: boolean,
+
+   /**
+    * Links
+    * 
+    * Array of link object displayed in footer.
+    * 
+    * 
+    * @studioInput array
+    * 
+    * @studioIcon i-mdi-link-variant
+   */
+   links?: Array<any>,
+  },
+
+  /**
+   * Table of contents
+   * 
+   * TOC configuration.
+   * 
+   * 
+   * @studioIcon i-mdi-table-of-contents
+  */
+  toc?: {
+   /**
+    * Title
+    * 
+    * Text to display as title of the main toc.
+    * 
+    * @default ""
+    * 
+    * @studioInput string
+    * 
+    * @studioIcon i-mdi-format-title
    */
    title?: string,
 
    /**
-    * The website title template, to overwrite the default one.
+    * Bottom
     * 
-    * @default "%s · Docus"
+    * Bottom TOC configuration.
+    * 
+    * 
+    * @studioIcon i-mdi-table-of-contents
    */
-   titleTemplate?: string,
-
-   /**
-    * Website description, used for meta description.
-    * 
-    * @default "The best place to start your documentation."
-    * 
-    * @studioIcon material-symbols:description
-   */
-   description?: string,
-
-   /**
-    * Cover image.
-    * 
-    * @default "https://user-images.githubusercontent.com/904724/185365452-87b7ca7b-6030-4813-a2db-5e65c785bf88.png"
-    * 
-    * @example '/cover.jpg'
-    * 
-    * @studioIcon dashicons:cover-image
-    * 
-    * @studioInput file
-   */
-   image?: string,
-
-   /**
-    * Social links
-    * 
-    * Will be used in AppSocialIcons component.
-    * 
-    * 
-    * @studioIcon material-symbols:share-outline
-   */
-   socials?: {
+   bottom?: {
     /**
-     * Twitter social handle
+     * Title
+     * 
+     * Text to display as title of the bottom toc.
      * 
      * @default ""
      * 
-     * @example 'nuxt_js'
+     * @studioInput string
      * 
-     * @studioIcon simple-icons:twitter
-    */
-    twitter?: string,
-
-    /**
-     * GitHub org or repository
-     * 
-     * @default ""
-     * 
-     * @example 'nuxt/framework'
-     * 
-     * @studioIcon simple-icons:github
-    */
-    github?: string,
-
-    /**
-     * Facebook page url
-     * 
-     * @default ""
-     * 
-     * @example https://www.facebook.com/groups/nuxtjs
-     * 
-     * @studioIcon simple-icons:facebook
-    */
-    facebook?: string,
-
-    /**
-     * Instagram page url
-     * 
-     * @default ""
-     * 
-     * @example https://www.instagram.com/wearenuxt
-     * 
-     * @studioIcon simple-icons:instagram
-    */
-    instagram?: string,
-
-    /**
-     * Instagram page url
-     * 
-     * @default ""
-     * 
-     * @example https://www.youtube.com/@NuxtLabs
-     * 
-     * @studioIcon simple-icons:youtube
-    */
-    tiktok?: string,
-
-    /**
-     * TikTok page url
-     * 
-     * @default ""
-     * 
-     * @example https://www.tiktok.com/@tiktok
-     * 
-     * @studioIcon simple-icons:tiktok
-    */
-    youtube?: string,
-
-    /**
-     * Medium page url
-     * 
-     * @default ""
-     * 
-     * @example https://medium.com/nuxt
-     * 
-     * @studioIcon simple-icons:medium
-    */
-    medium?: string,
-   },
-
-   /**
-    * Theme layout configuration.
-    * 
-    * @default "default"
-    * 
-    * @studioIcon tabler:arrow-autofit-width
-   */
-   layout?: 'default'|'page',
-
-   /**
-    * Aside navigation configuration.
-    * 
-    * 
-    * @studioIcon fluent:document-page-24-regular
-   */
-   aside?: {
-    /**
-     * Aside navigation level
-     * 
-     * Use 0 to disable all nesting. Use 1 and more to display nested navigation in header and aside navigation.
-     * 
-     * @default 0
-    */
-    level?: number,
-
-    /**
-     * Specify if default collapsibles state globally for aside navigation.
-     * 
-     * @default false
-    */
-    collapsed?: boolean,
-
-    /**
-     * Paths to be excluded from aside navigation.
-     * 
-    */
-    exclude?: string[],
-   },
-
-   /**
-    * Header configuration.
-    * 
-    * 
-    * @studioIcon fluent:document-header-24-regular
-   */
-   header?: {
-    /**
-     * Website title
-     * 
-     * Title to be displayed in header or as aria-label if logo is defined.
-     * Default to docus.title
-     * 
-     * @default ""
-     * 
-     * @studioIcon material-symbols:title
+     * @studioIcon i-mdi-format-title
     */
     title?: string,
 
     /**
-     * Logo configuration
+     * Edit Page Link
      * 
-     * Boolean to disable or use the `Logo.vue` component.
-     * String to be used as a name of a component.
-     * Object that sets the light and dark logos.
-     * 
-     * @default false
-     * 
-     * @example 'MyLogo'
-     * 
-     * @studioInput boolean
-    */
-    logo?: boolean|string|{dark: string, light: string},
-
-    /**
-     * Header links
-     * 
-     * Toggle links icons in the header.
-     * 
-     * @default false
-    */
-    showLinkIcon?: boolean,
-
-    /**
-     * Paths to be excluded from header links.
-     * 
-    */
-    exclude?: string[],
-
-    /**
-     * Makes the content of the header fluid.
-     * 
-     * @default false
-    */
-    fluid?: boolean,
-   },
-
-   /**
-    * Main content configuration.
-    * 
-    * 
-    * @studioIcon fluent:document-header-footer-24-filled
-   */
-   main?: {
-    /**
-     * Makes the content of the main container fluid.
-     * 
-     * @default false
-    */
-    fluid?: boolean,
-
-    /**
-     * Makes the content of the main container padded.
-     * 
-     * @default true
-    */
-    padded?: boolean,
-   },
-
-   /**
-    * Footer configuration
-    * 
-    * 
-    * @studioIcon fluent:document-footer-24-regular
-   */
-   footer?: {
-    /**
-     * Website credits configuration.
-     * 
-     * 
-     * @studioIcon material-symbols:copyright
-    */
-    credits?: false|{icon: string, text: string, href: string},
-
-    /**
-     * Text links
-     * 
-     * Will be added into center section of the footer.
-     * 
-     * 
-     * @studioIcon material-symbols:add-link
-    */
-    textLinks?: Array<{
-     /**
-      * URL when clicking the link
-      * 
-     */
-     href: string,
-
-     /**
-      * Text of the link
-      * 
-     */
-     text: string,
-
-     /**
-      * Target attribute of the link
-      * 
-     */
-     target?: string,
-
-     /**
-      * Rel attribute of the link
-      * 
-     */
-     rel?: string,
-    }>,
-
-    /**
-     * Icon links
-     * 
-     * Icons to be added to Social Icons in footer.
-     * 
-     * 
-     * @studioIcon material-symbols:add-link
-    */
-    iconLinks?: Array<{
-     /**
-      * Icon name
-      * 
-     */
-     icon: string,
-
-     /**
-      * Link when clicking on the icon
-      * 
-     */
-     href: string,
-
-     /**
-      * Label of the icon
-      * 
-     */
-     label?: string,
-
-     /**
-      * Rel attribute of the link
-      * 
-     */
-     rel?: string,
-    }>,
-
-    /**
-     * Makes the content of the footer fluid.
-     * 
-     * @default true
-    */
-    fluid?: boolean,
-   },
-
-   /**
-    * GitHub integration
-    * 
-    * Configure the Edit on Github integration.
-    * 
-    * 
-    * @studioIcon simple-icons:github
-   */
-   github?: {
-    /**
-     * Base URL
-     * 
-     * You can use this to link to GitHub Enterprise.
-     * 
-     * @default "https://github.com"
-    */
-    baseUrl?: string,
-
-    /**
-     * Directory
-     * 
-     * Your GitHub repository root directory.
+     * URL of your repository content folder.
      * 
      * @default ""
+     * 
+     * @studioInput string
+     * 
+     * @studioIcon i-ph-note-pencil
     */
-    dir?: string,
+    edit?: string,
 
     /**
-     * Branch
+     * Links
      * 
-     * Your GitHub repository branch.
+     * Array of link object displayed in bottom toc.
      * 
-     * @default ""
+     * 
+     * @studioInput array
+     * 
+     * @studioIcon i-mdi-link-variant
     */
-    branch?: string,
-
-    /**
-     * Repository
-     * 
-     * Your GitHub repository name.
-     * 
-     * @default ""
-    */
-    repo?: string,
-
-    /**
-     * Owner
-     * 
-     * Your GitHub repository owner.
-     * 
-     * @default ""
-    */
-    owner?: string,
-
-    /**
-     * EditOnGithub
-     * 
-     * Display EditOnGithub button.
-     * 
-     * @default false
-    */
-    edit?: boolean,
+    links?: Array<any>,
    },
   },
  },
