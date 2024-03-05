@@ -4,51 +4,51 @@
     {
       "name": "vite:vue",
       "result": "import { withAsyncContext as _withAsyncContext, defineComponent as _defineComponent } from 'vue'\nimport { normalizeClass as _normalizeClass, normalizeStyle as _normalizeStyle, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, unref as _unref, createBlock as _createBlock, resolveDynamicComponent as _resolveDynamicComponent, renderSlot as _renderSlot, toDisplayString as _toDisplayString, createTextVNode as _createTextVNode } from \"vue\"\n\nimport type { IconifyIcon } from '@iconify/vue'\nimport { Icon as Iconify } from '@iconify/vue/dist/offline'\nimport { loadIcon, addAPIProvider } from '@iconify/vue'\nimport { ref, computed, watch } from 'vue'\nimport { useAppConfig, useNuxtApp, useState } from '#imports'\nimport { resolveIconName } from './utils'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'Icon',\n  props: {\n  name: {\n    type: String,\n    required: true\n  },\n  size: {\n    type: String,\n    default: ''\n  }\n},\n  async setup(__props) {\n\nlet __temp: any, __restore: any\n\nconst nuxtApp = useNuxtApp()\nconst appConfig = useAppConfig() as {\n  nuxtIcon: {\n    size?: string\n    class?: string\n    aliases?: Record<string, string>\n    iconifyApiOptions?: {\n      url?: string\n      publicApiFallback?: boolean\n    }\n  }\n}\n\nconst props = __props\n\nwatch(() => appConfig.nuxtIcon?.iconifyApiOptions, () => {\n  if (!appConfig.nuxtIcon?.iconifyApiOptions?.url) return\n\n  // validate the custom Iconify API URL\n  try {\n    new URL(appConfig.nuxtIcon.iconifyApiOptions.url)\n  } catch (e) {\n    console.warn('Nuxt Icon: Invalid custom Iconify API URL')\n    return\n  }\n\n  // don't override the default public api if publicApiFallback is enabled. See more: https://iconify.design/docs/api/providers.html\n  if (appConfig.nuxtIcon?.iconifyApiOptions?.publicApiFallback) {\n    addAPIProvider('custom', {\n      resources: [appConfig.nuxtIcon?.iconifyApiOptions.url],\n      index: 0\n    })\n    return\n  }\n\n  // override the default public api to force the use of the custom API\n  addAPIProvider('', {\n    resources: [appConfig.nuxtIcon?.iconifyApiOptions.url],\n  })\n}, { immediate: true })\n\nconst state = useState<Record<string, IconifyIcon | undefined>>('icons', () => ({}))\nconst isFetching = ref(false)\nconst iconName = computed(() => {\n  if (appConfig.nuxtIcon?.aliases?.[props.name]) {\n    return appConfig.nuxtIcon.aliases[props.name]\n  }\n  return props.name\n})\nconst resolvedIcon = computed(() => resolveIconName(iconName.value))\nconst iconKey = computed(() => [resolvedIcon.value.provider, resolvedIcon.value.prefix, resolvedIcon.value.name].filter(Boolean).join(':'))\nconst icon = computed<IconifyIcon | undefined>(() => state.value?.[iconKey.value])\nconst component = computed(() => nuxtApp.vueApp.component(iconName.value))\nconst sSize = computed(() => {\n  // Disable size if appConfig.nuxtIcon.size === false\n  // @ts-ignore\n  if (!props.size && typeof appConfig.nuxtIcon?.size === 'boolean' && !appConfig.nuxtIcon?.size) {\n    return undefined\n  }\n  // @ts-ignore\n  const size = props.size || appConfig.nuxtIcon?.size || '1em'\n  if (String(Number(size)) === size) {\n    return `${size}px`\n  }\n  return size\n})\nconst className = computed(() => (appConfig as any)?.nuxtIcon?.class ?? 'icon')\n\nasync function loadIconComponent () {\n  if (component.value) {\n    return\n  }\n  if (!state.value?.[iconKey.value]) {\n    isFetching.value = true\n    state.value[iconKey.value] = await loadIcon(resolvedIcon.value).catch(() => undefined)\n    isFetching.value = false\n  }\n}\n\nwatch(iconName, loadIconComponent)\n\n!component.value && (\n  ([__temp,__restore] = _withAsyncContext(() => loadIconComponent())),\n  __temp = await __temp,\n  __restore(),\n  __temp\n)\n\nreturn (_ctx: any,_cache: any) => {\n  return (isFetching.value)\n    ? (_openBlock(), _createElementBlock(\"span\", {\n        key: 0,\n        class: _normalizeClass(className.value),\n        style: _normalizeStyle({ width: sSize.value, height: sSize.value })\n      }, null, 6))\n    : (icon.value)\n      ? (_openBlock(), _createBlock(_unref(Iconify), {\n          key: 1,\n          icon: icon.value,\n          class: _normalizeClass(className.value),\n          width: sSize.value,\n          height: sSize.value\n        }, null, 8, [\"icon\", \"class\", \"width\", \"height\"]))\n      : (component.value)\n        ? (_openBlock(), _createBlock(_resolveDynamicComponent(component.value), {\n            key: 2,\n            class: _normalizeClass(className.value),\n            width: sSize.value,\n            height: sSize.value\n          }, null, 8, [\"class\", \"width\", \"height\"]))\n        : (_openBlock(), _createElementBlock(\"span\", {\n            key: 3,\n            class: _normalizeClass(className.value),\n            style: _normalizeStyle({ fontSize: sSize.value, lineHeight: sSize.value, width: sSize.value, height: sSize.value })\n          }, [\n            _renderSlot(_ctx.$slots, \"default\", {}, () => [\n              _createTextVNode(_toDisplayString(__props.name), 1)\n            ], true)\n          ], 6))\n}\n}\n\n})",
-      "start": 1709670070305,
-      "end": 1709670070305
+      "start": 1709675393384,
+      "end": 1709675393384
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1709670070305,
-      "end": 1709670070305,
+      "start": 1709675393384,
+      "end": 1709675393385,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1709670070305,
-      "end": 1709670070306,
+      "start": 1709675393385,
+      "end": 1709675393385,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { withAsyncContext as _withAsyncContext, defineComponent as _defineComponent } from 'vue'\nimport { normalizeClass as _normalizeClass, normalizeStyle as _normalizeStyle, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, unref as _unref, createBlock as _createBlock, resolveDynamicComponent as _resolveDynamicComponent, renderSlot as _renderSlot, toDisplayString as _toDisplayString, createTextVNode as _createTextVNode } from \"vue\"\n\nimport type { IconifyIcon } from '@iconify/vue'\nimport { Icon as Iconify } from '@iconify/vue/dist/offline'\nimport { loadIcon, addAPIProvider } from '@iconify/vue'\nimport { ref, computed, watch } from 'vue'\nimport { useAppConfig, useNuxtApp, useState } from '#imports'\nimport { resolveIconName } from './utils'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'Icon',\n  props: {\n  name: {\n    type: String,\n    required: true\n  },\n  size: {\n    type: String,\n    default: ''\n  }\n},\n  async setup(__props) {\n\nlet __temp: any, __restore: any\n\nconst nuxtApp = useNuxtApp()\nconst appConfig = useAppConfig() as {\n  nuxtIcon: {\n    size?: string\n    class?: string\n    aliases?: Record<string, string>\n    iconifyApiOptions?: {\n      url?: string\n      publicApiFallback?: boolean\n    }\n  }\n}\n\nconst props = __props\n\nwatch(() => appConfig.nuxtIcon?.iconifyApiOptions, () => {\n  if (!appConfig.nuxtIcon?.iconifyApiOptions?.url) return\n\n  // validate the custom Iconify API URL\n  try {\n    new URL(appConfig.nuxtIcon.iconifyApiOptions.url)\n  } catch (e) {\n    console.warn('Nuxt Icon: Invalid custom Iconify API URL')\n    return\n  }\n\n  // don't override the default public api if publicApiFallback is enabled. See more: https://iconify.design/docs/api/providers.html\n  if (appConfig.nuxtIcon?.iconifyApiOptions?.publicApiFallback) {\n    addAPIProvider('custom', {\n      resources: [appConfig.nuxtIcon?.iconifyApiOptions.url],\n      index: 0\n    })\n    return\n  }\n\n  // override the default public api to force the use of the custom API\n  addAPIProvider('', {\n    resources: [appConfig.nuxtIcon?.iconifyApiOptions.url],\n  })\n}, { immediate: true })\n\nconst state = useState<Record<string, IconifyIcon | undefined>>('icons', () => ({}))\nconst isFetching = ref(false)\nconst iconName = computed(() => {\n  if (appConfig.nuxtIcon?.aliases?.[props.name]) {\n    return appConfig.nuxtIcon.aliases[props.name]\n  }\n  return props.name\n})\nconst resolvedIcon = computed(() => resolveIconName(iconName.value))\nconst iconKey = computed(() => [resolvedIcon.value.provider, resolvedIcon.value.prefix, resolvedIcon.value.name].filter(Boolean).join(':'))\nconst icon = computed<IconifyIcon | undefined>(() => state.value?.[iconKey.value])\nconst component = computed(() => nuxtApp.vueApp.component(iconName.value))\nconst sSize = computed(() => {\n  // Disable size if appConfig.nuxtIcon.size === false\n  // @ts-ignore\n  if (!props.size && typeof appConfig.nuxtIcon?.size === 'boolean' && !appConfig.nuxtIcon?.size) {\n    return undefined\n  }\n  // @ts-ignore\n  const size = props.size || appConfig.nuxtIcon?.size || '1em'\n  if (String(Number(size)) === size) {\n    return `${size}px`\n  }\n  return size\n})\nconst className = computed(() => (appConfig as any)?.nuxtIcon?.class ?? 'icon')\n\nasync function loadIconComponent () {\n  if (component.value) {\n    return\n  }\n  if (!state.value?.[iconKey.value]) {\n    isFetching.value = true\n    state.value[iconKey.value] = await loadIcon(resolvedIcon.value).catch(() => undefined)\n    isFetching.value = false\n  }\n}\n\nwatch(iconName, loadIconComponent)\n\n!component.value && (\n  ([__temp,__restore] = _withAsyncContext(() => loadIconComponent())),\n  __temp = await __temp,\n  __restore(),\n  __temp\n)\n\nreturn (_ctx: any,_cache: any) => {\n  return (isFetching.value)\n    ? (_openBlock(), _createElementBlock(\"span\", {\n        key: 0,\n        class: _normalizeClass(className.value),\n        style: _normalizeStyle({ width: sSize.value, height: sSize.value })\n      }, null, 6))\n    : (icon.value)\n      ? (_openBlock(), _createBlock(_unref(Iconify), {\n          key: 1,\n          icon: icon.value,\n          class: _normalizeClass(className.value),\n          width: sSize.value,\n          height: sSize.value\n        }, null, 8, [\"icon\", \"class\", \"width\", \"height\"]))\n      : (component.value)\n        ? (_openBlock(), _createBlock(_resolveDynamicComponent(component.value), {\n            key: 2,\n            class: _normalizeClass(className.value),\n            width: sSize.value,\n            height: sSize.value\n          }, null, 8, [\"class\", \"width\", \"height\"]))\n        : (_openBlock(), _createElementBlock(\"span\", {\n            key: 3,\n            class: _normalizeClass(className.value),\n            style: _normalizeStyle({ fontSize: sSize.value, lineHeight: sSize.value, width: sSize.value, height: sSize.value })\n          }, [\n            _renderSlot(_ctx.$slots, \"default\", {}, () => [\n              _createTextVNode(_toDisplayString(__props.name), 1)\n            ], true)\n          ], 6))\n}\n}\n\n})",
-      "start": 1709670070306,
-      "end": 1709670070306,
+      "start": 1709675393385,
+      "end": 1709675393386,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1709670070306,
-      "end": 1709670070306,
+      "start": 1709675393386,
+      "end": 1709675393386,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1709670070306,
-      "end": 1709670070306,
+      "start": 1709675393386,
+      "end": 1709675393386,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1709670070306,
-      "end": 1709670070306,
+      "start": 1709675393386,
+      "end": 1709675393386,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { withAsyncContext as _withAsyncContext, defineComponent as _defineComponent } from \"vue\";\nimport { normalizeClass as _normalizeClass, normalizeStyle as _normalizeStyle, openBlock as _openBlock, createElementBlock as _createElementBlock, unref as _unref, createBlock as _createBlock, resolveDynamicComponent as _resolveDynamicComponent, renderSlot as _renderSlot, toDisplayString as _toDisplayString, createTextVNode as _createTextVNode } from \"vue\";\nimport { Icon as Iconify } from \"@iconify/vue/dist/offline\";\nimport { loadIcon, addAPIProvider } from \"@iconify/vue\";\nimport { ref, computed, watch } from \"vue\";\nimport { useAppConfig, useNuxtApp, useState } from \"#imports\";\nimport { resolveIconName } from \"./utils\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"Icon\",\n  props: {\n    name: {\n      type: String,\n      required: true\n    },\n    size: {\n      type: String,\n      default: \"\"\n    }\n  },\n  async setup(__props) {\n    let __temp, __restore;\n    const nuxtApp = useNuxtApp();\n    const appConfig = useAppConfig();\n    const props = __props;\n    watch(() => appConfig.nuxtIcon?.iconifyApiOptions, () => {\n      if (!appConfig.nuxtIcon?.iconifyApiOptions?.url)\n        return;\n      try {\n        new URL(appConfig.nuxtIcon.iconifyApiOptions.url);\n      } catch (e) {\n        console.warn(\"Nuxt Icon: Invalid custom Iconify API URL\");\n        return;\n      }\n      if (appConfig.nuxtIcon?.iconifyApiOptions?.publicApiFallback) {\n        addAPIProvider(\"custom\", {\n          resources: [appConfig.nuxtIcon?.iconifyApiOptions.url],\n          index: 0\n        });\n        return;\n      }\n      addAPIProvider(\"\", {\n        resources: [appConfig.nuxtIcon?.iconifyApiOptions.url]\n      });\n    }, { immediate: true });\n    const state = useState(\"icons\", () => ({}));\n    const isFetching = ref(false);\n    const iconName = computed(() => {\n      if (appConfig.nuxtIcon?.aliases?.[props.name]) {\n        return appConfig.nuxtIcon.aliases[props.name];\n      }\n      return props.name;\n    });\n    const resolvedIcon = computed(() => resolveIconName(iconName.value));\n    const iconKey = computed(() => [resolvedIcon.value.provider, resolvedIcon.value.prefix, resolvedIcon.value.name].filter(Boolean).join(\":\"));\n    const icon = computed(() => state.value?.[iconKey.value]);\n    const component = computed(() => nuxtApp.vueApp.component(iconName.value));\n    const sSize = computed(() => {\n      if (!props.size && typeof appConfig.nuxtIcon?.size === \"boolean\" && !appConfig.nuxtIcon?.size) {\n        return void 0;\n      }\n      const size = props.size || appConfig.nuxtIcon?.size || \"1em\";\n      if (String(Number(size)) === size) {\n        return `${size}px`;\n      }\n      return size;\n    });\n    const className = computed(() => appConfig?.nuxtIcon?.class ?? \"icon\");\n    async function loadIconComponent() {\n      if (component.value) {\n        return;\n      }\n      if (!state.value?.[iconKey.value]) {\n        isFetching.value = true;\n        state.value[iconKey.value] = await loadIcon(resolvedIcon.value).catch(() => void 0);\n        isFetching.value = false;\n      }\n    }\n    watch(iconName, loadIconComponent);\n    !component.value && ([__temp, __restore] = _withAsyncContext(() => loadIconComponent()), __temp = await __temp, __restore(), __temp);\n    return (_ctx, _cache) => {\n      return isFetching.value ? (_openBlock(), _createElementBlock(\"span\", {\n        key: 0,\n        class: _normalizeClass(className.value),\n        style: _normalizeStyle({ width: sSize.value, height: sSize.value })\n      }, null, 6)) : icon.value ? (_openBlock(), _createBlock(_unref(Iconify), {\n        key: 1,\n        icon: icon.value,\n        class: _normalizeClass(className.value),\n        width: sSize.value,\n        height: sSize.value\n      }, null, 8, [\"icon\", \"class\", \"width\", \"height\"])) : component.value ? (_openBlock(), _createBlock(_resolveDynamicComponent(component.value), {\n        key: 2,\n        class: _normalizeClass(className.value),\n        width: sSize.value,\n        height: sSize.value\n      }, null, 8, [\"class\", \"width\", \"height\"])) : (_openBlock(), _createElementBlock(\"span\", {\n        key: 3,\n        class: _normalizeClass(className.value),\n        style: _normalizeStyle({ fontSize: sSize.value, lineHeight: sSize.value, width: sSize.value, height: sSize.value })\n      }, [\n        _renderSlot(_ctx.$slots, \"default\", {}, () => [\n          _createTextVNode(_toDisplayString(__props.name), 1)\n        ], true)\n      ], 6));\n    };\n  }\n});\n",
-      "start": 1709670070306,
-      "end": 1709670070507,
+      "start": 1709675393386,
+      "end": 1709675393547,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -64,123 +64,123 @@
     },
     {
       "name": "vite:json",
-      "start": 1709670070507,
-      "end": 1709670070507,
+      "start": 1709675393547,
+      "end": 1709675393547,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1709670070507,
-      "end": 1709670070507,
+      "start": 1709675393547,
+      "end": 1709675393547,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1709670070507,
-      "end": 1709670070507,
+      "start": 1709675393548,
+      "end": 1709675393548,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1709670070507,
-      "end": 1709670070507,
+      "start": 1709675393548,
+      "end": 1709675393548,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709670070507,
-      "end": 1709670070508,
+      "start": 1709675393548,
+      "end": 1709675393549,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1709670070508,
-      "end": 1709670070508,
+      "start": 1709675393549,
+      "end": 1709675393549,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1709670070508,
-      "end": 1709670070508,
+      "start": 1709675393550,
+      "end": 1709675393550,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1709670070508,
-      "end": 1709670070508,
+      "start": 1709675393550,
+      "end": 1709675393551,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709670070509,
-      "end": 1709670070509,
+      "start": 1709675393551,
+      "end": 1709675393551,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1709670070509,
-      "end": 1709670070509,
+      "start": 1709675393552,
+      "end": 1709675393552,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1709670070510,
-      "end": 1709670070510,
+      "start": 1709675393558,
+      "end": 1709675393558,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1709670070510,
-      "end": 1709670070510,
+      "start": 1709675393558,
+      "end": 1709675393558,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1709670070510,
-      "end": 1709670070510,
+      "start": 1709675393559,
+      "end": 1709675393559,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1709670070510,
-      "end": 1709670070510,
+      "start": 1709675393559,
+      "end": 1709675393559,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1709670070510,
-      "end": 1709670070510,
+      "start": 1709675393559,
+      "end": 1709675393559,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1709670070510,
-      "end": 1709670070510,
+      "start": 1709675393559,
+      "end": 1709675393559,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1709670070510,
-      "end": 1709670070510,
+      "start": 1709675393560,
+      "end": 1709675393560,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1709670070510,
-      "end": 1709670070510,
+      "start": 1709675393560,
+      "end": 1709675393560,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1709670070510,
-      "end": 1709670070512,
+      "start": 1709675393560,
+      "end": 1709675393563,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { useAppConfig } from '#app/config';\nimport { useNuxtApp } from '#app/nuxt';\nimport { useState } from '#app/composables/state';\nimport { withAsyncContext as _withAsyncContext, defineComponent as _defineComponent } from \"vue\";\nimport { normalizeClass as _normalizeClass, normalizeStyle as _normalizeStyle, openBlock as _openBlock, createElementBlock as _createElementBlock, unref as _unref, createBlock as _createBlock, resolveDynamicComponent as _resolveDynamicComponent, renderSlot as _renderSlot, toDisplayString as _toDisplayString, createTextVNode as _createTextVNode } from \"vue\";\nimport { Icon as Iconify } from \"@iconify/vue/dist/offline\";\nimport { loadIcon, addAPIProvider } from \"@iconify/vue\";\nimport { ref, computed, watch } from \"vue\";\nimport { resolveIconName } from \"./utils\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"Icon\",\n  props: {\n    name: {\n      type: String,\n      required: true\n    },\n    size: {\n      type: String,\n      default: \"\"\n    }\n  },\n  async setup(__props) {\n    let __temp, __restore;\n    const nuxtApp = useNuxtApp();\n    const appConfig = useAppConfig();\n    const props = __props;\n    watch(() => appConfig.nuxtIcon?.iconifyApiOptions, () => {\n      if (!appConfig.nuxtIcon?.iconifyApiOptions?.url)\n        return;\n      try {\n        new URL(appConfig.nuxtIcon.iconifyApiOptions.url);\n      } catch (e) {\n        console.warn(\"Nuxt Icon: Invalid custom Iconify API URL\");\n        return;\n      }\n      if (appConfig.nuxtIcon?.iconifyApiOptions?.publicApiFallback) {\n        addAPIProvider(\"custom\", {\n          resources: [appConfig.nuxtIcon?.iconifyApiOptions.url],\n          index: 0\n        });\n        return;\n      }\n      addAPIProvider(\"\", {\n        resources: [appConfig.nuxtIcon?.iconifyApiOptions.url]\n      });\n    }, { immediate: true });\n    const state = useState(\"icons\", () => ({}));\n    const isFetching = ref(false);\n    const iconName = computed(() => {\n      if (appConfig.nuxtIcon?.aliases?.[props.name]) {\n        return appConfig.nuxtIcon.aliases[props.name];\n      }\n      return props.name;\n    });\n    const resolvedIcon = computed(() => resolveIconName(iconName.value));\n    const iconKey = computed(() => [resolvedIcon.value.provider, resolvedIcon.value.prefix, resolvedIcon.value.name].filter(Boolean).join(\":\"));\n    const icon = computed(() => state.value?.[iconKey.value]);\n    const component = computed(() => nuxtApp.vueApp.component(iconName.value));\n    const sSize = computed(() => {\n      if (!props.size && typeof appConfig.nuxtIcon?.size === \"boolean\" && !appConfig.nuxtIcon?.size) {\n        return void 0;\n      }\n      const size = props.size || appConfig.nuxtIcon?.size || \"1em\";\n      if (String(Number(size)) === size) {\n        return `${size}px`;\n      }\n      return size;\n    });\n    const className = computed(() => appConfig?.nuxtIcon?.class ?? \"icon\");\n    async function loadIconComponent() {\n      if (component.value) {\n        return;\n      }\n      if (!state.value?.[iconKey.value]) {\n        isFetching.value = true;\n        state.value[iconKey.value] = await loadIcon(resolvedIcon.value).catch(() => void 0);\n        isFetching.value = false;\n      }\n    }\n    watch(iconName, loadIconComponent);\n    !component.value && ([__temp, __restore] = _withAsyncContext(() => loadIconComponent()), __temp = await __temp, __restore(), __temp);\n    return (_ctx, _cache) => {\n      return isFetching.value ? (_openBlock(), _createElementBlock(\"span\", {\n        key: 0,\n        class: _normalizeClass(className.value),\n        style: _normalizeStyle({ width: sSize.value, height: sSize.value })\n      }, null, 6)) : icon.value ? (_openBlock(), _createBlock(_unref(Iconify), {\n        key: 1,\n        icon: icon.value,\n        class: _normalizeClass(className.value),\n        width: sSize.value,\n        height: sSize.value\n      }, null, 8, [\"icon\", \"class\", \"width\", \"height\"])) : component.value ? (_openBlock(), _createBlock(_resolveDynamicComponent(component.value), {\n        key: 2,\n        class: _normalizeClass(className.value),\n        width: sSize.value,\n        height: sSize.value\n      }, null, 8, [\"class\", \"width\", \"height\"])) : (_openBlock(), _createElementBlock(\"span\", {\n        key: 3,\n        class: _normalizeClass(className.value),\n        style: _normalizeStyle({ fontSize: sSize.value, lineHeight: sSize.value, width: sSize.value, height: sSize.value })\n      }, [\n        _renderSlot(_ctx.$slots, \"default\", {}, () => [\n          _createTextVNode(_toDisplayString(__props.name), 1)\n        ], true)\n      ], 6));\n    };\n  }\n});\n",
-      "start": 1709670070512,
-      "end": 1709670070519,
+      "start": 1709675393565,
+      "end": 1709675393615,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -193,50 +193,50 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1709670070519,
-      "end": 1709670070519,
+      "start": 1709675393615,
+      "end": 1709675393616,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1709670070519,
-      "end": 1709670070519,
+      "start": 1709675393616,
+      "end": 1709675393616,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1709670070519,
-      "end": 1709670070519,
+      "start": 1709675393616,
+      "end": 1709675393616,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1709670070519,
-      "end": 1709670070519,
+      "start": 1709675393617,
+      "end": 1709675393617,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1709670070520,
-      "end": 1709670070520,
+      "start": 1709675393617,
+      "end": 1709675393617,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1709670070520,
-      "end": 1709670070520,
+      "start": 1709675393618,
+      "end": 1709675393618,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1709670070520,
-      "end": 1709670070520,
+      "start": 1709675393618,
+      "end": 1709675393618,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1709670070521,
-      "end": 1709670070521,
+      "start": 1709675393618,
+      "end": 1709675393618,
       "order": "normal"
     }
   ]

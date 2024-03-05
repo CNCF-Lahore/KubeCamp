@@ -4,51 +4,51 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, withCtx as _withCtx, createVNode as _createVNode, createElementBlock as _createElementBlock } from \"vue\"\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'ThemeSelect',\n  setup(__props) {\n\nconst colorMode = useColorMode()\nconst onClick = () => {\n  const values = ['system', 'light', 'dark']\n  const index = values.indexOf(colorMode.preference)\n  const next = (index + 1) % values.length\n\n  colorMode.preference = values[next]\n}\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_Icon = _resolveComponent(\"Icon\")!\n  const _component_ColorScheme = _resolveComponent(\"ColorScheme\")!\n\n  return (_openBlock(), _createElementBlock(\"button\", {\n    \"aria-label\": \"Color Mode\",\n    onClick: onClick\n  }, [\n    _createVNode(_component_ColorScheme, { placeholder: \"...\" }, {\n      default: _withCtx(() => [\n        (_unref(colorMode).preference === 'dark')\n          ? (_openBlock(), _createBlock(_component_Icon, {\n              key: 0,\n              name: \"uil:moon\"\n            }))\n          : (_unref(colorMode).preference === 'light')\n            ? (_openBlock(), _createBlock(_component_Icon, {\n                key: 1,\n                name: \"uil:sun\"\n              }))\n            : (_openBlock(), _createBlock(_component_Icon, {\n                key: 2,\n                name: \"uil:desktop\"\n              }))\n      ]),\n      _: 1\n    })\n  ]))\n}\n}\n\n})",
-      "start": 1709670069624,
-      "end": 1709670069624
+      "start": 1709675392040,
+      "end": 1709675392040
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1709670069625,
-      "end": 1709670069625,
+      "start": 1709675392045,
+      "end": 1709675392045,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1709670069627,
-      "end": 1709670069627,
+      "start": 1709675392047,
+      "end": 1709675392047,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, withCtx as _withCtx, createVNode as _createVNode, createElementBlock as _createElementBlock } from \"vue\"\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'ThemeSelect',\n  setup(__props) {\n\nconst colorMode = useColorMode()\nconst onClick = () => {\n  const values = ['system', 'light', 'dark']\n  const index = values.indexOf(colorMode.preference)\n  const next = (index + 1) % values.length\n\n  colorMode.preference = values[next]\n}\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_Icon = _resolveComponent(\"Icon\")!\n  const _component_ColorScheme = _resolveComponent(\"ColorScheme\")!\n\n  return (_openBlock(), _createElementBlock(\"button\", {\n    \"aria-label\": \"Color Mode\",\n    onClick: onClick\n  }, [\n    _createVNode(_component_ColorScheme, { placeholder: \"...\" }, {\n      default: _withCtx(() => [\n        (_unref(colorMode).preference === 'dark')\n          ? (_openBlock(), _createBlock(_component_Icon, {\n              key: 0,\n              name: \"uil:moon\"\n            }))\n          : (_unref(colorMode).preference === 'light')\n            ? (_openBlock(), _createBlock(_component_Icon, {\n                key: 1,\n                name: \"uil:sun\"\n              }))\n            : (_openBlock(), _createBlock(_component_Icon, {\n                key: 2,\n                name: \"uil:desktop\"\n              }))\n      ]),\n      _: 1\n    })\n  ]))\n}\n}\n\n})",
-      "start": 1709670069627,
-      "end": 1709670069627,
+      "start": 1709675392048,
+      "end": 1709675392048,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1709670069627,
-      "end": 1709670069627,
+      "start": 1709675392048,
+      "end": 1709675392048,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1709670069627,
-      "end": 1709670069627,
+      "start": 1709675392049,
+      "end": 1709675392049,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1709670069628,
-      "end": 1709670069628,
+      "start": 1709675392049,
+      "end": 1709675392049,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, withCtx as _withCtx, createVNode as _createVNode, createElementBlock as _createElementBlock } from \"vue\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ThemeSelect\",\n  setup(__props) {\n    const colorMode = useColorMode();\n    const onClick = () => {\n      const values = [\"system\", \"light\", \"dark\"];\n      const index = values.indexOf(colorMode.preference);\n      const next = (index + 1) % values.length;\n      colorMode.preference = values[next];\n    };\n    return (_ctx, _cache) => {\n      const _component_Icon = _resolveComponent(\"Icon\");\n      const _component_ColorScheme = _resolveComponent(\"ColorScheme\");\n      return _openBlock(), _createElementBlock(\"button\", {\n        \"aria-label\": \"Color Mode\",\n        onClick\n      }, [\n        _createVNode(_component_ColorScheme, { placeholder: \"...\" }, {\n          default: _withCtx(() => [\n            _unref(colorMode).preference === \"dark\" ? (_openBlock(), _createBlock(_component_Icon, {\n              key: 0,\n              name: \"uil:moon\"\n            })) : _unref(colorMode).preference === \"light\" ? (_openBlock(), _createBlock(_component_Icon, {\n              key: 1,\n              name: \"uil:sun\"\n            })) : (_openBlock(), _createBlock(_component_Icon, {\n              key: 2,\n              name: \"uil:desktop\"\n            }))\n          ]),\n          _: 1\n        })\n      ]);\n    };\n  }\n});\n",
-      "start": 1709670069628,
-      "end": 1709670070181,
+      "start": 1709675392049,
+      "end": 1709675393034,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -64,123 +64,123 @@
     },
     {
       "name": "vite:json",
-      "start": 1709670070181,
-      "end": 1709670070181,
+      "start": 1709675393034,
+      "end": 1709675393034,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1709670070181,
-      "end": 1709670070181,
+      "start": 1709675393034,
+      "end": 1709675393034,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1709670070181,
-      "end": 1709670070181,
+      "start": 1709675393034,
+      "end": 1709675393034,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1709670070181,
-      "end": 1709670070181,
+      "start": 1709675393034,
+      "end": 1709675393034,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709670070181,
-      "end": 1709670070181,
+      "start": 1709675393034,
+      "end": 1709675393034,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1709670070181,
-      "end": 1709670070181,
+      "start": 1709675393034,
+      "end": 1709675393034,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1709670070181,
-      "end": 1709670070182,
+      "start": 1709675393034,
+      "end": 1709675393034,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1709670070182,
-      "end": 1709670070182,
+      "start": 1709675393035,
+      "end": 1709675393035,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709670070182,
-      "end": 1709670070182,
+      "start": 1709675393035,
+      "end": 1709675393035,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1709670070182,
-      "end": 1709670070182,
+      "start": 1709675393035,
+      "end": 1709675393035,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1709670070182,
-      "end": 1709670070182,
+      "start": 1709675393035,
+      "end": 1709675393035,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1709670070182,
-      "end": 1709670070182,
+      "start": 1709675393035,
+      "end": 1709675393035,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1709670070182,
-      "end": 1709670070182,
+      "start": 1709675393035,
+      "end": 1709675393036,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1709670070182,
-      "end": 1709670070182,
+      "start": 1709675393036,
+      "end": 1709675393036,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1709670070182,
-      "end": 1709670070182,
+      "start": 1709675393036,
+      "end": 1709675393036,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1709670070182,
-      "end": 1709670070182,
+      "start": 1709675393036,
+      "end": 1709675393036,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1709670070182,
-      "end": 1709670070182,
+      "start": 1709675393036,
+      "end": 1709675393036,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1709670070182,
-      "end": 1709670070182,
+      "start": 1709675393036,
+      "end": 1709675393036,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1709670070185,
-      "end": 1709670070187,
+      "start": 1709675393041,
+      "end": 1709675393043,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { useColorMode } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/color-mode/dist/runtime/composables';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, withCtx as _withCtx, createVNode as _createVNode, createElementBlock as _createElementBlock } from \"vue\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ThemeSelect\",\n  setup(__props) {\n    const colorMode = useColorMode();\n    const onClick = () => {\n      const values = [\"system\", \"light\", \"dark\"];\n      const index = values.indexOf(colorMode.preference);\n      const next = (index + 1) % values.length;\n      colorMode.preference = values[next];\n    };\n    return (_ctx, _cache) => {\n      const _component_Icon = _resolveComponent(\"Icon\");\n      const _component_ColorScheme = _resolveComponent(\"ColorScheme\");\n      return _openBlock(), _createElementBlock(\"button\", {\n        \"aria-label\": \"Color Mode\",\n        onClick\n      }, [\n        _createVNode(_component_ColorScheme, { placeholder: \"...\" }, {\n          default: _withCtx(() => [\n            _unref(colorMode).preference === \"dark\" ? (_openBlock(), _createBlock(_component_Icon, {\n              key: 0,\n              name: \"uil:moon\"\n            })) : _unref(colorMode).preference === \"light\" ? (_openBlock(), _createBlock(_component_Icon, {\n              key: 1,\n              name: \"uil:sun\"\n            })) : (_openBlock(), _createBlock(_component_Icon, {\n              key: 2,\n              name: \"uil:desktop\"\n            }))\n          ]),\n          _: 1\n        })\n      ]);\n    };\n  }\n});\n",
-      "start": 1709670070187,
-      "end": 1709670070204,
+      "start": 1709675393043,
+      "end": 1709675393059,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -193,51 +193,51 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1709670070204,
-      "end": 1709670070204,
+      "start": 1709675393059,
+      "end": 1709675393059,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1709670070204,
-      "end": 1709670070204,
+      "start": 1709675393059,
+      "end": 1709675393059,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1709670070204,
-      "end": 1709670070204,
+      "start": 1709675393059,
+      "end": 1709675393059,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1709670070204,
-      "end": 1709670070204,
+      "start": 1709675393060,
+      "end": 1709675393060,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
       "result": "import { default as __nuxt_component_0 } from \"/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/Icon.vue\";\nimport { default as __nuxt_component_1 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/color-mode/dist/runtime/component.vue3.vue\";\nimport { useColorMode } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/color-mode/dist/runtime/composables';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, withCtx as _withCtx, createVNode as _createVNode, createElementBlock as _createElementBlock } from \"vue\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ThemeSelect\",\n  setup(__props) {\n    const colorMode = useColorMode();\n    const onClick = () => {\n      const values = [\"system\", \"light\", \"dark\"];\n      const index = values.indexOf(colorMode.preference);\n      const next = (index + 1) % values.length;\n      colorMode.preference = values[next];\n    };\n    return (_ctx, _cache) => {\n      const _component_Icon = __nuxt_component_0;\n      const _component_ColorScheme = __nuxt_component_1;\n      return _openBlock(), _createElementBlock(\"button\", {\n        \"aria-label\": \"Color Mode\",\n        onClick\n      }, [\n        _createVNode(_component_ColorScheme, { placeholder: \"...\" }, {\n          default: _withCtx(() => [\n            _unref(colorMode).preference === \"dark\" ? (_openBlock(), _createBlock(_component_Icon, {\n              key: 0,\n              name: \"uil:moon\"\n            })) : _unref(colorMode).preference === \"light\" ? (_openBlock(), _createBlock(_component_Icon, {\n              key: 1,\n              name: \"uil:sun\"\n            })) : (_openBlock(), _createBlock(_component_Icon, {\n              key: 2,\n              name: \"uil:desktop\"\n            }))\n          ]),\n          _: 1\n        })\n      ]);\n    };\n  }\n});\n",
-      "start": 1709670070205,
-      "end": 1709670070205,
+      "start": 1709675393060,
+      "end": 1709675393060,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1709670070206,
-      "end": 1709670070206,
+      "start": 1709675393061,
+      "end": 1709675393061,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1709670070206,
-      "end": 1709670070206,
+      "start": 1709675393061,
+      "end": 1709675393061,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1709670070206,
-      "end": 1709670070206,
+      "start": 1709675393061,
+      "end": 1709675393061,
       "order": "normal"
     }
   ]

@@ -4,51 +4,51 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, toDisplayString as _toDisplayString, createElementBlock as _createElementBlock, createElementVNode as _createElementVNode, renderList as _renderList, Fragment as _Fragment, createTextVNode as _createTextVNode, withCtx as _withCtx, createVNode as _createVNode, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-39bdaab3\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"left\" }\nconst _hoisted_2 = [\"href\"]\nconst _hoisted_3 = { key: 1 }\nconst _hoisted_4 = { class: \"center\" }\nconst _hoisted_5 = { class: \"right\" }\nconst _hoisted_6 = [\"aria-label\", \"href\", \"rel\"]\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'AppFooter',\n  setup(__props) {\n\nconst { config } = useDocus()\nconst socialIcons = ref(null)\nconst icons = computed(() => config.value?.footer?.iconLinks || [])\nconst textLinks = computed(() => config.value?.footer?.textLinks || [])\nconst socialIconsCount = computed(() => Object.entries(config.value?.socials || {}).filter(([, v]) => v).length)\nconst nbSocialIcons = computed(() => (socialIcons.value ? socialIconsCount.value : 0))\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_Icon = _resolveComponent(\"Icon\")!\n  const _component_NuxtLink = _resolveComponent(\"NuxtLink\")!\n  const _component_AppSocialIcons = _resolveComponent(\"AppSocialIcons\")!\n  const _component_Container = _resolveComponent(\"Container\")!\n\n  return (_openBlock(), _createElementBlock(\"footer\", null, [\n    _createVNode(_component_Container, {\n      fluid: _unref(config)?.footer?.fluid,\n      padded: \"\",\n      class: \"footer-container\"\n    }, {\n      default: _withCtx(() => [\n        _createElementVNode(\"div\", _hoisted_1, [\n          (_unref(config)?.footer?.credits)\n            ? (_openBlock(), _createElementBlock(\"a\", {\n                key: 0,\n                href: _unref(config)?.footer?.credits?.href || '#',\n                rel: \"noopener\",\n                target: \"_blank\"\n              }, [\n                (_unref(config)?.footer?.credits?.icon)\n                  ? (_openBlock(), _createBlock(_component_Icon, {\n                      key: 0,\n                      name: _unref(config)?.footer?.credits?.icon,\n                      class: \"left-icon\"\n                    }, null, 8, [\"name\"]))\n                  : _createCommentVNode(\"\", true),\n                (_unref(config)?.footer?.credits?.text)\n                  ? (_openBlock(), _createElementBlock(\"p\", _hoisted_3, _toDisplayString(_unref(config).footer.credits.text), 1))\n                  : _createCommentVNode(\"\", true)\n              ], 8, _hoisted_2))\n            : _createCommentVNode(\"\", true)\n        ]),\n        _createElementVNode(\"div\", _hoisted_4, [\n          (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_unref(textLinks), (link) => {\n            return (_openBlock(), _createBlock(_component_NuxtLink, {\n              key: link.href,\n              class: \"text-link\",\n              \"aria-label\": link.text,\n              href: link.href,\n              target: link?.target || '_self',\n              rel: link?.rel || 'noopener noreferrer'\n            }, {\n              default: _withCtx(() => [\n                _createTextVNode(_toDisplayString(link.text), 1)\n              ]),\n              _: 2\n            }, 1032, [\"aria-label\", \"href\", \"target\", \"rel\"]))\n          }), 128))\n        ]),\n        _createElementVNode(\"div\", _hoisted_5, [\n          (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_unref(icons).slice(0, 6 - _unref(nbSocialIcons)), (icon) => {\n            return (_openBlock(), _createElementBlock(\"a\", {\n              key: icon.label,\n              class: \"icon-link\",\n              \"aria-label\": icon.label,\n              href: icon.href,\n              target: \"_blank\",\n              rel: icon?.rel || 'noopener noreferrer'\n            }, [\n              _createVNode(_component_Icon, {\n                name: icon.icon\n              }, null, 8, [\"name\"])\n            ], 8, _hoisted_6))\n          }), 128)),\n          _createVNode(_component_AppSocialIcons, {\n            ref_key: \"socialIcons\",\n            ref: socialIcons\n          }, null, 512)\n        ])\n      ]),\n      _: 1\n    }, 8, [\"fluid\"])\n  ]))\n}\n}\n\n})",
-      "start": 1709670069462,
-      "end": 1709670069463
+      "start": 1709675391767,
+      "end": 1709675391768
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1709670069468,
-      "end": 1709670069468,
+      "start": 1709675391770,
+      "end": 1709675391770,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1709670069475,
-      "end": 1709670069475,
+      "start": 1709675391777,
+      "end": 1709675391778,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, toDisplayString as _toDisplayString, createElementBlock as _createElementBlock, createElementVNode as _createElementVNode, renderList as _renderList, Fragment as _Fragment, createTextVNode as _createTextVNode, withCtx as _withCtx, createVNode as _createVNode, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-39bdaab3\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"left\" }\nconst _hoisted_2 = [\"href\"]\nconst _hoisted_3 = { key: 1 }\nconst _hoisted_4 = { class: \"center\" }\nconst _hoisted_5 = { class: \"right\" }\nconst _hoisted_6 = [\"aria-label\", \"href\", \"rel\"]\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'AppFooter',\n  setup(__props) {\n\nconst { config } = useDocus()\nconst socialIcons = ref(null)\nconst icons = computed(() => config.value?.footer?.iconLinks || [])\nconst textLinks = computed(() => config.value?.footer?.textLinks || [])\nconst socialIconsCount = computed(() => Object.entries(config.value?.socials || {}).filter(([, v]) => v).length)\nconst nbSocialIcons = computed(() => (socialIcons.value ? socialIconsCount.value : 0))\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_Icon = _resolveComponent(\"Icon\")!\n  const _component_NuxtLink = _resolveComponent(\"NuxtLink\")!\n  const _component_AppSocialIcons = _resolveComponent(\"AppSocialIcons\")!\n  const _component_Container = _resolveComponent(\"Container\")!\n\n  return (_openBlock(), _createElementBlock(\"footer\", null, [\n    _createVNode(_component_Container, {\n      fluid: _unref(config)?.footer?.fluid,\n      padded: \"\",\n      class: \"footer-container\"\n    }, {\n      default: _withCtx(() => [\n        _createElementVNode(\"div\", _hoisted_1, [\n          (_unref(config)?.footer?.credits)\n            ? (_openBlock(), _createElementBlock(\"a\", {\n                key: 0,\n                href: _unref(config)?.footer?.credits?.href || '#',\n                rel: \"noopener\",\n                target: \"_blank\"\n              }, [\n                (_unref(config)?.footer?.credits?.icon)\n                  ? (_openBlock(), _createBlock(_component_Icon, {\n                      key: 0,\n                      name: _unref(config)?.footer?.credits?.icon,\n                      class: \"left-icon\"\n                    }, null, 8, [\"name\"]))\n                  : _createCommentVNode(\"\", true),\n                (_unref(config)?.footer?.credits?.text)\n                  ? (_openBlock(), _createElementBlock(\"p\", _hoisted_3, _toDisplayString(_unref(config).footer.credits.text), 1))\n                  : _createCommentVNode(\"\", true)\n              ], 8, _hoisted_2))\n            : _createCommentVNode(\"\", true)\n        ]),\n        _createElementVNode(\"div\", _hoisted_4, [\n          (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_unref(textLinks), (link) => {\n            return (_openBlock(), _createBlock(_component_NuxtLink, {\n              key: link.href,\n              class: \"text-link\",\n              \"aria-label\": link.text,\n              href: link.href,\n              target: link?.target || '_self',\n              rel: link?.rel || 'noopener noreferrer'\n            }, {\n              default: _withCtx(() => [\n                _createTextVNode(_toDisplayString(link.text), 1)\n              ]),\n              _: 2\n            }, 1032, [\"aria-label\", \"href\", \"target\", \"rel\"]))\n          }), 128))\n        ]),\n        _createElementVNode(\"div\", _hoisted_5, [\n          (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_unref(icons).slice(0, 6 - _unref(nbSocialIcons)), (icon) => {\n            return (_openBlock(), _createElementBlock(\"a\", {\n              key: icon.label,\n              class: \"icon-link\",\n              \"aria-label\": icon.label,\n              href: icon.href,\n              target: \"_blank\",\n              rel: icon?.rel || 'noopener noreferrer'\n            }, [\n              _createVNode(_component_Icon, {\n                name: icon.icon\n              }, null, 8, [\"name\"])\n            ], 8, _hoisted_6))\n          }), 128)),\n          _createVNode(_component_AppSocialIcons, {\n            ref_key: \"socialIcons\",\n            ref: socialIcons\n          }, null, 512)\n        ])\n      ]),\n      _: 1\n    }, 8, [\"fluid\"])\n  ]))\n}\n}\n\n})",
-      "start": 1709670069478,
-      "end": 1709670069478,
+      "start": 1709675391780,
+      "end": 1709675391780,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1709670069480,
-      "end": 1709670069480,
+      "start": 1709675391780,
+      "end": 1709675391780,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1709670069480,
-      "end": 1709670069480,
+      "start": 1709675391781,
+      "end": 1709675391781,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1709670069482,
-      "end": 1709670069482,
+      "start": 1709675391781,
+      "end": 1709675391781,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, toDisplayString as _toDisplayString, createElementBlock as _createElementBlock, createElementVNode as _createElementVNode, renderList as _renderList, Fragment as _Fragment, createTextVNode as _createTextVNode, withCtx as _withCtx, createVNode as _createVNode, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-39bdaab3\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = { class: \"left\" };\nconst _hoisted_2 = [\"href\"];\nconst _hoisted_3 = { key: 1 };\nconst _hoisted_4 = { class: \"center\" };\nconst _hoisted_5 = { class: \"right\" };\nconst _hoisted_6 = [\"aria-label\", \"href\", \"rel\"];\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"AppFooter\",\n  setup(__props) {\n    const { config } = useDocus();\n    const socialIcons = ref(null);\n    const icons = computed(() => config.value?.footer?.iconLinks || []);\n    const textLinks = computed(() => config.value?.footer?.textLinks || []);\n    const socialIconsCount = computed(() => Object.entries(config.value?.socials || {}).filter(([, v]) => v).length);\n    const nbSocialIcons = computed(() => socialIcons.value ? socialIconsCount.value : 0);\n    return (_ctx, _cache) => {\n      const _component_Icon = _resolveComponent(\"Icon\");\n      const _component_NuxtLink = _resolveComponent(\"NuxtLink\");\n      const _component_AppSocialIcons = _resolveComponent(\"AppSocialIcons\");\n      const _component_Container = _resolveComponent(\"Container\");\n      return _openBlock(), _createElementBlock(\"footer\", null, [\n        _createVNode(_component_Container, {\n          fluid: _unref(config)?.footer?.fluid,\n          padded: \"\",\n          class: \"footer-container\"\n        }, {\n          default: _withCtx(() => [\n            _createElementVNode(\"div\", _hoisted_1, [\n              _unref(config)?.footer?.credits ? (_openBlock(), _createElementBlock(\"a\", {\n                key: 0,\n                href: _unref(config)?.footer?.credits?.href || \"#\",\n                rel: \"noopener\",\n                target: \"_blank\"\n              }, [\n                _unref(config)?.footer?.credits?.icon ? (_openBlock(), _createBlock(_component_Icon, {\n                  key: 0,\n                  name: _unref(config)?.footer?.credits?.icon,\n                  class: \"left-icon\"\n                }, null, 8, [\"name\"])) : _createCommentVNode(\"\", true),\n                _unref(config)?.footer?.credits?.text ? (_openBlock(), _createElementBlock(\"p\", _hoisted_3, _toDisplayString(_unref(config).footer.credits.text), 1)) : _createCommentVNode(\"\", true)\n              ], 8, _hoisted_2)) : _createCommentVNode(\"\", true)\n            ]),\n            _createElementVNode(\"div\", _hoisted_4, [\n              (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_unref(textLinks), (link) => {\n                return _openBlock(), _createBlock(_component_NuxtLink, {\n                  key: link.href,\n                  class: \"text-link\",\n                  \"aria-label\": link.text,\n                  href: link.href,\n                  target: link?.target || \"_self\",\n                  rel: link?.rel || \"noopener noreferrer\"\n                }, {\n                  default: _withCtx(() => [\n                    _createTextVNode(_toDisplayString(link.text), 1)\n                  ]),\n                  _: 2\n                }, 1032, [\"aria-label\", \"href\", \"target\", \"rel\"]);\n              }), 128))\n            ]),\n            _createElementVNode(\"div\", _hoisted_5, [\n              (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_unref(icons).slice(0, 6 - _unref(nbSocialIcons)), (icon) => {\n                return _openBlock(), _createElementBlock(\"a\", {\n                  key: icon.label,\n                  class: \"icon-link\",\n                  \"aria-label\": icon.label,\n                  href: icon.href,\n                  target: \"_blank\",\n                  rel: icon?.rel || \"noopener noreferrer\"\n                }, [\n                  _createVNode(_component_Icon, {\n                    name: icon.icon\n                  }, null, 8, [\"name\"])\n                ], 8, _hoisted_6);\n              }), 128)),\n              _createVNode(_component_AppSocialIcons, {\n                ref_key: \"socialIcons\",\n                ref: socialIcons\n              }, null, 512)\n            ])\n          ]),\n          _: 1\n        }, 8, [\"fluid\"])\n      ]);\n    };\n  }\n});\n",
-      "start": 1709670069482,
-      "end": 1709670070170,
+      "start": 1709675391781,
+      "end": 1709675393007,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -64,123 +64,123 @@
     },
     {
       "name": "vite:json",
-      "start": 1709670070170,
-      "end": 1709670070170,
+      "start": 1709675393007,
+      "end": 1709675393007,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1709670070170,
-      "end": 1709670070170,
+      "start": 1709675393008,
+      "end": 1709675393008,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1709670070170,
-      "end": 1709670070170,
+      "start": 1709675393008,
+      "end": 1709675393008,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1709670070170,
-      "end": 1709670070170,
+      "start": 1709675393008,
+      "end": 1709675393008,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709670070170,
-      "end": 1709670070171,
+      "start": 1709675393008,
+      "end": 1709675393008,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1709670070171,
-      "end": 1709670070171,
+      "start": 1709675393008,
+      "end": 1709675393008,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1709670070171,
-      "end": 1709670070171,
+      "start": 1709675393008,
+      "end": 1709675393008,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1709670070171,
-      "end": 1709670070171,
+      "start": 1709675393009,
+      "end": 1709675393009,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709670070171,
-      "end": 1709670070171,
+      "start": 1709675393009,
+      "end": 1709675393009,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1709670070171,
-      "end": 1709670070171,
+      "start": 1709675393009,
+      "end": 1709675393009,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1709670070171,
-      "end": 1709670070171,
+      "start": 1709675393009,
+      "end": 1709675393009,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1709670070171,
-      "end": 1709670070171,
+      "start": 1709675393009,
+      "end": 1709675393009,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1709670070171,
-      "end": 1709670070171,
+      "start": 1709675393009,
+      "end": 1709675393009,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1709670070171,
-      "end": 1709670070171,
+      "start": 1709675393010,
+      "end": 1709675393010,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1709670070171,
-      "end": 1709670070171,
+      "start": 1709675393010,
+      "end": 1709675393010,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1709670070172,
-      "end": 1709670070172,
+      "start": 1709675393010,
+      "end": 1709675393010,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1709670070172,
-      "end": 1709670070172,
+      "start": 1709675393010,
+      "end": 1709675393010,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1709670070172,
-      "end": 1709670070172,
+      "start": 1709675393010,
+      "end": 1709675393010,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1709670070172,
-      "end": 1709670070172,
+      "start": 1709675393010,
+      "end": 1709675393010,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { useDocus } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/composables/useDocus.ts';\nimport { ref, computed } from 'vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, toDisplayString as _toDisplayString, createElementBlock as _createElementBlock, createElementVNode as _createElementVNode, renderList as _renderList, Fragment as _Fragment, createTextVNode as _createTextVNode, withCtx as _withCtx, createVNode as _createVNode, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-39bdaab3\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = { class: \"left\" };\nconst _hoisted_2 = [\"href\"];\nconst _hoisted_3 = { key: 1 };\nconst _hoisted_4 = { class: \"center\" };\nconst _hoisted_5 = { class: \"right\" };\nconst _hoisted_6 = [\"aria-label\", \"href\", \"rel\"];\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"AppFooter\",\n  setup(__props) {\n    const { config } = useDocus();\n    const socialIcons = ref(null);\n    const icons = computed(() => config.value?.footer?.iconLinks || []);\n    const textLinks = computed(() => config.value?.footer?.textLinks || []);\n    const socialIconsCount = computed(() => Object.entries(config.value?.socials || {}).filter(([, v]) => v).length);\n    const nbSocialIcons = computed(() => socialIcons.value ? socialIconsCount.value : 0);\n    return (_ctx, _cache) => {\n      const _component_Icon = _resolveComponent(\"Icon\");\n      const _component_NuxtLink = _resolveComponent(\"NuxtLink\");\n      const _component_AppSocialIcons = _resolveComponent(\"AppSocialIcons\");\n      const _component_Container = _resolveComponent(\"Container\");\n      return _openBlock(), _createElementBlock(\"footer\", null, [\n        _createVNode(_component_Container, {\n          fluid: _unref(config)?.footer?.fluid,\n          padded: \"\",\n          class: \"footer-container\"\n        }, {\n          default: _withCtx(() => [\n            _createElementVNode(\"div\", _hoisted_1, [\n              _unref(config)?.footer?.credits ? (_openBlock(), _createElementBlock(\"a\", {\n                key: 0,\n                href: _unref(config)?.footer?.credits?.href || \"#\",\n                rel: \"noopener\",\n                target: \"_blank\"\n              }, [\n                _unref(config)?.footer?.credits?.icon ? (_openBlock(), _createBlock(_component_Icon, {\n                  key: 0,\n                  name: _unref(config)?.footer?.credits?.icon,\n                  class: \"left-icon\"\n                }, null, 8, [\"name\"])) : _createCommentVNode(\"\", true),\n                _unref(config)?.footer?.credits?.text ? (_openBlock(), _createElementBlock(\"p\", _hoisted_3, _toDisplayString(_unref(config).footer.credits.text), 1)) : _createCommentVNode(\"\", true)\n              ], 8, _hoisted_2)) : _createCommentVNode(\"\", true)\n            ]),\n            _createElementVNode(\"div\", _hoisted_4, [\n              (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_unref(textLinks), (link) => {\n                return _openBlock(), _createBlock(_component_NuxtLink, {\n                  key: link.href,\n                  class: \"text-link\",\n                  \"aria-label\": link.text,\n                  href: link.href,\n                  target: link?.target || \"_self\",\n                  rel: link?.rel || \"noopener noreferrer\"\n                }, {\n                  default: _withCtx(() => [\n                    _createTextVNode(_toDisplayString(link.text), 1)\n                  ]),\n                  _: 2\n                }, 1032, [\"aria-label\", \"href\", \"target\", \"rel\"]);\n              }), 128))\n            ]),\n            _createElementVNode(\"div\", _hoisted_5, [\n              (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_unref(icons).slice(0, 6 - _unref(nbSocialIcons)), (icon) => {\n                return _openBlock(), _createElementBlock(\"a\", {\n                  key: icon.label,\n                  class: \"icon-link\",\n                  \"aria-label\": icon.label,\n                  href: icon.href,\n                  target: \"_blank\",\n                  rel: icon?.rel || \"noopener noreferrer\"\n                }, [\n                  _createVNode(_component_Icon, {\n                    name: icon.icon\n                  }, null, 8, [\"name\"])\n                ], 8, _hoisted_6);\n              }), 128)),\n              _createVNode(_component_AppSocialIcons, {\n                ref_key: \"socialIcons\",\n                ref: socialIcons\n              }, null, 512)\n            ])\n          ]),\n          _: 1\n        }, 8, [\"fluid\"])\n      ]);\n    };\n  }\n});\n",
-      "start": 1709670070172,
-      "end": 1709670070177,
+      "start": 1709675393010,
+      "end": 1709675393025,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -193,51 +193,51 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1709670070177,
-      "end": 1709670070177,
+      "start": 1709675393026,
+      "end": 1709675393026,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1709670070177,
-      "end": 1709670070177,
+      "start": 1709675393026,
+      "end": 1709675393026,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1709670070177,
-      "end": 1709670070178,
+      "start": 1709675393026,
+      "end": 1709675393026,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1709670070178,
-      "end": 1709670070178,
+      "start": 1709675393027,
+      "end": 1709675393027,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
       "result": "import { default as __nuxt_component_0 } from \"/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/Icon.vue\";\nimport { default as __nuxt_component_1 } from \"/workspace/Kubernetes-Bootcamp/node_modules/nuxt/dist/app/components/nuxt-link\";\nimport { default as __nuxt_component_2 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppSocialIcons.vue\";\nimport { default as __nuxt_component_3 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Container.vue\";\nimport { useDocus } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/composables/useDocus.ts';\nimport { ref, computed } from 'vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, toDisplayString as _toDisplayString, createElementBlock as _createElementBlock, createElementVNode as _createElementVNode, renderList as _renderList, Fragment as _Fragment, createTextVNode as _createTextVNode, withCtx as _withCtx, createVNode as _createVNode, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-39bdaab3\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = { class: \"left\" };\nconst _hoisted_2 = [\"href\"];\nconst _hoisted_3 = { key: 1 };\nconst _hoisted_4 = { class: \"center\" };\nconst _hoisted_5 = { class: \"right\" };\nconst _hoisted_6 = [\"aria-label\", \"href\", \"rel\"];\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"AppFooter\",\n  setup(__props) {\n    const { config } = useDocus();\n    const socialIcons = ref(null);\n    const icons = computed(() => config.value?.footer?.iconLinks || []);\n    const textLinks = computed(() => config.value?.footer?.textLinks || []);\n    const socialIconsCount = computed(() => Object.entries(config.value?.socials || {}).filter(([, v]) => v).length);\n    const nbSocialIcons = computed(() => socialIcons.value ? socialIconsCount.value : 0);\n    return (_ctx, _cache) => {\n      const _component_Icon = __nuxt_component_0;\n      const _component_NuxtLink = __nuxt_component_1;\n      const _component_AppSocialIcons = __nuxt_component_2;\n      const _component_Container = __nuxt_component_3;\n      return _openBlock(), _createElementBlock(\"footer\", null, [\n        _createVNode(_component_Container, {\n          fluid: _unref(config)?.footer?.fluid,\n          padded: \"\",\n          class: \"footer-container\"\n        }, {\n          default: _withCtx(() => [\n            _createElementVNode(\"div\", _hoisted_1, [\n              _unref(config)?.footer?.credits ? (_openBlock(), _createElementBlock(\"a\", {\n                key: 0,\n                href: _unref(config)?.footer?.credits?.href || \"#\",\n                rel: \"noopener\",\n                target: \"_blank\"\n              }, [\n                _unref(config)?.footer?.credits?.icon ? (_openBlock(), _createBlock(_component_Icon, {\n                  key: 0,\n                  name: _unref(config)?.footer?.credits?.icon,\n                  class: \"left-icon\"\n                }, null, 8, [\"name\"])) : _createCommentVNode(\"\", true),\n                _unref(config)?.footer?.credits?.text ? (_openBlock(), _createElementBlock(\"p\", _hoisted_3, _toDisplayString(_unref(config).footer.credits.text), 1)) : _createCommentVNode(\"\", true)\n              ], 8, _hoisted_2)) : _createCommentVNode(\"\", true)\n            ]),\n            _createElementVNode(\"div\", _hoisted_4, [\n              (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_unref(textLinks), (link) => {\n                return _openBlock(), _createBlock(_component_NuxtLink, {\n                  key: link.href,\n                  class: \"text-link\",\n                  \"aria-label\": link.text,\n                  href: link.href,\n                  target: link?.target || \"_self\",\n                  rel: link?.rel || \"noopener noreferrer\"\n                }, {\n                  default: _withCtx(() => [\n                    _createTextVNode(_toDisplayString(link.text), 1)\n                  ]),\n                  _: 2\n                }, 1032, [\"aria-label\", \"href\", \"target\", \"rel\"]);\n              }), 128))\n            ]),\n            _createElementVNode(\"div\", _hoisted_5, [\n              (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_unref(icons).slice(0, 6 - _unref(nbSocialIcons)), (icon) => {\n                return _openBlock(), _createElementBlock(\"a\", {\n                  key: icon.label,\n                  class: \"icon-link\",\n                  \"aria-label\": icon.label,\n                  href: icon.href,\n                  target: \"_blank\",\n                  rel: icon?.rel || \"noopener noreferrer\"\n                }, [\n                  _createVNode(_component_Icon, {\n                    name: icon.icon\n                  }, null, 8, [\"name\"])\n                ], 8, _hoisted_6);\n              }), 128)),\n              _createVNode(_component_AppSocialIcons, {\n                ref_key: \"socialIcons\",\n                ref: socialIcons\n              }, null, 512)\n            ])\n          ]),\n          _: 1\n        }, 8, [\"fluid\"])\n      ]);\n    };\n  }\n});\n",
-      "start": 1709670070178,
-      "end": 1709670070178,
+      "start": 1709675393027,
+      "end": 1709675393028,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1709670070179,
-      "end": 1709670070179,
+      "start": 1709675393029,
+      "end": 1709675393029,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1709670070179,
-      "end": 1709670070179,
+      "start": 1709675393029,
+      "end": 1709675393029,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1709670070179,
-      "end": 1709670070179,
+      "start": 1709675393029,
+      "end": 1709675393029,
       "order": "normal"
     }
   ]

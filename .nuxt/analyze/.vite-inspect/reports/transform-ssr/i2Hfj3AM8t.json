@@ -4,8 +4,8 @@
     {
       "name": "pinceau-transforms",
       "result": "nav{display:none;}@media (min-width: 1024px){nav{display:block;}}nav ul{display:flex;align-items:center;justify-content:center;flex:1;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}nav ul > * + *{margin-left:var(--space-2);}nav ul li{display:inline-flex;gap:var(--space-1);}nav ul .link{display:flex;align-items:center;gap:var(--space-2);padding:var(--space-2) var(--space-4);font-size:var(--fontSize-sm);border-radius:var(--radii-md);outline:none;transition:background 200ms ease;}nav ul .link svg{display:inline-block;}nav ul .link:active,nav ul .link.active,nav ul .link:hover{background-color:var(--color-gray-100);}:root.dark nav ul .link:active,:root.dark nav ul .link.active,:root.dark nav ul .link:hover{background-color:var(--color-gray-900);}nav ul .link.active{box-shadow:inset 0 2px 4px 0 rgb(0 0 0 / 0.05);font-weight:var(--fontWeight-semibold);}",
-      "start": 1709670075987,
-      "end": 1709670075990,
+      "start": 1709675401040,
+      "end": 1709675401042,
       "sourcemaps": {
         "version": 3,
         "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppHeaderNavigation.vue",
@@ -21,65 +21,65 @@
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1709670075993,
-      "end": 1709670075993,
+      "start": 1709675401046,
+      "end": 1709675401046,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1709670075993,
-      "end": 1709670075993,
+      "start": 1709675401046,
+      "end": 1709675401047,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1709670075993,
-      "end": 1709670075993,
+      "start": 1709675401047,
+      "end": 1709675401047,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1709670075993,
-      "end": 1709670075994,
+      "start": 1709675401047,
+      "end": 1709675401047,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "nav{display:none;}@media (min-width: 1024px){nav{display:block;}}nav ul{display:flex;align-items:center;justify-content:center;flex:1;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}nav ul > * + *{margin-left:var(--space-2);}nav ul li{display:inline-flex;gap:var(--space-1);}nav ul .link{display:flex;align-items:center;gap:var(--space-2);padding:var(--space-2) var(--space-4);font-size:var(--fontSize-sm);border-radius:var(--radii-md);outline:none;transition:background 200ms ease;}nav ul .link svg{display:inline-block;}nav ul .link:active,nav ul .link.active,nav ul .link:hover{background-color:var(--color-gray-100);}:root.dark nav ul .link:active,:root.dark nav ul .link.active,:root.dark nav ul .link:hover{background-color:var(--color-gray-900);}nav ul .link.active{box-shadow:inset 0 2px 4px 0 rgb(0 0 0 / 0.05);font-weight:var(--fontWeight-semibold);}",
-      "start": 1709670075994,
-      "end": 1709670075994,
+      "start": 1709675401047,
+      "end": 1709675401047,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "nav{display:none;}@media (min-width: 1024px){nav{display:block;}}nav ul{display:flex;align-items:center;justify-content:center;flex:1;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}nav ul > * + *{margin-left:var(--space-2);}nav ul li{display:inline-flex;gap:var(--space-1);}nav ul .link{display:flex;align-items:center;gap:var(--space-2);padding:var(--space-2) var(--space-4);font-size:var(--fontSize-sm);border-radius:var(--radii-md);outline:none;transition:background 200ms ease;}nav ul .link svg{display:inline-block;}nav ul .link:active,nav ul .link.active,nav ul .link:hover{background-color:var(--color-gray-100);}:root.dark nav ul .link:active,:root.dark nav ul .link.active,:root.dark nav ul .link:hover{background-color:var(--color-gray-900);}nav ul .link.active{box-shadow:inset 0 2px 4px 0 rgb(0 0 0 / 0.05);font-weight:var(--fontWeight-semibold);}",
-      "start": 1709670075994,
-      "end": 1709670075994,
+      "start": 1709675401047,
+      "end": 1709675401047,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1709670075994,
-      "end": 1709670075994,
+      "start": 1709675401048,
+      "end": 1709675401048,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1709670075994,
-      "end": 1709670075994,
+      "start": 1709675401048,
+      "end": 1709675401048,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1709670075994,
-      "end": 1709670075994,
+      "start": 1709675401048,
+      "end": 1709675401048,
       "order": "pre"
     },
     {
       "name": "vite:css",
       "result": "nav{display:none}@media (min-width:1024px){nav{display:block}}nav ul{align-items:center;display:flex;flex:1;justify-content:center;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}nav ul>*+*{margin-left:var(--space-2)}nav ul li{display:inline-flex;gap:var(--space-1)}nav ul .link{align-items:center;border-radius:var(--radii-md);display:flex;font-size:var(--fontSize-sm);gap:var(--space-2);outline:none;padding:var(--space-2) var(--space-4);transition:background .2s ease}nav ul .link svg{display:inline-block}nav ul .link.active,nav ul .link:active,nav ul .link:hover{background-color:var(--color-gray-100)}:root.dark nav ul .link.active,:root.dark nav ul .link:active,:root.dark nav ul .link:hover{background-color:var(--color-gray-900)}nav ul .link.active{box-shadow:inset 0 2px 4px 0 rgba(0,0,0,.05);font-weight:var(--fontWeight-semibold)}",
-      "start": 1709670075997,
-      "end": 1709670076007,
+      "start": 1709675401052,
+      "end": 1709675401062,
       "order": "normal",
       "sourcemaps": {
         "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppHeaderNavigation.vue",
@@ -96,27 +96,27 @@
     },
     {
       "name": "vite:esbuild",
-      "start": 1709670076007,
-      "end": 1709670076007,
+      "start": 1709675401062,
+      "end": 1709675401062,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1709670076007,
-      "end": 1709670076007,
+      "start": 1709675401062,
+      "end": 1709675401062,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1709670076007,
-      "end": 1709670076007,
+      "start": 1709675401062,
+      "end": 1709675401062,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "nav[data-v-4fab471c]{display:none}@media (min-width:1024px){nav[data-v-4fab471c]{display:block}}nav ul[data-v-4fab471c]{align-items:center;display:flex;flex:1;justify-content:center;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}nav ul>*+*[data-v-4fab471c]{margin-left:var(--space-2)}nav ul li[data-v-4fab471c]{display:inline-flex;gap:var(--space-1)}nav ul .link[data-v-4fab471c]{align-items:center;border-radius:var(--radii-md);display:flex;font-size:var(--fontSize-sm);gap:var(--space-2);outline:none;padding:var(--space-2) var(--space-4);transition:background .2s ease}nav ul .link svg[data-v-4fab471c]{display:inline-block}nav ul .link.active[data-v-4fab471c],nav ul .link[data-v-4fab471c]:active,nav ul .link[data-v-4fab471c]:hover{background-color:var(--color-gray-100)}:root.dark nav ul .link.active[data-v-4fab471c],:root.dark nav ul .link[data-v-4fab471c]:active,:root.dark nav ul .link[data-v-4fab471c]:hover{background-color:var(--color-gray-900)}nav ul .link.active[data-v-4fab471c]{box-shadow:inset 0 2px 4px 0 rgba(0,0,0,.05);font-weight:var(--fontWeight-semibold)}",
-      "start": 1709670076008,
-      "end": 1709670076010,
+      "start": 1709675401063,
+      "end": 1709675401065,
       "order": "normal",
       "sourcemaps": {
         "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppHeaderNavigation.vue",
@@ -133,63 +133,63 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1709670076011,
-      "end": 1709670076011,
+      "start": 1709675401066,
+      "end": 1709675401066,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709670076011,
-      "end": 1709670076011,
+      "start": 1709675401068,
+      "end": 1709675401068,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709670076011,
-      "end": 1709670076011,
+      "start": 1709675401068,
+      "end": 1709675401068,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1709670076015,
-      "end": 1709670076015,
+      "start": 1709675401080,
+      "end": 1709675401080,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1709670076015,
-      "end": 1709670076015,
+      "start": 1709675401080,
+      "end": 1709675401080,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1709670076015,
-      "end": 1709670076015,
+      "start": 1709675401081,
+      "end": 1709675401081,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709670076016,
-      "end": 1709670076016,
+      "start": 1709675401082,
+      "end": 1709675401082,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1709670076016,
-      "end": 1709670076016,
+      "start": 1709675401082,
+      "end": 1709675401082,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1709670076016,
-      "end": 1709670076016,
+      "start": 1709675401082,
+      "end": 1709675401082,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
       "result": "",
-      "start": 1709670076016,
-      "end": 1709670076017,
+      "start": 1709675401082,
+      "end": 1709675401082,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -197,116 +197,116 @@
     },
     {
       "name": "vite:build-html",
-      "start": 1709670076017,
-      "end": 1709670076017,
+      "start": 1709675401084,
+      "end": 1709675401084,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1709670076019,
-      "end": 1709670076019,
+      "start": 1709675401088,
+      "end": 1709675401088,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1709670076019,
-      "end": 1709670076019,
+      "start": 1709675401090,
+      "end": 1709675401090,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1709670076027,
-      "end": 1709670076027,
+      "start": 1709675401093,
+      "end": 1709675401094,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1709670076027,
-      "end": 1709670076028,
+      "start": 1709675401099,
+      "end": 1709675401100,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1709670076028,
-      "end": 1709670076028,
+      "start": 1709675401102,
+      "end": 1709675401102,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1709670076028,
-      "end": 1709670076028,
+      "start": 1709675401102,
+      "end": 1709675401102,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1709670076028,
-      "end": 1709670076028,
+      "start": 1709675401102,
+      "end": 1709675401102,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1709670076029,
-      "end": 1709670076029,
+      "start": 1709675401102,
+      "end": 1709675401102,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1709670076029,
-      "end": 1709670076029,
+      "start": 1709675401102,
+      "end": 1709675401103,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1709670076030,
-      "end": 1709670076030,
+      "start": 1709675401110,
+      "end": 1709675401110,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1709670076030,
-      "end": 1709670076030,
+      "start": 1709675401110,
+      "end": 1709675401110,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1709670076035,
-      "end": 1709670076035,
+      "start": 1709675401113,
+      "end": 1709675401113,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1709670076035,
-      "end": 1709670076035,
+      "start": 1709675401113,
+      "end": 1709675401113,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1709670076037,
-      "end": 1709670076038,
+      "start": 1709675401114,
+      "end": 1709675401114,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1709670076040,
-      "end": 1709670076040,
+      "start": 1709675401117,
+      "end": 1709675401117,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1709670076048,
-      "end": 1709670076048,
+      "start": 1709675401117,
+      "end": 1709675401117,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1709670076049,
-      "end": 1709670076049,
+      "start": 1709675401118,
+      "end": 1709675401118,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1709670076049,
-      "end": 1709670076049,
+      "start": 1709675401118,
+      "end": 1709675401118,
       "order": "normal"
     }
   ]

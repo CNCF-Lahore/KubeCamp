@@ -4,51 +4,51 @@
     {
       "name": "vite:load-fallback",
       "result": "<script setup lang=\"ts\">\nconst props = defineProps({\n  /**\n   * @values info, success, warning, danger\n   */\n  type: {\n    type: String,\n    default: 'info',\n    validator (value: string) {\n      return ['info', 'success', 'warning', 'danger', 'primary'].includes(value)\n    }\n  },\n  modelValue: {\n    required: false,\n    default: () => ref(false)\n  }\n})\n\nconst emit = defineEmits(['update:modelValue'])\n\nconst isOpen = ref(props.modelValue)\n\nconst toggle = () => {\n  isOpen.value = !isOpen.value\n  emit('update:modelValue', isOpen.value)\n}\n</script>\n\n<template>\n  <div class=\"callout\" :class=\"[type]\">\n    <span class=\"preview\" @click=\"toggle\">\n      <span class=\"summary\">\n        <ContentSlot :use=\"$slots.summary\" />\n      </span>\n      <Icon\n        name=\"heroicons-outline:chevron-right\"\n        class=\"icon\"\n        :class=\"[isOpen && 'rotate']\"\n      />\n    </span>\n\n    <div v-show=\"isOpen\" class=\"content\">\n      <ContentSlot :use=\"$slots.content\" />\n    </div>\n  </div>\n</template>\n\n<style scoped lang=\"ts\">\ncss({\n  '.callout': {\n    position: 'relative',\n    px: '{space.4}',\n    py: '{space.3}',\n    my: '{space.8}',\n    fontSize: '{text.sm.fontSize}',\n    lineHeight: '{text.sm.lineHeight}',\n    borderRadius: '{radii.md}',\n    border: '1px solid',\n\n    '&.primary': {\n      stateColors: 'primary'\n    },\n    '&.info': {\n      stateColors: 'info'\n    },\n    '&.success': {\n      stateColors: 'success'\n    },\n    '&.warning': {\n      stateColors: 'warning'\n    },\n    '&.danger': {\n      stateColors: 'danger'\n    },\n    '.preview': {\n      display: 'flex',\n      alignItems: 'center',\n      justifyContent: 'space-between',\n      cursor: 'pointer',\n      '.summary': {\n        ':deep(p)': {\n          margin: 0,\n          '& + p': {\n            marginTop: '{space.2}'\n          }\n        }\n      },\n      '.icon': {\n        width: '{space.5}',\n        height: '{space.5}',\n        transition: 'transform 100ms',\n        '&.rotate': {\n          transform: 'rotate(90deg)'\n        }\n      }\n    },\n    '.content': {\n      paddingTop: '{space.3}',\n      ':deep(p)': {\n        margin: 0,\n        '& + p': {\n          marginTop: '{space.2}'\n        }\n      }\n    }\n  }\n})\n</style>\n",
-      "start": 1709670074535,
-      "end": 1709670074598,
+      "start": 1709675399434,
+      "end": 1709675399499,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1709670074598,
-      "end": 1709670074598,
+      "start": 1709675399499,
+      "end": 1709675399499,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1709670074598,
-      "end": 1709670074598,
+      "start": 1709675399499,
+      "end": 1709675399499,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1709670074598,
-      "end": 1709670074598,
+      "start": 1709675399499,
+      "end": 1709675399499,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1709670074598,
-      "end": 1709670074598,
+      "start": 1709675399499,
+      "end": 1709675399499,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
-      "start": 1709670074598,
-      "end": 1709670074598,
+      "start": 1709675399499,
+      "end": 1709675399499,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
-      "start": 1709670074598,
-      "end": 1709670074598,
+      "start": 1709675399499,
+      "end": 1709675399499,
       "order": "pre"
     },
     {
       "name": "content-slot",
       "result": "<script setup lang=\"ts\">\nconst props = defineProps({\n  /**\n   * @values info, success, warning, danger\n   */\n  type: {\n    type: String,\n    default: 'info',\n    validator (value: string) {\n      return ['info', 'success', 'warning', 'danger', 'primary'].includes(value)\n    }\n  },\n  modelValue: {\n    required: false,\n    default: () => ref(false)\n  }\n})\n\nconst emit = defineEmits(['update:modelValue'])\n\nconst isOpen = ref(props.modelValue)\n\nconst toggle = () => {\n  isOpen.value = !isOpen.value\n  emit('update:modelValue', isOpen.value)\n}\n</script>\n\n<template>\n  <div class=\"callout\" :class=\"[type]\">\n    <span class=\"preview\" @click=\"toggle\">\n      <span class=\"summary\">\n        <MDCSlot  name=\"summary\" />\n      </span>\n      <Icon\n        name=\"heroicons-outline:chevron-right\"\n        class=\"icon\"\n        :class=\"[isOpen && 'rotate']\"\n      />\n    </span>\n\n    <div v-show=\"isOpen\" class=\"content\">\n      <MDCSlot  name=\"content\" />\n    </div>\n  </div>\n</template>\n\n<style scoped lang=\"ts\">\ncss({\n  '.callout': {\n    position: 'relative',\n    px: '{space.4}',\n    py: '{space.3}',\n    my: '{space.8}',\n    fontSize: '{text.sm.fontSize}',\n    lineHeight: '{text.sm.lineHeight}',\n    borderRadius: '{radii.md}',\n    border: '1px solid',\n\n    '&.primary': {\n      stateColors: 'primary'\n    },\n    '&.info': {\n      stateColors: 'info'\n    },\n    '&.success': {\n      stateColors: 'success'\n    },\n    '&.warning': {\n      stateColors: 'warning'\n    },\n    '&.danger': {\n      stateColors: 'danger'\n    },\n    '.preview': {\n      display: 'flex',\n      alignItems: 'center',\n      justifyContent: 'space-between',\n      cursor: 'pointer',\n      '.summary': {\n        ':deep(p)': {\n          margin: 0,\n          '& + p': {\n            marginTop: '{space.2}'\n          }\n        }\n      },\n      '.icon': {\n        width: '{space.5}',\n        height: '{space.5}',\n        transition: 'transform 100ms',\n        '&.rotate': {\n          transform: 'rotate(90deg)'\n        }\n      }\n    },\n    '.content': {\n      paddingTop: '{space.3}',\n      ':deep(p)': {\n        margin: 0,\n        '& + p': {\n          marginTop: '{space.2}'\n        }\n      }\n    }\n  }\n})\n</style>\n",
-      "start": 1709670074598,
-      "end": 1709670074598,
+      "start": 1709675399499,
+      "end": 1709675399499,
       "order": "pre",
       "sourcemaps": {
         "mappings": ""
@@ -57,8 +57,8 @@
     {
       "name": "content-slot",
       "result": "<script setup lang=\"ts\">\nconst props = defineProps({\n  /**\n   * @values info, success, warning, danger\n   */\n  type: {\n    type: String,\n    default: 'info',\n    validator (value: string) {\n      return ['info', 'success', 'warning', 'danger', 'primary'].includes(value)\n    }\n  },\n  modelValue: {\n    required: false,\n    default: () => ref(false)\n  }\n})\n\nconst emit = defineEmits(['update:modelValue'])\n\nconst isOpen = ref(props.modelValue)\n\nconst toggle = () => {\n  isOpen.value = !isOpen.value\n  emit('update:modelValue', isOpen.value)\n}\n</script>\n\n<template>\n  <div class=\"callout\" :class=\"[type]\">\n    <span class=\"preview\" @click=\"toggle\">\n      <span class=\"summary\">\n        <MDCSlot  name=\"summary\" />\n      </span>\n      <Icon\n        name=\"heroicons-outline:chevron-right\"\n        class=\"icon\"\n        :class=\"[isOpen && 'rotate']\"\n      />\n    </span>\n\n    <div v-show=\"isOpen\" class=\"content\">\n      <MDCSlot  name=\"content\" />\n    </div>\n  </div>\n</template>\n\n<style scoped lang=\"ts\">\ncss({\n  '.callout': {\n    position: 'relative',\n    px: '{space.4}',\n    py: '{space.3}',\n    my: '{space.8}',\n    fontSize: '{text.sm.fontSize}',\n    lineHeight: '{text.sm.lineHeight}',\n    borderRadius: '{radii.md}',\n    border: '1px solid',\n\n    '&.primary': {\n      stateColors: 'primary'\n    },\n    '&.info': {\n      stateColors: 'info'\n    },\n    '&.success': {\n      stateColors: 'success'\n    },\n    '&.warning': {\n      stateColors: 'warning'\n    },\n    '&.danger': {\n      stateColors: 'danger'\n    },\n    '.preview': {\n      display: 'flex',\n      alignItems: 'center',\n      justifyContent: 'space-between',\n      cursor: 'pointer',\n      '.summary': {\n        ':deep(p)': {\n          margin: 0,\n          '& + p': {\n            marginTop: '{space.2}'\n          }\n        }\n      },\n      '.icon': {\n        width: '{space.5}',\n        height: '{space.5}',\n        transition: 'transform 100ms',\n        '&.rotate': {\n          transform: 'rotate(90deg)'\n        }\n      }\n    },\n    '.content': {\n      paddingTop: '{space.3}',\n      ':deep(p)': {\n        margin: 0,\n        '& + p': {\n          marginTop: '{space.2}'\n        }\n      }\n    }\n  }\n})\n</style>\n",
-      "start": 1709670074598,
-      "end": 1709670074598,
+      "start": 1709675399499,
+      "end": 1709675399499,
       "order": "pre",
       "sourcemaps": {
         "mappings": ""
@@ -66,39 +66,39 @@
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1709670074598,
-      "end": 1709670074598,
+      "start": 1709675399499,
+      "end": 1709675399500,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1709670074598,
-      "end": 1709670074598,
+      "start": 1709675399500,
+      "end": 1709675399500,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1709670074598,
-      "end": 1709670074598,
+      "start": 1709675399500,
+      "end": 1709675399500,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1709670074598,
-      "end": 1709670074598,
+      "start": 1709675399500,
+      "end": 1709675399500,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1709670074598,
-      "end": 1709670074598,
+      "start": 1709675399500,
+      "end": 1709675399500,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "import _sfc_main from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Callout.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Callout.vue?vue&type=script&setup=true&lang.ts\";\nimport \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Callout.vue?vue&type=style&index=0&scoped=2e48180d&lang.ts\";\nimport { useSSRContext as __vite_useSSRContext } from \"vue\";\nconst _sfc_setup = _sfc_main.setup;\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext();\n  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add(\"node_modules/@nuxt-themes/elements/components/globals/Callout.vue\");\n  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;\n};\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"__scopeId\", \"data-v-2e48180d\"]]);\n",
-      "start": 1709670074598,
-      "end": 1709670074611,
+      "start": 1709675399500,
+      "end": 1709675399523,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -106,178 +106,178 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1709670074611,
-      "end": 1709670074611,
+      "start": 1709675399524,
+      "end": 1709675399524,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709670074611,
-      "end": 1709670074611,
+      "start": 1709675399524,
+      "end": 1709675399524,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709670074611,
-      "end": 1709670074611,
+      "start": 1709675399524,
+      "end": 1709675399524,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1709670074612,
-      "end": 1709670074612,
+      "start": 1709675399524,
+      "end": 1709675399524,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1709670074612,
-      "end": 1709670074612,
+      "start": 1709675399524,
+      "end": 1709675399524,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
       "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Callout.vue\").then(r => r.default))",
-      "start": 1709670074612,
-      "end": 1709670074612,
+      "start": 1709675399524,
+      "end": 1709675399524,
       "order": "normal",
       "sourcemaps": null
     },
     {
       "name": "replace",
-      "start": 1709670074612,
-      "end": 1709670074612,
+      "start": 1709675399524,
+      "end": 1709675399524,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1709670074612,
-      "end": 1709670074612,
+      "start": 1709675399525,
+      "end": 1709675399525,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1709670074613,
-      "end": 1709670074613,
+      "start": 1709675399525,
+      "end": 1709675399525,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1709670074613,
-      "end": 1709670074613,
+      "start": 1709675399525,
+      "end": 1709675399525,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1709670074613,
-      "end": 1709670074613,
+      "start": 1709675399525,
+      "end": 1709675399525,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1709670074613,
-      "end": 1709670074613,
+      "start": 1709675399525,
+      "end": 1709675399525,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1709670074613,
-      "end": 1709670074613,
+      "start": 1709675399525,
+      "end": 1709675399525,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1709670074613,
-      "end": 1709670074613,
+      "start": 1709675399525,
+      "end": 1709675399525,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1709670074613,
-      "end": 1709670074613,
+      "start": 1709675399525,
+      "end": 1709675399525,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1709670074613,
-      "end": 1709670074613,
+      "start": 1709675399525,
+      "end": 1709675399525,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1709670074613,
-      "end": 1709670074614,
+      "start": 1709675399525,
+      "end": 1709675399525,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1709670074613,
-      "end": 1709670074614,
+      "start": 1709675399525,
+      "end": 1709675399525,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1709670074614,
-      "end": 1709670074615,
+      "start": 1709675399526,
+      "end": 1709675399527,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1709670074614,
-      "end": 1709670074615,
+      "start": 1709675399526,
+      "end": 1709675399527,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1709670074615,
-      "end": 1709670074615,
+      "start": 1709675399527,
+      "end": 1709675399527,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1709670074615,
-      "end": 1709670074615,
+      "start": 1709675399527,
+      "end": 1709675399527,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1709670074615,
-      "end": 1709670074615,
+      "start": 1709675399527,
+      "end": 1709675399527,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1709670074615,
-      "end": 1709670074615,
+      "start": 1709675399527,
+      "end": 1709675399527,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1709670074615,
-      "end": 1709670074615,
+      "start": 1709675399527,
+      "end": 1709675399527,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1709670074615,
-      "end": 1709670074616,
+      "start": 1709675399527,
+      "end": 1709675399527,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1709670074616,
-      "end": 1709670074616,
+      "start": 1709675399528,
+      "end": 1709675399528,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1709670074616,
-      "end": 1709670074616,
+      "start": 1709675399528,
+      "end": 1709675399528,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1709670074616,
-      "end": 1709670074616,
+      "start": 1709675399528,
+      "end": 1709675399528,
       "order": "normal"
     }
   ]

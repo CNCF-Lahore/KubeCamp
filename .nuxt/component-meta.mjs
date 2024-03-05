@@ -1346,25 +1346,6 @@ export default {
       "type": 1,
       "props": [
         {
-          "name": "source",
-          "global": false,
-          "description": "Source file path.\n\nWon't be used if `page` is set.",
-          "tags": [],
-          "required": false,
-          "type": "string",
-          "declarations": [
-            {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
-              "range": [
-                1245,
-                1328
-              ]
-            }
-          ],
-          "schema": "string",
-          "default": "undefined"
-        },
-        {
           "name": "baseUrl",
           "global": false,
           "description": "GitHub base URL.",
@@ -1460,6 +1441,25 @@ export default {
           "default": "useAppConfig()?.docus?.github?.dir"
         },
         {
+          "name": "source",
+          "global": false,
+          "description": "Source file path.\n\nWon't be used if `page` is set.",
+          "tags": [],
+          "required": false,
+          "type": "string",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
+              "range": [
+                1245,
+                1328
+              ]
+            }
+          ],
+          "schema": "string",
+          "default": "undefined"
+        },
+        {
           "name": "page",
           "global": false,
           "description": "Use page from",
@@ -1533,21 +1533,6 @@ export default {
       "events": [],
       "exposed": [
         {
-          "name": "source",
-          "type": "string",
-          "description": "Source file path.\n\nWon't be used if `page` is set.",
-          "declarations": [
-            {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
-              "range": [
-                1245,
-                1328
-              ]
-            }
-          ],
-          "schema": "string"
-        },
-        {
           "name": "baseUrl",
           "type": "string",
           "description": "GitHub base URL.",
@@ -1617,6 +1602,21 @@ export default {
               "range": [
                 1041,
                 1152
+              ]
+            }
+          ],
+          "schema": "string"
+        },
+        {
+          "name": "source",
+          "type": "string",
+          "description": "Source file path.\n\nWon't be used if `page` is set.",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
+              "range": [
+                1245,
+                1328
               ]
             }
           ],
@@ -7732,8 +7732,8 @@ export default {
                                     ],
                                     "schema": "boolean"
                                   },
-                                  "__@match@7844": {
-                                    "name": "__@match@7844",
+                                  "__@match@7718": {
+                                    "name": "__@match@7718",
                                     "global": false,
                                     "description": "Matches a string with this regular expression, and returns an array containing the results of\nthat search.",
                                     "tags": [
@@ -7759,8 +7759,8 @@ export default {
                                       "schema": []
                                     }
                                   },
-                                  "__@replace@7846": {
-                                    "name": "__@replace@7846",
+                                  "__@replace@7720": {
+                                    "name": "__@replace@7720",
                                     "global": false,
                                     "description": "Replaces text in a string, using this regular expression.",
                                     "tags": [
@@ -7801,8 +7801,8 @@ export default {
                                     ],
                                     "schema": "{ (string: string, replaceValue: string): string; (string: string, replacer: (substring: string, ...args: any[]) => string): string; }"
                                   },
-                                  "__@search@7849": {
-                                    "name": "__@search@7849",
+                                  "__@search@7723": {
+                                    "name": "__@search@7723",
                                     "global": false,
                                     "description": "Finds the position beginning first substring match in a regular expression search\nusing this regular expression.",
                                     "tags": [
@@ -7828,8 +7828,8 @@ export default {
                                       "schema": []
                                     }
                                   },
-                                  "__@split@7851": {
-                                    "name": "__@split@7851",
+                                  "__@split@7725": {
+                                    "name": "__@split@7725",
                                     "global": false,
                                     "description": "Returns an array of substrings that were delimited by strings in the original input that\nmatch against this regular expression.\n\nIf the regular expression contains capturing parentheses, then each time this\nregular expression matches, the results (including any undefined results) of the\ncapturing parentheses are spliced.",
                                     "tags": [
@@ -7859,8 +7859,8 @@ export default {
                                       "schema": []
                                     }
                                   },
-                                  "__@matchAll@7853": {
-                                    "name": "__@matchAll@7853",
+                                  "__@matchAll@7727": {
+                                    "name": "__@matchAll@7727",
                                     "global": false,
                                     "description": "Matches a string with this regular expression, and returns an iterable of matches\ncontaining the results of that search.",
                                     "tags": [
@@ -8240,6 +8240,16 @@ export default {
                             ]
                           }
                         },
+                        "title": {
+                          "name": "title",
+                          "global": false,
+                          "description": "",
+                          "tags": [],
+                          "required": false,
+                          "type": "string | number | boolean | RegExp | QueryBuilderWhere",
+                          "declarations": [],
+                          "schema": "string | number | boolean | RegExp | QueryBuilderWhere"
+                        },
                         "_id": {
                           "name": "_id",
                           "global": false,
@@ -8262,16 +8272,6 @@ export default {
                         },
                         "_path": {
                           "name": "_path",
-                          "global": false,
-                          "description": "",
-                          "tags": [],
-                          "required": false,
-                          "type": "string | number | boolean | RegExp | QueryBuilderWhere",
-                          "declarations": [],
-                          "schema": "string | number | boolean | RegExp | QueryBuilderWhere"
-                        },
-                        "title": {
-                          "name": "title",
                           "global": false,
                           "description": "",
                           "tags": [],
@@ -10001,8 +10001,8 @@ export default {
                                     ],
                                     "schema": "boolean"
                                   },
-                                  "__@match@7844": {
-                                    "name": "__@match@7844",
+                                  "__@match@7718": {
+                                    "name": "__@match@7718",
                                     "global": false,
                                     "description": "Matches a string with this regular expression, and returns an array containing the results of\nthat search.",
                                     "tags": [
@@ -10028,8 +10028,8 @@ export default {
                                       "schema": []
                                     }
                                   },
-                                  "__@replace@7846": {
-                                    "name": "__@replace@7846",
+                                  "__@replace@7720": {
+                                    "name": "__@replace@7720",
                                     "global": false,
                                     "description": "Replaces text in a string, using this regular expression.",
                                     "tags": [
@@ -10070,8 +10070,8 @@ export default {
                                     ],
                                     "schema": "{ (string: string, replaceValue: string): string; (string: string, replacer: (substring: string, ...args: any[]) => string): string; }"
                                   },
-                                  "__@search@7849": {
-                                    "name": "__@search@7849",
+                                  "__@search@7723": {
+                                    "name": "__@search@7723",
                                     "global": false,
                                     "description": "Finds the position beginning first substring match in a regular expression search\nusing this regular expression.",
                                     "tags": [
@@ -10097,8 +10097,8 @@ export default {
                                       "schema": []
                                     }
                                   },
-                                  "__@split@7851": {
-                                    "name": "__@split@7851",
+                                  "__@split@7725": {
+                                    "name": "__@split@7725",
                                     "global": false,
                                     "description": "Returns an array of substrings that were delimited by strings in the original input that\nmatch against this regular expression.\n\nIf the regular expression contains capturing parentheses, then each time this\nregular expression matches, the results (including any undefined results) of the\ncapturing parentheses are spliced.",
                                     "tags": [
@@ -10128,8 +10128,8 @@ export default {
                                       "schema": []
                                     }
                                   },
-                                  "__@matchAll@7853": {
-                                    "name": "__@matchAll@7853",
+                                  "__@matchAll@7727": {
+                                    "name": "__@matchAll@7727",
                                     "global": false,
                                     "description": "Matches a string with this regular expression, and returns an iterable of matches\ncontaining the results of that search.",
                                     "tags": [
@@ -10509,6 +10509,16 @@ export default {
                             ]
                           }
                         },
+                        "title": {
+                          "name": "title",
+                          "global": false,
+                          "description": "",
+                          "tags": [],
+                          "required": false,
+                          "type": "string | number | boolean | RegExp | QueryBuilderWhere",
+                          "declarations": [],
+                          "schema": "string | number | boolean | RegExp | QueryBuilderWhere"
+                        },
                         "_id": {
                           "name": "_id",
                           "global": false,
@@ -10531,16 +10541,6 @@ export default {
                         },
                         "_path": {
                           "name": "_path",
-                          "global": false,
-                          "description": "",
-                          "tags": [],
-                          "required": false,
-                          "type": "string | number | boolean | RegExp | QueryBuilderWhere",
-                          "declarations": [],
-                          "schema": "string | number | boolean | RegExp | QueryBuilderWhere"
-                        },
-                        "title": {
-                          "name": "title",
                           "global": false,
                           "description": "",
                           "tags": [],
@@ -12263,6 +12263,16 @@ export default {
                                 ]
                               }
                             },
+                            "title": {
+                              "name": "title",
+                              "global": false,
+                              "description": "",
+                              "tags": [],
+                              "required": false,
+                              "type": "string | number | boolean | RegExp | QueryBuilderWhere",
+                              "declarations": [],
+                              "schema": "string | number | boolean | RegExp | QueryBuilderWhere"
+                            },
                             "_id": {
                               "name": "_id",
                               "global": false,
@@ -12285,16 +12295,6 @@ export default {
                             },
                             "_path": {
                               "name": "_path",
-                              "global": false,
-                              "description": "",
-                              "tags": [],
-                              "required": false,
-                              "type": "string | number | boolean | RegExp | QueryBuilderWhere",
-                              "declarations": [],
-                              "schema": "string | number | boolean | RegExp | QueryBuilderWhere"
-                            },
-                            "title": {
-                              "name": "title",
                               "global": false,
                               "description": "",
                               "tags": [],

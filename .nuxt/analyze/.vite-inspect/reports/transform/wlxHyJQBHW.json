@@ -4,27 +4,27 @@
     {
       "name": "vite:load-fallback",
       "result": "<script setup lang=\"ts\">\nimport { upperFirst } from 'scule'\n\nconst { prev, next, navigation } = useContent()\nconst { navDirFromPath } = useContentHelpers()\n\nconst directory = (link: any) => {\n  const nav = navDirFromPath(link._path, navigation.value || [])\n\n  if (nav && nav[0]) {\n    return nav[0]?._path ?? ''\n  } else {\n    const dirs = link.split('/')\n    const directory = dirs.length > 1 ? dirs[dirs.length - 2] : ''\n    return directory.split('-').map(upperFirst).join(' ')\n  }\n}\n</script>\n\n<template>\n  <div\n    v-if=\"prev || next\"\n    class=\"docs-prev-next\"\n  >\n    <NuxtLink\n      v-if=\"prev && prev._path\"\n      :to=\"prev._path\"\n      class=\"prev\"\n    >\n      <Icon\n        name=\"heroicons-outline:arrow-sm-left\"\n        class=\"icon\"\n      />\n      <div class=\"wrapper\">\n        <span\n          v-if=\"directory(prev._path)\"\n          class=\"directory\"\n        >\n          {{ directory(prev._path) }}\n        </span>\n        <span class=\"title\">{{ prev.title }}</span>\n      </div>\n    </NuxtLink>\n\n    <span v-else />\n\n    <NuxtLink\n      v-if=\"next && next._path\"\n      :to=\"next._path\"\n      class=\"next\"\n    >\n      <div class=\"wrapper\">\n        <span\n          v-if=\"directory(next._path)\"\n          class=\"directory\"\n        >\n          {{ directory(next._path) }}\n        </span>\n        <span class=\"title\">{{ next.title }}</span>\n      </div>\n      <Icon\n        name=\"heroicons-outline:arrow-sm-right\"\n        class=\"icon\"\n      />\n    </NuxtLink>\n  </div>\n</template>\n\n<style scoped lang=\"ts\">\ncss({\n  '.docs-prev-next': {\n    display: 'flex',\n    flexDirection: 'column',\n    justifyContent: 'space-between',\n    gap: '{space.3}',\n    '@sm': {\n      flexDirection: 'row',\n      alignItems: 'center'\n    },\n    a: {\n      position: 'relative',\n      minWidth: '0px',\n      padding: '{space.3}',\n      border: '1px solid {elements.border.primary.static}',\n      borderRadius: '{radii.md}',\n      '&:hover': {\n        backgroundColor: '{color.gray.50}',\n        borderColor: '{color.gray.50}',\n        color: '{color.primary.500}',\n      },\n      '@dark': {\n        '&:hover': {\n          backgroundColor: '{color.gray.900}',\n          borderColor: '{color.gray.900}',\n        }\n      },\n      '&.prev': {\n        textAlign: 'left',\n        display: 'flex',\n        gap: '{space.3}',\n        '.directory': {\n          display: 'block',\n          marginBottom: '{space.1}',\n          fontSize: '{text.xs.fontSize}',\n          lineHeight: '{text.xs.lineHeight}',\n          fontWeight: '{fontWeight.medium}',\n          color: '{color.gray.500}',\n          truncate: true\n        },\n        '@sm': {\n          '.wrapper': {\n            alignItems: 'flex-end'\n          }\n        }\n      },\n      '&.next': {\n        textAlign: 'right',\n        display: 'flex',\n        justifyContent: 'flex-end',\n        gap: '{space.3}',\n        '.directory': {\n          display: 'block',\n          marginBottom: '{space.1}',\n          fontSize: '{text.xs.fontSize}',\n          lineHeight: '{text.xs.lineHeight}',\n          fontWeight: '{fontWeight.medium}',\n          color: '{color.gray.500}',\n          truncate: true\n        },\n        '@sm': {\n          '.wrapper': {\n            alignItems: 'flex-start'\n          }\n        }\n      },\n      '.wrapper': {\n        display: 'flex',\n        flexDirection: 'column',\n      },\n      '.icon': {\n        alignSelf: 'flex-end',\n        flexShrink: 0,\n        width: '{space.5}',\n        height: '{space.5}'\n      },\n      '.title': {\n        flex: '1 1 0%',\n        fontWeight: '{fontWeight.medium}',\n        lineHeight: '{lead.5}',\n        truncate: true\n      }\n    }\n  }\n})\n</style>\n",
-      "start": 1709670068729,
-      "end": 1709670068911,
+      "start": 1709675390644,
+      "end": 1709675390947,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1709670068911,
-      "end": 1709670068911,
+      "start": 1709675390947,
+      "end": 1709675390947,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1709670068911,
-      "end": 1709670068911,
+      "start": 1709675390947,
+      "end": 1709675390947,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "<script setup lang=\"ts\">\nimport { upperFirst } from 'scule'\n\nconst { prev, next, navigation } = useContent()\nconst { navDirFromPath } = useContentHelpers()\n\nconst directory = (link: any) => {\n  const nav = navDirFromPath(link._path, navigation.value || [])\n\n  if (nav && nav[0]) {\n    return nav[0]?._path ?? ''\n  } else {\n    const dirs = link.split('/')\n    const directory = dirs.length > 1 ? dirs[dirs.length - 2] : ''\n    return directory.split('-').map(upperFirst).join(' ')\n  }\n}\n</script>\n\n<template>\n  <div\n    v-if=\"prev || next\"\n    class=\"docs-prev-next\"\n  >\n    <NuxtLink\n      v-if=\"prev && prev._path\"\n      :to=\"prev._path\"\n      class=\"prev\"\n    >\n      <Icon\n        name=\"heroicons-outline:arrow-sm-left\"\n        class=\"icon\"\n      />\n      <div class=\"wrapper\">\n        <span\n          v-if=\"directory(prev._path)\"\n          class=\"directory\"\n        >\n          {{ directory(prev._path) }}\n        </span>\n        <span class=\"title\">{{ prev.title }}</span>\n      </div>\n    </NuxtLink>\n\n    <span v-else />\n\n    <NuxtLink\n      v-if=\"next && next._path\"\n      :to=\"next._path\"\n      class=\"next\"\n    >\n      <div class=\"wrapper\">\n        <span\n          v-if=\"directory(next._path)\"\n          class=\"directory\"\n        >\n          {{ directory(next._path) }}\n        </span>\n        <span class=\"title\">{{ next.title }}</span>\n      </div>\n      <Icon\n        name=\"heroicons-outline:arrow-sm-right\"\n        class=\"icon\"\n      />\n    </NuxtLink>\n  </div>\n</template>\n\n<style scoped lang=\"postcss\" transformed>\n.docs-prev-next{display:flex;flex-direction:column;justify-content:space-between;gap:var(--space-3);}@media (min-width: 640px){.docs-prev-next{flex-direction:row;align-items:center;}}.docs-prev-next a{position:relative;min-width:0px;padding:var(--space-3);border:1px solid var(--elements-border-primary-static);border-radius:var(--radii-md);}.docs-prev-next a:hover{background-color:var(--color-gray-50);border-color:var(--color-gray-50);color:var(--color-primary-500);}:root.dark .docs-prev-next a:hover{background-color:var(--color-gray-900);border-color:var(--color-gray-900);}.docs-prev-next a.prev{text-align:left;display:flex;gap:var(--space-3);}.docs-prev-next a.prev .directory{display:block;margin-bottom:var(--space-1);font-size:var(--text-xs-fontSize);line-height:var(--text-xs-lineHeight);font-weight:var(--fontWeight-medium);color:var(--color-gray-500);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}@media (min-width: 640px){.docs-prev-next a.prev .wrapper{align-items:flex-end;}}.docs-prev-next a.next{text-align:right;display:flex;justify-content:flex-end;gap:var(--space-3);}.docs-prev-next a.next .directory{display:block;margin-bottom:var(--space-1);font-size:var(--text-xs-fontSize);line-height:var(--text-xs-lineHeight);font-weight:var(--fontWeight-medium);color:var(--color-gray-500);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}@media (min-width: 640px){.docs-prev-next a.next .wrapper{align-items:flex-start;}}.docs-prev-next a .wrapper{display:flex;flex-direction:column;}.docs-prev-next a .icon{align-self:flex-end;flex-shrink:0;width:var(--space-5);height:var(--space-5);}.docs-prev-next a .title{flex:1 1 0%;font-weight:var(--fontWeight-medium);line-height:var(--lead-5);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}\n</style>\n",
-      "start": 1709670068911,
-      "end": 1709670068920,
+      "start": 1709675390947,
+      "end": 1709675390960,
       "order": "pre",
       "sourcemaps": {
         "version": 3,
@@ -38,45 +38,45 @@
     },
     {
       "name": "content-slot",
-      "start": 1709670068920,
-      "end": 1709670068920,
+      "start": 1709675390960,
+      "end": 1709675390960,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1709670068920,
-      "end": 1709670068920,
+      "start": 1709675390960,
+      "end": 1709675390960,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1709670068920,
-      "end": 1709670068920,
+      "start": 1709675390960,
+      "end": 1709675390960,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1709670068920,
-      "end": 1709670068920,
+      "start": 1709675390960,
+      "end": 1709675390960,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1709670068920,
-      "end": 1709670068920,
+      "start": 1709675390961,
+      "end": 1709675390961,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1709670068920,
-      "end": 1709670068920,
+      "start": 1709675390961,
+      "end": 1709675390961,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "import _sfc_main from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsPrevNext.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsPrevNext.vue?vue&type=script&setup=true&lang.ts\";\nimport \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsPrevNext.vue?vue&type=style&index=0&scoped=30e1aea1&transformed=true&lang.postcss\";\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"__scopeId\", \"data-v-30e1aea1\"]]);\n",
-      "start": 1709670068920,
-      "end": 1709670068943,
+      "start": 1709675390961,
+      "end": 1709675391031,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -84,152 +84,152 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1709670068944,
-      "end": 1709670068944,
+      "start": 1709675391031,
+      "end": 1709675391031,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709670068944,
-      "end": 1709670068944,
+      "start": 1709675391031,
+      "end": 1709675391031,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1709670068944,
-      "end": 1709670068944,
+      "start": 1709675391031,
+      "end": 1709675391032,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1709670068944,
-      "end": 1709670068944,
+      "start": 1709675391032,
+      "end": 1709675391032,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1709670068945,
-      "end": 1709670068945,
+      "start": 1709675391032,
+      "end": 1709675391032,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709670068945,
-      "end": 1709670068945,
+      "start": 1709675391032,
+      "end": 1709675391032,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1709670068945,
-      "end": 1709670068945,
+      "start": 1709675391032,
+      "end": 1709675391032,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1709670068945,
-      "end": 1709670068945,
+      "start": 1709675391032,
+      "end": 1709675391032,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1709670068946,
-      "end": 1709670068946,
+      "start": 1709675391032,
+      "end": 1709675391032,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1709670068946,
-      "end": 1709670068946,
+      "start": 1709675391032,
+      "end": 1709675391032,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1709670068946,
-      "end": 1709670068946,
+      "start": 1709675391033,
+      "end": 1709675391033,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1709670068946,
-      "end": 1709670068946,
+      "start": 1709675391033,
+      "end": 1709675391033,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1709670068946,
-      "end": 1709670068946,
+      "start": 1709675391033,
+      "end": 1709675391033,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1709670068946,
-      "end": 1709670068946,
+      "start": 1709675391033,
+      "end": 1709675391033,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1709670068946,
-      "end": 1709670068946,
+      "start": 1709675391033,
+      "end": 1709675391033,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1709670068947,
-      "end": 1709670068947,
+      "start": 1709675391033,
+      "end": 1709675391033,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1709670068947,
-      "end": 1709670068950,
+      "start": 1709675391033,
+      "end": 1709675391036,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1709670068950,
-      "end": 1709670068950,
+      "start": 1709675391036,
+      "end": 1709675391036,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1709670068950,
-      "end": 1709670068950,
+      "start": 1709675391036,
+      "end": 1709675391037,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1709670068950,
-      "end": 1709670068950,
+      "start": 1709675391037,
+      "end": 1709675391037,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1709670068950,
-      "end": 1709670068950,
+      "start": 1709675391037,
+      "end": 1709675391037,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1709670068951,
-      "end": 1709670068951,
+      "start": 1709675391037,
+      "end": 1709675391037,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1709670068951,
-      "end": 1709670068951,
+      "start": 1709675391038,
+      "end": 1709675391038,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1709670068951,
-      "end": 1709670068951,
+      "start": 1709675391038,
+      "end": 1709675391038,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1709670068951,
-      "end": 1709670068951,
+      "start": 1709675391038,
+      "end": 1709675391038,
       "order": "normal"
     }
   ]
