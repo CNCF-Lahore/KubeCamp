@@ -4,27 +4,27 @@
     {
       "name": "vite:load-fallback",
       "result": "<script lang=\"ts\" setup>\nimport type { PropType } from 'vue'\n\nconst props = defineProps({\n  poster: {\n    type: String,\n    default: ''\n  },\n  src: {\n    type: String,\n    default: ''\n  },\n  sources: {\n    type: Array as PropType<any[]>,\n    default: () => []\n  },\n  autoplay: {\n    type: Boolean,\n    default: false\n  }\n})\n\nconst provider = computed(() => {\n  if (props.src && props.src.includes('youtube.com/watch')) {\n    const match = props.src.match(/\\?v=([^&]*)/)\n\n    return {\n      name: 'youtube',\n      src: `https://www.youtube-nocookie.com/embed/${match?.[1] || ''}?autoplay=1`,\n      poster: props.poster || `https://i3.ytimg.com/vi/${match?.[1] || ''}/hqdefault.jpg`\n    }\n  }\n})\n\nconst loaded = ref(false)\n\nif (!props.src && !props.sources.length) { throw new Error('VideoPlayer: you need to provide either `src` or `sources` props') }\n\nconst src = computed(() => props.src || props.sources?.[0]?.src || false)\n</script>\n\n<template>\n  <div class=\"video-player\" :class=\"{ loaded }\">\n    <NuxtImg v-if=\"provider ? provider.poster : poster\" :src=\"(provider ? provider.poster : poster as any)\" />\n\n    <div v-if=\"loaded\" class=\"loaded\">\n      <!-- Remote -->\n      <video v-if=\"!provider\" :poster=\"poster\" controls autoplay>\n        <source v-if=\"src\" :src=\"src\">\n        <source v-for=\"source in sources\" :key=\"source.src || source\" :src=\"source.src || source\" :type=\"source.type\">\n      </video>\n\n      <!-- YouTube -->\n      <iframe\n        v-else-if=\"provider.name === 'youtube'\"\n        allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\"\n        allowfullscreen=\"true\"\n        :autoplay=\"autoplay\"\n        :src=\"provider.src\"\n      />\n    </div>\n\n    <div v-if=\"!loaded\" class=\"play-button\" @click=\"loaded = true\">\n      <button />\n    </div>\n  </div>\n</template>\n\n<style scoped lang=\"ts\">\ncss({\n  '.video-player': {\n    position: 'relative',\n    display: 'inline-block',\n    my: '{space.8}',\n    overflow: 'hidden',\n    background: '{color.gray.900}',\n    borderRadius: '{radii.lg}',\n    '.loaded': {\n      position: 'absolute',\n      top: 0,\n      insetInlineStart: 0,\n      width: '100%',\n      height: '100%',\n    },\n    video: {\n      width: '100%'\n    },\n    iframe: {\n      width: '100%',\n      height: '100%',\n    },\n    '.play-button': {\n      position: 'absolute',\n      top: 0,\n      insetInlineStart: 0,\n      width: '100%',\n      height: '100%',\n      cursor: 'pointer',\n      button: {\n        position: 'absolute',\n        transform: 'translate3d(-50%, -50%, 0)',\n        top: '50%',\n        insetInlineStart: '50%',\n        zIndex: 1,\n        width: '{space.24}',\n        height: '{space.24}',\n        filter: 'grayscale(100%)',\n        transition: 'filter 0.1s cubic-bezier(0, 0, 0.2, 1)',\n        backgroundPosition: 'center',\n        backgroundRepeat: 'no-repeat',\n        backgroundColor: 'transparent',\n        backgroundImage: `url('data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\" viewBox=\"0 0 68 48\"><path fill=\"%23f00\" fill-opacity=\"0.8\" d=\"M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z\"></path><path d=\"M 45,24 27,14 27,34\" fill=\"%23fff\"></path></svg>')`\n      },\n      '&:hover button': {\n        filter: 'none'\n      }\n    }\n  }\n})\n</style>\n",
-      "start": 1709041924033,
-      "end": 1709041924266,
+      "start": 1709670069061,
+      "end": 1709670069189,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1709041924266,
-      "end": 1709041924266,
+      "start": 1709670069189,
+      "end": 1709670069189,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1709041924266,
-      "end": 1709041924266,
+      "start": 1709670069189,
+      "end": 1709670069189,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "<script lang=\"ts\" setup>\nimport type { PropType } from 'vue'\n\nconst props = defineProps({\n  poster: {\n    type: String,\n    default: ''\n  },\n  src: {\n    type: String,\n    default: ''\n  },\n  sources: {\n    type: Array as PropType<any[]>,\n    default: () => []\n  },\n  autoplay: {\n    type: Boolean,\n    default: false\n  }\n})\n\nconst provider = computed(() => {\n  if (props.src && props.src.includes('youtube.com/watch')) {\n    const match = props.src.match(/\\?v=([^&]*)/)\n\n    return {\n      name: 'youtube',\n      src: `https://www.youtube-nocookie.com/embed/${match?.[1] || ''}?autoplay=1`,\n      poster: props.poster || `https://i3.ytimg.com/vi/${match?.[1] || ''}/hqdefault.jpg`\n    }\n  }\n})\n\nconst loaded = ref(false)\n\nif (!props.src && !props.sources.length) { throw new Error('VideoPlayer: you need to provide either `src` or `sources` props') }\n\nconst src = computed(() => props.src || props.sources?.[0]?.src || false)\n</script>\n\n<template>\n  <div class=\"video-player\" :class=\"{ loaded }\">\n    <NuxtImg v-if=\"provider ? provider.poster : poster\" :src=\"(provider ? provider.poster : poster as any)\" />\n\n    <div v-if=\"loaded\" class=\"loaded\">\n      <!-- Remote -->\n      <video v-if=\"!provider\" :poster=\"poster\" controls autoplay>\n        <source v-if=\"src\" :src=\"src\">\n        <source v-for=\"source in sources\" :key=\"source.src || source\" :src=\"source.src || source\" :type=\"source.type\">\n      </video>\n\n      <!-- YouTube -->\n      <iframe\n        v-else-if=\"provider.name === 'youtube'\"\n        allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\"\n        allowfullscreen=\"true\"\n        :autoplay=\"autoplay\"\n        :src=\"provider.src\"\n      />\n    </div>\n\n    <div v-if=\"!loaded\" class=\"play-button\" @click=\"loaded = true\">\n      <button />\n    </div>\n  </div>\n</template>\n\n<style scoped lang=\"postcss\" transformed>\n.video-player{position:relative;display:inline-block;margin-top:var(--space-8);margin-bottom:var(--space-8);overflow:hidden;background:var(--color-gray-900);border-radius:var(--radii-lg);}.video-player .loaded{position:absolute;top:0;inset-inline-start:0;width:100%;height:100%;}.video-player video{width:100%;}.video-player iframe{width:100%;height:100%;}.video-player .play-button{position:absolute;top:0;inset-inline-start:0;width:100%;height:100%;cursor:pointer;}.video-player .play-button button{position:absolute;transform:translate3d(-50%, -50%, 0);top:50%;inset-inline-start:50%;z-index:1;width:var(--space-24);height:var(--space-24);filter:grayscale(100%);transition:filter 0.1s cubic-bezier(0, 0, 0.2, 1);background-position:center;background-repeat:no-repeat;background-color:transparent;background-image:url('data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\" viewBox=\"0 0 68 48\"><path fill=\"%23f00\" fill-opacity=\"0.8\" d=\"M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z\"></path><path d=\"M 45,24 27,14 27,34\" fill=\"%23fff\"></path></svg>');}.video-player .play-button:hover button{filter:none;}\n</style>\n",
-      "start": 1709041924266,
-      "end": 1709041924274,
+      "start": 1709670069189,
+      "end": 1709670069196,
       "order": "pre",
       "sourcemaps": {
         "version": 3,
@@ -38,45 +38,45 @@
     },
     {
       "name": "content-slot",
-      "start": 1709041924274,
-      "end": 1709041924274,
+      "start": 1709670069196,
+      "end": 1709670069196,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1709041924274,
-      "end": 1709041924274,
+      "start": 1709670069196,
+      "end": 1709670069196,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1709041924274,
-      "end": 1709041924274,
+      "start": 1709670069196,
+      "end": 1709670069196,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1709041924274,
-      "end": 1709041924274,
+      "start": 1709670069196,
+      "end": 1709670069196,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1709041924274,
-      "end": 1709041924274,
+      "start": 1709670069196,
+      "end": 1709670069197,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1709041924274,
-      "end": 1709041924274,
+      "start": 1709670069197,
+      "end": 1709670069197,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "import _sfc_main from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/VideoPlayer.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/VideoPlayer.vue?vue&type=script&setup=true&lang.ts\";\nimport \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/VideoPlayer.vue?vue&type=style&index=0&scoped=cfa5f079&transformed=true&lang.postcss\";\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"__scopeId\", \"data-v-cfa5f079\"]]);\n",
-      "start": 1709041924274,
-      "end": 1709041924302,
+      "start": 1709670069197,
+      "end": 1709670069278,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -84,152 +84,152 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1709041924302,
-      "end": 1709041924302,
+      "start": 1709670069278,
+      "end": 1709670069278,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709041924302,
-      "end": 1709041924302,
+      "start": 1709670069278,
+      "end": 1709670069278,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1709041924303,
-      "end": 1709041924303,
+      "start": 1709670069278,
+      "end": 1709670069278,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1709041924303,
-      "end": 1709041924303,
+      "start": 1709670069278,
+      "end": 1709670069278,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1709041924303,
-      "end": 1709041924303,
+      "start": 1709670069278,
+      "end": 1709670069278,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709041924303,
-      "end": 1709041924303,
+      "start": 1709670069278,
+      "end": 1709670069278,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1709041924303,
-      "end": 1709041924303,
+      "start": 1709670069278,
+      "end": 1709670069278,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1709041924304,
-      "end": 1709041924304,
+      "start": 1709670069278,
+      "end": 1709670069278,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1709041924304,
-      "end": 1709041924304,
+      "start": 1709670069278,
+      "end": 1709670069278,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1709041924304,
-      "end": 1709041924304,
+      "start": 1709670069278,
+      "end": 1709670069278,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1709041924304,
-      "end": 1709041924304,
+      "start": 1709670069278,
+      "end": 1709670069278,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1709041924304,
-      "end": 1709041924304,
+      "start": 1709670069278,
+      "end": 1709670069278,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1709041924304,
-      "end": 1709041924304,
+      "start": 1709670069278,
+      "end": 1709670069278,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1709041924304,
-      "end": 1709041924304,
+      "start": 1709670069278,
+      "end": 1709670069278,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1709041924304,
-      "end": 1709041924304,
+      "start": 1709670069279,
+      "end": 1709670069279,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1709041924305,
-      "end": 1709041924305,
+      "start": 1709670069279,
+      "end": 1709670069279,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1709041924305,
-      "end": 1709041924308,
+      "start": 1709670069279,
+      "end": 1709670069280,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1709041924308,
-      "end": 1709041924308,
+      "start": 1709670069280,
+      "end": 1709670069280,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1709041924308,
-      "end": 1709041924308,
+      "start": 1709670069280,
+      "end": 1709670069280,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1709041924308,
-      "end": 1709041924308,
+      "start": 1709670069280,
+      "end": 1709670069280,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1709041924308,
-      "end": 1709041924309,
+      "start": 1709670069280,
+      "end": 1709670069280,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1709041924309,
-      "end": 1709041924309,
+      "start": 1709670069280,
+      "end": 1709670069280,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1709041924309,
-      "end": 1709041924309,
+      "start": 1709670069280,
+      "end": 1709670069280,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1709041924309,
-      "end": 1709041924309,
+      "start": 1709670069280,
+      "end": 1709670069280,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1709041924309,
-      "end": 1709041924309,
+      "start": 1709670069280,
+      "end": 1709670069280,
       "order": "normal"
     }
   ]

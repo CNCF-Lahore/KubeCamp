@@ -928,7 +928,7 @@ const cfg2 = defineAppConfig({
 const cfg3 = defineAppConfig({});
 const inlineConfig = {
   "nuxt": {
-    "buildId": "aa193035-e743-46c8-9bcf-97e62e79b82e"
+    "buildId": "6be7b9eb-60bc-4297-a0e1-34dab185635d"
   }
 };
 const __appConfig = /* @__PURE__ */ defuFn(cfg0, cfg1, cfg2, cfg3, inlineConfig);
@@ -30101,7 +30101,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
 const _sfc_setup$2 = _sfc_main$2.setup;
 _sfc_main$2.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/@nuxt-themes/docus/app.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("app.vue");
   return _sfc_setup$2 ? _sfc_setup$2(props, ctx) : void 0;
 };
 const AppComponent = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["ssrRender", _sfc_ssrRender]]);

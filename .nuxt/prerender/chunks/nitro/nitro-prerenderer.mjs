@@ -138,7 +138,7 @@ const appConfig3 = defineAppConfig({});
 
 const inlineAppConfig = {
   "nuxt": {
-    "buildId": "aa193035-e743-46c8-9bcf-97e62e79b82e"
+    "buildId": "6be7b9eb-60bc-4297-a0e1-34dab185635d"
   }
 };
 
@@ -233,7 +233,7 @@ const _inlineRuntimeConfig = {
     "content": {
       "locales": [],
       "defaultLocale": "",
-      "integrity": 1709041909190,
+      "integrity": 1709670058172,
       "experimental": {
         "stripQueryParameters": false,
         "advanceQuery": false,
@@ -4248,6 +4248,25 @@ const components = {
       "type": 1,
       "props": [
         {
+          "name": "source",
+          "global": false,
+          "description": "Source file path.\n\nWon't be used if `page` is set.",
+          "tags": [],
+          "required": false,
+          "type": "string",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
+              "range": [
+                1245,
+                1328
+              ]
+            }
+          ],
+          "schema": "string",
+          "default": "undefined"
+        },
+        {
           "name": "baseUrl",
           "global": false,
           "description": "GitHub base URL.",
@@ -4343,25 +4362,6 @@ const components = {
           "default": "useAppConfig()?.docus?.github?.dir"
         },
         {
-          "name": "source",
-          "global": false,
-          "description": "Source file path.\n\nWon't be used if `page` is set.",
-          "tags": [],
-          "required": false,
-          "type": "string",
-          "declarations": [
-            {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
-              "range": [
-                1245,
-                1328
-              ]
-            }
-          ],
-          "schema": "string",
-          "default": "undefined"
-        },
-        {
           "name": "page",
           "global": false,
           "description": "Use page from",
@@ -4435,6 +4435,21 @@ const components = {
       "events": [],
       "exposed": [
         {
+          "name": "source",
+          "type": "string",
+          "description": "Source file path.\n\nWon't be used if `page` is set.",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
+              "range": [
+                1245,
+                1328
+              ]
+            }
+          ],
+          "schema": "string"
+        },
+        {
           "name": "baseUrl",
           "type": "string",
           "description": "GitHub base URL.",
@@ -4504,21 +4519,6 @@ const components = {
               "range": [
                 1041,
                 1152
-              ]
-            }
-          ],
-          "schema": "string"
-        },
-        {
-          "name": "source",
-          "type": "string",
-          "description": "Source file path.\n\nWon't be used if `page` is set.",
-          "declarations": [
-            {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
-              "range": [
-                1245,
-                1328
               ]
             }
           ],
@@ -12160,36 +12160,6 @@ const components = {
           }
         },
         {
-          "name": "path",
-          "type": "string",
-          "description": "The path of the content to load from content source.",
-          "declarations": [
-            {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
-              "range": [
-                3983,
-                4099
-              ]
-            }
-          ],
-          "schema": "string"
-        },
-        {
-          "name": "query",
-          "type": "undefined",
-          "description": "A query builder params object to be passed to <ContentQuery /> component.",
-          "declarations": [
-            {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
-              "range": [
-                4217,
-                4345
-              ]
-            }
-          ],
-          "schema": "undefined"
-        },
-        {
           "name": "tag",
           "type": "string",
           "description": "The tag to use for the renderer element if it is used.",
@@ -12225,6 +12195,36 @@ const components = {
               "true"
             ]
           }
+        },
+        {
+          "name": "path",
+          "type": "string",
+          "description": "The path of the content to load from content source.",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
+              "range": [
+                3983,
+                4099
+              ]
+            }
+          ],
+          "schema": "string"
+        },
+        {
+          "name": "query",
+          "type": "undefined",
+          "description": "A query builder params object to be passed to <ContentQuery /> component.",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
+              "range": [
+                4217,
+                4345
+              ]
+            }
+          ],
+          "schema": "undefined"
         },
         {
           "name": "head",
@@ -21847,7 +21847,7 @@ const handlers = [
   { route: '/api/_content/query/:qid/**:params', handler: _rSvadi, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/query/:qid', handler: _rSvadi, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/query', handler: _rSvadi, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/cache.1709041909190.json', handler: _AD4g7o, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/cache.1709670058172.json', handler: _AD4g7o, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/navigation/:qid/**:params', handler: _QdE0th, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/navigation/:qid', handler: _QdE0th, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/navigation', handler: _QdE0th, lazy: false, middleware: false, method: "get" },

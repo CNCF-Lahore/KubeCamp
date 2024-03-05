@@ -4,93 +4,93 @@
     {
       "name": "vite:load-fallback",
       "result": "<template>\n  <div class=\"document-driven-not-found not-prose\">\n    <main>\n      <p>\n        404\n      </p>\n      <div class=\"content\">\n        <div class=\"text-section\">\n          <h1>\n            Not Found\n          </h1>\n          <p>\n            This is not the page you're looking for.\n          </p>\n        </div>\n\n        <div class=\"button-section\">\n          <ButtonLink\n            href=\"/\"\n            size=\"large\"\n            variant=\"primary\"\n          >\n            Go back home\n          </ButtonLink>\n        </div>\n      </div>\n    </main>\n  </div>\n</template>\n\n<style scoped lang=\"ts\">\ncss({\n  '.document-driven-not-found': {\n    display: 'flex',\n    flex: '1',\n    px: '{space.4}',\n    py: '{space.16}',\n    '@sm': {\n      px: '{space.6}',\n      py: '{space.24}',\n    },\n\n    '@md': {\n      display: 'grid',\n      placeItems: 'center',\n    },\n\n    '@lg': {\n      px: '{space.8}',\n    },\n\n    main: {\n      mx: 'auto',\n      maxWidth: '{size.full}',\n\n      '@sm': {\n        display: 'flex',\n        gap: '{space.6}'\n      },\n\n      // 404\n      '& > p': {\n        fontSize: '{fontSize.4xl}',\n        fontWeight: '{fontWeight.bold}',\n        lineHeight: '{lead.tight}',\n        color: '{color.primary.500}',\n        '@sm': {\n          fontSize: '{fontSize.5xl}',\n        }\n      },\n\n      '.content': {\n        '.text-section': {\n          borderColor: '{color.gray.200}',\n          borderLeftStyle: 'solid',\n          borderLeftWidth: '1px',\n          border: 'none',\n\n          '@dark': {\n            borderColor: '{color.gray.800}',\n          },\n\n          '@sm': {\n            borderColor: '{color.gray.200}',\n            borderLeftStyle: 'solid',\n            borderLeftWidth: '1px',\n            paddingLeft: '{space.6}'\n          },\n\n          h1: {\n            fontSize: '{fontSize.4xl}',\n            fontWeight: '{fontWeight.extrabold}',\n            letterSpacing: '{letterSpacing.tight}',\n            color: '{color.gray.900}',\n            '@dark': {\n              color: '{color.gray.200}',\n            },\n            '@sm': {\n              fontSize: '{fontSize.5xl}',\n            },\n          },\n\n          p: {\n            marginTop: '{space.1}',\n            fontSize: '{fontSize.xl}',\n            color: '{color.gray.700}',\n            '@dark': {\n              color: '{color.gray.400}',\n            },\n          }\n        },\n\n        // Button section\n        '.button-section': {\n          marginTop: '{space.10}',\n          flex: 'none',\n          gap: '{space.3}'\n        }\n      }\n    }\n  }\n})\n</style>\n",
-      "start": 1709041931605,
-      "end": 1709041931830,
+      "start": 1709670074158,
+      "end": 1709670074388,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1709041931830,
-      "end": 1709041931830,
+      "start": 1709670074388,
+      "end": 1709670074388,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1709041931830,
-      "end": 1709041931830,
+      "start": 1709670074388,
+      "end": 1709670074388,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1709041931830,
-      "end": 1709041931830,
+      "start": 1709670074389,
+      "end": 1709670074389,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1709041931830,
-      "end": 1709041931830,
+      "start": 1709670074389,
+      "end": 1709670074389,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
-      "start": 1709041931830,
-      "end": 1709041931830,
+      "start": 1709670074389,
+      "end": 1709670074389,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
-      "start": 1709041931830,
-      "end": 1709041931830,
+      "start": 1709670074389,
+      "end": 1709670074389,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1709041931830,
-      "end": 1709041931830,
+      "start": 1709670074389,
+      "end": 1709670074389,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1709041931830,
-      "end": 1709041931830,
+      "start": 1709670074389,
+      "end": 1709670074389,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1709041931830,
-      "end": 1709041931830,
+      "start": 1709670074389,
+      "end": 1709670074389,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1709041931830,
-      "end": 1709041931830,
+      "start": 1709670074389,
+      "end": 1709670074389,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1709041931830,
-      "end": 1709041931830,
+      "start": 1709670074389,
+      "end": 1709670074389,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1709041931830,
-      "end": 1709041931830,
+      "start": 1709670074389,
+      "end": 1709670074389,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1709041931830,
-      "end": 1709041931830,
+      "start": 1709670074389,
+      "end": 1709670074389,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "const _sfc_main = {}\nimport { resolveComponent as _resolveComponent, withCtx as _withCtx, createTextVNode as _createTextVNode, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs) {\n  const _component_ButtonLink = _resolveComponent(\"ButtonLink\")\n\n  _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"document-driven-not-found not-prose\" }, _attrs))} data-v-104ab12d><main data-v-104ab12d><p data-v-104ab12d> 404 </p><div class=\"content\" data-v-104ab12d><div class=\"text-section\" data-v-104ab12d><h1 data-v-104ab12d> Not Found </h1><p data-v-104ab12d> This is not the page you&#39;re looking for. </p></div><div class=\"button-section\" data-v-104ab12d>`)\n  _push(_ssrRenderComponent(_component_ButtonLink, {\n    href: \"/\",\n    size: \"large\",\n    variant: \"primary\"\n  }, {\n    default: _withCtx((_, _push, _parent, _scopeId) => {\n      if (_push) {\n        _push(` Go back home `)\n      } else {\n        return [\n          _createTextVNode(\" Go back home \")\n        ]\n      }\n    }),\n    _: 1\n  }, _parent))\n  _push(`</div></div></main></div>`)\n}\n\nimport \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/DocumentDrivenNotFound.vue?vue&type=style&index=0&scoped=104ab12d&lang.ts\"\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"node_modules/@nuxt-themes/docus/components/app/DocumentDrivenNotFound.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',\"data-v-104ab12d\"]])",
-      "start": 1709041931830,
-      "end": 1709041931832,
+      "start": 1709670074389,
+      "end": 1709670074390,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -106,178 +106,178 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1709041931832,
-      "end": 1709041931832,
+      "start": 1709670074390,
+      "end": 1709670074390,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709041931832,
-      "end": 1709041931832,
+      "start": 1709670074390,
+      "end": 1709670074391,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709041931832,
-      "end": 1709041931832,
+      "start": 1709670074390,
+      "end": 1709670074391,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1709041931832,
-      "end": 1709041931832,
+      "start": 1709670074391,
+      "end": 1709670074391,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1709041931832,
-      "end": 1709041931832,
+      "start": 1709670074391,
+      "end": 1709670074391,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
       "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/DocumentDrivenNotFound.vue\").then(r => r.default))",
-      "start": 1709041931832,
-      "end": 1709041931832,
+      "start": 1709670074391,
+      "end": 1709670074391,
       "order": "normal",
       "sourcemaps": null
     },
     {
       "name": "replace",
-      "start": 1709041931832,
-      "end": 1709041931832,
+      "start": 1709670074391,
+      "end": 1709670074391,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1709041931832,
-      "end": 1709041931832,
+      "start": 1709670074391,
+      "end": 1709670074391,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1709041931832,
-      "end": 1709041931832,
+      "start": 1709670074391,
+      "end": 1709670074391,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1709041931832,
-      "end": 1709041931832,
+      "start": 1709670074391,
+      "end": 1709670074391,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1709041931832,
-      "end": 1709041931832,
+      "start": 1709670074391,
+      "end": 1709670074391,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1709041931832,
-      "end": 1709041931832,
+      "start": 1709670074391,
+      "end": 1709670074391,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1709041931832,
-      "end": 1709041931832,
+      "start": 1709670074391,
+      "end": 1709670074391,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1709041931832,
-      "end": 1709041931832,
+      "start": 1709670074391,
+      "end": 1709670074391,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1709041931832,
-      "end": 1709041931832,
+      "start": 1709670074391,
+      "end": 1709670074391,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1709041931832,
-      "end": 1709041931832,
+      "start": 1709670074391,
+      "end": 1709670074391,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1709041931832,
-      "end": 1709041931832,
+      "start": 1709670074391,
+      "end": 1709670074391,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1709041931832,
-      "end": 1709041931832,
+      "start": 1709670074391,
+      "end": 1709670074391,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1709041931832,
-      "end": 1709041931833,
+      "start": 1709670074391,
+      "end": 1709670074391,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1709041931832,
-      "end": 1709041931833,
+      "start": 1709670074391,
+      "end": 1709670074391,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1709041931833,
-      "end": 1709041931833,
+      "start": 1709670074391,
+      "end": 1709670074391,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1709041931833,
-      "end": 1709041931833,
+      "start": 1709670074391,
+      "end": 1709670074391,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1709041931833,
-      "end": 1709041931833,
+      "start": 1709670074391,
+      "end": 1709670074391,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1709041931833,
-      "end": 1709041931833,
+      "start": 1709670074391,
+      "end": 1709670074391,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1709041931833,
-      "end": 1709041931833,
+      "start": 1709670074391,
+      "end": 1709670074391,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1709041931833,
-      "end": 1709041931833,
+      "start": 1709670074391,
+      "end": 1709670074391,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1709041931833,
-      "end": 1709041931833,
+      "start": 1709670074391,
+      "end": 1709670074391,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1709041931833,
-      "end": 1709041931833,
+      "start": 1709670074391,
+      "end": 1709670074391,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1709041931833,
-      "end": 1709041931833,
+      "start": 1709670074391,
+      "end": 1709670074391,
       "order": "normal"
     }
   ]

@@ -4,8 +4,8 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { resolveComponent as _resolveComponent, unref as _unref, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderSlot as _ssrRenderSlot, ssrRenderStyle as _ssrRenderStyle, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\nimport { ssrRenderSlot as _ssrRenderMDCSlot } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/utils/ssrSlot'\n\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'Callout',\n  __ssrInlineRender: true,\n  props: {\n  /**\n   * @values info, success, warning, danger\n   */\n  type: {\n    type: String,\n    default: 'info',\n    validator (value: string) {\n      return ['info', 'success', 'warning', 'danger', 'primary'].includes(value)\n    }\n  },\n  modelValue: {\n    required: false,\n    default: () => ref(false)\n  }\n},\n  emits: ['update:modelValue'],\n  setup(__props, { emit: __emit }) {\n\nconst props = __props\n\nconst emit = __emit\n\nconst isOpen = ref(props.modelValue)\n\nconst toggle = () => {\n  isOpen.value = !isOpen.value\n  emit('update:modelValue', isOpen.value)\n}\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_MDCSlot = _resolveComponent(\"MDCSlot\")!\n  const _component_Icon = _resolveComponent(\"Icon\")!\n\n  _push(`<div${_ssrRenderAttrs(_mergeProps({\n    class: [\"callout\", [__props.type]]\n  }, _attrs))} data-v-e294706d><span class=\"preview\" data-v-e294706d><span class=\"summary\" data-v-e294706d>`)\n  _ssrRenderMDCSlot(_ctx.$slots, \"summary\", {}, null, _push, _parent)\n  _push(`</span>`)\n  _push(_ssrRenderComponent(_component_Icon, {\n    name: \"heroicons-outline:chevron-right\",\n    class: [\"icon\", [_unref(isOpen) && 'rotate']]\n  }, null, _parent))\n  _push(`</span><div style=\"${_ssrRenderStyle((_unref(isOpen)) ? null : { display: \"none\" })}\" class=\"content\" data-v-e294706d>`)\n  _ssrRenderMDCSlot(_ctx.$slots, \"content\", {}, null, _push, _parent)\n  _push(`</div></div>`)\n}\n}\n\n})",
-      "start": 1709041934793,
-      "end": 1709041934793,
+      "start": 1709670076356,
+      "end": 1709670076356,
       "sourcemaps": {
         "version": 3,
         "sources": [
@@ -20,71 +20,71 @@
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1709041934794,
-      "end": 1709041934795,
+      "start": 1709670076356,
+      "end": 1709670076356,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1709041934794,
-      "end": 1709041934795,
+      "start": 1709670076356,
+      "end": 1709670076356,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1709041934802,
-      "end": 1709041934802,
+      "start": 1709670076360,
+      "end": 1709670076360,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1709041934802,
-      "end": 1709041934803,
+      "start": 1709670076360,
+      "end": 1709670076360,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { resolveComponent as _resolveComponent, unref as _unref, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderSlot as _ssrRenderSlot, ssrRenderStyle as _ssrRenderStyle, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\nimport { ssrRenderSlot as _ssrRenderMDCSlot } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/utils/ssrSlot'\n\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'Callout',\n  __ssrInlineRender: true,\n  props: {\n  /**\n   * @values info, success, warning, danger\n   */\n  type: {\n    type: String,\n    default: 'info',\n    validator (value: string) {\n      return ['info', 'success', 'warning', 'danger', 'primary'].includes(value)\n    }\n  },\n  modelValue: {\n    required: false,\n    default: () => ref(false)\n  }\n},\n  emits: ['update:modelValue'],\n  setup(__props, { emit: __emit }) {\n\nconst props = __props\n\nconst emit = __emit\n\nconst isOpen = ref(props.modelValue)\n\nconst toggle = () => {\n  isOpen.value = !isOpen.value\n  emit('update:modelValue', isOpen.value)\n}\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_MDCSlot = _resolveComponent(\"MDCSlot\")!\n  const _component_Icon = _resolveComponent(\"Icon\")!\n\n  _push(`<div${_ssrRenderAttrs(_mergeProps({\n    class: [\"callout\", [__props.type]]\n  }, _attrs))} data-v-e294706d><span class=\"preview\" data-v-e294706d><span class=\"summary\" data-v-e294706d>`)\n  _ssrRenderMDCSlot(_ctx.$slots, \"summary\", {}, null, _push, _parent)\n  _push(`</span>`)\n  _push(_ssrRenderComponent(_component_Icon, {\n    name: \"heroicons-outline:chevron-right\",\n    class: [\"icon\", [_unref(isOpen) && 'rotate']]\n  }, null, _parent))\n  _push(`</span><div style=\"${_ssrRenderStyle((_unref(isOpen)) ? null : { display: \"none\" })}\" class=\"content\" data-v-e294706d>`)\n  _ssrRenderMDCSlot(_ctx.$slots, \"content\", {}, null, _push, _parent)\n  _push(`</div></div>`)\n}\n}\n\n})",
-      "start": 1709041934805,
-      "end": 1709041934805,
+      "start": 1709670076361,
+      "end": 1709670076361,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { resolveComponent as _resolveComponent, unref as _unref, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderSlot as _ssrRenderSlot, ssrRenderStyle as _ssrRenderStyle, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\nimport { ssrRenderSlot as _ssrRenderMDCSlot } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/utils/ssrSlot'\n\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'Callout',\n  __ssrInlineRender: true,\n  props: {\n  /**\n   * @values info, success, warning, danger\n   */\n  type: {\n    type: String,\n    default: 'info',\n    validator (value: string) {\n      return ['info', 'success', 'warning', 'danger', 'primary'].includes(value)\n    }\n  },\n  modelValue: {\n    required: false,\n    default: () => ref(false)\n  }\n},\n  emits: ['update:modelValue'],\n  setup(__props, { emit: __emit }) {\n\nconst props = __props\n\nconst emit = __emit\n\nconst isOpen = ref(props.modelValue)\n\nconst toggle = () => {\n  isOpen.value = !isOpen.value\n  emit('update:modelValue', isOpen.value)\n}\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_MDCSlot = _resolveComponent(\"MDCSlot\")!\n  const _component_Icon = _resolveComponent(\"Icon\")!\n\n  _push(`<div${_ssrRenderAttrs(_mergeProps({\n    class: [\"callout\", [__props.type]]\n  }, _attrs))} data-v-e294706d><span class=\"preview\" data-v-e294706d><span class=\"summary\" data-v-e294706d>`)\n  _ssrRenderMDCSlot(_ctx.$slots, \"summary\", {}, null, _push, _parent)\n  _push(`</span>`)\n  _push(_ssrRenderComponent(_component_Icon, {\n    name: \"heroicons-outline:chevron-right\",\n    class: [\"icon\", [_unref(isOpen) && 'rotate']]\n  }, null, _parent))\n  _push(`</span><div style=\"${_ssrRenderStyle((_unref(isOpen)) ? null : { display: \"none\" })}\" class=\"content\" data-v-e294706d>`)\n  _ssrRenderMDCSlot(_ctx.$slots, \"content\", {}, null, _push, _parent)\n  _push(`</div></div>`)\n}\n}\n\n})",
-      "start": 1709041934805,
-      "end": 1709041934806,
+      "start": 1709670076361,
+      "end": 1709670076361,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1709041934806,
-      "end": 1709041934806,
+      "start": 1709670076364,
+      "end": 1709670076364,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1709041934806,
-      "end": 1709041934806,
+      "start": 1709670076364,
+      "end": 1709670076364,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1709041934806,
-      "end": 1709041934807,
+      "start": 1709670076364,
+      "end": 1709670076364,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1709041934807,
-      "end": 1709041934807,
+      "start": 1709670076365,
+      "end": 1709670076365,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { resolveComponent as _resolveComponent, unref as _unref, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderStyle as _ssrRenderStyle, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nimport { ssrRenderSlot as _ssrRenderMDCSlot } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/utils/ssrSlot\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"Callout\",\n  __ssrInlineRender: true,\n  props: {\n    /**\n     * @values info, success, warning, danger\n     */\n    type: {\n      type: String,\n      default: \"info\",\n      validator(value) {\n        return [\"info\", \"success\", \"warning\", \"danger\", \"primary\"].includes(value);\n      }\n    },\n    modelValue: {\n      required: false,\n      default: () => ref(false)\n    }\n  },\n  emits: [\"update:modelValue\"],\n  setup(__props, { emit: __emit }) {\n    const props = __props;\n    const emit = __emit;\n    const isOpen = ref(props.modelValue);\n    const toggle = () => {\n      isOpen.value = !isOpen.value;\n      emit(\"update:modelValue\", isOpen.value);\n    };\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_MDCSlot = _resolveComponent(\"MDCSlot\");\n      const _component_Icon = _resolveComponent(\"Icon\");\n      _push(`<div${_ssrRenderAttrs(_mergeProps({\n        class: [\"callout\", [__props.type]]\n      }, _attrs))} data-v-e294706d><span class=\"preview\" data-v-e294706d><span class=\"summary\" data-v-e294706d>`);\n      _ssrRenderMDCSlot(_ctx.$slots, \"summary\", {}, null, _push, _parent);\n      _push(`</span>`);\n      _push(_ssrRenderComponent(_component_Icon, {\n        name: \"heroicons-outline:chevron-right\",\n        class: [\"icon\", [_unref(isOpen) && \"rotate\"]]\n      }, null, _parent));\n      _push(`</span><div style=\"${_ssrRenderStyle(_unref(isOpen) ? null : { display: \"none\" })}\" class=\"content\" data-v-e294706d>`);\n      _ssrRenderMDCSlot(_ctx.$slots, \"content\", {}, null, _push, _parent);\n      _push(`</div></div>`);\n    };\n  }\n});\n",
-      "start": 1709041934807,
-      "end": 1709041935294,
+      "start": 1709670076365,
+      "end": 1709670076513,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -100,135 +100,135 @@
     },
     {
       "name": "vite:json",
-      "start": 1709041935294,
-      "end": 1709041935294,
+      "start": 1709670076513,
+      "end": 1709670076513,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1709041935294,
-      "end": 1709041935295,
+      "start": 1709670076513,
+      "end": 1709670076513,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1709041935295,
-      "end": 1709041935295,
+      "start": 1709670076514,
+      "end": 1709670076514,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1709041935295,
-      "end": 1709041935295,
+      "start": 1709670076514,
+      "end": 1709670076514,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709041935295,
-      "end": 1709041935295,
+      "start": 1709670076514,
+      "end": 1709670076514,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709041935295,
-      "end": 1709041935295,
+      "start": 1709670076514,
+      "end": 1709670076514,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1709041935295,
-      "end": 1709041935295,
+      "start": 1709670076514,
+      "end": 1709670076514,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1709041935295,
-      "end": 1709041935295,
+      "start": 1709670076514,
+      "end": 1709670076514,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1709041935296,
-      "end": 1709041935296,
+      "start": 1709670076514,
+      "end": 1709670076514,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709041935296,
-      "end": 1709041935296,
+      "start": 1709670076516,
+      "end": 1709670076516,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1709041935296,
-      "end": 1709041935296,
+      "start": 1709670076516,
+      "end": 1709670076517,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1709041935297,
-      "end": 1709041935298,
+      "start": 1709670076519,
+      "end": 1709670076519,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1709041935298,
-      "end": 1709041935298,
+      "start": 1709670076521,
+      "end": 1709670076521,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1709041935298,
-      "end": 1709041935298,
+      "start": 1709670076521,
+      "end": 1709670076521,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1709041935298,
-      "end": 1709041935298,
+      "start": 1709670076521,
+      "end": 1709670076521,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1709041935298,
-      "end": 1709041935298,
+      "start": 1709670076521,
+      "end": 1709670076521,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1709041935298,
-      "end": 1709041935298,
+      "start": 1709670076522,
+      "end": 1709670076522,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1709041935299,
-      "end": 1709041935299,
+      "start": 1709670076527,
+      "end": 1709670076527,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1709041935299,
-      "end": 1709041935299,
+      "start": 1709670076527,
+      "end": 1709670076527,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1709041935299,
-      "end": 1709041935299,
+      "start": 1709670076527,
+      "end": 1709670076527,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1709041935299,
-      "end": 1709041935299,
+      "start": 1709670076527,
+      "end": 1709670076527,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { ref } from 'vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { resolveComponent as _resolveComponent, unref as _unref, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderStyle as _ssrRenderStyle, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nimport { ssrRenderSlot as _ssrRenderMDCSlot } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/utils/ssrSlot\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"Callout\",\n  __ssrInlineRender: true,\n  props: {\n    /**\n     * @values info, success, warning, danger\n     */\n    type: {\n      type: String,\n      default: \"info\",\n      validator(value) {\n        return [\"info\", \"success\", \"warning\", \"danger\", \"primary\"].includes(value);\n      }\n    },\n    modelValue: {\n      required: false,\n      default: () => ref(false)\n    }\n  },\n  emits: [\"update:modelValue\"],\n  setup(__props, { emit: __emit }) {\n    const props = __props;\n    const emit = __emit;\n    const isOpen = ref(props.modelValue);\n    const toggle = () => {\n      isOpen.value = !isOpen.value;\n      emit(\"update:modelValue\", isOpen.value);\n    };\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_MDCSlot = _resolveComponent(\"MDCSlot\");\n      const _component_Icon = _resolveComponent(\"Icon\");\n      _push(`<div${_ssrRenderAttrs(_mergeProps({\n        class: [\"callout\", [__props.type]]\n      }, _attrs))} data-v-e294706d><span class=\"preview\" data-v-e294706d><span class=\"summary\" data-v-e294706d>`);\n      _ssrRenderMDCSlot(_ctx.$slots, \"summary\", {}, null, _push, _parent);\n      _push(`</span>`);\n      _push(_ssrRenderComponent(_component_Icon, {\n        name: \"heroicons-outline:chevron-right\",\n        class: [\"icon\", [_unref(isOpen) && \"rotate\"]]\n      }, null, _parent));\n      _push(`</span><div style=\"${_ssrRenderStyle(_unref(isOpen) ? null : { display: \"none\" })}\" class=\"content\" data-v-e294706d>`);\n      _ssrRenderMDCSlot(_ctx.$slots, \"content\", {}, null, _push, _parent);\n      _push(`</div></div>`);\n    };\n  }\n});\n",
-      "start": 1709041935299,
-      "end": 1709041935312,
+      "start": 1709670076531,
+      "end": 1709670076534,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -242,8 +242,8 @@
     {
       "name": "nuxt:imports-transform",
       "result": "import { ref } from 'vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { resolveComponent as _resolveComponent, unref as _unref, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderStyle as _ssrRenderStyle, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nimport { ssrRenderSlot as _ssrRenderMDCSlot } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/utils/ssrSlot\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"Callout\",\n  __ssrInlineRender: true,\n  props: {\n    /**\n     * @values info, success, warning, danger\n     */\n    type: {\n      type: String,\n      default: \"info\",\n      validator(value) {\n        return [\"info\", \"success\", \"warning\", \"danger\", \"primary\"].includes(value);\n      }\n    },\n    modelValue: {\n      required: false,\n      default: () => ref(false)\n    }\n  },\n  emits: [\"update:modelValue\"],\n  setup(__props, { emit: __emit }) {\n    const props = __props;\n    const emit = __emit;\n    const isOpen = ref(props.modelValue);\n    const toggle = () => {\n      isOpen.value = !isOpen.value;\n      emit(\"update:modelValue\", isOpen.value);\n    };\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_MDCSlot = _resolveComponent(\"MDCSlot\");\n      const _component_Icon = _resolveComponent(\"Icon\");\n      _push(`<div${_ssrRenderAttrs(_mergeProps({\n        class: [\"callout\", [__props.type]]\n      }, _attrs))} data-v-e294706d><span class=\"preview\" data-v-e294706d><span class=\"summary\" data-v-e294706d>`);\n      _ssrRenderMDCSlot(_ctx.$slots, \"summary\", {}, null, _push, _parent);\n      _push(`</span>`);\n      _push(_ssrRenderComponent(_component_Icon, {\n        name: \"heroicons-outline:chevron-right\",\n        class: [\"icon\", [_unref(isOpen) && \"rotate\"]]\n      }, null, _parent));\n      _push(`</span><div style=\"${_ssrRenderStyle(_unref(isOpen) ? null : { display: \"none\" })}\" class=\"content\" data-v-e294706d>`);\n      _ssrRenderMDCSlot(_ctx.$slots, \"content\", {}, null, _push, _parent);\n      _push(`</div></div>`);\n    };\n  }\n});\n",
-      "start": 1709041935299,
-      "end": 1709041935312,
+      "start": 1709670076531,
+      "end": 1709670076534,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -256,39 +256,39 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1709041935312,
-      "end": 1709041935312,
+      "start": 1709670076535,
+      "end": 1709670076535,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1709041935312,
-      "end": 1709041935312,
+      "start": 1709670076535,
+      "end": 1709670076535,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1709041935312,
-      "end": 1709041935312,
+      "start": 1709670076535,
+      "end": 1709670076535,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1709041935312,
-      "end": 1709041935312,
+      "start": 1709670076535,
+      "end": 1709670076535,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1709041935313,
-      "end": 1709041935313,
+      "start": 1709670076535,
+      "end": 1709670076535,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
       "result": "import { default as __nuxt_component_0 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/components/MDCSlot\";\nimport { default as __nuxt_component_1 } from \"/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/Icon.vue\";\nimport { ref } from 'vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { resolveComponent as _resolveComponent, unref as _unref, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderStyle as _ssrRenderStyle, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nimport { ssrRenderSlot as _ssrRenderMDCSlot } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/utils/ssrSlot\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"Callout\",\n  __ssrInlineRender: true,\n  props: {\n    /**\n     * @values info, success, warning, danger\n     */\n    type: {\n      type: String,\n      default: \"info\",\n      validator(value) {\n        return [\"info\", \"success\", \"warning\", \"danger\", \"primary\"].includes(value);\n      }\n    },\n    modelValue: {\n      required: false,\n      default: () => ref(false)\n    }\n  },\n  emits: [\"update:modelValue\"],\n  setup(__props, { emit: __emit }) {\n    const props = __props;\n    const emit = __emit;\n    const isOpen = ref(props.modelValue);\n    const toggle = () => {\n      isOpen.value = !isOpen.value;\n      emit(\"update:modelValue\", isOpen.value);\n    };\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_MDCSlot = __nuxt_component_0;\n      const _component_Icon = __nuxt_component_1;\n      _push(`<div${_ssrRenderAttrs(_mergeProps({\n        class: [\"callout\", [__props.type]]\n      }, _attrs))} data-v-e294706d><span class=\"preview\" data-v-e294706d><span class=\"summary\" data-v-e294706d>`);\n      _ssrRenderMDCSlot(_ctx.$slots, \"summary\", {}, null, _push, _parent);\n      _push(`</span>`);\n      _push(_ssrRenderComponent(_component_Icon, {\n        name: \"heroicons-outline:chevron-right\",\n        class: [\"icon\", [_unref(isOpen) && \"rotate\"]]\n      }, null, _parent));\n      _push(`</span><div style=\"${_ssrRenderStyle(_unref(isOpen) ? null : { display: \"none\" })}\" class=\"content\" data-v-e294706d>`);\n      _ssrRenderMDCSlot(_ctx.$slots, \"content\", {}, null, _push, _parent);\n      _push(`</div></div>`);\n    };\n  }\n});\n",
-      "start": 1709041935315,
-      "end": 1709041935315,
+      "start": 1709670076535,
+      "end": 1709670076536,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -301,20 +301,20 @@
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1709041935316,
-      "end": 1709041935316,
+      "start": 1709670076536,
+      "end": 1709670076536,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1709041935316,
-      "end": 1709041935316,
+      "start": 1709670076536,
+      "end": 1709670076536,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1709041935316,
-      "end": 1709041935316,
+      "start": 1709670076536,
+      "end": 1709670076536,
       "order": "normal"
     }
   ]

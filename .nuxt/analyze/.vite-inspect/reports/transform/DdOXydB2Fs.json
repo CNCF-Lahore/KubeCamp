@@ -4,219 +4,219 @@
     {
       "name": "vite:load-fallback",
       "result": "/**\n * @internal\n * Sends an event to Plausible's API\n *\n * @param data - Event data to send\n * @param options - Event options\n */\nexport function sendEvent(eventName, data, options) {\n    const isLocalhost = /^localhost$|^127(?:\\.[0-9]+){0,2}\\.[0-9]+$|^(?:0*:)*?:?0*1$/.test(location.hostname) || location.protocol === 'file:';\n    if (!data.trackLocalhost && isLocalhost) {\n        return console.warn('[Plausible] Ignoring event because website is running locally');\n    }\n    try {\n        if (window.localStorage.plausible_ignore === 'true') {\n            return console.warn('[Plausible] Ignoring event because \"plausible_ignore\" is set to \"true\" in localStorage');\n        }\n    }\n    catch (e) {\n        null;\n    }\n    const payload = {\n        n: eventName,\n        u: data.url,\n        d: data.domain,\n        r: data.referrer,\n        w: data.deviceWidth,\n        h: data.hashMode ? 1 : 0,\n        p: options && options.props ? JSON.stringify(options.props) : undefined,\n    };\n    const req = new XMLHttpRequest();\n    req.open('POST', `${data.apiHost}/api/event`, true);\n    req.setRequestHeader('Content-Type', 'text/plain');\n    req.send(JSON.stringify(payload));\n    // eslint-disable-next-line functional/immutable-data\n    req.onreadystatechange = () => {\n        if (req.readyState !== 4)\n            return;\n        if (options && options.callback) {\n            options.callback();\n        }\n    };\n}\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicmVxdWVzdC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3NyYy9saWIvcmVxdWVzdC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUEyQkE7Ozs7OztHQU1HO0FBQ0gsTUFBTSxVQUFVLFNBQVMsQ0FDdkIsU0FBaUIsRUFDakIsSUFBZ0MsRUFDaEMsT0FBc0I7SUFFdEIsTUFBTSxXQUFXLEdBQ2YsNkRBQTZELENBQUMsSUFBSSxDQUNoRSxRQUFRLENBQUMsUUFBUSxDQUNsQixJQUFJLFFBQVEsQ0FBQyxRQUFRLEtBQUssT0FBTyxDQUFDO0lBRXJDLElBQUksQ0FBQyxJQUFJLENBQUMsY0FBYyxJQUFJLFdBQVcsRUFBRTtRQUN2QyxPQUFPLE9BQU8sQ0FBQyxJQUFJLENBQ2pCLCtEQUErRCxDQUNoRSxDQUFDO0tBQ0g7SUFFRCxJQUFJO1FBQ0YsSUFBSSxNQUFNLENBQUMsWUFBWSxDQUFDLGdCQUFnQixLQUFLLE1BQU0sRUFBRTtZQUNuRCxPQUFPLE9BQU8sQ0FBQyxJQUFJLENBQ2pCLHdGQUF3RixDQUN6RixDQUFDO1NBQ0g7S0FDRjtJQUFDLE9BQU8sQ0FBQyxFQUFFO1FBQ1YsSUFBSSxDQUFDO0tBQ047SUFFRCxNQUFNLE9BQU8sR0FBaUI7UUFDNUIsQ0FBQyxFQUFFLFNBQVM7UUFDWixDQUFDLEVBQUUsSUFBSSxDQUFDLEdBQUc7UUFDWCxDQUFDLEVBQUUsSUFBSSxDQUFDLE1BQU07UUFDZCxDQUFDLEVBQUUsSUFBSSxDQUFDLFFBQVE7UUFDaEIsQ0FBQyxFQUFFLElBQUksQ0FBQyxXQUFXO1FBQ25CLENBQUMsRUFBRSxJQUFJLENBQUMsUUFBUSxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUM7UUFDeEIsQ0FBQyxFQUFFLE9BQU8sSUFBSSxPQUFPLENBQUMsS0FBSyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsU0FBUyxDQUFDLE9BQU8sQ0FBQyxLQUFLLENBQUMsQ0FBQyxDQUFDLENBQUMsU0FBUztLQUN4RSxDQUFDO0lBRUYsTUFBTSxHQUFHLEdBQUcsSUFBSSxjQUFjLEVBQUUsQ0FBQztJQUNqQyxHQUFHLENBQUMsSUFBSSxDQUFDLE1BQU0sRUFBRSxHQUFHLElBQUksQ0FBQyxPQUFPLFlBQVksRUFBRSxJQUFJLENBQUMsQ0FBQztJQUNwRCxHQUFHLENBQUMsZ0JBQWdCLENBQUMsY0FBYyxFQUFFLFlBQVksQ0FBQyxDQUFDO0lBQ25ELEdBQUcsQ0FBQyxJQUFJLENBQUMsSUFBSSxDQUFDLFNBQVMsQ0FBQyxPQUFPLENBQUMsQ0FBQyxDQUFDO0lBQ2xDLHFEQUFxRDtJQUNyRCxHQUFHLENBQUMsa0JBQWtCLEdBQUcsR0FBRyxFQUFFO1FBQzVCLElBQUksR0FBRyxDQUFDLFVBQVUsS0FBSyxDQUFDO1lBQUUsT0FBTztRQUNqQyxJQUFJLE9BQU8sSUFBSSxPQUFPLENBQUMsUUFBUSxFQUFFO1lBQy9CLE9BQU8sQ0FBQyxRQUFRLEVBQUUsQ0FBQztTQUNwQjtJQUNILENBQUMsQ0FBQztBQUNKLENBQUMifQ==",
-      "start": 1709041926998,
-      "end": 1709041927704,
+      "start": 1709670070697,
+      "end": 1709670070918,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1709041927704,
-      "end": 1709041927704,
+      "start": 1709670070918,
+      "end": 1709670070918,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1709041927704,
-      "end": 1709041927704,
+      "start": 1709670070918,
+      "end": 1709670070918,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "/**\n * @internal\n * Sends an event to Plausible's API\n *\n * @param data - Event data to send\n * @param options - Event options\n */\nexport function sendEvent(eventName, data, options) {\n    const isLocalhost = /^localhost$|^127(?:\\.[0-9]+){0,2}\\.[0-9]+$|^(?:0*:)*?:?0*1$/.test(location.hostname) || location.protocol === 'file:';\n    if (!data.trackLocalhost && isLocalhost) {\n        return console.warn('[Plausible] Ignoring event because website is running locally');\n    }\n    try {\n        if (window.localStorage.plausible_ignore === 'true') {\n            return console.warn('[Plausible] Ignoring event because \"plausible_ignore\" is set to \"true\" in localStorage');\n        }\n    }\n    catch (e) {\n        null;\n    }\n    const payload = {\n        n: eventName,\n        u: data.url,\n        d: data.domain,\n        r: data.referrer,\n        w: data.deviceWidth,\n        h: data.hashMode ? 1 : 0,\n        p: options && options.props ? JSON.stringify(options.props) : undefined,\n    };\n    const req = new XMLHttpRequest();\n    req.open('POST', `${data.apiHost}/api/event`, true);\n    req.setRequestHeader('Content-Type', 'text/plain');\n    req.send(JSON.stringify(payload));\n    // eslint-disable-next-line functional/immutable-data\n    req.onreadystatechange = () => {\n        if (req.readyState !== 4)\n            return;\n        if (options && options.callback) {\n            options.callback();\n        }\n    };\n}\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicmVxdWVzdC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3NyYy9saWIvcmVxdWVzdC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUEyQkE7Ozs7OztHQU1HO0FBQ0gsTUFBTSxVQUFVLFNBQVMsQ0FDdkIsU0FBaUIsRUFDakIsSUFBZ0MsRUFDaEMsT0FBc0I7SUFFdEIsTUFBTSxXQUFXLEdBQ2YsNkRBQTZELENBQUMsSUFBSSxDQUNoRSxRQUFRLENBQUMsUUFBUSxDQUNsQixJQUFJLFFBQVEsQ0FBQyxRQUFRLEtBQUssT0FBTyxDQUFDO0lBRXJDLElBQUksQ0FBQyxJQUFJLENBQUMsY0FBYyxJQUFJLFdBQVcsRUFBRTtRQUN2QyxPQUFPLE9BQU8sQ0FBQyxJQUFJLENBQ2pCLCtEQUErRCxDQUNoRSxDQUFDO0tBQ0g7SUFFRCxJQUFJO1FBQ0YsSUFBSSxNQUFNLENBQUMsWUFBWSxDQUFDLGdCQUFnQixLQUFLLE1BQU0sRUFBRTtZQUNuRCxPQUFPLE9BQU8sQ0FBQyxJQUFJLENBQ2pCLHdGQUF3RixDQUN6RixDQUFDO1NBQ0g7S0FDRjtJQUFDLE9BQU8sQ0FBQyxFQUFFO1FBQ1YsSUFBSSxDQUFDO0tBQ047SUFFRCxNQUFNLE9BQU8sR0FBaUI7UUFDNUIsQ0FBQyxFQUFFLFNBQVM7UUFDWixDQUFDLEVBQUUsSUFBSSxDQUFDLEdBQUc7UUFDWCxDQUFDLEVBQUUsSUFBSSxDQUFDLE1BQU07UUFDZCxDQUFDLEVBQUUsSUFBSSxDQUFDLFFBQVE7UUFDaEIsQ0FBQyxFQUFFLElBQUksQ0FBQyxXQUFXO1FBQ25CLENBQUMsRUFBRSxJQUFJLENBQUMsUUFBUSxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUM7UUFDeEIsQ0FBQyxFQUFFLE9BQU8sSUFBSSxPQUFPLENBQUMsS0FBSyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsU0FBUyxDQUFDLE9BQU8sQ0FBQyxLQUFLLENBQUMsQ0FBQyxDQUFDLENBQUMsU0FBUztLQUN4RSxDQUFDO0lBRUYsTUFBTSxHQUFHLEdBQUcsSUFBSSxjQUFjLEVBQUUsQ0FBQztJQUNqQyxHQUFHLENBQUMsSUFBSSxDQUFDLE1BQU0sRUFBRSxHQUFHLElBQUksQ0FBQyxPQUFPLFlBQVksRUFBRSxJQUFJLENBQUMsQ0FBQztJQUNwRCxHQUFHLENBQUMsZ0JBQWdCLENBQUMsY0FBYyxFQUFFLFlBQVksQ0FBQyxDQUFDO0lBQ25ELEdBQUcsQ0FBQyxJQUFJLENBQUMsSUFBSSxDQUFDLFNBQVMsQ0FBQyxPQUFPLENBQUMsQ0FBQyxDQUFDO0lBQ2xDLHFEQUFxRDtJQUNyRCxHQUFHLENBQUMsa0JBQWtCLEdBQUcsR0FBRyxFQUFFO1FBQzVCLElBQUksR0FBRyxDQUFDLFVBQVUsS0FBSyxDQUFDO1lBQUUsT0FBTztRQUNqQyxJQUFJLE9BQU8sSUFBSSxPQUFPLENBQUMsUUFBUSxFQUFFO1lBQy9CLE9BQU8sQ0FBQyxRQUFRLEVBQUUsQ0FBQztTQUNwQjtJQUNILENBQUMsQ0FBQztBQUNKLENBQUMifQ==",
-      "start": 1709041927704,
-      "end": 1709041927704,
+      "start": 1709670070918,
+      "end": 1709670070919,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1709041927704,
-      "end": 1709041927704,
+      "start": 1709670070919,
+      "end": 1709670070919,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1709041927704,
-      "end": 1709041927704,
+      "start": 1709670070919,
+      "end": 1709670070919,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1709041927704,
-      "end": 1709041927704,
+      "start": 1709670070919,
+      "end": 1709670070919,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1709041927704,
-      "end": 1709041927704,
+      "start": 1709670070919,
+      "end": 1709670070919,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1709041927704,
-      "end": 1709041927704,
+      "start": 1709670070919,
+      "end": 1709670070919,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1709041927704,
-      "end": 1709041927704,
+      "start": 1709670070919,
+      "end": 1709670070919,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1709041927704,
-      "end": 1709041927704,
+      "start": 1709670070919,
+      "end": 1709670070919,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1709041927704,
-      "end": 1709041927704,
+      "start": 1709670070919,
+      "end": 1709670070919,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709041927704,
-      "end": 1709041927704,
+      "start": 1709670070919,
+      "end": 1709670070919,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1709041927704,
-      "end": 1709041927704,
+      "start": 1709670070919,
+      "end": 1709670070919,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1709041927704,
-      "end": 1709041927704,
+      "start": 1709670070919,
+      "end": 1709670070919,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1709041927704,
-      "end": 1709041927704,
+      "start": 1709670070919,
+      "end": 1709670070919,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709041927704,
-      "end": 1709041927704,
+      "start": 1709670070919,
+      "end": 1709670070919,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1709041927704,
-      "end": 1709041927704,
+      "start": 1709670070919,
+      "end": 1709670070919,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1709041927705,
-      "end": 1709041927705,
+      "start": 1709670070919,
+      "end": 1709670070919,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1709041927705,
-      "end": 1709041927705,
+      "start": 1709670070919,
+      "end": 1709670070919,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1709041927705,
-      "end": 1709041927705,
+      "start": 1709670070919,
+      "end": 1709670070919,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1709041927705,
-      "end": 1709041927705,
+      "start": 1709670070919,
+      "end": 1709670070919,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1709041927705,
-      "end": 1709041927705,
+      "start": 1709670070919,
+      "end": 1709670070919,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1709041927705,
-      "end": 1709041927705,
+      "start": 1709670070919,
+      "end": 1709670070920,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1709041927705,
-      "end": 1709041927705,
+      "start": 1709670070920,
+      "end": 1709670070920,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1709041927705,
-      "end": 1709041927705,
+      "start": 1709670070920,
+      "end": 1709670070920,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1709041927705,
-      "end": 1709041927705,
+      "start": 1709670070920,
+      "end": 1709670070920,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1709041927706,
-      "end": 1709041927706,
+      "start": 1709670070920,
+      "end": 1709670070920,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1709041927706,
-      "end": 1709041927706,
+      "start": 1709670070920,
+      "end": 1709670070920,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1709041927706,
-      "end": 1709041927706,
+      "start": 1709670070920,
+      "end": 1709670070920,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1709041927706,
-      "end": 1709041927706,
+      "start": 1709670070920,
+      "end": 1709670070920,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1709041927706,
-      "end": 1709041927706,
+      "start": 1709670070920,
+      "end": 1709670070920,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1709041927706,
-      "end": 1709041927706,
+      "start": 1709670070920,
+      "end": 1709670070920,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1709041927706,
-      "end": 1709041927706,
+      "start": 1709670070920,
+      "end": 1709670070920,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1709041927706,
-      "end": 1709041927706,
+      "start": 1709670070920,
+      "end": 1709670070920,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1709041927706,
-      "end": 1709041927706,
+      "start": 1709670070920,
+      "end": 1709670070920,
       "order": "normal"
     }
   ]

@@ -4,51 +4,51 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, createElementBlock as _createElementBlock, renderList as _renderList, Fragment as _Fragment, createElementVNode as _createElementVNode, normalizeClass as _normalizeClass, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-cfa5f079\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = {\n  key: 1,\n  class: \"loaded\"\n}\nconst _hoisted_2 = [\"poster\"]\nconst _hoisted_3 = [\"src\"]\nconst _hoisted_4 = [\"src\", \"type\"]\nconst _hoisted_5 = [\"autoplay\", \"src\"]\nconst _hoisted_6 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"button\", null, null, -1))\nconst _hoisted_7 = [\n  _hoisted_6\n]\n\nimport type { PropType } from 'vue'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'VideoPlayer',\n  props: {\n  poster: {\n    type: String,\n    default: ''\n  },\n  src: {\n    type: String,\n    default: ''\n  },\n  sources: {\n    type: Array as PropType<any[]>,\n    default: () => []\n  },\n  autoplay: {\n    type: Boolean,\n    default: false\n  }\n},\n  setup(__props) {\n\nconst props = __props\n\nconst provider = computed(() => {\n  if (props.src && props.src.includes('youtube.com/watch')) {\n    const match = props.src.match(/\\?v=([^&]*)/)\n\n    return {\n      name: 'youtube',\n      src: `https://www.youtube-nocookie.com/embed/${match?.[1] || ''}?autoplay=1`,\n      poster: props.poster || `https://i3.ytimg.com/vi/${match?.[1] || ''}/hqdefault.jpg`\n    }\n  }\n})\n\nconst loaded = ref(false)\n\nif (!props.src && !props.sources.length) { throw new Error('VideoPlayer: you need to provide either `src` or `sources` props') }\n\nconst src = computed(() => props.src || props.sources?.[0]?.src || false)\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_NuxtImg = _resolveComponent(\"NuxtImg\")!\n\n  return (_openBlock(), _createElementBlock(\"div\", {\n    class: _normalizeClass([\"video-player\", { loaded: _unref(loaded) }])\n  }, [\n    (_unref(provider) ? _unref(provider).poster : __props.poster)\n      ? (_openBlock(), _createBlock(_component_NuxtImg, {\n          key: 0,\n          src: (_unref(provider) ? _unref(provider).poster : __props.poster as any)\n        }, null, 8, [\"src\"]))\n      : _createCommentVNode(\"\", true),\n    (_unref(loaded))\n      ? (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n          (!_unref(provider))\n            ? (_openBlock(), _createElementBlock(\"video\", {\n                key: 0,\n                poster: __props.poster,\n                controls: \"\",\n                autoplay: \"\"\n              }, [\n                (_unref(src))\n                  ? (_openBlock(), _createElementBlock(\"source\", {\n                      key: 0,\n                      src: _unref(src)\n                    }, null, 8, _hoisted_3))\n                  : _createCommentVNode(\"\", true),\n                (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(__props.sources, (source) => {\n                  return (_openBlock(), _createElementBlock(\"source\", {\n                    key: source.src || source,\n                    src: source.src || source,\n                    type: source.type\n                  }, null, 8, _hoisted_4))\n                }), 128))\n              ], 8, _hoisted_2))\n            : (_unref(provider).name === 'youtube')\n              ? (_openBlock(), _createElementBlock(\"iframe\", {\n                  key: 1,\n                  allow: \"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\",\n                  allowfullscreen: \"true\",\n                  autoplay: __props.autoplay,\n                  src: _unref(provider).src\n                }, null, 8, _hoisted_5))\n              : _createCommentVNode(\"\", true)\n        ]))\n      : _createCommentVNode(\"\", true),\n    (!_unref(loaded))\n      ? (_openBlock(), _createElementBlock(\"div\", {\n          key: 2,\n          class: \"play-button\",\n          onClick: _cache[0] || (_cache[0] = ($event: any) => (loaded.value = true))\n        }, _hoisted_7))\n      : _createCommentVNode(\"\", true)\n  ], 2))\n}\n}\n\n})",
-      "start": 1709041925936,
-      "end": 1709041925937
+      "start": 1709670070065,
+      "end": 1709670070065
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1709041925941,
-      "end": 1709041925941,
+      "start": 1709670070065,
+      "end": 1709670070065,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1709041925952,
-      "end": 1709041925953,
+      "start": 1709670070070,
+      "end": 1709670070070,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, createElementBlock as _createElementBlock, renderList as _renderList, Fragment as _Fragment, createElementVNode as _createElementVNode, normalizeClass as _normalizeClass, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-cfa5f079\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = {\n  key: 1,\n  class: \"loaded\"\n}\nconst _hoisted_2 = [\"poster\"]\nconst _hoisted_3 = [\"src\"]\nconst _hoisted_4 = [\"src\", \"type\"]\nconst _hoisted_5 = [\"autoplay\", \"src\"]\nconst _hoisted_6 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"button\", null, null, -1))\nconst _hoisted_7 = [\n  _hoisted_6\n]\n\nimport type { PropType } from 'vue'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'VideoPlayer',\n  props: {\n  poster: {\n    type: String,\n    default: ''\n  },\n  src: {\n    type: String,\n    default: ''\n  },\n  sources: {\n    type: Array as PropType<any[]>,\n    default: () => []\n  },\n  autoplay: {\n    type: Boolean,\n    default: false\n  }\n},\n  setup(__props) {\n\nconst props = __props\n\nconst provider = computed(() => {\n  if (props.src && props.src.includes('youtube.com/watch')) {\n    const match = props.src.match(/\\?v=([^&]*)/)\n\n    return {\n      name: 'youtube',\n      src: `https://www.youtube-nocookie.com/embed/${match?.[1] || ''}?autoplay=1`,\n      poster: props.poster || `https://i3.ytimg.com/vi/${match?.[1] || ''}/hqdefault.jpg`\n    }\n  }\n})\n\nconst loaded = ref(false)\n\nif (!props.src && !props.sources.length) { throw new Error('VideoPlayer: you need to provide either `src` or `sources` props') }\n\nconst src = computed(() => props.src || props.sources?.[0]?.src || false)\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_NuxtImg = _resolveComponent(\"NuxtImg\")!\n\n  return (_openBlock(), _createElementBlock(\"div\", {\n    class: _normalizeClass([\"video-player\", { loaded: _unref(loaded) }])\n  }, [\n    (_unref(provider) ? _unref(provider).poster : __props.poster)\n      ? (_openBlock(), _createBlock(_component_NuxtImg, {\n          key: 0,\n          src: (_unref(provider) ? _unref(provider).poster : __props.poster as any)\n        }, null, 8, [\"src\"]))\n      : _createCommentVNode(\"\", true),\n    (_unref(loaded))\n      ? (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n          (!_unref(provider))\n            ? (_openBlock(), _createElementBlock(\"video\", {\n                key: 0,\n                poster: __props.poster,\n                controls: \"\",\n                autoplay: \"\"\n              }, [\n                (_unref(src))\n                  ? (_openBlock(), _createElementBlock(\"source\", {\n                      key: 0,\n                      src: _unref(src)\n                    }, null, 8, _hoisted_3))\n                  : _createCommentVNode(\"\", true),\n                (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(__props.sources, (source) => {\n                  return (_openBlock(), _createElementBlock(\"source\", {\n                    key: source.src || source,\n                    src: source.src || source,\n                    type: source.type\n                  }, null, 8, _hoisted_4))\n                }), 128))\n              ], 8, _hoisted_2))\n            : (_unref(provider).name === 'youtube')\n              ? (_openBlock(), _createElementBlock(\"iframe\", {\n                  key: 1,\n                  allow: \"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\",\n                  allowfullscreen: \"true\",\n                  autoplay: __props.autoplay,\n                  src: _unref(provider).src\n                }, null, 8, _hoisted_5))\n              : _createCommentVNode(\"\", true)\n        ]))\n      : _createCommentVNode(\"\", true),\n    (!_unref(loaded))\n      ? (_openBlock(), _createElementBlock(\"div\", {\n          key: 2,\n          class: \"play-button\",\n          onClick: _cache[0] || (_cache[0] = ($event: any) => (loaded.value = true))\n        }, _hoisted_7))\n      : _createCommentVNode(\"\", true)\n  ], 2))\n}\n}\n\n})",
-      "start": 1709041925966,
-      "end": 1709041925968,
+      "start": 1709670070070,
+      "end": 1709670070070,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1709041925968,
-      "end": 1709041925968,
+      "start": 1709670070070,
+      "end": 1709670070070,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1709041925968,
-      "end": 1709041925969,
+      "start": 1709670070070,
+      "end": 1709670070070,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1709041925969,
-      "end": 1709041925969,
+      "start": 1709670070070,
+      "end": 1709670070070,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, createElementBlock as _createElementBlock, renderList as _renderList, Fragment as _Fragment, createElementVNode as _createElementVNode, normalizeClass as _normalizeClass, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-cfa5f079\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = {\n  key: 1,\n  class: \"loaded\"\n};\nconst _hoisted_2 = [\"poster\"];\nconst _hoisted_3 = [\"src\"];\nconst _hoisted_4 = [\"src\", \"type\"];\nconst _hoisted_5 = [\"autoplay\", \"src\"];\nconst _hoisted_6 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"button\", null, null, -1));\nconst _hoisted_7 = [\n  _hoisted_6\n];\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"VideoPlayer\",\n  props: {\n    poster: {\n      type: String,\n      default: \"\"\n    },\n    src: {\n      type: String,\n      default: \"\"\n    },\n    sources: {\n      type: Array,\n      default: () => []\n    },\n    autoplay: {\n      type: Boolean,\n      default: false\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const provider = computed(() => {\n      if (props.src && props.src.includes(\"youtube.com/watch\")) {\n        const match = props.src.match(/\\?v=([^&]*)/);\n        return {\n          name: \"youtube\",\n          src: `https://www.youtube-nocookie.com/embed/${match?.[1] || \"\"}?autoplay=1`,\n          poster: props.poster || `https://i3.ytimg.com/vi/${match?.[1] || \"\"}/hqdefault.jpg`\n        };\n      }\n    });\n    const loaded = ref(false);\n    if (!props.src && !props.sources.length) {\n      throw new Error(\"VideoPlayer: you need to provide either `src` or `sources` props\");\n    }\n    const src = computed(() => props.src || props.sources?.[0]?.src || false);\n    return (_ctx, _cache) => {\n      const _component_NuxtImg = _resolveComponent(\"NuxtImg\");\n      return _openBlock(), _createElementBlock(\"div\", {\n        class: _normalizeClass([\"video-player\", { loaded: _unref(loaded) }])\n      }, [\n        (_unref(provider) ? _unref(provider).poster : __props.poster) ? (_openBlock(), _createBlock(_component_NuxtImg, {\n          key: 0,\n          src: _unref(provider) ? _unref(provider).poster : __props.poster\n        }, null, 8, [\"src\"])) : _createCommentVNode(\"\", true),\n        _unref(loaded) ? (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n          !_unref(provider) ? (_openBlock(), _createElementBlock(\"video\", {\n            key: 0,\n            poster: __props.poster,\n            controls: \"\",\n            autoplay: \"\"\n          }, [\n            _unref(src) ? (_openBlock(), _createElementBlock(\"source\", {\n              key: 0,\n              src: _unref(src)\n            }, null, 8, _hoisted_3)) : _createCommentVNode(\"\", true),\n            (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(__props.sources, (source) => {\n              return _openBlock(), _createElementBlock(\"source\", {\n                key: source.src || source,\n                src: source.src || source,\n                type: source.type\n              }, null, 8, _hoisted_4);\n            }), 128))\n          ], 8, _hoisted_2)) : _unref(provider).name === \"youtube\" ? (_openBlock(), _createElementBlock(\"iframe\", {\n            key: 1,\n            allow: \"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\",\n            allowfullscreen: \"true\",\n            autoplay: __props.autoplay,\n            src: _unref(provider).src\n          }, null, 8, _hoisted_5)) : _createCommentVNode(\"\", true)\n        ])) : _createCommentVNode(\"\", true),\n        !_unref(loaded) ? (_openBlock(), _createElementBlock(\"div\", {\n          key: 2,\n          class: \"play-button\",\n          onClick: _cache[0] || (_cache[0] = ($event) => loaded.value = true)\n        }, _hoisted_7)) : _createCommentVNode(\"\", true)\n      ], 2);\n    };\n  }\n});\n",
-      "start": 1709041925969,
-      "end": 1709041926333,
+      "start": 1709670070070,
+      "end": 1709670070249,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -64,123 +64,123 @@
     },
     {
       "name": "vite:json",
-      "start": 1709041926333,
-      "end": 1709041926333,
+      "start": 1709670070249,
+      "end": 1709670070249,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1709041926333,
-      "end": 1709041926333,
+      "start": 1709670070249,
+      "end": 1709670070249,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1709041926333,
-      "end": 1709041926333,
+      "start": 1709670070249,
+      "end": 1709670070249,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1709041926333,
-      "end": 1709041926333,
+      "start": 1709670070249,
+      "end": 1709670070249,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709041926333,
-      "end": 1709041926333,
+      "start": 1709670070251,
+      "end": 1709670070251,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1709041926333,
-      "end": 1709041926333,
+      "start": 1709670070251,
+      "end": 1709670070252,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1709041926334,
-      "end": 1709041926334,
+      "start": 1709670070252,
+      "end": 1709670070252,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1709041926334,
-      "end": 1709041926334,
+      "start": 1709670070252,
+      "end": 1709670070252,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709041926334,
-      "end": 1709041926334,
+      "start": 1709670070252,
+      "end": 1709670070252,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1709041926334,
-      "end": 1709041926334,
+      "start": 1709670070252,
+      "end": 1709670070252,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1709041926334,
-      "end": 1709041926334,
+      "start": 1709670070252,
+      "end": 1709670070252,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1709041926334,
-      "end": 1709041926334,
+      "start": 1709670070253,
+      "end": 1709670070253,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1709041926335,
-      "end": 1709041926335,
+      "start": 1709670070253,
+      "end": 1709670070253,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1709041926335,
-      "end": 1709041926335,
+      "start": 1709670070253,
+      "end": 1709670070253,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1709041926335,
-      "end": 1709041926335,
+      "start": 1709670070253,
+      "end": 1709670070253,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1709041926335,
-      "end": 1709041926335,
+      "start": 1709670070253,
+      "end": 1709670070253,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1709041926335,
-      "end": 1709041926335,
+      "start": 1709670070253,
+      "end": 1709670070253,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1709041926335,
-      "end": 1709041926335,
+      "start": 1709670070253,
+      "end": 1709670070253,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1709041926335,
-      "end": 1709041926335,
+      "start": 1709670070253,
+      "end": 1709670070253,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { computed, ref } from 'vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, createElementBlock as _createElementBlock, renderList as _renderList, Fragment as _Fragment, createElementVNode as _createElementVNode, normalizeClass as _normalizeClass, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-cfa5f079\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = {\n  key: 1,\n  class: \"loaded\"\n};\nconst _hoisted_2 = [\"poster\"];\nconst _hoisted_3 = [\"src\"];\nconst _hoisted_4 = [\"src\", \"type\"];\nconst _hoisted_5 = [\"autoplay\", \"src\"];\nconst _hoisted_6 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"button\", null, null, -1));\nconst _hoisted_7 = [\n  _hoisted_6\n];\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"VideoPlayer\",\n  props: {\n    poster: {\n      type: String,\n      default: \"\"\n    },\n    src: {\n      type: String,\n      default: \"\"\n    },\n    sources: {\n      type: Array,\n      default: () => []\n    },\n    autoplay: {\n      type: Boolean,\n      default: false\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const provider = computed(() => {\n      if (props.src && props.src.includes(\"youtube.com/watch\")) {\n        const match = props.src.match(/\\?v=([^&]*)/);\n        return {\n          name: \"youtube\",\n          src: `https://www.youtube-nocookie.com/embed/${match?.[1] || \"\"}?autoplay=1`,\n          poster: props.poster || `https://i3.ytimg.com/vi/${match?.[1] || \"\"}/hqdefault.jpg`\n        };\n      }\n    });\n    const loaded = ref(false);\n    if (!props.src && !props.sources.length) {\n      throw new Error(\"VideoPlayer: you need to provide either `src` or `sources` props\");\n    }\n    const src = computed(() => props.src || props.sources?.[0]?.src || false);\n    return (_ctx, _cache) => {\n      const _component_NuxtImg = _resolveComponent(\"NuxtImg\");\n      return _openBlock(), _createElementBlock(\"div\", {\n        class: _normalizeClass([\"video-player\", { loaded: _unref(loaded) }])\n      }, [\n        (_unref(provider) ? _unref(provider).poster : __props.poster) ? (_openBlock(), _createBlock(_component_NuxtImg, {\n          key: 0,\n          src: _unref(provider) ? _unref(provider).poster : __props.poster\n        }, null, 8, [\"src\"])) : _createCommentVNode(\"\", true),\n        _unref(loaded) ? (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n          !_unref(provider) ? (_openBlock(), _createElementBlock(\"video\", {\n            key: 0,\n            poster: __props.poster,\n            controls: \"\",\n            autoplay: \"\"\n          }, [\n            _unref(src) ? (_openBlock(), _createElementBlock(\"source\", {\n              key: 0,\n              src: _unref(src)\n            }, null, 8, _hoisted_3)) : _createCommentVNode(\"\", true),\n            (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(__props.sources, (source) => {\n              return _openBlock(), _createElementBlock(\"source\", {\n                key: source.src || source,\n                src: source.src || source,\n                type: source.type\n              }, null, 8, _hoisted_4);\n            }), 128))\n          ], 8, _hoisted_2)) : _unref(provider).name === \"youtube\" ? (_openBlock(), _createElementBlock(\"iframe\", {\n            key: 1,\n            allow: \"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\",\n            allowfullscreen: \"true\",\n            autoplay: __props.autoplay,\n            src: _unref(provider).src\n          }, null, 8, _hoisted_5)) : _createCommentVNode(\"\", true)\n        ])) : _createCommentVNode(\"\", true),\n        !_unref(loaded) ? (_openBlock(), _createElementBlock(\"div\", {\n          key: 2,\n          class: \"play-button\",\n          onClick: _cache[0] || (_cache[0] = ($event) => loaded.value = true)\n        }, _hoisted_7)) : _createCommentVNode(\"\", true)\n      ], 2);\n    };\n  }\n});\n",
-      "start": 1709041926335,
-      "end": 1709041926346,
+      "start": 1709670070253,
+      "end": 1709670070258,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -193,51 +193,51 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1709041926352,
-      "end": 1709041926352,
+      "start": 1709670070258,
+      "end": 1709670070258,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1709041926352,
-      "end": 1709041926352,
+      "start": 1709670070258,
+      "end": 1709670070258,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1709041926353,
-      "end": 1709041926353,
+      "start": 1709670070258,
+      "end": 1709670070258,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1709041926353,
-      "end": 1709041926353,
+      "start": 1709670070258,
+      "end": 1709670070258,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
       "result": "import { default as __nuxt_component_0 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/NuxtImg.vue\";\nimport { computed, ref } from 'vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, createElementBlock as _createElementBlock, renderList as _renderList, Fragment as _Fragment, createElementVNode as _createElementVNode, normalizeClass as _normalizeClass, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-cfa5f079\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = {\n  key: 1,\n  class: \"loaded\"\n};\nconst _hoisted_2 = [\"poster\"];\nconst _hoisted_3 = [\"src\"];\nconst _hoisted_4 = [\"src\", \"type\"];\nconst _hoisted_5 = [\"autoplay\", \"src\"];\nconst _hoisted_6 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"button\", null, null, -1));\nconst _hoisted_7 = [\n  _hoisted_6\n];\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"VideoPlayer\",\n  props: {\n    poster: {\n      type: String,\n      default: \"\"\n    },\n    src: {\n      type: String,\n      default: \"\"\n    },\n    sources: {\n      type: Array,\n      default: () => []\n    },\n    autoplay: {\n      type: Boolean,\n      default: false\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const provider = computed(() => {\n      if (props.src && props.src.includes(\"youtube.com/watch\")) {\n        const match = props.src.match(/\\?v=([^&]*)/);\n        return {\n          name: \"youtube\",\n          src: `https://www.youtube-nocookie.com/embed/${match?.[1] || \"\"}?autoplay=1`,\n          poster: props.poster || `https://i3.ytimg.com/vi/${match?.[1] || \"\"}/hqdefault.jpg`\n        };\n      }\n    });\n    const loaded = ref(false);\n    if (!props.src && !props.sources.length) {\n      throw new Error(\"VideoPlayer: you need to provide either `src` or `sources` props\");\n    }\n    const src = computed(() => props.src || props.sources?.[0]?.src || false);\n    return (_ctx, _cache) => {\n      const _component_NuxtImg = __nuxt_component_0;\n      return _openBlock(), _createElementBlock(\"div\", {\n        class: _normalizeClass([\"video-player\", { loaded: _unref(loaded) }])\n      }, [\n        (_unref(provider) ? _unref(provider).poster : __props.poster) ? (_openBlock(), _createBlock(_component_NuxtImg, {\n          key: 0,\n          src: _unref(provider) ? _unref(provider).poster : __props.poster\n        }, null, 8, [\"src\"])) : _createCommentVNode(\"\", true),\n        _unref(loaded) ? (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n          !_unref(provider) ? (_openBlock(), _createElementBlock(\"video\", {\n            key: 0,\n            poster: __props.poster,\n            controls: \"\",\n            autoplay: \"\"\n          }, [\n            _unref(src) ? (_openBlock(), _createElementBlock(\"source\", {\n              key: 0,\n              src: _unref(src)\n            }, null, 8, _hoisted_3)) : _createCommentVNode(\"\", true),\n            (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(__props.sources, (source) => {\n              return _openBlock(), _createElementBlock(\"source\", {\n                key: source.src || source,\n                src: source.src || source,\n                type: source.type\n              }, null, 8, _hoisted_4);\n            }), 128))\n          ], 8, _hoisted_2)) : _unref(provider).name === \"youtube\" ? (_openBlock(), _createElementBlock(\"iframe\", {\n            key: 1,\n            allow: \"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\",\n            allowfullscreen: \"true\",\n            autoplay: __props.autoplay,\n            src: _unref(provider).src\n          }, null, 8, _hoisted_5)) : _createCommentVNode(\"\", true)\n        ])) : _createCommentVNode(\"\", true),\n        !_unref(loaded) ? (_openBlock(), _createElementBlock(\"div\", {\n          key: 2,\n          class: \"play-button\",\n          onClick: _cache[0] || (_cache[0] = ($event) => loaded.value = true)\n        }, _hoisted_7)) : _createCommentVNode(\"\", true)\n      ], 2);\n    };\n  }\n});\n",
-      "start": 1709041926353,
-      "end": 1709041926354,
+      "start": 1709670070259,
+      "end": 1709670070259,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1709041926354,
-      "end": 1709041926354,
+      "start": 1709670070259,
+      "end": 1709670070259,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1709041926355,
-      "end": 1709041926355,
+      "start": 1709670070259,
+      "end": 1709670070259,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1709041926355,
-      "end": 1709041926355,
+      "start": 1709670070259,
+      "end": 1709670070259,
       "order": "normal"
     }
   ]

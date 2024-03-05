@@ -4,135 +4,135 @@
     {
       "name": "vite:load-fallback",
       "result": "import { createError } from \"../composables/error.js\";\nconst intervalError = \"[nuxt] `setInterval` should not be used on the server. Consider wrapping it with an `onNuxtReady`, `onBeforeMount` or `onMounted` lifecycle hook, or ensure you only call it in the browser by checking `import.meta.client`.\";\nexport const setInterval = import.meta.client ? window.setInterval : () => {\n  if (import.meta.dev) {\n    throw createError({\n      statusCode: 500,\n      message: intervalError\n    });\n  }\n  console.error(intervalError);\n};\n",
-      "start": 1709041933985,
-      "end": 1709041935478,
+      "start": 1709670075950,
+      "end": 1709670076836,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1709041935478,
-      "end": 1709041935478,
+      "start": 1709670076836,
+      "end": 1709670076836,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1709041935478,
-      "end": 1709041935478,
+      "start": 1709670076836,
+      "end": 1709670076836,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1709041935478,
-      "end": 1709041935478,
+      "start": 1709670076836,
+      "end": 1709670076836,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1709041935478,
-      "end": 1709041935478,
+      "start": 1709670076836,
+      "end": 1709670076836,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
-      "start": 1709041935478,
-      "end": 1709041935479,
+      "start": 1709670076836,
+      "end": 1709670076836,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
-      "start": 1709041935478,
-      "end": 1709041935479,
+      "start": 1709670076836,
+      "end": 1709670076836,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1709041935479,
-      "end": 1709041935479,
+      "start": 1709670076836,
+      "end": 1709670076836,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1709041935479,
-      "end": 1709041935479,
+      "start": 1709670076836,
+      "end": 1709670076836,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1709041935479,
-      "end": 1709041935479,
+      "start": 1709670076836,
+      "end": 1709670076836,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1709041935479,
-      "end": 1709041935479,
+      "start": 1709670076836,
+      "end": 1709670076836,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1709041935479,
-      "end": 1709041935479,
+      "start": 1709670076836,
+      "end": 1709670076836,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1709041935479,
-      "end": 1709041935479,
+      "start": 1709670076836,
+      "end": 1709670076836,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1709041935479,
-      "end": 1709041935479,
+      "start": 1709670076836,
+      "end": 1709670076836,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1709041935479,
-      "end": 1709041935479,
+      "start": 1709670076836,
+      "end": 1709670076836,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1709041935479,
-      "end": 1709041935479,
+      "start": 1709670076836,
+      "end": 1709670076836,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709041935479,
-      "end": 1709041935479,
+      "start": 1709670076836,
+      "end": 1709670076836,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709041935479,
-      "end": 1709041935479,
+      "start": 1709670076836,
+      "end": 1709670076836,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1709041935479,
-      "end": 1709041935479,
+      "start": 1709670076836,
+      "end": 1709670076836,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1709041935479,
-      "end": 1709041935479,
+      "start": 1709670076836,
+      "end": 1709670076836,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1709041935479,
-      "end": 1709041935479,
+      "start": 1709670076836,
+      "end": 1709670076836,
       "order": "normal"
     },
     {
       "name": "replace",
       "result": "import { createError } from \"../composables/error.js\";\nconst intervalError = \"[nuxt] `setInterval` should not be used on the server. Consider wrapping it with an `onNuxtReady`, `onBeforeMount` or `onMounted` lifecycle hook, or ensure you only call it in the browser by checking `false`.\";\nexport const setInterval = false ? window.setInterval : () => {\n  if (false) {\n    throw createError({\n      statusCode: 500,\n      message: intervalError\n    });\n  }\n  console.error(intervalError);\n};\n",
-      "start": 1709041935479,
-      "end": 1709041935479,
+      "start": 1709670076836,
+      "end": 1709670076836,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -145,136 +145,136 @@
     },
     {
       "name": "ssr-styles",
-      "start": 1709041935479,
-      "end": 1709041935479,
+      "start": 1709670076836,
+      "end": 1709670076837,
       "order": "normal"
     },
     {
       "name": "vite:define",
       "result": "import { createError } from \"../composables/error.js\";\nconst intervalError = \"[nuxt] `setInterval` should not be used on the server. Consider wrapping it with an `onNuxtReady`, `onBeforeMount` or `onMounted` lifecycle hook, or ensure you only call it in the browser by checking `false`.\";\nexport const setInterval = false ? (void 0).setInterval : () => {\n  if (false) {\n    throw createError({\n      statusCode: 500,\n      message: intervalError\n    });\n  }\n  console.error(intervalError);\n};\n",
-      "start": 1709041935479,
-      "end": 1709041935492,
+      "start": 1709670076837,
+      "end": 1709670076857,
       "order": "normal",
       "sourcemaps": "{\n  \"version\": 3,\n  \"sources\": [\"/workspace/Kubernetes-Bootcamp/node_modules/nuxt/dist/app/compat/interval.js\"],\n  \"sourcesContent\": [\"import { createError } from \\\"../composables/error.js\\\";\\nconst intervalError = \\\"[nuxt] `setInterval` should not be used on the server. Consider wrapping it with an `onNuxtReady`, `onBeforeMount` or `onMounted` lifecycle hook, or ensure you only call it in the browser by checking `false`.\\\";\\nexport const setInterval = false ? window.setInterval : () => {\\n  if (false) {\\n    throw createError({\\n      statusCode: 500,\\n      message: intervalError\\n    });\\n  }\\n  console.error(intervalError);\\n};\\n\"],\n  \"mappings\": \"AAAA,SAAS,mBAAmB;AAC5B,MAAM,gBAAgB;AACf,aAAM,cAAc,QAAQ,SAAO,cAAc,MAAM;AAC5D,MAAI,OAAO;AACT,UAAM,YAAY;AAAA,MAChB,YAAY;AAAA,MACZ,SAAS;AAAA,IACX,CAAC;AAAA,EACH;AACA,UAAQ,MAAM,aAAa;AAC7B;\",\n  \"names\": []\n}\n"
     },
     {
       "name": "vite:css-post",
-      "start": 1709041935492,
-      "end": 1709041935492,
+      "start": 1709670076857,
+      "end": 1709670076858,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1709041935492,
-      "end": 1709041935492,
+      "start": 1709670076858,
+      "end": 1709670076858,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1709041935492,
-      "end": 1709041935492,
+      "start": 1709670076858,
+      "end": 1709670076858,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1709041935492,
-      "end": 1709041935492,
+      "start": 1709670076858,
+      "end": 1709670076858,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1709041935493,
-      "end": 1709041935493,
+      "start": 1709670076859,
+      "end": 1709670076859,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1709041935493,
-      "end": 1709041935493,
+      "start": 1709670076859,
+      "end": 1709670076859,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1709041935494,
-      "end": 1709041935494,
+      "start": 1709670076860,
+      "end": 1709670076860,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1709041935494,
-      "end": 1709041935494,
+      "start": 1709670076860,
+      "end": 1709670076860,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1709041935494,
-      "end": 1709041935494,
+      "start": 1709670076860,
+      "end": 1709670076860,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1709041935494,
-      "end": 1709041935495,
+      "start": 1709670076861,
+      "end": 1709670076861,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1709041935494,
-      "end": 1709041935495,
+      "start": 1709670076861,
+      "end": 1709670076861,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1709041935496,
-      "end": 1709041935496,
+      "start": 1709670076863,
+      "end": 1709670076863,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1709041935496,
-      "end": 1709041935496,
+      "start": 1709670076863,
+      "end": 1709670076863,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1709041935496,
-      "end": 1709041935496,
+      "start": 1709670076864,
+      "end": 1709670076864,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1709041935496,
-      "end": 1709041935496,
+      "start": 1709670076864,
+      "end": 1709670076864,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1709041935496,
-      "end": 1709041935496,
+      "start": 1709670076864,
+      "end": 1709670076864,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1709041935497,
-      "end": 1709041935497,
+      "start": 1709670076864,
+      "end": 1709670076864,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1709041935497,
-      "end": 1709041935497,
+      "start": 1709670076864,
+      "end": 1709670076864,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1709041935497,
-      "end": 1709041935497,
+      "start": 1709670076864,
+      "end": 1709670076864,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1709041935497,
-      "end": 1709041935497,
+      "start": 1709670076865,
+      "end": 1709670076865,
       "order": "normal"
     }
   ]

@@ -4,39 +4,39 @@
     {
       "name": "vite:load-fallback",
       "result": "<template>\n  <div class=\"component-playground-data\">\n    <TabsHeader :active-tab-index=\"activeTabIndex\" :tabs=\"tabs\" @update:active-tab-index=\"updateTab\" />\n    <ComponentPlaygroundProps v-if=\"activeTabIndex === 0\" v-model=\"formData\" :component-data=\"componentData\" />\n    <ComponentPlaygroundSlots v-if=\"activeTabIndex === 1\" :component-data=\"componentData\" />\n    <ComponentPlaygroundTokens v-if=\"activeTabIndex === 2\" :component-data=\"componentData\" />\n  </div>\n</template>\n\n<script setup lang=\"ts\">\nimport { useVModel } from '@vueuse/core'\n\nconst props = defineProps({\n  modelValue: {\n    type: Object,\n    required: false,\n    default: () => ({})\n  },\n  componentData: {\n    type: Object,\n    required: false,\n    default: () => ({})\n  }\n})\n\nconst emits = defineEmits(['update:modelValue'])\n\nconst formData = useVModel(props, 'modelValue', emits)\n\nconst activeTabIndex = ref(0)\n\nconst tabs = [\n  {\n    label: 'Props'\n  },\n  {\n    label: 'Slots'\n  },\n  {\n    label: 'Design Tokens'\n  }\n]\n\nconst updateTab = (i: number) => (activeTabIndex.value = i)\n</script>\n\n<style scoped lang=\"ts\">\ncss({\n  '.component-playground-data': {\n    '.component-playground-data-section': {\n      padding: '{space.4}',\n      '@dark': {\n        backgroundColor: '{color.gray.900}',\n      }\n    }\n  }\n})\n</style>\n",
-      "start": 1709041933481,
-      "end": 1709041933758,
+      "start": 1709670075598,
+      "end": 1709670075793,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1709041933758,
-      "end": 1709041933758,
+      "start": 1709670075793,
+      "end": 1709670075793,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1709041933758,
-      "end": 1709041933758,
+      "start": 1709670075793,
+      "end": 1709670075793,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1709041933758,
-      "end": 1709041933758,
+      "start": 1709670075793,
+      "end": 1709670075793,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1709041933758,
-      "end": 1709041933758,
+      "start": 1709670075793,
+      "end": 1709670075793,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "<template>\n  <div class=\"component-playground-data\">\n    <TabsHeader :active-tab-index=\"activeTabIndex\" :tabs=\"tabs\" @update:active-tab-index=\"updateTab\" />\n    <ComponentPlaygroundProps v-if=\"activeTabIndex === 0\" v-model=\"formData\" :component-data=\"componentData\" />\n    <ComponentPlaygroundSlots v-if=\"activeTabIndex === 1\" :component-data=\"componentData\" />\n    <ComponentPlaygroundTokens v-if=\"activeTabIndex === 2\" :component-data=\"componentData\" />\n  </div>\n</template>\n\n<script setup lang=\"ts\">\nimport { useVModel } from '@vueuse/core'\n\nconst props = defineProps({\n  modelValue: {\n    type: Object,\n    required: false,\n    default: () => ({})\n  },\n  componentData: {\n    type: Object,\n    required: false,\n    default: () => ({})\n  }\n})\n\nconst emits = defineEmits(['update:modelValue'])\n\nconst formData = useVModel(props, 'modelValue', emits)\n\nconst activeTabIndex = ref(0)\n\nconst tabs = [\n  {\n    label: 'Props'\n  },\n  {\n    label: 'Slots'\n  },\n  {\n    label: 'Design Tokens'\n  }\n]\n\nconst updateTab = (i: number) => (activeTabIndex.value = i)\n</script>\n\n<style scoped lang=\"postcss\" transformed>\n.component-playground-data .component-playground-data-section{padding:var(--space-4);}:root.dark .component-playground-data .component-playground-data-section{background-color:var(--color-gray-900);}\n</style>\n",
-      "start": 1709041933758,
-      "end": 1709041933760,
+      "start": 1709670075793,
+      "end": 1709670075794,
       "order": "pre",
       "sourcemaps": {
         "version": 3,
@@ -51,8 +51,8 @@
     {
       "name": "pinceau-transforms",
       "result": "<template>\n  <div class=\"component-playground-data\">\n    <TabsHeader :active-tab-index=\"activeTabIndex\" :tabs=\"tabs\" @update:active-tab-index=\"updateTab\" />\n    <ComponentPlaygroundProps v-if=\"activeTabIndex === 0\" v-model=\"formData\" :component-data=\"componentData\" />\n    <ComponentPlaygroundSlots v-if=\"activeTabIndex === 1\" :component-data=\"componentData\" />\n    <ComponentPlaygroundTokens v-if=\"activeTabIndex === 2\" :component-data=\"componentData\" />\n  </div>\n</template>\n\n<script setup lang=\"ts\">\nimport { useVModel } from '@vueuse/core'\n\nconst props = defineProps({\n  modelValue: {\n    type: Object,\n    required: false,\n    default: () => ({})\n  },\n  componentData: {\n    type: Object,\n    required: false,\n    default: () => ({})\n  }\n})\n\nconst emits = defineEmits(['update:modelValue'])\n\nconst formData = useVModel(props, 'modelValue', emits)\n\nconst activeTabIndex = ref(0)\n\nconst tabs = [\n  {\n    label: 'Props'\n  },\n  {\n    label: 'Slots'\n  },\n  {\n    label: 'Design Tokens'\n  }\n]\n\nconst updateTab = (i: number) => (activeTabIndex.value = i)\n</script>\n\n<style scoped lang=\"postcss\" transformed>\n.component-playground-data .component-playground-data-section{padding:var(--space-4);}:root.dark .component-playground-data .component-playground-data-section{background-color:var(--color-gray-900);}\n</style>\n",
-      "start": 1709041933758,
-      "end": 1709041933760,
+      "start": 1709670075793,
+      "end": 1709670075794,
       "order": "pre",
       "sourcemaps": {
         "version": 3,
@@ -66,51 +66,51 @@
     },
     {
       "name": "content-slot",
-      "start": 1709041933760,
-      "end": 1709041933760,
+      "start": 1709670075794,
+      "end": 1709670075794,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1709041933760,
-      "end": 1709041933760,
+      "start": 1709670075794,
+      "end": 1709670075794,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1709041933760,
-      "end": 1709041933760,
+      "start": 1709670075794,
+      "end": 1709670075794,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1709041933760,
-      "end": 1709041933760,
+      "start": 1709670075794,
+      "end": 1709670075794,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1709041933760,
-      "end": 1709041933760,
+      "start": 1709670075794,
+      "end": 1709670075794,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1709041933760,
-      "end": 1709041933760,
+      "start": 1709670075794,
+      "end": 1709670075794,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1709041933760,
-      "end": 1709041933760,
+      "start": 1709670075794,
+      "end": 1709670075794,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "import _sfc_main from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundData.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundData.vue?vue&type=script&setup=true&lang.ts\";\nimport \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundData.vue?vue&type=style&index=0&scoped=ff75821c&transformed=true&lang.postcss\";\nimport { useSSRContext as __vite_useSSRContext } from \"vue\";\nconst _sfc_setup = _sfc_main.setup;\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext();\n  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add(\"node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundData.vue\");\n  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;\n};\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"__scopeId\", \"data-v-ff75821c\"]]);\n",
-      "start": 1709041933760,
-      "end": 1709041933806,
+      "start": 1709670075794,
+      "end": 1709670075815,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -118,176 +118,176 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1709041933806,
-      "end": 1709041933806,
+      "start": 1709670075815,
+      "end": 1709670075815,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709041933806,
-      "end": 1709041933806,
+      "start": 1709670075815,
+      "end": 1709670075815,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709041933806,
-      "end": 1709041933806,
+      "start": 1709670075815,
+      "end": 1709670075815,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1709041933806,
-      "end": 1709041933806,
+      "start": 1709670075815,
+      "end": 1709670075815,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1709041933806,
-      "end": 1709041933806,
+      "start": 1709670075815,
+      "end": 1709670075815,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1709041933806,
-      "end": 1709041933807,
+      "start": 1709670075816,
+      "end": 1709670075816,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709041933807,
-      "end": 1709041933807,
+      "start": 1709670075816,
+      "end": 1709670075816,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1709041933807,
-      "end": 1709041933807,
+      "start": 1709670075816,
+      "end": 1709670075816,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1709041933808,
-      "end": 1709041933808,
+      "start": 1709670075817,
+      "end": 1709670075817,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1709041933808,
-      "end": 1709041933808,
+      "start": 1709670075817,
+      "end": 1709670075817,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1709041933808,
-      "end": 1709041933809,
+      "start": 1709670075817,
+      "end": 1709670075817,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1709041933809,
-      "end": 1709041933809,
+      "start": 1709670075817,
+      "end": 1709670075817,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1709041933810,
-      "end": 1709041933810,
+      "start": 1709670075817,
+      "end": 1709670075817,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1709041933810,
-      "end": 1709041933810,
+      "start": 1709670075817,
+      "end": 1709670075817,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1709041933811,
-      "end": 1709041933811,
+      "start": 1709670075818,
+      "end": 1709670075818,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1709041933811,
-      "end": 1709041933811,
+      "start": 1709670075818,
+      "end": 1709670075818,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1709041933811,
-      "end": 1709041933811,
+      "start": 1709670075818,
+      "end": 1709670075818,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1709041933811,
-      "end": 1709041933811,
+      "start": 1709670075818,
+      "end": 1709670075818,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1709041933811,
-      "end": 1709041933813,
+      "start": 1709670075818,
+      "end": 1709670075822,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1709041933811,
-      "end": 1709041933813,
+      "start": 1709670075818,
+      "end": 1709670075822,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1709041933813,
-      "end": 1709041933813,
+      "start": 1709670075822,
+      "end": 1709670075822,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1709041933813,
-      "end": 1709041933815,
+      "start": 1709670075822,
+      "end": 1709670075822,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1709041933815,
-      "end": 1709041933815,
+      "start": 1709670075823,
+      "end": 1709670075823,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1709041933815,
-      "end": 1709041933815,
+      "start": 1709670075823,
+      "end": 1709670075823,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1709041933815,
-      "end": 1709041933815,
+      "start": 1709670075823,
+      "end": 1709670075823,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1709041933815,
-      "end": 1709041933815,
+      "start": 1709670075823,
+      "end": 1709670075824,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1709041933815,
-      "end": 1709041933815,
+      "start": 1709670075824,
+      "end": 1709670075824,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1709041933815,
-      "end": 1709041933815,
+      "start": 1709670075824,
+      "end": 1709670075824,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1709041933815,
-      "end": 1709041933815,
+      "start": 1709670075824,
+      "end": 1709670075824,
       "order": "normal"
     }
   ]

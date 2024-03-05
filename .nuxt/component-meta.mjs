@@ -1346,6 +1346,25 @@ export default {
       "type": 1,
       "props": [
         {
+          "name": "source",
+          "global": false,
+          "description": "Source file path.\n\nWon't be used if `page` is set.",
+          "tags": [],
+          "required": false,
+          "type": "string",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
+              "range": [
+                1245,
+                1328
+              ]
+            }
+          ],
+          "schema": "string",
+          "default": "undefined"
+        },
+        {
           "name": "baseUrl",
           "global": false,
           "description": "GitHub base URL.",
@@ -1441,25 +1460,6 @@ export default {
           "default": "useAppConfig()?.docus?.github?.dir"
         },
         {
-          "name": "source",
-          "global": false,
-          "description": "Source file path.\n\nWon't be used if `page` is set.",
-          "tags": [],
-          "required": false,
-          "type": "string",
-          "declarations": [
-            {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
-              "range": [
-                1245,
-                1328
-              ]
-            }
-          ],
-          "schema": "string",
-          "default": "undefined"
-        },
-        {
           "name": "page",
           "global": false,
           "description": "Use page from",
@@ -1533,6 +1533,21 @@ export default {
       "events": [],
       "exposed": [
         {
+          "name": "source",
+          "type": "string",
+          "description": "Source file path.\n\nWon't be used if `page` is set.",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
+              "range": [
+                1245,
+                1328
+              ]
+            }
+          ],
+          "schema": "string"
+        },
+        {
           "name": "baseUrl",
           "type": "string",
           "description": "GitHub base URL.",
@@ -1602,21 +1617,6 @@ export default {
               "range": [
                 1041,
                 1152
-              ]
-            }
-          ],
-          "schema": "string"
-        },
-        {
-          "name": "source",
-          "type": "string",
-          "description": "Source file path.\n\nWon't be used if `page` is set.",
-          "declarations": [
-            {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
-              "range": [
-                1245,
-                1328
               ]
             }
           ],
@@ -9258,36 +9258,6 @@ export default {
           }
         },
         {
-          "name": "path",
-          "type": "string",
-          "description": "The path of the content to load from content source.",
-          "declarations": [
-            {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
-              "range": [
-                3983,
-                4099
-              ]
-            }
-          ],
-          "schema": "string"
-        },
-        {
-          "name": "query",
-          "type": "undefined",
-          "description": "A query builder params object to be passed to <ContentQuery /> component.",
-          "declarations": [
-            {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
-              "range": [
-                4217,
-                4345
-              ]
-            }
-          ],
-          "schema": "undefined"
-        },
-        {
           "name": "tag",
           "type": "string",
           "description": "The tag to use for the renderer element if it is used.",
@@ -9323,6 +9293,36 @@ export default {
               "true"
             ]
           }
+        },
+        {
+          "name": "path",
+          "type": "string",
+          "description": "The path of the content to load from content source.",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
+              "range": [
+                3983,
+                4099
+              ]
+            }
+          ],
+          "schema": "string"
+        },
+        {
+          "name": "query",
+          "type": "undefined",
+          "description": "A query builder params object to be passed to <ContentQuery /> component.",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
+              "range": [
+                4217,
+                4345
+              ]
+            }
+          ],
+          "schema": "undefined"
         },
         {
           "name": "head",
