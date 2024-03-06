@@ -4,51 +4,51 @@
     {
       "name": "vite:load-fallback",
       "result": "<script lang=\"ts\">\nconst iconTypeMap = {\n  primary: 'heroicons-outline:check',\n  info: 'heroicons-outline:information-circle',\n  success: 'heroicons-outline:check-circle',\n  warning: 'heroicons-outline:exclamation',\n  danger: 'heroicons-outline:exclamation-circle'\n}\n\nexport default defineComponent({\n  props: {\n    /**\n     * Used to override the default <code>type</code> icon, check out the\n     *  <a href=\"https://github.com/nuxt/content/tree/dev/packages/theme-docs/src/components/global/icons\">icons available</a>\n     */\n    icon: {\n      type: String,\n      default: null\n    },\n    /**\n     * Type of list\n     */\n    type: {\n      type: String,\n      default: 'primary',\n      validator: (value: string) => ['primary', 'info', 'success', 'warning', 'danger'].includes(value)\n    }\n  },\n  setup (props) {\n    const slots = useSlots()\n\n    const { flatUnwrap, unwrap } = useUnwrap()\n\n    const iconName = computed(() => props.icon || (iconTypeMap as any)[props.type])\n\n    // Usage of render function is mandatory to access default slot\n    // Otherwise Vue warns that slot \"default\" was invoked outside of the render function\n    return () => {\n      const items = flatUnwrap((slots.default && slots.default()) ?? [], ['ul']).map(li => unwrap(li, ['li']))\n\n      return h(\n        'ul',\n        items.map(item =>\n          h('li', [\n            h('span', { class: `list-icon ${props.type}` }, h(resolveComponent('icon'), { name: iconName.value, class: 'icon' })),\n            h('span', h(resolveComponent('ContentSlot'), { use: () => item }))\n          ])\n        )\n      )\n    }\n  }\n})\n</script>\n\n<style scoped lang=\"ts\">\ncss({\n  li: {\n    marginBottom: '{space.3}',\n    display: 'flex',\n    alignItems: 'flex-start',\n    '&:last-child': {\n      marginBottom: 0\n    },\n    '.list-icon': {\n      marginInlineEnd: '{space.3}',\n      flexShrink: 0,\n      '&.primary': {\n        color: '{elements.state.primary.color.primary}'\n      },\n      '&.info': {\n        color: '{elements.state.info.color.primary}'\n      },\n      '&.success': {\n        color: '{elements.state.success.color.primary}'\n      },\n      '&.warning': {\n        color: '{elements.state.warning.color.primary}'\n      },\n      '&.danger': {\n        color: '{elements.state.danger.color.primary}'\n      },\n      '.icon': {\n        width: '{space.6}',\n        height: '{space.6}',\n      }\n    }\n  }\n})\n</style>\n",
-      "start": 1709675399448,
-      "end": 1709675399519,
+      "start": 1709714225734,
+      "end": 1709714225788,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1709675399520,
-      "end": 1709675399520,
+      "start": 1709714225788,
+      "end": 1709714225788,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1709675399520,
-      "end": 1709675399520,
+      "start": 1709714225788,
+      "end": 1709714225788,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1709675399520,
-      "end": 1709675399520,
+      "start": 1709714225788,
+      "end": 1709714225788,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1709675399520,
-      "end": 1709675399520,
+      "start": 1709714225788,
+      "end": 1709714225788,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
-      "start": 1709675399520,
-      "end": 1709675399520,
+      "start": 1709714225788,
+      "end": 1709714225788,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
-      "start": 1709675399520,
-      "end": 1709675399520,
+      "start": 1709714225788,
+      "end": 1709714225788,
       "order": "pre"
     },
     {
       "name": "content-slot",
       "result": "<script lang=\"ts\">\nconst iconTypeMap = {\n  primary: 'heroicons-outline:check',\n  info: 'heroicons-outline:information-circle',\n  success: 'heroicons-outline:check-circle',\n  warning: 'heroicons-outline:exclamation',\n  danger: 'heroicons-outline:exclamation-circle'\n}\n\nexport default defineComponent({\n  props: {\n    /**\n     * Used to override the default <code>type</code> icon, check out the\n     *  <a href=\"https://github.com/nuxt/content/tree/dev/packages/theme-docs/src/components/global/icons\">icons available</a>\n     */\n    icon: {\n      type: String,\n      default: null\n    },\n    /**\n     * Type of list\n     */\n    type: {\n      type: String,\n      default: 'primary',\n      validator: (value: string) => ['primary', 'info', 'success', 'warning', 'danger'].includes(value)\n    }\n  },\n  setup (props) {\n    const slots = useSlots()\n\n    const { flatUnwrap, unwrap } = useUnwrap()\n\n    const iconName = computed(() => props.icon || (iconTypeMap as any)[props.type])\n\n    // Usage of render function is mandatory to access default slot\n    // Otherwise Vue warns that slot \"default\" was invoked outside of the render function\n    return () => {\n      const items = flatUnwrap((slots.default && slots.default()) ?? [], ['ul']).map(li => unwrap(li, ['li']))\n\n      return h(\n        'ul',\n        items.map(item =>\n          h('li', [\n            h('span', { class: `list-icon ${props.type}` }, h(resolveComponent('icon'), { name: iconName.value, class: 'icon' })),\n            h('span', h(resolveComponent('MDCSlot'), { use: () => item }))\n          ])\n        )\n      )\n    }\n  }\n})\n</script>\n\n<style scoped lang=\"ts\">\ncss({\n  li: {\n    marginBottom: '{space.3}',\n    display: 'flex',\n    alignItems: 'flex-start',\n    '&:last-child': {\n      marginBottom: 0\n    },\n    '.list-icon': {\n      marginInlineEnd: '{space.3}',\n      flexShrink: 0,\n      '&.primary': {\n        color: '{elements.state.primary.color.primary}'\n      },\n      '&.info': {\n        color: '{elements.state.info.color.primary}'\n      },\n      '&.success': {\n        color: '{elements.state.success.color.primary}'\n      },\n      '&.warning': {\n        color: '{elements.state.warning.color.primary}'\n      },\n      '&.danger': {\n        color: '{elements.state.danger.color.primary}'\n      },\n      '.icon': {\n        width: '{space.6}',\n        height: '{space.6}',\n      }\n    }\n  }\n})\n</style>\n",
-      "start": 1709675399520,
-      "end": 1709675399520,
+      "start": 1709714225788,
+      "end": 1709714225788,
       "order": "pre",
       "sourcemaps": {
         "mappings": ""
@@ -57,8 +57,8 @@
     {
       "name": "content-slot",
       "result": "<script lang=\"ts\">\nconst iconTypeMap = {\n  primary: 'heroicons-outline:check',\n  info: 'heroicons-outline:information-circle',\n  success: 'heroicons-outline:check-circle',\n  warning: 'heroicons-outline:exclamation',\n  danger: 'heroicons-outline:exclamation-circle'\n}\n\nexport default defineComponent({\n  props: {\n    /**\n     * Used to override the default <code>type</code> icon, check out the\n     *  <a href=\"https://github.com/nuxt/content/tree/dev/packages/theme-docs/src/components/global/icons\">icons available</a>\n     */\n    icon: {\n      type: String,\n      default: null\n    },\n    /**\n     * Type of list\n     */\n    type: {\n      type: String,\n      default: 'primary',\n      validator: (value: string) => ['primary', 'info', 'success', 'warning', 'danger'].includes(value)\n    }\n  },\n  setup (props) {\n    const slots = useSlots()\n\n    const { flatUnwrap, unwrap } = useUnwrap()\n\n    const iconName = computed(() => props.icon || (iconTypeMap as any)[props.type])\n\n    // Usage of render function is mandatory to access default slot\n    // Otherwise Vue warns that slot \"default\" was invoked outside of the render function\n    return () => {\n      const items = flatUnwrap((slots.default && slots.default()) ?? [], ['ul']).map(li => unwrap(li, ['li']))\n\n      return h(\n        'ul',\n        items.map(item =>\n          h('li', [\n            h('span', { class: `list-icon ${props.type}` }, h(resolveComponent('icon'), { name: iconName.value, class: 'icon' })),\n            h('span', h(resolveComponent('MDCSlot'), { use: () => item }))\n          ])\n        )\n      )\n    }\n  }\n})\n</script>\n\n<style scoped lang=\"ts\">\ncss({\n  li: {\n    marginBottom: '{space.3}',\n    display: 'flex',\n    alignItems: 'flex-start',\n    '&:last-child': {\n      marginBottom: 0\n    },\n    '.list-icon': {\n      marginInlineEnd: '{space.3}',\n      flexShrink: 0,\n      '&.primary': {\n        color: '{elements.state.primary.color.primary}'\n      },\n      '&.info': {\n        color: '{elements.state.info.color.primary}'\n      },\n      '&.success': {\n        color: '{elements.state.success.color.primary}'\n      },\n      '&.warning': {\n        color: '{elements.state.warning.color.primary}'\n      },\n      '&.danger': {\n        color: '{elements.state.danger.color.primary}'\n      },\n      '.icon': {\n        width: '{space.6}',\n        height: '{space.6}',\n      }\n    }\n  }\n})\n</style>\n",
-      "start": 1709675399520,
-      "end": 1709675399520,
+      "start": 1709714225788,
+      "end": 1709714225788,
       "order": "pre",
       "sourcemaps": {
         "mappings": ""
@@ -66,39 +66,39 @@
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1709675399520,
-      "end": 1709675399520,
+      "start": 1709714225788,
+      "end": 1709714225788,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1709675399520,
-      "end": 1709675399520,
+      "start": 1709714225788,
+      "end": 1709714225788,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1709675399520,
-      "end": 1709675399520,
+      "start": 1709714225788,
+      "end": 1709714225788,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1709675399520,
-      "end": 1709675399520,
+      "start": 1709714225788,
+      "end": 1709714225788,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1709675399520,
-      "end": 1709675399520,
+      "start": 1709714225788,
+      "end": 1709714225788,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "import _sfc_main from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/List.vue?vue&type=script&lang.ts\";\nexport * from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/List.vue?vue&type=script&lang.ts\";\nimport \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/List.vue?vue&type=style&index=0&scoped=1a92920e&lang.ts\";\nimport { useSSRContext as __vite_useSSRContext } from \"vue\";\nconst _sfc_setup = _sfc_main.setup;\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext();\n  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add(\"node_modules/@nuxt-themes/elements/components/globals/List.vue\");\n  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;\n};\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"__scopeId\", \"data-v-1a92920e\"]]);\n",
-      "start": 1709675399520,
-      "end": 1709675399577,
+      "start": 1709714225788,
+      "end": 1709714225791,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -106,178 +106,178 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1709675399577,
-      "end": 1709675399577,
+      "start": 1709714225791,
+      "end": 1709714225791,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709675399577,
-      "end": 1709675399577,
+      "start": 1709714225791,
+      "end": 1709714225791,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709675399577,
-      "end": 1709675399577,
+      "start": 1709714225791,
+      "end": 1709714225791,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1709675399577,
-      "end": 1709675399577,
+      "start": 1709714225792,
+      "end": 1709714225792,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1709675399577,
-      "end": 1709675399577,
+      "start": 1709714225792,
+      "end": 1709714225792,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
       "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/List.vue\").then(r => r.default))",
-      "start": 1709675399577,
-      "end": 1709675399577,
+      "start": 1709714225792,
+      "end": 1709714225792,
       "order": "normal",
       "sourcemaps": null
     },
     {
       "name": "replace",
-      "start": 1709675399577,
-      "end": 1709675399577,
+      "start": 1709714225792,
+      "end": 1709714225792,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1709675399577,
-      "end": 1709675399577,
+      "start": 1709714225792,
+      "end": 1709714225792,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1709675399578,
-      "end": 1709675399578,
+      "start": 1709714225792,
+      "end": 1709714225792,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1709675399578,
-      "end": 1709675399578,
+      "start": 1709714225792,
+      "end": 1709714225792,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1709675399578,
-      "end": 1709675399578,
+      "start": 1709714225792,
+      "end": 1709714225792,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1709675399578,
-      "end": 1709675399578,
+      "start": 1709714225792,
+      "end": 1709714225792,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1709675399578,
-      "end": 1709675399578,
+      "start": 1709714225792,
+      "end": 1709714225792,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1709675399578,
-      "end": 1709675399578,
+      "start": 1709714225793,
+      "end": 1709714225793,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1709675399578,
-      "end": 1709675399578,
+      "start": 1709714225793,
+      "end": 1709714225793,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1709675399578,
-      "end": 1709675399578,
+      "start": 1709714225793,
+      "end": 1709714225793,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1709675399578,
-      "end": 1709675399578,
+      "start": 1709714225793,
+      "end": 1709714225793,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1709675399578,
-      "end": 1709675399578,
+      "start": 1709714225793,
+      "end": 1709714225793,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1709675399578,
-      "end": 1709675399579,
+      "start": 1709714225793,
+      "end": 1709714225794,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1709675399578,
-      "end": 1709675399579,
+      "start": 1709714225793,
+      "end": 1709714225794,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1709675399579,
-      "end": 1709675399579,
+      "start": 1709714225794,
+      "end": 1709714225794,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1709675399579,
-      "end": 1709675399579,
+      "start": 1709714225794,
+      "end": 1709714225794,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1709675399579,
-      "end": 1709675399580,
+      "start": 1709714225794,
+      "end": 1709714225794,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1709675399579,
-      "end": 1709675399580,
+      "start": 1709714225794,
+      "end": 1709714225794,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1709675399580,
-      "end": 1709675399580,
+      "start": 1709714225795,
+      "end": 1709714225795,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1709675399580,
-      "end": 1709675399580,
+      "start": 1709714225795,
+      "end": 1709714225795,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1709675399580,
-      "end": 1709675399580,
+      "start": 1709714225795,
+      "end": 1709714225795,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1709675399580,
-      "end": 1709675399580,
+      "start": 1709714225795,
+      "end": 1709714225795,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1709675399580,
-      "end": 1709675399580,
+      "start": 1709714225795,
+      "end": 1709714225795,
       "order": "normal"
     }
   ]

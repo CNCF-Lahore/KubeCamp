@@ -4,219 +4,219 @@
     {
       "name": "vite:load-fallback",
       "result": "import { isBinary } from \"./is-binary.js\";\n/**\n * Replaces every Buffer | ArrayBuffer | Blob | File in packet with a numbered placeholder.\n *\n * @param {Object} packet - socket.io event packet\n * @return {Object} with deconstructed packet and list of buffers\n * @public\n */\nexport function deconstructPacket(packet) {\n    const buffers = [];\n    const packetData = packet.data;\n    const pack = packet;\n    pack.data = _deconstructPacket(packetData, buffers);\n    pack.attachments = buffers.length; // number of binary 'attachments'\n    return { packet: pack, buffers: buffers };\n}\nfunction _deconstructPacket(data, buffers) {\n    if (!data)\n        return data;\n    if (isBinary(data)) {\n        const placeholder = { _placeholder: true, num: buffers.length };\n        buffers.push(data);\n        return placeholder;\n    }\n    else if (Array.isArray(data)) {\n        const newData = new Array(data.length);\n        for (let i = 0; i < data.length; i++) {\n            newData[i] = _deconstructPacket(data[i], buffers);\n        }\n        return newData;\n    }\n    else if (typeof data === \"object\" && !(data instanceof Date)) {\n        const newData = {};\n        for (const key in data) {\n            if (Object.prototype.hasOwnProperty.call(data, key)) {\n                newData[key] = _deconstructPacket(data[key], buffers);\n            }\n        }\n        return newData;\n    }\n    return data;\n}\n/**\n * Reconstructs a binary packet from its placeholder packet and buffers\n *\n * @param {Object} packet - event packet with placeholders\n * @param {Array} buffers - binary buffers to put in placeholder positions\n * @return {Object} reconstructed packet\n * @public\n */\nexport function reconstructPacket(packet, buffers) {\n    packet.data = _reconstructPacket(packet.data, buffers);\n    delete packet.attachments; // no longer useful\n    return packet;\n}\nfunction _reconstructPacket(data, buffers) {\n    if (!data)\n        return data;\n    if (data && data._placeholder === true) {\n        const isIndexValid = typeof data.num === \"number\" &&\n            data.num >= 0 &&\n            data.num < buffers.length;\n        if (isIndexValid) {\n            return buffers[data.num]; // appropriate buffer (should be natural order anyway)\n        }\n        else {\n            throw new Error(\"illegal attachments\");\n        }\n    }\n    else if (Array.isArray(data)) {\n        for (let i = 0; i < data.length; i++) {\n            data[i] = _reconstructPacket(data[i], buffers);\n        }\n    }\n    else if (typeof data === \"object\") {\n        for (const key in data) {\n            if (Object.prototype.hasOwnProperty.call(data, key)) {\n                data[key] = _reconstructPacket(data[key], buffers);\n            }\n        }\n    }\n    return data;\n}\n",
-      "start": 1709675395284,
-      "end": 1709675395344,
+      "start": 1709714222961,
+      "end": 1709714223222,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1709675395344,
-      "end": 1709675395344,
+      "start": 1709714223222,
+      "end": 1709714223222,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1709675395344,
-      "end": 1709675395344,
+      "start": 1709714223222,
+      "end": 1709714223222,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { isBinary } from \"./is-binary.js\";\n/**\n * Replaces every Buffer | ArrayBuffer | Blob | File in packet with a numbered placeholder.\n *\n * @param {Object} packet - socket.io event packet\n * @return {Object} with deconstructed packet and list of buffers\n * @public\n */\nexport function deconstructPacket(packet) {\n    const buffers = [];\n    const packetData = packet.data;\n    const pack = packet;\n    pack.data = _deconstructPacket(packetData, buffers);\n    pack.attachments = buffers.length; // number of binary 'attachments'\n    return { packet: pack, buffers: buffers };\n}\nfunction _deconstructPacket(data, buffers) {\n    if (!data)\n        return data;\n    if (isBinary(data)) {\n        const placeholder = { _placeholder: true, num: buffers.length };\n        buffers.push(data);\n        return placeholder;\n    }\n    else if (Array.isArray(data)) {\n        const newData = new Array(data.length);\n        for (let i = 0; i < data.length; i++) {\n            newData[i] = _deconstructPacket(data[i], buffers);\n        }\n        return newData;\n    }\n    else if (typeof data === \"object\" && !(data instanceof Date)) {\n        const newData = {};\n        for (const key in data) {\n            if (Object.prototype.hasOwnProperty.call(data, key)) {\n                newData[key] = _deconstructPacket(data[key], buffers);\n            }\n        }\n        return newData;\n    }\n    return data;\n}\n/**\n * Reconstructs a binary packet from its placeholder packet and buffers\n *\n * @param {Object} packet - event packet with placeholders\n * @param {Array} buffers - binary buffers to put in placeholder positions\n * @return {Object} reconstructed packet\n * @public\n */\nexport function reconstructPacket(packet, buffers) {\n    packet.data = _reconstructPacket(packet.data, buffers);\n    delete packet.attachments; // no longer useful\n    return packet;\n}\nfunction _reconstructPacket(data, buffers) {\n    if (!data)\n        return data;\n    if (data && data._placeholder === true) {\n        const isIndexValid = typeof data.num === \"number\" &&\n            data.num >= 0 &&\n            data.num < buffers.length;\n        if (isIndexValid) {\n            return buffers[data.num]; // appropriate buffer (should be natural order anyway)\n        }\n        else {\n            throw new Error(\"illegal attachments\");\n        }\n    }\n    else if (Array.isArray(data)) {\n        for (let i = 0; i < data.length; i++) {\n            data[i] = _reconstructPacket(data[i], buffers);\n        }\n    }\n    else if (typeof data === \"object\") {\n        for (const key in data) {\n            if (Object.prototype.hasOwnProperty.call(data, key)) {\n                data[key] = _reconstructPacket(data[key], buffers);\n            }\n        }\n    }\n    return data;\n}\n",
-      "start": 1709675395344,
-      "end": 1709675395344,
+      "start": 1709714223222,
+      "end": 1709714223222,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1709675395344,
-      "end": 1709675395344,
+      "start": 1709714223222,
+      "end": 1709714223222,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1709675395344,
-      "end": 1709675395344,
+      "start": 1709714223222,
+      "end": 1709714223222,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1709675395344,
-      "end": 1709675395344,
+      "start": 1709714223222,
+      "end": 1709714223222,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1709675395344,
-      "end": 1709675395344,
+      "start": 1709714223222,
+      "end": 1709714223222,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1709675395344,
-      "end": 1709675395344,
+      "start": 1709714223222,
+      "end": 1709714223222,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1709675395344,
-      "end": 1709675395344,
+      "start": 1709714223222,
+      "end": 1709714223222,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1709675395344,
-      "end": 1709675395344,
+      "start": 1709714223222,
+      "end": 1709714223222,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1709675395344,
-      "end": 1709675395344,
+      "start": 1709714223222,
+      "end": 1709714223222,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709675395344,
-      "end": 1709675395344,
+      "start": 1709714223222,
+      "end": 1709714223222,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1709675395345,
-      "end": 1709675395345,
+      "start": 1709714223222,
+      "end": 1709714223222,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1709675395345,
-      "end": 1709675395345,
+      "start": 1709714223222,
+      "end": 1709714223222,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1709675395345,
-      "end": 1709675395345,
+      "start": 1709714223222,
+      "end": 1709714223222,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709675395345,
-      "end": 1709675395345,
+      "start": 1709714223222,
+      "end": 1709714223222,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1709675395345,
-      "end": 1709675395345,
+      "start": 1709714223222,
+      "end": 1709714223222,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1709675395345,
-      "end": 1709675395345,
+      "start": 1709714223222,
+      "end": 1709714223222,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1709675395345,
-      "end": 1709675395345,
+      "start": 1709714223222,
+      "end": 1709714223222,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1709675395345,
-      "end": 1709675395345,
+      "start": 1709714223222,
+      "end": 1709714223222,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1709675395345,
-      "end": 1709675395345,
+      "start": 1709714223222,
+      "end": 1709714223222,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1709675395345,
-      "end": 1709675395345,
+      "start": 1709714223222,
+      "end": 1709714223222,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1709675395345,
-      "end": 1709675395345,
+      "start": 1709714223222,
+      "end": 1709714223223,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1709675395345,
-      "end": 1709675395345,
+      "start": 1709714223223,
+      "end": 1709714223223,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1709675395345,
-      "end": 1709675395345,
+      "start": 1709714223223,
+      "end": 1709714223223,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1709675395345,
-      "end": 1709675395345,
+      "start": 1709714223223,
+      "end": 1709714223223,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1709675395345,
-      "end": 1709675395345,
+      "start": 1709714223223,
+      "end": 1709714223223,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1709675395345,
-      "end": 1709675395345,
+      "start": 1709714223223,
+      "end": 1709714223223,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1709675395345,
-      "end": 1709675395345,
+      "start": 1709714223223,
+      "end": 1709714223223,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1709675395345,
-      "end": 1709675395345,
+      "start": 1709714223223,
+      "end": 1709714223223,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1709675395345,
-      "end": 1709675395345,
+      "start": 1709714223223,
+      "end": 1709714223223,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1709675395345,
-      "end": 1709675395345,
+      "start": 1709714223223,
+      "end": 1709714223223,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1709675395345,
-      "end": 1709675395345,
+      "start": 1709714223223,
+      "end": 1709714223223,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1709675395345,
-      "end": 1709675395345,
+      "start": 1709714223223,
+      "end": 1709714223223,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1709675395345,
-      "end": 1709675395345,
+      "start": 1709714223223,
+      "end": 1709714223223,
       "order": "normal"
     }
   ]

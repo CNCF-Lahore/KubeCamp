@@ -4,174 +4,174 @@
     {
       "name": "vite:load-fallback",
       "result": "import { hash } from \"ohash\";\nimport { encodeQueryParams } from \"../../utils/query.js\";\nimport { jsonStringify } from \"../../utils/json.js\";\nimport { addPrerenderPath, shouldUseClientDB, withContentBase } from \"../../composables/utils.js\";\nimport { useContentPreview } from \"../../composables/preview.js\";\nimport { queryContent } from \"./query.js\";\nimport { useRuntimeConfig } from \"#imports\";\nexport const fetchContentNavigation = async (queryBuilder) => {\n  const { content } = useRuntimeConfig().public;\n  if (typeof queryBuilder?.params !== \"function\") {\n    queryBuilder = queryContent(queryBuilder);\n  }\n  const params = queryBuilder.params();\n  const apiPath = content.experimental.stripQueryParameters ? withContentBase(`/navigation/${process.dev ? \"_\" : `${hash(params)}.${content.integrity}`}/${encodeQueryParams(params)}.json`) : withContentBase(process.dev ? `/navigation/${hash(params)}` : `/navigation/${hash(params)}.${content.integrity}.json`);\n  if (!process.dev && process.server) {\n    addPrerenderPath(apiPath);\n  }\n  if (shouldUseClientDB()) {\n    const generateNavigation = await import(\"./client-db.js\").then((m) => m.generateNavigation);\n    return generateNavigation(params);\n  }\n  const data = await $fetch(apiPath, {\n    method: \"GET\",\n    responseType: \"json\",\n    params: content.experimental.stripQueryParameters ? void 0 : {\n      _params: jsonStringify(params),\n      previewToken: useContentPreview().getPreviewToken()\n    }\n  });\n  if (typeof data === \"string\" && data.startsWith(\"<!DOCTYPE html>\")) {\n    throw new Error(\"Not found\");\n  }\n  return data;\n};\n",
-      "start": 1709675390446,
-      "end": 1709675390569,
+      "start": 1709714220077,
+      "end": 1709714220172,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1709675390569,
-      "end": 1709675390569,
+      "start": 1709714220172,
+      "end": 1709714220172,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1709675390569,
-      "end": 1709675390569,
+      "start": 1709714220172,
+      "end": 1709714220172,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { hash } from \"ohash\";\nimport { encodeQueryParams } from \"../../utils/query.js\";\nimport { jsonStringify } from \"../../utils/json.js\";\nimport { addPrerenderPath, shouldUseClientDB, withContentBase } from \"../../composables/utils.js\";\nimport { useContentPreview } from \"../../composables/preview.js\";\nimport { queryContent } from \"./query.js\";\nimport { useRuntimeConfig } from \"#imports\";\nexport const fetchContentNavigation = async (queryBuilder) => {\n  const { content } = useRuntimeConfig().public;\n  if (typeof queryBuilder?.params !== \"function\") {\n    queryBuilder = queryContent(queryBuilder);\n  }\n  const params = queryBuilder.params();\n  const apiPath = content.experimental.stripQueryParameters ? withContentBase(`/navigation/${process.dev ? \"_\" : `${hash(params)}.${content.integrity}`}/${encodeQueryParams(params)}.json`) : withContentBase(process.dev ? `/navigation/${hash(params)}` : `/navigation/${hash(params)}.${content.integrity}.json`);\n  if (!process.dev && process.server) {\n    addPrerenderPath(apiPath);\n  }\n  if (shouldUseClientDB()) {\n    const generateNavigation = await import(\"./client-db.js\").then((m) => m.generateNavigation);\n    return generateNavigation(params);\n  }\n  const data = await $fetch(apiPath, {\n    method: \"GET\",\n    responseType: \"json\",\n    params: content.experimental.stripQueryParameters ? void 0 : {\n      _params: jsonStringify(params),\n      previewToken: useContentPreview().getPreviewToken()\n    }\n  });\n  if (typeof data === \"string\" && data.startsWith(\"<!DOCTYPE html>\")) {\n    throw new Error(\"Not found\");\n  }\n  return data;\n};\n",
-      "start": 1709675390569,
-      "end": 1709675390569,
+      "start": 1709714220172,
+      "end": 1709714220172,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1709675390569,
-      "end": 1709675390569,
+      "start": 1709714220172,
+      "end": 1709714220172,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1709675390569,
-      "end": 1709675390569,
+      "start": 1709714220172,
+      "end": 1709714220172,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1709675390569,
-      "end": 1709675390569,
+      "start": 1709714220172,
+      "end": 1709714220172,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1709675390569,
-      "end": 1709675390569,
+      "start": 1709714220172,
+      "end": 1709714220172,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1709675390569,
-      "end": 1709675390569,
+      "start": 1709714220172,
+      "end": 1709714220172,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1709675390569,
-      "end": 1709675390569,
+      "start": 1709714220172,
+      "end": 1709714220172,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1709675390569,
-      "end": 1709675390569,
+      "start": 1709714220172,
+      "end": 1709714220172,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1709675390569,
-      "end": 1709675390569,
+      "start": 1709714220172,
+      "end": 1709714220172,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709675390569,
-      "end": 1709675390569,
+      "start": 1709714220172,
+      "end": 1709714220172,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1709675390569,
-      "end": 1709675390569,
+      "start": 1709714220172,
+      "end": 1709714220172,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1709675390569,
-      "end": 1709675390569,
+      "start": 1709714220172,
+      "end": 1709714220172,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1709675390569,
-      "end": 1709675390569,
+      "start": 1709714220172,
+      "end": 1709714220172,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709675390569,
-      "end": 1709675390569,
+      "start": 1709714220172,
+      "end": 1709714220172,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1709675390569,
-      "end": 1709675390569,
+      "start": 1709714220172,
+      "end": 1709714220172,
       "order": "normal"
     },
     {
       "name": "vite:define",
       "result": "import { hash } from \"ohash\";\nimport { encodeQueryParams } from \"../../utils/query.js\";\nimport { jsonStringify } from \"../../utils/json.js\";\nimport { addPrerenderPath, shouldUseClientDB, withContentBase } from \"../../composables/utils.js\";\nimport { useContentPreview } from \"../../composables/preview.js\";\nimport { queryContent } from \"./query.js\";\nimport { useRuntimeConfig } from \"#imports\";\nexport const fetchContentNavigation = async (queryBuilder) => {\n  const { content } = useRuntimeConfig().public;\n  if (typeof queryBuilder?.params !== \"function\") {\n    queryBuilder = queryContent(queryBuilder);\n  }\n  const params = queryBuilder.params();\n  const apiPath = content.experimental.stripQueryParameters ? withContentBase(`/navigation/${false ? \"_\" : `${hash(params)}.${content.integrity}`}/${encodeQueryParams(params)}.json`) : withContentBase(false ? `/navigation/${hash(params)}` : `/navigation/${hash(params)}.${content.integrity}.json`);\n  if (false) {\n    addPrerenderPath(apiPath);\n  }\n  if (shouldUseClientDB()) {\n    const generateNavigation = await import(\"./client-db.js\").then((m) => m.generateNavigation);\n    return generateNavigation(params);\n  }\n  const data = await $fetch(apiPath, {\n    method: \"GET\",\n    responseType: \"json\",\n    params: content.experimental.stripQueryParameters ? void 0 : {\n      _params: jsonStringify(params),\n      previewToken: useContentPreview().getPreviewToken()\n    }\n  });\n  if (typeof data === \"string\" && data.startsWith(\"<!DOCTYPE html>\")) {\n    throw new Error(\"Not found\");\n  }\n  return data;\n};\n",
-      "start": 1709675390570,
-      "end": 1709675390766,
+      "start": 1709714220172,
+      "end": 1709714220271,
       "order": "normal",
       "sourcemaps": null
     },
     {
       "name": "vite:css-post",
-      "start": 1709675390766,
-      "end": 1709675390766,
+      "start": 1709714220271,
+      "end": 1709714220271,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1709675390766,
-      "end": 1709675390766,
+      "start": 1709714220271,
+      "end": 1709714220271,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1709675390766,
-      "end": 1709675390766,
+      "start": 1709714220271,
+      "end": 1709714220271,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1709675390766,
-      "end": 1709675390766,
+      "start": 1709714220271,
+      "end": 1709714220271,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1709675390766,
-      "end": 1709675390767,
+      "start": 1709714220271,
+      "end": 1709714220272,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1709675390767,
-      "end": 1709675390767,
+      "start": 1709714220272,
+      "end": 1709714220272,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1709675390767,
-      "end": 1709675390767,
+      "start": 1709714220272,
+      "end": 1709714220272,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1709675390767,
-      "end": 1709675390768,
+      "start": 1709714220272,
+      "end": 1709714220272,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { useRuntimeConfig } from '#app/nuxt';\nimport { hash } from \"ohash\";\nimport { encodeQueryParams } from \"../../utils/query.js\";\nimport { jsonStringify } from \"../../utils/json.js\";\nimport { addPrerenderPath, shouldUseClientDB, withContentBase } from \"../../composables/utils.js\";\nimport { useContentPreview } from \"../../composables/preview.js\";\nimport { queryContent } from \"./query.js\";\nexport const fetchContentNavigation = async (queryBuilder) => {\n  const { content } = useRuntimeConfig().public;\n  if (typeof queryBuilder?.params !== \"function\") {\n    queryBuilder = queryContent(queryBuilder);\n  }\n  const params = queryBuilder.params();\n  const apiPath = content.experimental.stripQueryParameters ? withContentBase(`/navigation/${false ? \"_\" : `${hash(params)}.${content.integrity}`}/${encodeQueryParams(params)}.json`) : withContentBase(false ? `/navigation/${hash(params)}` : `/navigation/${hash(params)}.${content.integrity}.json`);\n  if (false) {\n    addPrerenderPath(apiPath);\n  }\n  if (shouldUseClientDB()) {\n    const generateNavigation = await import(\"./client-db.js\").then((m) => m.generateNavigation);\n    return generateNavigation(params);\n  }\n  const data = await $fetch(apiPath, {\n    method: \"GET\",\n    responseType: \"json\",\n    params: content.experimental.stripQueryParameters ? void 0 : {\n      _params: jsonStringify(params),\n      previewToken: useContentPreview().getPreviewToken()\n    }\n  });\n  if (typeof data === \"string\" && data.startsWith(\"<!DOCTYPE html>\")) {\n    throw new Error(\"Not found\");\n  }\n  return data;\n};\n",
-      "start": 1709675390768,
-      "end": 1709675390770,
+      "start": 1709714220272,
+      "end": 1709714220274,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -184,52 +184,52 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1709675390770,
-      "end": 1709675390770,
+      "start": 1709714220274,
+      "end": 1709714220274,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1709675390770,
-      "end": 1709675390770,
+      "start": 1709714220274,
+      "end": 1709714220274,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1709675390771,
-      "end": 1709675390771,
+      "start": 1709714220274,
+      "end": 1709714220274,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1709675390771,
-      "end": 1709675390771,
+      "start": 1709714220274,
+      "end": 1709714220274,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1709675390771,
-      "end": 1709675390771,
+      "start": 1709714220274,
+      "end": 1709714220274,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1709675390771,
-      "end": 1709675390771,
+      "start": 1709714220274,
+      "end": 1709714220274,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
       "result": "import { __vitePreload } from \"\u0000vite/preload-helper.js\";import { useRuntimeConfig } from '#app/nuxt';\nimport { hash } from \"ohash\";\nimport { encodeQueryParams } from \"../../utils/query.js\";\nimport { jsonStringify } from \"../../utils/json.js\";\nimport { addPrerenderPath, shouldUseClientDB, withContentBase } from \"../../composables/utils.js\";\nimport { useContentPreview } from \"../../composables/preview.js\";\nimport { queryContent } from \"./query.js\";\nexport const fetchContentNavigation = async (queryBuilder) => {\n  const { content } = useRuntimeConfig().public;\n  if (typeof queryBuilder?.params !== \"function\") {\n    queryBuilder = queryContent(queryBuilder);\n  }\n  const params = queryBuilder.params();\n  const apiPath = content.experimental.stripQueryParameters ? withContentBase(`/navigation/${false ? \"_\" : `${hash(params)}.${content.integrity}`}/${encodeQueryParams(params)}.json`) : withContentBase(false ? `/navigation/${hash(params)}` : `/navigation/${hash(params)}.${content.integrity}.json`);\n  if (false) {\n    addPrerenderPath(apiPath);\n  }\n  if (shouldUseClientDB()) {\n    const generateNavigation = await __vitePreload(() => import(\"./client-db.js\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then((m) => m.generateNavigation);\n    return generateNavigation(params);\n  }\n  const data = await $fetch(apiPath, {\n    method: \"GET\",\n    responseType: \"json\",\n    params: content.experimental.stripQueryParameters ? void 0 : {\n      _params: jsonStringify(params),\n      previewToken: useContentPreview().getPreviewToken()\n    }\n  });\n  if (typeof data === \"string\" && data.startsWith(\"<!DOCTYPE html>\")) {\n    throw new Error(\"Not found\");\n  }\n  return data;\n};\n",
-      "start": 1709675390772,
-      "end": 1709675390773,
+      "start": 1709714220275,
+      "end": 1709714220275,
       "order": "normal",
       "sourcemaps": null
     },
     {
       "name": "vite:reporter",
-      "start": 1709675390774,
-      "end": 1709675390774,
+      "start": 1709714220276,
+      "end": 1709714220276,
       "order": "normal"
     }
   ]

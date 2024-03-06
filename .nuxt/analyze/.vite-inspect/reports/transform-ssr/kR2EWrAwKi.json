@@ -4,8 +4,8 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderSlot as _ssrRenderSlot, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\nimport { ssrRenderSlot as _ssrRenderMDCSlot } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/utils/ssrSlot'\n\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'Badge',\n  __ssrInlineRender: true,\n  props: {\n  /**\n   * @values info, success, warning, danger\n   */\n  type: {\n    type: String,\n    default: 'info',\n    validator (value: string) {\n      return ['info', 'success', 'warning', 'danger', 'primary'].includes(value)\n    }\n  }\n},\n  setup(__props) {\n\n\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_MDCSlot = _resolveComponent(\"MDCSlot\")!\n\n  _push(`<span${_ssrRenderAttrs(_mergeProps({\n    class: [[__props.type], \"badge\"]\n  }, _attrs))} data-v-0f05aaa2>`)\n  _ssrRenderMDCSlot(_ctx.$slots, \"default\", { unwrap: \"p\" }, null, _push, _parent)\n  _push(`</span>`)\n}\n}\n\n})",
-      "start": 1709675401682,
-      "end": 1709675401682,
+      "start": 1709714227425,
+      "end": 1709714227425,
       "sourcemaps": {
         "version": 3,
         "sources": [
@@ -20,71 +20,71 @@
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1709675401683,
-      "end": 1709675401683,
+      "start": 1709714227425,
+      "end": 1709714227425,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1709675401683,
-      "end": 1709675401683,
+      "start": 1709714227425,
+      "end": 1709714227425,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1709675401686,
-      "end": 1709675401686,
+      "start": 1709714227428,
+      "end": 1709714227428,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1709675401686,
-      "end": 1709675401686,
+      "start": 1709714227428,
+      "end": 1709714227428,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderSlot as _ssrRenderSlot, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\nimport { ssrRenderSlot as _ssrRenderMDCSlot } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/utils/ssrSlot'\n\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'Badge',\n  __ssrInlineRender: true,\n  props: {\n  /**\n   * @values info, success, warning, danger\n   */\n  type: {\n    type: String,\n    default: 'info',\n    validator (value: string) {\n      return ['info', 'success', 'warning', 'danger', 'primary'].includes(value)\n    }\n  }\n},\n  setup(__props) {\n\n\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_MDCSlot = _resolveComponent(\"MDCSlot\")!\n\n  _push(`<span${_ssrRenderAttrs(_mergeProps({\n    class: [[__props.type], \"badge\"]\n  }, _attrs))} data-v-0f05aaa2>`)\n  _ssrRenderMDCSlot(_ctx.$slots, \"default\", { unwrap: \"p\" }, null, _push, _parent)\n  _push(`</span>`)\n}\n}\n\n})",
-      "start": 1709675401687,
-      "end": 1709675401687,
+      "start": 1709714227428,
+      "end": 1709714227428,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderSlot as _ssrRenderSlot, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\nimport { ssrRenderSlot as _ssrRenderMDCSlot } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/utils/ssrSlot'\n\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'Badge',\n  __ssrInlineRender: true,\n  props: {\n  /**\n   * @values info, success, warning, danger\n   */\n  type: {\n    type: String,\n    default: 'info',\n    validator (value: string) {\n      return ['info', 'success', 'warning', 'danger', 'primary'].includes(value)\n    }\n  }\n},\n  setup(__props) {\n\n\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_MDCSlot = _resolveComponent(\"MDCSlot\")!\n\n  _push(`<span${_ssrRenderAttrs(_mergeProps({\n    class: [[__props.type], \"badge\"]\n  }, _attrs))} data-v-0f05aaa2>`)\n  _ssrRenderMDCSlot(_ctx.$slots, \"default\", { unwrap: \"p\" }, null, _push, _parent)\n  _push(`</span>`)\n}\n}\n\n})",
-      "start": 1709675401687,
-      "end": 1709675401687,
+      "start": 1709714227428,
+      "end": 1709714227428,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1709675401687,
-      "end": 1709675401688,
+      "start": 1709714227428,
+      "end": 1709714227428,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1709675401687,
-      "end": 1709675401688,
+      "start": 1709714227428,
+      "end": 1709714227428,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1709675401688,
-      "end": 1709675401688,
+      "start": 1709714227429,
+      "end": 1709714227429,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1709675401688,
-      "end": 1709675401688,
+      "start": 1709714227429,
+      "end": 1709714227429,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nimport { ssrRenderSlot as _ssrRenderMDCSlot } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/utils/ssrSlot\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"Badge\",\n  __ssrInlineRender: true,\n  props: {\n    /**\n     * @values info, success, warning, danger\n     */\n    type: {\n      type: String,\n      default: \"info\",\n      validator(value) {\n        return [\"info\", \"success\", \"warning\", \"danger\", \"primary\"].includes(value);\n      }\n    }\n  },\n  setup(__props) {\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_MDCSlot = _resolveComponent(\"MDCSlot\");\n      _push(`<span${_ssrRenderAttrs(_mergeProps({\n        class: [[__props.type], \"badge\"]\n      }, _attrs))} data-v-0f05aaa2>`);\n      _ssrRenderMDCSlot(_ctx.$slots, \"default\", { unwrap: \"p\" }, null, _push, _parent);\n      _push(`</span>`);\n    };\n  }\n});\n",
-      "start": 1709675401688,
-      "end": 1709675402068,
+      "start": 1709714227429,
+      "end": 1709714227756,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -100,177 +100,177 @@
     },
     {
       "name": "vite:json",
-      "start": 1709675402068,
-      "end": 1709675402068,
+      "start": 1709714227756,
+      "end": 1709714227756,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1709675402068,
-      "end": 1709675402068,
+      "start": 1709714227756,
+      "end": 1709714227756,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1709675402069,
-      "end": 1709675402069,
+      "start": 1709714227757,
+      "end": 1709714227757,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1709675402069,
-      "end": 1709675402069,
+      "start": 1709714227757,
+      "end": 1709714227757,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709675402069,
-      "end": 1709675402069,
+      "start": 1709714227757,
+      "end": 1709714227757,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709675402069,
-      "end": 1709675402069,
+      "start": 1709714227757,
+      "end": 1709714227757,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1709675402069,
-      "end": 1709675402069,
+      "start": 1709714227757,
+      "end": 1709714227757,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1709675402069,
-      "end": 1709675402069,
+      "start": 1709714227757,
+      "end": 1709714227757,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1709675402070,
-      "end": 1709675402070,
+      "start": 1709714227757,
+      "end": 1709714227757,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709675402070,
-      "end": 1709675402070,
+      "start": 1709714227757,
+      "end": 1709714227757,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1709675402071,
-      "end": 1709675402071,
+      "start": 1709714227758,
+      "end": 1709714227758,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1709675402072,
-      "end": 1709675402073,
+      "start": 1709714227758,
+      "end": 1709714227759,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1709675402073,
-      "end": 1709675402073,
+      "start": 1709714227759,
+      "end": 1709714227759,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1709675402073,
-      "end": 1709675402073,
+      "start": 1709714227759,
+      "end": 1709714227759,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1709675402074,
-      "end": 1709675402074,
+      "start": 1709714227759,
+      "end": 1709714227759,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1709675402074,
-      "end": 1709675402074,
+      "start": 1709714227759,
+      "end": 1709714227759,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1709675402074,
-      "end": 1709675402074,
+      "start": 1709714227759,
+      "end": 1709714227759,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1709675402074,
-      "end": 1709675402074,
+      "start": 1709714227759,
+      "end": 1709714227759,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1709675402074,
-      "end": 1709675402074,
+      "start": 1709714227759,
+      "end": 1709714227759,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1709675402075,
-      "end": 1709675402075,
+      "start": 1709714227759,
+      "end": 1709714227759,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1709675402075,
-      "end": 1709675402075,
+      "start": 1709714227759,
+      "end": 1709714227759,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1709675402076,
-      "end": 1709675402087,
+      "start": 1709714227760,
+      "end": 1709714227766,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1709675402076,
-      "end": 1709675402087,
+      "start": 1709714227760,
+      "end": 1709714227767,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1709675402087,
-      "end": 1709675402087,
+      "start": 1709714227767,
+      "end": 1709714227767,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1709675402087,
-      "end": 1709675402088,
+      "start": 1709714227767,
+      "end": 1709714227767,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1709675402088,
-      "end": 1709675402088,
+      "start": 1709714227768,
+      "end": 1709714227768,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1709675402088,
-      "end": 1709675402088,
+      "start": 1709714227768,
+      "end": 1709714227768,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1709675402088,
-      "end": 1709675402088,
+      "start": 1709714227768,
+      "end": 1709714227768,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
       "result": "import { default as __nuxt_component_0 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/components/MDCSlot\";\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nimport { ssrRenderSlot as _ssrRenderMDCSlot } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/utils/ssrSlot\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"Badge\",\n  __ssrInlineRender: true,\n  props: {\n    /**\n     * @values info, success, warning, danger\n     */\n    type: {\n      type: String,\n      default: \"info\",\n      validator(value) {\n        return [\"info\", \"success\", \"warning\", \"danger\", \"primary\"].includes(value);\n      }\n    }\n  },\n  setup(__props) {\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_MDCSlot = __nuxt_component_0;\n      _push(`<span${_ssrRenderAttrs(_mergeProps({\n        class: [[__props.type], \"badge\"]\n      }, _attrs))} data-v-0f05aaa2>`);\n      _ssrRenderMDCSlot(_ctx.$slots, \"default\", { unwrap: \"p\" }, null, _push, _parent);\n      _push(`</span>`);\n    };\n  }\n});\n",
-      "start": 1709675402089,
-      "end": 1709675402090,
+      "start": 1709714227772,
+      "end": 1709714227773,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -283,20 +283,20 @@
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1709675402091,
-      "end": 1709675402091,
+      "start": 1709714227774,
+      "end": 1709714227774,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1709675402092,
-      "end": 1709675402092,
+      "start": 1709714227775,
+      "end": 1709714227775,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1709675402092,
-      "end": 1709675402092,
+      "start": 1709714227775,
+      "end": 1709714227775,
       "order": "normal"
     }
   ]

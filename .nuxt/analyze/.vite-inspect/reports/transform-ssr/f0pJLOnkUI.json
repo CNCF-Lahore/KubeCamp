@@ -4,8 +4,8 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\nimport { withBase } from 'ufo'\nimport { useRuntimeConfig, computed } from '#imports'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'ProseImg',\n  __ssrInlineRender: true,\n  props: {\n  src: {\n    type: String,\n    default: ''\n  },\n  alt: {\n    type: String,\n    default: ''\n  },\n  width: {\n    type: [String, Number],\n    default: undefined\n  },\n  height: {\n    type: [String, Number],\n    default: undefined\n  }\n},\n  setup(__props) {\n\nconst props = __props\n\nconst refinedSrc = computed(() => {\n  if (props.src?.startsWith('/') && !props.src.startsWith('//')) {\n    return withBase(props.src, useRuntimeConfig().app.baseURL)\n  }\n  return props.src\n})\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  _push(`<img${_ssrRenderAttrs(_mergeProps(_ctx.$attrs, {\n    src: _unref(refinedSrc),\n    alt: __props.alt,\n    width: __props.width,\n    height: __props.height\n  }, _attrs))} data-v-2ef15301>`)\n}\n}\n\n})",
-      "start": 1709675401425,
-      "end": 1709675401425,
+      "start": 1709714227420,
+      "end": 1709714227420,
       "sourcemaps": {
         "version": 3,
         "sources": [
@@ -20,71 +20,71 @@
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1709675401426,
-      "end": 1709675401426,
+      "start": 1709714227421,
+      "end": 1709714227421,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1709675401426,
-      "end": 1709675401427,
+      "start": 1709714227421,
+      "end": 1709714227421,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1709675401429,
-      "end": 1709675401429,
+      "start": 1709714227422,
+      "end": 1709714227422,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1709675401429,
-      "end": 1709675401429,
+      "start": 1709714227422,
+      "end": 1709714227422,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\nimport { withBase } from 'ufo'\nimport { useRuntimeConfig, computed } from '#imports'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'ProseImg',\n  __ssrInlineRender: true,\n  props: {\n  src: {\n    type: String,\n    default: ''\n  },\n  alt: {\n    type: String,\n    default: ''\n  },\n  width: {\n    type: [String, Number],\n    default: undefined\n  },\n  height: {\n    type: [String, Number],\n    default: undefined\n  }\n},\n  setup(__props) {\n\nconst props = __props\n\nconst refinedSrc = computed(() => {\n  if (props.src?.startsWith('/') && !props.src.startsWith('//')) {\n    return withBase(props.src, useRuntimeConfig().app.baseURL)\n  }\n  return props.src\n})\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  _push(`<img${_ssrRenderAttrs(_mergeProps(_ctx.$attrs, {\n    src: _unref(refinedSrc),\n    alt: __props.alt,\n    width: __props.width,\n    height: __props.height\n  }, _attrs))} data-v-2ef15301>`)\n}\n}\n\n})",
-      "start": 1709675401430,
-      "end": 1709675401430,
+      "start": 1709714227423,
+      "end": 1709714227423,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\nimport { withBase } from 'ufo'\nimport { useRuntimeConfig, computed } from '#imports'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'ProseImg',\n  __ssrInlineRender: true,\n  props: {\n  src: {\n    type: String,\n    default: ''\n  },\n  alt: {\n    type: String,\n    default: ''\n  },\n  width: {\n    type: [String, Number],\n    default: undefined\n  },\n  height: {\n    type: [String, Number],\n    default: undefined\n  }\n},\n  setup(__props) {\n\nconst props = __props\n\nconst refinedSrc = computed(() => {\n  if (props.src?.startsWith('/') && !props.src.startsWith('//')) {\n    return withBase(props.src, useRuntimeConfig().app.baseURL)\n  }\n  return props.src\n})\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  _push(`<img${_ssrRenderAttrs(_mergeProps(_ctx.$attrs, {\n    src: _unref(refinedSrc),\n    alt: __props.alt,\n    width: __props.width,\n    height: __props.height\n  }, _attrs))} data-v-2ef15301>`)\n}\n}\n\n})",
-      "start": 1709675401430,
-      "end": 1709675401430,
+      "start": 1709714227423,
+      "end": 1709714227423,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1709675401433,
-      "end": 1709675401433,
+      "start": 1709714227423,
+      "end": 1709714227423,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1709675401433,
-      "end": 1709675401433,
+      "start": 1709714227423,
+      "end": 1709714227423,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1709675401434,
-      "end": 1709675401434,
+      "start": 1709714227423,
+      "end": 1709714227423,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1709675401437,
-      "end": 1709675401437,
+      "start": 1709714227423,
+      "end": 1709714227423,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nimport { withBase } from \"ufo\";\nimport { useRuntimeConfig, computed } from \"#imports\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ProseImg\",\n  __ssrInlineRender: true,\n  props: {\n    src: {\n      type: String,\n      default: \"\"\n    },\n    alt: {\n      type: String,\n      default: \"\"\n    },\n    width: {\n      type: [String, Number],\n      default: void 0\n    },\n    height: {\n      type: [String, Number],\n      default: void 0\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const refinedSrc = computed(() => {\n      if (props.src?.startsWith(\"/\") && !props.src.startsWith(\"//\")) {\n        return withBase(props.src, useRuntimeConfig().app.baseURL);\n      }\n      return props.src;\n    });\n    return (_ctx, _push, _parent, _attrs) => {\n      _push(`<img${_ssrRenderAttrs(_mergeProps(_ctx.$attrs, {\n        src: _unref(refinedSrc),\n        alt: __props.alt,\n        width: __props.width,\n        height: __props.height\n      }, _attrs))} data-v-2ef15301>`);\n    };\n  }\n});\n",
-      "start": 1709675401437,
-      "end": 1709675401617,
+      "start": 1709714227423,
+      "end": 1709714227756,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -100,135 +100,135 @@
     },
     {
       "name": "vite:json",
-      "start": 1709675401617,
-      "end": 1709675401617,
+      "start": 1709714227756,
+      "end": 1709714227756,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1709675401617,
-      "end": 1709675401617,
+      "start": 1709714227756,
+      "end": 1709714227756,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1709675401617,
-      "end": 1709675401617,
+      "start": 1709714227757,
+      "end": 1709714227757,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1709675401618,
-      "end": 1709675401618,
+      "start": 1709714227757,
+      "end": 1709714227757,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709675401618,
-      "end": 1709675401618,
+      "start": 1709714227757,
+      "end": 1709714227757,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709675401618,
-      "end": 1709675401618,
+      "start": 1709714227757,
+      "end": 1709714227757,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1709675401618,
-      "end": 1709675401618,
+      "start": 1709714227757,
+      "end": 1709714227757,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1709675401618,
-      "end": 1709675401618,
+      "start": 1709714227757,
+      "end": 1709714227757,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1709675401618,
-      "end": 1709675401618,
+      "start": 1709714227757,
+      "end": 1709714227757,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709675401622,
-      "end": 1709675401622,
+      "start": 1709714227757,
+      "end": 1709714227757,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1709675401622,
-      "end": 1709675401624,
+      "start": 1709714227758,
+      "end": 1709714227758,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1709675401626,
-      "end": 1709675401626,
+      "start": 1709714227758,
+      "end": 1709714227759,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1709675401631,
-      "end": 1709675401631,
+      "start": 1709714227759,
+      "end": 1709714227759,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1709675401631,
-      "end": 1709675401631,
+      "start": 1709714227759,
+      "end": 1709714227759,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1709675401631,
-      "end": 1709675401631,
+      "start": 1709714227759,
+      "end": 1709714227759,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1709675401631,
-      "end": 1709675401632,
+      "start": 1709714227759,
+      "end": 1709714227759,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1709675401632,
-      "end": 1709675401632,
+      "start": 1709714227759,
+      "end": 1709714227759,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1709675401636,
-      "end": 1709675401636,
+      "start": 1709714227759,
+      "end": 1709714227759,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1709675401636,
-      "end": 1709675401636,
+      "start": 1709714227759,
+      "end": 1709714227759,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1709675401637,
-      "end": 1709675401637,
+      "start": 1709714227759,
+      "end": 1709714227759,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1709675401637,
-      "end": 1709675401637,
+      "start": 1709714227759,
+      "end": 1709714227759,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { useRuntimeConfig } from '#app/nuxt';\nimport { computed } from 'vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nimport { withBase } from \"ufo\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ProseImg\",\n  __ssrInlineRender: true,\n  props: {\n    src: {\n      type: String,\n      default: \"\"\n    },\n    alt: {\n      type: String,\n      default: \"\"\n    },\n    width: {\n      type: [String, Number],\n      default: void 0\n    },\n    height: {\n      type: [String, Number],\n      default: void 0\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const refinedSrc = computed(() => {\n      if (props.src?.startsWith(\"/\") && !props.src.startsWith(\"//\")) {\n        return withBase(props.src, useRuntimeConfig().app.baseURL);\n      }\n      return props.src;\n    });\n    return (_ctx, _push, _parent, _attrs) => {\n      _push(`<img${_ssrRenderAttrs(_mergeProps(_ctx.$attrs, {\n        src: _unref(refinedSrc),\n        alt: __props.alt,\n        width: __props.width,\n        height: __props.height\n      }, _attrs))} data-v-2ef15301>`);\n    };\n  }\n});\n",
-      "start": 1709675401641,
-      "end": 1709675401641,
+      "start": 1709714227760,
+      "end": 1709714227767,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -242,8 +242,8 @@
     {
       "name": "nuxt:imports-transform",
       "result": "import { useRuntimeConfig } from '#app/nuxt';\nimport { computed } from 'vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nimport { withBase } from \"ufo\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ProseImg\",\n  __ssrInlineRender: true,\n  props: {\n    src: {\n      type: String,\n      default: \"\"\n    },\n    alt: {\n      type: String,\n      default: \"\"\n    },\n    width: {\n      type: [String, Number],\n      default: void 0\n    },\n    height: {\n      type: [String, Number],\n      default: void 0\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const refinedSrc = computed(() => {\n      if (props.src?.startsWith(\"/\") && !props.src.startsWith(\"//\")) {\n        return withBase(props.src, useRuntimeConfig().app.baseURL);\n      }\n      return props.src;\n    });\n    return (_ctx, _push, _parent, _attrs) => {\n      _push(`<img${_ssrRenderAttrs(_mergeProps(_ctx.$attrs, {\n        src: _unref(refinedSrc),\n        alt: __props.alt,\n        width: __props.width,\n        height: __props.height\n      }, _attrs))} data-v-2ef15301>`);\n    };\n  }\n});\n",
-      "start": 1709675401641,
-      "end": 1709675401641,
+      "start": 1709714227760,
+      "end": 1709714227767,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -256,56 +256,56 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1709675401641,
-      "end": 1709675401641,
+      "start": 1709714227767,
+      "end": 1709714227767,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1709675401641,
-      "end": 1709675401641,
+      "start": 1709714227767,
+      "end": 1709714227767,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1709675401641,
-      "end": 1709675401642,
+      "start": 1709714227768,
+      "end": 1709714227768,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1709675401641,
-      "end": 1709675401642,
+      "start": 1709714227768,
+      "end": 1709714227768,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1709675401642,
-      "end": 1709675401642,
+      "start": 1709714227768,
+      "end": 1709714227768,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1709675401642,
-      "end": 1709675401642,
+      "start": 1709714227774,
+      "end": 1709714227774,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1709675401642,
-      "end": 1709675401642,
+      "start": 1709714227774,
+      "end": 1709714227774,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1709675401642,
-      "end": 1709675401642,
+      "start": 1709714227775,
+      "end": 1709714227775,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1709675401642,
-      "end": 1709675401642,
+      "start": 1709714227775,
+      "end": 1709714227775,
       "order": "normal"
     }
   ]

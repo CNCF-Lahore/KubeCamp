@@ -4,27 +4,27 @@
     {
       "name": "vite:load-fallback",
       "result": "<script setup lang=\"ts\">\nimport { useFuse, UseFuseOptions } from '@vueuse/integrations/useFuse'\nimport { useFocusTrap } from '@vueuse/integrations/useFocusTrap'\nimport { useMagicKeys } from '@vueuse/core'\n\nconst props = defineProps({\n  fuse: {\n    type: Object as PropType<Partial<UseFuseOptions<DocusSearchResult>>>,\n    default: () => ({\n      fuseOptions: {\n        keys: [\n          'title',\n          'description',\n          'keywords',\n          'body'\n        ],\n        ignoreLocation: true,\n        threshold: 0,\n        includeMatches: true,\n        includeScore: true,\n      },\n      matchAllWhenSearchEmpty: true\n    })\n  },\n})\n\ntype DocusSearchResult = {\n  id: string\n  path: string\n  dir: string\n  title: string\n  description: string\n  keywords: string[]\n  body?: any[]\n}\n\nconst q = ref('')\nconst searchContentRef = ref<HTMLDivElement>()\nconst searchInputRef = ref<HTMLInputElement>()\nconst resultsAreaRef = ref<HTMLDivElement>()\nconst selected = ref(-1)\n\nconst show = ref(false)\n\nconst { close, open } = useMenu()\n\nconst { activate, deactivate } = useFocusTrap(searchContentRef)\n\nconst { navigation } = useContent()\n\nconst { meta_K, Escape } = useMagicKeys()\n\nconst { data: files } = await useLazyAsyncData<DocusSearchResult[]>(\n  'search-api',\n  () => $fetch('/api/search', { parseResponse: JSON.parse })\n)\n\nconst { results } = useFuse<DocusSearchResult>(\n  q,\n  files as any,\n  props.fuse\n)\n\nfunction findNavItem(\n  children: any,\n  path: string,\n  parent: any\n) {\n  for (const child of children) {\n    if (child._path === path) {\n      return {\n        directoryTitle: parent.title,\n        directoryIcon: parent.icon\n      }\n    }\n    if (child.children) {\n      const result: any = findNavItem(child.children, path, child)\n      if (result) {\n        return result\n      }\n    }\n  }\n  return undefined\n}\n\nfunction getNavItemMeta(\n  path: string\n) {\n  let result\n  for (const item of navigation.value) {\n    if (item.children) {\n      const found = findNavItem(item.children, path, item)\n      if (found) { result = found }\n    }\n  }\n  return result\n}\n\nfunction highlight(\n  text: string,\n  result: any\n): string {\n  const { indices, value }: { indices: number[][], value: string } = result || { indices: [], value: '' }\n\n  if (text === value) return ''\n\n  let content = ''\n  let nextUnhighlightedIndiceStartingIndex = 0\n\n  indices.forEach((indice) => {\n    const lastIndiceNextIndex = indice[1] + 1\n    const isMatched = (lastIndiceNextIndex - indice[0]) >= q.value.length\n\n    content += [\n      value.substring(nextUnhighlightedIndiceStartingIndex, indice[0]),\n      isMatched && '<mark>',\n      value.substring(indice[0], lastIndiceNextIndex),\n      isMatched && '</mark>'\n    ].filter(Boolean).join('')\n\n    nextUnhighlightedIndiceStartingIndex = lastIndiceNextIndex\n  })\n\n  content += value.substring(nextUnhighlightedIndiceStartingIndex)\n\n  const index = content.indexOf('<mark>')\n\n  if (index > 60) {\n    content = `${content.substring(index - 60)}`\n  }\n\n  return `${content}”`\n}\n\nfunction down() {\n  if (selected.value === -1) { selected.value = 0 }\n  else if (selected.value === results.value.length - 1) { /* Do nothing  */ }\n  else { selected.value = selected.value + 1 }\n}\n\nfunction up() {\n  if (selected.value === -1) { selected.value = results.value.length - 1 }\n  else if (selected.value === 0) { /* Do nothing */ }\n  else { selected.value = selected.value - 1 }\n}\n\nfunction go(index: number) {\n  const selectedItem = results?.value?.[index]?.item\n  const path = selectedItem?.path\n\n  if (path) {\n    show.value = false\n    useRouter().push(path)\n  }\n}\n\nfunction closeButtonHandler() {\n  if (q.value) {\n    q.value = ''\n    selected.value = -1\n    searchInputRef.value?.focus?.()\n  } else {\n    show.value = false\n  }\n}\n\nonMounted (() => {\n  const route = useRoute()\n  if (route.query.q) {\n    show.value = true\n    q.value = route.query.q\n  }\n})\n\n// Scroll to selected item on change\nwatch(selected, value => {\n  const nextId = results?.value?.[value]?.item?.id\n  if (nextId) document.querySelector(`[id=\"${nextId}\"]`)?.scrollIntoView({ block: 'nearest' })\n})\n\n// Reset selected item on search change\nwatch(\n  q,\n  _ => { selected.value = 0 }\n)\n\n// Reset local data when modal closing\nwatch(show, (value) => {\n  if (!value) {\n    q.value = ''\n    selected.value = -1\n    deactivate()\n    close()\n  } else {\n    open()\n    nextTick(() => {\n      activate()\n    })\n  }\n})\n\nwatch(meta_K, (v) => {\n  if (v) {\n    show.value = !show.value\n  }\n})\n\nwatch(Escape, () => {\n  if (show.value)\n    show.value = false\n})\n\n</script>\n\n<template>\n  <button\n    type=\"button\"\n    aria-label=\"Search\"\n    @click=\"show = true\"\n  >\n    <span class=\"content\">\n      <Icon name=\"heroicons-outline:search\" />\n      <span>Search</span>\n      <span>\n        <kbd>⌘</kbd>\n        <kbd>K</kbd>\n      </span>\n    </span>\n  </button>\n\n  <!-- eslint-disable-next-line vue/no-multiple-template-root -->\n  <teleport to=\"body\">\n    <div\n      v-if=\"show\"\n      ref=\"searchContentRef\"\n      class=\"search-content\"\n      @click=\"show = false\"\n    >\n      <div\n        class=\"search-window\"\n        @click.stop\n      >\n        <div class=\"search-input\">\n          <Icon\n            name=\"heroicons-outline:search\"\n            class=\"search-icon\"\n          />\n          <input\n            ref=\"searchInputRef\"\n            v-model=\"q\"\n            type=\"text\"\n            placeholder=\"Search documentation\"\n            @keydown.up.prevent=\"up\"\n            @keydown.down.prevent=\"down\"\n            @keydown.enter=\"go(selected)\"\n          >\n          <button\n            class=\"close-button\"\n            @click=\"closeButtonHandler\"\n          >\n            <Icon\n              name=\"heroicons:x-mark\"\n              class=\"close-icon\"\n            />\n          </button>\n        </div>\n\n        <div\n          v-if=\"results.length > 0\"\n          ref=\"resultsAreaRef\"\n          class=\"search-results\"\n        >\n          <div\n            v-for=\"(result, i) in results\"\n            :id=\"result.item.id\"\n            :key=\"result.item.id\"\n            class=\"search-result\"\n            :class=\"{ selected: selected === i }\"\n            @click=\"go(selected)\"\n            @mouseenter.prevent=\"selected = i\"\n          >\n            <div class=\"search-result-content-wrapper\">\n              <div class=\"search-result-content-head\">\n                <Icon\n                  v-if=\"getNavItemMeta(result?.item?.path)?.directoryIcon\"\n                  :name=\"getNavItemMeta(result?.item?.path)?.directoryIcon\"\n                />\n                <Icon\n                  v-else\n                  name=\"solar:documents-bold-duotone\"\n                />\n                <span v-if=\"getNavItemMeta(result?.item?.path)?.directoryTitle\">\n                  {{ getNavItemMeta(result?.item?.path)?.directoryTitle }}\n                  <span\n                    class=\"arrow\"\n                    v-html=\"`→`\"\n                  />\n                </span>\n                <span>\n                  {{ result.item.title }}\n                </span>\n              </div>\n              <p\n                v-if=\"result?.matches?.[0]\"\n                class=\"search-result-content-preview\"\n              >\n                <span>“</span>\n                <span\n                  v-html=\"`${highlight(q, result?.matches?.[0] as any)}`\"\n                />\n                <span>“</span>\n              </p>\n            </div>\n          </div>\n        </div>\n\n        <div\n          v-else-if=\"!q\"\n          class=\"search-results empty\"\n        >\n          Type your query to search docs\n        </div>\n\n        <div\n          v-else\n          class=\"search-results empty\"\n        >\n          No results found. Try another query\n        </div>\n      </div>\n    </div>\n  </teleport>\n</template>\n\n<style scoped lang=\"ts\">\ncss({\n  button: {\n    padding: '{space.2} {space.2}',\n    '.content': {\n      borderRadius: '{radii.md}',\n      display: 'flex',\n      alignItems: 'center',\n      color: '{color.gray.500}',\n      borderStyle: 'solid',\n      borderWidth: '1px',\n      borderColor: '{color.gray.100}',\n      fontSize: '{fontSize.xs}',\n      gap: '{space.2}',\n      padding: '{space.rem.375}',\n      '@dark': {\n        color: '{color.gray.400}',\n        borderColor: '{color.gray.900}',\n      },\n      '&:hover': {\n        color: '{color.gray.700}',\n        borderColor: '{color.gray.400}',\n        '@dark': {\n          color: '{color.gray.200}',\n          borderColor: '{color.gray.700}',\n        }\n      },\n      span: {\n        flex: 'none',\n        display: 'none',\n        fontSize: '{fontSize.xs}',\n        '@lg': {\n          display: 'block'\n        }\n      }\n    }\n  },\n\n  '.search-content': {\n    position: 'fixed',\n    inset: '0 0 0 0',\n    zIndex: '50',\n    display: 'flex',\n    // alignItems: 'center',\n    justifyContent: 'center',\n    backgroundColor: 'rgba(255, 255, 255, 0.5)',\n    backdropFilter: '{elements.backdrop.filter}',\n    '@dark': {\n      backgroundColor: 'rgba(0, 0, 0, 0.5)'\n    },\n\n\n    '.search-window': {\n      display: 'flex',\n      flexDirection: 'column',\n      border: '1px solid {elements.border.primary.static}',\n      borderRadius: '{docus.search.results.window.borderRadius}',\n      marginTop: '{docus.search.results.window.marginTop}',\n      width: '100%',\n      maxWidth: '{docus.search.results.window.maxWidth}',\n      height: 'fit-content',\n      maxHeight: '{docus.search.results.window.maxHeight}',\n      mx: '{docus.search.results.window.marginX}',\n      overflow: 'hidden',\n      backdropFilter: '{docus.search.backdropFilter}',\n\n      '.search-input': {\n        display: 'flex',\n        alignItems: 'center',\n        backgroundColor: '{docus.search.input.backgroundColor}',\n        '.search-icon': {\n          color: '{elements.text.tertiary.color.static}',\n          flexShrink: 0,\n          marginLeft: '{space.4}',\n          marginRight: '{space.4}',\n          width: '{size.20}',\n          height: '{size.20}',\n        },\n        '.close-button': {\n          display: 'flex',\n          padding: '{space.3}',\n        },\n        '.close-icon': {\n          color: '{elements.text.secondary.color.static}',\n          flexShrink: 0,\n          width: '{size.20}',\n          height: '{size.20}',\n        },\n        input: {\n          width: '100%',\n          padding: '{space.2} 0',\n          color: '{elements.text.primary.color.static}',\n          backgroundColor: 'transparent',\n          '&:focus, &:focus-visible': {\n            outline: 'none',\n          },\n          '&::placeholder': {\n            color: '{elements.text.tertiary.color.static}',\n            opacity: '0.5'\n          }\n        },\n        '&:focus, &:focus-visible': {\n          outline: 'none',\n        }\n      },\n\n      '.search-results': {\n        overflow: 'auto',\n        display: 'flex',\n        flexDirection: 'column',\n        '&.empty': {\n          height: '80px',\n          display: 'flex',\n          alignItems: 'center',\n          justifyContent: 'center',\n          color: '{elements.text.tertiary.color.static}',\n        }\n      },\n\n      '.search-result': {\n        padding: '{space.1} {space.2}',\n        cursor: 'pointer',\n        display: 'flex',\n        alignItems: 'center',\n        '&.selected': {\n          backgroundColor: '{docus.search.results.selected.backgroundColor}',\n        },\n        '.search-result-content-wrapper': {\n          display: 'flex',\n          gap: '{space.2}',\n          borderRadius: '{radii.2xs}',\n          padding: '{space.2} 0',\n          flexDirection: 'column',\n          overflow: 'hidden'\n        },\n        '.search-result-content-head': {\n          display: 'flex',\n          alignItems: 'center',\n          gap: '{space.2}',\n          svg: {\n            flexShrink: '0',\n            opacity: '0.5',\n            width: '{size.20}',\n            height: '{size.20}',\n            marginLeft: '{space.2}',\n            marginRight: '{space.2}',\n          },\n          span: {\n            whiteSpace: 'nowrap',\n          },\n          '.arrow': {\n            opacity: '0.5'\n          },\n        },\n        '.search-result-content-preview': {\n          truncate: true,\n          position: 'relative',\n          color: '{elements.text.secondary.color.static}',\n        },\n        ':deep(mark)': {\n          color: '{docus.search.results.highlight.color}',\n          backgroundColor: '{docus.search.results.highlight.backgroundColor}',\n        }\n      }\n    }\n  }\n})\n</style>\n",
-      "start": 1709675390573,
-      "end": 1709675390818,
+      "start": 1709714220176,
+      "end": 1709714220320,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1709675390818,
-      "end": 1709675390818,
+      "start": 1709714220320,
+      "end": 1709714220320,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1709675390818,
-      "end": 1709675390818,
+      "start": 1709714220320,
+      "end": 1709714220320,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "<script setup lang=\"ts\">\nimport { useFuse, UseFuseOptions } from '@vueuse/integrations/useFuse'\nimport { useFocusTrap } from '@vueuse/integrations/useFocusTrap'\nimport { useMagicKeys } from '@vueuse/core'\n\nconst props = defineProps({\n  fuse: {\n    type: Object as PropType<Partial<UseFuseOptions<DocusSearchResult>>>,\n    default: () => ({\n      fuseOptions: {\n        keys: [\n          'title',\n          'description',\n          'keywords',\n          'body'\n        ],\n        ignoreLocation: true,\n        threshold: 0,\n        includeMatches: true,\n        includeScore: true,\n      },\n      matchAllWhenSearchEmpty: true\n    })\n  },\n})\n\ntype DocusSearchResult = {\n  id: string\n  path: string\n  dir: string\n  title: string\n  description: string\n  keywords: string[]\n  body?: any[]\n}\n\nconst q = ref('')\nconst searchContentRef = ref<HTMLDivElement>()\nconst searchInputRef = ref<HTMLInputElement>()\nconst resultsAreaRef = ref<HTMLDivElement>()\nconst selected = ref(-1)\n\nconst show = ref(false)\n\nconst { close, open } = useMenu()\n\nconst { activate, deactivate } = useFocusTrap(searchContentRef)\n\nconst { navigation } = useContent()\n\nconst { meta_K, Escape } = useMagicKeys()\n\nconst { data: files } = await useLazyAsyncData<DocusSearchResult[]>(\n  'search-api',\n  () => $fetch('/api/search', { parseResponse: JSON.parse })\n)\n\nconst { results } = useFuse<DocusSearchResult>(\n  q,\n  files as any,\n  props.fuse\n)\n\nfunction findNavItem(\n  children: any,\n  path: string,\n  parent: any\n) {\n  for (const child of children) {\n    if (child._path === path) {\n      return {\n        directoryTitle: parent.title,\n        directoryIcon: parent.icon\n      }\n    }\n    if (child.children) {\n      const result: any = findNavItem(child.children, path, child)\n      if (result) {\n        return result\n      }\n    }\n  }\n  return undefined\n}\n\nfunction getNavItemMeta(\n  path: string\n) {\n  let result\n  for (const item of navigation.value) {\n    if (item.children) {\n      const found = findNavItem(item.children, path, item)\n      if (found) { result = found }\n    }\n  }\n  return result\n}\n\nfunction highlight(\n  text: string,\n  result: any\n): string {\n  const { indices, value }: { indices: number[][], value: string } = result || { indices: [], value: '' }\n\n  if (text === value) return ''\n\n  let content = ''\n  let nextUnhighlightedIndiceStartingIndex = 0\n\n  indices.forEach((indice) => {\n    const lastIndiceNextIndex = indice[1] + 1\n    const isMatched = (lastIndiceNextIndex - indice[0]) >= q.value.length\n\n    content += [\n      value.substring(nextUnhighlightedIndiceStartingIndex, indice[0]),\n      isMatched && '<mark>',\n      value.substring(indice[0], lastIndiceNextIndex),\n      isMatched && '</mark>'\n    ].filter(Boolean).join('')\n\n    nextUnhighlightedIndiceStartingIndex = lastIndiceNextIndex\n  })\n\n  content += value.substring(nextUnhighlightedIndiceStartingIndex)\n\n  const index = content.indexOf('<mark>')\n\n  if (index > 60) {\n    content = `${content.substring(index - 60)}`\n  }\n\n  return `${content}”`\n}\n\nfunction down() {\n  if (selected.value === -1) { selected.value = 0 }\n  else if (selected.value === results.value.length - 1) { /* Do nothing  */ }\n  else { selected.value = selected.value + 1 }\n}\n\nfunction up() {\n  if (selected.value === -1) { selected.value = results.value.length - 1 }\n  else if (selected.value === 0) { /* Do nothing */ }\n  else { selected.value = selected.value - 1 }\n}\n\nfunction go(index: number) {\n  const selectedItem = results?.value?.[index]?.item\n  const path = selectedItem?.path\n\n  if (path) {\n    show.value = false\n    useRouter().push(path)\n  }\n}\n\nfunction closeButtonHandler() {\n  if (q.value) {\n    q.value = ''\n    selected.value = -1\n    searchInputRef.value?.focus?.()\n  } else {\n    show.value = false\n  }\n}\n\nonMounted (() => {\n  const route = useRoute()\n  if (route.query.q) {\n    show.value = true\n    q.value = route.query.q\n  }\n})\n\n// Scroll to selected item on change\nwatch(selected, value => {\n  const nextId = results?.value?.[value]?.item?.id\n  if (nextId) document.querySelector(`[id=\"${nextId}\"]`)?.scrollIntoView({ block: 'nearest' })\n})\n\n// Reset selected item on search change\nwatch(\n  q,\n  _ => { selected.value = 0 }\n)\n\n// Reset local data when modal closing\nwatch(show, (value) => {\n  if (!value) {\n    q.value = ''\n    selected.value = -1\n    deactivate()\n    close()\n  } else {\n    open()\n    nextTick(() => {\n      activate()\n    })\n  }\n})\n\nwatch(meta_K, (v) => {\n  if (v) {\n    show.value = !show.value\n  }\n})\n\nwatch(Escape, () => {\n  if (show.value)\n    show.value = false\n})\n\n</script>\n\n<template>\n  <button\n    type=\"button\"\n    aria-label=\"Search\"\n    @click=\"show = true\"\n  >\n    <span class=\"content\">\n      <Icon name=\"heroicons-outline:search\" />\n      <span>Search</span>\n      <span>\n        <kbd>⌘</kbd>\n        <kbd>K</kbd>\n      </span>\n    </span>\n  </button>\n\n  <!-- eslint-disable-next-line vue/no-multiple-template-root -->\n  <teleport to=\"body\">\n    <div\n      v-if=\"show\"\n      ref=\"searchContentRef\"\n      class=\"search-content\"\n      @click=\"show = false\"\n    >\n      <div\n        class=\"search-window\"\n        @click.stop\n      >\n        <div class=\"search-input\">\n          <Icon\n            name=\"heroicons-outline:search\"\n            class=\"search-icon\"\n          />\n          <input\n            ref=\"searchInputRef\"\n            v-model=\"q\"\n            type=\"text\"\n            placeholder=\"Search documentation\"\n            @keydown.up.prevent=\"up\"\n            @keydown.down.prevent=\"down\"\n            @keydown.enter=\"go(selected)\"\n          >\n          <button\n            class=\"close-button\"\n            @click=\"closeButtonHandler\"\n          >\n            <Icon\n              name=\"heroicons:x-mark\"\n              class=\"close-icon\"\n            />\n          </button>\n        </div>\n\n        <div\n          v-if=\"results.length > 0\"\n          ref=\"resultsAreaRef\"\n          class=\"search-results\"\n        >\n          <div\n            v-for=\"(result, i) in results\"\n            :id=\"result.item.id\"\n            :key=\"result.item.id\"\n            class=\"search-result\"\n            :class=\"{ selected: selected === i }\"\n            @click=\"go(selected)\"\n            @mouseenter.prevent=\"selected = i\"\n          >\n            <div class=\"search-result-content-wrapper\">\n              <div class=\"search-result-content-head\">\n                <Icon\n                  v-if=\"getNavItemMeta(result?.item?.path)?.directoryIcon\"\n                  :name=\"getNavItemMeta(result?.item?.path)?.directoryIcon\"\n                />\n                <Icon\n                  v-else\n                  name=\"solar:documents-bold-duotone\"\n                />\n                <span v-if=\"getNavItemMeta(result?.item?.path)?.directoryTitle\">\n                  {{ getNavItemMeta(result?.item?.path)?.directoryTitle }}\n                  <span\n                    class=\"arrow\"\n                    v-html=\"`→`\"\n                  />\n                </span>\n                <span>\n                  {{ result.item.title }}\n                </span>\n              </div>\n              <p\n                v-if=\"result?.matches?.[0]\"\n                class=\"search-result-content-preview\"\n              >\n                <span>“</span>\n                <span\n                  v-html=\"`${highlight(q, result?.matches?.[0] as any)}`\"\n                />\n                <span>“</span>\n              </p>\n            </div>\n          </div>\n        </div>\n\n        <div\n          v-else-if=\"!q\"\n          class=\"search-results empty\"\n        >\n          Type your query to search docs\n        </div>\n\n        <div\n          v-else\n          class=\"search-results empty\"\n        >\n          No results found. Try another query\n        </div>\n      </div>\n    </div>\n  </teleport>\n</template>\n\n<style scoped lang=\"postcss\" transformed>\nbutton{padding:var(--space-2) var(--space-2);}button .content{border-radius:var(--radii-md);display:flex;align-items:center;color:var(--color-gray-500);border-style:solid;border-width:1px;border-color:var(--color-gray-100);font-size:var(--fontSize-xs);gap:var(--space-2);padding:var(--space-rem-375);}:root.dark button .content{color:var(--color-gray-400);border-color:var(--color-gray-900);}button .content:hover{color:var(--color-gray-700);border-color:var(--color-gray-400);}:root.dark button .content:hover{color:var(--color-gray-200);border-color:var(--color-gray-700);}button .content span{flex:none;display:none;font-size:var(--fontSize-xs);}@media (min-width: 1024px){button .content span{display:block;}}.search-content{position:fixed;inset:0 0 0 0;z-index:50;display:flex;justify-content:center;background-color:rgba(255, 255, 255, 0.5);backdrop-filter:var(--elements-backdrop-filter);}:root.dark .search-content{background-color:rgba(0, 0, 0, 0.5);}.search-content .search-window{display:flex;flex-direction:column;border:1px solid var(--elements-border-primary-static);border-radius:var(--docus-search-results-window-borderRadius);margin-top:var(--docus-search-results-window-marginTop);width:100%;max-width:var(--docus-search-results-window-maxWidth);height:fit-content;max-height:var(--docus-search-results-window-maxHeight);margin-left:var(--docus-search-results-window-marginX);margin-right:var(--docus-search-results-window-marginX);overflow:hidden;backdrop-filter:var(--docus-search-backdropFilter);}.search-content .search-window .search-input{display:flex;align-items:center;background-color:var(--docus-search-input-backgroundColor);}.search-content .search-window .search-input .search-icon{color:var(--elements-text-tertiary-color-static);flex-shrink:0;margin-left:var(--space-4);margin-right:var(--space-4);width:var(--size-20);height:var(--size-20);}.search-content .search-window .search-input .close-button{display:flex;padding:var(--space-3);}.search-content .search-window .search-input .close-icon{color:var(--elements-text-secondary-color-static);flex-shrink:0;width:var(--size-20);height:var(--size-20);}.search-content .search-window .search-input input{width:100%;padding:var(--space-2) 0;color:var(--elements-text-primary-color-static);background-color:transparent;}.search-content .search-window .search-input input:focus,.search-content .search-window .search-input input:focus-visible{outline:none;}.search-content .search-window .search-input input::placeholder{color:var(--elements-text-tertiary-color-static);opacity:0.5;}.search-content .search-window .search-input:focus,.search-content .search-window .search-input:focus-visible{outline:none;}.search-content .search-window .search-results{overflow:auto;display:flex;flex-direction:column;}.search-content .search-window .search-results.empty{height:80px;display:flex;align-items:center;justify-content:center;color:var(--elements-text-tertiary-color-static);}.search-content .search-window .search-result{padding:var(--space-1) var(--space-2);cursor:pointer;display:flex;align-items:center;}.search-content .search-window .search-result.selected{background-color:var(--docus-search-results-selected-backgroundColor);}.search-content .search-window .search-result .search-result-content-wrapper{display:flex;gap:var(--space-2);border-radius:var(--radii-2xs);padding:var(--space-2) 0;flex-direction:column;overflow:hidden;}.search-content .search-window .search-result .search-result-content-head{display:flex;align-items:center;gap:var(--space-2);}.search-content .search-window .search-result .search-result-content-head svg{flex-shrink:0;opacity:0.5;width:var(--size-20);height:var(--size-20);margin-left:var(--space-2);margin-right:var(--space-2);}.search-content .search-window .search-result .search-result-content-head span{white-space:nowrap;}.search-content .search-window .search-result .search-result-content-head .arrow{opacity:0.5;}.search-content .search-window .search-result .search-result-content-preview{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;position:relative;color:var(--elements-text-secondary-color-static);}.search-content .search-window .search-result :deep(mark){color:var(--docus-search-results-highlight-color);background-color:var(--docus-search-results-highlight-backgroundColor);}\n</style>\n",
-      "start": 1709675390818,
-      "end": 1709675390840,
+      "start": 1709714220320,
+      "end": 1709714220335,
       "order": "pre",
       "sourcemaps": {
         "version": 3,
@@ -38,45 +38,45 @@
     },
     {
       "name": "content-slot",
-      "start": 1709675390840,
-      "end": 1709675390840,
+      "start": 1709714220335,
+      "end": 1709714220335,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1709675390840,
-      "end": 1709675390840,
+      "start": 1709714220335,
+      "end": 1709714220335,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1709675390840,
-      "end": 1709675390840,
+      "start": 1709714220335,
+      "end": 1709714220335,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1709675390840,
-      "end": 1709675390840,
+      "start": 1709714220335,
+      "end": 1709714220335,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1709675390840,
-      "end": 1709675390840,
+      "start": 1709714220335,
+      "end": 1709714220335,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1709675390840,
-      "end": 1709675390840,
+      "start": 1709714220335,
+      "end": 1709714220335,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "import _sfc_main from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppSearch.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppSearch.vue?vue&type=script&setup=true&lang.ts\";\nimport \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppSearch.vue?vue&type=style&index=0&scoped=98e4ee4b&transformed=true&lang.postcss\";\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"__scopeId\", \"data-v-98e4ee4b\"]]);\n",
-      "start": 1709675390840,
-      "end": 1709675391031,
+      "start": 1709714220335,
+      "end": 1709714220423,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -84,152 +84,152 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1709675391031,
-      "end": 1709675391031,
+      "start": 1709714220423,
+      "end": 1709714220423,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709675391031,
-      "end": 1709675391031,
+      "start": 1709714220423,
+      "end": 1709714220423,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1709675391031,
-      "end": 1709675391031,
+      "start": 1709714220424,
+      "end": 1709714220424,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1709675391032,
-      "end": 1709675391032,
+      "start": 1709714220424,
+      "end": 1709714220424,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1709675391032,
-      "end": 1709675391032,
+      "start": 1709714220424,
+      "end": 1709714220424,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709675391032,
-      "end": 1709675391032,
+      "start": 1709714220424,
+      "end": 1709714220424,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1709675391032,
-      "end": 1709675391032,
+      "start": 1709714220424,
+      "end": 1709714220424,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1709675391032,
-      "end": 1709675391032,
+      "start": 1709714220424,
+      "end": 1709714220424,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1709675391032,
-      "end": 1709675391032,
+      "start": 1709714220424,
+      "end": 1709714220424,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1709675391032,
-      "end": 1709675391032,
+      "start": 1709714220424,
+      "end": 1709714220424,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1709675391032,
-      "end": 1709675391033,
+      "start": 1709714220424,
+      "end": 1709714220425,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1709675391033,
-      "end": 1709675391033,
+      "start": 1709714220425,
+      "end": 1709714220425,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1709675391033,
-      "end": 1709675391033,
+      "start": 1709714220425,
+      "end": 1709714220425,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1709675391033,
-      "end": 1709675391033,
+      "start": 1709714220425,
+      "end": 1709714220425,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1709675391033,
-      "end": 1709675391033,
+      "start": 1709714220425,
+      "end": 1709714220425,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1709675391033,
-      "end": 1709675391033,
+      "start": 1709714220425,
+      "end": 1709714220425,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1709675391033,
-      "end": 1709675391036,
+      "start": 1709714220425,
+      "end": 1709714220427,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1709675391036,
-      "end": 1709675391036,
+      "start": 1709714220427,
+      "end": 1709714220427,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1709675391036,
-      "end": 1709675391037,
+      "start": 1709714220427,
+      "end": 1709714220427,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1709675391037,
-      "end": 1709675391037,
+      "start": 1709714220428,
+      "end": 1709714220428,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1709675391037,
-      "end": 1709675391037,
+      "start": 1709714220428,
+      "end": 1709714220428,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1709675391037,
-      "end": 1709675391037,
+      "start": 1709714220428,
+      "end": 1709714220428,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1709675391037,
-      "end": 1709675391038,
+      "start": 1709714220428,
+      "end": 1709714220428,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1709675391038,
-      "end": 1709675391038,
+      "start": 1709714220428,
+      "end": 1709714220428,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1709675391038,
-      "end": 1709675391038,
+      "start": 1709714220429,
+      "end": 1709714220429,
       "order": "normal"
     }
   ]

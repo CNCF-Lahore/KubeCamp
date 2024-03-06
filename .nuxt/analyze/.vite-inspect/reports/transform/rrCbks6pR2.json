@@ -4,51 +4,51 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, unref as _unref, toDisplayString as _toDisplayString, withModifiers as _withModifiers, normalizeClass as _normalizeClass, createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, createBlock as _createBlock, createCommentVNode as _createCommentVNode, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-a97df893\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"docs-toc-links\" }\nconst _hoisted_2 = [\"href\", \"onClick\"]\n\nimport type { PropType } from 'vue'\nimport type { TocLink } from '@nuxt/content/dist/runtime/types'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'DocsTocLinks',\n  props: {\n  links: {\n    type: Array as PropType<TocLink[]>,\n    default: () => []\n  }\n},\n  emits: ['move'],\n  setup(__props, { emit: __emit }) {\n\n\n\nconst emit = __emit\n\nconst router = useRouter()\n\nconst { activeHeadings, updateHeadings } = useScrollspy()\n\nif (process.client) {\n  setTimeout(() => {\n    updateHeadings([\n      ...document.querySelectorAll('.document-driven-page h1, .docus-content h1'),\n      ...document.querySelectorAll('.document-driven-page h2, .docus-content h2'),\n      ...document.querySelectorAll('.document-driven-page h3, .docus-content h3'),\n      ...document.querySelectorAll('.document-driven-page h4, .docus-content h4')\n    ])\n  }, 300)\n}\n\nfunction scrollToHeading (id: string) {\n  router.push(`#${id}`)\n  emit('move', id)\n}\n\nfunction childMove(id: string) {\n  emit('move', id)\n}\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_DocsTocLinks = _resolveComponent(\"DocsTocLinks\", true)!\n\n  return (_openBlock(), _createElementBlock(\"ul\", _hoisted_1, [\n    (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(__props.links, (link) => {\n      return (_openBlock(), _createElementBlock(\"li\", {\n        key: link.text,\n        class: _normalizeClass([`depth-${link.depth}`])\n      }, [\n        _createElementVNode(\"a\", {\n          href: `#${link.id}`,\n          class: _normalizeClass([_unref(activeHeadings).includes(link.id) && 'active']),\n          onClick: _withModifiers(($event: any) => (scrollToHeading(link.id)), [\"prevent\"])\n        }, _toDisplayString(link.text), 11, _hoisted_2),\n        (link.children)\n          ? (_openBlock(), _createBlock(_component_DocsTocLinks, {\n              key: 0,\n              links: link.children,\n              onMove: _cache[0] || (_cache[0] = ($event: any) => (childMove($event)))\n            }, null, 8, [\"links\"]))\n          : _createCommentVNode(\"\", true)\n      ], 2))\n    }), 128))\n  ]))\n}\n}\n\n})",
-      "start": 1709675392183,
-      "end": 1709675392183
+      "start": 1709714221298,
+      "end": 1709714221298
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1709675392185,
-      "end": 1709675392186,
+      "start": 1709714221299,
+      "end": 1709714221299,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1709675392190,
-      "end": 1709675392190,
+      "start": 1709714221302,
+      "end": 1709714221303,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, unref as _unref, toDisplayString as _toDisplayString, withModifiers as _withModifiers, normalizeClass as _normalizeClass, createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, createBlock as _createBlock, createCommentVNode as _createCommentVNode, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-a97df893\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"docs-toc-links\" }\nconst _hoisted_2 = [\"href\", \"onClick\"]\n\nimport type { PropType } from 'vue'\nimport type { TocLink } from '@nuxt/content/dist/runtime/types'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'DocsTocLinks',\n  props: {\n  links: {\n    type: Array as PropType<TocLink[]>,\n    default: () => []\n  }\n},\n  emits: ['move'],\n  setup(__props, { emit: __emit }) {\n\n\n\nconst emit = __emit\n\nconst router = useRouter()\n\nconst { activeHeadings, updateHeadings } = useScrollspy()\n\nif (process.client) {\n  setTimeout(() => {\n    updateHeadings([\n      ...document.querySelectorAll('.document-driven-page h1, .docus-content h1'),\n      ...document.querySelectorAll('.document-driven-page h2, .docus-content h2'),\n      ...document.querySelectorAll('.document-driven-page h3, .docus-content h3'),\n      ...document.querySelectorAll('.document-driven-page h4, .docus-content h4')\n    ])\n  }, 300)\n}\n\nfunction scrollToHeading (id: string) {\n  router.push(`#${id}`)\n  emit('move', id)\n}\n\nfunction childMove(id: string) {\n  emit('move', id)\n}\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_DocsTocLinks = _resolveComponent(\"DocsTocLinks\", true)!\n\n  return (_openBlock(), _createElementBlock(\"ul\", _hoisted_1, [\n    (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(__props.links, (link) => {\n      return (_openBlock(), _createElementBlock(\"li\", {\n        key: link.text,\n        class: _normalizeClass([`depth-${link.depth}`])\n      }, [\n        _createElementVNode(\"a\", {\n          href: `#${link.id}`,\n          class: _normalizeClass([_unref(activeHeadings).includes(link.id) && 'active']),\n          onClick: _withModifiers(($event: any) => (scrollToHeading(link.id)), [\"prevent\"])\n        }, _toDisplayString(link.text), 11, _hoisted_2),\n        (link.children)\n          ? (_openBlock(), _createBlock(_component_DocsTocLinks, {\n              key: 0,\n              links: link.children,\n              onMove: _cache[0] || (_cache[0] = ($event: any) => (childMove($event)))\n            }, null, 8, [\"links\"]))\n          : _createCommentVNode(\"\", true)\n      ], 2))\n    }), 128))\n  ]))\n}\n}\n\n})",
-      "start": 1709675392193,
-      "end": 1709675392193,
+      "start": 1709714221304,
+      "end": 1709714221304,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1709675392194,
-      "end": 1709675392194,
+      "start": 1709714221304,
+      "end": 1709714221304,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1709675392194,
-      "end": 1709675392194,
+      "start": 1709714221305,
+      "end": 1709714221305,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1709675392194,
-      "end": 1709675392194,
+      "start": 1709714221305,
+      "end": 1709714221305,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, unref as _unref, toDisplayString as _toDisplayString, withModifiers as _withModifiers, normalizeClass as _normalizeClass, createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, createBlock as _createBlock, createCommentVNode as _createCommentVNode, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-a97df893\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = { class: \"docs-toc-links\" };\nconst _hoisted_2 = [\"href\", \"onClick\"];\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"DocsTocLinks\",\n  props: {\n    links: {\n      type: Array,\n      default: () => []\n    }\n  },\n  emits: [\"move\"],\n  setup(__props, { emit: __emit }) {\n    const emit = __emit;\n    const router = useRouter();\n    const { activeHeadings, updateHeadings } = useScrollspy();\n    if (process.client) {\n      setTimeout(() => {\n        updateHeadings([\n          ...document.querySelectorAll(\".document-driven-page h1, .docus-content h1\"),\n          ...document.querySelectorAll(\".document-driven-page h2, .docus-content h2\"),\n          ...document.querySelectorAll(\".document-driven-page h3, .docus-content h3\"),\n          ...document.querySelectorAll(\".document-driven-page h4, .docus-content h4\")\n        ]);\n      }, 300);\n    }\n    function scrollToHeading(id) {\n      router.push(`#${id}`);\n      emit(\"move\", id);\n    }\n    function childMove(id) {\n      emit(\"move\", id);\n    }\n    return (_ctx, _cache) => {\n      const _component_DocsTocLinks = _resolveComponent(\"DocsTocLinks\", true);\n      return _openBlock(), _createElementBlock(\"ul\", _hoisted_1, [\n        (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(__props.links, (link) => {\n          return _openBlock(), _createElementBlock(\"li\", {\n            key: link.text,\n            class: _normalizeClass([`depth-${link.depth}`])\n          }, [\n            _createElementVNode(\"a\", {\n              href: `#${link.id}`,\n              class: _normalizeClass([_unref(activeHeadings).includes(link.id) && \"active\"]),\n              onClick: _withModifiers(($event) => scrollToHeading(link.id), [\"prevent\"])\n            }, _toDisplayString(link.text), 11, _hoisted_2),\n            link.children ? (_openBlock(), _createBlock(_component_DocsTocLinks, {\n              key: 0,\n              links: link.children,\n              onMove: _cache[0] || (_cache[0] = ($event) => childMove($event))\n            }, null, 8, [\"links\"])) : _createCommentVNode(\"\", true)\n          ], 2);\n        }), 128))\n      ]);\n    };\n  }\n});\n",
-      "start": 1709675392194,
-      "end": 1709675393066,
+      "start": 1709714221305,
+      "end": 1709714221582,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -64,125 +64,125 @@
     },
     {
       "name": "vite:json",
-      "start": 1709675393066,
-      "end": 1709675393066,
+      "start": 1709714221583,
+      "end": 1709714221583,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1709675393066,
-      "end": 1709675393066,
+      "start": 1709714221583,
+      "end": 1709714221583,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1709675393066,
-      "end": 1709675393067,
+      "start": 1709714221583,
+      "end": 1709714221583,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1709675393067,
-      "end": 1709675393067,
+      "start": 1709714221583,
+      "end": 1709714221583,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709675393067,
-      "end": 1709675393067,
+      "start": 1709714221583,
+      "end": 1709714221583,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1709675393067,
-      "end": 1709675393067,
+      "start": 1709714221583,
+      "end": 1709714221583,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1709675393067,
-      "end": 1709675393067,
+      "start": 1709714221583,
+      "end": 1709714221583,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1709675393068,
-      "end": 1709675393068,
+      "start": 1709714221583,
+      "end": 1709714221583,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709675393068,
-      "end": 1709675393068,
+      "start": 1709714221584,
+      "end": 1709714221584,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1709675393068,
-      "end": 1709675393068,
+      "start": 1709714221584,
+      "end": 1709714221584,
       "order": "normal"
     },
     {
       "name": "vite:define",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, unref as _unref, toDisplayString as _toDisplayString, withModifiers as _withModifiers, normalizeClass as _normalizeClass, createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, createBlock as _createBlock, createCommentVNode as _createCommentVNode, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-a97df893\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = { class: \"docs-toc-links\" };\nconst _hoisted_2 = [\"href\", \"onClick\"];\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"DocsTocLinks\",\n  props: {\n    links: {\n      type: Array,\n      default: () => []\n    }\n  },\n  emits: [\"move\"],\n  setup(__props, { emit: __emit }) {\n    const emit = __emit;\n    const router = useRouter();\n    const { activeHeadings, updateHeadings } = useScrollspy();\n    if (true) {\n      setTimeout(() => {\n        updateHeadings([\n          ...document.querySelectorAll(\".document-driven-page h1, .docus-content h1\"),\n          ...document.querySelectorAll(\".document-driven-page h2, .docus-content h2\"),\n          ...document.querySelectorAll(\".document-driven-page h3, .docus-content h3\"),\n          ...document.querySelectorAll(\".document-driven-page h4, .docus-content h4\")\n        ]);\n      }, 300);\n    }\n    function scrollToHeading(id) {\n      router.push(`#${id}`);\n      emit(\"move\", id);\n    }\n    function childMove(id) {\n      emit(\"move\", id);\n    }\n    return (_ctx, _cache) => {\n      const _component_DocsTocLinks = _resolveComponent(\"DocsTocLinks\", true);\n      return _openBlock(), _createElementBlock(\"ul\", _hoisted_1, [\n        (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(__props.links, (link) => {\n          return _openBlock(), _createElementBlock(\"li\", {\n            key: link.text,\n            class: _normalizeClass([`depth-${link.depth}`])\n          }, [\n            _createElementVNode(\"a\", {\n              href: `#${link.id}`,\n              class: _normalizeClass([_unref(activeHeadings).includes(link.id) && \"active\"]),\n              onClick: _withModifiers(($event) => scrollToHeading(link.id), [\"prevent\"])\n            }, _toDisplayString(link.text), 11, _hoisted_2),\n            link.children ? (_openBlock(), _createBlock(_component_DocsTocLinks, {\n              key: 0,\n              links: link.children,\n              onMove: _cache[0] || (_cache[0] = ($event) => childMove($event))\n            }, null, 8, [\"links\"])) : _createCommentVNode(\"\", true)\n          ], 2);\n        }), 128))\n      ]);\n    };\n  }\n});\n",
-      "start": 1709675393068,
-      "end": 1709675393164,
+      "start": 1709714221584,
+      "end": 1709714221620,
       "order": "normal",
       "sourcemaps": null
     },
     {
       "name": "vite:css-post",
-      "start": 1709675393165,
-      "end": 1709675393165,
+      "start": 1709714221620,
+      "end": 1709714221620,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1709675393165,
-      "end": 1709675393165,
+      "start": 1709714221620,
+      "end": 1709714221620,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1709675393165,
-      "end": 1709675393165,
+      "start": 1709714221620,
+      "end": 1709714221620,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1709675393165,
-      "end": 1709675393165,
+      "start": 1709714221620,
+      "end": 1709714221620,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1709675393183,
-      "end": 1709675393183,
+      "start": 1709714221620,
+      "end": 1709714221620,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1709675393183,
-      "end": 1709675393183,
+      "start": 1709714221620,
+      "end": 1709714221620,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1709675393184,
-      "end": 1709675393184,
+      "start": 1709714221620,
+      "end": 1709714221620,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1709675393184,
-      "end": 1709675393184,
+      "start": 1709714221621,
+      "end": 1709714221621,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { useRouter } from '#app/composables/router';\nimport { useScrollspy } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/composables/useScrollspy.ts';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, unref as _unref, toDisplayString as _toDisplayString, withModifiers as _withModifiers, normalizeClass as _normalizeClass, createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, createBlock as _createBlock, createCommentVNode as _createCommentVNode, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-a97df893\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = { class: \"docs-toc-links\" };\nconst _hoisted_2 = [\"href\", \"onClick\"];\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"DocsTocLinks\",\n  props: {\n    links: {\n      type: Array,\n      default: () => []\n    }\n  },\n  emits: [\"move\"],\n  setup(__props, { emit: __emit }) {\n    const emit = __emit;\n    const router = useRouter();\n    const { activeHeadings, updateHeadings } = useScrollspy();\n    if (true) {\n      setTimeout(() => {\n        updateHeadings([\n          ...document.querySelectorAll(\".document-driven-page h1, .docus-content h1\"),\n          ...document.querySelectorAll(\".document-driven-page h2, .docus-content h2\"),\n          ...document.querySelectorAll(\".document-driven-page h3, .docus-content h3\"),\n          ...document.querySelectorAll(\".document-driven-page h4, .docus-content h4\")\n        ]);\n      }, 300);\n    }\n    function scrollToHeading(id) {\n      router.push(`#${id}`);\n      emit(\"move\", id);\n    }\n    function childMove(id) {\n      emit(\"move\", id);\n    }\n    return (_ctx, _cache) => {\n      const _component_DocsTocLinks = _resolveComponent(\"DocsTocLinks\", true);\n      return _openBlock(), _createElementBlock(\"ul\", _hoisted_1, [\n        (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(__props.links, (link) => {\n          return _openBlock(), _createElementBlock(\"li\", {\n            key: link.text,\n            class: _normalizeClass([`depth-${link.depth}`])\n          }, [\n            _createElementVNode(\"a\", {\n              href: `#${link.id}`,\n              class: _normalizeClass([_unref(activeHeadings).includes(link.id) && \"active\"]),\n              onClick: _withModifiers(($event) => scrollToHeading(link.id), [\"prevent\"])\n            }, _toDisplayString(link.text), 11, _hoisted_2),\n            link.children ? (_openBlock(), _createBlock(_component_DocsTocLinks, {\n              key: 0,\n              links: link.children,\n              onMove: _cache[0] || (_cache[0] = ($event) => childMove($event))\n            }, null, 8, [\"links\"])) : _createCommentVNode(\"\", true)\n          ], 2);\n        }), 128))\n      ]);\n    };\n  }\n});\n",
-      "start": 1709675393184,
-      "end": 1709675393186,
+      "start": 1709714221621,
+      "end": 1709714221622,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -195,51 +195,51 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1709675393186,
-      "end": 1709675393186,
+      "start": 1709714221622,
+      "end": 1709714221622,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1709675393186,
-      "end": 1709675393186,
+      "start": 1709714221622,
+      "end": 1709714221622,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1709675393186,
-      "end": 1709675393186,
+      "start": 1709714221622,
+      "end": 1709714221622,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1709675393186,
-      "end": 1709675393186,
+      "start": 1709714221622,
+      "end": 1709714221622,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
       "result": "import { default as __nuxt_component_0 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsTocLinks.vue\";\nimport { useRouter } from '#app/composables/router';\nimport { useScrollspy } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/composables/useScrollspy.ts';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, unref as _unref, toDisplayString as _toDisplayString, withModifiers as _withModifiers, normalizeClass as _normalizeClass, createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, createBlock as _createBlock, createCommentVNode as _createCommentVNode, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-a97df893\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = { class: \"docs-toc-links\" };\nconst _hoisted_2 = [\"href\", \"onClick\"];\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"DocsTocLinks\",\n  props: {\n    links: {\n      type: Array,\n      default: () => []\n    }\n  },\n  emits: [\"move\"],\n  setup(__props, { emit: __emit }) {\n    const emit = __emit;\n    const router = useRouter();\n    const { activeHeadings, updateHeadings } = useScrollspy();\n    if (true) {\n      setTimeout(() => {\n        updateHeadings([\n          ...document.querySelectorAll(\".document-driven-page h1, .docus-content h1\"),\n          ...document.querySelectorAll(\".document-driven-page h2, .docus-content h2\"),\n          ...document.querySelectorAll(\".document-driven-page h3, .docus-content h3\"),\n          ...document.querySelectorAll(\".document-driven-page h4, .docus-content h4\")\n        ]);\n      }, 300);\n    }\n    function scrollToHeading(id) {\n      router.push(`#${id}`);\n      emit(\"move\", id);\n    }\n    function childMove(id) {\n      emit(\"move\", id);\n    }\n    return (_ctx, _cache) => {\n      const _component_DocsTocLinks = __nuxt_component_0;\n      return _openBlock(), _createElementBlock(\"ul\", _hoisted_1, [\n        (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(__props.links, (link) => {\n          return _openBlock(), _createElementBlock(\"li\", {\n            key: link.text,\n            class: _normalizeClass([`depth-${link.depth}`])\n          }, [\n            _createElementVNode(\"a\", {\n              href: `#${link.id}`,\n              class: _normalizeClass([_unref(activeHeadings).includes(link.id) && \"active\"]),\n              onClick: _withModifiers(($event) => scrollToHeading(link.id), [\"prevent\"])\n            }, _toDisplayString(link.text), 11, _hoisted_2),\n            link.children ? (_openBlock(), _createBlock(_component_DocsTocLinks, {\n              key: 0,\n              links: link.children,\n              onMove: _cache[0] || (_cache[0] = ($event) => childMove($event))\n            }, null, 8, [\"links\"])) : _createCommentVNode(\"\", true)\n          ], 2);\n        }), 128))\n      ]);\n    };\n  }\n});\n",
-      "start": 1709675393189,
-      "end": 1709675393189,
+      "start": 1709714221622,
+      "end": 1709714221622,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1709675393189,
-      "end": 1709675393189,
+      "start": 1709714221622,
+      "end": 1709714221622,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1709675393190,
-      "end": 1709675393190,
+      "start": 1709714221622,
+      "end": 1709714221622,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1709675393190,
-      "end": 1709675393190,
+      "start": 1709714221622,
+      "end": 1709714221622,
       "order": "normal"
     }
   ]
