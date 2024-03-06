@@ -1,57 +1,32 @@
-# Docus Starter
+# Kubecamp :cloud::computer:
 
-Starter template for [Docus](https://docus.dev).
+Welcome to **Kubecamp** - the ultimate boot camp for diving deep into the world of Kubernetes! Whether you're a student, professional, or enthusiast from any domain eager to learn Kubernetes in a hands-on manner, you've come to the right place.
 
-## Clone
+## :sparkles: What We Offer
 
-Clone the repository (using `nuxi`):
+At Kubecamp, we believe in learning by doing. That's why we provide a comprehensive playground that caters to everyone's needs:
 
-```bash
-npx nuxi init -t themes/docus
-```
+- **Cloud Solution**: Access our state-of-the-art Kubernetes playground hosted in the cloud. No setup is required, just dive in and start experimenting!
 
-## Setup
+- **Local Environment**: Prefer to work locally? No problem! We've got you covered with our easily deployable local environment setup. Get the same hands-on experience, right from your own machine.
 
-Install dependencies:
+## :rocket: Why Choose Kubecamp?
 
-```bash
-yarn install
-```
+- **Hands-on Learning**: Immerse yourself in a practical learning experience that goes beyond theory. 
+- **Flexible Environments**: Learn at your pace, in your preferred setup - be it cloud or local.
+- **Community of Enthusiasts**: Join a vibrant community of learners and experts passionate about Kubernetes.
 
-## Development
+## :gear: Getting Started
 
-```bash
-yarn dev
-```
+1. **Sign Up**: Visit our [website](kcdlahore.org) to sign up for Kubecamp. 
+2. **Choose Your Playground**: Decide between cloud or local setup. Instructions for both setups are provided upon registration.
+3. **Dive Into Kubernetes**: Start exploring Kubernetes with our curated learning materials and exercises.
 
-## Edge Side Rendering
+## :handshake: Join Our Community
 
-Can be deployed to Vercel Functions, Netlify Functions, AWS, and most Node-compatible environments.
+Connect with fellow Kubecampers and Kubernetes experts. Share your progress, ask questions, and collaborate on exciting projects. Join us on [Slack)(https://cncflahore.slack.com/)
 
-Look at all the available presets [here](https://v3.nuxtjs.org/guide/deploy/presets).
+## :question: Need Help?
 
-```bash
-yarn build
-```
+Our dedicated support team is here to assist you. Whether it's a setup issue or a conceptual doubt, reach out to us at 
 
-## Static Generation
-
-Use the `generate` command to build your application.
-
-The HTML files will be generated in the .output/public directory and ready to be deployed to any static compatible hosting.
-
-```bash
-yarn generate
-```
-
-## Preview build
-
-You might want to preview the result of your build locally, to do so, run the following command:
-
-```bash
-yarn preview
-```
-
----
-
-For a detailed explanation of how things work, check out [Docus](https://docus.dev).
