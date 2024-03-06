@@ -1,1 +1,0 @@
-import o from"./ProseP.EI2hdi_O.js";import{d as r,b as t,X as n}from"./entry.uisq422E.js";const m=r({__name:"SourceLink",props:{source:{type:String,required:!0}},setup(_){return(c,p)=>{const e=o;return t(),n(e)}}});export{m as default};
