@@ -43,5 +43,4 @@ export { fetchContentNavigation } from '../node_modules/@nuxt/content/dist/runti
 export { useContentState, useContent } from '../node_modules/@nuxt/content/dist/runtime/composables/content';
 export { flatUnwrap as unwrapSlot } from '../node_modules/@nuxtjs/mdc/dist/runtime/utils/node';
 export { parseMarkdown } from '../node_modules/@nuxtjs/mdc/dist/runtime/parser';
-export { useNuxtDevTools } from '../node_modules/@nuxt/devtools/dist/runtime/use-nuxt-devtools';
 export { definePageMeta } from '../node_modules/nuxt/dist/pages/runtime/composables';

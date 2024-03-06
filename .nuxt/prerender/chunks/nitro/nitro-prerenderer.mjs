@@ -138,7 +138,7 @@ const appConfig3 = defineAppConfig({});
 
 const inlineAppConfig = {
   "nuxt": {
-    "buildId": "c915fae1-5f16-46d5-8802-e73f1c468ee1"
+    "buildId": "511a5188-b986-42b8-b4d6-ea33e422266b"
   }
 };
 
@@ -233,7 +233,7 @@ const _inlineRuntimeConfig = {
     "content": {
       "locales": [],
       "defaultLocale": "",
-      "integrity": 1709714209204,
+      "integrity": 1709746675648,
       "experimental": {
         "stripQueryParameters": false,
         "advanceQuery": false,
@@ -4248,6 +4248,25 @@ const components = {
       "type": 1,
       "props": [
         {
+          "name": "source",
+          "global": false,
+          "description": "Source file path.\n\nWon't be used if `page` is set.",
+          "tags": [],
+          "required": false,
+          "type": "string",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
+              "range": [
+                1245,
+                1328
+              ]
+            }
+          ],
+          "schema": "string",
+          "default": "undefined"
+        },
+        {
           "name": "baseUrl",
           "global": false,
           "description": "GitHub base URL.",
@@ -4343,25 +4362,6 @@ const components = {
           "default": "useAppConfig()?.docus?.github?.dir"
         },
         {
-          "name": "source",
-          "global": false,
-          "description": "Source file path.\n\nWon't be used if `page` is set.",
-          "tags": [],
-          "required": false,
-          "type": "string",
-          "declarations": [
-            {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
-              "range": [
-                1245,
-                1328
-              ]
-            }
-          ],
-          "schema": "string",
-          "default": "undefined"
-        },
-        {
           "name": "page",
           "global": false,
           "description": "Use page from",
@@ -4435,6 +4435,21 @@ const components = {
       "events": [],
       "exposed": [
         {
+          "name": "source",
+          "type": "string",
+          "description": "Source file path.\n\nWon't be used if `page` is set.",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
+              "range": [
+                1245,
+                1328
+              ]
+            }
+          ],
+          "schema": "string"
+        },
+        {
           "name": "baseUrl",
           "type": "string",
           "description": "GitHub base URL.",
@@ -4504,21 +4519,6 @@ const components = {
               "range": [
                 1041,
                 1152
-              ]
-            }
-          ],
-          "schema": "string"
-        },
-        {
-          "name": "source",
-          "type": "string",
-          "description": "Source file path.\n\nWon't be used if `page` is set.",
-          "declarations": [
-            {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
-              "range": [
-                1245,
-                1328
               ]
             }
           ],
@@ -10634,8 +10634,8 @@ const components = {
                                     ],
                                     "schema": "boolean"
                                   },
-                                  "__@match@8132": {
-                                    "name": "__@match@8132",
+                                  "__@match@8198": {
+                                    "name": "__@match@8198",
                                     "global": false,
                                     "description": "Matches a string with this regular expression, and returns an array containing the results of\nthat search.",
                                     "tags": [
@@ -10661,8 +10661,8 @@ const components = {
                                       "schema": []
                                     }
                                   },
-                                  "__@replace@8134": {
-                                    "name": "__@replace@8134",
+                                  "__@replace@8200": {
+                                    "name": "__@replace@8200",
                                     "global": false,
                                     "description": "Replaces text in a string, using this regular expression.",
                                     "tags": [
@@ -10703,8 +10703,8 @@ const components = {
                                     ],
                                     "schema": "{ (string: string, replaceValue: string): string; (string: string, replacer: (substring: string, ...args: any[]) => string): string; }"
                                   },
-                                  "__@search@8137": {
-                                    "name": "__@search@8137",
+                                  "__@search@8203": {
+                                    "name": "__@search@8203",
                                     "global": false,
                                     "description": "Finds the position beginning first substring match in a regular expression search\nusing this regular expression.",
                                     "tags": [
@@ -10730,8 +10730,8 @@ const components = {
                                       "schema": []
                                     }
                                   },
-                                  "__@split@8139": {
-                                    "name": "__@split@8139",
+                                  "__@split@8205": {
+                                    "name": "__@split@8205",
                                     "global": false,
                                     "description": "Returns an array of substrings that were delimited by strings in the original input that\nmatch against this regular expression.\n\nIf the regular expression contains capturing parentheses, then each time this\nregular expression matches, the results (including any undefined results) of the\ncapturing parentheses are spliced.",
                                     "tags": [
@@ -10761,8 +10761,8 @@ const components = {
                                       "schema": []
                                     }
                                   },
-                                  "__@matchAll@8141": {
-                                    "name": "__@matchAll@8141",
+                                  "__@matchAll@8207": {
+                                    "name": "__@matchAll@8207",
                                     "global": false,
                                     "description": "Matches a string with this regular expression, and returns an iterable of matches\ncontaining the results of that search.",
                                     "tags": [
@@ -11142,16 +11142,6 @@ const components = {
                             ]
                           }
                         },
-                        "title": {
-                          "name": "title",
-                          "global": false,
-                          "description": "",
-                          "tags": [],
-                          "required": false,
-                          "type": "string | number | boolean | RegExp | QueryBuilderWhere",
-                          "declarations": [],
-                          "schema": "string | number | boolean | RegExp | QueryBuilderWhere"
-                        },
                         "_id": {
                           "name": "_id",
                           "global": false,
@@ -11174,6 +11164,16 @@ const components = {
                         },
                         "_path": {
                           "name": "_path",
+                          "global": false,
+                          "description": "",
+                          "tags": [],
+                          "required": false,
+                          "type": "string | number | boolean | RegExp | QueryBuilderWhere",
+                          "declarations": [],
+                          "schema": "string | number | boolean | RegExp | QueryBuilderWhere"
+                        },
+                        "title": {
+                          "name": "title",
                           "global": false,
                           "description": "",
                           "tags": [],
@@ -12190,21 +12190,6 @@ const components = {
           "schema": "undefined"
         },
         {
-          "name": "tag",
-          "type": "string",
-          "description": "The tag to use for the renderer element if it is used.",
-          "declarations": [
-            {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
-              "range": [
-                3494,
-                3606
-              ]
-            }
-          ],
-          "schema": "string"
-        },
-        {
           "name": "excerpt",
           "type": "boolean",
           "description": "Whether or not to render the excerpt.",
@@ -12225,6 +12210,21 @@ const components = {
               "true"
             ]
           }
+        },
+        {
+          "name": "tag",
+          "type": "string",
+          "description": "The tag to use for the renderer element if it is used.",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
+              "range": [
+                3494,
+                3606
+              ]
+            }
+          ],
+          "schema": "string"
         },
         {
           "name": "head",
@@ -12903,8 +12903,8 @@ const components = {
                                     ],
                                     "schema": "boolean"
                                   },
-                                  "__@match@8132": {
-                                    "name": "__@match@8132",
+                                  "__@match@8198": {
+                                    "name": "__@match@8198",
                                     "global": false,
                                     "description": "Matches a string with this regular expression, and returns an array containing the results of\nthat search.",
                                     "tags": [
@@ -12930,8 +12930,8 @@ const components = {
                                       "schema": []
                                     }
                                   },
-                                  "__@replace@8134": {
-                                    "name": "__@replace@8134",
+                                  "__@replace@8200": {
+                                    "name": "__@replace@8200",
                                     "global": false,
                                     "description": "Replaces text in a string, using this regular expression.",
                                     "tags": [
@@ -12972,8 +12972,8 @@ const components = {
                                     ],
                                     "schema": "{ (string: string, replaceValue: string): string; (string: string, replacer: (substring: string, ...args: any[]) => string): string; }"
                                   },
-                                  "__@search@8137": {
-                                    "name": "__@search@8137",
+                                  "__@search@8203": {
+                                    "name": "__@search@8203",
                                     "global": false,
                                     "description": "Finds the position beginning first substring match in a regular expression search\nusing this regular expression.",
                                     "tags": [
@@ -12999,8 +12999,8 @@ const components = {
                                       "schema": []
                                     }
                                   },
-                                  "__@split@8139": {
-                                    "name": "__@split@8139",
+                                  "__@split@8205": {
+                                    "name": "__@split@8205",
                                     "global": false,
                                     "description": "Returns an array of substrings that were delimited by strings in the original input that\nmatch against this regular expression.\n\nIf the regular expression contains capturing parentheses, then each time this\nregular expression matches, the results (including any undefined results) of the\ncapturing parentheses are spliced.",
                                     "tags": [
@@ -13030,8 +13030,8 @@ const components = {
                                       "schema": []
                                     }
                                   },
-                                  "__@matchAll@8141": {
-                                    "name": "__@matchAll@8141",
+                                  "__@matchAll@8207": {
+                                    "name": "__@matchAll@8207",
                                     "global": false,
                                     "description": "Matches a string with this regular expression, and returns an iterable of matches\ncontaining the results of that search.",
                                     "tags": [
@@ -13411,16 +13411,6 @@ const components = {
                             ]
                           }
                         },
-                        "title": {
-                          "name": "title",
-                          "global": false,
-                          "description": "",
-                          "tags": [],
-                          "required": false,
-                          "type": "string | number | boolean | RegExp | QueryBuilderWhere",
-                          "declarations": [],
-                          "schema": "string | number | boolean | RegExp | QueryBuilderWhere"
-                        },
                         "_id": {
                           "name": "_id",
                           "global": false,
@@ -13443,6 +13433,16 @@ const components = {
                         },
                         "_path": {
                           "name": "_path",
+                          "global": false,
+                          "description": "",
+                          "tags": [],
+                          "required": false,
+                          "type": "string | number | boolean | RegExp | QueryBuilderWhere",
+                          "declarations": [],
+                          "schema": "string | number | boolean | RegExp | QueryBuilderWhere"
+                        },
+                        "title": {
+                          "name": "title",
                           "global": false,
                           "description": "",
                           "tags": [],
@@ -15165,16 +15165,6 @@ const components = {
                                 ]
                               }
                             },
-                            "title": {
-                              "name": "title",
-                              "global": false,
-                              "description": "",
-                              "tags": [],
-                              "required": false,
-                              "type": "string | number | boolean | RegExp | QueryBuilderWhere",
-                              "declarations": [],
-                              "schema": "string | number | boolean | RegExp | QueryBuilderWhere"
-                            },
                             "_id": {
                               "name": "_id",
                               "global": false,
@@ -15197,6 +15187,16 @@ const components = {
                             },
                             "_path": {
                               "name": "_path",
+                              "global": false,
+                              "description": "",
+                              "tags": [],
+                              "required": false,
+                              "type": "string | number | boolean | RegExp | QueryBuilderWhere",
+                              "declarations": [],
+                              "schema": "string | number | boolean | RegExp | QueryBuilderWhere"
+                            },
+                            "title": {
+                              "name": "title",
                               "global": false,
                               "description": "",
                               "tags": [],
@@ -17008,19 +17008,19 @@ const components = {
       "events": [],
       "exposed": [
         {
-          "name": "tag",
-          "type": "string",
-          "description": "The tag to use for the renderer element if it is used.",
+          "name": "value",
+          "type": "Record<string, any>",
+          "description": "The document to render.",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.vue.d.ts",
               "range": [
-                1151,
-                1222
+                781,
+                881
               ]
             }
           ],
-          "schema": "string"
+          "schema": "Record<string, any>"
         },
         {
           "name": "excerpt",
@@ -17045,19 +17045,19 @@ const components = {
           }
         },
         {
-          "name": "value",
-          "type": "Record<string, any>",
-          "description": "The document to render.",
+          "name": "tag",
+          "type": "string",
+          "description": "The tag to use for the renderer element if it is used.",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.vue.d.ts",
               "range": [
-                781,
-                881
+                1151,
+                1222
               ]
             }
           ],
-          "schema": "Record<string, any>"
+          "schema": "string"
         }
       ]
     }
@@ -17104,25 +17104,6 @@ const components = {
           "schema": "Record<string, any>"
         },
         {
-          "name": "data",
-          "global": false,
-          "description": "",
-          "tags": [],
-          "required": false,
-          "type": "Record<string, any>",
-          "declarations": [
-            {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
-              "range": [
-                739,
-                792
-              ]
-            }
-          ],
-          "schema": "Record<string, any>",
-          "default": "{}"
-        },
-        {
           "name": "tag",
           "global": false,
           "description": "Root tag to use for rendering",
@@ -17140,6 +17121,25 @@ const components = {
           ],
           "schema": "string",
           "default": "\"div\""
+        },
+        {
+          "name": "data",
+          "global": false,
+          "description": "",
+          "tags": [],
+          "required": false,
+          "type": "Record<string, any>",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
+              "range": [
+                739,
+                792
+              ]
+            }
+          ],
+          "schema": "Record<string, any>",
+          "default": "{}"
         },
         {
           "name": "components",
@@ -17191,34 +17191,19 @@ const components = {
       "events": [],
       "exposed": [
         {
-          "name": "data",
+          "name": "value",
           "type": "Record<string, any>",
-          "description": "",
+          "description": "Content to render",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
               "range": [
-                739,
-                792
+                359,
+                408
               ]
             }
           ],
           "schema": "Record<string, any>"
-        },
-        {
-          "name": "tag",
-          "type": "string",
-          "description": "Root tag to use for rendering",
-          "declarations": [
-            {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
-              "range": [
-                556,
-                603
-              ]
-            }
-          ],
-          "schema": "string"
         },
         {
           "name": "excerpt",
@@ -17243,15 +17228,30 @@ const components = {
           }
         },
         {
-          "name": "value",
-          "type": "Record<string, any>",
-          "description": "Content to render",
+          "name": "tag",
+          "type": "string",
+          "description": "Root tag to use for rendering",
           "declarations": [
             {
               "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
               "range": [
-                359,
-                408
+                556,
+                603
+              ]
+            }
+          ],
+          "schema": "string"
+        },
+        {
+          "name": "data",
+          "type": "Record<string, any>",
+          "description": "",
+          "declarations": [
+            {
+              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
+              "range": [
+                739,
+                792
               ]
             }
           ],
@@ -21847,7 +21847,7 @@ const handlers = [
   { route: '/api/_content/query/:qid/**:params', handler: _rSvadi, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/query/:qid', handler: _rSvadi, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/query', handler: _rSvadi, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/cache.1709714209204.json', handler: _AD4g7o, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/cache.1709746675648.json', handler: _AD4g7o, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/navigation/:qid/**:params', handler: _QdE0th, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/navigation/:qid', handler: _QdE0th, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/navigation', handler: _QdE0th, lazy: false, middleware: false, method: "get" },

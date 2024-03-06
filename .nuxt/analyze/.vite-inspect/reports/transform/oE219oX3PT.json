@@ -4,105 +4,105 @@
     {
       "name": "vite:load-fallback",
       "result": "import { setResponseStatus as _setResponseStatus, appendHeader, getRequestHeader, getRequestHeaders } from \"h3\";\nimport { useNuxtApp } from \"../nuxt.js\";\nimport { toArray } from \"../utils.js\";\nexport function useRequestEvent(nuxtApp = useNuxtApp()) {\n  return nuxtApp.ssrContext?.event;\n}\nexport function useRequestHeaders(include) {\n  if (import.meta.client) {\n    return {};\n  }\n  const event = useRequestEvent();\n  const _headers = event ? getRequestHeaders(event) : {};\n  if (!include || !event) {\n    return _headers;\n  }\n  const headers = /* @__PURE__ */ Object.create(null);\n  for (const _key of include) {\n    const key = _key.toLowerCase();\n    const header = _headers[key];\n    if (header) {\n      headers[key] = header;\n    }\n  }\n  return headers;\n}\nexport function useRequestHeader(header) {\n  if (import.meta.client) {\n    return void 0;\n  }\n  const event = useRequestEvent();\n  return event ? getRequestHeader(event, header) : void 0;\n}\nexport function useRequestFetch() {\n  if (import.meta.client) {\n    return globalThis.$fetch;\n  }\n  return useRequestEvent()?.$fetch || globalThis.$fetch;\n}\nexport function setResponseStatus(arg1, arg2, arg3) {\n  if (import.meta.client) {\n    return;\n  }\n  if (arg1 && typeof arg1 !== \"number\") {\n    return _setResponseStatus(arg1, arg2, arg3);\n  }\n  const event = useRequestEvent();\n  if (event) {\n    return _setResponseStatus(event, arg1, arg2);\n  }\n}\nexport function prerenderRoutes(path) {\n  if (!import.meta.server || !import.meta.prerender) {\n    return;\n  }\n  const paths = toArray(path);\n  appendHeader(useRequestEvent(), \"x-nitro-prerender\", paths.map((p) => encodeURIComponent(p)).join(\", \"));\n}\n",
-      "start": 1709714220813,
-      "end": 1709714221403,
+      "start": 1709746823219,
+      "end": 1709746824350,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1709714221403,
-      "end": 1709714221403,
+      "start": 1709746824350,
+      "end": 1709746824350,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1709714221405,
-      "end": 1709714221405,
+      "start": 1709746824350,
+      "end": 1709746824350,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
-      "start": 1709714221405,
-      "end": 1709714221405,
+      "start": 1709746824350,
+      "end": 1709746824350,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1709714221405,
-      "end": 1709714221405,
+      "start": 1709746824350,
+      "end": 1709746824350,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1709714221405,
-      "end": 1709714221405,
+      "start": 1709746824350,
+      "end": 1709746824350,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1709714221405,
-      "end": 1709714221405,
+      "start": 1709746824350,
+      "end": 1709746824350,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1709714221405,
-      "end": 1709714221405,
+      "start": 1709746824350,
+      "end": 1709746824350,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1709714221405,
-      "end": 1709714221405,
+      "start": 1709746824350,
+      "end": 1709746824350,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1709714221407,
-      "end": 1709714221407,
+      "start": 1709746824350,
+      "end": 1709746824350,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1709714221407,
-      "end": 1709714221407,
+      "start": 1709746824350,
+      "end": 1709746824350,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1709714221408,
-      "end": 1709714221408,
+      "start": 1709746824350,
+      "end": 1709746824350,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709714221408,
-      "end": 1709714221408,
+      "start": 1709746824350,
+      "end": 1709746824350,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1709714221408,
-      "end": 1709714221408,
+      "start": 1709746824350,
+      "end": 1709746824350,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1709714221408,
-      "end": 1709714221408,
+      "start": 1709746824350,
+      "end": 1709746824350,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1709714221409,
-      "end": 1709714221409,
+      "start": 1709746824350,
+      "end": 1709746824350,
       "order": "normal"
     },
     {
       "name": "replace",
       "result": "import { setResponseStatus as _setResponseStatus, appendHeader, getRequestHeader, getRequestHeaders } from \"h3\";\nimport { useNuxtApp } from \"../nuxt.js\";\nimport { toArray } from \"../utils.js\";\nexport function useRequestEvent(nuxtApp = useNuxtApp()) {\n  return nuxtApp.ssrContext?.event;\n}\nexport function useRequestHeaders(include) {\n  if (true) {\n    return {};\n  }\n  const event = useRequestEvent();\n  const _headers = event ? getRequestHeaders(event) : {};\n  if (!include || !event) {\n    return _headers;\n  }\n  const headers = /* @__PURE__ */ Object.create(null);\n  for (const _key of include) {\n    const key = _key.toLowerCase();\n    const header = _headers[key];\n    if (header) {\n      headers[key] = header;\n    }\n  }\n  return headers;\n}\nexport function useRequestHeader(header) {\n  if (true) {\n    return void 0;\n  }\n  const event = useRequestEvent();\n  return event ? getRequestHeader(event, header) : void 0;\n}\nexport function useRequestFetch() {\n  if (true) {\n    return globalThis.$fetch;\n  }\n  return useRequestEvent()?.$fetch || globalThis.$fetch;\n}\nexport function setResponseStatus(arg1, arg2, arg3) {\n  if (true) {\n    return;\n  }\n  if (arg1 && typeof arg1 !== \"number\") {\n    return _setResponseStatus(arg1, arg2, arg3);\n  }\n  const event = useRequestEvent();\n  if (event) {\n    return _setResponseStatus(event, arg1, arg2);\n  }\n}\nexport function prerenderRoutes(path) {\n  if (!false || !false) {\n    return;\n  }\n  const paths = toArray(path);\n  appendHeader(useRequestEvent(), \"x-nitro-prerender\", paths.map((p) => encodeURIComponent(p)).join(\", \"));\n}\n",
-      "start": 1709714221409,
-      "end": 1709714221409,
+      "start": 1709746824351,
+      "end": 1709746824351,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -115,116 +115,116 @@
     },
     {
       "name": "ssr-styles",
-      "start": 1709714221410,
-      "end": 1709714221410,
+      "start": 1709746824351,
+      "end": 1709746824351,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1709714221411,
-      "end": 1709714221411,
+      "start": 1709746824351,
+      "end": 1709746824351,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1709714221411,
-      "end": 1709714221411,
+      "start": 1709746824351,
+      "end": 1709746824351,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1709714221414,
-      "end": 1709714221414,
+      "start": 1709746824351,
+      "end": 1709746824351,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1709714221414,
-      "end": 1709714221415,
+      "start": 1709746824351,
+      "end": 1709746824351,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1709714221415,
-      "end": 1709714221415,
+      "start": 1709746824351,
+      "end": 1709746824351,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1709714221416,
-      "end": 1709714221416,
+      "start": 1709746824351,
+      "end": 1709746824351,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1709714221416,
-      "end": 1709714221416,
+      "start": 1709746824351,
+      "end": 1709746824351,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1709714221416,
-      "end": 1709714221416,
+      "start": 1709746824351,
+      "end": 1709746824351,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1709714221417,
-      "end": 1709714221417,
+      "start": 1709746824351,
+      "end": 1709746824351,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1709714221424,
-      "end": 1709714221424,
+      "start": 1709746824351,
+      "end": 1709746824351,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1709714221427,
-      "end": 1709714221427,
+      "start": 1709746824351,
+      "end": 1709746824351,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1709714221432,
-      "end": 1709714221432,
+      "start": 1709746824351,
+      "end": 1709746824351,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1709714221440,
-      "end": 1709714221441,
+      "start": 1709746824351,
+      "end": 1709746824351,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1709714221441,
-      "end": 1709714221441,
+      "start": 1709746824351,
+      "end": 1709746824351,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1709714221441,
-      "end": 1709714221441,
+      "start": 1709746824351,
+      "end": 1709746824351,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1709714221441,
-      "end": 1709714221441,
+      "start": 1709746824351,
+      "end": 1709746824351,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1709714221441,
-      "end": 1709714221442,
+      "start": 1709746824351,
+      "end": 1709746824351,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1709714221447,
-      "end": 1709714221447,
+      "start": 1709746824351,
+      "end": 1709746824351,
       "order": "normal"
     }
   ]

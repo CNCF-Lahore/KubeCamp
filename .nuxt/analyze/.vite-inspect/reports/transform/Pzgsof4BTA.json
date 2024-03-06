@@ -4,51 +4,51 @@
     {
       "name": "vite:vue",
       "result": "\nimport type { PropType } from 'vue'\nimport Ellipsis from '../globals/Ellipsis.vue'\nimport ComponentPlaygroundData from './ComponentPlaygroundData.vue'\nimport type { NuxtComponentMetaNames } from '#nuxt-component-meta/types'\n\nexport default defineComponent({\n  props: {\n    component: {\n      type: String as PropType<NuxtComponentMetaNames>,\n      required: true\n    },\n    props: {\n      type: Object,\n      required: false,\n      default: () => ({})\n    }\n  },\n  async setup (props) {\n    const as = computed(() => resolveComponent(props.component))\n\n    const formProps = ref({\n      ...props.props\n    })\n\n    const componentData = await useComponentMeta(props.component)\n\n    return {\n      as,\n      formProps,\n      componentData\n    }\n  },\n  render (ctx: any) {\n    const componentSlots = Object.entries(this.$slots as any).reduce(\n      (acc, [key, slot]) => {\n        if (key.startsWith('component-')) {\n          const slotKey: string = key.replace('component-', '')\n          acc[slotKey] = slot\n        }\n\n        return acc\n      },\n      {} as any\n    )\n\n    return h(\n      'div',\n      {\n        class: 'component-playground'\n      },\n      [\n        h(\n          'div',\n          {\n            class: 'component-playground-wrapper'\n          },\n          [\n            h(\n              Ellipsis,\n              {\n                class: 'component-playground-ellipsis',\n                blur: '5vw',\n                height: '100%',\n                width: '100%'\n              }\n            ),\n            h(\n              ctx.as,\n              {\n                ...ctx.formProps,\n                class: 'component-playground-component'\n              },\n              {\n                ...componentSlots\n              }\n            )\n          ]\n        ),\n        h(\n          ComponentPlaygroundData,\n          {\n            modelValue: ctx.formProps,\n            componentData: ctx.componentData,\n            'onUpdate:modelValue': val => (ctx.formProps = val)\n          }\n        )\n      ]\n    )\n  }\n})\n",
-      "start": 1709714221933,
-      "end": 1709714221933
+      "start": 1709746824506,
+      "end": 1709746824506
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1709714221934,
-      "end": 1709714221934,
+      "start": 1709746824507,
+      "end": 1709746824507,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1709714221937,
-      "end": 1709714221937,
+      "start": 1709746824510,
+      "end": 1709746824510,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "\nimport type { PropType } from 'vue'\nimport Ellipsis from '../globals/Ellipsis.vue'\nimport ComponentPlaygroundData from './ComponentPlaygroundData.vue'\nimport type { NuxtComponentMetaNames } from '#nuxt-component-meta/types'\n\nexport default defineComponent({\n  props: {\n    component: {\n      type: String as PropType<NuxtComponentMetaNames>,\n      required: true\n    },\n    props: {\n      type: Object,\n      required: false,\n      default: () => ({})\n    }\n  },\n  async setup (props) {\n    const as = computed(() => resolveComponent(props.component))\n\n    const formProps = ref({\n      ...props.props\n    })\n\n    const componentData = await useComponentMeta(props.component)\n\n    return {\n      as,\n      formProps,\n      componentData\n    }\n  },\n  render (ctx: any) {\n    const componentSlots = Object.entries(this.$slots as any).reduce(\n      (acc, [key, slot]) => {\n        if (key.startsWith('component-')) {\n          const slotKey: string = key.replace('component-', '')\n          acc[slotKey] = slot\n        }\n\n        return acc\n      },\n      {} as any\n    )\n\n    return h(\n      'div',\n      {\n        class: 'component-playground'\n      },\n      [\n        h(\n          'div',\n          {\n            class: 'component-playground-wrapper'\n          },\n          [\n            h(\n              Ellipsis,\n              {\n                class: 'component-playground-ellipsis',\n                blur: '5vw',\n                height: '100%',\n                width: '100%'\n              }\n            ),\n            h(\n              ctx.as,\n              {\n                ...ctx.formProps,\n                class: 'component-playground-component'\n              },\n              {\n                ...componentSlots\n              }\n            )\n          ]\n        ),\n        h(\n          ComponentPlaygroundData,\n          {\n            modelValue: ctx.formProps,\n            componentData: ctx.componentData,\n            'onUpdate:modelValue': val => (ctx.formProps = val)\n          }\n        )\n      ]\n    )\n  }\n})\n",
-      "start": 1709714221939,
-      "end": 1709714221939,
+      "start": 1709746824511,
+      "end": 1709746824511,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1709714221939,
-      "end": 1709714221939,
+      "start": 1709746824511,
+      "end": 1709746824511,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1709714221940,
-      "end": 1709714221940,
+      "start": 1709746824512,
+      "end": 1709746824512,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1709714221940,
-      "end": 1709714221940,
+      "start": 1709746824512,
+      "end": 1709746824512,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import Ellipsis from \"../globals/Ellipsis.vue\";\nimport ComponentPlaygroundData from \"./ComponentPlaygroundData.vue\";\nexport default defineComponent({\n  props: {\n    component: {\n      type: String,\n      required: true\n    },\n    props: {\n      type: Object,\n      required: false,\n      default: () => ({})\n    }\n  },\n  async setup(props) {\n    const as = computed(() => resolveComponent(props.component));\n    const formProps = ref({\n      ...props.props\n    });\n    const componentData = await useComponentMeta(props.component);\n    return {\n      as,\n      formProps,\n      componentData\n    };\n  },\n  render(ctx) {\n    const componentSlots = Object.entries(this.$slots).reduce(\n      (acc, [key, slot]) => {\n        if (key.startsWith(\"component-\")) {\n          const slotKey = key.replace(\"component-\", \"\");\n          acc[slotKey] = slot;\n        }\n        return acc;\n      },\n      {}\n    );\n    return h(\n      \"div\",\n      {\n        class: \"component-playground\"\n      },\n      [\n        h(\n          \"div\",\n          {\n            class: \"component-playground-wrapper\"\n          },\n          [\n            h(\n              Ellipsis,\n              {\n                class: \"component-playground-ellipsis\",\n                blur: \"5vw\",\n                height: \"100%\",\n                width: \"100%\"\n              }\n            ),\n            h(\n              ctx.as,\n              {\n                ...ctx.formProps,\n                class: \"component-playground-component\"\n              },\n              {\n                ...componentSlots\n              }\n            )\n          ]\n        ),\n        h(\n          ComponentPlaygroundData,\n          {\n            modelValue: ctx.formProps,\n            componentData: ctx.componentData,\n            \"onUpdate:modelValue\": (val) => ctx.formProps = val\n          }\n        )\n      ]\n    );\n  }\n});\n",
-      "start": 1709714221940,
-      "end": 1709714222105,
+      "start": 1709746824512,
+      "end": 1709746824699,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -64,123 +64,123 @@
     },
     {
       "name": "vite:json",
-      "start": 1709714222105,
-      "end": 1709714222105,
+      "start": 1709746824699,
+      "end": 1709746824699,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1709714222105,
-      "end": 1709714222105,
+      "start": 1709746824699,
+      "end": 1709746824699,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1709714222105,
-      "end": 1709714222105,
+      "start": 1709746824699,
+      "end": 1709746824700,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1709714222105,
-      "end": 1709714222105,
+      "start": 1709746824700,
+      "end": 1709746824700,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709714222106,
-      "end": 1709714222106,
+      "start": 1709746824700,
+      "end": 1709746824704,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1709714222106,
-      "end": 1709714222106,
+      "start": 1709746824704,
+      "end": 1709746824704,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1709714222106,
-      "end": 1709714222106,
+      "start": 1709746824704,
+      "end": 1709746824705,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1709714222106,
-      "end": 1709714222107,
+      "start": 1709746824705,
+      "end": 1709746824705,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709714222107,
-      "end": 1709714222107,
+      "start": 1709746824706,
+      "end": 1709746824706,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1709714222107,
-      "end": 1709714222107,
+      "start": 1709746824706,
+      "end": 1709746824706,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1709714222108,
-      "end": 1709714222108,
+      "start": 1709746824706,
+      "end": 1709746824707,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1709714222108,
-      "end": 1709714222109,
+      "start": 1709746824707,
+      "end": 1709746824707,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1709714222109,
-      "end": 1709714222109,
+      "start": 1709746824707,
+      "end": 1709746824707,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1709714222109,
-      "end": 1709714222109,
+      "start": 1709746824708,
+      "end": 1709746824708,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1709714222109,
-      "end": 1709714222109,
+      "start": 1709746824708,
+      "end": 1709746824708,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1709714222109,
-      "end": 1709714222109,
+      "start": 1709746824708,
+      "end": 1709746824708,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1709714222109,
-      "end": 1709714222109,
+      "start": 1709746824708,
+      "end": 1709746824709,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1709714222109,
-      "end": 1709714222109,
+      "start": 1709746824709,
+      "end": 1709746824709,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1709714222109,
-      "end": 1709714222109,
+      "start": 1709746824709,
+      "end": 1709746824709,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { defineComponent, computed, resolveComponent, ref, h } from 'vue';\nimport { useComponentMeta } from '/workspace/Kubernetes-Bootcamp/node_modules/nuxt-component-meta/dist/runtime/composables/useComponentMeta.mjs';\nimport Ellipsis from \"../globals/Ellipsis.vue\";\nimport ComponentPlaygroundData from \"./ComponentPlaygroundData.vue\";\nexport default defineComponent({\n  props: {\n    component: {\n      type: String,\n      required: true\n    },\n    props: {\n      type: Object,\n      required: false,\n      default: () => ({})\n    }\n  },\n  async setup(props) {\n    const as = computed(() => resolveComponent(props.component));\n    const formProps = ref({\n      ...props.props\n    });\n    const componentData = await useComponentMeta(props.component);\n    return {\n      as,\n      formProps,\n      componentData\n    };\n  },\n  render(ctx) {\n    const componentSlots = Object.entries(this.$slots).reduce(\n      (acc, [key, slot]) => {\n        if (key.startsWith(\"component-\")) {\n          const slotKey = key.replace(\"component-\", \"\");\n          acc[slotKey] = slot;\n        }\n        return acc;\n      },\n      {}\n    );\n    return h(\n      \"div\",\n      {\n        class: \"component-playground\"\n      },\n      [\n        h(\n          \"div\",\n          {\n            class: \"component-playground-wrapper\"\n          },\n          [\n            h(\n              Ellipsis,\n              {\n                class: \"component-playground-ellipsis\",\n                blur: \"5vw\",\n                height: \"100%\",\n                width: \"100%\"\n              }\n            ),\n            h(\n              ctx.as,\n              {\n                ...ctx.formProps,\n                class: \"component-playground-component\"\n              },\n              {\n                ...componentSlots\n              }\n            )\n          ]\n        ),\n        h(\n          ComponentPlaygroundData,\n          {\n            modelValue: ctx.formProps,\n            componentData: ctx.componentData,\n            \"onUpdate:modelValue\": (val) => ctx.formProps = val\n          }\n        )\n      ]\n    );\n  }\n});\n",
-      "start": 1709714222110,
-      "end": 1709714222116,
+      "start": 1709746824710,
+      "end": 1709746824719,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -193,50 +193,50 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1709714222116,
-      "end": 1709714222116,
+      "start": 1709746824720,
+      "end": 1709746824720,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1709714222116,
-      "end": 1709714222116,
+      "start": 1709746824720,
+      "end": 1709746824720,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1709714222117,
-      "end": 1709714222121,
+      "start": 1709746824720,
+      "end": 1709746824720,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1709714222121,
-      "end": 1709714222121,
+      "start": 1709746824720,
+      "end": 1709746824720,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1709714222121,
-      "end": 1709714222121,
+      "start": 1709746824721,
+      "end": 1709746824721,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1709714222122,
-      "end": 1709714222122,
+      "start": 1709746824722,
+      "end": 1709746824722,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1709714222122,
-      "end": 1709714222122,
+      "start": 1709746824722,
+      "end": 1709746824722,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1709714222122,
-      "end": 1709714222122,
+      "start": 1709746824722,
+      "end": 1709746824722,
       "order": "normal"
     }
   ]

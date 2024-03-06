@@ -12,7 +12,6 @@
 /// <reference types="nuxt-icon" />
 /// <reference types="nuxt-config-schema" />
 /// <reference types="@nuxt-themes/tokens" />
-/// <reference types="@nuxt/devtools" />
 /// <reference types="@nuxt/telemetry" />
 /// <reference types="nuxt" />
 /// <reference path="types/plugins.d.ts" />

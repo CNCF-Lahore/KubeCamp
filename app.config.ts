@@ -1,6 +1,6 @@
 export default defineAppConfig({
   docus: {
-    title: 'Kubernetes BootCamp',
+    title: 'KubeCamp',
 
     description: 'The best place to start your Kubernetes Journey',
 

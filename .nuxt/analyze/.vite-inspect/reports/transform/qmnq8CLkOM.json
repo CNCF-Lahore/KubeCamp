@@ -4,51 +4,51 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, createVNode as _createVNode, isRef as _isRef, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-ff75821c\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"component-playground-data\" }\n\nimport { useVModel } from '@vueuse/core'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'ComponentPlaygroundData',\n  props: {\n  modelValue: {\n    type: Object,\n    required: false,\n    default: () => ({})\n  },\n  componentData: {\n    type: Object,\n    required: false,\n    default: () => ({})\n  }\n},\n  emits: ['update:modelValue'],\n  setup(__props, { emit: __emit }) {\n\nconst props = __props\n\nconst emits = __emit\n\nconst formData = useVModel(props, 'modelValue', emits)\n\nconst activeTabIndex = ref(0)\n\nconst tabs = [\n  {\n    label: 'Props'\n  },\n  {\n    label: 'Slots'\n  },\n  {\n    label: 'Design Tokens'\n  }\n]\n\nconst updateTab = (i: number) => (activeTabIndex.value = i)\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_TabsHeader = _resolveComponent(\"TabsHeader\")!\n  const _component_ComponentPlaygroundProps = _resolveComponent(\"ComponentPlaygroundProps\")!\n  const _component_ComponentPlaygroundSlots = _resolveComponent(\"ComponentPlaygroundSlots\")!\n  const _component_ComponentPlaygroundTokens = _resolveComponent(\"ComponentPlaygroundTokens\")!\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createVNode(_component_TabsHeader, {\n      \"active-tab-index\": _unref(activeTabIndex),\n      tabs: tabs,\n      \"onUpdate:activeTabIndex\": updateTab\n    }, null, 8, [\"active-tab-index\"]),\n    (_unref(activeTabIndex) === 0)\n      ? (_openBlock(), _createBlock(_component_ComponentPlaygroundProps, {\n          key: 0,\n          modelValue: _unref(formData),\n          \"onUpdate:modelValue\": _cache[0] || (_cache[0] = ($event: any) => (_isRef(formData) ? (formData).value = $event : null)),\n          \"component-data\": __props.componentData\n        }, null, 8, [\"modelValue\", \"component-data\"]))\n      : _createCommentVNode(\"\", true),\n    (_unref(activeTabIndex) === 1)\n      ? (_openBlock(), _createBlock(_component_ComponentPlaygroundSlots, {\n          key: 1,\n          \"component-data\": __props.componentData\n        }, null, 8, [\"component-data\"]))\n      : _createCommentVNode(\"\", true),\n    (_unref(activeTabIndex) === 2)\n      ? (_openBlock(), _createBlock(_component_ComponentPlaygroundTokens, {\n          key: 2,\n          \"component-data\": __props.componentData\n        }, null, 8, [\"component-data\"]))\n      : _createCommentVNode(\"\", true)\n  ]))\n}\n}\n\n})",
-      "start": 1709714221918,
-      "end": 1709714221918
+      "start": 1709746824488,
+      "end": 1709746824488
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1709714221919,
-      "end": 1709714221919,
+      "start": 1709746824489,
+      "end": 1709746824489,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1709714221921,
-      "end": 1709714221921,
+      "start": 1709746824492,
+      "end": 1709746824492,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, createVNode as _createVNode, isRef as _isRef, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-ff75821c\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"component-playground-data\" }\n\nimport { useVModel } from '@vueuse/core'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'ComponentPlaygroundData',\n  props: {\n  modelValue: {\n    type: Object,\n    required: false,\n    default: () => ({})\n  },\n  componentData: {\n    type: Object,\n    required: false,\n    default: () => ({})\n  }\n},\n  emits: ['update:modelValue'],\n  setup(__props, { emit: __emit }) {\n\nconst props = __props\n\nconst emits = __emit\n\nconst formData = useVModel(props, 'modelValue', emits)\n\nconst activeTabIndex = ref(0)\n\nconst tabs = [\n  {\n    label: 'Props'\n  },\n  {\n    label: 'Slots'\n  },\n  {\n    label: 'Design Tokens'\n  }\n]\n\nconst updateTab = (i: number) => (activeTabIndex.value = i)\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_TabsHeader = _resolveComponent(\"TabsHeader\")!\n  const _component_ComponentPlaygroundProps = _resolveComponent(\"ComponentPlaygroundProps\")!\n  const _component_ComponentPlaygroundSlots = _resolveComponent(\"ComponentPlaygroundSlots\")!\n  const _component_ComponentPlaygroundTokens = _resolveComponent(\"ComponentPlaygroundTokens\")!\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createVNode(_component_TabsHeader, {\n      \"active-tab-index\": _unref(activeTabIndex),\n      tabs: tabs,\n      \"onUpdate:activeTabIndex\": updateTab\n    }, null, 8, [\"active-tab-index\"]),\n    (_unref(activeTabIndex) === 0)\n      ? (_openBlock(), _createBlock(_component_ComponentPlaygroundProps, {\n          key: 0,\n          modelValue: _unref(formData),\n          \"onUpdate:modelValue\": _cache[0] || (_cache[0] = ($event: any) => (_isRef(formData) ? (formData).value = $event : null)),\n          \"component-data\": __props.componentData\n        }, null, 8, [\"modelValue\", \"component-data\"]))\n      : _createCommentVNode(\"\", true),\n    (_unref(activeTabIndex) === 1)\n      ? (_openBlock(), _createBlock(_component_ComponentPlaygroundSlots, {\n          key: 1,\n          \"component-data\": __props.componentData\n        }, null, 8, [\"component-data\"]))\n      : _createCommentVNode(\"\", true),\n    (_unref(activeTabIndex) === 2)\n      ? (_openBlock(), _createBlock(_component_ComponentPlaygroundTokens, {\n          key: 2,\n          \"component-data\": __props.componentData\n        }, null, 8, [\"component-data\"]))\n      : _createCommentVNode(\"\", true)\n  ]))\n}\n}\n\n})",
-      "start": 1709714221921,
-      "end": 1709714221921,
+      "start": 1709746824494,
+      "end": 1709746824494,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1709714221921,
-      "end": 1709714221921,
+      "start": 1709746824494,
+      "end": 1709746824494,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1709714221922,
-      "end": 1709714221922,
+      "start": 1709746824494,
+      "end": 1709746824494,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1709714221922,
-      "end": 1709714221922,
+      "start": 1709746824494,
+      "end": 1709746824494,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, createVNode as _createVNode, isRef as _isRef, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-ff75821c\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = { class: \"component-playground-data\" };\nimport { useVModel } from \"@vueuse/core\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ComponentPlaygroundData\",\n  props: {\n    modelValue: {\n      type: Object,\n      required: false,\n      default: () => ({})\n    },\n    componentData: {\n      type: Object,\n      required: false,\n      default: () => ({})\n    }\n  },\n  emits: [\"update:modelValue\"],\n  setup(__props, { emit: __emit }) {\n    const props = __props;\n    const emits = __emit;\n    const formData = useVModel(props, \"modelValue\", emits);\n    const activeTabIndex = ref(0);\n    const tabs = [\n      {\n        label: \"Props\"\n      },\n      {\n        label: \"Slots\"\n      },\n      {\n        label: \"Design Tokens\"\n      }\n    ];\n    const updateTab = (i) => activeTabIndex.value = i;\n    return (_ctx, _cache) => {\n      const _component_TabsHeader = _resolveComponent(\"TabsHeader\");\n      const _component_ComponentPlaygroundProps = _resolveComponent(\"ComponentPlaygroundProps\");\n      const _component_ComponentPlaygroundSlots = _resolveComponent(\"ComponentPlaygroundSlots\");\n      const _component_ComponentPlaygroundTokens = _resolveComponent(\"ComponentPlaygroundTokens\");\n      return _openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _createVNode(_component_TabsHeader, {\n          \"active-tab-index\": _unref(activeTabIndex),\n          tabs,\n          \"onUpdate:activeTabIndex\": updateTab\n        }, null, 8, [\"active-tab-index\"]),\n        _unref(activeTabIndex) === 0 ? (_openBlock(), _createBlock(_component_ComponentPlaygroundProps, {\n          key: 0,\n          modelValue: _unref(formData),\n          \"onUpdate:modelValue\": _cache[0] || (_cache[0] = ($event) => _isRef(formData) ? formData.value = $event : null),\n          \"component-data\": __props.componentData\n        }, null, 8, [\"modelValue\", \"component-data\"])) : _createCommentVNode(\"\", true),\n        _unref(activeTabIndex) === 1 ? (_openBlock(), _createBlock(_component_ComponentPlaygroundSlots, {\n          key: 1,\n          \"component-data\": __props.componentData\n        }, null, 8, [\"component-data\"])) : _createCommentVNode(\"\", true),\n        _unref(activeTabIndex) === 2 ? (_openBlock(), _createBlock(_component_ComponentPlaygroundTokens, {\n          key: 2,\n          \"component-data\": __props.componentData\n        }, null, 8, [\"component-data\"])) : _createCommentVNode(\"\", true)\n      ]);\n    };\n  }\n});\n",
-      "start": 1709714221922,
-      "end": 1709714222105,
+      "start": 1709746824495,
+      "end": 1709746824699,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -64,123 +64,123 @@
     },
     {
       "name": "vite:json",
-      "start": 1709714222105,
-      "end": 1709714222105,
+      "start": 1709746824699,
+      "end": 1709746824699,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1709714222105,
-      "end": 1709714222105,
+      "start": 1709746824699,
+      "end": 1709746824699,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1709714222105,
-      "end": 1709714222105,
+      "start": 1709746824699,
+      "end": 1709746824700,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1709714222105,
-      "end": 1709714222105,
+      "start": 1709746824700,
+      "end": 1709746824700,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709714222106,
-      "end": 1709714222106,
+      "start": 1709746824700,
+      "end": 1709746824704,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1709714222106,
-      "end": 1709714222106,
+      "start": 1709746824704,
+      "end": 1709746824704,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1709714222106,
-      "end": 1709714222106,
+      "start": 1709746824704,
+      "end": 1709746824705,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1709714222106,
-      "end": 1709714222107,
+      "start": 1709746824705,
+      "end": 1709746824705,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709714222107,
-      "end": 1709714222107,
+      "start": 1709746824706,
+      "end": 1709746824706,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1709714222107,
-      "end": 1709714222107,
+      "start": 1709746824706,
+      "end": 1709746824706,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1709714222108,
-      "end": 1709714222108,
+      "start": 1709746824706,
+      "end": 1709746824707,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1709714222108,
-      "end": 1709714222109,
+      "start": 1709746824707,
+      "end": 1709746824707,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1709714222109,
-      "end": 1709714222109,
+      "start": 1709746824707,
+      "end": 1709746824707,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1709714222109,
-      "end": 1709714222109,
+      "start": 1709746824708,
+      "end": 1709746824708,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1709714222109,
-      "end": 1709714222109,
+      "start": 1709746824708,
+      "end": 1709746824708,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1709714222109,
-      "end": 1709714222109,
+      "start": 1709746824708,
+      "end": 1709746824708,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1709714222109,
-      "end": 1709714222109,
+      "start": 1709746824708,
+      "end": 1709746824709,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1709714222109,
-      "end": 1709714222109,
+      "start": 1709746824709,
+      "end": 1709746824709,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1709714222109,
-      "end": 1709714222109,
+      "start": 1709746824709,
+      "end": 1709746824709,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { ref } from 'vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, createVNode as _createVNode, isRef as _isRef, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-ff75821c\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = { class: \"component-playground-data\" };\nimport { useVModel } from \"@vueuse/core\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ComponentPlaygroundData\",\n  props: {\n    modelValue: {\n      type: Object,\n      required: false,\n      default: () => ({})\n    },\n    componentData: {\n      type: Object,\n      required: false,\n      default: () => ({})\n    }\n  },\n  emits: [\"update:modelValue\"],\n  setup(__props, { emit: __emit }) {\n    const props = __props;\n    const emits = __emit;\n    const formData = useVModel(props, \"modelValue\", emits);\n    const activeTabIndex = ref(0);\n    const tabs = [\n      {\n        label: \"Props\"\n      },\n      {\n        label: \"Slots\"\n      },\n      {\n        label: \"Design Tokens\"\n      }\n    ];\n    const updateTab = (i) => activeTabIndex.value = i;\n    return (_ctx, _cache) => {\n      const _component_TabsHeader = _resolveComponent(\"TabsHeader\");\n      const _component_ComponentPlaygroundProps = _resolveComponent(\"ComponentPlaygroundProps\");\n      const _component_ComponentPlaygroundSlots = _resolveComponent(\"ComponentPlaygroundSlots\");\n      const _component_ComponentPlaygroundTokens = _resolveComponent(\"ComponentPlaygroundTokens\");\n      return _openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _createVNode(_component_TabsHeader, {\n          \"active-tab-index\": _unref(activeTabIndex),\n          tabs,\n          \"onUpdate:activeTabIndex\": updateTab\n        }, null, 8, [\"active-tab-index\"]),\n        _unref(activeTabIndex) === 0 ? (_openBlock(), _createBlock(_component_ComponentPlaygroundProps, {\n          key: 0,\n          modelValue: _unref(formData),\n          \"onUpdate:modelValue\": _cache[0] || (_cache[0] = ($event) => _isRef(formData) ? formData.value = $event : null),\n          \"component-data\": __props.componentData\n        }, null, 8, [\"modelValue\", \"component-data\"])) : _createCommentVNode(\"\", true),\n        _unref(activeTabIndex) === 1 ? (_openBlock(), _createBlock(_component_ComponentPlaygroundSlots, {\n          key: 1,\n          \"component-data\": __props.componentData\n        }, null, 8, [\"component-data\"])) : _createCommentVNode(\"\", true),\n        _unref(activeTabIndex) === 2 ? (_openBlock(), _createBlock(_component_ComponentPlaygroundTokens, {\n          key: 2,\n          \"component-data\": __props.componentData\n        }, null, 8, [\"component-data\"])) : _createCommentVNode(\"\", true)\n      ]);\n    };\n  }\n});\n",
-      "start": 1709714222110,
-      "end": 1709714222116,
+      "start": 1709746824710,
+      "end": 1709746824719,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -193,51 +193,51 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1709714222116,
-      "end": 1709714222116,
+      "start": 1709746824720,
+      "end": 1709746824720,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1709714222116,
-      "end": 1709714222116,
+      "start": 1709746824720,
+      "end": 1709746824720,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1709714222116,
-      "end": 1709714222121,
+      "start": 1709746824720,
+      "end": 1709746824720,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1709714222121,
-      "end": 1709714222121,
+      "start": 1709746824720,
+      "end": 1709746824720,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
       "result": "import { default as __nuxt_component_0 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/TabsHeader.vue\";\nimport { default as __nuxt_component_1 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundProps.vue\";\nimport { default as __nuxt_component_2 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundSlots.vue\";\nimport { default as __nuxt_component_3 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundTokens.vue\";\nimport { ref } from 'vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, createVNode as _createVNode, isRef as _isRef, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-ff75821c\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = { class: \"component-playground-data\" };\nimport { useVModel } from \"@vueuse/core\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ComponentPlaygroundData\",\n  props: {\n    modelValue: {\n      type: Object,\n      required: false,\n      default: () => ({})\n    },\n    componentData: {\n      type: Object,\n      required: false,\n      default: () => ({})\n    }\n  },\n  emits: [\"update:modelValue\"],\n  setup(__props, { emit: __emit }) {\n    const props = __props;\n    const emits = __emit;\n    const formData = useVModel(props, \"modelValue\", emits);\n    const activeTabIndex = ref(0);\n    const tabs = [\n      {\n        label: \"Props\"\n      },\n      {\n        label: \"Slots\"\n      },\n      {\n        label: \"Design Tokens\"\n      }\n    ];\n    const updateTab = (i) => activeTabIndex.value = i;\n    return (_ctx, _cache) => {\n      const _component_TabsHeader = __nuxt_component_0;\n      const _component_ComponentPlaygroundProps = __nuxt_component_1;\n      const _component_ComponentPlaygroundSlots = __nuxt_component_2;\n      const _component_ComponentPlaygroundTokens = __nuxt_component_3;\n      return _openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _createVNode(_component_TabsHeader, {\n          \"active-tab-index\": _unref(activeTabIndex),\n          tabs,\n          \"onUpdate:activeTabIndex\": updateTab\n        }, null, 8, [\"active-tab-index\"]),\n        _unref(activeTabIndex) === 0 ? (_openBlock(), _createBlock(_component_ComponentPlaygroundProps, {\n          key: 0,\n          modelValue: _unref(formData),\n          \"onUpdate:modelValue\": _cache[0] || (_cache[0] = ($event) => _isRef(formData) ? formData.value = $event : null),\n          \"component-data\": __props.componentData\n        }, null, 8, [\"modelValue\", \"component-data\"])) : _createCommentVNode(\"\", true),\n        _unref(activeTabIndex) === 1 ? (_openBlock(), _createBlock(_component_ComponentPlaygroundSlots, {\n          key: 1,\n          \"component-data\": __props.componentData\n        }, null, 8, [\"component-data\"])) : _createCommentVNode(\"\", true),\n        _unref(activeTabIndex) === 2 ? (_openBlock(), _createBlock(_component_ComponentPlaygroundTokens, {\n          key: 2,\n          \"component-data\": __props.componentData\n        }, null, 8, [\"component-data\"])) : _createCommentVNode(\"\", true)\n      ]);\n    };\n  }\n});\n",
-      "start": 1709714222121,
-      "end": 1709714222121,
+      "start": 1709746824721,
+      "end": 1709746824721,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1709714222122,
-      "end": 1709714222122,
+      "start": 1709746824722,
+      "end": 1709746824722,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1709714222122,
-      "end": 1709714222122,
+      "start": 1709746824722,
+      "end": 1709746824722,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1709714222122,
-      "end": 1709714222122,
+      "start": 1709746824722,
+      "end": 1709746824722,
       "order": "normal"
     }
   ]

@@ -4,8 +4,8 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'VoltaBoard',\n  __ssrInlineRender: true,\n  props: {\n  token: {\n    type: String,\n    required: true\n  }\n},\n  setup(__props) {\n\nconst props = __props\nconst src = computed(() => `https://volta.net/embed/${props.token}`)\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  _push(`<iframe${_ssrRenderAttrs(_mergeProps({\n    src: _unref(src),\n    class: \"w-full\"\n  }, _attrs))}></iframe>`)\n}\n}\n\n})",
-      "start": 1709714227638,
-      "end": 1709714227638,
+      "start": 1709746831590,
+      "end": 1709746831591,
       "sourcemaps": {
         "version": 3,
         "sources": [
@@ -20,71 +20,71 @@
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1709714227639,
-      "end": 1709714227639,
+      "start": 1709746831592,
+      "end": 1709746831593,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1709714227639,
-      "end": 1709714227639,
+      "start": 1709746831592,
+      "end": 1709746831593,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1709714227641,
-      "end": 1709714227641,
+      "start": 1709746831595,
+      "end": 1709746831595,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1709714227641,
-      "end": 1709714227641,
+      "start": 1709746831595,
+      "end": 1709746831596,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'VoltaBoard',\n  __ssrInlineRender: true,\n  props: {\n  token: {\n    type: String,\n    required: true\n  }\n},\n  setup(__props) {\n\nconst props = __props\nconst src = computed(() => `https://volta.net/embed/${props.token}`)\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  _push(`<iframe${_ssrRenderAttrs(_mergeProps({\n    src: _unref(src),\n    class: \"w-full\"\n  }, _attrs))}></iframe>`)\n}\n}\n\n})",
-      "start": 1709714227642,
-      "end": 1709714227642,
+      "start": 1709746831600,
+      "end": 1709746831601,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'VoltaBoard',\n  __ssrInlineRender: true,\n  props: {\n  token: {\n    type: String,\n    required: true\n  }\n},\n  setup(__props) {\n\nconst props = __props\nconst src = computed(() => `https://volta.net/embed/${props.token}`)\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  _push(`<iframe${_ssrRenderAttrs(_mergeProps({\n    src: _unref(src),\n    class: \"w-full\"\n  }, _attrs))}></iframe>`)\n}\n}\n\n})",
-      "start": 1709714227642,
-      "end": 1709714227642,
+      "start": 1709746831600,
+      "end": 1709746831601,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1709714227642,
-      "end": 1709714227642,
+      "start": 1709746831602,
+      "end": 1709746831602,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1709714227642,
-      "end": 1709714227642,
+      "start": 1709746831602,
+      "end": 1709746831602,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1709714227643,
-      "end": 1709714227643,
+      "start": 1709746831602,
+      "end": 1709746831602,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1709714227643,
-      "end": 1709714227643,
+      "start": 1709746831602,
+      "end": 1709746831602,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"VoltaBoard\",\n  __ssrInlineRender: true,\n  props: {\n    token: {\n      type: String,\n      required: true\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const src = computed(() => `https://volta.net/embed/${props.token}`);\n    return (_ctx, _push, _parent, _attrs) => {\n      _push(`<iframe${_ssrRenderAttrs(_mergeProps({\n        src: _unref(src),\n        class: \"w-full\"\n      }, _attrs))}></iframe>`);\n    };\n  }\n});\n",
-      "start": 1709714227643,
-      "end": 1709714227797,
+      "start": 1709746831602,
+      "end": 1709746831822,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -100,135 +100,135 @@
     },
     {
       "name": "vite:json",
-      "start": 1709714227797,
-      "end": 1709714227797,
+      "start": 1709746831822,
+      "end": 1709746831822,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1709714227797,
-      "end": 1709714227797,
+      "start": 1709746831822,
+      "end": 1709746831822,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1709714227797,
-      "end": 1709714227797,
+      "start": 1709746831822,
+      "end": 1709746831822,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1709714227797,
-      "end": 1709714227797,
+      "start": 1709746831822,
+      "end": 1709746831823,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709714227797,
-      "end": 1709714227797,
+      "start": 1709746831823,
+      "end": 1709746831823,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709714227797,
-      "end": 1709714227797,
+      "start": 1709746831823,
+      "end": 1709746831823,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1709714227797,
-      "end": 1709714227797,
+      "start": 1709746831823,
+      "end": 1709746831823,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1709714227797,
-      "end": 1709714227797,
+      "start": 1709746831823,
+      "end": 1709746831823,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1709714227797,
-      "end": 1709714227798,
+      "start": 1709746831823,
+      "end": 1709746831824,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709714227798,
-      "end": 1709714227798,
+      "start": 1709746831824,
+      "end": 1709746831824,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1709714227798,
-      "end": 1709714227798,
+      "start": 1709746831824,
+      "end": 1709746831824,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1709714227799,
-      "end": 1709714227799,
+      "start": 1709746831826,
+      "end": 1709746831826,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1709714227799,
-      "end": 1709714227799,
+      "start": 1709746831826,
+      "end": 1709746831826,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1709714227799,
-      "end": 1709714227799,
+      "start": 1709746831826,
+      "end": 1709746831826,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1709714227799,
-      "end": 1709714227799,
+      "start": 1709746831826,
+      "end": 1709746831826,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1709714227800,
-      "end": 1709714227800,
+      "start": 1709746831826,
+      "end": 1709746831826,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1709714227800,
-      "end": 1709714227800,
+      "start": 1709746831827,
+      "end": 1709746831827,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1709714227800,
-      "end": 1709714227800,
+      "start": 1709746831827,
+      "end": 1709746831827,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1709714227800,
-      "end": 1709714227800,
+      "start": 1709746831827,
+      "end": 1709746831827,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1709714227800,
-      "end": 1709714227800,
+      "start": 1709746831827,
+      "end": 1709746831827,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1709714227800,
-      "end": 1709714227800,
+      "start": 1709746831827,
+      "end": 1709746831827,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { computed } from 'vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"VoltaBoard\",\n  __ssrInlineRender: true,\n  props: {\n    token: {\n      type: String,\n      required: true\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const src = computed(() => `https://volta.net/embed/${props.token}`);\n    return (_ctx, _push, _parent, _attrs) => {\n      _push(`<iframe${_ssrRenderAttrs(_mergeProps({\n        src: _unref(src),\n        class: \"w-full\"\n      }, _attrs))}></iframe>`);\n    };\n  }\n});\n",
-      "start": 1709714227801,
-      "end": 1709714227808,
+      "start": 1709746831828,
+      "end": 1709746831840,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -242,8 +242,8 @@
     {
       "name": "nuxt:imports-transform",
       "result": "import { computed } from 'vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"VoltaBoard\",\n  __ssrInlineRender: true,\n  props: {\n    token: {\n      type: String,\n      required: true\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const src = computed(() => `https://volta.net/embed/${props.token}`);\n    return (_ctx, _push, _parent, _attrs) => {\n      _push(`<iframe${_ssrRenderAttrs(_mergeProps({\n        src: _unref(src),\n        class: \"w-full\"\n      }, _attrs))}></iframe>`);\n    };\n  }\n});\n",
-      "start": 1709714227801,
-      "end": 1709714227808,
+      "start": 1709746831828,
+      "end": 1709746831840,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -256,56 +256,56 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1709714227808,
-      "end": 1709714227808,
+      "start": 1709746831840,
+      "end": 1709746831840,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1709714227808,
-      "end": 1709714227809,
+      "start": 1709746831840,
+      "end": 1709746831840,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1709714227809,
-      "end": 1709714227809,
+      "start": 1709746831840,
+      "end": 1709746831840,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1709714227809,
-      "end": 1709714227809,
+      "start": 1709746831840,
+      "end": 1709746831840,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1709714227809,
-      "end": 1709714227809,
+      "start": 1709746831841,
+      "end": 1709746831841,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1709714227810,
-      "end": 1709714227810,
+      "start": 1709746831842,
+      "end": 1709746831842,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1709714227811,
-      "end": 1709714227811,
+      "start": 1709746831842,
+      "end": 1709746831842,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1709714227811,
-      "end": 1709714227811,
+      "start": 1709746831843,
+      "end": 1709746831843,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1709714227811,
-      "end": 1709714227811,
+      "start": 1709746831843,
+      "end": 1709746831843,
       "order": "normal"
     }
   ]

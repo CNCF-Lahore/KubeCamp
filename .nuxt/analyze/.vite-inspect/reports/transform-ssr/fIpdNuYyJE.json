@@ -4,8 +4,8 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, toDisplayString as _toDisplayString, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\"\n\nimport { upperFirst } from 'scule'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'DocsPrevNext',\n  __ssrInlineRender: true,\n  setup(__props) {\n\nconst { prev, next, navigation } = useContent()\nconst { navDirFromPath } = useContentHelpers()\n\nconst directory = (link: any) => {\n  const nav = navDirFromPath(link._path, navigation.value || [])\n\n  if (nav && nav[0]) {\n    return nav[0]?._path ?? ''\n  } else {\n    const dirs = link.split('/')\n    const directory = dirs.length > 1 ? dirs[dirs.length - 2] : ''\n    return directory.split('-').map(upperFirst).join(' ')\n  }\n}\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_NuxtLink = _resolveComponent(\"NuxtLink\")!\n  const _component_Icon = _resolveComponent(\"Icon\")!\n\n  if (_unref(prev) || _unref(next)) {\n    _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"docs-prev-next\" }, _attrs))} data-v-30e1aea1>`)\n    if (_unref(prev) && _unref(prev)._path) {\n      _push(_ssrRenderComponent(_component_NuxtLink, {\n        to: _unref(prev)._path,\n        class: \"prev\"\n      }, {\n        default: _withCtx((_, _push, _parent, _scopeId) => {\n          if (_push) {\n            _push(_ssrRenderComponent(_component_Icon, {\n              name: \"heroicons-outline:arrow-sm-left\",\n              class: \"icon\"\n            }, null, _parent, _scopeId))\n            _push(`<div class=\"wrapper\" data-v-30e1aea1${_scopeId}>`)\n            if (directory(_unref(prev)._path)) {\n              _push(`<span class=\"directory\" data-v-30e1aea1${\n                _scopeId\n              }>${\n                _ssrInterpolate(directory(_unref(prev)._path))\n              }</span>`)\n            } else {\n              _push(`<!---->`)\n            }\n            _push(`<span class=\"title\" data-v-30e1aea1${\n              _scopeId\n            }>${\n              _ssrInterpolate(_unref(prev).title)\n            }</span></div>`)\n          } else {\n            return [\n              _createVNode(_component_Icon, {\n                name: \"heroicons-outline:arrow-sm-left\",\n                class: \"icon\"\n              }),\n              _createVNode(\"div\", { class: \"wrapper\" }, [\n                (directory(_unref(prev)._path))\n                  ? (_openBlock(), _createBlock(\"span\", {\n                      key: 0,\n                      class: \"directory\"\n                    }, _toDisplayString(directory(_unref(prev)._path)), 1))\n                  : _createCommentVNode(\"\", true),\n                _createVNode(\"span\", { class: \"title\" }, _toDisplayString(_unref(prev).title), 1)\n              ])\n            ]\n          }\n        }),\n        _: 1\n      }, _parent))\n    } else {\n      _push(`<span data-v-30e1aea1></span>`)\n    }\n    if (_unref(next) && _unref(next)._path) {\n      _push(_ssrRenderComponent(_component_NuxtLink, {\n        to: _unref(next)._path,\n        class: \"next\"\n      }, {\n        default: _withCtx((_, _push, _parent, _scopeId) => {\n          if (_push) {\n            _push(`<div class=\"wrapper\" data-v-30e1aea1${_scopeId}>`)\n            if (directory(_unref(next)._path)) {\n              _push(`<span class=\"directory\" data-v-30e1aea1${\n                _scopeId\n              }>${\n                _ssrInterpolate(directory(_unref(next)._path))\n              }</span>`)\n            } else {\n              _push(`<!---->`)\n            }\n            _push(`<span class=\"title\" data-v-30e1aea1${\n              _scopeId\n            }>${\n              _ssrInterpolate(_unref(next).title)\n            }</span></div>`)\n            _push(_ssrRenderComponent(_component_Icon, {\n              name: \"heroicons-outline:arrow-sm-right\",\n              class: \"icon\"\n            }, null, _parent, _scopeId))\n          } else {\n            return [\n              _createVNode(\"div\", { class: \"wrapper\" }, [\n                (directory(_unref(next)._path))\n                  ? (_openBlock(), _createBlock(\"span\", {\n                      key: 0,\n                      class: \"directory\"\n                    }, _toDisplayString(directory(_unref(next)._path)), 1))\n                  : _createCommentVNode(\"\", true),\n                _createVNode(\"span\", { class: \"title\" }, _toDisplayString(_unref(next).title), 1)\n              ]),\n              _createVNode(_component_Icon, {\n                name: \"heroicons-outline:arrow-sm-right\",\n                class: \"icon\"\n              })\n            ]\n          }\n        }),\n        _: 1\n      }, _parent))\n    } else {\n      _push(`<!---->`)\n    }\n    _push(`</div>`)\n  } else {\n    _push(`<!---->`)\n  }\n}\n}\n\n})",
-      "start": 1709714227213,
-      "end": 1709714227213,
+      "start": 1709746831138,
+      "end": 1709746831138,
       "sourcemaps": {
         "version": 3,
         "sources": [
@@ -20,71 +20,71 @@
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1709714227222,
-      "end": 1709714227223,
+      "start": 1709746831144,
+      "end": 1709746831144,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1709714227222,
-      "end": 1709714227223,
+      "start": 1709746831144,
+      "end": 1709746831144,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1709714227229,
-      "end": 1709714227229,
+      "start": 1709746831154,
+      "end": 1709746831154,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1709714227229,
-      "end": 1709714227229,
+      "start": 1709746831154,
+      "end": 1709746831154,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, toDisplayString as _toDisplayString, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\"\n\nimport { upperFirst } from 'scule'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'DocsPrevNext',\n  __ssrInlineRender: true,\n  setup(__props) {\n\nconst { prev, next, navigation } = useContent()\nconst { navDirFromPath } = useContentHelpers()\n\nconst directory = (link: any) => {\n  const nav = navDirFromPath(link._path, navigation.value || [])\n\n  if (nav && nav[0]) {\n    return nav[0]?._path ?? ''\n  } else {\n    const dirs = link.split('/')\n    const directory = dirs.length > 1 ? dirs[dirs.length - 2] : ''\n    return directory.split('-').map(upperFirst).join(' ')\n  }\n}\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_NuxtLink = _resolveComponent(\"NuxtLink\")!\n  const _component_Icon = _resolveComponent(\"Icon\")!\n\n  if (_unref(prev) || _unref(next)) {\n    _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"docs-prev-next\" }, _attrs))} data-v-30e1aea1>`)\n    if (_unref(prev) && _unref(prev)._path) {\n      _push(_ssrRenderComponent(_component_NuxtLink, {\n        to: _unref(prev)._path,\n        class: \"prev\"\n      }, {\n        default: _withCtx((_, _push, _parent, _scopeId) => {\n          if (_push) {\n            _push(_ssrRenderComponent(_component_Icon, {\n              name: \"heroicons-outline:arrow-sm-left\",\n              class: \"icon\"\n            }, null, _parent, _scopeId))\n            _push(`<div class=\"wrapper\" data-v-30e1aea1${_scopeId}>`)\n            if (directory(_unref(prev)._path)) {\n              _push(`<span class=\"directory\" data-v-30e1aea1${\n                _scopeId\n              }>${\n                _ssrInterpolate(directory(_unref(prev)._path))\n              }</span>`)\n            } else {\n              _push(`<!---->`)\n            }\n            _push(`<span class=\"title\" data-v-30e1aea1${\n              _scopeId\n            }>${\n              _ssrInterpolate(_unref(prev).title)\n            }</span></div>`)\n          } else {\n            return [\n              _createVNode(_component_Icon, {\n                name: \"heroicons-outline:arrow-sm-left\",\n                class: \"icon\"\n              }),\n              _createVNode(\"div\", { class: \"wrapper\" }, [\n                (directory(_unref(prev)._path))\n                  ? (_openBlock(), _createBlock(\"span\", {\n                      key: 0,\n                      class: \"directory\"\n                    }, _toDisplayString(directory(_unref(prev)._path)), 1))\n                  : _createCommentVNode(\"\", true),\n                _createVNode(\"span\", { class: \"title\" }, _toDisplayString(_unref(prev).title), 1)\n              ])\n            ]\n          }\n        }),\n        _: 1\n      }, _parent))\n    } else {\n      _push(`<span data-v-30e1aea1></span>`)\n    }\n    if (_unref(next) && _unref(next)._path) {\n      _push(_ssrRenderComponent(_component_NuxtLink, {\n        to: _unref(next)._path,\n        class: \"next\"\n      }, {\n        default: _withCtx((_, _push, _parent, _scopeId) => {\n          if (_push) {\n            _push(`<div class=\"wrapper\" data-v-30e1aea1${_scopeId}>`)\n            if (directory(_unref(next)._path)) {\n              _push(`<span class=\"directory\" data-v-30e1aea1${\n                _scopeId\n              }>${\n                _ssrInterpolate(directory(_unref(next)._path))\n              }</span>`)\n            } else {\n              _push(`<!---->`)\n            }\n            _push(`<span class=\"title\" data-v-30e1aea1${\n              _scopeId\n            }>${\n              _ssrInterpolate(_unref(next).title)\n            }</span></div>`)\n            _push(_ssrRenderComponent(_component_Icon, {\n              name: \"heroicons-outline:arrow-sm-right\",\n              class: \"icon\"\n            }, null, _parent, _scopeId))\n          } else {\n            return [\n              _createVNode(\"div\", { class: \"wrapper\" }, [\n                (directory(_unref(next)._path))\n                  ? (_openBlock(), _createBlock(\"span\", {\n                      key: 0,\n                      class: \"directory\"\n                    }, _toDisplayString(directory(_unref(next)._path)), 1))\n                  : _createCommentVNode(\"\", true),\n                _createVNode(\"span\", { class: \"title\" }, _toDisplayString(_unref(next).title), 1)\n              ]),\n              _createVNode(_component_Icon, {\n                name: \"heroicons-outline:arrow-sm-right\",\n                class: \"icon\"\n              })\n            ]\n          }\n        }),\n        _: 1\n      }, _parent))\n    } else {\n      _push(`<!---->`)\n    }\n    _push(`</div>`)\n  } else {\n    _push(`<!---->`)\n  }\n}\n}\n\n})",
-      "start": 1709714227234,
-      "end": 1709714227235,
+      "start": 1709746831154,
+      "end": 1709746831154,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, toDisplayString as _toDisplayString, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\"\n\nimport { upperFirst } from 'scule'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'DocsPrevNext',\n  __ssrInlineRender: true,\n  setup(__props) {\n\nconst { prev, next, navigation } = useContent()\nconst { navDirFromPath } = useContentHelpers()\n\nconst directory = (link: any) => {\n  const nav = navDirFromPath(link._path, navigation.value || [])\n\n  if (nav && nav[0]) {\n    return nav[0]?._path ?? ''\n  } else {\n    const dirs = link.split('/')\n    const directory = dirs.length > 1 ? dirs[dirs.length - 2] : ''\n    return directory.split('-').map(upperFirst).join(' ')\n  }\n}\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_NuxtLink = _resolveComponent(\"NuxtLink\")!\n  const _component_Icon = _resolveComponent(\"Icon\")!\n\n  if (_unref(prev) || _unref(next)) {\n    _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"docs-prev-next\" }, _attrs))} data-v-30e1aea1>`)\n    if (_unref(prev) && _unref(prev)._path) {\n      _push(_ssrRenderComponent(_component_NuxtLink, {\n        to: _unref(prev)._path,\n        class: \"prev\"\n      }, {\n        default: _withCtx((_, _push, _parent, _scopeId) => {\n          if (_push) {\n            _push(_ssrRenderComponent(_component_Icon, {\n              name: \"heroicons-outline:arrow-sm-left\",\n              class: \"icon\"\n            }, null, _parent, _scopeId))\n            _push(`<div class=\"wrapper\" data-v-30e1aea1${_scopeId}>`)\n            if (directory(_unref(prev)._path)) {\n              _push(`<span class=\"directory\" data-v-30e1aea1${\n                _scopeId\n              }>${\n                _ssrInterpolate(directory(_unref(prev)._path))\n              }</span>`)\n            } else {\n              _push(`<!---->`)\n            }\n            _push(`<span class=\"title\" data-v-30e1aea1${\n              _scopeId\n            }>${\n              _ssrInterpolate(_unref(prev).title)\n            }</span></div>`)\n          } else {\n            return [\n              _createVNode(_component_Icon, {\n                name: \"heroicons-outline:arrow-sm-left\",\n                class: \"icon\"\n              }),\n              _createVNode(\"div\", { class: \"wrapper\" }, [\n                (directory(_unref(prev)._path))\n                  ? (_openBlock(), _createBlock(\"span\", {\n                      key: 0,\n                      class: \"directory\"\n                    }, _toDisplayString(directory(_unref(prev)._path)), 1))\n                  : _createCommentVNode(\"\", true),\n                _createVNode(\"span\", { class: \"title\" }, _toDisplayString(_unref(prev).title), 1)\n              ])\n            ]\n          }\n        }),\n        _: 1\n      }, _parent))\n    } else {\n      _push(`<span data-v-30e1aea1></span>`)\n    }\n    if (_unref(next) && _unref(next)._path) {\n      _push(_ssrRenderComponent(_component_NuxtLink, {\n        to: _unref(next)._path,\n        class: \"next\"\n      }, {\n        default: _withCtx((_, _push, _parent, _scopeId) => {\n          if (_push) {\n            _push(`<div class=\"wrapper\" data-v-30e1aea1${_scopeId}>`)\n            if (directory(_unref(next)._path)) {\n              _push(`<span class=\"directory\" data-v-30e1aea1${\n                _scopeId\n              }>${\n                _ssrInterpolate(directory(_unref(next)._path))\n              }</span>`)\n            } else {\n              _push(`<!---->`)\n            }\n            _push(`<span class=\"title\" data-v-30e1aea1${\n              _scopeId\n            }>${\n              _ssrInterpolate(_unref(next).title)\n            }</span></div>`)\n            _push(_ssrRenderComponent(_component_Icon, {\n              name: \"heroicons-outline:arrow-sm-right\",\n              class: \"icon\"\n            }, null, _parent, _scopeId))\n          } else {\n            return [\n              _createVNode(\"div\", { class: \"wrapper\" }, [\n                (directory(_unref(next)._path))\n                  ? (_openBlock(), _createBlock(\"span\", {\n                      key: 0,\n                      class: \"directory\"\n                    }, _toDisplayString(directory(_unref(next)._path)), 1))\n                  : _createCommentVNode(\"\", true),\n                _createVNode(\"span\", { class: \"title\" }, _toDisplayString(_unref(next).title), 1)\n              ]),\n              _createVNode(_component_Icon, {\n                name: \"heroicons-outline:arrow-sm-right\",\n                class: \"icon\"\n              })\n            ]\n          }\n        }),\n        _: 1\n      }, _parent))\n    } else {\n      _push(`<!---->`)\n    }\n    _push(`</div>`)\n  } else {\n    _push(`<!---->`)\n  }\n}\n}\n\n})",
-      "start": 1709714227234,
-      "end": 1709714227235,
+      "start": 1709746831154,
+      "end": 1709746831154,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1709714227235,
-      "end": 1709714227235,
+      "start": 1709746831154,
+      "end": 1709746831154,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1709714227235,
-      "end": 1709714227235,
+      "start": 1709746831154,
+      "end": 1709746831154,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1709714227236,
-      "end": 1709714227236,
+      "start": 1709746831154,
+      "end": 1709746831154,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1709714227236,
-      "end": 1709714227236,
+      "start": 1709746831154,
+      "end": 1709746831154,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, toDisplayString as _toDisplayString, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\";\nimport { upperFirst } from \"scule\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"DocsPrevNext\",\n  __ssrInlineRender: true,\n  setup(__props) {\n    const { prev, next, navigation } = useContent();\n    const { navDirFromPath } = useContentHelpers();\n    const directory = (link) => {\n      const nav = navDirFromPath(link._path, navigation.value || []);\n      if (nav && nav[0]) {\n        return nav[0]?._path ?? \"\";\n      } else {\n        const dirs = link.split(\"/\");\n        const directory2 = dirs.length > 1 ? dirs[dirs.length - 2] : \"\";\n        return directory2.split(\"-\").map(upperFirst).join(\" \");\n      }\n    };\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_NuxtLink = _resolveComponent(\"NuxtLink\");\n      const _component_Icon = _resolveComponent(\"Icon\");\n      if (_unref(prev) || _unref(next)) {\n        _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"docs-prev-next\" }, _attrs))} data-v-30e1aea1>`);\n        if (_unref(prev) && _unref(prev)._path) {\n          _push(_ssrRenderComponent(_component_NuxtLink, {\n            to: _unref(prev)._path,\n            class: \"prev\"\n          }, {\n            default: _withCtx((_, _push2, _parent2, _scopeId) => {\n              if (_push2) {\n                _push2(_ssrRenderComponent(_component_Icon, {\n                  name: \"heroicons-outline:arrow-sm-left\",\n                  class: \"icon\"\n                }, null, _parent2, _scopeId));\n                _push2(`<div class=\"wrapper\" data-v-30e1aea1${_scopeId}>`);\n                if (directory(_unref(prev)._path)) {\n                  _push2(`<span class=\"directory\" data-v-30e1aea1${_scopeId}>${_ssrInterpolate(directory(_unref(prev)._path))}</span>`);\n                } else {\n                  _push2(`<!---->`);\n                }\n                _push2(`<span class=\"title\" data-v-30e1aea1${_scopeId}>${_ssrInterpolate(_unref(prev).title)}</span></div>`);\n              } else {\n                return [\n                  _createVNode(_component_Icon, {\n                    name: \"heroicons-outline:arrow-sm-left\",\n                    class: \"icon\"\n                  }),\n                  _createVNode(\"div\", { class: \"wrapper\" }, [\n                    directory(_unref(prev)._path) ? (_openBlock(), _createBlock(\"span\", {\n                      key: 0,\n                      class: \"directory\"\n                    }, _toDisplayString(directory(_unref(prev)._path)), 1)) : _createCommentVNode(\"\", true),\n                    _createVNode(\"span\", { class: \"title\" }, _toDisplayString(_unref(prev).title), 1)\n                  ])\n                ];\n              }\n            }),\n            _: 1\n          }, _parent));\n        } else {\n          _push(`<span data-v-30e1aea1></span>`);\n        }\n        if (_unref(next) && _unref(next)._path) {\n          _push(_ssrRenderComponent(_component_NuxtLink, {\n            to: _unref(next)._path,\n            class: \"next\"\n          }, {\n            default: _withCtx((_, _push2, _parent2, _scopeId) => {\n              if (_push2) {\n                _push2(`<div class=\"wrapper\" data-v-30e1aea1${_scopeId}>`);\n                if (directory(_unref(next)._path)) {\n                  _push2(`<span class=\"directory\" data-v-30e1aea1${_scopeId}>${_ssrInterpolate(directory(_unref(next)._path))}</span>`);\n                } else {\n                  _push2(`<!---->`);\n                }\n                _push2(`<span class=\"title\" data-v-30e1aea1${_scopeId}>${_ssrInterpolate(_unref(next).title)}</span></div>`);\n                _push2(_ssrRenderComponent(_component_Icon, {\n                  name: \"heroicons-outline:arrow-sm-right\",\n                  class: \"icon\"\n                }, null, _parent2, _scopeId));\n              } else {\n                return [\n                  _createVNode(\"div\", { class: \"wrapper\" }, [\n                    directory(_unref(next)._path) ? (_openBlock(), _createBlock(\"span\", {\n                      key: 0,\n                      class: \"directory\"\n                    }, _toDisplayString(directory(_unref(next)._path)), 1)) : _createCommentVNode(\"\", true),\n                    _createVNode(\"span\", { class: \"title\" }, _toDisplayString(_unref(next).title), 1)\n                  ]),\n                  _createVNode(_component_Icon, {\n                    name: \"heroicons-outline:arrow-sm-right\",\n                    class: \"icon\"\n                  })\n                ];\n              }\n            }),\n            _: 1\n          }, _parent));\n        } else {\n          _push(`<!---->`);\n        }\n        _push(`</div>`);\n      } else {\n        _push(`<!---->`);\n      }\n    };\n  }\n});\n",
-      "start": 1709714227236,
-      "end": 1709714227725,
+      "start": 1709746831154,
+      "end": 1709746831772,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -104,135 +104,135 @@
     },
     {
       "name": "vite:json",
-      "start": 1709714227725,
-      "end": 1709714227725,
+      "start": 1709746831772,
+      "end": 1709746831772,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1709714227725,
-      "end": 1709714227725,
+      "start": 1709746831772,
+      "end": 1709746831772,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1709714227725,
-      "end": 1709714227725,
+      "start": 1709746831772,
+      "end": 1709746831772,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1709714227725,
-      "end": 1709714227725,
+      "start": 1709746831772,
+      "end": 1709746831772,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709714227725,
-      "end": 1709714227726,
+      "start": 1709746831772,
+      "end": 1709746831772,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709714227725,
-      "end": 1709714227726,
+      "start": 1709746831772,
+      "end": 1709746831772,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1709714227726,
-      "end": 1709714227726,
+      "start": 1709746831773,
+      "end": 1709746831773,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1709714227726,
-      "end": 1709714227726,
+      "start": 1709746831773,
+      "end": 1709746831773,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1709714227726,
-      "end": 1709714227726,
+      "start": 1709746831773,
+      "end": 1709746831773,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709714227726,
-      "end": 1709714227726,
+      "start": 1709746831773,
+      "end": 1709746831773,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1709714227726,
-      "end": 1709714227726,
+      "start": 1709746831773,
+      "end": 1709746831773,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1709714227726,
-      "end": 1709714227727,
+      "start": 1709746831774,
+      "end": 1709746831774,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1709714227727,
-      "end": 1709714227727,
+      "start": 1709746831774,
+      "end": 1709746831774,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1709714227727,
-      "end": 1709714227727,
+      "start": 1709746831774,
+      "end": 1709746831774,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1709714227727,
-      "end": 1709714227727,
+      "start": 1709746831774,
+      "end": 1709746831774,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1709714227727,
-      "end": 1709714227727,
+      "start": 1709746831774,
+      "end": 1709746831774,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1709714227727,
-      "end": 1709714227727,
+      "start": 1709746831774,
+      "end": 1709746831774,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1709714227727,
-      "end": 1709714227728,
+      "start": 1709746831774,
+      "end": 1709746831774,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1709714227728,
-      "end": 1709714227728,
+      "start": 1709746831775,
+      "end": 1709746831775,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1709714227729,
-      "end": 1709714227731,
+      "start": 1709746831777,
+      "end": 1709746831777,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1709714227729,
-      "end": 1709714227731,
+      "start": 1709746831777,
+      "end": 1709746831777,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { useContent } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/composables/content';\nimport { useContentHelpers } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/composables/helpers';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, toDisplayString as _toDisplayString, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\";\nimport { upperFirst } from \"scule\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"DocsPrevNext\",\n  __ssrInlineRender: true,\n  setup(__props) {\n    const { prev, next, navigation } = useContent();\n    const { navDirFromPath } = useContentHelpers();\n    const directory = (link) => {\n      const nav = navDirFromPath(link._path, navigation.value || []);\n      if (nav && nav[0]) {\n        return nav[0]?._path ?? \"\";\n      } else {\n        const dirs = link.split(\"/\");\n        const directory2 = dirs.length > 1 ? dirs[dirs.length - 2] : \"\";\n        return directory2.split(\"-\").map(upperFirst).join(\" \");\n      }\n    };\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_NuxtLink = _resolveComponent(\"NuxtLink\");\n      const _component_Icon = _resolveComponent(\"Icon\");\n      if (_unref(prev) || _unref(next)) {\n        _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"docs-prev-next\" }, _attrs))} data-v-30e1aea1>`);\n        if (_unref(prev) && _unref(prev)._path) {\n          _push(_ssrRenderComponent(_component_NuxtLink, {\n            to: _unref(prev)._path,\n            class: \"prev\"\n          }, {\n            default: _withCtx((_, _push2, _parent2, _scopeId) => {\n              if (_push2) {\n                _push2(_ssrRenderComponent(_component_Icon, {\n                  name: \"heroicons-outline:arrow-sm-left\",\n                  class: \"icon\"\n                }, null, _parent2, _scopeId));\n                _push2(`<div class=\"wrapper\" data-v-30e1aea1${_scopeId}>`);\n                if (directory(_unref(prev)._path)) {\n                  _push2(`<span class=\"directory\" data-v-30e1aea1${_scopeId}>${_ssrInterpolate(directory(_unref(prev)._path))}</span>`);\n                } else {\n                  _push2(`<!---->`);\n                }\n                _push2(`<span class=\"title\" data-v-30e1aea1${_scopeId}>${_ssrInterpolate(_unref(prev).title)}</span></div>`);\n              } else {\n                return [\n                  _createVNode(_component_Icon, {\n                    name: \"heroicons-outline:arrow-sm-left\",\n                    class: \"icon\"\n                  }),\n                  _createVNode(\"div\", { class: \"wrapper\" }, [\n                    directory(_unref(prev)._path) ? (_openBlock(), _createBlock(\"span\", {\n                      key: 0,\n                      class: \"directory\"\n                    }, _toDisplayString(directory(_unref(prev)._path)), 1)) : _createCommentVNode(\"\", true),\n                    _createVNode(\"span\", { class: \"title\" }, _toDisplayString(_unref(prev).title), 1)\n                  ])\n                ];\n              }\n            }),\n            _: 1\n          }, _parent));\n        } else {\n          _push(`<span data-v-30e1aea1></span>`);\n        }\n        if (_unref(next) && _unref(next)._path) {\n          _push(_ssrRenderComponent(_component_NuxtLink, {\n            to: _unref(next)._path,\n            class: \"next\"\n          }, {\n            default: _withCtx((_, _push2, _parent2, _scopeId) => {\n              if (_push2) {\n                _push2(`<div class=\"wrapper\" data-v-30e1aea1${_scopeId}>`);\n                if (directory(_unref(next)._path)) {\n                  _push2(`<span class=\"directory\" data-v-30e1aea1${_scopeId}>${_ssrInterpolate(directory(_unref(next)._path))}</span>`);\n                } else {\n                  _push2(`<!---->`);\n                }\n                _push2(`<span class=\"title\" data-v-30e1aea1${_scopeId}>${_ssrInterpolate(_unref(next).title)}</span></div>`);\n                _push2(_ssrRenderComponent(_component_Icon, {\n                  name: \"heroicons-outline:arrow-sm-right\",\n                  class: \"icon\"\n                }, null, _parent2, _scopeId));\n              } else {\n                return [\n                  _createVNode(\"div\", { class: \"wrapper\" }, [\n                    directory(_unref(next)._path) ? (_openBlock(), _createBlock(\"span\", {\n                      key: 0,\n                      class: \"directory\"\n                    }, _toDisplayString(directory(_unref(next)._path)), 1)) : _createCommentVNode(\"\", true),\n                    _createVNode(\"span\", { class: \"title\" }, _toDisplayString(_unref(next).title), 1)\n                  ]),\n                  _createVNode(_component_Icon, {\n                    name: \"heroicons-outline:arrow-sm-right\",\n                    class: \"icon\"\n                  })\n                ];\n              }\n            }),\n            _: 1\n          }, _parent));\n        } else {\n          _push(`<!---->`);\n        }\n        _push(`</div>`);\n      } else {\n        _push(`<!---->`);\n      }\n    };\n  }\n});\n",
-      "start": 1709714227731,
-      "end": 1709714227738,
+      "start": 1709746831777,
+      "end": 1709746831782,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -246,8 +246,8 @@
     {
       "name": "nuxt:imports-transform",
       "result": "import { useContent } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/composables/content';\nimport { useContentHelpers } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/composables/helpers';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, toDisplayString as _toDisplayString, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\";\nimport { upperFirst } from \"scule\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"DocsPrevNext\",\n  __ssrInlineRender: true,\n  setup(__props) {\n    const { prev, next, navigation } = useContent();\n    const { navDirFromPath } = useContentHelpers();\n    const directory = (link) => {\n      const nav = navDirFromPath(link._path, navigation.value || []);\n      if (nav && nav[0]) {\n        return nav[0]?._path ?? \"\";\n      } else {\n        const dirs = link.split(\"/\");\n        const directory2 = dirs.length > 1 ? dirs[dirs.length - 2] : \"\";\n        return directory2.split(\"-\").map(upperFirst).join(\" \");\n      }\n    };\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_NuxtLink = _resolveComponent(\"NuxtLink\");\n      const _component_Icon = _resolveComponent(\"Icon\");\n      if (_unref(prev) || _unref(next)) {\n        _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"docs-prev-next\" }, _attrs))} data-v-30e1aea1>`);\n        if (_unref(prev) && _unref(prev)._path) {\n          _push(_ssrRenderComponent(_component_NuxtLink, {\n            to: _unref(prev)._path,\n            class: \"prev\"\n          }, {\n            default: _withCtx((_, _push2, _parent2, _scopeId) => {\n              if (_push2) {\n                _push2(_ssrRenderComponent(_component_Icon, {\n                  name: \"heroicons-outline:arrow-sm-left\",\n                  class: \"icon\"\n                }, null, _parent2, _scopeId));\n                _push2(`<div class=\"wrapper\" data-v-30e1aea1${_scopeId}>`);\n                if (directory(_unref(prev)._path)) {\n                  _push2(`<span class=\"directory\" data-v-30e1aea1${_scopeId}>${_ssrInterpolate(directory(_unref(prev)._path))}</span>`);\n                } else {\n                  _push2(`<!---->`);\n                }\n                _push2(`<span class=\"title\" data-v-30e1aea1${_scopeId}>${_ssrInterpolate(_unref(prev).title)}</span></div>`);\n              } else {\n                return [\n                  _createVNode(_component_Icon, {\n                    name: \"heroicons-outline:arrow-sm-left\",\n                    class: \"icon\"\n                  }),\n                  _createVNode(\"div\", { class: \"wrapper\" }, [\n                    directory(_unref(prev)._path) ? (_openBlock(), _createBlock(\"span\", {\n                      key: 0,\n                      class: \"directory\"\n                    }, _toDisplayString(directory(_unref(prev)._path)), 1)) : _createCommentVNode(\"\", true),\n                    _createVNode(\"span\", { class: \"title\" }, _toDisplayString(_unref(prev).title), 1)\n                  ])\n                ];\n              }\n            }),\n            _: 1\n          }, _parent));\n        } else {\n          _push(`<span data-v-30e1aea1></span>`);\n        }\n        if (_unref(next) && _unref(next)._path) {\n          _push(_ssrRenderComponent(_component_NuxtLink, {\n            to: _unref(next)._path,\n            class: \"next\"\n          }, {\n            default: _withCtx((_, _push2, _parent2, _scopeId) => {\n              if (_push2) {\n                _push2(`<div class=\"wrapper\" data-v-30e1aea1${_scopeId}>`);\n                if (directory(_unref(next)._path)) {\n                  _push2(`<span class=\"directory\" data-v-30e1aea1${_scopeId}>${_ssrInterpolate(directory(_unref(next)._path))}</span>`);\n                } else {\n                  _push2(`<!---->`);\n                }\n                _push2(`<span class=\"title\" data-v-30e1aea1${_scopeId}>${_ssrInterpolate(_unref(next).title)}</span></div>`);\n                _push2(_ssrRenderComponent(_component_Icon, {\n                  name: \"heroicons-outline:arrow-sm-right\",\n                  class: \"icon\"\n                }, null, _parent2, _scopeId));\n              } else {\n                return [\n                  _createVNode(\"div\", { class: \"wrapper\" }, [\n                    directory(_unref(next)._path) ? (_openBlock(), _createBlock(\"span\", {\n                      key: 0,\n                      class: \"directory\"\n                    }, _toDisplayString(directory(_unref(next)._path)), 1)) : _createCommentVNode(\"\", true),\n                    _createVNode(\"span\", { class: \"title\" }, _toDisplayString(_unref(next).title), 1)\n                  ]),\n                  _createVNode(_component_Icon, {\n                    name: \"heroicons-outline:arrow-sm-right\",\n                    class: \"icon\"\n                  })\n                ];\n              }\n            }),\n            _: 1\n          }, _parent));\n        } else {\n          _push(`<!---->`);\n        }\n        _push(`</div>`);\n      } else {\n        _push(`<!---->`);\n      }\n    };\n  }\n});\n",
-      "start": 1709714227731,
-      "end": 1709714227739,
+      "start": 1709746831777,
+      "end": 1709746831783,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -260,39 +260,39 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1709714227739,
-      "end": 1709714227739,
+      "start": 1709746831783,
+      "end": 1709746831783,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1709714227739,
-      "end": 1709714227739,
+      "start": 1709746831783,
+      "end": 1709746831783,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1709714227739,
-      "end": 1709714227739,
+      "start": 1709746831783,
+      "end": 1709746831783,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1709714227739,
-      "end": 1709714227739,
+      "start": 1709746831783,
+      "end": 1709746831783,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1709714227739,
-      "end": 1709714227739,
+      "start": 1709746831783,
+      "end": 1709746831783,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
       "result": "import { default as __nuxt_component_0 } from \"/workspace/Kubernetes-Bootcamp/node_modules/nuxt/dist/app/components/nuxt-link\";\nimport { default as __nuxt_component_1 } from \"/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/Icon.vue\";\nimport { useContent } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/composables/content';\nimport { useContentHelpers } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/composables/helpers';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, toDisplayString as _toDisplayString, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\";\nimport { upperFirst } from \"scule\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"DocsPrevNext\",\n  __ssrInlineRender: true,\n  setup(__props) {\n    const { prev, next, navigation } = useContent();\n    const { navDirFromPath } = useContentHelpers();\n    const directory = (link) => {\n      const nav = navDirFromPath(link._path, navigation.value || []);\n      if (nav && nav[0]) {\n        return nav[0]?._path ?? \"\";\n      } else {\n        const dirs = link.split(\"/\");\n        const directory2 = dirs.length > 1 ? dirs[dirs.length - 2] : \"\";\n        return directory2.split(\"-\").map(upperFirst).join(\" \");\n      }\n    };\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_NuxtLink = __nuxt_component_0;\n      const _component_Icon = __nuxt_component_1;\n      if (_unref(prev) || _unref(next)) {\n        _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"docs-prev-next\" }, _attrs))} data-v-30e1aea1>`);\n        if (_unref(prev) && _unref(prev)._path) {\n          _push(_ssrRenderComponent(_component_NuxtLink, {\n            to: _unref(prev)._path,\n            class: \"prev\"\n          }, {\n            default: _withCtx((_, _push2, _parent2, _scopeId) => {\n              if (_push2) {\n                _push2(_ssrRenderComponent(_component_Icon, {\n                  name: \"heroicons-outline:arrow-sm-left\",\n                  class: \"icon\"\n                }, null, _parent2, _scopeId));\n                _push2(`<div class=\"wrapper\" data-v-30e1aea1${_scopeId}>`);\n                if (directory(_unref(prev)._path)) {\n                  _push2(`<span class=\"directory\" data-v-30e1aea1${_scopeId}>${_ssrInterpolate(directory(_unref(prev)._path))}</span>`);\n                } else {\n                  _push2(`<!---->`);\n                }\n                _push2(`<span class=\"title\" data-v-30e1aea1${_scopeId}>${_ssrInterpolate(_unref(prev).title)}</span></div>`);\n              } else {\n                return [\n                  _createVNode(_component_Icon, {\n                    name: \"heroicons-outline:arrow-sm-left\",\n                    class: \"icon\"\n                  }),\n                  _createVNode(\"div\", { class: \"wrapper\" }, [\n                    directory(_unref(prev)._path) ? (_openBlock(), _createBlock(\"span\", {\n                      key: 0,\n                      class: \"directory\"\n                    }, _toDisplayString(directory(_unref(prev)._path)), 1)) : _createCommentVNode(\"\", true),\n                    _createVNode(\"span\", { class: \"title\" }, _toDisplayString(_unref(prev).title), 1)\n                  ])\n                ];\n              }\n            }),\n            _: 1\n          }, _parent));\n        } else {\n          _push(`<span data-v-30e1aea1></span>`);\n        }\n        if (_unref(next) && _unref(next)._path) {\n          _push(_ssrRenderComponent(_component_NuxtLink, {\n            to: _unref(next)._path,\n            class: \"next\"\n          }, {\n            default: _withCtx((_, _push2, _parent2, _scopeId) => {\n              if (_push2) {\n                _push2(`<div class=\"wrapper\" data-v-30e1aea1${_scopeId}>`);\n                if (directory(_unref(next)._path)) {\n                  _push2(`<span class=\"directory\" data-v-30e1aea1${_scopeId}>${_ssrInterpolate(directory(_unref(next)._path))}</span>`);\n                } else {\n                  _push2(`<!---->`);\n                }\n                _push2(`<span class=\"title\" data-v-30e1aea1${_scopeId}>${_ssrInterpolate(_unref(next).title)}</span></div>`);\n                _push2(_ssrRenderComponent(_component_Icon, {\n                  name: \"heroicons-outline:arrow-sm-right\",\n                  class: \"icon\"\n                }, null, _parent2, _scopeId));\n              } else {\n                return [\n                  _createVNode(\"div\", { class: \"wrapper\" }, [\n                    directory(_unref(next)._path) ? (_openBlock(), _createBlock(\"span\", {\n                      key: 0,\n                      class: \"directory\"\n                    }, _toDisplayString(directory(_unref(next)._path)), 1)) : _createCommentVNode(\"\", true),\n                    _createVNode(\"span\", { class: \"title\" }, _toDisplayString(_unref(next).title), 1)\n                  ]),\n                  _createVNode(_component_Icon, {\n                    name: \"heroicons-outline:arrow-sm-right\",\n                    class: \"icon\"\n                  })\n                ];\n              }\n            }),\n            _: 1\n          }, _parent));\n        } else {\n          _push(`<!---->`);\n        }\n        _push(`</div>`);\n      } else {\n        _push(`<!---->`);\n      }\n    };\n  }\n});\n",
-      "start": 1709714227739,
-      "end": 1709714227743,
+      "start": 1709746831784,
+      "end": 1709746831784,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -305,20 +305,20 @@
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1709714227744,
-      "end": 1709714227744,
+      "start": 1709746831785,
+      "end": 1709746831785,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1709714227748,
-      "end": 1709714227748,
+      "start": 1709746831789,
+      "end": 1709746831789,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1709714227748,
-      "end": 1709714227748,
+      "start": 1709746831789,
+      "end": 1709746831789,
       "order": "normal"
     }
   ]

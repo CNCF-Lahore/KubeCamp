@@ -4,69 +4,69 @@
     {
       "name": "vite:load-fallback",
       "result": "<script setup lang=\"ts\">\nimport { nextTick, ref, watch } from 'vue'\nimport type { PropType } from 'vue'\n\nconst props = defineProps({\n  tabs: {\n    type: Array as PropType<{ label: string }[]>,\n    required: true\n  },\n  activeTabIndex: {\n    type: Number,\n    required: true\n  }\n})\n\nconst emit = defineEmits(['update:activeTabIndex'])\n\nconst tabsRef = ref()\n\nconst highlightUnderline = ref()\n\nconst updateHighlightUnderlinePosition = (activeTab: any) => {\n  if (!activeTab) {\n    return\n  }\n\n  highlightUnderline.value.style.insetInlineStart = `${activeTab.offsetLeft}px`\n  highlightUnderline.value.style.width = `${activeTab.clientWidth}px`\n}\n\nconst updateTabs = ($event: any, i: any) => {\n  emit('update:activeTabIndex', i)\n  nextTick(() => updateHighlightUnderlinePosition($event.target))\n}\n\nwatch(\n  tabsRef,\n  (newVal) => {\n    if (!newVal) {\n      return\n    }\n\n    setTimeout(() => {\n      updateHighlightUnderlinePosition(tabsRef.value.children[props.activeTabIndex])\n    }, 50)\n  },\n  {\n    immediate: true\n  }\n)\n</script>\n\n<template>\n  <div class=\"tabs-header\">\n    <div v-if=\"tabs\" ref=\"tabsRef\" class=\"tabs\">\n      <button\n        v-for=\"({ label }, i) in tabs\"\n        :key=\"`${i}${label}`\"\n        :class=\"[activeTabIndex === i ? 'active' : 'not-active']\"\n        @click=\"updateTabs($event, i)\"\n      >\n        {{ label }}\n      </button>\n      <span\n        ref=\"highlightUnderline\"\n        class=\"highlight-underline\"\n      >\n        <span class=\"tab\" />\n      </span>\n    </div>\n\n    <slot name=\"footer\" />\n  </div>\n</template>\n\n<style scoped lang=\"ts\">\ncss({\n  \".tabs-header\": {\n    position: 'relative',\n    background: '{color.gray.200}',\n    color: '{color.red.700}',\n    '@dark': {\n      color: '{color.red.500}',\n      background: '{color.gray.800}',\n    },\n    '.tabs': {\n      position: 'relative',\n      zIndex: 0,\n      display: 'flex',\n      px: '{space.2}',\n      overflowX: 'auto',\n      button: {\n        py: '{space.rem.625}',\n        px: '{space.4}',\n        position: 'relative',\n        fontFamily: '{font.mono}',\n        fontSize: '{text.sm.fontSize}',\n        lineHeight: '{text.sm.lineHeight}',\n        letterSpacing: '{letterSpacing.tight}',\n        userSelect: 'none',\n        transition: 'color 100ms, background 100ms',\n        '&.not-active': {\n          color: '{color.gray.700}',\n          '&:hover': {\n            color: '{color.gray.800}',\n            background: '{color.gray.300}'\n          },\n          '@dark': {\n            color: '{color.gray.200}',\n            '&:hover': {\n              color: '{color.gray.200}',\n              background: '{color.gray.700}'\n            },\n          }\n        },\n        '&.active': {\n          color: '{color.gray.500}',\n          '@dark': {\n            color: '{color.gray.300}',\n          }\n        }\n      },\n      '.highlight-underline': {\n        position: 'absolute',\n        zIndex: -1,\n        top: 0,\n        height: '100%',\n        transition: 'inset-inline-start 150ms, width 150ms',\n        '.tab': {\n          display: 'flex',\n          width: '100%',\n          height: '100%',\n          backgroundColor: '{color.gray.100}',\n          '@dark': {\n            backgroundColor: '{color.gray.900}',\n          }\n        }\n      }\n    }\n  }\n})\n</style>\n",
-      "start": 1709714219856,
-      "end": 1709714219935,
+      "start": 1709746821991,
+      "end": 1709746822071,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1709714219935,
-      "end": 1709714219935,
+      "start": 1709746822072,
+      "end": 1709746822072,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1709714219935,
-      "end": 1709714219935,
+      "start": 1709746822072,
+      "end": 1709746822072,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
-      "start": 1709714219935,
-      "end": 1709714219935,
+      "start": 1709746822072,
+      "end": 1709746822072,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1709714219935,
-      "end": 1709714219935,
+      "start": 1709746822072,
+      "end": 1709746822072,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1709714219935,
-      "end": 1709714219935,
+      "start": 1709746822072,
+      "end": 1709746822072,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1709714219935,
-      "end": 1709714219935,
+      "start": 1709746822072,
+      "end": 1709746822072,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1709714219935,
-      "end": 1709714219935,
+      "start": 1709746822072,
+      "end": 1709746822072,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1709714219935,
-      "end": 1709714219935,
+      "start": 1709746822072,
+      "end": 1709746822072,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1709714219935,
-      "end": 1709714219935,
+      "start": 1709746822072,
+      "end": 1709746822072,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "import _sfc_main from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/TabsHeader.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/TabsHeader.vue?vue&type=script&setup=true&lang.ts\";\nimport \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/TabsHeader.vue?vue&type=style&index=0&scoped=e37fdb74&lang.ts\";\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"__scopeId\", \"data-v-e37fdb74\"]]);\n",
-      "start": 1709714219935,
-      "end": 1709714219959,
+      "start": 1709746822072,
+      "end": 1709746822107,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -74,156 +74,156 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1709714219960,
-      "end": 1709714219960,
+      "start": 1709746822108,
+      "end": 1709746822108,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709714219960,
-      "end": 1709714219960,
+      "start": 1709746822108,
+      "end": 1709746822108,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1709714219960,
-      "end": 1709714219960,
+      "start": 1709746822108,
+      "end": 1709746822108,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1709714219960,
-      "end": 1709714219960,
+      "start": 1709746822108,
+      "end": 1709746822108,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
       "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/TabsHeader.vue\").then(r => r.default))",
-      "start": 1709714219960,
-      "end": 1709714219961,
+      "start": 1709746822108,
+      "end": 1709746822108,
       "order": "normal",
       "sourcemaps": null
     },
     {
       "name": "replace",
-      "start": 1709714219961,
-      "end": 1709714219961,
+      "start": 1709746822108,
+      "end": 1709746822108,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1709714219961,
-      "end": 1709714219961,
+      "start": 1709746822108,
+      "end": 1709746822108,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1709714219961,
-      "end": 1709714219961,
+      "start": 1709746822108,
+      "end": 1709746822108,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1709714219961,
-      "end": 1709714219961,
+      "start": 1709746822108,
+      "end": 1709746822108,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1709714219961,
-      "end": 1709714219961,
+      "start": 1709746822108,
+      "end": 1709746822108,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1709714219961,
-      "end": 1709714219961,
+      "start": 1709746822108,
+      "end": 1709746822108,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1709714219961,
-      "end": 1709714219961,
+      "start": 1709746822108,
+      "end": 1709746822108,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1709714219961,
-      "end": 1709714219961,
+      "start": 1709746822108,
+      "end": 1709746822108,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1709714219961,
-      "end": 1709714219961,
+      "start": 1709746822109,
+      "end": 1709746822109,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1709714219961,
-      "end": 1709714219961,
+      "start": 1709746822109,
+      "end": 1709746822109,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1709714219961,
-      "end": 1709714219961,
+      "start": 1709746822109,
+      "end": 1709746822109,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1709714219962,
-      "end": 1709714219963,
+      "start": 1709746822109,
+      "end": 1709746822110,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1709714219963,
-      "end": 1709714219963,
+      "start": 1709746822110,
+      "end": 1709746822110,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1709714219963,
-      "end": 1709714219963,
+      "start": 1709746822110,
+      "end": 1709746822110,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1709714219964,
-      "end": 1709714219964,
+      "start": 1709746822110,
+      "end": 1709746822110,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1709714219964,
-      "end": 1709714219964,
+      "start": 1709746822110,
+      "end": 1709746822110,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1709714219964,
-      "end": 1709714219964,
+      "start": 1709746822110,
+      "end": 1709746822110,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1709714219968,
-      "end": 1709714219968,
+      "start": 1709746822110,
+      "end": 1709746822111,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
       "result": "import { __vitePreload } from \"\u0000vite/preload-helper.js\";import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => __vitePreload(() => import(\"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/TabsHeader.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(r => r.default))",
-      "start": 1709714219968,
-      "end": 1709714219968,
+      "start": 1709746822111,
+      "end": 1709746822111,
       "order": "normal",
       "sourcemaps": null
     },
     {
       "name": "vite:reporter",
-      "start": 1709714219968,
-      "end": 1709714219969,
+      "start": 1709746822111,
+      "end": 1709746822111,
       "order": "normal"
     }
   ]

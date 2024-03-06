@@ -120,7 +120,6 @@
     "../node_modules/@vueuse/nuxt/runtime",
     "../node_modules/nuxt-config-schema/runtime",
     "../node_modules/@nuxt-themes/docus/app/module/runtime",
-    "../node_modules/@nuxt/devtools/runtime",
     "../node_modules/@nuxt/telemetry/runtime",
     ".."
   ],
@@ -138,7 +137,6 @@
     "../node_modules/@vueuse/nuxt/runtime/server",
     "../node_modules/nuxt-config-schema/runtime/server",
     "../node_modules/@nuxt-themes/docus/app/module/runtime/server",
-    "../node_modules/@nuxt/devtools/runtime/server",
     "../node_modules/@nuxt/telemetry/runtime/server",
     "../dist",
     "../.output"

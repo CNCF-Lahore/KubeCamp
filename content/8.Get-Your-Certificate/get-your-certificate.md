@@ -3,6 +3,8 @@ We hope you've learned a lot from the bootcamp. To share your achievement on soc
 
 [Generate My Certificate](https://bit.ly/3TcmiQQ){:target="_blank"}
 
+For the digital badge, please complete the quiz.
+
 ```
 🚀 Exciting News: I've Completed the Kubernetes Bootcamp! 🚀
 

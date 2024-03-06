@@ -4,51 +4,51 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, createVNode as _createVNode, createElementVNode as _createElementVNode, withCtx as _withCtx, normalizeClass as _normalizeClass, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-f465a985\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"section left\" }\nconst _hoisted_2 = { class: \"section center\" }\nconst _hoisted_3 = { class: \"section right\" }\nconst _hoisted_4 = { class: \"social-icons\" }\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'AppHeader',\n  props: {\n  \n},\n  setup(__props) {\n\nconst { config } = useDocus()\nconst { navigation } = useContent()\nconst { hasDocSearch } = useDocSearch()\n\nconst hasDialog = computed(() => navigation.value?.length > 1 || navigation.value?.[0]?.children?.length)\n\n\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_AppHeaderDialog = _resolveComponent(\"AppHeaderDialog\")!\n  const _component_AppHeaderLogo = _resolveComponent(\"AppHeaderLogo\")!\n  const _component_AppHeaderNavigation = _resolveComponent(\"AppHeaderNavigation\")!\n  const _component_AppDocSearch = _resolveComponent(\"AppDocSearch\")!\n  const _component_AppSearch = _resolveComponent(\"AppSearch\")!\n  const _component_ThemeSelect = _resolveComponent(\"ThemeSelect\")!\n  const _component_AppSocialIcons = _resolveComponent(\"AppSocialIcons\")!\n  const _component_Container = _resolveComponent(\"Container\")!\n\n  return (_openBlock(), _createElementBlock(\"header\", {\n    class: _normalizeClass({ 'has-dialog': _unref(hasDialog) })\n  }, [\n    _createVNode(_component_Container, {\n      fluid: _unref(config)?.header?.fluid \n    }, {\n      default: _withCtx(() => [\n        _createElementVNode(\"div\", _hoisted_1, [\n          (_unref(hasDialog))\n            ? (_openBlock(), _createBlock(_component_AppHeaderDialog, { key: 0 }))\n            : _createCommentVNode(\"\", true),\n          _createVNode(_component_AppHeaderLogo)\n        ]),\n        _createElementVNode(\"div\", _hoisted_2, [\n          (_unref(hasDialog))\n            ? (_openBlock(), _createBlock(_component_AppHeaderLogo, { key: 0 }))\n            : _createCommentVNode(\"\", true),\n          _createVNode(_component_AppHeaderNavigation)\n        ]),\n        _createElementVNode(\"div\", _hoisted_3, [\n          (_unref(hasDocSearch))\n            ? (_openBlock(), _createBlock(_component_AppDocSearch, { key: 0 }))\n            : (_openBlock(), _createBlock(_component_AppSearch, {\n                key: 1,\n                fuse: _unref(config).fuse\n              }, null, 8, [\"fuse\"])),\n          _createVNode(_component_ThemeSelect),\n          _createElementVNode(\"div\", _hoisted_4, [\n            _createVNode(_component_AppSocialIcons)\n          ])\n        ])\n      ]),\n      _: 1\n    }, 8, [\"fluid\"])\n  ], 2))\n}\n}\n\n})",
-      "start": 1709714221008,
-      "end": 1709714221008
+      "start": 1709746823476,
+      "end": 1709746823476
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1709714221009,
-      "end": 1709714221009,
+      "start": 1709746823484,
+      "end": 1709746823485,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1709714221015,
-      "end": 1709714221018,
+      "start": 1709746823492,
+      "end": 1709746823493,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, createVNode as _createVNode, createElementVNode as _createElementVNode, withCtx as _withCtx, normalizeClass as _normalizeClass, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-f465a985\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"section left\" }\nconst _hoisted_2 = { class: \"section center\" }\nconst _hoisted_3 = { class: \"section right\" }\nconst _hoisted_4 = { class: \"social-icons\" }\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'AppHeader',\n  props: {\n  \n},\n  setup(__props) {\n\nconst { config } = useDocus()\nconst { navigation } = useContent()\nconst { hasDocSearch } = useDocSearch()\n\nconst hasDialog = computed(() => navigation.value?.length > 1 || navigation.value?.[0]?.children?.length)\n\n\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_AppHeaderDialog = _resolveComponent(\"AppHeaderDialog\")!\n  const _component_AppHeaderLogo = _resolveComponent(\"AppHeaderLogo\")!\n  const _component_AppHeaderNavigation = _resolveComponent(\"AppHeaderNavigation\")!\n  const _component_AppDocSearch = _resolveComponent(\"AppDocSearch\")!\n  const _component_AppSearch = _resolveComponent(\"AppSearch\")!\n  const _component_ThemeSelect = _resolveComponent(\"ThemeSelect\")!\n  const _component_AppSocialIcons = _resolveComponent(\"AppSocialIcons\")!\n  const _component_Container = _resolveComponent(\"Container\")!\n\n  return (_openBlock(), _createElementBlock(\"header\", {\n    class: _normalizeClass({ 'has-dialog': _unref(hasDialog) })\n  }, [\n    _createVNode(_component_Container, {\n      fluid: _unref(config)?.header?.fluid \n    }, {\n      default: _withCtx(() => [\n        _createElementVNode(\"div\", _hoisted_1, [\n          (_unref(hasDialog))\n            ? (_openBlock(), _createBlock(_component_AppHeaderDialog, { key: 0 }))\n            : _createCommentVNode(\"\", true),\n          _createVNode(_component_AppHeaderLogo)\n        ]),\n        _createElementVNode(\"div\", _hoisted_2, [\n          (_unref(hasDialog))\n            ? (_openBlock(), _createBlock(_component_AppHeaderLogo, { key: 0 }))\n            : _createCommentVNode(\"\", true),\n          _createVNode(_component_AppHeaderNavigation)\n        ]),\n        _createElementVNode(\"div\", _hoisted_3, [\n          (_unref(hasDocSearch))\n            ? (_openBlock(), _createBlock(_component_AppDocSearch, { key: 0 }))\n            : (_openBlock(), _createBlock(_component_AppSearch, {\n                key: 1,\n                fuse: _unref(config).fuse\n              }, null, 8, [\"fuse\"])),\n          _createVNode(_component_ThemeSelect),\n          _createElementVNode(\"div\", _hoisted_4, [\n            _createVNode(_component_AppSocialIcons)\n          ])\n        ])\n      ]),\n      _: 1\n    }, 8, [\"fluid\"])\n  ], 2))\n}\n}\n\n})",
-      "start": 1709714221019,
-      "end": 1709714221019,
+      "start": 1709746823493,
+      "end": 1709746823493,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1709714221020,
-      "end": 1709714221020,
+      "start": 1709746823494,
+      "end": 1709746823494,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1709714221020,
-      "end": 1709714221020,
+      "start": 1709746823494,
+      "end": 1709746823494,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1709714221021,
-      "end": 1709714221021,
+      "start": 1709746823494,
+      "end": 1709746823494,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, createVNode as _createVNode, createElementVNode as _createElementVNode, withCtx as _withCtx, normalizeClass as _normalizeClass, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-f465a985\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = { class: \"section left\" };\nconst _hoisted_2 = { class: \"section center\" };\nconst _hoisted_3 = { class: \"section right\" };\nconst _hoisted_4 = { class: \"social-icons\" };\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"AppHeader\",\n  props: {},\n  setup(__props) {\n    const { config } = useDocus();\n    const { navigation } = useContent();\n    const { hasDocSearch } = useDocSearch();\n    const hasDialog = computed(() => navigation.value?.length > 1 || navigation.value?.[0]?.children?.length);\n    return (_ctx, _cache) => {\n      const _component_AppHeaderDialog = _resolveComponent(\"AppHeaderDialog\");\n      const _component_AppHeaderLogo = _resolveComponent(\"AppHeaderLogo\");\n      const _component_AppHeaderNavigation = _resolveComponent(\"AppHeaderNavigation\");\n      const _component_AppDocSearch = _resolveComponent(\"AppDocSearch\");\n      const _component_AppSearch = _resolveComponent(\"AppSearch\");\n      const _component_ThemeSelect = _resolveComponent(\"ThemeSelect\");\n      const _component_AppSocialIcons = _resolveComponent(\"AppSocialIcons\");\n      const _component_Container = _resolveComponent(\"Container\");\n      return _openBlock(), _createElementBlock(\"header\", {\n        class: _normalizeClass({ \"has-dialog\": _unref(hasDialog) })\n      }, [\n        _createVNode(_component_Container, {\n          fluid: _unref(config)?.header?.fluid\n        }, {\n          default: _withCtx(() => [\n            _createElementVNode(\"div\", _hoisted_1, [\n              _unref(hasDialog) ? (_openBlock(), _createBlock(_component_AppHeaderDialog, { key: 0 })) : _createCommentVNode(\"\", true),\n              _createVNode(_component_AppHeaderLogo)\n            ]),\n            _createElementVNode(\"div\", _hoisted_2, [\n              _unref(hasDialog) ? (_openBlock(), _createBlock(_component_AppHeaderLogo, { key: 0 })) : _createCommentVNode(\"\", true),\n              _createVNode(_component_AppHeaderNavigation)\n            ]),\n            _createElementVNode(\"div\", _hoisted_3, [\n              _unref(hasDocSearch) ? (_openBlock(), _createBlock(_component_AppDocSearch, { key: 0 })) : (_openBlock(), _createBlock(_component_AppSearch, {\n                key: 1,\n                fuse: _unref(config).fuse\n              }, null, 8, [\"fuse\"])),\n              _createVNode(_component_ThemeSelect),\n              _createElementVNode(\"div\", _hoisted_4, [\n                _createVNode(_component_AppSocialIcons)\n              ])\n            ])\n          ]),\n          _: 1\n        }, 8, [\"fluid\"])\n      ], 2);\n    };\n  }\n});\n",
-      "start": 1709714221021,
-      "end": 1709714221540,
+      "start": 1709746823494,
+      "end": 1709746824366,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -64,123 +64,123 @@
     },
     {
       "name": "vite:json",
-      "start": 1709714221540,
-      "end": 1709714221540,
+      "start": 1709746824366,
+      "end": 1709746824366,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1709714221540,
-      "end": 1709714221540,
+      "start": 1709746824366,
+      "end": 1709746824366,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1709714221540,
-      "end": 1709714221540,
+      "start": 1709746824366,
+      "end": 1709746824366,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1709714221540,
-      "end": 1709714221541,
+      "start": 1709746824366,
+      "end": 1709746824366,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709714221541,
-      "end": 1709714221541,
+      "start": 1709746824367,
+      "end": 1709746824367,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1709714221541,
-      "end": 1709714221541,
+      "start": 1709746824367,
+      "end": 1709746824367,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1709714221541,
-      "end": 1709714221541,
+      "start": 1709746824367,
+      "end": 1709746824367,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1709714221541,
-      "end": 1709714221542,
+      "start": 1709746824367,
+      "end": 1709746824367,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709714221542,
-      "end": 1709714221542,
+      "start": 1709746824367,
+      "end": 1709746824367,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1709714221542,
-      "end": 1709714221542,
+      "start": 1709746824367,
+      "end": 1709746824367,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1709714221542,
-      "end": 1709714221542,
+      "start": 1709746824368,
+      "end": 1709746824368,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1709714221542,
-      "end": 1709714221542,
+      "start": 1709746824368,
+      "end": 1709746824368,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1709714221542,
-      "end": 1709714221542,
+      "start": 1709746824368,
+      "end": 1709746824368,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1709714221542,
-      "end": 1709714221542,
+      "start": 1709746824368,
+      "end": 1709746824368,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1709714221542,
-      "end": 1709714221542,
+      "start": 1709746824368,
+      "end": 1709746824368,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1709714221543,
-      "end": 1709714221543,
+      "start": 1709746824368,
+      "end": 1709746824368,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1709714221543,
-      "end": 1709714221543,
+      "start": 1709746824368,
+      "end": 1709746824368,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1709714221543,
-      "end": 1709714221543,
+      "start": 1709746824368,
+      "end": 1709746824368,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1709714221543,
-      "end": 1709714221543,
+      "start": 1709746824368,
+      "end": 1709746824368,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { useDocus } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/composables/useDocus.ts';\nimport { useContent } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/composables/content';\nimport { useDocSearch } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/composables/useDocSearch.ts';\nimport { computed } from 'vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, createVNode as _createVNode, createElementVNode as _createElementVNode, withCtx as _withCtx, normalizeClass as _normalizeClass, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-f465a985\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = { class: \"section left\" };\nconst _hoisted_2 = { class: \"section center\" };\nconst _hoisted_3 = { class: \"section right\" };\nconst _hoisted_4 = { class: \"social-icons\" };\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"AppHeader\",\n  props: {},\n  setup(__props) {\n    const { config } = useDocus();\n    const { navigation } = useContent();\n    const { hasDocSearch } = useDocSearch();\n    const hasDialog = computed(() => navigation.value?.length > 1 || navigation.value?.[0]?.children?.length);\n    return (_ctx, _cache) => {\n      const _component_AppHeaderDialog = _resolveComponent(\"AppHeaderDialog\");\n      const _component_AppHeaderLogo = _resolveComponent(\"AppHeaderLogo\");\n      const _component_AppHeaderNavigation = _resolveComponent(\"AppHeaderNavigation\");\n      const _component_AppDocSearch = _resolveComponent(\"AppDocSearch\");\n      const _component_AppSearch = _resolveComponent(\"AppSearch\");\n      const _component_ThemeSelect = _resolveComponent(\"ThemeSelect\");\n      const _component_AppSocialIcons = _resolveComponent(\"AppSocialIcons\");\n      const _component_Container = _resolveComponent(\"Container\");\n      return _openBlock(), _createElementBlock(\"header\", {\n        class: _normalizeClass({ \"has-dialog\": _unref(hasDialog) })\n      }, [\n        _createVNode(_component_Container, {\n          fluid: _unref(config)?.header?.fluid\n        }, {\n          default: _withCtx(() => [\n            _createElementVNode(\"div\", _hoisted_1, [\n              _unref(hasDialog) ? (_openBlock(), _createBlock(_component_AppHeaderDialog, { key: 0 })) : _createCommentVNode(\"\", true),\n              _createVNode(_component_AppHeaderLogo)\n            ]),\n            _createElementVNode(\"div\", _hoisted_2, [\n              _unref(hasDialog) ? (_openBlock(), _createBlock(_component_AppHeaderLogo, { key: 0 })) : _createCommentVNode(\"\", true),\n              _createVNode(_component_AppHeaderNavigation)\n            ]),\n            _createElementVNode(\"div\", _hoisted_3, [\n              _unref(hasDocSearch) ? (_openBlock(), _createBlock(_component_AppDocSearch, { key: 0 })) : (_openBlock(), _createBlock(_component_AppSearch, {\n                key: 1,\n                fuse: _unref(config).fuse\n              }, null, 8, [\"fuse\"])),\n              _createVNode(_component_ThemeSelect),\n              _createElementVNode(\"div\", _hoisted_4, [\n                _createVNode(_component_AppSocialIcons)\n              ])\n            ])\n          ]),\n          _: 1\n        }, 8, [\"fluid\"])\n      ], 2);\n    };\n  }\n});\n",
-      "start": 1709714221543,
-      "end": 1709714221554,
+      "start": 1709746824369,
+      "end": 1709746824383,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -193,51 +193,51 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1709714221554,
-      "end": 1709714221554,
+      "start": 1709746824384,
+      "end": 1709746824384,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1709714221554,
-      "end": 1709714221554,
+      "start": 1709746824384,
+      "end": 1709746824384,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1709714221554,
-      "end": 1709714221554,
+      "start": 1709746824384,
+      "end": 1709746824384,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1709714221555,
-      "end": 1709714221555,
+      "start": 1709746824384,
+      "end": 1709746824384,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
       "result": "import { default as __nuxt_component_0 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppHeaderDialog.vue\";\nimport { default as __nuxt_component_1 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppHeaderLogo.vue\";\nimport { default as __nuxt_component_2 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppHeaderNavigation.vue\";\nimport { default as __nuxt_component_3 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppDocSearch.vue\";\nimport { default as __nuxt_component_4 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppSearch.vue\";\nimport { default as __nuxt_component_5 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/ThemeSelect.vue\";\nimport { default as __nuxt_component_6 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppSocialIcons.vue\";\nimport { default as __nuxt_component_7 } from \"/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Container.vue\";\nimport { useDocus } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/composables/useDocus.ts';\nimport { useContent } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/composables/content';\nimport { useDocSearch } from '/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/composables/useDocSearch.ts';\nimport { computed } from 'vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, createVNode as _createVNode, createElementVNode as _createElementVNode, withCtx as _withCtx, normalizeClass as _normalizeClass, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-f465a985\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = { class: \"section left\" };\nconst _hoisted_2 = { class: \"section center\" };\nconst _hoisted_3 = { class: \"section right\" };\nconst _hoisted_4 = { class: \"social-icons\" };\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"AppHeader\",\n  props: {},\n  setup(__props) {\n    const { config } = useDocus();\n    const { navigation } = useContent();\n    const { hasDocSearch } = useDocSearch();\n    const hasDialog = computed(() => navigation.value?.length > 1 || navigation.value?.[0]?.children?.length);\n    return (_ctx, _cache) => {\n      const _component_AppHeaderDialog = __nuxt_component_0;\n      const _component_AppHeaderLogo = __nuxt_component_1;\n      const _component_AppHeaderNavigation = __nuxt_component_2;\n      const _component_AppDocSearch = __nuxt_component_3;\n      const _component_AppSearch = __nuxt_component_4;\n      const _component_ThemeSelect = __nuxt_component_5;\n      const _component_AppSocialIcons = __nuxt_component_6;\n      const _component_Container = __nuxt_component_7;\n      return _openBlock(), _createElementBlock(\"header\", {\n        class: _normalizeClass({ \"has-dialog\": _unref(hasDialog) })\n      }, [\n        _createVNode(_component_Container, {\n          fluid: _unref(config)?.header?.fluid\n        }, {\n          default: _withCtx(() => [\n            _createElementVNode(\"div\", _hoisted_1, [\n              _unref(hasDialog) ? (_openBlock(), _createBlock(_component_AppHeaderDialog, { key: 0 })) : _createCommentVNode(\"\", true),\n              _createVNode(_component_AppHeaderLogo)\n            ]),\n            _createElementVNode(\"div\", _hoisted_2, [\n              _unref(hasDialog) ? (_openBlock(), _createBlock(_component_AppHeaderLogo, { key: 0 })) : _createCommentVNode(\"\", true),\n              _createVNode(_component_AppHeaderNavigation)\n            ]),\n            _createElementVNode(\"div\", _hoisted_3, [\n              _unref(hasDocSearch) ? (_openBlock(), _createBlock(_component_AppDocSearch, { key: 0 })) : (_openBlock(), _createBlock(_component_AppSearch, {\n                key: 1,\n                fuse: _unref(config).fuse\n              }, null, 8, [\"fuse\"])),\n              _createVNode(_component_ThemeSelect),\n              _createElementVNode(\"div\", _hoisted_4, [\n                _createVNode(_component_AppSocialIcons)\n              ])\n            ])\n          ]),\n          _: 1\n        }, 8, [\"fluid\"])\n      ], 2);\n    };\n  }\n});\n",
-      "start": 1709714221555,
-      "end": 1709714221556,
+      "start": 1709746824386,
+      "end": 1709746824386,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1709714221556,
-      "end": 1709714221556,
+      "start": 1709746824386,
+      "end": 1709746824386,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1709714221556,
-      "end": 1709714221556,
+      "start": 1709746824386,
+      "end": 1709746824386,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1709714221556,
-      "end": 1709714221556,
+      "start": 1709746824386,
+      "end": 1709746824386,
       "order": "normal"
     }
   ]

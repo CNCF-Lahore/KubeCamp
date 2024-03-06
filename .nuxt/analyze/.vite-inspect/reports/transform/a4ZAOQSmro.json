@@ -4,51 +4,51 @@
     {
       "name": "vite:vue",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = [\"src\"]\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'VoltaBoard',\n  props: {\n  token: {\n    type: String,\n    required: true\n  }\n},\n  setup(__props) {\n\nconst props = __props\nconst src = computed(() => `https://volta.net/embed/${props.token}`)\n\nreturn (_ctx: any,_cache: any) => {\n  return (_openBlock(), _createElementBlock(\"iframe\", {\n    src: _unref(src),\n    class: \"w-full\"\n  }, null, 8, _hoisted_1))\n}\n}\n\n})",
-      "start": 1709714221740,
-      "end": 1709714221740
+      "start": 1709746824516,
+      "end": 1709746824517
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1709714221743,
-      "end": 1709714221744,
+      "start": 1709746824518,
+      "end": 1709746824518,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1709714221745,
-      "end": 1709714221745,
+      "start": 1709746824520,
+      "end": 1709746824521,
       "order": "pre"
     },
     {
       "name": "pinceau-transforms",
       "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = [\"src\"]\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'VoltaBoard',\n  props: {\n  token: {\n    type: String,\n    required: true\n  }\n},\n  setup(__props) {\n\nconst props = __props\nconst src = computed(() => `https://volta.net/embed/${props.token}`)\n\nreturn (_ctx: any,_cache: any) => {\n  return (_openBlock(), _createElementBlock(\"iframe\", {\n    src: _unref(src),\n    class: \"w-full\"\n  }, null, 8, _hoisted_1))\n}\n}\n\n})",
-      "start": 1709714221746,
-      "end": 1709714221746,
+      "start": 1709746824523,
+      "end": 1709746824523,
       "order": "pre"
     },
     {
       "name": "content-slot",
-      "start": 1709714221746,
-      "end": 1709714221746,
+      "start": 1709746824524,
+      "end": 1709746824524,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1709714221747,
-      "end": 1709714221747,
+      "start": 1709746824524,
+      "end": 1709746824524,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1709714221747,
-      "end": 1709714221747,
+      "start": 1709746824524,
+      "end": 1709746824524,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
       "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\";\nconst _hoisted_1 = [\"src\"];\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"VoltaBoard\",\n  props: {\n    token: {\n      type: String,\n      required: true\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const src = computed(() => `https://volta.net/embed/${props.token}`);\n    return (_ctx, _cache) => {\n      return _openBlock(), _createElementBlock(\"iframe\", {\n        src: _unref(src),\n        class: \"w-full\"\n      }, null, 8, _hoisted_1);\n    };\n  }\n});\n",
-      "start": 1709714221747,
-      "end": 1709714221881,
+      "start": 1709746824524,
+      "end": 1709746824699,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -64,123 +64,123 @@
     },
     {
       "name": "vite:json",
-      "start": 1709714221881,
-      "end": 1709714221881,
+      "start": 1709746824699,
+      "end": 1709746824699,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1709714221881,
-      "end": 1709714221881,
+      "start": 1709746824699,
+      "end": 1709746824699,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1709714221881,
-      "end": 1709714221881,
+      "start": 1709746824699,
+      "end": 1709746824700,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1709714221881,
-      "end": 1709714221881,
+      "start": 1709746824700,
+      "end": 1709746824700,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709714221881,
-      "end": 1709714221881,
+      "start": 1709746824700,
+      "end": 1709746824704,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1709714221881,
-      "end": 1709714221881,
+      "start": 1709746824704,
+      "end": 1709746824704,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1709714221881,
-      "end": 1709714221881,
+      "start": 1709746824704,
+      "end": 1709746824705,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1709714221881,
-      "end": 1709714221881,
+      "start": 1709746824705,
+      "end": 1709746824705,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1709714221881,
-      "end": 1709714221881,
+      "start": 1709746824706,
+      "end": 1709746824706,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1709714221882,
-      "end": 1709714221882,
+      "start": 1709746824706,
+      "end": 1709746824706,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1709714221882,
-      "end": 1709714221882,
+      "start": 1709746824706,
+      "end": 1709746824707,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1709714221882,
-      "end": 1709714221882,
+      "start": 1709746824707,
+      "end": 1709746824707,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1709714221882,
-      "end": 1709714221882,
+      "start": 1709746824707,
+      "end": 1709746824707,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1709714221882,
-      "end": 1709714221882,
+      "start": 1709746824708,
+      "end": 1709746824708,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1709714221883,
-      "end": 1709714221883,
+      "start": 1709746824708,
+      "end": 1709746824708,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1709714221883,
-      "end": 1709714221883,
+      "start": 1709746824708,
+      "end": 1709746824708,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1709714221883,
-      "end": 1709714221883,
+      "start": 1709746824708,
+      "end": 1709746824709,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1709714221883,
-      "end": 1709714221883,
+      "start": 1709746824709,
+      "end": 1709746824709,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1709714221883,
-      "end": 1709714221883,
+      "start": 1709746824709,
+      "end": 1709746824709,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { computed } from 'vue';\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\";\nconst _hoisted_1 = [\"src\"];\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"VoltaBoard\",\n  props: {\n    token: {\n      type: String,\n      required: true\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const src = computed(() => `https://volta.net/embed/${props.token}`);\n    return (_ctx, _cache) => {\n      return _openBlock(), _createElementBlock(\"iframe\", {\n        src: _unref(src),\n        class: \"w-full\"\n      }, null, 8, _hoisted_1);\n    };\n  }\n});\n",
-      "start": 1709714221883,
-      "end": 1709714221884,
+      "start": 1709746824710,
+      "end": 1709746824719,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -193,50 +193,50 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1709714221884,
-      "end": 1709714221884,
+      "start": 1709746824720,
+      "end": 1709746824720,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1709714221884,
-      "end": 1709714221884,
+      "start": 1709746824720,
+      "end": 1709746824720,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1709714221884,
-      "end": 1709714221884,
+      "start": 1709746824720,
+      "end": 1709746824720,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1709714221884,
-      "end": 1709714221884,
+      "start": 1709746824720,
+      "end": 1709746824720,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1709714221884,
-      "end": 1709714221884,
+      "start": 1709746824721,
+      "end": 1709746824721,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1709714221884,
-      "end": 1709714221884,
+      "start": 1709746824722,
+      "end": 1709746824722,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1709714221884,
-      "end": 1709714221884,
+      "start": 1709746824722,
+      "end": 1709746824722,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1709714221884,
-      "end": 1709714221884,
+      "start": 1709746824722,
+      "end": 1709746824722,
       "order": "normal"
     }
   ]

@@ -1,7 +1,7 @@
 export default defineNuxtConfig({
   // Extends the default Nuxt Docus theme
   extends: '@nuxt-themes/docus',
-  devtools: { enabled: true },
+  devtools: { enabled: false },
 
   // Configuration for app, including the base URL
   app: {

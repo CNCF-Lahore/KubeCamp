@@ -54,7 +54,7 @@ const defineAppConfig = (config) => config;
 
 const appConfig0 = defineAppConfig({
   docus: {
-    title: "Kubernetes BootCamp",
+    title: "KubeCamp",
     description: "The best place to start your Kubernetes Journey",
     url: "cncf-lahore.github.io/Kubernetes-Bootcamp",
     image: "https://i.ibb.co/PGkhK2D/logo-07df0d71aa68491bbca25e45a62ac299.png",
@@ -2016,23 +2016,6 @@ function getRouteRulesForPath(path) {
   return defu({}, ..._routeRulesMatcher.matchAll(path).reverse());
 }
 
-const script$1 = `
-if (!window.__NUXT_DEVTOOLS_TIME_METRIC__) {
-  Object.defineProperty(window, '__NUXT_DEVTOOLS_TIME_METRIC__', {
-    value: {},
-    enumerable: false,
-    configurable: true,
-  })
-}
-window.__NUXT_DEVTOOLS_TIME_METRIC__.appInit = Date.now()
-`;
-
-const _0JP33DQKcM = (function(nitro) {
-  nitro.hooks.hook("render:html", (htmlContext) => {
-    htmlContext.head.push(`<script>${script$1}<\/script>`);
-  });
-});
-
 function defineRenderHandler(handler) {
   return eventHandler(async (event) => {
     if (event.path.endsWith("/favicon.ico")) {
@@ -2085,8 +2068,7 @@ const _3GLyYt0Wtu = (function(nitro) {
 });
 
 const plugins = [
-  _0JP33DQKcM,
-nitro,
+  nitro,
 _3GLyYt0Wtu
 ];
 
