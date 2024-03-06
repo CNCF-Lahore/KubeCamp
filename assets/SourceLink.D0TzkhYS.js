@@ -1,0 +1,1 @@
+import o from"./ProseP.Lq---IQ6.js";import{d as r,b as t,X as n}from"./entry.r00HMFtN.js";const m=r({__name:"SourceLink",props:{source:{type:String,required:!0}},setup(_){return(c,p)=>{const e=o;return t(),n(e)}}});export{m as default};
