@@ -4,7 +4,7 @@ export default defineAppConfig({
 
     description: 'The best place to start your Kubernetes Journey',
 
-    url: 'cncf-lahore.github.io/Kubernetes-Bootcamp',
+    url: 'cncf-lahore.github.io/KubeCamp',
 
     image: 'https://i.ibb.co/PGkhK2D/logo-07df0d71aa68491bbca25e45a62ac299.png',
 
@@ -39,7 +39,7 @@ export default defineAppConfig({
 
     github: {
       branch: 'main',
-      repo: '/Kubernetes-Bootcamp/',
+      repo: '/KubeCamp/',
       owner: 'CNCF-Lahore',
       edit: false
     },
