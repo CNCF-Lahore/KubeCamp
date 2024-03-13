@@ -12,7 +12,7 @@ Thrilled to announce my completion of the Kubernetes Bootcamp with the KCD Lahor
 
 Check Out My Achievement! 🎉
 
-✨ See my Course of Completion Certificate and start your own Kubernetes journey : https://bit.ly/kubecamp
+✨ See my Course of Completion Certificate and start your own Kubernetes journey : https://kubecamp.kcdlahore.org
 
 Let’s inspire and learn from each other's tech journeys. Here's to our continued growth in the world of cloud computing!
 
