@@ -1,15 +1,15 @@
-import { getRequestDependencies, getPreloadLinks, getPrefetchLinks, createRenderer } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/.pnpm/vue-bundle-renderer@2.0.0/node_modules/vue-bundle-renderer/dist/runtime.mjs';
-import { eventHandler, setResponseHeader, send, getResponseStatus, setResponseStatus, setResponseHeaders, getQuery, createError, appendResponseHeader, getResponseStatusText, readBody } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/h3/dist/index.mjs';
-import { stringify, uneval } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/devalue/index.js';
-import destr from 'file:///workspace/Kubernetes-Bootcamp/node_modules/destr/dist/index.mjs';
-import { joinURL, withoutTrailingSlash } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/ufo/dist/index.mjs';
-import { renderToString } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/vue/server-renderer/index.mjs';
-import { hash } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/ohash/dist/index.mjs';
-import { renderSSRHead } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/@unhead/ssr/dist/index.mjs';
+import { getRequestDependencies, getPreloadLinks, getPrefetchLinks, createRenderer } from 'file:///workspace/KubeCamp/node_modules/vue-bundle-renderer/dist/runtime.mjs';
+import { eventHandler, setResponseHeader, send, getResponseStatus, setResponseStatus, setResponseHeaders, getQuery, createError, appendResponseHeader, getResponseStatusText, readBody } from 'file:///workspace/KubeCamp/node_modules/h3/dist/index.mjs';
+import { stringify, uneval } from 'file:///workspace/KubeCamp/node_modules/devalue/index.js';
+import destr from 'file:///workspace/KubeCamp/node_modules/destr/dist/index.mjs';
+import { joinURL, withoutTrailingSlash } from 'file:///workspace/KubeCamp/node_modules/ufo/dist/index.mjs';
+import { renderToString } from 'file:///workspace/KubeCamp/node_modules/vue/server-renderer/index.mjs';
+import { hash } from 'file:///workspace/KubeCamp/node_modules/ohash/dist/index.mjs';
+import { renderSSRHead } from 'file:///workspace/KubeCamp/node_modules/@unhead/ssr/dist/index.mjs';
 import { h as useNitroApp, u as useRuntimeConfig, c as useStorage, g as getRouteRules } from './nitro/nitro-prerenderer.mjs';
-import { version, unref } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/vue/index.mjs';
-import { createServerHead as createServerHead$1 } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/unhead/dist/index.mjs';
-import { defineHeadPlugin } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/@unhead/shared/dist/index.mjs';
+import { version, unref } from 'file:///workspace/KubeCamp/node_modules/vue/index.mjs';
+import { createServerHead as createServerHead$1 } from 'file:///workspace/KubeCamp/node_modules/unhead/dist/index.mjs';
+import { defineHeadPlugin } from 'file:///workspace/KubeCamp/node_modules/@unhead/shared/dist/index.mjs';
 
 function defineRenderHandler(handler) {
   return eventHandler(async (event) => {

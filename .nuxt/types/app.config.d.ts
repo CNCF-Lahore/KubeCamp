@@ -1,8 +1,8 @@
 
 import type { CustomAppConfig } from 'nuxt/schema'
 import type { Defu } from 'defu'
-import cfg0 from "/workspace/Kubernetes-Bootcamp/app.config"
-import cfg1 from "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/app.config"
+import cfg0 from "/workspace/KubeCamp/app.config"
+import cfg1 from "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/app.config"
 
 declare const inlineConfig = {
   "nuxt": {

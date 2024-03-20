@@ -1,57 +1,57 @@
-import { hasInjectionContext, inject, version, toRef, isRef, defineAsyncComponent, ref, watchEffect, watch, getCurrentInstance, useAttrs, computed, toValue, defineComponent, useSSRContext, provide, createElementBlock, onMounted, onUnmounted, h as h$2, Teleport, reactive, Fragment, shallowRef, mergeProps, unref, withCtx, openBlock, createBlock, createVNode, createCommentVNode, createTextVNode, toDisplayString, cloneVNode, normalizeClass, shallowReactive, Suspense, nextTick, Transition, onServerPrefetch, useSlots, resolveDynamicComponent, renderSlot, resolveComponent, withAsyncContext, createSlots, renderList, createApp, effectScope, onErrorCaptured, isReadonly, withKeys as withKeys$1, withDirectives, vShow, isShallow, isReactive, toRaw } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/vue/index.mjs';
-import { $fetch as $fetch$1 } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/ofetch/dist/node.mjs';
-import { createHooks } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/hookable/dist/index.mjs';
-import { getContext } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/unctx/dist/index.mjs';
-import { createError as createError$1, getRequestHeader, setCookie, getCookie, deleteCookie, sanitizeStatusCode } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/h3/dist/index.mjs';
-import { hasProtocol, parseURL, withLeadingSlash, withBase, withTrailingSlash, withoutTrailingSlash, joinURL, parseQuery, withQuery, isScriptProtocol, withHttps } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/ufo/dist/index.mjs';
-import { defineHeadPlugin, composableNames, unpackMeta } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/@unhead/shared/dist/index.mjs';
-import { useRoute as useRoute$1, RouterView, createMemoryHistory, createRouter, START_LOCATION } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/vue-router/dist/vue-router.node.mjs';
-import { defuFn, createDefu, defu } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/defu/dist/defu.mjs';
-import { klona } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/klona/dist/index.mjs';
-import { getActiveHead } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/unhead/dist/index.mjs';
-import { createSharedComposable, useActiveElement } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/@vueuse/core/index.mjs';
-import { extendTailwindMerge, twMerge, twJoin } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/tailwind-merge/dist/bundle-mjs.mjs';
-import { ssrRenderAttrs, ssrRenderList, ssrRenderComponent, ssrRenderClass, ssrInterpolate, ssrRenderSlot, ssrRenderVNode, ssrRenderStyle, ssrRenderSuspense, ssrIncludeBooleanAttr, ssrRenderTeleport } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/vue/server-renderer/index.mjs';
-import { hash as hash$2, isEqual } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/ohash/dist/index.mjs';
-import { Icon as Icon$2 } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/@iconify/vue/dist/offline.mjs';
-import { addAPIProvider, loadIcon } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/@iconify/vue/dist/iconify.mjs';
-import { splitByCase, upperFirst } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/scule/dist/index.mjs';
-import destr from 'file:///workspace/Kubernetes-Bootcamp/node_modules/destr/dist/index.mjs';
-import { parse } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/.pnpm/cookie-es@1.0.0/node_modules/cookie-es/dist/index.mjs';
+import { hasInjectionContext, inject, version, ref, watchEffect, watch, getCurrentInstance, toRef, isRef, defineAsyncComponent, useAttrs, computed, toValue, defineComponent, useSSRContext, provide, createElementBlock, onMounted, onUnmounted, h as h$1, Fragment, unref, Teleport, reactive, shallowRef, normalizeClass, mergeProps, withCtx, openBlock, createBlock, createVNode, createCommentVNode, createTextVNode, toDisplayString, shallowReactive, Suspense, nextTick, Transition, onServerPrefetch, useSlots, resolveDynamicComponent, renderSlot, resolveComponent, cloneVNode, withAsyncContext, createSlots, renderList, createApp, effectScope, onErrorCaptured, isReadonly, withKeys as withKeys$1, withDirectives, vShow, isShallow, isReactive, toRaw } from 'file:///workspace/KubeCamp/node_modules/vue/index.mjs';
+import { $fetch as $fetch$1 } from 'file:///workspace/KubeCamp/node_modules/ofetch/dist/node.mjs';
+import { createHooks } from 'file:///workspace/KubeCamp/node_modules/hookable/dist/index.mjs';
+import { getContext } from 'file:///workspace/KubeCamp/node_modules/unctx/dist/index.mjs';
+import { createError as createError$1, getRequestHeader, setCookie, getCookie, deleteCookie, sanitizeStatusCode } from 'file:///workspace/KubeCamp/node_modules/h3/dist/index.mjs';
+import { hasProtocol, parseURL, withLeadingSlash, withBase, withTrailingSlash, withoutTrailingSlash, joinURL, parseQuery, withQuery, isScriptProtocol, withHttps } from 'file:///workspace/KubeCamp/node_modules/ufo/dist/index.mjs';
+import { getActiveHead } from 'file:///workspace/KubeCamp/node_modules/unhead/dist/index.mjs';
+import { defineHeadPlugin, composableNames, unpackMeta } from 'file:///workspace/KubeCamp/node_modules/@unhead/shared/dist/index.mjs';
+import { useRoute as useRoute$1, RouterView, createMemoryHistory, createRouter, START_LOCATION } from 'file:///workspace/KubeCamp/node_modules/vue-router/dist/vue-router.node.mjs';
+import { defuFn, createDefu, defu } from 'file:///workspace/KubeCamp/node_modules/defu/dist/defu.mjs';
+import { klona } from 'file:///workspace/KubeCamp/node_modules/klona/dist/index.mjs';
+import { createSharedComposable, useActiveElement } from 'file:///workspace/KubeCamp/node_modules/@vueuse/core/index.mjs';
+import { extendTailwindMerge, twMerge, twJoin } from 'file:///workspace/KubeCamp/node_modules/tailwind-merge/dist/bundle-mjs.mjs';
+import { ssrRenderAttrs, ssrRenderList, ssrRenderComponent, ssrRenderClass, ssrInterpolate, ssrRenderSlot, ssrRenderVNode, ssrRenderStyle, ssrRenderSuspense, ssrIncludeBooleanAttr, ssrRenderTeleport } from 'file:///workspace/KubeCamp/node_modules/vue/server-renderer/index.mjs';
+import { hash as hash$2, isEqual } from 'file:///workspace/KubeCamp/node_modules/ohash/dist/index.mjs';
+import { Icon as Icon$2 } from 'file:///workspace/KubeCamp/node_modules/@iconify/vue/dist/offline.mjs';
+import { addAPIProvider, loadIcon } from 'file:///workspace/KubeCamp/node_modules/@iconify/vue/dist/iconify.mjs';
+import { splitByCase, upperFirst } from 'file:///workspace/KubeCamp/node_modules/scule/dist/index.mjs';
+import destr from 'file:///workspace/KubeCamp/node_modules/destr/dist/index.mjs';
+import { parse } from 'file:///workspace/KubeCamp/node_modules/cookie-es/dist/index.mjs';
 import { u as useRuntimeConfig$1 } from '../nitro/nitro-prerenderer.mjs';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/unenv/runtime/fetch/index.mjs';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/unstorage/dist/index.mjs';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/unstorage/drivers/fs.mjs';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/unstorage/drivers/memory.mjs';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/unstorage/drivers/lru-cache.mjs';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/unstorage/drivers/fs-lite.mjs';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/radix3/dist/index.mjs';
+import 'file:///workspace/KubeCamp/node_modules/unenv/runtime/fetch/index.mjs';
+import 'file:///workspace/KubeCamp/node_modules/unstorage/dist/index.mjs';
+import 'file:///workspace/KubeCamp/node_modules/unstorage/drivers/fs.mjs';
+import 'file:///workspace/KubeCamp/node_modules/unstorage/drivers/memory.mjs';
+import 'file:///workspace/KubeCamp/node_modules/unstorage/drivers/lru-cache.mjs';
+import 'file:///workspace/KubeCamp/node_modules/unstorage/drivers/fs-lite.mjs';
+import 'file:///workspace/KubeCamp/node_modules/radix3/dist/index.mjs';
 import 'node:fs';
 import 'node:url';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/pathe/dist/index.mjs';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/shiki/dist/core.mjs';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/@shikijs/transformers/dist/index.mjs';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/unified/index.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/mdast-util-to-string/index.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/micromark/index.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/unist-util-stringify-position/index.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/micromark-util-character/index.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/micromark-util-chunked/index.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/micromark-util-resolve-all/index.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/micromark-util-sanitize-uri/index.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/slugify/slugify.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/remark-parse/index.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/remark-rehype/index.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/remark-mdc/dist/index.mjs';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/hast-util-to-string/index.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/github-slugger/index.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/detab/index.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/remark-emoji/index.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/remark-gfm/index.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/rehype-external-links/index.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/rehype-sort-attribute-values/index.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/rehype-sort-attributes/index.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/rehype-raw/index.js';
+import 'file:///workspace/KubeCamp/node_modules/pathe/dist/index.mjs';
+import 'file:///workspace/KubeCamp/node_modules/shiki/dist/core.mjs';
+import 'file:///workspace/KubeCamp/node_modules/@shikijs/transformers/dist/index.mjs';
+import 'file:///workspace/KubeCamp/node_modules/unified/index.js';
+import 'file:///workspace/KubeCamp/node_modules/mdast-util-to-string/index.js';
+import 'file:///workspace/KubeCamp/node_modules/micromark/index.js';
+import 'file:///workspace/KubeCamp/node_modules/unist-util-stringify-position/index.js';
+import 'file:///workspace/KubeCamp/node_modules/micromark-util-character/index.js';
+import 'file:///workspace/KubeCamp/node_modules/micromark-util-chunked/index.js';
+import 'file:///workspace/KubeCamp/node_modules/micromark-util-resolve-all/index.js';
+import 'file:///workspace/KubeCamp/node_modules/micromark-util-sanitize-uri/index.js';
+import 'file:///workspace/KubeCamp/node_modules/slugify/slugify.js';
+import 'file:///workspace/KubeCamp/node_modules/remark-parse/index.js';
+import 'file:///workspace/KubeCamp/node_modules/remark-rehype/index.js';
+import 'file:///workspace/KubeCamp/node_modules/remark-mdc/dist/index.mjs';
+import 'file:///workspace/KubeCamp/node_modules/hast-util-to-string/index.js';
+import 'file:///workspace/KubeCamp/node_modules/github-slugger/index.js';
+import 'file:///workspace/KubeCamp/node_modules/detab/index.js';
+import 'file:///workspace/KubeCamp/node_modules/remark-emoji/index.js';
+import 'file:///workspace/KubeCamp/node_modules/remark-gfm/index.js';
+import 'file:///workspace/KubeCamp/node_modules/rehype-external-links/index.js';
+import 'file:///workspace/KubeCamp/node_modules/rehype-sort-attribute-values/index.js';
+import 'file:///workspace/KubeCamp/node_modules/rehype-sort-attributes/index.js';
+import 'file:///workspace/KubeCamp/node_modules/rehype-raw/index.js';
 
 const appConfig$1 = useRuntimeConfig$1().app;
 const baseURL = () => appConfig$1.baseURL;
@@ -385,23 +385,23 @@ const createError = (error) => {
   return nuxtError;
 };
 version.startsWith("3");
-function resolveUnref$1(r2) {
+function resolveUnref(r2) {
   return typeof r2 === "function" ? r2() : unref(r2);
 }
-function resolveUnrefHeadInput$1(ref2, lastKey = "") {
+function resolveUnrefHeadInput(ref2, lastKey = "") {
   if (ref2 instanceof Promise)
     return ref2;
-  const root = resolveUnref$1(ref2);
+  const root = resolveUnref(ref2);
   if (!ref2 || !root)
     return root;
   if (Array.isArray(root))
-    return root.map((r2) => resolveUnrefHeadInput$1(r2, lastKey));
+    return root.map((r2) => resolveUnrefHeadInput(r2, lastKey));
   if (typeof root === "object") {
     return Object.fromEntries(
       Object.entries(root).map(([k2, v2]) => {
         if (k2 === "titleTemplate" || k2.startsWith("on"))
           return [k2, unref(v2)];
-        return [k2, resolveUnrefHeadInput$1(v2, k2)];
+        return [k2, resolveUnrefHeadInput(v2, k2)];
       })
     );
   }
@@ -411,16 +411,79 @@ defineHeadPlugin({
   hooks: {
     "entries:resolve": function(ctx) {
       for (const entry2 of ctx.entries)
-        entry2.resolvedInput = resolveUnrefHeadInput$1(entry2.input);
+        entry2.resolvedInput = resolveUnrefHeadInput(entry2.input);
     }
   }
 });
-const _global$1 = typeof globalThis !== "undefined" ? globalThis : typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : {};
-const globalKey$2 = "__unhead_injection_handler__";
+const headSymbol = "usehead";
+const _global = typeof globalThis !== "undefined" ? globalThis : typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : {};
+const globalKey$1 = "__unhead_injection_handler__";
 function setHeadInjectionHandler(handler) {
-  _global$1[globalKey$2] = handler;
+  _global[globalKey$1] = handler;
 }
-const unhead_nYHSPYO0Ba = /* @__PURE__ */ defineNuxtPlugin({
+function injectHead() {
+  if (globalKey$1 in _global) {
+    return _global[globalKey$1]();
+  }
+  const head = inject(headSymbol);
+  if (!head && "prerender" !== "production")
+    console.warn("Unhead is missing Vue context, falling back to shared context. This may have unexpected results.");
+  return head || getActiveHead();
+}
+function useHead(input, options = {}) {
+  const head = options.head || injectHead();
+  if (head) {
+    if (!head.ssr)
+      return clientUseHead(head, input, options);
+    return head.push(input, options);
+  }
+}
+function clientUseHead(head, input, options = {}) {
+  const deactivated = ref(false);
+  const resolvedInput = ref({});
+  watchEffect(() => {
+    resolvedInput.value = deactivated.value ? {} : resolveUnrefHeadInput(input);
+  });
+  const entry2 = head.push(resolvedInput.value, options);
+  watch(resolvedInput, (e2) => {
+    entry2.patch(e2);
+  });
+  getCurrentInstance();
+  return entry2;
+}
+const coreComposableNames = [
+  "injectHead"
+];
+({
+  "@unhead/vue": [...coreComposableNames, ...composableNames]
+});
+function useSeoMeta(input, options) {
+  const { title, titleTemplate, ...meta } = input;
+  return useHead({
+    title,
+    titleTemplate,
+    // @ts-expect-error runtime type
+    _flatMeta: meta
+  }, {
+    ...options,
+    transform(t2) {
+      const meta2 = unpackMeta({ ...t2._flatMeta });
+      delete t2._flatMeta;
+      return {
+        // @ts-expect-error runtime type
+        ...t2,
+        meta: meta2
+      };
+    }
+  });
+}
+function useServerHead(input, options = {}) {
+  const head = options.head || injectHead();
+  delete options.head;
+  if (head)
+    return head.push(input, { ...options, mode: "server" });
+}
+const unhead_KgADcZ0jPj = /* @__PURE__ */ defineNuxtPlugin({
   name: "nuxt:head",
   enforce: "pre",
   setup(nuxtApp) {
@@ -523,8 +586,8 @@ function createNamespace(defaultOpts = {}) {
   };
 }
 const _globalThis = typeof globalThis !== "undefined" ? globalThis : typeof self !== "undefined" ? self : typeof global !== "undefined" ? global : {};
-const globalKey$1 = "__unctx__";
-_globalThis[globalKey$1] || (_globalThis[globalKey$1] = createNamespace());
+const globalKey = "__unctx__";
+_globalThis[globalKey] || (_globalThis[globalKey] = createNamespace());
 const asyncHandlersKey = "__unctx_async_handlers__";
 const asyncHandlers = _globalThis[asyncHandlersKey] || (_globalThis[asyncHandlersKey] = /* @__PURE__ */ new Set());
 function executeAsync(function_) {
@@ -579,7 +642,7 @@ const _routes = [
     meta: __nuxt_page_meta$1 || {},
     alias: (__nuxt_page_meta$1 == null ? void 0 : __nuxt_page_meta$1.alias) || [],
     redirect: __nuxt_page_meta$1 == null ? void 0 : __nuxt_page_meta$1.redirect,
-    component: () => import('./_nuxt/_...slug_-Cvn5u8yO.mjs').then((m2) => m2.default || m2)
+    component: () => import('./_nuxt/_...slug_-DQcdPhng.mjs').then((m2) => m2.default || m2)
   },
   {
     name: "index",
@@ -587,14 +650,14 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_nuxt/index-BoE9v1lc.mjs').then((m2) => m2.default || m2)
+    component: () => import('./_nuxt/index-Criaz_1S.mjs').then((m2) => m2.default || m2)
   }
 ];
 const _wrapIf = (component, props, slots) => {
   props = props === true ? {} : props;
   return { default: () => {
     var _a;
-    return props ? h$2(component, props, slots) : (_a = slots.default) == null ? void 0 : _a.call(slots);
+    return props ? h$1(component, props, slots) : (_a = slots.default) == null ? void 0 : _a.call(slots);
   } };
 };
 function generateRouteKey(route) {
@@ -871,7 +934,7 @@ const cfg1 = defineAppConfig({
 });
 const inlineConfig = {
   "nuxt": {
-    "buildId": "b34aac9c-decb-420c-a2c1-41de5cf94796"
+    "buildId": "5afd31fd-5db0-4035-8871-125d7fd918aa"
   },
   "ui": {
     "primary": "green",
@@ -1202,7 +1265,7 @@ function fixSlashes(trailingSlash, pathOrUrl) {
   const fixedPath = trailingSlash ? withTrailingSlash($url.pathname) : withoutTrailingSlash($url.pathname);
   return `${$url.protocol ? `${$url.protocol}//` : ""}${$url.host || ""}${fixedPath}${$url.search || ""}${$url.hash || ""}`;
 }
-const _0_siteConfig_TMkT5JndzH = /* @__PURE__ */ defineNuxtPlugin({
+const _0_siteConfig_9gMxCtyFUG = /* @__PURE__ */ defineNuxtPlugin({
   name: "nuxt-site-config",
   enforce: "pre",
   async setup(nuxtApp) {
@@ -1244,7 +1307,7 @@ const reducers = {
 {
   reducers.Island = (data) => data && (data == null ? void 0 : data.__nuxt_island);
 }
-const revive_payload_server_aBPP5nqDqn = /* @__PURE__ */ defineNuxtPlugin({
+const revive_payload_server_eJ33V7gbc6 = /* @__PURE__ */ defineNuxtPlugin({
   name: "nuxt:revive-payload:server",
   setup() {
     for (const reducer in reducers) {
@@ -1252,53 +1315,53 @@ const revive_payload_server_aBPP5nqDqn = /* @__PURE__ */ defineNuxtPlugin({
     }
   }
 });
-const LazyCallout = defineAsyncComponent(() => import('./_nuxt/Callout-SjPCxZMS.mjs').then((r2) => r2.default));
-const LazyCard = defineAsyncComponent(() => import('./_nuxt/Card-C7hluHpM.mjs').then((r2) => r2.default));
-const LazyCardGroup = defineAsyncComponent(() => import('./_nuxt/CardGroup-C5E8wnf1.mjs').then((r2) => r2.default));
-const LazyCodeGroup = defineAsyncComponent(() => import('./_nuxt/CodeGroup-DiOSj4-E.mjs').then((r2) => r2.default));
-const LazyCollapsible = defineAsyncComponent(() => import('./_nuxt/Collapsible-BpoytZsV.mjs').then((r2) => r2.default));
-const LazyField = defineAsyncComponent(() => import('./_nuxt/Field-BG0deZYl.mjs').then((r2) => r2.default));
-const LazyFieldGroup = defineAsyncComponent(() => import('./_nuxt/FieldGroup-ChSm7IRY.mjs').then((r2) => r2.default));
-const LazyShortcut = defineAsyncComponent(() => import('./_nuxt/Shortcut-BZ5qAofM.mjs').then((r2) => r2.default));
-const LazyTabs = defineAsyncComponent(() => import('./_nuxt/Tabs-CA4lU3OB.mjs').then((r2) => r2.default));
-const LazyProseCode = defineAsyncComponent(() => import('./_nuxt/ProseCode-BmGeVa9F.mjs').then((r2) => r2.default));
-const LazyProseCodeButton = defineAsyncComponent(() => import('./_nuxt/ProseCodeButton-JhCoPs_P.mjs').then((r2) => r2.default));
-const LazyProseCodeIcon = defineAsyncComponent(() => import('./_nuxt/ProseCodeIcon-Dl8110Ur.mjs').then((r2) => r2.default));
-const LazyProseH1 = defineAsyncComponent(() => import('./_nuxt/ProseH1-CrfjM56H.mjs').then((r2) => r2.default));
-const LazyProseH2 = defineAsyncComponent(() => import('./_nuxt/ProseH2-DvJdjcdr.mjs').then((r2) => r2.default));
-const LazyProseH3 = defineAsyncComponent(() => import('./_nuxt/ProseH3-CpOjxceV.mjs').then((r2) => r2.default));
-const LazyProseH4 = defineAsyncComponent(() => import('./_nuxt/ProseH4-D0ud0VAi.mjs').then((r2) => r2.default));
-const LazyContentDoc = defineAsyncComponent(() => import('./_nuxt/ContentDoc-DiP7o1rH.mjs').then((r2) => r2.default));
-const LazyContentList = defineAsyncComponent(() => import('./_nuxt/ContentList-CrKbmD31.mjs').then((r2) => r2.default));
-const LazyContentNavigation = defineAsyncComponent(() => import('./_nuxt/ContentNavigation--vXao97b.mjs').then((r2) => r2.default));
-const LazyContentQuery = defineAsyncComponent(() => import('./_nuxt/ContentQuery-Cs6CVlje.mjs').then((r2) => r2.default));
-const LazyContentRenderer = defineAsyncComponent(() => import('./_nuxt/ContentRenderer-NxroiYLi.mjs').then((r2) => r2.default));
-const LazyContentRendererMarkdown = defineAsyncComponent(() => import('./_nuxt/ContentRendererMarkdown-ixdA-11W.mjs').then((r2) => r2.default));
-const LazyContentSlot = defineAsyncComponent(() => import('./_nuxt/ContentSlot-DlM6pMEN.mjs').then((r2) => r2.default));
-const LazyDocumentDrivenEmpty = defineAsyncComponent(() => import('./_nuxt/DocumentDrivenEmpty-D5iF5RRs.mjs').then((r2) => r2.default));
-const LazyDocumentDrivenNotFound = defineAsyncComponent(() => import('./_nuxt/DocumentDrivenNotFound-DnfQKy8D.mjs').then((r2) => r2.default));
-const LazyMarkdown = defineAsyncComponent(() => import('./_nuxt/Markdown-C_aQtSoG.mjs').then((r2) => r2.default));
-const LazyProseCodeInline = defineAsyncComponent(() => import('./_nuxt/ProseCodeInline-D4cYoBbI.mjs').then((r2) => r2.default));
-const LazyProsePre = defineAsyncComponent(() => import('./_nuxt/ProsePre-BlucmEQF.mjs').then((r2) => r2.default));
-const LazyProseA = defineAsyncComponent(() => import('./_nuxt/ProseA-CoG0EX0v.mjs').then((r2) => r2.default));
-const LazyProseBlockquote = defineAsyncComponent(() => import('./_nuxt/ProseBlockquote-DX8I1CSW.mjs').then((r2) => r2.default));
-const LazyProseEm = defineAsyncComponent(() => import('./_nuxt/ProseEm-CLhoTdf4.mjs').then((r2) => r2.default));
-const LazyProseH5 = defineAsyncComponent(() => import('./_nuxt/ProseH5-DaS5FCzc.mjs').then((r2) => r2.default));
-const LazyProseH6 = defineAsyncComponent(() => import('./_nuxt/ProseH6-DFJc7fVO.mjs').then((r2) => r2.default));
-const LazyProseHr = defineAsyncComponent(() => import('./_nuxt/ProseHr-MMeufZLb.mjs').then((r2) => r2.default));
-const LazyProseImg = defineAsyncComponent(() => import('./_nuxt/ProseImg-EArS2qwS.mjs').then((r2) => r2.default));
-const LazyProseLi = defineAsyncComponent(() => import('./_nuxt/ProseLi-CsCuGJ7J.mjs').then((r2) => r2.default));
-const LazyProseOl = defineAsyncComponent(() => import('./_nuxt/ProseOl-BOP5w6ZE.mjs').then((r2) => r2.default));
-const LazyProseP = defineAsyncComponent(() => import('./_nuxt/ProseP-CfgelHaW.mjs').then((r2) => r2.default));
-const LazyProseScript = defineAsyncComponent(() => import('./_nuxt/ProseScript-BCRyU31V.mjs').then((r2) => r2.default));
-const LazyProseStrong = defineAsyncComponent(() => import('./_nuxt/ProseStrong-DPJMj8dt.mjs').then((r2) => r2.default));
-const LazyProseTable = defineAsyncComponent(() => import('./_nuxt/ProseTable-D4QRqVDB.mjs').then((r2) => r2.default));
-const LazyProseTbody = defineAsyncComponent(() => import('./_nuxt/ProseTbody-EoGsWYHI.mjs').then((r2) => r2.default));
-const LazyProseTd = defineAsyncComponent(() => import('./_nuxt/ProseTd-CusLtPZT.mjs').then((r2) => r2.default));
-const LazyProseTh = defineAsyncComponent(() => import('./_nuxt/ProseTh-SQjt1C2p.mjs').then((r2) => r2.default));
-const LazyProseThead = defineAsyncComponent(() => import('./_nuxt/ProseThead-Bxf3x60r.mjs').then((r2) => r2.default));
-const LazyProseTr = defineAsyncComponent(() => import('./_nuxt/ProseTr-BjWDrXUu.mjs').then((r2) => r2.default));
-const LazyProseUl = defineAsyncComponent(() => import('./_nuxt/ProseUl-Ccm9FlAC.mjs').then((r2) => r2.default));
+const LazyCallout = defineAsyncComponent(() => import('./_nuxt/Callout-CDSJfDiJ.mjs').then((r2) => r2.default));
+const LazyCard = defineAsyncComponent(() => import('./_nuxt/Card-CT1vkraE.mjs').then((r2) => r2.default));
+const LazyCardGroup = defineAsyncComponent(() => import('./_nuxt/CardGroup-DAgdmNfG.mjs').then((r2) => r2.default));
+const LazyCodeGroup = defineAsyncComponent(() => import('./_nuxt/CodeGroup-EhvEYfPk.mjs').then((r2) => r2.default));
+const LazyCollapsible = defineAsyncComponent(() => import('./_nuxt/Collapsible-BG4LKPdf.mjs').then((r2) => r2.default));
+const LazyField = defineAsyncComponent(() => import('./_nuxt/Field-CHKhRHEv.mjs').then((r2) => r2.default));
+const LazyFieldGroup = defineAsyncComponent(() => import('./_nuxt/FieldGroup-B8TOwBsT.mjs').then((r2) => r2.default));
+const LazyShortcut = defineAsyncComponent(() => import('./_nuxt/Shortcut-zSI1Ehh1.mjs').then((r2) => r2.default));
+const LazyTabs = defineAsyncComponent(() => import('./_nuxt/Tabs-BsRLZ1aZ.mjs').then((r2) => r2.default));
+const LazyProseCode = defineAsyncComponent(() => import('./_nuxt/ProseCode-CEx8kOlL.mjs').then((r2) => r2.default));
+const LazyProseCodeButton = defineAsyncComponent(() => import('./_nuxt/ProseCodeButton-D6oZtvrN.mjs').then((r2) => r2.default));
+const LazyProseCodeIcon = defineAsyncComponent(() => import('./_nuxt/ProseCodeIcon-BeTrCC7R.mjs').then((r2) => r2.default));
+const LazyProseH1 = defineAsyncComponent(() => import('./_nuxt/ProseH1-D2qEgZmx.mjs').then((r2) => r2.default));
+const LazyProseH2 = defineAsyncComponent(() => import('./_nuxt/ProseH2-BoDlYrcS.mjs').then((r2) => r2.default));
+const LazyProseH3 = defineAsyncComponent(() => import('./_nuxt/ProseH3-BwaxDBHX.mjs').then((r2) => r2.default));
+const LazyProseH4 = defineAsyncComponent(() => import('./_nuxt/ProseH4-CfCXxuWw.mjs').then((r2) => r2.default));
+const LazyContentDoc = defineAsyncComponent(() => import('./_nuxt/ContentDoc-DnytKWLi.mjs').then((r2) => r2.default));
+const LazyContentList = defineAsyncComponent(() => import('./_nuxt/ContentList-Cn9xoDEd.mjs').then((r2) => r2.default));
+const LazyContentNavigation = defineAsyncComponent(() => import('./_nuxt/ContentNavigation-gY2WFtnq.mjs').then((r2) => r2.default));
+const LazyContentQuery = defineAsyncComponent(() => import('./_nuxt/ContentQuery-CJxmFFYI.mjs').then((r2) => r2.default));
+const LazyContentRenderer = defineAsyncComponent(() => import('./_nuxt/ContentRenderer-rJIVGk8Z.mjs').then((r2) => r2.default));
+const LazyContentRendererMarkdown = defineAsyncComponent(() => import('./_nuxt/ContentRendererMarkdown-DHICMn2D.mjs').then((r2) => r2.default));
+const LazyContentSlot = defineAsyncComponent(() => import('./_nuxt/ContentSlot-COO71Xql.mjs').then((r2) => r2.default));
+const LazyDocumentDrivenEmpty = defineAsyncComponent(() => import('./_nuxt/DocumentDrivenEmpty-CVfz7tly.mjs').then((r2) => r2.default));
+const LazyDocumentDrivenNotFound = defineAsyncComponent(() => import('./_nuxt/DocumentDrivenNotFound-4pTrsASA.mjs').then((r2) => r2.default));
+const LazyMarkdown = defineAsyncComponent(() => import('./_nuxt/Markdown-DcNPyTRU.mjs').then((r2) => r2.default));
+const LazyProseCodeInline = defineAsyncComponent(() => import('./_nuxt/ProseCodeInline-Dbhdi1wZ.mjs').then((r2) => r2.default));
+const LazyProsePre = defineAsyncComponent(() => import('./_nuxt/ProsePre-DAe3RXuz.mjs').then((r2) => r2.default));
+const LazyProseA = defineAsyncComponent(() => import('./_nuxt/ProseA-C71LwHGq.mjs').then((r2) => r2.default));
+const LazyProseBlockquote = defineAsyncComponent(() => import('./_nuxt/ProseBlockquote-CroFS5ej.mjs').then((r2) => r2.default));
+const LazyProseEm = defineAsyncComponent(() => import('./_nuxt/ProseEm-B18zpOaa.mjs').then((r2) => r2.default));
+const LazyProseH5 = defineAsyncComponent(() => import('./_nuxt/ProseH5-BlvPxl1u.mjs').then((r2) => r2.default));
+const LazyProseH6 = defineAsyncComponent(() => import('./_nuxt/ProseH6-Tm5ATwVC.mjs').then((r2) => r2.default));
+const LazyProseHr = defineAsyncComponent(() => import('./_nuxt/ProseHr-NRd1fAFb.mjs').then((r2) => r2.default));
+const LazyProseImg = defineAsyncComponent(() => import('./_nuxt/ProseImg-DRDT62Mk.mjs').then((r2) => r2.default));
+const LazyProseLi = defineAsyncComponent(() => import('./_nuxt/ProseLi-5rXu7Muu.mjs').then((r2) => r2.default));
+const LazyProseOl = defineAsyncComponent(() => import('./_nuxt/ProseOl-MRVh2OTj.mjs').then((r2) => r2.default));
+const LazyProseP = defineAsyncComponent(() => import('./_nuxt/ProseP-BInRXlA5.mjs').then((r2) => r2.default));
+const LazyProseScript = defineAsyncComponent(() => import('./_nuxt/ProseScript-B6KFhxs2.mjs').then((r2) => r2.default));
+const LazyProseStrong = defineAsyncComponent(() => import('./_nuxt/ProseStrong-CGJ19eFC.mjs').then((r2) => r2.default));
+const LazyProseTable = defineAsyncComponent(() => import('./_nuxt/ProseTable-DxdTljUA.mjs').then((r2) => r2.default));
+const LazyProseTbody = defineAsyncComponent(() => import('./_nuxt/ProseTbody-0-5lpd8V.mjs').then((r2) => r2.default));
+const LazyProseTd = defineAsyncComponent(() => import('./_nuxt/ProseTd-CNAUxxn2.mjs').then((r2) => r2.default));
+const LazyProseTh = defineAsyncComponent(() => import('./_nuxt/ProseTh-C8_Q2DSE.mjs').then((r2) => r2.default));
+const LazyProseThead = defineAsyncComponent(() => import('./_nuxt/ProseThead-C7V3Jhe9.mjs').then((r2) => r2.default));
+const LazyProseTr = defineAsyncComponent(() => import('./_nuxt/ProseTr-01nSKNCd.mjs').then((r2) => r2.default));
+const LazyProseUl = defineAsyncComponent(() => import('./_nuxt/ProseUl-BxM6jCqo.mjs').then((r2) => r2.default));
 const LazyUButton = defineAsyncComponent(() => Promise.resolve().then(function() {
   return Button;
 }).then((r2) => r2.default));
@@ -1308,13 +1371,13 @@ const LazyUIcon = defineAsyncComponent(() => Promise.resolve().then(function() {
 const LazyIcon = defineAsyncComponent(() => Promise.resolve().then(function() {
   return Icon$1;
 }).then((r2) => r2.default));
-const LazyIconCSS = defineAsyncComponent(() => import('./_nuxt/IconCSS-CdxmLOUr.mjs').then((r2) => r2.default));
-const LazyOgImageStatic = defineAsyncComponent(() => import('./_nuxt/Static-CYTnESAa.mjs').then((r2) => r2.default));
-const LazyOgImageDynamic = defineAsyncComponent(() => import('./_nuxt/Dynamic-WYUzKVon.mjs').then((r2) => r2.default));
-const LazyOgImage = defineAsyncComponent(() => import('./_nuxt/index-Bdd3Xyju.mjs').then((r2) => r2.default));
-const LazyOgImageCached = defineAsyncComponent(() => import('./_nuxt/Cached-CMsyUY2R.mjs').then((r2) => r2.default));
-const LazyOgImageWithoutCache = defineAsyncComponent(() => import('./_nuxt/WithoutCache-BkHxAVtU.mjs').then((r2) => r2.default));
-const LazyOgImageScreenshot = defineAsyncComponent(() => import('./_nuxt/Screenshot-C4t6ktRA.mjs').then((r2) => r2.default));
+const LazyIconCSS = defineAsyncComponent(() => import('./_nuxt/IconCSS-D_jxLvVH.mjs').then((r2) => r2.default));
+const LazyOgImageStatic = defineAsyncComponent(() => import('./_nuxt/Static-C9b4TFJ5.mjs').then((r2) => r2.default));
+const LazyOgImageDynamic = defineAsyncComponent(() => import('./_nuxt/Dynamic-DrkVzfY_.mjs').then((r2) => r2.default));
+const LazyOgImage = defineAsyncComponent(() => import('./_nuxt/index-BK9MU5Ci.mjs').then((r2) => r2.default));
+const LazyOgImageCached = defineAsyncComponent(() => import('./_nuxt/Cached-CdB4w5R-.mjs').then((r2) => r2.default));
+const LazyOgImageWithoutCache = defineAsyncComponent(() => import('./_nuxt/WithoutCache-BuB5_0ig.mjs').then((r2) => r2.default));
+const LazyOgImageScreenshot = defineAsyncComponent(() => import('./_nuxt/Screenshot-DFPBqLw1.mjs').then((r2) => r2.default));
 const lazyGlobalComponents = [
   ["Callout", LazyCallout],
   ["Card", LazyCard],
@@ -1383,102 +1446,6 @@ const components_plugin_KR1HBZs4kY = /* @__PURE__ */ defineNuxtPlugin({
     }
   }
 });
-version.startsWith("3");
-function resolveUnref(r2) {
-  return typeof r2 === "function" ? r2() : unref(r2);
-}
-function resolveUnrefHeadInput(ref2, lastKey = "") {
-  if (ref2 instanceof Promise)
-    return ref2;
-  const root = resolveUnref(ref2);
-  if (!ref2 || !root)
-    return root;
-  if (Array.isArray(root))
-    return root.map((r2) => resolveUnrefHeadInput(r2, lastKey));
-  if (typeof root === "object") {
-    return Object.fromEntries(
-      Object.entries(root).map(([k2, v2]) => {
-        if (k2 === "titleTemplate" || k2.startsWith("on"))
-          return [k2, unref(v2)];
-        return [k2, resolveUnrefHeadInput(v2, k2)];
-      })
-    );
-  }
-  return root;
-}
-defineHeadPlugin({
-  hooks: {
-    "entries:resolve": function(ctx) {
-      for (const entry2 of ctx.entries)
-        entry2.resolvedInput = resolveUnrefHeadInput(entry2.input);
-    }
-  }
-});
-const headSymbol = "usehead";
-const _global = typeof globalThis !== "undefined" ? globalThis : typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : {};
-const globalKey = "__unhead_injection_handler__";
-function injectHead() {
-  if (globalKey in _global) {
-    return _global[globalKey]();
-  }
-  const head = inject(headSymbol);
-  if (!head && "prerender" !== "production")
-    console.warn("Unhead is missing Vue context, falling back to shared context. This may have unexpected results.");
-  return head || getActiveHead();
-}
-function useHead(input, options = {}) {
-  const head = options.head || injectHead();
-  if (head) {
-    if (!head.ssr)
-      return clientUseHead(head, input, options);
-    return head.push(input, options);
-  }
-}
-function clientUseHead(head, input, options = {}) {
-  const deactivated = ref(false);
-  const resolvedInput = ref({});
-  watchEffect(() => {
-    resolvedInput.value = deactivated.value ? {} : resolveUnrefHeadInput(input);
-  });
-  const entry2 = head.push(resolvedInput.value, options);
-  watch(resolvedInput, (e2) => {
-    entry2.patch(e2);
-  });
-  getCurrentInstance();
-  return entry2;
-}
-const coreComposableNames = [
-  "injectHead"
-];
-({
-  "@unhead/vue": [...coreComposableNames, ...composableNames]
-});
-function useSeoMeta(input, options) {
-  const { title, titleTemplate, ...meta } = input;
-  return useHead({
-    title,
-    titleTemplate,
-    // @ts-expect-error runtime type
-    _flatMeta: meta
-  }, {
-    ...options,
-    transform(t2) {
-      const meta2 = unpackMeta({ ...t2._flatMeta });
-      delete t2._flatMeta;
-      return {
-        // @ts-expect-error runtime type
-        ...t2,
-        meta: meta2
-      };
-    }
-  });
-}
-function useServerHead(input, options = {}) {
-  const head = options.head || injectHead();
-  delete options.head;
-  if (head)
-    return head.push(input, { ...options, mode: "server" });
-}
 const css = `@font-face { font-family: "DM Sans fallback"; src: local("BlinkMacSystemFont"); size-adjust: 113.3454%; ascent-override: 87.5201%; descent-override: 27.35%; line-gap-override: 0%; } @font-face { font-family: "DM Sans fallback"; src: local("Segoe UI"); size-adjust: 105.3386%; ascent-override: 94.1725%; descent-override: 29.4289%; line-gap-override: 0%; } @font-face { font-family: "DM Sans fallback"; src: local("Roboto"); size-adjust: 105.455%; ascent-override: 94.0685%; descent-override: 29.3964%; line-gap-override: 0%; } @font-face { font-family: "DM Sans fallback"; src: local("Helvetica Neue"); size-adjust: 104.2506%; ascent-override: 95.1554%; descent-override: 29.7361%; line-gap-override: 0%; } @font-face { font-family: "DM Sans fallback"; src: local("Arial"); size-adjust: 105.5717%; ascent-override: 93.9646%; descent-override: 29.3639%; line-gap-override: 0%; } @font-face { font-family: "DM Sans fallback"; src: local("Noto Sans"); size-adjust: 98.9384%; ascent-override: 100.2644%; descent-override: 31.3326%; line-gap-override: 0%; } `;
 const font_fallback_inlining_plugin_server_0jIQFwhKjU = /* @__PURE__ */ defineNuxtPlugin(() => {
   useHead({ style: [{ children: css + ` ` }] });
@@ -1518,7 +1485,7 @@ function _useModal() {
   };
 }
 createSharedComposable(_useModal);
-const modals_FSeH8vFBDB = /* @__PURE__ */ defineNuxtPlugin((nuxtApp) => {
+const modals_bidRKewKK5 = /* @__PURE__ */ defineNuxtPlugin((nuxtApp) => {
   const modalState = shallowRef({
     component: "div",
     props: {}
@@ -1746,7 +1713,7 @@ const _foreground = "rgb(var(--ui-foreground) / <alpha-value>)";
 const _primary = { "50": "rgb(var(--color-primary-50) / <alpha-value>)", "100": "rgb(var(--color-primary-100) / <alpha-value>)", "200": "rgb(var(--color-primary-200) / <alpha-value>)", "300": "rgb(var(--color-primary-300) / <alpha-value>)", "400": "rgb(var(--color-primary-400) / <alpha-value>)", "500": "rgb(var(--color-primary-500) / <alpha-value>)", "600": "rgb(var(--color-primary-600) / <alpha-value>)", "700": "rgb(var(--color-primary-700) / <alpha-value>)", "800": "rgb(var(--color-primary-800) / <alpha-value>)", "900": "rgb(var(--color-primary-900) / <alpha-value>)", "950": "rgb(var(--color-primary-950) / <alpha-value>)", "DEFAULT": "rgb(var(--color-primary-DEFAULT) / <alpha-value>)" };
 const _cool = { "50": "#f9fafb", "100": "#f3f4f6", "200": "#e5e7eb", "300": "#d1d5db", "400": "#9ca3af", "500": "#6b7280", "600": "#4b5563", "700": "#374151", "800": "#1f2937", "900": "#111827", "950": "#030712" };
 const config$9 = { "inherit": _inherit, "current": _current, "transparent": _transparent, "black": _black, "white": _white, "slate": _slate, "gray": _gray, "zinc": _zinc, "neutral": _neutral, "stone": _stone, "red": _red, "orange": _orange, "amber": _amber, "yellow": _yellow, "lime": _lime, "green": _green, "emerald": _emerald, "teal": _teal, "cyan": _cyan, "sky": _sky, "blue": _blue, "indigo": _indigo, "violet": _violet, "purple": _purple, "fuchsia": _fuchsia, "pink": _pink, "rose": _rose, "background": _background, "foreground": _foreground, "primary": _primary, "cool": _cool };
-const colors_xCSymSkKIN = /* @__PURE__ */ defineNuxtPlugin(() => {
+const colors_244lXBzhnM = /* @__PURE__ */ defineNuxtPlugin(() => {
   const appConfig2 = useAppConfig();
   const root = computed(() => {
     const primary = config$9[appConfig2.ui.primary];
@@ -1779,7 +1746,7 @@ ${Object.entries(gray || config$9.cool).map(([key, value]) => `--color-gray-${ke
   useHead(headData);
 });
 const preference = "system";
-const plugin_server_jGJfoIcZXi = /* @__PURE__ */ defineNuxtPlugin((nuxtApp) => {
+const plugin_server_XNCxeHyTuP = /* @__PURE__ */ defineNuxtPlugin((nuxtApp) => {
   var _a;
   const colorMode = ((_a = nuxtApp.ssrContext) == null ? void 0 : _a.islandContext) ? ref({}) : useState("color-mode", () => reactive({
     preference,
@@ -1802,7 +1769,7 @@ const plugin_server_jGJfoIcZXi = /* @__PURE__ */ defineNuxtPlugin((nuxtApp) => {
   });
   nuxtApp.provide("colorMode", colorMode);
 });
-const presets_LvAUhqGg3l = /* @__PURE__ */ defineNuxtPlugin(() => {
+const presets_1aypKNZ222 = /* @__PURE__ */ defineNuxtPlugin(() => {
   const appConfig2 = useAppConfig();
   return {
     provide: {
@@ -1810,7 +1777,7 @@ const presets_LvAUhqGg3l = /* @__PURE__ */ defineNuxtPlugin(() => {
     }
   };
 });
-const variables_JIZcHQsyTl = /* @__PURE__ */ defineNuxtPlugin(() => {
+const variables_kQtglGecod = /* @__PURE__ */ defineNuxtPlugin(() => {
   const appConfig2 = useAppConfig();
   const root = computed(() => {
     return `:root {
@@ -1833,17 +1800,17 @@ const variables_JIZcHQsyTl = /* @__PURE__ */ defineNuxtPlugin(() => {
   useHead(headData);
 });
 const plugins = [
-  unhead_nYHSPYO0Ba,
+  unhead_KgADcZ0jPj,
   plugin,
-  _0_siteConfig_TMkT5JndzH,
-  revive_payload_server_aBPP5nqDqn,
+  _0_siteConfig_9gMxCtyFUG,
+  revive_payload_server_eJ33V7gbc6,
   components_plugin_KR1HBZs4kY,
   font_fallback_inlining_plugin_server_0jIQFwhKjU,
-  modals_FSeH8vFBDB,
-  colors_xCSymSkKIN,
-  plugin_server_jGJfoIcZXi,
-  presets_LvAUhqGg3l,
-  variables_JIZcHQsyTl
+  modals_bidRKewKK5,
+  colors_244lXBzhnM,
+  plugin_server_XNCxeHyTuP,
+  presets_1aypKNZ222,
+  variables_kQtglGecod
 ];
 const useUI = (key, $ui, $config, $wrapperClass, withAppConfig = false) => {
   const $attrs = useAttrs();
@@ -2391,7 +2358,7 @@ function _sfc_ssrRender$a(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
 const _sfc_setup$v = _sfc_main$v.setup;
 _sfc_main$v.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/layout/Container.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/@nuxt/ui/dist/runtime/components/layout/Container.vue");
   return _sfc_setup$v ? _sfc_setup$v(props, ctx) : void 0;
 };
 const __nuxt_component_0$8 = /* @__PURE__ */ _export_sfc(_sfc_main$v, [["ssrRender", _sfc_ssrRender$a]]);
@@ -2539,7 +2506,7 @@ function defineNuxtLink(options) {
             }
             routerLinkProps.rel = props.rel || void 0;
           }
-          return h$2(
+          return h$1(
             resolveComponent("RouterLink"),
             routerLinkProps,
             slots.default
@@ -2592,7 +2559,7 @@ function defineNuxtLink(options) {
             isExactActive: false
           });
         }
-        return h$2("a", { ref: el, href, rel, target }, (_b = slots.default) == null ? void 0 : _b.call(slots));
+        return h$1("a", { ref: el, href, rel, target }, (_b = slots.default) == null ? void 0 : _b.call(slots));
       };
     }
   });
@@ -2653,35 +2620,35 @@ function useId(key) {
     return ids[instanceIndex];
   }
 }
-let t$8 = Symbol("headlessui.useid"), i$a = 0;
-function I$3() {
-  return inject(t$8, () => `${++i$a}`)();
+let t$5 = Symbol("headlessui.useid"), i$5 = 0;
+function I$1() {
+  return inject(t$5, () => `${++i$5}`)();
 }
-function l$5(e2) {
-  provide(t$8, e2);
+function l$3(e2) {
+  provide(t$5, e2);
 }
-function o$4(e2) {
+function o$2(e2) {
   var l2;
   if (e2 == null || e2.value == null)
     return null;
   let n2 = (l2 = e2.value.$el) != null ? l2 : e2.value;
   return n2 instanceof Node ? n2 : null;
 }
-function u$6(r2, n2, ...a2) {
+function u$4(r2, n2, ...a2) {
   if (r2 in n2) {
     let e2 = n2[r2];
     return typeof e2 == "function" ? e2(...a2) : e2;
   }
   let t2 = new Error(`Tried to handle "${r2}" but there is no handler defined. Only defined handlers are: ${Object.keys(n2).map((e2) => `"${e2}"`).join(", ")}.`);
-  throw Error.captureStackTrace && Error.captureStackTrace(t2, u$6), t2;
+  throw Error.captureStackTrace && Error.captureStackTrace(t2, u$4), t2;
 }
-var i$9 = Object.defineProperty;
-var d$5 = (t2, e2, r2) => e2 in t2 ? i$9(t2, e2, { enumerable: true, configurable: true, writable: true, value: r2 }) : t2[e2] = r2;
-var n$7 = (t2, e2, r2) => (d$5(t2, typeof e2 != "symbol" ? e2 + "" : e2, r2), r2);
-let s$8 = class s {
+var i$4 = Object.defineProperty;
+var d$3 = (t2, e2, r2) => e2 in t2 ? i$4(t2, e2, { enumerable: true, configurable: true, writable: true, value: r2 }) : t2[e2] = r2;
+var n$3 = (t2, e2, r2) => (d$3(t2, typeof e2 != "symbol" ? e2 + "" : e2, r2), r2);
+let s$5 = class s {
   constructor() {
-    n$7(this, "current", this.detect());
-    n$7(this, "currentId", 0);
+    n$3(this, "current", this.detect());
+    n$3(this, "currentId", 0);
   }
   set(e2) {
     this.current !== e2 && (this.currentId = 0, this.current = e2);
@@ -2702,46 +2669,49 @@ let s$8 = class s {
     return "server";
   }
 };
-let c$4 = new s$8();
-function i$8(r2) {
-  if (c$4.isServer)
+let c$2 = new s$5();
+function i$3(r2) {
+  if (c$2.isServer)
     return null;
   if (r2 instanceof Node)
     return r2.ownerDocument;
   if (r2 != null && r2.hasOwnProperty("value")) {
-    let n2 = o$4(r2);
+    let n2 = o$2(r2);
     if (n2)
       return n2.ownerDocument;
   }
   return void 0;
 }
-let c$3 = ["[contentEditable=true]", "[tabindex]", "a[href]", "area[href]", "button:not([disabled])", "iframe", "input:not([disabled])", "select:not([disabled])", "textarea:not([disabled])"].map((e2) => `${e2}:not([tabindex='-1'])`).join(",");
-var N$9 = ((n2) => (n2[n2.First = 1] = "First", n2[n2.Previous = 2] = "Previous", n2[n2.Next = 4] = "Next", n2[n2.Last = 8] = "Last", n2[n2.WrapAround = 16] = "WrapAround", n2[n2.NoScroll = 32] = "NoScroll", n2))(N$9 || {}), T$5 = ((o2) => (o2[o2.Error = 0] = "Error", o2[o2.Overflow = 1] = "Overflow", o2[o2.Success = 2] = "Success", o2[o2.Underflow = 3] = "Underflow", o2))(T$5 || {}), F$2 = ((t2) => (t2[t2.Previous = -1] = "Previous", t2[t2.Next = 1] = "Next", t2))(F$2 || {});
-function E$4(e2 = (void 0).body) {
-  return e2 == null ? [] : Array.from(e2.querySelectorAll(c$3)).sort((r2, t2) => Math.sign((r2.tabIndex || Number.MAX_SAFE_INTEGER) - (t2.tabIndex || Number.MAX_SAFE_INTEGER)));
+let c$1 = ["[contentEditable=true]", "[tabindex]", "a[href]", "area[href]", "button:not([disabled])", "iframe", "input:not([disabled])", "select:not([disabled])", "textarea:not([disabled])"].map((e2) => `${e2}:not([tabindex='-1'])`).join(",");
+var N$6 = ((n2) => (n2[n2.First = 1] = "First", n2[n2.Previous = 2] = "Previous", n2[n2.Next = 4] = "Next", n2[n2.Last = 8] = "Last", n2[n2.WrapAround = 16] = "WrapAround", n2[n2.NoScroll = 32] = "NoScroll", n2))(N$6 || {}), T$3 = ((o2) => (o2[o2.Error = 0] = "Error", o2[o2.Overflow = 1] = "Overflow", o2[o2.Success = 2] = "Success", o2[o2.Underflow = 3] = "Underflow", o2))(T$3 || {}), F$1 = ((t2) => (t2[t2.Previous = -1] = "Previous", t2[t2.Next = 1] = "Next", t2))(F$1 || {});
+function E$2(e2 = (void 0).body) {
+  return e2 == null ? [] : Array.from(e2.querySelectorAll(c$1)).sort((r2, t2) => Math.sign((r2.tabIndex || Number.MAX_SAFE_INTEGER) - (t2.tabIndex || Number.MAX_SAFE_INTEGER)));
 }
-var h$1 = ((t2) => (t2[t2.Strict = 0] = "Strict", t2[t2.Loose = 1] = "Loose", t2))(h$1 || {});
-function w$7(e2, r2 = 0) {
+var h = ((t2) => (t2[t2.Strict = 0] = "Strict", t2[t2.Loose = 1] = "Loose", t2))(h || {});
+function w$4(e2, r2 = 0) {
   var t2;
-  return e2 === ((t2 = i$8(e2)) == null ? void 0 : t2.body) ? false : u$6(r2, { [0]() {
-    return e2.matches(c$3);
+  return e2 === ((t2 = i$3(e2)) == null ? void 0 : t2.body) ? false : u$4(r2, { [0]() {
+    return e2.matches(c$1);
   }, [1]() {
     let l2 = e2;
     for (; l2 !== null; ) {
-      if (l2.matches(c$3))
+      if (l2.matches(c$1))
         return true;
       l2 = l2.parentElement;
     }
     return false;
   } });
 }
-var y$4 = ((t2) => (t2[t2.Keyboard = 0] = "Keyboard", t2[t2.Mouse = 1] = "Mouse", t2))(y$4 || {});
-let H$2 = ["textarea", "input"].join(",");
-function I$2(e2) {
-  var r2, t2;
-  return (t2 = (r2 = e2 == null ? void 0 : e2.matches) == null ? void 0 : r2.call(e2, H$2)) != null ? t2 : false;
+var y$2 = ((t2) => (t2[t2.Keyboard = 0] = "Keyboard", t2[t2.Mouse = 1] = "Mouse", t2))(y$2 || {});
+function S$1(e2) {
+  e2 == null || e2.focus({ preventScroll: true });
 }
-function O$2(e2, r2 = (t2) => t2) {
+let H$1 = ["textarea", "input"].join(",");
+function I(e2) {
+  var r2, t2;
+  return (t2 = (r2 = e2 == null ? void 0 : e2.matches) == null ? void 0 : r2.call(e2, H$1)) != null ? t2 : false;
+}
+function O$1(e2, r2 = (t2) => t2) {
   return e2.slice().sort((t2, l2) => {
     let o2 = r2(t2), i2 = r2(l2);
     if (o2 === null || i2 === null)
@@ -2750,10 +2720,10 @@ function O$2(e2, r2 = (t2) => t2) {
     return n2 & Node.DOCUMENT_POSITION_FOLLOWING ? -1 : n2 & Node.DOCUMENT_POSITION_PRECEDING ? 1 : 0;
   });
 }
-function P$1(e2, r2, { sorted: t2 = true, relativeTo: l2 = null, skipElements: o2 = [] } = {}) {
+function P(e2, r2, { sorted: t2 = true, relativeTo: l2 = null, skipElements: o2 = [] } = {}) {
   var m2;
-  let i2 = (m2 = Array.isArray(e2) ? e2.length > 0 ? e2[0].ownerDocument : void 0 : e2 == null ? void 0 : e2.ownerDocument) != null ? m2 : void 0, n2 = Array.isArray(e2) ? t2 ? O$2(e2) : e2 : E$4(e2);
-  o2.length > 0 && n2.length > 1 && (n2 = n2.filter((s4) => !o2.includes(s4))), l2 = l2 != null ? l2 : i2.activeElement;
+  let i2 = (m2 = Array.isArray(e2) ? e2.length > 0 ? e2[0].ownerDocument : void 0 : e2 == null ? void 0 : e2.ownerDocument) != null ? m2 : void 0, n2 = Array.isArray(e2) ? t2 ? O$1(e2) : e2 : E$2(e2);
+  o2.length > 0 && n2.length > 1 && (n2 = n2.filter((s3) => !o2.includes(s3))), l2 = l2 != null ? l2 : i2.activeElement;
   let x2 = (() => {
     if (r2 & 5)
       return 1;
@@ -2774,39 +2744,39 @@ function P$1(e2, r2, { sorted: t2 = true, relativeTo: l2 = null, skipElements: o
   do {
     if (a2 >= d2 || a2 + d2 <= 0)
       return 0;
-    let s4 = p + a2;
+    let s3 = p + a2;
     if (r2 & 16)
-      s4 = (s4 + d2) % d2;
+      s3 = (s3 + d2) % d2;
     else {
-      if (s4 < 0)
+      if (s3 < 0)
         return 3;
-      if (s4 >= d2)
+      if (s3 >= d2)
         return 1;
     }
-    u2 = n2[s4], u2 == null || u2.focus(L2), a2 += x2;
+    u2 = n2[s3], u2 == null || u2.focus(L2), a2 += x2;
   } while (u2 !== i2.activeElement);
-  return r2 & 6 && I$2(u2) && u2.select(), 2;
+  return r2 & 6 && I(u2) && u2.select(), 2;
 }
-function t$7() {
+function t$4() {
   return /iPhone/gi.test((void 0).navigator.platform) || /Mac/gi.test((void 0).navigator.platform) && (void 0).navigator.maxTouchPoints > 0;
 }
-function i$7() {
+function i$2() {
   return /Android/gi.test((void 0).navigator.userAgent);
 }
-function n$6() {
-  return t$7() || i$7();
+function n$2() {
+  return t$4() || i$2();
 }
-function u$5(e2, t2, n2) {
-  c$4.isServer || watchEffect((o2) => {
+function u$3(e2, t2, n2) {
+  c$2.isServer || watchEffect((o2) => {
     (void 0).addEventListener(e2, t2, n2), o2(() => (void 0).removeEventListener(e2, t2, n2));
   });
 }
-function w$6(e2, n2, t2) {
-  c$4.isServer || watchEffect((o2) => {
+function w$3(e2, n2, t2) {
+  c$2.isServer || watchEffect((o2) => {
     (void 0).addEventListener(e2, n2, t2), o2(() => (void 0).removeEventListener(e2, n2, t2));
   });
 }
-function w$5(f2, m2, l2 = computed(() => true)) {
+function w$2(f2, m2, l2 = computed(() => true)) {
   function a2(e2, r2) {
     if (!l2.value || e2.defaultPrevented)
       return;
@@ -2819,22 +2789,22 @@ function w$5(f2, m2, l2 = computed(() => true)) {
     for (let o2 of c2) {
       if (o2 === null)
         continue;
-      let n2 = o2 instanceof HTMLElement ? o2 : o$4(o2);
+      let n2 = o2 instanceof HTMLElement ? o2 : o$2(o2);
       if (n2 != null && n2.contains(t2) || e2.composed && e2.composedPath().includes(n2))
         return;
     }
-    return !w$7(t2, h$1.Loose) && t2.tabIndex !== -1 && e2.preventDefault(), m2(e2, t2);
+    return !w$4(t2, h.Loose) && t2.tabIndex !== -1 && e2.preventDefault(), m2(e2, t2);
   }
   let u2 = ref(null);
-  u$5("pointerdown", (e2) => {
+  u$3("pointerdown", (e2) => {
     var r2, t2;
     l2.value && (u2.value = ((t2 = (r2 = e2.composedPath) == null ? void 0 : r2.call(e2)) == null ? void 0 : t2[0]) || e2.target);
-  }, true), u$5("mousedown", (e2) => {
+  }, true), u$3("mousedown", (e2) => {
     var r2, t2;
     l2.value && (u2.value = ((t2 = (r2 = e2.composedPath) == null ? void 0 : r2.call(e2)) == null ? void 0 : t2[0]) || e2.target);
-  }, true), u$5("click", (e2) => {
-    n$6() || u2.value && (a2(e2, () => u2.value), u2.value = null);
-  }, true), u$5("touchend", (e2) => a2(e2, () => e2.target instanceof HTMLElement ? e2.target : null), true), w$6("blur", (e2) => a2(e2, () => (void 0).document.activeElement instanceof HTMLIFrameElement ? (void 0).document.activeElement : null), true);
+  }, true), u$3("click", (e2) => {
+    n$2() || u2.value && (a2(e2, () => u2.value), u2.value = null);
+  }, true), u$3("touchend", (e2) => a2(e2, () => e2.target instanceof HTMLElement ? e2.target : null), true), w$3("blur", (e2) => a2(e2, () => (void 0).document.activeElement instanceof HTMLIFrameElement ? (void 0).document.activeElement : null), true);
 }
 function r(t2, e2) {
   if (t2)
@@ -2843,34 +2813,34 @@ function r(t2, e2) {
   if (typeof n2 == "string" && n2.toLowerCase() === "button")
     return "button";
 }
-function s$7(t2, e2) {
+function s$4(t2, e2) {
   let n2 = ref(r(t2.value.type, t2.value.as));
   return onMounted(() => {
     n2.value = r(t2.value.type, t2.value.as);
   }), watchEffect(() => {
     var u2;
-    n2.value || o$4(e2) && o$4(e2) instanceof HTMLButtonElement && !((u2 = o$4(e2)) != null && u2.hasAttribute("type")) && (n2.value = "button");
+    n2.value || o$2(e2) && o$2(e2) instanceof HTMLButtonElement && !((u2 = o$2(e2)) != null && u2.hasAttribute("type")) && (n2.value = "button");
   }), n2;
 }
-var N$8 = ((o2) => (o2[o2.None = 0] = "None", o2[o2.RenderStrategy = 1] = "RenderStrategy", o2[o2.Static = 2] = "Static", o2))(N$8 || {}), S$2 = ((e2) => (e2[e2.Unmount = 0] = "Unmount", e2[e2.Hidden = 1] = "Hidden", e2))(S$2 || {});
-function A$5({ visible: r2 = true, features: t2 = 0, ourProps: e2, theirProps: o2, ...i2 }) {
+var N$5 = ((o2) => (o2[o2.None = 0] = "None", o2[o2.RenderStrategy = 1] = "RenderStrategy", o2[o2.Static = 2] = "Static", o2))(N$5 || {}), S = ((e2) => (e2[e2.Unmount = 0] = "Unmount", e2[e2.Hidden = 1] = "Hidden", e2))(S || {});
+function A$3({ visible: r2 = true, features: t2 = 0, ourProps: e2, theirProps: o2, ...i2 }) {
   var a2;
-  let n2 = j$1(o2, e2), l2 = Object.assign(i2, { props: n2 });
+  let n2 = j(o2, e2), l2 = Object.assign(i2, { props: n2 });
   if (r2 || t2 & 2 && n2.static)
-    return y$3(l2);
+    return y$1(l2);
   if (t2 & 1) {
     let d2 = (a2 = n2.unmount) == null || a2 ? 0 : 1;
-    return u$6(d2, { [0]() {
+    return u$4(d2, { [0]() {
       return null;
     }, [1]() {
-      return y$3({ ...i2, props: { ...n2, hidden: true, style: { display: "none" } } });
+      return y$1({ ...i2, props: { ...n2, hidden: true, style: { display: "none" } } });
     } });
   }
-  return y$3(l2);
+  return y$1(l2);
 }
-function y$3({ props: r2, attrs: t2, slots: e2, slot: o2, name: i2 }) {
+function y$1({ props: r2, attrs: t2, slots: e2, slot: o2, name: i2 }) {
   var m2, h2;
-  let { as: n2, ...l2 } = T$4(r2, ["unmount", "static"]), a2 = (m2 = e2.default) == null ? void 0 : m2.call(e2, o2), d2 = {};
+  let { as: n2, ...l2 } = T$2(r2, ["unmount", "static"]), a2 = (m2 = e2.default) == null ? void 0 : m2.call(e2, o2), d2 = {};
   if (o2) {
     let u2 = false, c2 = [];
     for (let [p, f2] of Object.entries(o2))
@@ -2878,26 +2848,26 @@ function y$3({ props: r2, attrs: t2, slots: e2, slot: o2, name: i2 }) {
     u2 && (d2["data-headlessui-state"] = c2.join(" "));
   }
   if (n2 === "template") {
-    if (a2 = b$1(a2 != null ? a2 : []), Object.keys(l2).length > 0 || Object.keys(t2).length > 0) {
+    if (a2 = b(a2 != null ? a2 : []), Object.keys(l2).length > 0 || Object.keys(t2).length > 0) {
       let [u2, ...c2] = a2 != null ? a2 : [];
-      if (!v$2(u2) || c2.length > 0)
-        throw new Error(['Passing props on "template"!', "", `The current component <${i2} /> is rendering a "template".`, "However we need to passthrough the following props:", Object.keys(l2).concat(Object.keys(t2)).map((s4) => s4.trim()).filter((s4, g2, R2) => R2.indexOf(s4) === g2).sort((s4, g2) => s4.localeCompare(g2)).map((s4) => `  - ${s4}`).join(`
-`), "", "You can apply a few solutions:", ['Add an `as="..."` prop, to ensure that we render an actual element instead of a "template".', "Render a single element as the child so that we can forward the props onto that element."].map((s4) => `  - ${s4}`).join(`
+      if (!v$1(u2) || c2.length > 0)
+        throw new Error(['Passing props on "template"!', "", `The current component <${i2} /> is rendering a "template".`, "However we need to passthrough the following props:", Object.keys(l2).concat(Object.keys(t2)).map((s3) => s3.trim()).filter((s3, g2, R2) => R2.indexOf(s3) === g2).sort((s3, g2) => s3.localeCompare(g2)).map((s3) => `  - ${s3}`).join(`
+`), "", "You can apply a few solutions:", ['Add an `as="..."` prop, to ensure that we render an actual element instead of a "template".', "Render a single element as the child so that we can forward the props onto that element."].map((s3) => `  - ${s3}`).join(`
 `)].join(`
 `));
-      let p = j$1((h2 = u2.props) != null ? h2 : {}, l2, d2), f2 = cloneVNode(u2, p, true);
-      for (let s4 in p)
-        s4.startsWith("on") && (f2.props || (f2.props = {}), f2.props[s4] = p[s4]);
+      let p = j((h2 = u2.props) != null ? h2 : {}, l2, d2), f2 = cloneVNode(u2, p, true);
+      for (let s3 in p)
+        s3.startsWith("on") && (f2.props || (f2.props = {}), f2.props[s3] = p[s3]);
       return f2;
     }
     return Array.isArray(a2) && a2.length === 1 ? a2[0] : a2;
   }
-  return h$2(n2, Object.assign({}, l2, d2), { default: () => a2 });
+  return h$1(n2, Object.assign({}, l2, d2), { default: () => a2 });
 }
-function b$1(r2) {
-  return r2.flatMap((t2) => t2.type === Fragment ? b$1(t2.children) : [t2]);
+function b(r2) {
+  return r2.flatMap((t2) => t2.type === Fragment ? b(t2.children) : [t2]);
 }
-function j$1(...r2) {
+function j(...r2) {
   if (r2.length === 0)
     return {};
   if (r2.length === 1)
@@ -2919,46 +2889,365 @@ function j$1(...r2) {
     } });
   return t2;
 }
-function T$4(r2, t2 = []) {
+function T$2(r2, t2 = []) {
   let e2 = Object.assign({}, r2);
   for (let o2 of t2)
     o2 in e2 && delete e2[o2];
   return e2;
 }
-function v$2(r2) {
+function v$1(r2) {
   return r2 == null ? false : typeof r2.type == "string" || typeof r2.type == "object" || typeof r2.type == "function";
 }
-var s$6 = ((e2) => (e2[e2.None = 1] = "None", e2[e2.Focusable = 2] = "Focusable", e2[e2.Hidden = 4] = "Hidden", e2))(s$6 || {});
-let f$1 = defineComponent({ name: "Hidden", props: { as: { type: [Object, String], default: "div" }, features: { type: Number, default: 1 } }, setup(d2, { slots: o2, attrs: i2 }) {
+var s$3 = ((e2) => (e2[e2.None = 1] = "None", e2[e2.Focusable = 2] = "Focusable", e2[e2.Hidden = 4] = "Hidden", e2))(s$3 || {});
+let f = defineComponent({ name: "Hidden", props: { as: { type: [Object, String], default: "div" }, features: { type: Number, default: 1 } }, setup(d2, { slots: o2, attrs: i2 }) {
   return () => {
     var t2;
     let { features: e2, ...r2 } = d2, n2 = { "aria-hidden": (e2 & 2) === 2 ? true : (t2 = r2["aria-hidden"]) != null ? t2 : void 0, style: { position: "fixed", top: 1, left: 1, width: 1, height: 0, padding: 0, margin: -1, overflow: "hidden", clip: "rect(0, 0, 0, 0)", whiteSpace: "nowrap", borderWidth: "0", ...(e2 & 4) === 4 && (e2 & 2) !== 2 && { display: "none" } } };
-    return A$5({ ourProps: n2, theirProps: r2, slot: {}, attrs: i2, slots: o2, name: "Hidden" });
+    return A$3({ ourProps: n2, theirProps: r2, slot: {}, attrs: i2, slots: o2, name: "Hidden" });
   };
 } });
-let n$5 = Symbol("Context");
-var i$6 = ((e2) => (e2[e2.Open = 1] = "Open", e2[e2.Closed = 2] = "Closed", e2[e2.Closing = 4] = "Closing", e2[e2.Opening = 8] = "Opening", e2))(i$6 || {});
-function l$4() {
-  return inject(n$5, null);
+let n$1 = Symbol("Context");
+var i$1 = ((e2) => (e2[e2.Open = 1] = "Open", e2[e2.Closed = 2] = "Closed", e2[e2.Closing = 4] = "Closing", e2[e2.Opening = 8] = "Opening", e2))(i$1 || {});
+function s$2() {
+  return l$2() !== null;
 }
-function t$6(o2) {
-  provide(n$5, o2);
+function l$2() {
+  return inject(n$1, null);
 }
-var o$3 = ((r2) => (r2.Space = " ", r2.Enter = "Enter", r2.Escape = "Escape", r2.Backspace = "Backspace", r2.Delete = "Delete", r2.ArrowLeft = "ArrowLeft", r2.ArrowUp = "ArrowUp", r2.ArrowRight = "ArrowRight", r2.ArrowDown = "ArrowDown", r2.Home = "Home", r2.End = "End", r2.PageUp = "PageUp", r2.PageDown = "PageDown", r2.Tab = "Tab", r2))(o$3 || {});
-function E$3(n2, e2, o2, r2) {
-  c$4.isServer || watchEffect((t2) => {
+function t$3(o2) {
+  provide(n$1, o2);
+}
+var o$1 = ((r2) => (r2.Space = " ", r2.Enter = "Enter", r2.Escape = "Escape", r2.Backspace = "Backspace", r2.Delete = "Delete", r2.ArrowLeft = "ArrowLeft", r2.ArrowUp = "ArrowUp", r2.ArrowRight = "ArrowRight", r2.ArrowDown = "ArrowDown", r2.Home = "Home", r2.End = "End", r2.PageUp = "PageUp", r2.PageDown = "PageDown", r2.Tab = "Tab", r2))(o$1 || {});
+let t$2 = [];
+function t$1(e2) {
+  typeof queueMicrotask == "function" ? queueMicrotask(e2) : Promise.resolve().then(e2).catch((o2) => setTimeout(() => {
+    throw o2;
+  }));
+}
+function o() {
+  let a2 = [], s3 = { addEventListener(e2, t2, r2, i2) {
+    return e2.addEventListener(t2, r2, i2), s3.add(() => e2.removeEventListener(t2, r2, i2));
+  }, requestAnimationFrame(...e2) {
+    let t2 = requestAnimationFrame(...e2);
+    s3.add(() => cancelAnimationFrame(t2));
+  }, nextFrame(...e2) {
+    s3.requestAnimationFrame(() => {
+      s3.requestAnimationFrame(...e2);
+    });
+  }, setTimeout(...e2) {
+    let t2 = setTimeout(...e2);
+    s3.add(() => clearTimeout(t2));
+  }, microTask(...e2) {
+    let t2 = { current: true };
+    return t$1(() => {
+      t2.current && e2[0]();
+    }), s3.add(() => {
+      t2.current = false;
+    });
+  }, style(e2, t2, r2) {
+    let i2 = e2.style.getPropertyValue(t2);
+    return Object.assign(e2.style, { [t2]: r2 }), this.add(() => {
+      Object.assign(e2.style, { [t2]: i2 });
+    });
+  }, group(e2) {
+    let t2 = o();
+    return e2(t2), this.add(() => t2.dispose());
+  }, add(e2) {
+    return a2.push(e2), () => {
+      let t2 = a2.indexOf(e2);
+      if (t2 >= 0)
+        for (let r2 of a2.splice(t2, 1))
+          r2();
+    };
+  }, dispose() {
+    for (let e2 of a2.splice(0))
+      e2();
+  } };
+  return s3;
+}
+function E$1(n2, e2, o2, r2) {
+  c$2.isServer || watchEffect((t2) => {
     n2 = n2 != null ? n2 : void 0, n2.addEventListener(e2, o2, r2), t2(() => n2.removeEventListener(e2, o2, r2));
   });
 }
-var d$4 = ((r2) => (r2[r2.Forwards = 0] = "Forwards", r2[r2.Backwards = 1] = "Backwards", r2))(d$4 || {});
-function n$4() {
+var d$2 = ((r2) => (r2[r2.Forwards = 0] = "Forwards", r2[r2.Backwards = 1] = "Backwards", r2))(d$2 || {});
+function n() {
   let o2 = ref(0);
-  return w$6("keydown", (e2) => {
+  return w$3("keydown", (e2) => {
     e2.key === "Tab" && (o2.value = e2.shiftKey ? 1 : 0);
   }), o2;
 }
-function N$7({ defaultContainers: o2 = [], portals: i2, mainTreeNodeRef: H2 } = {}) {
-  let t2 = ref(null), r2 = i$8(t2);
+function B(t2) {
+  if (!t2)
+    return /* @__PURE__ */ new Set();
+  if (typeof t2 == "function")
+    return new Set(t2());
+  let n2 = /* @__PURE__ */ new Set();
+  for (let r2 of t2.value) {
+    let l2 = o$2(r2);
+    l2 instanceof HTMLElement && n2.add(l2);
+  }
+  return n2;
+}
+var A$2 = ((e2) => (e2[e2.None = 1] = "None", e2[e2.InitialFocus = 2] = "InitialFocus", e2[e2.TabLock = 4] = "TabLock", e2[e2.FocusLock = 8] = "FocusLock", e2[e2.RestoreFocus = 16] = "RestoreFocus", e2[e2.All = 30] = "All", e2))(A$2 || {});
+let ue$1 = Object.assign(defineComponent({ name: "FocusTrap", props: { as: { type: [Object, String], default: "div" }, initialFocus: { type: Object, default: null }, features: { type: Number, default: 30 }, containers: { type: [Object, Function], default: ref(/* @__PURE__ */ new Set()) } }, inheritAttrs: false, setup(t2, { attrs: n$12, slots: r2, expose: l2 }) {
+  let o2 = ref(null);
+  l2({ el: o2, $el: o2 });
+  let i2 = computed(() => i$3(o2)), e2 = ref(false);
+  onMounted(() => e2.value = true), onUnmounted(() => e2.value = false), $$1({ ownerDocument: i2 }, computed(() => e2.value && Boolean(t2.features & 16)));
+  let m2 = z({ ownerDocument: i2, container: o2, initialFocus: computed(() => t2.initialFocus) }, computed(() => e2.value && Boolean(t2.features & 2)));
+  J({ ownerDocument: i2, container: o2, containers: t2.containers, previousActiveElement: m2 }, computed(() => e2.value && Boolean(t2.features & 8)));
+  let f$1 = n();
+  function a2(u2) {
+    let T2 = o$2(o2);
+    if (!T2)
+      return;
+    ((w2) => w2())(() => {
+      u$4(f$1.value, { [d$2.Forwards]: () => {
+        P(T2, N$6.First, { skipElements: [u2.relatedTarget] });
+      }, [d$2.Backwards]: () => {
+        P(T2, N$6.Last, { skipElements: [u2.relatedTarget] });
+      } });
+    });
+  }
+  let s3 = ref(false);
+  function F2(u2) {
+    u2.key === "Tab" && (s3.value = true, requestAnimationFrame(() => {
+      s3.value = false;
+    }));
+  }
+  function H2(u2) {
+    if (!e2.value)
+      return;
+    let T2 = B(t2.containers);
+    o$2(o2) instanceof HTMLElement && T2.add(o$2(o2));
+    let d2 = u2.relatedTarget;
+    d2 instanceof HTMLElement && d2.dataset.headlessuiFocusGuard !== "true" && (N$4(T2, d2) || (s3.value ? P(o$2(o2), u$4(f$1.value, { [d$2.Forwards]: () => N$6.Next, [d$2.Backwards]: () => N$6.Previous }) | N$6.WrapAround, { relativeTo: u2.target }) : u2.target instanceof HTMLElement && S$1(u2.target)));
+  }
+  return () => {
+    let u2 = {}, T2 = { ref: o2, onKeydown: F2, onFocusout: H2 }, { features: d2, initialFocus: w2, containers: Q2, ...O2 } = t2;
+    return h$1(Fragment, [Boolean(d2 & 4) && h$1(f, { as: "button", type: "button", "data-headlessui-focus-guard": true, onFocus: a2, features: s$3.Focusable }), A$3({ ourProps: T2, theirProps: { ...n$12, ...O2 }, slot: u2, attrs: n$12, slots: r2, name: "FocusTrap" }), Boolean(d2 & 4) && h$1(f, { as: "button", type: "button", "data-headlessui-focus-guard": true, onFocus: a2, features: s$3.Focusable })]);
+  };
+} }), { features: A$2 });
+function W$1(t2) {
+  let n2 = ref(t$2.slice());
+  return watch([t2], ([r2], [l2]) => {
+    l2 === true && r2 === false ? t$1(() => {
+      n2.value.splice(0);
+    }) : l2 === false && r2 === true && (n2.value = t$2.slice());
+  }, { flush: "post" }), () => {
+    var r2;
+    return (r2 = n2.value.find((l2) => l2 != null && l2.isConnected)) != null ? r2 : null;
+  };
+}
+function $$1({ ownerDocument: t2 }, n2) {
+  let r2 = W$1(n2);
+  onMounted(() => {
+    watchEffect(() => {
+      var l2, o2;
+      n2.value || ((l2 = t2.value) == null ? void 0 : l2.activeElement) === ((o2 = t2.value) == null ? void 0 : o2.body) && S$1(r2());
+    }, { flush: "post" });
+  }), onUnmounted(() => {
+    n2.value && S$1(r2());
+  });
+}
+function z({ ownerDocument: t2, container: n2, initialFocus: r2 }, l2) {
+  let o2 = ref(null), i2 = ref(false);
+  return onMounted(() => i2.value = true), onUnmounted(() => i2.value = false), onMounted(() => {
+    watch([n2, r2, l2], (e2, m2) => {
+      if (e2.every((a2, s3) => (m2 == null ? void 0 : m2[s3]) === a2) || !l2.value)
+        return;
+      let f2 = o$2(n2);
+      f2 && t$1(() => {
+        var F2, H2;
+        if (!i2.value)
+          return;
+        let a2 = o$2(r2), s3 = (F2 = t2.value) == null ? void 0 : F2.activeElement;
+        if (a2) {
+          if (a2 === s3) {
+            o2.value = s3;
+            return;
+          }
+        } else if (f2.contains(s3)) {
+          o2.value = s3;
+          return;
+        }
+        a2 ? S$1(a2) : P(f2, N$6.First | N$6.NoScroll) === T$3.Error && console.warn("There are no focusable elements inside the <FocusTrap />"), o2.value = (H2 = t2.value) == null ? void 0 : H2.activeElement;
+      });
+    }, { immediate: true, flush: "post" });
+  }), o2;
+}
+function J({ ownerDocument: t2, container: n2, containers: r2, previousActiveElement: l2 }, o2) {
+  var i2;
+  E$1((i2 = t2.value) == null ? void 0 : i2.defaultView, "focus", (e2) => {
+    if (!o2.value)
+      return;
+    let m2 = B(r2);
+    o$2(n2) instanceof HTMLElement && m2.add(o$2(n2));
+    let f2 = l2.value;
+    if (!f2)
+      return;
+    let a2 = e2.target;
+    a2 && a2 instanceof HTMLElement ? N$4(m2, a2) ? (l2.value = a2, S$1(a2)) : (e2.preventDefault(), e2.stopPropagation(), S$1(f2)) : S$1(l2.value);
+  }, true);
+}
+function N$4(t2, n2) {
+  for (let r2 of t2)
+    if (r2.contains(n2))
+      return true;
+  return false;
+}
+function m$3(t2) {
+  let e2 = shallowRef(t2.getSnapshot());
+  return onUnmounted(t2.subscribe(() => {
+    e2.value = t2.getSnapshot();
+  })), e2;
+}
+function a$1(o2, r2) {
+  let t2 = o2(), n2 = /* @__PURE__ */ new Set();
+  return { getSnapshot() {
+    return t2;
+  }, subscribe(e2) {
+    return n2.add(e2), () => n2.delete(e2);
+  }, dispatch(e2, ...s3) {
+    let i2 = r2[e2].call(t2, ...s3);
+    i2 && (t2 = i2, n2.forEach((c2) => c2()));
+  } };
+}
+function c() {
+  let o2;
+  return { before({ doc: e2 }) {
+    var l2;
+    let n2 = e2.documentElement;
+    o2 = ((l2 = e2.defaultView) != null ? l2 : void 0).innerWidth - n2.clientWidth;
+  }, after({ doc: e2, d: n2 }) {
+    let t2 = e2.documentElement, l2 = t2.clientWidth - t2.offsetWidth, r2 = o2 - l2;
+    n2.style(t2, "paddingRight", `${r2}px`);
+  } };
+}
+function w$1() {
+  return t$4() ? { before({ doc: r2, d: n2, meta: c2 }) {
+    function o$12(a2) {
+      return c2.containers.flatMap((l2) => l2()).some((l2) => l2.contains(a2));
+    }
+    n2.microTask(() => {
+      var s3;
+      if ((void 0).getComputedStyle(r2.documentElement).scrollBehavior !== "auto") {
+        let t2 = o();
+        t2.style(r2.documentElement, "scrollBehavior", "auto"), n2.add(() => n2.microTask(() => t2.dispose()));
+      }
+      let a2 = (s3 = (void 0).scrollY) != null ? s3 : (void 0).pageYOffset, l2 = null;
+      n2.addEventListener(r2, "click", (t2) => {
+        if (t2.target instanceof HTMLElement)
+          try {
+            let e2 = t2.target.closest("a");
+            if (!e2)
+              return;
+            let { hash: f2 } = new URL(e2.href), i2 = r2.querySelector(f2);
+            i2 && !o$12(i2) && (l2 = i2);
+          } catch {
+          }
+      }, true), n2.addEventListener(r2, "touchstart", (t2) => {
+        if (t2.target instanceof HTMLElement)
+          if (o$12(t2.target)) {
+            let e2 = t2.target;
+            for (; e2.parentElement && o$12(e2.parentElement); )
+              e2 = e2.parentElement;
+            n2.style(e2, "overscrollBehavior", "contain");
+          } else
+            n2.style(t2.target, "touchAction", "none");
+      }), n2.addEventListener(r2, "touchmove", (t2) => {
+        if (t2.target instanceof HTMLElement)
+          if (o$12(t2.target)) {
+            let e2 = t2.target;
+            for (; e2.parentElement && e2.dataset.headlessuiPortal !== "" && !(e2.scrollHeight > e2.clientHeight || e2.scrollWidth > e2.clientWidth); )
+              e2 = e2.parentElement;
+            e2.dataset.headlessuiPortal === "" && t2.preventDefault();
+          } else
+            t2.preventDefault();
+      }, { passive: false }), n2.add(() => {
+        var e2;
+        let t2 = (e2 = (void 0).scrollY) != null ? e2 : (void 0).pageYOffset;
+        a2 !== t2 && (void 0).scrollTo(0, a2), l2 && l2.isConnected && (l2.scrollIntoView({ block: "nearest" }), l2 = null);
+      });
+    });
+  } } : {};
+}
+function l$1() {
+  return { before({ doc: e2, d: o2 }) {
+    o2.style(e2.documentElement, "overflow", "hidden");
+  } };
+}
+function m$2(e2) {
+  let n2 = {};
+  for (let t2 of e2)
+    Object.assign(n2, t2(n2));
+  return n2;
+}
+let a = a$1(() => /* @__PURE__ */ new Map(), { PUSH(e2, n2) {
+  var o$12;
+  let t2 = (o$12 = this.get(e2)) != null ? o$12 : { doc: e2, count: 0, d: o(), meta: /* @__PURE__ */ new Set() };
+  return t2.count++, t2.meta.add(n2), this.set(e2, t2), this;
+}, POP(e2, n2) {
+  let t2 = this.get(e2);
+  return t2 && (t2.count--, t2.meta.delete(n2)), this;
+}, SCROLL_PREVENT({ doc: e2, d: n2, meta: t2 }) {
+  let o2 = { doc: e2, d: n2, meta: m$2(t2) }, c$12 = [w$1(), c(), l$1()];
+  c$12.forEach(({ before: r2 }) => r2 == null ? void 0 : r2(o2)), c$12.forEach(({ after: r2 }) => r2 == null ? void 0 : r2(o2));
+}, SCROLL_ALLOW({ d: e2 }) {
+  e2.dispose();
+}, TEARDOWN({ doc: e2 }) {
+  this.delete(e2);
+} });
+a.subscribe(() => {
+  let e2 = a.getSnapshot(), n2 = /* @__PURE__ */ new Map();
+  for (let [t2] of e2)
+    n2.set(t2, t2.documentElement.style.overflow);
+  for (let t2 of e2.values()) {
+    let o2 = n2.get(t2.doc) === "hidden", c2 = t2.count !== 0;
+    (c2 && !o2 || !c2 && o2) && a.dispatch(t2.count > 0 ? "SCROLL_PREVENT" : "SCROLL_ALLOW", t2), t2.count === 0 && a.dispatch("TEARDOWN", t2);
+  }
+});
+function d$1(t2, a$12, n2) {
+  let i2 = m$3(a), l2 = computed(() => {
+    let e2 = t2.value ? i2.value.get(t2.value) : void 0;
+    return e2 ? e2.count > 0 : false;
+  });
+  return watch([t2, a$12], ([e2, m2], [r2], o2) => {
+    if (!e2 || !m2)
+      return;
+    a.dispatch("PUSH", e2, n2);
+    let f2 = false;
+    o2(() => {
+      f2 || (a.dispatch("POP", r2 != null ? r2 : e2, n2), f2 = true);
+    });
+  }, { immediate: true }), l2;
+}
+let i = /* @__PURE__ */ new Map(), t = /* @__PURE__ */ new Map();
+function E(d2, f2 = ref(true)) {
+  watchEffect((o2) => {
+    var a2;
+    if (!f2.value)
+      return;
+    let e2 = o$2(d2);
+    if (!e2)
+      return;
+    o2(function() {
+      var u2;
+      if (!e2)
+        return;
+      let r2 = (u2 = t.get(e2)) != null ? u2 : 1;
+      if (r2 === 1 ? t.delete(e2) : t.set(e2, r2 - 1), r2 !== 1)
+        return;
+      let n2 = i.get(e2);
+      n2 && (n2["aria-hidden"] === null ? e2.removeAttribute("aria-hidden") : e2.setAttribute("aria-hidden", n2["aria-hidden"]), e2.inert = n2.inert, i.delete(e2));
+    });
+    let l2 = (a2 = t.get(e2)) != null ? a2 : 0;
+    t.set(e2, l2 + 1), l2 === 0 && (i.set(e2, { "aria-hidden": e2.getAttribute("aria-hidden"), inert: e2.inert }), e2.setAttribute("aria-hidden", "true"), e2.inert = true);
+  });
+}
+function N$3({ defaultContainers: o2 = [], portals: i2, mainTreeNodeRef: H2 } = {}) {
+  let t2 = ref(null), r2 = i$3(t2);
   function u2() {
     var l2, f2, a2;
     let n2 = [];
@@ -2968,33 +3257,77 @@ function N$7({ defaultContainers: o2 = [], portals: i2, mainTreeNodeRef: H2 } = 
       for (let e2 of i2.value)
         n2.push(e2);
     for (let e2 of (l2 = r2 == null ? void 0 : r2.querySelectorAll("html > *, body > *")) != null ? l2 : [])
-      e2 !== (void 0).body && e2 !== (void 0).head && e2 instanceof HTMLElement && e2.id !== "headlessui-portal-root" && (e2.contains(o$4(t2)) || e2.contains((a2 = (f2 = o$4(t2)) == null ? void 0 : f2.getRootNode()) == null ? void 0 : a2.host) || n2.some((M) => e2.contains(M)) || n2.push(e2));
+      e2 !== (void 0).body && e2 !== (void 0).head && e2 instanceof HTMLElement && e2.id !== "headlessui-portal-root" && (e2.contains(o$2(t2)) || e2.contains((a2 = (f2 = o$2(t2)) == null ? void 0 : f2.getRootNode()) == null ? void 0 : a2.host) || n2.some((M) => e2.contains(M)) || n2.push(e2));
     return n2;
   }
   return { resolveContainers: u2, contains(n2) {
     return u2().some((l2) => l2.contains(n2));
   }, mainTreeNodeRef: t2, MainTreeNode() {
-    return H2 != null ? null : h$2(f$1, { features: s$6.Hidden, ref: t2 });
+    return H2 != null ? null : h$1(f, { features: s$3.Hidden, ref: t2 });
   } };
 }
-function v$1() {
+function v() {
   let o2 = ref(null);
   return { mainTreeNodeRef: o2, MainTreeNode() {
-    return h$2(f$1, { features: s$6.Hidden, ref: o2 });
+    return h$1(f, { features: s$3.Hidden, ref: o2 });
   } };
 }
-let e$1 = Symbol("ForcePortalRootContext");
-function s$5() {
-  return inject(e$1, false);
+let e = Symbol("ForcePortalRootContext");
+function s$1() {
+  return inject(e, false);
 }
-defineComponent({ name: "ForcePortalRoot", props: { as: { type: [Object, String], default: "template" }, force: { type: Boolean, default: false } }, setup(o2, { slots: t2, attrs: r2 }) {
-  return provide(e$1, o2.force), () => {
+let u$2 = defineComponent({ name: "ForcePortalRoot", props: { as: { type: [Object, String], default: "template" }, force: { type: Boolean, default: false } }, setup(o2, { slots: t2, attrs: r2 }) {
+  return provide(e, o2.force), () => {
     let { force: f2, ...n2 } = o2;
-    return A$5({ theirProps: n2, ourProps: {}, slot: {}, slots: t2, attrs: r2, name: "ForcePortalRoot" });
+    return A$3({ theirProps: n2, ourProps: {}, slot: {}, slots: t2, attrs: r2, name: "ForcePortalRoot" });
   };
 } });
-function x$1(r2) {
-  let e2 = i$8(r2);
+let u$1 = Symbol("StackContext");
+var s2 = ((e2) => (e2[e2.Add = 0] = "Add", e2[e2.Remove = 1] = "Remove", e2))(s2 || {});
+function y() {
+  return inject(u$1, () => {
+  });
+}
+function R$1({ type: o2, enabled: r2, element: e2, onUpdate: i2 }) {
+  let a2 = y();
+  function t2(...n2) {
+    i2 == null || i2(...n2), a2(...n2);
+  }
+  onMounted(() => {
+    watch(r2, (n2, d2) => {
+      n2 ? t2(0, o2, e2) : d2 === true && t2(1, o2, e2);
+    }, { immediate: true, flush: "sync" });
+  }), onUnmounted(() => {
+    r2.value && t2(1, o2, e2);
+  }), provide(u$1, t2);
+}
+let u = Symbol("DescriptionContext");
+function w() {
+  let t2 = inject(u, null);
+  if (t2 === null)
+    throw new Error("Missing parent");
+  return t2;
+}
+function k$1({ slot: t2 = ref({}), name: o2 = "Description", props: s3 = {} } = {}) {
+  let e2 = ref([]);
+  function r2(n2) {
+    return e2.value.push(n2), () => {
+      let i2 = e2.value.indexOf(n2);
+      i2 !== -1 && e2.value.splice(i2, 1);
+    };
+  }
+  return provide(u, { register: r2, slot: t2, name: o2, props: s3 }), computed(() => e2.value.length > 0 ? e2.value.join(" ") : void 0);
+}
+defineComponent({ name: "Description", props: { as: { type: [Object, String], default: "p" }, id: { type: String, default: null } }, setup(t2, { attrs: o2, slots: s3 }) {
+  var n2;
+  let e2 = (n2 = t2.id) != null ? n2 : `headlessui-description-${I$1()}`, r2 = w();
+  return onMounted(() => onUnmounted(r2.register(e2))), () => {
+    let { name: i2 = "Description", slot: l2 = ref({}), props: d2 = {} } = r2, { ...c2 } = t2, f2 = { ...Object.entries(d2).reduce((a2, [g2, m2]) => Object.assign(a2, { [g2]: unref(m2) }), {}), id: e2 };
+    return A$3({ ourProps: f2, theirProps: c2, slot: l2.value, attrs: o2, slots: s3, name: i2 });
+  };
+} });
+function x(r2) {
+  let e2 = i$3(r2);
   if (!e2) {
     if (r2 === null)
       return null;
@@ -3006,18 +3339,18 @@ function x$1(r2) {
   let t2 = e2.createElement("div");
   return t2.setAttribute("id", "headlessui-portal-root"), e2.body.appendChild(t2);
 }
-defineComponent({ name: "Portal", props: { as: { type: [Object, String], default: "div" } }, setup(r2, { slots: e2, attrs: u2 }) {
-  let t2 = ref(null), i2 = computed(() => i$8(t2)), l2 = s$5(), n2 = inject(C$1, null), o2 = ref(l2 === true || n2 == null ? x$1(t2.value) : n2.resolveTarget()), d2 = ref(false);
+let _ = defineComponent({ name: "Portal", props: { as: { type: [Object, String], default: "div" } }, setup(r2, { slots: e2, attrs: u2 }) {
+  let t2 = ref(null), i2 = computed(() => i$3(t2)), l2 = s$1(), n2 = inject(C, null), o2 = ref(l2 === true || n2 == null ? x(t2.value) : n2.resolveTarget()), d2 = ref(false);
   onMounted(() => {
     d2.value = true;
   }), watchEffect(() => {
     l2 || n2 != null && (o2.value = n2.resolveTarget());
   });
-  let c2 = inject(m$4, null), v2 = false, H2 = getCurrentInstance();
+  let c2 = inject(m$1, null), v2 = false, H2 = getCurrentInstance();
   return watch(t2, () => {
     if (v2 || !c2)
       return;
-    let a2 = o$4(t2);
+    let a2 = o$2(t2);
     a2 && (onUnmounted(c2.register(a2), H2), v2 = true);
   }), onUnmounted(() => {
     var g2, P2;
@@ -3027,12 +3360,11 @@ defineComponent({ name: "Portal", props: { as: { type: [Object, String], default
     if (!d2.value || o2.value === null)
       return null;
     let a2 = { ref: t2, "data-headlessui-portal": "" };
-    return h$2(Teleport, { to: o2.value }, A$5({ ourProps: a2, theirProps: r2, slot: {}, attrs: u2, slots: e2, name: "Portal" }));
+    return h$1(Teleport, { to: o2.value }, A$3({ ourProps: a2, theirProps: r2, slot: {}, attrs: u2, slots: e2, name: "Portal" }));
   };
-} });
-let m$4 = Symbol("PortalParentContext");
-function A$4() {
-  let r2 = inject(m$4, null), e2 = ref([]);
+} }), m$1 = Symbol("PortalParentContext");
+function A$1() {
+  let r2 = inject(m$1, null), e2 = ref([]);
   function u2(l2) {
     return e2.value.push(l2), r2 && r2.register(l2), () => t2(l2);
   }
@@ -3042,117 +3374,233 @@ function A$4() {
   }
   let i2 = { register: u2, unregister: t2, portals: e2 };
   return [e2, defineComponent({ name: "PortalWrapper", setup(l2, { slots: n2 }) {
-    return provide(m$4, i2), () => {
+    return provide(m$1, i2), () => {
       var o2;
       return (o2 = n2.default) == null ? void 0 : o2.call(n2);
     };
   } })];
 }
-let C$1 = Symbol("PortalGroupContext");
-defineComponent({ name: "PortalGroup", props: { as: { type: [Object, String], default: "template" }, target: { type: Object, default: null } }, setup(r2, { attrs: e2, slots: u2 }) {
+let C = Symbol("PortalGroupContext"), N$2 = defineComponent({ name: "PortalGroup", props: { as: { type: [Object, String], default: "template" }, target: { type: Object, default: null } }, setup(r2, { attrs: e2, slots: u2 }) {
   let t2 = reactive({ resolveTarget() {
     return r2.target;
   } });
-  return provide(C$1, t2), () => {
+  return provide(C, t2), () => {
     let { target: i2, ...l2 } = r2;
-    return A$5({ theirProps: l2, ourProps: {}, slot: {}, attrs: e2, slots: u2, name: "PortalGroup" });
+    return A$3({ theirProps: l2, ourProps: {}, slot: {}, attrs: e2, slots: u2, name: "PortalGroup" });
   };
 } });
-var $$1 = ((o2) => (o2[o2.Open = 0] = "Open", o2[o2.Closed = 1] = "Closed", o2))($$1 || {});
-let T$3 = Symbol("DisclosureContext");
-function O$1(t2) {
-  let r2 = inject(T$3, null);
+var Te$1 = ((l2) => (l2[l2.Open = 0] = "Open", l2[l2.Closed = 1] = "Closed", l2))(Te$1 || {});
+let H = Symbol("DialogContext");
+function T$1(e2) {
+  let i2 = inject(H, null);
+  if (i2 === null) {
+    let l2 = new Error(`<${e2} /> is missing a parent <Dialog /> component.`);
+    throw Error.captureStackTrace && Error.captureStackTrace(l2, T$1), l2;
+  }
+  return i2;
+}
+let A = "DC8F892D-2EBD-447C-A4C8-A03058436FF4", We = defineComponent({ name: "Dialog", inheritAttrs: false, props: { as: { type: [Object, String], default: "div" }, static: { type: Boolean, default: false }, unmount: { type: Boolean, default: true }, open: { type: [Boolean, String], default: A }, initialFocus: { type: Object, default: null }, id: { type: String, default: null }, role: { type: String, default: "dialog" } }, emits: { close: (e2) => true }, setup(e2, { emit: i2, attrs: l2, slots: d2, expose: s$12 }) {
+  var _$1, q;
+  let n2 = (_$1 = e2.id) != null ? _$1 : `headlessui-dialog-${I$1()}`, u2 = ref(false);
+  onMounted(() => {
+    u2.value = true;
+  });
+  let r2 = false, g2 = computed(() => e2.role === "dialog" || e2.role === "alertdialog" ? e2.role : (r2 || (r2 = true, console.warn(`Invalid role [${g2}] passed to <Dialog />. Only \`dialog\` and and \`alertdialog\` are supported. Using \`dialog\` instead.`)), "dialog")), D = ref(0), S2 = l$2(), R2 = computed(() => e2.open === A && S2 !== null ? (S2.value & i$1.Open) === i$1.Open : e2.open), m2 = ref(null), E$22 = computed(() => i$3(m2));
+  if (s$12({ el: m2, $el: m2 }), !(e2.open !== A || S2 !== null))
+    throw new Error("You forgot to provide an `open` prop to the `Dialog`.");
+  if (typeof R2.value != "boolean")
+    throw new Error(`You provided an \`open\` prop to the \`Dialog\`, but the value is not a boolean. Received: ${R2.value === A ? void 0 : e2.open}`);
+  let c2 = computed(() => u2.value && R2.value ? 0 : 1), k2 = computed(() => c2.value === 0), w2 = computed(() => D.value > 1), N2 = inject(H, null) !== null, [Q2, X] = A$1(), { resolveContainers: B2, mainTreeNodeRef: K, MainTreeNode: Z } = N$3({ portals: Q2, defaultContainers: [computed(() => {
+    var t2;
+    return (t2 = h2.panelRef.value) != null ? t2 : m2.value;
+  })] }), ee = computed(() => w2.value ? "parent" : "leaf"), U2 = computed(() => S2 !== null ? (S2.value & i$1.Closing) === i$1.Closing : false), te = computed(() => N2 || U2.value ? false : k2.value), le2 = computed(() => {
+    var t2, a2, p;
+    return (p = Array.from((a2 = (t2 = E$22.value) == null ? void 0 : t2.querySelectorAll("body > *")) != null ? a2 : []).find((f2) => f2.id === "headlessui-portal-root" ? false : f2.contains(o$2(K)) && f2 instanceof HTMLElement)) != null ? p : null;
+  });
+  E(le2, te);
+  let ae2 = computed(() => w2.value ? true : k2.value), oe = computed(() => {
+    var t2, a2, p;
+    return (p = Array.from((a2 = (t2 = E$22.value) == null ? void 0 : t2.querySelectorAll("[data-headlessui-portal]")) != null ? a2 : []).find((f2) => f2.contains(o$2(K)) && f2 instanceof HTMLElement)) != null ? p : null;
+  });
+  E(oe, ae2), R$1({ type: "Dialog", enabled: computed(() => c2.value === 0), element: m2, onUpdate: (t2, a2) => {
+    if (a2 === "Dialog")
+      return u$4(t2, { [s2.Add]: () => D.value += 1, [s2.Remove]: () => D.value -= 1 });
+  } });
+  let re2 = k$1({ name: "DialogDescription", slot: computed(() => ({ open: R2.value })) }), M = ref(null), h2 = { titleId: M, panelRef: ref(null), dialogState: c2, setTitleId(t2) {
+    M.value !== t2 && (M.value = t2);
+  }, close() {
+    i2("close", false);
+  } };
+  provide(H, h2);
+  let ne = computed(() => !(!k2.value || w2.value));
+  w$2(B2, (t2, a2) => {
+    h2.close(), nextTick(() => a2 == null ? void 0 : a2.focus());
+  }, ne);
+  let ie = computed(() => !(w2.value || c2.value !== 0));
+  E$1((q = E$22.value) == null ? void 0 : q.defaultView, "keydown", (t2) => {
+    ie.value && (t2.defaultPrevented || t2.key === o$1.Escape && (t2.preventDefault(), t2.stopPropagation(), h2.close()));
+  });
+  let ue2 = computed(() => !(U2.value || c2.value !== 0 || N2));
+  return d$1(E$22, ue2, (t2) => {
+    var a2;
+    return { containers: [...(a2 = t2.containers) != null ? a2 : [], B2] };
+  }), watchEffect((t2) => {
+    if (c2.value !== 0)
+      return;
+    let a2 = o$2(m2);
+    if (!a2)
+      return;
+    let p = new ResizeObserver((f2) => {
+      for (let L2 of f2) {
+        let x2 = L2.target.getBoundingClientRect();
+        x2.x === 0 && x2.y === 0 && x2.width === 0 && x2.height === 0 && h2.close();
+      }
+    });
+    p.observe(a2), t2(() => p.disconnect());
+  }), () => {
+    let { open: t2, initialFocus: a2, ...p } = e2, f2 = { ...l2, ref: m2, id: n2, role: g2.value, "aria-modal": c2.value === 0 ? true : void 0, "aria-labelledby": M.value, "aria-describedby": re2.value }, L2 = { open: c2.value === 0 };
+    return h$1(u$2, { force: true }, () => [h$1(_, () => h$1(N$2, { target: m2.value }, () => h$1(u$2, { force: false }, () => h$1(ue$1, { initialFocus: a2, containers: B2, features: k2.value ? u$4(ee.value, { parent: ue$1.features.RestoreFocus, leaf: ue$1.features.All & ~ue$1.features.FocusLock }) : ue$1.features.None }, () => h$1(X, {}, () => A$3({ ourProps: f2, theirProps: { ...p, ...l2 }, slot: L2, attrs: l2, slots: d2, visible: c2.value === 0, features: N$5.RenderStrategy | N$5.Static, name: "Dialog" })))))), h$1(Z)]);
+  };
+} });
+defineComponent({ name: "DialogOverlay", props: { as: { type: [Object, String], default: "div" }, id: { type: String, default: null } }, setup(e2, { attrs: i2, slots: l2 }) {
+  var u2;
+  let d2 = (u2 = e2.id) != null ? u2 : `headlessui-dialog-overlay-${I$1()}`, s3 = T$1("DialogOverlay");
+  function n2(r2) {
+    r2.target === r2.currentTarget && (r2.preventDefault(), r2.stopPropagation(), s3.close());
+  }
+  return () => {
+    let { ...r2 } = e2;
+    return A$3({ ourProps: { id: d2, "aria-hidden": true, onClick: n2 }, theirProps: r2, slot: { open: s3.dialogState.value === 0 }, attrs: i2, slots: l2, name: "DialogOverlay" });
+  };
+} });
+defineComponent({ name: "DialogBackdrop", props: { as: { type: [Object, String], default: "div" }, id: { type: String, default: null } }, inheritAttrs: false, setup(e2, { attrs: i2, slots: l2, expose: d2 }) {
+  var r2;
+  let s3 = (r2 = e2.id) != null ? r2 : `headlessui-dialog-backdrop-${I$1()}`, n2 = T$1("DialogBackdrop"), u2 = ref(null);
+  return d2({ el: u2, $el: u2 }), onMounted(() => {
+    if (n2.panelRef.value === null)
+      throw new Error("A <DialogBackdrop /> component is being used, but a <DialogPanel /> component is missing.");
+  }), () => {
+    let { ...g2 } = e2, D = { id: s3, ref: u2, "aria-hidden": true };
+    return h$1(u$2, { force: true }, () => h$1(_, () => A$3({ ourProps: D, theirProps: { ...i2, ...g2 }, slot: { open: n2.dialogState.value === 0 }, attrs: i2, slots: l2, name: "DialogBackdrop" })));
+  };
+} });
+let Ge$1 = defineComponent({ name: "DialogPanel", props: { as: { type: [Object, String], default: "div" }, id: { type: String, default: null } }, setup(e2, { attrs: i2, slots: l2, expose: d2 }) {
+  var r2;
+  let s3 = (r2 = e2.id) != null ? r2 : `headlessui-dialog-panel-${I$1()}`, n2 = T$1("DialogPanel");
+  d2({ el: n2.panelRef, $el: n2.panelRef });
+  function u2(g2) {
+    g2.stopPropagation();
+  }
+  return () => {
+    let { ...g2 } = e2, D = { id: s3, ref: n2.panelRef, onClick: u2 };
+    return A$3({ ourProps: D, theirProps: g2, slot: { open: n2.dialogState.value === 0 }, attrs: i2, slots: l2, name: "DialogPanel" });
+  };
+} });
+defineComponent({ name: "DialogTitle", props: { as: { type: [Object, String], default: "h2" }, id: { type: String, default: null } }, setup(e2, { attrs: i2, slots: l2 }) {
+  var n2;
+  let d2 = (n2 = e2.id) != null ? n2 : `headlessui-dialog-title-${I$1()}`, s3 = T$1("DialogTitle");
+  return onMounted(() => {
+    s3.setTitleId(d2), onUnmounted(() => s3.setTitleId(null));
+  }), () => {
+    let { ...u2 } = e2;
+    return A$3({ ourProps: { id: d2 }, theirProps: u2, slot: { open: s3.dialogState.value === 0 }, attrs: i2, slots: l2, name: "DialogTitle" });
+  };
+} });
+var $ = ((o2) => (o2[o2.Open = 0] = "Open", o2[o2.Closed = 1] = "Closed", o2))($ || {});
+let T = Symbol("DisclosureContext");
+function O(t2) {
+  let r2 = inject(T, null);
   if (r2 === null) {
     let o2 = new Error(`<${t2} /> is missing a parent <Disclosure /> component.`);
-    throw Error.captureStackTrace && Error.captureStackTrace(o2, O$1), o2;
+    throw Error.captureStackTrace && Error.captureStackTrace(o2, O), o2;
   }
   return r2;
 }
-let k$1 = Symbol("DisclosurePanelContext");
+let k = Symbol("DisclosurePanelContext");
 function U$1() {
-  return inject(k$1, null);
+  return inject(k, null);
 }
-let N$6 = defineComponent({ name: "Disclosure", props: { as: { type: [Object, String], default: "template" }, defaultOpen: { type: [Boolean], default: false } }, setup(t2, { slots: r2, attrs: o2 }) {
-  let s4 = ref(t2.defaultOpen ? 0 : 1), e2 = ref(null), i2 = ref(null), n2 = { buttonId: ref(`headlessui-disclosure-button-${I$3()}`), panelId: ref(`headlessui-disclosure-panel-${I$3()}`), disclosureState: s4, panel: e2, button: i2, toggleDisclosure() {
-    s4.value = u$6(s4.value, { [0]: 1, [1]: 0 });
+let N$1 = defineComponent({ name: "Disclosure", props: { as: { type: [Object, String], default: "template" }, defaultOpen: { type: [Boolean], default: false } }, setup(t2, { slots: r2, attrs: o2 }) {
+  let s3 = ref(t2.defaultOpen ? 0 : 1), e2 = ref(null), i2 = ref(null), n2 = { buttonId: ref(`headlessui-disclosure-button-${I$1()}`), panelId: ref(`headlessui-disclosure-panel-${I$1()}`), disclosureState: s3, panel: e2, button: i2, toggleDisclosure() {
+    s3.value = u$4(s3.value, { [0]: 1, [1]: 0 });
   }, closeDisclosure() {
-    s4.value !== 1 && (s4.value = 1);
+    s3.value !== 1 && (s3.value = 1);
   }, close(l2) {
     n2.closeDisclosure();
-    let a2 = (() => l2 ? l2 instanceof HTMLElement ? l2 : l2.value instanceof HTMLElement ? o$4(l2) : o$4(n2.button) : o$4(n2.button))();
+    let a2 = (() => l2 ? l2 instanceof HTMLElement ? l2 : l2.value instanceof HTMLElement ? o$2(l2) : o$2(n2.button) : o$2(n2.button))();
     a2 == null || a2.focus();
   } };
-  return provide(T$3, n2), t$6(computed(() => u$6(s4.value, { [0]: i$6.Open, [1]: i$6.Closed }))), () => {
-    let { defaultOpen: l2, ...a2 } = t2, c2 = { open: s4.value === 0, close: n2.close };
-    return A$5({ theirProps: a2, ourProps: {}, slot: c2, slots: r2, attrs: o2, name: "Disclosure" });
+  return provide(T, n2), t$3(computed(() => u$4(s3.value, { [0]: i$1.Open, [1]: i$1.Closed }))), () => {
+    let { defaultOpen: l2, ...a2 } = t2, c2 = { open: s3.value === 0, close: n2.close };
+    return A$3({ theirProps: a2, ourProps: {}, slot: c2, slots: r2, attrs: o2, name: "Disclosure" });
   };
-} }), Q$1 = defineComponent({ name: "DisclosureButton", props: { as: { type: [Object, String], default: "button" }, disabled: { type: [Boolean], default: false }, id: { type: String, default: null } }, setup(t2, { attrs: r2, slots: o2, expose: s4 }) {
-  let e2 = O$1("DisclosureButton"), i2 = U$1(), n2 = computed(() => i2 === null ? false : i2.value === e2.panelId.value);
+} }), Q$1 = defineComponent({ name: "DisclosureButton", props: { as: { type: [Object, String], default: "button" }, disabled: { type: [Boolean], default: false }, id: { type: String, default: null } }, setup(t2, { attrs: r2, slots: o2, expose: s3 }) {
+  let e2 = O("DisclosureButton"), i2 = U$1(), n2 = computed(() => i2 === null ? false : i2.value === e2.panelId.value);
   onMounted(() => {
     n2.value || t2.id !== null && (e2.buttonId.value = t2.id);
   }), onUnmounted(() => {
     n2.value || (e2.buttonId.value = null);
   });
   let l2 = ref(null);
-  s4({ el: l2, $el: l2 }), n2.value || watchEffect(() => {
+  s3({ el: l2, $el: l2 }), n2.value || watchEffect(() => {
     e2.button.value = l2.value;
   });
-  let a2 = s$7(computed(() => ({ as: t2.as, type: r2.type })), l2);
+  let a2 = s$4(computed(() => ({ as: t2.as, type: r2.type })), l2);
   function c2() {
     var u2;
-    t2.disabled || (n2.value ? (e2.toggleDisclosure(), (u2 = o$4(e2.button)) == null || u2.focus()) : e2.toggleDisclosure());
+    t2.disabled || (n2.value ? (e2.toggleDisclosure(), (u2 = o$2(e2.button)) == null || u2.focus()) : e2.toggleDisclosure());
   }
   function D(u2) {
     var S2;
     if (!t2.disabled)
       if (n2.value)
         switch (u2.key) {
-          case o$3.Space:
-          case o$3.Enter:
-            u2.preventDefault(), u2.stopPropagation(), e2.toggleDisclosure(), (S2 = o$4(e2.button)) == null || S2.focus();
+          case o$1.Space:
+          case o$1.Enter:
+            u2.preventDefault(), u2.stopPropagation(), e2.toggleDisclosure(), (S2 = o$2(e2.button)) == null || S2.focus();
             break;
         }
       else
         switch (u2.key) {
-          case o$3.Space:
-          case o$3.Enter:
+          case o$1.Space:
+          case o$1.Enter:
             u2.preventDefault(), u2.stopPropagation(), e2.toggleDisclosure();
             break;
         }
   }
   function v2(u2) {
     switch (u2.key) {
-      case o$3.Space:
+      case o$1.Space:
         u2.preventDefault();
         break;
     }
   }
   return () => {
     var C2;
-    let u2 = { open: e2.disclosureState.value === 0 }, { id: S2, ...K } = t2, M = n2.value ? { ref: l2, type: a2.value, onClick: c2, onKeydown: D } : { id: (C2 = e2.buttonId.value) != null ? C2 : S2, ref: l2, type: a2.value, "aria-expanded": e2.disclosureState.value === 0, "aria-controls": e2.disclosureState.value === 0 || o$4(e2.panel) ? e2.panelId.value : void 0, disabled: t2.disabled ? true : void 0, onClick: c2, onKeydown: D, onKeyup: v2 };
-    return A$5({ ourProps: M, theirProps: K, slot: u2, attrs: r2, slots: o2, name: "DisclosureButton" });
+    let u2 = { open: e2.disclosureState.value === 0 }, { id: S2, ...K } = t2, M = n2.value ? { ref: l2, type: a2.value, onClick: c2, onKeydown: D } : { id: (C2 = e2.buttonId.value) != null ? C2 : S2, ref: l2, type: a2.value, "aria-expanded": e2.disclosureState.value === 0, "aria-controls": e2.disclosureState.value === 0 || o$2(e2.panel) ? e2.panelId.value : void 0, disabled: t2.disabled ? true : void 0, onClick: c2, onKeydown: D, onKeyup: v2 };
+    return A$3({ ourProps: M, theirProps: K, slot: u2, attrs: r2, slots: o2, name: "DisclosureButton" });
   };
-} }), V = defineComponent({ name: "DisclosurePanel", props: { as: { type: [Object, String], default: "div" }, static: { type: Boolean, default: false }, unmount: { type: Boolean, default: true }, id: { type: String, default: null } }, setup(t2, { attrs: r2, slots: o2, expose: s4 }) {
-  let e2 = O$1("DisclosurePanel");
+} }), V = defineComponent({ name: "DisclosurePanel", props: { as: { type: [Object, String], default: "div" }, static: { type: Boolean, default: false }, unmount: { type: Boolean, default: true }, id: { type: String, default: null } }, setup(t2, { attrs: r2, slots: o2, expose: s3 }) {
+  let e2 = O("DisclosurePanel");
   onMounted(() => {
     t2.id !== null && (e2.panelId.value = t2.id);
   }), onUnmounted(() => {
     e2.panelId.value = null;
-  }), s4({ el: e2.panel, $el: e2.panel }), provide(k$1, e2.panelId);
-  let i2 = l$4(), n2 = computed(() => i2 !== null ? (i2.value & i$6.Open) === i$6.Open : e2.disclosureState.value === 0);
+  }), s3({ el: e2.panel, $el: e2.panel }), provide(k, e2.panelId);
+  let i2 = l$2(), n2 = computed(() => i2 !== null ? (i2.value & i$1.Open) === i$1.Open : e2.disclosureState.value === 0);
   return () => {
     var v2;
     let l2 = { open: e2.disclosureState.value === 0, close: e2.close }, { id: a2, ...c2 } = t2, D = { id: (v2 = e2.panelId.value) != null ? v2 : a2, ref: e2.panel };
-    return A$5({ ourProps: D, theirProps: c2, slot: l2, attrs: r2, slots: o2, features: N$8.RenderStrategy | N$8.Static, visible: n2.value, name: "DisclosurePanel" });
+    return A$3({ ourProps: D, theirProps: c2, slot: l2, attrs: r2, slots: o2, features: N$5.RenderStrategy | N$5.Static, visible: n2.value, name: "DisclosurePanel" });
   };
 } });
-var Se$1 = ((s4) => (s4[s4.Open = 0] = "Open", s4[s4.Closed = 1] = "Closed", s4))(Se$1 || {});
+var Se$1 = ((s3) => (s3[s3.Open = 0] = "Open", s3[s3.Closed = 1] = "Closed", s3))(Se$1 || {});
 let re = Symbol("PopoverContext");
 function U(d2) {
   let P2 = inject(re, null);
   if (P2 === null) {
-    let s4 = new Error(`<${d2} /> is missing a parent <${ye.name} /> component.`);
-    throw Error.captureStackTrace && Error.captureStackTrace(s4, U), s4;
+    let s3 = new Error(`<${d2} /> is missing a parent <${ye.name} /> component.`);
+    throw Error.captureStackTrace && Error.captureStackTrace(s3, U), s3;
   }
   return P2;
 }
@@ -3160,211 +3608,211 @@ let le = Symbol("PopoverGroupContext");
 function ae() {
   return inject(le, null);
 }
-let ue$1 = Symbol("PopoverPanelContext");
+let ue = Symbol("PopoverPanelContext");
 function ge$1() {
-  return inject(ue$1, null);
+  return inject(ue, null);
 }
-let ye = defineComponent({ name: "Popover", inheritAttrs: false, props: { as: { type: [Object, String], default: "div" } }, setup(d2, { slots: P2, attrs: s4, expose: h2 }) {
+let ye = defineComponent({ name: "Popover", inheritAttrs: false, props: { as: { type: [Object, String], default: "div" } }, setup(d2, { slots: P2, attrs: s3, expose: h$2 }) {
   var u2;
   let f2 = ref(null);
-  h2({ el: f2, $el: f2 });
-  let t2 = ref(1), o2 = ref(null), y2 = ref(null), v2 = ref(null), m2 = ref(null), b2 = computed(() => i$8(f2)), E2 = computed(() => {
+  h$2({ el: f2, $el: f2 });
+  let t2 = ref(1), o2 = ref(null), y2 = ref(null), v2 = ref(null), m2 = ref(null), b2 = computed(() => i$3(f2)), E2 = computed(() => {
     var L2, $2;
-    if (!o$4(o2) || !o$4(m2))
+    if (!o$2(o2) || !o$2(m2))
       return false;
     for (let x2 of (void 0).querySelectorAll("body > *"))
-      if (Number(x2 == null ? void 0 : x2.contains(o$4(o2))) ^ Number(x2 == null ? void 0 : x2.contains(o$4(m2))))
+      if (Number(x2 == null ? void 0 : x2.contains(o$2(o2))) ^ Number(x2 == null ? void 0 : x2.contains(o$2(m2))))
         return true;
-    let e2 = E$4(), r2 = e2.indexOf(o$4(o2)), l2 = (r2 + e2.length - 1) % e2.length, g2 = (r2 + 1) % e2.length, G = e2[l2], C2 = e2[g2];
-    return !((L2 = o$4(m2)) != null && L2.contains(G)) && !(($2 = o$4(m2)) != null && $2.contains(C2));
+    let e2 = E$2(), r2 = e2.indexOf(o$2(o2)), l2 = (r2 + e2.length - 1) % e2.length, g2 = (r2 + 1) % e2.length, G = e2[l2], C2 = e2[g2];
+    return !((L2 = o$2(m2)) != null && L2.contains(G)) && !(($2 = o$2(m2)) != null && $2.contains(C2));
   }), a2 = { popoverState: t2, buttonId: ref(null), panelId: ref(null), panel: m2, button: o2, isPortalled: E2, beforePanelSentinel: y2, afterPanelSentinel: v2, togglePopover() {
-    t2.value = u$6(t2.value, { [0]: 1, [1]: 0 });
+    t2.value = u$4(t2.value, { [0]: 1, [1]: 0 });
   }, closePopover() {
     t2.value !== 1 && (t2.value = 1);
   }, close(e2) {
     a2.closePopover();
-    let r2 = (() => e2 ? e2 instanceof HTMLElement ? e2 : e2.value instanceof HTMLElement ? o$4(e2) : o$4(a2.button) : o$4(a2.button))();
+    let r2 = (() => e2 ? e2 instanceof HTMLElement ? e2 : e2.value instanceof HTMLElement ? o$2(e2) : o$2(a2.button) : o$2(a2.button))();
     r2 == null || r2.focus();
   } };
-  provide(re, a2), t$6(computed(() => u$6(t2.value, { [0]: i$6.Open, [1]: i$6.Closed })));
+  provide(re, a2), t$3(computed(() => u$4(t2.value, { [0]: i$1.Open, [1]: i$1.Closed })));
   let S2 = { buttonId: a2.buttonId, panelId: a2.panelId, close() {
     a2.closePopover();
-  } }, c2 = ae(), I2 = c2 == null ? void 0 : c2.registerPopover, [F2, w2] = A$4(), i2 = N$7({ mainTreeNodeRef: c2 == null ? void 0 : c2.mainTreeNodeRef, portals: F2, defaultContainers: [o2, m2] });
+  } }, c2 = ae(), I2 = c2 == null ? void 0 : c2.registerPopover, [F2, w2] = A$1(), i2 = N$3({ mainTreeNodeRef: c2 == null ? void 0 : c2.mainTreeNodeRef, portals: F2, defaultContainers: [o2, m2] });
   function p() {
     var e2, r2, l2, g2;
-    return (g2 = c2 == null ? void 0 : c2.isFocusWithinPopoverGroup()) != null ? g2 : ((e2 = b2.value) == null ? void 0 : e2.activeElement) && (((r2 = o$4(o2)) == null ? void 0 : r2.contains(b2.value.activeElement)) || ((l2 = o$4(m2)) == null ? void 0 : l2.contains(b2.value.activeElement)));
+    return (g2 = c2 == null ? void 0 : c2.isFocusWithinPopoverGroup()) != null ? g2 : ((e2 = b2.value) == null ? void 0 : e2.activeElement) && (((r2 = o$2(o2)) == null ? void 0 : r2.contains(b2.value.activeElement)) || ((l2 = o$2(m2)) == null ? void 0 : l2.contains(b2.value.activeElement)));
   }
-  return watchEffect(() => I2 == null ? void 0 : I2(S2)), E$3((u2 = b2.value) == null ? void 0 : u2.defaultView, "focus", (e2) => {
+  return watchEffect(() => I2 == null ? void 0 : I2(S2)), E$1((u2 = b2.value) == null ? void 0 : u2.defaultView, "focus", (e2) => {
     var r2, l2;
-    e2.target !== void 0 && e2.target instanceof HTMLElement && t2.value === 0 && (p() || o2 && m2 && (i2.contains(e2.target) || (r2 = o$4(a2.beforePanelSentinel)) != null && r2.contains(e2.target) || (l2 = o$4(a2.afterPanelSentinel)) != null && l2.contains(e2.target) || a2.closePopover()));
-  }, true), w$5(i2.resolveContainers, (e2, r2) => {
+    e2.target !== void 0 && e2.target instanceof HTMLElement && t2.value === 0 && (p() || o2 && m2 && (i2.contains(e2.target) || (r2 = o$2(a2.beforePanelSentinel)) != null && r2.contains(e2.target) || (l2 = o$2(a2.afterPanelSentinel)) != null && l2.contains(e2.target) || a2.closePopover()));
+  }, true), w$2(i2.resolveContainers, (e2, r2) => {
     var l2;
-    a2.closePopover(), w$7(r2, h$1.Loose) || (e2.preventDefault(), (l2 = o$4(o2)) == null || l2.focus());
+    a2.closePopover(), w$4(r2, h.Loose) || (e2.preventDefault(), (l2 = o$2(o2)) == null || l2.focus());
   }, computed(() => t2.value === 0)), () => {
     let e2 = { open: t2.value === 0, close: a2.close };
-    return h$2(Fragment, [h$2(w2, {}, () => A$5({ theirProps: { ...d2, ...s4 }, ourProps: { ref: f2 }, slot: e2, slots: P2, attrs: s4, name: "Popover" })), h$2(i2.MainTreeNode)]);
+    return h$1(Fragment, [h$1(w2, {}, () => A$3({ theirProps: { ...d2, ...s3 }, ourProps: { ref: f2 }, slot: e2, slots: P2, attrs: s3, name: "Popover" })), h$1(i2.MainTreeNode)]);
   };
-} }), Ge$1 = defineComponent({ name: "PopoverButton", props: { as: { type: [Object, String], default: "button" }, disabled: { type: [Boolean], default: false }, id: { type: String, default: null } }, inheritAttrs: false, setup(d2, { attrs: P2, slots: s4, expose: h2 }) {
+} }), Ge = defineComponent({ name: "PopoverButton", props: { as: { type: [Object, String], default: "button" }, disabled: { type: [Boolean], default: false }, id: { type: String, default: null } }, inheritAttrs: false, setup(d2, { attrs: P$1, slots: s3, expose: h2 }) {
   var u2;
-  let f2 = (u2 = d2.id) != null ? u2 : `headlessui-popover-button-${I$3()}`, t2 = U("PopoverButton"), o2 = computed(() => i$8(t2.button));
+  let f$1 = (u2 = d2.id) != null ? u2 : `headlessui-popover-button-${I$1()}`, t2 = U("PopoverButton"), o2 = computed(() => i$3(t2.button));
   h2({ el: t2.button, $el: t2.button }), onMounted(() => {
-    t2.buttonId.value = f2;
+    t2.buttonId.value = f$1;
   }), onUnmounted(() => {
     t2.buttonId.value = null;
   });
-  let y2 = ae(), v2 = y2 == null ? void 0 : y2.closeOthers, m2 = ge$1(), b2 = computed(() => m2 === null ? false : m2.value === t2.panelId.value), E2 = ref(null), a2 = `headlessui-focus-sentinel-${I$3()}`;
+  let y2 = ae(), v2 = y2 == null ? void 0 : y2.closeOthers, m2 = ge$1(), b2 = computed(() => m2 === null ? false : m2.value === t2.panelId.value), E2 = ref(null), a2 = `headlessui-focus-sentinel-${I$1()}`;
   b2.value || watchEffect(() => {
-    t2.button.value = o$4(E2);
+    t2.button.value = o$2(E2);
   });
-  let S2 = s$7(computed(() => ({ as: d2.as, type: P2.type })), E2);
+  let S2 = s$4(computed(() => ({ as: d2.as, type: P$1.type })), E2);
   function c2(e2) {
     var r2, l2, g2, G, C2;
     if (b2.value) {
       if (t2.popoverState.value === 1)
         return;
       switch (e2.key) {
-        case o$3.Space:
-        case o$3.Enter:
-          e2.preventDefault(), (l2 = (r2 = e2.target).click) == null || l2.call(r2), t2.closePopover(), (g2 = o$4(t2.button)) == null || g2.focus();
+        case o$1.Space:
+        case o$1.Enter:
+          e2.preventDefault(), (l2 = (r2 = e2.target).click) == null || l2.call(r2), t2.closePopover(), (g2 = o$2(t2.button)) == null || g2.focus();
           break;
       }
     } else
       switch (e2.key) {
-        case o$3.Space:
-        case o$3.Enter:
+        case o$1.Space:
+        case o$1.Enter:
           e2.preventDefault(), e2.stopPropagation(), t2.popoverState.value === 1 && (v2 == null || v2(t2.buttonId.value)), t2.togglePopover();
           break;
-        case o$3.Escape:
+        case o$1.Escape:
           if (t2.popoverState.value !== 0)
             return v2 == null ? void 0 : v2(t2.buttonId.value);
-          if (!o$4(t2.button) || (G = o2.value) != null && G.activeElement && !((C2 = o$4(t2.button)) != null && C2.contains(o2.value.activeElement)))
+          if (!o$2(t2.button) || (G = o2.value) != null && G.activeElement && !((C2 = o$2(t2.button)) != null && C2.contains(o2.value.activeElement)))
             return;
           e2.preventDefault(), e2.stopPropagation(), t2.closePopover();
           break;
       }
   }
   function I2(e2) {
-    b2.value || e2.key === o$3.Space && e2.preventDefault();
+    b2.value || e2.key === o$1.Space && e2.preventDefault();
   }
   function F2(e2) {
     var r2, l2;
-    d2.disabled || (b2.value ? (t2.closePopover(), (r2 = o$4(t2.button)) == null || r2.focus()) : (e2.preventDefault(), e2.stopPropagation(), t2.popoverState.value === 1 && (v2 == null || v2(t2.buttonId.value)), t2.togglePopover(), (l2 = o$4(t2.button)) == null || l2.focus()));
+    d2.disabled || (b2.value ? (t2.closePopover(), (r2 = o$2(t2.button)) == null || r2.focus()) : (e2.preventDefault(), e2.stopPropagation(), t2.popoverState.value === 1 && (v2 == null || v2(t2.buttonId.value)), t2.togglePopover(), (l2 = o$2(t2.button)) == null || l2.focus()));
   }
   function w2(e2) {
     e2.preventDefault(), e2.stopPropagation();
   }
-  let i2 = n$4();
+  let i2 = n();
   function p() {
-    let e2 = o$4(t2.panel);
+    let e2 = o$2(t2.panel);
     if (!e2)
       return;
     function r2() {
-      u$6(i2.value, { [d$4.Forwards]: () => P$1(e2, N$9.First), [d$4.Backwards]: () => P$1(e2, N$9.Last) }) === T$5.Error && P$1(E$4().filter((g2) => g2.dataset.headlessuiFocusGuard !== "true"), u$6(i2.value, { [d$4.Forwards]: N$9.Next, [d$4.Backwards]: N$9.Previous }), { relativeTo: o$4(t2.button) });
+      u$4(i2.value, { [d$2.Forwards]: () => P(e2, N$6.First), [d$2.Backwards]: () => P(e2, N$6.Last) }) === T$3.Error && P(E$2().filter((g2) => g2.dataset.headlessuiFocusGuard !== "true"), u$4(i2.value, { [d$2.Forwards]: N$6.Next, [d$2.Backwards]: N$6.Previous }), { relativeTo: o$2(t2.button) });
     }
     r2();
   }
   return () => {
-    let e2 = t2.popoverState.value === 0, r2 = { open: e2 }, { ...l2 } = d2, g2 = b2.value ? { ref: E2, type: S2.value, onKeydown: c2, onClick: F2 } : { ref: E2, id: f2, type: S2.value, "aria-expanded": t2.popoverState.value === 0, "aria-controls": o$4(t2.panel) ? t2.panelId.value : void 0, disabled: d2.disabled ? true : void 0, onKeydown: c2, onKeyup: I2, onClick: F2, onMousedown: w2 };
-    return h$2(Fragment, [A$5({ ourProps: g2, theirProps: { ...P2, ...l2 }, slot: r2, attrs: P2, slots: s4, name: "PopoverButton" }), e2 && !b2.value && t2.isPortalled.value && h$2(f$1, { id: a2, features: s$6.Focusable, "data-headlessui-focus-guard": true, as: "button", type: "button", onFocus: p })]);
+    let e2 = t2.popoverState.value === 0, r2 = { open: e2 }, { ...l2 } = d2, g2 = b2.value ? { ref: E2, type: S2.value, onKeydown: c2, onClick: F2 } : { ref: E2, id: f$1, type: S2.value, "aria-expanded": t2.popoverState.value === 0, "aria-controls": o$2(t2.panel) ? t2.panelId.value : void 0, disabled: d2.disabled ? true : void 0, onKeydown: c2, onKeyup: I2, onClick: F2, onMousedown: w2 };
+    return h$1(Fragment, [A$3({ ourProps: g2, theirProps: { ...P$1, ...l2 }, slot: r2, attrs: P$1, slots: s3, name: "PopoverButton" }), e2 && !b2.value && t2.isPortalled.value && h$1(f, { id: a2, features: s$3.Focusable, "data-headlessui-focus-guard": true, as: "button", type: "button", onFocus: p })]);
   };
 } });
-defineComponent({ name: "PopoverOverlay", props: { as: { type: [Object, String], default: "div" }, static: { type: Boolean, default: false }, unmount: { type: Boolean, default: true } }, setup(d2, { attrs: P2, slots: s4 }) {
-  let h2 = U("PopoverOverlay"), f2 = `headlessui-popover-overlay-${I$3()}`, t2 = l$4(), o2 = computed(() => t2 !== null ? (t2.value & i$6.Open) === i$6.Open : h2.popoverState.value === 0);
+defineComponent({ name: "PopoverOverlay", props: { as: { type: [Object, String], default: "div" }, static: { type: Boolean, default: false }, unmount: { type: Boolean, default: true } }, setup(d2, { attrs: P2, slots: s3 }) {
+  let h2 = U("PopoverOverlay"), f2 = `headlessui-popover-overlay-${I$1()}`, t2 = l$2(), o2 = computed(() => t2 !== null ? (t2.value & i$1.Open) === i$1.Open : h2.popoverState.value === 0);
   function y2() {
     h2.closePopover();
   }
   return () => {
     let v2 = { open: h2.popoverState.value === 0 };
-    return A$5({ ourProps: { id: f2, "aria-hidden": true, onClick: y2 }, theirProps: d2, slot: v2, attrs: P2, slots: s4, features: N$8.RenderStrategy | N$8.Static, visible: o2.value, name: "PopoverOverlay" });
+    return A$3({ ourProps: { id: f2, "aria-hidden": true, onClick: y2 }, theirProps: d2, slot: v2, attrs: P2, slots: s3, features: N$5.RenderStrategy | N$5.Static, visible: o2.value, name: "PopoverOverlay" });
   };
 } });
-let je = defineComponent({ name: "PopoverPanel", props: { as: { type: [Object, String], default: "div" }, static: { type: Boolean, default: false }, unmount: { type: Boolean, default: true }, focus: { type: Boolean, default: false }, id: { type: String, default: null } }, inheritAttrs: false, setup(d2, { attrs: P2, slots: s4, expose: h2 }) {
+let je = defineComponent({ name: "PopoverPanel", props: { as: { type: [Object, String], default: "div" }, static: { type: Boolean, default: false }, unmount: { type: Boolean, default: true }, focus: { type: Boolean, default: false }, id: { type: String, default: null } }, inheritAttrs: false, setup(d2, { attrs: P$1, slots: s3, expose: h2 }) {
   var w2;
-  let f2 = (w2 = d2.id) != null ? w2 : `headlessui-popover-panel-${I$3()}`, { focus: t2 } = d2, o2 = U("PopoverPanel"), y2 = computed(() => i$8(o2.panel)), v2 = `headlessui-focus-sentinel-before-${I$3()}`, m2 = `headlessui-focus-sentinel-after-${I$3()}`;
+  let f$1 = (w2 = d2.id) != null ? w2 : `headlessui-popover-panel-${I$1()}`, { focus: t2 } = d2, o2 = U("PopoverPanel"), y2 = computed(() => i$3(o2.panel)), v2 = `headlessui-focus-sentinel-before-${I$1()}`, m2 = `headlessui-focus-sentinel-after-${I$1()}`;
   h2({ el: o2.panel, $el: o2.panel }), onMounted(() => {
-    o2.panelId.value = f2;
+    o2.panelId.value = f$1;
   }), onUnmounted(() => {
     o2.panelId.value = null;
-  }), provide(ue$1, o2.panelId), watchEffect(() => {
+  }), provide(ue, o2.panelId), watchEffect(() => {
     var p, u2;
     if (!t2 || o2.popoverState.value !== 0 || !o2.panel)
       return;
     let i2 = (p = y2.value) == null ? void 0 : p.activeElement;
-    (u2 = o$4(o2.panel)) != null && u2.contains(i2) || P$1(o$4(o2.panel), N$9.First);
+    (u2 = o$2(o2.panel)) != null && u2.contains(i2) || P(o$2(o2.panel), N$6.First);
   });
-  let b2 = l$4(), E2 = computed(() => b2 !== null ? (b2.value & i$6.Open) === i$6.Open : o2.popoverState.value === 0);
+  let b2 = l$2(), E2 = computed(() => b2 !== null ? (b2.value & i$1.Open) === i$1.Open : o2.popoverState.value === 0);
   function a2(i2) {
     var p, u2;
     switch (i2.key) {
-      case o$3.Escape:
-        if (o2.popoverState.value !== 0 || !o$4(o2.panel) || y2.value && !((p = o$4(o2.panel)) != null && p.contains(y2.value.activeElement)))
+      case o$1.Escape:
+        if (o2.popoverState.value !== 0 || !o$2(o2.panel) || y2.value && !((p = o$2(o2.panel)) != null && p.contains(y2.value.activeElement)))
           return;
-        i2.preventDefault(), i2.stopPropagation(), o2.closePopover(), (u2 = o$4(o2.button)) == null || u2.focus();
+        i2.preventDefault(), i2.stopPropagation(), o2.closePopover(), (u2 = o$2(o2.button)) == null || u2.focus();
         break;
     }
   }
   function S2(i2) {
     var u2, e2, r2, l2, g2;
     let p = i2.relatedTarget;
-    p && o$4(o2.panel) && ((u2 = o$4(o2.panel)) != null && u2.contains(p) || (o2.closePopover(), ((r2 = (e2 = o$4(o2.beforePanelSentinel)) == null ? void 0 : e2.contains) != null && r2.call(e2, p) || (g2 = (l2 = o$4(o2.afterPanelSentinel)) == null ? void 0 : l2.contains) != null && g2.call(l2, p)) && p.focus({ preventScroll: true })));
+    p && o$2(o2.panel) && ((u2 = o$2(o2.panel)) != null && u2.contains(p) || (o2.closePopover(), ((r2 = (e2 = o$2(o2.beforePanelSentinel)) == null ? void 0 : e2.contains) != null && r2.call(e2, p) || (g2 = (l2 = o$2(o2.afterPanelSentinel)) == null ? void 0 : l2.contains) != null && g2.call(l2, p)) && p.focus({ preventScroll: true })));
   }
-  let c2 = n$4();
+  let c2 = n();
   function I2() {
-    let i2 = o$4(o2.panel);
+    let i2 = o$2(o2.panel);
     if (!i2)
       return;
     function p() {
-      u$6(c2.value, { [d$4.Forwards]: () => {
+      u$4(c2.value, { [d$2.Forwards]: () => {
         var e2;
-        P$1(i2, N$9.First) === T$5.Error && ((e2 = o$4(o2.afterPanelSentinel)) == null || e2.focus());
-      }, [d$4.Backwards]: () => {
+        P(i2, N$6.First) === T$3.Error && ((e2 = o$2(o2.afterPanelSentinel)) == null || e2.focus());
+      }, [d$2.Backwards]: () => {
         var u2;
-        (u2 = o$4(o2.button)) == null || u2.focus({ preventScroll: true });
+        (u2 = o$2(o2.button)) == null || u2.focus({ preventScroll: true });
       } });
     }
     p();
   }
   function F2() {
-    let i2 = o$4(o2.panel);
+    let i2 = o$2(o2.panel);
     if (!i2)
       return;
     function p() {
-      u$6(c2.value, { [d$4.Forwards]: () => {
-        let u2 = o$4(o2.button), e2 = o$4(o2.panel);
+      u$4(c2.value, { [d$2.Forwards]: () => {
+        let u2 = o$2(o2.button), e2 = o$2(o2.panel);
         if (!u2)
           return;
-        let r2 = E$4(), l2 = r2.indexOf(u2), g2 = r2.slice(0, l2 + 1), C2 = [...r2.slice(l2 + 1), ...g2];
+        let r2 = E$2(), l2 = r2.indexOf(u2), g2 = r2.slice(0, l2 + 1), C2 = [...r2.slice(l2 + 1), ...g2];
         for (let L2 of C2.slice())
           if (L2.dataset.headlessuiFocusGuard === "true" || e2 != null && e2.contains(L2)) {
             let $2 = C2.indexOf(L2);
             $2 !== -1 && C2.splice($2, 1);
           }
-        P$1(C2, N$9.First, { sorted: false });
-      }, [d$4.Backwards]: () => {
+        P(C2, N$6.First, { sorted: false });
+      }, [d$2.Backwards]: () => {
         var e2;
-        P$1(i2, N$9.Previous) === T$5.Error && ((e2 = o$4(o2.button)) == null || e2.focus());
+        P(i2, N$6.Previous) === T$3.Error && ((e2 = o$2(o2.button)) == null || e2.focus());
       } });
     }
     p();
   }
   return () => {
-    let i2 = { open: o2.popoverState.value === 0, close: o2.close }, { focus: p, ...u2 } = d2, e2 = { ref: o2.panel, id: f2, onKeydown: a2, onFocusout: t2 && o2.popoverState.value === 0 ? S2 : void 0, tabIndex: -1 };
-    return A$5({ ourProps: e2, theirProps: { ...P2, ...u2 }, attrs: P2, slot: i2, slots: { ...s4, default: (...r2) => {
+    let i2 = { open: o2.popoverState.value === 0, close: o2.close }, { focus: p, ...u2 } = d2, e2 = { ref: o2.panel, id: f$1, onKeydown: a2, onFocusout: t2 && o2.popoverState.value === 0 ? S2 : void 0, tabIndex: -1 };
+    return A$3({ ourProps: e2, theirProps: { ...P$1, ...u2 }, attrs: P$1, slot: i2, slots: { ...s3, default: (...r2) => {
       var l2;
-      return [h$2(Fragment, [E2.value && o2.isPortalled.value && h$2(f$1, { id: v2, ref: o2.beforePanelSentinel, features: s$6.Focusable, "data-headlessui-focus-guard": true, as: "button", type: "button", onFocus: I2 }), (l2 = s4.default) == null ? void 0 : l2.call(s4, ...r2), E2.value && o2.isPortalled.value && h$2(f$1, { id: m2, ref: o2.afterPanelSentinel, features: s$6.Focusable, "data-headlessui-focus-guard": true, as: "button", type: "button", onFocus: F2 })])];
-    } }, features: N$8.RenderStrategy | N$8.Static, visible: E2.value, name: "PopoverPanel" });
+      return [h$1(Fragment, [E2.value && o2.isPortalled.value && h$1(f, { id: v2, ref: o2.beforePanelSentinel, features: s$3.Focusable, "data-headlessui-focus-guard": true, as: "button", type: "button", onFocus: I2 }), (l2 = s3.default) == null ? void 0 : l2.call(s3, ...r2), E2.value && o2.isPortalled.value && h$1(f, { id: m2, ref: o2.afterPanelSentinel, features: s$3.Focusable, "data-headlessui-focus-guard": true, as: "button", type: "button", onFocus: F2 })])];
+    } }, features: N$5.RenderStrategy | N$5.Static, visible: E2.value, name: "PopoverPanel" });
   };
 } });
-defineComponent({ name: "PopoverGroup", inheritAttrs: false, props: { as: { type: [Object, String], default: "div" } }, setup(d2, { attrs: P2, slots: s4, expose: h2 }) {
-  let f2 = ref(null), t2 = shallowRef([]), o2 = computed(() => i$8(f2)), y2 = v$1();
+defineComponent({ name: "PopoverGroup", inheritAttrs: false, props: { as: { type: [Object, String], default: "div" } }, setup(d2, { attrs: P2, slots: s3, expose: h2 }) {
+  let f2 = ref(null), t2 = shallowRef([]), o2 = computed(() => i$3(f2)), y2 = v();
   h2({ el: f2, $el: f2 });
-  function v2(a2) {
+  function v$12(a2) {
     let S2 = t2.value.indexOf(a2);
     S2 !== -1 && t2.value.splice(S2, 1);
   }
   function m2(a2) {
     return t2.value.push(a2), () => {
-      v2(a2);
+      v$12(a2);
     };
   }
   function b2() {
@@ -3373,7 +3821,7 @@ defineComponent({ name: "PopoverGroup", inheritAttrs: false, props: { as: { type
     if (!a2)
       return false;
     let S2 = a2.activeElement;
-    return (c2 = o$4(f2)) != null && c2.contains(S2) ? true : t2.value.some((I2) => {
+    return (c2 = o$2(f2)) != null && c2.contains(S2) ? true : t2.value.some((I2) => {
       var F2, w2;
       return ((F2 = a2.getElementById(I2.buttonId.value)) == null ? void 0 : F2.contains(S2)) || ((w2 = a2.getElementById(I2.panelId.value)) == null ? void 0 : w2.contains(S2));
     });
@@ -3382,7 +3830,156 @@ defineComponent({ name: "PopoverGroup", inheritAttrs: false, props: { as: { type
     for (let S2 of t2.value)
       S2.buttonId.value !== a2 && S2.close();
   }
-  return provide(le, { registerPopover: m2, unregisterPopover: v2, isFocusWithinPopoverGroup: b2, closeOthers: E2, mainTreeNodeRef: y2.mainTreeNodeRef }), () => h$2(Fragment, [A$5({ ourProps: { ref: f2 }, theirProps: { ...d2, ...P2 }, slot: {}, attrs: P2, slots: s4, name: "PopoverGroup" }), h$2(y2.MainTreeNode)]);
+  return provide(le, { registerPopover: m2, unregisterPopover: v$12, isFocusWithinPopoverGroup: b2, closeOthers: E2, mainTreeNodeRef: y2.mainTreeNodeRef }), () => h$1(Fragment, [A$3({ ourProps: { ref: f2 }, theirProps: { ...d2, ...P2 }, slot: {}, attrs: P2, slots: s3, name: "PopoverGroup" }), h$1(y2.MainTreeNode)]);
+} });
+function l(r2) {
+  let e2 = { called: false };
+  return (...t2) => {
+    if (!e2.called)
+      return e2.called = true, r2(...t2);
+  };
+}
+function m(e2, ...t2) {
+  e2 && t2.length > 0 && e2.classList.add(...t2);
+}
+function d(e2, ...t2) {
+  e2 && t2.length > 0 && e2.classList.remove(...t2);
+}
+var g$1 = ((i2) => (i2.Finished = "finished", i2.Cancelled = "cancelled", i2))(g$1 || {});
+function F(e2, t2) {
+  let i2 = o();
+  if (!e2)
+    return i2.dispose;
+  let { transitionDuration: n2, transitionDelay: a2 } = getComputedStyle(e2), [l2, s3] = [n2, a2].map((o2) => {
+    let [u2 = 0] = o2.split(",").filter(Boolean).map((r2) => r2.includes("ms") ? parseFloat(r2) : parseFloat(r2) * 1e3).sort((r2, c2) => c2 - r2);
+    return u2;
+  });
+  return l2 !== 0 ? i2.setTimeout(() => t2("finished"), l2 + s3) : t2("finished"), i2.add(() => t2("cancelled")), i2.dispose;
+}
+function L$1(e2, t2, i2, n2, a2, l$12) {
+  let s3 = o(), o$12 = l$12 !== void 0 ? l(l$12) : () => {
+  };
+  return d(e2, ...a2), m(e2, ...t2, ...i2), s3.nextFrame(() => {
+    d(e2, ...i2), m(e2, ...n2), s3.add(F(e2, (u2) => (d(e2, ...n2, ...t2), m(e2, ...a2), o$12(u2))));
+  }), s3.add(() => d(e2, ...t2, ...i2, ...n2, ...a2)), s3.add(() => o$12("cancelled")), s3.dispose;
+}
+function g(e2 = "") {
+  return e2.split(/\s+/).filter((t2) => t2.length > 1);
+}
+let R = Symbol("TransitionContext");
+var pe = ((a2) => (a2.Visible = "visible", a2.Hidden = "hidden", a2))(pe || {});
+function me() {
+  return inject(R, null) !== null;
+}
+function Te() {
+  let e2 = inject(R, null);
+  if (e2 === null)
+    throw new Error("A <TransitionChild /> is used but it is missing a parent <TransitionRoot />.");
+  return e2;
+}
+function ge() {
+  let e2 = inject(N, null);
+  if (e2 === null)
+    throw new Error("A <TransitionChild /> is used but it is missing a parent <TransitionRoot />.");
+  return e2;
+}
+let N = Symbol("NestingContext");
+function L(e2) {
+  return "children" in e2 ? L(e2.children) : e2.value.filter(({ state: t2 }) => t2 === "visible").length > 0;
+}
+function Q(e2) {
+  let t2 = ref([]), a2 = ref(false);
+  onMounted(() => a2.value = true), onUnmounted(() => a2.value = false);
+  function s3(n2, r2 = S.Hidden) {
+    let l2 = t2.value.findIndex(({ id: f2 }) => f2 === n2);
+    l2 !== -1 && (u$4(r2, { [S.Unmount]() {
+      t2.value.splice(l2, 1);
+    }, [S.Hidden]() {
+      t2.value[l2].state = "hidden";
+    } }), !L(t2) && a2.value && (e2 == null || e2()));
+  }
+  function h2(n2) {
+    let r2 = t2.value.find(({ id: l2 }) => l2 === n2);
+    return r2 ? r2.state !== "visible" && (r2.state = "visible") : t2.value.push({ id: n2, state: "visible" }), () => s3(n2, S.Unmount);
+  }
+  return { children: t2, register: h2, unregister: s3 };
+}
+let W = N$5.RenderStrategy, he = defineComponent({ props: { as: { type: [Object, String], default: "div" }, show: { type: [Boolean], default: null }, unmount: { type: [Boolean], default: true }, appear: { type: [Boolean], default: false }, enter: { type: [String], default: "" }, enterFrom: { type: [String], default: "" }, enterTo: { type: [String], default: "" }, entered: { type: [String], default: "" }, leave: { type: [String], default: "" }, leaveFrom: { type: [String], default: "" }, leaveTo: { type: [String], default: "" } }, emits: { beforeEnter: () => true, afterEnter: () => true, beforeLeave: () => true, afterLeave: () => true }, setup(e2, { emit: t2, attrs: a2, slots: s3, expose: h2 }) {
+  let n2 = ref(0);
+  function r2() {
+    n2.value |= i$1.Opening, t2("beforeEnter");
+  }
+  function l2() {
+    n2.value &= ~i$1.Opening, t2("afterEnter");
+  }
+  function f2() {
+    n2.value |= i$1.Closing, t2("beforeLeave");
+  }
+  function S$12() {
+    n2.value &= ~i$1.Closing, t2("afterLeave");
+  }
+  if (!me() && s$2())
+    return () => h$1(Se, { ...e2, onBeforeEnter: r2, onAfterEnter: l2, onBeforeLeave: f2, onAfterLeave: S$12 }, s3);
+  let d2 = ref(null), y2 = computed(() => e2.unmount ? S.Unmount : S.Hidden);
+  h2({ el: d2, $el: d2 });
+  let { show: v2, appear: A2 } = Te(), { register: D, unregister: H2 } = ge(), i2 = ref(v2.value ? "visible" : "hidden"), I2 = { value: true }, c2 = I$1(), b2 = { value: false }, P2 = Q(() => {
+    !b2.value && i2.value !== "hidden" && (i2.value = "hidden", H2(c2), S$12());
+  });
+  onMounted(() => {
+    let o2 = D(c2);
+    onUnmounted(o2);
+  }), watchEffect(() => {
+    if (y2.value === S.Hidden && c2) {
+      if (v2.value && i2.value !== "visible") {
+        i2.value = "visible";
+        return;
+      }
+      u$4(i2.value, { ["hidden"]: () => H2(c2), ["visible"]: () => D(c2) });
+    }
+  });
+  let j2 = g(e2.enter), M = g(e2.enterFrom), X = g(e2.enterTo), _2 = g(e2.entered), Y = g(e2.leave), Z = g(e2.leaveFrom), ee = g(e2.leaveTo);
+  onMounted(() => {
+    watchEffect(() => {
+      if (i2.value === "visible") {
+        let o2 = o$2(d2);
+        if (o2 instanceof Comment && o2.data === "")
+          throw new Error("Did you forget to passthrough the `ref` to the actual DOM node?");
+      }
+    });
+  });
+  function te(o2) {
+    let E2 = I2.value && !A2.value, p = o$2(d2);
+    !p || !(p instanceof HTMLElement) || E2 || (b2.value = true, v2.value && r2(), v2.value || f2(), o2(v2.value ? L$1(p, j2, M, X, _2, (V2) => {
+      b2.value = false, V2 === g$1.Finished && l2();
+    }) : L$1(p, Y, Z, ee, _2, (V2) => {
+      b2.value = false, V2 === g$1.Finished && (L(P2) || (i2.value = "hidden", H2(c2), S$12()));
+    })));
+  }
+  return onMounted(() => {
+    watch([v2], (o2, E2, p) => {
+      te(p), I2.value = false;
+    }, { immediate: true });
+  }), provide(N, P2), t$3(computed(() => u$4(i2.value, { ["visible"]: i$1.Open, ["hidden"]: i$1.Closed }) | n2.value)), () => {
+    let { appear: o2, show: E2, enter: p, enterFrom: V2, enterTo: Ce, entered: ye2, leave: be, leaveFrom: Ee, leaveTo: Ve, ...U2 } = e2, ne = { ref: d2 }, re2 = { ...U2, ...A2.value && v2.value && c$2.isServer ? { class: normalizeClass([a2.class, U2.class, ...j2, ...M]) } : {} };
+    return A$3({ theirProps: re2, ourProps: ne, slot: {}, slots: s3, attrs: a2, features: W, visible: i2.value === "visible", name: "TransitionChild" });
+  };
+} }), ce = he, Se = defineComponent({ inheritAttrs: false, props: { as: { type: [Object, String], default: "div" }, show: { type: [Boolean], default: null }, unmount: { type: [Boolean], default: true }, appear: { type: [Boolean], default: false }, enter: { type: [String], default: "" }, enterFrom: { type: [String], default: "" }, enterTo: { type: [String], default: "" }, entered: { type: [String], default: "" }, leave: { type: [String], default: "" }, leaveFrom: { type: [String], default: "" }, leaveTo: { type: [String], default: "" } }, emits: { beforeEnter: () => true, afterEnter: () => true, beforeLeave: () => true, afterLeave: () => true }, setup(e2, { emit: t2, attrs: a2, slots: s3 }) {
+  let h2 = l$2(), n2 = computed(() => e2.show === null && h2 !== null ? (h2.value & i$1.Open) === i$1.Open : e2.show);
+  watchEffect(() => {
+    if (![true, false].includes(n2.value))
+      throw new Error('A <Transition /> is used but it is missing a `:show="true | false"` prop.');
+  });
+  let r2 = ref(n2.value ? "visible" : "hidden"), l2 = Q(() => {
+    r2.value = "hidden";
+  }), f2 = ref(true), S2 = { show: n2, appear: computed(() => e2.appear || !f2.value) };
+  return onMounted(() => {
+    watchEffect(() => {
+      f2.value = false, n2.value ? r2.value = "visible" : L(l2) || (r2.value = "hidden");
+    });
+  }), provide(N, l2), provide(R, S2), () => {
+    let d2 = T$2(e2, ["show", "appear", "unmount", "onBeforeEnter", "onBeforeLeave", "onAfterEnter", "onAfterLeave"]), y2 = { unmount: e2.unmount };
+    return A$3({ ourProps: { ...y2, as: "template" }, theirProps: {}, slot: {}, slots: { ...s3, default: () => [h$1(ce, { onBeforeEnter: () => t2("beforeEnter"), onAfterEnter: () => t2("afterEnter"), onBeforeLeave: () => t2("beforeLeave"), onAfterLeave: () => t2("afterLeave"), ...a2, ...y2, ...d2 }, s3.default)] }, attrs: {}, features: W, visible: r2.value === "visible", name: "Transition" });
+  };
 } });
 function getWindow(node) {
   if (node == null) {
@@ -4703,7 +5300,7 @@ const config$7 = mergeConfig(appConfig.ui.strategy, appConfig.ui.popover, popove
 const _sfc_main$u = defineComponent({
   components: {
     HPopover: ye,
-    HPopoverButton: Ge$1,
+    HPopoverButton: Ge,
     HPopoverPanel: je
   },
   inheritAttrs: false,
@@ -4833,7 +5430,7 @@ const _sfc_main$u = defineComponent({
         return;
       emit("update:open", newValue === 0);
     });
-    l$5(() => useId("$8EMrBpmQ7G"));
+    l$3(() => useId("$dcv2Y3vSTA"));
     return {
       // eslint-disable-next-line vue/no-dupe-keys
       ui,
@@ -5004,7 +5601,7 @@ function _sfc_ssrRender$9(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
 const _sfc_setup$u = _sfc_main$u.setup;
 _sfc_main$u.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/overlays/Popover.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/@nuxt/ui/dist/runtime/components/overlays/Popover.vue");
   return _sfc_setup$u ? _sfc_setup$u(props, ctx) : void 0;
 };
 const __nuxt_component_0$6 = /* @__PURE__ */ _export_sfc(_sfc_main$u, [["ssrRender", _sfc_ssrRender$9]]);
@@ -5123,11 +5720,11 @@ function _sfc_ssrRender$8(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
 const _sfc_setup$t = _sfc_main$t.setup;
 _sfc_main$t.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Link.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/@nuxt/ui/dist/runtime/components/elements/Link.vue");
   return _sfc_setup$t ? _sfc_setup$t(props, ctx) : void 0;
 };
 const __nuxt_component_0$5 = /* @__PURE__ */ _export_sfc(_sfc_main$t, [["ssrRender", _sfc_ssrRender$8]]);
-const iconCollections = ["fluent-emoji-high-contrast", "material-symbols-light", "cryptocurrency-color", "icon-park-outline", "icon-park-twotone", "fluent-emoji-flat", "emojione-monotone", "streamline-emojis", "heroicons-outline", "simple-line-icons", "material-symbols", "flat-color-icons", "icon-park-solid", "pepicons-pencil", "heroicons-solid", "pepicons-print", "cryptocurrency", "pixelarticons", "system-uicons", "bitcoin-icons", "devicon-plain", "entypo-social", "grommet-icons", "vscode-icons", "pepicons-pop", "svg-spinners", "fluent-emoji", "simple-icons", "circle-flags", "medical-icon", "icomoon-free", "majesticons", "radix-icons", "humbleicons", "fa6-regular", "emojione-v1", "skill-icons", "academicons", "healthicons", "fluent-mdl2", "teenyicons", "ant-design", "gravity-ui", "akar-icons", "lets-icons", "streamline", "fa6-brands", "file-icons", "game-icons", "foundation", "fa-regular", "mono-icons", "iconamoon", "zondicons", "mdi-light", "eos-icons", "gridicons", "icon-park", "heroicons", "fa6-solid", "meteocons", "arcticons", "dashicons", "fa-brands", "websymbol", "fontelico", "mingcute", "flowbite", "bytesize", "guidance", "openmoji", "emojione", "nonicons", "brandico", "flagpack", "fa-solid", "fontisto", "si-glyph", "pepicons", "iconoir", "tdesign", "clarity", "octicon", "codicon", "pajamas", "formkit", "line-md", "twemoji", "noto-v1", "fxemoji", "devicon", "raphael", "flat-ui", "topcoat", "feather", "tabler", "carbon", "lucide", "memory", "mynaui", "circum", "fluent", "nimbus", "entypo", "icons8", "subway", "vaadin", "solar", "basil", "typcn", "charm", "prime", "quill", "logos", "covid", "maki", "gala", "ooui", "noto", "flag", "iwwa", "zmdi", "bpmn", "mdi", "ion", "uil", "bxs", "cil", "uiw", "uim", "uit", "uis", "jam", "oui", "bxl", "cib", "cbi", "cif", "gis", "map", "geo", "fad", "eva", "wpf", "whh", "ic", "ph", "ri", "bi", "bx", "gg", "ci", "ep", "fe", "mi", "f7", "ei", "wi", "la", "fa", "oi", "et", "el", "ls", "vs", "il", "ps"];
+const iconCollections = ["fluent-emoji-high-contrast", "material-symbols-light", "cryptocurrency-color", "icon-park-outline", "icon-park-twotone", "fluent-emoji-flat", "emojione-monotone", "streamline-emojis", "heroicons-outline", "simple-line-icons", "material-symbols", "flat-color-icons", "icon-park-solid", "pepicons-pencil", "heroicons-solid", "pepicons-print", "cryptocurrency", "pixelarticons", "system-uicons", "bitcoin-icons", "devicon-plain", "entypo-social", "grommet-icons", "vscode-icons", "pepicons-pop", "svg-spinners", "fluent-emoji", "simple-icons", "circle-flags", "medical-icon", "icomoon-free", "majesticons", "radix-icons", "humbleicons", "fa6-regular", "emojione-v1", "skill-icons", "academicons", "healthicons", "fluent-mdl2", "teenyicons", "ant-design", "gravity-ui", "akar-icons", "lets-icons", "streamline", "fa6-brands", "file-icons", "game-icons", "foundation", "fa-regular", "mono-icons", "iconamoon", "zondicons", "mdi-light", "eos-icons", "gridicons", "icon-park", "heroicons", "fa6-solid", "meteocons", "arcticons", "dashicons", "fa-brands", "websymbol", "fontelico", "mingcute", "flowbite", "bytesize", "guidance", "openmoji", "emojione", "nonicons", "brandico", "flagpack", "fa-solid", "fontisto", "si-glyph", "pepicons", "iconoir", "tdesign", "clarity", "octicon", "codicon", "pajamas", "formkit", "line-md", "twemoji", "noto-v1", "fxemoji", "devicon", "raphael", "flat-ui", "topcoat", "feather", "tabler", "carbon", "lucide", "memory", "mynaui", "circum", "fluent", "nimbus", "entypo", "icons8", "subway", "vaadin", "solar", "basil", "typcn", "charm", "prime", "quill", "logos", "covid", "maki", "gala", "mage", "ooui", "noto", "flag", "iwwa", "zmdi", "bpmn", "mdi", "ion", "uil", "bxs", "cil", "uiw", "uim", "uit", "uis", "jam", "oui", "bxl", "cib", "cbi", "cif", "gis", "map", "geo", "fad", "eva", "wpf", "whh", "ic", "ph", "ri", "bi", "bx", "gg", "ci", "ep", "fe", "mi", "f7", "ei", "wi", "la", "fa", "oi", "et", "el", "ls", "vs", "il", "ps"];
 function resolveIconName(name = "") {
   let prefix;
   let provider = "";
@@ -5246,7 +5843,7 @@ const _sfc_main$s = /* @__PURE__ */ defineComponent({
         _push(`<span${ssrRenderAttrs(mergeProps({
           class: className.value,
           style: { width: sSize.value, height: sSize.value }
-        }, _attrs))} data-v-2b540cd7></span>`);
+        }, _attrs))} data-v-bd832875></span>`);
       } else if (icon.value) {
         _push(ssrRenderComponent(unref(Icon$2), mergeProps({
           icon: icon.value,
@@ -5264,7 +5861,7 @@ const _sfc_main$s = /* @__PURE__ */ defineComponent({
         _push(`<span${ssrRenderAttrs(mergeProps({
           class: className.value,
           style: { fontSize: sSize.value, lineHeight: sSize.value, width: sSize.value, height: sSize.value }
-        }, _attrs))} data-v-2b540cd7>`);
+        }, _attrs))} data-v-bd832875>`);
         ssrRenderSlot(_ctx.$slots, "default", {}, () => {
           _push(`${ssrInterpolate(__props.name)}`);
         }, _push, _parent);
@@ -5276,10 +5873,10 @@ const _sfc_main$s = /* @__PURE__ */ defineComponent({
 const _sfc_setup$s = _sfc_main$s.setup;
 _sfc_main$s.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/.pnpm/nuxt-icon@0.6.8_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/nuxt-icon/dist/runtime/Icon.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/nuxt-icon/dist/runtime/Icon.vue");
   return _sfc_setup$s ? _sfc_setup$s(props, ctx) : void 0;
 };
-const __nuxt_component_0$4 = /* @__PURE__ */ _export_sfc(_sfc_main$s, [["__scopeId", "data-v-2b540cd7"]]);
+const __nuxt_component_0$4 = /* @__PURE__ */ _export_sfc(_sfc_main$s, [["__scopeId", "data-v-bd832875"]]);
 const Icon$1 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   default: __nuxt_component_0$4
@@ -5318,7 +5915,7 @@ function _sfc_ssrRender$7(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
 const _sfc_setup$r = _sfc_main$r.setup;
 _sfc_main$r.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Icon.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/@nuxt/ui/dist/runtime/components/elements/Icon.vue");
   return _sfc_setup$r ? _sfc_setup$r(props, ctx) : void 0;
 };
 const __nuxt_component_1$1 = /* @__PURE__ */ _export_sfc(_sfc_main$r, [["ssrRender", _sfc_ssrRender$7]]);
@@ -5447,7 +6044,7 @@ const _sfc_main$q = /* @__PURE__ */ defineComponent({
 const _sfc_setup$q = _sfc_main$q.setup;
 _sfc_main$q.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/components/header/HeaderPopoverLinks.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/@nuxt/ui-pro/components/header/HeaderPopoverLinks.vue");
   return _sfc_setup$q ? _sfc_setup$q(props, ctx) : void 0;
 };
 const _sfc_main$p = /* @__PURE__ */ defineComponent({
@@ -5642,7 +6239,7 @@ const _sfc_main$p = /* @__PURE__ */ defineComponent({
 const _sfc_setup$p = _sfc_main$p.setup;
 _sfc_main$p.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/components/header/HeaderLinks.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/@nuxt/ui-pro/components/header/HeaderLinks.vue");
   return _sfc_setup$p ? _sfc_setup$p(props, ctx) : void 0;
 };
 function useInjectButtonGroup({ ui, props }) {
@@ -5924,7 +6521,7 @@ function _sfc_ssrRender$6(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
 const _sfc_setup$o = _sfc_main$o.setup;
 _sfc_main$o.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue");
   return _sfc_setup$o ? _sfc_setup$o(props, ctx) : void 0;
 };
 const __nuxt_component_0$3 = /* @__PURE__ */ _export_sfc(_sfc_main$o, [["ssrRender", _sfc_ssrRender$6]]);
@@ -6047,7 +6644,7 @@ const _sfc_main$n = /* @__PURE__ */ defineComponent({
 const _sfc_setup$n = _sfc_main$n.setup;
 _sfc_main$n.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/components/aside/AsideLinks.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/@nuxt/ui-pro/components/aside/AsideLinks.vue");
   return _sfc_setup$n ? _sfc_setup$n(props, ctx) : void 0;
 };
 const _useUIState = () => {
@@ -6089,1019 +6686,6 @@ const _useUIState = () => {
   };
 };
 const useUIState = createSharedComposable(_useUIState);
-let t$5 = Symbol("headlessui.useid"), i$5 = 0;
-function I$1() {
-  return inject(t$5, () => `${++i$5}`)();
-}
-function l$3(e2) {
-  provide(t$5, e2);
-}
-function o$2(e2) {
-  var l2;
-  if (e2 == null || e2.value == null)
-    return null;
-  let n2 = (l2 = e2.value.$el) != null ? l2 : e2.value;
-  return n2 instanceof Node ? n2 : null;
-}
-function u$4(r2, n2, ...a2) {
-  if (r2 in n2) {
-    let e2 = n2[r2];
-    return typeof e2 == "function" ? e2(...a2) : e2;
-  }
-  let t2 = new Error(`Tried to handle "${r2}" but there is no handler defined. Only defined handlers are: ${Object.keys(n2).map((e2) => `"${e2}"`).join(", ")}.`);
-  throw Error.captureStackTrace && Error.captureStackTrace(t2, u$4), t2;
-}
-var i$4 = Object.defineProperty;
-var d$3 = (t2, e2, r2) => e2 in t2 ? i$4(t2, e2, { enumerable: true, configurable: true, writable: true, value: r2 }) : t2[e2] = r2;
-var n$3 = (t2, e2, r2) => (d$3(t2, typeof e2 != "symbol" ? e2 + "" : e2, r2), r2);
-let s$4 = class s2 {
-  constructor() {
-    n$3(this, "current", this.detect());
-    n$3(this, "currentId", 0);
-  }
-  set(e2) {
-    this.current !== e2 && (this.currentId = 0, this.current = e2);
-  }
-  reset() {
-    this.set(this.detect());
-  }
-  nextId() {
-    return ++this.currentId;
-  }
-  get isServer() {
-    return this.current === "server";
-  }
-  get isClient() {
-    return this.current === "client";
-  }
-  detect() {
-    return "server";
-  }
-};
-let c$2 = new s$4();
-function i$3(r2) {
-  if (c$2.isServer)
-    return null;
-  if (r2 instanceof Node)
-    return r2.ownerDocument;
-  if (r2 != null && r2.hasOwnProperty("value")) {
-    let n2 = o$2(r2);
-    if (n2)
-      return n2.ownerDocument;
-  }
-  return void 0;
-}
-let c$1 = ["[contentEditable=true]", "[tabindex]", "a[href]", "area[href]", "button:not([disabled])", "iframe", "input:not([disabled])", "select:not([disabled])", "textarea:not([disabled])"].map((e2) => `${e2}:not([tabindex='-1'])`).join(",");
-var N$5 = ((n2) => (n2[n2.First = 1] = "First", n2[n2.Previous = 2] = "Previous", n2[n2.Next = 4] = "Next", n2[n2.Last = 8] = "Last", n2[n2.WrapAround = 16] = "WrapAround", n2[n2.NoScroll = 32] = "NoScroll", n2))(N$5 || {}), T$2 = ((o2) => (o2[o2.Error = 0] = "Error", o2[o2.Overflow = 1] = "Overflow", o2[o2.Success = 2] = "Success", o2[o2.Underflow = 3] = "Underflow", o2))(T$2 || {}), F$1 = ((t2) => (t2[t2.Previous = -1] = "Previous", t2[t2.Next = 1] = "Next", t2))(F$1 || {});
-function E$2(e2 = (void 0).body) {
-  return e2 == null ? [] : Array.from(e2.querySelectorAll(c$1)).sort((r2, t2) => Math.sign((r2.tabIndex || Number.MAX_SAFE_INTEGER) - (t2.tabIndex || Number.MAX_SAFE_INTEGER)));
-}
-var h = ((t2) => (t2[t2.Strict = 0] = "Strict", t2[t2.Loose = 1] = "Loose", t2))(h || {});
-function w$4(e2, r2 = 0) {
-  var t2;
-  return e2 === ((t2 = i$3(e2)) == null ? void 0 : t2.body) ? false : u$4(r2, { [0]() {
-    return e2.matches(c$1);
-  }, [1]() {
-    let l2 = e2;
-    for (; l2 !== null; ) {
-      if (l2.matches(c$1))
-        return true;
-      l2 = l2.parentElement;
-    }
-    return false;
-  } });
-}
-var y$2 = ((t2) => (t2[t2.Keyboard = 0] = "Keyboard", t2[t2.Mouse = 1] = "Mouse", t2))(y$2 || {});
-function S$1(e2) {
-  e2 == null || e2.focus({ preventScroll: true });
-}
-let H$1 = ["textarea", "input"].join(",");
-function I(e2) {
-  var r2, t2;
-  return (t2 = (r2 = e2 == null ? void 0 : e2.matches) == null ? void 0 : r2.call(e2, H$1)) != null ? t2 : false;
-}
-function O(e2, r2 = (t2) => t2) {
-  return e2.slice().sort((t2, l2) => {
-    let o2 = r2(t2), i2 = r2(l2);
-    if (o2 === null || i2 === null)
-      return 0;
-    let n2 = o2.compareDocumentPosition(i2);
-    return n2 & Node.DOCUMENT_POSITION_FOLLOWING ? -1 : n2 & Node.DOCUMENT_POSITION_PRECEDING ? 1 : 0;
-  });
-}
-function P(e2, r2, { sorted: t2 = true, relativeTo: l2 = null, skipElements: o2 = [] } = {}) {
-  var m2;
-  let i2 = (m2 = Array.isArray(e2) ? e2.length > 0 ? e2[0].ownerDocument : void 0 : e2 == null ? void 0 : e2.ownerDocument) != null ? m2 : void 0, n2 = Array.isArray(e2) ? t2 ? O(e2) : e2 : E$2(e2);
-  o2.length > 0 && n2.length > 1 && (n2 = n2.filter((s4) => !o2.includes(s4))), l2 = l2 != null ? l2 : i2.activeElement;
-  let x2 = (() => {
-    if (r2 & 5)
-      return 1;
-    if (r2 & 10)
-      return -1;
-    throw new Error("Missing Focus.First, Focus.Previous, Focus.Next or Focus.Last");
-  })(), p = (() => {
-    if (r2 & 1)
-      return 0;
-    if (r2 & 2)
-      return Math.max(0, n2.indexOf(l2)) - 1;
-    if (r2 & 4)
-      return Math.max(0, n2.indexOf(l2)) + 1;
-    if (r2 & 8)
-      return n2.length - 1;
-    throw new Error("Missing Focus.First, Focus.Previous, Focus.Next or Focus.Last");
-  })(), L2 = r2 & 32 ? { preventScroll: true } : {}, a2 = 0, d2 = n2.length, u2;
-  do {
-    if (a2 >= d2 || a2 + d2 <= 0)
-      return 0;
-    let s4 = p + a2;
-    if (r2 & 16)
-      s4 = (s4 + d2) % d2;
-    else {
-      if (s4 < 0)
-        return 3;
-      if (s4 >= d2)
-        return 1;
-    }
-    u2 = n2[s4], u2 == null || u2.focus(L2), a2 += x2;
-  } while (u2 !== i2.activeElement);
-  return r2 & 6 && I(u2) && u2.select(), 2;
-}
-function t$4() {
-  return /iPhone/gi.test((void 0).navigator.platform) || /Mac/gi.test((void 0).navigator.platform) && (void 0).navigator.maxTouchPoints > 0;
-}
-function i$2() {
-  return /Android/gi.test((void 0).navigator.userAgent);
-}
-function n$2() {
-  return t$4() || i$2();
-}
-function u$3(e2, t2, n2) {
-  c$2.isServer || watchEffect((o2) => {
-    (void 0).addEventListener(e2, t2, n2), o2(() => (void 0).removeEventListener(e2, t2, n2));
-  });
-}
-function w$3(e2, n2, t2) {
-  c$2.isServer || watchEffect((o2) => {
-    (void 0).addEventListener(e2, n2, t2), o2(() => (void 0).removeEventListener(e2, n2, t2));
-  });
-}
-function w$2(f2, m2, l2 = computed(() => true)) {
-  function a2(e2, r2) {
-    if (!l2.value || e2.defaultPrevented)
-      return;
-    let t2 = r2(e2);
-    if (t2 === null || !t2.getRootNode().contains(t2))
-      return;
-    let c2 = function o2(n2) {
-      return typeof n2 == "function" ? o2(n2()) : Array.isArray(n2) || n2 instanceof Set ? n2 : [n2];
-    }(f2);
-    for (let o2 of c2) {
-      if (o2 === null)
-        continue;
-      let n2 = o2 instanceof HTMLElement ? o2 : o$2(o2);
-      if (n2 != null && n2.contains(t2) || e2.composed && e2.composedPath().includes(n2))
-        return;
-    }
-    return !w$4(t2, h.Loose) && t2.tabIndex !== -1 && e2.preventDefault(), m2(e2, t2);
-  }
-  let u2 = ref(null);
-  u$3("pointerdown", (e2) => {
-    var r2, t2;
-    l2.value && (u2.value = ((t2 = (r2 = e2.composedPath) == null ? void 0 : r2.call(e2)) == null ? void 0 : t2[0]) || e2.target);
-  }, true), u$3("mousedown", (e2) => {
-    var r2, t2;
-    l2.value && (u2.value = ((t2 = (r2 = e2.composedPath) == null ? void 0 : r2.call(e2)) == null ? void 0 : t2[0]) || e2.target);
-  }, true), u$3("click", (e2) => {
-    n$2() || u2.value && (a2(e2, () => u2.value), u2.value = null);
-  }, true), u$3("touchend", (e2) => a2(e2, () => e2.target instanceof HTMLElement ? e2.target : null), true), w$3("blur", (e2) => a2(e2, () => (void 0).document.activeElement instanceof HTMLIFrameElement ? (void 0).document.activeElement : null), true);
-}
-var N$4 = ((o2) => (o2[o2.None = 0] = "None", o2[o2.RenderStrategy = 1] = "RenderStrategy", o2[o2.Static = 2] = "Static", o2))(N$4 || {}), S = ((e2) => (e2[e2.Unmount = 0] = "Unmount", e2[e2.Hidden = 1] = "Hidden", e2))(S || {});
-function A$3({ visible: r2 = true, features: t2 = 0, ourProps: e2, theirProps: o2, ...i2 }) {
-  var a2;
-  let n2 = j(o2, e2), l2 = Object.assign(i2, { props: n2 });
-  if (r2 || t2 & 2 && n2.static)
-    return y$1(l2);
-  if (t2 & 1) {
-    let d2 = (a2 = n2.unmount) == null || a2 ? 0 : 1;
-    return u$4(d2, { [0]() {
-      return null;
-    }, [1]() {
-      return y$1({ ...i2, props: { ...n2, hidden: true, style: { display: "none" } } });
-    } });
-  }
-  return y$1(l2);
-}
-function y$1({ props: r2, attrs: t2, slots: e2, slot: o2, name: i2 }) {
-  var m2, h2;
-  let { as: n2, ...l2 } = T$1(r2, ["unmount", "static"]), a2 = (m2 = e2.default) == null ? void 0 : m2.call(e2, o2), d2 = {};
-  if (o2) {
-    let u2 = false, c2 = [];
-    for (let [p, f2] of Object.entries(o2))
-      typeof f2 == "boolean" && (u2 = true), f2 === true && c2.push(p);
-    u2 && (d2["data-headlessui-state"] = c2.join(" "));
-  }
-  if (n2 === "template") {
-    if (a2 = b(a2 != null ? a2 : []), Object.keys(l2).length > 0 || Object.keys(t2).length > 0) {
-      let [u2, ...c2] = a2 != null ? a2 : [];
-      if (!v(u2) || c2.length > 0)
-        throw new Error(['Passing props on "template"!', "", `The current component <${i2} /> is rendering a "template".`, "However we need to passthrough the following props:", Object.keys(l2).concat(Object.keys(t2)).map((s4) => s4.trim()).filter((s4, g2, R2) => R2.indexOf(s4) === g2).sort((s4, g2) => s4.localeCompare(g2)).map((s4) => `  - ${s4}`).join(`
-`), "", "You can apply a few solutions:", ['Add an `as="..."` prop, to ensure that we render an actual element instead of a "template".', "Render a single element as the child so that we can forward the props onto that element."].map((s4) => `  - ${s4}`).join(`
-`)].join(`
-`));
-      let p = j((h2 = u2.props) != null ? h2 : {}, l2, d2), f2 = cloneVNode(u2, p, true);
-      for (let s4 in p)
-        s4.startsWith("on") && (f2.props || (f2.props = {}), f2.props[s4] = p[s4]);
-      return f2;
-    }
-    return Array.isArray(a2) && a2.length === 1 ? a2[0] : a2;
-  }
-  return h$2(n2, Object.assign({}, l2, d2), { default: () => a2 });
-}
-function b(r2) {
-  return r2.flatMap((t2) => t2.type === Fragment ? b(t2.children) : [t2]);
-}
-function j(...r2) {
-  if (r2.length === 0)
-    return {};
-  if (r2.length === 1)
-    return r2[0];
-  let t2 = {}, e2 = {};
-  for (let i2 of r2)
-    for (let n2 in i2)
-      n2.startsWith("on") && typeof i2[n2] == "function" ? (e2[n2] != null || (e2[n2] = []), e2[n2].push(i2[n2])) : t2[n2] = i2[n2];
-  if (t2.disabled || t2["aria-disabled"])
-    return Object.assign(t2, Object.fromEntries(Object.keys(e2).map((i2) => [i2, void 0])));
-  for (let i2 in e2)
-    Object.assign(t2, { [i2](n2, ...l2) {
-      let a2 = e2[i2];
-      for (let d2 of a2) {
-        if (n2 instanceof Event && n2.defaultPrevented)
-          return;
-        d2(n2, ...l2);
-      }
-    } });
-  return t2;
-}
-function T$1(r2, t2 = []) {
-  let e2 = Object.assign({}, r2);
-  for (let o2 of t2)
-    o2 in e2 && delete e2[o2];
-  return e2;
-}
-function v(r2) {
-  return r2 == null ? false : typeof r2.type == "string" || typeof r2.type == "object" || typeof r2.type == "function";
-}
-var s$3 = ((e2) => (e2[e2.None = 1] = "None", e2[e2.Focusable = 2] = "Focusable", e2[e2.Hidden = 4] = "Hidden", e2))(s$3 || {});
-let f = defineComponent({ name: "Hidden", props: { as: { type: [Object, String], default: "div" }, features: { type: Number, default: 1 } }, setup(d2, { slots: o2, attrs: i2 }) {
-  return () => {
-    var t2;
-    let { features: e2, ...r2 } = d2, n2 = { "aria-hidden": (e2 & 2) === 2 ? true : (t2 = r2["aria-hidden"]) != null ? t2 : void 0, style: { position: "fixed", top: 1, left: 1, width: 1, height: 0, padding: 0, margin: -1, overflow: "hidden", clip: "rect(0, 0, 0, 0)", whiteSpace: "nowrap", borderWidth: "0", ...(e2 & 4) === 4 && (e2 & 2) !== 2 && { display: "none" } } };
-    return A$3({ ourProps: n2, theirProps: r2, slot: {}, attrs: i2, slots: o2, name: "Hidden" });
-  };
-} });
-let n$1 = Symbol("Context");
-var i$1 = ((e2) => (e2[e2.Open = 1] = "Open", e2[e2.Closed = 2] = "Closed", e2[e2.Closing = 4] = "Closing", e2[e2.Opening = 8] = "Opening", e2))(i$1 || {});
-function s$2() {
-  return l$2() !== null;
-}
-function l$2() {
-  return inject(n$1, null);
-}
-function t$3(o2) {
-  provide(n$1, o2);
-}
-var o$1 = ((r2) => (r2.Space = " ", r2.Enter = "Enter", r2.Escape = "Escape", r2.Backspace = "Backspace", r2.Delete = "Delete", r2.ArrowLeft = "ArrowLeft", r2.ArrowUp = "ArrowUp", r2.ArrowRight = "ArrowRight", r2.ArrowDown = "ArrowDown", r2.Home = "Home", r2.End = "End", r2.PageUp = "PageUp", r2.PageDown = "PageDown", r2.Tab = "Tab", r2))(o$1 || {});
-let t$2 = [];
-function t$1(e2) {
-  typeof queueMicrotask == "function" ? queueMicrotask(e2) : Promise.resolve().then(e2).catch((o2) => setTimeout(() => {
-    throw o2;
-  }));
-}
-function o() {
-  let a2 = [], s4 = { addEventListener(e2, t2, r2, i2) {
-    return e2.addEventListener(t2, r2, i2), s4.add(() => e2.removeEventListener(t2, r2, i2));
-  }, requestAnimationFrame(...e2) {
-    let t2 = requestAnimationFrame(...e2);
-    s4.add(() => cancelAnimationFrame(t2));
-  }, nextFrame(...e2) {
-    s4.requestAnimationFrame(() => {
-      s4.requestAnimationFrame(...e2);
-    });
-  }, setTimeout(...e2) {
-    let t2 = setTimeout(...e2);
-    s4.add(() => clearTimeout(t2));
-  }, microTask(...e2) {
-    let t2 = { current: true };
-    return t$1(() => {
-      t2.current && e2[0]();
-    }), s4.add(() => {
-      t2.current = false;
-    });
-  }, style(e2, t2, r2) {
-    let i2 = e2.style.getPropertyValue(t2);
-    return Object.assign(e2.style, { [t2]: r2 }), this.add(() => {
-      Object.assign(e2.style, { [t2]: i2 });
-    });
-  }, group(e2) {
-    let t2 = o();
-    return e2(t2), this.add(() => t2.dispose());
-  }, add(e2) {
-    return a2.push(e2), () => {
-      let t2 = a2.indexOf(e2);
-      if (t2 >= 0)
-        for (let r2 of a2.splice(t2, 1))
-          r2();
-    };
-  }, dispose() {
-    for (let e2 of a2.splice(0))
-      e2();
-  } };
-  return s4;
-}
-function E$1(n2, e2, o2, r2) {
-  c$2.isServer || watchEffect((t2) => {
-    n2 = n2 != null ? n2 : void 0, n2.addEventListener(e2, o2, r2), t2(() => n2.removeEventListener(e2, o2, r2));
-  });
-}
-var d$2 = ((r2) => (r2[r2.Forwards = 0] = "Forwards", r2[r2.Backwards = 1] = "Backwards", r2))(d$2 || {});
-function n() {
-  let o2 = ref(0);
-  return w$3("keydown", (e2) => {
-    e2.key === "Tab" && (o2.value = e2.shiftKey ? 1 : 0);
-  }), o2;
-}
-function B(t2) {
-  if (!t2)
-    return /* @__PURE__ */ new Set();
-  if (typeof t2 == "function")
-    return new Set(t2());
-  let n2 = /* @__PURE__ */ new Set();
-  for (let r2 of t2.value) {
-    let l2 = o$2(r2);
-    l2 instanceof HTMLElement && n2.add(l2);
-  }
-  return n2;
-}
-var A$2 = ((e2) => (e2[e2.None = 1] = "None", e2[e2.InitialFocus = 2] = "InitialFocus", e2[e2.TabLock = 4] = "TabLock", e2[e2.FocusLock = 8] = "FocusLock", e2[e2.RestoreFocus = 16] = "RestoreFocus", e2[e2.All = 30] = "All", e2))(A$2 || {});
-let ue = Object.assign(defineComponent({ name: "FocusTrap", props: { as: { type: [Object, String], default: "div" }, initialFocus: { type: Object, default: null }, features: { type: Number, default: 30 }, containers: { type: [Object, Function], default: ref(/* @__PURE__ */ new Set()) } }, inheritAttrs: false, setup(t2, { attrs: n$12, slots: r2, expose: l2 }) {
-  let o2 = ref(null);
-  l2({ el: o2, $el: o2 });
-  let i2 = computed(() => i$3(o2)), e2 = ref(false);
-  onMounted(() => e2.value = true), onUnmounted(() => e2.value = false), $({ ownerDocument: i2 }, computed(() => e2.value && Boolean(t2.features & 16)));
-  let m2 = z({ ownerDocument: i2, container: o2, initialFocus: computed(() => t2.initialFocus) }, computed(() => e2.value && Boolean(t2.features & 2)));
-  J({ ownerDocument: i2, container: o2, containers: t2.containers, previousActiveElement: m2 }, computed(() => e2.value && Boolean(t2.features & 8)));
-  let f$12 = n();
-  function a2(u2) {
-    let T2 = o$2(o2);
-    if (!T2)
-      return;
-    ((w2) => w2())(() => {
-      u$4(f$12.value, { [d$2.Forwards]: () => {
-        P(T2, N$5.First, { skipElements: [u2.relatedTarget] });
-      }, [d$2.Backwards]: () => {
-        P(T2, N$5.Last, { skipElements: [u2.relatedTarget] });
-      } });
-    });
-  }
-  let s4 = ref(false);
-  function F2(u2) {
-    u2.key === "Tab" && (s4.value = true, requestAnimationFrame(() => {
-      s4.value = false;
-    }));
-  }
-  function H2(u2) {
-    if (!e2.value)
-      return;
-    let T2 = B(t2.containers);
-    o$2(o2) instanceof HTMLElement && T2.add(o$2(o2));
-    let d2 = u2.relatedTarget;
-    d2 instanceof HTMLElement && d2.dataset.headlessuiFocusGuard !== "true" && (N$3(T2, d2) || (s4.value ? P(o$2(o2), u$4(f$12.value, { [d$2.Forwards]: () => N$5.Next, [d$2.Backwards]: () => N$5.Previous }) | N$5.WrapAround, { relativeTo: u2.target }) : u2.target instanceof HTMLElement && S$1(u2.target)));
-  }
-  return () => {
-    let u2 = {}, T2 = { ref: o2, onKeydown: F2, onFocusout: H2 }, { features: d2, initialFocus: w2, containers: Q2, ...O2 } = t2;
-    return h$2(Fragment, [Boolean(d2 & 4) && h$2(f, { as: "button", type: "button", "data-headlessui-focus-guard": true, onFocus: a2, features: s$3.Focusable }), A$3({ ourProps: T2, theirProps: { ...n$12, ...O2 }, slot: u2, attrs: n$12, slots: r2, name: "FocusTrap" }), Boolean(d2 & 4) && h$2(f, { as: "button", type: "button", "data-headlessui-focus-guard": true, onFocus: a2, features: s$3.Focusable })]);
-  };
-} }), { features: A$2 });
-function W$1(t2) {
-  let n2 = ref(t$2.slice());
-  return watch([t2], ([r2], [l2]) => {
-    l2 === true && r2 === false ? t$1(() => {
-      n2.value.splice(0);
-    }) : l2 === false && r2 === true && (n2.value = t$2.slice());
-  }, { flush: "post" }), () => {
-    var r2;
-    return (r2 = n2.value.find((l2) => l2 != null && l2.isConnected)) != null ? r2 : null;
-  };
-}
-function $({ ownerDocument: t2 }, n2) {
-  let r2 = W$1(n2);
-  onMounted(() => {
-    watchEffect(() => {
-      var l2, o2;
-      n2.value || ((l2 = t2.value) == null ? void 0 : l2.activeElement) === ((o2 = t2.value) == null ? void 0 : o2.body) && S$1(r2());
-    }, { flush: "post" });
-  }), onUnmounted(() => {
-    n2.value && S$1(r2());
-  });
-}
-function z({ ownerDocument: t2, container: n2, initialFocus: r2 }, l2) {
-  let o2 = ref(null), i2 = ref(false);
-  return onMounted(() => i2.value = true), onUnmounted(() => i2.value = false), onMounted(() => {
-    watch([n2, r2, l2], (e2, m2) => {
-      if (e2.every((a2, s4) => (m2 == null ? void 0 : m2[s4]) === a2) || !l2.value)
-        return;
-      let f2 = o$2(n2);
-      f2 && t$1(() => {
-        var F2, H2;
-        if (!i2.value)
-          return;
-        let a2 = o$2(r2), s4 = (F2 = t2.value) == null ? void 0 : F2.activeElement;
-        if (a2) {
-          if (a2 === s4) {
-            o2.value = s4;
-            return;
-          }
-        } else if (f2.contains(s4)) {
-          o2.value = s4;
-          return;
-        }
-        a2 ? S$1(a2) : P(f2, N$5.First | N$5.NoScroll) === T$2.Error && console.warn("There are no focusable elements inside the <FocusTrap />"), o2.value = (H2 = t2.value) == null ? void 0 : H2.activeElement;
-      });
-    }, { immediate: true, flush: "post" });
-  }), o2;
-}
-function J({ ownerDocument: t2, container: n2, containers: r2, previousActiveElement: l2 }, o2) {
-  var i2;
-  E$1((i2 = t2.value) == null ? void 0 : i2.defaultView, "focus", (e2) => {
-    if (!o2.value)
-      return;
-    let m2 = B(r2);
-    o$2(n2) instanceof HTMLElement && m2.add(o$2(n2));
-    let f2 = l2.value;
-    if (!f2)
-      return;
-    let a2 = e2.target;
-    a2 && a2 instanceof HTMLElement ? N$3(m2, a2) ? (l2.value = a2, S$1(a2)) : (e2.preventDefault(), e2.stopPropagation(), S$1(f2)) : S$1(l2.value);
-  }, true);
-}
-function N$3(t2, n2) {
-  for (let r2 of t2)
-    if (r2.contains(n2))
-      return true;
-  return false;
-}
-function m$3(t2) {
-  let e2 = shallowRef(t2.getSnapshot());
-  return onUnmounted(t2.subscribe(() => {
-    e2.value = t2.getSnapshot();
-  })), e2;
-}
-function a$1(o2, r2) {
-  let t2 = o2(), n2 = /* @__PURE__ */ new Set();
-  return { getSnapshot() {
-    return t2;
-  }, subscribe(e2) {
-    return n2.add(e2), () => n2.delete(e2);
-  }, dispatch(e2, ...s4) {
-    let i2 = r2[e2].call(t2, ...s4);
-    i2 && (t2 = i2, n2.forEach((c2) => c2()));
-  } };
-}
-function c() {
-  let o2;
-  return { before({ doc: e2 }) {
-    var l2;
-    let n2 = e2.documentElement;
-    o2 = ((l2 = e2.defaultView) != null ? l2 : void 0).innerWidth - n2.clientWidth;
-  }, after({ doc: e2, d: n2 }) {
-    let t2 = e2.documentElement, l2 = t2.clientWidth - t2.offsetWidth, r2 = o2 - l2;
-    n2.style(t2, "paddingRight", `${r2}px`);
-  } };
-}
-function w$1() {
-  return t$4() ? { before({ doc: r2, d: n2, meta: c2 }) {
-    function o$12(a2) {
-      return c2.containers.flatMap((l2) => l2()).some((l2) => l2.contains(a2));
-    }
-    n2.microTask(() => {
-      var s4;
-      if ((void 0).getComputedStyle(r2.documentElement).scrollBehavior !== "auto") {
-        let t2 = o();
-        t2.style(r2.documentElement, "scrollBehavior", "auto"), n2.add(() => n2.microTask(() => t2.dispose()));
-      }
-      let a2 = (s4 = (void 0).scrollY) != null ? s4 : (void 0).pageYOffset, l2 = null;
-      n2.addEventListener(r2, "click", (t2) => {
-        if (t2.target instanceof HTMLElement)
-          try {
-            let e2 = t2.target.closest("a");
-            if (!e2)
-              return;
-            let { hash: f2 } = new URL(e2.href), i2 = r2.querySelector(f2);
-            i2 && !o$12(i2) && (l2 = i2);
-          } catch {
-          }
-      }, true), n2.addEventListener(r2, "touchstart", (t2) => {
-        if (t2.target instanceof HTMLElement)
-          if (o$12(t2.target)) {
-            let e2 = t2.target;
-            for (; e2.parentElement && o$12(e2.parentElement); )
-              e2 = e2.parentElement;
-            n2.style(e2, "overscrollBehavior", "contain");
-          } else
-            n2.style(t2.target, "touchAction", "none");
-      }), n2.addEventListener(r2, "touchmove", (t2) => {
-        if (t2.target instanceof HTMLElement)
-          if (o$12(t2.target)) {
-            let e2 = t2.target;
-            for (; e2.parentElement && e2.dataset.headlessuiPortal !== "" && !(e2.scrollHeight > e2.clientHeight || e2.scrollWidth > e2.clientWidth); )
-              e2 = e2.parentElement;
-            e2.dataset.headlessuiPortal === "" && t2.preventDefault();
-          } else
-            t2.preventDefault();
-      }, { passive: false }), n2.add(() => {
-        var e2;
-        let t2 = (e2 = (void 0).scrollY) != null ? e2 : (void 0).pageYOffset;
-        a2 !== t2 && (void 0).scrollTo(0, a2), l2 && l2.isConnected && (l2.scrollIntoView({ block: "nearest" }), l2 = null);
-      });
-    });
-  } } : {};
-}
-function l$1() {
-  return { before({ doc: e2, d: o2 }) {
-    o2.style(e2.documentElement, "overflow", "hidden");
-  } };
-}
-function m$2(e2) {
-  let n2 = {};
-  for (let t2 of e2)
-    Object.assign(n2, t2(n2));
-  return n2;
-}
-let a = a$1(() => /* @__PURE__ */ new Map(), { PUSH(e2, n2) {
-  var o$12;
-  let t2 = (o$12 = this.get(e2)) != null ? o$12 : { doc: e2, count: 0, d: o(), meta: /* @__PURE__ */ new Set() };
-  return t2.count++, t2.meta.add(n2), this.set(e2, t2), this;
-}, POP(e2, n2) {
-  let t2 = this.get(e2);
-  return t2 && (t2.count--, t2.meta.delete(n2)), this;
-}, SCROLL_PREVENT({ doc: e2, d: n2, meta: t2 }) {
-  let o2 = { doc: e2, d: n2, meta: m$2(t2) }, c$12 = [w$1(), c(), l$1()];
-  c$12.forEach(({ before: r2 }) => r2 == null ? void 0 : r2(o2)), c$12.forEach(({ after: r2 }) => r2 == null ? void 0 : r2(o2));
-}, SCROLL_ALLOW({ d: e2 }) {
-  e2.dispose();
-}, TEARDOWN({ doc: e2 }) {
-  this.delete(e2);
-} });
-a.subscribe(() => {
-  let e2 = a.getSnapshot(), n2 = /* @__PURE__ */ new Map();
-  for (let [t2] of e2)
-    n2.set(t2, t2.documentElement.style.overflow);
-  for (let t2 of e2.values()) {
-    let o2 = n2.get(t2.doc) === "hidden", c2 = t2.count !== 0;
-    (c2 && !o2 || !c2 && o2) && a.dispatch(t2.count > 0 ? "SCROLL_PREVENT" : "SCROLL_ALLOW", t2), t2.count === 0 && a.dispatch("TEARDOWN", t2);
-  }
-});
-function d$1(t2, a$12, n2) {
-  let i2 = m$3(a), l2 = computed(() => {
-    let e2 = t2.value ? i2.value.get(t2.value) : void 0;
-    return e2 ? e2.count > 0 : false;
-  });
-  return watch([t2, a$12], ([e2, m2], [r2], o2) => {
-    if (!e2 || !m2)
-      return;
-    a.dispatch("PUSH", e2, n2);
-    let f2 = false;
-    o2(() => {
-      f2 || (a.dispatch("POP", r2 != null ? r2 : e2, n2), f2 = true);
-    });
-  }, { immediate: true }), l2;
-}
-let i = /* @__PURE__ */ new Map(), t = /* @__PURE__ */ new Map();
-function E(d2, f2 = ref(true)) {
-  watchEffect((o2) => {
-    var a2;
-    if (!f2.value)
-      return;
-    let e2 = o$2(d2);
-    if (!e2)
-      return;
-    o2(function() {
-      var u2;
-      if (!e2)
-        return;
-      let r2 = (u2 = t.get(e2)) != null ? u2 : 1;
-      if (r2 === 1 ? t.delete(e2) : t.set(e2, r2 - 1), r2 !== 1)
-        return;
-      let n2 = i.get(e2);
-      n2 && (n2["aria-hidden"] === null ? e2.removeAttribute("aria-hidden") : e2.setAttribute("aria-hidden", n2["aria-hidden"]), e2.inert = n2.inert, i.delete(e2));
-    });
-    let l2 = (a2 = t.get(e2)) != null ? a2 : 0;
-    t.set(e2, l2 + 1), l2 === 0 && (i.set(e2, { "aria-hidden": e2.getAttribute("aria-hidden"), inert: e2.inert }), e2.setAttribute("aria-hidden", "true"), e2.inert = true);
-  });
-}
-function N$2({ defaultContainers: o2 = [], portals: i2, mainTreeNodeRef: H2 } = {}) {
-  let t2 = ref(null), r2 = i$3(t2);
-  function u2() {
-    var l2, f2, a2;
-    let n2 = [];
-    for (let e2 of o2)
-      e2 !== null && (e2 instanceof HTMLElement ? n2.push(e2) : "value" in e2 && e2.value instanceof HTMLElement && n2.push(e2.value));
-    if (i2 != null && i2.value)
-      for (let e2 of i2.value)
-        n2.push(e2);
-    for (let e2 of (l2 = r2 == null ? void 0 : r2.querySelectorAll("html > *, body > *")) != null ? l2 : [])
-      e2 !== (void 0).body && e2 !== (void 0).head && e2 instanceof HTMLElement && e2.id !== "headlessui-portal-root" && (e2.contains(o$2(t2)) || e2.contains((a2 = (f2 = o$2(t2)) == null ? void 0 : f2.getRootNode()) == null ? void 0 : a2.host) || n2.some((M) => e2.contains(M)) || n2.push(e2));
-    return n2;
-  }
-  return { resolveContainers: u2, contains(n2) {
-    return u2().some((l2) => l2.contains(n2));
-  }, mainTreeNodeRef: t2, MainTreeNode() {
-    return H2 != null ? null : h$2(f, { features: s$3.Hidden, ref: t2 });
-  } };
-}
-let e = Symbol("ForcePortalRootContext");
-function s$1() {
-  return inject(e, false);
-}
-let u$2 = defineComponent({ name: "ForcePortalRoot", props: { as: { type: [Object, String], default: "template" }, force: { type: Boolean, default: false } }, setup(o2, { slots: t2, attrs: r2 }) {
-  return provide(e, o2.force), () => {
-    let { force: f2, ...n2 } = o2;
-    return A$3({ theirProps: n2, ourProps: {}, slot: {}, slots: t2, attrs: r2, name: "ForcePortalRoot" });
-  };
-} });
-let u$1 = Symbol("StackContext");
-var s3 = ((e2) => (e2[e2.Add = 0] = "Add", e2[e2.Remove = 1] = "Remove", e2))(s3 || {});
-function y() {
-  return inject(u$1, () => {
-  });
-}
-function R$1({ type: o2, enabled: r2, element: e2, onUpdate: i2 }) {
-  let a2 = y();
-  function t2(...n2) {
-    i2 == null || i2(...n2), a2(...n2);
-  }
-  onMounted(() => {
-    watch(r2, (n2, d2) => {
-      n2 ? t2(0, o2, e2) : d2 === true && t2(1, o2, e2);
-    }, { immediate: true, flush: "sync" });
-  }), onUnmounted(() => {
-    r2.value && t2(1, o2, e2);
-  }), provide(u$1, t2);
-}
-let u = Symbol("DescriptionContext");
-function w() {
-  let t2 = inject(u, null);
-  if (t2 === null)
-    throw new Error("Missing parent");
-  return t2;
-}
-function k({ slot: t2 = ref({}), name: o2 = "Description", props: s4 = {} } = {}) {
-  let e2 = ref([]);
-  function r2(n2) {
-    return e2.value.push(n2), () => {
-      let i2 = e2.value.indexOf(n2);
-      i2 !== -1 && e2.value.splice(i2, 1);
-    };
-  }
-  return provide(u, { register: r2, slot: t2, name: o2, props: s4 }), computed(() => e2.value.length > 0 ? e2.value.join(" ") : void 0);
-}
-defineComponent({ name: "Description", props: { as: { type: [Object, String], default: "p" }, id: { type: String, default: null } }, setup(t2, { attrs: o2, slots: s4 }) {
-  var n2;
-  let e2 = (n2 = t2.id) != null ? n2 : `headlessui-description-${I$1()}`, r2 = w();
-  return onMounted(() => onUnmounted(r2.register(e2))), () => {
-    let { name: i2 = "Description", slot: l2 = ref({}), props: d2 = {} } = r2, { ...c2 } = t2, f2 = { ...Object.entries(d2).reduce((a2, [g2, m2]) => Object.assign(a2, { [g2]: unref(m2) }), {}), id: e2 };
-    return A$3({ ourProps: f2, theirProps: c2, slot: l2.value, attrs: o2, slots: s4, name: i2 });
-  };
-} });
-function x(r2) {
-  let e2 = i$3(r2);
-  if (!e2) {
-    if (r2 === null)
-      return null;
-    throw new Error(`[Headless UI]: Cannot find ownerDocument for contextElement: ${r2}`);
-  }
-  let u2 = e2.getElementById("headlessui-portal-root");
-  if (u2)
-    return u2;
-  let t2 = e2.createElement("div");
-  return t2.setAttribute("id", "headlessui-portal-root"), e2.body.appendChild(t2);
-}
-let _ = defineComponent({ name: "Portal", props: { as: { type: [Object, String], default: "div" } }, setup(r2, { slots: e2, attrs: u2 }) {
-  let t2 = ref(null), i2 = computed(() => i$3(t2)), l2 = s$1(), n2 = inject(C, null), o2 = ref(l2 === true || n2 == null ? x(t2.value) : n2.resolveTarget()), d2 = ref(false);
-  onMounted(() => {
-    d2.value = true;
-  }), watchEffect(() => {
-    l2 || n2 != null && (o2.value = n2.resolveTarget());
-  });
-  let c2 = inject(m$1, null), v2 = false, H2 = getCurrentInstance();
-  return watch(t2, () => {
-    if (v2 || !c2)
-      return;
-    let a2 = o$2(t2);
-    a2 && (onUnmounted(c2.register(a2), H2), v2 = true);
-  }), onUnmounted(() => {
-    var g2, P2;
-    let a2 = (g2 = i2.value) == null ? void 0 : g2.getElementById("headlessui-portal-root");
-    a2 && o2.value === a2 && o2.value.children.length <= 0 && ((P2 = o2.value.parentElement) == null || P2.removeChild(o2.value));
-  }), () => {
-    if (!d2.value || o2.value === null)
-      return null;
-    let a2 = { ref: t2, "data-headlessui-portal": "" };
-    return h$2(Teleport, { to: o2.value }, A$3({ ourProps: a2, theirProps: r2, slot: {}, attrs: u2, slots: e2, name: "Portal" }));
-  };
-} }), m$1 = Symbol("PortalParentContext");
-function A$1() {
-  let r2 = inject(m$1, null), e2 = ref([]);
-  function u2(l2) {
-    return e2.value.push(l2), r2 && r2.register(l2), () => t2(l2);
-  }
-  function t2(l2) {
-    let n2 = e2.value.indexOf(l2);
-    n2 !== -1 && e2.value.splice(n2, 1), r2 && r2.unregister(l2);
-  }
-  let i2 = { register: u2, unregister: t2, portals: e2 };
-  return [e2, defineComponent({ name: "PortalWrapper", setup(l2, { slots: n2 }) {
-    return provide(m$1, i2), () => {
-      var o2;
-      return (o2 = n2.default) == null ? void 0 : o2.call(n2);
-    };
-  } })];
-}
-let C = Symbol("PortalGroupContext"), N$1 = defineComponent({ name: "PortalGroup", props: { as: { type: [Object, String], default: "template" }, target: { type: Object, default: null } }, setup(r2, { attrs: e2, slots: u2 }) {
-  let t2 = reactive({ resolveTarget() {
-    return r2.target;
-  } });
-  return provide(C, t2), () => {
-    let { target: i2, ...l2 } = r2;
-    return A$3({ theirProps: l2, ourProps: {}, slot: {}, attrs: e2, slots: u2, name: "PortalGroup" });
-  };
-} });
-var Te$1 = ((l2) => (l2[l2.Open = 0] = "Open", l2[l2.Closed = 1] = "Closed", l2))(Te$1 || {});
-let H = Symbol("DialogContext");
-function T(e2) {
-  let i2 = inject(H, null);
-  if (i2 === null) {
-    let l2 = new Error(`<${e2} /> is missing a parent <Dialog /> component.`);
-    throw Error.captureStackTrace && Error.captureStackTrace(l2, T), l2;
-  }
-  return i2;
-}
-let A = "DC8F892D-2EBD-447C-A4C8-A03058436FF4", We = defineComponent({ name: "Dialog", inheritAttrs: false, props: { as: { type: [Object, String], default: "div" }, static: { type: Boolean, default: false }, unmount: { type: Boolean, default: true }, open: { type: [Boolean, String], default: A }, initialFocus: { type: Object, default: null }, id: { type: String, default: null }, role: { type: String, default: "dialog" } }, emits: { close: (e2) => true }, setup(e2, { emit: i2, attrs: l2, slots: d2, expose: s$12 }) {
-  var _$1, q;
-  let n2 = (_$1 = e2.id) != null ? _$1 : `headlessui-dialog-${I$1()}`, u2 = ref(false);
-  onMounted(() => {
-    u2.value = true;
-  });
-  let r2 = false, g2 = computed(() => e2.role === "dialog" || e2.role === "alertdialog" ? e2.role : (r2 || (r2 = true, console.warn(`Invalid role [${g2}] passed to <Dialog />. Only \`dialog\` and and \`alertdialog\` are supported. Using \`dialog\` instead.`)), "dialog")), D = ref(0), S2 = l$2(), R2 = computed(() => e2.open === A && S2 !== null ? (S2.value & i$1.Open) === i$1.Open : e2.open), m2 = ref(null), E$22 = computed(() => i$3(m2));
-  if (s$12({ el: m2, $el: m2 }), !(e2.open !== A || S2 !== null))
-    throw new Error("You forgot to provide an `open` prop to the `Dialog`.");
-  if (typeof R2.value != "boolean")
-    throw new Error(`You provided an \`open\` prop to the \`Dialog\`, but the value is not a boolean. Received: ${R2.value === A ? void 0 : e2.open}`);
-  let c2 = computed(() => u2.value && R2.value ? 0 : 1), k$12 = computed(() => c2.value === 0), w2 = computed(() => D.value > 1), N2 = inject(H, null) !== null, [Q2, X] = A$1(), { resolveContainers: B2, mainTreeNodeRef: K, MainTreeNode: Z } = N$2({ portals: Q2, defaultContainers: [computed(() => {
-    var t2;
-    return (t2 = h2.panelRef.value) != null ? t2 : m2.value;
-  })] }), ee = computed(() => w2.value ? "parent" : "leaf"), U2 = computed(() => S2 !== null ? (S2.value & i$1.Closing) === i$1.Closing : false), te = computed(() => N2 || U2.value ? false : k$12.value), le2 = computed(() => {
-    var t2, a2, p;
-    return (p = Array.from((a2 = (t2 = E$22.value) == null ? void 0 : t2.querySelectorAll("body > *")) != null ? a2 : []).find((f2) => f2.id === "headlessui-portal-root" ? false : f2.contains(o$2(K)) && f2 instanceof HTMLElement)) != null ? p : null;
-  });
-  E(le2, te);
-  let ae2 = computed(() => w2.value ? true : k$12.value), oe = computed(() => {
-    var t2, a2, p;
-    return (p = Array.from((a2 = (t2 = E$22.value) == null ? void 0 : t2.querySelectorAll("[data-headlessui-portal]")) != null ? a2 : []).find((f2) => f2.contains(o$2(K)) && f2 instanceof HTMLElement)) != null ? p : null;
-  });
-  E(oe, ae2), R$1({ type: "Dialog", enabled: computed(() => c2.value === 0), element: m2, onUpdate: (t2, a2) => {
-    if (a2 === "Dialog")
-      return u$4(t2, { [s3.Add]: () => D.value += 1, [s3.Remove]: () => D.value -= 1 });
-  } });
-  let re2 = k({ name: "DialogDescription", slot: computed(() => ({ open: R2.value })) }), M = ref(null), h2 = { titleId: M, panelRef: ref(null), dialogState: c2, setTitleId(t2) {
-    M.value !== t2 && (M.value = t2);
-  }, close() {
-    i2("close", false);
-  } };
-  provide(H, h2);
-  let ne = computed(() => !(!k$12.value || w2.value));
-  w$2(B2, (t2, a2) => {
-    h2.close(), nextTick(() => a2 == null ? void 0 : a2.focus());
-  }, ne);
-  let ie = computed(() => !(w2.value || c2.value !== 0));
-  E$1((q = E$22.value) == null ? void 0 : q.defaultView, "keydown", (t2) => {
-    ie.value && (t2.defaultPrevented || t2.key === o$1.Escape && (t2.preventDefault(), t2.stopPropagation(), h2.close()));
-  });
-  let ue$12 = computed(() => !(U2.value || c2.value !== 0 || N2));
-  return d$1(E$22, ue$12, (t2) => {
-    var a2;
-    return { containers: [...(a2 = t2.containers) != null ? a2 : [], B2] };
-  }), watchEffect((t2) => {
-    if (c2.value !== 0)
-      return;
-    let a2 = o$2(m2);
-    if (!a2)
-      return;
-    let p = new ResizeObserver((f2) => {
-      for (let L2 of f2) {
-        let x2 = L2.target.getBoundingClientRect();
-        x2.x === 0 && x2.y === 0 && x2.width === 0 && x2.height === 0 && h2.close();
-      }
-    });
-    p.observe(a2), t2(() => p.disconnect());
-  }), () => {
-    let { open: t2, initialFocus: a2, ...p } = e2, f2 = { ...l2, ref: m2, id: n2, role: g2.value, "aria-modal": c2.value === 0 ? true : void 0, "aria-labelledby": M.value, "aria-describedby": re2.value }, L2 = { open: c2.value === 0 };
-    return h$2(u$2, { force: true }, () => [h$2(_, () => h$2(N$1, { target: m2.value }, () => h$2(u$2, { force: false }, () => h$2(ue, { initialFocus: a2, containers: B2, features: k$12.value ? u$4(ee.value, { parent: ue.features.RestoreFocus, leaf: ue.features.All & ~ue.features.FocusLock }) : ue.features.None }, () => h$2(X, {}, () => A$3({ ourProps: f2, theirProps: { ...p, ...l2 }, slot: L2, attrs: l2, slots: d2, visible: c2.value === 0, features: N$4.RenderStrategy | N$4.Static, name: "Dialog" })))))), h$2(Z)]);
-  };
-} });
-defineComponent({ name: "DialogOverlay", props: { as: { type: [Object, String], default: "div" }, id: { type: String, default: null } }, setup(e2, { attrs: i2, slots: l2 }) {
-  var u2;
-  let d2 = (u2 = e2.id) != null ? u2 : `headlessui-dialog-overlay-${I$1()}`, s4 = T("DialogOverlay");
-  function n2(r2) {
-    r2.target === r2.currentTarget && (r2.preventDefault(), r2.stopPropagation(), s4.close());
-  }
-  return () => {
-    let { ...r2 } = e2;
-    return A$3({ ourProps: { id: d2, "aria-hidden": true, onClick: n2 }, theirProps: r2, slot: { open: s4.dialogState.value === 0 }, attrs: i2, slots: l2, name: "DialogOverlay" });
-  };
-} });
-defineComponent({ name: "DialogBackdrop", props: { as: { type: [Object, String], default: "div" }, id: { type: String, default: null } }, inheritAttrs: false, setup(e2, { attrs: i2, slots: l2, expose: d2 }) {
-  var r2;
-  let s4 = (r2 = e2.id) != null ? r2 : `headlessui-dialog-backdrop-${I$1()}`, n2 = T("DialogBackdrop"), u2 = ref(null);
-  return d2({ el: u2, $el: u2 }), onMounted(() => {
-    if (n2.panelRef.value === null)
-      throw new Error("A <DialogBackdrop /> component is being used, but a <DialogPanel /> component is missing.");
-  }), () => {
-    let { ...g2 } = e2, D = { id: s4, ref: u2, "aria-hidden": true };
-    return h$2(u$2, { force: true }, () => h$2(_, () => A$3({ ourProps: D, theirProps: { ...i2, ...g2 }, slot: { open: n2.dialogState.value === 0 }, attrs: i2, slots: l2, name: "DialogBackdrop" })));
-  };
-} });
-let Ge = defineComponent({ name: "DialogPanel", props: { as: { type: [Object, String], default: "div" }, id: { type: String, default: null } }, setup(e2, { attrs: i2, slots: l2, expose: d2 }) {
-  var r2;
-  let s4 = (r2 = e2.id) != null ? r2 : `headlessui-dialog-panel-${I$1()}`, n2 = T("DialogPanel");
-  d2({ el: n2.panelRef, $el: n2.panelRef });
-  function u2(g2) {
-    g2.stopPropagation();
-  }
-  return () => {
-    let { ...g2 } = e2, D = { id: s4, ref: n2.panelRef, onClick: u2 };
-    return A$3({ ourProps: D, theirProps: g2, slot: { open: n2.dialogState.value === 0 }, attrs: i2, slots: l2, name: "DialogPanel" });
-  };
-} });
-defineComponent({ name: "DialogTitle", props: { as: { type: [Object, String], default: "h2" }, id: { type: String, default: null } }, setup(e2, { attrs: i2, slots: l2 }) {
-  var n2;
-  let d2 = (n2 = e2.id) != null ? n2 : `headlessui-dialog-title-${I$1()}`, s4 = T("DialogTitle");
-  return onMounted(() => {
-    s4.setTitleId(d2), onUnmounted(() => s4.setTitleId(null));
-  }), () => {
-    let { ...u2 } = e2;
-    return A$3({ ourProps: { id: d2 }, theirProps: u2, slot: { open: s4.dialogState.value === 0 }, attrs: i2, slots: l2, name: "DialogTitle" });
-  };
-} });
-function l(r2) {
-  let e2 = { called: false };
-  return (...t2) => {
-    if (!e2.called)
-      return e2.called = true, r2(...t2);
-  };
-}
-function m(e2, ...t2) {
-  e2 && t2.length > 0 && e2.classList.add(...t2);
-}
-function d(e2, ...t2) {
-  e2 && t2.length > 0 && e2.classList.remove(...t2);
-}
-var g$1 = ((i2) => (i2.Finished = "finished", i2.Cancelled = "cancelled", i2))(g$1 || {});
-function F(e2, t2) {
-  let i2 = o();
-  if (!e2)
-    return i2.dispose;
-  let { transitionDuration: n2, transitionDelay: a2 } = getComputedStyle(e2), [l2, s4] = [n2, a2].map((o2) => {
-    let [u2 = 0] = o2.split(",").filter(Boolean).map((r2) => r2.includes("ms") ? parseFloat(r2) : parseFloat(r2) * 1e3).sort((r2, c2) => c2 - r2);
-    return u2;
-  });
-  return l2 !== 0 ? i2.setTimeout(() => t2("finished"), l2 + s4) : t2("finished"), i2.add(() => t2("cancelled")), i2.dispose;
-}
-function L$1(e2, t2, i2, n2, a2, l$12) {
-  let s4 = o(), o$12 = l$12 !== void 0 ? l(l$12) : () => {
-  };
-  return d(e2, ...a2), m(e2, ...t2, ...i2), s4.nextFrame(() => {
-    d(e2, ...i2), m(e2, ...n2), s4.add(F(e2, (u2) => (d(e2, ...n2, ...t2), m(e2, ...a2), o$12(u2))));
-  }), s4.add(() => d(e2, ...t2, ...i2, ...n2, ...a2)), s4.add(() => o$12("cancelled")), s4.dispose;
-}
-function g(e2 = "") {
-  return e2.split(/\s+/).filter((t2) => t2.length > 1);
-}
-let R = Symbol("TransitionContext");
-var pe = ((a2) => (a2.Visible = "visible", a2.Hidden = "hidden", a2))(pe || {});
-function me() {
-  return inject(R, null) !== null;
-}
-function Te() {
-  let e2 = inject(R, null);
-  if (e2 === null)
-    throw new Error("A <TransitionChild /> is used but it is missing a parent <TransitionRoot />.");
-  return e2;
-}
-function ge() {
-  let e2 = inject(N, null);
-  if (e2 === null)
-    throw new Error("A <TransitionChild /> is used but it is missing a parent <TransitionRoot />.");
-  return e2;
-}
-let N = Symbol("NestingContext");
-function L(e2) {
-  return "children" in e2 ? L(e2.children) : e2.value.filter(({ state: t2 }) => t2 === "visible").length > 0;
-}
-function Q(e2) {
-  let t2 = ref([]), a2 = ref(false);
-  onMounted(() => a2.value = true), onUnmounted(() => a2.value = false);
-  function s4(n2, r2 = S.Hidden) {
-    let l2 = t2.value.findIndex(({ id: f2 }) => f2 === n2);
-    l2 !== -1 && (u$4(r2, { [S.Unmount]() {
-      t2.value.splice(l2, 1);
-    }, [S.Hidden]() {
-      t2.value[l2].state = "hidden";
-    } }), !L(t2) && a2.value && (e2 == null || e2()));
-  }
-  function h2(n2) {
-    let r2 = t2.value.find(({ id: l2 }) => l2 === n2);
-    return r2 ? r2.state !== "visible" && (r2.state = "visible") : t2.value.push({ id: n2, state: "visible" }), () => s4(n2, S.Unmount);
-  }
-  return { children: t2, register: h2, unregister: s4 };
-}
-let W = N$4.RenderStrategy, he = defineComponent({ props: { as: { type: [Object, String], default: "div" }, show: { type: [Boolean], default: null }, unmount: { type: [Boolean], default: true }, appear: { type: [Boolean], default: false }, enter: { type: [String], default: "" }, enterFrom: { type: [String], default: "" }, enterTo: { type: [String], default: "" }, entered: { type: [String], default: "" }, leave: { type: [String], default: "" }, leaveFrom: { type: [String], default: "" }, leaveTo: { type: [String], default: "" } }, emits: { beforeEnter: () => true, afterEnter: () => true, beforeLeave: () => true, afterLeave: () => true }, setup(e2, { emit: t2, attrs: a2, slots: s4, expose: h2 }) {
-  let n2 = ref(0);
-  function r2() {
-    n2.value |= i$1.Opening, t2("beforeEnter");
-  }
-  function l2() {
-    n2.value &= ~i$1.Opening, t2("afterEnter");
-  }
-  function f2() {
-    n2.value |= i$1.Closing, t2("beforeLeave");
-  }
-  function S$12() {
-    n2.value &= ~i$1.Closing, t2("afterLeave");
-  }
-  if (!me() && s$2())
-    return () => h$2(Se, { ...e2, onBeforeEnter: r2, onAfterEnter: l2, onBeforeLeave: f2, onAfterLeave: S$12 }, s4);
-  let d2 = ref(null), y2 = computed(() => e2.unmount ? S.Unmount : S.Hidden);
-  h2({ el: d2, $el: d2 });
-  let { show: v2, appear: A2 } = Te(), { register: D, unregister: H2 } = ge(), i2 = ref(v2.value ? "visible" : "hidden"), I2 = { value: true }, c2 = I$1(), b2 = { value: false }, P2 = Q(() => {
-    !b2.value && i2.value !== "hidden" && (i2.value = "hidden", H2(c2), S$12());
-  });
-  onMounted(() => {
-    let o2 = D(c2);
-    onUnmounted(o2);
-  }), watchEffect(() => {
-    if (y2.value === S.Hidden && c2) {
-      if (v2.value && i2.value !== "visible") {
-        i2.value = "visible";
-        return;
-      }
-      u$4(i2.value, { ["hidden"]: () => H2(c2), ["visible"]: () => D(c2) });
-    }
-  });
-  let j2 = g(e2.enter), M = g(e2.enterFrom), X = g(e2.enterTo), _2 = g(e2.entered), Y = g(e2.leave), Z = g(e2.leaveFrom), ee = g(e2.leaveTo);
-  onMounted(() => {
-    watchEffect(() => {
-      if (i2.value === "visible") {
-        let o2 = o$2(d2);
-        if (o2 instanceof Comment && o2.data === "")
-          throw new Error("Did you forget to passthrough the `ref` to the actual DOM node?");
-      }
-    });
-  });
-  function te(o2) {
-    let E2 = I2.value && !A2.value, p = o$2(d2);
-    !p || !(p instanceof HTMLElement) || E2 || (b2.value = true, v2.value && r2(), v2.value || f2(), o2(v2.value ? L$1(p, j2, M, X, _2, (V2) => {
-      b2.value = false, V2 === g$1.Finished && l2();
-    }) : L$1(p, Y, Z, ee, _2, (V2) => {
-      b2.value = false, V2 === g$1.Finished && (L(P2) || (i2.value = "hidden", H2(c2), S$12()));
-    })));
-  }
-  return onMounted(() => {
-    watch([v2], (o2, E2, p) => {
-      te(p), I2.value = false;
-    }, { immediate: true });
-  }), provide(N, P2), t$3(computed(() => u$4(i2.value, { ["visible"]: i$1.Open, ["hidden"]: i$1.Closed }) | n2.value)), () => {
-    let { appear: o2, show: E2, enter: p, enterFrom: V2, enterTo: Ce, entered: ye2, leave: be, leaveFrom: Ee, leaveTo: Ve, ...U2 } = e2, ne = { ref: d2 }, re2 = { ...U2, ...A2.value && v2.value && c$2.isServer ? { class: normalizeClass([a2.class, U2.class, ...j2, ...M]) } : {} };
-    return A$3({ theirProps: re2, ourProps: ne, slot: {}, slots: s4, attrs: a2, features: W, visible: i2.value === "visible", name: "TransitionChild" });
-  };
-} }), ce = he, Se = defineComponent({ inheritAttrs: false, props: { as: { type: [Object, String], default: "div" }, show: { type: [Boolean], default: null }, unmount: { type: [Boolean], default: true }, appear: { type: [Boolean], default: false }, enter: { type: [String], default: "" }, enterFrom: { type: [String], default: "" }, enterTo: { type: [String], default: "" }, entered: { type: [String], default: "" }, leave: { type: [String], default: "" }, leaveFrom: { type: [String], default: "" }, leaveTo: { type: [String], default: "" } }, emits: { beforeEnter: () => true, afterEnter: () => true, beforeLeave: () => true, afterLeave: () => true }, setup(e2, { emit: t2, attrs: a2, slots: s4 }) {
-  let h2 = l$2(), n2 = computed(() => e2.show === null && h2 !== null ? (h2.value & i$1.Open) === i$1.Open : e2.show);
-  watchEffect(() => {
-    if (![true, false].includes(n2.value))
-      throw new Error('A <Transition /> is used but it is missing a `:show="true | false"` prop.');
-  });
-  let r2 = ref(n2.value ? "visible" : "hidden"), l2 = Q(() => {
-    r2.value = "hidden";
-  }), f2 = ref(true), S2 = { show: n2, appear: computed(() => e2.appear || !f2.value) };
-  return onMounted(() => {
-    watchEffect(() => {
-      f2.value = false, n2.value ? r2.value = "visible" : L(l2) || (r2.value = "hidden");
-    });
-  }), provide(N, l2), provide(R, S2), () => {
-    let d2 = T$1(e2, ["show", "appear", "unmount", "onBeforeEnter", "onBeforeLeave", "onAfterEnter", "onAfterLeave"]), y2 = { unmount: e2.unmount };
-    return A$3({ ourProps: { ...y2, as: "template" }, theirProps: {}, slot: {}, slots: { ...s4, default: () => [h$2(ce, { onBeforeEnter: () => t2("beforeEnter"), onAfterEnter: () => t2("afterEnter"), onBeforeLeave: () => t2("beforeLeave"), onAfterLeave: () => t2("afterLeave"), ...a2, ...y2, ...d2 }, s4.default)] }, attrs: {}, features: W, visible: r2.value === "visible", name: "Transition" });
-  };
-} });
 const getSlotChildrenText = (children) => children.map((node) => {
   if (!node.children || typeof node.children === "string")
     return node.children || "";
@@ -7169,7 +6753,7 @@ const _sfc_main$m = /* @__PURE__ */ defineComponent({
     watch(() => route.fullPath, () => {
       isHeaderDialogOpen.value = false;
     });
-    l$3(() => useId("$LRmu1Lmp6X"));
+    l$3(() => useId("$Vr9J0fb80I"));
     return (_ctx, _push, _parent, _attrs) => {
       const _component_UContainer = __nuxt_component_0$8;
       const _component_NuxtLink = __nuxt_component_0$7;
@@ -7294,7 +6878,7 @@ const _sfc_main$m = /* @__PURE__ */ defineComponent({
             }, {
               default: withCtx((_22, _push3, _parent3, _scopeId2) => {
                 if (_push3) {
-                  _push3(ssrRenderComponent(unref(Ge), {
+                  _push3(ssrRenderComponent(unref(Ge$1), {
                     class: unref(ui).panel.wrapper
                   }, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
@@ -7401,7 +6985,7 @@ const _sfc_main$m = /* @__PURE__ */ defineComponent({
                   }, _parent3, _scopeId2));
                 } else {
                   return [
-                    createVNode(unref(Ge), {
+                    createVNode(unref(Ge$1), {
                       class: unref(ui).panel.wrapper
                     }, {
                       default: withCtx(() => [
@@ -7471,7 +7055,7 @@ const _sfc_main$m = /* @__PURE__ */ defineComponent({
                 onClose: ($event) => isHeaderDialogOpen.value = false
               }, {
                 default: withCtx(() => [
-                  createVNode(unref(Ge), {
+                  createVNode(unref(Ge$1), {
                     class: unref(ui).panel.wrapper
                   }, {
                     default: withCtx(() => [
@@ -7544,7 +7128,7 @@ const _sfc_main$m = /* @__PURE__ */ defineComponent({
 const _sfc_setup$m = _sfc_main$m.setup;
 _sfc_main$m.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/components/header/Header.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/@nuxt/ui-pro/components/header/Header.vue");
   return _sfc_setup$m ? _sfc_setup$m(props, ctx) : void 0;
 };
 const _sfc_main$l = /* @__PURE__ */ defineComponent({
@@ -7585,7 +7169,7 @@ const _sfc_main$l = /* @__PURE__ */ defineComponent({
 const _sfc_setup$l = _sfc_main$l.setup;
 _sfc_main$l.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/components/color-mode/ColorModeImage.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/@nuxt/ui-pro/components/color-mode/ColorModeImage.vue");
   return _sfc_setup$l ? _sfc_setup$l(props, ctx) : void 0;
 };
 const config$5 = mergeConfig(appConfig.ui.strategy, appConfig.ui.badge, badge);
@@ -7659,7 +7243,7 @@ function _sfc_ssrRender$5(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
 const _sfc_setup$k = _sfc_main$k.setup;
 _sfc_main$k.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Badge.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/@nuxt/ui/dist/runtime/components/elements/Badge.vue");
   return _sfc_setup$k ? _sfc_setup$k(props, ctx) : void 0;
 };
 const __nuxt_component_1 = /* @__PURE__ */ _export_sfc(_sfc_main$k, [["ssrRender", _sfc_ssrRender$5]]);
@@ -7718,7 +7302,7 @@ function _sfc_ssrRender$4(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
 const _sfc_setup$j = _sfc_main$j.setup;
 _sfc_main$j.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Kbd.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/@nuxt/ui/dist/runtime/components/elements/Kbd.vue");
   return _sfc_setup$j ? _sfc_setup$j(props, ctx) : void 0;
 };
 const __nuxt_component_0$2 = /* @__PURE__ */ _export_sfc(_sfc_main$j, [["ssrRender", _sfc_ssrRender$4]]);
@@ -7827,7 +7411,7 @@ const _sfc_main$i = /* @__PURE__ */ defineComponent({
 const _sfc_setup$i = _sfc_main$i.setup;
 _sfc_main$i.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/content/ContentSearchButton.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/@nuxt/ui-pro/modules/pro/runtime/components/content/ContentSearchButton.vue");
   return _sfc_setup$i ? _sfc_setup$i(props, ctx) : void 0;
 };
 const useColorMode = () => {
@@ -7874,14 +7458,14 @@ const _sfc_main$h = /* @__PURE__ */ defineComponent({
 const _sfc_setup$h = _sfc_main$h.setup;
 _sfc_main$h.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/components/color-mode/ColorModeButton.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/@nuxt/ui-pro/components/color-mode/ColorModeButton.vue");
   return _sfc_setup$h ? _sfc_setup$h(props, ctx) : void 0;
 };
 const config$3 = mergeConfig(appConfig.ui.strategy, appConfig.ui.accordion, accordion);
 const configButton = mergeConfig(appConfig.ui.strategy, appConfig.ui.button, button);
 const _sfc_main$g = defineComponent({
   components: {
-    HDisclosure: N$6,
+    HDisclosure: N$1,
     HDisclosureButton: Q$1,
     HDisclosurePanel: V,
     UIcon: __nuxt_component_1$1,
@@ -7953,7 +7537,7 @@ const _sfc_main$g = defineComponent({
       el.style.height = "0";
       el.addEventListener("transitionend", done, { once: true });
     }
-    l$5(() => useId("$Y1LevmWXbf"));
+    l$3(() => useId("$SZ7s8siktv"));
     return {
       // eslint-disable-next-line vue/no-dupe-keys
       ui,
@@ -8166,7 +7750,7 @@ function _sfc_ssrRender$3(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
 const _sfc_setup$g = _sfc_main$g.setup;
 _sfc_main$g.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Accordion.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/@nuxt/ui/dist/runtime/components/elements/Accordion.vue");
   return _sfc_setup$g ? _sfc_setup$g(props, ctx) : void 0;
 };
 const __nuxt_component_0$1 = /* @__PURE__ */ _export_sfc(_sfc_main$g, [["ssrRender", _sfc_ssrRender$3]]);
@@ -8369,7 +7953,7 @@ const _sfc_main$f = /* @__PURE__ */ defineComponent({
 const _sfc_setup$f = _sfc_main$f.setup;
 _sfc_main$f.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/components/navigation/NavigationAccordion.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/@nuxt/ui-pro/components/navigation/NavigationAccordion.vue");
   return _sfc_setup$f ? _sfc_setup$f(props, ctx) : void 0;
 };
 const _sfc_main$e = /* @__PURE__ */ defineComponent({
@@ -8481,7 +8065,7 @@ const _sfc_main$e = /* @__PURE__ */ defineComponent({
 const _sfc_setup$e = _sfc_main$e.setup;
 _sfc_main$e.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/components/navigation/NavigationLinks.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/@nuxt/ui-pro/components/navigation/NavigationLinks.vue");
   return _sfc_setup$e ? _sfc_setup$e(props, ctx) : void 0;
 };
 const _sfc_main$d = /* @__PURE__ */ defineComponent({
@@ -8578,7 +8162,7 @@ const _sfc_main$d = /* @__PURE__ */ defineComponent({
 const _sfc_setup$d = _sfc_main$d.setup;
 _sfc_main$d.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/components/navigation/NavigationTree.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/@nuxt/ui-pro/components/navigation/NavigationTree.vue");
   return _sfc_setup$d ? _sfc_setup$d(props, ctx) : void 0;
 };
 const navMap = {
@@ -8627,9 +8211,9 @@ const _sfc_main$c = /* @__PURE__ */ defineComponent({
             if (((_b = (_a2 = unref(header)) == null ? void 0 : _a2.logo) == null ? void 0 : _b.dark) || ((_d = (_c = unref(header)) == null ? void 0 : _c.logo) == null ? void 0 : _d.light)) {
               _push2(ssrRenderComponent(_component_UColorModeImage, { class: "h-6 w-auto", ...(_e = unref(header)) == null ? void 0 : _e.logo }, null, _parent2, _scopeId));
             } else {
-              _push2(`<!--[--> Nuxt UI Pro `);
+              _push2(`<!--[--> Kubernetes `);
               _push2(ssrRenderComponent(_component_UBadge, {
-                label: "Docs",
+                label: "Bootcamp",
                 variant: "subtle",
                 class: "mb-0.5"
               }, null, _parent2, _scopeId));
@@ -8638,9 +8222,9 @@ const _sfc_main$c = /* @__PURE__ */ defineComponent({
           } else {
             return [
               ((_g = (_f = unref(header)) == null ? void 0 : _f.logo) == null ? void 0 : _g.dark) || ((_i = (_h = unref(header)) == null ? void 0 : _h.logo) == null ? void 0 : _i.light) ? (openBlock(), createBlock(_component_UColorModeImage, mergeProps({ key: 0 }, { class: "h-6 w-auto", ...(_j = unref(header)) == null ? void 0 : _j.logo }), null, 16)) : (openBlock(), createBlock(Fragment, { key: 1 }, [
-                createTextVNode(" Nuxt UI Pro "),
+                createTextVNode(" Kubernetes "),
                 createVNode(_component_UBadge, {
-                  label: "Docs",
+                  label: "Bootcamp",
                   variant: "subtle",
                   class: "mb-0.5"
                 })
@@ -8759,11 +8343,11 @@ const _sfc_main$b = /* @__PURE__ */ defineComponent({
 const _sfc_setup$b = _sfc_main$b.setup;
 _sfc_main$b.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/components/main/Main.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/@nuxt/ui-pro/components/main/Main.vue");
   return _sfc_setup$b ? _sfc_setup$b(props, ctx) : void 0;
 };
 const layouts = {
-  docs: () => import('./_nuxt/docs-Dbty_D9T.mjs').then((m2) => m2.default || m2)
+  docs: () => import('./_nuxt/docs-BiTOnMgL.mjs').then((m2) => m2.default || m2)
 };
 const LayoutLoader = defineComponent({
   name: "LayoutLoader",
@@ -8774,7 +8358,7 @@ const LayoutLoader = defineComponent({
   },
   async setup(props, context) {
     const LayoutComponent = await layouts[props.name]().then((r2) => r2.default || r2);
-    return () => h$2(LayoutComponent, props.layoutProps, context.slots);
+    return () => h$1(LayoutComponent, props.layoutProps, context.slots);
   }
 });
 const __nuxt_component_2$1 = defineComponent({
@@ -8810,10 +8394,10 @@ const __nuxt_component_2$1 = defineComponent({
       const hasLayout = layout.value && layout.value in layouts;
       const transitionProps = route.meta.layoutTransition ?? appLayoutTransition;
       return _wrapIf(Transition, hasLayout && transitionProps, {
-        default: () => h$2(Suspense, { suspensible: true, onResolve: () => {
+        default: () => h$1(Suspense, { suspensible: true, onResolve: () => {
           nextTick(done);
         } }, {
-          default: () => h$2(
+          default: () => h$1(
             LayoutProvider,
             {
               layoutProps: mergeProps(context.attrs, { ref: layoutRef }),
@@ -8858,7 +8442,7 @@ const LayoutProvider = defineComponent({
       if (!name || typeof name === "string" && !(name in layouts)) {
         return (_b = (_a = context.slots).default) == null ? void 0 : _b.call(_a);
       }
-      return h$2(
+      return h$1(
         LayoutLoader,
         { key: name, layoutProps: props.layoutProps, name },
         context.slots
@@ -8891,7 +8475,7 @@ const RouteProvider = defineComponent({
     }
     provide(PageRouteSymbol, shallowReactive(route));
     return () => {
-      return h$2(props.vnode, { ref: props.vnodeRef });
+      return h$1(props.vnode, { ref: props.vnodeRef });
     };
   }
 });
@@ -8935,7 +8519,7 @@ const __nuxt_component_3 = defineComponent({
       });
     }
     return () => {
-      return h$2(RouterView, { name: props.name, route: props.route, ...attrs }, {
+      return h$1(RouterView, { name: props.name, route: props.route, ...attrs }, {
         default: (routeProps) => {
           if (!routeProps.Component) {
             done();
@@ -8961,7 +8545,7 @@ const __nuxt_component_3 = defineComponent({
             hasTransition && transitionProps,
             wrapInKeepAlive(
               keepaliveConfig,
-              h$2(Suspense, {
+              h$1(Suspense, {
                 suspensible: true,
                 onPending: () => nuxtApp.callHook("page:start", routeProps.Component),
                 onResolve: () => {
@@ -8969,7 +8553,7 @@ const __nuxt_component_3 = defineComponent({
                 }
               }, {
                 default: () => {
-                  const providerVNode = h$2(RouteProvider, {
+                  const providerVNode = h$1(RouteProvider, {
                     key: key || void 0,
                     vnode: routeProps.Component,
                     route: routeProps.route,
@@ -9091,7 +8675,7 @@ const _sfc_main$a = /* @__PURE__ */ defineComponent({
 const _sfc_setup$a = _sfc_main$a.setup;
 _sfc_main$a.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/components/footer/FooterLinks.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/@nuxt/ui-pro/components/footer/FooterLinks.vue");
   return _sfc_setup$a ? _sfc_setup$a(props, ctx) : void 0;
 };
 const _sfc_main$9 = /* @__PURE__ */ defineComponent({
@@ -9203,7 +8787,7 @@ const _sfc_main$9 = /* @__PURE__ */ defineComponent({
 const _sfc_setup$9 = _sfc_main$9.setup;
 _sfc_main$9.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/components/footer/Footer.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/@nuxt/ui-pro/components/footer/Footer.vue");
   return _sfc_setup$9 ? _sfc_setup$9(props, ctx) : void 0;
 };
 const _sfc_main$8 = /* @__PURE__ */ defineComponent({
@@ -9419,7 +9003,7 @@ function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
 const _sfc_setup$7 = _sfc_main$7.setup;
 _sfc_main$7.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Avatar.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/@nuxt/ui/dist/runtime/components/elements/Avatar.vue");
   return _sfc_setup$7 ? _sfc_setup$7(props, ctx) : void 0;
 };
 const __nuxt_component_2 = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["ssrRender", _sfc_ssrRender$2]]);
@@ -9636,7 +9220,7 @@ function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
 const _sfc_setup$6 = _sfc_main$6.setup;
 _sfc_main$6.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/overlays/Notification.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/@nuxt/ui/dist/runtime/components/overlays/Notification.vue");
   return _sfc_setup$6 ? _sfc_setup$6(props, ctx) : void 0;
 };
 const __nuxt_component_0 = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["ssrRender", _sfc_ssrRender$1]]);
@@ -9741,7 +9325,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
 const _sfc_setup$5 = _sfc_main$5.setup;
 _sfc_main$5.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/overlays/Notifications.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/@nuxt/ui/dist/runtime/components/overlays/Notifications.vue");
   return _sfc_setup$5 ? _sfc_setup$5(props, ctx) : void 0;
 };
 const __nuxt_component_7 = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["ssrRender", _sfc_ssrRender]]);
@@ -10110,7 +9694,7 @@ const createQueryFetch = () => async (query) => {
     addPrerenderPath(apiPath);
   }
   if (shouldUseClientDB()) {
-    const db = await import('./_nuxt/client-db-B-jhT2S8.mjs').then((m2) => m2.useContentDatabase());
+    const db = await import('./_nuxt/client-db-BpdOBhtQ.mjs').then((m2) => m2.useContentDatabase());
     return db.fetch(query);
   }
   const data = await $fetch(apiPath, {
@@ -10173,7 +9757,7 @@ const fetchContentNavigation = async (queryBuilder) => {
     addPrerenderPath(apiPath);
   }
   if (shouldUseClientDB()) {
-    const generateNavigation = await import('./_nuxt/client-db-B-jhT2S8.mjs').then((m2) => m2.generateNavigation);
+    const generateNavigation = await import('./_nuxt/client-db-BpdOBhtQ.mjs').then((m2) => m2.generateNavigation);
     return generateNavigation(params);
   }
   const data = await $fetch(apiPath, {
@@ -10437,7 +10021,7 @@ const _sfc_main$3 = /* @__PURE__ */ defineComponent({
 const _sfc_setup$3 = _sfc_main$3.setup;
 _sfc_main$3.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/components/page/Page.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/@nuxt/ui-pro/components/page/Page.vue");
   return _sfc_setup$3 ? _sfc_setup$3(props, ctx) : void 0;
 };
 const _sfc_main$2 = /* @__PURE__ */ defineComponent({
@@ -10508,7 +10092,7 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
 const _sfc_setup$2 = _sfc_main$2.setup;
 _sfc_main$2.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/components/page/PageError.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/@nuxt/ui-pro/components/page/PageError.vue");
   return _sfc_setup$2 ? _sfc_setup$2(props, ctx) : void 0;
 };
 const _sfc_main$1 = /* @__PURE__ */ defineComponent({
@@ -10614,7 +10198,7 @@ const _sfc_main = {
   __name: "nuxt-root",
   __ssrInlineRender: true,
   setup(__props) {
-    const IslandRenderer = defineAsyncComponent(() => import('./_nuxt/island-renderer-Dn9yDqPv.mjs').then((r2) => r2.default || r2));
+    const IslandRenderer = defineAsyncComponent(() => import('./_nuxt/island-renderer-CDF0RKzI.mjs').then((r2) => r2.default || r2));
     const nuxtApp = /* @__PURE__ */ useNuxtApp();
     nuxtApp.deferHydration();
     nuxtApp.ssrContext.url;
@@ -10652,7 +10236,7 @@ const _sfc_main = {
 const _sfc_setup = _sfc_main.setup;
 _sfc_main.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/.pnpm/nuxt@3.10.3_eslint@8.56.0_typescript@5.3.3_vite@5.1.4_vue-tsc@1.8.27/node_modules/nuxt/dist/app/components/nuxt-root.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/nuxt/dist/app/components/nuxt-root.vue");
   return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
 };
 const RootComponent = _sfc_main;
@@ -10676,5 +10260,5 @@ let entry;
 }
 const entry$1 = (ssrContext) => entry(ssrContext);
 
-export { omit as $, u$4 as A, t$3 as B, i$1 as C, A$3 as D, l$2 as E, o$1 as F, l$3 as G, useId as H, I$1 as I, useShortcuts as J, __nuxt_component_0$2 as K, useHead as L, useRuntimeConfig as M, N$4 as N, useRequestEvent as O, resolveSitePath as P, useServerHead as Q, useContentPreview as R, useToast as S, useState as T, useContentDisabled as U, fetchContentNavigation as V, resolveIconName as W, get as X, assertArray as Y, ensureArray as Z, __nuxt_component_1$1 as _, __nuxt_component_0$3 as a, sortList as a0, apply as a1, withoutKeys as a2, withKeys as a3, createQuery as a4, _sfc_main$n as a5, mapContentNavigation as a6, _sfc_main$d as a7, __nuxt_component_0$4 as a8, __nuxt_component_0$7 as b, createError as c, useRouter as d, entry$1 as default, useNuxtApp as e, useAppConfig as f, _export_sfc as g, appConfig as h, __nuxt_component_2 as i, getULinkProps as j, __nuxt_component_0$5 as k, useRoute as l, mergeConfig as m, useAsyncData as n, useSeoMeta as o, findPageHeadline as p, queryContent as q, _sfc_main$3 as r, __nuxt_component_0$8 as s, nuxtLinkProps as t, useUI as u, config$9 as v, getNuxtLinkProps as w, getSlotChildrenText as x, __nuxt_component_1 as y, o$2 as z };
+export { _sfc_main$n as $, useId as A, useShortcuts as B, __nuxt_component_0$2 as C, useHead as D, useRuntimeConfig as E, useRequestEvent as F, resolveSitePath as G, useServerHead as H, useContentPreview as I, useToast as J, useState as K, useContentDisabled as L, fetchContentNavigation as M, N$1 as N, resolveIconName as O, get as P, Q$1 as Q, assertArray as R, ensureArray as S, omit as T, sortList as U, V, apply as W, withoutKeys as X, withKeys as Y, createQuery as Z, __nuxt_component_1$1 as _, __nuxt_component_0$3 as a, mapContentNavigation as a0, _sfc_main$d as a1, __nuxt_component_0$4 as a2, __nuxt_component_0$7 as b, createError as c, useRouter as d, entry$1 as default, useNuxtApp as e, useAppConfig as f, _export_sfc as g, appConfig as h, __nuxt_component_2 as i, getULinkProps as j, __nuxt_component_0$5 as k, useRoute as l, mergeConfig as m, useAsyncData as n, useSeoMeta as o, findPageHeadline as p, queryContent as q, _sfc_main$3 as r, __nuxt_component_0$8 as s, nuxtLinkProps as t, useUI as u, config$9 as v, getNuxtLinkProps as w, getSlotChildrenText as x, __nuxt_component_1 as y, l$3 as z };
 //# sourceMappingURL=server.mjs.map

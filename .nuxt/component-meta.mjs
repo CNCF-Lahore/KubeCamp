@@ -4,14 +4,14 @@ export default {
     "global": true,
     "prefetch": false,
     "preload": false,
-    "filePath": "node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Callout.vue",
+    "filePath": "node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Callout.vue",
     "pascalName": "Callout",
     "kebabName": "callout",
     "chunkName": "components/callout",
-    "shortPath": "node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Callout.vue",
+    "shortPath": "node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Callout.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Callout.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Callout.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -24,7 +24,7 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Callout.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Callout.vue",
               "range": [
                 1600,
                 1652
@@ -43,7 +43,7 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Callout.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Callout.vue",
               "range": [
                 1656,
                 1746
@@ -62,7 +62,7 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Callout.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Callout.vue",
               "range": [
                 1750,
                 1800
@@ -81,7 +81,7 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Callout.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Callout.vue",
               "range": [
                 1804,
                 1858
@@ -100,7 +100,7 @@ export default {
           "type": "any",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Callout.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Callout.vue",
               "range": [
                 1953,
                 2046
@@ -143,7 +143,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -177,7 +177,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Callout.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Callout.vue",
               "range": [
                 1600,
                 1652
@@ -192,7 +192,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Callout.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Callout.vue",
               "range": [
                 1656,
                 1746
@@ -207,7 +207,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Callout.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Callout.vue",
               "range": [
                 1750,
                 1800
@@ -222,7 +222,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Callout.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Callout.vue",
               "range": [
                 1804,
                 1858
@@ -237,7 +237,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Callout.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Callout.vue",
               "range": [
                 1862,
                 1949
@@ -252,7 +252,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Callout.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Callout.vue",
               "range": [
                 1953,
                 2046
@@ -269,14 +269,14 @@ export default {
     "global": true,
     "prefetch": false,
     "preload": false,
-    "filePath": "node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Card.vue",
+    "filePath": "node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Card.vue",
     "pascalName": "Card",
     "kebabName": "card",
     "chunkName": "components/card",
-    "shortPath": "node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Card.vue",
+    "shortPath": "node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Card.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Card.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Card.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -289,7 +289,7 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Card.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Card.vue",
               "range": [
                 1663,
                 1715
@@ -308,7 +308,7 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Card.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Card.vue",
               "range": [
                 1719,
                 1809
@@ -327,7 +327,7 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Card.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Card.vue",
               "range": [
                 1813,
                 1863
@@ -346,7 +346,7 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Card.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Card.vue",
               "range": [
                 1867,
                 1921
@@ -365,7 +365,7 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Card.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Card.vue",
               "range": [
                 1925,
                 1978
@@ -384,7 +384,7 @@ export default {
           "type": "any",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Card.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Card.vue",
               "range": [
                 2073,
                 2166
@@ -427,7 +427,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -461,7 +461,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Card.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Card.vue",
               "range": [
                 1663,
                 1715
@@ -476,7 +476,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Card.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Card.vue",
               "range": [
                 1719,
                 1809
@@ -491,7 +491,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Card.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Card.vue",
               "range": [
                 1813,
                 1863
@@ -506,7 +506,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Card.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Card.vue",
               "range": [
                 1867,
                 1921
@@ -521,7 +521,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Card.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Card.vue",
               "range": [
                 1925,
                 1978
@@ -536,7 +536,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Card.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Card.vue",
               "range": [
                 1982,
                 2069
@@ -551,7 +551,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Card.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Card.vue",
               "range": [
                 2073,
                 2166
@@ -568,14 +568,14 @@ export default {
     "global": true,
     "prefetch": false,
     "preload": false,
-    "filePath": "node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/CardGroup.vue",
+    "filePath": "node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/CardGroup.vue",
     "pascalName": "CardGroup",
     "kebabName": "card-group",
     "chunkName": "components/card-group",
-    "shortPath": "node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/CardGroup.vue",
+    "shortPath": "node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/CardGroup.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/CardGroup.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/CardGroup.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -600,7 +600,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -634,7 +634,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/CardGroup.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/CardGroup.vue",
               "range": [
                 282,
                 369
@@ -651,14 +651,14 @@ export default {
     "global": true,
     "prefetch": false,
     "preload": false,
-    "filePath": "node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/CodeGroup.vue",
+    "filePath": "node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/CodeGroup.vue",
     "pascalName": "CodeGroup",
     "kebabName": "code-group",
     "chunkName": "components/code-group",
-    "shortPath": "node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/CodeGroup.vue",
+    "shortPath": "node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/CodeGroup.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/CodeGroup.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/CodeGroup.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -683,7 +683,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -717,7 +717,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/CodeGroup.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/CodeGroup.vue",
               "range": [
                 1207,
                 1294
@@ -732,7 +732,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/CodeGroup.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/CodeGroup.vue",
               "range": [
                 1466,
                 1479
@@ -749,14 +749,14 @@ export default {
     "global": true,
     "prefetch": false,
     "preload": false,
-    "filePath": "node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Collapsible.vue",
+    "filePath": "node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Collapsible.vue",
     "pascalName": "Collapsible",
     "kebabName": "collapsible",
     "chunkName": "components/collapsible",
-    "shortPath": "node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Collapsible.vue",
+    "shortPath": "node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Collapsible.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Collapsible.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Collapsible.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -769,7 +769,7 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Collapsible.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Collapsible.vue",
               "range": [
                 1080,
                 1135
@@ -812,7 +812,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -846,7 +846,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Collapsible.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Collapsible.vue",
               "range": [
                 1080,
                 1135
@@ -863,14 +863,14 @@ export default {
     "global": true,
     "prefetch": false,
     "preload": false,
-    "filePath": "node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Field.vue",
+    "filePath": "node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Field.vue",
     "pascalName": "Field",
     "kebabName": "field",
     "chunkName": "components/field",
-    "shortPath": "node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Field.vue",
+    "shortPath": "node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Field.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Field.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Field.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -883,14 +883,14 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Field.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Field.vue",
               "range": [
                 953,
                 1001
               ]
             },
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Field.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Field.vue",
               "range": [
                 953,
                 1001
@@ -908,7 +908,7 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Field.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Field.vue",
               "range": [
                 1181,
                 1236
@@ -927,7 +927,7 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Field.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Field.vue",
               "range": [
                 1068,
                 1120
@@ -946,7 +946,7 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Field.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Field.vue",
               "range": [
                 1005,
                 1064
@@ -965,7 +965,7 @@ export default {
           "type": "boolean",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Field.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Field.vue",
               "range": [
                 1124,
                 1177
@@ -1004,7 +1004,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -1038,7 +1038,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Field.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Field.vue",
               "range": [
                 1181,
                 1236
@@ -1053,7 +1053,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Field.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Field.vue",
               "range": [
                 1240,
                 1327
@@ -1068,7 +1068,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Field.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Field.vue",
               "range": [
                 1068,
                 1120
@@ -1083,7 +1083,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Field.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Field.vue",
               "range": [
                 1124,
                 1177
@@ -1105,7 +1105,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Field.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Field.vue",
               "range": [
                 953,
                 1001
@@ -1120,7 +1120,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Field.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Field.vue",
               "range": [
                 1005,
                 1064
@@ -1137,14 +1137,14 @@ export default {
     "global": true,
     "prefetch": false,
     "preload": false,
-    "filePath": "node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/FieldGroup.vue",
+    "filePath": "node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/FieldGroup.vue",
     "pascalName": "FieldGroup",
     "kebabName": "field-group",
     "chunkName": "components/field-group",
-    "shortPath": "node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/FieldGroup.vue",
+    "shortPath": "node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/FieldGroup.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/FieldGroup.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/FieldGroup.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -1169,7 +1169,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -1203,7 +1203,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/FieldGroup.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/FieldGroup.vue",
               "range": [
                 380,
                 467
@@ -1220,14 +1220,14 @@ export default {
     "global": true,
     "prefetch": false,
     "preload": false,
-    "filePath": "node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Shortcut.vue",
+    "filePath": "node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Shortcut.vue",
     "pascalName": "Shortcut",
     "kebabName": "shortcut",
     "chunkName": "components/shortcut",
-    "shortPath": "node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Shortcut.vue",
+    "shortPath": "node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Shortcut.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Shortcut.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Shortcut.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -1240,14 +1240,14 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Shortcut.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Shortcut.vue",
               "range": [
                 285,
                 334
               ]
             },
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Shortcut.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Shortcut.vue",
               "range": [
                 285,
                 334
@@ -1266,7 +1266,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Shortcut.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Shortcut.vue",
               "range": [
                 338,
                 425
@@ -1281,7 +1281,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Shortcut.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Shortcut.vue",
               "range": [
                 285,
                 334
@@ -1298,14 +1298,14 @@ export default {
     "global": true,
     "prefetch": false,
     "preload": false,
-    "filePath": "node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Tabs.vue",
+    "filePath": "node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Tabs.vue",
     "pascalName": "Tabs",
     "kebabName": "tabs",
     "chunkName": "components/tabs",
-    "shortPath": "node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Tabs.vue",
+    "shortPath": "node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Tabs.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Tabs.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Tabs.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -1318,7 +1318,7 @@ export default {
           "type": "number",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Tabs.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Tabs.vue",
               "range": [
                 1382,
                 1435
@@ -1350,7 +1350,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -1384,7 +1384,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Tabs.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Tabs.vue",
               "range": [
                 1382,
                 1435
@@ -1399,7 +1399,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Tabs.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/Tabs.vue",
               "range": [
                 1439,
                 1526
@@ -1416,14 +1416,14 @@ export default {
     "global": true,
     "prefetch": false,
     "preload": false,
-    "filePath": "node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCode.vue",
+    "filePath": "node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCode.vue",
     "pascalName": "ProseCode",
     "kebabName": "prose-code",
     "chunkName": "components/prose-code",
-    "shortPath": "node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCode.vue",
+    "shortPath": "node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCode.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCode.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCode.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -1436,14 +1436,14 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCode.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCode.vue",
               "range": [
                 78,
                 126
               ]
             },
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCode.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCode.vue",
               "range": [
                 78,
                 126
@@ -1461,7 +1461,7 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCode.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCode.vue",
               "range": [
                 130,
                 182
@@ -1480,7 +1480,7 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCode.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCode.vue",
               "range": [
                 186,
                 242
@@ -1499,7 +1499,7 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCode.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCode.vue",
               "range": [
                 305,
                 361
@@ -1518,7 +1518,7 @@ export default {
           "type": "number[]",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCode.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCode.vue",
               "range": [
                 365,
                 444
@@ -1543,7 +1543,7 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCode.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCode.vue",
               "range": [
                 448,
                 500
@@ -1562,7 +1562,7 @@ export default {
           "type": "boolean",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCode.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCode.vue",
               "range": [
                 246,
                 301
@@ -1601,7 +1601,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -1635,7 +1635,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCode.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCode.vue",
               "range": [
                 78,
                 126
@@ -1650,7 +1650,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCode.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCode.vue",
               "range": [
                 130,
                 182
@@ -1665,7 +1665,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCode.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCode.vue",
               "range": [
                 186,
                 242
@@ -1680,7 +1680,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCode.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCode.vue",
               "range": [
                 246,
                 301
@@ -1702,7 +1702,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCode.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCode.vue",
               "range": [
                 305,
                 361
@@ -1717,7 +1717,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCode.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCode.vue",
               "range": [
                 365,
                 444
@@ -1738,7 +1738,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCode.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCode.vue",
               "range": [
                 448,
                 500
@@ -1755,14 +1755,14 @@ export default {
     "global": true,
     "prefetch": false,
     "preload": false,
-    "filePath": "node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCodeButton.vue",
+    "filePath": "node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCodeButton.vue",
     "pascalName": "ProseCodeButton",
     "kebabName": "prose-code-button",
     "chunkName": "components/prose-code-button",
-    "shortPath": "node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCodeButton.vue",
+    "shortPath": "node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCodeButton.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCodeButton.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCodeButton.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -1775,14 +1775,14 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCodeButton.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCodeButton.vue",
               "range": [
                 55,
                 103
               ]
             },
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCodeButton.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCodeButton.vue",
               "range": [
                 55,
                 103
@@ -1801,7 +1801,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCodeButton.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCodeButton.vue",
               "range": [
                 55,
                 103
@@ -1818,14 +1818,14 @@ export default {
     "global": true,
     "prefetch": false,
     "preload": false,
-    "filePath": "node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCodeIcon.vue",
+    "filePath": "node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCodeIcon.vue",
     "pascalName": "ProseCodeIcon",
     "kebabName": "prose-code-icon",
     "chunkName": "components/prose-code-icon",
-    "shortPath": "node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCodeIcon.vue",
+    "shortPath": "node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCodeIcon.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCodeIcon.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCodeIcon.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -1838,7 +1838,7 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCodeIcon.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCodeIcon.vue",
               "range": [
                 55,
                 107
@@ -1857,7 +1857,7 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCodeIcon.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCodeIcon.vue",
               "range": [
                 111,
                 167
@@ -1877,7 +1877,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCodeIcon.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCodeIcon.vue",
               "range": [
                 55,
                 107
@@ -1892,7 +1892,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCodeIcon.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseCodeIcon.vue",
               "range": [
                 111,
                 167
@@ -1909,14 +1909,14 @@ export default {
     "global": true,
     "prefetch": false,
     "preload": false,
-    "filePath": "node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseH1.vue",
+    "filePath": "node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseH1.vue",
     "pascalName": "ProseH1",
     "kebabName": "prose-h1",
     "chunkName": "components/prose-h1",
-    "shortPath": "node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseH1.vue",
+    "shortPath": "node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseH1.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseH1.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseH1.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -1929,14 +1929,14 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseH1.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseH1.vue",
               "range": [
                 414,
                 460
               ]
             },
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseH1.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseH1.vue",
               "range": [
                 414,
                 460
@@ -1967,7 +1967,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -2001,7 +2001,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseH1.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseH1.vue",
               "range": [
                 414,
                 460
@@ -2018,14 +2018,14 @@ export default {
     "global": true,
     "prefetch": false,
     "preload": false,
-    "filePath": "node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseH2.vue",
+    "filePath": "node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseH2.vue",
     "pascalName": "ProseH2",
     "kebabName": "prose-h2",
     "chunkName": "components/prose-h2",
-    "shortPath": "node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseH2.vue",
+    "shortPath": "node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseH2.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseH2.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseH2.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -2038,14 +2038,14 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseH2.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseH2.vue",
               "range": [
                 414,
                 460
               ]
             },
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseH2.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseH2.vue",
               "range": [
                 414,
                 460
@@ -2076,7 +2076,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -2110,7 +2110,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseH2.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseH2.vue",
               "range": [
                 414,
                 460
@@ -2127,14 +2127,14 @@ export default {
     "global": true,
     "prefetch": false,
     "preload": false,
-    "filePath": "node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseH3.vue",
+    "filePath": "node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseH3.vue",
     "pascalName": "ProseH3",
     "kebabName": "prose-h3",
     "chunkName": "components/prose-h3",
-    "shortPath": "node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseH3.vue",
+    "shortPath": "node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseH3.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseH3.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseH3.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -2147,14 +2147,14 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseH3.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseH3.vue",
               "range": [
                 414,
                 460
               ]
             },
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseH3.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseH3.vue",
               "range": [
                 414,
                 460
@@ -2185,7 +2185,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -2219,7 +2219,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseH3.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseH3.vue",
               "range": [
                 414,
                 460
@@ -2236,14 +2236,14 @@ export default {
     "global": true,
     "prefetch": false,
     "preload": false,
-    "filePath": "node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseH4.vue",
+    "filePath": "node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseH4.vue",
     "pascalName": "ProseH4",
     "kebabName": "prose-h4",
     "chunkName": "components/prose-h4",
-    "shortPath": "node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseH4.vue",
+    "shortPath": "node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseH4.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseH4.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseH4.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -2256,14 +2256,14 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseH4.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseH4.vue",
               "range": [
                 414,
                 460
               ]
             },
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseH4.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseH4.vue",
               "range": [
                 414,
                 460
@@ -2294,7 +2294,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -2328,7 +2328,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseH4.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/modules/pro/runtime/components/global/prose/ProseH4.vue",
               "range": [
                 414,
                 460
@@ -2345,14 +2345,14 @@ export default {
     "global": true,
     "prefetch": false,
     "preload": false,
-    "filePath": "node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue",
+    "filePath": "node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue",
     "pascalName": "ContentDoc",
     "kebabName": "content-doc",
     "chunkName": "components/content-doc",
-    "shortPath": "node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue",
+    "shortPath": "node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -2365,7 +2365,7 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
               "range": [
                 4632,
                 4644
@@ -2383,7 +2383,7 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
               "range": [
                 4653,
                 4666
@@ -2401,7 +2401,7 @@ export default {
           "type": "QueryBuilderParams",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
               "range": [
                 4675,
                 4701
@@ -2421,7 +2421,7 @@ export default {
                 "type": "boolean",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       9172,
                       9188
@@ -2446,7 +2446,7 @@ export default {
                 "type": "number",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       9193,
                       9207
@@ -2464,7 +2464,7 @@ export default {
                 "type": "number",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       9212,
                       9227
@@ -2482,7 +2482,7 @@ export default {
                 "type": "string[]",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       9232,
                       9248
@@ -2506,7 +2506,7 @@ export default {
                 "type": "string[]",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       9253,
                       9272
@@ -2524,7 +2524,7 @@ export default {
                 "type": "SortOptions[]",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       9277,
                       9298
@@ -2557,7 +2557,7 @@ export default {
                               "type": "string",
                               "declarations": [
                                 {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                   "range": [
                                     3558,
                                     3575
@@ -2580,7 +2580,7 @@ export default {
                               "type": "boolean",
                               "declarations": [
                                 {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                   "range": [
                                     3749,
                                     3768
@@ -2603,7 +2603,7 @@ export default {
                               "type": "\"upper\" | \"lower\" | \"false\"",
                               "declarations": [
                                 {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                   "range": [
                                     3953,
                                     3994
@@ -2634,7 +2634,7 @@ export default {
                               "type": "\"base\" | \"accent\" | \"case\" | \"variant\"",
                               "declarations": [
                                 {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                   "range": [
                                     4733,
                                     4787
@@ -2673,7 +2673,7 @@ export default {
                 "type": "QueryBuilderWhere[]",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       9303,
                       9331
@@ -2702,7 +2702,7 @@ export default {
                           "type": "QueryBuilderWhere[]",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 5305,
                                 5332
@@ -2725,7 +2725,7 @@ export default {
                           "type": "QueryBuilderWhere[]",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 5576,
                                 5602
@@ -2748,7 +2748,7 @@ export default {
                           "type": "string | number | boolean | RegExp | QueryBuilderWhere",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 5799,
                                 5861
@@ -2781,7 +2781,7 @@ export default {
                                     "type": "(string: string) => RegExpExecArray",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es5.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                                         "range": [
                                           40945,
                                           40990
@@ -2808,7 +2808,7 @@ export default {
                                     "type": "(string: string) => boolean",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es5.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                                         "range": [
                                           41172,
                                           41202
@@ -2830,7 +2830,7 @@ export default {
                                     "type": "string",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es5.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                                         "range": [
                                           41384,
                                           41408
@@ -2848,7 +2848,7 @@ export default {
                                     "type": "boolean",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es5.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                                         "range": [
                                           41554,
                                           41579
@@ -2866,7 +2866,7 @@ export default {
                                     "type": "boolean",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es5.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                                         "range": [
                                           41729,
                                           41758
@@ -2884,7 +2884,7 @@ export default {
                                     "type": "boolean",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es5.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                                         "range": [
                                           41907,
                                           41935
@@ -2902,7 +2902,7 @@ export default {
                                     "type": "number",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es5.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                                         "range": [
                                           41941,
                                           41959
@@ -2925,7 +2925,7 @@ export default {
                                     "type": "(pattern: string, flags?: string) => RegExp",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es5.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                                         "range": [
                                           42062,
                                           42109
@@ -2947,7 +2947,7 @@ export default {
                                     "type": "string",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es2015.core.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es2015.core.d.ts",
                                         "range": [
                                           14897,
                                           14920
@@ -2965,7 +2965,7 @@ export default {
                                     "type": "boolean",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es2015.core.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es2015.core.d.ts",
                                         "range": [
                                           15085,
                                           15110
@@ -2983,7 +2983,7 @@ export default {
                                     "type": "boolean",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es2015.core.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es2015.core.d.ts",
                                         "range": [
                                           15276,
                                           15302
@@ -3001,7 +3001,7 @@ export default {
                                     "type": "boolean",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es2018.regexp.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es2018.regexp.d.ts",
                                         "range": [
                                           1204,
                                           1229
@@ -3019,7 +3019,7 @@ export default {
                                     "type": "boolean",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es2022.regexp.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es2022.regexp.d.ts",
                                         "range": [
                                           1304,
                                           1333
@@ -3028,8 +3028,8 @@ export default {
                                     ],
                                     "schema": "boolean"
                                   },
-                                  "__@match@3971": {
-                                    "name": "__@match@3971",
+                                  "__@match@4164": {
+                                    "name": "__@match@4164",
                                     "global": false,
                                     "description": "Matches a string with this regular expression, and returns an array containing the results of\nthat search.",
                                     "tags": [
@@ -3042,7 +3042,7 @@ export default {
                                     "type": "(string: string) => RegExpMatchArray",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
                                         "range": [
                                           5644,
                                           5700
@@ -3055,8 +3055,8 @@ export default {
                                       "schema": []
                                     }
                                   },
-                                  "__@replace@3973": {
-                                    "name": "__@replace@3973",
+                                  "__@replace@4166": {
+                                    "name": "__@replace@4166",
                                     "global": false,
                                     "description": "Replaces text in a string, using this regular expression.",
                                     "tags": [
@@ -3081,14 +3081,14 @@ export default {
                                     "type": "{ (string: string, replaceValue: string): string; (string: string, replacer: (substring: string, ...args: any[]) => string): string; }",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
                                         "range": [
                                           6110,
                                           6173
                                         ]
                                       },
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
                                         "range": [
                                           6478,
                                           6576
@@ -3097,8 +3097,8 @@ export default {
                                     ],
                                     "schema": "{ (string: string, replaceValue: string): string; (string: string, replacer: (substring: string, ...args: any[]) => string): string; }"
                                   },
-                                  "__@search@3976": {
-                                    "name": "__@search@3976",
+                                  "__@search@4169": {
+                                    "name": "__@search@4169",
                                     "global": false,
                                     "description": "Finds the position beginning first substring match in a regular expression search\nusing this regular expression.",
                                     "tags": [
@@ -3111,7 +3111,7 @@ export default {
                                     "type": "(string: string) => number",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
                                         "range": [
                                           6782,
                                           6822
@@ -3124,8 +3124,8 @@ export default {
                                       "schema": []
                                     }
                                   },
-                                  "__@split@3978": {
-                                    "name": "__@split@3978",
+                                  "__@split@4171": {
+                                    "name": "__@split@4171",
                                     "global": false,
                                     "description": "Returns an array of substrings that were delimited by strings in the original input that\nmatch against this regular expression.\n\nIf the regular expression contains capturing parentheses, then each time this\nregular expression matches, the results (including any undefined results) of the\ncapturing parentheses are spliced.",
                                     "tags": [
@@ -3142,7 +3142,7 @@ export default {
                                     "type": "(string: string, limit?: number) => string[]",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
                                         "range": [
                                           7384,
                                           7441
@@ -3155,8 +3155,8 @@ export default {
                                       "schema": []
                                     }
                                   },
-                                  "__@matchAll@3980": {
-                                    "name": "__@matchAll@3980",
+                                  "__@matchAll@4173": {
+                                    "name": "__@matchAll@4173",
                                     "global": false,
                                     "description": "Matches a string with this regular expression, and returns an iterable of matches\ncontaining the results of that search.",
                                     "tags": [
@@ -3169,7 +3169,7 @@ export default {
                                     "type": "(str: string) => IterableIterator<RegExpMatchArray>",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es2020.symbol.wellknown.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es2020.symbol.wellknown.d.ts",
                                         "range": [
                                           1385,
                                           1452
@@ -3202,7 +3202,7 @@ export default {
                           "type": "string | number | boolean | RegExp",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 6060,
                                 6101
@@ -3235,7 +3235,7 @@ export default {
                           "type": "string | number | boolean | RegExp",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 6294,
                                 6335
@@ -3258,7 +3258,7 @@ export default {
                           "type": "number",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 6533,
                                 6546
@@ -3281,7 +3281,7 @@ export default {
                           "type": "number",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 6757,
                                 6771
@@ -3304,7 +3304,7 @@ export default {
                           "type": "number",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 6966,
                                 6979
@@ -3327,7 +3327,7 @@ export default {
                           "type": "number",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 7187,
                                 7201
@@ -3350,7 +3350,7 @@ export default {
                           "type": "string | RegExp",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 7435,
                                 7460
@@ -3380,7 +3380,7 @@ export default {
                           "type": "string",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 7664,
                                 7679
@@ -3403,7 +3403,7 @@ export default {
                           "type": "boolean",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 7860,
                                 7878
@@ -3426,7 +3426,7 @@ export default {
                           "type": "string | number | boolean | (string | number | boolean)[]",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 8134,
                                 8207
@@ -3474,7 +3474,7 @@ export default {
                           "type": "(string | number | boolean)[]",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 8450,
                                 8498
@@ -3497,7 +3497,7 @@ export default {
                           "type": "string",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 8694,
                                 8714
@@ -3520,7 +3520,7 @@ export default {
                           "type": "string | (string | number | boolean)[]",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 8937,
                                 8985
@@ -3650,7 +3650,7 @@ export default {
                 "type": "{ query: string | QueryBuilderWhere; before?: number; after?: number; }",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       9336,
                       9447
@@ -3670,7 +3670,7 @@ export default {
                       "type": "string | QueryBuilderWhere",
                       "declarations": [
                         {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                           "range": [
                             9357,
                             9391
@@ -3695,7 +3695,7 @@ export default {
                       "type": "number",
                       "declarations": [
                         {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                           "range": [
                             9400,
                             9416
@@ -3713,7 +3713,7 @@ export default {
                       "type": "number",
                       "declarations": [
                         {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                           "range": [
                             9425,
                             9440
@@ -3737,7 +3737,7 @@ export default {
           "type": "boolean",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
               "range": [
                 4606,
                 4623
@@ -3762,7 +3762,7 @@ export default {
           "type": "boolean",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
               "range": [
                 4710,
                 4724
@@ -3786,7 +3786,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
               "range": [
                 6347,
                 6476
@@ -3806,7 +3806,7 @@ export default {
                 "type": "ParsedContent",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
                     "range": [
                       6380,
                       6399
@@ -3826,7 +3826,7 @@ export default {
                       "type": "MarkdownRoot",
                       "declarations": [
                         {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                           "range": [
                             2459,
                             2482
@@ -3846,7 +3846,7 @@ export default {
                             "type": "\"root\"",
                             "declarations": [
                               {
-                                "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                 "range": [
                                   1465,
                                   1478
@@ -3864,7 +3864,7 @@ export default {
                             "type": "MarkdownNode[]",
                             "declarations": [
                               {
-                                "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                 "range": [
                                   1483,
                                   1508
@@ -3888,7 +3888,7 @@ export default {
                                       "type": "string",
                                       "declarations": [
                                         {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                           "range": [
                                             1214,
                                             1227
@@ -3906,7 +3906,7 @@ export default {
                                       "type": "string",
                                       "declarations": [
                                         {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                           "range": [
                                             1232,
                                             1245
@@ -3924,7 +3924,7 @@ export default {
                                       "type": "string",
                                       "declarations": [
                                         {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                           "range": [
                                             1250,
                                             1265
@@ -3942,7 +3942,7 @@ export default {
                                       "type": "Record<string, any>",
                                       "declarations": [
                                         {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                           "range": [
                                             1270,
                                             1298
@@ -3960,7 +3960,7 @@ export default {
                                       "type": "any",
                                       "declarations": [
                                         {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                           "range": [
                                             1303,
                                             1317
@@ -3978,7 +3978,7 @@ export default {
                                       "type": "MarkdownNode[]",
                                       "declarations": [
                                         {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                           "range": [
                                             1322,
                                             1348
@@ -3996,7 +3996,7 @@ export default {
                                       "type": "Record<string, any>",
                                       "declarations": [
                                         {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                           "range": [
                                             1353,
                                             1386
@@ -4014,7 +4014,7 @@ export default {
                                       "type": "Record<string, any>",
                                       "declarations": [
                                         {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                           "range": [
                                             1391,
                                             1426
@@ -4037,7 +4037,7 @@ export default {
                             "type": "Record<string, any>",
                             "declarations": [
                               {
-                                "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                 "range": [
                                   1513,
                                   1541
@@ -4055,7 +4055,7 @@ export default {
                             "type": "Toc",
                             "declarations": [
                               {
-                                "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                 "range": [
                                   1546,
                                   1556
@@ -4075,7 +4075,7 @@ export default {
                                   "type": "string",
                                   "declarations": [
                                     {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                      "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                       "range": [
                                         1095,
                                         1109
@@ -4093,7 +4093,7 @@ export default {
                                   "type": "number",
                                   "declarations": [
                                     {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                      "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                       "range": [
                                         1114,
                                         1128
@@ -4111,7 +4111,7 @@ export default {
                                   "type": "number",
                                   "declarations": [
                                     {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                      "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                       "range": [
                                         1133,
                                         1153
@@ -4129,7 +4129,7 @@ export default {
                                   "type": "TocLink[]",
                                   "declarations": [
                                     {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                      "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                       "range": [
                                         1158,
                                         1175
@@ -4153,7 +4153,7 @@ export default {
                                             "type": "string",
                                             "declarations": [
                                               {
-                                                "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                                "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                                 "range": [
                                                   991,
                                                   1002
@@ -4171,7 +4171,7 @@ export default {
                                             "type": "string",
                                             "declarations": [
                                               {
-                                                "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                                "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                                 "range": [
                                                   1007,
                                                   1020
@@ -4189,7 +4189,7 @@ export default {
                                             "type": "number",
                                             "declarations": [
                                               {
-                                                "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                                "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                                 "range": [
                                                   1025,
                                                   1039
@@ -4207,7 +4207,7 @@ export default {
                                             "type": "TocLink[]",
                                             "declarations": [
                                               {
-                                                "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                                "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                                 "range": [
                                                   1044,
                                                   1065
@@ -4236,7 +4236,7 @@ export default {
                       "type": "MarkdownRoot",
                       "declarations": [
                         {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                           "range": [
                             2523,
                             2549
@@ -4254,7 +4254,7 @@ export default {
                       "type": "\"docs\"",
                       "declarations": [
                         {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                           "range": [
                             2319,
                             2338
@@ -4272,7 +4272,7 @@ export default {
                       "type": "string",
                       "declarations": [
                         {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                           "range": [
                             185,
                             197
@@ -4290,7 +4290,7 @@ export default {
                       "type": "string",
                       "declarations": [
                         {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                           "range": [
                             240,
                             257
@@ -4308,7 +4308,7 @@ export default {
                       "type": "string",
                       "declarations": [
                         {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                           "range": [
                             369,
                             384
@@ -4326,7 +4326,7 @@ export default {
                       "type": "string",
                       "declarations": [
                         {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                           "range": [
                             426,
                             441
@@ -4344,7 +4344,7 @@ export default {
                       "type": "boolean",
                       "declarations": [
                         {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                           "range": [
                             490,
                             507
@@ -4369,7 +4369,7 @@ export default {
                       "type": "boolean",
                       "declarations": [
                         {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                           "range": [
                             558,
                             577
@@ -4387,7 +4387,7 @@ export default {
                       "type": "string",
                       "declarations": [
                         {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                           "range": [
                             620,
                             637
@@ -4405,7 +4405,7 @@ export default {
                       "type": "\"markdown\" | \"yaml\" | \"json\" | \"csv\"",
                       "declarations": [
                         {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                           "range": [
                             706,
                             751
@@ -4432,7 +4432,7 @@ export default {
                       "type": "string",
                       "declarations": [
                         {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                           "range": [
                             830,
                             845
@@ -4450,7 +4450,7 @@ export default {
                       "type": "\"yaml\" | \"json\" | \"csv\" | \"md\" | \"yml\" | \"json5\"",
                       "declarations": [
                         {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                           "range": [
                             895,
                             957
@@ -4482,7 +4482,7 @@ export default {
                 "type": "() => Promise<void>",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
                     "range": [
                       6412,
                       6441
@@ -4506,14 +4506,14 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
               ]
             },
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
               "range": [
                 6329,
                 6483
@@ -4533,7 +4533,7 @@ export default {
                 "type": "(context: { doc: ParsedContent; refresh: () => Promise<void>; }) => VNode<RendererNode, RendererElement, { [key: string]: any; }>[]",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
                     "range": [
                       6347,
                       6476
@@ -4550,12 +4550,42 @@ export default {
           }
         },
         {
+          "name": "path",
+          "type": "string",
+          "description": "The path of the content to load from content source.",
+          "declarations": [
+            {
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
+              "range": [
+                3983,
+                4099
+              ]
+            }
+          ],
+          "schema": "string"
+        },
+        {
+          "name": "query",
+          "type": "undefined",
+          "description": "A query builder params object to be passed to <ContentQuery /> component.",
+          "declarations": [
+            {
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
+              "range": [
+                4217,
+                4345
+              ]
+            }
+          ],
+          "schema": "undefined"
+        },
+        {
           "name": "tag",
           "type": "string",
           "description": "The tag to use for the renderer element if it is used.",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
               "range": [
                 3494,
                 3606
@@ -4570,7 +4600,7 @@ export default {
           "description": "Whether or not to render the excerpt.",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
               "range": [
                 3714,
                 3803
@@ -4587,42 +4617,12 @@ export default {
           }
         },
         {
-          "name": "path",
-          "type": "string",
-          "description": "The path of the content to load from content source.",
-          "declarations": [
-            {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
-              "range": [
-                3983,
-                4099
-              ]
-            }
-          ],
-          "schema": "string"
-        },
-        {
-          "name": "query",
-          "type": "undefined",
-          "description": "A query builder params object to be passed to <ContentQuery /> component.",
-          "declarations": [
-            {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
-              "range": [
-                4217,
-                4345
-              ]
-            }
-          ],
-          "schema": "undefined"
-        },
-        {
           "name": "head",
           "type": "boolean",
           "description": "Whether or not to map the document data to the `head` property.",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
               "range": [
                 4453,
                 4570
@@ -4646,14 +4646,14 @@ export default {
     "global": true,
     "prefetch": false,
     "preload": false,
-    "filePath": "node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentList.vue",
+    "filePath": "node_modules/@nuxt/content/dist/runtime/components/ContentList.vue",
     "pascalName": "ContentList",
     "kebabName": "content-list",
     "chunkName": "components/content-list",
-    "shortPath": "node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentList.vue",
+    "shortPath": "node_modules/@nuxt/content/dist/runtime/components/ContentList.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentList.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentList.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -4666,7 +4666,7 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentList.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentList.vue.d.ts",
               "range": [
                 2373,
                 2386
@@ -4684,7 +4684,7 @@ export default {
           "type": "QueryBuilderParams",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentList.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentList.vue.d.ts",
               "range": [
                 2395,
                 2421
@@ -4704,7 +4704,7 @@ export default {
                 "type": "boolean",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       9172,
                       9188
@@ -4729,7 +4729,7 @@ export default {
                 "type": "number",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       9193,
                       9207
@@ -4747,7 +4747,7 @@ export default {
                 "type": "number",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       9212,
                       9227
@@ -4765,7 +4765,7 @@ export default {
                 "type": "string[]",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       9232,
                       9248
@@ -4789,7 +4789,7 @@ export default {
                 "type": "string[]",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       9253,
                       9272
@@ -4807,7 +4807,7 @@ export default {
                 "type": "SortOptions[]",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       9277,
                       9298
@@ -4840,7 +4840,7 @@ export default {
                               "type": "string",
                               "declarations": [
                                 {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                   "range": [
                                     3558,
                                     3575
@@ -4863,7 +4863,7 @@ export default {
                               "type": "boolean",
                               "declarations": [
                                 {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                   "range": [
                                     3749,
                                     3768
@@ -4886,7 +4886,7 @@ export default {
                               "type": "\"upper\" | \"lower\" | \"false\"",
                               "declarations": [
                                 {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                   "range": [
                                     3953,
                                     3994
@@ -4917,7 +4917,7 @@ export default {
                               "type": "\"base\" | \"accent\" | \"case\" | \"variant\"",
                               "declarations": [
                                 {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                   "range": [
                                     4733,
                                     4787
@@ -4956,7 +4956,7 @@ export default {
                 "type": "QueryBuilderWhere[]",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       9303,
                       9331
@@ -4985,7 +4985,7 @@ export default {
                           "type": "QueryBuilderWhere[]",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 5305,
                                 5332
@@ -5008,7 +5008,7 @@ export default {
                           "type": "QueryBuilderWhere[]",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 5576,
                                 5602
@@ -5031,7 +5031,7 @@ export default {
                           "type": "string | number | boolean | RegExp | QueryBuilderWhere",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 5799,
                                 5861
@@ -5064,7 +5064,7 @@ export default {
                                     "type": "(string: string) => RegExpExecArray",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es5.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                                         "range": [
                                           40945,
                                           40990
@@ -5091,7 +5091,7 @@ export default {
                                     "type": "(string: string) => boolean",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es5.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                                         "range": [
                                           41172,
                                           41202
@@ -5113,7 +5113,7 @@ export default {
                                     "type": "string",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es5.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                                         "range": [
                                           41384,
                                           41408
@@ -5131,7 +5131,7 @@ export default {
                                     "type": "boolean",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es5.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                                         "range": [
                                           41554,
                                           41579
@@ -5149,7 +5149,7 @@ export default {
                                     "type": "boolean",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es5.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                                         "range": [
                                           41729,
                                           41758
@@ -5167,7 +5167,7 @@ export default {
                                     "type": "boolean",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es5.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                                         "range": [
                                           41907,
                                           41935
@@ -5185,7 +5185,7 @@ export default {
                                     "type": "number",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es5.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                                         "range": [
                                           41941,
                                           41959
@@ -5208,7 +5208,7 @@ export default {
                                     "type": "(pattern: string, flags?: string) => RegExp",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es5.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                                         "range": [
                                           42062,
                                           42109
@@ -5230,7 +5230,7 @@ export default {
                                     "type": "string",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es2015.core.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es2015.core.d.ts",
                                         "range": [
                                           14897,
                                           14920
@@ -5248,7 +5248,7 @@ export default {
                                     "type": "boolean",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es2015.core.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es2015.core.d.ts",
                                         "range": [
                                           15085,
                                           15110
@@ -5266,7 +5266,7 @@ export default {
                                     "type": "boolean",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es2015.core.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es2015.core.d.ts",
                                         "range": [
                                           15276,
                                           15302
@@ -5284,7 +5284,7 @@ export default {
                                     "type": "boolean",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es2018.regexp.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es2018.regexp.d.ts",
                                         "range": [
                                           1204,
                                           1229
@@ -5302,7 +5302,7 @@ export default {
                                     "type": "boolean",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es2022.regexp.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es2022.regexp.d.ts",
                                         "range": [
                                           1304,
                                           1333
@@ -5311,8 +5311,8 @@ export default {
                                     ],
                                     "schema": "boolean"
                                   },
-                                  "__@match@3971": {
-                                    "name": "__@match@3971",
+                                  "__@match@4164": {
+                                    "name": "__@match@4164",
                                     "global": false,
                                     "description": "Matches a string with this regular expression, and returns an array containing the results of\nthat search.",
                                     "tags": [
@@ -5325,7 +5325,7 @@ export default {
                                     "type": "(string: string) => RegExpMatchArray",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
                                         "range": [
                                           5644,
                                           5700
@@ -5338,8 +5338,8 @@ export default {
                                       "schema": []
                                     }
                                   },
-                                  "__@replace@3973": {
-                                    "name": "__@replace@3973",
+                                  "__@replace@4166": {
+                                    "name": "__@replace@4166",
                                     "global": false,
                                     "description": "Replaces text in a string, using this regular expression.",
                                     "tags": [
@@ -5364,14 +5364,14 @@ export default {
                                     "type": "{ (string: string, replaceValue: string): string; (string: string, replacer: (substring: string, ...args: any[]) => string): string; }",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
                                         "range": [
                                           6110,
                                           6173
                                         ]
                                       },
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
                                         "range": [
                                           6478,
                                           6576
@@ -5380,8 +5380,8 @@ export default {
                                     ],
                                     "schema": "{ (string: string, replaceValue: string): string; (string: string, replacer: (substring: string, ...args: any[]) => string): string; }"
                                   },
-                                  "__@search@3976": {
-                                    "name": "__@search@3976",
+                                  "__@search@4169": {
+                                    "name": "__@search@4169",
                                     "global": false,
                                     "description": "Finds the position beginning first substring match in a regular expression search\nusing this regular expression.",
                                     "tags": [
@@ -5394,7 +5394,7 @@ export default {
                                     "type": "(string: string) => number",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
                                         "range": [
                                           6782,
                                           6822
@@ -5407,8 +5407,8 @@ export default {
                                       "schema": []
                                     }
                                   },
-                                  "__@split@3978": {
-                                    "name": "__@split@3978",
+                                  "__@split@4171": {
+                                    "name": "__@split@4171",
                                     "global": false,
                                     "description": "Returns an array of substrings that were delimited by strings in the original input that\nmatch against this regular expression.\n\nIf the regular expression contains capturing parentheses, then each time this\nregular expression matches, the results (including any undefined results) of the\ncapturing parentheses are spliced.",
                                     "tags": [
@@ -5425,7 +5425,7 @@ export default {
                                     "type": "(string: string, limit?: number) => string[]",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
                                         "range": [
                                           7384,
                                           7441
@@ -5438,8 +5438,8 @@ export default {
                                       "schema": []
                                     }
                                   },
-                                  "__@matchAll@3980": {
-                                    "name": "__@matchAll@3980",
+                                  "__@matchAll@4173": {
+                                    "name": "__@matchAll@4173",
                                     "global": false,
                                     "description": "Matches a string with this regular expression, and returns an iterable of matches\ncontaining the results of that search.",
                                     "tags": [
@@ -5452,7 +5452,7 @@ export default {
                                     "type": "(str: string) => IterableIterator<RegExpMatchArray>",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es2020.symbol.wellknown.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es2020.symbol.wellknown.d.ts",
                                         "range": [
                                           1385,
                                           1452
@@ -5485,7 +5485,7 @@ export default {
                           "type": "string | number | boolean | RegExp",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 6060,
                                 6101
@@ -5518,7 +5518,7 @@ export default {
                           "type": "string | number | boolean | RegExp",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 6294,
                                 6335
@@ -5541,7 +5541,7 @@ export default {
                           "type": "number",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 6533,
                                 6546
@@ -5564,7 +5564,7 @@ export default {
                           "type": "number",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 6757,
                                 6771
@@ -5587,7 +5587,7 @@ export default {
                           "type": "number",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 6966,
                                 6979
@@ -5610,7 +5610,7 @@ export default {
                           "type": "number",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 7187,
                                 7201
@@ -5633,7 +5633,7 @@ export default {
                           "type": "string | RegExp",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 7435,
                                 7460
@@ -5663,7 +5663,7 @@ export default {
                           "type": "string",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 7664,
                                 7679
@@ -5686,7 +5686,7 @@ export default {
                           "type": "boolean",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 7860,
                                 7878
@@ -5709,7 +5709,7 @@ export default {
                           "type": "string | number | boolean | (string | number | boolean)[]",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 8134,
                                 8207
@@ -5757,7 +5757,7 @@ export default {
                           "type": "(string | number | boolean)[]",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 8450,
                                 8498
@@ -5780,7 +5780,7 @@ export default {
                           "type": "string",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 8694,
                                 8714
@@ -5803,7 +5803,7 @@ export default {
                           "type": "string | (string | number | boolean)[]",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 8937,
                                 8985
@@ -5933,7 +5933,7 @@ export default {
                 "type": "{ query: string | QueryBuilderWhere; before?: number; after?: number; }",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       9336,
                       9447
@@ -5953,7 +5953,7 @@ export default {
                       "type": "string | QueryBuilderWhere",
                       "declarations": [
                         {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                           "range": [
                             9357,
                             9391
@@ -5978,7 +5978,7 @@ export default {
                       "type": "number",
                       "declarations": [
                         {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                           "range": [
                             9400,
                             9416
@@ -5996,7 +5996,7 @@ export default {
                       "type": "number",
                       "declarations": [
                         {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                           "range": [
                             9425,
                             9440
@@ -6019,7 +6019,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentList.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentList.vue.d.ts",
               "range": [
                 3377,
                 3509
@@ -6039,7 +6039,7 @@ export default {
                 "type": "ParsedContent[]",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentList.vue.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentList.vue.d.ts",
                     "range": [
                       3410,
                       3432
@@ -6063,7 +6063,7 @@ export default {
                           "type": "MarkdownRoot",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 2459,
                                 2482
@@ -6083,7 +6083,7 @@ export default {
                                 "type": "\"root\"",
                                 "declarations": [
                                   {
-                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                     "range": [
                                       1465,
                                       1478
@@ -6101,7 +6101,7 @@ export default {
                                 "type": "MarkdownNode[]",
                                 "declarations": [
                                   {
-                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                     "range": [
                                       1483,
                                       1508
@@ -6125,7 +6125,7 @@ export default {
                                           "type": "string",
                                           "declarations": [
                                             {
-                                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                               "range": [
                                                 1214,
                                                 1227
@@ -6143,7 +6143,7 @@ export default {
                                           "type": "string",
                                           "declarations": [
                                             {
-                                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                               "range": [
                                                 1232,
                                                 1245
@@ -6161,7 +6161,7 @@ export default {
                                           "type": "string",
                                           "declarations": [
                                             {
-                                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                               "range": [
                                                 1250,
                                                 1265
@@ -6179,7 +6179,7 @@ export default {
                                           "type": "Record<string, any>",
                                           "declarations": [
                                             {
-                                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                               "range": [
                                                 1270,
                                                 1298
@@ -6197,7 +6197,7 @@ export default {
                                           "type": "any",
                                           "declarations": [
                                             {
-                                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                               "range": [
                                                 1303,
                                                 1317
@@ -6215,7 +6215,7 @@ export default {
                                           "type": "MarkdownNode[]",
                                           "declarations": [
                                             {
-                                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                               "range": [
                                                 1322,
                                                 1348
@@ -6233,7 +6233,7 @@ export default {
                                           "type": "Record<string, any>",
                                           "declarations": [
                                             {
-                                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                               "range": [
                                                 1353,
                                                 1386
@@ -6251,7 +6251,7 @@ export default {
                                           "type": "Record<string, any>",
                                           "declarations": [
                                             {
-                                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                               "range": [
                                                 1391,
                                                 1426
@@ -6274,7 +6274,7 @@ export default {
                                 "type": "Record<string, any>",
                                 "declarations": [
                                   {
-                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                     "range": [
                                       1513,
                                       1541
@@ -6292,7 +6292,7 @@ export default {
                                 "type": "Toc",
                                 "declarations": [
                                   {
-                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                     "range": [
                                       1546,
                                       1556
@@ -6312,7 +6312,7 @@ export default {
                                       "type": "string",
                                       "declarations": [
                                         {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                           "range": [
                                             1095,
                                             1109
@@ -6330,7 +6330,7 @@ export default {
                                       "type": "number",
                                       "declarations": [
                                         {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                           "range": [
                                             1114,
                                             1128
@@ -6348,7 +6348,7 @@ export default {
                                       "type": "number",
                                       "declarations": [
                                         {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                           "range": [
                                             1133,
                                             1153
@@ -6366,7 +6366,7 @@ export default {
                                       "type": "TocLink[]",
                                       "declarations": [
                                         {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                           "range": [
                                             1158,
                                             1175
@@ -6390,7 +6390,7 @@ export default {
                                                 "type": "string",
                                                 "declarations": [
                                                   {
-                                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                                     "range": [
                                                       991,
                                                       1002
@@ -6408,7 +6408,7 @@ export default {
                                                 "type": "string",
                                                 "declarations": [
                                                   {
-                                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                                     "range": [
                                                       1007,
                                                       1020
@@ -6426,7 +6426,7 @@ export default {
                                                 "type": "number",
                                                 "declarations": [
                                                   {
-                                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                                     "range": [
                                                       1025,
                                                       1039
@@ -6444,7 +6444,7 @@ export default {
                                                 "type": "TocLink[]",
                                                 "declarations": [
                                                   {
-                                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                                     "range": [
                                                       1044,
                                                       1065
@@ -6473,7 +6473,7 @@ export default {
                           "type": "MarkdownRoot",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 2523,
                                 2549
@@ -6491,7 +6491,7 @@ export default {
                           "type": "\"docs\"",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 2319,
                                 2338
@@ -6509,7 +6509,7 @@ export default {
                           "type": "string",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 185,
                                 197
@@ -6527,7 +6527,7 @@ export default {
                           "type": "string",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 240,
                                 257
@@ -6545,7 +6545,7 @@ export default {
                           "type": "string",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 369,
                                 384
@@ -6563,7 +6563,7 @@ export default {
                           "type": "string",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 426,
                                 441
@@ -6581,7 +6581,7 @@ export default {
                           "type": "boolean",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 490,
                                 507
@@ -6606,7 +6606,7 @@ export default {
                           "type": "boolean",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 558,
                                 577
@@ -6624,7 +6624,7 @@ export default {
                           "type": "string",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 620,
                                 637
@@ -6642,7 +6642,7 @@ export default {
                           "type": "\"markdown\" | \"yaml\" | \"json\" | \"csv\"",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 706,
                                 751
@@ -6669,7 +6669,7 @@ export default {
                           "type": "string",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 830,
                                 845
@@ -6687,7 +6687,7 @@ export default {
                           "type": "\"yaml\" | \"json\" | \"csv\" | \"md\" | \"yml\" | \"json5\"",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 895,
                                 957
@@ -6721,7 +6721,7 @@ export default {
                 "type": "() => Promise<void>",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentList.vue.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentList.vue.d.ts",
                     "range": [
                       3445,
                       3474
@@ -6745,14 +6745,14 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
               ]
             },
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentList.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentList.vue.d.ts",
               "range": [
                 3359,
                 3516
@@ -6772,7 +6772,7 @@ export default {
                 "type": "(context: { list: ParsedContent[]; refresh: () => Promise<void>; }) => VNode<RendererNode, RendererElement, { [key: string]: any; }>[]",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentList.vue.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentList.vue.d.ts",
                     "range": [
                       3377,
                       3509
@@ -6794,7 +6794,7 @@ export default {
           "description": "The path of the content to load from content source.",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentList.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentList.vue.d.ts",
               "range": [
                 1975,
                 2091
@@ -6809,7 +6809,7 @@ export default {
           "description": "A query builder params object to be passed to <ContentQuery /> component.",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentList.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentList.vue.d.ts",
               "range": [
                 2209,
                 2337
@@ -6826,14 +6826,14 @@ export default {
     "global": true,
     "prefetch": false,
     "preload": false,
-    "filePath": "node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.vue",
+    "filePath": "node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.vue",
     "pascalName": "ContentNavigation",
     "kebabName": "content-navigation",
     "chunkName": "components/content-navigation",
-    "shortPath": "node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.vue",
+    "shortPath": "node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -6846,7 +6846,7 @@ export default {
           "type": "QueryBuilderParams | QueryBuilder<ParsedContentMeta>",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.vue.d.ts",
               "range": [
                 1708,
                 1787
@@ -6870,7 +6870,7 @@ export default {
                     "type": "boolean",
                     "declarations": [
                       {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                        "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                         "range": [
                           9172,
                           9188
@@ -6895,7 +6895,7 @@ export default {
                     "type": "number",
                     "declarations": [
                       {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                        "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                         "range": [
                           9193,
                           9207
@@ -6913,7 +6913,7 @@ export default {
                     "type": "number",
                     "declarations": [
                       {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                        "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                         "range": [
                           9212,
                           9227
@@ -6931,7 +6931,7 @@ export default {
                     "type": "string[]",
                     "declarations": [
                       {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                        "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                         "range": [
                           9232,
                           9248
@@ -6955,7 +6955,7 @@ export default {
                     "type": "string[]",
                     "declarations": [
                       {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                        "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                         "range": [
                           9253,
                           9272
@@ -6973,7 +6973,7 @@ export default {
                     "type": "SortOptions[]",
                     "declarations": [
                       {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                        "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                         "range": [
                           9277,
                           9298
@@ -7006,7 +7006,7 @@ export default {
                                   "type": "string",
                                   "declarations": [
                                     {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                      "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                       "range": [
                                         3558,
                                         3575
@@ -7029,7 +7029,7 @@ export default {
                                   "type": "boolean",
                                   "declarations": [
                                     {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                      "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                       "range": [
                                         3749,
                                         3768
@@ -7052,7 +7052,7 @@ export default {
                                   "type": "\"upper\" | \"lower\" | \"false\"",
                                   "declarations": [
                                     {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                      "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                       "range": [
                                         3953,
                                         3994
@@ -7083,7 +7083,7 @@ export default {
                                   "type": "\"base\" | \"accent\" | \"case\" | \"variant\"",
                                   "declarations": [
                                     {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                      "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                       "range": [
                                         4733,
                                         4787
@@ -7122,7 +7122,7 @@ export default {
                     "type": "QueryBuilderWhere[]",
                     "declarations": [
                       {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                        "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                         "range": [
                           9303,
                           9331
@@ -7151,7 +7151,7 @@ export default {
                               "type": "QueryBuilderWhere[]",
                               "declarations": [
                                 {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                   "range": [
                                     5305,
                                     5332
@@ -7174,7 +7174,7 @@ export default {
                               "type": "QueryBuilderWhere[]",
                               "declarations": [
                                 {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                   "range": [
                                     5576,
                                     5602
@@ -7197,7 +7197,7 @@ export default {
                               "type": "string | number | boolean | RegExp | QueryBuilderWhere",
                               "declarations": [
                                 {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                   "range": [
                                     5799,
                                     5861
@@ -7235,7 +7235,7 @@ export default {
                               "type": "string | number | boolean | RegExp",
                               "declarations": [
                                 {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                   "range": [
                                     6060,
                                     6101
@@ -7268,7 +7268,7 @@ export default {
                               "type": "string | number | boolean | RegExp",
                               "declarations": [
                                 {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                   "range": [
                                     6294,
                                     6335
@@ -7291,7 +7291,7 @@ export default {
                               "type": "number",
                               "declarations": [
                                 {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                   "range": [
                                     6533,
                                     6546
@@ -7314,7 +7314,7 @@ export default {
                               "type": "number",
                               "declarations": [
                                 {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                   "range": [
                                     6757,
                                     6771
@@ -7337,7 +7337,7 @@ export default {
                               "type": "number",
                               "declarations": [
                                 {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                   "range": [
                                     6966,
                                     6979
@@ -7360,7 +7360,7 @@ export default {
                               "type": "number",
                               "declarations": [
                                 {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                   "range": [
                                     7187,
                                     7201
@@ -7383,7 +7383,7 @@ export default {
                               "type": "string | RegExp",
                               "declarations": [
                                 {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                   "range": [
                                     7435,
                                     7460
@@ -7413,7 +7413,7 @@ export default {
                               "type": "string",
                               "declarations": [
                                 {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                   "range": [
                                     7664,
                                     7679
@@ -7436,7 +7436,7 @@ export default {
                               "type": "boolean",
                               "declarations": [
                                 {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                   "range": [
                                     7860,
                                     7878
@@ -7459,7 +7459,7 @@ export default {
                               "type": "string | number | boolean | (string | number | boolean)[]",
                               "declarations": [
                                 {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                   "range": [
                                     8134,
                                     8207
@@ -7507,7 +7507,7 @@ export default {
                               "type": "(string | number | boolean)[]",
                               "declarations": [
                                 {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                   "range": [
                                     8450,
                                     8498
@@ -7530,7 +7530,7 @@ export default {
                               "type": "string",
                               "declarations": [
                                 {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                   "range": [
                                     8694,
                                     8714
@@ -7553,7 +7553,7 @@ export default {
                               "type": "string | (string | number | boolean)[]",
                               "declarations": [
                                 {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                   "range": [
                                     8937,
                                     8985
@@ -7683,7 +7683,7 @@ export default {
                     "type": "{ query: string | QueryBuilderWhere; before?: number; after?: number; }",
                     "declarations": [
                       {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                        "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                         "range": [
                           9336,
                           9447
@@ -7703,7 +7703,7 @@ export default {
                           "type": "string | QueryBuilderWhere",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 9357,
                                 9391
@@ -7728,7 +7728,7 @@ export default {
                           "type": "number",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 9400,
                                 9416
@@ -7746,7 +7746,7 @@ export default {
                           "type": "number",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 9425,
                                 9440
@@ -7772,7 +7772,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.vue.d.ts",
               "range": [
                 2590,
                 2687
@@ -7792,7 +7792,7 @@ export default {
                 "type": "NavItem[]",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.vue.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.vue.d.ts",
                     "range": [
                       2630,
                       2652
@@ -7816,7 +7816,7 @@ export default {
                           "type": "string",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 11206,
                                 11220
@@ -7834,7 +7834,7 @@ export default {
                           "type": "string",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 11225,
                                 11239
@@ -7852,7 +7852,7 @@ export default {
                           "type": "string",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 11244,
                                 11257
@@ -7870,7 +7870,7 @@ export default {
                           "type": "boolean",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 11262,
                                 11279
@@ -7895,7 +7895,7 @@ export default {
                           "type": "NavItem[]",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 11284,
                                 11305
@@ -7921,14 +7921,14 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
               ]
             },
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.vue.d.ts",
               "range": [
                 2572,
                 2694
@@ -7948,7 +7948,7 @@ export default {
                 "type": "({ navigation }: { navigation: NavItem[]; }) => VNode<RendererNode, RendererElement, { [key: string]: any; }>[]",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.vue.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.vue.d.ts",
                     "range": [
                       2590,
                       2687
@@ -7970,7 +7970,7 @@ export default {
           "description": "A query to be passed to `fetchContentNavigation()`.",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.vue.d.ts",
               "range": [
                 1461,
                 1642
@@ -7985,7 +7985,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.vue.d.ts",
               "range": [
                 1662,
                 1678
@@ -8002,14 +8002,14 @@ export default {
     "global": true,
     "prefetch": false,
     "preload": false,
-    "filePath": "node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue",
+    "filePath": "node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue",
     "pascalName": "ContentQuery",
     "kebabName": "content-query",
     "chunkName": "components/content-query",
-    "shortPath": "node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue",
+    "shortPath": "node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -8022,7 +8022,7 @@ export default {
           "type": "number",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
               "range": [
                 6505,
                 6518
@@ -8040,7 +8040,7 @@ export default {
           "type": "number",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
               "range": [
                 6527,
                 6541
@@ -8058,7 +8058,7 @@ export default {
           "type": "string[]",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
               "range": [
                 6550,
                 6565
@@ -8082,7 +8082,7 @@ export default {
           "type": "string[]",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
               "range": [
                 6574,
                 6592
@@ -8106,7 +8106,7 @@ export default {
           "type": "SortParams",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
               "range": [
                 6601,
                 6618
@@ -8131,7 +8131,7 @@ export default {
                 "type": "string",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       3558,
                       3575
@@ -8154,7 +8154,7 @@ export default {
                 "type": "boolean",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       3749,
                       3768
@@ -8184,7 +8184,7 @@ export default {
                 "type": "\"upper\" | \"lower\" | \"false\"",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       3953,
                       3994
@@ -8215,7 +8215,7 @@ export default {
                 "type": "\"base\" | \"accent\" | \"case\" | \"variant\"",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       4733,
                       4787
@@ -8245,7 +8245,7 @@ export default {
           "type": "{ [key: string]: any; }",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
               "range": [
                 6627,
                 6678
@@ -8267,7 +8267,7 @@ export default {
           "type": "\"surround\" | \"one\"",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
               "range": [
                 6687,
                 6712
@@ -8292,7 +8292,7 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
               "range": [
                 6721,
                 6734
@@ -8310,7 +8310,7 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
               "range": [
                 6743,
                 6758
@@ -8327,7 +8327,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
               "range": [
                 8930,
                 9004
@@ -8347,7 +8347,7 @@ export default {
                 "type": "ParsedContent | ParsedContent[]",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
                     "range": [
                       162,
                       205
@@ -8371,7 +8371,7 @@ export default {
                           "type": "MarkdownRoot",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 2459,
                                 2482
@@ -8391,7 +8391,7 @@ export default {
                                 "type": "\"root\"",
                                 "declarations": [
                                   {
-                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                     "range": [
                                       1465,
                                       1478
@@ -8409,7 +8409,7 @@ export default {
                                 "type": "MarkdownNode[]",
                                 "declarations": [
                                   {
-                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                     "range": [
                                       1483,
                                       1508
@@ -8433,7 +8433,7 @@ export default {
                                           "type": "string",
                                           "declarations": [
                                             {
-                                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                               "range": [
                                                 1214,
                                                 1227
@@ -8451,7 +8451,7 @@ export default {
                                           "type": "string",
                                           "declarations": [
                                             {
-                                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                               "range": [
                                                 1232,
                                                 1245
@@ -8469,7 +8469,7 @@ export default {
                                           "type": "string",
                                           "declarations": [
                                             {
-                                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                               "range": [
                                                 1250,
                                                 1265
@@ -8487,7 +8487,7 @@ export default {
                                           "type": "Record<string, any>",
                                           "declarations": [
                                             {
-                                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                               "range": [
                                                 1270,
                                                 1298
@@ -8505,7 +8505,7 @@ export default {
                                           "type": "any",
                                           "declarations": [
                                             {
-                                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                               "range": [
                                                 1303,
                                                 1317
@@ -8523,7 +8523,7 @@ export default {
                                           "type": "MarkdownNode[]",
                                           "declarations": [
                                             {
-                                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                               "range": [
                                                 1322,
                                                 1348
@@ -8541,7 +8541,7 @@ export default {
                                           "type": "Record<string, any>",
                                           "declarations": [
                                             {
-                                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                               "range": [
                                                 1353,
                                                 1386
@@ -8559,7 +8559,7 @@ export default {
                                           "type": "Record<string, any>",
                                           "declarations": [
                                             {
-                                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                               "range": [
                                                 1391,
                                                 1426
@@ -8582,7 +8582,7 @@ export default {
                                 "type": "Record<string, any>",
                                 "declarations": [
                                   {
-                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                     "range": [
                                       1513,
                                       1541
@@ -8600,7 +8600,7 @@ export default {
                                 "type": "Toc",
                                 "declarations": [
                                   {
-                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                     "range": [
                                       1546,
                                       1556
@@ -8620,7 +8620,7 @@ export default {
                                       "type": "string",
                                       "declarations": [
                                         {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                           "range": [
                                             1095,
                                             1109
@@ -8638,7 +8638,7 @@ export default {
                                       "type": "number",
                                       "declarations": [
                                         {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                           "range": [
                                             1114,
                                             1128
@@ -8656,7 +8656,7 @@ export default {
                                       "type": "number",
                                       "declarations": [
                                         {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                           "range": [
                                             1133,
                                             1153
@@ -8674,7 +8674,7 @@ export default {
                                       "type": "TocLink[]",
                                       "declarations": [
                                         {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                           "range": [
                                             1158,
                                             1175
@@ -8698,7 +8698,7 @@ export default {
                                                 "type": "string",
                                                 "declarations": [
                                                   {
-                                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                                     "range": [
                                                       991,
                                                       1002
@@ -8716,7 +8716,7 @@ export default {
                                                 "type": "string",
                                                 "declarations": [
                                                   {
-                                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                                     "range": [
                                                       1007,
                                                       1020
@@ -8734,7 +8734,7 @@ export default {
                                                 "type": "number",
                                                 "declarations": [
                                                   {
-                                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                                     "range": [
                                                       1025,
                                                       1039
@@ -8752,7 +8752,7 @@ export default {
                                                 "type": "TocLink[]",
                                                 "declarations": [
                                                   {
-                                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                                     "range": [
                                                       1044,
                                                       1065
@@ -8781,7 +8781,7 @@ export default {
                           "type": "MarkdownRoot",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 2523,
                                 2549
@@ -8799,7 +8799,7 @@ export default {
                           "type": "\"docs\"",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 2319,
                                 2338
@@ -8817,7 +8817,7 @@ export default {
                           "type": "string",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 185,
                                 197
@@ -8835,7 +8835,7 @@ export default {
                           "type": "string",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 240,
                                 257
@@ -8853,7 +8853,7 @@ export default {
                           "type": "string",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 369,
                                 384
@@ -8871,7 +8871,7 @@ export default {
                           "type": "string",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 426,
                                 441
@@ -8889,7 +8889,7 @@ export default {
                           "type": "boolean",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 490,
                                 507
@@ -8914,7 +8914,7 @@ export default {
                           "type": "boolean",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 558,
                                 577
@@ -8932,7 +8932,7 @@ export default {
                           "type": "string",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 620,
                                 637
@@ -8950,7 +8950,7 @@ export default {
                           "type": "\"markdown\" | \"yaml\" | \"json\" | \"csv\"",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 706,
                                 751
@@ -8977,7 +8977,7 @@ export default {
                           "type": "string",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 830,
                                 845
@@ -8995,7 +8995,7 @@ export default {
                           "type": "\"yaml\" | \"json\" | \"csv\" | \"md\" | \"yml\" | \"json5\"",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 895,
                                 957
@@ -9036,7 +9036,7 @@ export default {
                 "type": "() => Promise<void>",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
                     "range": [
                       210,
                       239
@@ -9057,7 +9057,7 @@ export default {
                 "type": "boolean",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
                     "range": [
                       244,
                       263
@@ -9078,14 +9078,14 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
               ]
             },
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
               "range": [
                 8912,
                 9011
@@ -9105,7 +9105,7 @@ export default {
                 "type": "(context: ContentQueryDefaultSlotContext) => VNode<RendererNode, RendererElement, { [key: string]: any; }>[]",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
                     "range": [
                       8930,
                       9004
@@ -9127,7 +9127,7 @@ export default {
           "description": "Sort results",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
               "range": [
                 5522,
                 5641
@@ -9142,7 +9142,7 @@ export default {
           "description": "A type of query to be made.",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
               "range": [
                 6272,
                 6399
@@ -9164,7 +9164,7 @@ export default {
           "description": "The path of the content to load from content source.",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
               "range": [
                 4752,
                 4868
@@ -9179,7 +9179,7 @@ export default {
           "description": "Select a subset of fields",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
               "range": [
                 4938,
                 5055
@@ -9200,7 +9200,7 @@ export default {
           "description": "Remove a subset of fields",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
               "range": [
                 5125,
                 5245
@@ -9221,7 +9221,7 @@ export default {
           "description": "Filter results",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
               "range": [
                 5304,
                 5465
@@ -9236,7 +9236,7 @@ export default {
           "description": "Limit number of results",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
               "range": [
                 5709,
                 5825
@@ -9251,7 +9251,7 @@ export default {
           "description": "Skip number of results",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
               "range": [
                 5892,
                 6007
@@ -9266,7 +9266,7 @@ export default {
           "description": "Filter contents based on locale",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
               "range": [
                 6083,
                 6200
@@ -9281,7 +9281,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
               "range": [
                 6419,
                 6434
@@ -9296,7 +9296,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
               "range": [
                 6443,
                 6453
@@ -9311,7 +9311,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
               "range": [
                 6462,
                 6475
@@ -9328,14 +9328,14 @@ export default {
     "global": true,
     "prefetch": false,
     "preload": false,
-    "filePath": "node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.vue",
+    "filePath": "node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.vue",
     "pascalName": "ContentRenderer",
     "kebabName": "content-renderer",
     "chunkName": "components/content-renderer",
-    "shortPath": "node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.vue",
+    "shortPath": "node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -9348,7 +9348,7 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.vue.d.ts",
               "range": [
                 1256,
                 1268
@@ -9367,7 +9367,7 @@ export default {
           "type": "Record<string, any>",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.vue.d.ts",
               "range": [
                 1273,
                 1300
@@ -9386,7 +9386,7 @@ export default {
           "type": "boolean",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.vue.d.ts",
               "range": [
                 1234,
                 1251
@@ -9413,7 +9413,7 @@ export default {
           "description": "The tag to use for the renderer element if it is used.",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.vue.d.ts",
               "range": [
                 1151,
                 1222
@@ -9428,7 +9428,7 @@ export default {
           "description": "Whether or not to render the excerpt.",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.vue.d.ts",
               "range": [
                 969,
                 1046
@@ -9450,7 +9450,7 @@ export default {
           "description": "The document to render.",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.vue.d.ts",
               "range": [
                 781,
                 881
@@ -9467,14 +9467,14 @@ export default {
     "global": true,
     "prefetch": false,
     "preload": false,
-    "filePath": "node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
+    "filePath": "node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
     "pascalName": "ContentRendererMarkdown",
     "kebabName": "content-renderer-markdown",
     "chunkName": "components/content-renderer-markdown",
-    "shortPath": "node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
+    "shortPath": "node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -9487,14 +9487,14 @@ export default {
           "type": "Record<string, any>",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
               "range": [
                 359,
                 408
               ]
             },
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
               "range": [
                 359,
                 408
@@ -9512,7 +9512,7 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
               "range": [
                 556,
                 603
@@ -9531,7 +9531,7 @@ export default {
           "type": "Record<string, any>",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
               "range": [
                 739,
                 792
@@ -9550,7 +9550,7 @@ export default {
           "type": "Record<string, any>",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
               "range": [
                 675,
                 734
@@ -9569,7 +9569,7 @@ export default {
           "type": "boolean",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
               "range": [
                 453,
                 505
@@ -9596,7 +9596,7 @@ export default {
           "description": "Root tag to use for rendering",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
               "range": [
                 556,
                 603
@@ -9611,7 +9611,7 @@ export default {
           "description": "Render only the excerpt",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
               "range": [
                 453,
                 505
@@ -9633,7 +9633,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
               "range": [
                 739,
                 792
@@ -9648,7 +9648,7 @@ export default {
           "description": "Content to render",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
               "range": [
                 359,
                 408
@@ -9663,7 +9663,7 @@ export default {
           "description": "The map of custom components to use for rendering.",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
               "range": [
                 675,
                 734
@@ -9680,14 +9680,14 @@ export default {
     "global": true,
     "prefetch": false,
     "preload": false,
-    "filePath": "node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentSlot.vue",
+    "filePath": "node_modules/@nuxt/content/dist/runtime/components/ContentSlot.vue",
     "pascalName": "ContentSlot",
     "kebabName": "content-slot",
     "chunkName": "components/content-slot",
-    "shortPath": "node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentSlot.vue",
+    "shortPath": "node_modules/@nuxt/content/dist/runtime/components/ContentSlot.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentSlot.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentSlot.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -9700,7 +9700,7 @@ export default {
           "type": "Function",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentSlot.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentSlot.vue.d.ts",
               "range": [
                 881,
                 895
@@ -9729,7 +9729,7 @@ export default {
                 "type": "(this: Function, thisArg: any, argArray?: any) => any",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es5.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                     "range": [
                       10258,
                       10315
@@ -9760,7 +9760,7 @@ export default {
                 "type": "(this: Function, thisArg: any, ...argArray: any[]) => any",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es5.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                     "range": [
                       10563,
                       10623
@@ -9791,7 +9791,7 @@ export default {
                 "type": "(this: Function, thisArg: any, ...argArray: any[]) => any",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es5.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                     "range": [
                       11046,
                       11106
@@ -9813,7 +9813,7 @@ export default {
                 "type": "() => string",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es5.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                     "range": [
                       11170,
                       11189
@@ -9834,7 +9834,7 @@ export default {
                 "type": "any",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es5.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                     "range": [
                       11195,
                       11210
@@ -9852,7 +9852,7 @@ export default {
                 "type": "number",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es5.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                     "range": [
                       11215,
                       11239
@@ -9870,7 +9870,7 @@ export default {
                 "type": "any",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es5.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                     "range": [
                       11276,
                       11291
@@ -9888,7 +9888,7 @@ export default {
                 "type": "Function",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es5.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                     "range": [
                       11296,
                       11313
@@ -9906,7 +9906,7 @@ export default {
                 "type": "string",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es2015.core.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es2015.core.d.ts",
                     "range": [
                       4364,
                       4386
@@ -9915,8 +9915,8 @@ export default {
                 ],
                 "schema": "string"
               },
-              "__@hasInstance@336": {
-                "name": "__@hasInstance@336",
+              "__@hasInstance@324": {
+                "name": "__@hasInstance@324",
                 "global": false,
                 "description": "Determines whether the given value inherits from this function if this function was used\nas a constructor function.\n\nA constructor function can control which objects are recognized as its instances by\n'instanceof' by overriding this method.",
                 "tags": [],
@@ -9924,7 +9924,7 @@ export default {
                 "type": "(value: any) => boolean",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
                     "range": [
                       5097,
                       5139
@@ -9937,8 +9937,8 @@ export default {
                   "schema": []
                 }
               },
-              "__@metadata@338": {
-                "name": "__@metadata@338",
+              "__@metadata@326": {
+                "name": "__@metadata@326",
                 "global": false,
                 "description": "",
                 "tags": [],
@@ -9946,7 +9946,7 @@ export default {
                 "type": "DecoratorMetadataObject",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.esnext.decorators.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.esnext.decorators.d.ts",
                     "range": [
                       1023,
                       1067
@@ -9972,7 +9972,7 @@ export default {
           "type": "string | boolean",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentSlot.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentSlot.vue.d.ts",
               "range": [
                 900,
                 925
@@ -10000,7 +10000,7 @@ export default {
           "description": "A slot name or function",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentSlot.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentSlot.vue.d.ts",
               "range": [
                 606,
                 682
@@ -10029,7 +10029,7 @@ export default {
                 "type": "(this: Function, thisArg: any, argArray?: any) => any",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es5.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                     "range": [
                       10258,
                       10315
@@ -10060,7 +10060,7 @@ export default {
                 "type": "(this: Function, thisArg: any, ...argArray: any[]) => any",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es5.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                     "range": [
                       10563,
                       10623
@@ -10091,7 +10091,7 @@ export default {
                 "type": "(this: Function, thisArg: any, ...argArray: any[]) => any",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es5.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                     "range": [
                       11046,
                       11106
@@ -10113,7 +10113,7 @@ export default {
                 "type": "() => string",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es5.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                     "range": [
                       11170,
                       11189
@@ -10134,7 +10134,7 @@ export default {
                 "type": "any",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es5.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                     "range": [
                       11195,
                       11210
@@ -10152,7 +10152,7 @@ export default {
                 "type": "number",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es5.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                     "range": [
                       11215,
                       11239
@@ -10170,7 +10170,7 @@ export default {
                 "type": "any",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es5.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                     "range": [
                       11276,
                       11291
@@ -10188,7 +10188,7 @@ export default {
                 "type": "Function",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es5.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                     "range": [
                       11296,
                       11313
@@ -10206,7 +10206,7 @@ export default {
                 "type": "string",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es2015.core.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es2015.core.d.ts",
                     "range": [
                       4364,
                       4386
@@ -10215,8 +10215,8 @@ export default {
                 ],
                 "schema": "string"
               },
-              "__@hasInstance@336": {
-                "name": "__@hasInstance@336",
+              "__@hasInstance@324": {
+                "name": "__@hasInstance@324",
                 "global": false,
                 "description": "Determines whether the given value inherits from this function if this function was used\nas a constructor function.\n\nA constructor function can control which objects are recognized as its instances by\n'instanceof' by overriding this method.",
                 "tags": [],
@@ -10224,7 +10224,7 @@ export default {
                 "type": "(value: any) => boolean",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
                     "range": [
                       5097,
                       5139
@@ -10237,8 +10237,8 @@ export default {
                   "schema": []
                 }
               },
-              "__@metadata@338": {
-                "name": "__@metadata@338",
+              "__@metadata@326": {
+                "name": "__@metadata@326",
                 "global": false,
                 "description": "",
                 "tags": [],
@@ -10246,7 +10246,7 @@ export default {
                 "type": "DecoratorMetadataObject",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/typescript@5.3.3/node_modules/typescript/lib/lib.esnext.decorators.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.esnext.decorators.d.ts",
                     "range": [
                       1023,
                       1067
@@ -10268,7 +10268,7 @@ export default {
           "description": "Tags to unwrap separated by spaces\nExample: 'ul li'",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/ContentSlot.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentSlot.vue.d.ts",
               "range": [
                 769,
                 869
@@ -10293,14 +10293,14 @@ export default {
     "global": true,
     "prefetch": false,
     "preload": false,
-    "filePath": "node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/DocumentDrivenEmpty.vue",
+    "filePath": "node_modules/@nuxt/content/dist/runtime/components/DocumentDrivenEmpty.vue",
     "pascalName": "DocumentDrivenEmpty",
     "kebabName": "document-driven-empty",
     "chunkName": "components/document-driven-empty",
-    "shortPath": "node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/DocumentDrivenEmpty.vue",
+    "shortPath": "node_modules/@nuxt/content/dist/runtime/components/DocumentDrivenEmpty.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/DocumentDrivenEmpty.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/DocumentDrivenEmpty.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -10313,14 +10313,14 @@ export default {
           "type": "ParsedContent",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/DocumentDrivenEmpty.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/DocumentDrivenEmpty.vue.d.ts",
               "range": [
                 470,
                 548
               ]
             },
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/DocumentDrivenEmpty.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/DocumentDrivenEmpty.vue.d.ts",
               "range": [
                 470,
                 548
@@ -10340,7 +10340,7 @@ export default {
                 "type": "MarkdownRoot",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       2459,
                       2482
@@ -10360,7 +10360,7 @@ export default {
                       "type": "\"root\"",
                       "declarations": [
                         {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                           "range": [
                             1465,
                             1478
@@ -10378,7 +10378,7 @@ export default {
                       "type": "MarkdownNode[]",
                       "declarations": [
                         {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                           "range": [
                             1483,
                             1508
@@ -10402,7 +10402,7 @@ export default {
                                 "type": "string",
                                 "declarations": [
                                   {
-                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                     "range": [
                                       1214,
                                       1227
@@ -10420,7 +10420,7 @@ export default {
                                 "type": "string",
                                 "declarations": [
                                   {
-                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                     "range": [
                                       1232,
                                       1245
@@ -10438,7 +10438,7 @@ export default {
                                 "type": "string",
                                 "declarations": [
                                   {
-                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                     "range": [
                                       1250,
                                       1265
@@ -10456,7 +10456,7 @@ export default {
                                 "type": "Record<string, any>",
                                 "declarations": [
                                   {
-                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                     "range": [
                                       1270,
                                       1298
@@ -10474,7 +10474,7 @@ export default {
                                 "type": "any",
                                 "declarations": [
                                   {
-                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                     "range": [
                                       1303,
                                       1317
@@ -10492,7 +10492,7 @@ export default {
                                 "type": "MarkdownNode[]",
                                 "declarations": [
                                   {
-                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                     "range": [
                                       1322,
                                       1348
@@ -10510,7 +10510,7 @@ export default {
                                 "type": "Record<string, any>",
                                 "declarations": [
                                   {
-                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                     "range": [
                                       1353,
                                       1386
@@ -10528,7 +10528,7 @@ export default {
                                 "type": "Record<string, any>",
                                 "declarations": [
                                   {
-                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                     "range": [
                                       1391,
                                       1426
@@ -10551,7 +10551,7 @@ export default {
                       "type": "Record<string, any>",
                       "declarations": [
                         {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                           "range": [
                             1513,
                             1541
@@ -10569,7 +10569,7 @@ export default {
                       "type": "Toc",
                       "declarations": [
                         {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                           "range": [
                             1546,
                             1556
@@ -10589,7 +10589,7 @@ export default {
                             "type": "string",
                             "declarations": [
                               {
-                                "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                 "range": [
                                   1095,
                                   1109
@@ -10607,7 +10607,7 @@ export default {
                             "type": "number",
                             "declarations": [
                               {
-                                "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                 "range": [
                                   1114,
                                   1128
@@ -10625,7 +10625,7 @@ export default {
                             "type": "number",
                             "declarations": [
                               {
-                                "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                 "range": [
                                   1133,
                                   1153
@@ -10643,7 +10643,7 @@ export default {
                             "type": "TocLink[]",
                             "declarations": [
                               {
-                                "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                 "range": [
                                   1158,
                                   1175
@@ -10667,7 +10667,7 @@ export default {
                                       "type": "string",
                                       "declarations": [
                                         {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                           "range": [
                                             991,
                                             1002
@@ -10685,7 +10685,7 @@ export default {
                                       "type": "string",
                                       "declarations": [
                                         {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                           "range": [
                                             1007,
                                             1020
@@ -10703,7 +10703,7 @@ export default {
                                       "type": "number",
                                       "declarations": [
                                         {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                           "range": [
                                             1025,
                                             1039
@@ -10721,7 +10721,7 @@ export default {
                                       "type": "TocLink[]",
                                       "declarations": [
                                         {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                           "range": [
                                             1044,
                                             1065
@@ -10750,7 +10750,7 @@ export default {
                 "type": "MarkdownRoot",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       2523,
                       2549
@@ -10768,7 +10768,7 @@ export default {
                 "type": "\"docs\"",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       2319,
                       2338
@@ -10786,7 +10786,7 @@ export default {
                 "type": "string",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       185,
                       197
@@ -10804,7 +10804,7 @@ export default {
                 "type": "string",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       240,
                       257
@@ -10822,7 +10822,7 @@ export default {
                 "type": "string",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       369,
                       384
@@ -10840,7 +10840,7 @@ export default {
                 "type": "string",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       426,
                       441
@@ -10858,7 +10858,7 @@ export default {
                 "type": "boolean",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       490,
                       507
@@ -10883,7 +10883,7 @@ export default {
                 "type": "boolean",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       558,
                       577
@@ -10901,7 +10901,7 @@ export default {
                 "type": "string",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       620,
                       637
@@ -10919,7 +10919,7 @@ export default {
                 "type": "\"markdown\" | \"yaml\" | \"json\" | \"csv\"",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       706,
                       751
@@ -10946,7 +10946,7 @@ export default {
                 "type": "string",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       830,
                       845
@@ -10964,7 +10964,7 @@ export default {
                 "type": "\"yaml\" | \"json\" | \"csv\" | \"md\" | \"yml\" | \"json5\"",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       895,
                       957
@@ -10997,7 +10997,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/DocumentDrivenEmpty.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/DocumentDrivenEmpty.vue.d.ts",
               "range": [
                 470,
                 548
@@ -11017,7 +11017,7 @@ export default {
                 "type": "MarkdownRoot",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       2459,
                       2482
@@ -11037,7 +11037,7 @@ export default {
                       "type": "\"root\"",
                       "declarations": [
                         {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                           "range": [
                             1465,
                             1478
@@ -11055,7 +11055,7 @@ export default {
                       "type": "MarkdownNode[]",
                       "declarations": [
                         {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                           "range": [
                             1483,
                             1508
@@ -11079,7 +11079,7 @@ export default {
                                 "type": "string",
                                 "declarations": [
                                   {
-                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                     "range": [
                                       1214,
                                       1227
@@ -11097,7 +11097,7 @@ export default {
                                 "type": "string",
                                 "declarations": [
                                   {
-                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                     "range": [
                                       1232,
                                       1245
@@ -11115,7 +11115,7 @@ export default {
                                 "type": "string",
                                 "declarations": [
                                   {
-                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                     "range": [
                                       1250,
                                       1265
@@ -11133,7 +11133,7 @@ export default {
                                 "type": "Record<string, any>",
                                 "declarations": [
                                   {
-                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                     "range": [
                                       1270,
                                       1298
@@ -11151,7 +11151,7 @@ export default {
                                 "type": "any",
                                 "declarations": [
                                   {
-                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                     "range": [
                                       1303,
                                       1317
@@ -11169,7 +11169,7 @@ export default {
                                 "type": "MarkdownNode[]",
                                 "declarations": [
                                   {
-                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                     "range": [
                                       1322,
                                       1348
@@ -11187,7 +11187,7 @@ export default {
                                 "type": "Record<string, any>",
                                 "declarations": [
                                   {
-                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                     "range": [
                                       1353,
                                       1386
@@ -11205,7 +11205,7 @@ export default {
                                 "type": "Record<string, any>",
                                 "declarations": [
                                   {
-                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                     "range": [
                                       1391,
                                       1426
@@ -11228,7 +11228,7 @@ export default {
                       "type": "Record<string, any>",
                       "declarations": [
                         {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                           "range": [
                             1513,
                             1541
@@ -11246,7 +11246,7 @@ export default {
                       "type": "Toc",
                       "declarations": [
                         {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                           "range": [
                             1546,
                             1556
@@ -11266,7 +11266,7 @@ export default {
                             "type": "string",
                             "declarations": [
                               {
-                                "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                 "range": [
                                   1095,
                                   1109
@@ -11284,7 +11284,7 @@ export default {
                             "type": "number",
                             "declarations": [
                               {
-                                "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                 "range": [
                                   1114,
                                   1128
@@ -11302,7 +11302,7 @@ export default {
                             "type": "number",
                             "declarations": [
                               {
-                                "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                 "range": [
                                   1133,
                                   1153
@@ -11320,7 +11320,7 @@ export default {
                             "type": "TocLink[]",
                             "declarations": [
                               {
-                                "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                 "range": [
                                   1158,
                                   1175
@@ -11344,7 +11344,7 @@ export default {
                                       "type": "string",
                                       "declarations": [
                                         {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                           "range": [
                                             991,
                                             1002
@@ -11362,7 +11362,7 @@ export default {
                                       "type": "string",
                                       "declarations": [
                                         {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                           "range": [
                                             1007,
                                             1020
@@ -11380,7 +11380,7 @@ export default {
                                       "type": "number",
                                       "declarations": [
                                         {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                           "range": [
                                             1025,
                                             1039
@@ -11398,7 +11398,7 @@ export default {
                                       "type": "TocLink[]",
                                       "declarations": [
                                         {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                           "range": [
                                             1044,
                                             1065
@@ -11427,7 +11427,7 @@ export default {
                 "type": "MarkdownRoot",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       2523,
                       2549
@@ -11445,7 +11445,7 @@ export default {
                 "type": "\"docs\"",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       2319,
                       2338
@@ -11463,7 +11463,7 @@ export default {
                 "type": "string",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       185,
                       197
@@ -11481,7 +11481,7 @@ export default {
                 "type": "string",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       240,
                       257
@@ -11499,7 +11499,7 @@ export default {
                 "type": "string",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       369,
                       384
@@ -11517,7 +11517,7 @@ export default {
                 "type": "string",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       426,
                       441
@@ -11535,7 +11535,7 @@ export default {
                 "type": "boolean",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       490,
                       507
@@ -11560,7 +11560,7 @@ export default {
                 "type": "boolean",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       558,
                       577
@@ -11578,7 +11578,7 @@ export default {
                 "type": "string",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       620,
                       637
@@ -11596,7 +11596,7 @@ export default {
                 "type": "\"markdown\" | \"yaml\" | \"json\" | \"csv\"",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       706,
                       751
@@ -11623,7 +11623,7 @@ export default {
                 "type": "string",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       830,
                       845
@@ -11641,7 +11641,7 @@ export default {
                 "type": "\"yaml\" | \"json\" | \"csv\" | \"md\" | \"yml\" | \"json5\"",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       895,
                       957
@@ -11672,14 +11672,14 @@ export default {
     "global": true,
     "prefetch": false,
     "preload": false,
-    "filePath": "node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/DocumentDrivenNotFound.vue",
+    "filePath": "node_modules/@nuxt/content/dist/runtime/components/DocumentDrivenNotFound.vue",
     "pascalName": "DocumentDrivenNotFound",
     "kebabName": "document-driven-not-found",
     "chunkName": "components/document-driven-not-found",
-    "shortPath": "node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/DocumentDrivenNotFound.vue",
+    "shortPath": "node_modules/@nuxt/content/dist/runtime/components/DocumentDrivenNotFound.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/DocumentDrivenNotFound.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/DocumentDrivenNotFound.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -11693,14 +11693,14 @@ export default {
     "global": true,
     "prefetch": false,
     "preload": false,
-    "filePath": "node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/Markdown.vue",
+    "filePath": "node_modules/@nuxt/content/dist/runtime/components/Markdown.vue",
     "pascalName": "Markdown",
     "kebabName": "markdown",
     "chunkName": "components/markdown",
-    "shortPath": "node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/Markdown.vue",
+    "shortPath": "node_modules/@nuxt/content/dist/runtime/components/Markdown.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/Markdown.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/Markdown.vue",
     "meta": {
       "type": null,
       "props": [],
@@ -11714,14 +11714,14 @@ export default {
     "global": true,
     "prefetch": false,
     "preload": false,
-    "filePath": "node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCodeInline.vue",
+    "filePath": "node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCodeInline.vue",
     "pascalName": "ProseCodeInline",
     "kebabName": "prose-code-inline",
     "chunkName": "components/prose-code-inline",
-    "shortPath": "node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCodeInline.vue",
+    "shortPath": "node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCodeInline.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCodeInline.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCodeInline.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -11746,7 +11746,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -11782,14 +11782,14 @@ export default {
     "global": true,
     "prefetch": false,
     "preload": false,
-    "filePath": "node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
+    "filePath": "node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
     "pascalName": "ProsePre",
     "kebabName": "prose-pre",
     "chunkName": "components/prose-pre",
-    "shortPath": "node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
+    "shortPath": "node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -11802,7 +11802,7 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
               "range": [
                 352,
                 403
@@ -11821,7 +11821,7 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
               "range": [
                 248,
                 293
@@ -11840,7 +11840,7 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
               "range": [
                 297,
                 348
@@ -11859,7 +11859,7 @@ export default {
           "type": "number[]",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
               "range": [
                 407,
                 481
@@ -11884,7 +11884,7 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
               "range": [
                 485,
                 532
@@ -11916,7 +11916,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -11950,7 +11950,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
               "range": [
                 536,
                 584
@@ -11965,7 +11965,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
               "range": [
                 588,
                 646
@@ -11987,7 +11987,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
               "range": [
                 352,
                 403
@@ -12002,7 +12002,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
               "range": [
                 248,
                 293
@@ -12017,7 +12017,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
               "range": [
                 297,
                 348
@@ -12032,7 +12032,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
               "range": [
                 407,
                 481
@@ -12053,7 +12053,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+content@2.12.0_nuxt@3.10.3_vue@3.4.19/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
               "range": [
                 485,
                 532
@@ -12070,14 +12070,14 @@ export default {
     "global": true,
     "prefetch": false,
     "preload": false,
-    "filePath": "node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseA.vue",
+    "filePath": "node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseA.vue",
     "pascalName": "ProseA",
     "kebabName": "prose-a",
     "chunkName": "components/prose-a",
-    "shortPath": "node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseA.vue",
+    "shortPath": "node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseA.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseA.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseA.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -12090,7 +12090,7 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseA.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseA.vue",
               "range": [
                 146,
                 191
@@ -12109,7 +12109,7 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseA.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseA.vue",
               "range": [
                 195,
                 270
@@ -12141,7 +12141,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -12175,7 +12175,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseA.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseA.vue",
               "range": [
                 146,
                 191
@@ -12190,7 +12190,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseA.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseA.vue",
               "range": [
                 195,
                 270
@@ -12207,14 +12207,14 @@ export default {
     "global": true,
     "prefetch": false,
     "preload": false,
-    "filePath": "node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseBlockquote.vue",
+    "filePath": "node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseBlockquote.vue",
     "pascalName": "ProseBlockquote",
     "kebabName": "prose-blockquote",
     "chunkName": "components/prose-blockquote",
-    "shortPath": "node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseBlockquote.vue",
+    "shortPath": "node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseBlockquote.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseBlockquote.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseBlockquote.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -12239,7 +12239,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -12275,14 +12275,14 @@ export default {
     "global": true,
     "prefetch": false,
     "preload": false,
-    "filePath": "node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseEm.vue",
+    "filePath": "node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseEm.vue",
     "pascalName": "ProseEm",
     "kebabName": "prose-em",
     "chunkName": "components/prose-em",
-    "shortPath": "node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseEm.vue",
+    "shortPath": "node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseEm.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseEm.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseEm.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -12307,7 +12307,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -12343,14 +12343,14 @@ export default {
     "global": true,
     "prefetch": false,
     "preload": false,
-    "filePath": "node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseH5.vue",
+    "filePath": "node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseH5.vue",
     "pascalName": "ProseH5",
     "kebabName": "prose-h5",
     "chunkName": "components/prose-h5",
-    "shortPath": "node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseH5.vue",
+    "shortPath": "node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseH5.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseH5.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseH5.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -12363,14 +12363,14 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseH5.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseH5.vue",
               "range": [
                 264,
                 275
               ]
             },
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseH5.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseH5.vue",
               "range": [
                 264,
                 275
@@ -12401,7 +12401,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -12435,7 +12435,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseH5.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseH5.vue",
               "range": [
                 264,
                 275
@@ -12452,14 +12452,14 @@ export default {
     "global": true,
     "prefetch": false,
     "preload": false,
-    "filePath": "node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseH6.vue",
+    "filePath": "node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseH6.vue",
     "pascalName": "ProseH6",
     "kebabName": "prose-h6",
     "chunkName": "components/prose-h6",
-    "shortPath": "node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseH6.vue",
+    "shortPath": "node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseH6.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseH6.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseH6.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -12472,14 +12472,14 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseH6.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseH6.vue",
               "range": [
                 264,
                 275
               ]
             },
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseH6.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseH6.vue",
               "range": [
                 264,
                 275
@@ -12510,7 +12510,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -12544,7 +12544,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseH6.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseH6.vue",
               "range": [
                 264,
                 275
@@ -12561,14 +12561,14 @@ export default {
     "global": true,
     "prefetch": false,
     "preload": false,
-    "filePath": "node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseHr.vue",
+    "filePath": "node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseHr.vue",
     "pascalName": "ProseHr",
     "kebabName": "prose-hr",
     "chunkName": "components/prose-hr",
-    "shortPath": "node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseHr.vue",
+    "shortPath": "node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseHr.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseHr.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseHr.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -12582,14 +12582,14 @@ export default {
     "global": true,
     "prefetch": false,
     "preload": false,
-    "filePath": "node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseImg.vue",
+    "filePath": "node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseImg.vue",
     "pascalName": "ProseImg",
     "kebabName": "prose-img",
     "chunkName": "components/prose-img",
-    "shortPath": "node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseImg.vue",
+    "shortPath": "node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseImg.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseImg.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseImg.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -12602,7 +12602,7 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseImg.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseImg.vue",
               "range": [
                 289,
                 333
@@ -12621,7 +12621,7 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseImg.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseImg.vue",
               "range": [
                 337,
                 381
@@ -12640,7 +12640,7 @@ export default {
           "type": "string | number",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseImg.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseImg.vue",
               "range": [
                 385,
                 448
@@ -12666,7 +12666,7 @@ export default {
           "type": "string | number",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseImg.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseImg.vue",
               "range": [
                 452,
                 516
@@ -12693,7 +12693,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseImg.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseImg.vue",
               "range": [
                 289,
                 333
@@ -12708,7 +12708,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseImg.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseImg.vue",
               "range": [
                 337,
                 381
@@ -12723,7 +12723,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseImg.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseImg.vue",
               "range": [
                 385,
                 448
@@ -12745,7 +12745,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseImg.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseImg.vue",
               "range": [
                 452,
                 516
@@ -12769,14 +12769,14 @@ export default {
     "global": true,
     "prefetch": false,
     "preload": false,
-    "filePath": "node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseLi.vue",
+    "filePath": "node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseLi.vue",
     "pascalName": "ProseLi",
     "kebabName": "prose-li",
     "chunkName": "components/prose-li",
-    "shortPath": "node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseLi.vue",
+    "shortPath": "node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseLi.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseLi.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseLi.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -12801,7 +12801,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -12837,14 +12837,14 @@ export default {
     "global": true,
     "prefetch": false,
     "preload": false,
-    "filePath": "node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseOl.vue",
+    "filePath": "node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseOl.vue",
     "pascalName": "ProseOl",
     "kebabName": "prose-ol",
     "chunkName": "components/prose-ol",
-    "shortPath": "node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseOl.vue",
+    "shortPath": "node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseOl.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseOl.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseOl.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -12869,7 +12869,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -12905,14 +12905,14 @@ export default {
     "global": true,
     "prefetch": false,
     "preload": false,
-    "filePath": "node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseP.vue",
+    "filePath": "node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseP.vue",
     "pascalName": "ProseP",
     "kebabName": "prose-p",
     "chunkName": "components/prose-p",
-    "shortPath": "node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseP.vue",
+    "shortPath": "node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseP.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseP.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseP.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -12937,7 +12937,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -12973,14 +12973,14 @@ export default {
     "global": true,
     "prefetch": false,
     "preload": false,
-    "filePath": "node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseScript.vue",
+    "filePath": "node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseScript.vue",
     "pascalName": "ProseScript",
     "kebabName": "prose-script",
     "chunkName": "components/prose-script",
-    "shortPath": "node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseScript.vue",
+    "shortPath": "node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseScript.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseScript.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseScript.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -12993,7 +12993,7 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseScript.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseScript.vue",
               "range": [
                 317,
                 361
@@ -13013,7 +13013,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseScript.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseScript.vue",
               "range": [
                 317,
                 361
@@ -13030,14 +13030,14 @@ export default {
     "global": true,
     "prefetch": false,
     "preload": false,
-    "filePath": "node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseStrong.vue",
+    "filePath": "node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseStrong.vue",
     "pascalName": "ProseStrong",
     "kebabName": "prose-strong",
     "chunkName": "components/prose-strong",
-    "shortPath": "node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseStrong.vue",
+    "shortPath": "node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseStrong.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseStrong.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseStrong.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -13062,7 +13062,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -13098,14 +13098,14 @@ export default {
     "global": true,
     "prefetch": false,
     "preload": false,
-    "filePath": "node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseTable.vue",
+    "filePath": "node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseTable.vue",
     "pascalName": "ProseTable",
     "kebabName": "prose-table",
     "chunkName": "components/prose-table",
-    "shortPath": "node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseTable.vue",
+    "shortPath": "node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseTable.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseTable.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseTable.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -13130,7 +13130,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -13166,14 +13166,14 @@ export default {
     "global": true,
     "prefetch": false,
     "preload": false,
-    "filePath": "node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseTbody.vue",
+    "filePath": "node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseTbody.vue",
     "pascalName": "ProseTbody",
     "kebabName": "prose-tbody",
     "chunkName": "components/prose-tbody",
-    "shortPath": "node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseTbody.vue",
+    "shortPath": "node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseTbody.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseTbody.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseTbody.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -13198,7 +13198,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -13234,14 +13234,14 @@ export default {
     "global": true,
     "prefetch": false,
     "preload": false,
-    "filePath": "node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseTd.vue",
+    "filePath": "node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseTd.vue",
     "pascalName": "ProseTd",
     "kebabName": "prose-td",
     "chunkName": "components/prose-td",
-    "shortPath": "node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseTd.vue",
+    "shortPath": "node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseTd.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseTd.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseTd.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -13266,7 +13266,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -13302,14 +13302,14 @@ export default {
     "global": true,
     "prefetch": false,
     "preload": false,
-    "filePath": "node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseTh.vue",
+    "filePath": "node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseTh.vue",
     "pascalName": "ProseTh",
     "kebabName": "prose-th",
     "chunkName": "components/prose-th",
-    "shortPath": "node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseTh.vue",
+    "shortPath": "node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseTh.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseTh.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseTh.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -13334,7 +13334,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -13370,14 +13370,14 @@ export default {
     "global": true,
     "prefetch": false,
     "preload": false,
-    "filePath": "node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseThead.vue",
+    "filePath": "node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseThead.vue",
     "pascalName": "ProseThead",
     "kebabName": "prose-thead",
     "chunkName": "components/prose-thead",
-    "shortPath": "node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseThead.vue",
+    "shortPath": "node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseThead.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseThead.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseThead.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -13402,7 +13402,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -13438,14 +13438,14 @@ export default {
     "global": true,
     "prefetch": false,
     "preload": false,
-    "filePath": "node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseTr.vue",
+    "filePath": "node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseTr.vue",
     "pascalName": "ProseTr",
     "kebabName": "prose-tr",
     "chunkName": "components/prose-tr",
-    "shortPath": "node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseTr.vue",
+    "shortPath": "node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseTr.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseTr.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseTr.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -13470,7 +13470,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -13506,14 +13506,14 @@ export default {
     "global": true,
     "prefetch": false,
     "preload": false,
-    "filePath": "node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseUl.vue",
+    "filePath": "node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseUl.vue",
     "pascalName": "ProseUl",
     "kebabName": "prose-ul",
     "chunkName": "components/prose-ul",
-    "shortPath": "node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseUl.vue",
+    "shortPath": "node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseUl.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseUl.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseUl.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -13538,7 +13538,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -13574,14 +13574,14 @@ export default {
     "global": true,
     "prefetch": false,
     "preload": false,
-    "filePath": "node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue",
+    "filePath": "node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue",
     "pascalName": "UButton",
     "kebabName": "u-button",
     "chunkName": "components/u-button",
-    "shortPath": "node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue",
+    "shortPath": "node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -13594,7 +13594,7 @@ export default {
           "type": "ButtonSize",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 8034,
                 8051
@@ -13624,7 +13624,7 @@ export default {
           "type": "any",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 8056,
                 8064
@@ -13643,7 +13643,7 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 8092,
                 8105
@@ -13662,7 +13662,7 @@ export default {
           "type": "any",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 8110,
                 8121
@@ -13681,7 +13681,7 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 8126,
                 8139
@@ -13700,7 +13700,7 @@ export default {
           "type": "NuxtLinkProps",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 8160,
                 8182
@@ -13722,7 +13722,7 @@ export default {
           "type": "NuxtLinkProps",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 8187,
                 8206
@@ -13744,7 +13744,7 @@ export default {
           "type": "NuxtLinkProps",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 8211,
                 8232
@@ -13766,7 +13766,7 @@ export default {
           "type": "NuxtLinkProps",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 8237,
                 8261
@@ -13788,7 +13788,7 @@ export default {
           "type": "NuxtLinkProps",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 8266,
                 8292
@@ -13810,7 +13810,7 @@ export default {
           "type": "NuxtLinkProps",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 8297,
                 8324
@@ -13832,7 +13832,7 @@ export default {
           "type": "NuxtLinkProps",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 8329,
                 8361
@@ -13854,7 +13854,7 @@ export default {
           "type": "NuxtLinkProps",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 8366,
                 8397
@@ -13876,7 +13876,7 @@ export default {
           "type": "NuxtLinkProps",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 8402,
                 8425
@@ -13898,7 +13898,7 @@ export default {
           "type": "NuxtLinkProps",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 8430,
                 8462
@@ -13920,7 +13920,7 @@ export default {
           "type": "NuxtLinkProps",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 8467,
                 8491
@@ -13942,7 +13942,7 @@ export default {
           "type": "ButtonVariant",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 8518,
                 8541
@@ -13971,7 +13971,7 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 8546,
                 8560
@@ -13990,7 +13990,7 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 8651,
                 8671
@@ -14009,7 +14009,7 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 8676,
                 8696
@@ -14028,7 +14028,7 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 8701,
                 8722
@@ -14047,7 +14047,7 @@ export default {
           "type": "RouteLocationRaw",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 8771,
                 8792
@@ -14065,7 +14065,7 @@ export default {
           "type": "RouteLocationRaw",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 8797,
                 8820
@@ -14083,7 +14083,7 @@ export default {
           "type": "boolean",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 8069,
                 8087
@@ -14109,7 +14109,7 @@ export default {
           "type": "boolean",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 8496,
                 8513
@@ -14135,7 +14135,7 @@ export default {
           "type": "boolean",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 8565,
                 8582
@@ -14161,7 +14161,7 @@ export default {
           "type": "boolean",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 8587,
                 8605
@@ -14187,7 +14187,7 @@ export default {
           "type": "boolean",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 8610,
                 8625
@@ -14213,7 +14213,7 @@ export default {
           "type": "boolean",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 8630,
                 8646
@@ -14239,7 +14239,7 @@ export default {
           "type": "boolean",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 8727,
                 8745
@@ -14265,7 +14265,7 @@ export default {
           "type": "boolean",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 8750,
                 8766
@@ -14292,7 +14292,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 6019,
                 6090
@@ -14307,7 +14307,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 4506,
                 4578
@@ -14322,7 +14322,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 5363,
                 5433
@@ -14337,7 +14337,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 5231,
                 5358
@@ -14362,7 +14362,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 6307,
                 6443
@@ -14377,7 +14377,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 6448,
                 6583
@@ -14396,7 +14396,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 4583,
                 4658
@@ -14418,7 +14418,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 4663,
                 4734
@@ -14433,7 +14433,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 4739,
                 4816
@@ -14455,7 +14455,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 4821,
                 4899
@@ -14477,7 +14477,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 4904,
                 4980
@@ -14499,7 +14499,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 4985,
                 5106
@@ -14525,7 +14525,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 5111,
                 5226
@@ -14540,7 +14540,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 5438,
                 5520
@@ -14555,7 +14555,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 5525,
                 5602
@@ -14570,7 +14570,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 5607,
                 5685
@@ -14585,7 +14585,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 5690,
                 5768
@@ -14607,7 +14607,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 5773,
                 5850
@@ -14629,7 +14629,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 5855,
                 5931
@@ -14651,7 +14651,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 5936,
                 6014
@@ -14673,7 +14673,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 6168,
                 6302
@@ -14688,7 +14688,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 6588,
                 6720
@@ -14707,7 +14707,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 6725,
                 6859
@@ -14726,7 +14726,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 6864,
                 7001
@@ -14745,7 +14745,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 7006,
                 7145
@@ -14764,7 +14764,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 7150,
                 7290
@@ -14783,7 +14783,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 7295,
                 7440
@@ -14802,7 +14802,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 7445,
                 7589
@@ -14821,7 +14821,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 7594,
                 7730
@@ -14840,7 +14840,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 7735,
                 7880
@@ -14859,7 +14859,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 7885,
                 8022
@@ -14878,7 +14878,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 3685,
                 3720
@@ -14893,7 +14893,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 3725,
                 3811
@@ -14908,7 +14908,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 3816,
                 3868
@@ -14930,7 +14930,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 3873,
                 3926
@@ -14952,7 +14952,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 3931,
                 3976
@@ -14974,7 +14974,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 3981,
                 4028
@@ -14989,7 +14989,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 4033,
                 4096
@@ -15004,7 +15004,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 4101,
                 4165
@@ -15019,7 +15019,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 4170,
                 4222
@@ -15034,7 +15034,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 4227,
                 4280
@@ -15049,7 +15049,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Button.vue.d.ts",
               "range": [
                 4285,
                 4326
@@ -15070,14 +15070,14 @@ export default {
     "global": true,
     "prefetch": false,
     "preload": false,
-    "filePath": "node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Icon.vue",
+    "filePath": "node_modules/@nuxt/ui/dist/runtime/components/elements/Icon.vue",
     "pascalName": "UIcon",
     "kebabName": "u-icon",
     "chunkName": "components/u-icon",
-    "shortPath": "node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Icon.vue",
+    "shortPath": "node_modules/@nuxt/ui/dist/runtime/components/elements/Icon.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Icon.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Icon.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -15090,14 +15090,14 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Icon.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Icon.vue.d.ts",
               "range": [
                 443,
                 514
               ]
             },
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Icon.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Icon.vue.d.ts",
               "range": [
                 443,
                 514
@@ -15115,7 +15115,7 @@ export default {
           "type": "boolean",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Icon.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Icon.vue.d.ts",
               "range": [
                 608,
                 625
@@ -15142,7 +15142,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Icon.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Icon.vue.d.ts",
               "range": [
                 443,
                 514
@@ -15157,7 +15157,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui@2.14.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui/dist/runtime/components/elements/Icon.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/ui/dist/runtime/components/elements/Icon.vue.d.ts",
               "range": [
                 223,
                 263
@@ -15178,11 +15178,11 @@ export default {
     "prefetch": false,
     "preload": false,
     "mode": "all",
-    "shortPath": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/nuxt-icon@0.6.8_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/nuxt-icon/dist/runtime/Icon.vue",
+    "shortPath": "/workspace/KubeCamp/node_modules/nuxt-icon/dist/runtime/Icon.vue",
     "priority": 0,
     "name": "Icon",
-    "filePath": "node_modules/.pnpm/nuxt-icon@0.6.8_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/nuxt-icon/dist/runtime/Icon.vue",
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/nuxt-icon@0.6.8_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/nuxt-icon/dist/runtime/Icon.vue",
+    "filePath": "node_modules/nuxt-icon/dist/runtime/Icon.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/nuxt-icon/dist/runtime/Icon.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -15195,14 +15195,14 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/nuxt-icon@0.6.8_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/nuxt-icon/dist/runtime/Icon.vue",
+              "file": "/workspace/KubeCamp/node_modules/nuxt-icon/dist/runtime/Icon.vue",
               "range": [
                 669,
                 717
               ]
             },
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/nuxt-icon@0.6.8_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/nuxt-icon/dist/runtime/Icon.vue",
+              "file": "/workspace/KubeCamp/node_modules/nuxt-icon/dist/runtime/Icon.vue",
               "range": [
                 669,
                 717
@@ -15220,7 +15220,7 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/nuxt-icon@0.6.8_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/nuxt-icon/dist/runtime/Icon.vue",
+              "file": "/workspace/KubeCamp/node_modules/nuxt-icon/dist/runtime/Icon.vue",
               "range": [
                 721,
                 766
@@ -15252,7 +15252,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -15286,7 +15286,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/nuxt-icon@0.6.8_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/nuxt-icon/dist/runtime/Icon.vue",
+              "file": "/workspace/KubeCamp/node_modules/nuxt-icon/dist/runtime/Icon.vue",
               "range": [
                 721,
                 766
@@ -15301,7 +15301,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/nuxt-icon@0.6.8_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/nuxt-icon/dist/runtime/Icon.vue",
+              "file": "/workspace/KubeCamp/node_modules/nuxt-icon/dist/runtime/Icon.vue",
               "range": [
                 669,
                 717
@@ -15322,11 +15322,11 @@ export default {
     "prefetch": false,
     "preload": false,
     "mode": "all",
-    "shortPath": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/nuxt-icon@0.6.8_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
+    "shortPath": "/workspace/KubeCamp/node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
     "priority": 0,
     "name": "IconCSS",
-    "filePath": "node_modules/.pnpm/nuxt-icon@0.6.8_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/nuxt-icon@0.6.8_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
+    "filePath": "node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -15339,14 +15339,14 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/nuxt-icon@0.6.8_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
+              "file": "/workspace/KubeCamp/node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
               "range": [
                 387,
                 435
               ]
             },
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/nuxt-icon@0.6.8_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
+              "file": "/workspace/KubeCamp/node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
               "range": [
                 387,
                 435
@@ -15364,7 +15364,7 @@ export default {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/nuxt-icon@0.6.8_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
+              "file": "/workspace/KubeCamp/node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
               "range": [
                 439,
                 484
@@ -15384,7 +15384,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/nuxt-icon@0.6.8_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
+              "file": "/workspace/KubeCamp/node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
               "range": [
                 439,
                 484
@@ -15399,7 +15399,7 @@ export default {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/nuxt-icon@0.6.8_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
+              "file": "/workspace/KubeCamp/node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
               "range": [
                 387,
                 435

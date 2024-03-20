@@ -1,4 +1,4 @@
-import Highlight from '/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxtjs+mdc@0.5.0/node_modules/@nuxtjs/mdc/dist/runtime/highlighter/rehype.mjs'
+import Highlight from '/workspace/KubeCamp/node_modules/@nuxtjs/mdc/dist/runtime/highlighter/rehype.mjs'
 
 export const remarkPlugins = {
 }

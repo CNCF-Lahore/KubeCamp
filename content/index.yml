@@ -1,22 +1,22 @@
-title: 'Nuxt UI Pro - Docs template'
-description: Nuxt UI Pro is a collection of premium Vue components built on top of Nuxt UI to create beautiful & responsive Nuxt applications in minutes.
-navigation: false
+title: 'KubeCamp- Learn Kubernetes by Doing'
+description: The Kubernetes Mastery Bootcamp is a comprehensive, free training program that offers in-depth knowledge and hands-on experience in deploying, managing, and scaling containerized applications using Kubernetes. Participants will benefit from workshops, access to a sandbox environment for practical exercises, and training from industry experts.
+navigation: true
 hero:
-  title: 'Build your docs in seconds'
-  description: 'Create your documentation in seconds with this template!'
+  title: 'Learn Kubernetes by Doing'
+  description: 'The Kubernetes Mastery Bootcamp is a comprehensive, free training program that offers in-depth knowledge and hands-on experience using Kubernetes.'
   orientation: horizontal
   headline:
-    label: Made with Nuxt UI Pro
-    to: https://ui.nuxt.com/pro
+    label: Get Your Digital Badge
+    to: 
     icon: i-heroicons-arrow-top-right-on-square-20-solid
   links:
     - label: Get started
       icon: i-heroicons-arrow-right-20-solid
       trailing: true
-      to: '/getting-started'
+      to: '/beginner-foundation/introduction/getting-started'
       size: lg
-    - label: Use this template
-      icon: i-simple-icons-github
+    - label: Kubernetes Playground
+      icon: i-simple-icons-kubernetes
       size: lg
       color: gray
       to: https://github.com/nuxt-ui-pro/docs

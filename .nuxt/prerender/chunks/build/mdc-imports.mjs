@@ -1,5 +1,5 @@
-import { visit } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/unist-util-visit/index.js';
-import { toString } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/hast-util-to-string/index.js';
+import { visit } from 'file:///workspace/KubeCamp/node_modules/unist-util-visit/index.js';
+import { toString } from 'file:///workspace/KubeCamp/node_modules/hast-util-to-string/index.js';
 
 const defaults = {
   theme: {},

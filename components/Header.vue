@@ -13,7 +13,7 @@ const { header } = useAppConfig()
         <UColorModeImage v-bind="{ class: 'h-6 w-auto', ...header?.logo }" />
       </template>
       <template v-else>
-        Kubernetes <UBadge label="Bootcamp" variant="subtle" class="mb-0.5" />
+        Kube <UBadge label="Camp" variant="subtle" class="mb-0.5" />
       </template>
     </template>
 

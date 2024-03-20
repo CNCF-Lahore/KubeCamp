@@ -40,7 +40,7 @@ if (import.meta.hot) {
   })
 }
 
-import cfg0 from "/workspace/Kubernetes-Bootcamp/app.config.ts"
-import cfg1 from "/workspace/Kubernetes-Bootcamp/node_modules/.pnpm/@nuxt+ui-pro@1.0.1_nuxt@3.10.3_vite@5.1.4_vue@3.4.19/node_modules/@nuxt/ui-pro/app.config.ts"
+import cfg0 from "/workspace/KubeCamp/app.config.ts"
+import cfg1 from "/workspace/KubeCamp/node_modules/@nuxt/ui-pro/app.config.ts"
 
 export default /*@__PURE__*/ defuFn(cfg0, cfg1, inlineConfig)
