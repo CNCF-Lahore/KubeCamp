@@ -934,7 +934,7 @@ const cfg1 = defineAppConfig({
 });
 const inlineConfig = {
   "nuxt": {
-    "buildId": "5afd31fd-5db0-4035-8871-125d7fd918aa"
+    "buildId": "376337db-b2f0-4cae-a47b-f186cd038c95"
   },
   "ui": {
     "primary": "green",
@@ -8211,9 +8211,9 @@ const _sfc_main$c = /* @__PURE__ */ defineComponent({
             if (((_b = (_a2 = unref(header)) == null ? void 0 : _a2.logo) == null ? void 0 : _b.dark) || ((_d = (_c = unref(header)) == null ? void 0 : _c.logo) == null ? void 0 : _d.light)) {
               _push2(ssrRenderComponent(_component_UColorModeImage, { class: "h-6 w-auto", ...(_e = unref(header)) == null ? void 0 : _e.logo }, null, _parent2, _scopeId));
             } else {
-              _push2(`<!--[--> Kubernetes `);
+              _push2(`<!--[--> Kube `);
               _push2(ssrRenderComponent(_component_UBadge, {
-                label: "Bootcamp",
+                label: "Camp",
                 variant: "subtle",
                 class: "mb-0.5"
               }, null, _parent2, _scopeId));
@@ -8222,9 +8222,9 @@ const _sfc_main$c = /* @__PURE__ */ defineComponent({
           } else {
             return [
               ((_g = (_f = unref(header)) == null ? void 0 : _f.logo) == null ? void 0 : _g.dark) || ((_i = (_h = unref(header)) == null ? void 0 : _h.logo) == null ? void 0 : _i.light) ? (openBlock(), createBlock(_component_UColorModeImage, mergeProps({ key: 0 }, { class: "h-6 w-auto", ...(_j = unref(header)) == null ? void 0 : _j.logo }), null, 16)) : (openBlock(), createBlock(Fragment, { key: 1 }, [
-                createTextVNode(" Kubernetes "),
+                createTextVNode(" Kube "),
                 createVNode(_component_UBadge, {
-                  label: "Bootcamp",
+                  label: "Camp",
                   variant: "subtle",
                   class: "mb-0.5"
                 })
