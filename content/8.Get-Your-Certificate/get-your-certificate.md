@@ -3,6 +3,8 @@ We hope you've learned a lot from the bootcamp. To share your achievement on soc
 
 [Generate My Certificate](https://bit.ly/3TcmiQQ){:target="_blank"}
 
+_Please keep in mind that this course of completion certificate is just for your motivation_
+
 For the digital badge, please complete the quiz.
 
 ```

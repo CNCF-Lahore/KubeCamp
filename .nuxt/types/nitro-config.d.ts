@@ -3,10 +3,10 @@
 // App Config
 import type { Defu } from 'defu'
 
-import type { default as appConfig0 } from "/workspace/Kubernetes-Bootcamp/app.config";
-import type { default as appConfig1 } from "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/app.config";
-import type { default as appConfig2 } from "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/app.config";
-import type { default as appConfig3 } from "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/app.config";
+import type { default as appConfig0 } from "/workspace/KubeCamp/app.config";
+import type { default as appConfig1 } from "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/app.config";
+import type { default as appConfig2 } from "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/app.config";
+import type { default as appConfig3 } from "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/app.config";
 
 type UserAppConfig = Defu<{}, [typeof appConfig0, typeof appConfig1, typeof appConfig2, typeof appConfig3]>
 

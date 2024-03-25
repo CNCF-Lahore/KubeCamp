@@ -3,50 +3,50 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { mkdirSync } from 'node:fs';
 import { parentPort, threadId } from 'node:worker_threads';
-import { defineEventHandler, handleCacheHeaders, splitCookiesString, isEvent, createEvent, getRequestHeader, eventHandler, setHeaders, sendRedirect, proxyRequest, setResponseHeader, send, getResponseStatus, setResponseStatus, setResponseHeaders, getRequestHeaders, lazyEventHandler, getQuery as getQuery$1, getCookie, createError, createApp, createRouter as createRouter$1, toNodeListener, fetchWithEvent, getResponseStatusText } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/h3/dist/index.mjs';
-import { getRequestDependencies, getPreloadLinks, getPrefetchLinks, createRenderer } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/vue-bundle-renderer/dist/runtime.mjs';
-import { stringify, uneval } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/devalue/index.js';
-import { renderToString } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/vue/server-renderer/index.mjs';
-import { renderSSRHead } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/@unhead/ssr/dist/index.mjs';
-import { createFetch as createFetch$1, Headers as Headers$1 } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/ofetch/dist/node.mjs';
-import destr, { destr as destr$1 } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/destr/dist/index.mjs';
-import { createCall, createFetch } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/unenv/runtime/fetch/index.mjs';
-import { createHooks } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/hookable/dist/index.mjs';
-import { snakeCase, kebabCase, pascalCase, camelCase } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/scule/dist/index.mjs';
-import { klona } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/klona/dist/index.mjs';
-import defu, { defuFn, defu as defu$1 } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/defu/dist/defu.mjs';
-import { hash } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/ohash/dist/index.mjs';
-import { parseURL, withoutBase, joinURL, getQuery, withQuery, withLeadingSlash, withoutTrailingSlash, isRelative } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/ufo/dist/index.mjs';
-import { createStorage, prefixStorage } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/unstorage/dist/index.mjs';
-import unstorage_47drivers_47fs from 'file:///workspace/Kubernetes-Bootcamp/node_modules/unstorage/drivers/fs.mjs';
-import { toRouteMatcher, createRouter } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/radix3/dist/index.mjs';
-import { addClassToHast, getHighlighter, loadWasm } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/shikiji/dist/index.mjs';
-import { transformerNotationDiff, transformerNotationFocus, transformerNotationHighlight, transformerNotationErrorLevel } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/shikiji-transformers/dist/index.mjs';
-import { extname } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/pathe/dist/index.mjs';
-import { unified } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/unified/index.js';
-import { toString as toString$1 } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/mdast-util-to-string/index.js';
-import { postprocess, preprocess } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/micromark/dev/index.js';
-import { stringifyPosition } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/unist-util-stringify-position/index.js';
-import { markdownLineEnding, markdownSpace } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/micromark-util-character/dev/index.js';
-import { push, splice } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/micromark-util-chunked/dev/index.js';
-import { resolveAll } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/micromark-util-resolve-all/index.js';
-import { normalizeUri } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/micromark-util-sanitize-uri/dev/index.js';
-import slugify from 'file:///workspace/Kubernetes-Bootcamp/node_modules/slugify/slugify.js';
-import remarkParse from 'file:///workspace/Kubernetes-Bootcamp/node_modules/remark-parse/index.js';
-import remark2rehype from 'file:///workspace/Kubernetes-Bootcamp/node_modules/remark-rehype/index.js';
-import remarkMDC, { parseFrontMatter } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/remark-mdc/dist/index.mjs';
-import { toString } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/hast-util-to-string/index.js';
-import Slugger from 'file:///workspace/Kubernetes-Bootcamp/node_modules/github-slugger/index.js';
-import { detab } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/detab/index.js';
-import remarkEmoji from 'file:///workspace/Kubernetes-Bootcamp/node_modules/remark-emoji/index.js';
-import remarkGFM from 'file:///workspace/Kubernetes-Bootcamp/node_modules/remark-gfm/index.js';
-import rehypeExternalLinks from 'file:///workspace/Kubernetes-Bootcamp/node_modules/rehype-external-links/index.js';
-import rehypeSortAttributeValues from 'file:///workspace/Kubernetes-Bootcamp/node_modules/rehype-sort-attribute-values/index.js';
-import rehypeSortAttributes from 'file:///workspace/Kubernetes-Bootcamp/node_modules/rehype-sort-attributes/index.js';
-import rehypeRaw from 'file:///workspace/Kubernetes-Bootcamp/node_modules/rehype-raw/index.js';
-import { version, unref } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/vue/index.mjs';
-import { createServerHead as createServerHead$1 } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/unhead/dist/index.mjs';
-import { defineHeadPlugin } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/@unhead/shared/dist/index.mjs';
+import { defineEventHandler, handleCacheHeaders, splitCookiesString, isEvent, createEvent, getRequestHeader, eventHandler, setHeaders, sendRedirect, proxyRequest, setResponseHeader, send, getResponseStatus, setResponseStatus, setResponseHeaders, getRequestHeaders, lazyEventHandler, getQuery as getQuery$1, getCookie, createError, createApp, createRouter as createRouter$1, toNodeListener, fetchWithEvent, getResponseStatusText } from 'file:///workspace/KubeCamp/node_modules/h3/dist/index.mjs';
+import { getRequestDependencies, getPreloadLinks, getPrefetchLinks, createRenderer } from 'file:///workspace/KubeCamp/node_modules/vue-bundle-renderer/dist/runtime.mjs';
+import { stringify, uneval } from 'file:///workspace/KubeCamp/node_modules/devalue/index.js';
+import { renderToString } from 'file:///workspace/KubeCamp/node_modules/vue/server-renderer/index.mjs';
+import { renderSSRHead } from 'file:///workspace/KubeCamp/node_modules/@unhead/ssr/dist/index.mjs';
+import { createFetch as createFetch$1, Headers as Headers$1 } from 'file:///workspace/KubeCamp/node_modules/ofetch/dist/node.mjs';
+import destr, { destr as destr$1 } from 'file:///workspace/KubeCamp/node_modules/destr/dist/index.mjs';
+import { createCall, createFetch } from 'file:///workspace/KubeCamp/node_modules/unenv/runtime/fetch/index.mjs';
+import { createHooks } from 'file:///workspace/KubeCamp/node_modules/hookable/dist/index.mjs';
+import { snakeCase, kebabCase, pascalCase, camelCase } from 'file:///workspace/KubeCamp/node_modules/scule/dist/index.mjs';
+import { klona } from 'file:///workspace/KubeCamp/node_modules/klona/dist/index.mjs';
+import defu, { defuFn, defu as defu$1 } from 'file:///workspace/KubeCamp/node_modules/defu/dist/defu.mjs';
+import { hash } from 'file:///workspace/KubeCamp/node_modules/ohash/dist/index.mjs';
+import { parseURL, withoutBase, joinURL, getQuery, withQuery, withLeadingSlash, withoutTrailingSlash, isRelative } from 'file:///workspace/KubeCamp/node_modules/ufo/dist/index.mjs';
+import { createStorage, prefixStorage } from 'file:///workspace/KubeCamp/node_modules/unstorage/dist/index.mjs';
+import unstorage_47drivers_47fs from 'file:///workspace/KubeCamp/node_modules/unstorage/drivers/fs.mjs';
+import { toRouteMatcher, createRouter } from 'file:///workspace/KubeCamp/node_modules/radix3/dist/index.mjs';
+import { addClassToHast, getHighlighter, loadWasm } from 'file:///workspace/KubeCamp/node_modules/shikiji/dist/index.mjs';
+import { transformerNotationDiff, transformerNotationFocus, transformerNotationHighlight, transformerNotationErrorLevel } from 'file:///workspace/KubeCamp/node_modules/shikiji-transformers/dist/index.mjs';
+import { extname } from 'file:///workspace/KubeCamp/node_modules/pathe/dist/index.mjs';
+import { unified } from 'file:///workspace/KubeCamp/node_modules/unified/index.js';
+import { toString as toString$1 } from 'file:///workspace/KubeCamp/node_modules/mdast-util-to-string/index.js';
+import { postprocess, preprocess } from 'file:///workspace/KubeCamp/node_modules/micromark/dev/index.js';
+import { stringifyPosition } from 'file:///workspace/KubeCamp/node_modules/unist-util-stringify-position/index.js';
+import { markdownLineEnding, markdownSpace } from 'file:///workspace/KubeCamp/node_modules/micromark-util-character/dev/index.js';
+import { push, splice } from 'file:///workspace/KubeCamp/node_modules/micromark-util-chunked/dev/index.js';
+import { resolveAll } from 'file:///workspace/KubeCamp/node_modules/micromark-util-resolve-all/index.js';
+import { normalizeUri } from 'file:///workspace/KubeCamp/node_modules/micromark-util-sanitize-uri/dev/index.js';
+import slugify from 'file:///workspace/KubeCamp/node_modules/slugify/slugify.js';
+import remarkParse from 'file:///workspace/KubeCamp/node_modules/remark-parse/index.js';
+import remark2rehype from 'file:///workspace/KubeCamp/node_modules/remark-rehype/index.js';
+import remarkMDC, { parseFrontMatter } from 'file:///workspace/KubeCamp/node_modules/remark-mdc/dist/index.mjs';
+import { toString } from 'file:///workspace/KubeCamp/node_modules/hast-util-to-string/index.js';
+import Slugger from 'file:///workspace/KubeCamp/node_modules/github-slugger/index.js';
+import { detab } from 'file:///workspace/KubeCamp/node_modules/detab/index.js';
+import remarkEmoji from 'file:///workspace/KubeCamp/node_modules/remark-emoji/index.js';
+import remarkGFM from 'file:///workspace/KubeCamp/node_modules/remark-gfm/index.js';
+import rehypeExternalLinks from 'file:///workspace/KubeCamp/node_modules/rehype-external-links/index.js';
+import rehypeSortAttributeValues from 'file:///workspace/KubeCamp/node_modules/rehype-sort-attribute-values/index.js';
+import rehypeSortAttributes from 'file:///workspace/KubeCamp/node_modules/rehype-sort-attributes/index.js';
+import rehypeRaw from 'file:///workspace/KubeCamp/node_modules/rehype-raw/index.js';
+import { version, unref } from 'file:///workspace/KubeCamp/node_modules/vue/index.mjs';
+import { createServerHead as createServerHead$1 } from 'file:///workspace/KubeCamp/node_modules/unhead/dist/index.mjs';
+import { defineHeadPlugin } from 'file:///workspace/KubeCamp/node_modules/@unhead/shared/dist/index.mjs';
 
 const r=Object.create(null),E=e=>globalThis.process?.env||globalThis._importMeta_.env||globalThis.Deno?.env.toObject()||globalThis.__env__||(e?r:globalThis),s=new Proxy(r,{get(e,o){return E()[o]??r[o]},has(e,o){const i=E();return o in i||o in r},set(e,o,i){const g=E(!0);return g[o]=i,!0},deleteProperty(e,o){if(!o)return !1;const i=E(!0);return delete i[o],!0},ownKeys(){const e=E(!0);return Object.keys(e)}}),t=typeof process<"u"&&process.env&&"development"||"",p=[["APPVEYOR"],["AWS_AMPLIFY","AWS_APP_ID",{ci:!0}],["AZURE_PIPELINES","SYSTEM_TEAMFOUNDATIONCOLLECTIONURI"],["AZURE_STATIC","INPUT_AZURE_STATIC_WEB_APPS_API_TOKEN"],["APPCIRCLE","AC_APPCIRCLE"],["BAMBOO","bamboo_planKey"],["BITBUCKET","BITBUCKET_COMMIT"],["BITRISE","BITRISE_IO"],["BUDDY","BUDDY_WORKSPACE_ID"],["BUILDKITE"],["CIRCLE","CIRCLECI"],["CIRRUS","CIRRUS_CI"],["CLOUDFLARE_PAGES","CF_PAGES",{ci:!0}],["CODEBUILD","CODEBUILD_BUILD_ARN"],["CODEFRESH","CF_BUILD_ID"],["DRONE"],["DRONE","DRONE_BUILD_EVENT"],["DSARI"],["GITHUB_ACTIONS"],["GITLAB","GITLAB_CI"],["GITLAB","CI_MERGE_REQUEST_ID"],["GOCD","GO_PIPELINE_LABEL"],["LAYERCI"],["HUDSON","HUDSON_URL"],["JENKINS","JENKINS_URL"],["MAGNUM"],["NETLIFY"],["NETLIFY","NETLIFY_LOCAL",{ci:!1}],["NEVERCODE"],["RENDER"],["SAIL","SAILCI"],["SEMAPHORE"],["SCREWDRIVER"],["SHIPPABLE"],["SOLANO","TDDIUM"],["STRIDER"],["TEAMCITY","TEAMCITY_VERSION"],["TRAVIS"],["VERCEL","NOW_BUILDER"],["VERCEL","VERCEL",{ci:!1}],["VERCEL","VERCEL_ENV",{ci:!1}],["APPCENTER","APPCENTER_BUILD_ID"],["CODESANDBOX","CODESANDBOX_SSE",{ci:!1}],["STACKBLITZ"],["STORMKIT"],["CLEAVR"],["ZEABUR"],["CODESPHERE","CODESPHERE_APP_ID",{ci:!0}],["RAILWAY","RAILWAY_PROJECT_ID"],["RAILWAY","RAILWAY_SERVICE_ID"]];function B(){if(globalThis.process?.env)for(const e of p){const o=e[1]||e[0];if(globalThis.process?.env[o])return {name:e[0].toLowerCase(),...e[2]}}return globalThis.process?.env?.SHELL==="/bin/jsh"&&globalThis.process?.versions?.webcontainer?{name:"stackblitz",ci:!1}:{name:"",ci:!1}}const l=B(),d=l.name;function n(e){return e?e!=="false":!1}const I=globalThis.process?.platform||"",T=n(s.CI)||l.ci!==!1,R=n(globalThis.process?.stdout&&globalThis.process?.stdout.isTTY);n(s.DEBUG);const C=t==="test"||n(s.TEST);n(s.MINIMAL)||T||C||!R;const a=/^win/i.test(I);!n(s.NO_COLOR)&&(n(s.FORCE_COLOR)||(R||a)&&s.TERM!=="dumb"||T);const _=(globalThis.process?.versions?.node||"").replace(/^v/,"")||null;Number(_?.split(".")[0])||null;const W=globalThis.process||Object.create(null),c={versions:{}};new Proxy(W,{get(e,o){if(o==="env")return s;if(o in e)return e[o];if(o in c)return c[o]}});const A=globalThis.process?.release?.name==="node",L=!!globalThis.Bun||!!globalThis.process?.versions?.bun,D=!!globalThis.Deno,O=!!globalThis.fastly,S=!!globalThis.Netlify,N=!!globalThis.EdgeRuntime,u=globalThis.navigator?.userAgent==="Cloudflare-Workers",b=!!globalThis.__lagon__,F=[[S,"netlify"],[N,"edge-light"],[u,"workerd"],[O,"fastly"],[D,"deno"],[L,"bun"],[A,"node"],[b,"lagon"]];function G(){const e=F.find(o=>o[0]);if(e)return {name:e[1]}}const P=G();P?.name||"";
 
@@ -56,7 +56,7 @@ const appConfig0 = defineAppConfig({
   docus: {
     title: "KubeCamp",
     description: "The best place to start your Kubernetes Journey",
-    url: "cncf-lahore.github.io/Kubernetes-Bootcamp",
+    url: "https://kubecamp.kcdlahore.org/",
     image: "https://i.ibb.co/PGkhK2D/logo-07df0d71aa68491bbca25e45a62ac299.png",
     socials: {},
     layout: "default",
@@ -84,7 +84,7 @@ const appConfig0 = defineAppConfig({
     },
     github: {
       branch: "main",
-      repo: "/Kubernetes-Bootcamp/",
+      repo: "/KubeCamp/",
       owner: "CNCF-Lahore",
       edit: false
     }
@@ -155,7 +155,7 @@ const appConfig = defuFn(appConfig0, appConfig1, appConfig2, appConfig3, inlineA
 
 const _inlineRuntimeConfig = {
   "app": {
-    "baseURL": "/Kubernetes-Bootcamp/",
+    "baseURL": "/",
     "buildAssetsDir": "assets",
     "cdnURL": ""
   },
@@ -326,7 +326,7 @@ const _inlineRuntimeConfig = {
   },
   "pinceau": {
     "studio": true,
-    "outputDir": "/workspace/Kubernetes-Bootcamp/.nuxt/pinceau/"
+    "outputDir": "/workspace/KubeCamp/.nuxt/pinceau/"
   },
   "mdc": {
     "highlight": {
@@ -1581,7 +1581,7 @@ new Proxy(/* @__PURE__ */ Object.create(null), {
   }
 });
 
-const serverAssets = [{"baseName":"server","dir":"/workspace/Kubernetes-Bootcamp/server/assets"}];
+const serverAssets = [{"baseName":"server","dir":"/workspace/KubeCamp/server/assets"}];
 
 const assets = createStorage();
 
@@ -1593,14 +1593,14 @@ const storage = createStorage({});
 
 storage.mount('/assets', assets);
 
-storage.mount('pinceau', unstorage_47drivers_47fs({"driver":"fs","base":"/workspace/Kubernetes-Bootcamp/.nuxt/pinceau/theme","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('content:source:content', unstorage_47drivers_47fs({"name":"content:source:content","driver":"fs","base":"/workspace/Kubernetes-Bootcamp/content","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('cache:content', unstorage_47drivers_47fs({"driver":"fs","base":"/workspace/Kubernetes-Bootcamp/.nuxt/content-cache","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/workspace/Kubernetes-Bootcamp","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/workspace/Kubernetes-Bootcamp/server","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/workspace/Kubernetes-Bootcamp/.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/workspace/Kubernetes-Bootcamp/.nuxt/cache","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"/workspace/Kubernetes-Bootcamp/.data/kv","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('pinceau', unstorage_47drivers_47fs({"driver":"fs","base":"/workspace/KubeCamp/.nuxt/pinceau/theme","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('content:source:content', unstorage_47drivers_47fs({"name":"content:source:content","driver":"fs","base":"/workspace/KubeCamp/content","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('cache:content', unstorage_47drivers_47fs({"driver":"fs","base":"/workspace/KubeCamp/.nuxt/content-cache","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/workspace/KubeCamp","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/workspace/KubeCamp/server","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/workspace/KubeCamp/.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/workspace/KubeCamp/.nuxt/cache","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"/workspace/KubeCamp/.data/kv","ignore":["**/node_modules/**","**/.git/**"]}));
 
 function useStorage(base = "") {
   return base ? prefixStorage(storage, base) : storage;
@@ -2061,7 +2061,7 @@ const nitro = (async function(nitro) {
 
 const script = "\"use strict\";(()=>{const a=window,e=document.documentElement,m=[\"dark\",\"light\"],c=window&&window.localStorage&&window.localStorage.getItem&&window.localStorage.getItem(\"nuxt-color-mode\")||\"system\";let n=c===\"system\"?d():c;const l=e.getAttribute(\"data-color-mode-forced\");l&&(n=l),i(n),a[\"__NUXT_COLOR_MODE__\"]={preference:c,value:n,getColorScheme:d,addColorScheme:i,removeColorScheme:f};function i(o){const t=\"\"+o+\"\",s=\"theme\";e.classList?e.classList.add(t):e.className+=\" \"+t,s&&e.setAttribute(\"data-\"+s,o)}function f(o){const t=\"\"+o+\"\",s=\"theme\";e.classList?e.classList.remove(t):e.className=e.className.replace(new RegExp(t,\"g\"),\"\"),s&&e.removeAttribute(\"data-\"+s)}function r(o){return a.matchMedia(\"(prefers-color-scheme\"+o+\")\")}function d(){if(a.matchMedia&&r(\"\").media!==\"not all\"){for(const o of m)if(r(\":\"+o).matches)return o}return\"light\"}})();\n";
 
-const _3GLyYt0Wtu = (function(nitro) {
+const _W4OSX7lqu1 = (function(nitro) {
   nitro.hooks.hook("render:html", (htmlContext) => {
     htmlContext.head.push(`<script>${script}<\/script>`);
   });
@@ -2069,7 +2069,7 @@ const _3GLyYt0Wtu = (function(nitro) {
 
 const plugins = [
   nitro,
-_3GLyYt0Wtu
+_W4OSX7lqu1
 ];
 
 const errorHandler = (async function errorhandler(error, event) {
@@ -2944,7 +2944,7 @@ let moduleOptions;
 const parseMarkdown = async (md, opts = {}) => {
   if (!moduleOptions) {
     moduleOptions = await import(
-      'file:///workspace/Kubernetes-Bootcamp/.nuxt/mdc-imports.mjs'
+      'file:///workspace/KubeCamp/.nuxt/mdc-imports.mjs'
       /* @vite-ignore */
     ).catch(() => ({}));
   }
@@ -3000,7 +3000,7 @@ function contentHeading(body) {
   };
 }
 
-const _4KC6IW = lazyEventHandler(async () => {
+const _k6y8fC = lazyEventHandler(async () => {
   const { highlight } = useRuntimeConfig().mdc;
   await loadWasm(
     (imports) => Promise.resolve().then(function () { return onig; }).then((mod) => mod.default(imports)).then((exports) => ({ exports }))
@@ -4003,7 +4003,7 @@ const json = defineTransformer({
     let parsed;
     if (typeof content === "string") {
       if (_id.endsWith("json5")) {
-        parsed = (await import('file:///workspace/Kubernetes-Bootcamp/node_modules/json5/lib/index.js').then((m) => m.default || m)).parse(content);
+        parsed = (await import('file:///workspace/KubeCamp/node_modules/json5/lib/index.js').then((m) => m.default || m)).parse(content);
       } else if (_id.endsWith("json")) {
         parsed = destr$1(content);
       }
@@ -4585,7 +4585,7 @@ const getContentQuery = (event) => {
   return query;
 };
 
-const _rSvadi = defineEventHandler(async (event) => {
+const _8EcGM7 = defineEventHandler(async (event) => {
   const query = getContentQuery(event);
   const { advanceQuery } = useRuntimeConfig().public.content.experimental;
   if (query.first) {
@@ -4614,7 +4614,7 @@ const _rSvadi = defineEventHandler(async (event) => {
   return serverQueryContent$1(event, query).find();
 });
 
-const _AD4g7o = defineEventHandler(async (event) => {
+const _wQhr0P = defineEventHandler(async (event) => {
   const { content } = useRuntimeConfig();
   const now = Date.now();
   const contents = await serverQueryContent$1(event).find();
@@ -4719,7 +4719,7 @@ function isObject(obj) {
   return Object.prototype.toString.call(obj) === "[object Object]";
 }
 
-const _QdE0th = defineEventHandler(async (event) => {
+const _T7WdzT = defineEventHandler(async (event) => {
   const query = getContentQuery(event);
   if (!isPreview(event) && Object.keys(query).length === 0) {
     const cache = await cacheStorage.getItem("content-navigation.json");
@@ -4756,23 +4756,23 @@ const _QdE0th = defineEventHandler(async (event) => {
   return createNav(contents?.result || contents, configs);
 });
 
-const _lazy_AVG9K7 = () => Promise.resolve().then(function () { return search$1; });
-const _lazy_4bzQ2c = () => Promise.resolve().then(function () { return opensearch_xml$1; });
-const _lazy_YFgWQB = () => Promise.resolve().then(function () { return renderer$1; });
+const _lazy_VTO8iV = () => Promise.resolve().then(function () { return search$1; });
+const _lazy_5w9eBN = () => Promise.resolve().then(function () { return opensearch_xml$1; });
+const _lazy_ex2KTa = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
-  { route: '/api/search', handler: _lazy_AVG9K7, lazy: true, middleware: false, method: undefined },
-  { route: '/opensearch.xml', handler: _lazy_4bzQ2c, lazy: true, middleware: false, method: undefined },
-  { route: '/__nuxt_error', handler: _lazy_YFgWQB, lazy: true, middleware: false, method: undefined },
-  { route: '/api/_mdc/highlight', handler: _4KC6IW, lazy: false, middleware: false, method: undefined },
-  { route: '/api/_content/query/:qid/**:params', handler: _rSvadi, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/query/:qid', handler: _rSvadi, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/query', handler: _rSvadi, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/cache.json', handler: _AD4g7o, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/navigation/:qid/**:params', handler: _QdE0th, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/navigation/:qid', handler: _QdE0th, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/navigation', handler: _QdE0th, lazy: false, middleware: false, method: "get" },
-  { route: '/**', handler: _lazy_YFgWQB, lazy: true, middleware: false, method: undefined }
+  { route: '/api/search', handler: _lazy_VTO8iV, lazy: true, middleware: false, method: undefined },
+  { route: '/opensearch.xml', handler: _lazy_5w9eBN, lazy: true, middleware: false, method: undefined },
+  { route: '/__nuxt_error', handler: _lazy_ex2KTa, lazy: true, middleware: false, method: undefined },
+  { route: '/api/_mdc/highlight', handler: _k6y8fC, lazy: false, middleware: false, method: undefined },
+  { route: '/api/_content/query/:qid/**:params', handler: _8EcGM7, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/query/:qid', handler: _8EcGM7, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/query', handler: _8EcGM7, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/cache.json', handler: _wQhr0P, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/navigation/:qid/**:params', handler: _T7WdzT, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/navigation/:qid', handler: _T7WdzT, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/navigation', handler: _T7WdzT, lazy: false, middleware: false, method: "get" },
+  { route: '/**', handler: _lazy_ex2KTa, lazy: true, middleware: false, method: undefined }
 ];
 
 function createNitroApp() {
@@ -5207,8 +5207,8 @@ const appRootTag = "div";
 
 globalThis.__buildAssetsURL = buildAssetsURL;
 globalThis.__publicAssetsURL = publicAssetsURL;
-const getClientManifest = () => import('file:///workspace/Kubernetes-Bootcamp/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
-const getServerEntry = () => import('file:///workspace/Kubernetes-Bootcamp/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
+const getClientManifest = () => import('file:///workspace/KubeCamp/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
+const getServerEntry = () => import('file:///workspace/KubeCamp/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
 const getSSRRenderer = lazyCachedFunction(async () => {
   const manifest = await getClientManifest();
   if (!manifest) {

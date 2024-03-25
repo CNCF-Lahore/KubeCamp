@@ -79,7 +79,7 @@ const remarkPlugins = {
 };
 
 const rehypePlugins = {
-  'highlight': { instance: rehypeShiki, options: {"src":"/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/shiki/index.mjs"} },
+  'highlight': { instance: rehypeShiki, options: {"src":"/workspace/KubeCamp/node_modules/@nuxtjs/mdc/dist/runtime/shiki/index.mjs"} },
 };
 
 const highlight = {"theme":{"dark":"github-dark","default":"github-light"},"preload":["json","js","ts","html","css","vue","diff","shell","markdown","yaml","bash","ini"]};

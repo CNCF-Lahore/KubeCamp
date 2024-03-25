@@ -1,1 +1,1 @@
-export { default } from "file:///workspace/Kubernetes-Bootcamp/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"
+export { default } from "file:///workspace/KubeCamp/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"

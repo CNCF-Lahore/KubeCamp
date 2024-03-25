@@ -1,58 +1,58 @@
-import { hasInjectionContext, inject, version, ref, watchEffect, watch, getCurrentInstance, h, defineAsyncComponent, toRef, isRef, computed, useSSRContext, shallowRef, onServerPrefetch, defineComponent, provide, createElementBlock, unref, shallowReactive, Suspense, nextTick, Transition, reactive, mergeProps, createVNode, resolveDynamicComponent, withCtx, renderSlot, withAsyncContext, resolveComponent, openBlock, createBlock, createCommentVNode, toDisplayString, Fragment, createTextVNode, readonly, renderList, createApp, effectScope, getCurrentScope, onScopeDispose, onErrorCaptured, isReadonly, isShallow, isReactive, toRaw } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/vue/index.mjs';
-import { $fetch as $fetch$1 } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/ofetch/dist/node.mjs';
-import { createHooks } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/hookable/dist/index.mjs';
-import { getContext } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/unctx/dist/index.mjs';
-import { createError as createError$1, getRequestHeader, setCookie, getCookie, deleteCookie, sanitizeStatusCode } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/h3/dist/index.mjs';
-import { getActiveHead } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/unhead/dist/index.mjs';
-import { defineHeadPlugin, composableNames } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/@unhead/shared/dist/index.mjs';
-import { RouterView, createMemoryHistory, createRouter, START_LOCATION } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/vue-router/dist/vue-router.node.mjs';
-import { withoutTrailingSlash, withLeadingSlash, joinURL, withBase, hasProtocol, parseURL, parseQuery, withTrailingSlash, withQuery, isScriptProtocol } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/ufo/dist/index.mjs';
-import { defu, defuFn } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/defu/dist/defu.mjs';
-import { klona } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/klona/dist/index.mjs';
-import { hash, isEqual } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/ohash/dist/index.mjs';
-import destr from 'file:///workspace/Kubernetes-Bootcamp/node_modules/destr/dist/index.mjs';
-import { parse } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/cookie-es/dist/index.mjs';
-import { nanoid } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/nanoid/index.js';
-import { kebabCase } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/scule/dist/index.mjs';
-import { ssrRenderAttrs, ssrRenderVNode, ssrRenderSlot, ssrRenderComponent, ssrInterpolate, ssrRenderList, ssrRenderClass, ssrRenderTeleport, ssrRenderAttr, ssrRenderStyle, ssrRenderSuspense } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/vue/server-renderer/index.mjs';
-import { Icon as Icon$1 } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/@iconify/vue/dist/offline.mjs';
-import { addAPIProvider, loadIcon } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/@iconify/vue/dist/iconify.mjs';
-import { useFuse } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/@vueuse/integrations/useFuse.mjs';
-import { useFocusTrap } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/@vueuse/integrations/useFocusTrap.mjs';
+import { hasInjectionContext, inject, version, ref, watchEffect, watch, getCurrentInstance, h, defineAsyncComponent, toRef, isRef, computed, useSSRContext, shallowRef, onServerPrefetch, defineComponent, provide, createElementBlock, unref, shallowReactive, Suspense, nextTick, Transition, reactive, mergeProps, createVNode, resolveDynamicComponent, withCtx, renderSlot, withAsyncContext, resolveComponent, openBlock, createBlock, createCommentVNode, toDisplayString, Fragment, createTextVNode, readonly, renderList, createApp, effectScope, getCurrentScope, onScopeDispose, onErrorCaptured, isReadonly, isShallow, isReactive, toRaw } from 'file:///workspace/KubeCamp/node_modules/vue/index.mjs';
+import { $fetch as $fetch$1 } from 'file:///workspace/KubeCamp/node_modules/ofetch/dist/node.mjs';
+import { createHooks } from 'file:///workspace/KubeCamp/node_modules/hookable/dist/index.mjs';
+import { getContext } from 'file:///workspace/KubeCamp/node_modules/unctx/dist/index.mjs';
+import { createError as createError$1, getRequestHeader, setCookie, getCookie, deleteCookie, sanitizeStatusCode } from 'file:///workspace/KubeCamp/node_modules/h3/dist/index.mjs';
+import { getActiveHead } from 'file:///workspace/KubeCamp/node_modules/unhead/dist/index.mjs';
+import { defineHeadPlugin, composableNames } from 'file:///workspace/KubeCamp/node_modules/@unhead/shared/dist/index.mjs';
+import { RouterView, createMemoryHistory, createRouter, START_LOCATION } from 'file:///workspace/KubeCamp/node_modules/vue-router/dist/vue-router.node.mjs';
+import { withoutTrailingSlash, withLeadingSlash, joinURL, withBase, hasProtocol, parseURL, parseQuery, withTrailingSlash, withQuery, isScriptProtocol } from 'file:///workspace/KubeCamp/node_modules/ufo/dist/index.mjs';
+import { defu, defuFn } from 'file:///workspace/KubeCamp/node_modules/defu/dist/defu.mjs';
+import { klona } from 'file:///workspace/KubeCamp/node_modules/klona/dist/index.mjs';
+import { hash, isEqual } from 'file:///workspace/KubeCamp/node_modules/ohash/dist/index.mjs';
+import destr from 'file:///workspace/KubeCamp/node_modules/destr/dist/index.mjs';
+import { parse } from 'file:///workspace/KubeCamp/node_modules/cookie-es/dist/index.mjs';
+import { nanoid } from 'file:///workspace/KubeCamp/node_modules/nanoid/index.js';
+import { kebabCase } from 'file:///workspace/KubeCamp/node_modules/scule/dist/index.mjs';
+import { ssrRenderAttrs, ssrRenderVNode, ssrRenderSlot, ssrRenderComponent, ssrInterpolate, ssrRenderList, ssrRenderClass, ssrRenderTeleport, ssrRenderAttr, ssrRenderStyle, ssrRenderSuspense } from 'file:///workspace/KubeCamp/node_modules/vue/server-renderer/index.mjs';
+import { Icon as Icon$1 } from 'file:///workspace/KubeCamp/node_modules/@iconify/vue/dist/offline.mjs';
+import { addAPIProvider, loadIcon } from 'file:///workspace/KubeCamp/node_modules/@iconify/vue/dist/iconify.mjs';
+import { useFuse } from 'file:///workspace/KubeCamp/node_modules/@vueuse/integrations/useFuse.mjs';
+import { useFocusTrap } from 'file:///workspace/KubeCamp/node_modules/@vueuse/integrations/useFocusTrap.mjs';
 import { b as useRuntimeConfig$1 } from '../nitro/nitro-prerenderer.mjs';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/unenv/runtime/fetch/index.mjs';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/unstorage/dist/index.mjs';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/unstorage/drivers/fs.mjs';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/unstorage/drivers/memory.mjs';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/unstorage/drivers/lru-cache.mjs';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/unstorage/drivers/fs-lite.mjs';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/radix3/dist/index.mjs';
+import 'file:///workspace/KubeCamp/node_modules/unenv/runtime/fetch/index.mjs';
+import 'file:///workspace/KubeCamp/node_modules/unstorage/dist/index.mjs';
+import 'file:///workspace/KubeCamp/node_modules/unstorage/drivers/fs.mjs';
+import 'file:///workspace/KubeCamp/node_modules/unstorage/drivers/memory.mjs';
+import 'file:///workspace/KubeCamp/node_modules/unstorage/drivers/lru-cache.mjs';
+import 'file:///workspace/KubeCamp/node_modules/unstorage/drivers/fs-lite.mjs';
+import 'file:///workspace/KubeCamp/node_modules/radix3/dist/index.mjs';
 import 'node:fs';
 import 'node:url';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/pathe/dist/index.mjs';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/shikiji/dist/index.mjs';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/shikiji-transformers/dist/index.mjs';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/unified/index.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/mdast-util-to-string/index.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/micromark/index.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/unist-util-stringify-position/index.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/micromark-util-character/index.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/micromark-util-chunked/index.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/micromark-util-resolve-all/index.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/micromark-util-sanitize-uri/index.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/slugify/slugify.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/remark-parse/index.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/remark-rehype/index.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/remark-mdc/dist/index.mjs';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/hast-util-to-string/index.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/github-slugger/index.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/detab/index.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/remark-emoji/index.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/remark-gfm/index.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/rehype-external-links/index.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/rehype-sort-attribute-values/index.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/rehype-sort-attributes/index.js';
-import 'file:///workspace/Kubernetes-Bootcamp/node_modules/rehype-raw/index.js';
+import 'file:///workspace/KubeCamp/node_modules/pathe/dist/index.mjs';
+import 'file:///workspace/KubeCamp/node_modules/shikiji/dist/index.mjs';
+import 'file:///workspace/KubeCamp/node_modules/shikiji-transformers/dist/index.mjs';
+import 'file:///workspace/KubeCamp/node_modules/unified/index.js';
+import 'file:///workspace/KubeCamp/node_modules/mdast-util-to-string/index.js';
+import 'file:///workspace/KubeCamp/node_modules/micromark/index.js';
+import 'file:///workspace/KubeCamp/node_modules/unist-util-stringify-position/index.js';
+import 'file:///workspace/KubeCamp/node_modules/micromark-util-character/index.js';
+import 'file:///workspace/KubeCamp/node_modules/micromark-util-chunked/index.js';
+import 'file:///workspace/KubeCamp/node_modules/micromark-util-resolve-all/index.js';
+import 'file:///workspace/KubeCamp/node_modules/micromark-util-sanitize-uri/index.js';
+import 'file:///workspace/KubeCamp/node_modules/slugify/slugify.js';
+import 'file:///workspace/KubeCamp/node_modules/remark-parse/index.js';
+import 'file:///workspace/KubeCamp/node_modules/remark-rehype/index.js';
+import 'file:///workspace/KubeCamp/node_modules/remark-mdc/dist/index.mjs';
+import 'file:///workspace/KubeCamp/node_modules/hast-util-to-string/index.js';
+import 'file:///workspace/KubeCamp/node_modules/github-slugger/index.js';
+import 'file:///workspace/KubeCamp/node_modules/detab/index.js';
+import 'file:///workspace/KubeCamp/node_modules/remark-emoji/index.js';
+import 'file:///workspace/KubeCamp/node_modules/remark-gfm/index.js';
+import 'file:///workspace/KubeCamp/node_modules/rehype-external-links/index.js';
+import 'file:///workspace/KubeCamp/node_modules/rehype-sort-attribute-values/index.js';
+import 'file:///workspace/KubeCamp/node_modules/rehype-sort-attributes/index.js';
+import 'file:///workspace/KubeCamp/node_modules/rehype-raw/index.js';
 
 const appConfig = useRuntimeConfig$1().app;
 const baseURL = () => appConfig.baseURL;
@@ -757,9 +757,9 @@ const validate = /* @__PURE__ */ defineNuxtRouteMiddleware(async (to) => {
 });
 const cfg0 = defineAppConfig({
   docus: {
-    title: "Kubernetes BootCamp",
+    title: "KubeCamp",
     description: "The best place to start your Kubernetes Journey",
-    url: "cncf-lahore.github.io/Kubernetes-Bootcamp",
+    url: "https://kubecamp.kcdlahore.org/",
     image: "https://i.ibb.co/PGkhK2D/logo-07df0d71aa68491bbca25e45a62ac299.png",
     socials: {},
     layout: "default",
@@ -787,7 +787,7 @@ const cfg0 = defineAppConfig({
     },
     github: {
       branch: "main",
-      repo: "/Kubernetes-Bootcamp/",
+      repo: "/KubeCamp/",
       owner: "CNCF-Lahore",
       edit: false
     }
@@ -846,7 +846,7 @@ const cfg2 = defineAppConfig({
 const cfg3 = defineAppConfig({});
 const inlineConfig = {
   "nuxt": {
-    "buildId": "511a5188-b986-42b8-b4d6-ea33e422266b"
+    "buildId": "c1269679-1254-4d8f-9121-9a829fdf8a6a"
   }
 };
 const __appConfig = /* @__PURE__ */ defuFn(cfg0, cfg1, cfg2, cfg3, inlineConfig);

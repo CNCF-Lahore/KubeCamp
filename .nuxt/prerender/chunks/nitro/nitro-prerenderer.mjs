@@ -1,53 +1,53 @@
-globalThis._importMeta_=globalThis._importMeta_||{url:"file:///_entry.js",env:process.env};import { defineEventHandler, handleCacheHeaders, splitCookiesString, isEvent, createEvent, getRequestHeader, eventHandler, setHeaders, sendRedirect, proxyRequest, setResponseStatus, setResponseHeader, send, getRequestHeaders, removeResponseHeader, createError, getResponseHeader, appendHeader, lazyEventHandler, getQuery as getQuery$1, getCookie, createApp, createRouter as createRouter$1, toNodeListener, fetchWithEvent } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/h3/dist/index.mjs';
-import { createFetch as createFetch$1, Headers as Headers$1 } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/ofetch/dist/node.mjs';
-import destr, { destr as destr$1 } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/destr/dist/index.mjs';
-import { createCall, createFetch } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/unenv/runtime/fetch/index.mjs';
-import { createHooks } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/hookable/dist/index.mjs';
-import { snakeCase, kebabCase, pascalCase, camelCase } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/scule/dist/index.mjs';
-import { klona } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/klona/dist/index.mjs';
-import defu, { defuFn, defu as defu$1 } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/defu/dist/defu.mjs';
-import { hash } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/ohash/dist/index.mjs';
-import { parseURL, withoutBase, joinURL, getQuery, withQuery, decodePath, withLeadingSlash, withoutTrailingSlash, isRelative } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/ufo/dist/index.mjs';
-import { createStorage, prefixStorage } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/unstorage/dist/index.mjs';
-import unstorage_47drivers_47fs from 'file:///workspace/Kubernetes-Bootcamp/node_modules/unstorage/drivers/fs.mjs';
-import unstorage_47drivers_47memory from 'file:///workspace/Kubernetes-Bootcamp/node_modules/unstorage/drivers/memory.mjs';
-import unstorage_47drivers_47lru_45cache from 'file:///workspace/Kubernetes-Bootcamp/node_modules/unstorage/drivers/lru-cache.mjs';
-import unstorage_47drivers_47fs_45lite from 'file:///workspace/Kubernetes-Bootcamp/node_modules/unstorage/drivers/fs-lite.mjs';
-import { toRouteMatcher, createRouter } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/radix3/dist/index.mjs';
+globalThis._importMeta_=globalThis._importMeta_||{url:"file:///_entry.js",env:process.env};import { defineEventHandler, handleCacheHeaders, splitCookiesString, isEvent, createEvent, getRequestHeader, eventHandler, setHeaders, sendRedirect, proxyRequest, setResponseStatus, setResponseHeader, send, getRequestHeaders, removeResponseHeader, createError, getResponseHeader, appendHeader, lazyEventHandler, getQuery as getQuery$1, getCookie, createApp, createRouter as createRouter$1, toNodeListener, fetchWithEvent } from 'file:///workspace/KubeCamp/node_modules/h3/dist/index.mjs';
+import { createFetch as createFetch$1, Headers as Headers$1 } from 'file:///workspace/KubeCamp/node_modules/ofetch/dist/node.mjs';
+import destr, { destr as destr$1 } from 'file:///workspace/KubeCamp/node_modules/destr/dist/index.mjs';
+import { createCall, createFetch } from 'file:///workspace/KubeCamp/node_modules/unenv/runtime/fetch/index.mjs';
+import { createHooks } from 'file:///workspace/KubeCamp/node_modules/hookable/dist/index.mjs';
+import { snakeCase, kebabCase, pascalCase, camelCase } from 'file:///workspace/KubeCamp/node_modules/scule/dist/index.mjs';
+import { klona } from 'file:///workspace/KubeCamp/node_modules/klona/dist/index.mjs';
+import defu, { defuFn, defu as defu$1 } from 'file:///workspace/KubeCamp/node_modules/defu/dist/defu.mjs';
+import { hash } from 'file:///workspace/KubeCamp/node_modules/ohash/dist/index.mjs';
+import { parseURL, withoutBase, joinURL, getQuery, withQuery, decodePath, withLeadingSlash, withoutTrailingSlash, isRelative } from 'file:///workspace/KubeCamp/node_modules/ufo/dist/index.mjs';
+import { createStorage, prefixStorage } from 'file:///workspace/KubeCamp/node_modules/unstorage/dist/index.mjs';
+import unstorage_47drivers_47fs from 'file:///workspace/KubeCamp/node_modules/unstorage/drivers/fs.mjs';
+import unstorage_47drivers_47memory from 'file:///workspace/KubeCamp/node_modules/unstorage/drivers/memory.mjs';
+import unstorage_47drivers_47lru_45cache from 'file:///workspace/KubeCamp/node_modules/unstorage/drivers/lru-cache.mjs';
+import unstorage_47drivers_47fs_45lite from 'file:///workspace/KubeCamp/node_modules/unstorage/drivers/fs-lite.mjs';
+import { toRouteMatcher, createRouter } from 'file:///workspace/KubeCamp/node_modules/radix3/dist/index.mjs';
 import { promises } from 'node:fs';
 import { fileURLToPath } from 'node:url';
-import { dirname, resolve, extname } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/pathe/dist/index.mjs';
-import { addClassToHast, getHighlighter, loadWasm } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/shikiji/dist/index.mjs';
-import { transformerNotationDiff, transformerNotationFocus, transformerNotationHighlight, transformerNotationErrorLevel } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/shikiji-transformers/dist/index.mjs';
-import { unified } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/unified/index.js';
-import { toString as toString$1 } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/mdast-util-to-string/index.js';
-import { postprocess, preprocess } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/micromark/index.js';
-import { stringifyPosition } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/unist-util-stringify-position/index.js';
-import { markdownLineEnding, markdownSpace } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/micromark-util-character/index.js';
-import { push, splice } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/micromark-util-chunked/index.js';
-import { resolveAll } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/micromark-util-resolve-all/index.js';
-import { normalizeUri } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/micromark-util-sanitize-uri/index.js';
-import slugify from 'file:///workspace/Kubernetes-Bootcamp/node_modules/slugify/slugify.js';
-import remarkParse from 'file:///workspace/Kubernetes-Bootcamp/node_modules/remark-parse/index.js';
-import remark2rehype from 'file:///workspace/Kubernetes-Bootcamp/node_modules/remark-rehype/index.js';
-import remarkMDC, { parseFrontMatter } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/remark-mdc/dist/index.mjs';
-import { toString } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/hast-util-to-string/index.js';
-import Slugger from 'file:///workspace/Kubernetes-Bootcamp/node_modules/github-slugger/index.js';
-import { detab } from 'file:///workspace/Kubernetes-Bootcamp/node_modules/detab/index.js';
-import remarkEmoji from 'file:///workspace/Kubernetes-Bootcamp/node_modules/remark-emoji/index.js';
-import remarkGFM from 'file:///workspace/Kubernetes-Bootcamp/node_modules/remark-gfm/index.js';
-import rehypeExternalLinks from 'file:///workspace/Kubernetes-Bootcamp/node_modules/rehype-external-links/index.js';
-import rehypeSortAttributeValues from 'file:///workspace/Kubernetes-Bootcamp/node_modules/rehype-sort-attribute-values/index.js';
-import rehypeSortAttributes from 'file:///workspace/Kubernetes-Bootcamp/node_modules/rehype-sort-attributes/index.js';
-import rehypeRaw from 'file:///workspace/Kubernetes-Bootcamp/node_modules/rehype-raw/index.js';
+import { dirname, resolve, extname } from 'file:///workspace/KubeCamp/node_modules/pathe/dist/index.mjs';
+import { addClassToHast, getHighlighter, loadWasm } from 'file:///workspace/KubeCamp/node_modules/shikiji/dist/index.mjs';
+import { transformerNotationDiff, transformerNotationFocus, transformerNotationHighlight, transformerNotationErrorLevel } from 'file:///workspace/KubeCamp/node_modules/shikiji-transformers/dist/index.mjs';
+import { unified } from 'file:///workspace/KubeCamp/node_modules/unified/index.js';
+import { toString as toString$1 } from 'file:///workspace/KubeCamp/node_modules/mdast-util-to-string/index.js';
+import { postprocess, preprocess } from 'file:///workspace/KubeCamp/node_modules/micromark/index.js';
+import { stringifyPosition } from 'file:///workspace/KubeCamp/node_modules/unist-util-stringify-position/index.js';
+import { markdownLineEnding, markdownSpace } from 'file:///workspace/KubeCamp/node_modules/micromark-util-character/index.js';
+import { push, splice } from 'file:///workspace/KubeCamp/node_modules/micromark-util-chunked/index.js';
+import { resolveAll } from 'file:///workspace/KubeCamp/node_modules/micromark-util-resolve-all/index.js';
+import { normalizeUri } from 'file:///workspace/KubeCamp/node_modules/micromark-util-sanitize-uri/index.js';
+import slugify from 'file:///workspace/KubeCamp/node_modules/slugify/slugify.js';
+import remarkParse from 'file:///workspace/KubeCamp/node_modules/remark-parse/index.js';
+import remark2rehype from 'file:///workspace/KubeCamp/node_modules/remark-rehype/index.js';
+import remarkMDC, { parseFrontMatter } from 'file:///workspace/KubeCamp/node_modules/remark-mdc/dist/index.mjs';
+import { toString } from 'file:///workspace/KubeCamp/node_modules/hast-util-to-string/index.js';
+import Slugger from 'file:///workspace/KubeCamp/node_modules/github-slugger/index.js';
+import { detab } from 'file:///workspace/KubeCamp/node_modules/detab/index.js';
+import remarkEmoji from 'file:///workspace/KubeCamp/node_modules/remark-emoji/index.js';
+import remarkGFM from 'file:///workspace/KubeCamp/node_modules/remark-gfm/index.js';
+import rehypeExternalLinks from 'file:///workspace/KubeCamp/node_modules/rehype-external-links/index.js';
+import rehypeSortAttributeValues from 'file:///workspace/KubeCamp/node_modules/rehype-sort-attribute-values/index.js';
+import rehypeSortAttributes from 'file:///workspace/KubeCamp/node_modules/rehype-sort-attributes/index.js';
+import rehypeRaw from 'file:///workspace/KubeCamp/node_modules/rehype-raw/index.js';
 
 const defineAppConfig = (config) => config;
 
 const appConfig0 = defineAppConfig({
   docus: {
-    title: "Kubernetes BootCamp",
+    title: "KubeCamp",
     description: "The best place to start your Kubernetes Journey",
-    url: "cncf-lahore.github.io/Kubernetes-Bootcamp",
+    url: "https://kubecamp.kcdlahore.org/",
     image: "https://i.ibb.co/PGkhK2D/logo-07df0d71aa68491bbca25e45a62ac299.png",
     socials: {},
     layout: "default",
@@ -75,7 +75,7 @@ const appConfig0 = defineAppConfig({
     },
     github: {
       branch: "main",
-      repo: "/Kubernetes-Bootcamp/",
+      repo: "/KubeCamp/",
       owner: "CNCF-Lahore",
       edit: false
     }
@@ -138,7 +138,7 @@ const appConfig3 = defineAppConfig({});
 
 const inlineAppConfig = {
   "nuxt": {
-    "buildId": "511a5188-b986-42b8-b4d6-ea33e422266b"
+    "buildId": "c1269679-1254-4d8f-9121-9a829fdf8a6a"
   }
 };
 
@@ -146,7 +146,7 @@ const appConfig = defuFn(appConfig0, appConfig1, appConfig2, appConfig3, inlineA
 
 const _inlineRuntimeConfig = {
   "app": {
-    "baseURL": "/Kubernetes-Bootcamp/",
+    "baseURL": "/",
     "buildAssetsDir": "assets",
     "cdnURL": ""
   },
@@ -233,7 +233,7 @@ const _inlineRuntimeConfig = {
     "content": {
       "locales": [],
       "defaultLocale": "",
-      "integrity": 1709746675648,
+      "integrity": 1711388651525,
       "experimental": {
         "stripQueryParameters": false,
         "advanceQuery": false,
@@ -325,7 +325,7 @@ const _inlineRuntimeConfig = {
   },
   "pinceau": {
     "studio": true,
-    "outputDir": "/workspace/Kubernetes-Bootcamp/.nuxt/pinceau/"
+    "outputDir": "/workspace/KubeCamp/.nuxt/pinceau/"
   },
   "studio": {
     "publicToken": "",
@@ -1584,7 +1584,7 @@ new Proxy(/* @__PURE__ */ Object.create(null), {
   }
 });
 
-const serverAssets = [{"baseName":"server","dir":"/workspace/Kubernetes-Bootcamp/server/assets"}];
+const serverAssets = [{"baseName":"server","dir":"/workspace/KubeCamp/server/assets"}];
 
 const assets$1 = createStorage();
 
@@ -1599,14 +1599,14 @@ storage.mount('/assets', assets$1);
 storage.mount('internal:nuxt:prerender', unstorage_47drivers_47memory({"driver":"memory"}));
 storage.mount('internal:nuxt:prerender:island', unstorage_47drivers_47lru_45cache({"driver":"lruCache","max":1000}));
 storage.mount('internal:nuxt:prerender:payload', unstorage_47drivers_47lru_45cache({"driver":"lruCache","max":1000}));
-storage.mount('data', unstorage_47drivers_47fs_45lite({"driver":"fsLite","base":"/workspace/Kubernetes-Bootcamp/.data/kv"}));
-storage.mount('pinceau', unstorage_47drivers_47fs({"driver":"fs","base":"/workspace/Kubernetes-Bootcamp/.nuxt/pinceau/theme","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('content:source:content', unstorage_47drivers_47fs({"name":"content:source:content","driver":"fs","base":"/workspace/Kubernetes-Bootcamp/content","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('cache:content', unstorage_47drivers_47fs({"driver":"fs","base":"/workspace/Kubernetes-Bootcamp/.nuxt/content-cache","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/workspace/Kubernetes-Bootcamp","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/workspace/Kubernetes-Bootcamp/server","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/workspace/Kubernetes-Bootcamp/.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/workspace/Kubernetes-Bootcamp/.nuxt/cache","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('data', unstorage_47drivers_47fs_45lite({"driver":"fsLite","base":"/workspace/KubeCamp/.data/kv"}));
+storage.mount('pinceau', unstorage_47drivers_47fs({"driver":"fs","base":"/workspace/KubeCamp/.nuxt/pinceau/theme","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('content:source:content', unstorage_47drivers_47fs({"name":"content:source:content","driver":"fs","base":"/workspace/KubeCamp/content","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('cache:content', unstorage_47drivers_47fs({"driver":"fs","base":"/workspace/KubeCamp/.nuxt/content-cache","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/workspace/KubeCamp","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/workspace/KubeCamp/server","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/workspace/KubeCamp/.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/workspace/KubeCamp/.nuxt/cache","ignore":["**/node_modules/**","**/.git/**"]}));
 
 function useStorage(base = "") {
   return base ? prefixStorage(storage, base) : storage;
@@ -2037,7 +2037,7 @@ const nitro = (async function(nitro) {
 
 const script = "\"use strict\";(()=>{const a=window,e=document.documentElement,m=[\"dark\",\"light\"],c=window&&window.localStorage&&window.localStorage.getItem&&window.localStorage.getItem(\"nuxt-color-mode\")||\"system\";let n=c===\"system\"?d():c;const l=e.getAttribute(\"data-color-mode-forced\");l&&(n=l),i(n),a[\"__NUXT_COLOR_MODE__\"]={preference:c,value:n,getColorScheme:d,addColorScheme:i,removeColorScheme:f};function i(o){const t=\"\"+o+\"\",s=\"theme\";e.classList?e.classList.add(t):e.className+=\" \"+t,s&&e.setAttribute(\"data-\"+s,o)}function f(o){const t=\"\"+o+\"\",s=\"theme\";e.classList?e.classList.remove(t):e.className=e.className.replace(new RegExp(t,\"g\"),\"\"),s&&e.removeAttribute(\"data-\"+s)}function r(o){return a.matchMedia(\"(prefers-color-scheme\"+o+\")\")}function d(){if(a.matchMedia&&r(\"\").media!==\"not all\"){for(const o of m)if(r(\":\"+o).matches)return o}return\"light\"}})();\n";
 
-const _3GLyYt0Wtu = (function(nitro) {
+const _W4OSX7lqu1 = (function(nitro) {
   nitro.hooks.hook("render:html", (htmlContext) => {
     htmlContext.head.push(`<script>${script}<\/script>`);
   });
@@ -2045,7 +2045,7 @@ const _3GLyYt0Wtu = (function(nitro) {
 
 const plugins = [
   nitro,
-_3GLyYt0Wtu
+_W4OSX7lqu1
 ];
 
 const errorHandler = (async function errorhandler(error, event) {
@@ -2913,7 +2913,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/docus/components/app/AppDocSearch.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppDocSearch.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/app/AppDocSearch.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -2934,7 +2934,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/docus/components/app/AppFooter.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppFooter.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/app/AppFooter.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -2955,7 +2955,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/docus/components/app/AppHeader.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppHeader.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/app/AppHeader.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -2976,7 +2976,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/docus/components/app/AppHeaderDialog.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppHeaderDialog.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/app/AppHeaderDialog.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -2997,7 +2997,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/docus/components/app/AppHeaderLogo.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppHeaderLogo.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/app/AppHeaderLogo.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -3018,7 +3018,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/docus/components/app/AppHeaderNavigation.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppHeaderNavigation.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/app/AppHeaderNavigation.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -3039,7 +3039,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/docus/components/app/AppLayout.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppLayout.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/app/AppLayout.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -3064,7 +3064,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -3107,7 +3107,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/docus/components/app/AppLoadingBar.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppLoadingBar.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/app/AppLoadingBar.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -3120,7 +3120,7 @@ const components = {
           "type": "number",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppLoadingBar.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/app/AppLoadingBar.vue",
               "range": [
                 45,
                 95
@@ -3139,7 +3139,7 @@ const components = {
           "type": "number",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppLoadingBar.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/app/AppLoadingBar.vue",
               "range": [
                 99,
                 150
@@ -3159,7 +3159,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppLoadingBar.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/app/AppLoadingBar.vue",
               "range": [
                 45,
                 95
@@ -3174,7 +3174,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppLoadingBar.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/app/AppLoadingBar.vue",
               "range": [
                 99,
                 150
@@ -3198,7 +3198,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/docus/components/app/AppSearch.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppSearch.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/app/AppSearch.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -3211,7 +3211,7 @@ const components = {
           "type": "any",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppSearch.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/app/AppSearch.vue",
               "range": [
                 236,
                 636
@@ -3231,7 +3231,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppSearch.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/app/AppSearch.vue",
               "range": [
                 236,
                 636
@@ -3255,7 +3255,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/docus/components/app/AppSocialIcons.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/AppSocialIcons.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/app/AppSocialIcons.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -3276,7 +3276,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/docus/components/app/DocumentDrivenNotFound.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/DocumentDrivenNotFound.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/app/DocumentDrivenNotFound.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -3297,7 +3297,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/docus/components/app/Ellipsis.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/Ellipsis.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/app/Ellipsis.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -3310,7 +3310,7 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/Ellipsis.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/app/Ellipsis.vue",
               "range": [
                 78,
                 129
@@ -3329,7 +3329,7 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/Ellipsis.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/app/Ellipsis.vue",
               "range": [
                 133,
                 185
@@ -3348,7 +3348,7 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/Ellipsis.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/app/Ellipsis.vue",
               "range": [
                 189,
                 238
@@ -3367,7 +3367,7 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/Ellipsis.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/app/Ellipsis.vue",
               "range": [
                 242,
                 287
@@ -3386,7 +3386,7 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/Ellipsis.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/app/Ellipsis.vue",
               "range": [
                 291,
                 340
@@ -3405,7 +3405,7 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/Ellipsis.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/app/Ellipsis.vue",
               "range": [
                 344,
                 394
@@ -3424,7 +3424,7 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/Ellipsis.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/app/Ellipsis.vue",
               "range": [
                 398,
                 447
@@ -3443,7 +3443,7 @@ const components = {
           "type": "string[]",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/Ellipsis.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/app/Ellipsis.vue",
               "range": [
                 451,
                 604
@@ -3469,7 +3469,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/Ellipsis.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/app/Ellipsis.vue",
               "range": [
                 78,
                 129
@@ -3484,7 +3484,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/Ellipsis.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/app/Ellipsis.vue",
               "range": [
                 133,
                 185
@@ -3499,7 +3499,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/Ellipsis.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/app/Ellipsis.vue",
               "range": [
                 189,
                 238
@@ -3514,7 +3514,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/Ellipsis.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/app/Ellipsis.vue",
               "range": [
                 242,
                 287
@@ -3529,7 +3529,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/Ellipsis.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/app/Ellipsis.vue",
               "range": [
                 291,
                 340
@@ -3544,7 +3544,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/Ellipsis.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/app/Ellipsis.vue",
               "range": [
                 344,
                 394
@@ -3559,7 +3559,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/Ellipsis.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/app/Ellipsis.vue",
               "range": [
                 398,
                 447
@@ -3574,7 +3574,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/Ellipsis.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/app/Ellipsis.vue",
               "range": [
                 451,
                 604
@@ -3604,7 +3604,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/docus/components/app/Logo.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/Logo.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/app/Logo.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -3625,7 +3625,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/docus/components/app/ThemeSelect.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/app/ThemeSelect.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/app/ThemeSelect.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -3646,7 +3646,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/docus/components/docs/DocsAside.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsAside.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/docs/DocsAside.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -3667,7 +3667,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/docus/components/docs/DocsAsideTree.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsAsideTree.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/docs/DocsAsideTree.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -3680,7 +3680,7 @@ const components = {
           "type": "any",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsAsideTree.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/docs/DocsAsideTree.vue",
               "range": [
                 92,
                 160
@@ -3699,7 +3699,7 @@ const components = {
           "type": "number",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsAsideTree.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/docs/DocsAsideTree.vue",
               "range": [
                 164,
                 209
@@ -3718,7 +3718,7 @@ const components = {
           "type": "number",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsAsideTree.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/docs/DocsAsideTree.vue",
               "range": [
                 213,
                 259
@@ -3737,7 +3737,7 @@ const components = {
           "type": "any",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsAsideTree.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/docs/DocsAsideTree.vue",
               "range": [
                 263,
                 329
@@ -3757,7 +3757,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsAsideTree.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/docs/DocsAsideTree.vue",
               "range": [
                 92,
                 160
@@ -3772,7 +3772,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsAsideTree.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/docs/DocsAsideTree.vue",
               "range": [
                 164,
                 209
@@ -3787,7 +3787,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsAsideTree.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/docs/DocsAsideTree.vue",
               "range": [
                 213,
                 259
@@ -3802,7 +3802,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsAsideTree.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/docs/DocsAsideTree.vue",
               "range": [
                 263,
                 329
@@ -3826,7 +3826,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/docus/components/docs/DocsPageBottom.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsPageBottom.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/docs/DocsPageBottom.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -3847,7 +3847,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/docus/components/docs/DocsPageLayout.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsPageLayout.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/docs/DocsPageLayout.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -3872,7 +3872,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -3915,7 +3915,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/docus/components/docs/DocsPrevNext.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsPrevNext.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/docs/DocsPrevNext.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -3936,7 +3936,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/docus/components/docs/DocsToc.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsToc.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/docs/DocsToc.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -3948,7 +3948,7 @@ const components = {
           "signature": "(event: \"move\", ...args: any[]): void",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 4472,
                 4507
@@ -3989,7 +3989,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/docus/components/docs/DocsTocLinks.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsTocLinks.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/docs/DocsTocLinks.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -4002,7 +4002,7 @@ const components = {
           "type": "TocLink[]",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsTocLinks.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/docs/DocsTocLinks.vue",
               "range": [
                 142,
                 216
@@ -4026,7 +4026,7 @@ const components = {
                     "type": "string",
                     "declarations": [
                       {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                        "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                         "range": [
                           991,
                           1002
@@ -4044,7 +4044,7 @@ const components = {
                     "type": "string",
                     "declarations": [
                       {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                        "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                         "range": [
                           1007,
                           1020
@@ -4062,7 +4062,7 @@ const components = {
                     "type": "number",
                     "declarations": [
                       {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                        "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                         "range": [
                           1025,
                           1039
@@ -4080,7 +4080,7 @@ const components = {
                     "type": "TocLink[]",
                     "declarations": [
                       {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                        "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                         "range": [
                           1044,
                           1065
@@ -4104,7 +4104,7 @@ const components = {
           "signature": "(event: \"move\", ...args: any[]): void",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 4472,
                 4507
@@ -4123,7 +4123,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/DocsTocLinks.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/docs/DocsTocLinks.vue",
               "range": [
                 142,
                 216
@@ -4147,7 +4147,7 @@ const components = {
                     "type": "string",
                     "declarations": [
                       {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                        "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                         "range": [
                           991,
                           1002
@@ -4165,7 +4165,7 @@ const components = {
                     "type": "string",
                     "declarations": [
                       {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                        "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                         "range": [
                           1007,
                           1020
@@ -4183,7 +4183,7 @@ const components = {
                     "type": "number",
                     "declarations": [
                       {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                        "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                         "range": [
                           1025,
                           1039
@@ -4201,7 +4201,7 @@ const components = {
                     "type": "TocLink[]",
                     "declarations": [
                       {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                        "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                         "range": [
                           1044,
                           1065
@@ -4243,29 +4243,10 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
     "meta": {
       "type": 1,
       "props": [
-        {
-          "name": "source",
-          "global": false,
-          "description": "Source file path.\n\nWon't be used if `page` is set.",
-          "tags": [],
-          "required": false,
-          "type": "string",
-          "declarations": [
-            {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
-              "range": [
-                1245,
-                1328
-              ]
-            }
-          ],
-          "schema": "string",
-          "default": "undefined"
-        },
         {
           "name": "baseUrl",
           "global": false,
@@ -4275,7 +4256,7 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
               "range": [
                 272,
                 415
@@ -4294,7 +4275,7 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
               "range": [
                 462,
                 577
@@ -4313,7 +4294,7 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
               "range": [
                 623,
                 736
@@ -4332,7 +4313,7 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
               "range": [
                 802,
                 919
@@ -4351,7 +4332,7 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
               "range": [
                 1041,
                 1152
@@ -4360,6 +4341,25 @@ const components = {
           ],
           "schema": "string",
           "default": "useAppConfig()?.docus?.github?.dir"
+        },
+        {
+          "name": "source",
+          "global": false,
+          "description": "Source file path.\n\nWon't be used if `page` is set.",
+          "tags": [],
+          "required": false,
+          "type": "string",
+          "declarations": [
+            {
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
+              "range": [
+                1245,
+                1328
+              ]
+            }
+          ],
+          "schema": "string",
+          "default": "undefined"
         },
         {
           "name": "page",
@@ -4375,7 +4375,7 @@ const components = {
           "type": "any",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
               "range": [
                 1386,
                 1484
@@ -4394,7 +4394,7 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
               "range": [
                 1556,
                 1687
@@ -4413,7 +4413,7 @@ const components = {
           "type": "boolean",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
               "range": [
                 1745,
                 1859
@@ -4435,27 +4435,12 @@ const components = {
       "events": [],
       "exposed": [
         {
-          "name": "source",
-          "type": "string",
-          "description": "Source file path.\n\nWon't be used if `page` is set.",
-          "declarations": [
-            {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
-              "range": [
-                1245,
-                1328
-              ]
-            }
-          ],
-          "schema": "string"
-        },
-        {
           "name": "baseUrl",
           "type": "string",
           "description": "GitHub base URL.",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
               "range": [
                 272,
                 415
@@ -4470,7 +4455,7 @@ const components = {
           "description": "Repository owner.",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
               "range": [
                 462,
                 577
@@ -4485,7 +4470,7 @@ const components = {
           "description": "Repository name.",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
               "range": [
                 623,
                 736
@@ -4500,7 +4485,7 @@ const components = {
           "description": "The branch to use for the edit link.",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
               "range": [
                 802,
                 919
@@ -4515,10 +4500,25 @@ const components = {
           "description": "A base directory to append to the source path.\n\nWon't be used if `page` is set.",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
               "range": [
                 1041,
                 1152
+              ]
+            }
+          ],
+          "schema": "string"
+        },
+        {
+          "name": "source",
+          "type": "string",
+          "description": "Source file path.\n\nWon't be used if `page` is set.",
+          "declarations": [
+            {
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
+              "range": [
+                1245,
+                1328
               ]
             }
           ],
@@ -4530,7 +4530,7 @@ const components = {
           "description": "Use page from",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
               "range": [
                 1386,
                 1484
@@ -4545,7 +4545,7 @@ const components = {
           "description": "Content directory (to be used with `page`)",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
               "range": [
                 1556,
                 1687
@@ -4560,7 +4560,7 @@ const components = {
           "description": "Send to an edit page or not.",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
               "range": [
                 1745,
                 1859
@@ -4582,7 +4582,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/docs/EditOnLink.vue",
               "range": [
                 3996,
                 3999
@@ -4606,7 +4606,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/docus/components/docs/SourceLink.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/SourceLink.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/docs/SourceLink.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -4619,14 +4619,14 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/SourceLink.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/docs/SourceLink.vue",
               "range": [
                 41,
                 92
               ]
             },
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/SourceLink.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/docs/SourceLink.vue",
               "range": [
                 41,
                 92
@@ -4645,7 +4645,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/components/docs/SourceLink.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/components/docs/SourceLink.vue",
               "range": [
                 41,
                 92
@@ -4669,7 +4669,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/typography/components/global/ProseA.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseA.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseA.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -4682,7 +4682,7 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseA.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseA.vue",
               "range": [
                 41,
                 86
@@ -4701,7 +4701,7 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseA.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseA.vue",
               "range": [
                 90,
                 165
@@ -4733,7 +4733,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -4767,7 +4767,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseA.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseA.vue",
               "range": [
                 41,
                 86
@@ -4782,7 +4782,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseA.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseA.vue",
               "range": [
                 90,
                 165
@@ -4806,7 +4806,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/typography/components/global/ProseBlockquote.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseBlockquote.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseBlockquote.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -4831,7 +4831,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -4874,7 +4874,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/typography/components/global/ProseCode.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseCode.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseCode.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -4887,7 +4887,7 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseCode.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseCode.vue",
               "range": [
                 141,
                 186
@@ -4906,7 +4906,7 @@ const components = {
           "type": "Lang",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseCode.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseCode.vue",
               "range": [
                 190,
                 259
@@ -4929,7 +4929,7 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseCode.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseCode.vue",
               "range": [
                 263,
                 314
@@ -4948,7 +4948,7 @@ const components = {
           "type": "number[]",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseCode.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseCode.vue",
               "range": [
                 318,
                 392
@@ -4986,7 +4986,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -5020,7 +5020,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseCode.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseCode.vue",
               "range": [
                 141,
                 186
@@ -5035,7 +5035,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseCode.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseCode.vue",
               "range": [
                 190,
                 259
@@ -5054,7 +5054,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseCode.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseCode.vue",
               "range": [
                 263,
                 314
@@ -5069,7 +5069,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseCode.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseCode.vue",
               "range": [
                 318,
                 392
@@ -5099,7 +5099,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/typography/components/global/ProseCodeInline.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseCodeInline.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseCodeInline.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -5124,7 +5124,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -5167,7 +5167,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/typography/components/global/ProseEm.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseEm.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseEm.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -5192,7 +5192,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -5235,7 +5235,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/typography/components/global/ProseH1.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseH1.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseH1.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -5248,14 +5248,14 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseH1.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseH1.vue",
               "range": [
                 111,
                 121
               ]
             },
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseH1.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseH1.vue",
               "range": [
                 111,
                 121
@@ -5286,7 +5286,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -5320,7 +5320,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseH1.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseH1.vue",
               "range": [
                 111,
                 121
@@ -5344,7 +5344,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/typography/components/global/ProseH2.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseH2.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseH2.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -5357,14 +5357,14 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseH2.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseH2.vue",
               "range": [
                 111,
                 121
               ]
             },
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseH2.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseH2.vue",
               "range": [
                 111,
                 121
@@ -5395,7 +5395,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -5429,7 +5429,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseH2.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseH2.vue",
               "range": [
                 111,
                 121
@@ -5453,7 +5453,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/typography/components/global/ProseH3.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseH3.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseH3.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -5466,14 +5466,14 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseH3.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseH3.vue",
               "range": [
                 111,
                 121
               ]
             },
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseH3.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseH3.vue",
               "range": [
                 111,
                 121
@@ -5504,7 +5504,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -5538,7 +5538,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseH3.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseH3.vue",
               "range": [
                 111,
                 121
@@ -5562,7 +5562,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/typography/components/global/ProseH4.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseH4.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseH4.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -5575,14 +5575,14 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseH4.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseH4.vue",
               "range": [
                 111,
                 121
               ]
             },
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseH4.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseH4.vue",
               "range": [
                 111,
                 121
@@ -5613,7 +5613,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -5647,7 +5647,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseH4.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseH4.vue",
               "range": [
                 111,
                 121
@@ -5671,7 +5671,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/typography/components/global/ProseH5.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseH5.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseH5.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -5684,14 +5684,14 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseH5.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseH5.vue",
               "range": [
                 111,
                 121
               ]
             },
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseH5.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseH5.vue",
               "range": [
                 111,
                 121
@@ -5722,7 +5722,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -5756,7 +5756,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseH5.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseH5.vue",
               "range": [
                 111,
                 121
@@ -5780,7 +5780,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/typography/components/global/ProseH6.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseH6.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseH6.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -5793,14 +5793,14 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseH6.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseH6.vue",
               "range": [
                 111,
                 121
               ]
             },
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseH6.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseH6.vue",
               "range": [
                 111,
                 121
@@ -5831,7 +5831,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -5865,7 +5865,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseH6.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseH6.vue",
               "range": [
                 111,
                 121
@@ -5889,7 +5889,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/typography/components/global/ProseHr.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseHr.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseHr.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -5910,7 +5910,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/typography/components/global/ProseImg.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseImg.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseImg.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -5923,7 +5923,7 @@ const components = {
           "type": "string | number",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseImg.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseImg.vue",
               "range": [
                 237,
                 300
@@ -5949,7 +5949,7 @@ const components = {
           "type": "string | number",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseImg.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseImg.vue",
               "range": [
                 304,
                 368
@@ -5975,7 +5975,7 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseImg.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseImg.vue",
               "range": [
                 141,
                 185
@@ -5994,7 +5994,7 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseImg.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseImg.vue",
               "range": [
                 189,
                 233
@@ -6014,7 +6014,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseImg.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseImg.vue",
               "range": [
                 237,
                 300
@@ -6036,7 +6036,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseImg.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseImg.vue",
               "range": [
                 304,
                 368
@@ -6058,7 +6058,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseImg.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseImg.vue",
               "range": [
                 141,
                 185
@@ -6073,7 +6073,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseImg.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseImg.vue",
               "range": [
                 189,
                 233
@@ -6097,7 +6097,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/typography/components/global/ProseLi.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseLi.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseLi.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -6122,7 +6122,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -6165,7 +6165,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/typography/components/global/ProseOl.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseOl.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseOl.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -6190,7 +6190,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -6233,7 +6233,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/typography/components/global/ProseP.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseP.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseP.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -6258,7 +6258,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -6301,7 +6301,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/typography/components/global/ProseStrong.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseStrong.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseStrong.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -6326,7 +6326,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -6369,7 +6369,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/typography/components/global/ProseTable.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseTable.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseTable.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -6394,7 +6394,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -6437,7 +6437,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/typography/components/global/ProseTbody.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseTbody.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseTbody.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -6462,7 +6462,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -6505,7 +6505,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/typography/components/global/ProseTd.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseTd.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseTd.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -6530,7 +6530,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -6573,7 +6573,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/typography/components/global/ProseTh.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseTh.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseTh.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -6598,7 +6598,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -6641,7 +6641,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/typography/components/global/ProseThead.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseThead.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseThead.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -6666,7 +6666,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -6709,7 +6709,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/typography/components/global/ProseTr.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseTr.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseTr.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -6734,7 +6734,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -6777,7 +6777,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/typography/components/global/ProseUl.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/components/global/ProseUl.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/components/global/ProseUl.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -6802,7 +6802,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -6845,7 +6845,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/elements/components/globals/Alert.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Alert.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/Alert.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -6863,7 +6863,7 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Alert.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/Alert.vue",
               "range": [
                 111,
                 280
@@ -6906,7 +6906,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -6940,7 +6940,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Alert.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/Alert.vue",
               "range": [
                 111,
                 280
@@ -6964,7 +6964,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/elements/components/globals/Badge.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Badge.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/Badge.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -6982,7 +6982,7 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Badge.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/Badge.vue",
               "range": [
                 97,
                 266
@@ -7025,7 +7025,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -7059,7 +7059,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Badge.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/Badge.vue",
               "range": [
                 97,
                 266
@@ -7083,7 +7083,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/elements/components/globals/ButtonLink.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/ButtonLink.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/ButtonLink.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -7119,7 +7119,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -7162,7 +7162,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/elements/components/globals/Callout.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Callout.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/Callout.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -7180,7 +7180,7 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Callout.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/Callout.vue",
               "range": [
                 111,
                 280
@@ -7199,7 +7199,7 @@ const components = {
           "type": "any",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Callout.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/Callout.vue",
               "range": [
                 284,
                 352
@@ -7241,7 +7241,7 @@ const components = {
           "signature": "(event: \"update:modelValue\", ...args: any[]): void",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 4472,
                 4507
@@ -7260,7 +7260,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -7321,7 +7321,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Callout.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/Callout.vue",
               "range": [
                 111,
                 280
@@ -7336,7 +7336,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Callout.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/Callout.vue",
               "range": [
                 284,
                 352
@@ -7360,7 +7360,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/elements/components/globals/CodeBlock.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/CodeBlock.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/CodeBlock.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -7373,14 +7373,14 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/CodeBlock.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/CodeBlock.vue",
               "range": [
                 87,
                 136
               ]
             },
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/CodeBlock.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/CodeBlock.vue",
               "range": [
                 87,
                 136
@@ -7398,7 +7398,7 @@ const components = {
           "type": "boolean",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/CodeBlock.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/CodeBlock.vue",
               "range": [
                 228,
                 279
@@ -7424,7 +7424,7 @@ const components = {
           "type": "boolean",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/CodeBlock.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/CodeBlock.vue",
               "range": [
                 387,
                 439
@@ -7463,7 +7463,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -7497,7 +7497,7 @@ const components = {
           "description": "Label to display for the tab",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/CodeBlock.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/CodeBlock.vue",
               "range": [
                 87,
                 136
@@ -7512,7 +7512,7 @@ const components = {
           "description": "Select which tab should be active\nTODO: seems like it's not used",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/CodeBlock.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/CodeBlock.vue",
               "range": [
                 228,
                 279
@@ -7534,7 +7534,7 @@ const components = {
           "description": "Preview block are bordered and have small padding.\nTODO: seems like it's not used",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/CodeBlock.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/CodeBlock.vue",
               "range": [
                 387,
                 439
@@ -7565,7 +7565,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/elements/components/globals/CodeGroup.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/CodeGroup.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/CodeGroup.vue",
     "meta": {
       "type": null,
       "props": [],
@@ -7586,7 +7586,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/elements/components/globals/Container.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Container.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/Container.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -7611,7 +7611,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -7654,7 +7654,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/elements/components/globals/CopyButton.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/CopyButton.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/CopyButton.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -7667,7 +7667,7 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/CopyButton.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/CopyButton.vue",
               "range": [
                 100,
                 148
@@ -7687,7 +7687,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/CopyButton.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/CopyButton.vue",
               "range": [
                 100,
                 148
@@ -7711,7 +7711,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/elements/components/globals/List.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/List.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/List.vue",
     "meta": {
       "type": null,
       "props": [],
@@ -7732,7 +7732,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/elements/components/globals/NuxtImg.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/NuxtImg.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/NuxtImg.vue",
     "meta": {
       "type": null,
       "props": [],
@@ -7753,7 +7753,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/elements/components/globals/Props.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Props.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/Props.vue",
     "meta": {
       "type": null,
       "props": [],
@@ -7774,7 +7774,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/elements/components/globals/Sandbox.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Sandbox.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/Sandbox.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -7787,7 +7787,7 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Sandbox.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/Sandbox.vue",
               "range": [
                 55,
                 99
@@ -7806,7 +7806,7 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Sandbox.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/Sandbox.vue",
               "range": [
                 103,
                 148
@@ -7825,7 +7825,7 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Sandbox.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/Sandbox.vue",
               "range": [
                 152,
                 199
@@ -7844,7 +7844,7 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Sandbox.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/Sandbox.vue",
               "range": [
                 203,
                 247
@@ -7863,7 +7863,7 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Sandbox.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/Sandbox.vue",
               "range": [
                 251,
                 303
@@ -7883,7 +7883,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Sandbox.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/Sandbox.vue",
               "range": [
                 55,
                 99
@@ -7898,7 +7898,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Sandbox.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/Sandbox.vue",
               "range": [
                 103,
                 148
@@ -7913,7 +7913,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Sandbox.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/Sandbox.vue",
               "range": [
                 152,
                 199
@@ -7928,7 +7928,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Sandbox.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/Sandbox.vue",
               "range": [
                 203,
                 247
@@ -7943,7 +7943,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Sandbox.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/Sandbox.vue",
               "range": [
                 251,
                 303
@@ -7967,7 +7967,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/elements/components/globals/TabsHeader.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/TabsHeader.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/TabsHeader.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -7980,14 +7980,14 @@ const components = {
           "type": "{ label: string; }[]",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/TabsHeader.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/TabsHeader.vue",
               "range": [
                 135,
                 215
               ]
             },
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/TabsHeader.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/TabsHeader.vue",
               "range": [
                 135,
                 215
@@ -8011,7 +8011,7 @@ const components = {
                     "type": "string",
                     "declarations": [
                       {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/TabsHeader.vue",
+                        "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/TabsHeader.vue",
                         "range": [
                           173,
                           186
@@ -8034,14 +8034,14 @@ const components = {
           "type": "number",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/TabsHeader.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/TabsHeader.vue",
               "range": [
                 219,
                 277
               ]
             },
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/TabsHeader.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/TabsHeader.vue",
               "range": [
                 219,
                 277
@@ -8071,7 +8071,7 @@ const components = {
           "signature": "(event: \"update:activeTabIndex\", ...args: any[]): void",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 4472,
                 4507
@@ -8090,7 +8090,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -8137,7 +8137,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/TabsHeader.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/TabsHeader.vue",
               "range": [
                 135,
                 215
@@ -8161,7 +8161,7 @@ const components = {
                     "type": "string",
                     "declarations": [
                       {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/TabsHeader.vue",
+                        "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/TabsHeader.vue",
                         "range": [
                           173,
                           186
@@ -8181,7 +8181,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/TabsHeader.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/TabsHeader.vue",
               "range": [
                 219,
                 277
@@ -8205,7 +8205,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/elements/components/globals/Terminal.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Terminal.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/Terminal.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -8218,14 +8218,14 @@ const components = {
           "type": "string | string[]",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Terminal.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/Terminal.vue",
               "range": [
                 131,
                 222
               ]
             },
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Terminal.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/Terminal.vue",
               "range": [
                 131,
                 222
@@ -8257,7 +8257,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/Terminal.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/Terminal.vue",
               "range": [
                 131,
                 222
@@ -8294,7 +8294,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/elements/components/globals/VideoPlayer.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/VideoPlayer.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/VideoPlayer.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -8307,7 +8307,7 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/VideoPlayer.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/VideoPlayer.vue",
               "range": [
                 143,
                 187
@@ -8326,7 +8326,7 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/VideoPlayer.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/VideoPlayer.vue",
               "range": [
                 92,
                 139
@@ -8345,7 +8345,7 @@ const components = {
           "type": "any[]",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/VideoPlayer.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/VideoPlayer.vue",
               "range": [
                 191,
                 263
@@ -8370,7 +8370,7 @@ const components = {
           "type": "boolean",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/VideoPlayer.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/VideoPlayer.vue",
               "range": [
                 267,
                 320
@@ -8397,7 +8397,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/VideoPlayer.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/VideoPlayer.vue",
               "range": [
                 143,
                 187
@@ -8412,7 +8412,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/VideoPlayer.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/VideoPlayer.vue",
               "range": [
                 92,
                 139
@@ -8427,7 +8427,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/VideoPlayer.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/VideoPlayer.vue",
               "range": [
                 191,
                 263
@@ -8448,7 +8448,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/globals/VideoPlayer.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/globals/VideoPlayer.vue",
               "range": [
                 267,
                 320
@@ -8479,7 +8479,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/elements/components/icons/IconCodeSandBox.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/icons/IconCodeSandBox.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/icons/IconCodeSandBox.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -8500,7 +8500,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/elements/components/icons/IconDocus.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/icons/IconDocus.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/icons/IconDocus.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -8521,7 +8521,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/elements/components/icons/IconNuxt.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/icons/IconNuxt.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/icons/IconNuxt.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -8542,7 +8542,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/elements/components/icons/IconNuxtContent.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/icons/IconNuxtContent.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/icons/IconNuxtContent.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -8563,7 +8563,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/elements/components/icons/IconNuxtLabs.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/icons/IconNuxtLabs.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/icons/IconNuxtLabs.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -8584,7 +8584,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/elements/components/icons/IconNuxtStudio.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/icons/IconNuxtStudio.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/icons/IconNuxtStudio.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -8605,7 +8605,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/elements/components/icons/IconStackBlitz.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/icons/IconStackBlitz.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/icons/IconStackBlitz.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -8626,7 +8626,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/elements/components/icons/IconVueTelescope.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/icons/IconVueTelescope.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/icons/IconVueTelescope.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -8647,7 +8647,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/elements/components/landing/BlockHero.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/landing/BlockHero.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/landing/BlockHero.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -8660,7 +8660,7 @@ const components = {
           "type": "string[]",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/landing/BlockHero.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/landing/BlockHero.vue",
               "range": [
                 78,
                 170
@@ -8685,7 +8685,7 @@ const components = {
           "type": "string[]",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/landing/BlockHero.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/landing/BlockHero.vue",
               "range": [
                 174,
                 272
@@ -8710,7 +8710,7 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/landing/BlockHero.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/landing/BlockHero.vue",
               "range": [
                 276,
                 343
@@ -8729,7 +8729,7 @@ const components = {
           "type": "string | string[]",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/landing/BlockHero.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/landing/BlockHero.vue",
               "range": [
                 347,
                 456
@@ -8884,7 +8884,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -8988,7 +8988,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/landing/BlockHero.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/landing/BlockHero.vue",
               "range": [
                 78,
                 170
@@ -9009,7 +9009,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/landing/BlockHero.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/landing/BlockHero.vue",
               "range": [
                 174,
                 272
@@ -9030,7 +9030,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/landing/BlockHero.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/landing/BlockHero.vue",
               "range": [
                 276,
                 343
@@ -9045,7 +9045,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/landing/BlockHero.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/landing/BlockHero.vue",
               "range": [
                 347,
                 456
@@ -9082,7 +9082,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/elements/components/landing/Card.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/landing/Card.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/landing/Card.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -9095,7 +9095,7 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/landing/Card.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/landing/Card.vue",
               "range": [
                 41,
                 86
@@ -9171,7 +9171,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -9233,7 +9233,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/landing/Card.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/landing/Card.vue",
               "range": [
                 41,
                 86
@@ -9257,7 +9257,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/elements/components/landing/CardGrid.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/landing/CardGrid.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/landing/CardGrid.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -9270,7 +9270,7 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/landing/CardGrid.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/landing/CardGrid.vue",
               "range": [
                 41,
                 95
@@ -9335,7 +9335,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -9397,7 +9397,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/landing/CardGrid.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/landing/CardGrid.vue",
               "range": [
                 41,
                 95
@@ -9421,7 +9421,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/elements/components/volta/VoltaBoard.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/volta/VoltaBoard.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/volta/VoltaBoard.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -9434,14 +9434,14 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/volta/VoltaBoard.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/volta/VoltaBoard.vue",
               "range": [
                 118,
                 167
               ]
             },
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/volta/VoltaBoard.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/volta/VoltaBoard.vue",
               "range": [
                 118,
                 167
@@ -9460,7 +9460,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/volta/VoltaBoard.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/volta/VoltaBoard.vue",
               "range": [
                 118,
                 167
@@ -9484,7 +9484,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/elements/components/meta/ComponentPlayground.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlayground.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlayground.vue",
     "meta": {
       "type": null,
       "props": [],
@@ -9505,7 +9505,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundData.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundData.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundData.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -9518,7 +9518,7 @@ const components = {
           "type": "Record<string, any>",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundData.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundData.vue",
               "range": [
                 575,
                 655
@@ -9537,7 +9537,7 @@ const components = {
           "type": "Record<string, any>",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundData.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundData.vue",
               "range": [
                 659,
                 742
@@ -9556,7 +9556,7 @@ const components = {
           "signature": "(event: \"update:modelValue\", ...args: any[]): void",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 4472,
                 4507
@@ -9588,7 +9588,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundData.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundData.vue",
               "range": [
                 575,
                 655
@@ -9603,7 +9603,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundData.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundData.vue",
               "range": [
                 659,
                 742
@@ -9627,7 +9627,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundProps.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundProps.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundProps.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -9640,14 +9640,14 @@ const components = {
           "type": "Record<string, any>",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundProps.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundProps.vue",
               "range": [
                 763,
                 817
               ]
             },
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundProps.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundProps.vue",
               "range": [
                 763,
                 817
@@ -9665,14 +9665,14 @@ const components = {
           "type": "Record<string, any>",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundProps.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundProps.vue",
               "range": [
                 821,
                 878
               ]
             },
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundProps.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundProps.vue",
               "range": [
                 821,
                 878
@@ -9690,7 +9690,7 @@ const components = {
           "signature": "(event: \"update:modelValue\", ...args: any[]): void",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 4472,
                 4507
@@ -9722,7 +9722,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundProps.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundProps.vue",
               "range": [
                 763,
                 817
@@ -9737,7 +9737,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundProps.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundProps.vue",
               "range": [
                 821,
                 878
@@ -9761,7 +9761,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundSlots.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundSlots.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundSlots.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -9774,14 +9774,14 @@ const components = {
           "type": "Record<string, any>",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundSlots.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundSlots.vue",
               "range": [
                 184,
                 241
               ]
             },
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundSlots.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundSlots.vue",
               "range": [
                 184,
                 241
@@ -9800,7 +9800,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundSlots.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundSlots.vue",
               "range": [
                 184,
                 241
@@ -9824,7 +9824,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundTokens.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundTokens.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundTokens.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -9837,14 +9837,14 @@ const components = {
           "type": "Record<string, any>",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundTokens.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundTokens.vue",
               "range": [
                 148,
                 205
               ]
             },
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundTokens.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundTokens.vue",
               "range": [
                 148,
                 205
@@ -9863,7 +9863,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundTokens.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/meta/ComponentPlaygroundTokens.vue",
               "range": [
                 148,
                 205
@@ -9887,7 +9887,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/elements/components/meta/PreviewLayout.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/meta/PreviewLayout.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/meta/PreviewLayout.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -9912,7 +9912,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -9955,7 +9955,7 @@ const components = {
     "shortPath": "node_modules/@nuxt-themes/elements/components/meta/TokensPlayground.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/components/meta/TokensPlayground.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/components/meta/TokensPlayground.vue",
     "meta": {
       "type": 1,
       "props": [],
@@ -9976,7 +9976,7 @@ const components = {
     "shortPath": "node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -9989,7 +9989,7 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
               "range": [
                 4632,
                 4644
@@ -10007,7 +10007,7 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
               "range": [
                 4653,
                 4666
@@ -10025,7 +10025,7 @@ const components = {
           "type": "QueryBuilderParams",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
               "range": [
                 4675,
                 4701
@@ -10045,7 +10045,7 @@ const components = {
                 "type": "boolean",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       9172,
                       9188
@@ -10070,7 +10070,7 @@ const components = {
                 "type": "number",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       9193,
                       9207
@@ -10088,7 +10088,7 @@ const components = {
                 "type": "number",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       9212,
                       9227
@@ -10106,7 +10106,7 @@ const components = {
                 "type": "string[]",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       9232,
                       9248
@@ -10130,7 +10130,7 @@ const components = {
                 "type": "string[]",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       9253,
                       9272
@@ -10148,7 +10148,7 @@ const components = {
                 "type": "SortOptions[]",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       9277,
                       9298
@@ -10181,7 +10181,7 @@ const components = {
                               "type": "string",
                               "declarations": [
                                 {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                   "range": [
                                     3558,
                                     3575
@@ -10204,7 +10204,7 @@ const components = {
                               "type": "boolean",
                               "declarations": [
                                 {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                   "range": [
                                     3749,
                                     3768
@@ -10227,7 +10227,7 @@ const components = {
                               "type": "\"upper\" | \"lower\" | \"false\"",
                               "declarations": [
                                 {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                   "range": [
                                     3953,
                                     3994
@@ -10258,7 +10258,7 @@ const components = {
                               "type": "\"base\" | \"accent\" | \"case\" | \"variant\"",
                               "declarations": [
                                 {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                   "range": [
                                     4733,
                                     4787
@@ -10297,7 +10297,7 @@ const components = {
                 "type": "QueryBuilderWhere[]",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       9303,
                       9331
@@ -10326,7 +10326,7 @@ const components = {
                           "type": "QueryBuilderWhere[]",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 5305,
                                 5332
@@ -10349,7 +10349,7 @@ const components = {
                           "type": "QueryBuilderWhere[]",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 5576,
                                 5602
@@ -10372,7 +10372,7 @@ const components = {
                           "type": "string | number | boolean | RegExp | QueryBuilderWhere",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 5799,
                                 5861
@@ -10405,7 +10405,7 @@ const components = {
                                     "type": "(string: string) => RegExpExecArray",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                                         "range": [
                                           40945,
                                           40990
@@ -10432,7 +10432,7 @@ const components = {
                                     "type": "(string: string) => boolean",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                                         "range": [
                                           41172,
                                           41202
@@ -10454,7 +10454,7 @@ const components = {
                                     "type": "string",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                                         "range": [
                                           41384,
                                           41408
@@ -10472,7 +10472,7 @@ const components = {
                                     "type": "boolean",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                                         "range": [
                                           41554,
                                           41579
@@ -10490,7 +10490,7 @@ const components = {
                                     "type": "boolean",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                                         "range": [
                                           41729,
                                           41758
@@ -10508,7 +10508,7 @@ const components = {
                                     "type": "boolean",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                                         "range": [
                                           41907,
                                           41935
@@ -10526,7 +10526,7 @@ const components = {
                                     "type": "number",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                                         "range": [
                                           41941,
                                           41959
@@ -10549,7 +10549,7 @@ const components = {
                                     "type": "(pattern: string, flags?: string) => RegExp",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                                         "range": [
                                           42062,
                                           42109
@@ -10571,7 +10571,7 @@ const components = {
                                     "type": "string",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es2015.core.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es2015.core.d.ts",
                                         "range": [
                                           14897,
                                           14920
@@ -10589,7 +10589,7 @@ const components = {
                                     "type": "boolean",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es2015.core.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es2015.core.d.ts",
                                         "range": [
                                           15085,
                                           15110
@@ -10607,7 +10607,7 @@ const components = {
                                     "type": "boolean",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es2015.core.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es2015.core.d.ts",
                                         "range": [
                                           15276,
                                           15302
@@ -10625,7 +10625,7 @@ const components = {
                                     "type": "boolean",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es2018.regexp.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es2018.regexp.d.ts",
                                         "range": [
                                           1204,
                                           1229
@@ -10634,8 +10634,8 @@ const components = {
                                     ],
                                     "schema": "boolean"
                                   },
-                                  "__@match@8198": {
-                                    "name": "__@match@8198",
+                                  "__@match@7850": {
+                                    "name": "__@match@7850",
                                     "global": false,
                                     "description": "Matches a string with this regular expression, and returns an array containing the results of\nthat search.",
                                     "tags": [
@@ -10648,7 +10648,7 @@ const components = {
                                     "type": "(string: string) => RegExpMatchArray",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
                                         "range": [
                                           5644,
                                           5700
@@ -10661,8 +10661,8 @@ const components = {
                                       "schema": []
                                     }
                                   },
-                                  "__@replace@8200": {
-                                    "name": "__@replace@8200",
+                                  "__@replace@7852": {
+                                    "name": "__@replace@7852",
                                     "global": false,
                                     "description": "Replaces text in a string, using this regular expression.",
                                     "tags": [
@@ -10687,14 +10687,14 @@ const components = {
                                     "type": "{ (string: string, replaceValue: string): string; (string: string, replacer: (substring: string, ...args: any[]) => string): string; }",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
                                         "range": [
                                           6110,
                                           6173
                                         ]
                                       },
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
                                         "range": [
                                           6478,
                                           6576
@@ -10703,8 +10703,8 @@ const components = {
                                     ],
                                     "schema": "{ (string: string, replaceValue: string): string; (string: string, replacer: (substring: string, ...args: any[]) => string): string; }"
                                   },
-                                  "__@search@8203": {
-                                    "name": "__@search@8203",
+                                  "__@search@7855": {
+                                    "name": "__@search@7855",
                                     "global": false,
                                     "description": "Finds the position beginning first substring match in a regular expression search\nusing this regular expression.",
                                     "tags": [
@@ -10717,7 +10717,7 @@ const components = {
                                     "type": "(string: string) => number",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
                                         "range": [
                                           6782,
                                           6822
@@ -10730,8 +10730,8 @@ const components = {
                                       "schema": []
                                     }
                                   },
-                                  "__@split@8205": {
-                                    "name": "__@split@8205",
+                                  "__@split@7857": {
+                                    "name": "__@split@7857",
                                     "global": false,
                                     "description": "Returns an array of substrings that were delimited by strings in the original input that\nmatch against this regular expression.\n\nIf the regular expression contains capturing parentheses, then each time this\nregular expression matches, the results (including any undefined results) of the\ncapturing parentheses are spliced.",
                                     "tags": [
@@ -10748,7 +10748,7 @@ const components = {
                                     "type": "(string: string, limit?: number) => string[]",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
                                         "range": [
                                           7384,
                                           7441
@@ -10761,8 +10761,8 @@ const components = {
                                       "schema": []
                                     }
                                   },
-                                  "__@matchAll@8207": {
-                                    "name": "__@matchAll@8207",
+                                  "__@matchAll@7859": {
+                                    "name": "__@matchAll@7859",
                                     "global": false,
                                     "description": "Matches a string with this regular expression, and returns an iterable of matches\ncontaining the results of that search.",
                                     "tags": [
@@ -10775,7 +10775,7 @@ const components = {
                                     "type": "(str: string) => IterableIterator<RegExpMatchArray>",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es2020.symbol.wellknown.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es2020.symbol.wellknown.d.ts",
                                         "range": [
                                           1385,
                                           1452
@@ -10808,7 +10808,7 @@ const components = {
                           "type": "string | number | boolean | RegExp",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 6060,
                                 6101
@@ -10841,7 +10841,7 @@ const components = {
                           "type": "string | number | boolean | RegExp",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 6294,
                                 6335
@@ -10864,7 +10864,7 @@ const components = {
                           "type": "number",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 6533,
                                 6546
@@ -10887,7 +10887,7 @@ const components = {
                           "type": "number",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 6757,
                                 6771
@@ -10910,7 +10910,7 @@ const components = {
                           "type": "number",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 6966,
                                 6979
@@ -10933,7 +10933,7 @@ const components = {
                           "type": "number",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 7187,
                                 7201
@@ -10956,7 +10956,7 @@ const components = {
                           "type": "string | RegExp",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 7435,
                                 7460
@@ -10986,7 +10986,7 @@ const components = {
                           "type": "string",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 7664,
                                 7679
@@ -11009,7 +11009,7 @@ const components = {
                           "type": "boolean",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 7860,
                                 7878
@@ -11032,7 +11032,7 @@ const components = {
                           "type": "string | number | boolean | (string | number | boolean)[]",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 8134,
                                 8207
@@ -11080,7 +11080,7 @@ const components = {
                           "type": "(string | number | boolean)[]",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 8450,
                                 8498
@@ -11103,7 +11103,7 @@ const components = {
                           "type": "string",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 8694,
                                 8714
@@ -11126,7 +11126,7 @@ const components = {
                           "type": "string | (string | number | boolean)[]",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 8937,
                                 8985
@@ -11141,6 +11141,16 @@ const components = {
                               "(string | number | boolean)[]"
                             ]
                           }
+                        },
+                        "title": {
+                          "name": "title",
+                          "global": false,
+                          "description": "",
+                          "tags": [],
+                          "required": false,
+                          "type": "string | number | boolean | RegExp | QueryBuilderWhere",
+                          "declarations": [],
+                          "schema": "string | number | boolean | RegExp | QueryBuilderWhere"
                         },
                         "_id": {
                           "name": "_id",
@@ -11164,16 +11174,6 @@ const components = {
                         },
                         "_path": {
                           "name": "_path",
-                          "global": false,
-                          "description": "",
-                          "tags": [],
-                          "required": false,
-                          "type": "string | number | boolean | RegExp | QueryBuilderWhere",
-                          "declarations": [],
-                          "schema": "string | number | boolean | RegExp | QueryBuilderWhere"
-                        },
-                        "title": {
-                          "name": "title",
                           "global": false,
                           "description": "",
                           "tags": [],
@@ -11256,7 +11256,7 @@ const components = {
                 "type": "{ query: string | QueryBuilderWhere; before?: number; after?: number; }",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       9336,
                       9447
@@ -11276,7 +11276,7 @@ const components = {
                       "type": "string | QueryBuilderWhere",
                       "declarations": [
                         {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                           "range": [
                             9357,
                             9391
@@ -11301,7 +11301,7 @@ const components = {
                       "type": "number",
                       "declarations": [
                         {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                           "range": [
                             9400,
                             9416
@@ -11319,7 +11319,7 @@ const components = {
                       "type": "number",
                       "declarations": [
                         {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                           "range": [
                             9425,
                             9440
@@ -11343,7 +11343,7 @@ const components = {
           "type": "boolean",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
               "range": [
                 4606,
                 4623
@@ -11368,7 +11368,7 @@ const components = {
           "type": "boolean",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
               "range": [
                 4710,
                 4724
@@ -11392,7 +11392,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
               "range": [
                 6347,
                 6476
@@ -11412,7 +11412,7 @@ const components = {
                 "type": "ParsedContent",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
                     "range": [
                       6380,
                       6399
@@ -11432,7 +11432,7 @@ const components = {
                       "type": "MarkdownRoot",
                       "declarations": [
                         {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                           "range": [
                             2459,
                             2482
@@ -11452,7 +11452,7 @@ const components = {
                             "type": "\"root\"",
                             "declarations": [
                               {
-                                "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                 "range": [
                                   1465,
                                   1478
@@ -11470,7 +11470,7 @@ const components = {
                             "type": "MarkdownNode[]",
                             "declarations": [
                               {
-                                "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                 "range": [
                                   1483,
                                   1508
@@ -11494,7 +11494,7 @@ const components = {
                                       "type": "string",
                                       "declarations": [
                                         {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                           "range": [
                                             1214,
                                             1227
@@ -11512,7 +11512,7 @@ const components = {
                                       "type": "string",
                                       "declarations": [
                                         {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                           "range": [
                                             1232,
                                             1245
@@ -11530,7 +11530,7 @@ const components = {
                                       "type": "string",
                                       "declarations": [
                                         {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                           "range": [
                                             1250,
                                             1265
@@ -11548,7 +11548,7 @@ const components = {
                                       "type": "Record<string, any>",
                                       "declarations": [
                                         {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                           "range": [
                                             1270,
                                             1298
@@ -11566,7 +11566,7 @@ const components = {
                                       "type": "any",
                                       "declarations": [
                                         {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                           "range": [
                                             1303,
                                             1317
@@ -11584,7 +11584,7 @@ const components = {
                                       "type": "MarkdownNode[]",
                                       "declarations": [
                                         {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                           "range": [
                                             1322,
                                             1348
@@ -11602,7 +11602,7 @@ const components = {
                                       "type": "Record<string, any>",
                                       "declarations": [
                                         {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                           "range": [
                                             1353,
                                             1386
@@ -11620,7 +11620,7 @@ const components = {
                                       "type": "Record<string, any>",
                                       "declarations": [
                                         {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                           "range": [
                                             1391,
                                             1426
@@ -11643,7 +11643,7 @@ const components = {
                             "type": "Record<string, any>",
                             "declarations": [
                               {
-                                "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                 "range": [
                                   1513,
                                   1541
@@ -11661,7 +11661,7 @@ const components = {
                             "type": "Toc",
                             "declarations": [
                               {
-                                "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                 "range": [
                                   1546,
                                   1556
@@ -11681,7 +11681,7 @@ const components = {
                                   "type": "string",
                                   "declarations": [
                                     {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                      "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                       "range": [
                                         1095,
                                         1109
@@ -11699,7 +11699,7 @@ const components = {
                                   "type": "number",
                                   "declarations": [
                                     {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                      "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                       "range": [
                                         1114,
                                         1128
@@ -11717,7 +11717,7 @@ const components = {
                                   "type": "number",
                                   "declarations": [
                                     {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                      "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                       "range": [
                                         1133,
                                         1153
@@ -11735,7 +11735,7 @@ const components = {
                                   "type": "TocLink[]",
                                   "declarations": [
                                     {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                      "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                       "range": [
                                         1158,
                                         1175
@@ -11759,7 +11759,7 @@ const components = {
                                             "type": "string",
                                             "declarations": [
                                               {
-                                                "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                                "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                                 "range": [
                                                   991,
                                                   1002
@@ -11777,7 +11777,7 @@ const components = {
                                             "type": "string",
                                             "declarations": [
                                               {
-                                                "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                                "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                                 "range": [
                                                   1007,
                                                   1020
@@ -11795,7 +11795,7 @@ const components = {
                                             "type": "number",
                                             "declarations": [
                                               {
-                                                "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                                "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                                 "range": [
                                                   1025,
                                                   1039
@@ -11813,7 +11813,7 @@ const components = {
                                             "type": "TocLink[]",
                                             "declarations": [
                                               {
-                                                "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                                "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                                 "range": [
                                                   1044,
                                                   1065
@@ -11842,7 +11842,7 @@ const components = {
                       "type": "MarkdownRoot",
                       "declarations": [
                         {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                           "range": [
                             2523,
                             2549
@@ -11860,7 +11860,7 @@ const components = {
                       "type": "LayoutKey",
                       "declarations": [
                         {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                           "range": [
                             2319,
                             2338
@@ -11882,7 +11882,7 @@ const components = {
                       "type": "string",
                       "declarations": [
                         {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                           "range": [
                             185,
                             197
@@ -11900,7 +11900,7 @@ const components = {
                       "type": "string",
                       "declarations": [
                         {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                           "range": [
                             240,
                             257
@@ -11918,7 +11918,7 @@ const components = {
                       "type": "string",
                       "declarations": [
                         {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                           "range": [
                             369,
                             384
@@ -11936,7 +11936,7 @@ const components = {
                       "type": "string",
                       "declarations": [
                         {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                           "range": [
                             426,
                             441
@@ -11954,7 +11954,7 @@ const components = {
                       "type": "boolean",
                       "declarations": [
                         {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                           "range": [
                             490,
                             507
@@ -11979,7 +11979,7 @@ const components = {
                       "type": "boolean",
                       "declarations": [
                         {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                           "range": [
                             558,
                             577
@@ -11997,7 +11997,7 @@ const components = {
                       "type": "string",
                       "declarations": [
                         {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                           "range": [
                             620,
                             637
@@ -12015,7 +12015,7 @@ const components = {
                       "type": "\"markdown\" | \"yaml\" | \"json\" | \"csv\"",
                       "declarations": [
                         {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                           "range": [
                             706,
                             751
@@ -12042,7 +12042,7 @@ const components = {
                       "type": "string",
                       "declarations": [
                         {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                           "range": [
                             830,
                             845
@@ -12060,7 +12060,7 @@ const components = {
                       "type": "\"yaml\" | \"json\" | \"csv\" | \"md\" | \"yml\" | \"json5\"",
                       "declarations": [
                         {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                           "range": [
                             895,
                             957
@@ -12092,7 +12092,7 @@ const components = {
                 "type": "() => Promise<void>",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
                     "range": [
                       6412,
                       6441
@@ -12116,14 +12116,14 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
               ]
             },
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
               "range": [
                 6329,
                 6483
@@ -12143,7 +12143,7 @@ const components = {
                 "type": "(context: { doc: ParsedContent; refresh: () => Promise<void>; }) => VNode<RendererNode, RendererElement, { [key: string]: any; }>[]",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
                     "range": [
                       6347,
                       6476
@@ -12165,7 +12165,7 @@ const components = {
           "description": "The path of the content to load from content source.",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
               "range": [
                 3983,
                 4099
@@ -12180,7 +12180,7 @@ const components = {
           "description": "A query builder params object to be passed to <ContentQuery /> component.",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
               "range": [
                 4217,
                 4345
@@ -12190,12 +12190,27 @@ const components = {
           "schema": "undefined"
         },
         {
+          "name": "tag",
+          "type": "string",
+          "description": "The tag to use for the renderer element if it is used.",
+          "declarations": [
+            {
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
+              "range": [
+                3494,
+                3606
+              ]
+            }
+          ],
+          "schema": "string"
+        },
+        {
           "name": "excerpt",
           "type": "boolean",
           "description": "Whether or not to render the excerpt.",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
               "range": [
                 3714,
                 3803
@@ -12212,27 +12227,12 @@ const components = {
           }
         },
         {
-          "name": "tag",
-          "type": "string",
-          "description": "The tag to use for the renderer element if it is used.",
-          "declarations": [
-            {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
-              "range": [
-                3494,
-                3606
-              ]
-            }
-          ],
-          "schema": "string"
-        },
-        {
           "name": "head",
           "type": "boolean",
           "description": "Whether or not to map the document data to the `head` property.",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue.d.ts",
               "range": [
                 4453,
                 4570
@@ -12263,7 +12263,7 @@ const components = {
     "shortPath": "node_modules/@nuxt/content/dist/runtime/components/ContentList.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentList.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentList.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -12276,7 +12276,7 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentList.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentList.vue.d.ts",
               "range": [
                 2373,
                 2386
@@ -12294,7 +12294,7 @@ const components = {
           "type": "QueryBuilderParams",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentList.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentList.vue.d.ts",
               "range": [
                 2395,
                 2421
@@ -12314,7 +12314,7 @@ const components = {
                 "type": "boolean",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       9172,
                       9188
@@ -12339,7 +12339,7 @@ const components = {
                 "type": "number",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       9193,
                       9207
@@ -12357,7 +12357,7 @@ const components = {
                 "type": "number",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       9212,
                       9227
@@ -12375,7 +12375,7 @@ const components = {
                 "type": "string[]",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       9232,
                       9248
@@ -12399,7 +12399,7 @@ const components = {
                 "type": "string[]",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       9253,
                       9272
@@ -12417,7 +12417,7 @@ const components = {
                 "type": "SortOptions[]",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       9277,
                       9298
@@ -12450,7 +12450,7 @@ const components = {
                               "type": "string",
                               "declarations": [
                                 {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                   "range": [
                                     3558,
                                     3575
@@ -12473,7 +12473,7 @@ const components = {
                               "type": "boolean",
                               "declarations": [
                                 {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                   "range": [
                                     3749,
                                     3768
@@ -12496,7 +12496,7 @@ const components = {
                               "type": "\"upper\" | \"lower\" | \"false\"",
                               "declarations": [
                                 {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                   "range": [
                                     3953,
                                     3994
@@ -12527,7 +12527,7 @@ const components = {
                               "type": "\"base\" | \"accent\" | \"case\" | \"variant\"",
                               "declarations": [
                                 {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                   "range": [
                                     4733,
                                     4787
@@ -12566,7 +12566,7 @@ const components = {
                 "type": "QueryBuilderWhere[]",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       9303,
                       9331
@@ -12595,7 +12595,7 @@ const components = {
                           "type": "QueryBuilderWhere[]",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 5305,
                                 5332
@@ -12618,7 +12618,7 @@ const components = {
                           "type": "QueryBuilderWhere[]",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 5576,
                                 5602
@@ -12641,7 +12641,7 @@ const components = {
                           "type": "string | number | boolean | RegExp | QueryBuilderWhere",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 5799,
                                 5861
@@ -12674,7 +12674,7 @@ const components = {
                                     "type": "(string: string) => RegExpExecArray",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                                         "range": [
                                           40945,
                                           40990
@@ -12701,7 +12701,7 @@ const components = {
                                     "type": "(string: string) => boolean",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                                         "range": [
                                           41172,
                                           41202
@@ -12723,7 +12723,7 @@ const components = {
                                     "type": "string",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                                         "range": [
                                           41384,
                                           41408
@@ -12741,7 +12741,7 @@ const components = {
                                     "type": "boolean",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                                         "range": [
                                           41554,
                                           41579
@@ -12759,7 +12759,7 @@ const components = {
                                     "type": "boolean",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                                         "range": [
                                           41729,
                                           41758
@@ -12777,7 +12777,7 @@ const components = {
                                     "type": "boolean",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                                         "range": [
                                           41907,
                                           41935
@@ -12795,7 +12795,7 @@ const components = {
                                     "type": "number",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                                         "range": [
                                           41941,
                                           41959
@@ -12818,7 +12818,7 @@ const components = {
                                     "type": "(pattern: string, flags?: string) => RegExp",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                                         "range": [
                                           42062,
                                           42109
@@ -12840,7 +12840,7 @@ const components = {
                                     "type": "string",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es2015.core.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es2015.core.d.ts",
                                         "range": [
                                           14897,
                                           14920
@@ -12858,7 +12858,7 @@ const components = {
                                     "type": "boolean",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es2015.core.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es2015.core.d.ts",
                                         "range": [
                                           15085,
                                           15110
@@ -12876,7 +12876,7 @@ const components = {
                                     "type": "boolean",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es2015.core.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es2015.core.d.ts",
                                         "range": [
                                           15276,
                                           15302
@@ -12894,7 +12894,7 @@ const components = {
                                     "type": "boolean",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es2018.regexp.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es2018.regexp.d.ts",
                                         "range": [
                                           1204,
                                           1229
@@ -12903,8 +12903,8 @@ const components = {
                                     ],
                                     "schema": "boolean"
                                   },
-                                  "__@match@8198": {
-                                    "name": "__@match@8198",
+                                  "__@match@7850": {
+                                    "name": "__@match@7850",
                                     "global": false,
                                     "description": "Matches a string with this regular expression, and returns an array containing the results of\nthat search.",
                                     "tags": [
@@ -12917,7 +12917,7 @@ const components = {
                                     "type": "(string: string) => RegExpMatchArray",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
                                         "range": [
                                           5644,
                                           5700
@@ -12930,8 +12930,8 @@ const components = {
                                       "schema": []
                                     }
                                   },
-                                  "__@replace@8200": {
-                                    "name": "__@replace@8200",
+                                  "__@replace@7852": {
+                                    "name": "__@replace@7852",
                                     "global": false,
                                     "description": "Replaces text in a string, using this regular expression.",
                                     "tags": [
@@ -12956,14 +12956,14 @@ const components = {
                                     "type": "{ (string: string, replaceValue: string): string; (string: string, replacer: (substring: string, ...args: any[]) => string): string; }",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
                                         "range": [
                                           6110,
                                           6173
                                         ]
                                       },
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
                                         "range": [
                                           6478,
                                           6576
@@ -12972,8 +12972,8 @@ const components = {
                                     ],
                                     "schema": "{ (string: string, replaceValue: string): string; (string: string, replacer: (substring: string, ...args: any[]) => string): string; }"
                                   },
-                                  "__@search@8203": {
-                                    "name": "__@search@8203",
+                                  "__@search@7855": {
+                                    "name": "__@search@7855",
                                     "global": false,
                                     "description": "Finds the position beginning first substring match in a regular expression search\nusing this regular expression.",
                                     "tags": [
@@ -12986,7 +12986,7 @@ const components = {
                                     "type": "(string: string) => number",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
                                         "range": [
                                           6782,
                                           6822
@@ -12999,8 +12999,8 @@ const components = {
                                       "schema": []
                                     }
                                   },
-                                  "__@split@8205": {
-                                    "name": "__@split@8205",
+                                  "__@split@7857": {
+                                    "name": "__@split@7857",
                                     "global": false,
                                     "description": "Returns an array of substrings that were delimited by strings in the original input that\nmatch against this regular expression.\n\nIf the regular expression contains capturing parentheses, then each time this\nregular expression matches, the results (including any undefined results) of the\ncapturing parentheses are spliced.",
                                     "tags": [
@@ -13017,7 +13017,7 @@ const components = {
                                     "type": "(string: string, limit?: number) => string[]",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
                                         "range": [
                                           7384,
                                           7441
@@ -13030,8 +13030,8 @@ const components = {
                                       "schema": []
                                     }
                                   },
-                                  "__@matchAll@8207": {
-                                    "name": "__@matchAll@8207",
+                                  "__@matchAll@7859": {
+                                    "name": "__@matchAll@7859",
                                     "global": false,
                                     "description": "Matches a string with this regular expression, and returns an iterable of matches\ncontaining the results of that search.",
                                     "tags": [
@@ -13044,7 +13044,7 @@ const components = {
                                     "type": "(str: string) => IterableIterator<RegExpMatchArray>",
                                     "declarations": [
                                       {
-                                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es2020.symbol.wellknown.d.ts",
+                                        "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es2020.symbol.wellknown.d.ts",
                                         "range": [
                                           1385,
                                           1452
@@ -13077,7 +13077,7 @@ const components = {
                           "type": "string | number | boolean | RegExp",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 6060,
                                 6101
@@ -13110,7 +13110,7 @@ const components = {
                           "type": "string | number | boolean | RegExp",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 6294,
                                 6335
@@ -13133,7 +13133,7 @@ const components = {
                           "type": "number",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 6533,
                                 6546
@@ -13156,7 +13156,7 @@ const components = {
                           "type": "number",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 6757,
                                 6771
@@ -13179,7 +13179,7 @@ const components = {
                           "type": "number",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 6966,
                                 6979
@@ -13202,7 +13202,7 @@ const components = {
                           "type": "number",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 7187,
                                 7201
@@ -13225,7 +13225,7 @@ const components = {
                           "type": "string | RegExp",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 7435,
                                 7460
@@ -13255,7 +13255,7 @@ const components = {
                           "type": "string",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 7664,
                                 7679
@@ -13278,7 +13278,7 @@ const components = {
                           "type": "boolean",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 7860,
                                 7878
@@ -13301,7 +13301,7 @@ const components = {
                           "type": "string | number | boolean | (string | number | boolean)[]",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 8134,
                                 8207
@@ -13349,7 +13349,7 @@ const components = {
                           "type": "(string | number | boolean)[]",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 8450,
                                 8498
@@ -13372,7 +13372,7 @@ const components = {
                           "type": "string",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 8694,
                                 8714
@@ -13395,7 +13395,7 @@ const components = {
                           "type": "string | (string | number | boolean)[]",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 8937,
                                 8985
@@ -13410,6 +13410,16 @@ const components = {
                               "(string | number | boolean)[]"
                             ]
                           }
+                        },
+                        "title": {
+                          "name": "title",
+                          "global": false,
+                          "description": "",
+                          "tags": [],
+                          "required": false,
+                          "type": "string | number | boolean | RegExp | QueryBuilderWhere",
+                          "declarations": [],
+                          "schema": "string | number | boolean | RegExp | QueryBuilderWhere"
                         },
                         "_id": {
                           "name": "_id",
@@ -13433,16 +13443,6 @@ const components = {
                         },
                         "_path": {
                           "name": "_path",
-                          "global": false,
-                          "description": "",
-                          "tags": [],
-                          "required": false,
-                          "type": "string | number | boolean | RegExp | QueryBuilderWhere",
-                          "declarations": [],
-                          "schema": "string | number | boolean | RegExp | QueryBuilderWhere"
-                        },
-                        "title": {
-                          "name": "title",
                           "global": false,
                           "description": "",
                           "tags": [],
@@ -13525,7 +13525,7 @@ const components = {
                 "type": "{ query: string | QueryBuilderWhere; before?: number; after?: number; }",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       9336,
                       9447
@@ -13545,7 +13545,7 @@ const components = {
                       "type": "string | QueryBuilderWhere",
                       "declarations": [
                         {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                           "range": [
                             9357,
                             9391
@@ -13570,7 +13570,7 @@ const components = {
                       "type": "number",
                       "declarations": [
                         {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                           "range": [
                             9400,
                             9416
@@ -13588,7 +13588,7 @@ const components = {
                       "type": "number",
                       "declarations": [
                         {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                           "range": [
                             9425,
                             9440
@@ -13611,7 +13611,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentList.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentList.vue.d.ts",
               "range": [
                 3377,
                 3509
@@ -13631,7 +13631,7 @@ const components = {
                 "type": "ParsedContent[]",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentList.vue.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentList.vue.d.ts",
                     "range": [
                       3410,
                       3432
@@ -13655,7 +13655,7 @@ const components = {
                           "type": "MarkdownRoot",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 2459,
                                 2482
@@ -13675,7 +13675,7 @@ const components = {
                                 "type": "\"root\"",
                                 "declarations": [
                                   {
-                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                     "range": [
                                       1465,
                                       1478
@@ -13693,7 +13693,7 @@ const components = {
                                 "type": "MarkdownNode[]",
                                 "declarations": [
                                   {
-                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                     "range": [
                                       1483,
                                       1508
@@ -13717,7 +13717,7 @@ const components = {
                                           "type": "string",
                                           "declarations": [
                                             {
-                                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                               "range": [
                                                 1214,
                                                 1227
@@ -13735,7 +13735,7 @@ const components = {
                                           "type": "string",
                                           "declarations": [
                                             {
-                                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                               "range": [
                                                 1232,
                                                 1245
@@ -13753,7 +13753,7 @@ const components = {
                                           "type": "string",
                                           "declarations": [
                                             {
-                                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                               "range": [
                                                 1250,
                                                 1265
@@ -13771,7 +13771,7 @@ const components = {
                                           "type": "Record<string, any>",
                                           "declarations": [
                                             {
-                                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                               "range": [
                                                 1270,
                                                 1298
@@ -13789,7 +13789,7 @@ const components = {
                                           "type": "any",
                                           "declarations": [
                                             {
-                                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                               "range": [
                                                 1303,
                                                 1317
@@ -13807,7 +13807,7 @@ const components = {
                                           "type": "MarkdownNode[]",
                                           "declarations": [
                                             {
-                                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                               "range": [
                                                 1322,
                                                 1348
@@ -13825,7 +13825,7 @@ const components = {
                                           "type": "Record<string, any>",
                                           "declarations": [
                                             {
-                                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                               "range": [
                                                 1353,
                                                 1386
@@ -13843,7 +13843,7 @@ const components = {
                                           "type": "Record<string, any>",
                                           "declarations": [
                                             {
-                                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                               "range": [
                                                 1391,
                                                 1426
@@ -13866,7 +13866,7 @@ const components = {
                                 "type": "Record<string, any>",
                                 "declarations": [
                                   {
-                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                     "range": [
                                       1513,
                                       1541
@@ -13884,7 +13884,7 @@ const components = {
                                 "type": "Toc",
                                 "declarations": [
                                   {
-                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                     "range": [
                                       1546,
                                       1556
@@ -13904,7 +13904,7 @@ const components = {
                                       "type": "string",
                                       "declarations": [
                                         {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                           "range": [
                                             1095,
                                             1109
@@ -13922,7 +13922,7 @@ const components = {
                                       "type": "number",
                                       "declarations": [
                                         {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                           "range": [
                                             1114,
                                             1128
@@ -13940,7 +13940,7 @@ const components = {
                                       "type": "number",
                                       "declarations": [
                                         {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                           "range": [
                                             1133,
                                             1153
@@ -13958,7 +13958,7 @@ const components = {
                                       "type": "TocLink[]",
                                       "declarations": [
                                         {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                           "range": [
                                             1158,
                                             1175
@@ -13982,7 +13982,7 @@ const components = {
                                                 "type": "string",
                                                 "declarations": [
                                                   {
-                                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                                     "range": [
                                                       991,
                                                       1002
@@ -14000,7 +14000,7 @@ const components = {
                                                 "type": "string",
                                                 "declarations": [
                                                   {
-                                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                                     "range": [
                                                       1007,
                                                       1020
@@ -14018,7 +14018,7 @@ const components = {
                                                 "type": "number",
                                                 "declarations": [
                                                   {
-                                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                                     "range": [
                                                       1025,
                                                       1039
@@ -14036,7 +14036,7 @@ const components = {
                                                 "type": "TocLink[]",
                                                 "declarations": [
                                                   {
-                                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                                     "range": [
                                                       1044,
                                                       1065
@@ -14065,7 +14065,7 @@ const components = {
                           "type": "MarkdownRoot",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 2523,
                                 2549
@@ -14083,7 +14083,7 @@ const components = {
                           "type": "LayoutKey",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 2319,
                                 2338
@@ -14105,7 +14105,7 @@ const components = {
                           "type": "string",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 185,
                                 197
@@ -14123,7 +14123,7 @@ const components = {
                           "type": "string",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 240,
                                 257
@@ -14141,7 +14141,7 @@ const components = {
                           "type": "string",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 369,
                                 384
@@ -14159,7 +14159,7 @@ const components = {
                           "type": "string",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 426,
                                 441
@@ -14177,7 +14177,7 @@ const components = {
                           "type": "boolean",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 490,
                                 507
@@ -14202,7 +14202,7 @@ const components = {
                           "type": "boolean",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 558,
                                 577
@@ -14220,7 +14220,7 @@ const components = {
                           "type": "string",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 620,
                                 637
@@ -14238,7 +14238,7 @@ const components = {
                           "type": "\"markdown\" | \"yaml\" | \"json\" | \"csv\"",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 706,
                                 751
@@ -14265,7 +14265,7 @@ const components = {
                           "type": "string",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 830,
                                 845
@@ -14283,7 +14283,7 @@ const components = {
                           "type": "\"yaml\" | \"json\" | \"csv\" | \"md\" | \"yml\" | \"json5\"",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 895,
                                 957
@@ -14317,7 +14317,7 @@ const components = {
                 "type": "() => Promise<void>",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentList.vue.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentList.vue.d.ts",
                     "range": [
                       3445,
                       3474
@@ -14341,14 +14341,14 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
               ]
             },
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentList.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentList.vue.d.ts",
               "range": [
                 3359,
                 3516
@@ -14368,7 +14368,7 @@ const components = {
                 "type": "(context: { list: ParsedContent[]; refresh: () => Promise<void>; }) => VNode<RendererNode, RendererElement, { [key: string]: any; }>[]",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentList.vue.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentList.vue.d.ts",
                     "range": [
                       3377,
                       3509
@@ -14390,7 +14390,7 @@ const components = {
           "description": "The path of the content to load from content source.",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentList.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentList.vue.d.ts",
               "range": [
                 1975,
                 2091
@@ -14405,7 +14405,7 @@ const components = {
           "description": "A query builder params object to be passed to <ContentQuery /> component.",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentList.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentList.vue.d.ts",
               "range": [
                 2209,
                 2337
@@ -14429,7 +14429,7 @@ const components = {
     "shortPath": "node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -14442,7 +14442,7 @@ const components = {
           "type": "QueryBuilderParams | QueryBuilder<ParsedContentMeta>",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.vue.d.ts",
               "range": [
                 1708,
                 1787
@@ -14466,7 +14466,7 @@ const components = {
                     "type": "boolean",
                     "declarations": [
                       {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                        "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                         "range": [
                           9172,
                           9188
@@ -14491,7 +14491,7 @@ const components = {
                     "type": "number",
                     "declarations": [
                       {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                        "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                         "range": [
                           9193,
                           9207
@@ -14509,7 +14509,7 @@ const components = {
                     "type": "number",
                     "declarations": [
                       {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                        "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                         "range": [
                           9212,
                           9227
@@ -14527,7 +14527,7 @@ const components = {
                     "type": "string[]",
                     "declarations": [
                       {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                        "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                         "range": [
                           9232,
                           9248
@@ -14551,7 +14551,7 @@ const components = {
                     "type": "string[]",
                     "declarations": [
                       {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                        "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                         "range": [
                           9253,
                           9272
@@ -14569,7 +14569,7 @@ const components = {
                     "type": "SortOptions[]",
                     "declarations": [
                       {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                        "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                         "range": [
                           9277,
                           9298
@@ -14602,7 +14602,7 @@ const components = {
                                   "type": "string",
                                   "declarations": [
                                     {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                      "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                       "range": [
                                         3558,
                                         3575
@@ -14625,7 +14625,7 @@ const components = {
                                   "type": "boolean",
                                   "declarations": [
                                     {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                      "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                       "range": [
                                         3749,
                                         3768
@@ -14648,7 +14648,7 @@ const components = {
                                   "type": "\"upper\" | \"lower\" | \"false\"",
                                   "declarations": [
                                     {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                      "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                       "range": [
                                         3953,
                                         3994
@@ -14679,7 +14679,7 @@ const components = {
                                   "type": "\"base\" | \"accent\" | \"case\" | \"variant\"",
                                   "declarations": [
                                     {
-                                      "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                      "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                       "range": [
                                         4733,
                                         4787
@@ -14718,7 +14718,7 @@ const components = {
                     "type": "QueryBuilderWhere[]",
                     "declarations": [
                       {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                        "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                         "range": [
                           9303,
                           9331
@@ -14747,7 +14747,7 @@ const components = {
                               "type": "QueryBuilderWhere[]",
                               "declarations": [
                                 {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                   "range": [
                                     5305,
                                     5332
@@ -14770,7 +14770,7 @@ const components = {
                               "type": "QueryBuilderWhere[]",
                               "declarations": [
                                 {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                   "range": [
                                     5576,
                                     5602
@@ -14793,7 +14793,7 @@ const components = {
                               "type": "string | number | boolean | RegExp | QueryBuilderWhere",
                               "declarations": [
                                 {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                   "range": [
                                     5799,
                                     5861
@@ -14831,7 +14831,7 @@ const components = {
                               "type": "string | number | boolean | RegExp",
                               "declarations": [
                                 {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                   "range": [
                                     6060,
                                     6101
@@ -14864,7 +14864,7 @@ const components = {
                               "type": "string | number | boolean | RegExp",
                               "declarations": [
                                 {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                   "range": [
                                     6294,
                                     6335
@@ -14887,7 +14887,7 @@ const components = {
                               "type": "number",
                               "declarations": [
                                 {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                   "range": [
                                     6533,
                                     6546
@@ -14910,7 +14910,7 @@ const components = {
                               "type": "number",
                               "declarations": [
                                 {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                   "range": [
                                     6757,
                                     6771
@@ -14933,7 +14933,7 @@ const components = {
                               "type": "number",
                               "declarations": [
                                 {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                   "range": [
                                     6966,
                                     6979
@@ -14956,7 +14956,7 @@ const components = {
                               "type": "number",
                               "declarations": [
                                 {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                   "range": [
                                     7187,
                                     7201
@@ -14979,7 +14979,7 @@ const components = {
                               "type": "string | RegExp",
                               "declarations": [
                                 {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                   "range": [
                                     7435,
                                     7460
@@ -15009,7 +15009,7 @@ const components = {
                               "type": "string",
                               "declarations": [
                                 {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                   "range": [
                                     7664,
                                     7679
@@ -15032,7 +15032,7 @@ const components = {
                               "type": "boolean",
                               "declarations": [
                                 {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                   "range": [
                                     7860,
                                     7878
@@ -15055,7 +15055,7 @@ const components = {
                               "type": "string | number | boolean | (string | number | boolean)[]",
                               "declarations": [
                                 {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                   "range": [
                                     8134,
                                     8207
@@ -15103,7 +15103,7 @@ const components = {
                               "type": "(string | number | boolean)[]",
                               "declarations": [
                                 {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                   "range": [
                                     8450,
                                     8498
@@ -15126,7 +15126,7 @@ const components = {
                               "type": "string",
                               "declarations": [
                                 {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                   "range": [
                                     8694,
                                     8714
@@ -15149,7 +15149,7 @@ const components = {
                               "type": "string | (string | number | boolean)[]",
                               "declarations": [
                                 {
-                                  "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                  "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                   "range": [
                                     8937,
                                     8985
@@ -15164,6 +15164,16 @@ const components = {
                                   "(string | number | boolean)[]"
                                 ]
                               }
+                            },
+                            "title": {
+                              "name": "title",
+                              "global": false,
+                              "description": "",
+                              "tags": [],
+                              "required": false,
+                              "type": "string | number | boolean | RegExp | QueryBuilderWhere",
+                              "declarations": [],
+                              "schema": "string | number | boolean | RegExp | QueryBuilderWhere"
                             },
                             "_id": {
                               "name": "_id",
@@ -15187,16 +15197,6 @@ const components = {
                             },
                             "_path": {
                               "name": "_path",
-                              "global": false,
-                              "description": "",
-                              "tags": [],
-                              "required": false,
-                              "type": "string | number | boolean | RegExp | QueryBuilderWhere",
-                              "declarations": [],
-                              "schema": "string | number | boolean | RegExp | QueryBuilderWhere"
-                            },
-                            "title": {
-                              "name": "title",
                               "global": false,
                               "description": "",
                               "tags": [],
@@ -15279,7 +15279,7 @@ const components = {
                     "type": "{ query: string | QueryBuilderWhere; before?: number; after?: number; }",
                     "declarations": [
                       {
-                        "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                        "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                         "range": [
                           9336,
                           9447
@@ -15299,7 +15299,7 @@ const components = {
                           "type": "string | QueryBuilderWhere",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 9357,
                                 9391
@@ -15324,7 +15324,7 @@ const components = {
                           "type": "number",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 9400,
                                 9416
@@ -15342,7 +15342,7 @@ const components = {
                           "type": "number",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 9425,
                                 9440
@@ -15368,7 +15368,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.vue.d.ts",
               "range": [
                 2590,
                 2687
@@ -15388,7 +15388,7 @@ const components = {
                 "type": "NavItem[]",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.vue.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.vue.d.ts",
                     "range": [
                       2630,
                       2652
@@ -15412,7 +15412,7 @@ const components = {
                           "type": "string",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 11206,
                                 11220
@@ -15430,7 +15430,7 @@ const components = {
                           "type": "string",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 11225,
                                 11239
@@ -15448,7 +15448,7 @@ const components = {
                           "type": "string",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 11244,
                                 11257
@@ -15466,7 +15466,7 @@ const components = {
                           "type": "boolean",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 11262,
                                 11279
@@ -15491,7 +15491,7 @@ const components = {
                           "type": "NavItem[]",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 11284,
                                 11305
@@ -15517,14 +15517,14 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
               ]
             },
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.vue.d.ts",
               "range": [
                 2572,
                 2694
@@ -15544,7 +15544,7 @@ const components = {
                 "type": "({ navigation }: { navigation: NavItem[]; }) => VNode<RendererNode, RendererElement, { [key: string]: any; }>[]",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.vue.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.vue.d.ts",
                     "range": [
                       2590,
                       2687
@@ -15566,7 +15566,7 @@ const components = {
           "description": "A query to be passed to `fetchContentNavigation()`.",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.vue.d.ts",
               "range": [
                 1461,
                 1642
@@ -15581,7 +15581,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.vue.d.ts",
               "range": [
                 1662,
                 1678
@@ -15605,7 +15605,7 @@ const components = {
     "shortPath": "node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -15618,7 +15618,7 @@ const components = {
           "type": "number",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
               "range": [
                 6505,
                 6518
@@ -15636,7 +15636,7 @@ const components = {
           "type": "number",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
               "range": [
                 6527,
                 6541
@@ -15654,7 +15654,7 @@ const components = {
           "type": "string[]",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
               "range": [
                 6550,
                 6565
@@ -15678,7 +15678,7 @@ const components = {
           "type": "string[]",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
               "range": [
                 6574,
                 6592
@@ -15702,7 +15702,7 @@ const components = {
           "type": "SortParams",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
               "range": [
                 6601,
                 6618
@@ -15727,7 +15727,7 @@ const components = {
                 "type": "string",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       3558,
                       3575
@@ -15750,7 +15750,7 @@ const components = {
                 "type": "boolean",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       3749,
                       3768
@@ -15780,7 +15780,7 @@ const components = {
                 "type": "\"upper\" | \"lower\" | \"false\"",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       3953,
                       3994
@@ -15811,7 +15811,7 @@ const components = {
                 "type": "\"base\" | \"accent\" | \"case\" | \"variant\"",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       4733,
                       4787
@@ -15841,7 +15841,7 @@ const components = {
           "type": "{ [key: string]: any; }",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
               "range": [
                 6627,
                 6678
@@ -15863,7 +15863,7 @@ const components = {
           "type": "\"surround\" | \"one\"",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
               "range": [
                 6687,
                 6712
@@ -15888,7 +15888,7 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
               "range": [
                 6721,
                 6734
@@ -15906,7 +15906,7 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
               "range": [
                 6743,
                 6758
@@ -15923,7 +15923,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
               "range": [
                 8930,
                 9004
@@ -15943,7 +15943,7 @@ const components = {
                 "type": "ParsedContent | ParsedContent[]",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
                     "range": [
                       162,
                       205
@@ -15967,7 +15967,7 @@ const components = {
                           "type": "MarkdownRoot",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 2459,
                                 2482
@@ -15987,7 +15987,7 @@ const components = {
                                 "type": "\"root\"",
                                 "declarations": [
                                   {
-                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                     "range": [
                                       1465,
                                       1478
@@ -16005,7 +16005,7 @@ const components = {
                                 "type": "MarkdownNode[]",
                                 "declarations": [
                                   {
-                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                     "range": [
                                       1483,
                                       1508
@@ -16029,7 +16029,7 @@ const components = {
                                           "type": "string",
                                           "declarations": [
                                             {
-                                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                               "range": [
                                                 1214,
                                                 1227
@@ -16047,7 +16047,7 @@ const components = {
                                           "type": "string",
                                           "declarations": [
                                             {
-                                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                               "range": [
                                                 1232,
                                                 1245
@@ -16065,7 +16065,7 @@ const components = {
                                           "type": "string",
                                           "declarations": [
                                             {
-                                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                               "range": [
                                                 1250,
                                                 1265
@@ -16083,7 +16083,7 @@ const components = {
                                           "type": "Record<string, any>",
                                           "declarations": [
                                             {
-                                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                               "range": [
                                                 1270,
                                                 1298
@@ -16101,7 +16101,7 @@ const components = {
                                           "type": "any",
                                           "declarations": [
                                             {
-                                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                               "range": [
                                                 1303,
                                                 1317
@@ -16119,7 +16119,7 @@ const components = {
                                           "type": "MarkdownNode[]",
                                           "declarations": [
                                             {
-                                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                               "range": [
                                                 1322,
                                                 1348
@@ -16137,7 +16137,7 @@ const components = {
                                           "type": "Record<string, any>",
                                           "declarations": [
                                             {
-                                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                               "range": [
                                                 1353,
                                                 1386
@@ -16155,7 +16155,7 @@ const components = {
                                           "type": "Record<string, any>",
                                           "declarations": [
                                             {
-                                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                               "range": [
                                                 1391,
                                                 1426
@@ -16178,7 +16178,7 @@ const components = {
                                 "type": "Record<string, any>",
                                 "declarations": [
                                   {
-                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                     "range": [
                                       1513,
                                       1541
@@ -16196,7 +16196,7 @@ const components = {
                                 "type": "Toc",
                                 "declarations": [
                                   {
-                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                     "range": [
                                       1546,
                                       1556
@@ -16216,7 +16216,7 @@ const components = {
                                       "type": "string",
                                       "declarations": [
                                         {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                           "range": [
                                             1095,
                                             1109
@@ -16234,7 +16234,7 @@ const components = {
                                       "type": "number",
                                       "declarations": [
                                         {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                           "range": [
                                             1114,
                                             1128
@@ -16252,7 +16252,7 @@ const components = {
                                       "type": "number",
                                       "declarations": [
                                         {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                           "range": [
                                             1133,
                                             1153
@@ -16270,7 +16270,7 @@ const components = {
                                       "type": "TocLink[]",
                                       "declarations": [
                                         {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                           "range": [
                                             1158,
                                             1175
@@ -16294,7 +16294,7 @@ const components = {
                                                 "type": "string",
                                                 "declarations": [
                                                   {
-                                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                                     "range": [
                                                       991,
                                                       1002
@@ -16312,7 +16312,7 @@ const components = {
                                                 "type": "string",
                                                 "declarations": [
                                                   {
-                                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                                     "range": [
                                                       1007,
                                                       1020
@@ -16330,7 +16330,7 @@ const components = {
                                                 "type": "number",
                                                 "declarations": [
                                                   {
-                                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                                     "range": [
                                                       1025,
                                                       1039
@@ -16348,7 +16348,7 @@ const components = {
                                                 "type": "TocLink[]",
                                                 "declarations": [
                                                   {
-                                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                                     "range": [
                                                       1044,
                                                       1065
@@ -16377,7 +16377,7 @@ const components = {
                           "type": "MarkdownRoot",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 2523,
                                 2549
@@ -16395,7 +16395,7 @@ const components = {
                           "type": "LayoutKey",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 2319,
                                 2338
@@ -16417,7 +16417,7 @@ const components = {
                           "type": "string",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 185,
                                 197
@@ -16435,7 +16435,7 @@ const components = {
                           "type": "string",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 240,
                                 257
@@ -16453,7 +16453,7 @@ const components = {
                           "type": "string",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 369,
                                 384
@@ -16471,7 +16471,7 @@ const components = {
                           "type": "string",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 426,
                                 441
@@ -16489,7 +16489,7 @@ const components = {
                           "type": "boolean",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 490,
                                 507
@@ -16514,7 +16514,7 @@ const components = {
                           "type": "boolean",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 558,
                                 577
@@ -16532,7 +16532,7 @@ const components = {
                           "type": "string",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 620,
                                 637
@@ -16550,7 +16550,7 @@ const components = {
                           "type": "\"markdown\" | \"yaml\" | \"json\" | \"csv\"",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 706,
                                 751
@@ -16577,7 +16577,7 @@ const components = {
                           "type": "string",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 830,
                                 845
@@ -16595,7 +16595,7 @@ const components = {
                           "type": "\"yaml\" | \"json\" | \"csv\" | \"md\" | \"yml\" | \"json5\"",
                           "declarations": [
                             {
-                              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                               "range": [
                                 895,
                                 957
@@ -16636,7 +16636,7 @@ const components = {
                 "type": "() => Promise<void>",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
                     "range": [
                       210,
                       239
@@ -16657,7 +16657,7 @@ const components = {
                 "type": "boolean",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
                     "range": [
                       244,
                       263
@@ -16678,14 +16678,14 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
               ]
             },
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
               "range": [
                 8912,
                 9011
@@ -16705,7 +16705,7 @@ const components = {
                 "type": "(context: ContentQueryDefaultSlotContext) => VNode<RendererNode, RendererElement, { [key: string]: any; }>[]",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
                     "range": [
                       8930,
                       9004
@@ -16727,7 +16727,7 @@ const components = {
           "description": "Sort results",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
               "range": [
                 5522,
                 5641
@@ -16742,7 +16742,7 @@ const components = {
           "description": "A type of query to be made.",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
               "range": [
                 6272,
                 6399
@@ -16764,7 +16764,7 @@ const components = {
           "description": "The path of the content to load from content source.",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
               "range": [
                 4752,
                 4868
@@ -16779,7 +16779,7 @@ const components = {
           "description": "Select a subset of fields",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
               "range": [
                 4938,
                 5055
@@ -16800,7 +16800,7 @@ const components = {
           "description": "Remove a subset of fields",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
               "range": [
                 5125,
                 5245
@@ -16821,7 +16821,7 @@ const components = {
           "description": "Filter results",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
               "range": [
                 5304,
                 5465
@@ -16836,7 +16836,7 @@ const components = {
           "description": "Limit number of results",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
               "range": [
                 5709,
                 5825
@@ -16851,7 +16851,7 @@ const components = {
           "description": "Skip number of results",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
               "range": [
                 5892,
                 6007
@@ -16866,7 +16866,7 @@ const components = {
           "description": "Filter contents based on locale",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
               "range": [
                 6083,
                 6200
@@ -16881,7 +16881,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
               "range": [
                 6419,
                 6434
@@ -16896,7 +16896,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
               "range": [
                 6443,
                 6453
@@ -16911,7 +16911,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.vue.d.ts",
               "range": [
                 6462,
                 6475
@@ -16935,7 +16935,7 @@ const components = {
     "shortPath": "node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -16948,7 +16948,7 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.vue.d.ts",
               "range": [
                 1256,
                 1268
@@ -16967,7 +16967,7 @@ const components = {
           "type": "Record<string, any>",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.vue.d.ts",
               "range": [
                 1273,
                 1300
@@ -16986,7 +16986,7 @@ const components = {
           "type": "boolean",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.vue.d.ts",
               "range": [
                 1234,
                 1251
@@ -17008,19 +17008,19 @@ const components = {
       "events": [],
       "exposed": [
         {
-          "name": "value",
-          "type": "Record<string, any>",
-          "description": "The document to render.",
+          "name": "tag",
+          "type": "string",
+          "description": "The tag to use for the renderer element if it is used.",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.vue.d.ts",
               "range": [
-                781,
-                881
+                1151,
+                1222
               ]
             }
           ],
-          "schema": "Record<string, any>"
+          "schema": "string"
         },
         {
           "name": "excerpt",
@@ -17028,7 +17028,7 @@ const components = {
           "description": "Whether or not to render the excerpt.",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.vue.d.ts",
               "range": [
                 969,
                 1046
@@ -17045,19 +17045,19 @@ const components = {
           }
         },
         {
-          "name": "tag",
-          "type": "string",
-          "description": "The tag to use for the renderer element if it is used.",
+          "name": "value",
+          "type": "Record<string, any>",
+          "description": "The document to render.",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.vue.d.ts",
               "range": [
-                1151,
-                1222
+                781,
+                881
               ]
             }
           ],
-          "schema": "string"
+          "schema": "Record<string, any>"
         }
       ]
     }
@@ -17074,7 +17074,7 @@ const components = {
     "shortPath": "node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -17087,14 +17087,14 @@ const components = {
           "type": "Record<string, any>",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
               "range": [
                 359,
                 408
               ]
             },
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
               "range": [
                 359,
                 408
@@ -17112,7 +17112,7 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
               "range": [
                 556,
                 603
@@ -17131,7 +17131,7 @@ const components = {
           "type": "Record<string, any>",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
               "range": [
                 739,
                 792
@@ -17150,7 +17150,7 @@ const components = {
           "type": "Record<string, any>",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
               "range": [
                 675,
                 734
@@ -17169,7 +17169,7 @@ const components = {
           "type": "boolean",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
               "range": [
                 453,
                 505
@@ -17191,19 +17191,19 @@ const components = {
       "events": [],
       "exposed": [
         {
-          "name": "value",
-          "type": "Record<string, any>",
-          "description": "Content to render",
+          "name": "tag",
+          "type": "string",
+          "description": "Root tag to use for rendering",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
               "range": [
-                359,
-                408
+                556,
+                603
               ]
             }
           ],
-          "schema": "Record<string, any>"
+          "schema": "string"
         },
         {
           "name": "excerpt",
@@ -17211,7 +17211,7 @@ const components = {
           "description": "Render only the excerpt",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
               "range": [
                 453,
                 505
@@ -17228,30 +17228,30 @@ const components = {
           }
         },
         {
-          "name": "tag",
-          "type": "string",
-          "description": "Root tag to use for rendering",
-          "declarations": [
-            {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
-              "range": [
-                556,
-                603
-              ]
-            }
-          ],
-          "schema": "string"
-        },
-        {
           "name": "data",
           "type": "Record<string, any>",
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
               "range": [
                 739,
                 792
+              ]
+            }
+          ],
+          "schema": "Record<string, any>"
+        },
+        {
+          "name": "value",
+          "type": "Record<string, any>",
+          "description": "Content to render",
+          "declarations": [
+            {
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
+              "range": [
+                359,
+                408
               ]
             }
           ],
@@ -17263,7 +17263,7 @@ const components = {
           "description": "The map of custom components to use for rendering.",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentRendererMarkdown.vue",
               "range": [
                 675,
                 734
@@ -17287,7 +17287,7 @@ const components = {
     "shortPath": "node_modules/@nuxt/content/dist/runtime/components/ContentSlot.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentSlot.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentSlot.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -17300,7 +17300,7 @@ const components = {
           "type": "Function",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentSlot.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentSlot.vue.d.ts",
               "range": [
                 881,
                 895
@@ -17329,7 +17329,7 @@ const components = {
                 "type": "(this: Function, thisArg: any, argArray?: any) => any",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                     "range": [
                       10258,
                       10315
@@ -17360,7 +17360,7 @@ const components = {
                 "type": "(this: Function, thisArg: any, ...argArray: any[]) => any",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                     "range": [
                       10563,
                       10623
@@ -17391,7 +17391,7 @@ const components = {
                 "type": "(this: Function, thisArg: any, ...argArray: any[]) => any",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                     "range": [
                       11046,
                       11106
@@ -17413,7 +17413,7 @@ const components = {
                 "type": "() => string",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                     "range": [
                       11170,
                       11189
@@ -17434,7 +17434,7 @@ const components = {
                 "type": "any",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                     "range": [
                       11195,
                       11210
@@ -17452,7 +17452,7 @@ const components = {
                 "type": "number",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                     "range": [
                       11215,
                       11239
@@ -17470,7 +17470,7 @@ const components = {
                 "type": "any",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                     "range": [
                       11276,
                       11291
@@ -17488,7 +17488,7 @@ const components = {
                 "type": "Function",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                     "range": [
                       11296,
                       11313
@@ -17506,7 +17506,7 @@ const components = {
                 "type": "string",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es2015.core.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es2015.core.d.ts",
                     "range": [
                       4364,
                       4386
@@ -17524,7 +17524,7 @@ const components = {
                 "type": "(value: any) => boolean",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
                     "range": [
                       5097,
                       5139
@@ -17550,7 +17550,7 @@ const components = {
           "type": "string | boolean",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentSlot.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentSlot.vue.d.ts",
               "range": [
                 900,
                 925
@@ -17578,7 +17578,7 @@ const components = {
           "description": "A slot name or function",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentSlot.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentSlot.vue.d.ts",
               "range": [
                 606,
                 682
@@ -17607,7 +17607,7 @@ const components = {
                 "type": "(this: Function, thisArg: any, argArray?: any) => any",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                     "range": [
                       10258,
                       10315
@@ -17638,7 +17638,7 @@ const components = {
                 "type": "(this: Function, thisArg: any, ...argArray: any[]) => any",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                     "range": [
                       10563,
                       10623
@@ -17669,7 +17669,7 @@ const components = {
                 "type": "(this: Function, thisArg: any, ...argArray: any[]) => any",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                     "range": [
                       11046,
                       11106
@@ -17691,7 +17691,7 @@ const components = {
                 "type": "() => string",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                     "range": [
                       11170,
                       11189
@@ -17712,7 +17712,7 @@ const components = {
                 "type": "any",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                     "range": [
                       11195,
                       11210
@@ -17730,7 +17730,7 @@ const components = {
                 "type": "number",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                     "range": [
                       11215,
                       11239
@@ -17748,7 +17748,7 @@ const components = {
                 "type": "any",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                     "range": [
                       11276,
                       11291
@@ -17766,7 +17766,7 @@ const components = {
                 "type": "Function",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es5.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es5.d.ts",
                     "range": [
                       11296,
                       11313
@@ -17784,7 +17784,7 @@ const components = {
                 "type": "string",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es2015.core.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es2015.core.d.ts",
                     "range": [
                       4364,
                       4386
@@ -17802,7 +17802,7 @@ const components = {
                 "type": "(value: any) => boolean",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
                     "range": [
                       5097,
                       5139
@@ -17824,7 +17824,7 @@ const components = {
           "description": "Tags to unwrap separated by spaces\nExample: 'ul li'",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/ContentSlot.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/ContentSlot.vue.d.ts",
               "range": [
                 769,
                 869
@@ -17856,7 +17856,7 @@ const components = {
     "shortPath": "node_modules/@nuxt/content/dist/runtime/components/DocumentDrivenEmpty.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/DocumentDrivenEmpty.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/DocumentDrivenEmpty.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -17869,14 +17869,14 @@ const components = {
           "type": "ParsedContent",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/DocumentDrivenEmpty.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/DocumentDrivenEmpty.vue.d.ts",
               "range": [
                 470,
                 548
               ]
             },
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/DocumentDrivenEmpty.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/DocumentDrivenEmpty.vue.d.ts",
               "range": [
                 470,
                 548
@@ -17896,7 +17896,7 @@ const components = {
                 "type": "MarkdownRoot",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       2459,
                       2482
@@ -17916,7 +17916,7 @@ const components = {
                       "type": "\"root\"",
                       "declarations": [
                         {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                           "range": [
                             1465,
                             1478
@@ -17934,7 +17934,7 @@ const components = {
                       "type": "MarkdownNode[]",
                       "declarations": [
                         {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                           "range": [
                             1483,
                             1508
@@ -17958,7 +17958,7 @@ const components = {
                                 "type": "string",
                                 "declarations": [
                                   {
-                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                     "range": [
                                       1214,
                                       1227
@@ -17976,7 +17976,7 @@ const components = {
                                 "type": "string",
                                 "declarations": [
                                   {
-                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                     "range": [
                                       1232,
                                       1245
@@ -17994,7 +17994,7 @@ const components = {
                                 "type": "string",
                                 "declarations": [
                                   {
-                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                     "range": [
                                       1250,
                                       1265
@@ -18012,7 +18012,7 @@ const components = {
                                 "type": "Record<string, any>",
                                 "declarations": [
                                   {
-                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                     "range": [
                                       1270,
                                       1298
@@ -18030,7 +18030,7 @@ const components = {
                                 "type": "any",
                                 "declarations": [
                                   {
-                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                     "range": [
                                       1303,
                                       1317
@@ -18048,7 +18048,7 @@ const components = {
                                 "type": "MarkdownNode[]",
                                 "declarations": [
                                   {
-                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                     "range": [
                                       1322,
                                       1348
@@ -18066,7 +18066,7 @@ const components = {
                                 "type": "Record<string, any>",
                                 "declarations": [
                                   {
-                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                     "range": [
                                       1353,
                                       1386
@@ -18084,7 +18084,7 @@ const components = {
                                 "type": "Record<string, any>",
                                 "declarations": [
                                   {
-                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                     "range": [
                                       1391,
                                       1426
@@ -18107,7 +18107,7 @@ const components = {
                       "type": "Record<string, any>",
                       "declarations": [
                         {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                           "range": [
                             1513,
                             1541
@@ -18125,7 +18125,7 @@ const components = {
                       "type": "Toc",
                       "declarations": [
                         {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                           "range": [
                             1546,
                             1556
@@ -18145,7 +18145,7 @@ const components = {
                             "type": "string",
                             "declarations": [
                               {
-                                "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                 "range": [
                                   1095,
                                   1109
@@ -18163,7 +18163,7 @@ const components = {
                             "type": "number",
                             "declarations": [
                               {
-                                "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                 "range": [
                                   1114,
                                   1128
@@ -18181,7 +18181,7 @@ const components = {
                             "type": "number",
                             "declarations": [
                               {
-                                "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                 "range": [
                                   1133,
                                   1153
@@ -18199,7 +18199,7 @@ const components = {
                             "type": "TocLink[]",
                             "declarations": [
                               {
-                                "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                 "range": [
                                   1158,
                                   1175
@@ -18223,7 +18223,7 @@ const components = {
                                       "type": "string",
                                       "declarations": [
                                         {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                           "range": [
                                             991,
                                             1002
@@ -18241,7 +18241,7 @@ const components = {
                                       "type": "string",
                                       "declarations": [
                                         {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                           "range": [
                                             1007,
                                             1020
@@ -18259,7 +18259,7 @@ const components = {
                                       "type": "number",
                                       "declarations": [
                                         {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                           "range": [
                                             1025,
                                             1039
@@ -18277,7 +18277,7 @@ const components = {
                                       "type": "TocLink[]",
                                       "declarations": [
                                         {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                           "range": [
                                             1044,
                                             1065
@@ -18306,7 +18306,7 @@ const components = {
                 "type": "MarkdownRoot",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       2523,
                       2549
@@ -18324,7 +18324,7 @@ const components = {
                 "type": "LayoutKey",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       2319,
                       2338
@@ -18346,7 +18346,7 @@ const components = {
                 "type": "string",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       185,
                       197
@@ -18364,7 +18364,7 @@ const components = {
                 "type": "string",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       240,
                       257
@@ -18382,7 +18382,7 @@ const components = {
                 "type": "string",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       369,
                       384
@@ -18400,7 +18400,7 @@ const components = {
                 "type": "string",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       426,
                       441
@@ -18418,7 +18418,7 @@ const components = {
                 "type": "boolean",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       490,
                       507
@@ -18443,7 +18443,7 @@ const components = {
                 "type": "boolean",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       558,
                       577
@@ -18461,7 +18461,7 @@ const components = {
                 "type": "string",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       620,
                       637
@@ -18479,7 +18479,7 @@ const components = {
                 "type": "\"markdown\" | \"yaml\" | \"json\" | \"csv\"",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       706,
                       751
@@ -18506,7 +18506,7 @@ const components = {
                 "type": "string",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       830,
                       845
@@ -18524,7 +18524,7 @@ const components = {
                 "type": "\"yaml\" | \"json\" | \"csv\" | \"md\" | \"yml\" | \"json5\"",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       895,
                       957
@@ -18557,7 +18557,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/DocumentDrivenEmpty.vue.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/DocumentDrivenEmpty.vue.d.ts",
               "range": [
                 470,
                 548
@@ -18577,7 +18577,7 @@ const components = {
                 "type": "MarkdownRoot",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       2459,
                       2482
@@ -18597,7 +18597,7 @@ const components = {
                       "type": "\"root\"",
                       "declarations": [
                         {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                           "range": [
                             1465,
                             1478
@@ -18615,7 +18615,7 @@ const components = {
                       "type": "MarkdownNode[]",
                       "declarations": [
                         {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                           "range": [
                             1483,
                             1508
@@ -18639,7 +18639,7 @@ const components = {
                                 "type": "string",
                                 "declarations": [
                                   {
-                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                     "range": [
                                       1214,
                                       1227
@@ -18657,7 +18657,7 @@ const components = {
                                 "type": "string",
                                 "declarations": [
                                   {
-                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                     "range": [
                                       1232,
                                       1245
@@ -18675,7 +18675,7 @@ const components = {
                                 "type": "string",
                                 "declarations": [
                                   {
-                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                     "range": [
                                       1250,
                                       1265
@@ -18693,7 +18693,7 @@ const components = {
                                 "type": "Record<string, any>",
                                 "declarations": [
                                   {
-                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                     "range": [
                                       1270,
                                       1298
@@ -18711,7 +18711,7 @@ const components = {
                                 "type": "any",
                                 "declarations": [
                                   {
-                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                     "range": [
                                       1303,
                                       1317
@@ -18729,7 +18729,7 @@ const components = {
                                 "type": "MarkdownNode[]",
                                 "declarations": [
                                   {
-                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                     "range": [
                                       1322,
                                       1348
@@ -18747,7 +18747,7 @@ const components = {
                                 "type": "Record<string, any>",
                                 "declarations": [
                                   {
-                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                     "range": [
                                       1353,
                                       1386
@@ -18765,7 +18765,7 @@ const components = {
                                 "type": "Record<string, any>",
                                 "declarations": [
                                   {
-                                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                     "range": [
                                       1391,
                                       1426
@@ -18788,7 +18788,7 @@ const components = {
                       "type": "Record<string, any>",
                       "declarations": [
                         {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                           "range": [
                             1513,
                             1541
@@ -18806,7 +18806,7 @@ const components = {
                       "type": "Toc",
                       "declarations": [
                         {
-                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                           "range": [
                             1546,
                             1556
@@ -18826,7 +18826,7 @@ const components = {
                             "type": "string",
                             "declarations": [
                               {
-                                "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                 "range": [
                                   1095,
                                   1109
@@ -18844,7 +18844,7 @@ const components = {
                             "type": "number",
                             "declarations": [
                               {
-                                "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                 "range": [
                                   1114,
                                   1128
@@ -18862,7 +18862,7 @@ const components = {
                             "type": "number",
                             "declarations": [
                               {
-                                "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                 "range": [
                                   1133,
                                   1153
@@ -18880,7 +18880,7 @@ const components = {
                             "type": "TocLink[]",
                             "declarations": [
                               {
-                                "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                 "range": [
                                   1158,
                                   1175
@@ -18904,7 +18904,7 @@ const components = {
                                       "type": "string",
                                       "declarations": [
                                         {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                           "range": [
                                             991,
                                             1002
@@ -18922,7 +18922,7 @@ const components = {
                                       "type": "string",
                                       "declarations": [
                                         {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                           "range": [
                                             1007,
                                             1020
@@ -18940,7 +18940,7 @@ const components = {
                                       "type": "number",
                                       "declarations": [
                                         {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                           "range": [
                                             1025,
                                             1039
@@ -18958,7 +18958,7 @@ const components = {
                                       "type": "TocLink[]",
                                       "declarations": [
                                         {
-                                          "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                                          "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                                           "range": [
                                             1044,
                                             1065
@@ -18987,7 +18987,7 @@ const components = {
                 "type": "MarkdownRoot",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       2523,
                       2549
@@ -19005,7 +19005,7 @@ const components = {
                 "type": "LayoutKey",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       2319,
                       2338
@@ -19027,7 +19027,7 @@ const components = {
                 "type": "string",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       185,
                       197
@@ -19045,7 +19045,7 @@ const components = {
                 "type": "string",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       240,
                       257
@@ -19063,7 +19063,7 @@ const components = {
                 "type": "string",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       369,
                       384
@@ -19081,7 +19081,7 @@ const components = {
                 "type": "string",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       426,
                       441
@@ -19099,7 +19099,7 @@ const components = {
                 "type": "boolean",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       490,
                       507
@@ -19124,7 +19124,7 @@ const components = {
                 "type": "boolean",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       558,
                       577
@@ -19142,7 +19142,7 @@ const components = {
                 "type": "string",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       620,
                       637
@@ -19160,7 +19160,7 @@ const components = {
                 "type": "\"markdown\" | \"yaml\" | \"json\" | \"csv\"",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       706,
                       751
@@ -19187,7 +19187,7 @@ const components = {
                 "type": "string",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       830,
                       845
@@ -19205,7 +19205,7 @@ const components = {
                 "type": "\"yaml\" | \"json\" | \"csv\" | \"md\" | \"yml\" | \"json5\"",
                 "declarations": [
                   {
-                    "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
+                    "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/types/index.d.ts",
                     "range": [
                       895,
                       957
@@ -19243,7 +19243,7 @@ const components = {
     "shortPath": "node_modules/@nuxt/content/dist/runtime/components/Markdown.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/Markdown.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/Markdown.vue",
     "meta": {
       "type": null,
       "props": [],
@@ -19264,7 +19264,7 @@ const components = {
     "shortPath": "node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -19277,7 +19277,7 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
               "range": [
                 248,
                 293
@@ -19296,7 +19296,7 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
               "range": [
                 297,
                 348
@@ -19315,7 +19315,7 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
               "range": [
                 352,
                 403
@@ -19334,7 +19334,7 @@ const components = {
           "type": "number[]",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
               "range": [
                 407,
                 481
@@ -19359,7 +19359,7 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
               "range": [
                 485,
                 532
@@ -19391,7 +19391,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -19425,7 +19425,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
               "range": [
                 536,
                 584
@@ -19440,7 +19440,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
               "range": [
                 588,
                 646
@@ -19462,7 +19462,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
               "range": [
                 248,
                 293
@@ -19477,7 +19477,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
               "range": [
                 297,
                 348
@@ -19492,7 +19492,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
               "range": [
                 352,
                 403
@@ -19507,7 +19507,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
               "range": [
                 407,
                 481
@@ -19528,7 +19528,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxt/content/dist/runtime/components/Prose/ProsePre.vue",
               "range": [
                 485,
                 532
@@ -19552,7 +19552,7 @@ const components = {
     "shortPath": "node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseScript.vue",
     "export": "default",
     "priority": 0,
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseScript.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseScript.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -19565,7 +19565,7 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseScript.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseScript.vue",
               "range": [
                 317,
                 361
@@ -19585,7 +19585,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseScript.vue",
+              "file": "/workspace/KubeCamp/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseScript.vue",
               "range": [
                 317,
                 361
@@ -19606,11 +19606,11 @@ const components = {
     "prefetch": false,
     "preload": false,
     "mode": "all",
-    "shortPath": "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/Icon.vue",
+    "shortPath": "/workspace/KubeCamp/node_modules/nuxt-icon/dist/runtime/Icon.vue",
     "priority": 0,
     "name": "Icon",
     "filePath": "node_modules/nuxt-icon/dist/runtime/Icon.vue",
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/Icon.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/nuxt-icon/dist/runtime/Icon.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -19623,14 +19623,14 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/Icon.vue",
+              "file": "/workspace/KubeCamp/node_modules/nuxt-icon/dist/runtime/Icon.vue",
               "range": [
                 669,
                 717
               ]
             },
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/Icon.vue",
+              "file": "/workspace/KubeCamp/node_modules/nuxt-icon/dist/runtime/Icon.vue",
               "range": [
                 669,
                 717
@@ -19648,7 +19648,7 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/Icon.vue",
+              "file": "/workspace/KubeCamp/node_modules/nuxt-icon/dist/runtime/Icon.vue",
               "range": [
                 721,
                 766
@@ -19680,7 +19680,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+              "file": "/workspace/KubeCamp/node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
               "range": [
                 8475,
                 8502
@@ -19714,7 +19714,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/Icon.vue",
+              "file": "/workspace/KubeCamp/node_modules/nuxt-icon/dist/runtime/Icon.vue",
               "range": [
                 669,
                 717
@@ -19729,7 +19729,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/Icon.vue",
+              "file": "/workspace/KubeCamp/node_modules/nuxt-icon/dist/runtime/Icon.vue",
               "range": [
                 721,
                 766
@@ -19750,11 +19750,11 @@ const components = {
     "prefetch": false,
     "preload": false,
     "mode": "all",
-    "shortPath": "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
+    "shortPath": "/workspace/KubeCamp/node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
     "priority": 0,
     "name": "IconCSS",
     "filePath": "node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
-    "fullPath": "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
+    "fullPath": "/workspace/KubeCamp/node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
     "meta": {
       "type": 1,
       "props": [
@@ -19767,14 +19767,14 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
+              "file": "/workspace/KubeCamp/node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
               "range": [
                 387,
                 435
               ]
             },
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
+              "file": "/workspace/KubeCamp/node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
               "range": [
                 387,
                 435
@@ -19792,7 +19792,7 @@ const components = {
           "type": "string",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
+              "file": "/workspace/KubeCamp/node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
               "range": [
                 439,
                 484
@@ -19812,7 +19812,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
+              "file": "/workspace/KubeCamp/node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
               "range": [
                 387,
                 435
@@ -19827,7 +19827,7 @@ const components = {
           "description": "",
           "declarations": [
             {
-              "file": "/workspace/Kubernetes-Bootcamp/node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
+              "file": "/workspace/KubeCamp/node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
               "range": [
                 439,
                 484
@@ -19841,7 +19841,7 @@ const components = {
   }
 };
 
-const _yyWZkx = eventHandler(async () => {
+const _iMhA6V = eventHandler(async () => {
   const componentsIgnoredPrefix = ["Content", "DocumentDriven", "Markdown"];
   const filteredComponents = Object.values(components).filter((c) => c.global && !componentsIgnoredPrefix.some((prefix) => c.pascalName.startsWith(prefix))).map(({ pascalName, filePath, meta }) => {
     return {
@@ -19896,7 +19896,7 @@ const _yyWZkx = eventHandler(async () => {
   };
 });
 
-const _oLMd8X = defineEventHandler((event) => {
+const _eQ5KNq = defineEventHandler((event) => {
   appendHeader(event, "Access-Control-Allow-Origin", "*");
   const componentName = (event.context.params["component?"] || "").replace(/\.json$/, "");
   if (componentName) {
@@ -20075,7 +20075,7 @@ const highlighter = /*#__PURE__*/Object.freeze({
   useShikiHighlighter: useShikiHighlighter
 });
 
-const _4KC6IW = lazyEventHandler(async () => {
+const _k6y8fC = lazyEventHandler(async () => {
   const { highlight } = useRuntimeConfig().mdc;
   await loadWasm(
     (imports) => import('../onig.mjs').then((mod) => mod.default(imports)).then((exports) => ({ exports }))
@@ -21078,7 +21078,7 @@ const json = defineTransformer({
     let parsed;
     if (typeof content === "string") {
       if (_id.endsWith("json5")) {
-        parsed = (await import('file:///workspace/Kubernetes-Bootcamp/node_modules/json5/lib/index.js').then((m) => m.default || m)).parse(content);
+        parsed = (await import('file:///workspace/KubeCamp/node_modules/json5/lib/index.js').then((m) => m.default || m)).parse(content);
       } else if (_id.endsWith("json")) {
         parsed = destr$1(content);
       }
@@ -21660,7 +21660,7 @@ const getContentQuery = (event) => {
   return query;
 };
 
-const _rSvadi = defineEventHandler(async (event) => {
+const _8EcGM7 = defineEventHandler(async (event) => {
   const query = getContentQuery(event);
   const { advanceQuery } = useRuntimeConfig().public.content.experimental;
   if (query.first) {
@@ -21689,7 +21689,7 @@ const _rSvadi = defineEventHandler(async (event) => {
   return serverQueryContent(event, query).find();
 });
 
-const _AD4g7o = defineEventHandler(async (event) => {
+const _wQhr0P = defineEventHandler(async (event) => {
   const { content } = useRuntimeConfig();
   const now = Date.now();
   const contents = await serverQueryContent(event).find();
@@ -21794,7 +21794,7 @@ function isObject(obj) {
   return Object.prototype.toString.call(obj) === "[object Object]";
 }
 
-const _QdE0th = defineEventHandler(async (event) => {
+const _T7WdzT = defineEventHandler(async (event) => {
   const query = getContentQuery(event);
   if (!isPreview(event) && Object.keys(query).length === 0) {
     const cache = await cacheStorage.getItem("content-navigation.json");
@@ -21831,27 +21831,27 @@ const _QdE0th = defineEventHandler(async (event) => {
   return createNav(contents?.result || contents, configs);
 });
 
-const _lazy_AVG9K7 = () => import('../search.mjs');
-const _lazy_4bzQ2c = () => import('../opensearch.xml.mjs');
-const _lazy_YFgWQB = () => import('../renderer.mjs');
+const _lazy_VTO8iV = () => import('../search.mjs');
+const _lazy_5w9eBN = () => import('../opensearch.xml.mjs');
+const _lazy_ex2KTa = () => import('../renderer.mjs');
 
 const handlers = [
   { route: '', handler: _f4b49z, lazy: false, middleware: true, method: undefined },
-  { route: '/api/search', handler: _lazy_AVG9K7, lazy: true, middleware: false, method: undefined },
-  { route: '/opensearch.xml', handler: _lazy_4bzQ2c, lazy: true, middleware: false, method: undefined },
-  { route: '/__studio.json', handler: _yyWZkx, lazy: false, middleware: false, method: "get" },
-  { route: '/api/component-meta', handler: _oLMd8X, lazy: false, middleware: false, method: "get" },
-  { route: '/api/component-meta.json', handler: _oLMd8X, lazy: false, middleware: false, method: "get" },
-  { route: '/api/component-meta/:component?', handler: _oLMd8X, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_mdc/highlight', handler: _4KC6IW, lazy: false, middleware: false, method: undefined },
-  { route: '/api/_content/query/:qid/**:params', handler: _rSvadi, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/query/:qid', handler: _rSvadi, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/query', handler: _rSvadi, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/cache.1709746675648.json', handler: _AD4g7o, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/navigation/:qid/**:params', handler: _QdE0th, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/navigation/:qid', handler: _QdE0th, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/navigation', handler: _QdE0th, lazy: false, middleware: false, method: "get" },
-  { route: '/**', handler: _lazy_YFgWQB, lazy: true, middleware: false, method: undefined }
+  { route: '/api/search', handler: _lazy_VTO8iV, lazy: true, middleware: false, method: undefined },
+  { route: '/opensearch.xml', handler: _lazy_5w9eBN, lazy: true, middleware: false, method: undefined },
+  { route: '/__studio.json', handler: _iMhA6V, lazy: false, middleware: false, method: "get" },
+  { route: '/api/component-meta', handler: _eQ5KNq, lazy: false, middleware: false, method: "get" },
+  { route: '/api/component-meta.json', handler: _eQ5KNq, lazy: false, middleware: false, method: "get" },
+  { route: '/api/component-meta/:component?', handler: _eQ5KNq, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_mdc/highlight', handler: _k6y8fC, lazy: false, middleware: false, method: undefined },
+  { route: '/api/_content/query/:qid/**:params', handler: _8EcGM7, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/query/:qid', handler: _8EcGM7, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/query', handler: _8EcGM7, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/cache.1711388651525.json', handler: _wQhr0P, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/navigation/:qid/**:params', handler: _T7WdzT, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/navigation/:qid', handler: _T7WdzT, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/navigation', handler: _T7WdzT, lazy: false, middleware: false, method: "get" },
+  { route: '/**', handler: _lazy_ex2KTa, lazy: true, middleware: false, method: undefined }
 ];
 
 function createNitroApp() {

@@ -15,9 +15,9 @@ if (import.meta.hot) {
   })
 }
 
-import cfg0 from "/workspace/Kubernetes-Bootcamp/app.config.ts"
-import cfg1 from "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/app.config.ts"
-import cfg2 from "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/app.config.ts"
-import cfg3 from "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/app.config.ts"
+import cfg0 from "/workspace/KubeCamp/app.config.ts"
+import cfg1 from "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/app.config.ts"
+import cfg2 from "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/app.config.ts"
+import cfg3 from "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/app.config.ts"
 
 export default /*@__PURE__*/ defuFn(cfg0, cfg1, cfg2, cfg3, inlineConfig)

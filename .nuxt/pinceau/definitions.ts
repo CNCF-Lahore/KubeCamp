@@ -1,6 +1,6 @@
 export const definitions = {
   "media.xs": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 14,
@@ -17,7 +17,7 @@ export const definitions = {
     }
   },
   "media.sm": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 15,
@@ -34,7 +34,7 @@ export const definitions = {
     }
   },
   "media.md": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 16,
@@ -51,7 +51,7 @@ export const definitions = {
     }
   },
   "media.lg": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 17,
@@ -68,7 +68,7 @@ export const definitions = {
     }
   },
   "media.xl": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 18,
@@ -85,7 +85,7 @@ export const definitions = {
     }
   },
   "media.2xl": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 19,
@@ -102,7 +102,7 @@ export const definitions = {
     }
   },
   "media.rm": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 20,
@@ -119,7 +119,7 @@ export const definitions = {
     }
   },
   "media.landscape": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 21,
@@ -136,7 +136,7 @@ export const definitions = {
     }
   },
   "media.portrait": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 22,
@@ -153,7 +153,7 @@ export const definitions = {
     }
   },
   "color.white": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 465,
@@ -170,7 +170,7 @@ export const definitions = {
     }
   },
   "color.black": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 5,
@@ -187,7 +187,7 @@ export const definitions = {
     }
   },
   "color.gray.50": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 20,
@@ -204,7 +204,7 @@ export const definitions = {
     }
   },
   "color.gray.100": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 21,
@@ -221,7 +221,7 @@ export const definitions = {
     }
   },
   "color.gray.200": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 22,
@@ -238,7 +238,7 @@ export const definitions = {
     }
   },
   "color.gray.300": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 23,
@@ -255,7 +255,7 @@ export const definitions = {
     }
   },
   "color.gray.400": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 24,
@@ -272,7 +272,7 @@ export const definitions = {
     }
   },
   "color.gray.500": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 25,
@@ -289,7 +289,7 @@ export const definitions = {
     }
   },
   "color.gray.600": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 26,
@@ -306,7 +306,7 @@ export const definitions = {
     }
   },
   "color.gray.700": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 27,
@@ -323,7 +323,7 @@ export const definitions = {
     }
   },
   "color.gray.800": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 28,
@@ -340,7 +340,7 @@ export const definitions = {
     }
   },
   "color.gray.900": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 29,
@@ -357,7 +357,7 @@ export const definitions = {
     }
   },
   "color.green.50": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 56,
@@ -374,7 +374,7 @@ export const definitions = {
     }
   },
   "color.green.100": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 57,
@@ -391,7 +391,7 @@ export const definitions = {
     }
   },
   "color.green.200": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 58,
@@ -408,7 +408,7 @@ export const definitions = {
     }
   },
   "color.green.300": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 59,
@@ -425,7 +425,7 @@ export const definitions = {
     }
   },
   "color.green.400": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 60,
@@ -442,7 +442,7 @@ export const definitions = {
     }
   },
   "color.green.500": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 61,
@@ -459,7 +459,7 @@ export const definitions = {
     }
   },
   "color.green.600": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 62,
@@ -476,7 +476,7 @@ export const definitions = {
     }
   },
   "color.green.700": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 63,
@@ -493,7 +493,7 @@ export const definitions = {
     }
   },
   "color.green.800": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 64,
@@ -510,7 +510,7 @@ export const definitions = {
     }
   },
   "color.green.900": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 65,
@@ -527,7 +527,7 @@ export const definitions = {
     }
   },
   "color.yellow.50": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 68,
@@ -544,7 +544,7 @@ export const definitions = {
     }
   },
   "color.yellow.100": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 69,
@@ -561,7 +561,7 @@ export const definitions = {
     }
   },
   "color.yellow.200": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 70,
@@ -578,7 +578,7 @@ export const definitions = {
     }
   },
   "color.yellow.300": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 71,
@@ -595,7 +595,7 @@ export const definitions = {
     }
   },
   "color.yellow.400": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 72,
@@ -612,7 +612,7 @@ export const definitions = {
     }
   },
   "color.yellow.500": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 73,
@@ -629,7 +629,7 @@ export const definitions = {
     }
   },
   "color.yellow.600": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 74,
@@ -646,7 +646,7 @@ export const definitions = {
     }
   },
   "color.yellow.700": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 75,
@@ -663,7 +663,7 @@ export const definitions = {
     }
   },
   "color.yellow.800": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 76,
@@ -680,7 +680,7 @@ export const definitions = {
     }
   },
   "color.yellow.900": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 77,
@@ -697,7 +697,7 @@ export const definitions = {
     }
   },
   "color.orange.50": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 73,
@@ -714,7 +714,7 @@ export const definitions = {
     }
   },
   "color.orange.100": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 74,
@@ -731,7 +731,7 @@ export const definitions = {
     }
   },
   "color.orange.200": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 75,
@@ -748,7 +748,7 @@ export const definitions = {
     }
   },
   "color.orange.300": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 76,
@@ -765,7 +765,7 @@ export const definitions = {
     }
   },
   "color.orange.400": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 77,
@@ -782,7 +782,7 @@ export const definitions = {
     }
   },
   "color.orange.500": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 78,
@@ -799,7 +799,7 @@ export const definitions = {
     }
   },
   "color.orange.600": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 79,
@@ -816,7 +816,7 @@ export const definitions = {
     }
   },
   "color.orange.700": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 80,
@@ -833,7 +833,7 @@ export const definitions = {
     }
   },
   "color.orange.800": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 81,
@@ -850,7 +850,7 @@ export const definitions = {
     }
   },
   "color.orange.900": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 82,
@@ -867,7 +867,7 @@ export const definitions = {
     }
   },
   "color.red.50": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 32,
@@ -884,7 +884,7 @@ export const definitions = {
     }
   },
   "color.red.100": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 33,
@@ -901,7 +901,7 @@ export const definitions = {
     }
   },
   "color.red.200": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 34,
@@ -918,7 +918,7 @@ export const definitions = {
     }
   },
   "color.red.300": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 35,
@@ -935,7 +935,7 @@ export const definitions = {
     }
   },
   "color.red.400": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 36,
@@ -952,7 +952,7 @@ export const definitions = {
     }
   },
   "color.red.500": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 37,
@@ -969,7 +969,7 @@ export const definitions = {
     }
   },
   "color.red.600": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 38,
@@ -986,7 +986,7 @@ export const definitions = {
     }
   },
   "color.red.700": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 39,
@@ -1003,7 +1003,7 @@ export const definitions = {
     }
   },
   "color.red.800": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 40,
@@ -1020,7 +1020,7 @@ export const definitions = {
     }
   },
   "color.red.900": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 41,
@@ -1037,7 +1037,7 @@ export const definitions = {
     }
   },
   "color.pear.50": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 97,
@@ -1054,7 +1054,7 @@ export const definitions = {
     }
   },
   "color.pear.100": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 98,
@@ -1071,7 +1071,7 @@ export const definitions = {
     }
   },
   "color.pear.200": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 99,
@@ -1088,7 +1088,7 @@ export const definitions = {
     }
   },
   "color.pear.300": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 100,
@@ -1105,7 +1105,7 @@ export const definitions = {
     }
   },
   "color.pear.400": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 101,
@@ -1122,7 +1122,7 @@ export const definitions = {
     }
   },
   "color.pear.500": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 102,
@@ -1139,7 +1139,7 @@ export const definitions = {
     }
   },
   "color.pear.600": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 103,
@@ -1156,7 +1156,7 @@ export const definitions = {
     }
   },
   "color.pear.700": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 104,
@@ -1173,7 +1173,7 @@ export const definitions = {
     }
   },
   "color.pear.800": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 105,
@@ -1190,7 +1190,7 @@ export const definitions = {
     }
   },
   "color.pear.900": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 106,
@@ -1207,7 +1207,7 @@ export const definitions = {
     }
   },
   "color.teal.50": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 109,
@@ -1224,7 +1224,7 @@ export const definitions = {
     }
   },
   "color.teal.100": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 110,
@@ -1241,7 +1241,7 @@ export const definitions = {
     }
   },
   "color.teal.200": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 111,
@@ -1258,7 +1258,7 @@ export const definitions = {
     }
   },
   "color.teal.300": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 112,
@@ -1275,7 +1275,7 @@ export const definitions = {
     }
   },
   "color.teal.400": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 113,
@@ -1292,7 +1292,7 @@ export const definitions = {
     }
   },
   "color.teal.500": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 114,
@@ -1309,7 +1309,7 @@ export const definitions = {
     }
   },
   "color.teal.600": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 115,
@@ -1326,7 +1326,7 @@ export const definitions = {
     }
   },
   "color.teal.700": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 116,
@@ -1343,7 +1343,7 @@ export const definitions = {
     }
   },
   "color.teal.800": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 117,
@@ -1360,7 +1360,7 @@ export const definitions = {
     }
   },
   "color.teal.900": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 118,
@@ -1377,7 +1377,7 @@ export const definitions = {
     }
   },
   "color.lightblue.50": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 121,
@@ -1394,7 +1394,7 @@ export const definitions = {
     }
   },
   "color.lightblue.100": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 122,
@@ -1411,7 +1411,7 @@ export const definitions = {
     }
   },
   "color.lightblue.200": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 123,
@@ -1428,7 +1428,7 @@ export const definitions = {
     }
   },
   "color.lightblue.300": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 124,
@@ -1445,7 +1445,7 @@ export const definitions = {
     }
   },
   "color.lightblue.400": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 125,
@@ -1462,7 +1462,7 @@ export const definitions = {
     }
   },
   "color.lightblue.500": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 126,
@@ -1479,7 +1479,7 @@ export const definitions = {
     }
   },
   "color.lightblue.600": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 127,
@@ -1496,7 +1496,7 @@ export const definitions = {
     }
   },
   "color.lightblue.700": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 128,
@@ -1513,7 +1513,7 @@ export const definitions = {
     }
   },
   "color.lightblue.800": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 129,
@@ -1530,7 +1530,7 @@ export const definitions = {
     }
   },
   "color.lightblue.900": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 130,
@@ -1547,7 +1547,7 @@ export const definitions = {
     }
   },
   "color.blue.50": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 44,
@@ -1564,7 +1564,7 @@ export const definitions = {
     }
   },
   "color.blue.100": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 45,
@@ -1581,7 +1581,7 @@ export const definitions = {
     }
   },
   "color.blue.200": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 46,
@@ -1598,7 +1598,7 @@ export const definitions = {
     }
   },
   "color.blue.300": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 47,
@@ -1615,7 +1615,7 @@ export const definitions = {
     }
   },
   "color.blue.400": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 48,
@@ -1632,7 +1632,7 @@ export const definitions = {
     }
   },
   "color.blue.500": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 49,
@@ -1649,7 +1649,7 @@ export const definitions = {
     }
   },
   "color.blue.600": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 50,
@@ -1666,7 +1666,7 @@ export const definitions = {
     }
   },
   "color.blue.700": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 51,
@@ -1683,7 +1683,7 @@ export const definitions = {
     }
   },
   "color.blue.800": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 52,
@@ -1700,7 +1700,7 @@ export const definitions = {
     }
   },
   "color.blue.900": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 53,
@@ -1717,7 +1717,7 @@ export const definitions = {
     }
   },
   "color.indigoblue.50": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 145,
@@ -1734,7 +1734,7 @@ export const definitions = {
     }
   },
   "color.indigoblue.100": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 146,
@@ -1751,7 +1751,7 @@ export const definitions = {
     }
   },
   "color.indigoblue.200": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 147,
@@ -1768,7 +1768,7 @@ export const definitions = {
     }
   },
   "color.indigoblue.300": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 148,
@@ -1785,7 +1785,7 @@ export const definitions = {
     }
   },
   "color.indigoblue.400": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 149,
@@ -1802,7 +1802,7 @@ export const definitions = {
     }
   },
   "color.indigoblue.500": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 150,
@@ -1819,7 +1819,7 @@ export const definitions = {
     }
   },
   "color.indigoblue.600": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 151,
@@ -1836,7 +1836,7 @@ export const definitions = {
     }
   },
   "color.indigoblue.700": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 152,
@@ -1853,7 +1853,7 @@ export const definitions = {
     }
   },
   "color.indigoblue.800": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 153,
@@ -1870,7 +1870,7 @@ export const definitions = {
     }
   },
   "color.indigoblue.900": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 154,
@@ -1887,7 +1887,7 @@ export const definitions = {
     }
   },
   "color.royalblue.50": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 157,
@@ -1904,7 +1904,7 @@ export const definitions = {
     }
   },
   "color.royalblue.100": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 158,
@@ -1921,7 +1921,7 @@ export const definitions = {
     }
   },
   "color.royalblue.200": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 159,
@@ -1938,7 +1938,7 @@ export const definitions = {
     }
   },
   "color.royalblue.300": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 160,
@@ -1955,7 +1955,7 @@ export const definitions = {
     }
   },
   "color.royalblue.400": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 161,
@@ -1972,7 +1972,7 @@ export const definitions = {
     }
   },
   "color.royalblue.500": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 162,
@@ -1989,7 +1989,7 @@ export const definitions = {
     }
   },
   "color.royalblue.600": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 163,
@@ -2006,7 +2006,7 @@ export const definitions = {
     }
   },
   "color.royalblue.700": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 164,
@@ -2023,7 +2023,7 @@ export const definitions = {
     }
   },
   "color.royalblue.800": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 165,
@@ -2040,7 +2040,7 @@ export const definitions = {
     }
   },
   "color.royalblue.900": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 166,
@@ -2057,7 +2057,7 @@ export const definitions = {
     }
   },
   "color.purple.50": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 169,
@@ -2074,7 +2074,7 @@ export const definitions = {
     }
   },
   "color.purple.100": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 170,
@@ -2091,7 +2091,7 @@ export const definitions = {
     }
   },
   "color.purple.200": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 171,
@@ -2108,7 +2108,7 @@ export const definitions = {
     }
   },
   "color.purple.300": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 172,
@@ -2125,7 +2125,7 @@ export const definitions = {
     }
   },
   "color.purple.400": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 173,
@@ -2142,7 +2142,7 @@ export const definitions = {
     }
   },
   "color.purple.500": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 174,
@@ -2159,7 +2159,7 @@ export const definitions = {
     }
   },
   "color.purple.600": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 175,
@@ -2176,7 +2176,7 @@ export const definitions = {
     }
   },
   "color.purple.700": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 176,
@@ -2193,7 +2193,7 @@ export const definitions = {
     }
   },
   "color.purple.800": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 177,
@@ -2210,7 +2210,7 @@ export const definitions = {
     }
   },
   "color.purple.900": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 178,
@@ -2227,7 +2227,7 @@ export const definitions = {
     }
   },
   "color.pink.50": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 181,
@@ -2244,7 +2244,7 @@ export const definitions = {
     }
   },
   "color.pink.100": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 182,
@@ -2261,7 +2261,7 @@ export const definitions = {
     }
   },
   "color.pink.200": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 183,
@@ -2278,7 +2278,7 @@ export const definitions = {
     }
   },
   "color.pink.300": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 184,
@@ -2295,7 +2295,7 @@ export const definitions = {
     }
   },
   "color.pink.400": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 185,
@@ -2312,7 +2312,7 @@ export const definitions = {
     }
   },
   "color.pink.500": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 186,
@@ -2329,7 +2329,7 @@ export const definitions = {
     }
   },
   "color.pink.600": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 187,
@@ -2346,7 +2346,7 @@ export const definitions = {
     }
   },
   "color.pink.700": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 188,
@@ -2363,7 +2363,7 @@ export const definitions = {
     }
   },
   "color.pink.800": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 189,
@@ -2380,7 +2380,7 @@ export const definitions = {
     }
   },
   "color.pink.900": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 190,
@@ -2397,7 +2397,7 @@ export const definitions = {
     }
   },
   "color.ruby.50": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 193,
@@ -2414,7 +2414,7 @@ export const definitions = {
     }
   },
   "color.ruby.100": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 194,
@@ -2431,7 +2431,7 @@ export const definitions = {
     }
   },
   "color.ruby.200": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 195,
@@ -2448,7 +2448,7 @@ export const definitions = {
     }
   },
   "color.ruby.300": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 196,
@@ -2465,7 +2465,7 @@ export const definitions = {
     }
   },
   "color.ruby.400": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 197,
@@ -2482,7 +2482,7 @@ export const definitions = {
     }
   },
   "color.ruby.500": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 198,
@@ -2499,7 +2499,7 @@ export const definitions = {
     }
   },
   "color.ruby.600": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 199,
@@ -2516,7 +2516,7 @@ export const definitions = {
     }
   },
   "color.ruby.700": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 200,
@@ -2533,7 +2533,7 @@ export const definitions = {
     }
   },
   "color.ruby.800": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 201,
@@ -2550,7 +2550,7 @@ export const definitions = {
     }
   },
   "color.ruby.900": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 202,
@@ -2567,7 +2567,7 @@ export const definitions = {
     }
   },
   "width.screen": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 215,
@@ -2584,7 +2584,7 @@ export const definitions = {
     }
   },
   "height.screen": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 226,
@@ -2601,7 +2601,7 @@ export const definitions = {
     }
   },
   "shadow.$schema.title": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 231,
@@ -2618,7 +2618,7 @@ export const definitions = {
     }
   },
   "shadow.$schema.tags": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 232,
@@ -2635,7 +2635,7 @@ export const definitions = {
     }
   },
   "shadow.xs": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 85,
@@ -2652,7 +2652,7 @@ export const definitions = {
     }
   },
   "shadow.sm": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 86,
@@ -2669,7 +2669,7 @@ export const definitions = {
     }
   },
   "shadow.md": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 87,
@@ -2686,7 +2686,7 @@ export const definitions = {
     }
   },
   "shadow.lg": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 88,
@@ -2703,7 +2703,7 @@ export const definitions = {
     }
   },
   "shadow.xl": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 89,
@@ -2720,7 +2720,7 @@ export const definitions = {
     }
   },
   "shadow.2xl": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 90,
@@ -2737,7 +2737,7 @@ export const definitions = {
     }
   },
   "shadow.none": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 91,
@@ -2754,7 +2754,7 @@ export const definitions = {
     }
   },
   "radii.$schema.title": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 249,
@@ -2771,7 +2771,7 @@ export const definitions = {
     }
   },
   "radii.$schema.tags": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 250,
@@ -2788,7 +2788,7 @@ export const definitions = {
     }
   },
   "radii.none": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 513,
@@ -2805,7 +2805,7 @@ export const definitions = {
     }
   },
   "radii.2xs": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 514,
@@ -2822,7 +2822,7 @@ export const definitions = {
     }
   },
   "radii.xs": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 515,
@@ -2839,7 +2839,7 @@ export const definitions = {
     }
   },
   "radii.sm": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 516,
@@ -2856,7 +2856,7 @@ export const definitions = {
     }
   },
   "radii.md": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 517,
@@ -2873,7 +2873,7 @@ export const definitions = {
     }
   },
   "radii.lg": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 518,
@@ -2890,7 +2890,7 @@ export const definitions = {
     }
   },
   "radii.xl": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 519,
@@ -2907,7 +2907,7 @@ export const definitions = {
     }
   },
   "radii.2xl": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 520,
@@ -2924,7 +2924,7 @@ export const definitions = {
     }
   },
   "radii.3xl": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 521,
@@ -2941,7 +2941,7 @@ export const definitions = {
     }
   },
   "radii.full": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 522,
@@ -2958,7 +2958,7 @@ export const definitions = {
     }
   },
   "size.$schema.title": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 270,
@@ -2975,7 +2975,7 @@ export const definitions = {
     }
   },
   "size.$schema.tags": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 271,
@@ -2992,7 +2992,7 @@ export const definitions = {
     }
   },
   "size.0": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 277,
@@ -3009,7 +3009,7 @@ export const definitions = {
     }
   },
   "size.2": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 278,
@@ -3026,7 +3026,7 @@ export const definitions = {
     }
   },
   "size.4": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 279,
@@ -3043,7 +3043,7 @@ export const definitions = {
     }
   },
   "size.6": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 280,
@@ -3060,7 +3060,7 @@ export const definitions = {
     }
   },
   "size.8": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 281,
@@ -3077,7 +3077,7 @@ export const definitions = {
     }
   },
   "size.12": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 282,
@@ -3094,7 +3094,7 @@ export const definitions = {
     }
   },
   "size.16": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 283,
@@ -3111,7 +3111,7 @@ export const definitions = {
     }
   },
   "size.20": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 284,
@@ -3128,7 +3128,7 @@ export const definitions = {
     }
   },
   "size.24": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 285,
@@ -3145,7 +3145,7 @@ export const definitions = {
     }
   },
   "size.32": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 286,
@@ -3162,7 +3162,7 @@ export const definitions = {
     }
   },
   "size.40": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 287,
@@ -3179,7 +3179,7 @@ export const definitions = {
     }
   },
   "size.48": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 288,
@@ -3196,7 +3196,7 @@ export const definitions = {
     }
   },
   "size.56": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 289,
@@ -3213,7 +3213,7 @@ export const definitions = {
     }
   },
   "size.64": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 290,
@@ -3230,7 +3230,7 @@ export const definitions = {
     }
   },
   "size.80": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 291,
@@ -3247,7 +3247,7 @@ export const definitions = {
     }
   },
   "size.104": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 292,
@@ -3264,7 +3264,7 @@ export const definitions = {
     }
   },
   "size.200": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 293,
@@ -3281,7 +3281,7 @@ export const definitions = {
     }
   },
   "size.xs": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 294,
@@ -3298,7 +3298,7 @@ export const definitions = {
     }
   },
   "size.sm": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 295,
@@ -3315,7 +3315,7 @@ export const definitions = {
     }
   },
   "size.md": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 296,
@@ -3332,7 +3332,7 @@ export const definitions = {
     }
   },
   "size.lg": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 297,
@@ -3349,7 +3349,7 @@ export const definitions = {
     }
   },
   "size.xl": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 298,
@@ -3366,7 +3366,7 @@ export const definitions = {
     }
   },
   "size.2xl": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 299,
@@ -3383,7 +3383,7 @@ export const definitions = {
     }
   },
   "size.3xl": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 300,
@@ -3400,7 +3400,7 @@ export const definitions = {
     }
   },
   "size.4xl": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 301,
@@ -3417,7 +3417,7 @@ export const definitions = {
     }
   },
   "size.5xl": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 302,
@@ -3434,7 +3434,7 @@ export const definitions = {
     }
   },
   "size.6xl": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 303,
@@ -3451,7 +3451,7 @@ export const definitions = {
     }
   },
   "size.7xl": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 304,
@@ -3468,7 +3468,7 @@ export const definitions = {
     }
   },
   "size.full": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 305,
@@ -3485,7 +3485,7 @@ export const definitions = {
     }
   },
   "space.0": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 317,
@@ -3502,7 +3502,7 @@ export const definitions = {
     }
   },
   "space.1": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 318,
@@ -3519,7 +3519,7 @@ export const definitions = {
     }
   },
   "space.2": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 319,
@@ -3536,7 +3536,7 @@ export const definitions = {
     }
   },
   "space.3": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 320,
@@ -3553,7 +3553,7 @@ export const definitions = {
     }
   },
   "space.4": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 321,
@@ -3570,7 +3570,7 @@ export const definitions = {
     }
   },
   "space.5": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 322,
@@ -3587,7 +3587,7 @@ export const definitions = {
     }
   },
   "space.6": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 323,
@@ -3604,7 +3604,7 @@ export const definitions = {
     }
   },
   "space.7": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 324,
@@ -3621,7 +3621,7 @@ export const definitions = {
     }
   },
   "space.8": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 325,
@@ -3638,7 +3638,7 @@ export const definitions = {
     }
   },
   "space.9": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 326,
@@ -3655,7 +3655,7 @@ export const definitions = {
     }
   },
   "space.10": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 327,
@@ -3672,7 +3672,7 @@ export const definitions = {
     }
   },
   "space.11": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 328,
@@ -3689,7 +3689,7 @@ export const definitions = {
     }
   },
   "space.12": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 329,
@@ -3706,7 +3706,7 @@ export const definitions = {
     }
   },
   "space.14": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 330,
@@ -3723,7 +3723,7 @@ export const definitions = {
     }
   },
   "space.16": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 331,
@@ -3740,7 +3740,7 @@ export const definitions = {
     }
   },
   "space.20": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 332,
@@ -3757,7 +3757,7 @@ export const definitions = {
     }
   },
   "space.24": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 333,
@@ -3774,7 +3774,7 @@ export const definitions = {
     }
   },
   "space.28": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 334,
@@ -3791,7 +3791,7 @@ export const definitions = {
     }
   },
   "space.32": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 335,
@@ -3808,7 +3808,7 @@ export const definitions = {
     }
   },
   "space.36": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 336,
@@ -3825,7 +3825,7 @@ export const definitions = {
     }
   },
   "space.40": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 337,
@@ -3842,7 +3842,7 @@ export const definitions = {
     }
   },
   "space.44": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 338,
@@ -3859,7 +3859,7 @@ export const definitions = {
     }
   },
   "space.48": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 339,
@@ -3876,7 +3876,7 @@ export const definitions = {
     }
   },
   "space.52": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 340,
@@ -3893,7 +3893,7 @@ export const definitions = {
     }
   },
   "space.56": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 341,
@@ -3910,7 +3910,7 @@ export const definitions = {
     }
   },
   "space.60": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 342,
@@ -3927,7 +3927,7 @@ export const definitions = {
     }
   },
   "space.64": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 343,
@@ -3944,7 +3944,7 @@ export const definitions = {
     }
   },
   "space.72": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 344,
@@ -3961,7 +3961,7 @@ export const definitions = {
     }
   },
   "space.80": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 345,
@@ -3978,7 +3978,7 @@ export const definitions = {
     }
   },
   "space.96": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 346,
@@ -3995,7 +3995,7 @@ export const definitions = {
     }
   },
   "space.px": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 347,
@@ -4012,7 +4012,7 @@ export const definitions = {
     }
   },
   "space.rem.125": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 349,
@@ -4029,7 +4029,7 @@ export const definitions = {
     }
   },
   "space.rem.375": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 350,
@@ -4046,7 +4046,7 @@ export const definitions = {
     }
   },
   "space.rem.625": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 351,
@@ -4063,7 +4063,7 @@ export const definitions = {
     }
   },
   "space.rem.875": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 352,
@@ -4080,7 +4080,7 @@ export const definitions = {
     }
   },
   "borderWidth.noBorder": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 365,
@@ -4097,7 +4097,7 @@ export const definitions = {
     }
   },
   "borderWidth.sm": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 366,
@@ -4114,7 +4114,7 @@ export const definitions = {
     }
   },
   "borderWidth.md": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 367,
@@ -4131,7 +4131,7 @@ export const definitions = {
     }
   },
   "borderWidth.lg": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 368,
@@ -4148,7 +4148,7 @@ export const definitions = {
     }
   },
   "opacity.noOpacity": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 380,
@@ -4165,7 +4165,7 @@ export const definitions = {
     }
   },
   "opacity.bright": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 381,
@@ -4182,7 +4182,7 @@ export const definitions = {
     }
   },
   "opacity.light": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 382,
@@ -4199,7 +4199,7 @@ export const definitions = {
     }
   },
   "opacity.soft": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 383,
@@ -4216,7 +4216,7 @@ export const definitions = {
     }
   },
   "opacity.medium": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 384,
@@ -4233,7 +4233,7 @@ export const definitions = {
     }
   },
   "opacity.high": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 385,
@@ -4250,7 +4250,7 @@ export const definitions = {
     }
   },
   "opacity.total": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 386,
@@ -4267,7 +4267,7 @@ export const definitions = {
     }
   },
   "font.sans": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 586,
@@ -4284,7 +4284,7 @@ export const definitions = {
     }
   },
   "font.serif": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 587,
@@ -4301,7 +4301,7 @@ export const definitions = {
     }
   },
   "font.mono": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 588,
@@ -4318,7 +4318,7 @@ export const definitions = {
     }
   },
   "fontWeight.thin": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 411,
@@ -4335,7 +4335,7 @@ export const definitions = {
     }
   },
   "fontWeight.extralight": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 412,
@@ -4352,7 +4352,7 @@ export const definitions = {
     }
   },
   "fontWeight.light": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 413,
@@ -4369,7 +4369,7 @@ export const definitions = {
     }
   },
   "fontWeight.normal": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 414,
@@ -4386,7 +4386,7 @@ export const definitions = {
     }
   },
   "fontWeight.medium": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 415,
@@ -4403,7 +4403,7 @@ export const definitions = {
     }
   },
   "fontWeight.semibold": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 416,
@@ -4420,7 +4420,7 @@ export const definitions = {
     }
   },
   "fontWeight.bold": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 417,
@@ -4437,7 +4437,7 @@ export const definitions = {
     }
   },
   "fontWeight.extrabold": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 418,
@@ -4454,7 +4454,7 @@ export const definitions = {
     }
   },
   "fontWeight.black": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 419,
@@ -4471,7 +4471,7 @@ export const definitions = {
     }
   },
   "fontSize.$schema.title": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 423,
@@ -4488,7 +4488,7 @@ export const definitions = {
     }
   },
   "fontSize.$schema.tags": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 424,
@@ -4505,7 +4505,7 @@ export const definitions = {
     }
   },
   "fontSize.xs": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 534,
@@ -4522,7 +4522,7 @@ export const definitions = {
     }
   },
   "fontSize.sm": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 537,
@@ -4539,7 +4539,7 @@ export const definitions = {
     }
   },
   "fontSize.base": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 540,
@@ -4556,7 +4556,7 @@ export const definitions = {
     }
   },
   "fontSize.lg": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 543,
@@ -4573,7 +4573,7 @@ export const definitions = {
     }
   },
   "fontSize.xl": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 546,
@@ -4590,7 +4590,7 @@ export const definitions = {
     }
   },
   "fontSize.2xl": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 435,
@@ -4607,7 +4607,7 @@ export const definitions = {
     }
   },
   "fontSize.3xl": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 436,
@@ -4624,7 +4624,7 @@ export const definitions = {
     }
   },
   "fontSize.4xl": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 437,
@@ -4641,7 +4641,7 @@ export const definitions = {
     }
   },
   "fontSize.5xl": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 438,
@@ -4658,7 +4658,7 @@ export const definitions = {
     }
   },
   "fontSize.6xl": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 439,
@@ -4675,7 +4675,7 @@ export const definitions = {
     }
   },
   "fontSize.7xl": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 440,
@@ -4692,7 +4692,7 @@ export const definitions = {
     }
   },
   "fontSize.8xl": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 441,
@@ -4709,7 +4709,7 @@ export const definitions = {
     }
   },
   "fontSize.9xl": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 442,
@@ -4726,7 +4726,7 @@ export const definitions = {
     }
   },
   "letterSpacing.tighter": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 453,
@@ -4743,7 +4743,7 @@ export const definitions = {
     }
   },
   "letterSpacing.tight": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 454,
@@ -4760,7 +4760,7 @@ export const definitions = {
     }
   },
   "letterSpacing.normal": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 455,
@@ -4777,7 +4777,7 @@ export const definitions = {
     }
   },
   "letterSpacing.wide": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 456,
@@ -4794,7 +4794,7 @@ export const definitions = {
     }
   },
   "letterSpacing.wider": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 457,
@@ -4811,7 +4811,7 @@ export const definitions = {
     }
   },
   "letterSpacing.widest": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 458,
@@ -4828,7 +4828,7 @@ export const definitions = {
     }
   },
   "lead.1": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 469,
@@ -4845,7 +4845,7 @@ export const definitions = {
     }
   },
   "lead.2": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 470,
@@ -4862,7 +4862,7 @@ export const definitions = {
     }
   },
   "lead.3": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 471,
@@ -4879,7 +4879,7 @@ export const definitions = {
     }
   },
   "lead.4": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 472,
@@ -4896,7 +4896,7 @@ export const definitions = {
     }
   },
   "lead.5": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 473,
@@ -4913,7 +4913,7 @@ export const definitions = {
     }
   },
   "lead.6": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 474,
@@ -4930,7 +4930,7 @@ export const definitions = {
     }
   },
   "lead.7": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 475,
@@ -4947,7 +4947,7 @@ export const definitions = {
     }
   },
   "lead.8": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 476,
@@ -4964,7 +4964,7 @@ export const definitions = {
     }
   },
   "lead.9": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 477,
@@ -4981,7 +4981,7 @@ export const definitions = {
     }
   },
   "lead.10": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 478,
@@ -4998,7 +4998,7 @@ export const definitions = {
     }
   },
   "lead.none": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 559,
@@ -5015,7 +5015,7 @@ export const definitions = {
     }
   },
   "lead.tight": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 562,
@@ -5032,7 +5032,7 @@ export const definitions = {
     }
   },
   "lead.snug": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 565,
@@ -5049,7 +5049,7 @@ export const definitions = {
     }
   },
   "lead.normal": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 568,
@@ -5066,7 +5066,7 @@ export const definitions = {
     }
   },
   "lead.relaxed": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 571,
@@ -5083,7 +5083,7 @@ export const definitions = {
     }
   },
   "lead.loose": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 574,
@@ -5100,7 +5100,7 @@ export const definitions = {
     }
   },
   "text.$schema.title": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 488,
@@ -5117,7 +5117,7 @@ export const definitions = {
     }
   },
   "text.$schema.tags": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 489,
@@ -5134,7 +5134,7 @@ export const definitions = {
     }
   },
   "text.xs.fontSize": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 496,
@@ -5151,7 +5151,7 @@ export const definitions = {
     }
   },
   "text.xs.lineHeight": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 497,
@@ -5168,7 +5168,7 @@ export const definitions = {
     }
   },
   "text.sm.fontSize": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 500,
@@ -5185,7 +5185,7 @@ export const definitions = {
     }
   },
   "text.sm.lineHeight": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 501,
@@ -5202,7 +5202,7 @@ export const definitions = {
     }
   },
   "text.base.fontSize": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 504,
@@ -5219,7 +5219,7 @@ export const definitions = {
     }
   },
   "text.base.lineHeight": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 505,
@@ -5236,7 +5236,7 @@ export const definitions = {
     }
   },
   "text.lg.fontSize": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 508,
@@ -5253,7 +5253,7 @@ export const definitions = {
     }
   },
   "text.lg.lineHeight": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 509,
@@ -5270,7 +5270,7 @@ export const definitions = {
     }
   },
   "text.xl.fontSize": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 512,
@@ -5287,7 +5287,7 @@ export const definitions = {
     }
   },
   "text.xl.lineHeight": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 513,
@@ -5304,7 +5304,7 @@ export const definitions = {
     }
   },
   "text.2xl.fontSize": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 516,
@@ -5321,7 +5321,7 @@ export const definitions = {
     }
   },
   "text.2xl.lineHeight": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 517,
@@ -5338,7 +5338,7 @@ export const definitions = {
     }
   },
   "text.3xl.fontSize": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 520,
@@ -5355,7 +5355,7 @@ export const definitions = {
     }
   },
   "text.3xl.lineHeight": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 521,
@@ -5372,7 +5372,7 @@ export const definitions = {
     }
   },
   "text.4xl.fontSize": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 524,
@@ -5389,7 +5389,7 @@ export const definitions = {
     }
   },
   "text.4xl.lineHeight": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 525,
@@ -5406,7 +5406,7 @@ export const definitions = {
     }
   },
   "text.5xl.fontSize": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 528,
@@ -5423,7 +5423,7 @@ export const definitions = {
     }
   },
   "text.5xl.lineHeight": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 529,
@@ -5440,7 +5440,7 @@ export const definitions = {
     }
   },
   "text.6xl.fontSize": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 532,
@@ -5457,7 +5457,7 @@ export const definitions = {
     }
   },
   "text.6xl.lineHeight": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 533,
@@ -5474,7 +5474,7 @@ export const definitions = {
     }
   },
   "utils.my": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 538,
@@ -5492,7 +5492,7 @@ export const definitions = {
     "content": "(value: PropertyValue<'margin'>) => {\n  return {\n    marginTop: value,\n    marginBottom: value,\n  }\n}"
   },
   "utils.mx": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 544,
@@ -5510,7 +5510,7 @@ export const definitions = {
     "content": "(value: PropertyValue<'margin'>) => {\n  return {\n    marginLeft: value,\n    marginRight: value,\n  }\n}"
   },
   "utils.py": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 550,
@@ -5528,7 +5528,7 @@ export const definitions = {
     "content": "(value: PropertyValue<'margin'>) => {\n  return {\n    paddingTop: value,\n    paddingBottom: value,\n  }\n}"
   },
   "utils.px": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 556,
@@ -5546,7 +5546,7 @@ export const definitions = {
     "content": "(value: PropertyValue<'margin'>) => {\n  return {\n    paddingLeft: value,\n    paddingRight: value,\n  }\n}"
   },
   "utils.truncate": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 562,
@@ -5564,7 +5564,7 @@ export const definitions = {
     "content": "{\n  overflow: 'hidden',\n  textOverflow: 'ellipsis',\n  whiteSpace: 'nowrap',\n} as any"
   },
   "utils.lineClamp": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 567,
@@ -5582,7 +5582,7 @@ export const definitions = {
     "content": "(lines: number | string) => (({\n  'overflow': 'hidden',\n  'display': '-webkit-box',\n  '-webkit-box-orient': 'vertical',\n  '-webkit-line-clamp': lines\n}) as any)"
   },
   "utils.text": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/tokens/dist/tokens.config.ts",
     "range": {
       "start": {
         "line": 573,
@@ -5600,7 +5600,7 @@ export const definitions = {
     "content": "(size: keyof PinceauTheme['text']) => ({\n  fontSize: `{text.${size}.fontSize}`,\n  lineHeight: `{text.${size}.lineHeight}`,\n})"
   },
   "color.primary": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
     "range": {
       "start": {
         "line": 7,
@@ -5617,7 +5617,7 @@ export const definitions = {
     }
   },
   "space.128": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
     "range": {
       "start": {
         "line": 12,
@@ -5634,7 +5634,7 @@ export const definitions = {
     }
   },
   "elements.text.primary.color.static": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
     "range": {
       "start": {
         "line": 27,
@@ -5651,7 +5651,7 @@ export const definitions = {
     }
   },
   "elements.text.secondary.color.static": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
     "range": {
       "start": {
         "line": 37,
@@ -5668,7 +5668,7 @@ export const definitions = {
     }
   },
   "elements.text.secondary.color.hover": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
     "range": {
       "start": {
         "line": 41,
@@ -5685,7 +5685,7 @@ export const definitions = {
     }
   },
   "elements.container.maxWidth": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
     "range": {
       "start": {
         "line": 56,
@@ -5702,7 +5702,7 @@ export const definitions = {
     }
   },
   "elements.container.padding.mobile": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
     "range": {
       "start": {
         "line": 58,
@@ -5719,7 +5719,7 @@ export const definitions = {
     }
   },
   "elements.container.padding.xs": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
     "range": {
       "start": {
         "line": 59,
@@ -5736,7 +5736,7 @@ export const definitions = {
     }
   },
   "elements.container.padding.sm": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
     "range": {
       "start": {
         "line": 60,
@@ -5753,7 +5753,7 @@ export const definitions = {
     }
   },
   "elements.container.padding.md": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
     "range": {
       "start": {
         "line": 61,
@@ -5770,7 +5770,7 @@ export const definitions = {
     }
   },
   "elements.backdrop.filter": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
     "range": {
       "start": {
         "line": 75,
@@ -5787,7 +5787,7 @@ export const definitions = {
     }
   },
   "elements.backdrop.background": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
     "range": {
       "start": {
         "line": 80,
@@ -5804,7 +5804,7 @@ export const definitions = {
     }
   },
   "elements.border.primary.static": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
     "range": {
       "start": {
         "line": 96,
@@ -5821,7 +5821,7 @@ export const definitions = {
     }
   },
   "elements.border.primary.hover": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
     "range": {
       "start": {
         "line": 100,
@@ -5838,7 +5838,7 @@ export const definitions = {
     }
   },
   "elements.border.secondary.static": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
     "range": {
       "start": {
         "line": 106,
@@ -5855,7 +5855,7 @@ export const definitions = {
     }
   },
   "elements.border.secondary.hover": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
     "range": {
       "start": {
         "line": 110,
@@ -5872,7 +5872,7 @@ export const definitions = {
     }
   },
   "elements.surface.background.base": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
     "range": {
       "start": {
         "line": 127,
@@ -5889,7 +5889,7 @@ export const definitions = {
     }
   },
   "elements.state.primary.color.primary": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
     "range": {
       "start": {
         "line": 145,
@@ -5906,7 +5906,7 @@ export const definitions = {
     }
   },
   "elements.state.primary.color.secondary": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
     "range": {
       "start": {
         "line": 149,
@@ -5923,7 +5923,7 @@ export const definitions = {
     }
   },
   "elements.state.primary.backgroundColor.primary": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
     "range": {
       "start": {
         "line": 155,
@@ -5940,7 +5940,7 @@ export const definitions = {
     }
   },
   "elements.state.primary.backgroundColor.secondary": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
     "range": {
       "start": {
         "line": 159,
@@ -5957,7 +5957,7 @@ export const definitions = {
     }
   },
   "elements.state.primary.borderColor.primary": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
     "range": {
       "start": {
         "line": 165,
@@ -5974,7 +5974,7 @@ export const definitions = {
     }
   },
   "elements.state.primary.borderColor.secondary": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
     "range": {
       "start": {
         "line": 169,
@@ -5991,7 +5991,7 @@ export const definitions = {
     }
   },
   "elements.state.info.color.primary": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
     "range": {
       "start": {
         "line": 177,
@@ -6008,7 +6008,7 @@ export const definitions = {
     }
   },
   "elements.state.info.color.secondary": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
     "range": {
       "start": {
         "line": 181,
@@ -6025,7 +6025,7 @@ export const definitions = {
     }
   },
   "elements.state.info.backgroundColor.primary": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
     "range": {
       "start": {
         "line": 187,
@@ -6042,7 +6042,7 @@ export const definitions = {
     }
   },
   "elements.state.info.backgroundColor.secondary": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
     "range": {
       "start": {
         "line": 191,
@@ -6059,7 +6059,7 @@ export const definitions = {
     }
   },
   "elements.state.info.borderColor.primary": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
     "range": {
       "start": {
         "line": 197,
@@ -6076,7 +6076,7 @@ export const definitions = {
     }
   },
   "elements.state.info.borderColor.secondary": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
     "range": {
       "start": {
         "line": 201,
@@ -6093,7 +6093,7 @@ export const definitions = {
     }
   },
   "elements.state.success.color.primary": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
     "range": {
       "start": {
         "line": 209,
@@ -6110,7 +6110,7 @@ export const definitions = {
     }
   },
   "elements.state.success.color.secondary": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
     "range": {
       "start": {
         "line": 213,
@@ -6127,7 +6127,7 @@ export const definitions = {
     }
   },
   "elements.state.success.backgroundColor.primary": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
     "range": {
       "start": {
         "line": 219,
@@ -6144,7 +6144,7 @@ export const definitions = {
     }
   },
   "elements.state.success.backgroundColor.secondary": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
     "range": {
       "start": {
         "line": 223,
@@ -6161,7 +6161,7 @@ export const definitions = {
     }
   },
   "elements.state.success.borderColor.primary": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
     "range": {
       "start": {
         "line": 229,
@@ -6178,7 +6178,7 @@ export const definitions = {
     }
   },
   "elements.state.success.borderColor.secondary": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
     "range": {
       "start": {
         "line": 233,
@@ -6195,7 +6195,7 @@ export const definitions = {
     }
   },
   "elements.state.warning.color.primary": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
     "range": {
       "start": {
         "line": 241,
@@ -6212,7 +6212,7 @@ export const definitions = {
     }
   },
   "elements.state.warning.color.secondary": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
     "range": {
       "start": {
         "line": 245,
@@ -6229,7 +6229,7 @@ export const definitions = {
     }
   },
   "elements.state.warning.backgroundColor.primary": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
     "range": {
       "start": {
         "line": 251,
@@ -6246,7 +6246,7 @@ export const definitions = {
     }
   },
   "elements.state.warning.backgroundColor.secondary": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
     "range": {
       "start": {
         "line": 255,
@@ -6263,7 +6263,7 @@ export const definitions = {
     }
   },
   "elements.state.warning.borderColor.primary": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
     "range": {
       "start": {
         "line": 261,
@@ -6280,7 +6280,7 @@ export const definitions = {
     }
   },
   "elements.state.warning.borderColor.secondary": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
     "range": {
       "start": {
         "line": 265,
@@ -6297,7 +6297,7 @@ export const definitions = {
     }
   },
   "elements.state.danger.color.primary": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
     "range": {
       "start": {
         "line": 273,
@@ -6314,7 +6314,7 @@ export const definitions = {
     }
   },
   "elements.state.danger.color.secondary": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
     "range": {
       "start": {
         "line": 277,
@@ -6331,7 +6331,7 @@ export const definitions = {
     }
   },
   "elements.state.danger.backgroundColor.primary": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
     "range": {
       "start": {
         "line": 283,
@@ -6348,7 +6348,7 @@ export const definitions = {
     }
   },
   "elements.state.danger.backgroundColor.secondary": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
     "range": {
       "start": {
         "line": 287,
@@ -6365,7 +6365,7 @@ export const definitions = {
     }
   },
   "elements.state.danger.borderColor.primary": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
     "range": {
       "start": {
         "line": 293,
@@ -6382,7 +6382,7 @@ export const definitions = {
     }
   },
   "elements.state.danger.borderColor.secondary": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
     "range": {
       "start": {
         "line": 297,
@@ -6399,7 +6399,7 @@ export const definitions = {
     }
   },
   "utils.stateColors": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/tokens.config.ts",
     "range": {
       "start": {
         "line": 305,
@@ -6417,7 +6417,7 @@ export const definitions = {
     "content": "(value: any) => {\n  return {\n    color: `{elements.state.${value}.color.primary} !important`,\n    backgroundColor: `{elements.state.${value}.backgroundColor.primary} !important`,\n    borderColor: `{elements.state.${value}.borderColor.primary} !important`,\n    ':deep(p code)': {\n      color: `{elements.state.${value}.color.secondary} !important`,\n      backgroundColor: `{elements.state.${value}.backgroundColor.secondary} !important`\n    },\n    ':deep(code)': {\n      color: `{elements.state.${value}.color.primary} !important`,\n      backgroundColor: `{elements.state.${value}.backgroundColor.secondary} !important`\n    },\n    ':deep(a code)': {\n      borderColor: `{elements.state.${value}.borderColor.primary} !important`\n    },\n    ':deep(a)': {\n      borderColor: 'currentColor',\n      code: {\n        backgroundColor: `{elements.state.${value}.backgroundColor.primary} !important`\n      },\n      '&:hover': {\n        color: `{elements.state.${value}.color.secondary} !important`,\n        borderColor: 'currentColor !important',\n        code: {\n          backgroundColor: `{elements.state.${value}.backgroundColor.secondary} !important`,\n          color: `{elements.state.${value}.color.secondary} !important`,\n          borderColor: `{elements.state.${value}.borderColor.secondary} !important`\n        }\n      }\n    }\n  }\n}"
   },
   "typography.body.color": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 16,
@@ -6434,7 +6434,7 @@ export const definitions = {
     }
   },
   "typography.body.backgroundColor": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 20,
@@ -6451,7 +6451,7 @@ export const definitions = {
     }
   },
   "typography.verticalMargin.sm": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 32,
@@ -6468,7 +6468,7 @@ export const definitions = {
     }
   },
   "typography.verticalMargin.base": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 33,
@@ -6485,7 +6485,7 @@ export const definitions = {
     }
   },
   "typography.letterSpacing.tight": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 44,
@@ -6502,7 +6502,7 @@ export const definitions = {
     }
   },
   "typography.letterSpacing.wide": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 45,
@@ -6519,7 +6519,7 @@ export const definitions = {
     }
   },
   "typography.fontSize.xs": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 56,
@@ -6536,7 +6536,7 @@ export const definitions = {
     }
   },
   "typography.fontSize.sm": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 57,
@@ -6553,7 +6553,7 @@ export const definitions = {
     }
   },
   "typography.fontSize.base": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 58,
@@ -6570,7 +6570,7 @@ export const definitions = {
     }
   },
   "typography.fontSize.lg": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 59,
@@ -6587,7 +6587,7 @@ export const definitions = {
     }
   },
   "typography.fontSize.xl": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 60,
@@ -6604,7 +6604,7 @@ export const definitions = {
     }
   },
   "typography.fontSize.2xl": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 61,
@@ -6621,7 +6621,7 @@ export const definitions = {
     }
   },
   "typography.fontSize.3xl": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 62,
@@ -6638,7 +6638,7 @@ export const definitions = {
     }
   },
   "typography.fontSize.4xl": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 63,
@@ -6655,7 +6655,7 @@ export const definitions = {
     }
   },
   "typography.fontSize.5xl": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 64,
@@ -6672,7 +6672,7 @@ export const definitions = {
     }
   },
   "typography.fontSize.6xl": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 65,
@@ -6689,7 +6689,7 @@ export const definitions = {
     }
   },
   "typography.fontSize.7xl": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 66,
@@ -6706,7 +6706,7 @@ export const definitions = {
     }
   },
   "typography.fontSize.8xl": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 67,
@@ -6723,7 +6723,7 @@ export const definitions = {
     }
   },
   "typography.fontSize.9xl": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 68,
@@ -6740,7 +6740,7 @@ export const definitions = {
     }
   },
   "typography.fontWeight.thin": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 79,
@@ -6757,7 +6757,7 @@ export const definitions = {
     }
   },
   "typography.fontWeight.extralight": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 80,
@@ -6774,7 +6774,7 @@ export const definitions = {
     }
   },
   "typography.fontWeight.light": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 81,
@@ -6791,7 +6791,7 @@ export const definitions = {
     }
   },
   "typography.fontWeight.normal": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 82,
@@ -6808,7 +6808,7 @@ export const definitions = {
     }
   },
   "typography.fontWeight.medium": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 83,
@@ -6825,7 +6825,7 @@ export const definitions = {
     }
   },
   "typography.fontWeight.semibold": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 84,
@@ -6842,7 +6842,7 @@ export const definitions = {
     }
   },
   "typography.fontWeight.bold": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 85,
@@ -6859,7 +6859,7 @@ export const definitions = {
     }
   },
   "typography.fontWeight.extrabold": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 86,
@@ -6876,7 +6876,7 @@ export const definitions = {
     }
   },
   "typography.fontWeight.black": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 87,
@@ -6893,7 +6893,7 @@ export const definitions = {
     }
   },
   "typography.lead.1": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 98,
@@ -6910,7 +6910,7 @@ export const definitions = {
     }
   },
   "typography.lead.2": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 99,
@@ -6927,7 +6927,7 @@ export const definitions = {
     }
   },
   "typography.lead.3": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 100,
@@ -6944,7 +6944,7 @@ export const definitions = {
     }
   },
   "typography.lead.4": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 101,
@@ -6961,7 +6961,7 @@ export const definitions = {
     }
   },
   "typography.lead.5": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 102,
@@ -6978,7 +6978,7 @@ export const definitions = {
     }
   },
   "typography.lead.6": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 103,
@@ -6995,7 +6995,7 @@ export const definitions = {
     }
   },
   "typography.lead.7": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 104,
@@ -7012,7 +7012,7 @@ export const definitions = {
     }
   },
   "typography.lead.8": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 105,
@@ -7029,7 +7029,7 @@ export const definitions = {
     }
   },
   "typography.lead.9": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 106,
@@ -7046,7 +7046,7 @@ export const definitions = {
     }
   },
   "typography.lead.10": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 107,
@@ -7063,7 +7063,7 @@ export const definitions = {
     }
   },
   "typography.lead.none": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 108,
@@ -7080,7 +7080,7 @@ export const definitions = {
     }
   },
   "typography.lead.tight": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 109,
@@ -7097,7 +7097,7 @@ export const definitions = {
     }
   },
   "typography.lead.snug": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 110,
@@ -7114,7 +7114,7 @@ export const definitions = {
     }
   },
   "typography.lead.normal": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 111,
@@ -7131,7 +7131,7 @@ export const definitions = {
     }
   },
   "typography.lead.relaxed": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 112,
@@ -7148,7 +7148,7 @@ export const definitions = {
     }
   },
   "typography.lead.loose": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 113,
@@ -7165,7 +7165,7 @@ export const definitions = {
     }
   },
   "typography.font.display": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 124,
@@ -7182,7 +7182,7 @@ export const definitions = {
     }
   },
   "typography.font.body": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 125,
@@ -7199,7 +7199,7 @@ export const definitions = {
     }
   },
   "typography.font.code": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 126,
@@ -7216,7 +7216,7 @@ export const definitions = {
     }
   },
   "typography.color.primary.50": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 193,
@@ -7233,7 +7233,7 @@ export const definitions = {
     }
   },
   "typography.color.primary.100": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 194,
@@ -7250,7 +7250,7 @@ export const definitions = {
     }
   },
   "typography.color.primary.200": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 195,
@@ -7267,7 +7267,7 @@ export const definitions = {
     }
   },
   "typography.color.primary.300": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 196,
@@ -7284,7 +7284,7 @@ export const definitions = {
     }
   },
   "typography.color.primary.400": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 197,
@@ -7301,7 +7301,7 @@ export const definitions = {
     }
   },
   "typography.color.primary.500": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 198,
@@ -7318,7 +7318,7 @@ export const definitions = {
     }
   },
   "typography.color.primary.600": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 199,
@@ -7335,7 +7335,7 @@ export const definitions = {
     }
   },
   "typography.color.primary.700": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 200,
@@ -7352,7 +7352,7 @@ export const definitions = {
     }
   },
   "typography.color.primary.800": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 201,
@@ -7369,7 +7369,7 @@ export const definitions = {
     }
   },
   "typography.color.primary.900": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 202,
@@ -7386,7 +7386,7 @@ export const definitions = {
     }
   },
   "typography.color.secondary.50": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 205,
@@ -7403,7 +7403,7 @@ export const definitions = {
     }
   },
   "typography.color.secondary.100": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 206,
@@ -7420,7 +7420,7 @@ export const definitions = {
     }
   },
   "typography.color.secondary.200": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 207,
@@ -7437,7 +7437,7 @@ export const definitions = {
     }
   },
   "typography.color.secondary.300": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 208,
@@ -7454,7 +7454,7 @@ export const definitions = {
     }
   },
   "typography.color.secondary.400": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 209,
@@ -7471,7 +7471,7 @@ export const definitions = {
     }
   },
   "typography.color.secondary.500": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 210,
@@ -7488,7 +7488,7 @@ export const definitions = {
     }
   },
   "typography.color.secondary.600": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 211,
@@ -7505,7 +7505,7 @@ export const definitions = {
     }
   },
   "typography.color.secondary.700": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 212,
@@ -7522,7 +7522,7 @@ export const definitions = {
     }
   },
   "typography.color.secondary.800": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 213,
@@ -7539,7 +7539,7 @@ export const definitions = {
     }
   },
   "typography.color.secondary.900": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 214,
@@ -7556,7 +7556,7 @@ export const definitions = {
     }
   },
   "prose.p.fontSize": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 173,
@@ -7573,7 +7573,7 @@ export const definitions = {
     }
   },
   "prose.p.lineHeight": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 174,
@@ -7590,7 +7590,7 @@ export const definitions = {
     }
   },
   "prose.p.margin": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 175,
@@ -7607,7 +7607,7 @@ export const definitions = {
     }
   },
   "prose.p.br.margin": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 177,
@@ -7624,7 +7624,7 @@ export const definitions = {
     }
   },
   "prose.h1.margin": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 181,
@@ -7641,7 +7641,7 @@ export const definitions = {
     }
   },
   "prose.h1.fontSize": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 182,
@@ -7658,7 +7658,7 @@ export const definitions = {
     }
   },
   "prose.h1.lineHeight": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 183,
@@ -7675,7 +7675,7 @@ export const definitions = {
     }
   },
   "prose.h1.fontWeight": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 184,
@@ -7692,7 +7692,7 @@ export const definitions = {
     }
   },
   "prose.h1.letterSpacing": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 185,
@@ -7709,7 +7709,7 @@ export const definitions = {
     }
   },
   "prose.h1.iconSize": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 186,
@@ -7726,7 +7726,7 @@ export const definitions = {
     }
   },
   "prose.h2.margin": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 189,
@@ -7743,7 +7743,7 @@ export const definitions = {
     }
   },
   "prose.h2.fontSize": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 190,
@@ -7760,7 +7760,7 @@ export const definitions = {
     }
   },
   "prose.h2.lineHeight": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 191,
@@ -7777,7 +7777,7 @@ export const definitions = {
     }
   },
   "prose.h2.fontWeight": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 192,
@@ -7794,7 +7794,7 @@ export const definitions = {
     }
   },
   "prose.h2.letterSpacing": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 193,
@@ -7811,7 +7811,7 @@ export const definitions = {
     }
   },
   "prose.h2.iconSize": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 194,
@@ -7828,7 +7828,7 @@ export const definitions = {
     }
   },
   "prose.h3.margin": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 197,
@@ -7845,7 +7845,7 @@ export const definitions = {
     }
   },
   "prose.h3.fontSize": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 198,
@@ -7862,7 +7862,7 @@ export const definitions = {
     }
   },
   "prose.h3.lineHeight": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 199,
@@ -7879,7 +7879,7 @@ export const definitions = {
     }
   },
   "prose.h3.fontWeight": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 200,
@@ -7896,7 +7896,7 @@ export const definitions = {
     }
   },
   "prose.h3.letterSpacing": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 201,
@@ -7913,7 +7913,7 @@ export const definitions = {
     }
   },
   "prose.h3.iconSize": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 202,
@@ -7930,7 +7930,7 @@ export const definitions = {
     }
   },
   "prose.h4.margin": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 205,
@@ -7947,7 +7947,7 @@ export const definitions = {
     }
   },
   "prose.h4.fontSize": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 206,
@@ -7964,7 +7964,7 @@ export const definitions = {
     }
   },
   "prose.h4.lineHeight": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 207,
@@ -7981,7 +7981,7 @@ export const definitions = {
     }
   },
   "prose.h4.fontWeight": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 208,
@@ -7998,7 +7998,7 @@ export const definitions = {
     }
   },
   "prose.h4.letterSpacing": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 209,
@@ -8015,7 +8015,7 @@ export const definitions = {
     }
   },
   "prose.h4.iconSize": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 210,
@@ -8032,7 +8032,7 @@ export const definitions = {
     }
   },
   "prose.h5.margin": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 213,
@@ -8049,7 +8049,7 @@ export const definitions = {
     }
   },
   "prose.h5.fontSize": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 214,
@@ -8066,7 +8066,7 @@ export const definitions = {
     }
   },
   "prose.h5.lineHeight": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 215,
@@ -8083,7 +8083,7 @@ export const definitions = {
     }
   },
   "prose.h5.fontWeight": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 216,
@@ -8100,7 +8100,7 @@ export const definitions = {
     }
   },
   "prose.h5.iconSize": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 217,
@@ -8117,7 +8117,7 @@ export const definitions = {
     }
   },
   "prose.h6.margin": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 220,
@@ -8134,7 +8134,7 @@ export const definitions = {
     }
   },
   "prose.h6.fontSize": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 221,
@@ -8151,7 +8151,7 @@ export const definitions = {
     }
   },
   "prose.h6.lineHeight": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 222,
@@ -8168,7 +8168,7 @@ export const definitions = {
     }
   },
   "prose.h6.fontWeight": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 223,
@@ -8185,7 +8185,7 @@ export const definitions = {
     }
   },
   "prose.h6.iconSize": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 224,
@@ -8202,7 +8202,7 @@ export const definitions = {
     }
   },
   "prose.strong.fontWeight": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 227,
@@ -8219,7 +8219,7 @@ export const definitions = {
     }
   },
   "prose.img.margin": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 230,
@@ -8236,7 +8236,7 @@ export const definitions = {
     }
   },
   "prose.a.textDecoration": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 233,
@@ -8253,7 +8253,7 @@ export const definitions = {
     }
   },
   "prose.a.color.static": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 237,
@@ -8270,7 +8270,7 @@ export const definitions = {
     }
   },
   "prose.a.color.hover": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 241,
@@ -8287,7 +8287,7 @@ export const definitions = {
     }
   },
   "prose.a.border.width": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 245,
@@ -8304,7 +8304,7 @@ export const definitions = {
     }
   },
   "prose.a.border.style.static": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 247,
@@ -8321,7 +8321,7 @@ export const definitions = {
     }
   },
   "prose.a.border.style.hover": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 248,
@@ -8338,7 +8338,7 @@ export const definitions = {
     }
   },
   "prose.a.border.color.static": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 253,
@@ -8355,7 +8355,7 @@ export const definitions = {
     }
   },
   "prose.a.border.color.hover": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 257,
@@ -8372,7 +8372,7 @@ export const definitions = {
     }
   },
   "prose.a.border.distance": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 260,
@@ -8389,7 +8389,7 @@ export const definitions = {
     }
   },
   "prose.a.fontWeight": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 262,
@@ -8406,7 +8406,7 @@ export const definitions = {
     }
   },
   "prose.a.hasCode.borderBottom": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 264,
@@ -8423,7 +8423,7 @@ export const definitions = {
     }
   },
   "prose.a.code.border.width": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 268,
@@ -8440,7 +8440,7 @@ export const definitions = {
     }
   },
   "prose.a.code.border.style": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 269,
@@ -8457,7 +8457,7 @@ export const definitions = {
     }
   },
   "prose.a.code.border.color.static": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 273,
@@ -8474,7 +8474,7 @@ export const definitions = {
     }
   },
   "prose.a.code.border.color.hover": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 277,
@@ -8491,7 +8491,7 @@ export const definitions = {
     }
   },
   "prose.a.code.color.static": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 284,
@@ -8508,7 +8508,7 @@ export const definitions = {
     }
   },
   "prose.a.code.color.hover": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 288,
@@ -8525,7 +8525,7 @@ export const definitions = {
     }
   },
   "prose.a.code.background.hover": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 295,
@@ -8542,7 +8542,7 @@ export const definitions = {
     }
   },
   "prose.blockquote.margin": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 301,
@@ -8559,7 +8559,7 @@ export const definitions = {
     }
   },
   "prose.blockquote.paddingInlineStart": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 302,
@@ -8576,7 +8576,7 @@ export const definitions = {
     }
   },
   "prose.blockquote.quotes": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 303,
@@ -8593,7 +8593,7 @@ export const definitions = {
     }
   },
   "prose.blockquote.color": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 306,
@@ -8610,7 +8610,7 @@ export const definitions = {
     }
   },
   "prose.blockquote.border.width": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 309,
@@ -8627,7 +8627,7 @@ export const definitions = {
     }
   },
   "prose.blockquote.border.style": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 310,
@@ -8644,7 +8644,7 @@ export const definitions = {
     }
   },
   "prose.blockquote.border.color": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 313,
@@ -8661,7 +8661,7 @@ export const definitions = {
     }
   },
   "prose.ul.listStyleType": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 318,
@@ -8678,7 +8678,7 @@ export const definitions = {
     }
   },
   "prose.ul.margin": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 319,
@@ -8695,7 +8695,7 @@ export const definitions = {
     }
   },
   "prose.ul.paddingInlineStart": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 320,
@@ -8712,7 +8712,7 @@ export const definitions = {
     }
   },
   "prose.ul.li.markerColor": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 324,
@@ -8729,7 +8729,7 @@ export const definitions = {
     }
   },
   "prose.ol.listStyleType": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 329,
@@ -8746,7 +8746,7 @@ export const definitions = {
     }
   },
   "prose.ol.margin": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 330,
@@ -8763,7 +8763,7 @@ export const definitions = {
     }
   },
   "prose.ol.paddingInlineStart": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 331,
@@ -8780,7 +8780,7 @@ export const definitions = {
     }
   },
   "prose.ol.li.markerColor": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 335,
@@ -8797,7 +8797,7 @@ export const definitions = {
     }
   },
   "prose.li.margin": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 340,
@@ -8814,7 +8814,7 @@ export const definitions = {
     }
   },
   "prose.li.listStylePosition": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 341,
@@ -8831,7 +8831,7 @@ export const definitions = {
     }
   },
   "prose.hr.margin": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 344,
@@ -8848,7 +8848,7 @@ export const definitions = {
     }
   },
   "prose.hr.style": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 345,
@@ -8865,7 +8865,7 @@ export const definitions = {
     }
   },
   "prose.hr.width": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 346,
@@ -8882,7 +8882,7 @@ export const definitions = {
     }
   },
   "prose.hr.color": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 349,
@@ -8899,7 +8899,7 @@ export const definitions = {
     }
   },
   "prose.table.margin": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 353,
@@ -8916,7 +8916,7 @@ export const definitions = {
     }
   },
   "prose.table.textAlign": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 354,
@@ -8933,7 +8933,7 @@ export const definitions = {
     }
   },
   "prose.table.fontSize": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 355,
@@ -8950,7 +8950,7 @@ export const definitions = {
     }
   },
   "prose.table.lineHeight": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 356,
@@ -8967,7 +8967,7 @@ export const definitions = {
     }
   },
   "prose.thead.border.width": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 360,
@@ -8984,7 +8984,7 @@ export const definitions = {
     }
   },
   "prose.thead.border.style": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 361,
@@ -9001,7 +9001,7 @@ export const definitions = {
     }
   },
   "prose.thead.border.color": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 364,
@@ -9018,7 +9018,7 @@ export const definitions = {
     }
   },
   "prose.thead.borderBottom.width": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 368,
@@ -9035,7 +9035,7 @@ export const definitions = {
     }
   },
   "prose.thead.borderBottom.style": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 369,
@@ -9052,7 +9052,7 @@ export const definitions = {
     }
   },
   "prose.thead.borderBottom.color": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 372,
@@ -9069,7 +9069,7 @@ export const definitions = {
     }
   },
   "prose.th.color": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 379,
@@ -9086,7 +9086,7 @@ export const definitions = {
     }
   },
   "prose.th.padding": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 381,
@@ -9103,7 +9103,7 @@ export const definitions = {
     }
   },
   "prose.th.fontWeight": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 382,
@@ -9120,7 +9120,7 @@ export const definitions = {
     }
   },
   "prose.th.textAlign": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 383,
@@ -9137,7 +9137,7 @@ export const definitions = {
     }
   },
   "prose.tbody.tr.borderBottom.width": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 388,
@@ -9154,7 +9154,7 @@ export const definitions = {
     }
   },
   "prose.tbody.tr.borderBottom.style": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 389,
@@ -9171,7 +9171,7 @@ export const definitions = {
     }
   },
   "prose.tbody.tr.borderBottom.color": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 392,
@@ -9188,7 +9188,7 @@ export const definitions = {
     }
   },
   "prose.tbody.td.padding": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 397,
@@ -9205,7 +9205,7 @@ export const definitions = {
     }
   },
   "prose.tbody.code.inline.fontSize": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 401,
@@ -9222,7 +9222,7 @@ export const definitions = {
     }
   },
   "prose.code.block.fontSize": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 407,
@@ -9239,7 +9239,7 @@ export const definitions = {
     }
   },
   "prose.code.block.margin": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 408,
@@ -9256,7 +9256,7 @@ export const definitions = {
     }
   },
   "prose.code.block.border.width": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 410,
@@ -9273,7 +9273,7 @@ export const definitions = {
     }
   },
   "prose.code.block.border.style": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 411,
@@ -9290,7 +9290,7 @@ export const definitions = {
     }
   },
   "prose.code.block.border.color": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 414,
@@ -9307,7 +9307,7 @@ export const definitions = {
     }
   },
   "prose.code.block.color": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 419,
@@ -9324,7 +9324,7 @@ export const definitions = {
     }
   },
   "prose.code.block.backgroundColor": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 423,
@@ -9341,7 +9341,7 @@ export const definitions = {
     }
   },
   "prose.code.block.backdropFilter": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 427,
@@ -9358,7 +9358,7 @@ export const definitions = {
     }
   },
   "prose.code.block.pre.padding": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 430,
@@ -9375,7 +9375,7 @@ export const definitions = {
     }
   },
   "prose.code.inline.borderRadius": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 434,
@@ -9392,7 +9392,7 @@ export const definitions = {
     }
   },
   "prose.code.inline.padding": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 435,
@@ -9409,7 +9409,7 @@ export const definitions = {
     }
   },
   "prose.code.inline.fontSize": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 436,
@@ -9426,7 +9426,7 @@ export const definitions = {
     }
   },
   "prose.code.inline.fontWeight": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 437,
@@ -9443,7 +9443,7 @@ export const definitions = {
     }
   },
   "prose.code.inline.color": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 440,
@@ -9460,7 +9460,7 @@ export const definitions = {
     }
   },
   "prose.code.inline.backgroundColor": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 444,
@@ -9477,7 +9477,7 @@ export const definitions = {
     }
   },
   "color.primary.50": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 8,
@@ -9494,7 +9494,7 @@ export const definitions = {
     }
   },
   "color.primary.100": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 9,
@@ -9511,7 +9511,7 @@ export const definitions = {
     }
   },
   "color.primary.200": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 10,
@@ -9528,7 +9528,7 @@ export const definitions = {
     }
   },
   "color.primary.300": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 11,
@@ -9545,7 +9545,7 @@ export const definitions = {
     }
   },
   "color.primary.400": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 12,
@@ -9562,7 +9562,7 @@ export const definitions = {
     }
   },
   "color.primary.500": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 13,
@@ -9579,7 +9579,7 @@ export const definitions = {
     }
   },
   "color.primary.600": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 14,
@@ -9596,7 +9596,7 @@ export const definitions = {
     }
   },
   "color.primary.700": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 15,
@@ -9613,7 +9613,7 @@ export const definitions = {
     }
   },
   "color.primary.800": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 16,
@@ -9630,7 +9630,7 @@ export const definitions = {
     }
   },
   "color.primary.900": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 17,
@@ -9647,7 +9647,7 @@ export const definitions = {
     }
   },
   "color.secondary.50": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 480,
@@ -9664,7 +9664,7 @@ export const definitions = {
     }
   },
   "color.secondary.100": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 481,
@@ -9681,7 +9681,7 @@ export const definitions = {
     }
   },
   "color.secondary.200": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 482,
@@ -9698,7 +9698,7 @@ export const definitions = {
     }
   },
   "color.secondary.300": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 483,
@@ -9715,7 +9715,7 @@ export const definitions = {
     }
   },
   "color.secondary.400": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 484,
@@ -9732,7 +9732,7 @@ export const definitions = {
     }
   },
   "color.secondary.500": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 485,
@@ -9749,7 +9749,7 @@ export const definitions = {
     }
   },
   "color.secondary.600": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 486,
@@ -9766,7 +9766,7 @@ export const definitions = {
     }
   },
   "color.secondary.700": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 487,
@@ -9783,7 +9783,7 @@ export const definitions = {
     }
   },
   "color.secondary.800": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 488,
@@ -9800,7 +9800,7 @@ export const definitions = {
     }
   },
   "color.secondary.900": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 489,
@@ -9817,7 +9817,7 @@ export const definitions = {
     }
   },
   "elements.surface.primary.backgroundColor": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 598,
@@ -9834,7 +9834,7 @@ export const definitions = {
     }
   },
   "elements.surface.secondary.backgroundColor": {
-    "uri": "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/tokens.config.ts",
     "range": {
       "start": {
         "line": 604,
@@ -9851,7 +9851,7 @@ export const definitions = {
     }
   },
   "color.shadow": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 81,
@@ -9868,7 +9868,7 @@ export const definitions = {
     }
   },
   "docus.body.backgroundColor": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 103,
@@ -9885,7 +9885,7 @@ export const definitions = {
     }
   },
   "docus.body.color": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 107,
@@ -9902,7 +9902,7 @@ export const definitions = {
     }
   },
   "docus.body.fontFamily": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 109,
@@ -9919,7 +9919,7 @@ export const definitions = {
     }
   },
   "docus.header.height": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 112,
@@ -9936,7 +9936,7 @@ export const definitions = {
     }
   },
   "docus.header.logo.height": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 116,
@@ -9953,7 +9953,7 @@ export const definitions = {
     }
   },
   "docus.header.title.fontSize": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 120,
@@ -9970,7 +9970,7 @@ export const definitions = {
     }
   },
   "docus.header.title.fontWeight": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 121,
@@ -9987,7 +9987,7 @@ export const definitions = {
     }
   },
   "docus.header.title.color.static": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 125,
@@ -10004,7 +10004,7 @@ export const definitions = {
     }
   },
   "docus.header.title.color.hover": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 127,
@@ -10021,7 +10021,7 @@ export const definitions = {
     }
   },
   "docus.footer.height": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 131,
@@ -10038,7 +10038,7 @@ export const definitions = {
     }
   },
   "docus.footer.padding": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 131,
@@ -10055,7 +10055,7 @@ export const definitions = {
     }
   },
   "docus.readableLine": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 132,
@@ -10072,7 +10072,7 @@ export const definitions = {
     }
   },
   "docus.loadingBar.height": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 134,
@@ -10089,7 +10089,7 @@ export const definitions = {
     }
   },
   "docus.loadingBar.gradientColorStop1": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 135,
@@ -10106,7 +10106,7 @@ export const definitions = {
     }
   },
   "docus.loadingBar.gradientColorStop2": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 136,
@@ -10123,7 +10123,7 @@ export const definitions = {
     }
   },
   "docus.loadingBar.gradientColorStop3": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 137,
@@ -10140,7 +10140,7 @@ export const definitions = {
     }
   },
   "docus.search.backdropFilter": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 140,
@@ -10157,7 +10157,7 @@ export const definitions = {
     }
   },
   "docus.search.input.borderRadius": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 142,
@@ -10174,7 +10174,7 @@ export const definitions = {
     }
   },
   "docus.search.input.borderWidth": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 143,
@@ -10191,7 +10191,7 @@ export const definitions = {
     }
   },
   "docus.search.input.borderStyle": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 144,
@@ -10208,7 +10208,7 @@ export const definitions = {
     }
   },
   "docus.search.input.borderColor": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 147,
@@ -10225,7 +10225,7 @@ export const definitions = {
     }
   },
   "docus.search.input.fontSize": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 149,
@@ -10242,7 +10242,7 @@ export const definitions = {
     }
   },
   "docus.search.input.gap": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 150,
@@ -10259,7 +10259,7 @@ export const definitions = {
     }
   },
   "docus.search.input.padding": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 151,
@@ -10276,7 +10276,7 @@ export const definitions = {
     }
   },
   "docus.search.input.backgroundColor": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 154,
@@ -10293,7 +10293,7 @@ export const definitions = {
     }
   },
   "docus.search.results.window.marginX": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 161,
@@ -10310,7 +10310,7 @@ export const definitions = {
     }
   },
   "docus.search.results.window.borderRadius": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 165,
@@ -10327,7 +10327,7 @@ export const definitions = {
     }
   },
   "docus.search.results.window.marginTop": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 169,
@@ -10344,7 +10344,7 @@ export const definitions = {
     }
   },
   "docus.search.results.window.maxWidth": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 171,
@@ -10361,7 +10361,7 @@ export const definitions = {
     }
   },
   "docus.search.results.window.maxHeight": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 174,
@@ -10378,7 +10378,7 @@ export const definitions = {
     }
   },
   "docus.search.results.selected.backgroundColor": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 180,
@@ -10395,7 +10395,7 @@ export const definitions = {
     }
   },
   "docus.search.results.highlight.color": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 184,
@@ -10412,7 +10412,7 @@ export const definitions = {
     }
   },
   "docus.search.results.highlight.backgroundColor": {
-    "uri": "/workspace/Kubernetes-Bootcamp/tokens.config.ts",
+    "uri": "/workspace/KubeCamp/tokens.config.ts",
     "range": {
       "start": {
         "line": 185,

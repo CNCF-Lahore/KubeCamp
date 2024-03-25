@@ -1,10 +1,10 @@
 
 import type { CustomAppConfig } from 'nuxt/schema'
 import type { Defu } from 'defu'
-import cfg0 from "/workspace/Kubernetes-Bootcamp/app.config"
-import cfg1 from "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/docus/app.config"
-import cfg2 from "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/typography/app.config"
-import cfg3 from "/workspace/Kubernetes-Bootcamp/node_modules/@nuxt-themes/elements/app.config"
+import cfg0 from "/workspace/KubeCamp/app.config"
+import cfg1 from "/workspace/KubeCamp/node_modules/@nuxt-themes/docus/app.config"
+import cfg2 from "/workspace/KubeCamp/node_modules/@nuxt-themes/typography/app.config"
+import cfg3 from "/workspace/KubeCamp/node_modules/@nuxt-themes/elements/app.config"
 
 declare const inlineConfig = {
   "nuxt": {

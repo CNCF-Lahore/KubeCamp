@@ -839,9 +839,9 @@ const validate = /* @__PURE__ */ defineNuxtRouteMiddleware(async (to) => {
 });
 const cfg0 = defineAppConfig({
   docus: {
-    title: "Kubernetes BootCamp",
+    title: "KubeCamp",
     description: "The best place to start your Kubernetes Journey",
-    url: "cncf-lahore.github.io/Kubernetes-Bootcamp",
+    url: "https://kubecamp.kcdlahore.org/",
     image: "https://i.ibb.co/PGkhK2D/logo-07df0d71aa68491bbca25e45a62ac299.png",
     socials: {},
     layout: "default",
@@ -869,7 +869,7 @@ const cfg0 = defineAppConfig({
     },
     github: {
       branch: "main",
-      repo: "/Kubernetes-Bootcamp/",
+      repo: "/KubeCamp/",
       owner: "CNCF-Lahore",
       edit: false
     }
@@ -928,7 +928,7 @@ const cfg2 = defineAppConfig({
 const cfg3 = defineAppConfig({});
 const inlineConfig = {
   "nuxt": {
-    "buildId": "511a5188-b986-42b8-b4d6-ea33e422266b"
+    "buildId": "c1269679-1254-4d8f-9121-9a829fdf8a6a"
   }
 };
 const __appConfig = /* @__PURE__ */ defuFn(cfg0, cfg1, cfg2, cfg3, inlineConfig);
