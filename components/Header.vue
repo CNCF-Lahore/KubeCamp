@@ -16,6 +16,7 @@ const { header } = useAppConfig()
         Kube <UBadge label="Camp" variant="subtle" class="mb-0.5" />
       </template>
     </template>
+    
 
     <template v-if="header?.search" #center>
       <UContentSearchButton class="hidden lg:flex" />

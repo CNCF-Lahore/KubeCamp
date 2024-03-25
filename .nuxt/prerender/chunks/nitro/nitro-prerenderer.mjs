@@ -179,7 +179,7 @@ const appConfig1 = defineAppConfig({
 
 const inlineAppConfig = {
   "nuxt": {
-    "buildId": "376337db-b2f0-4cae-a47b-f186cd038c95"
+    "buildId": "022c76ea-c6cc-4526-9ce8-ba3e88c330f8"
   },
   "ui": {
     "primary": "green",
@@ -287,7 +287,7 @@ const _inlineRuntimeConfig = {
     "content": {
       "locales": [],
       "defaultLocale": "",
-      "integrity": 1711046667753,
+      "integrity": 1711389791159,
       "experimental": {
         "stripQueryParameters": false,
         "advanceQuery": false,
@@ -6320,8 +6320,8 @@ const components = {
                                     ],
                                     "schema": "boolean"
                                   },
-                                  "__@match@3810": {
-                                    "name": "__@match@3810",
+                                  "__@match@3684": {
+                                    "name": "__@match@3684",
                                     "global": false,
                                     "description": "Matches a string with this regular expression, and returns an array containing the results of\nthat search.",
                                     "tags": [
@@ -6347,8 +6347,8 @@ const components = {
                                       "schema": []
                                     }
                                   },
-                                  "__@replace@3812": {
-                                    "name": "__@replace@3812",
+                                  "__@replace@3686": {
+                                    "name": "__@replace@3686",
                                     "global": false,
                                     "description": "Replaces text in a string, using this regular expression.",
                                     "tags": [
@@ -6389,8 +6389,8 @@ const components = {
                                     ],
                                     "schema": "{ (string: string, replaceValue: string): string; (string: string, replacer: (substring: string, ...args: any[]) => string): string; }"
                                   },
-                                  "__@search@3815": {
-                                    "name": "__@search@3815",
+                                  "__@search@3689": {
+                                    "name": "__@search@3689",
                                     "global": false,
                                     "description": "Finds the position beginning first substring match in a regular expression search\nusing this regular expression.",
                                     "tags": [
@@ -6416,8 +6416,8 @@ const components = {
                                       "schema": []
                                     }
                                   },
-                                  "__@split@3817": {
-                                    "name": "__@split@3817",
+                                  "__@split@3691": {
+                                    "name": "__@split@3691",
                                     "global": false,
                                     "description": "Returns an array of substrings that were delimited by strings in the original input that\nmatch against this regular expression.\n\nIf the regular expression contains capturing parentheses, then each time this\nregular expression matches, the results (including any undefined results) of the\ncapturing parentheses are spliced.",
                                     "tags": [
@@ -6447,8 +6447,8 @@ const components = {
                                       "schema": []
                                     }
                                   },
-                                  "__@matchAll@3819": {
-                                    "name": "__@matchAll@3819",
+                                  "__@matchAll@3693": {
+                                    "name": "__@matchAll@3693",
                                     "global": false,
                                     "description": "Matches a string with this regular expression, and returns an iterable of matches\ncontaining the results of that search.",
                                     "tags": [
@@ -8603,8 +8603,8 @@ const components = {
                                     ],
                                     "schema": "boolean"
                                   },
-                                  "__@match@3810": {
-                                    "name": "__@match@3810",
+                                  "__@match@3684": {
+                                    "name": "__@match@3684",
                                     "global": false,
                                     "description": "Matches a string with this regular expression, and returns an array containing the results of\nthat search.",
                                     "tags": [
@@ -8630,8 +8630,8 @@ const components = {
                                       "schema": []
                                     }
                                   },
-                                  "__@replace@3812": {
-                                    "name": "__@replace@3812",
+                                  "__@replace@3686": {
+                                    "name": "__@replace@3686",
                                     "global": false,
                                     "description": "Replaces text in a string, using this regular expression.",
                                     "tags": [
@@ -8672,8 +8672,8 @@ const components = {
                                     ],
                                     "schema": "{ (string: string, replaceValue: string): string; (string: string, replacer: (substring: string, ...args: any[]) => string): string; }"
                                   },
-                                  "__@search@3815": {
-                                    "name": "__@search@3815",
+                                  "__@search@3689": {
+                                    "name": "__@search@3689",
                                     "global": false,
                                     "description": "Finds the position beginning first substring match in a regular expression search\nusing this regular expression.",
                                     "tags": [
@@ -8699,8 +8699,8 @@ const components = {
                                       "schema": []
                                     }
                                   },
-                                  "__@split@3817": {
-                                    "name": "__@split@3817",
+                                  "__@split@3691": {
+                                    "name": "__@split@3691",
                                     "global": false,
                                     "description": "Returns an array of substrings that were delimited by strings in the original input that\nmatch against this regular expression.\n\nIf the regular expression contains capturing parentheses, then each time this\nregular expression matches, the results (including any undefined results) of the\ncapturing parentheses are spliced.",
                                     "tags": [
@@ -8730,8 +8730,8 @@ const components = {
                                       "schema": []
                                     }
                                   },
-                                  "__@matchAll@3819": {
-                                    "name": "__@matchAll@3819",
+                                  "__@matchAll@3693": {
+                                    "name": "__@matchAll@3693",
                                     "global": false,
                                     "description": "Matches a string with this regular expression, and returns an iterable of matches\ncontaining the results of that search.",
                                     "tags": [
@@ -20643,7 +20643,7 @@ const handlers = [
   { route: '/api/_content/query/:qid/**:params', handler: _8EcGM7, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/query/:qid', handler: _8EcGM7, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/query', handler: _8EcGM7, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/cache.1711046667753.json', handler: _wQhr0P, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/cache.1711389791159.json', handler: _wQhr0P, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/navigation/:qid/**:params', handler: _T7WdzT, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/navigation/:qid', handler: _T7WdzT, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/navigation', handler: _T7WdzT, lazy: false, middleware: false, method: "get" },

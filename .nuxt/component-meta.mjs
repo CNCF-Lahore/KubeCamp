@@ -3028,8 +3028,8 @@ export default {
                                     ],
                                     "schema": "boolean"
                                   },
-                                  "__@match@3810": {
-                                    "name": "__@match@3810",
+                                  "__@match@3684": {
+                                    "name": "__@match@3684",
                                     "global": false,
                                     "description": "Matches a string with this regular expression, and returns an array containing the results of\nthat search.",
                                     "tags": [
@@ -3055,8 +3055,8 @@ export default {
                                       "schema": []
                                     }
                                   },
-                                  "__@replace@3812": {
-                                    "name": "__@replace@3812",
+                                  "__@replace@3686": {
+                                    "name": "__@replace@3686",
                                     "global": false,
                                     "description": "Replaces text in a string, using this regular expression.",
                                     "tags": [
@@ -3097,8 +3097,8 @@ export default {
                                     ],
                                     "schema": "{ (string: string, replaceValue: string): string; (string: string, replacer: (substring: string, ...args: any[]) => string): string; }"
                                   },
-                                  "__@search@3815": {
-                                    "name": "__@search@3815",
+                                  "__@search@3689": {
+                                    "name": "__@search@3689",
                                     "global": false,
                                     "description": "Finds the position beginning first substring match in a regular expression search\nusing this regular expression.",
                                     "tags": [
@@ -3124,8 +3124,8 @@ export default {
                                       "schema": []
                                     }
                                   },
-                                  "__@split@3817": {
-                                    "name": "__@split@3817",
+                                  "__@split@3691": {
+                                    "name": "__@split@3691",
                                     "global": false,
                                     "description": "Returns an array of substrings that were delimited by strings in the original input that\nmatch against this regular expression.\n\nIf the regular expression contains capturing parentheses, then each time this\nregular expression matches, the results (including any undefined results) of the\ncapturing parentheses are spliced.",
                                     "tags": [
@@ -3155,8 +3155,8 @@ export default {
                                       "schema": []
                                     }
                                   },
-                                  "__@matchAll@3819": {
-                                    "name": "__@matchAll@3819",
+                                  "__@matchAll@3693": {
+                                    "name": "__@matchAll@3693",
                                     "global": false,
                                     "description": "Matches a string with this regular expression, and returns an iterable of matches\ncontaining the results of that search.",
                                     "tags": [
@@ -5311,8 +5311,8 @@ export default {
                                     ],
                                     "schema": "boolean"
                                   },
-                                  "__@match@3810": {
-                                    "name": "__@match@3810",
+                                  "__@match@3684": {
+                                    "name": "__@match@3684",
                                     "global": false,
                                     "description": "Matches a string with this regular expression, and returns an array containing the results of\nthat search.",
                                     "tags": [
@@ -5338,8 +5338,8 @@ export default {
                                       "schema": []
                                     }
                                   },
-                                  "__@replace@3812": {
-                                    "name": "__@replace@3812",
+                                  "__@replace@3686": {
+                                    "name": "__@replace@3686",
                                     "global": false,
                                     "description": "Replaces text in a string, using this regular expression.",
                                     "tags": [
@@ -5380,8 +5380,8 @@ export default {
                                     ],
                                     "schema": "{ (string: string, replaceValue: string): string; (string: string, replacer: (substring: string, ...args: any[]) => string): string; }"
                                   },
-                                  "__@search@3815": {
-                                    "name": "__@search@3815",
+                                  "__@search@3689": {
+                                    "name": "__@search@3689",
                                     "global": false,
                                     "description": "Finds the position beginning first substring match in a regular expression search\nusing this regular expression.",
                                     "tags": [
@@ -5407,8 +5407,8 @@ export default {
                                       "schema": []
                                     }
                                   },
-                                  "__@split@3817": {
-                                    "name": "__@split@3817",
+                                  "__@split@3691": {
+                                    "name": "__@split@3691",
                                     "global": false,
                                     "description": "Returns an array of substrings that were delimited by strings in the original input that\nmatch against this regular expression.\n\nIf the regular expression contains capturing parentheses, then each time this\nregular expression matches, the results (including any undefined results) of the\ncapturing parentheses are spliced.",
                                     "tags": [
@@ -5438,8 +5438,8 @@ export default {
                                       "schema": []
                                     }
                                   },
-                                  "__@matchAll@3819": {
-                                    "name": "__@matchAll@3819",
+                                  "__@matchAll@3693": {
+                                    "name": "__@matchAll@3693",
                                     "global": false,
                                     "description": "Matches a string with this regular expression, and returns an iterable of matches\ncontaining the results of that search.",
                                     "tags": [
