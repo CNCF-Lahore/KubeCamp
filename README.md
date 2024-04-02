@@ -24,7 +24,12 @@ At Kubecamp, we believe in learning by doing. That's why we provide a comprehens
 
 ## :handshake: Join Our Community
 
-Connect with fellow Kubecampers and Kubernetes experts. Share your progress, ask questions, and collaborate on exciting projects. Join us on [Slack)(https://cncflahore.slack.com/)
+Connect with fellow Kubecampers and Kubernetes experts. Share your progress, ask questions, and collaborate on exciting projects. Join us on [Slack)
+(https://cncflahore.slack.com/)
+
+## Disclaimer
+
+This repository is sole property of CNCF Lahore and contributors. Without permission, you cannot use it for production.
 
 ## :question: Need Help?
 
